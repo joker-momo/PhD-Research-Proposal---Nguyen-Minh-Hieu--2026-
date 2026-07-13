@@ -1,0 +1,80 @@
+\centering
+\resizebox{1\textwidth}{!}{%
+  \begin{tikzpicture}[
+      font=\sffamily,
+      >=Stealth,
+      node distance=1.5cm and 2.5cm,
+      % Styles
+      ctrl_block/.style={
+        rectangle, draw=purple!80!black, thick,
+        top color=white, bottom color=purple!10,
+        minimum width=6cm, minimum height=1.2cm,
+        rounded corners=2mm, drop shadow, align=center,
+        font=\small
+      },
+      uav_normal/.style={
+        rectangle, draw=orange!80!black, thick,
+        top color=white, bottom color=orange!10,
+        minimum width=3.5cm, minimum height=1.2cm,
+        rounded corners=2mm, drop shadow, align=center,
+        font=\small
+      },
+      uav_failed/.style={
+        rectangle, draw=red!70, thick, dashed,
+        fill=gray!10, text=gray!60,
+        minimum width=3.5cm, minimum height=1.2cm,
+        rounded corners=2mm, align=center,
+        font=\small
+      },
+      uav_backup/.style={
+        rectangle, draw=green!60!black, thick,
+        top color=white, bottom color=green!10,
+        minimum width=3.5cm, minimum height=1.2cm,
+        rounded corners=2mm, drop shadow, align=center,
+        font=\small
+      },
+      cross_mark/.style={cross out, draw=red, thick, minimum size=1.3cm},
+      % Arrows
+      data_flow/.style={->, thick, dashed, orange!80},
+      failed_link/.style={->, thick, dashed, red!50},
+      ctrl_arrow/.style={->, thick, dashed, purple!70},
+      alert_arrow/.style={->, thick, dotted, red!70},
+    ]
+
+    % Hàng trên: UAV 2 (failed)
+    \node[uav_failed] (u2) {UAV 2 \\ \scriptsize (Offline)};
+
+    % Hàng thứ hai: UAV 1 và UAV 3, thấp hơn và lệch sang hai bên
+    \node[uav_normal, below=1cm of u2, xshift=-7.5cm] (u1) {UAV 1 \\ \scriptsize Partition 1};
+    \node[uav_normal, below=1cm of u2, xshift=7.5cm] (u3) {UAV 3 \\ \scriptsize Partition 3};
+
+    % Control plane: thẳng hàng dọc dưới u2
+    \node[ctrl_block, below=2cm of u2] (cp) {Intelligent Control Plane \\ \scriptsize Telemetry Monitoring \& Dynamic Orchestration};
+
+    % Backup UAV: thẳng hàng dọc dưới cp
+    \node[uav_backup, below=1.5cm of cp] (u4) {UAV 4 (Backup) \\ \scriptsize \textbf{Reallocated:} Partition 2};
+
+    % Dấu chéo trên UAV hỏng
+    \node[cross_mark] at (u2.center) {};
+
+    % Các đường "Link Down" nằm phía trên UAV 1 và 3
+    \draw[failed_link] (u1.north) |- node[pos=0.6, above, font=\tiny\itshape, red!60] {(1) Link Down} (u2.west);
+    \draw[failed_link] (u2.east) -| node[pos=0.4, above, font=\tiny\itshape, red!60] {(1) Link Down} (u3.north);
+
+    % Đường reroute dữ liệu
+    \draw[data_flow] (u1.south) |- node[pos=0.6, above, font=\tiny\bfseries, orange!80] {(4) Reroute $T_1$} (u4.west);
+    \draw[data_flow] (u4.east) -| node[pos=0.4, above, font=\tiny\bfseries, orange!80] {(4) Reroute $T_2$} (u3.south);
+
+    % Phản hồi từ UAV hỏng lên control plane
+    \draw[alert_arrow] (u2.south) -- node[midway, font=\tiny\bfseries, red!70, fill=white] {(2) Failure Alert} (cp.north);
+
+    % Tín hiệu điều khiển
+    \draw[ctrl_arrow] (cp.north west) to[out=180, in=30, looseness=1.2] node[right, font=\tiny, purple!70] {(3) Update Routing} (u1.east);
+    \draw[ctrl_arrow] (cp.north east) to[out=0,in=150, looseness=1.2] node[left, font=\tiny, purple!70] {(3) Update Source} (u3.west);
+    \draw[ctrl_arrow] (cp.south) -- node[right, font=\tiny, purple!70] {(3) Deploy Partition 2} (u4.north);
+
+    % Chú thích
+    % \node[text=orange!80, below=0.2cm of u4.south, align=center] {New tensor paths};
+
+  \end{tikzpicture}%
+}

@@ -1,0 +1,50 @@
+\centering
+\begin{tikzpicture}[
+    font=\sffamily,
+    >=Stealth,
+    node distance=1.6cm and 3cm,
+    block/.style={
+      rectangle, draw=black!70, thick, fill=gray!5,
+      minimum width=2.8cm, minimum height=1cm,
+      rounded corners=2mm, align=center
+    },
+    model/.style={
+      rectangle, draw=blue!70, thick, fill=blue!8,
+      minimum width=1.4cm, minimum height=1.2cm
+    },
+    uav/.style={
+      circle, draw=orange!80!black, thick, fill=orange!15,
+      minimum size=0.8cm
+    },
+    control/.style={
+      rectangle, draw=green!50!black, thick, fill=green!12,
+      minimum width=3.5cm, minimum height=1cm,
+      rounded corners=2mm, align=center
+    },
+    arrow/.style={->, thick},
+    feedback/.style={->, thick, dashed, green!60!black}
+  ]
+  \node[block] (input) {Input};
+  \node[model, right=of input] (m1) {};
+  \node[model, right=0.3cm of m1] (m2) {};
+  \node[model, right=0.3cm of m2] (m3) {};
+  \node[below=0.4cm of m2] {\scriptsize Partitioned Model};
+  \node[uav, right=of m3] (u1) {};
+  \node[uav, above right=0.5cm and 0.6cm of u1] (u2) {};
+  \node[uav, below right=0.5cm and 0.6cm of u1] (u3) {};
+  \node[below=0.6cm of u1] {\scriptsize UAV Swarm};
+  \node[block, right=of u2] (out) {Output};
+  \node[control, above=1.5cm of m2] (ctrl)
+  {Adaptive Control};
+  \draw[arrow] (input) -- (m1);
+  \draw[arrow] (m1) -- (m2);
+  \draw[arrow] (m2) -- (m3);
+  \draw[arrow] (m3) -- (u1);
+  \draw[arrow] (u2) -- (out);
+  \draw[dashed] (u1) -- (u2);
+  \draw[dashed] (u1) -- (u3);
+  \draw[dashed] (u2) -- (u3);
+  \draw[feedback] (ctrl) -- (m2);
+  \draw[feedback] (ctrl) -- (u1);
+  \draw[feedback] (u2) to[bend left=20] (ctrl);
+\end{tikzpicture}

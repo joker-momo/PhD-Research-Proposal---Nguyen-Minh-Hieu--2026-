@@ -1,0 +1,87 @@
+\section*{Research Methodology}
+This study adopts a structured, phased methodology to formulate, analyze, and validate optimization models for three-layer Collaborative Edge Inference (CEI) \cite{qu2024elastic,mcenroe2022survey}. The phased design progresses from preliminary trade-off analysis, through formal problem formulation and solution, to online adaptation and empirical validation via network--robotics co-simulation \cite{hu2025splitreview,blanquer2024resilient,duan2022combined,li2024fsl,jung2024edgeai,adoni2024intelligent,kabashkin2024resilience,clerigues2024mission,wang2024ress}.
+
+\subsection*{Preliminary Analysis}
+
+To expose the fundamental structure of the problem, we conduct a simplified analysis of latency--energy trade-offs under different partitioning regimes. We consider a setting in which a DNN is partitioned into multiple segments and executed across a team of UAVs. Configurations with fewer partitions concentrate computation on fewer nodes (higher per-node latency, lower communication overhead), while finer partitioning distributes load but incurs more frequent tensor exchanges. Partitioning decisions therefore jointly determine both computation load distribution and communication requirements.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\linewidth]{image/pareto_preliminary_clean.png}
+  \caption{Illustrative latency--energy trade-off under different partitioning regimes. Each point corresponds to a specific partitioning--assignment configuration; clusters represent computation-dominant, communication-dominant, and balanced regimes. The Pareto front shows the set of non-dominated solutions.}
+  \label{fig:pareto}
+\end{figure}
+
+Fig.~\ref{fig:pareto} shows the resulting operating points in latency--energy space, generated from a simplified simulation under homogeneous UAV capabilities and static links. Three distinct regimes are visible: computation-dominant configurations (lower energy, higher latency), communication-dominant configurations (lower latency, higher energy), and balanced configurations between the extremes. The Pareto front confirms that no single configuration simultaneously minimizes both objectives---any improvement in one dimension requires a trade-off in the other.
+
+This trade-off structure cannot be resolved through independent optimization of computation or communication, confirming that a joint formulation is necessary. The simplified setting is intended solely to reveal this structural insight; more realistic conditions (heterogeneous UAVs, dynamic links) are addressed in the full formulation and evaluation.
+
+\subsection*{Problem Formulation}
+Collaborative inference is modeled as a sequential AI pipeline comprising ordered computational stages \cite{kang2017neurosurgeon,matsubara2022split}. The model is represented by a bounded-$K$ partition family, where $K$ denotes the number of partitions and is restricted to a small value to balance analytical tractability against communication overhead. Each partition is assigned to exactly one UAV through binary decision variables, subject to per-node computation and energy constraints and execution-order preservation.
+
+When two consecutive partitions are mapped to different UAVs, an intermediate tensor is transmitted along the FANET path between the corresponding nodes. End-to-end latency is modeled as the sum of partition-level computation delays and inter-partition transmission delays; total energy combines onboard computation energy and RF transmission energy. Crucially, partition boundaries determine intermediate tensor sizes, creating a feedback loop between computation placement and communication cost.
+
+We formulate the problem as
+\[
+\min_{x \in \mathcal{X}} \; L(x) + \lambda E(x),
+\]
+
+where
+\begin{itemize}
+    \item $L(x)$ denotes end-to-end inference latency,
+    \item $E(x)$ denotes total system energy consumption (computation and RF communication),
+    \item $\lambda \geq 0$ is a trade-off parameter balancing latency and energy.
+\end{itemize}
+
+The decision variable $x$ comprises model partitioning decisions and UAV assignment decisions. The feasible set $\mathcal{X}$ is defined by SWaP constraints (compute, memory, energy), communication constraints over the FANET, and sequential execution constraints induced by model partitioning.
+
+\paragraph{Computational Complexity.}
+The joint problem is combinatorial, with complexity growing exponentially in the number of candidate partition points and UAV nodes. Exact solutions are therefore intractable for real-time deployment in dynamic environments, motivating the bounded-$K$ restriction and the investigation of tractable approximation strategies.
+
+\subsection*{1. Theoretical Foundation of Joint Partitioning and Assignment}
+The first phase addresses RQ1 by formulating the combinatorial optimization problem under SWaP constraints \cite{qu2024elastic,hu2025splitreview,duan2022combined,li2024fsl,kang2017neurosurgeon,hu2019dads,zhao2025joint}. The formulation defines decision variables for bounded-$K$ partition selection and binary UAV assignment, then minimizes the coupled latency--energy objective.
+
+The key challenge is that partitioning and assignment are inseparable: partition boundaries determine tensor sizes that affect communication cost, which in turn constrains feasible assignments. The scientific contribution of this phase is a structured analysis of this interdependence and of the role of $K$ in problem complexity, including identification of tractable substructures and approximation opportunities \cite{hu2025splitreview,mcenroe2022survey}.
+
+\begin{figure}[H]
+  \centering
+  \resizebox{0.85\textwidth}{!}{\input{image/figure1.tex}}
+  \caption{Collaborative edge inference with a simplified three-partition example under a bounded-$K$ model, illustrating how partition boundaries induce intermediate tensor transmissions between UAVs.}
+  \label{fig:architecture}
+\end{figure}
+
+\subsection*{2. Communication-Cost Modeling under Coupled Optimization}
+Building on the joint model, the second phase completes RQ1 by formalizing communication cost over volatile FANETs \cite{lansky2023firefly,hosseinzadeh2024local,blanquer2024resilient,rahmani2021fanet,clerigues2024mission}. The goal is to characterize communication delay and RF energy as functions of tensor size, available bandwidth, and link variation, then embed these terms in the global objective.
+
+The key challenge is that communication cost is not an external parameter but a quantity induced by partition decisions---it changes whenever the optimization variables change. The scientific contribution is a communication-aware cost model that preserves this dependency and supports latency--energy trade-off analysis across different mobility regimes \cite{lansky2023firefly,hosseinzadeh2024local,qu2024elastic,wang2024ress,lucchesi2024dynamic,shao2020bottlenet,shao2022task,li2023device}.
+
+\begin{figure}[H]
+  \centering
+  \resizebox{0.85\textwidth}{!}{\input{image/figure2.tex}}
+  \caption{Data flow and energy-aware communication protocol for CEI. The intermediate tensor ($T$) is compressed ($T_c$) before transmission to reduce bandwidth overhead and RF energy cost.}
+  \label{fig:workflow}
+\end{figure}
+
+\subsection*{3. Online Re-optimization under Mobility and Failures}
+The third phase addresses RQ2 as an online optimization problem \cite{pan2025selfhealing,jamshidi2025resilient,blanquer2024resilient,seid2021multiagent,gao2025pmdp}. This phase is necessary because the joint optimum from Phases~1--2 is state-dependent: topology changes, mobility, residual energy depletion, and node/link failures reshape both the objective value and the feasible set over time. A static solution therefore degrades as conditions evolve.
+
+The adaptation framework is derived from the structural properties of the joint problem rather than introduced as an independent add-on. The phase studies how the coupled solution should be updated online in response to observed system state, and evaluates candidate approaches (control-theoretic and learning-based methods) under a unified structural framework.
+
+\begin{figure}[H]
+  \centering
+  \resizebox{1\textwidth}{!}{\input{image/figure3.tex}}
+  \caption{Adaptive orchestration and fault tolerance by the intelligent control plane. When a UAV fails, the control plane reallocates missing partitions and reroutes tensors to maintain uninterrupted inference.}
+  \label{fig:fault_tolerance}
+\end{figure}
+
+This phase is organized into three steps:
+\begin{itemize}
+  \item \textbf{Contextual Monitoring:} Define a telemetry state representation for continuous observation of link quality, packet loss, residual energy, CPU load, and graph execution status \cite{qu2024elastic,mcenroe2022survey}.
+  \item \textbf{Online Decision Update:} Formulate a baseline re-optimization mechanism and extend it to multi-objective policies that update partitioning--assignment decisions as system conditions change \cite{pan2025selfhealing,jamshidi2025resilient}.
+  \item \textbf{Dynamic Reconfiguration:} Apply reallocation and rerouting decisions---including repartitioning and tensor-path adaptation away from unstable nodes---to maintain uninterrupted inference \cite{pan2025selfhealing,blanquer2024resilient,hosseinzadeh2024local}.
+\end{itemize}
+
+Overall, this phase emphasizes decision quality over time rather than static deployment quality.
+
+\paragraph{Risk Considerations.}
+Several potential risks are acknowledged. First, scalability challenges may arise as the number of partitions increases; this is mitigated through bounded-$K$ design and investigation of tractable approximations. Second, discrepancies between simulation and real-world deployment may limit direct applicability; this is addressed by focusing on structural insights rather than system-specific tuning. Third, ethical considerations related to UAV applications are recognized, and the proposed framework is intended for civilian and research-oriented use cases.

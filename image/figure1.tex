@@ -1,0 +1,52 @@
+\centering
+\resizebox{\linewidth}{!}{%
+  \begin{tikzpicture}[
+      font=\sffamily,
+      >=Stealth,
+      model_block/.style={rectangle, draw=blue!80!black, thick, top color=white, bottom color=blue!10, minimum width=3.8cm, minimum height=1.2cm, rounded corners=2mm, drop shadow, align=center},
+      uav_node/.style={rectangle, draw=orange!80!black, thick, top color=white, bottom color=orange!10, minimum width=4cm, minimum height=1.5cm, rounded corners=2mm, drop shadow, align=center},
+      data_arrow/.style={->, thick, blue!70!black},
+      mapping_arrow/.style={->, thick, gray, dotted},
+      wireless_arrow/.style={->, thick, dashed, orange!90!black, decorate, decoration={snake, amplitude=.4mm, segment length=3mm, post length=2mm}},
+      group_box/.style={rectangle, draw=black!30, dashed, thick, inner sep=12pt, rounded corners=3mm}
+    ]
+
+    % ================= LEFT: LOGICAL AI MODEL =================
+    \node (input) {\textbf{Input Data (Images/Video)}};
+    \node[model_block, below=0.6cm of input] (l1) {\textbf{Partition $p_1$} \\ \scriptsize Early Layers};
+    \node[model_block, below=1.2cm of l1] (l2) {\textbf{Partition $p_i$} \\ \scriptsize Intermediate Layers};
+    \node[model_block, below=1.2cm of l2] (l3) {\textbf{Partition $p_K$} \\ \scriptsize Late/Output Layers};
+    \node[below=0.8cm of l3] (output) {\textbf{Inference Result}};
+
+    \draw[data_arrow] (input) -- (l1);
+    \draw[data_arrow] (l1) -- node[right, font=\scriptsize\bfseries, blue!80!black] {Cut-point $c_i$} (l2);
+    \draw[data_arrow] (l2) -- node[right, font=\scriptsize\bfseries, blue!80!black] {Cut-point $c_{i+1}$} (l3);
+    \draw[data_arrow] (l3) -- (output);
+
+    \begin{scope}[on background layer]
+      \node[group_box, fill=blue!2, fit=(input) (l1) (l2) (l3) (output)] (model_bg) {};
+      \node[above=5pt of model_bg.north, font=\bfseries\large, blue!80!black] {Logical AI Model (Bounded-$K$ Partition)};
+    \end{scope}
+
+    % ================= RIGHT: PHYSICAL UAV SWARM =================
+    \node[uav_node, right=4.5cm of l1] (u1) {\textbf{UAV 1} (Cluster Head)\\ \vspace{1mm} \scriptsize \textcolor{black!70}{CPU: 80\% |} \textbf{\textcolor{green!60!black}{Battery: High}}};
+    \node[uav_node, right=4.5cm of l2] (u2) {\textbf{UAV 2} (Worker Node)\\ \vspace{1mm} \scriptsize \textcolor{black!70}{GPU: 95\% |} \textbf{\textcolor{orange!90!black}{Battery: Medium}}};
+    \node[uav_node, right=4.5cm of l3] (u3) {\textbf{UAV 3} (Worker Node)\\ \vspace{1mm} \scriptsize \textcolor{black!70}{CPU: 40\% |} \textbf{\textcolor{red!80!black}{Battery: Low}}};
+
+    \begin{scope}[on background layer]
+      \node[group_box, fill=orange!3, fit=(u1) (u2) (u3)] (swarm_bg) {};
+      \node[above=5pt of swarm_bg.north, font=\bfseries\large, orange!80!black] {Physical UAV Swarm (FANET)};
+    \end{scope}
+
+    % ================= MAPPING AND WIRELESS =================
+    % Mapping arrows: tăng khoảng cách nhãn
+    \draw[mapping_arrow] (l1.east) to[out=0, in=180] node[pos=0.6, above, sloped, font=\scriptsize\itshape, black!70] {Dynamic Allocation} (u1.west);
+    \draw[mapping_arrow] (l2.east) to[out=0, in=180] node[pos=0.6, above, sloped, font=\scriptsize\itshape, black!70] {Dynamic Allocation} (u2.west);
+    \draw[mapping_arrow] (l3.east) to[out=0, in=180] node[pos=0.6, above, sloped, font=\scriptsize\itshape, black!70] {Dynamic Allocation} (u3.west);
+
+    % Wireless arrows: tăng khoảng cách nhãn "Transmit Tensor" và làm thoáng hơn
+    \draw[wireless_arrow] (u1.south) -- node[pos=0.50, right, font=\scriptsize\bfseries, orange!90!black] {Transmit Tensor $T_1$} (u2.north);
+    \draw[wireless_arrow] (u2.south) -- node[pos=0.50, right, font=\scriptsize\bfseries, orange!90!black] {Transmit Tensor $T_2$} (u3.north);
+
+  \end{tikzpicture}%
+}

@@ -1,0 +1,76 @@
+\centering
+\begin{tikzpicture}[
+    font=\sffamily,
+    >=Stealth,
+    % Styles cho các khối xử lý
+    feature_block/.style={
+      rectangle, draw=blue!70, thick, fill=blue!5,
+      minimum width=3.2cm, minimum height=1.1cm,
+      rounded corners=2mm, align=center,
+      font=\small
+    },
+    compress_block/.style={
+      rectangle, draw=red!70, thick, fill=red!5,
+      minimum width=3.2cm, minimum height=1.1cm,
+      rounded corners=2mm, align=center,
+      font=\small
+    },
+    uav_group/.style={
+      rectangle, draw=black!40, dashed, thick,
+      rounded corners=3mm, inner sep=12pt,
+      fill=gray!3
+    },
+    % Arrow styles
+    flow_arrow/.style={->, thick, blue!60},
+    wireless_arrow/.style={<->, thick, dashed, orange!80,
+    decorate, decoration={snake, amplitude=0.3mm, segment length=3mm, post length=1mm}},
+    label/.style={font=\scriptsize\itshape},
+    % Khoảng cách giữa các node
+    node distance=1.2cm and 3cm
+  ]
+
+  % ===== UAV 1 (Sender) – bên trái =====
+  \node[align=center] (sensor) {\textbf{Sensor Data} \\ \scriptsize Images/Video};
+
+  \node[feature_block, below=of sensor] (front) {Front AI Layers \\ \scriptsize Feature Extraction};
+
+  \node[compress_block, below=of front] (compress) {Tensor Compression \\ \scriptsize Quantization};
+
+  % Mũi tên trong UAV 1
+  \draw[flow_arrow] (sensor) -- (front);
+  \draw[flow_arrow] (front) -- node[right, label] {Intermediate Tensor $T$} (compress);
+
+  % Nhóm UAV 1
+  \begin{scope}[on background layer]
+    \node[uav_group, fit=(sensor) (front) (compress)] (uav1) {};
+    \node[above=4pt of uav1.north, font=\small\bfseries] {UAV Node 1 (Sender / Edge)};
+  \end{scope}
+
+  % ===== UAV 2 (Receiver) – bên phải, đặt ngang hàng với UAV1 =====
+  % Dùng positioning: right=of uav1.east, nhưng để căn chỉnh theo tâm của UAV1, ta đặt node (decompress) ở vị trí phù hợp
+  \node[compress_block, right=4.5cm of compress] (decompress) {Tensor Decompression \\ \scriptsize Reconstruction};
+
+  \node[feature_block, below=of decompress] (tail) {Tail AI Layers \\ \scriptsize Classifier};
+
+  \node (result) [below=of tail] {\textbf{Inference Result}};
+
+  % Mũi tên trong UAV 2
+  \draw[flow_arrow] (decompress) -- (tail);
+  \draw[flow_arrow] (tail) -- (result);
+
+  % Nhóm UAV 2
+  \begin{scope}[on background layer]
+    \node[uav_group, fit=(decompress) (tail) (result)] (uav2) {};
+    \node[above=4pt of uav2.north, font=\small\bfseries] {UAV Node 2 (Receiver / Cluster Head)};
+  \end{scope}
+
+  % ===== Kết nối không dây =====
+  \draw[wireless_arrow] (compress.east) --
+  node[above, font=\small\bfseries, orange!80] {Compressed $T_c$}
+  node[below, label, pos=0.5] {Energy-Efficient FANET}
+  (decompress.west);
+
+  % Điểm cắt (cut point)
+  \node[font=\tiny\bfseries, text=red!70, above right=0pt and -2pt of compress.north east] {Cut Point};
+
+\end{tikzpicture}

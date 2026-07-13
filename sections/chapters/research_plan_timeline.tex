@@ -1,0 +1,51 @@
+\section*{Research Plan and Timeline}
+This research is organized into three phases over 36 months. The timeline is designed to support the submission of three research papers and the completion of the PhD thesis.
+
+\textbf{Year 1: Foundational Work and Core Partitioning Architecture (Months 1-12)} \\
+The primary objective of the first year is to establish the theoretical and methodological foundation for RQ1.
+\begin{itemize}
+  \item \textbf{Phase 1: Foundational Research and Environment Setup (Months 1-8)}
+    \begin{itemize}
+      \item \textit{Tasks:} Conduct a comprehensive literature review on Split Learning, FANETs, and MAS. Establish the experimental and simulation environment using Python with PyTorch and TensorFlow for AI models, plus NS-3 and Gazebo for UAV networking and physics.
+      \item \textit{Deliverables:} A detailed literature review chapter; A functional co-simulation environment.
+    \end{itemize}
+  \item \textbf{Phase 2: Design and Implementation of the Computational Layer \& First Paper (Months 9-12)}
+    \begin{itemize}
+      \item \textit{Tasks:} Formulate and analyze the dynamic model partitioning problem under bounded-$K$ constraints. Perform controlled evaluation to assess latency and memory implications of candidate formulations. Begin drafting the first research paper.
+      \item \textit{Deliverables:} A formal problem formulation and analysis report; A technical report on partition benchmarks.
+      \item \textit{Milestone:} Submission of the first research paper on joint partitioning--assignment optimization (Target: Month 12).
+    \end{itemize}
+\end{itemize}
+
+\textbf{Year 2: Network Layer, System Integration, and Publications (Months 13-24)} \\
+The second year focuses on formulating and evaluating communication models and validating coupled optimization behavior.
+\begin{itemize}
+  \item \textbf{Phase 3: Development of the Tensor Communication Protocol (Months 13-18)}
+    \begin{itemize}
+      \item \textit{Tasks:} Formulate and evaluate FANET communication models tailored for tensor exchange. Analyze intermediate feature compression effects on bandwidth, delay, and RF energy.
+      \item \textit{Deliverables:} Communication-cost models and analysis results; Empirical data on RF energy consumption per inference cycle.
+    \end{itemize}
+  \item \textbf{Phase 4: Integrated Evaluation and Second Paper Preparation (Months 19-24)}
+    \begin{itemize}
+      \item \textit{Tasks:} Validate the coupled partitioning--communication formulations through integrated co-simulation. Measure end-to-end inference latency and total energy cost under representative mobility conditions.
+      \item \textit{Deliverables:} A comprehensive validation report on coupled optimization outcomes.
+      \item \textit{Milestone:} Submission of the second research paper on communication-aware optimization over FANETs (Target: Month 24).
+    \end{itemize}
+\end{itemize}
+
+\textbf{Year 3: Adaptive Orchestration, Holistic Evaluation, and Thesis (Months 25-36)} \\
+The final year is dedicated to online adaptation analysis, holistic validation, and thesis completion.
+\begin{itemize}
+  \item \textbf{Phase 5: Development of the Control Plane and Full System Evaluation (Months 25-30)}
+    \begin{itemize}
+      \item \textit{Tasks:} Formulate and evaluate online re-optimization policies using real-time UAV telemetry. Analyze fault-tolerance behavior through dynamic task reallocation under simulated node dropouts and battery failures.
+      \item \textit{Deliverables:} Validated online adaptation algorithms; Analysis report on resilience and continuity.
+      \item \textit{Milestone:} Submission of the third research paper detailing adaptive online re-optimization under failures (Target: Month 30).
+    \end{itemize}
+  \item \textbf{Phase 6: Thesis Writing and Defense (Months 31-36)}
+    \begin{itemize}
+      \item \textit{Tasks:} Consolidate all research findings and published papers into the final PhD thesis document. Prepare for the final thesis defense.
+      \item \textit{Deliverables:} Submitted PhD thesis.
+      \item \textit{Final Milestone:} Successful PhD thesis defense.
+    \end{itemize}
+\end{itemize}

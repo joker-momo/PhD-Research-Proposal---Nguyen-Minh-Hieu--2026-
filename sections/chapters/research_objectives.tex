@@ -1,0 +1,34 @@
+\section*{Research Objectives}
+The principal objective of this PhD research is to formulate, analyze, and validate optimization models for intelligent, adaptive, and fault-tolerant Collaborative Edge Inference (CEI) in resource-constrained UAV swarms. Rather than treating computing, networking, and control as independent subsystems, this research adopts a co-design perspective centered on a bounded-$K$ partition model to characterize system-level latency--energy trade-offs and resilience limits \cite{qu2024elastic,mcenroe2022survey}.
+
+To achieve this primary aim, the research is structured around two fundamental research questions (RQs):
+\begin{itemize}
+  \item \textbf{RQ1 (Joint Optimization):} How can collaborative inference be formulated as a joint combinatorial optimization problem that determines bounded-$K$ partitioning and UAV assignment, while minimizing end-to-end latency and total energy under coupled computation--communication constraints? This question addresses Gaps~1--2 identified in the literature review by embedding partition-induced communication cost directly in the optimization objective \cite{hu2025splitreview,qu2024elastic,lansky2023firefly,hosseinzadeh2024local,rahmani2021fanet,kang2017neurosurgeon,matsubara2022split}.
+
+  \item \textbf{RQ2 (Online Adaptation):} How can partitioning--assignment decisions be re-optimized online under dynamic topology, mobility, and UAV/link failures---including reactive re-derivation of partition boundaries for inferences already in flight---so that latency--energy performance remains near-optimal while service continuity is preserved by resuming from the last delivered intermediate activation rather than restarting? This question addresses Gap~3: because the coupled optimum from RQ1 depends on evolving system state, a principled mechanism for online re-optimization is required \cite{pan2025selfhealing,jamshidi2025resilient,lansky2023firefly,hosseinzadeh2024local,neely2010stochastic,bi2021lyapunov}.
+\end{itemize}
+
+\subsection*{Scientific Contributions}
+The expected scientific contributions are aligned with the research questions:
+\begin{itemize}
+  \item \textbf{Contribution 1 (RQ1):} A joint combinatorial optimization formulation for CEI with a bounded-$K$ partition model, where partition selection and UAV assignment are optimized simultaneously under coupled latency--energy constraints.
+
+  \item \textbf{Contribution 2 (RQ1):} An analytical characterization of the role of $K$ in problem structure, identifying regimes where increasing $K$ improves computational feasibility versus regimes where communication overhead dominates, leading to diminishing returns.
+
+  \item \textbf{Contribution 3 (RQ1):} A communication-aware cost model that links intermediate tensor size and time-varying FANET link conditions to transmission delay and RF energy within the optimization objective.
+
+  \item \textbf{Contribution 4 (RQ2):} An online adaptive re-optimization strategy that updates partitioning--assignment decisions---including reactive re-derivation of partition boundaries for in-flight inferences---in response to mobility and failures while preserving inference continuity.
+\end{itemize}
+
+\subsection*{Concrete Objectives}
+The following objectives are pursued sequentially, with each providing the basis for the next:
+
+\begin{itemize}
+  \item \textbf{Objective~1: Foundational Partitioning and Assignment Model (Computational Layer).} Formulate a mathematical optimization model that captures DNN graph structure and UAV SWaP limitations through an integrated formulation over partitioning and assignment variables. The expected outcome is an analytical basis for graph partitioning and task allocation under resource constraints, directly addressing RQ1 \cite{hu2025splitreview}.
+
+  \item \textbf{Objective~2: Communication-Cost Modeling (Network Layer).} Building on the partitioned graph from Objective~1, develop communication-cost models tailored to FANET dynamics. This objective formalizes how partition-induced tensor exchange determines communication delay and RF energy, completing the coupled objective for RQ1 and providing the state variables required for RQ2 \cite{lansky2023firefly,hosseinzadeh2024local}.
+
+  \item \textbf{Objective~3: Online Orchestration (Control Plane).} Develop an online decision process that uses swarm telemetry to trigger re-optimization after topology changes or failures. The adaptation framework is guided by the structural properties of the joint problem from RQ1, particularly state-space complexity and feasibility dynamics. This objective directly addresses RQ2 \cite{pan2025selfhealing,jamshidi2025resilient}.
+
+  \item \textbf{Objective~4: Integrated Empirical Evaluation.} Evaluate the full three-layer CEI architecture using network--robotics co-simulation (NS-3, ROS, Gazebo) under stress scenarios including node dropouts and link disruption, to validate the proposed models, analytical claims, and adaptation logic \cite{qu2024elastic,blanquer2024resilient}.
+\end{itemize}

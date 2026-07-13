@@ -1,0 +1,98 @@
+\section*{Literature Review}
+
+\subsection*{1. AI-Enabled Small UAV Swarms: Applications and Requirements}
+Recent studies position small UAV swarms as a promising platform for mission-critical applications requiring distributed sensing, rapid coverage, and autonomous coordination. Typical tasks include search-and-rescue, infrastructure inspection, mapping, surveillance, and environmental monitoring, all of which increasingly rely on AI-enabled perception and decision support \cite{mcenroe2022survey,jung2024edgeai,clerigues2024mission}. These applications impose strict system requirements: low inference latency for timely response, limited energy expenditure for mission endurance, and sufficient reliability to sustain operation under changing topology and uncertain field conditions. Collectively, these constraints define the operating envelope within which any collaborative inference solution must function.
+
+\subsection*{2. Approaches for AI on Resource-Constrained UAVs}
+The literature broadly identifies three approaches for deploying AI on resource-constrained UAVs:
+
+\begin{itemize}
+  \item \textbf{Onboard inference} executes models entirely on a single UAV, avoiding network dependence but remaining tightly limited by SWaP constraints \cite{mcenroe2022survey}.
+  \item \textbf{Cloud or edge offloading} shifts computation to more capable infrastructure, reducing onboard burden at the cost of latency and connectivity dependence \cite{mao2017mec,baktayan2024slr}.
+  \item \textbf{Collaborative inference} distributes model execution across multiple aerial or edge nodes, better matching the collective nature of UAV swarms but introducing interdependence between model placement and communication cost \cite{qu2024elastic,hu2025splitreview,kang2017neurosurgeon,laskaridis2020spinn}.
+\end{itemize}
+
+Among these, collaborative inference is the most promising direction for swarm-scale edge intelligence, because it can exploit distributed resources without relying on external infrastructure. However, realizing its potential requires addressing the tight coupling between computational placement and communication overhead---a challenge that the remaining subsections examine in detail.
+
+\subsection*{3. Collaborative Inference and Model Partitioning}
+Collaborative inference has been studied through split learning, model partitioning, and distributed execution across heterogeneous edge nodes \cite{hu2025splitreview,duan2022combined,li2024fsl,matsubara2022split,lin2024dnnpartition,kang2017neurosurgeon,hu2019dads}. Prior work demonstrates that partitioning a deep neural network (DNN) can reduce per-node computational burden and make larger models feasible at the edge, but the resulting performance depends strongly on where partition boundaries are placed and how partitions are assigned to available nodes.
+
+A critical observation in this body of work is the latency--energy trade-off induced by partition granularity: finer partitioning can improve computational load balancing but simultaneously increases communication overhead due to more frequent intermediate tensor exchanges \cite{qu2024elastic,hu2025splitreview,kang2017neurosurgeon,laskaridis2020spinn}. However, existing approaches typically treat partition selection and communication scheduling as loosely coupled processes. Partition decisions are often made independently, and the induced tensor sizes are accounted for only \emph{after} partitioning rather than being embedded in the optimization objective. This sequential treatment prevents a unified characterization of how partition granularity affects end-to-end latency and energy efficiency, and motivates the joint formulation pursued in this thesis.
+
+\subsection*{4. Communication-Aware Scheduling over FANETs}
+In UAV swarms, collaborative inference operates over Flying Ad-Hoc Networks (FANETs), whose mobility, intermittent links, and bandwidth variability strongly affect end-to-end performance. Studies on FANET routing and topology management consistently show that delay, packet loss, and RF energy consumption are highly sensitive to topology change and link conditions \cite{rahmani2021fanet,lansky2023firefly,hosseinzadeh2024local,blanquer2024resilient,shao2022task}.
+
+For collaborative inference specifically, communication cost is not an exogenous parameter but a quantity \emph{induced} by partition decisions: each partition boundary that maps consecutive segments to different UAVs triggers an intermediate tensor transmission whose cost depends on tensor size, available bandwidth, and link quality. Despite this dependency, prior FANET-oriented studies address routing efficiency and energy-aware scheduling without explicitly connecting communication cost to upstream partitioning decisions. Conversely, collaborative inference studies that consider communication overhead typically assume stable links and fixed bandwidth, ignoring FANET-specific volatility. This disconnect leaves the computation--communication coupling insufficiently characterized within any single optimization framework.
+
+\subsection*{5. Online Adaptation and Resilience in UAV Swarms}
+A separate but related research direction concerns adaptation and resilience in dynamic UAV swarms. Recent work on self-healing swarms \cite{pan2025selfhealing}, reliability-constrained partitioning \cite{zhao2022reliable}, and resilient edge intelligence \cite{jamshidi2025resilient} highlights the need to maintain service continuity under mobility, link fluctuation, and node failure. Complementary studies show that latency, residual energy, and failure-rate dynamics can substantially reshape feasible operating points over time \cite{kabashkin2024resilience,wang2024ress,adoni2024intelligent,neely2010stochastic,bi2021lyapunov}.
+
+A key implication for collaborative inference is that any jointly optimal partitioning--assignment configuration is only valid for the system state under which it was computed. As topology, energy reserves, and link quality evolve, previously optimal decisions degrade. Yet much of the resilience literature treats control adaptation, communication management, and inference placement as loosely connected problems, without addressing how the coupled cost structure identified above should be re-optimized online.
+
+\subsection*{6. Comparative Summary of Related Work}
+
+Table~\ref{tab:lit_comparison} synthesizes the key characteristics of representative studies across the dimensions most relevant to this thesis. The comparison reveals that no existing work simultaneously addresses all four aspects: joint partitioning--assignment optimization, explicit communication-cost coupling, online adaptation, and UAV-swarm-specific evaluation.
+
+\begin{table}[H]
+\centering
+\caption{Comparative summary of representative related work across four dimensions relevant to this thesis.}
+\label{tab:lit_comparison}
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{} l c c c c @{}}
+\toprule
+\textbf{Study} & \makecell{\textbf{Joint}\\\textbf{Optimization}} & \makecell{\textbf{Comm.--Comp.}\\\textbf{Coupling}} & \makecell{\textbf{Online}\\\textbf{Adaptation}} & \makecell{\textbf{UAV /}\\\textbf{FANET}} \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Collaborative Inference \& Model Partitioning}} \\[2pt]
+Hu et al.~\cite{hu2025splitreview}           & --              & $\circ$  & --              & --              \\
+Qu et al.~\cite{qu2024elastic}               & $\circ$         & $\circ$  & --              & \checkmark      \\
+Duan et al.~\cite{duan2022combined}           & --              & --       & --              & --              \\
+Li et al.~\cite{li2024fsl}                   & --              & $\circ$  & --              & --              \\
+Wang et al.~\cite{wang2024jointuav}          & \checkmark      & --       & $\circ$         & \checkmark      \\
+Kang et al.~\cite{kang2017neurosurgeon}       & $\circ$         & $\circ$  & --              & --              \\
+Hu et al.~\cite{hu2019dads}                   & \checkmark      & $\circ$  & --              & --              \\
+Laskaridis et al.~\cite{laskaridis2020spinn}  & $\circ$         & $\circ$  & $\circ$         & --              \\
+Matsubara et al.~\cite{matsubara2022split}     & --              & $\circ$  & --              & --              \\
+Zeng et al.~\cite{zeng2020coedge}             & $\circ$         & $\circ$  & --              & --              \\
+Dai et al.~\cite{zhao2025joint}               & \checkmark      & $\circ$  & --              & --              \\
+Gao et al.~\cite{gao2025pmdp}                 & $\circ$         & $\circ$  & \checkmark$^{\dagger}$ & \checkmark \\
+% TODO: thay "CDPO (2024)" bằng "TácGiả et al." sau khi lấy tên tác giả từ bản full IEEE (doc 10756252)
+CDPO (2024)~\cite{cdpo2024}                   & \checkmark      & $\circ$  & --              & \checkmark      \\
+Dhuheir et al.~\cite{dhuheir2023llhr}         & --              & $\circ$  & --              & \checkmark      \\
+Zhao et al.~\cite{zhao2022reliable}           & $\circ$         & --       & --              & \checkmark      \\
+\addlinespace[4pt]
+\multicolumn{5}{@{}l}{\textit{FANET Communication}} \\[2pt]
+Lansky et al.~\cite{lansky2023firefly}        & --              & --       & --              & \checkmark      \\
+Hosseinzadeh et al.~\cite{hosseinzadeh2024local} & --          & --       & --              & \checkmark      \\
+Shao et al.~\cite{shao2022task}            & --              & \checkmark & --             & --              \\
+Li et al.~\cite{li2023device}                 & $\circ$         & \checkmark & --             & --              \\
+\addlinespace[4pt]
+\multicolumn{5}{@{}l}{\textit{Online Adaptation \& Resilience}} \\[2pt]
+Pan et al.~\cite{pan2025selfhealing}          & --              & --       & \checkmark      & \checkmark      \\
+Jamshidi et al.~\cite{jamshidi2025resilient}  & --              & --       & \checkmark      & --              \\
+Jamshidi et al.~\cite{jamshidi2025resilient}   & --              & --       & \checkmark      & --              \\
+Seid et al.~\cite{seid2021multiagent}        & $\circ$         & --       & \checkmark      & \checkmark      \\
+Bi et al.~\cite{bi2021lyapunov}               & --              & --       & \checkmark      & --              \\
+\midrule
+\textbf{This work}                             & \checkmark      & \checkmark & \checkmark    & \checkmark      \\
+\bottomrule
+\end{tabular}
+
+\vspace{4pt}
+\centering\footnotesize
+\checkmark\ = addressed;\quad $\circ$ = partially addressed;\quad -- = not addressed.\quad $^{\dagger}$~Online adaptation in prior work denotes per-task/per-slot re-decision for newly arriving tasks; no listed study re-derives partition boundaries for inferences already in flight (Gap~3).
+\end{table}
+
+\subsection*{7. Research Gap and Thesis Positioning}
+The literature provides strong individual foundations on AI deployment for UAVs, collaborative inference, FANET communication, and resilient swarm operation. However, these strands remain only partially integrated. The comparative analysis above reveals three specific gaps that this thesis addresses:
+
+\begin{itemize}
+  \item \textbf{Gap~1 (Coupling Formulation):} Existing collaborative inference studies do not embed partition-induced communication cost directly in the optimization objective. Partitioning and communication are optimized separately, preventing globally optimal solutions under resource constraints. The intractability of such joint formulations is confirmed by recent work proving the closely related collaborative partitioning--offloading problem NP-hard \cite{cdpo2024}, motivating the bounded-$K$ restriction adopted in this thesis.
+
+  \item \textbf{Gap~2 (FANET-Aware Modeling):} FANET research and collaborative inference research proceed largely in parallel. Communication models for aerial networks do not account for partition-induced traffic patterns, while inference partitioning studies assume stable link conditions.
+
+  \item \textbf{Gap~3 (Reactive Mid-Inference Re-derivation):} Reliability-aware collaborative inference to date falls into two classes. \emph{Proactive robustness} approaches select a robust partitioning--offloading configuration before execution begins---via reliability-constrained partitioning \cite{zhao2022reliable}, worst-case channel analysis using conditional value-at-risk \cite{cdpo2024}, or transmit-power control with sequential decomposition \cite{dhuheir2023llhr}. \emph{Per-task online adaptation} approaches re-decide partitioning for newly arriving tasks as system state evolves, most recently via predictive-MDP formulations in energy-harvesting aerial networks \cite{gao2025pmdp} and DRL-based collaborative offloading \cite{seid2021multiagent}. Neither class addresses a third, unresolved case: when a UAV fails \emph{while an inference is executing}, restoring service is not a pure reassignment problem. Feasible recovery generally requires re-deriving the partition boundary set itself; new boundaries induce different intermediate tensor sizes, and therefore different communication costs over the surviving FANET topology; and execution must resume from the last delivered intermediate activation rather than restart. Self-healing swarm controllers assume fixed task placement \cite{pan2025selfhealing}, while partitioning frameworks fix the boundary set at dispatch time \cite{hu2019dads,zhao2025joint,eshratifar2019jointdnn}. Because placement here is coupled to a \emph{mutable} partition choice, neither line of work applies directly. This coupling is the technical obstruction this thesis addresses; a recent systematic review independently confirms that joint management of computation and networking during offloading in UAV swarms remains open \cite{baktayan2024slr}.
+\end{itemize}
+
+These gaps are addressed respectively by the joint optimization formulation (RQ1, Gaps~1--2) and the online adaptive re-optimization strategy (RQ2, Gap~3) developed in this thesis.

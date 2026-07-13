@@ -1,0 +1,96 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{cite}
+\usepackage{fancyhdr}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{
+  positioning,
+  shapes.geometric,
+  arrows.meta,
+  arrows,
+  fit,
+  backgrounds,
+  calc,
+  decorations.pathmorphing,
+  decorations.markings,
+  shadows,
+  matrix,
+  shapes.misc,
+  external
+}
+\tikzexternalize[prefix=image/tikz-ext/]
+\usepackage{amsmath, amssymb}
+
+\setstretch{1.2}
+\emergencystretch=2em
+\hbadness=10000
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize Adaptive Joint Computation-Communication in UAV Swarms}
+\fancyhead[R]{\footnotesize Nguyen Minh Hieu}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14.5pt}
+
+\newcommand{\proposalSection}[2]{%
+  \clearpage
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}
+  \input{#2}
+}
+
+\begin{document}
+
+\hypersetup{pageanchor=false}
+\input{sections/frontmatter/titlepage}
+\hypersetup{pageanchor=true}
+
+\pagestyle{empty}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\tableofcontents
+% \clearpage
+\vfill
+\listoffigures
+\clearpage
+
+\pagestyle{fancy}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\proposalSection{Abstract}{sections/chapters/abstract}
+\proposalSection{Background and Motivation}{sections/chapters/background_motivation}
+\proposalSection{Literature Review}{sections/chapters/literature_review}
+\proposalSection{Research Objectives}{sections/chapters/research_objectives}
+\proposalSection{Research Methodology}{sections/chapters/research_methodology}
+\proposalSection{Expected Outcomes}{sections/chapters/expected_outcomes}
+\proposalSection{Research Plan and Timeline}{sections/chapters/research_plan_timeline}
+\proposalSection{References}{sections/backmatter/references}
+
+\clearpage
+\pagestyle{empty}
+\input{sections/backmatter/signature}
+
+\end{document}
