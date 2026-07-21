@@ -34,7 +34,7 @@
 \citation{hu2025splitreview,duan2022combined,li2024fsl,matsubara2022split,lin2024dnnpartition,kang2017neurosurgeon,hu2019dads}
 \citation{qu2024elastic,hu2025splitreview,kang2017neurosurgeon,laskaridis2020spinn}
 \@writefile{toc}{\contentsline {section}{Literature Review}{4}{section*.4}\protected@file@percent }
-\citation{rahmani2021fanet,lansky2023firefly,hosseinzadeh2024local,blanquer2024resilient,shao2022task}
+\citation{amponis2021fanet,lansky2023firefly,hosseinzadeh2024local,blanquer2024resilient,shao2022task}
 \citation{pan2025selfhealing}
 \citation{zhao2022reliable}
 \citation{jamshidi2025resilient}
@@ -51,6 +51,8 @@
 \citation{zeng2020coedge}
 \citation{zhao2025joint}
 \citation{gao2025pmdp}
+\citation{meng2026migration}
+\citation{kim2024drlrld}
 \citation{cdpo2024}
 \citation{dhuheir2023llhr}
 \citation{zhao2022reliable}
@@ -71,9 +73,88 @@
 \citation{dhuheir2023llhr}
 \citation{gao2025pmdp}
 \citation{seid2021multiagent}
+\citation{meng2026migration}
+\citation{kim2024drlrld}
 \citation{pan2025selfhealing}
 \citation{hu2019dads,zhao2025joint,eshratifar2019jointdnn}
 \citation{baktayan2024slr}
 \citation{qu2024elastic,mcenroe2022survey}
-\citation{hu2025splitreview,qu2024elastic,lansky2023firefly,hosseinzadeh2024local,rahmani2021fanet,kang2017neurosurgeon,matsubara2022split}
-\citation{pan2025selfhealing,jamshidi2025resilient,lansky2023firefly,hosseinzadeh2024local
+\citation{hu2025splitreview,qu2024elastic,lansky2023firefly,hosseinzadeh2024local,amponis2021fanet,kang2017neurosurgeon,matsubara2022split}
+\citation{pan2025selfhealing,jamshidi2025resilient,lansky2023firefly,hosseinzadeh2024local,neely2010stochastic,bi2021lyapunov}
+\@writefile{toc}{\contentsline {section}{Research Objectives}{10}{section*.6}\protected@file@percent }
+\citation{hu2025splitreview}
+\citation{lansky2023firefly,hosseinzadeh2024local}
+\citation{pan2025selfhealing,jamshidi2025resilient}
+\citation{qu2024elastic,blanquer2024resilient}
+\citation{dhuheir2023llhr,kang2017neurosurgeon}
+\citation{qu2024elastic,mcenroe2022survey}
+\citation{hu2025splitreview,blanquer2024resilient,duan2022combined,li2024fsl,jung2024edgeai,adoni2024intelligent,kabashkin2024resilience,clerigues2024mission,wang2024ress}
+\@writefile{toc}{\contentsline {section}{Research Methodology}{12}{section*.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Illustrative latency--energy trade-off under different partitioning regimes. Each point corresponds to a specific partitioning--assignment configuration; clusters represent computation-dominant, communication-dominant, and balanced regimes. The Pareto front shows the set of non-dominated solutions.\relax }}{12}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:pareto}{{2}{12}{Illustrative latency--energy trade-off under different partitioning regimes. Each point corresponds to a specific partitioning--assignment configuration; clusters represent computation-dominant, communication-dominant, and balanced regimes. The Pareto front shows the set of non-dominated solutions.\relax }{figure.caption.8}{}}
+\citation{kang2017neurosurgeon,matsubara2022split}
+\citation{qu2024elastic,dhuheir2023llhr}
+\citation{mcenroe2022survey,qu2024elastic}
+\citation{qu2024elastic,hu2025splitreview,duan2022combined,li2024fsl,kang2017neurosurgeon,hu2019dads,zhao2025joint}
+\citation{hu2025splitreview,mcenroe2022survey}
+\citation{lansky2023firefly,hosseinzadeh2024local,blanquer2024resilient,amponis2021fanet,clerigues2024mission}
+\@writefile{toc}{\contentsline {paragraph}{Computational Complexity.}{14}{paragraph*.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Collaborative edge inference with a simplified three-partition example under a bounded-$K$ model, illustrating how partition boundaries induce intermediate tensor transmissions between UAVs.\relax }}{14}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:architecture}{{3}{14}{Collaborative edge inference with a simplified three-partition example under a bounded-$K$ model, illustrating how partition boundaries induce intermediate tensor transmissions between UAVs.\relax }{figure.caption.10}{}}
+\citation{lansky2023firefly,hosseinzadeh2024local,qu2024elastic,wang2024ress,lucchesi2024dynamic,shao2020bottlenet,shao2022task,li2023device}
+\citation{pan2025selfhealing,jamshidi2025resilient,blanquer2024resilient,seid2021multiagent,gao2025pmdp}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Data flow and energy-aware communication protocol for CEI. The intermediate tensor ($T$) is compressed ($T_c$) before transmission to reduce bandwidth overhead and RF energy cost.\relax }}{15}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:workflow}{{4}{15}{Data flow and energy-aware communication protocol for CEI. The intermediate tensor ($T$) is compressed ($T_c$) before transmission to reduce bandwidth overhead and RF energy cost.\relax }{figure.caption.11}{}}
+\citation{qu2024elastic,mcenroe2022survey}
+\citation{pan2025selfhealing,jamshidi2025resilient}
+\citation{pan2025selfhealing,blanquer2024resilient,hosseinzadeh2024local}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Adaptive orchestration and fault tolerance by the intelligent control plane. When a UAV fails, the control plane reallocates missing partitions and reroutes tensors to maintain uninterrupted inference.\relax }}{16}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:fault_tolerance}{{5}{16}{Adaptive orchestration and fault tolerance by the intelligent control plane. When a UAV fails, the control plane reallocates missing partitions and reroutes tensors to maintain uninterrupted inference.\relax }{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {paragraph}{Risk Considerations.}{16}{paragraph*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Expected Outcomes}{18}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Research Plan and Timeline}{19}{section*.16}\protected@file@percent }
+\bibstyle{IEEEtran}
+\bibdata{sections/backmatter/references}
+\bibcite{matsubara2022split}{1}
+\bibcite{mao2017mec}{2}
+\bibcite{mcenroe2022survey}{3}
+\bibcite{baktayan2024slr}{4}
+\bibcite{jung2024edgeai}{5}
+\bibcite{qu2024elastic}{6}
+\bibcite{clerigues2024mission}{7}
+\bibcite{hu2025splitreview}{8}
+\bibcite{duan2022combined}{9}
+\bibcite{li2024fsl}{10}
+\bibcite{zhou2019edge}{11}
+\bibcite{deng2020edge}{12}
+\@writefile{toc}{\contentsline {section}{References}{21}{section*.17}\protected@file@percent }
+\bibcite{wang2024jointuav}{13}
+\bibcite{lansky2023firefly}{14}
+\bibcite{hosseinzadeh2024local}{15}
+\bibcite{pan2025selfhealing}{16}
+\bibcite{jamshidi2025resilient}{17}
+\bibcite{kang2017neurosurgeon}{18}
+\bibcite{laskaridis2020spinn}{19}
+\bibcite{lin2024dnnpartition}{20}
+\bibcite{hu2019dads}{21}
+\bibcite{amponis2021fanet}{22}
+\bibcite{blanquer2024resilient}{23}
+\bibcite{shao2022task}{24}
+\bibcite{zhao2022reliable}{25}
+\bibcite{kabashkin2024resilience}{26}
+\bibcite{wang2024ress}{27}
+\bibcite{adoni2024intelligent}{28}
+\bibcite{neely2010stochastic}{29}
+\bibcite{bi2021lyapunov}{30}
+\bibcite{zeng2020coedge}{31}
+\bibcite{zhao2025joint}{32}
+\bibcite{gao2025pmdp}{33}
+\bibcite{meng2026migration}{34}
+\bibcite{cdpo2024}{35}
+\bibcite{dhuheir2023llhr}{36}
+\bibcite{li2023device}{37}
+\bibcite{seid2021multiagent}{38}
+\bibcite{eshratifar2019jointdnn}{39}
+\bibcite{lucchesi2024dynamic}{40}
+\bibcite{shao2020bottlenet}{41}
+\gdef \@abspage@last{27}

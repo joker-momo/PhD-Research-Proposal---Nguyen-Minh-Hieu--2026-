@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.6.9)  13 JUL 2026 17:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.6.9)  18 JUL 2026 12:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -918,14 +918,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1]
 (./sections/chapters/abstract.tex
-
-LaTeX Warning: Citation `matsubara2022split' on page 1 undefined on input line 
-4.
-
-
-LaTeX Warning: Citation `mao2017mec' on page 1 undefined on input line 4.
-
-<image/graphical_abstract.png, id=80, 2762.32pt x 1541.76pt>
+<image/graphical_abstract.png, id=82, 2762.32pt x 1541.76pt>
 File: image/graphical_abstract.png Graphic file (type png)
 <use image/graphical_abstract.png>
 Package pdftex.def Info: image/graphical_abstract.png  used on input line 10.
@@ -933,326 +926,81 @@ Package pdftex.def Info: image/graphical_abstract.png  used on input line 10.
 ) [1
 
 
-] (./sections/chapters/background_motivation.tex
-
-LaTeX Warning: Citation `mcenroe2022survey' on page 2 undefined on input line 2
-.
-
-
-LaTeX Warning: Citation `baktayan2024slr' on page 2 undefined on input line 2.
-
-
-LaTeX Warning: Citation `jung2024edgeai' on page 2 undefined on input line 4.
-
-
-LaTeX Warning: Citation `qu2024elastic' on page 2 undefined on input line 4.
-
-
-LaTeX Warning: Citation `clerigues2024mission' on page 2 undefined on input lin
-e 4.
-
-
-LaTeX Warning: Citation `hu2025splitreview' on page 2 undefined on input line 6
-.
-
-
-LaTeX Warning: Citation `duan2022combined' on page 2 undefined on input line 6.
-
-
-
-LaTeX Warning: Citation `li2024fsl' on page 2 undefined on input line 6.
-
-
-LaTeX Warning: Citation `mcenroe2022survey' on page 2 undefined on input line 6
-.
-
-
-LaTeX Warning: Citation `zhou2019edge' on page 2 undefined on input line 6.
-
-
-LaTeX Warning: Citation `deng2020edge' on page 2 undefined on input line 6.
-
-
-LaTeX Warning: Citation `qu2024elastic' on page 2 undefined on input line 8.
-
-
-LaTeX Warning: Citation `wang2024jointuav' on page 2 undefined on input line 8.
-
-
-
-LaTeX Warning: Citation `baktayan2024slr' on page 2 undefined on input line 8.
-
-[2
-
 ]
+(./sections/chapters/background_motivation.tex [2
 
-LaTeX Warning: Citation `qu2024elastic' on page 3 undefined on input line 18.
+]) [3]
+(./sections/chapters/literature_review.tex [4
 
+] [5]
 
-LaTeX Warning: Citation `lansky2023firefly' on page 3 undefined on input line 1
-8.
-
-
-LaTeX Warning: Citation `hosseinzadeh2024local' on page 3 undefined on input li
-ne 18.
-
-
-LaTeX Warning: Citation `pan2025selfhealing' on page 3 undefined on input line 
-18.
-
-
-LaTeX Warning: Citation `jamshidi2025resilient' on page 3 undefined on input li
-ne 18.
-
-) [3] (./sections/chapters/literature_review.tex
-
-LaTeX Warning: Citation `mcenroe2022survey' on page 4 undefined on input line 4
-.
-
-
-LaTeX Warning: Citation `jung2024edgeai' on page 4 undefined on input line 4.
-
-
-LaTeX Warning: Citation `clerigues2024mission' on page 4 undefined on input lin
-e 4.
-
-
-LaTeX Warning: Citation `mcenroe2022survey' on page 4 undefined on input line 1
-0.
-
-
-LaTeX Warning: Citation `mao2017mec' on page 4 undefined on input line 11.
-
-
-LaTeX Warning: Citation `baktayan2024slr' on page 4 undefined on input line 11.
-
-
-
-LaTeX Warning: Citation `qu2024elastic' on page 4 undefined on input line 12.
-
-
-LaTeX Warning: Citation `hu2025splitreview' on page 4 undefined on input line 1
-2.
-
-
-LaTeX Warning: Citation `kang2017neurosurgeon' on page 4 undefined on input lin
-e 12.
-
-
-LaTeX Warning: Citation `laskaridis2020spinn' on page 4 undefined on input line
- 12.
-
-
-LaTeX Warning: Citation `hu2025splitreview' on page 4 undefined on input line 1
-8.
-
-
-LaTeX Warning: Citation `duan2022combined' on page 4 undefined on input line 18
-.
-
-
-LaTeX Warning: Citation `li2024fsl' on page 4 undefined on input line 18.
-
-
-LaTeX Warning: Citation `matsubara2022split' on page 4 undefined on input line 
-18.
-
-
-LaTeX Warning: Citation `lin2024dnnpartition' on page 4 undefined on input line
- 18.
-
-
-LaTeX Warning: Citation `kang2017neurosurgeon' on page 4 undefined on input lin
-e 18.
-
-
-LaTeX Warning: Citation `hu2019dads' on page 4 undefined on input line 18.
-
-
-LaTeX Warning: Citation `qu2024elastic' on page 4 undefined on input line 20.
-
-
-LaTeX Warning: Citation `hu2025splitreview' on page 4 undefined on input line 2
-0.
-
-
-LaTeX Warning: Citation `kang2017neurosurgeon' on page 4 undefined on input lin
-e 20.
-
-
-LaTeX Warning: Citation `laskaridis2020spinn' on page 4 undefined on input line
- 20.
-
-[4
-
-]
-
-LaTeX Warning: Citation `rahmani2021fanet' on page 5 undefined on input line 23
-.
-
-
-LaTeX Warning: Citation `lansky2023firefly' on page 5 undefined on input line 2
-3.
-
-
-LaTeX Warning: Citation `hosseinzadeh2024local' on page 5 undefined on input li
-ne 23.
-
-
-LaTeX Warning: Citation `blanquer2024resilient' on page 5 undefined on input li
-ne 23.
-
-
-LaTeX Warning: Citation `shao2022task' on page 5 undefined on input line 23.
-
-
-LaTeX Warning: Citation `pan2025selfhealing' on page 5 undefined on input line 
-28.
-
-
-LaTeX Warning: Citation `zhao2022reliable' on page 5 undefined on input line 28
-.
-
-
-LaTeX Warning: Citation `jamshidi2025resilient' on page 5 undefined on input li
-ne 28.
-
-
-LaTeX Warning: Citation `kabashkin2024resilience' on page 5 undefined on input 
-line 28.
-
-
-LaTeX Warning: Citation `wang2024ress' on page 5 undefined on input line 28.
-
-
-LaTeX Warning: Citation `adoni2024intelligent' on page 5 undefined on input lin
-e 28.
-
-
-LaTeX Warning: Citation `neely2010stochastic' on page 5 undefined on input line
- 28.
-
-
-LaTeX Warning: Citation `bi2021lyapunov' on page 5 undefined on input line 28.
-
-[5]
-
-LaTeX Warning: Citation `hu2025splitreview' on page 6 undefined on input line 4
-8.
-
-
-LaTeX Warning: Citation `qu2024elastic' on page 6 undefined on input line 49.
-
-
-LaTeX Warning: Citation `duan2022combined' on page 6 undefined on input line 50
-.
-
-
-LaTeX Warning: Citation `li2024fsl' on page 6 undefined on input line 51.
-
-
-LaTeX Warning: Citation `wang2024jointuav' on page 6 undefined on input line 52
-.
-
-
-LaTeX Warning: Citation `kang2017neurosurgeon' on page 6 undefined on input lin
-e 53.
-
-
-LaTeX Warning: Citation `hu2019dads' on page 6 undefined on input line 54.
-
-
-LaTeX Warning: Citation `laskaridis2020spinn' on page 6 undefined on input line
- 55.
-
-
-LaTeX Warning: Citation `matsubara2022split' on page 6 undefined on input line 
-56.
-
-
-LaTeX Warning: Citation `zeng2020coedge' on page 6 undefined on input line 57.
-
-
-LaTeX Warning: Citation `zhao2025joint' on page 6 undefined on input line 58.
-
-
-LaTeX Warning: Citation `gao2025pmdp' on page 6 undefined on input line 59.
-
-
-LaTeX Warning: Citation `cdpo2024' on page 6 undefined on input line 61.
-
-
-LaTeX Warning: Citation `dhuheir2023llhr' on page 6 undefined on input line 62.
-
-
-
-LaTeX Warning: Citation `zhao2022reliable' on page 6 undefined on input line 63
-.
-
-
-LaTeX Warning: Citation `lansky2023firefly' on page 6 undefined on input line 6
-6.
-
-
-LaTeX Warning: Citation `hosseinzadeh2024local' on page 6 undefined on input li
-ne 67.
-
-
-LaTeX Warning: Citation `shao2022task' on page 6 undefined on input line 68.
-
-
-LaTeX Warning: Citation `li2023device' on page 6 undefined on input line 69.
-
-
-LaTeX Warning: Citation `pan2025selfhealing' on page 6 undefined on input line 
-72.
-
-
-LaTeX Warning: Citation `jamshidi2025resilient' on page 6 undefined on input li
-ne 73.
-
-
-LaTeX Warning: Citation `jamshidi2025resilient' on page 6 undefined on input li
-ne 74.
-
-
-LaTeX Warning: Citation `seid2021multiagent' on page 6 undefined on input line 
-75.
-
-
-LaTeX Warning: Citation `bi2021lyapunov' on page 6 undefined on input line 76.
+LaTeX Warning: Citation `kim2024drlrld' on page 6 undefined on input line 61.
 
 [6] [7]
 
-LaTeX Warning: Citation `cdpo2024' on page 8 undefined on input line 91.
+LaTeX Warning: Citation `kim2024drlrld' on page 8 undefined on input line 96.
+
+[8]) [9] (./sections/chapters/research_objectives.tex [10
+
+]) [11]
+(./sections/chapters/research_methodology.tex
+<image/pareto_preliminary_clean.png, id=284, 578.16pt x 397.485pt>
+File: image/pareto_preliminary_clean.png Graphic file (type png)
+<use image/pareto_preliminary_clean.png>
+Package pdftex.def Info: image/pareto_preliminary_clean.png  used on input line
+ 10.
+(pdftex.def)             Requested size: 385.02547pt x 264.70024pt.
+ [12
+
+] [13] (./image/figure1.tex
+===== Image 'image/tikz-ext/main-figure0' is up-to-date. ======
 
 
-LaTeX Warning: Citation `zhao2022reliable' on page 8 undefined on input line 95
-.
+pdfTeX warning: pdflatex (file ./image/tikz-ext/main-figure0.pdf): PDF inclusio
+n: found PDF version <1.7>, but at most version <1.5> allowed
+) [14] (./image/figure2.tex
+===== Image 'image/tikz-ext/main-figure1' is up-to-date. ======
 
 
-LaTeX Warning: Citation `cdpo2024' on page 8 undefined on input line 95.
+pdfTeX warning: pdflatex (file ./image/tikz-ext/main-figure1.pdf): PDF inclusio
+n: found PDF version <1.7>, but at most version <1.5> allowed
+) [15] (./image/figure3.tex
+===== Image 'image/tikz-ext/main-figure2' is up-to-date. ======
 
 
-LaTeX Warning: Citation `dhuheir2023llhr' on page 8 undefined on input line 95.
+pdfTeX warning: pdflatex (file ./image/tikz-ext/main-figure2.pdf): PDF inclusio
+n: found PDF version <1.7>, but at most version <1.5> allowed
+) [16]) [17] (./sections/chapters/expected_outcomes.tex) [18
 
+]
+(./sections/chapters/research_plan_timeline.tex [19
 
+]) [20]
+(./sections/backmatter/references.tex (./main.bbl [21
 
-LaTeX Warning: Citation `gao2025pmdp' on page 8 undefined on input line 95.
+] [22] [23])) [24]
+(./sections/backmatter/signature.tex) [25
 
+] (./main.aux)
 
-LaTeX Warning: Citation `seid2021multiagent' on page 8 undefined on input line 
-95.
+LaTeX Warning: There were undefined references.
 
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 09C03B95C12CF79336867547F550DCD7;1092.
+ ) 
+Here is how much of TeX's memory you used:
+ 25882 strings out of 480247
+ 508812 string characters out of 5896152
+ 786383 words of memory out of 5000000
+ 43229 multiletter control sequences out of 15000+600000
+ 480323 words of font info for 70 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 84i,15n,89p,2392b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-LaTeX Warning: Citation `pan2025selfhealing' on page 8 undefined on input line 
-95.
+pdfTeX warning: \pdfdraftmode enabled, not changing output pdf
 
+PDF statistics:
+ 395 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-LaTeX Warning: Citation `hu2019dads' on page 8 undefined on input line 95.
-
-
-LaTeX Warning: Citation `zhao2025joint' on page 8 undefined on input line 95.
-
-
-LaTeX Warning: Citation `eshratifar2019join

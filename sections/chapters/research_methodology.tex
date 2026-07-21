@@ -17,7 +17,7 @@ Fig.~\ref{fig:pareto} shows the resulting operating points in latency--energy sp
 This trade-off structure cannot be resolved through independent optimization of computation or communication, confirming that a joint formulation is necessary. The simplified setting is intended solely to reveal this structural insight; more realistic conditions (heterogeneous UAVs, dynamic links) are addressed in the full formulation and evaluation.
 
 \subsection*{Problem Formulation}
-Collaborative inference is modeled as a sequential AI pipeline comprising ordered computational stages \cite{kang2017neurosurgeon,matsubara2022split}. The model is represented by a bounded-$K$ partition family, where $K$ denotes the number of partitions and is restricted to a small value to balance analytical tractability against communication overhead. Each partition is assigned to exactly one UAV through binary decision variables, subject to per-node computation and energy constraints and execution-order preservation.
+Collaborative inference is modeled as a sequential AI pipeline comprising ordered computational stages \cite{kang2017neurosurgeon,matsubara2022split}. The model is represented by a bounded-$K$ partition family, where $K$ denotes the number of partitions and is restricted to a small value to balance analytical tractability against communication overhead. As a provisional rule, $K \le \min(N, |\mathcal{P}|)$, where $N$ is the number of available UAVs and $\mathcal{P}$ is the set of valid cut points of the model; for the swarm sizes considered in prior UAV collaborative-inference studies \cite{qu2024elastic,dhuheir2023llhr}, we expect $K \le 8$ in practice. Refining this bound analytically---identifying where increasing $K$ stops paying for its added communication cost---is an explicit target of Objective~1. Each partition is assigned to exactly one UAV through binary decision variables, subject to per-node computation and energy constraints and execution-order preservation.
 
 When two consecutive partitions are mapped to different UAVs, an intermediate tensor is transmitted along the FANET path between the corresponding nodes. End-to-end latency is modeled as the sum of partition-level computation delays and inter-partition transmission delays; total energy combines onboard computation energy and RF transmission energy. Crucially, partition boundaries determine intermediate tensor sizes, creating a feedback loop between computation placement and communication cost.
 
@@ -33,7 +33,7 @@ where
     \item $\lambda \geq 0$ is a trade-off parameter balancing latency and energy.
 \end{itemize}
 
-The decision variable $x$ comprises model partitioning decisions and UAV assignment decisions. The feasible set $\mathcal{X}$ is defined by SWaP constraints (compute, memory, energy), communication constraints over the FANET, and sequential execution constraints induced by model partitioning.
+The decision variable $x$ comprises model partitioning decisions and UAV assignment decisions. The feasible set $\mathcal{X}$ is defined by SWaP constraints (compute, memory, energy), communication constraints over the FANET, and sequential execution constraints induced by model partitioning. To keep these constraints physically grounded, SWaP parameters are instantiated from a concrete reference class: Jetson-class companion computers (7--15\,W compute budget) carried by small multirotor platforms, the configuration most commonly assumed in the UAV edge-inference literature \cite{mcenroe2022survey,qu2024elastic}.
 
 \paragraph{Computational Complexity.}
 The joint problem is combinatorial, with complexity growing exponentially in the number of candidate partition points and UAV nodes. Exact solutions are therefore intractable for real-time deployment in dynamic environments, motivating the bounded-$K$ restriction and the investigation of tractable approximation strategies.
@@ -51,7 +51,7 @@ The key challenge is that partitioning and assignment are inseparable: partition
 \end{figure}
 
 \subsection*{2. Communication-Cost Modeling under Coupled Optimization}
-Building on the joint model, the second phase completes RQ1 by formalizing communication cost over volatile FANETs \cite{lansky2023firefly,hosseinzadeh2024local,blanquer2024resilient,rahmani2021fanet,clerigues2024mission}. The goal is to characterize communication delay and RF energy as functions of tensor size, available bandwidth, and link variation, then embed these terms in the global objective.
+Building on the joint model, the second phase completes RQ1 by formalizing communication cost over volatile FANETs \cite{lansky2023firefly,hosseinzadeh2024local,blanquer2024resilient,amponis2021fanet,clerigues2024mission}. The goal is to characterize communication delay and RF energy as functions of tensor size, available bandwidth, and link variation, then embed these terms in the global objective.
 
 The key challenge is that communication cost is not an external parameter but a quantity induced by partition decisions---it changes whenever the optimization variables change. The scientific contribution is a communication-aware cost model that preserves this dependency and supports latency--energy trade-off analysis across different mobility regimes \cite{lansky2023firefly,hosseinzadeh2024local,qu2024elastic,wang2024ress,lucchesi2024dynamic,shao2020bottlenet,shao2022task,li2023device}.
 
@@ -84,4 +84,22 @@ This phase is organized into three steps:
 Overall, this phase emphasizes decision quality over time rather than static deployment quality.
 
 \paragraph{Risk Considerations.}
-Several potential risks are acknowledged. First, scalability challenges may arise as the number of partitions increases; this is mitigated through bounded-$K$ design and investigation of tractable approximations. Second, discrepancies between simulation and real-world deployment may limit direct applicability; this is addressed by focusing on structural insights rather than system-specific tuning. Third, ethical considerations related to UAV applications are recognized, and the proposed framework is intended for civilian and research-oriented use cases.
+Rather than listing risks generically, each objective carries an explicit trigger condition and a pre-committed fallback:
+
+\begin{table}[H]
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{} l X X @{}}
+\toprule
+\textbf{Objective} & \textbf{Trigger condition} & \textbf{Fallback plan} \\
+\midrule
+O1 (Joint model) & No useful analytical structure or approximation for the joint problem emerges by Month~10 & Exact solving restricted to small $K$ plus systematic empirical characterization of the trade-off surface; Paper~1 scope adjusts accordingly \\
+O2 (Comm.\ cost) & FANET volatility defeats closed-form delay/energy terms & Trace-driven cost models measured from NS-3 embedded in the optimization loop instead of analytical link models \\
+O3 (Online adapt.) & Re-optimization latency exceeds the real-time budget on representative hardware profiles & Precompute contingency configurations offline (standby boundary sets per failure scenario) and reduce the online step to plan switching \\
+O4 (Evaluation) & NS-3/ROS/Gazebo integration slips beyond Month~8 & Start evaluation network-only (NS-3 with trace-driven compute delays) so Phase~2 validation is not blocked by the robotics stack \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Beyond these, discrepancies between simulation and real-world deployment may limit direct applicability; this is addressed by focusing on structural insights rather than system-specific tuning. Third, autonomous UAV-swarm coordination is a dual-use technology area and deserves an explicit scope statement. This research is confined to civilian, research-oriented applications---disaster response, search-and-rescue, infrastructure inspection, and environmental monitoring---and all evaluation scenarios are defined accordingly. The technical contributions target resource efficiency and service continuity of onboard perception; they do not involve targeting, tracking of individuals, or any weapon-related capability, and no component developed in this thesis is specific to hostile use. The work will be conducted under the university's research-ethics guidance, and resulting publications will state this scope explicitly.

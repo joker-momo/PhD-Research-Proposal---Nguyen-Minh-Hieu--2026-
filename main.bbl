@@ -1,0 +1,275 @@
+\begin{thebibliography}{10}
+
+\bibitem{matsubara2022split}
+Yoshitomo Matsubara, Marco Levorato, and Francesco Restuccia.
+\newblock Split computing and early exiting for deep learning applications:
+  Survey and research challenges.
+\newblock {\em ACM Computing Surveys}, 55(5):1--30, 2022.
+
+\bibitem{mao2017mec}
+Yuyi Mao, Changsheng You, Jun Zhang, Kaibin Huang, and Khaled~B. Letaief.
+\newblock A survey on mobile edge computing: The communication perspective.
+\newblock {\em IEEE Communications Surveys \& Tutorials}, 19(4):2322--2358,
+  2017.
+
+\bibitem{mcenroe2022survey}
+Patrick McEnroe, Shen Wang, and Madhusanka Liyanage.
+\newblock A survey on the convergence of edge computing and ai for uavs:
+  Opportunities and challenges.
+\newblock {\em IEEE Internet of Things Journal}, 9(17):15435--15459, 2022.
+
+\bibitem{baktayan2024slr}
+Asrar Baktayan, Ammar~Thabit Zahary, Axel Sikora, and Dominik Welte.
+\newblock Computational offloading into {UAV} swarm networks: A systematic
+  literature review.
+\newblock {\em EURASIP Journal on Wireless Communications and Networking},
+  2024:69, 2024.
+
+\bibitem{jung2024edgeai}
+Wooyong Jung, Changmin Park, Seunghyeon Lee, and Hwangnam Kim.
+\newblock Enhancing uav swarm tactics with edge ai: Adaptive decision making in
+  changing environments.
+\newblock {\em Drones}, 8(10):582, 2024.
+
+\bibitem{qu2024elastic}
+Yuben Qu, Hao Sun, Chao Dong, Jiawen Kang, Haipeng Dai, Qihui Wu, and Song Guo.
+\newblock Elastic collaborative edge intelligence for uav swarm: Architecture,
+  challenges, and opportunities.
+\newblock {\em IEEE Communications Magazine}, 62(1):62--68, 2024.
+
+\bibitem{clerigues2024mission}
+David Clerigues, Jamie Wubben, Carlos~T. Calafate, Juan-Carlos Cano, and Pietro
+  Manzoni.
+\newblock Mission-critical uav swarm coordination and cooperative positioning
+  using an integrated ros-lora-based communications architecture.
+\newblock {\em Computer Communications}, 225:205--216, 2024.
+
+\bibitem{hu2025splitreview}
+Zhanyi Hu, Tianchen Zhou, Bingzhe Wu, Cen Chen, and Yanhao Wang.
+\newblock A review and experimental evaluation on split learning.
+\newblock {\em Future Internet}, 17(2):87, 2025.
+
+\bibitem{duan2022combined}
+Qiang Duan, Shijing Hu, Ruijun Deng, and Zhihui Lu.
+\newblock Combined federated and split learning in edge computing for
+  ubiquitous intelligence in internet of things: State-of-the-art and future
+  directions.
+\newblock {\em Sensors}, 22(16):5983, 2022.
+
+\bibitem{li2024fsl}
+Yehui Li, Dalin Qin, H.~Vincent Poor, and Yi~Wang.
+\newblock Introducing edge intelligence to smart meters via federated split
+  learning.
+\newblock {\em Nature Communications}, 15:9044, 2024.
+
+\bibitem{zhou2019edge}
+Zhi Zhou, Xu~Chen, En~Li, Liekang Zeng, Ke~Luo, and Junshan Zhang.
+\newblock Edge intelligence: Paving the last mile of artificial intelligence
+  with edge computing.
+\newblock {\em Proceedings of the IEEE}, 107(8):1738--1762, 2019.
+
+\bibitem{deng2020edge}
+Shuiguang Deng, Hailiang Zhao, Weijia Fang, Jianwei Yin, Schahram Dustdar, and
+  Albert~Y. Zomaya.
+\newblock Edge intelligence: The confluence of edge computing and artificial
+  intelligence.
+\newblock {\em IEEE Internet of Things Journal}, 7(8):7457--7469, 2020.
+
+\bibitem{wang2024jointuav}
+Liang Wang, Kezhi Wang, Cunhua Pan, Wei Xu, Nauman Aslam, and Arumugam
+  Nallanathan.
+\newblock Joint task offloading, resource allocation, and trajectory design for
+  multi-{UAV} cooperative edge computing with task priority.
+\newblock {\em IEEE Transactions on Mobile Computing}, 23(4):3056--3073, 2024.
+
+\bibitem{lansky2023firefly}
+Jan Lansky, Amir~Masoud Rahmani, Mazhar~Hussain Malik, Efat Yousefpoor,
+  Mohammad~Sadegh Yousefpoor, Muhammad~Umair Khan, and Mehdi Hosseinzadeh.
+\newblock An energy-aware routing method using firefly algorithm for flying ad
+  hoc networks.
+\newblock {\em Scientific Reports}, 13:1323, 2023.
+
+\bibitem{hosseinzadeh2024local}
+Mehdi Hosseinzadeh, Fatimatelbatoul~Mahmoud Husari, Mohammad~Sadegh Yousefpoor,
+  Jan Lansky, and Hong Min.
+\newblock A local filtering-based energy-aware routing scheme in flying ad hoc
+  networks.
+\newblock {\em Scientific Reports}, 14:17733, 2024.
+
+\bibitem{pan2025selfhealing}
+Zhenhua Pan, Jinchen Feng, Tingting Yu, Bing Cui, and Yuanqing Xia.
+\newblock Distributed recursive grouping based fault self-healing of uav swarm
+  with individuals failure.
+\newblock {\em IEEE Transactions on Aerospace and Electronic Systems},
+  61(2):2996--3008, 2025.
+
+\bibitem{jamshidi2025resilient}
+Omid Jamshidi, Mahdi Abbasi, Abbas Ramazani, Atefeh Salimi~Shahraki, and Amir
+  Taherkordi.
+\newblock Modifier guided resilient cnn inference enables fault-tolerant edge
+  collaboration for iot.
+\newblock {\em Scientific Reports}, 15:45458, 2025.
+
+\bibitem{kang2017neurosurgeon}
+Yiping Kang, Johann Hauswald, Cao Gao, Austin Rovinski, Trevor Mudge, Jason
+  Mars, and Lingjia Tang.
+\newblock Neurosurgeon: Collaborative intelligence between the cloud and mobile
+  edge.
+\newblock In {\em Proceedings of the 22nd International Conference on
+  Architectural Support for Programming Languages and Operating Systems
+  (ASPLOS)}, pages 615--629, 2017.
+
+\bibitem{laskaridis2020spinn}
+Stefanos Laskaridis, Stylianos~I. Venieris, Mario Mobilon, and Nicholas~D.
+  Lane.
+\newblock {SPINN}: Synergistic progressive inference of neural networks over
+  device and cloud.
+\newblock In {\em Proceedings of the 26th Annual International Conference on
+  Mobile Computing and Networking (MobiCom)}, pages 1--15, 2020.
+
+\bibitem{lin2024dnnpartition}
+Hai Lin, Sheng Zhou, and Zhisheng Niu.
+\newblock A survey on deep neural network partition over cloud, edge and end
+  devices.
+\newblock {\em arXiv preprint arXiv:2304.10020}, 2024.
+
+\bibitem{hu2019dads}
+Chuang Hu, Wei Bao, Dan Wang, and Fengming Liu.
+\newblock Dynamic adaptive {DNN} surgery for inference acceleration on the
+  edge.
+\newblock In {\em IEEE INFOCOM 2019 -- IEEE Conference on Computer
+  Communications}, pages 1423--1431, 2019.
+
+\bibitem{amponis2021fanet}
+Georgios Amponis, Thomas Lagkas, Panagiotis Sarigiannidis, Vasileios Vitsas,
+  Panagiotis Fouliras, and Shaohua Wan.
+\newblock A survey on fanet routing from a cross-layer design perspective.
+\newblock {\em Journal of Systems Architecture}, 120:102281, 2021.
+
+\bibitem{blanquer2024resilient}
+Joaqu{\'i}n Blanquer, Carles Garrigues, Jos{\'e}~L. Hern{\'a}ndez-Ramos, Ilia
+  Baldin, and Jos{\'e}~M. de~Fuentes.
+\newblock Enabling resilient uav swarms through multi-hop wireless
+  communications.
+\newblock {\em EURASIP Journal on Wireless Communications and Networking},
+  2024:39, 2024.
+
+\bibitem{shao2022task}
+Jiawei Shao, Yuyi Mao, and Jun Zhang.
+\newblock Learning task-oriented communication for edge inference: An
+  information bottleneck approach.
+\newblock {\em IEEE Journal on Selected Areas in Communications},
+  40(1):197--211, 2022.
+
+\bibitem{zhao2022reliable}
+Mingyue Zhao, Xing Zhang, Zezhao Meng, and Xiangwang Hou.
+\newblock Reliable {DNN} partitioning for {UAV} swarm.
+\newblock In {\em 2022 International Wireless Communications and Mobile
+  Computing (IWCMC)}, 2022.
+
+\bibitem{kabashkin2024resilience}
+Igor Kabashkin.
+\newblock The resilience of electrical support in uav swarms in special
+  missions.
+\newblock {\em Energies}, 17(10):2422, 2024.
+
+\bibitem{wang2024ress}
+Linghao Kong, Lizhi Wang, Zhongzheng Cao, and Xiaohong Wang.
+\newblock Resilience evaluation of uav swarm considering resource
+  supplementation.
+\newblock {\em Reliability Engineering \& System Safety}, 241:109673, 2024.
+
+\bibitem{adoni2024intelligent}
+Wilfried Yves~Hamilton Adoni, Junaidh~Shaik Fareedh, Sandra Lorenz, Richard
+  Gloaguen, Yuleika Madriz, Aastha Singh, and Thomas~D. K{\"u}hne.
+\newblock Intelligent swarm: Concept, design and validation of self-organized
+  uavs based on leader-followers paradigm for autonomous mission planning.
+\newblock {\em Drones}, 8(10):575, 2024.
+
+\bibitem{neely2010stochastic}
+Michael~J. Neely.
+\newblock {\em Stochastic Network Optimization with Application to
+  Communication and Queueing Systems}.
+\newblock Synthesis Lectures on Communication Networks. Morgan \& Claypool
+  Publishers, 2010.
+
+\bibitem{bi2021lyapunov}
+Suzhi Bi, Liang Huang, Hui Wang, and Ying-Jun~Angela Zhang.
+\newblock Lyapunov-guided deep reinforcement learning for stable online
+  computation offloading in mobile-edge computing networks.
+\newblock {\em IEEE Transactions on Wireless Communications},
+  20(11):7519--7537, 2021.
+
+\bibitem{zeng2020coedge}
+Liekang Zeng, Xu~Chen, Zhi Zhou, Lei Yang, and Jun Zhang.
+\newblock {CoEdge}: Cooperative {DNN} inference with adaptive workload
+  partitioning over heterogeneous edge devices.
+\newblock {\em IEEE/ACM Transactions on Networking}, 29(2):595--608, 2021.
+
+\bibitem{zhao2025joint}
+Penglin Dai, Biao Han, Ke~Li, Xincao Xu, Huanlai Xing, and Kai Liu.
+\newblock Joint optimization of device placement and model partitioning for
+  cooperative {DNN} inference in heterogeneous edge computing.
+\newblock {\em IEEE Transactions on Mobile Computing}, 24(1):210--226, 2025.
+
+\bibitem{gao2025pmdp}
+Ke~Gao, Jun Du, Chunxiao Jiang, Debashisha Mishra, Chao Zhang, and M{\'e}rouane
+  Debbah.
+\newblock Cooperative {DNN} partitioning in energy-harvesting and {MEC}-enabled
+  {AAV} networks.
+\newblock {\em IEEE Internet of Things Journal}, 2025.
+
+\bibitem{meng2026migration}
+Shuman Meng, Bin Li, Zhao Yi, Lei Liu, and Zesong Fei.
+\newblock {DNN} task partitioning and migration strategies in
+  multi-{UAV}-assisted mobile edge computing.
+\newblock {\em IEEE Internet of Things Journal}, 13(13):28758--28769, 2026.
+
+\bibitem{cdpo2024}
+Ling Wang, Junhua Wang, and Chen Dai.
+\newblock {DNN}-based task partitioning and offloading with reliability
+  guarantees in multi-{UAV}-assisted {MEC} system.
+\newblock In {\em 2024 IEEE International Symposium on Product Compliance
+  Engineering - Asia (ISPCE-ASIA)}, 2024.
+
+\bibitem{dhuheir2023llhr}
+Marwan Dhuheir, Aiman Erbad, and Sinan Sabeeh.
+\newblock {LLHR}: Low latency and high reliability {CNN} distributed inference
+  for resource-constrained {UAV} swarms.
+\newblock In {\em 2023 IEEE Wireless Communications and Networking Conference
+  (WCNC)}, pages 1--6, 2023.
+
+\bibitem{li2023device}
+Rongkun Li, Jiawei Shao, Yuyi Mao, and Jun Zhang.
+\newblock Optimal {AI} model splitting and resource allocation for device-edge
+  co-inference in multi-user wireless sensing systems.
+\newblock {\em IEEE Transactions on Wireless Communications},
+  23(10):13272--13287, 2024.
+
+\bibitem{seid2021multiagent}
+Abegaz~Mohammed Seid, Gordon~Owusu Boateng, Stephen Anokye, Thomas Kwantwi,
+  Guolin Sun, and Guisong Liu.
+\newblock Collaborative computation offloading and resource allocation in
+  multi-{UAV}-assisted {IoT} networks: A deep reinforcement learning approach.
+\newblock {\em IEEE Internet of Things Journal}, 8(15):12203--12218, 2021.
+
+\bibitem{eshratifar2019jointdnn}
+Amir~Erfan Eshratifar, Mohammad~Saeed Abrishami, and Massoud Pedram.
+\newblock {JointDNN}: An efficient training and inference engine for
+  intelligent mobile cloud computing services.
+\newblock {\em IEEE Transactions on Mobile Computing}, 20(2):565--576, 2021.
+
+\bibitem{lucchesi2024dynamic}
+Laercio Lucchesi, Markus Endler, and Bruno Olivieri.
+\newblock Dynamic effects of communication delay, failure rates, and speed on
+  uav swarm formation.
+\newblock {\em Brazilian Symposium on Computer Networks and Distributed
+  Systems}, pages 1--14, 2024.
+
+\bibitem{shao2020bottlenet}
+Jiawei Shao and Jun Zhang.
+\newblock {BottleNet++}: An end-to-end approach for feature compression in
+  device-edge co-inference systems.
+\newblock {\em arXiv preprint arXiv:1910.14315}, 2020.
+
+\end{thebibliography}

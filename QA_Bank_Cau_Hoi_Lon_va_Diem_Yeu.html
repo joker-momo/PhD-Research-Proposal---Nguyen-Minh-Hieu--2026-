@@ -1,0 +1,167 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+body{font-family:-apple-system,'Segoe UI',Arial,sans-serif;max-width:860px;margin:24px auto;padding:0 20px;line-height:1.55;color:#1a2340}
+h1{color:#1E2761;border-bottom:3px solid #1E2761;padding-bottom:6px;font-size:26px}
+h2{color:#1E2761;margin-top:28px;font-size:20px;border-bottom:1px solid #cdd6f0;padding-bottom:4px}
+h3{color:#B85042;font-size:16px;margin-top:20px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;margin:10px 0}
+th,td{border:1px solid #b9c4e4;padding:6px 9px;text-align:left;vertical-align:top}
+th{background:#e8edfb}
+code{background:#eef1fa;padding:1px 5px;border-radius:4px;font-size:.9em}
+blockquote{border-left:4px solid #ffd166;background:#fffbef;margin:10px 0;padding:8px 14px}
+strong{color:#101733}
+@media print{body{max-width:100%;font-size:11.5px}h1{font-size:20px}h2{font-size:15px}}
+</style><title>QA_Bank_Cau_Hoi_Lon_va_Diem_Yeu</title></head><body><h1>Q&amp;A Bank — Câu hỏi lớn &amp; Điểm yếu của Proposal</h1>
+<p><em>Cập nhật: 2026-07-13 · Nguồn: báo cáo 5-reviewer (7/7, 72.1/100 Minor Revision) + deep-read P-MDP/CDPO + đánh giá bổ sung. Lấy ra dùng khi luyện Q&amp;A hoặc sửa proposal.</em></p>
+<hr />
+<h2>A. ĐIỂM YẾU — trạng thái hiện tại</h2>
+<h3>Đã vá (13/7) ✅</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Điểm yếu</th>
+<th>Đã xử lý bằng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Novelty lập luận kiểu "conjunction" (chưa ai làm đủ 4 tiêu chí) — đòn nặng nhất của Devil's Advocate</td>
+<td>Gap 3 viết lại: taxonomy proactive / per-task online / <strong>reactive mid-inference</strong> + obstruction có tên (re-derive boundary → tensor size mới → comm cost nội sinh + resume from activation)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Khẳng định NP-hard không có citation</td>
+<td>Câu anchor CDPO (NP-hard) vào Gap 1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>K không được chặn</td>
+<td>Quy tắc tạm K ≤ min(N, |P|), kỳ vọng K ≤ 8, tinh chỉnh = mục tiêu Objective 1 (Methodology)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Không có baseline cho claim "joint &gt; sequential"</td>
+<td>3 baseline có tên trong Objective 4: (i) sequential partition-then-assign; (ii) static joint không re-derivation; (iii) full-restart</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Ethics/dual-use chỉ 1 mệnh đề</td>
+<td>Đoạn đầy đủ trong Risk Considerations (dân sự, không targeting/vũ khí hóa, theo hướng dẫn đạo đức của trường)</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>6 reference ảo</strong> (khan2022uavedge, chen2023edgeuav, zhou2023task, yang2024federateduav, kim2025faultaware, park2025marl) + sai tác giả wang2024ress</td>
+<td>Gỡ sạch, thay bằng ref thật đã xác minh. <strong>TUYỆT ĐỐI không thêm lại 6 key này</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Đã vá thêm (15/7) ✅</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Điểm yếu</th>
+<th>Đã xử lý bằng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>Lịch nộp 3 bài không chừa chu kỳ review IEEE (EIC-W2)</td>
+<td>Câu làm rõ trong Timeline: milestone = ngày NỘP; bài 1–2 nhắm venue turnaround nhanh, bài 3 journal; phase sau chạy song song với review cycle của bài trước</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Risk Considerations chung chung (EIC-W3)</td>
+<td>Bảng trigger → fallback 4 hàng theo từng Objective (O1: hết đường giải tích ở M10 → exact small-K + empirical; O4: co-sim trượt M8 → network-only trước)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>SWaP chưa lượng hóa (R1-W3)</td>
+<td>Nêu reference class trong Methodology: Jetson-class companion computer 7–15W trên multirotor nhỏ</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Transferability (R3-W2)</td>
+<td>Đoạn cuối Expected Outcomes: 3-layer formulation áp dụng được cho ground robot fleet / maritime; UAV là instantiation khắc nghiệt nhất</td>
+</tr>
+</tbody>
+</table>
+<h3>Còn mở ⚠️</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Điểm yếu</th>
+<th>Mức độ</th>
+<th>Hướng xử lý</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>Hàm mục tiêu chỉ latency + energy, <strong>vắng accuracy</strong> — trong khi Fig 2 vẽ nén tensor (nén = mất chính xác)</td>
+<td>Chưa reviewer nào nêu — tự phát hiện</td>
+<td>Trả lời miệng (B7) — chủ đích để dạng ràng buộc cứng, không sửa văn bản trước 22/7</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>Control plane chạy ở đâu?</strong> Bộ tối ưu tập trung trên 1 drone = single point of failure</td>
+<td>Tự phát hiện</td>
+<td>Trả lời miệng (B8) — leader election là extension của Phase 3, không sửa văn bản trước 22/7</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Kết luận "P-MDP/CDPO không làm X" mới ở mức abstract-level</td>
+<td>Rủi ro thấp (đã giảm thêm 15/7: CDPO xác nhận dùng "backup reprocessing tại BS" = proactive redundancy; user không có tài khoản thư viện → full text lấy qua ResearchGate request / email tác giả / nhờ thầy)</td>
+<td>Không chặn defense</td>
+</tr>
+<tr>
+<td>~~14~~</td>
+<td>~~TODO citation~~ — <strong>XONG 15/7 qua Crossref/Google</strong>: CDPO = Wang, Ling; Wang, Junhua; Dai, Chen — ISPCE-ASIA 2024, DOI 10.1109/ISPCE-ASIA64773.2024.10756252 (lưu ý: venue tier khiêm tốn — nếu hội đồng soi thì đáp: "kết quả NP-hardness là chứng minh hình thức đã bình duyệt; độ khó của bài toán không phụ thuộc uy tín venue"). zhao2022reliable = Mingyue Zhao, Xing Zhang, Zezhao Meng, Xiangwang Hou (DOI 10.1109/IWCMC55113.2022.9824945). FANET survey: tác giả thật là <strong>Amponis, Lagkas, Sarigiannidis, Vitsas, Fouliras, Wan</strong> (bib cũ gán nhầm Rahmani!) — key đã đổi thành amponis2021fanet</td>
+<td>Xong</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>⚠️ HÀNG XÓM SÁT NHẤT — phát hiện 16/7, ĐÃ cite vào Gap 3 + bảng + slide 16</h3>
+<p><strong>Kim et al. 2024 (DRL-RLD)</strong> — "End-to-End Latency Optimization for Resilient Distributed CNN Inference in Resource-Constrained UAV Swarms", <em>Applied Sciences</em> 14(23):10832, DOI 10.3390/app142310832. Swarm ad-hoc (U2U+U2G), DRL phân bổ layer, <strong>tái phân bổ khi UAV chết</strong> — sát Gap 3 hơn mọi bài trước. Đã đọc TOÀN VĂN (không chỉ abstract): (1) không có khái niệm resume/restart trong cả bài — request đang chạy dở ngầm định chạy lại; (2) reallocation = phương án mới cho request KẾ TIẾP theo time step; (3) DRL black-box, không phân tích cấu trúc/bounded-K/complexity; (4) mô phỏng 15 UAV, AlexNet/YOLO/VGG16. → Trả lời chuẩn: <em>"Kim et al. giữ cho MẠNG tiếp tục phục vụ; em cứu LƯỢT INFERENCE đang chạy — preserve activation, re-derive boundary, resume. Và em làm bằng công cụ giải tích thay vì black-box DRL."</em> Đây giờ là bài PHẢI thuộc trước khi vào phòng.</p>
+<h3>Hàng xóm khác phát hiện 15/7 — biết để phòng khi hội đồng hỏi "đã đọc bài X chưa?"</h3>
+<ol>
+<li><strong>Meng et al. 2026</strong> "DNN Task Partitioning and Migration Strategies in Multi-UAV-Assisted MEC" (IEEE IoT-J 13(13), 7/2026, DOI 10.1109/JIOT.2026.3685675) — chữ "migration" nghe sát Gap 3 nhưng đọc kỹ abstract: migration = CÂN BẰNG TẢI giữa UAV-server (device↔server, SAC-PER DRL, mục tiêu energy) — vẫn per-task/per-epoch, không failure-reactive, không resume mid-inference. ĐÃ đưa vào bảng so sánh với dấu †.</li>
+<li><strong>Ren et al.</strong> "Efficient Pipeline Collaborative DNN Inference in Resource-Constrained UAV Swarm" (WCNC 2024, DOI 10.1109/WCNC57260.2024.10570535) + bản BigCom 2023 — nhóm của Qu (đã cite qu2024elastic). Kiến trúc pipeline NỘI BỘ swarm — gần proposal nhất về kiến trúc; tập trung throughput/efficiency, chưa thấy failure recovery. Nếu bị hỏi: "họ tối ưu pipeline tĩnh cho throughput; tôi giải bài re-derive khi pipeline đứt giữa chừng — bổ sung chứ không trùng." Cân nhắc đọc kỹ + cite trong bản final thesis (không bắt buộc trước 22/7).</li>
+</ol>
+<hr />
+<h2>B. CÂU HỎI DỰ KIẾN TỪ HỘI ĐỒNG — kèm gợi ý trả lời</h2>
+<p><strong>B1. "Chia nhỏ model AI có khả thi không? Ai làm được chưa?"</strong>
+→ <em>"Đã được kiểm chứng từ datacenter đến Raspberry Pi — Neurosurgeon chứng minh tồn tại điểm cắt tối ưu từ 2017, DeepThings chạy YOLOv2 trên cụm Pi thật. Đóng góp của tôi không phải chứng minh chia được, mà là chọn cách chia tối ưu và giữ dây chuyền sống sót trên mạng bay bất ổn."</em></p>
+<p><strong>B2. "K bằng bao nhiêu? Chọn thế nào?"</strong>
+→ <em>"K bị chặn bởi số UAV khả dụng và số điểm cắt hợp lệ của model — quy tắc tạm K ≤ min(N,|P|), thực tế kỳ vọng K ≤ 8. Quan trọng hơn con số là phân tích regime: vùng nào tăng K còn lời, vùng nào chi phí truyền nuốt hết lợi ích — đó chính là Contribution 2."</em> (Đã có trong Methodology.)</p>
+<p><strong>B3. "Sao không bolt DADS (cắt model) lên Pan et al. (self-healing) là xong?"</strong> — đòn của Devil's Advocate
+→ <em>"Vì self-healing hiện có giả định task placement CỐ ĐỊNH. Khi placement bị ràng buộc bởi lựa chọn partition, node chết giữa pipeline buộc phải suy diễn lại ranh giới cắt — ranh giới mới sinh tensor size mới, tức chi phí truyền mới trên topology còn lại, và phải quyết định resume từ activation nào. Vòng phụ thuộc này không xuất hiện khi hai bài toán tách rời — đó chính là chỗ ghép không tự động."</em></p>
+<p><strong>B4. "Bài P-MDP 2025 đã làm online partition adaptation rồi mà?"</strong>
+→ <em>"Đúng, nhưng per-slot cho TÁC VỤ MỚI, trên kiến trúc AAV↔MEC server. Tôi giải ca khác: cứu lượt suy luận ĐANG CHẠY DỞ trong pipeline đa chặng nội bộ swarm — re-derive boundary + resume, không phải re-decide cho request kế tiếp."</em> (Bảng so sánh có footnote † đúng ý này.)</p>
+<p><strong>B5. "Joint tốt hơn sequential — chứng minh đâu?"</strong>
+→ <em>"Không khẳng định suông — Objective 4 so trực tiếp với 3 baseline: sequential partition-then-assign (đại diện là LLHR-style decomposition), static joint, và full-restart. Nếu joint không thắng sequential có ý nghĩa thống kê thì luận điểm trung tâm sai và tôi sẽ biết sớm từ năm 1."</em></p>
+<p><strong>B6. "Mô phỏng thì tin được đến đâu? Sao không bay thật?"</strong>
+→ <em>"NS-3+ROS+Gazebo là combo chuẩn ngành cho claim mạng+robot. Luận án nhắm structural insight — cấu trúc trade-off và cơ chế thích ứng — không phải con số tuyệt đối của một platform cụ thể; sim-to-real gap được ghi nhận là limitation có chủ đích. Bay thật là hướng mở rộng sau tiến sĩ."</em></p>
+<p><strong>B7. "Nén tensor trước khi truyền thì mất accuracy — sao hàm mục tiêu không có accuracy?"</strong> ⚠️ điểm yếu #10
+→ <em>"Đúng — phiên bản hiện tại cố định mức nén bảo toàn (hoặc không nén), coi accuracy là ràng buộc cứng chứ không phải biến. Đưa accuracy vào thành chiều thứ ba của trade-off là mở rộng tự nhiên của Phase 2 và tôi đã dự phòng chỗ cho nó trong formulation."</em></p>
+<p><strong>B8. "Control plane chạy ở đâu? Nó chết thì sao?"</strong> ⚠️ điểm yếu #11
+→ <em>"Câu hỏi đúng trọng tâm Phase 3. Thiết kế cơ sở là orchestrator nhẹ trên một node + cơ chế bầu lại khi node đó mất (leader election — bài toán đã có lời giải chuẩn trong distributed systems); phương án phân tán hoàn toàn được xét như extension. Điểm mấu chốt: chi phí re-derive một lần re-optimization là nhỏ nhờ bounded-K, nên orchestrator không cần node mạnh."</em></p>
+<p><strong>B9. "3 bài báo trong 3 năm có thực tế không với chu kỳ review IEEE?"</strong> ⚠️ điểm yếu #7 — CHƯA vá trong văn bản
+→ Trả lời thẳng: <em>"Bài 1–2 nhắm venue chu kỳ nhanh (hội nghị/workshop tier tốt hoặc magazine), bài 3 nhắm journal; timeline tính mốc NỘP, không phải mốc chấp nhận, và các phase được thiết kế song song một phần để hấp thụ vòng revise."</em></p>
+<p><strong>B10. "Đề tài này khác gì đề tài thạc sĩ 'áp dụng AI cho drone'?"</strong>
+→ <em>"Ba chữ ký tiến sĩ: (1) formulation tối ưu tổ hợp mới với chứng cứ NP-hard và phân tích regime theo K; (2) obstruction lý thuyết chưa ai giải ở giao điểm partitioning–FANET–online; (3) chuẩn công bố quốc tế. Không phải áp dụng công cụ có sẵn — là xây công cụ."</em></p>
+<hr />
+<h2>C. CHECKLIST TRƯỚC BUỔI THUYẾT TRÌNH</h2>
+<ul>
+<li>[ ] Tải bản full CDPO (IEEE doc 10756252) → điền tác giả/venue vào .bib (TODO trong file)</li>
+<li>[ ] Tải bản full P-MDP (10.1109/JIOT.2025.3558162) → xác nhận "không làm mid-inference recovery"</li>
+<li>[ ] Hoàn thiện author list rahmani2021fanet + zhao2022reliable</li>
+<li>[ ] Quyết định: vá tiếp điểm yếu #7 (timeline), #8 (risk table), #9 (platform), #12 (transferability)?</li>
+<li>[ ] Compile bản IEEEtran chuẩn trên máy (latexmk / Cursor)</li>
+<li>[ ] Đồng bộ slide với novelty mới (khi được yêu cầu)</li>
+<li>[ ] Luyện trả lời B1–B10 thành tiếng, mỗi câu ≤ 45 giây</li>
+</ul></body></html>

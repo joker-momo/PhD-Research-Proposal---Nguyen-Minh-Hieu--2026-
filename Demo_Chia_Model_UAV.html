@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Demo: Chia model AI trên bầy UAV — Collaborative Edge Inference</title>
+<style>
+  :root{
+    --navy:#1E2761; --ice:#CADCFC; --seg1:#2C8C5A; --seg2:#2563EB; --seg3:#D97706;
+    --danger:#DC2626; --ok:#16A34A;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+  body{background:linear-gradient(180deg,#0b1035 0%,#1E2761 55%,#31407e 100%);min-height:100vh;color:#eef2ff;display:flex;flex-direction:column;align-items:center;padding:14px}
+  h1{font-size:21px;letter-spacing:.3px}
+  .sub{color:var(--ice);font-size:13px;margin:4px 0 10px;text-align:center}
+  #stage{background:linear-gradient(180deg,#0e1440,#233270);border:1px solid #3b4a8f;border-radius:14px;box-shadow:0 8px 40px rgba(0,0,0,.45)}
+  .bar{display:flex;gap:10px;margin:12px 0;flex-wrap:wrap;justify-content:center}
+  button{background:var(--ice);color:var(--navy);border:none;border-radius:8px;padding:10px 16px;font-size:14px;font-weight:700;cursor:pointer;transition:.15s}
+  button:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 4px 14px rgba(0,0,0,.35)}
+  button:disabled{opacity:.35;cursor:not-allowed}
+  button.warn{background:#fecaca;color:#7f1d1d}
+  #narr{max-width:1160px;width:100%;background:rgba(255,255,255,.08);border:1px solid #3b4a8f;border-radius:10px;padding:10px 16px;font-size:15px;line-height:1.45;min-height:52px}
+  #narr b{color:#ffd166}
+  .rotor{transform-origin:center;animation:spin .25s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .flash{animation:fl .5s ease-in-out 4}
+  @keyframes fl{50%{opacity:.15}}
+</style>
+</head>
+<body>
+<h1>Collaborative Edge Inference: chia model AI cho bầy UAV</h1>
+<div class="sub">Nguyễn Minh Hiếu — PhD Research Proposal · Demo minh họa: bounded-K partitioning (K=3) + reactive mid-inference recovery (RQ2)</div>
+
+<svg id="stage" width="1160" height="560" viewBox="0 0 1160 560">
+  <defs>
+    <radialGradient id="glow"><stop offset="0%" stop-color="#ffd166"/><stop offset="100%" stop-color="#ffd16600"/></radialGradient>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#9fb4ff"/></marker>
+  </defs>
+
+  <!-- ====== MODEL STACK (trái) ====== -->
+  <g id="modelBox">
+    <text x="88" y="52" fill="#eef2ff" font-size="15" font-weight="bold" text-anchor="middle">Model AI (DNN)</text>
+    <text x="88" y="70" fill="#9fb4ff" font-size="11" text-anchor="middle">12 tầng, ~45MB</text>
+    <g id="layers"></g>
+    <g id="cuts"></g>
+  </g>
+
+  <!-- ====== DRONES ====== -->
+  <g id="drones"></g>
+
+  <!-- ====== packet & effects ====== -->
+  <g id="fx"></g>
+
+  <!-- ====== OUTPUT ====== -->
+  <g id="outBox" opacity="0">
+    <rect x="940" y="60" width="190" height="74" rx="10" fill="#0f2e1c" stroke="var(--ok)" stroke-width="2"/>
+    <text x="1035" y="88" fill="#86efac" font-size="14" font-weight="bold" text-anchor="middle">KẾT QUẢ INFERENCE</text>
+    <text x="1035" y="112" fill="#eef2ff" font-size="15" text-anchor="middle" id="outText">🧍 Người: 97%</text>
+  </g>
+</svg>
+
+<div class="bar">
+  <button id="b1" onclick="phaseDeploy()">1️⃣ Chia &amp; nạp model</button>
+  <button id="b2" onclick="phaseRun()" disabled>2️⃣ Chạy inference</button>
+  <button id="b3" onclick="phaseFail()" disabled>3️⃣ 💥 UAV rơi giữa chừng → cứu (RQ2)</button>
+  <button id="b4" onclick="location.reload()">↺ Làm lại</button>
+</div>
+<div id="narr">Bấm <b>1️⃣ Chia &amp; nạp model</b> để bắt đầu. Model 12 tầng sẽ được cắt thành K = 3 khúc và nạp xuống 3 UAV — mỗi con chỉ mang 1/3 model.</div>
+
+<script>
+const SVG='http://www.w3.org/2000/svg';
+const $=id=>document.getElementById(id);
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+function el(tag,attrs,parent){const e=document.createElementNS(SVG,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);(parent||$('fx')).appendChild(e);return e;}
+function narr(html){$('narr').innerHTML=html;}
+
+// ---------- model layers ----------
+const NL=12, LX=40, LY=86, LW=96, LH=30, GAP=6;
+const segColor=i=> i<4? 'var(--seg1)' : i<8? 'var(--seg2)' : 'var(--seg3)';
+const layers=[];
+for(let i=0;i<NL;i++){
+  const g=el('g',{},$('layers'));
+  const r=el('rect',{x:LX,y:LY+i*(LH+GAP),width:LW,height:LH,rx:6,fill:'#44518f',stroke:'#7c8bd0'},g);
+  el('text',{x:LX+LW/2,y:LY+i*(LH+GAP)+20,fill:'#dbe4ff','font-size':12,'text-anchor':'middle'},g).textContent='tầng '+(i+1);
+  layers.push({g,r});
+}
+
+// ---------- drones ----------
+const dronePos=[{x:330,y:150,name:'UAV A',cam:true},{x:610,y:110,name:'UAV B'},{x:880,y:160,name:'UAV C'}];
+const drones=[];
+function mkDrone(d,idx){
+  const g=el('g',{transform:`translate(${d.x},${d.y})`},$('drones'));
+  // rotors
+  [[-38,-18],[38,-18],[-38,6],[38,6]].forEach(p=>{
+    el('rect',{x:p[0]-16,y:p[1]-2,width:32,height:3,rx:2,fill:'#b9c6ff',class:'rotor'},g);
+    el('line',{x1:p[0],y1:p[1],x2:p[0]*0.55,y2:8,stroke:'#8fa2e8','stroke-width':3},g);
+  });
+  // body
+  el('ellipse',{cx:0,cy:12,rx:30,ry:16,fill:'#dfe7ff',stroke:'#8fa2e8','stroke-width':2},g);
+  if(d.cam) el('circle',{cx:0,cy:26,r:6,fill:'#1E2761',stroke:'#ffd166','stroke-width':2},g);
+  el('text',{x:0,y:-32,fill:'#fff','font-size':15,'font-weight':'bold','text-anchor':'middle'},g).textContent=d.name;
+  // khoang chứa model (memory)
+  const mem=el('g',{},g);
+  el('rect',{x:-52,y:44,width:104,height:56,rx:8,fill:'rgba(255,255,255,.07)',stroke:'#5a6ab5','stroke-dasharray':'4 3'},mem);
+  const memLabel=el('text',{x:0,y:118,fill:'#9fb4ff','font-size':11,'text-anchor':'middle'},mem);
+  memLabel.textContent='bộ nhớ trống';
+  drones.push({...d,g,mem,memLabel,slots:[]});
+}
+dronePos.forEach(mkDrone);
+
+function memBlk(dr,label,color,slot){
+  const b=el('g',{},dr.mem);
+  el('rect',{x:-46+slot*31,y:52,width:27,height:38,rx:4,fill:color,stroke:'#fff','stroke-width':.6},b);
+  el('text',{x:-32.5+slot*31,y:75,fill:'#fff','font-size':9,'text-anchor':'middle'},b).textContent=label;
+  dr.slots.push(b);
+  return b;
+}
+
+let deployed=false, ran=false;
+
+// ---------- PHASE 1: chia & nạp ----------
+async function phaseDeploy(){
+  $('b1').disabled=true;
+  narr('🔪 <b>Bước 1 — Chọn điểm cắt.</b> Bài toán tối ưu chọn 2 ranh giới cắt (K = 3): sau tầng 4 và sau tầng 8 — dựa trên kích thước tensor tại từng ranh giới, năng lực chip và pin của từng UAV.');
+  // color segments
+  for(let i=0;i<NL;i++){ layers[i].r.setAttribute('fill',segColor(i)); await sleep(120);}
+  // cut lines
+  [[4,'cắt #1 — tensor ≈ 800KB'],[8,'cắt #2 — tensor ≈ 100KB']].forEach(c=>{
+    const y=LY+c[0]*(LH+GAP)-GAP/2;
+    el('line',{x1:LX-12,y1:y,x2:LX+LW+12,y2:y,stroke:'#ffd166','stroke-width':2.5,'stroke-dasharray':'7 4'},$('cuts'));
+    el('text',{x:LX+LW+18,y:y+4,fill:'#ffd166','font-size':11},$('cuts')).textContent=c[1];
+  });
+  await sleep(1200);
+  narr('📦 <b>Bước 2 — Nạp trọng số.</b> Mỗi UAV chỉ nhận và lưu <b>khúc của mình</b> (~15MB thay vì 45MB). Không con nào chứa cả model — đây là cách vượt giới hạn SWaP.');
+  const segs=[['tầng 1–4','var(--seg1)',0],['tầng 5–8','var(--seg2)',1],['tầng 9–12','var(--seg3)',2]];
+  for(let s=0;s<3;s++){
+    const dr=drones[s];
+    // packet bay từ model tới drone
+    const p=el('circle',{cx:LX+LW/2,cy:LY+ (s*4+2)*(LH+GAP),r:10,fill:segs[s][1],stroke:'#fff'});
+    const tx=dr.x, ty=dr.y+70;
+    for(let t=0;t<=1.001;t+=.04){
+      p.setAttribute('cx',LX+LW/2+(tx-LX-LW/2)*t);
+      p.setAttribute('cy',LY+(s*4+2)*(LH+GAP)+(ty-LY-(s*4+2)*(LH+GAP))*t - Math.sin(t*Math.PI)*60);
+      await sleep(12);
+    }
+    p.remove();
+    for(let k=0;k<4;k++) memBlk(dr,(s*4+k+1),segs[s][1],k);
+    dr.memLabel.textContent=segs[s][0]+' · ~15MB';
+    await sleep(200);
+  }
+  deployed=true; $('b2').disabled=false;
+  narr('✅ Triển khai xong. Mỗi UAV giữ đúng 1/3 model. Giờ bấm <b>2️⃣ Chạy inference</b> — dây chuyền lắp ráp trên không bắt đầu.');
+}
+
+// ---------- helpers cho run ----------
+async function processDrone(dr, colorFrom, colorTo, ms=1300){
+  const halo=el('circle',{cx:dr.x,cy:dr.y+12,r:46,fill:'url(#glow)',opacity:.9});
+  for(const b of dr.slots){ b.firstChild.setAttribute('stroke','#ffd166'); b.firstChild.setAttribute('stroke-width',2); await sleep(ms/Math.max(dr.slots.length,1)); b.firstChild.setAttribute('stroke','#fff'); b.firstChild.setAttribute('stroke-width',.6);}
+  halo.remove();
+}
+async function sendTensor(x1,y1,x2,y2,label){
+  const g=el('g',{});
+  el('path',{d:`M${x1},${y1} Q${(x1+x2)/2},${Math.min(y1,y2)-70} ${x2},${y2}`,stroke:'#9fb4ff','stroke-width':1.5,fill:'none','stroke-dasharray':'5 5','marker-end':'url(#arr)'},g);
+  const p=el('circle',{r:9,fill:'#ffd166',stroke:'#fff'},g);
+  const t1=el('text',{fill:'#ffd166','font-size':11,'text-anchor':'middle'},g); t1.textContent=label;
+  for(let t=0;t<=1.001;t+=.025){
+    const mx=(x1+x2)/2, my=Math.min(y1,y2)-70;
+    const X=(1-t)*(1-t)*x1+2*(1-t)*t*mx+t*t*x2, Y=(1-t)*(1-t)*y1+2*(1-t)*t*my+t*t*y2;
+    p.setAttribute('cx',X);p.setAttribute('cy',Y);t1.setAttribute('x',X);t1.setAttribute('y',Y-14);
+    await sleep(16);
+  }
+  g.remove();
+}
+
+// ---------- PHASE 2: run ----------
+async function phaseRun(){
+  $('b2').disabled=true;
+  narr('📸 <b>UAV A chụp ảnh</b> (150KB) và chạy tầng 1–4 trên chip của chính nó…');
+  const img=el('g',{transform:`translate(${drones[0].x-80},${drones[0].y-10})`});
+  el('rect',{x:-18,y:-14,width:36,height:28,rx:4,fill:'#dbe4ff'},img);
+  el('path',{d:'M-14,8 L-4,-6 L4,4 L9,-2 L14,8 Z',fill:'#2C8C5A'},img);
+  el('circle',{cx:8,cy:-7,r:3.5,fill:'#ffd166'},img);
+  await sleep(700); img.remove();
+  await processDrone(drones[0]);
+  narr('📡 Tensor trung gian tại <b>ranh giới cắt #1</b> (≈800KB, nén trước khi phát) bay qua FANET sang UAV B…');
+  await sendTensor(drones[0].x+40,drones[0].y+12,drones[1].x-40,drones[1].y+12,'tensor #1');
+  narr('⚙️ <b>UAV B</b> nhận tensor, chạy tiếp tầng 5–8. UAV A lúc này đã rảnh — có thể bắt đầu khung hình kế tiếp (pipeline).');
+  await processDrone(drones[1]);
+  narr('📡 Tensor tại <b>ranh giới #2</b> (≈100KB — càng sâu càng nhỏ) sang UAV C…');
+  await sendTensor(drones[1].x+40,drones[1].y+12,drones[2].x-40,drones[2].y+12,'tensor #2');
+  await processDrone(drones[2]);
+  $('outBox').setAttribute('opacity',1);
+  ran=true; $('b3').disabled=false;
+  narr('✅ <b>Hoàn tất!</b> UAV C ra kết quả cuối. Tổng cộng: 2 lần truyền radio, mỗi UAV chỉ tính 1/3 model. Giờ đến phần quan trọng nhất của luận án — bấm <b>3️⃣</b> xem chuyện gì xảy ra khi một UAV rơi <i>giữa lúc đang chạy</i>.');
+}
+
+// ---------- PHASE 3: fail + recovery ----------
+async function phaseFail(){
+  $('b3').disabled=true; $('outBox').setAttribute('opacity',0);
+  narr('📸 Lượt inference mới bắt đầu. UAV A chạy xong tầng 1–4, tensor #1 đã giao cho UAV B…');
+  await processDrone(drones[0],null,null,900);
+  await sendTensor(drones[0].x+40,drones[0].y+12,drones[1].x-40,drones[1].y+12,'tensor #1');
+  await sleep(300);
+  // B fails
+  const B=drones[1];
+  narr('💥 <b>UAV B RƠI</b> khi mới chạy đến tầng 6! Inference đang dở — theo cách cũ (full-restart) toàn bộ công sức phải vứt đi.');
+  B.g.classList.add('flash');
+  await sleep(1800);
+  // animate fall
+  for(let t=0;t<=1.001;t+=.03){
+    B.g.setAttribute('transform',`translate(${B.x},${B.y+t*330}) rotate(${t*95})`);
+    B.g.setAttribute('opacity',1-t*.75);
+    await sleep(18);
+  }
+  narr('🧠 <b>Control plane phát hiện qua telemetry → RE-DERIVE.</b> Không thể chỉ "giao lại việc": ranh giới cắt phải được <b>suy diễn lại</b> cho phần model chưa chạy — vì đổi chỗ cắt là đổi kích thước tensor, đổi chi phí truyền trên topology còn lại.');
+  // new cut line on model: old cut #2 removed conceptually; re-split layers 5..12 between A and C
+  await sleep(2600);
+  const oldCuts=$('cuts'); oldCuts.children[2].setAttribute('stroke','#DC2626'); oldCuts.children[3].setAttribute('fill','#DC2626');
+  const y=LY+6*(LH+GAP)-GAP/2;
+  el('line',{x1:LX-12,y1:y,x2:LX+LW+12,y2:y,stroke:'#4ade80','stroke-width':2.5,'stroke-dasharray':'7 4'},$('cuts'));
+  el('text',{x:LX+LW+18,y:y+4,fill:'#4ade80','font-size':11},$('cuts')).textContent='cắt MỚI — sau tầng 6';
+  // recolor layers 5-6 to A-green', 7-12 to C-orange
+  for(let i=4;i<6;i++) layers[i].r.setAttribute('fill','var(--seg1)');
+  for(let i=6;i<8;i++) layers[i].r.setAttribute('fill','var(--seg3)');
+  narr('📦 <b>Tái phân bổ:</b> tầng 5–6 chuyển về UAV A, tầng 7–12 dồn cho UAV C (2 con còn lại đủ SWaP nhờ bounded-K). Trọng số được nạp bổ sung.');
+  drones[0].memLabel.textContent='tầng 1–6 (mới) · ~22MB';
+  drones[0].memLabel.setAttribute('fill','#4ade80');
+  drones[2].memLabel.textContent='tầng 7–12 (mới) · ~23MB';
+  drones[2].memLabel.setAttribute('fill','#4ade80');
+  await sleep(2200);
+  narr('▶️ <b>RESUME — không chạy lại từ đầu.</b> UAV A vẫn giữ activation của tầng 4 (đã ACK). Nó chỉ chạy tiếp tầng 5–6 rồi gửi tensor <b>theo ranh giới MỚI</b> thẳng sang UAV C.');
+  await processDrone(drones[0],null,null,800);
+  await sendTensor(drones[0].x+40,drones[0].y+12,drones[2].x-40,drones[2].y+12,'tensor (mới)');
+  await processDrone(drones[2],null,null,1500);
+  $('outBox').setAttribute('opacity',1);
+  $('outText').textContent='🧍 Người: 96% — dịch vụ liên tục';
+  narr('✅ <b>Inference sống sót.</b> Chỉ tính lại 2 tầng thay vì 12. Đây chính là <b>Reactive Mid-Inference Recovery</b> — lớp thứ 3 chưa ai giải: <i>re-derive boundary → tensor mới → chi phí mới → resume từ activation</i>. So sánh trong luận án: baseline full-restart phải chạy lại từ tầng 1.');
+}
+</script>
+</body>
+</html>
