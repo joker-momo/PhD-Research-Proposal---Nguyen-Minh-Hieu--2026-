@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-25T23:16:53+07:00
+Updated_at: 2026-11-25T23:18:05+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -22,8 +22,8 @@ without blocking dispatch.
 | Screening batch 01 | S01-S06 | accepted working screening | 5 INCLUDE, 1 EXCLUDE; gate `screening_46/reviews/batch_01_combined_gate.md`; commit `531a54e` | Preserve; reconcile versions/study families later |
 | Screening batch 02 | S07-S12 | accepted working screening | 6 INCLUDE; 48/48 source-page checks; gate `screening_46/reviews/batch_02_combined_gate.md`; commit `c3c6c08` | Preserve; reconcile versions/study families later |
 | Screening batch 03 | S13-S18 | accepted working screening | 6 INCLUDE; 48/48 batch locators plus 30/30 S16 correction locators; gate `screening_46/reviews/batch_03_combined_gate.md`; commit `fc8944f` | Preserve S16 version limits; reconcile later |
-| Screening batch 04 | S19-S20, C01-C04 | primary rejected A2/A3; first correction rejected C4 | 0 accepted decisions; correction task `01a21371-c7a6-738e-b56a-57454a1221e6`; 48/48 locators; review `screening_46/reviews/batch_04_correction_review.md` | After timestamp gate, prepare a targeted C03 protocol-consistency follow-up |
-| Timestamp standardization | logs/status/hooks | implemented; commit/merge gate pending | requested_at 2026-11-25T23:02:44+07:00; 17 gate tests + 18 skill-router tests PASS | After merge, prepare targeted C03 follow-up |
+| Screening batch 04 | S19-S20, C01-C04 | primary rejected A2/A3; first correction rejected C4 | 0 accepted decisions; correction task `01a21371-c7a6-738e-b56a-57454a1221e6`; 48/48 locators; review `screening_46/reviews/batch_04_correction_review.md` | Corrective brief `screening_46/briefs/batch_04_correction_02.md` ready after commit; route once |
+| Timestamp standardization | logs/status/hooks | completed and merged at `1f04299` | requested_at 2026-11-25T23:02:44+07:00; 17 gate tests + 18 skill-router tests PASS | Preserve timestamp checks in every subsequent task |
 | Screening batch 05 | C05-C10 | not started | none | Wait for batch 04 commit and clean gate |
 | Screening batch 06 | C11-C16 | not started | none | Wait for batch 05 commit and clean gate |
 | Screening batch 07 | C17-C21 | not started | none | Wait for batch 06 commit and clean gate |
@@ -67,10 +67,10 @@ baseline is not permission to create new residue outside the owned scopes.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "timestamp-standardization",
+  "task_id": "prepare-batch-04-correction-02",
   "status": "completed",
-  "started_at": "2026-11-25T23:13:23+07:00",
-  "updated_at": "2026-11-25T23:16:53+07:00",
-  "completed_at": "2026-11-25T23:16:53+07:00"
+  "started_at": "2026-11-25T23:17:21+07:00",
+  "updated_at": "2026-11-25T23:18:05+07:00",
+  "completed_at": "2026-11-25T23:18:05+07:00"
 }
 -->

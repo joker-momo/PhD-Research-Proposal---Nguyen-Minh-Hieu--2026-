@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-25T23:16:53+07:00
+**updated_at:** 2026-11-25T23:18:05+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -155,19 +155,18 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-After timestamp-task commit/merge/cleanup, prepare one linked C03 corrective
-brief. Keep analytical evidence eligible under protocol 4.1(4), require a full
-six-record replacement and 48/48 locators, then commit the brief and refresh both
-status metadata blocks, manifest updated_at and the append-only event log before
-routing. No new task may start with owned residue. Timestamp gate validation is
-read-only; automatic Codex hook activation remains unverified.
+After this brief task is committed/merged/cleaned, route exactly one linked
+correction using `screening_46/briefs/batch_04_correction_02.md`. Do not redispatch
+the primary or first correction. Collect distinct correction_02 artifacts and
+require C1–C6 PASS before acceptance. Timestamp standardization is merged at
+`1f04299` with 35/35 tests PASS; automatic hook activation remains unverified.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "timestamp-standardization",
+  "task_id": "prepare-batch-04-correction-02",
   "status": "completed",
-  "started_at": "2026-11-25T23:13:23+07:00",
-  "updated_at": "2026-11-25T23:16:53+07:00",
-  "completed_at": "2026-11-25T23:16:53+07:00"
+  "started_at": "2026-11-25T23:17:21+07:00",
+  "updated_at": "2026-11-25T23:18:05+07:00",
+  "completed_at": "2026-11-25T23:18:05+07:00"
 }
 -->
