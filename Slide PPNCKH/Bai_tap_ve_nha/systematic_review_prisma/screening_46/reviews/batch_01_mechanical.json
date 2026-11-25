@@ -1,0 +1,415 @@
+{
+  "file": "screening_46/results/batch_01.json",
+  "records": 6,
+  "ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "decisions": {
+    "INCLUDE": 5,
+    "EXCLUDE": 1
+  },
+  "mechanical_errors": [
+    "A2 S01 missing primary_reason",
+    "A2 S02 missing primary_reason",
+    "A2 S04 missing primary_reason",
+    "A2 S05 missing primary_reason",
+    "A3 S05 alignment quote/page mismatch p3",
+    "A3 S05 primary_full_report quote/page mismatch p1",
+    "A3 S05 multi_uav_evaluated quote/page mismatch p5",
+    "A2 S06 missing primary_reason"
+  ],
+  "quote_checks": 48,
+  "quote_matches": 45,
+  "semantic_review": "PENDING_CODEX_SOURCE_REVIEW",
+  "evidence": [
+    {
+      "id": "S01",
+      "field": "identity",
+      "page": 1,
+      "quote": "Efficient Real-Time Image Recognition Using Collaborative Swarm of UAVs and Convolutional Networks",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "S01",
+      "field": "alignment",
+      "page": 1,
+      "quote": "Therefore, we introduce an online heuristic solution, namely DistInference, to find the layers placement strategy that gives the best latency among the available UAVs.",
+      "literal_normalized_match": true,
+      "rationale": "Formulates per-layer CNN partitioning (supporting sequential and residual-block architectures) across a UAV swarm and proposes the DistInference online greedy placement heuristic."
+    },
+    {
+      "id": "S01",
+      "field": "primary_full_report",
+      "page": 2,
+      "quote": "The paper is organized as follows: Section II presents the related work, and section III explains the system model. Section IV shows the performance evaluation of the optimal and heuristic solution.",
+      "literal_normalized_match": true,
+      "rationale": "Full 7-page primary research report (non-peer-reviewed arXiv preprint) presenting a system model, ILP formulation, online DistInference heuristic, simulation evaluation, and conclusion."
+    },
+    {
+      "id": "S01",
+      "field": "multi_uav_evaluated",
+      "page": 5,
+      "quote": "In this calculation, we used 5 CNN layers and 5 UAVs to receive the requests and distribute them.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluated in simulation across multi-UAV swarms ranging from 5 UAVs (optimal vs. heuristic) up to 30 and 40 UAVs."
+    },
+    {
+      "id": "S01",
+      "field": "collaborative_inference",
+      "page": 2,
+      "quote": "Our work uses a swarm of UAVs for calculating the computational tasks onboard UAVs, and different layers of each request are dispersed into the UAVs, and each UAV takes part in requests and processes it.",
+      "literal_normalized_match": true,
+      "rationale": "Distributes CNN layers (including sequential VGG and residual-block ResNet models) across multiple UAVs that execute assigned layers and forward intermediate outputs onboard to minimize decision latency."
+    },
+    {
+      "id": "S01",
+      "field": "evaluative_evidence",
+      "page": 5,
+      "quote": "We present the optimal solution results and compare the optimal solution with the heuristic solution. Furthermore, we present the result of the heuristic algorithm with different layers, requests, UAVs, and the minimum number of layers to start getting rejections.",
+      "literal_normalized_match": true,
+      "rationale": "Provides simulation results parameterized by Raspberry Pi 3B+ hardware comparing the optimal ILP solution and DistInference heuristic across request counts, layer depths, UAV counts, and CNN types."
+    },
+    {
+      "id": "S01",
+      "field": "date_window",
+      "page": 1,
+      "quote": "arXiv:2107.04648v1 [cs.CV] 9 Jul 2021",
+      "literal_normalized_match": true,
+      "rationale": "Posted to arXiv on 9 July 2021, within the 2021-01-01 through 2026-11-25 eligibility window."
+    },
+    {
+      "id": "S01",
+      "field": "english",
+      "page": 1,
+      "quote": "The formulated optimization solution is an NP-hard problem. Hence it is not adequate for online resource allocation.",
+      "literal_normalized_match": true,
+      "rationale": "The full text is written in English."
+    },
+    {
+      "id": "S02",
+      "field": "identity",
+      "page": 1,
+      "quote": "Deep Reinforcement Learning for Trajectory Path Planning and Distributed Inference in Resource-Constrained UAV Swarms",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "S02",
+      "field": "alignment",
+      "page": 3,
+      "quote": "In this paper, we propose a joint allocation and trajectory strategy that synchronizes the path of UAVs with the required data sharing in order to minimize the latency of distributed tasks.",
+      "literal_normalized_match": true,
+      "rationale": "Jointly orchestrates per-layer CNN assignment and multi-UAV trajectory path planning over a grid with hot-cell coverage using PPO deep reinforcement learning, including UAV join/leave adaptation."
+    },
+    {
+      "id": "S02",
+      "field": "primary_full_report",
+      "page": 2,
+      "quote": "This paper is organized as follows: Section II presents the related works, and section III shows the system model, the problem formulation, and the reinforcement learning model. Section IV presents the performance evaluation and simulation results of our approach.",
+      "literal_normalized_match": true,
+      "rationale": "Full 17-page primary research report (non-peer-reviewed arXiv preprint formatted for IEEE IoT Journal) presenting a system model, ILP formulation, PPO reinforcement learning algorithm, simulation evaluation, and conclusion."
+    },
+    {
+      "id": "S02",
+      "field": "multi_uav_evaluated",
+      "page": 12,
+      "quote": "We adopt 5-layer LeNet with Raspberry pi 3B+ and 5 UAVs in this evaluation.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluated in simulation with 2 to 7 UAVs across grid sizes (e.g., 3-4 UAVs in Fig. 8, 5 UAVs in Fig. 9-10, and dynamic 3->4->2 UAV swarm changes in Fig. 19)."
+    },
+    {
+      "id": "S02",
+      "field": "collaborative_inference",
+      "page": 2,
+      "quote": "Particularly, the complete CNN is divided into parts/tasks, and these parts are distributed to be computed in the connected UAVs, aiming to minimize the latency while considering the resource constraints and the distance between participants.",
+      "literal_normalized_match": true,
+      "rationale": "Divides CNN models (LeNet, AlexNet, VGG16) per layer across connected UAVs and uses PPO DRL to jointly optimize layer allocation and UAV grid trajectories to minimize inference latency."
+    },
+    {
+      "id": "S02",
+      "field": "evaluative_evidence",
+      "page": 11,
+      "quote": "In this section, the evaluation of our system model is presented, and a comparison with other baseline and recently proposed models is conducted.",
+      "literal_normalized_match": true,
+      "rationale": "Provides simulation results comparing PPO against sub-optimal optimization, OULD [19], greedy heuristic, random selection, Actor-Critic, and dynamic UAV join/leave configurations."
+    },
+    {
+      "id": "S02",
+      "field": "date_window",
+      "page": 1,
+      "quote": "arXiv:2212.11201v1 [cs.DC] 21 Dec 2022",
+      "literal_normalized_match": true,
+      "rationale": "Posted to arXiv on 21 December 2022 (with a placeholder 2021 IEEE template footer), within the 2021-01-01 through 2026-11-25 eligibility window."
+    },
+    {
+      "id": "S02",
+      "field": "english",
+      "page": 1,
+      "quote": "The model is formulated as an optimization problem and aims to minimize latency.",
+      "literal_normalized_match": true,
+      "rationale": "The full text is written in English."
+    },
+    {
+      "id": "S03",
+      "field": "identity",
+      "page": 1,
+      "quote": "In The 20th Annual International Conference on Mobile Systems, Applications and Services (MobiSys ’22), June 25-July 1, 2022, Portland, OR, USA.",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "S03",
+      "field": "alignment",
+      "page": 1,
+      "quote": "This demonstration shows a working prototype of IDEA, Intelligent Divine Eye on Air through multi-UAV collaborative inference, to improve the throughput and accuracy of onboard object detection.",
+      "literal_normalized_match": true,
+      "rationale": "Excluded from the review corpus as a 2-page demonstration abstract rather than a full primary research report, though its technical topic is multi-UAV Faster R-CNN pipeline partitioning."
+    },
+    {
+      "id": "S03",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "Demo: IDEA: Intelligent Divine Eye on Air through Multi-UAV Collaborative Inference. In The 20th Annual International Conference on Mobile Systems, Applications and Services (MobiSys ’22), June 25-July 1, 2022, Portland, OR, USA. ACM, New York, NY, USA, 2 pages.",
+      "literal_normalized_match": true,
+      "rationale": "Explicitly titled 'Demo:' and published as a 2-page MobiSys '22 demonstration abstract rather than a full primary research paper, lacking full algorithmic specification and experimental methodology."
+    },
+    {
+      "id": "S03",
+      "field": "multi_uav_evaluated",
+      "page": 2,
+      "quote": "As illustrated in Fig. 2, we have implemented IDEA on three self-constructed real-world UAVs, one of which hold the post of the master UAV and the rest are employed as worker UAVs.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluates a three-UAV hardware prototype comprising one master UAV (Jetson Nano) and two worker UAVs (Jetson Nano and Jetson Xavier NX) against a single-UAV baseline."
+    },
+    {
+      "id": "S03",
+      "field": "collaborative_inference",
+      "page": 1,
+      "quote": "Specifically, IDEA divides the CNN model into multiple submodels (each consisting of several successive layers), and distributes each submodel to a UAV, where the execution sequence of the submodels is coordinated to output the final prediction.",
+      "literal_normalized_match": true,
+      "rationale": "Partitions Faster R-CNN into three sequential submodels assigned across a master UAV and two worker UAVs to execute onboard object detection in a pipeline."
+    },
+    {
+      "id": "S03",
+      "field": "evaluative_evidence",
+      "page": 2,
+      "quote": "Moreover, as shown in Fig. 4, we have recorded two groups of frame rate in a 100-frame duration. The results indicate that IDEA maintains higher frame rate than single UAV all the time",
+      "literal_normalized_match": true,
+      "rationale": "Reports prototype measurements over a 100-frame video stream comparing Faster R-CNN frame rate and qualitative detection output against a single-UAV baseline."
+    },
+    {
+      "id": "S03",
+      "field": "date_window",
+      "page": 1,
+      "quote": "In The 20th Annual International Conference on Mobile Systems, Applications and Services (MobiSys ’22), June 25-July 1, 2022, Portland, OR, USA.",
+      "literal_normalized_match": true,
+      "rationale": "Published in MobiSys '22 (June 25-July 1, 2022), within the 2021-01-01 through 2026-11-25 eligibility window."
+    },
+    {
+      "id": "S03",
+      "field": "english",
+      "page": 1,
+      "quote": "In this demonstration, we propose an Intelligent Divine Eye on Air through multi-UAV collaborative inference system",
+      "literal_normalized_match": true,
+      "rationale": "The full text is written in English."
+    },
+    {
+      "id": "S04",
+      "field": "identity",
+      "page": 1,
+      "quote": "2022 International Wireless Communications and Mobile Computing (IWCMC) | 978-1-6654-6749-0/22/$31.00 ©2022 IEEE | DOI: 10.1109/IWCMC55113.2022.9824945",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "S04",
+      "field": "alignment",
+      "page": 3,
+      "quote": "In this study, transient failure is considered only. To improve the reliability, we introduce replicas in DNN inference procedure. The failure rate of the UAV dri and communication links between dri and drj follow the Poisson process [14]",
+      "literal_normalized_match": true,
+      "rationale": "Models transient Poisson UAV execution and inter-UAV link failures and introduces active layer replication within DQN-based multi-UAV DNN partitioning to satisfy end-to-end reliability and deadline constraints."
+    },
+    {
+      "id": "S04",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "In this paper, we propose a deep Q learning-based DNN partitioning strategy for minimizing the energy consumption of DNN collaborative inference among multi-UAVs within latency and reliability requirements.",
+      "literal_normalized_match": true,
+      "rationale": "Full 6-page peer-reviewed IEEE IWCMC 2022 conference paper with system model, reliability and latency models, DQN partitioning algorithm, simulation results, and conclusion."
+    },
+    {
+      "id": "S04",
+      "field": "multi_uav_evaluated",
+      "page": 5,
+      "quote": "We assume that the UAVs including the group owner are 11, i.e., N = 10. The CPU-frequencies of the UAV swarm including dr0 and dri, are evenly distributed from 2 to 4 GHz",
+      "literal_normalized_match": true,
+      "rationale": "Evaluated in simulation with an 11-UAV swarm (group owner dr0 plus N = 10 nearby UAVs) with heterogeneous CPU frequencies and UAV/link failure rates."
+    },
+    {
+      "id": "S04",
+      "field": "collaborative_inference",
+      "page": 2,
+      "quote": "Consider a UAV swarm, the UAV dr0 is the group owner, which can organize nearby UAV dri to complete the DNN inference task collaboratively, as shown in Fig.1.",
+      "literal_normalized_match": true,
+      "rationale": "Explicitly considers DNN inference only, modeling chain and DAG DNNs (AlexNet, VGG19, GoogleNet, ResNet101) partitioned and actively replicated across multiple UAVs via DQN under latency and reliability constraints."
+    },
+    {
+      "id": "S04",
+      "field": "evaluative_evidence",
+      "page": 5,
+      "quote": "The experiments use four typical DNNs, AlexNet, VGG19, GoogleNet, and ResNet101. The layer execution time, output data size, and structures of DNN are different, which are obtained from experiments according to [10].",
+      "literal_normalized_match": true,
+      "rationale": "Evaluates DQN partitioning against RA, GA, and PSO baselines across four DNNs, varying deadlines (700-1200 ms) and four failure-rate environments (Best, Good, Poor, Mixed)."
+    },
+    {
+      "id": "S04",
+      "field": "date_window",
+      "page": 1,
+      "quote": "2022 International Wireless Communications and Mobile Computing (IWCMC) | 978-1-6654-6749-0/22/$31.00 ©2022 IEEE | DOI: 10.1109/IWCMC55113.2022.9824945",
+      "literal_normalized_match": true,
+      "rationale": "Published in 2022 IEEE IWCMC, within the 2021-01-01 through 2026-11-25 eligibility window."
+    },
+    {
+      "id": "S04",
+      "field": "english",
+      "page": 1,
+      "quote": "The simulation results prove the proposed strategy can effectively reduce the DNN inference cost under constraints.",
+      "literal_normalized_match": true,
+      "rationale": "The full text is written in English."
+    },
+    {
+      "id": "S05",
+      "field": "identity",
+      "page": 1,
+      "quote": "2022 IEEE International Conference on Unmanned Systems (ICUS) | 978-1-6654-8456-5/22/$31.00 ©2022 IEEE | DOI: 10.1109/ICUS55513.2022.9987114",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "S05",
+      "field": "alignment",
+      "page": 3,
+      "quote": "P partitions are divided into two parts, the first part is executed locally, and the latter part is executed on the edge side. Note the partition point p ∈ {0,1, ... ,P}.",
+      "literal_normalized_match": false,
+      "rationale": "Selects the online DNN split point for Tiny-YOLO object detection between mobile mission UAVs and a computing UAV over multi-hop FANETs using Q-learning."
+    },
+    {
+      "id": "S05",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "To tackle this challenge, we transform the task offloading problem into a DNN optimal partition point search problem. Considering the unknown system information and dynamics, we propose a Q-learning based online partition method.",
+      "literal_normalized_match": false,
+      "rationale": "Full 6-page peer-reviewed IEEE ICUS 2022 conference paper presenting system model, MDP formulation, Q-learning offloading strategy (ODO), co-simulation results, and conclusions."
+    },
+    {
+      "id": "S05",
+      "field": "multi_uav_evaluated",
+      "page": 5,
+      "quote": "In the simulation environment of this paper, K ∈ [5,40] UAVs are set up in an open and unobstructed environment, distributed in a 100m × 100m plane, among which there is one computing UAV and the rest are mission UAV.",
+      "literal_normalized_match": false,
+      "rationale": "Evaluates a multi-UAV flying ad hoc network of K in [5, 40] UAVs (1 computing UAV and 4 to 39 mission UAVs) communicating over multi-hop 802.11n/OLSR links."
+    },
+    {
+      "id": "S05",
+      "field": "collaborative_inference",
+      "page": 5,
+      "quote": "the image data is input to the object detection model, and then the partition point is selected by the ODO algorithm, the model inference after the partition point is offloaded to the computing UAV",
+      "literal_normalized_match": true,
+      "rationale": "Partitions Tiny-YOLO forward propagation into local partitions on a mission UAV and remaining partitions offloaded over multi-hop wireless links to a computing UAV, using online Q-learning to select the partition point."
+    },
+    {
+      "id": "S05",
+      "field": "evaluative_evidence",
+      "page": 5,
+      "quote": "The experiment use ns3 combined with PyTorch for modeling and simulation, and builds a UAV edge computing offloading strategy verification platform based on Q-learning.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluates ODO via PyTorch Tiny-YOLO integrated with ns-3 network simulation against full-edge offloading and random partition-point selection across frame convergence, UAV speed, and UAV count."
+    },
+    {
+      "id": "S05",
+      "field": "date_window",
+      "page": 1,
+      "quote": "2022 IEEE International Conference on Unmanned Systems (ICUS) | 978-1-6654-8456-5/22/$31.00 ©2022 IEEE | DOI: 10.1109/ICUS55513.2022.9987114",
+      "literal_normalized_match": true,
+      "rationale": "Published in 2022 IEEE ICUS, within the 2021-01-01 through 2026-11-25 eligibility window."
+    },
+    {
+      "id": "S05",
+      "field": "english",
+      "page": 1,
+      "quote": "NS3 based simulation results show that our method outperforms the benchmark method in both convergence speed and end-to-end delay.",
+      "literal_normalized_match": true,
+      "rationale": "The full text is written in English."
+    },
+    {
+      "id": "S06",
+      "field": "identity",
+      "page": 1,
+      "quote": "LLHR: Low Latency and High Reliability CNN Distributed Inference for Resource-Constrained UAV Swarms",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "S06",
+      "field": "alignment",
+      "page": 2,
+      "quote": "In this paper, we calculate the transmission power of UAVs at the needed reliability level, and then the optimal positions of UAVs are estimated. Finally, the latency will be minimized through optimal allocation of the layers among the available resource-limited UAVs.",
+      "literal_normalized_match": true,
+      "rationale": "Optimizes transmit power thresholds to guarantee reliable inter-UAV intermediate feature transmission alongside collision-free UAV positioning and ILP layer placement for distributed CNN inference."
+    },
+    {
+      "id": "S06",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "We formulate the Low Latency and High-Reliability (LLHR) distributed inference as an optimization problem, and due to the complexity of the problem, we divide it into three subproblems.",
+      "literal_normalized_match": true,
+      "rationale": "Full 6-page primary research report (non-peer-reviewed arXiv preprint) presenting a system model, three-subproblem optimization formulation, simulation evaluation, and conclusion."
+    },
+    {
+      "id": "S06",
+      "field": "multi_uav_evaluated",
+      "page": 5,
+      "quote": "Figure 2 shows the results of latency in case of changing the maximum power of each UAV under a different number of UAVs and different allocated bandwidth to the UAVs to reliably transmit intermediate data.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluated in simulation across multi-UAV swarms (e.g., 5, 7, 8, 9, and 10 UAVs across Figs. 2 and 4) covering a 480m x 480m area."
+    },
+    {
+      "id": "S06",
+      "field": "collaborative_inference",
+      "page": 1,
+      "quote": "The distributed inference in multi-UAV systems is a promising way to partition the DNNs into a number of parts (segments or layers) and execute them to deal with the resource-constraints in UAVs.",
+      "literal_normalized_match": true,
+      "rationale": "Partitions LeNet and AlexNet CNN layers across multiple UAVs in a swarm while jointly optimizing transmit power for reliable intermediate feature transmission and UAV grid positions."
+    },
+    {
+      "id": "S06",
+      "field": "evaluative_evidence",
+      "page": 6,
+      "quote": "Figure 5 compares our LLHR approach with two other approaches, one is a heuristic solution, and the other is a random selection baseline approach as we vary the number of requests.",
+      "literal_normalized_match": true,
+      "rationale": "Provides simulation results comparing LLHR against a static-path heuristic and a random-selection baseline across varying UAV counts, bandwidths, Raspberry Pi 3B+ compute/memory tiers, and CNN models."
+    },
+    {
+      "id": "S06",
+      "field": "date_window",
+      "page": 1,
+      "quote": "arXiv:2305.15858v1 [cs.DC] 25 May 2023",
+      "literal_normalized_match": true,
+      "rationale": "Posted to arXiv on 25 May 2023, within the 2021-01-01 through 2026-11-25 eligibility window."
+    },
+    {
+      "id": "S06",
+      "field": "english",
+      "page": 1,
+      "quote": "We conduct extensive simulations and compare our work to two baseline models demonstrating that our model outperforms the competing models.",
+      "literal_normalized_match": true,
+      "rationale": "The full text is written in English."
+    }
+  ]
+}
