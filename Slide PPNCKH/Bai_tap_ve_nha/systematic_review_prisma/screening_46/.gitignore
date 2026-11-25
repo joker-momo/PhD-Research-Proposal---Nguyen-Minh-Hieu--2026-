@@ -1,3 +1,6 @@
+# Local full text and extracted text are verified by evidence_checksums.sha256.
 pdf/
 text/
+
+# Preserve raw provider transports locally; accepted derivatives remain tracked.
 results/*raw*
