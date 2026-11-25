@@ -1,5 +1,5 @@
 schema_version: 1
-context_version: "2026-11-26.1"
+context_version: "2026-11-26.2"
 project: "HK261 PRISMA systematic review"
 canonical_workspace:
   path: "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)"
@@ -64,12 +64,12 @@ persistent_task_gate:
   automatic_runtime_enforcement: "UNVERIFIED; direct subprocess checks pass; manual gate required"
   task_fields: [TASK, OWNER, OWNED_PATHS, BINARY_ACCEPTANCE, PRE_TASK_GIT_STATUS]
   freshness_rule: "latest project commit must also be the latest commit touching CURRENT_HANDOFF.md and current_tasks.md before recognized A2A dispatch"
-updated_at: "2026-11-26T05:35:54+07:00"
+updated_at: "2026-11-26T05:48:14+07:00"
 goal_version: "HK261-PRISMA-SNCS-v2"
 goal_adopted_at: "2026-11-25T23:03:52+07:00"
 next_task:
-  id: "screening-batch-05"
-  owner: "GEMINI_RESEARCH"
+  id: "prepare-batch-05-correction"
+  owner: "CODEX_WRITING"
   requested_at: "2026-11-25T23:02:44+07:00"
   dispatch_status: "BLOCKED_UNTIL_CURRENT_TASK_COMMIT_MERGE_CLEANUP"
   active_research_task_count: 0

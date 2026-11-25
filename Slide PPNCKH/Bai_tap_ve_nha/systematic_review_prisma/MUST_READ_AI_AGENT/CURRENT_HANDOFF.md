@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T05:35:54+07:00
+**updated_at:** 2026-11-26T05:48:14+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -147,20 +147,20 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-Batch 04 is committed at `b6bdf2a`. Briefs 05–08 now require a nonempty reason
-for every decision and preserve analytical eligibility. After this brief task
-is committed, merged and cleaned, publish the five task fields for Batch 05
-(C05–C10) and route once through
-A2A after clean-owned/fresh-status/timestamp checks. Use canonical supplied
-PDF/text evidence when the task worktree lacks ignored full text. Never count
-UNCERTAIN decisions as final included studies.
+Close Batch 05 primary review by commit/merge/cleanup. Prepare a targeted
+C06/C08 correction brief linked to task `01a214da-74a9-74ab-a88f-449c80dc162d`.
+Primary outcome is REJECTED_A3_A4: 48/48 literal locators but one short date
+quote and two protocol-interpretation issues; see `screening_46/reviews/batch_05_review.md`.
+Require exactly two corrected records and a combined six-record gate. No
+provider task is active. Batch 05 adds zero accepted decisions; progress remains
+24/46. Preserve both the original result and its review without overwriting.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "normalize-screening-briefs-05-08",
-  "status": "completed",
-  "started_at": "2026-11-26T05:35:30+07:00",
-  "updated_at": "2026-11-26T05:35:54+07:00",
-  "completed_at": "2026-11-26T05:35:54+07:00"
+  "task_id": "screening-batch-05",
+  "status": "rejected",
+  "started_at": "2026-11-26T05:36:31+07:00",
+  "updated_at": "2026-11-26T05:48:14+07:00",
+  "completed_at": "2026-11-26T05:48:14+07:00"
 }
 -->

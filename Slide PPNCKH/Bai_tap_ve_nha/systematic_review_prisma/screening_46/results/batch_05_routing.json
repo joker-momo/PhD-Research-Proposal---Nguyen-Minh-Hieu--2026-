@@ -1,0 +1,12 @@
+{
+  "task_id": "01a214da-74a9-74ab-a88f-449c80dc162d",
+  "context_id": "01a214da-74aa-7975-88c9-8994a83eee30",
+  "state": "TASK_STATE_COMPLETED",
+  "review": "REJECTED_A3_A4",
+  "started_at": "2026-11-26T05:36:31+07:00",
+  "updated_at": "2026-11-26T05:48:14+07:00",
+  "source_pdf_checksum_matches": 6,
+  "provider_completed_at": "2026-11-25T22:46:03.826Z",
+  "completed_at": "2026-11-26T05:48:14+07:00",
+  "review_path": "screening_46/reviews/batch_05_review.md"
+}
