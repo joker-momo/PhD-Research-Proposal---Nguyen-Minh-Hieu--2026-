@@ -1,0 +1,7 @@
+search_id,source,search_date,exact_query_file,reported_total,exported_total,status,raw_file,normalized_file,notes
+ARXIV-F-001,arXiv,2026-11-24,final_query_translations.md,4,4,complete,sources/raw/arxiv_swarm_query_2026-11-24.xml,sources/normalized/arxiv_swarm_query_2026-11-24.json,Query echoed by API and matched the submitted syntax.
+S2-F-001,Semantic Scholar,2026-11-24,final_query_translations.md,,0,failed,sources/raw/semantic_scholar_swarm_query_2026-11-24.json,,HTTP 429; no result count obtained and no search result treated as retrieved.
+IEEE-F-001,IEEE Xplore,2026-11-24,final_query_translations.md,,0,access failed,,,Public search returned HTTP 420 before results.
+ACM-F-001,ACM Digital Library,2026-11-24,final_query_translations.md,,0,access failed,,,Cloudflare security verification prevented access to results.
+SCOPUS-F-001,Scopus,,final_query_translations.md,,,pending,,,Requires database access and complete export.
+WOS-F-001,Web of Science Core Collection,,final_query_translations.md,,,pending,,,Requires database access and complete export.
