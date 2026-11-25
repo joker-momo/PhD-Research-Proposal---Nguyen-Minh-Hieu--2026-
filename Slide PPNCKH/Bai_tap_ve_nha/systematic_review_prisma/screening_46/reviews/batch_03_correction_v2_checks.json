@@ -1,0 +1,182 @@
+[
+  {
+    "index": 0,
+    "match": true,
+    "words": 9,
+    "locator": "PDF page 1, title"
+  },
+  {
+    "index": 1,
+    "match": true,
+    "words": 5,
+    "locator": "PDF page 1, left margin stamp"
+  },
+  {
+    "index": 2,
+    "match": true,
+    "words": 11,
+    "locator": "PDF page 1, footer"
+  },
+  {
+    "index": 3,
+    "match": true,
+    "words": 26,
+    "locator": "PDF page 1, Abstract"
+  },
+  {
+    "index": 4,
+    "match": true,
+    "words": 41,
+    "locator": "PDF page 12, Acknowledgment section"
+  },
+  {
+    "index": 5,
+    "match": true,
+    "words": 9,
+    "locator": "JSON selector message.title[0] (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 6,
+    "match": true,
+    "words": 2,
+    "locator": "JSON selector message.author[0].given (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 7,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.author[0].family (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 8,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.author[1].given (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 9,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.author[1].family (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 10,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.author[2].given (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 11,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.author[2].family (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 12,
+    "match": true,
+    "words": 4,
+    "locator": "JSON selector message.container-title[0] (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 13,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.volume (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 14,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.article-number (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 15,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.DOI (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 16,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.type (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 17,
+    "match": true,
+    "words": 1,
+    "locator": "JSON field message.published-print (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 18,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.created.date-time (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 19,
+    "match": true,
+    "words": 2,
+    "locator": "JSON fields message.reference-count and message.publisher (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 20,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.alternative-id[0] (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 21,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.funder[1].award[0] (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 22,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.funder[2].award[0] (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 23,
+    "match": true,
+    "words": 1,
+    "locator": "JSON selector message.funder[3].award[0] (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)"
+  },
+  {
+    "index": 24,
+    "match": true,
+    "words": 1,
+    "locator": "XML feed/entry/id, line 11 (source: https://export.arxiv.org/api/query?id_list=2503.16146)"
+  },
+  {
+    "index": 25,
+    "match": true,
+    "words": 1,
+    "locator": "XML feed/entry/updated, line 13 (source: https://export.arxiv.org/api/query?id_list=2503.16146)"
+  },
+  {
+    "index": 26,
+    "match": true,
+    "words": 1,
+    "locator": "XML feed/entry/published, line 18 (source: https://export.arxiv.org/api/query?id_list=2503.16146)"
+  },
+  {
+    "index": 27,
+    "match": true,
+    "words": 9,
+    "locator": "XML feed/entry/arxiv:comment, line 19 (source: https://export.arxiv.org/api/query?id_list=2503.16146)"
+  },
+  {
+    "index": 28,
+    "match": true,
+    "words": 1,
+    "locator": "XML feed/entry/arxiv:doi, line 30 (source: https://export.arxiv.org/api/query?id_list=2503.16146)"
+  },
+  {
+    "index": 29,
+    "match": true,
+    "words": 28,
+    "locator": "XML feed/entry/summary, line 16 (source: https://export.arxiv.org/api/query?id_list=2503.16146)"
+  }
+]

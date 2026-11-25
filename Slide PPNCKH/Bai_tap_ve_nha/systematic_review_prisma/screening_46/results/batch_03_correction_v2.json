@@ -1,0 +1,250 @@
+{
+  "parent_task_id": "01a212f3-36d0-7480-9dc7-f509f80112f5",
+  "records": [
+    {
+      "id": "S16",
+      "title": "Distributed Split Computing Using Diffusive Metrics for UAV Swarms",
+      "authors": [
+        "Talip Tolga Sarı",
+        "Gökhan Seçinti",
+        "Angelo Trotta"
+      ],
+      "year": 2026,
+      "venue": "Journal of Systems Architecture, 176: 103804",
+      "doi": "10.1016/j.sysarc.2026.103804",
+      "source_version": "preprint_author_copy (arXiv:2503.16146v3; linked to DOI 10.1016/j.sysarc.2026.103804)",
+      "publication_dates": {
+        "arxiv_release": "2026-04-08 (v3; v1: 2025-03-20)",
+        "accepted": "2026-04-09 (author-reported in supplied PDF; unconfirmed in Crossref)",
+        "published_online": "UNVERIFIED",
+        "published_issue": "2026-07"
+      },
+      "identity_match": "MATCH",
+      "evidence": [
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S16.pdf",
+          "locator": "PDF page 1, title",
+          "quote": "Distributed Split Computing Using Diffusive Metrics for UAV Swarms",
+          "supports": "Supplied S16.pdf full title (title-only quote used because PDF byline extraction distorts Turkish diacritics)."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S16.pdf",
+          "locator": "PDF page 1, left margin stamp",
+          "quote": "arXiv:2503.16146v3 [cs.NI] 8 Apr 2026",
+          "supports": "Identifies supplied PDF as arXiv:2503.16146v3 dated 8 Apr 2026."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S16.pdf",
+          "locator": "PDF page 1, footer",
+          "quote": "Accepted for publication in Journal of Systems Architecture April 9, 2026",
+          "supports": "Records author-reported acceptance venue and date (April 9, 2026) in supplied PDF."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S16.pdf",
+          "locator": "PDF page 1, Abstract",
+          "quote": "we propose a fully distributed, diffusive metric-based approach for split computing in UAV swarms. Our solution introduces a new iterative measure, termed the aggregated computation capability,",
+          "supports": "Records 'aggregated computation capability' phrasing in supplied S16.pdf Abstract, differing from arXiv API summary 'aggregated gigaflops' and supporting content_equivalence=NOT_ASSUMED."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S16.pdf",
+          "locator": "PDF page 12, Acknowledgment section",
+          "quote": "This work is supported by Istanbul Technical University, Department of Scientific Research Projects (ITU-BAP, 45375), and was partially supported by the PRIN 2022 project RAIN4C: “Reliable Aerial and satellIte Networks: joint Communication, Computation, Caching for Critical scenarios” (Id: 20227N3SPN, CUP: J53D23007020001).",
+          "supports": "Records grant identifiers (45375, 20227N3SPN, J53D23007020001) in supplied S16.pdf corroborating linkage to Crossref funder awards."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.title[0] (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "Distributed split computing using diffusive metrics for UAV swarms",
+          "supports": "Crossref-deposited article title matching S16.pdf."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.author[0].given (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "Talip Tolga",
+          "supports": "First Crossref author given name."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.author[0].family (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "Sarı",
+          "supports": "First Crossref author family name."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.author[1].given (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "Gökhan",
+          "supports": "Second Crossref author given name."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.author[1].family (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "Seçinti",
+          "supports": "Second Crossref author family name."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.author[2].given (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "Angelo",
+          "supports": "Third Crossref author given name."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.author[2].family (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "Trotta",
+          "supports": "Third Crossref author family name."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.container-title[0] (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "Journal of Systems Architecture",
+          "supports": "Crossref-deposited journal venue title."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.volume (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "176",
+          "supports": "Crossref-deposited journal volume 176."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.article-number (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "103804",
+          "supports": "Crossref-deposited article number 103804."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.DOI (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "10.1016/j.sysarc.2026.103804",
+          "supports": "Crossref-deposited DOI matching S16 record."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.type (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "journal-article",
+          "supports": "Crossref work type confirming published journal-article classification."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON field message.published-print (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "\"published-print\":{\"date-parts\":[[2026,7]]}",
+          "supports": "Crossref-deposited issue publication date 2026-07 (year 2026), within 2021-01-01 through 2026-11-25, without a published-online field."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.created.date-time (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "2026-04-08T16:41:03Z",
+          "supports": "Records Crossref DOI creation timestamp (2026-04-08), distinct from an unverified publisher online publication date."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON fields message.reference-count and message.publisher (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "\"reference-count\":33,\"publisher\":\"Elsevier BV\"",
+          "supports": "Verifies publisher Elsevier BV and 33 references matching S16.pdf bibliography count."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.alternative-id[0] (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "S1383762126001220",
+          "supports": "Records Elsevier PII S1383762126001220 in Crossref metadata."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.funder[1].award[0] (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "45375",
+          "supports": "Matches ITU-BAP award 45375 in S16.pdf Acknowledgment."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.funder[2].award[0] (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "20227N3SPN",
+          "supports": "Matches PRIN 2022 project ID 20227N3SPN in S16.pdf Acknowledgment."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_crossref.json",
+          "locator": "JSON selector message.funder[3].award[0] (source: https://api.crossref.org/works/10.1016/j.sysarc.2026.103804)",
+          "quote": "J53D23007020001",
+          "supports": "Matches CUP J53D23007020001 in S16.pdf Acknowledgment."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_arxiv.xml",
+          "locator": "XML feed/entry/id, line 11 (source: https://export.arxiv.org/api/query?id_list=2503.16146)",
+          "quote": "<id>http://arxiv.org/abs/2503.16146v3</id>",
+          "supports": "Identifies arXiv record version arXiv:2503.16146v3."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_arxiv.xml",
+          "locator": "XML feed/entry/updated, line 13 (source: https://export.arxiv.org/api/query?id_list=2503.16146)",
+          "quote": "<updated>2026-04-08T17:16:15Z</updated>",
+          "supports": "Documents v3 arXiv release date 2026-04-08."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_arxiv.xml",
+          "locator": "XML feed/entry/published, line 18 (source: https://export.arxiv.org/api/query?id_list=2503.16146)",
+          "quote": "<published>2025-03-20T13:49:15Z</published>",
+          "supports": "Documents v1 arXiv release date 2025-03-20."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_arxiv.xml",
+          "locator": "XML feed/entry/arxiv:comment, line 19 (source: https://export.arxiv.org/api/query?id_list=2503.16146)",
+          "quote": "<arxiv:comment>Accepted for publication in Journal of Systems Architecture (Elsevier)</arxiv:comment>",
+          "supports": "Documents arXiv metadata comment linking preprint to Journal of Systems Architecture (Elsevier)."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_arxiv.xml",
+          "locator": "XML feed/entry/arxiv:doi, line 30 (source: https://export.arxiv.org/api/query?id_list=2503.16146)",
+          "quote": "<arxiv:doi>10.1016/j.sysarc.2026.103804</arxiv:doi>",
+          "supports": "Explicitly links arXiv:2503.16146v3 to published DOI 10.1016/j.sysarc.2026.103804."
+        },
+        {
+          "source_url_or_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_arxiv.xml",
+          "locator": "XML feed/entry/summary, line 16 (source: https://export.arxiv.org/api/query?id_list=2503.16146)",
+          "quote": "Our solution introduces a new iterative measure, termed the aggregated gigaflops, capturing each node's own computing capacity along with that of its neighbors without requiring global network knowledge.",
+          "supports": "Shows 'aggregated gigaflops' in arXiv metadata summary vs 'aggregated computation capability' in S16.pdf p. 1, underscoring why content equivalence is not assumed."
+        }
+      ],
+      "protocol_4_1_7": {
+        "status": "PASS",
+        "basis": "Crossref-deposited Elsevier metadata verifies DOI 10.1016/j.sysarc.2026.103804 as a peer-reviewed journal-article in Journal of Systems Architecture (Vol. 176, Art. 103804), published-print 2026-07 within 2021-01-01 through 2026-11-25, matching supplied arXiv:2503.16146v3 on full title, all three authors, 33 references, and grant IDs, and explicitly linked by arXiv metadata (arxiv:doi). Supplied full text remains the arXiv v3 author copy; Version-of-Record textual and numerical equivalence is not assumed.",
+        "evidence_indices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      "decision": "INCLUDE",
+      "gate_changes": [],
+      "content_equivalence": "NOT_ASSUMED",
+      "unresolved": [
+        "Supplied local full text (S16.pdf) is author preprint/accepted copy arXiv:2503.16146v3 (8 Apr 2026), not the Elsevier Version of Record (PII S1383762126001220); prior task raw response (/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03_correction_raw.json, task.artifacts[0].parts[0].text, line 10; task.history call_5197257149958010301, lines 2301-2367) reports that ScienceDirect returned HTTP 403 (Cloudflare) and unauthenticated api.elsevier.com returned minimized metadata then rate-limited, so textual and numerical equivalence to the published journal article remains unverified and technical extraction remains tied to the supplied author copy.",
+        "Exact published_online ('Available online') calendar date is UNVERIFIED: saved Crossref metadata (batch_03_correction_crossref.json) deposits published-print [2026, 7] without published-online, and prior task raw response (batch_03_correction_raw.json, task.artifacts[0].parts[0].text, line 10) reports ScienceDirect returned HTTP 403; Crossref created (2026-04-08) and self-reported accepted (2026-04-09) dates do not establish the publisher online publication date.",
+        "Retained technical limitation from batch_03: evaluates an abstract parameterized 60-layer DAG neural workload with emulated exit accuracies (0.6, 0.9, 0.95) in simulation rather than executing real DNN weights on a dataset or physical UAVs.",
+        "Retained study-family flag from batch_03: possible study-family overlap with Ref. [21] by Sarı et al. (IEEE GLOBECOM 2023, doi:10.1109/GLOBECOM54140.2023.10436927)."
+      ]
+    }
+  ],
+  "shortfall": [],
+  "project_files_changed": 0
+}
