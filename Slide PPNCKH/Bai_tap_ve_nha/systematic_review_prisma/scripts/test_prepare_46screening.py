@@ -3,8 +3,10 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 from scripts.prepare_46screening import (
+    publish_refresh_metadata,
     validate_and_publish_staged_texts,
     write_pending_briefs,
 )
@@ -93,6 +95,49 @@ class PrepareScreeningTests(unittest.TestCase):
                     locator = Path(record[field])
                     self.assertTrue(locator.is_absolute())
                     self.assertTrue(locator.is_file())
+            accepted_four = hashlib.sha256(
+                (screening / "briefs/batch_04.md").read_bytes()
+            ).hexdigest()
+            (screening / "results").mkdir()
+            (screening / "results/batch_04_accepted.json").write_text("{}")
+            items[18]["title_hint"] = "must not replace dispatched brief"
+
+            write_pending_briefs(project, screening, items)
+
+            self.assertEqual(
+                hashlib.sha256(
+                    (screening / "briefs/batch_04.md").read_bytes()
+                ).hexdigest(),
+                accepted_four,
+            )
+
+    def test_interrupted_atomic_publish_leaves_no_partial_file_and_retry_succeeds(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            live = root / "live"
+            staged = root / "staged"
+            (live / "text").mkdir(parents=True)
+            (staged / "text").mkdir(parents=True)
+            content = b"verified extraction"
+            (staged / "text/S01.txt").write_bytes(content)
+            ledger = {
+                "text/S01.txt": hashlib.sha256(content).hexdigest(),
+            }
+
+            def interrupted_copy(source, destination):
+                Path(destination).write_bytes(Path(source).read_bytes()[:4])
+                raise RuntimeError("simulated interruption")
+
+            with mock.patch(
+                "scripts.screening_refresh.shutil.copy2",
+                side_effect=interrupted_copy,
+            ):
+                with self.assertRaisesRegex(RuntimeError, "simulated interruption"):
+                    validate_and_publish_staged_texts(staged, live, ledger)
+
+            self.assertFalse((live / "text/S01.txt").exists())
+            validate_and_publish_staged_texts(staged, live, ledger)
+            self.assertEqual((live / "text/S01.txt").read_bytes(), content)
 
     def test_late_validation_failure_does_not_partially_update_pending_briefs(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -126,10 +171,19 @@ class PrepareScreeningTests(unittest.TestCase):
             }
             items[18]["title_hint"] = "must not be published"
             (screening / "text/R46.txt").unlink()
+            manifest = screening / "manifest.json"
+            manifest.write_bytes(b"original manifest")
 
             with self.assertRaises(FileNotFoundError):
-                write_pending_briefs(project, screening, items)
+                publish_refresh_metadata(
+                    manifest,
+                    "replacement manifest",
+                    project,
+                    screening,
+                    items,
+                )
 
+            self.assertEqual(manifest.read_bytes(), b"original manifest")
             for number, content in before.items():
                 self.assertEqual(
                     (screening / "briefs" / f"batch_{number:02}.md").read_bytes(),

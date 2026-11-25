@@ -1,5 +1,5 @@
 schema_version: 1
-context_version: "2026-11-25.5"
+context_version: "2026-11-25.6"
 project: "HK261 PRISMA systematic review"
 canonical_workspace:
   path: "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)"
@@ -19,6 +19,7 @@ preserved_research:
   ledger: "../migration/keep_research_preservation.tsv"
   exact_candidate_versions: "../sources/preserved_candidate_fulltext/checksums.sha256"
   formal_search_evidence: "../sources/source_audit_checksums.sha256"
+  historical_locator_mapping: "../migration/historical_locator_mapping.tsv"
 rollback:
   root: "/Volumes/JokerData/PhD/HK261-reconciliation-backups/2026-11-25-split-brain"
   pre_promotion_project: "root_project_live_before_promotion"

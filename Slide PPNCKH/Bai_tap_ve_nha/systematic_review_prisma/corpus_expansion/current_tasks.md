@@ -36,6 +36,8 @@ changes that policy.
 - Batch 04 dispatch count: zero.
 - Batch 04 blocker count: 1 repository-wide clean-tree policy conflict.
 - Manuscript changes from batches 01-03: zero.
+- Accepted brief mutations from refresh tooling: zero; any batch with a
+  transport, result, or review artifact is immutable to the producer.
 
 These are report-level working decisions, not final eligible-study or PRISMA
 counts. Final human adjudication, version/study-family reconciliation, formal

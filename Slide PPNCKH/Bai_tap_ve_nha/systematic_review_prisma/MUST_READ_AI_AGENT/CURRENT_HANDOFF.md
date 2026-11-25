@@ -98,6 +98,13 @@ stop and reconcile the conflict before starting or delegating another task.
   resolve under `sources/preserved_candidate_fulltext/`, including the C06 PMC
   HTML. The three local evidence files named by `formal_search_log_v0.2.csv`
   are restored under `sources/raw/` and `sources/normalized/`.
+- Accepted Batch 01-03 derivatives remain byte-identical audit records. Eight
+  embedded historical worktree locator occurrences map to four hash-verified
+  canonical files through `migration/historical_locator_mapping.tsv`; do not
+  rewrite the accepted JSON to modernize those historical strings.
+- The refresh producer preserves every brief with a transport/result/review
+  artifact, validates all undispatched brief inputs before metadata publication,
+  and uses same-filesystem atomic replacement when recovering missing text.
 - The obsolete live `sources/candidate_fulltext` symlink is absent. Its original
   tree and target evidence remain recoverable under
   `/Volumes/JokerData/PhD/HK261-reconciliation-backups/2026-11-25-split-brain/`;

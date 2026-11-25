@@ -87,9 +87,17 @@ def validate_and_publish_staged_texts(
 
     for staged, live, expected_digest in missing_live:
         live.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(staged, live)
-        if sha256(live) != expected_digest:
-            raise RuntimeError(f"published checksum mismatch: {live}")
+        temporary = None
+        try:
+            with tempfile.NamedTemporaryFile(dir=live.parent, delete=False) as handle:
+                temporary = Path(handle.name)
+            shutil.copy2(staged, temporary)
+            if sha256(temporary) != expected_digest:
+                raise RuntimeError(f"temporary checksum mismatch: {live}")
+            os.replace(temporary, live)
+        finally:
+            if temporary and temporary.exists():
+                temporary.unlink()
 
 
 def _absolute_evidence_record(record: dict, evidence_root: Path) -> dict:
@@ -102,25 +110,36 @@ def _absolute_evidence_record(record: dict, evidence_root: Path) -> dict:
     return result
 
 
-def write_pending_briefs(
+def _has_dispatch_artifact(screening_root: Path, number: int) -> bool:
+    stem = f"batch_{number:02}"
+    return any(
+        any((screening_root / directory).glob(stem + "*"))
+        for directory in ("results", "reviews")
+    )
+
+
+def _render_undispatched_briefs(
     project_root: Path,
     screening_root: Path,
     items: list[dict],
     evidence_root: Optional[Path] = None,
-) -> None:
-    """Refresh Batch 04-08 payloads without touching accepted Batch 01-03."""
+) -> tuple[dict[int, str], list[tuple[Path, str]]]:
     del project_root  # The committed prefix already contains canonical protocols.
     if len(items) != 46:
         raise ValueError(f"expected 46 manifest records, observed {len(items)}")
     evidence_root = (evidence_root or screening_root).resolve()
-    accepted = {
+    preserved_numbers = {1, 2, 3} | {
+        number for number in range(4, 9)
+        if _has_dispatch_artifact(screening_root, number)
+    }
+    preserved = {
         number: sha256(screening_root / "briefs" / f"batch_{number:02}.md")
-        for number in range(1, 4)
+        for number in preserved_numbers
     }
 
     rendered = []
     for number, (start, end) in enumerate(GROUP_RANGES, 1):
-        if number <= 3:
+        if number in preserved_numbers:
             continue
         path = screening_root / "briefs" / f"batch_{number:02}.md"
         current = path.read_text()
@@ -133,14 +152,48 @@ def write_pending_briefs(
             (path, prefix + INPUT_MARKER
              + json.dumps(records, ensure_ascii=False, indent=2) + "\n")
         )
+    return preserved, rendered
 
+
+def _publish_brief_updates(
+    preserved: dict[int, str], rendered: list[tuple[Path, str]], screening_root: Path
+) -> None:
     for path, content in rendered:
         atomic_write_text(path, content)
 
-    for number, expected_digest in accepted.items():
+    for number, expected_digest in preserved.items():
         path = screening_root / "briefs" / f"batch_{number:02}.md"
         if sha256(path) != expected_digest:
-            raise RuntimeError(f"accepted brief {number} was modified")
+            raise RuntimeError(f"dispatched brief {number} was modified")
+
+
+def write_pending_briefs(
+    project_root: Path,
+    screening_root: Path,
+    items: list[dict],
+    evidence_root: Optional[Path] = None,
+) -> None:
+    """Refresh only briefs with no transport, result, or review artifact."""
+    preserved, rendered = _render_undispatched_briefs(
+        project_root, screening_root, items, evidence_root
+    )
+    _publish_brief_updates(preserved, rendered, screening_root)
+
+
+def publish_refresh_metadata(
+    manifest_path: Path,
+    manifest_content: str,
+    project_root: Path,
+    screening_root: Path,
+    items: list[dict],
+    evidence_root: Optional[Path] = None,
+) -> None:
+    """Validate every brief input before publishing manifest or brief metadata."""
+    preserved, rendered = _render_undispatched_briefs(
+        project_root, screening_root, items, evidence_root
+    )
+    atomic_write_text(manifest_path, manifest_content)
+    _publish_brief_updates(preserved, rendered, screening_root)
 
 
 def portable_provenance(locator: str) -> str:
@@ -235,11 +288,13 @@ def refresh_frozen_pack() -> dict:
             "provenance/version correspondence."
         ),
     }
-    atomic_write_text(
+    publish_refresh_metadata(
         manifest_path,
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        ROOT,
+        SCREENING_ROOT,
+        items,
     )
-    write_pending_briefs(ROOT, SCREENING_ROOT, items)
     return {
         "records": len(items),
         "batches": len(GROUP_RANGES),
