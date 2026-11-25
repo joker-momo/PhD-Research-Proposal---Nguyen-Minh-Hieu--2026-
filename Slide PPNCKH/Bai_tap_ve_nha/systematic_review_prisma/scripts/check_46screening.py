@@ -6,6 +6,8 @@ import re
 import unicodedata
 from pathlib import Path
 
+from screening_paths import resolve_screening_path
+
 ROOT = Path(__file__).resolve().parents[1] / 'screening_46'
 GATES = ['primary_full_report', 'multi_uav_evaluated', 'collaborative_inference',
          'evaluative_evidence', 'date_window', 'english']
@@ -38,7 +40,10 @@ def check(path):
             errors.append(f'A1 unknown ID {rid}')
             continue
         source = manifest[rid]
-        blocks = re.split(r'=== PDF PAGE (\d+) ===\n', Path(source['text']).read_text())
+        blocks = re.split(
+            r'=== PDF PAGE (\d+) ===\n',
+            resolve_screening_path(ROOT, source['text']).read_text(),
+        )
         pages = {int(blocks[i]):blocks[i+1] for i in range(1,len(blocks),2)}
         for field in ['title','authors','year','venue','doi','source_version','identity_evidence','gates','decision','primary_reason','evaluation_modes','alignment','unresolved']:
             if field not in r or (not r[field] and field != 'unresolved'):
