@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T06:35:14+07:00
+**updated_at:** 2026-11-26T06:37:12+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -161,10 +161,10 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-After committing/merging/cleaning rejected Batch 08, prepare a targeted correction
-brief for C22,C23,C24,SNCS; preserve C25 unchanged. Correct shared-author counts
-and reassess SNCS under request/resource orchestration scope, without requiring
-layer splitting. Commit the brief before routed correction dispatch.
+After this brief is committed/merged/cleaned, route
+`screening_46/briefs/batch_08_correction.md` for exactly C22,C23,C24,SNCS.
+Keep C25 structurally unchanged and primary Batch 08 quarantined. Validate
+32 corrected / 40 combined quotes and all C1–C6 before adoption.
 No provider task is active; accepted count remains 41/46.
 
 ## Authorized concurrent baseline update
@@ -173,10 +173,10 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-08-primary",
-  "status": "rejected",
-  "started_at": "2026-11-26T06:29:59+07:00",
-  "updated_at": "2026-11-26T06:35:14+07:00",
-  "completed_at": "2026-11-26T06:35:14+07:00"
+  "task_id": "screening-batch-08-correction-brief",
+  "status": "completed",
+  "started_at": "2026-11-26T06:37:12+07:00",
+  "updated_at": "2026-11-26T06:37:12+07:00",
+  "completed_at": "2026-11-26T06:37:12+07:00"
 }
 -->
