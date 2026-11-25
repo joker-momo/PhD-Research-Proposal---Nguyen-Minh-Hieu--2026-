@@ -1,12 +1,30 @@
 """Dispatch already-written briefs serially; persist unreviewed transport evidence."""
 import argparse
 import json
+import os
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1] / 'screening_46'
+PROJECT_ROOT = ROOT.parent
+REPOSITORY_ROOT = ROOT.parents[3]
 AGENT = Path('/Users/joker/.config/a2a-cli/agents/gemini-research')
+
+
+def owned_git_status(repository=REPOSITORY_ROOT, project=PROJECT_ROOT):
+    """Return staged, modified, or untracked residue in the owned scopes."""
+    paths = [repository / 'AGENTS.md', repository / '.codex', project]
+    relative_paths = [str(path.relative_to(repository)) for path in paths]
+    env = dict(os.environ, GIT_OPTIONAL_LOCKS='0')
+    result = subprocess.run(
+        ['git', '-C', str(repository), 'status', '--porcelain=v1', '-z',
+         '--untracked-files=all', '--', *relative_paths],
+        capture_output=True, env=env, timeout=8, check=False,
+    )
+    if result.returncode:
+        raise RuntimeError('Cannot verify owned-scope Git status.')
+    return result.stdout
 
 def run(args):
     return subprocess.run(args, cwd=AGENT, capture_output=True, text=True)
@@ -46,9 +64,11 @@ if __name__ == '__main__':
     args.end = args.start if args.end is None else args.end
     if args.end != args.start:
         raise RuntimeError('Dispatch one batch only; review and commit it before the next task.')
-    status = subprocess.run(['git','status','--porcelain'],cwd=ROOT,capture_output=True,text=True,check=True)
-    if status.stdout.strip():
-        raise RuntimeError('Project working tree must be clean before dispatch.')
+    if owned_git_status():
+        raise RuntimeError(
+            'HK261, repository .codex, and repository AGENTS.md must be clean '
+            'before dispatch.'
+        )
     primary=run(['a2a-serve','status','--dir',str(AGENT),'--url'])
     primary.check_returncode()
     for batch in range(args.start,args.end+1):

@@ -125,9 +125,10 @@ stop and reconcile the conflict before starting or delegating another task.
   clean-tree and freshness checks remain mandatory.
 - Batch 04 remains undispatched and no research provider task is active. The
   clean-tree policy blocker is resolved and the Batch 04 brief gate is PASS.
-  `scripts/run_screening_batches.py` still checks repository-wide status and
-  would reject the authorized external baseline; repair and test that driver in
-  a separate commit before dispatch.
+  `scripts/run_screening_batches.py` now uses the same three owned scopes as the
+  task gate; its baseline-aware unit tests cover all three Git states outside the
+  scope and all three owned paths. Dispatch is ready after this task is committed,
+  merged, and the clean/fresh gate passes on `main`.
 
 ## Current submission verdict
 
@@ -142,8 +143,7 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-Repair the screening driver's clean-tree check to use the three authorized owned
-scopes, then dispatch Batch 04 when:
+Dispatch Batch 04 when:
 
 1. the path-scoped hook reports clean owned scopes;
 2. `CURRENT_HANDOFF.md` and `current_tasks.md` are fresh at the latest project
