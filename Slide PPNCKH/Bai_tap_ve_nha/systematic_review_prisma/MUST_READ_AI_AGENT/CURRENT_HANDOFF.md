@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T05:58:07+07:00
+**updated_at:** 2026-11-26T05:59:19+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -151,18 +151,19 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-Commit/merge/clean this accepted Batch 05 correction task. Then route the
-committed Batch 06 brief (C11–C16) once after clean-owned, fresh-status and
+Batch 05 acceptance is committed at `9d527d9`. Briefs 06–08 now explicitly
+preserve short date/title quotes and conditional preprint eligibility. After
+this brief task is committed/merged/cleaned, route the committed Batch 06 brief (C11–C16) once after clean-owned, fresh-status and
 timestamp gates. Preserve eight UNCERTAIN report decisions for identity/date/
 scope adjudication; never count them as included studies. No provider task is
 active. The batch_05 combined candidate is retained solely for the audit trail.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-05-correction",
+  "task_id": "clarify-screening-briefs-06-08",
   "status": "completed",
-  "started_at": "2026-11-26T05:50:50+07:00",
-  "updated_at": "2026-11-26T05:58:07+07:00",
-  "completed_at": "2026-11-26T05:58:07+07:00"
+  "started_at": "2026-11-26T05:58:55+07:00",
+  "updated_at": "2026-11-26T05:59:19+07:00",
+  "completed_at": "2026-11-26T05:59:19+07:00"
 }
 -->
