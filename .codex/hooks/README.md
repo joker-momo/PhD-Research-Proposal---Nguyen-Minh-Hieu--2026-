@@ -105,3 +105,18 @@ and all owned scopes are clean; preserve the external baseline exactly. Never
 interpret these limitations as permission to skip manual checks. The user
 explicitly requested honest FAIL rather than pretending hook enforcement. This
 task delivers the configured guardrail and limitations.
+
+## Timestamp validation update
+
+The gate now validates task-state blocks in both current status documents,
+manifest updated_at and the append-only event log. It rejects missing fields,
+timezone-free/date-only/malformed/future values, unknown `-00:00` offsets,
+inverted task times and inconsistent current metadata. No dependency was added.
+Historical raw evidence remains unchanged; the event log begins at adoption.
+
+Validation: 17 task-gate tests and 18 skill-router tests PASS. The task-gate suite
+includes the previous 9 tests and 8 timestamp tests; its valid clean fixture
+covers valid timestamps. Missing-field, timezone, format and future tests invoke
+the real hook subprocess. Every invocation checks unchanged Git status, index
+bytes and a tracked control file. Invalid timestamps still allow finishing Git
+commands. Live Codex activation remains UNVERIFIED.

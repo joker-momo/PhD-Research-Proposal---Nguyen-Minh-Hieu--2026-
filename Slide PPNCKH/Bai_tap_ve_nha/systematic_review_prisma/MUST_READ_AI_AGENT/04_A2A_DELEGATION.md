@@ -105,3 +105,10 @@ remote/MCP route, or opted-out tool path. It also requires Codex hook trust.
 Until runtime activation is verified, claim only the direct subprocess tests,
 not that all dispatch is automatically blocked. See `.codex/hooks/README.md` at
 the repository root. The agent must independently enforce the same gate.
+
+## Timestamp evidence before dispatch
+
+Apply the timestamp rule in `03_WORKFLOW_AND_GATES.md`: verify both task-state
+blocks, manifest updated_at and latest event-log entry. Record actual provider
+start/completion times and task/context IDs. A completed provider event is not
+an acceptance event; give Codex review its own observed timestamp.

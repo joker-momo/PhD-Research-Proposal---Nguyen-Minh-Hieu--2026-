@@ -1,7 +1,7 @@
 # MUST READ - HK261 PRISMA Project
 
 **Context version:** 1.0
-**Last verified:** 25 November 2026
+**updated_at:** 2026-11-25T23:15:36+07:00
 **Scope:** HK261 scientific-methods coursework and its PRISMA systematic review
 only. This project must not be merged with the PhD dissertation-roadmap work.
 
@@ -53,3 +53,6 @@ or `MISSING REQUIREMENT` note. Never invent the missing decision.
   checks run, unresolved items, and the next exact action.
 - Agent-owned Git changes are committed through the approved branch/worktree
   flow; no agent-created branch or uncommitted agent change remains.
+
+Current timestamps follow `03_WORKFLOW_AND_GATES.md`. Read `events.jsonl` for
+post-adoption events; legacy artifacts retain their original provenance.

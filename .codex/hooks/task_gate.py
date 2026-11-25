@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Read-only HK261 task reminder and recognized A2A command guard."""
 import json
+from datetime import datetime, timezone
+import re
 import os
 from pathlib import Path
 import shlex
@@ -34,6 +36,8 @@ criteria PASS before adoption. Re-read project AGENTS.md and onboarding manifest
 after restart, compaction, or a model change. Hooks are not a security boundary.
 Update CURRENT_HANDOFF.md and current_tasks.md in the commit that closes or
 changes a task; stale status documents block the next recognized A2A dispatch.
+Use RFC 3339 timestamps with timezone (default Asia/Ho_Chi_Minh): started_at,
+updated_at, completed_at for finished tasks; timestamp for every new log event.
 """
 
 
@@ -99,6 +103,68 @@ def status_documents_fresh():
     ))
 
 
+TIMESTAMP_PATTERN = re.compile(
+    r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})"
+)
+TASK_STATE_PATTERN = re.compile(r"<!-- HK261_TASK_STATE\n(.*?)\n-->", re.DOTALL)
+
+
+def parse_timestamp(value, now):
+    if not isinstance(value, str) or not TIMESTAMP_PATTERN.fullmatch(value):
+        raise ValueError("timestamp must be RFC 3339 with seconds and timezone")
+    if value.endswith("-00:00"):
+        raise ValueError("timestamp timezone must be known, not -00:00")
+    parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    if parsed > now:
+        raise ValueError("future timestamp is not permitted")
+    return parsed
+
+
+def validate_task_timestamps(record, now):
+    if not isinstance(record, dict) or not record.get("task_id"):
+        raise ValueError("task record requires task_id")
+    if record.get("status") not in {"active", "completed", "rejected", "blocked"}:
+        raise ValueError("task record has missing or invalid status")
+    started = parse_timestamp(record.get("started_at"), now)
+    updated = parse_timestamp(record.get("updated_at"), now)
+    if started > updated:
+        raise ValueError("started_at must not be after updated_at")
+    if record["status"] in {"completed", "rejected"} or "completed_at" in record:
+        completed = parse_timestamp(record.get("completed_at"), now)
+        if not started <= completed <= updated:
+            raise ValueError("completed_at must lie between started_at and updated_at")
+
+
+def status_timestamps_valid():
+    now = datetime.now(timezone.utc)
+    records = []
+    for path in STATUS_DOCUMENTS:
+        blocks = TASK_STATE_PATTERN.findall(path.read_text())
+        if len(blocks) != 1:
+            raise ValueError(f"{path.name} requires exactly one HK261_TASK_STATE block")
+        record = json.loads(blocks[0])
+        validate_task_timestamps(record, now)
+        records.append(record)
+    if records[0] != records[1]:
+        raise ValueError("handoff and task queue metadata disagree")
+    manifest = PROJECT / "MUST_READ_AI_AGENT/context_manifest.yaml"
+    values = re.findall(r'^updated_at: "([^"\n]+)"$', manifest.read_text(), re.MULTILINE)
+    if len(values) != 1 or values[0] != records[0]["updated_at"]:
+        raise ValueError("manifest updated_at must match current task metadata")
+    log = PROJECT / "MUST_READ_AI_AGENT/events.jsonl"
+    events = [json.loads(line) for line in log.read_text().splitlines() if line.strip()]
+    if not events:
+        raise ValueError("event log is empty")
+    for event in events:
+        if not isinstance(event, dict) or not event.get("task_id") or not event.get("event"):
+            raise ValueError("event requires task_id and event fields")
+        parse_timestamp(event.get("timestamp"), now)
+    last = events[-1]
+    if last["task_id"] != records[0]["task_id"] or last["timestamp"] != records[0]["updated_at"]:
+        raise ValueError("latest event must match current task and updated_at")
+    return True
+
+
 def main():
     try:
         payload = json.load(sys.stdin)
@@ -118,6 +184,7 @@ def main():
                       "CURRENT_HANDOFF.md and current_tasks.md together in a "
                       "focused commit before dispatching another task.")
         else:
+            status_timestamps_valid()
             return 0
     except (ValueError, AttributeError, OSError, RuntimeError,
             subprocess.TimeoutExpired) as error:

@@ -7,7 +7,9 @@ or next actions changed.
 ```markdown
 # Session handoff
 
-Timestamp:
+started_at: [actual RFC 3339 time with timezone]
+updated_at: [actual RFC 3339 time with timezone]
+completed_at: [actual RFC 3339 time when finished; omit while active]
 Agent/model:
 Task:
 Branch/worktree:
@@ -54,3 +56,17 @@ Branch/worktree:
 
 Never write “done”, “verified”, “ready”, or “submitted” without the concrete
 evidence path and the gate that supports that status.
+
+Copy the current task metadata into exactly one JSON comment block in both
+CURRENT_HANDOFF.md and current_tasks.md (replace values with observed times):
+
+```text
+<!-- HK261_TASK_STATE
+{"task_id":"task-name","status":"completed","started_at":"<RFC3339>","updated_at":"<RFC3339>","completed_at":"<RFC3339>"}
+-->
+```
+
+Use the same updated_at in context_manifest.yaml and append one event with
+`timestamp`, `task_id`, and `event` to events.jsonl. Actual time is required;
+placeholders in this template must never enter current state. Historical unknown
+timestamps remain explicitly unknown, never estimated as midnight.

@@ -105,3 +105,28 @@ Durable entry points: repository-root `AGENTS.md`, this onboarding manifest,
 and repository-root `.codex/hooks.json`. See `.codex/hooks/README.md` for tested
 behavior and runtime limits. The hook is a guardrail, not verified complete
 runtime enforcement. Manual clean-tree/ownership checks remain mandatory.
+
+## Timestamp rule (user request: 2026-11-25T23:02:44+07:00)
+
+Every new task/work record must have `started_at` and `updated_at`, plus
+`completed_at` when completed or rejected. Every new event-log entry must have
+`timestamp`. Use RFC 3339 with seconds and a known timezone, default
+Asia/Ho_Chi_Minh (`+07:00`). Future timestamps, date-only values and relative
+phrases are not valid event times. Planned deadlines belong in separate fields.
+Never infer an unknown historical time; retain immutable raw/accepted history
+and label missing historical time explicitly rather than rewriting provenance.
+
+Keep exactly one `HK261_TASK_STATE` JSON comment block in each current handoff
+and task queue. Both blocks must match: `task_id`, `status` (`active`, `completed`,
+`rejected`, `blocked`), `started_at`, `updated_at`, and `completed_at` when finished.
+Require started_at <= completed_at <= updated_at <= current time (omit the
+completion comparison for unfinished work). Manifest `updated_at` and the last
+`MUST_READ_AI_AGENT/events.jsonl` entry must match the current task's updated_at;
+the last event task_id must also match. Append log entries, never overwrite them.
+Update these artifacts in the same task commit. Use a fresh time for the actual
+update; do not use a planned commit or dispatch time as an observed event.
+
+The read-only gate blocks recognized A2A dispatch for invalid timestamps, in
+addition to dirty owned scopes and stale status documents. Non-A2A commands
+remain available to finish and repair the current task. Direct tests do not prove
+live hook activation; manual enforcement remains mandatory.

@@ -1,6 +1,8 @@
 # Current research tasks
 
-updated_at: 2026-11-25T23:12:19+07:00. This queue records accepted work boundaries, not
+Updated_at: 2026-11-25T23:16:53+07:00
+
+This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
 Gemini 3.8 Flash is the primary read-only research worker; the confined
 `gpt-5.6-luna`/low fallback is permitted only for recognized provider quota.
@@ -21,7 +23,7 @@ without blocking dispatch.
 | Screening batch 02 | S07-S12 | accepted working screening | 6 INCLUDE; 48/48 source-page checks; gate `screening_46/reviews/batch_02_combined_gate.md`; commit `c3c6c08` | Preserve; reconcile versions/study families later |
 | Screening batch 03 | S13-S18 | accepted working screening | 6 INCLUDE; 48/48 batch locators plus 30/30 S16 correction locators; gate `screening_46/reviews/batch_03_combined_gate.md`; commit `fc8944f` | Preserve S16 version limits; reconcile later |
 | Screening batch 04 | S19-S20, C01-C04 | primary rejected A2/A3; first correction rejected C4 | 0 accepted decisions; correction task `01a21371-c7a6-738e-b56a-57454a1221e6`; 48/48 locators; review `screening_46/reviews/batch_04_correction_review.md` | After timestamp gate, prepare a targeted C03 protocol-consistency follow-up |
-| Timestamp standardization | logs/status/hooks | next mandatory CODEX_WRITING task | requested_at 2026-11-25T23:02:44+07:00 | Start only after correction commit/merge/cleanup; five timestamp validation cases plus regression tests |
+| Timestamp standardization | logs/status/hooks | implemented; commit/merge gate pending | requested_at 2026-11-25T23:02:44+07:00; 17 gate tests + 18 skill-router tests PASS | After merge, prepare targeted C03 follow-up |
 | Screening batch 05 | C05-C10 | not started | none | Wait for batch 04 commit and clean gate |
 | Screening batch 06 | C11-C16 | not started | none | Wait for batch 05 commit and clean gate |
 | Screening batch 07 | C17-C21 | not started | none | Wait for batch 06 commit and clean gate |
@@ -62,11 +64,13 @@ The authorized hook checks only this project, repository `.codex/`, and
 repository `AGENTS.md`; those scopes must be clean before dispatch. The external
 baseline is not permission to create new residue outside the owned scopes.
 
-## Current task and goal timestamps
 
-Goal version: HK261-PRISMA-SNCS-v2
-Goal adopted_at: 2026-11-25T23:03:52+07:00
-Task: batch_04_correction
-started_at: 2026-11-25T23:02:33+07:00
-updated_at: 2026-11-25T23:12:19+07:00
-completed_at: 2026-11-25T23:12:19+07:00
+<!-- HK261_TASK_STATE
+{
+  "task_id": "timestamp-standardization",
+  "status": "completed",
+  "started_at": "2026-11-25T23:13:23+07:00",
+  "updated_at": "2026-11-25T23:16:53+07:00",
+  "completed_at": "2026-11-25T23:16:53+07:00"
+}
+-->

@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-25T23:12:19+07:00
+**updated_at:** 2026-11-25T23:16:53+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -78,10 +78,9 @@ stop and reconcile the conflict before starting or delegating another task.
 
 ## Critical unresolved work
 
-1. Complete the mandatory timestamp-standardization task requested at
-   2026-11-25T23:02:44+07:00 after this correction task is committed, merged and
-   cleaned. Then commit a targeted C03 follow-up brief, route it and require all
-   C1–C6 checks PASS before advancing to batches 05–08.
+1. Timestamp standardization is implemented with 17 gate tests and 18 skill-router
+   tests passing. After its commit/merge/cleanup, prepare a targeted C03 follow-up
+   brief, route it and require all C1–C6 checks PASS before batches 05–08.
 2. Reconcile all accepted working decisions with report versions, study families,
    the canonical 27-report dataset, extraction, and quality appraisal.
 3. Execute/export/reconcile IEEE Xplore, ACM Digital Library, Scopus, and Web of
@@ -156,16 +155,19 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-Close this correction task by validation, explicit staging, commit, fast-forward
-merge and task-worktree/branch cleanup. Then start one CODEX_WRITING task to add
-RFC 3339 timestamps with timezone to current task/status records, onboarding,
-handoff template and hook validation. Test valid input, missing fields, missing
-timezone, malformed values and future timestamps. Preserve the external
-50-entry baseline hash `6d697aef1256c93f184e5e269ab8c75992cd98675b4c79dca3f2b98272a16e6c`.
-Only after that task is merged may the targeted C03 follow-up be prepared.
+After timestamp-task commit/merge/cleanup, prepare one linked C03 corrective
+brief. Keep analytical evidence eligible under protocol 4.1(4), require a full
+six-record replacement and 48/48 locators, then commit the brief and refresh both
+status metadata blocks, manifest updated_at and the append-only event log before
+routing. No new task may start with owned residue. Timestamp gate validation is
+read-only; automatic Codex hook activation remains unverified.
 
-## Current task timestamps
-
-started_at: 2026-11-25T23:02:33+07:00
-updated_at: 2026-11-25T23:12:19+07:00
-completed_at: 2026-11-25T23:12:19+07:00
+<!-- HK261_TASK_STATE
+{
+  "task_id": "timestamp-standardization",
+  "status": "completed",
+  "started_at": "2026-11-25T23:13:23+07:00",
+  "updated_at": "2026-11-25T23:16:53+07:00",
+  "completed_at": "2026-11-25T23:16:53+07:00"
+}
+-->

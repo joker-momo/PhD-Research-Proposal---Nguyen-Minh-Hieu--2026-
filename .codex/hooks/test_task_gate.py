@@ -1,5 +1,7 @@
 """Exercise actual hook subprocesses in disposable Git worktrees; no network."""
 import json
+import re
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import shutil
 import subprocess
@@ -37,9 +39,33 @@ class TaskGateTests(unittest.TestCase):
         self.tasks.parent.mkdir(parents=True)
         self.handoff.write_text("# Current Handoff\n\nCurrent fixture state.\n")
         self.tasks.write_text("# Current research tasks\n\nNo active task.\n")
+        self.write_timestamps()
         self.git("add", ".")
         self.git("commit", "-qm", "fixture")
         self.addCleanup(self.temp.cleanup)
+
+    def write_timestamps(self):
+        timestamp = (datetime.now(timezone.utc) - timedelta(minutes=1)).isoformat(timespec="seconds")
+        record = dict(task_id="fixture", status="completed", started_at=timestamp,
+                      updated_at=timestamp, completed_at=timestamp)
+        for path in (self.handoff, self.tasks):
+            path.write_text(path.read_text() + "\n<!-- HK261_TASK_STATE\n" +
+                            json.dumps(record) + "\n-->\n")
+        manifest = self.handoff.parent / "context_manifest.yaml"
+        manifest.write_text('updated_at: "' + timestamp + '"\n')
+        self.events = self.handoff.parent / "events.jsonl"
+        self.events.write_text(json.dumps(dict(task_id="fixture", event="completed",
+                                              timestamp=timestamp)) + "\n")
+
+    def commit_timestamp_change(self, mutate):
+        for path in (self.handoff, self.tasks):
+            text = path.read_text()
+            prefix, block = text.split("<!-- HK261_TASK_STATE\n")
+            record = json.loads(block.split("\n-->")[0])
+            mutate(record)
+            path.write_text(prefix + "<!-- HK261_TASK_STATE\n" + json.dumps(record) + "\n-->\n")
+        self.git("add", str(self.project.relative_to(self.root)))
+        self.git("commit", "-qm", "timestamp fixture")
 
     def git(self, *args):
         return subprocess.run(["git", "-C", str(self.root), *args],
@@ -85,8 +111,8 @@ class TaskGateTests(unittest.TestCase):
         self.git("commit", "-qm", "accepted result without status update")
         self.handoff.write_text("# Current Handoff\n\nBatch 99 accepted.\n")
         self.tasks.write_text("# Current research tasks\n\nBatch 100 is next.\n")
-        self.git("add", str(self.handoff.relative_to(self.root)),
-                 str(self.tasks.relative_to(self.root)))
+        self.write_timestamps()
+        self.git("add", str(self.project.relative_to(self.root)))
         self.git("commit", "-qm", "refresh current status")
 
         result = self.call("rtk proxy scripts/a2a-route --brief next.md")
@@ -160,6 +186,49 @@ class TaskGateTests(unittest.TestCase):
             for field in ["TASK:", "OWNER:", "OWNED_PATHS:", "BINARY_ACCEPTANCE:",
                           "PRE_TASK_GIT_STATUS:"]:
                 self.assertIn(field, r.stdout)
+
+    def test_missing_timestamp_fields_block(self):
+        original = json.loads(re.search(r"<!-- HK261_TASK_STATE\n(.*?)\n-->",
+                                        self.handoff.read_text(), re.DOTALL).group(1))
+        for field in ("started_at", "updated_at", "completed_at"):
+            def remove_one(record):
+                record.clear()
+                record.update(original)
+                record.pop(field)
+            self.commit_timestamp_change(remove_one)
+            self.assertEqual(2, self.call("a2a-route --brief next.md").returncode)
+
+    def test_timezone_missing_blocks(self):
+        self.commit_timestamp_change(lambda r: r.update(started_at="2026-01-01T00:00:00"))
+        self.assertEqual(2, self.call("a2a-route --brief next.md").returncode)
+
+    def test_malformed_timestamp_blocks(self):
+        self.commit_timestamp_change(lambda r: r.update(started_at="2026-02-30T00:00:00+07:00"))
+        self.assertEqual(2, self.call("a2a-route --brief next.md").returncode)
+
+    def test_future_timestamp_blocks(self):
+        future = (datetime.now(timezone.utc) + timedelta(days=1)).isoformat(timespec="seconds")
+        self.commit_timestamp_change(lambda r: r.update(completed_at=future))
+        self.assertIn("future timestamp", self.call("a2a-route --brief next.md").stderr)
+
+    def test_wrong_timestamp_order_blocks(self):
+        self.commit_timestamp_change(lambda r: r.update(updated_at="2020-01-01T00:00:00Z"))
+        self.assertEqual(2, self.call("a2a-route --brief next.md").returncode)
+
+    def test_unknown_timezone_blocks(self):
+        self.commit_timestamp_change(lambda r: r.update(started_at="2020-01-01T00:00:00-00:00"))
+        self.assertEqual(2, self.call("a2a-route --brief next.md").returncode)
+
+    def test_invalid_event_timestamp_blocks(self):
+        event = json.loads(self.events.read_text())
+        event["timestamp"] = "2026-01-01"
+        self.events.write_text(json.dumps(event) + "\n")
+        self.commit_timestamp_change(lambda r: None)
+        self.assertEqual(2, self.call("a2a-route --brief next.md").returncode)
+
+    def test_invalid_timestamps_allow_finishing_commands(self):
+        self.commit_timestamp_change(lambda r: r.pop("started_at"))
+        self.assertEqual(0, self.call("git commit -m repair").returncode)
 
 
 if __name__ == "__main__":
