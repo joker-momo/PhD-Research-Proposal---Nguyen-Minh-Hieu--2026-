@@ -1,0 +1,13 @@
+{
+  "selected_agent": "gemini-primary",
+  "primary_task_id": "01a21367-17e7-767c-b5cb-b595ef2ccb56",
+  "fallback_task_id": null,
+  "fallback_reason": null,
+  "primary_state": "TASK_STATE_COMPLETED",
+  "review_state": "unreviewed",
+  "task_id": "01a21367-17e7-767c-b5cb-b595ef2ccb56",
+  "context_id": "01a21367-17e8-732c-bc2a-905c28d3b471",
+  "state": "TASK_STATE_COMPLETED",
+  "review": "REJECTED_A2_A3",
+  "review_path": "screening_46/reviews/batch_04_review.md"
+}

@@ -44,10 +44,12 @@ stop and reconcile the conflict before starting or delegating another task.
   `fc8944f`.
 - Progress: 18/46 reports reviewed through an accepted working gate; 17 INCLUDE,
   1 EXCLUDE, 28 not yet screened in this campaign.
-- Batch 04 has not been dispatched. Its committed brief passed the objective
-  input/contract gate in `screening_46/reviews/batch_04_brief_gate.md`: 5/5
-  headings, 6/6 IDs, 18/18 locators, and 6/6 PDF/checksum checks. No research
-  task is currently active.
+- Batch 04 primary task `01a21367-17e7-767c-b5cb-b595ef2ccb56` completed
+  transport but was rejected by the Codex gate (`REJECTED_A2_A3`). Mechanical
+  evidence: 6/6 records returned, 44/48 page/quote locators match, four locator
+  failures, and 6/6 empty `primary_reason` fields. Review:
+  `screening_46/reviews/batch_04_review.md`. No research task is currently active
+  and no Batch 04 decision is accepted.
 - These working decisions are not final human adjudication, unique-study counts,
   final PRISMA arithmetic, or permission to change manuscript conclusions.
 
@@ -64,8 +66,9 @@ stop and reconcile the conflict before starting or delegating another task.
 
 ## Critical unresolved work
 
-1. Screen batches 04-08 serially with one committed brief/result/review task at a
-   time and a clean-tree gate between tasks.
+1. Commit a focused Batch 04 correction brief, route one linked correction task,
+   and accept no decision until every A1–A6 criterion passes; then continue
+   batches 05–08 serially.
 2. Reconcile all accepted working decisions with report versions, study families,
    the canonical 27-report dataset, extraction, and quality appraisal.
 3. Execute/export/reconcile IEEE Xplore, ACM Digital Library, Scopus, and Web of
@@ -123,12 +126,10 @@ stop and reconcile the conflict before starting or delegating another task.
   count or treat the exact preserved external baseline as task residue.
 - Automatic hook activation remains unverified in the Codex runtime; manual
   clean-tree and freshness checks remain mandatory.
-- Batch 04 remains undispatched and no research provider task is active. The
-  clean-tree policy blocker is resolved and the Batch 04 brief gate is PASS.
-  `scripts/run_screening_batches.py` now uses the same three owned scopes as the
-  task gate; its baseline-aware unit tests cover all three Git states outside the
-  scope and all three owned paths. Dispatch is ready after this task is committed,
-  merged, and the clean/fresh gate passes on `main`.
+- Batch 04 primary transport is complete but rejected evidence is quarantined.
+  The review identifies six A2 schema failures and four A3 locator failures. No
+  provider task is active; the next research action is a separately committed
+  correction brief linked to the primary task.
 
 ## Current submission verdict
 
@@ -143,10 +144,11 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-Dispatch Batch 04 when:
+Prepare the Batch 04 corrective task when:
 
 1. the path-scoped hook reports clean owned scopes;
 2. `CURRENT_HANDOFF.md` and `current_tasks.md` are fresh at the latest project
    commit;
 3. the five pre-task fields are published; and
-4. batch 04's committed brief and brief gate remain byte-identical/PASS.
+4. the correction brief names every failed field and keeps the primary result
+   quarantined until all A1–A6 checks pass.
