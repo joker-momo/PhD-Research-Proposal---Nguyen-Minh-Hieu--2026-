@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T06:37:12+07:00
+**updated_at:** 2026-11-26T06:47:27+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -64,17 +64,18 @@ stop and reconcile the conflict before starting or delegating another task.
   (C18 generic DAG workload), 1 UNCERTAIN (C19 date). Gate
   `screening_46/reviews/batch_07_retry_review.md`; 40/40 locators.
   Failed primary preserved at `800a2ff`; retry adopted separately.
-- Progress: 41/46 reports through an accepted working gate; 28 INCLUDE,
-  2 EXCLUDE, 11 UNCERTAIN; 5 not yet screened. No provider task is active.
-- Batch 08 primary rejected A3/A4/A5: four shared-author count errors and
-  unresolved SNCS scope reasoning; 40/40 literal locators do not cure these
-  failures. Review `screening_46/reviews/batch_08_review.md`. No adoption.
+- Batch 08 correction accepted: 4 INCLUDE + 1 UNCERTAIN (SNCS scope).
+  Gate `screening_46/reviews/batch_08_correction_review.md`; corrected 32/32
+  and combined 40/40 quotes. Primary remains rejected and preserved.
+- Progress: 46/46 reports through an accepted working gate; 32 INCLUDE,
+  2 EXCLUDE, 12 UNCERTAIN; 0 unscreened in this frozen intake.
+  No provider task is active.
 - These working decisions are not final human adjudication, unique-study counts,
   final PRISMA arithmetic, or permission to change manuscript conclusions.
 
 ## Evidence accepted versus quarantined
 
-- Usable working evidence: only the seven accepted derivative batch files and
+- Usable working evidence: only the eight accepted derivative batch files and
   their combined PASS gates.
 - Quarantined but retained for audit: original rejected batch outputs, rejected
   corrections, provider raw JSON, and any result without a complete Codex PASS
@@ -85,8 +86,8 @@ stop and reconcile the conflict before starting or delegating another task.
 
 ## Critical unresolved work
 
-1. After Batch 07 retry commit/merge/cleanup, continue batch 08
-   serially through brief, dispatch, acceptance and commit gates. Timestamp
+1. After Batch 08 correction commit/merge/cleanup, consolidate accepted
+   decisions and prepare identity/date/scope reconciliation briefs. Timestamp
    standardization is merged at `1f04299` (35/35 tests PASS).
 2. Reconcile all accepted working decisions with report versions, study families,
    the canonical 27-report dataset, extraction, and quality appraisal.
@@ -136,7 +137,8 @@ stop and reconcile the conflict before starting or delegating another task.
   the exact live pre-promotion project is
   `root_project_live_before_promotion/`.
 - The pre-existing root dirty baseline remains unchanged outside this project:
-  50/50 porcelain-status entries match the Task 1 snapshot. Do not reset, stash,
+  the original 50 entries still match the Task 1 snapshot, with the authorized
+  .gitignore addition making 51 current entries. Do not reset, stash,
   clean, delete, or overwrite them.
 - The user authorized a baseline-aware status guard. It blocks recognized A2A
   dispatch when Git residue exists in this project, repository `.codex/`, or
@@ -161,11 +163,12 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-After this brief is committed/merged/cleaned, route
-`screening_46/briefs/batch_08_correction.md` for exactly C22,C23,C24,SNCS.
-Keep C25 structurally unchanged and primary Batch 08 quarantined. Validate
-32 corrected / 40 combined quotes and all C1–C6 before adoption.
-No provider task is active; accepted count remains 41/46.
+After this acceptance task is committed/merged/cleaned, consolidate the eight
+accepted derivatives into a 46-report decision ledger and an evidence-linked
+unresolved queue. Prepare committed briefs for Gemini identity/date/version and
+scope/family reconciliation; do not overwrite the historical manuscript dataset.
+Formal database searches, extraction/appraisal and final human decisions remain
+necessary. No provider task is active.
 
 ## Authorized concurrent baseline update
 
@@ -173,10 +176,10 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-08-correction-brief",
+  "task_id": "screening-batch-08-correction",
   "status": "completed",
-  "started_at": "2026-11-26T06:37:12+07:00",
-  "updated_at": "2026-11-26T06:37:12+07:00",
-  "completed_at": "2026-11-26T06:37:12+07:00"
+  "started_at": "2026-11-26T06:38:05+07:00",
+  "updated_at": "2026-11-26T06:47:27+07:00",
+  "completed_at": "2026-11-26T06:47:27+07:00"
 }
 -->

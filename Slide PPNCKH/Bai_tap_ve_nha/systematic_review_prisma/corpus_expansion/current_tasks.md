@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T06:37:12+07:00
+Updated_at: 2026-11-26T06:47:27+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -12,7 +12,7 @@ Nguyen Minh Hieu (2026) (v3)` on `main`. The split-brain migration was promoted
 through merge `5cde697`; 92/92 evidence checksums pass, 46/46 manifest records
 resolve, and Batch 04 correction 02 is accepted; earlier outputs remain rejected. The user authorized a path-scoped
 clean-tree policy: residue in the project, repository `.codex/`, or repository
-`AGENTS.md` blocks A2A, while the exact 50-entry external baseline is preserved
+`AGENTS.md` blocks A2A, while the authorized 51-entry external baseline is preserved
 without blocking dispatch.
 
 ## Active queue
@@ -27,19 +27,19 @@ without blocking dispatch.
 | Screening batch 05 | C05-C10 | accepted working screening with targeted correction | 1 INCLUDE, 5 UNCERTAIN; 48/48 combined locators; `screening_46/reviews/batch_05_correction_review.md` | Preserve unresolved dates/version/scope; batch 06 next after commit/merge/cleanup |
 | Screening batch 06 | C11-C16 | accepted working screening | 4 INCLUDE, 2 UNCERTAIN; 48/48 locators; `screening_46/reviews/batch_06_review.md` | Preserve dates/roles/families; batch 07 after commit/merge/cleanup |
 | Screening batch 07 | C17-C21 | retry accepted working screening | 3 INCLUDE, 1 EXCLUDE, 1 UNCERTAIN; 40/40 locators; `screening_46/reviews/batch_07_retry_review.md` | Preserve failed primary; batch 08 after commit/merge/cleanup |
-| Screening batch 08 | C22-C25, SNCS | primary rejected A3/A4/A5 | 40/40 locators, four author-count errors and SNCS scope issue; `screening_46/reviews/batch_08_review.md` | Correction brief ready; route after commit/merge/cleanup |
+| Screening batch 08 | C22-C25, SNCS | correction accepted working screening | 4 INCLUDE, 1 UNCERTAIN; 32 corrected / 40 combined locators; `screening_46/reviews/batch_08_correction_review.md` | Consolidate 46-report ledger, then reconcile |
 
 ## Measured progress
 
 - Frozen retrieval inventory: 46 reports.
-- Accepted working full-text screening: 41/46 reports.
-- Working decisions: 28 INCLUDE, 2 EXCLUDE, 11 UNCERTAIN in batches 01-07.
-- Remaining in this campaign: 5 reports.
+- Accepted working full-text screening: 46/46 reports.
+- Working decisions: 32 INCLUDE, 2 EXCLUDE, 12 UNCERTAIN in batches 01-08.
+- Remaining in this campaign: 0 reports.
 - Active A2A research task: none.
-- Batch 07 retry accepted; all A1–A6 PASS; 5 working decisions.
+- Batch 08 correction accepted; all C1–C6 PASS; 5 combined working decisions.
 - Batch 04 dispatch count: 1 primary and 2 corrections; accepted-result count 1.
 - Latest Batch 04 mandatory failures: 0; all C1–C6 PASS.
-- Manuscript changes from batches 01-07: zero.
+- Manuscript changes from batches 01-08: zero.
 - Accepted brief mutations from refresh tooling: zero; any batch with a
   transport, result, or review artifact is immutable to the producer.
 
@@ -55,8 +55,8 @@ Every task-closing or task-changing commit must update both this file and
 these status documents are older than the latest project commit. Recognized A2A
 dispatch is blocked until both conditions pass.
 
-The canonical `main` checkout retains 50 pre-existing, out-of-project dirty
-status entries exactly as snapshotted before migration. They are user-owned: do
+The canonical `main` checkout retains the original 50 pre-existing, out-of-project dirty
+status entries plus the user-authorized .gitignore change (51 current entries). They are user-owned: do
 not reset, stash, clean, delete, or overwrite them. The project itself is
 integrated; all agents must work from the root checkout after migration cleanup.
 The authorized hook checks only this project, repository `.codex/`, and
@@ -70,10 +70,10 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-08-correction-brief",
+  "task_id": "screening-batch-08-correction",
   "status": "completed",
-  "started_at": "2026-11-26T06:37:12+07:00",
-  "updated_at": "2026-11-26T06:37:12+07:00",
-  "completed_at": "2026-11-26T06:37:12+07:00"
+  "started_at": "2026-11-26T06:38:05+07:00",
+  "updated_at": "2026-11-26T06:47:27+07:00",
+  "completed_at": "2026-11-26T06:47:27+07:00"
 }
 -->
