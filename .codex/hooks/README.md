@@ -1,4 +1,4 @@
-# HK261 durable task gate — verification, 25 November 2026
+# HK261 task gate and advisory skill router — verification, 25 November 2026
 
 Owned scope: repository AGENTS.md; project AGENTS.md; workflow/delegation docs;
 context manifest/handoff; this project-local .codex hook configuration/scripts.
@@ -23,6 +23,27 @@ No manuscript or scientific extraction changes are part of this task.
   locking is disabled; file content and index bytes remain unchanged in tests.
 - Non-A2A finishing/validation/Git commands and task-status retrieval pass.
 
+### Advisory skill routing
+
+- `UserPromptSubmit` also runs `skill_router.py` after the durable task reminder.
+- It discovers installed `SKILL.md` files from the user Codex, shared-agent, and
+  plugin-cache skill roots. Duplicate names resolve in that priority order.
+- It selects at most one primary and two supporting skills. Explicitly named
+  installed skills lead; an unknown explicit skill is reported, never invented.
+- Skills in the same constrained family are not co-loaded. If
+  `academic-pipeline` is active, equivalent academic/deep-research pipelines are
+  skipped so there is one orchestrator.
+- Paper retrieval uses only `paper-lookup` -> `lawful-paper-pdf-retriever` ->
+  `nature-downloader`. The router never automatically selects a flow that names
+  unauthorized download sources.
+- Research, discovery, verification, extraction, classification, and structured
+  synthesis route to `GEMINI_RESEARCH`; writing/editing route to
+  `CODEX_WRITING`. Multi-goal prompts print both owners explicitly.
+- Every selected skill prints its actual `SKILL.md` path with a mandatory
+  `READ_FULL_SKILL_MD` reminder. The agent must read the whole file before work.
+- `ADVISORY_ONLY: true` is unconditional. Empty, malformed, unknown, or
+  unclassified input prints `SKILLS: none — <reason>` and exits zero.
+
 ## Verification
 
 Command: `rtk proxy env PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_task_gate.py`.
@@ -32,6 +53,16 @@ or partially refreshed clean A2A: 2/2 exit 2. Dirty A2A: 9/9 exit 2 (3 command
 forms x untracked/modified/staged). Dirty non-A2A: 4/4 exit 0. Prompt/session
 reminders: 2/2 contain all five fields. Every invocation asserts unchanged Git
 status, index bytes, and tracked content.
+
+Command: `rtk proxy env PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_skill_router.py`.
+Observed: 18 tests PASS across explicit installed skill priority, unknown skill,
+academic orchestrator exclusivity, Gemini research ownership, Codex writing
+ownership, lawful paper retrieval order, debugging/TDD, image generation,
+no-skill prompt, multi-goal ownership, research/debug overlap suppression, direct-skill
+preference over nested bundle duplicates, readable skill paths/full-read
+reminders, three-skill cap, malformed JSON exit-zero behavior, payload
+extraction, and hook registration. Tests use temporary skill catalogs; the
+integration check below uses the installed catalog.
 
 | Criterion | Verdict | Objective evidence |
 |---|---|---|

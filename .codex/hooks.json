@@ -10,6 +10,16 @@
             "statusMessage": "Checking HK261 task ownership and commit gate"
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk proxy /usr/bin/python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/skill_router.py\"",
+            "timeout": 10,
+            "statusMessage": "Suggesting a focused skill route"
+          }
+        ]
       }
     ],
     "SessionStart": [

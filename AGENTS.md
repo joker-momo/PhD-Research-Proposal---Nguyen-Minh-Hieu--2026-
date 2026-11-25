@@ -32,3 +32,19 @@ committed before retry. Never equate transport completion with acceptance.
 Project hook configuration and verification limits: `.codex/hooks/README.md`.
 Hooks are an additional guardrail; manually enforce these rules even if hooks
 are untrusted, skipped, unavailable, or the tool path bypasses interception.
+
+## Advisory skill router
+
+On each user prompt, `.codex/hooks/skill_router.py` may suggest at most one
+primary skill and two non-overlapping supporting skills. An explicitly named,
+installed skill has first priority. If it reports `SKILLS: none`, continue with
+the stated reason. The router is advisory and must never block uncertain input.
+
+Before acting, read every selected `SKILL.md` completely at the printed
+`READ_FULL_SKILL_MD` path. Do not treat the router output as proof that this was
+done. `academic-pipeline` orchestrates academic work and must not be co-loaded
+with an equivalent research pipeline. Research/discovery/verification remains
+Gemini-owned through the approved A2A route; writing/editing remains Codex-owned.
+For lawful paper retrieval, use `paper-lookup`, then
+`lawful-paper-pdf-retriever`, then `nature-downloader`. Never automatically
+select a retriever whose default flow includes unauthorized sources.
