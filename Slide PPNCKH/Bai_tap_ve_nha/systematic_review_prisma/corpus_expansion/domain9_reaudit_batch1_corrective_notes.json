@@ -1,0 +1,146 @@
+{
+  "records": [
+    {
+      "study_id": "S05",
+      "title": "Online object detection task offloading in UAV ad hoc networks",
+      "authors": [
+        "Shengqing Wang",
+        "Zhiyong Du",
+        "Yang Du",
+        "Jiaqi Chen"
+      ],
+      "year": 2022,
+      "venue": "2022 IEEE International Conference on Unmanned Systems (ICUS), pp. 758-763",
+      "doi": "10.1109/ICUS55513.2022.9987114",
+      "identity_locator": "interim_26report/eligibility_reaudit.csv:study_id=S05",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/05_10.1109_ICUS55513.2022.9987114.txt",
+      "evidence": [
+        {
+          "locator": "05_10.1109_ICUS55513.2022.9987114.txt:256-477, Sections II-III",
+          "observation": "Describes Tiny-YOLO partitioning, task-offloading formulation, state/action/reward design, and the ODO reinforcement-learning method."
+        },
+        {
+          "locator": "05_10.1109_ICUS55513.2022.9987114.txt:504-582, Section IV-A and Table I",
+          "observation": "Specifies ns-3 combined with PyTorch, Tiny-YOLO implementation, UAV simulation platform, network settings, and experimental parameters."
+        }
+      ],
+      "q9_verdict": "partial",
+      "q9_rationale": "The full text supplies algorithm, framework, model, and configuration details sufficient for partial reconstruction, but no public implementation or data artifact is identified in the supplied source; reproducibility-critical details remain incomplete.",
+      "public_dataset_statement": "not_located",
+      "study_specific_artifact_located": "no",
+      "unresolved_items": [
+        "No supplied public repository, implementation, data, or trace artifact located.",
+        "RL hyperparameters, repeated-run settings, and physical validation details are incomplete."
+      ]
+    },
+    {
+      "study_id": "S07",
+      "title": "Elastic Collaborative Edge Intelligence for UAV Swarm: Architecture, Challenges, and Opportunities",
+      "authors": [
+        "Yuben Qu",
+        "Hao Sun",
+        "Chao Dong",
+        "Jiawen Kang",
+        "Haipeng Dai",
+        "Jiawen Kang",
+        "Qihui Wu",
+        "Song Guo"
+      ],
+      "year": 2024,
+      "venue": "IEEE Communications Magazine, Vol. 62, No. 1, pp. 62-68",
+      "doi": "10.1109/MCOM.002.2300129",
+      "identity_locator": "interim_26report/eligibility_reaudit.csv:study_id=S07",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/10.1109_MCOM.002.2300129.txt",
+      "evidence": [
+        {
+          "locator": "10.1109_MCOM.002.2300129.txt:5-23, title/byline/abstract",
+          "observation": "Identifies the article title, authors, and collaborative DNN inference architecture for UAV swarms."
+        },
+        {
+          "locator": "10.1109_MCOM.002.2300129.txt:544-580, Performance Evaluation and Experiment Setup",
+          "observation": "Describes a proof-of-concept prototype using four UAVs, NVIDIA Jetson Nano and TX2 devices, Faster R-CNN, video input, and scheduling."
+        },
+        {
+          "locator": "10.1109_MCOM.002.2300129.txt:602-627, Effect of UAV Unavailability",
+          "observation": "Evaluates inference before, during, and after UAV unavailability and describes partition rescheduling."
+        }
+      ],
+      "q9_verdict": "partial",
+      "q9_rationale": "The article provides a concrete architecture and proof-of-concept configuration, but no public code, data, traces, or implementation package is identified in the supplied source; omitted implementation details prevent complete independent reproduction.",
+      "public_dataset_statement": "not_located",
+      "study_specific_artifact_located": "no",
+      "unresolved_items": [
+        "No supplied public code or artifact located.",
+        "Independent reproduction of airborne implementation and scheduling details is incomplete."
+      ]
+    },
+    {
+      "study_id": "S08",
+      "title": "End-to-End Latency Optimization for Resilient Distributed Convolutional Neural Network Inference in Resource-Constrained Unmanned Aerial Vehicle Swarms",
+      "authors": [
+        "Jeongho Kim",
+        "Joonho Seon",
+        "Soohyun Kim",
+        "Seongwoo Lee",
+        "Jinwook Kim",
+        "Byungsun Hwang",
+        "Youngghyu Sun",
+        "Jinyoung Kim"
+      ],
+      "year": 2024,
+      "venue": "Applied Sciences, Vol. 14, No. 23, Art. 10832, pp. 1-15",
+      "doi": "10.3390/app142310832",
+      "identity_locator": "interim_26report/eligibility_reaudit.csv:study_id=S08",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/10.3390_app142310832.txt",
+      "evidence": [
+        {
+          "locator": "10.3390_app142310832.txt:5-17 and 33-47, title/byline/citation/publication metadata",
+          "observation": "Provides the complete title, author list, DOI, venue, year, volume, article number, and publication date."
+        },
+        {
+          "locator": "10.3390_app142310832.txt:179-506, Sections 2-4 and Algorithm 1",
+          "observation": "Defines the inoperable-UAV state, distributed layer-allocation formulation, DRL-RLD model, PPO training procedure, and algorithm steps."
+        },
+        {
+          "locator": "10.3390_app142310832.txt:506-549, Sections 5.1-5.2 and Tables 1-2",
+          "observation": "Specifies CNN models, named datasets, UAV/resource configuration, inoperable-state settings, training parameters, and evaluation metric."
+        },
+        {
+          "locator": "10.3390_app142310832.txt:809-811, Data Availability Statement",
+          "observation": "Declares that publicly available datasets were analyzed and gives the ImageNet ILSVRC 2014 URL and PASCAL VOC 2007 URL; this is a standard-dataset statement, not a study-specific implementation repository."
+        }
+      ],
+      "q9_verdict": "partial",
+      "q9_rationale": "The report contains detailed algorithm and simulation configuration and identifies public standard datasets, but no study-specific implementation, data-processing package, or trace artifact is located in the supplied source; public dataset availability alone does not establish independent implementation availability.",
+      "public_dataset_statement": "The paper declares publicly available standard datasets: https://www.image-net.org/challenges/LSVRC/2014/ and http://host.robots.ox.ac.uk/pascal/VOC/voc2007/ (10.3390_app142310832.txt:809-811).",
+      "study_specific_artifact_located": "no",
+      "unresolved_items": [
+        "The supplied source identifies standard dataset URLs but no study-specific implementation, processed-data, or trace repository.",
+        "No exact study-specific artifact URL or inspected artifact evidence is available."
+      ]
+    }
+  ],
+  "summary": {
+    "requested": 3,
+    "returned": 3,
+    "duplicates": 0,
+    "files_written": 0
+  },
+  "corrections": [
+    {
+      "field": "S05.source_file",
+      "correction": "Replaced invalid Bai_tap_ve_ha path with existing /Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/05_10.1109_ICUS55513.2022.9987114.txt",
+      "source_locator": "05_10.1109_ICUS55513.2022.9987114.txt:1-582"
+    },
+    {
+      "field": "S07.source_file",
+      "correction": "Replaced invalid Bai_tap_ve_ha path with existing /Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/10.1109_MCOM.002.2300129.txt",
+      "source_locator": "10.1109_MCOM.002.2300129.txt:1-799"
+    },
+    {
+      "field": "S08.artifact_scope",
+      "correction": "Separated the paper's public standard-dataset declaration from study-specific artifact location; standard dataset URLs are present, but no study-specific implementation/data/trace artifact is located.",
+      "source_locator": "10.3390_app142310832.txt:506-549,809-811"
+    }
+  ]
+}

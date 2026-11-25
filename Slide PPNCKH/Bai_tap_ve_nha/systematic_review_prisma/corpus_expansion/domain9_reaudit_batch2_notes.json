@@ -1,0 +1,294 @@
+{
+  "records": [
+    {
+      "study_id": "S10",
+      "title": "Reinforcement Learning based Edge-Assisted Inference for Maritime UAV Networks",
+      "authors": [
+        "Chuxuan Wang",
+        "Jieling Li",
+        "Liqing Ye",
+        "Yu Liu",
+        "Liang Xiao"
+      ],
+      "year": 2024,
+      "venue": "2024 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA), pp. 1635-1642",
+      "doi": "10.1109/ISPA63168.2024.00222",
+      "identity_locator": "interim_26report/eligibility_reaudit.csv:study_id=S10",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/10_10.1109_ISPA63168.2024.00222.txt",
+      "evidence": [
+        {
+          "locator": "source text lines 387-488, Algorithm 1 and Sections III-IV",
+          "observation": "Defines the RL-based edge-assisted inference algorithm, split-point selection, neighboring-UAV Q-value sharing, and learning-parameter updates."
+        },
+        {
+          "locator": "source text lines 629-755, Section VI and Figures 2-6",
+          "observation": "Specifies a maritime simulation with three edge servers, up to ten UAVs, ResNet-18, SeaDronesSee, partition options, and simulation comparisons."
+        },
+        {
+          "locator": "source text lines 846-853, Figures 5-6 discussion",
+          "observation": "Reports repeated simulation settings and varying UAV counts, edge servers, and sensing-data-set counts."
+        }
+      ],
+      "q9_verdict": "partial",
+      "q9_rationale": "The report provides usable algorithmic and simulation details, but the supplied full text does not locate public source code, trained artifacts, or complete implementation information such as all RL hyperparameters and simulator implementation.",
+      "public_artifact_found": "not_located",
+      "unresolved_items": [
+        "Public code, trained models, simulator implementation, and complete RL hyperparameter specification were not located in the supplied full text."
+      ]
+    },
+    {
+      "study_id": "S11",
+      "title": "Joint UAV Deployment and Model Partition for Efficient Collaborative Inference",
+      "authors": [
+        "Wenjing Xia",
+        "Tao Wu",
+        "Hongjun Wang",
+        "Ruhao Jiang",
+        "Mingjin Zhang",
+        "Yuben Qu"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE 31th International Conference on Parallel and Distributed Systems (ICPADS), pp. 1-8",
+      "doi": "10.1109/ICPADS67057.2025.11322921",
+      "identity_locator": "interim_26report/eligibility_reaudit.csv:study_id=S11",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/11_10.1109_ICPADS67057.2025.11322921.txt",
+      "evidence": [
+        {
+          "locator": "source text lines 417-586, Sections IV-A to IV-C and Algorithms 1-3",
+          "observation": "Describes dynamic-programming model partitioning, SCA-based UAV deployment, CVX/MOSEK use, and the two-stage iterative optimization procedure."
+        },
+        {
+          "locator": "source text lines 610-642, Section V-A Experimental Setup",
+          "observation": "Defines a 100 m by 100 m simulation area, 100 surveillance zones, communication and energy parameters, DNN model range, and common initialization."
+        },
+        {
+          "locator": "source text lines 676-752, Sections V-C to V-D and Figures 5-6",
+          "observation": "Compares AirInfer with three baselines and varies UAV count, model layers, coverage threshold, and bandwidth."
+        }
+      ],
+      "q9_verdict": "partial",
+      "q9_rationale": "The supplied report contains substantial algorithm pseudocode and evaluation configuration sufficient to understand and reimplement the method conceptually, but no public code, data, or complete implementation artifact is located; several implementation details remain unspecified.",
+      "public_artifact_found": "not_located",
+      "unresolved_items": [
+        "Public repository or dataset not located; exact solver/version configuration and all implementation-level parameters are not fully specified."
+      ]
+    },
+    {
+      "study_id": "S12",
+      "title": "Multi-UAV Collaborative Model Inference Based on Hierarchical Reinforcement Learning",
+      "authors": [
+        "Xinchen Li",
+        "Chen Xu",
+        "Lidong Ma",
+        "Wenfei Yuan"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE 25th International Conference on Communication Technology (ICCT), pp. 997-1002",
+      "doi": "10.1109/ICCT67417.2025.11374232",
+      "identity_locator": "interim_26report/eligibility_reaudit.csv:study_id=S12",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/12_10.1109_ICCT67417.2025.11374232.txt",
+      "evidence": [
+        {
+          "locator": "source text lines 296-470, Section III and Algorithm 1",
+          "observation": "Defines early-exit model partitioning and the Option-Critic training procedure, including option, critic, intra-option, and termination networks."
+        },
+        {
+          "locator": "source text lines 454-485, Section III-B and Table I",
+          "observation": "Identifies AlexNet, baseline methods, and the experimental-environment parameters used for training and inference."
+        },
+        {
+          "locator": "source text lines 486-552, Section IV and Figures 3-6",
+          "observation": "Evaluates reward convergence, energy consumption, execution time, bandwidth variation, and comparisons with PSO-GA and DQN."
+        }
+      ],
+      "q9_verdict": "partial",
+      "q9_rationale": "The full text supplies an algorithm outline, model structure, baseline definitions, and evaluation configuration, but no public implementation, dataset, trained policy, or complete training hyperparameters are located.",
+      "public_artifact_found": "not_located",
+      "unresolved_items": [
+        "Public code, trained policy, dataset, and complete simulator/training configuration were not located in the supplied full text."
+      ]
+    },
+    {
+      "study_id": "S13",
+      "title": "LE-MHAPPO-Enhanced DNN Task Partitioning in Energy-harvesting Heterogeneous UAV Swarms",
+      "authors": [
+        "Ke Gao",
+        "Jun Du",
+        "Chunxiao Jiang",
+        "Debashisha Mishra",
+        "Chao Zhang",
+        "Merouane Debbah"
+      ],
+      "year": 2025,
+      "venue": "ICC 2025 - IEEE International Conference on Communications, pp. 1280-1285",
+      "doi": "10.1109/ICC52391.2025.11162059",
+      "identity_locator": "interim_26report/eligibility_reaudit.csv:study_id=S13",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/13_10.1109_ICC52391.2025.11162059.txt",
+      "evidence": [
+        {
+          "locator": "source text lines 392-587, Section III and Algorithm 1",
+          "observation": "Specifies the LE-MHAPPO actor/critic structure, state and action spaces, LSTM and fully connected components, and training updates."
+        },
+        {
+          "locator": "source text lines 631-702, Tables I-II and Section IV setup",
+          "observation": "Provides ResNet-18 partition parameters, simulation settings, a 500 m by 500 m area, two service UAVs, and environment/algorithm parameters."
+        },
+        {
+          "locator": "source text lines 689-799, Section IV and Figures 2-3",
+          "observation": "Evaluates convergence, reward, task delay, energy consumption, and comparison with MHAPPO under varied parameter settings."
+        }
+      ],
+      "q9_verdict": "partial",
+      "q9_rationale": "Algorithm equations, pseudocode, model partition tables, and simulation settings provide usable implementation detail, but the supplied report contains no public code, trajectory archive, or complete software/library specification.",
+      "public_artifact_found": "not_located",
+      "unresolved_items": [
+        "Public code, dataset, trajectory archive, simulator version, and some implementation-level hyperparameters were not located."
+      ]
+    },
+    {
+      "study_id": "S14",
+      "title": "Computation Offloading and Resource Allocation for Deep Neural Network Inference in UAV Wireless Networks",
+      "authors": [
+        "Muhammad Ismail",
+        "Long Bao Le"
+      ],
+      "year": 2025,
+      "venue": "ICC 2025 - IEEE International Conference on Communications, pp. 832-837",
+      "doi": "10.1109/ICC52391.2025.11161364",
+      "identity_locator": "interim_26report/eligibility_reaudit.csv:study_id=S14",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/14_10.1109_ICC52391.2025.11161364.txt",
+      "evidence": [
+        {
+          "locator": "source text lines 286-376, Algorithm 1 and optimization formulation",
+          "observation": "Defines the DNN layer-assignment and resource-allocation algorithm, decision variables, constraints, and iterative optimization steps."
+        },
+        {
+          "locator": "source text lines 441-525, Section IV and Figures 2-6",
+          "observation": "Describes numerical simulation setup and evaluates latency, resource allocation, and comparisons with HCN and HCNN baselines."
+        },
+        {
+          "locator": "source text lines 526-680, evaluation discussion",
+          "observation": "Reports sensitivity and comparative evaluation conditions for the proposed LARA method."
+        }
+      ],
+      "q9_verdict": "partial",
+      "q9_rationale": "The supplied report gives a formal optimization problem, algorithm description, baselines, and numerical evaluation configuration, but no public implementation artifact or complete executable configuration is located.",
+      "public_artifact_found": "not_located",
+      "unresolved_items": [
+        "Public code, data, simulator, and complete run-count/random-seed configuration were not located."
+      ]
+    },
+    {
+      "study_id": "S15",
+      "title": "Adaptive model switching of collaborative inference for multi-CNN streams in UAV swarm",
+      "authors": [
+        "Yu Li",
+        "Yuben Qu",
+        "Chao Dong",
+        "Zhen Qin",
+        "Lei Zhang",
+        "Qihui Wu"
+      ],
+      "year": 2025,
+      "venue": "Chinese Journal of Aeronautics, Vol. 38, Issue 8, Art. 103564 (pp. 1-13)",
+      "doi": "10.1016/j.cja.2025.103564",
+      "identity_locator": "interim_26report/eligibility_reaudit.csv:study_id=S15",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_hoc_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/15_10.1016_j.cja.2025.103564.txt",
+      "evidence": [
+        {
+          "locator": "source text lines 606-883, Section 4 and Algorithms 1-3",
+          "observation": "Describes the CNN model-switching heuristic, MADDPG-based partitioning, network initialization and updates, and the overall AMSM deployment procedure."
+        },
+        {
+          "locator": "source text lines 883-934, Section 5.1 and Table 1",
+          "observation": "Specifies the UAV swarm simulation, real-world flight trajectory traces, device memory and computational capacities, and benchmark algorithms."
+        },
+        {
+          "locator": "source text lines 935-1010, Sections 5.2-5.3 and Figures 3-6",
+          "observation": "Evaluates model selection, partitioning, latency, accuracy constraints, and sensitivity across simulation conditions."
+        }
+      ],
+      "q9_verdict": "partial",
+      "q9_rationale": "The report supplies detailed algorithm descriptions, device profiles, trajectory-trace use, baselines, and evaluation procedures, but no public code, trace archive, trained models, or complete execution artifact is located.",
+      "public_artifact_found": "not_located",
+      "unresolved_items": [
+        "Public code, trajectory files, trained models, and complete runtime configuration were not located in the supplied full text."
+      ]
+    },
+    {
+      "study_id": "S16",
+      "title": "Distributed Split Computing Using Diffusive Metrics for UAV Swarms",
+      "authors": [
+        "Talip Tolga Sarı",
+        "Gökhan Seçinti",
+        "Angelo Trotta"
+      ],
+      "year": 2026,
+      "venue": "Journal of Systems Architecture, Vol. 176, Art. 103804 (retrieved copy: arXiv:2503.16146v3 accepted manuscript)",
+      "doi": "10.1016/j.sysarc.2026.103804",
+      "identity_locator": "interim_26report/eligibility_reaudit.csv:study_id=S16",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_hoc_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/2503.16146.txt",
+      "evidence": [
+        {
+          "locator": "source text lines 431-735, Sections 3-4 and Algorithm 1",
+          "observation": "Defines the diffusive metric, congestion-aware early-exit mechanism, split-computation decisions, threshold parameter, and periodic task-allocation procedure."
+        },
+        {
+          "locator": "source text lines 735-827, Section 5 and Table 2",
+          "observation": "Describes the dynamic simulation environment, communication and computational modelling, LoS connectivity assumptions, and simulation parameters."
+        },
+        {
+          "locator": "source text lines 958-1300, Sections 5.1-5.3 and Figures 4-7",
+          "observation": "Evaluates latency, fairness, energy, workload distribution, connectivity, and sensitivity using repeated simulation scenarios."
+        }
+      ],
+      "q9_verdict": "partial",
+      "q9_rationale": "The accepted-manuscript text provides substantial algorithm and simulation details, but no public source code, simulator, trained artifact, or data/traces are located; exact implementation components remain incomplete.",
+      "public_artifact_found": "not_located",
+      "unresolved_items": [
+        "Public code, simulator implementation, data/traces, and complete model/split implementation details were not located; supplied source is an arXiv accepted-manuscript copy."
+      ]
+    },
+    {
+      "study_id": "S17",
+      "title": "Distributed inference in IoT-based aerial network of UAVs",
+      "authors": [
+        "HyungBin Park",
+        "SuKyoung Lee",
+        "ShinYoung Cho"
+      ],
+      "year": 2025,
+      "venue": "Internet of Things, Vol. 30, Art. 101479 (pp. 1-10)",
+      "doi": "10.1016/j.iot.2024.101479",
+      "identity_locator": "interim_26report/eligibility_reaudit.csv:study_id=S17",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_hoc_nha/systematic_review_prisma/sources/extracted_text_for_review/original20/17_10.1016_j.iot.2024.101479.txt",
+      "evidence": [
+        {
+          "locator": "source text lines 140-165 and 393-440, Sections 3 and 3.6",
+          "observation": "Defines the 802.11s UAV mesh, containerized partition deployment, profile and partition tables, heuristic allocation algorithm, and reported Python implementation complexity/runtime."
+        },
+        {
+          "locator": "source text lines 441-455, Section 4.1",
+          "observation": "Specifies simulation setup, thermal noise, network-loss modelling, and DNN models including VGG19."
+        },
+        {
+          "locator": "source text lines 455-528, Section 4.2 and Figures 2-6",
+          "observation": "Evaluates latency, request handling, energy use, system longevity, heterogeneous batteries, deployment area, and UAV-count conditions."
+        }
+      ],
+      "q9_verdict": "partial",
+      "q9_rationale": "The report provides an explicit deployment algorithm, complexity statement, Python implementation reference, network model, parameters, and evaluation configuration, but no public code, dataset, trace archive, or executable artifact is located.",
+      "public_artifact_found": "not_located",
+      "unresolved_items": [
+        "Public Python source, simulator, datasets, traces, and complete reproducibility package were not located in the supplied full text."
+      ]
+    }
+  ],
+  "summary": {
+    "requested": 8,
+    "returned": 8,
+    "duplicates": 0,
+    "unresolved_ids": [],
+    "files_written": 0
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "records": [
+    {
+      "study_id": "C03",
+      "title": "A Link-Layer Model of a UAV Swarm Mesh Network with Encapsulation of Intermediate Deep Neural Network Activations: Analytical Evaluation of Latency and Traffic Volume",
+      "authors": [
+        "Artem Kasianchuk",
+        "Halyna Lastivka"
+      ],
+      "year": 2026,
+      "venue": "Information and Communication Technologies, Electronic Engineering (Інфокомунікаційні технології та електронна інженерія), Vol. 6, No. 2, pp. 144-154",
+      "doi": "10.23939/ictee2026.02.144",
+      "identity_locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/interim_26report/eligibility_reaudit.csv:study_id=C03",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/new6/C03.txt",
+      "evidence": [
+        {
+          "locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/new6/C03.txt:196-212",
+          "observation": "Defines the three-phase collective inference procedure: local computation, quantization, channel masking, fragmentation, transmission, aggregation, quorum handling, and degraded inference."
+        },
+        {
+          "locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/new6/C03.txt:213-305",
+          "observation": "Provides analytical equations (1)-(7) for tensor size, frame count, traffic volume, transmission time, end-to-end delay, delivery probability, and quorum probability."
+        },
+        {
+          "locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/new6/C03.txt:306-327",
+          "observation": "Supplies numerical-calculation inputs including tensor dimensions, quantization values, payload sizes, header overheads, access time, effective rates, neighbor count, and quorum thresholds."
+        }
+      ],
+      "q9_verdict": "yes",
+      "q9_rationale": "The study performed an analytical numerical calculation, and the supplied text gives the calculation procedure, equations, inputs, units, and evaluation parameter values needed to independently reconstruct the reported calculation. The absence of public study-specific code does not prevent reconstruction of this analytical calculation. Prospective NS-3/OMNeT++ validation is a separate limitation and is not required for this q9 judgment.",
+      "study_specific_artifact_located": "no",
+      "unresolved_items": [
+        "No study-specific public code, simulator scripts, or released traces were located in the inspected text.",
+        "NS-3/OMNeT++ and channel-emulation validation are identified as future work, not current results."
+      ]
+    },
+    {
+      "study_id": "C07",
+      "title": "A3D: Adaptive, Accurate, and Autonomous Navigation for Edge-Assisted Drones",
+      "authors": [
+        "Liekang Zeng",
+        "Haowei Chen",
+        "Daipeng Feng",
+        "Xiaoxi Zhang",
+        "Xu Chen"
+      ],
+      "year": 2024,
+      "venue": "IEEE/ACM Transactions on Networking, Vol. 32, No. 1, pp. 713-728 (retrieved copy: arXiv:2307.09880v1)",
+      "doi": "10.1109/tnet.2023.3297876",
+      "identity_locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/interim_26report/eligibility_reaudit.csv:study_id=C07",
+      "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/new6/C07.txt",
+      "evidence": [
+        {
+          "locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/new6/C07.txt:1054-1154",
+          "observation": "Describes the network-aware resource-allocation algorithm, including inputs, regression-based initialization, bounded reallocation, equations (5)-(7), termination, and O(n) complexity."
+        },
+        {
+          "locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/new6/C07.txt:1155-1255",
+          "observation": "Provides prototype and AirSim simulation implementation details, including hardware, simulator integration, wrapper operation, and Coastline scenario configuration."
+        },
+        {
+          "locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/new6/C07.txt:1597-1619",
+          "observation": "Evaluates A3D across four real-world bandwidth traces and compares QoN, latency, and adaptive scheduling against baseline methods."
+        },
+        {
+          "locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/new6/C07.txt:1720-1730",
+          "observation": "Reports multi-drone evaluation using four Jetson Nanos and four AirSim UAV instances under bandwidth traces B1-B4, with recorded performance measurements."
+        }
+      ],
+      "q9_verdict": "partial",
+      "q9_rationale": "The report contains direct algorithm and implementation details plus evaluation procedures, but the inspected text does not locate A3D's own source code, deployment scripts, or the referenced trace files. Public dependency links and cited datasets are not treated as study-specific artifacts. Publisher-version equivalence between the supplied preprint and the IEEE/ACM version remains unresolved.",
+      "study_specific_artifact_located": "no",
+      "unresolved_items": [
+        "A3D source code and deployment scripts were not located.",
+        "Referenced bandwidth-trace files were not located in the inspected full text.",
+        "Publisher-version equivalence between arXiv:2307.09880v1 and the IEEE/ACM Transactions on Networking version remains not verified."
+      ]
+    }
+  ],
+  "summary": {
+    "requested": 2,
+    "returned": 2,
+    "duplicates": 0,
+    "files_written": 0
+  },
+  "corrections": [
+    {
+      "criterion": "C03 identity",
+      "correction": "Copied the supplied full-author identity and venue exactly as requested: Artem Kasianchuk; Halyna Lastivka; Information and Communication Technologies, Electronic Engineering (Інфокомунікаційні технології та електронна інженерія), Vol. 6, No. 2, pp. 144-154.",
+      "source_locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/interim_26report/eligibility_reaudit.csv:study_id=C03"
+    },
+    {
+      "criterion": "C03 domain9",
+      "correction": "Changed q9 to yes because equations, inputs, units, and numerical evaluation parameters support independent reconstruction of the actual analytical calculation; prospective simulator validation was not used as a q9 requirement.",
+      "source_locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/new6/C03.txt:213-327"
+    },
+    {
+      "criterion": "C07 method locator",
+      "correction": "Added the original algorithm/implementation locator covering Algorithm 1, its inputs, equations, procedure, complexity, prototype, and AirSim implementation while retaining evaluation locators.",
+      "source_locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/extracted_text_for_review/new6/C07.txt:1054-1255"
+    }
+  ]
+}
