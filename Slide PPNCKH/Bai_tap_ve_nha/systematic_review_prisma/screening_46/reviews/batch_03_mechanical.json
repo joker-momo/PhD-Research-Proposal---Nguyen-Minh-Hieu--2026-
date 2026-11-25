@@ -1,0 +1,412 @@
+{
+  "file": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_03.json",
+  "records": 6,
+  "ids": [
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18"
+  ],
+  "decisions": {
+    "INCLUDE": 6
+  },
+  "mechanical_errors": [
+    "A2 S13 missing primary_reason",
+    "A2 S14 missing primary_reason",
+    "A2 S15 missing primary_reason",
+    "A2 S16 missing primary_reason",
+    "A2 S17 missing primary_reason",
+    "A2 S18 missing primary_reason"
+  ],
+  "quote_checks": 48,
+  "quote_matches": 48,
+  "semantic_review": "PENDING_CODEX_SOURCE_REVIEW",
+  "evidence": [
+    {
+      "id": "S13",
+      "field": "identity",
+      "page": 1,
+      "quote": "ICC 2025 - IEEE International Conference on Communications | 979-8-3315-0521-9/25/$31.00 ©2025 IEEE | DOI: 10.1109/ICC52391.2025.11162059",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "S13",
+      "field": "alignment",
+      "page": 3,
+      "quote": "We aim to optimize the policy π that include the bandwidth allocation strategy W for all SUAVs, the DNN partition strategy C, offloading strategy O, CPU computation frequency strategy F, and transmission power strategy P",
+      "literal_normalized_match": true,
+      "rationale": "Jointly optimizes DNN partition point, SUAV offloading target, OFDM bandwidth allocation, CPU frequency, and transmit power in a dynamic energy-harvesting UAV swarm."
+    },
+    {
+      "id": "S13",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "Section II presents the system model and formulates the optimization problem. In Section III, the LE-MHAPPO algorithm is introduced and described in detail. Section IV provides the simulation results, and conclusions are drawn in Section V.",
+      "literal_normalized_match": true,
+      "rationale": "Six-page primary conference paper presenting system model, LE-MHAPPO algorithm, simulation results, and conclusions."
+    },
+    {
+      "id": "S13",
+      "field": "multi_uav_evaluated",
+      "page": 5,
+      "quote": "In this section, we conduct simulations to evaluate the performance of the proposed LE-MHAPPO algorithm in a 500 m × 500 m area. The simulation includes J = 2 SUAVs and I = 5 RUAVs.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluates a heterogeneous UAV swarm consisting of 2 server UAVs (SUAVs) and 5 task-receiving UAVs (RUAVs) in a 500 m x 500 m area."
+    },
+    {
+      "id": "S13",
+      "field": "collaborative_inference",
+      "page": 2,
+      "quote": "DNN partition is applied to enable collaborative inference. Both RUAVs and SUAVs store identical pre-trained DNNs.",
+      "literal_normalized_match": true,
+      "rationale": "Partitions pre-trained ResNet-18 blocks across RUAVs and GPU-equipped SUAVs, compressing and transmitting intermediate features between UAVs for collaborative inference."
+    },
+    {
+      "id": "S13",
+      "field": "evaluative_evidence",
+      "page": 5,
+      "quote": "Performance is tested on five pre-generated flight and task arrival trajectories, randomly generated based on the same rules, with N = 3000 test time slots. The final result is the average of all test runs.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluates LE-MHAPPO against MHAPPO in simulation across five pre-generated flight/task trajectories over 3000 test time slots and varying slot lengths and weights."
+    },
+    {
+      "id": "S13",
+      "field": "date_window",
+      "page": 1,
+      "quote": "2025 IEEE International Conference on Communications (ICC): IoT and Sensor Networks Symposium",
+      "literal_normalized_match": true,
+      "rationale": "Published in 2025 IEEE ICC proceedings (copyright 2025), falling within 2021-01-01 through 2026-11-25."
+    },
+    {
+      "id": "S13",
+      "field": "english",
+      "page": 1,
+      "quote": "In recent years, multi-Unmanned Aerial Vehicle (UAV) swarms have been extensively deployed as mobile edge computing (MEC) systems to support delay-sensitive applications in emergency response",
+      "literal_normalized_match": true,
+      "rationale": "The entire full-text report is written in English."
+    },
+    {
+      "id": "S14",
+      "field": "identity",
+      "page": 1,
+      "quote": "ICC 2025 - IEEE International Conference on Communications | 979-8-3315-0521-9/25/$31.00 ©2025 IEEE | DOI: 10.1109/ICC52391.2025.11161364",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "S14",
+      "field": "alignment",
+      "page": 1,
+      "quote": "To this end, we formulate the joint DNN layer assignment, radio and computing resource allocation problem as an optimization problem which aims to minimize the total inference latency.",
+      "literal_normalized_match": true,
+      "rationale": "Formulates and solves joint DNN layer-by-layer assignment with radio subchannel, rate, and compute resource allocation across connected UAVs."
+    },
+    {
+      "id": "S14",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "To solve the formulated mixed integer non-linear optimization problem, we employ the alternating optimization approach where we iteratively optimize the DNN layer assignment subproblem, computing resource allocation subproblem, and subchannel and rate allocation subproblem iteratively until convergence.",
+      "literal_normalized_match": true,
+      "rationale": "Six-page primary conference paper presenting a joint optimization formulation, the LARA alternating optimization algorithm, numerical simulations, and conclusions."
+    },
+    {
+      "id": "S14",
+      "field": "multi_uav_evaluated",
+      "page": 5,
+      "quote": "Fig. 3: Optimized total inference, communication, and computation delay of LARA vs the number of inference requests for Si = 10 GFLOPS and N = 10",
+      "literal_normalized_match": true,
+      "rationale": "Simulates a connected multi-UAV network of 10, 15, and 20 UAVs over a 500 m x 500 m area performing collaborative VGG16 inference."
+    },
+    {
+      "id": "S14",
+      "field": "collaborative_inference",
+      "page": 2,
+      "quote": "Each UAV initiating the corresponding inference request can perform the computation required by all DNN layers; however, offloading certain DNN layers to neighboring UAVs with abundant compute resources for processing can improve the inference latency.",
+      "literal_normalized_match": true,
+      "rationale": "Breaks pre-trained VGG16 into 16 layers and assigns/offloads layers across neighboring connected UAVs while jointly optimizing compute and subchannel/rate allocation."
+    },
+    {
+      "id": "S14",
+      "field": "evaluative_evidence",
+      "page": 4,
+      "quote": "In this section, we present simulation results to assess the achievable performance of LARA framework. Optimization problems were solved with a Python implementation that used CVXPY package.",
+      "literal_normalized_match": true,
+      "rationale": "Provides Python/CVXPY numerical simulations comparing LARA against OULD, HCN, and HCNN across request counts, compute capacities, and UAV counts."
+    },
+    {
+      "id": "S14",
+      "field": "date_window",
+      "page": 1,
+      "quote": "2025 IEEE International Conference on Communications (ICC): Next-Generation Networking and Internet Symposium",
+      "literal_normalized_match": true,
+      "rationale": "Published in 2025 IEEE ICC proceedings (copyright 2025), falling within 2021-01-01 through 2026-11-25."
+    },
+    {
+      "id": "S14",
+      "field": "english",
+      "page": 1,
+      "quote": "Unmanned aerial vehicles (UAVs) can be equipped with relatively strong servers so they can collaboratively perform inference for pre-trained Deep Neural Networks (DNNs), enabling complex recognition tasks based on onboard sensing data such as image and video.",
+      "literal_normalized_match": true,
+      "rationale": "The entire full-text report is written in English."
+    },
+    {
+      "id": "S15",
+      "field": "identity",
+      "page": 1,
+      "quote": "Adaptive model switching of collaborative inference for multi-CNN streams in UAV swarm",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "S15",
+      "field": "alignment",
+      "page": 2,
+      "quote": "To solve this problem, we propose an efficient algorithm called Adaptive Model Switching of collaborative inference for Multi-CNN streams (AMSM) that can determine the strategy for model switching and model partitioning with a low latency.",
+      "literal_normalized_match": true,
+      "rationale": "Jointly orchestrates multi-stream adaptive switching between lightweight onboard and partitioned complex CNNs across competing task and relay UAVs using AMSM."
+    },
+    {
+      "id": "S15",
+      "field": "primary_full_report",
+      "page": 2,
+      "quote": "Considering the aforementioned challenges, this paper investigates how to achieve low latency collaborative inference for multi-CNN streams within a UAV swarm, while satisfying the accuracy requirements by using a hybrid mode",
+      "literal_normalized_match": true,
+      "rationale": "Thirteen-page peer-reviewed full-length journal article with system model, AMSM algorithms, simulation evaluation, and conclusions."
+    },
+    {
+      "id": "S15",
+      "field": "multi_uav_evaluated",
+      "page": 10,
+      "quote": "In Fig. 5(c), we set up 4 task UAVs and 6 relay UAVs.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluates multi-UAV swarms with 3 or 4 task UAVs and 6 relay UAVs (and 3 to 7 UAVs per link in sensitivity analysis)."
+    },
+    {
+      "id": "S15",
+      "field": "collaborative_inference",
+      "page": 3,
+      "quote": "Conversely, if task UAVs select a complex model, they initially partition it into several submodels. Each UAV along the communication link then sequentially infers its respective submodel as shown in Fig. 1",
+      "literal_normalized_match": true,
+      "rationale": "Adaptively switches each concurrent CNN stream between onboard lightweight inference (AlexNet) and MADDPG-partitioned collaborative multi-UAV complex inference (VGG16) across task and relay UAVs."
+    },
+    {
+      "id": "S15",
+      "field": "evaluative_evidence",
+      "page": 2,
+      "quote": "We conduct extensive simulations based on real-world UAV trajectory traces to validate the effectiveness of the proposed AMSM algorithm.",
+      "literal_normalized_match": true,
+      "rationale": "Conducts trace-driven simulations using Mid-Air UAV trajectory traces and embedded device profiles, comparing AMSM against seven model-switching and partitioning baselines."
+    },
+    {
+      "id": "S15",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Received 9 July 2024; revised 13 October 2024; accepted 19 December 2024 Available online 2 May 2025",
+      "literal_normalized_match": true,
+      "rationale": "Available online 2 May 2025 and published in Chinese Journal of Aeronautics vol. 38(8), 2025, within 2021-01-01 through 2026-11-25."
+    },
+    {
+      "id": "S15",
+      "field": "english",
+      "page": 1,
+      "quote": "In this paper, we first investigate the deployment of both lightweight and complex models for multiple CNN streams in UAV swarm.",
+      "literal_normalized_match": true,
+      "rationale": "The entire full-text report is written in English."
+    },
+    {
+      "id": "S16",
+      "field": "identity",
+      "page": 1,
+      "quote": "Accepted for publication in Journal of Systems Architecture April 9, 2026 arXiv:2503.16146v3 [cs.NI] 8 Apr 2026",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "S16",
+      "field": "alignment",
+      "page": 2,
+      "quote": "To overcome these limitations, we propose a fully distributed, diffusive metric-based approach in which each node autonomously assesses its own capabilities as well as those of its neighbors without relying on global information.",
+      "literal_normalized_match": true,
+      "rationale": "Provides decentralized one-hop diffusive capability orchestration, partial-inference transfer decisions, and congestion-aware early-exit depth control across dynamic UAV swarms."
+    },
+    {
+      "id": "S16",
+      "field": "primary_full_report",
+      "page": 3,
+      "quote": "The remainder of this paper is organized as follows. Section 2 reviews related work on distributed inference and task offloading in UAV networks. Section 3 formalizes the system model and problem definition, introducing the proposed diffusive metric and task allocation strategy.",
+      "literal_normalized_match": true,
+      "rationale": "Thirteen-page primary full research preprint with related work, system model, distributed algorithm, performance evaluation, and conclusions."
+    },
+    {
+      "id": "S16",
+      "field": "multi_uav_evaluated",
+      "page": 10,
+      "quote": "Next, we measure the effect of input rate when there is fixed number of workers. We vary mean task arrival time from 60ms to 100ms for 30 workers.",
+      "literal_normalized_match": true,
+      "rationale": "Simulates mobile UAV swarms of 10 to 50 worker UAVs over a 20 x 20 km mission area."
+    },
+    {
+      "id": "S16",
+      "field": "collaborative_inference",
+      "page": 5,
+      "quote": "When UAV vi offloads a partially processed task to a neighbor vj, it transmits the intermediate activation produced at the current split point.",
+      "literal_normalized_match": true,
+      "rationale": "Distributes DAG-modeled neural network inference across one-hop UAV neighbors using iterative diffusive aggregated computation capability and congestion-aware early-exit truncation."
+    },
+    {
+      "id": "S16",
+      "field": "evaluative_evidence",
+      "page": 8,
+      "quote": "All the figures are presented with 95% confidence intervals derived from 50 independent runs. Table 2 shows the rest of the simulation parameters.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluates the distributed scheme across 50 independent simulation runs against Random, RandomAcyclic, LocalOnly, and Greedy baselines with 95% confidence intervals."
+    },
+    {
+      "id": "S16",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Accepted for publication in Journal of Systems Architecture April 9, 2026 arXiv:2503.16146v3 [cs.NI] 8 Apr 2026",
+      "literal_normalized_match": true,
+      "rationale": "Supplied arXiv v3 preprint carries explicit release date 8 Apr 2026 before 2026-11-25; however, April 9, 2026 is only a journal acceptance date and does not establish the Journal of Systems Architecture publication date."
+    },
+    {
+      "id": "S16",
+      "field": "english",
+      "page": 1,
+      "quote": "To overcome these limitations, we propose a fully distributed, diffusive metric-based approach for split computing in UAV swarms.",
+      "literal_normalized_match": true,
+      "rationale": "The entire full-text report is written in English."
+    },
+    {
+      "id": "S17",
+      "field": "identity",
+      "page": 1,
+      "quote": "Internet of Things 30 (2025) 101479 Available online 3 January 2025",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "S17",
+      "field": "alignment",
+      "page": 2,
+      "quote": "We propose a deployment method that is aware of a varying set of DNN models and UAVs in terms of computational and battery capacity and deploys the models to minimizing e2e latency and energy usage.",
+      "literal_normalized_match": true,
+      "rationale": "Places containerized partitions of concurrent heterogeneous DNN models across compute- and battery-heterogeneous worker UAVs to jointly minimize end-to-end latency and energy."
+    },
+    {
+      "id": "S17",
+      "field": "primary_full_report",
+      "page": 2,
+      "quote": "In Section 3, we discuss the system model, e2e latency and energy metrics. In Section 4, we discuss our finding of the simulations and evaluate our proposed method. Finally, in Section 5, we discuss our conclusion and future direction.",
+      "literal_normalized_match": true,
+      "rationale": "Ten-page peer-reviewed journal research article containing system model, heuristic deployment algorithm, simulation evaluation, and conclusions."
+    },
+    {
+      "id": "S17",
+      "field": "multi_uav_evaluated",
+      "page": 6,
+      "quote": "With fixed value of R = 10, the wall-clock time of the python implementation of the algorithm ranges from 5.96 s, 26.01 s, 59.41 s, 118.17 s for N = 5, 10, 15, 20, showing a quadratic increase in algorithmic time.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluates aerial swarms of 5, 10, 15, and 20 heterogeneous UAVs communicating over 802.11s U2U mesh links."
+    },
+    {
+      "id": "S17",
+      "field": "collaborative_inference",
+      "page": 3,
+      "quote": "Worker UAV receives partitions of DNN models to be inferenced and computes the input with the deployed partition. A requesting UAV may also become a worker UAV simultaneously.",
+      "literal_normalized_match": true,
+      "rationale": "Deploys containerized partitions of multiple heterogeneous DNNs (AlexNet and VGG19) across heterogeneous worker UAVs (Raspberry Pi 4B and Jetson Nano) for collaborative inference."
+    },
+    {
+      "id": "S17",
+      "field": "evaluative_evidence",
+      "page": 7,
+      "quote": "In Fig. 3, we tested the e2e latency Tr of our deployment method against the comparison methods. The requests were increased with evenly distributed number of each model type.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluates end-to-end latency, per-device energy, and longevity in Python simulations comparing the proposed algorithm against NN, HRE, and LO baselines."
+    },
+    {
+      "id": "S17",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Internet of Things 30 (2025) 101479 Available online 3 January 2025",
+      "literal_normalized_match": true,
+      "rationale": "Published online 3 January 2025 in Internet of Things vol. 30 (2025), within 2021-01-01 through 2026-11-25."
+    },
+    {
+      "id": "S17",
+      "field": "english",
+      "page": 1,
+      "quote": "Motivated by the need for performing critical tasks in remote areas with heterogeneity in the requested DNNs, we propose a deployment which considers such information during planning.",
+      "literal_normalized_match": true,
+      "rationale": "The entire full-text report is written in English."
+    },
+    {
+      "id": "S18",
+      "field": "identity",
+      "page": 1,
+      "quote": "IEEE INTERNET OF THINGS JOURNAL, VOL. 13, NO. 13, 1 JULY 2026",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "S18",
+      "field": "alignment",
+      "page": 1,
+      "quote": "The aim is to minimize total weighted energy consumption through joint optimization of user–UAV association, DNN partitioning, UAV trajectory, task migration, and computing resource allocation.",
+      "literal_normalized_match": true,
+      "rationale": "Jointly optimizes DNN layer partitioning, user-UAV association, inter-UAV task migration, 3-D UAV trajectory, and convex-optimized UAV compute allocation."
+    },
+    {
+      "id": "S18",
+      "field": "primary_full_report",
+      "page": 3,
+      "quote": "Section II provides a detailed description of the system model for the DNN-based multi-UAV-assisted MEC and formulates the optimization problem. Section III presents the proposed algorithm framework. Section IV evaluates the performance of the proposed scheme through simulation experiments.",
+      "literal_normalized_match": true,
+      "rationale": "Twelve-page peer-reviewed IEEE journal article detailing system model, SAC-PER with convex optimization subroutine, simulations, and conclusions."
+    },
+    {
+      "id": "S18",
+      "field": "multi_uav_evaluated",
+      "page": 10,
+      "quote": "Fig. 8 shows the comparison of weighted energy consumption across different numbers of UAVs. As the number of UAVs increases, the average weighted energy consumption decreases.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluates a multi-UAV-assisted MEC system with 3 to 7 UAVs serving 10 to 30 users, including inter-UAV task migration and 3-D trajectories."
+    },
+    {
+      "id": "S18",
+      "field": "collaborative_inference",
+      "page": 2,
+      "quote": "An adaptive splitting policy selectively executes computation-intensive DNN layers on UAVs while retaining lightweight layers on users, and a migration mechanism triggered by battery or CPU-load thresholds relocates the remaining subtasks among UAVs in real time.",
+      "literal_normalized_match": true,
+      "rationale": "Partitions pretrained AlexNet, VGG16, and VGG13 models between users and UAVs and migrates remaining DNN layers between UAVs when energy or CPU-load thresholds are reached."
+    },
+    {
+      "id": "S18",
+      "field": "evaluative_evidence",
+      "page": 9,
+      "quote": "For the DNN model, we selected the pretrained AlexNet, VGG16, and VGG13 to ensure that the algorithm can still guarantee an efficient segmentation and offloading strategy under different DNN-based tasks.",
+      "literal_normalized_match": true,
+      "rationale": "Simulates the SAC+CVX scheme in Python 3.7 and PyTorch 1.11.0 across three DNN architectures and compares it against seven learning and partitioning baselines."
+    },
+    {
+      "id": "S18",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Received 7 January 2026; revised 15 March 2026; accepted 15 April 2026. Date of publication 21 April 2026; date of current version 29 June 2026.",
+      "literal_normalized_match": true,
+      "rationale": "Provides explicit publication dates prior to 2026-11-25: published 21 April 2026, current version 29 June 2026, and issue date 1 July 2026."
+    },
+    {
+      "id": "S18",
+      "field": "english",
+      "page": 1,
+      "quote": "To address this issue, this article proposes a multiuncrewed aerial vehicle (UAV)-assisted mobile edge computing architecture tailored for DNN inference tasks.",
+      "literal_normalized_match": true,
+      "rationale": "The entire full-text report is written in English."
+    }
+  ]
+}
