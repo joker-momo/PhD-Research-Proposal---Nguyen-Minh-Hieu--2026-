@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T05:50:09+07:00
+**updated_at:** 2026-11-26T05:58:07+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -53,14 +53,18 @@ stop and reconcile the conflict before starting or delegating another task.
   gate `screening_46/reviews/batch_04_correction_02_review.md`, 48/48 locators.
   Primary and first correction remain rejected; the accepted replacement fixes
   C03's analytical-eligibility interpretation while retaining date uncertainty.
-- Progress: 24/46 reports through an accepted working gate; 20 INCLUDE,
-  1 EXCLUDE, 3 UNCERTAIN; 22 not yet screened. No provider task is active.
+- Batch 05, C05–C10: accepted working screening using the targeted C06/C08
+  correction and four unchanged primary records. Gate:
+  `screening_46/reviews/batch_05_correction_review.md`; 16/16 corrected and
+  48/48 combined locators; 1 INCLUDE + 5 UNCERTAIN.
+- Progress: 30/46 reports through an accepted working gate; 21 INCLUDE,
+  1 EXCLUDE, 8 UNCERTAIN; 16 not yet screened. No provider task is active.
 - These working decisions are not final human adjudication, unique-study counts,
   final PRISMA arithmetic, or permission to change manuscript conclusions.
 
 ## Evidence accepted versus quarantined
 
-- Usable working evidence: only the four accepted derivative batch files and
+- Usable working evidence: only the five accepted derivative batch files and
   their combined PASS gates.
 - Quarantined but retained for audit: original rejected batch outputs, rejected
   corrections, provider raw JSON, and any result without a complete Codex PASS
@@ -71,7 +75,7 @@ stop and reconcile the conflict before starting or delegating another task.
 
 ## Critical unresolved work
 
-1. After Batch 04 correction 02 commit/merge/cleanup, continue batches 05–08
+1. After Batch 05 correction commit/merge/cleanup, continue batches 06–08
    serially through brief, dispatch, acceptance and commit gates. Timestamp
    standardization is merged at `1f04299` (35/35 tests PASS).
 2. Reconcile all accepted working decisions with report versions, study families,
@@ -147,21 +151,18 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-Primary Batch 05 rejection is committed at `223b998`. After this brief task
-is committed/merged/cleaned, route `screening_46/briefs/batch_05_correction.md`
-once. It targets C06/C08 and is linked to task `01a214da-74a9-74ab-a88f-449c80dc162d`.
-Primary outcome is REJECTED_A3_A4: 48/48 literal locators but one short date
-quote and two protocol-interpretation issues; see `screening_46/reviews/batch_05_review.md`.
-Require exactly two corrected records and a combined six-record gate. No
-provider task is active. Batch 05 adds zero accepted decisions; progress remains
-24/46. Preserve both the original result and its review without overwriting.
+Commit/merge/clean this accepted Batch 05 correction task. Then route the
+committed Batch 06 brief (C11–C16) once after clean-owned, fresh-status and
+timestamp gates. Preserve eight UNCERTAIN report decisions for identity/date/
+scope adjudication; never count them as included studies. No provider task is
+active. The batch_05 combined candidate is retained solely for the audit trail.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "prepare-batch-05-correction",
+  "task_id": "screening-batch-05-correction",
   "status": "completed",
-  "started_at": "2026-11-26T05:49:25+07:00",
-  "updated_at": "2026-11-26T05:50:09+07:00",
-  "completed_at": "2026-11-26T05:50:09+07:00"
+  "started_at": "2026-11-26T05:50:50+07:00",
+  "updated_at": "2026-11-26T05:58:07+07:00",
+  "completed_at": "2026-11-26T05:58:07+07:00"
 }
 -->

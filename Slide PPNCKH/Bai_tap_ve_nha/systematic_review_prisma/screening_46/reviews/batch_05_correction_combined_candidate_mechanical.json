@@ -1,0 +1,406 @@
+{
+  "file": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_05_correction_combined_candidate.json",
+  "records": 6,
+  "ids": [
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10"
+  ],
+  "decisions": {
+    "UNCERTAIN": 5,
+    "INCLUDE": 1
+  },
+  "mechanical_errors": [],
+  "quote_checks": 48,
+  "quote_matches": 48,
+  "semantic_review": "PENDING_CODEX_SOURCE_REVIEW",
+  "evidence": [
+    {
+      "id": "C05",
+      "field": "identity",
+      "page": 1,
+      "quote": "This article has been accepted for publication in IEEE Transactions on Circuits and Systems for Video Technology. This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/TCSVT.2026.3745821",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "C05",
+      "field": "alignment",
+      "page": 13,
+      "quote": "We will also design explicit fault-injection test settings to further validate the reliability performance of our proposed RUVA scheme.",
+      "literal_normalized_match": true,
+      "rationale": "Addresses reliability-aware collaborative video analytics in multi-UAV-assisted MEC by modeling Poisson computation/link failure probabilities in Dec-POMDP inference scheduling while deferring fault injection to future work."
+    },
+    {
+      "id": "C05",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "In this paper, we propose a novel reliability-aware video analytics scheme for multi-UAV-assisted systems (RUVA).",
+      "literal_normalized_match": true,
+      "rationale": "This is a 14-page primary research article formulating RUVA as a Dec-POMDP with MARL centralized policy gradients and evaluating it empirically."
+    },
+    {
+      "id": "C05",
+      "field": "multi_uav_evaluated",
+      "page": 10,
+      "quote": "We deployed our proposed solution in a UAV-assisted video analytics system. There were three Da-Jiang Innovations drones equipped with the Manifold platform, which is a UAV-onboard edge computing device.",
+      "literal_normalized_match": true,
+      "rationale": "Section VI-A deploys the system on three DJI drones with Manifold onboard computers plus an edge-cloud server for profiling and multi-UAV MARL evaluation."
+    },
+    {
+      "id": "C05",
+      "field": "collaborative_inference",
+      "page": 1,
+      "quote": "We adopt a reliability formulation based on the Poisson failure assumption, and formulate the video analytics services as an optimization problem which jointly optimizes offloading decision, frame resolution and deep neural network model selection",
+      "literal_normalized_match": true,
+      "rationale": "Multi-agent UAVs jointly coordinate task offloading decisions, frame resolution adaptation, and DNN object-detection model selection with a shared edge server."
+    },
+    {
+      "id": "C05",
+      "field": "evaluative_evidence",
+      "page": 11,
+      "quote": "In our simulation, the computation capacity, computation delay, accuracy rate, etc. were all directly profiled and measured from the physical hardware. Tables II-IV represent actual measurements.",
+      "literal_normalized_match": true,
+      "rationale": "Section VI evaluates four object-detection DNNs profiled on physical drone/edge hardware across five video resolutions and compares against six baselines over 20,000 MARL episodes."
+    },
+    {
+      "id": "C05",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Copyright © 2026 IEEE. Personal use of this material is permitted. However, permission to use this material for any other purposes must be obtained from the IEEE by sending an email to pubs-permissions@ieee.org.",
+      "literal_normalized_match": true,
+      "rationale": "The PDF is an accepted IEEE Early Access author manuscript bearing a year-only Copyright 2026 notice and DOI without a month/day publication record."
+    },
+    {
+      "id": "C05",
+      "field": "english",
+      "page": 1,
+      "quote": "To validate our scheme, we construct a multi-UAVs testbed and conduct experiments with real-world datasets.",
+      "literal_normalized_match": true,
+      "rationale": "The complete 14-page manuscript is written in English."
+    },
+    {
+      "id": "C06",
+      "field": "identity",
+      "page": 1,
+      "quote": "Received: 28 January 2026 Revised: 14 March 2026 Accepted: 14 March 2026 Published: 18 March 2026",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "C06",
+      "field": "alignment",
+      "page": 15,
+      "quote": "Three UAVs are deployed in the UAV-assisted edge network under SAGSIN scenarios. UAVs hover at heights of 40–100 m above ground to execute predefined tasks. The network coverage area is 500 m × 500 m.",
+      "literal_normalized_match": true,
+      "rationale": "Sections 3.1, 4.3, and 5.1 (pp. 5–6, 13, 15) describe a three-UAV SAGSIN MEC architecture with A3C global/worker policy coordination and terminal-to-UAV ResNet18 layer partitioning, whereas Section 5.2 (pp. 16–23) does not verify multi-UAV runtime inference execution or cross-UAV orchestration beyond single-terminal/single-UAV latency plots, convergence curves, and component ablations."
+    },
+    {
+      "id": "C06",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "Therefore, in this paper, we design a joint optimization framework based on Asynchronous Advantage Actor-Critic (A3C) and proximal policy optimization (PPO).",
+      "literal_normalized_match": true,
+      "rationale": "This 25-page primary research article formulates joint DNN model partitioning, terminal priority scheduling, and bandwidth allocation via a hybrid A3C-PPO framework evaluated in simulation (Sections 3–5, pp. 5–23)."
+    },
+    {
+      "id": "C06",
+      "field": "multi_uav_evaluated",
+      "page": 20,
+      "quote": "The experimental environment is configured identically to that of the A3C-PPO framework. Four intelligent terminals are connected to the UAV. Inference tasks are continuously generated by each terminal.",
+      "literal_normalized_match": true,
+      "rationale": "Section 5.1 (p. 15) configures three hovering UAVs with four intelligent terminals connected to each UAV, and Section 5.2 p. 21 separately introduces a single-UAV three-terminal Only-PPO component ablation that does not contradict Section 5.1. However, Section 5.2 main hybrid A3C-PPO plots (Figs. 6–7, pp. 19–20) omit simulated UAV counts, 12-terminal totals, and per-UAV results, describe A3C parallelization via worker threads or processes (p. 19), and describe the A3C-PPO-identical environment as four intelligent terminals connected to the UAV (p. 20), leaving actual multi-UAV execution in the main evaluation unconfirmed."
+    },
+    {
+      "id": "C06",
+      "field": "collaborative_inference",
+      "page": 13,
+      "quote": "During deployment, one UAV serves as the central node hosting the global policy network for coordinated decision-making, while the remaining UAVs act as worker agents responsible for local state collection and policy sampling.",
+      "literal_normalized_match": true,
+      "rationale": "The evaluated DNN workload partitions ResNet18 layer-wise between an intelligent terminal and its nearest associated UAV MEC server (Section 3.1, p. 6; Table 3, p. 17; Eq. 1, p. 7), without modeled inter-UAV partitioning, task migration, or base-station/cloud inference execution despite Figure 1 (p. 6) drawing a three-tier schematic. Section 4.3 (p. 13) assigns one UAV to host a global A3C policy network and remaining UAVs as worker agents for RL coordination alongside Algorithm 1 (p. 15) training updates, but Section 5.2 does not verify runtime inference collaboration or orchestration across a multi-UAV-edge/cloud hierarchy."
+    },
+    {
+      "id": "C06",
+      "field": "evaluative_evidence",
+      "page": 20,
+      "quote": "The effectiveness of the proposed A3C-PPO hybrid architecture is verified through comparative experiments. Two baseline strategies are constructed for evaluation. The bandwidth allocation strategy based on A3C is denoted as Only-A3C.",
+      "literal_normalized_match": true,
+      "rationale": "Section 5.2 (pp. 16–23) provides simulation evaluations of ResNet18 cut-point latencies (Table 3, Figs. 3–4), PPO vs. random and brute-force partitioning (Fig. 5), A3C-PPO vs. AC-PPO and DDPG-PPO convergence (Fig. 6), Only-A3C/Only-PPO ablations (pp. 20–21, Figs. 7–8), learning rates (Fig. 9), and terminal priority scheduling (Fig. 10)."
+    },
+    {
+      "id": "C06",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Received: 28 January 2026 Revised: 14 March 2026 Accepted: 14 March 2026 Published: 18 March 2026",
+      "literal_normalized_match": true,
+      "rationale": "Publisher metadata on page 1 explicitly states Published: 18 March 2026, within 2021-01-01 through 2026-11-25."
+    },
+    {
+      "id": "C06",
+      "field": "english",
+      "page": 1,
+      "quote": "Unmanned Aerial Vehicle (UAV)-assisted mobile edge computing is pivotal for the Space–Air–Ground–Sea Integrated Network (SAGSIN) to support heterogeneous task offloading.",
+      "literal_normalized_match": true,
+      "rationale": "The complete 25-page MDPI Entropy article is written in English."
+    },
+    {
+      "id": "C07",
+      "field": "identity",
+      "page": 1,
+      "quote": "Date of publication 31 July 2023; date of current version 16 February 2024.",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "C07",
+      "field": "alignment",
+      "page": 1,
+      "quote": "As illustrated in Fig. 1(b), A3D eases the drone’s burden by selectively migrating onboard workload to nearby edge servers, targeting reducing inference latency",
+      "literal_normalized_match": true,
+      "rationale": "Jointly orchestrates onboard-vs-edge DNN inference offloading, input resolution, image compression, and edge-side multi-drone container CPU allocation under contention."
+    },
+    {
+      "id": "C07",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "In this paper, we propose A3D, an edge server assisted drone navigation framework that can dynamically adjust task execution location, input resolution, and image compression ratio",
+      "literal_normalized_match": true,
+      "rationale": "This is a 16-page peer-reviewed journal article presenting A3D with formal problem formulation, DRL scheduler, multi-drone edge resource allocator, and empirical evaluations."
+    },
+    {
+      "id": "C07",
+      "field": "multi_uav_evaluated",
+      "page": 12,
+      "quote": "This subsection examines A3D’s resource allocation algorithm in our simulation testbed under multi-drone settings. Specifically, we use four Jetson Nanos to emulate four drones, and accordingly launch four UAV instances in AirSim.",
+      "literal_normalized_match": true,
+      "rationale": "Section VIII-D evaluates multi-drone serving with four Jetson Nanos running four AirSim drone instances plus 1–15 drone trace-driven simulations sharing an edge server."
+    },
+    {
+      "id": "C07",
+      "field": "collaborative_inference",
+      "page": 1,
+      "quote": "To further support simultaneous multi-drone serving, we extend the edge server design by developing a network-aware resource allocation algorithm, which allows provisioning containerized resources aligned with drones’ demand.",
+      "literal_normalized_match": true,
+      "rationale": "Concurrent UAVs dynamically split visual navigation DNN inference between onboard Jetson Nano and containerized edge server instances via demand-aware resource allocation."
+    },
+    {
+      "id": "C07",
+      "field": "evaluative_evidence",
+      "page": 13,
+      "quote": "To further investigate the performance of A3D’s resource allocation with more drones, we carry out numerical simulations using the data traces collected from real drones.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluated via a single-drone campus flight prototype (Sec. VIII-B), single/multi-drone Jetson Nano + AirSim HIL emulation, and 1–15 drone trace-driven simulations (Sec. VIII-C–E)."
+    },
+    {
+      "id": "C07",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Date of publication 31 July 2023; date of current version 16 February 2024.",
+      "literal_normalized_match": true,
+      "rationale": "IEEE/ACM ToN bibliographic footnote lists date of publication 31 July 2023 and current version 16 February 2024 (Vol. 32, No. 1, Feb. 2024), within cutoff."
+    },
+    {
+      "id": "C07",
+      "field": "english",
+      "page": 1,
+      "quote": "Accurate navigation is of paramount importance to ensure flight safety and efficiency for autonomous drones.",
+      "literal_normalized_match": true,
+      "rationale": "The entire 16-page IEEE/ACM journal article is written in English."
+    },
+    {
+      "id": "C08",
+      "field": "identity",
+      "page": 1,
+      "quote": "Adaptive Heuristics for Scheduling DNN Inferencing on Edge and Cloud for Personalized UAV Fleets",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "C08",
+      "field": "alignment",
+      "page": 1,
+      "quote": "We extend our DEMS solution to GEMS to solve this. We evaluate these strategies, using (i) an emulated setup of a fleet of over 80 drones supporting over 25 VIPs, with real DNN models executing on pre-recorded drone video streams, using Jetson Nano edges",
+      "literal_normalized_match": true,
+      "rationale": "Orchestrates deadline- and QoE-driven scheduling of multi-drone vision DNN inference tasks across edge accelerators and cloud FaaS using EDF prioritization, edge-to-cloud migration, work stealing, and WAN variability adaptation (Sections 3–8, pp. 9–37)."
+    },
+    {
+      "id": "C08",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "We propose a deadline-driven heuristic, DEMS-A, to schedule diverse DNN tasks generated continuously to perform inferencing over video segments generated by multiple drones linked to an edge, with the option to execute on the cloud.",
+      "literal_normalized_match": true,
+      "rationale": "Supplied PDF is a 50-page primary research preprint (arXiv:2412.20860v2, 24 April 2025, non-peer-reviewed) proposing DEMS, DEMS-A, and GEMS scheduling heuristics for multi-drone DNN inference. Under protocol 4.1(7), preprints are eligible only when providing unique recent evidence and labelled as non-peer-reviewed; supplied evidence contains no peer-review or Future Generation Computer Systems journal metadata, does not establish publication or version equivalence with the unverified input lookup DOI 10.1016/j.future.2025.107874, and does not verify the unique-recent-evidence exception."
+    },
+    {
+      "id": "C08",
+      "field": "multi_uav_evaluated",
+      "page": 31,
+      "quote": "We replicate the earlier setup of running 3D-P for 21 drones on one host machine (HM) to 21 drones each on 4 host machines simultaneously. This has a peak of 84 drones supporting 28 VIPs using 28 edge containers hosted on 4 machines.",
+      "literal_normalized_match": true,
+      "rationale": "Section 8.1–8.6 (pp. 23–32) evaluates 2–4 buddy drones per edge container (14–28 drone containers across 7 edge containers per host) and weak scaling up to 84 drone containers across 28 edge containers on 4 host machines."
+    },
+    {
+      "id": "C08",
+      "field": "collaborative_inference",
+      "page": 1,
+      "quote": "We use strategies like task dropping, work stealing and migration, and dynamic adaptation to cloud variability, to fully utilize the captive edge with intelligent offloading to the cloud",
+      "literal_normalized_match": true,
+      "rationale": "Schedules six vision DNN models (HV, BP, DEV, DEO, CD, MD; Table 1, p. 23) continuously across buddy-drone video streams, Jetson-profiled edge containers, and AWS Lambda cloud FaaS via task dropping, edge-to-cloud migration, cloud-to-edge work stealing, and QoE-aware rescheduling (Sections 3–6, pp. 9–20)."
+    },
+    {
+      "id": "C08",
+      "field": "evaluative_evidence",
+      "page": 23,
+      "quote": "We collect real video feeds on campus using the Tello drones and stream these from the drone containers to their base station containers. Our software platform, scheduler logic, and gRPC service hosting the DNN models run on each edge container.",
+      "literal_normalized_match": true,
+      "rationale": "Section 8 (pp. 22–37) evaluates VIoLET container emulation with Jetson Nano benchmarks and live AWS Lambda FaaS against seven baselines (Sec. 8.3), latency/bandwidth shaping with SUMO/NS3 mobility traces (Sec. 8.5), weak scaling (Sec. 8.6), sleep-emulated QoE GEMS runs (Sec. 8.7), and a single-drone Tello plus Jetson Orin Nano campus trial (Sec. 8.8)."
+    },
+    {
+      "id": "C08",
+      "field": "date_window",
+      "page": 1,
+      "quote": "arXiv:2412.20860v2 [cs.DC] 24 Apr 2025",
+      "literal_normalized_match": true,
+      "rationale": "Isolated arXiv stamp on page 1 explicitly states arXiv:2412.20860v2 [cs.DC] 24 Apr 2025, within 2021-01-01 through 2026-11-25."
+    },
+    {
+      "id": "C08",
+      "field": "english",
+      "page": 1,
+      "quote": "Drone fleets with onboard cameras coupled with computer vision and DNN inferencing models can support diverse applications, from package deliveries to disaster monitoring.",
+      "literal_normalized_match": true,
+      "rationale": "All 50 pages of the arXiv preprint are written in English."
+    },
+    {
+      "id": "C09",
+      "field": "identity",
+      "page": 1,
+      "quote": "This article has been accepted for publication in IEEE Internet of Things Journal. This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/JIOT.2026.3755315",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "C09",
+      "field": "alignment",
+      "page": 5,
+      "quote": "This classifier is precisely the gate of the distributed MoE. Section VI-I1 instantiates it with a real fine-tuned network",
+      "literal_normalized_match": true,
+      "rationale": "Orchestrates distributed Mixture-of-Experts DNN inference routing jointly with connectivity-tethered trajectory planning across a FANET UAV swarm."
+    },
+    {
+      "id": "C09",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "We propose the NetMoE, an abstract expert-assignment framework which couples a connectivity-aware centralized online trajectory planner with a learnable topology-aware router inspired by the need for accurate expert assignment in target search tasks on UAV swarms.",
+      "literal_normalized_match": true,
+      "rationale": "This is an 18-page primary research article presenting NetMoE with mathematical system formulation, router/planner design, and simulation evaluation."
+    },
+    {
+      "id": "C09",
+      "field": "multi_uav_evaluated",
+      "page": 1,
+      "quote": "To address these open challenges, we propose NetMoE, a framework that integrates MoE-based distributed inference with joint trajectory planning on a UAV swarm.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluated in a 10-UAV FANET swarm simulation (Table III, Sec. VI) and swarm-size sweeps from 6 to 50 UAVs."
+    },
+    {
+      "id": "C09",
+      "field": "collaborative_inference",
+      "page": 4,
+      "quote": "Each UAV hosts a single dedicated DNN expert model of type ei. Since the onboard memory and compute of an individual UAV cannot accommodate all M experts, the experts are distributed across the swarm rather than co-located on one node.",
+      "literal_normalized_match": true,
+      "rationale": "Individual UAVs host distinct DNN specialists because one node cannot fit all experts, routing detected inference tasks over multi-hop FANET links with an onboard preview classifier gate."
+    },
+    {
+      "id": "C09",
+      "field": "evaluative_evidence",
+      "page": 11,
+      "quote": "Table VI supplements the per-inference comparison with modeled inference workload, payload volume, movement-command traffic, and resource utilization over 3 seeds × 100 episodes.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluated over 300 test episodes across 3 seeds against layer-wise partitioning, heuristic/accuracy-only routers, and MARL/sweep planners, plus CIFAR-100 complexity/accuracy measurements."
+    },
+    {
+      "id": "C09",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Authorized licensed use limited to: Viet Nam National University Ho Chi Minh City. Downloaded on November 25,2026 at 12:22:29 UTC from IEEE Xplore. Restrictions apply.",
+      "literal_normalized_match": true,
+      "rationale": "IEEE Internet of Things Journal accepted author manuscript provides only a year-only 2026 copyright notice and download stamp (25 November 2026) without a dated publication record."
+    },
+    {
+      "id": "C09",
+      "field": "english",
+      "page": 1,
+      "quote": "Recent works have suggested UAV-to-UAV collaboration through layer-wise DNN partitioning and distributed inference, yet this method still requires an intensive amount of computation because a monolithic DNN model is utilized for each task.",
+      "literal_normalized_match": true,
+      "rationale": "All 18 pages of the manuscript are written in English."
+    },
+    {
+      "id": "C10",
+      "field": "identity",
+      "page": 1,
+      "quote": "This article has been accepted for publication in IEEE Internet of Things Journal. This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/JIOT.2026.3740035",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "C10",
+      "field": "alignment",
+      "page": 1,
+      "quote": "Two key designs support this framework: a Pareto-optimal Top-K neighbor selection mechanism filters candidates by the non-dominated trade-off among communication distance, computational load, and compute capacity",
+      "literal_normalized_match": true,
+      "rationale": "Combines DRL-based layer-wise DNN partitioning, Pareto Top-K UAV neighbor selection, MiniBatch pipelining, and link-interruption recovery in an infrastructure-free swarm."
+    },
+    {
+      "id": "C10",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "To address this, we propose DDCI, a decentralized collaborative inference framework in which each UAV autonomously selects a collaboration partner and a DNN partition point through a locally executed deep reinforcement learning (DRL) policy.",
+      "literal_normalized_match": true,
+      "rationale": "This is a 16-page primary research article presenting DDCI with POMDP/DRL design, analytical pipeline model, and multi-architecture simulation evaluation."
+    },
+    {
+      "id": "C10",
+      "field": "multi_uav_evaluated",
+      "page": 10,
+      "quote": "The swarm comprises N= 10 UAVs with heterogeneous compute capacities Ci ∈ {160,320,400,600,800} GFLOPS, corresponding to embedded UAV processors ranging from low-power modules to high-end accelerators (Section V-A), communicating over Wi-Fi 802.11ac within radius R comm = 200m.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluated in a custom Gymnasium simulation of N=10 heterogeneous UAVs communicating over 802.11ac (Sec. V-A) plus sensitivity sweeps over swarm size."
+    },
+    {
+      "id": "C10",
+      "field": "collaborative_inference",
+      "page": 4,
+      "quote": "A swarm of UAVs performs real-time DNN inference over a disaster area without ground infrastructure. Each UAV partitions the DNN model and collaborates with a selected neighbor through air-to-air communication to accelerate inference.",
+      "literal_normalized_match": true,
+      "rationale": "Each UAV performs layer-wise partitioning across four DNN models (Part A locally, intermediate features over air-to-air links to Pareto-selected neighbor UAVs for Part B) with MiniBatch pipelining and link-interruption recovery."
+    },
+    {
+      "id": "C10",
+      "field": "evaluative_evidence",
+      "page": 12,
+      "quote": "To isolate the contribution of each design component, we conduct an ablation on VGG-16 with N=10, R comm=200m over 30 episodes (Table VII).",
+      "literal_normalized_match": true,
+      "rationale": "Section V evaluates DDCI across YOLOv5m, VGG-16, VGG-19, and GoogLeNet-22 over 30 episodes against six baselines, with sensitivity sweeps and frozen-policy ablations."
+    },
+    {
+      "id": "C10",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Authorized licensed use limited to: Viet Nam National University Ho Chi Minh City. Downloaded on November 25,2026 at 12:22:56 UTC from IEEE Xplore. Restrictions apply.",
+      "literal_normalized_match": true,
+      "rationale": "IEEE Internet of Things Journal accepted author manuscript provides only a year-only 2026 copyright notice and download stamp (25 November 2026) without a dated publication record."
+    },
+    {
+      "id": "C10",
+      "field": "english",
+      "page": 1,
+      "quote": "However, the limited on-board computation of each UAV and the dynamic, infrastructure-free topology of the swarm make efficient inference challenging.",
+      "literal_normalized_match": true,
+      "rationale": "All 16 pages of the manuscript are written in English."
+    }
+  ]
+}
