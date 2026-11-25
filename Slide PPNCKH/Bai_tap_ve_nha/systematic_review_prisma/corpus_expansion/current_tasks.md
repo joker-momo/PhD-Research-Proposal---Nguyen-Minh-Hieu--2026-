@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T06:14:06+07:00
+Updated_at: 2026-11-26T06:20:54+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -26,7 +26,7 @@ without blocking dispatch.
 | Timestamp standardization | logs/status/hooks | completed and merged at `1f04299` | requested_at 2026-11-25T23:02:44+07:00; 17 gate tests + 18 skill-router tests PASS | Preserve timestamp checks in every subsequent task |
 | Screening batch 05 | C05-C10 | accepted working screening with targeted correction | 1 INCLUDE, 5 UNCERTAIN; 48/48 combined locators; `screening_46/reviews/batch_05_correction_review.md` | Preserve unresolved dates/version/scope; batch 06 next after commit/merge/cleanup |
 | Screening batch 06 | C11-C16 | accepted working screening | 4 INCLUDE, 2 UNCERTAIN; 48/48 locators; `screening_46/reviews/batch_06_review.md` | Preserve dates/roles/families; batch 07 after commit/merge/cleanup |
-| Screening batch 07 | C17-C21 | not started | none | Wait for batch 06 commit and clean gate |
+| Screening batch 07 | C17-C21 | primary failed: server interruption | 0 artifacts; `screening_46/reviews/batch_07_review.md` | Retry unchanged brief after commit/merge/cleanup |
 | Screening batch 08 | C22-C25, SNCS | not started | none | Wait for batch 07 commit and clean gate |
 
 ## Measured progress
@@ -66,10 +66,10 @@ baseline is not permission to create new residue outside the owned scopes.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-06",
-  "status": "completed",
-  "started_at": "2026-11-26T06:00:03+07:00",
-  "updated_at": "2026-11-26T06:14:06+07:00",
-  "completed_at": "2026-11-26T06:14:06+07:00"
+  "task_id": "screening-batch-07-primary",
+  "status": "rejected",
+  "started_at": "2026-11-26T06:15:33+07:00",
+  "updated_at": "2026-11-26T06:20:54+07:00",
+  "completed_at": "2026-11-26T06:20:54+07:00"
 }
 -->

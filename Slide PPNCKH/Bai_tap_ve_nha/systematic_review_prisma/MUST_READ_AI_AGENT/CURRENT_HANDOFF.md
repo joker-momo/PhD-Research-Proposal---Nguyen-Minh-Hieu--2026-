@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T06:14:06+07:00
+**updated_at:** 2026-11-26T06:20:54+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -62,6 +62,9 @@ stop and reconcile the conflict before starting or delegating another task.
   publication dates remain unresolved; C11 relay and C16 jammer roles bounded.
 - Progress: 36/46 reports through an accepted working gate; 25 INCLUDE,
   1 EXCLUDE, 10 UNCERTAIN; 10 not yet screened. No provider task is active.
+- Batch 07 primary failed after server interruption; 0 artifacts, 0 adopted
+  records. Gate `screening_46/reviews/batch_07_review.md`. Service restored;
+  retry pending commit/merge/cleanup.
 - These working decisions are not final human adjudication, unique-study counts,
   final PRISMA arithmetic, or permission to change manuscript conclusions.
 
@@ -154,18 +157,18 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-After Batch 06 acceptance commit/merge/cleanup, route the committed Batch 07
-brief (C17–C21) once after clean-owned, fresh-status and timestamp gates.
-Preserve ten UNCERTAIN decisions; do not count them as included studies.
-No provider task is active. Batch 06 raw/result and bounded role evidence are
-retained for audit; manuscript remains the earlier interim dataset.
+After the interrupted Batch 07 primary is committed/merged/cleaned, retry its
+unchanged committed brief (C17–C21) through the approved router. Preserve failed
+task `01a214fe-2fce-723a-a467-83943cc4d44b` and collect under batch_07_retry
+filenames. No fallback for server interruption. Counts remain 36/46; no active
+provider task remains after the confirmed FAILED response.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-06",
-  "status": "completed",
-  "started_at": "2026-11-26T06:00:03+07:00",
-  "updated_at": "2026-11-26T06:14:06+07:00",
-  "completed_at": "2026-11-26T06:14:06+07:00"
+  "task_id": "screening-batch-07-primary",
+  "status": "rejected",
+  "started_at": "2026-11-26T06:15:33+07:00",
+  "updated_at": "2026-11-26T06:20:54+07:00",
+  "completed_at": "2026-11-26T06:20:54+07:00"
 }
 -->
