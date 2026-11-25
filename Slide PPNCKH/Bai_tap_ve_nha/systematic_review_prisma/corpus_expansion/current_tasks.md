@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-25T23:18:05+07:00
+Updated_at: 2026-11-25T23:23:03+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -10,7 +10,7 @@ Gemini 3.8 Flash is the primary read-only research worker; the confined
 Canonical execution workspace: `/Volumes/JokerData/PhD/PhD Research Proposal -
 Nguyen Minh Hieu (2026) (v3)` on `main`. The split-brain migration was promoted
 through merge `5cde697`; 92/92 evidence checksums pass, 46/46 manifest records
-resolve, and Batch 04 primary plus first correction are completed but rejected. The user authorized a path-scoped
+resolve, and Batch 04 correction 02 is accepted; earlier outputs remain rejected. The user authorized a path-scoped
 clean-tree policy: residue in the project, repository `.codex/`, or repository
 `AGENTS.md` blocks A2A, while the exact 50-entry external baseline is preserved
 without blocking dispatch.
@@ -22,7 +22,7 @@ without blocking dispatch.
 | Screening batch 01 | S01-S06 | accepted working screening | 5 INCLUDE, 1 EXCLUDE; gate `screening_46/reviews/batch_01_combined_gate.md`; commit `531a54e` | Preserve; reconcile versions/study families later |
 | Screening batch 02 | S07-S12 | accepted working screening | 6 INCLUDE; 48/48 source-page checks; gate `screening_46/reviews/batch_02_combined_gate.md`; commit `c3c6c08` | Preserve; reconcile versions/study families later |
 | Screening batch 03 | S13-S18 | accepted working screening | 6 INCLUDE; 48/48 batch locators plus 30/30 S16 correction locators; gate `screening_46/reviews/batch_03_combined_gate.md`; commit `fc8944f` | Preserve S16 version limits; reconcile later |
-| Screening batch 04 | S19-S20, C01-C04 | primary rejected A2/A3; first correction rejected C4 | 0 accepted decisions; correction task `01a21371-c7a6-738e-b56a-57454a1221e6`; 48/48 locators; review `screening_46/reviews/batch_04_correction_review.md` | Corrective brief `screening_46/briefs/batch_04_correction_02.md` ready after commit; route once |
+| Screening batch 04 | S19-S20, C01-C04 | accepted working screening, correction 02 | 3 INCLUDE, 3 UNCERTAIN; 48/48 locators; `screening_46/reviews/batch_04_correction_02_review.md` | Preserve uncertainty; proceed to batch 05 after commit/merge/cleanup |
 | Timestamp standardization | logs/status/hooks | completed and merged at `1f04299` | requested_at 2026-11-25T23:02:44+07:00; 17 gate tests + 18 skill-router tests PASS | Preserve timestamp checks in every subsequent task |
 | Screening batch 05 | C05-C10 | not started | none | Wait for batch 04 commit and clean gate |
 | Screening batch 06 | C11-C16 | not started | none | Wait for batch 05 commit and clean gate |
@@ -32,15 +32,13 @@ without blocking dispatch.
 ## Measured progress
 
 - Frozen retrieval inventory: 46 reports.
-- Accepted working full-text screening: 18/46 reports.
-- Working decisions: 17 INCLUDE, 1 EXCLUDE, 0 UNCERTAIN in batches 01-03.
-- Remaining in this campaign: 28 reports.
+- Accepted working full-text screening: 24/46 reports.
+- Working decisions: 20 INCLUDE, 1 EXCLUDE, 3 UNCERTAIN in batches 01-04.
+- Remaining in this campaign: 22 reports.
 - Active A2A research task: none.
-- Batch 04 dispatch count: 1 primary and 1 correction, both completed and
-  rejected; accepted-result count 0.
-- Latest Batch 04 failure count: 1 mandatory criterion (C4); C03 interpretation
-  conflicts with the protocol's allowance for analytical performance studies.
-- Manuscript changes from batches 01-03: zero.
+- Batch 04 dispatch count: 1 primary and 2 corrections; accepted-result count 1.
+- Latest Batch 04 mandatory failures: 0; all C1–C6 PASS.
+- Manuscript changes from batches 01-04: zero.
 - Accepted brief mutations from refresh tooling: zero; any batch with a
   transport, result, or review artifact is immutable to the producer.
 
@@ -67,10 +65,10 @@ baseline is not permission to create new residue outside the owned scopes.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "prepare-batch-04-correction-02",
+  "task_id": "screening-batch-04-correction-02",
   "status": "completed",
-  "started_at": "2026-11-25T23:17:21+07:00",
-  "updated_at": "2026-11-25T23:18:05+07:00",
-  "completed_at": "2026-11-25T23:18:05+07:00"
+  "started_at": "2026-11-25T23:18:47+07:00",
+  "updated_at": "2026-11-25T23:23:03+07:00",
+  "completed_at": "2026-11-25T23:23:03+07:00"
 }
 -->

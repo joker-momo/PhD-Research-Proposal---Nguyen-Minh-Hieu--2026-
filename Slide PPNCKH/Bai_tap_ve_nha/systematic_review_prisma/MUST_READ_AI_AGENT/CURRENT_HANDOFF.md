@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-25T23:18:05+07:00
+**updated_at:** 2026-11-25T23:23:03+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -48,26 +48,19 @@ stop and reconcile the conflict before starting or delegating another task.
   author copy and Version of Record is not assumed. Combined gate:
   `screening_46/reviews/batch_03_combined_gate.md`. Acceptance commit:
   `fc8944f`.
-- Progress: 18/46 reports reviewed through an accepted working gate; 17 INCLUDE,
-  1 EXCLUDE, 28 not yet screened in this campaign.
-- Batch 04 primary task `01a21367-17e7-767c-b5cb-b595ef2ccb56` completed
-  transport but was rejected by the Codex gate (`REJECTED_A2_A3`). Mechanical
-  evidence: 6/6 records returned, 44/48 page/quote locators match, four locator
-  failures, and 6/6 empty `primary_reason` fields. Review:
-  `screening_46/reviews/batch_04_review.md`. No research task is currently active
-  and no Batch 04 decision is accepted.
-- Correction task `01a21371-c7a6-738e-b56a-57454a1221e6` is complete and
-  **REJECTED_C4**: 48/48 locators match, six reasons are nonempty, but C03's
-  multi-UAV rationale improperly relies on absent simulation/DNN execution.
-  The protocol permits analytical performance studies. Review:
-  `screening_46/reviews/batch_04_correction_review.md`. All six decisions remain
-  quarantined; no provider task is active.
+- Batch 04, S19-S20/C01-C04: accepted working screening from correction 02,
+  3 INCLUDE + 3 UNCERTAIN. Task `01a21380-a2ee-78e9-a775-c310e8dc9541`;
+  gate `screening_46/reviews/batch_04_correction_02_review.md`, 48/48 locators.
+  Primary and first correction remain rejected; the accepted replacement fixes
+  C03's analytical-eligibility interpretation while retaining date uncertainty.
+- Progress: 24/46 reports through an accepted working gate; 20 INCLUDE,
+  1 EXCLUDE, 3 UNCERTAIN; 22 not yet screened. No provider task is active.
 - These working decisions are not final human adjudication, unique-study counts,
   final PRISMA arithmetic, or permission to change manuscript conclusions.
 
 ## Evidence accepted versus quarantined
 
-- Usable working evidence: only the three accepted derivative batch files and
+- Usable working evidence: only the four accepted derivative batch files and
   their combined PASS gates.
 - Quarantined but retained for audit: original rejected batch outputs, rejected
   corrections, provider raw JSON, and any result without a complete Codex PASS
@@ -78,9 +71,9 @@ stop and reconcile the conflict before starting or delegating another task.
 
 ## Critical unresolved work
 
-1. Timestamp standardization is implemented with 17 gate tests and 18 skill-router
-   tests passing. After its commit/merge/cleanup, prepare a targeted C03 follow-up
-   brief, route it and require all C1–C6 checks PASS before batches 05–08.
+1. After Batch 04 correction 02 commit/merge/cleanup, continue batches 05–08
+   serially through brief, dispatch, acceptance and commit gates. Timestamp
+   standardization is merged at `1f04299` (35/35 tests PASS).
 2. Reconcile all accepted working decisions with report versions, study families,
    the canonical 27-report dataset, extraction, and quality appraisal.
 3. Execute/export/reconcile IEEE Xplore, ACM Digital Library, Scopus, and Web of
@@ -138,9 +131,8 @@ stop and reconcile the conflict before starting or delegating another task.
   count or treat the exact preserved external baseline as task residue.
 - Automatic hook activation remains unverified in the Codex runtime; manual
   clean-tree and freshness checks remain mandatory.
-- Batch 04 primary and first correction are complete but rejected and retained.
-  The correction resolves schema/locator failures; one protocol-interpretation
-  failure remains. No research worker is active.
+- Batch 04 correction 02 is accepted as working screening; both earlier outputs
+  remain rejected and retained. No research task is active.
 
 ## Current submission verdict
 
@@ -155,18 +147,18 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-After this brief task is committed/merged/cleaned, route exactly one linked
-correction using `screening_46/briefs/batch_04_correction_02.md`. Do not redispatch
-the primary or first correction. Collect distinct correction_02 artifacts and
-require C1–C6 PASS before acceptance. Timestamp standardization is merged at
-`1f04299` with 35/35 tests PASS; automatic hook activation remains unverified.
+Commit, merge and clean this accepted Batch 04 task. Then verify the committed
+Batch 05 brief (C05–C10), publish the five task fields and route once through
+A2A after clean-owned/fresh-status/timestamp checks. Use canonical supplied
+PDF/text evidence when the task worktree lacks ignored full text. Never count
+UNCERTAIN decisions as final included studies.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "prepare-batch-04-correction-02",
+  "task_id": "screening-batch-04-correction-02",
   "status": "completed",
-  "started_at": "2026-11-25T23:17:21+07:00",
-  "updated_at": "2026-11-25T23:18:05+07:00",
-  "completed_at": "2026-11-25T23:18:05+07:00"
+  "started_at": "2026-11-25T23:18:47+07:00",
+  "updated_at": "2026-11-25T23:23:03+07:00",
+  "completed_at": "2026-11-25T23:23:03+07:00"
 }
 -->
