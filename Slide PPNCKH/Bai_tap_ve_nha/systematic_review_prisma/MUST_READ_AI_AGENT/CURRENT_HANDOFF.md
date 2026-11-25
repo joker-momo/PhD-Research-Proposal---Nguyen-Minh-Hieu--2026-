@@ -90,6 +90,14 @@ stop and reconcile the conflict before starting or delegating another task.
 - The live project contains the portable evidence pack: 46 PDFs + 46 extracted
   texts, with 92/92 SHA-256 checks passing and all 46 manifest records resolving
   from project-relative locators.
+- All 60 research-owned paths classified `KEEP_RESEARCH` but previously absent
+  from the promoted root are preserved at their original relative paths and in
+  the rollback pack; `migration/keep_research_preservation.tsv` records their
+  hashes. This includes 13 ignored raw research transports.
+- The six exact source versions cited by the canonical 27-report dataset now
+  resolve under `sources/preserved_candidate_fulltext/`, including the C06 PMC
+  HTML. The three local evidence files named by `formal_search_log_v0.2.csv`
+  are restored under `sources/raw/` and `sources/normalized/`.
 - The obsolete live `sources/candidate_fulltext` symlink is absent. Its original
   tree and target evidence remain recoverable under
   `/Volumes/JokerData/PhD/HK261-reconciliation-backups/2026-11-25-split-brain/`;
@@ -98,12 +106,15 @@ stop and reconcile the conflict before starting or delegating another task.
 - The pre-existing root dirty baseline remains unchanged outside this project:
   50/50 porcelain-status entries match the Task 1 snapshot. Do not reset, stash,
   clean, delete, or overwrite them.
-- The status guard blocks recognized A2A dispatch when either agent-owned Git
-  state is dirty or the latest project commit is newer than
+- The status guard checks the entire repository and blocks recognized A2A
+  dispatch when any Git state is dirty or the latest project commit is newer than
   `CURRENT_HANDOFF.md` and `current_tasks.md`.
 - Automatic hook activation remains unverified in the Codex runtime; manual
   clean-tree and freshness checks remain mandatory.
-- Batch 04 remains undispatched; no research provider task is active.
+- Batch 04 remains undispatched and is currently **BLOCKED** by the repository-
+  wide clean-tree rule because the 50 preserved user-owned status entries are
+  present. No research provider task is active. Do not dispatch until the user
+  either resolves that baseline or explicitly authorizes a baseline-aware rule.
 
 ## Current submission verdict
 
@@ -112,16 +123,19 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## User confirmation required
 
+- Decide whether to resolve the 50 pre-existing root status entries or authorize
+  a baseline-aware A2A clean-tree rule. Their content must remain preserved until
+  the user makes that choice.
 - Author metadata/approval, verified HCMUT email and student ID, exact
   examination date, declarations, and explicit authorization for submission and
   email forwarding.
 
 ## Next exact action
 
-Open the canonical root checkout, prepare/verify the Batch 04 task boundary, and
-dispatch only when:
+Open the canonical root checkout and resolve the clean-tree policy blocker. Only
+then prepare/verify the Batch 04 task boundary and dispatch when:
 
-1. the active worktree is clean;
+1. the repository-wide hook reports a clean/authorized baseline;
 2. `CURRENT_HANDOFF.md` and `current_tasks.md` are fresh at the latest project
    commit;
 3. the five pre-task fields are published; and

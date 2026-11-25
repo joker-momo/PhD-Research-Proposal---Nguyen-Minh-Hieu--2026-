@@ -1,0 +1,107 @@
+{
+  "total_results": 4,
+  "returned": 4,
+  "query_as_executed": "arXiv Query: search_query=(all:\"UAV swarm\" OR all:\"drone swarm\" OR all:\"multi-UAV\" OR all:\"multiple UAVs\" OR all:\"aerial network\" OR all:FANET) AND (all:\"distributed inference\" OR all:\"collaborative inference\" OR all:\"cooperative inference\" OR all:\"split inference\" OR all:\"split computing\" OR all:\"DNN partitioning\" OR all:\"model partitioning\" OR all:\"layer placement\")&id_list=&start=0&max_results=100",
+  "entries": [
+    {
+      "arxiv_id": "2503.16146",
+      "arxiv_id_versioned": "2503.16146v3",
+      "version": "3",
+      "title": "Distributed Split Computing Using Diffusive Metrics for UAV Swarms",
+      "abstract": "In large-scale UAV swarms, dynamically executing machine learning tasks can pose significant challenges due to network volatility and the heterogeneous resource constraints of each UAV. Traditional approaches often rely on centralized orchestration to partition tasks among nodes. However, these methods struggle with communication bottlenecks, latency, and reliability when the swarm grows or the topology shifts rapidly. To overcome these limitations, we propose a fully distributed, diffusive metric-based approach for split computing in UAV swarms. Our solution introduces a new iterative measure, termed the aggregated gigaflops, capturing each node's own computing capacity along with that of its neighbors without requiring global network knowledge. By forwarding partial inferences intelligently to underutilized nodes, we achieve improved task throughput, lower latency, and enhanced energy efficiency. Further, to handle sudden workload surges and rapidly changing node conditions, we incorporate an early-exit mechanism that can adapt the inference pathway on-the-fly. Extensive simulations demonstrate that our approach significantly outperforms baseline strategies across multiple performance indices, including latency, fairness, and energy consumption. These results highlight the feasibility of large-scale distributed intelligence in UAV swarms and provide a blueprint for deploying robust, scalable ML services in diverse aerial networks.",
+      "authors": [
+        "Talip Tolga Sarı",
+        "Gökhan Seçinti",
+        "Angelo Trotta"
+      ],
+      "published": "2025-03-20T13:49:15Z",
+      "updated": "2026-04-08T17:16:15Z",
+      "primary_category": "cs.NI",
+      "categories": [
+        "cs.NI"
+      ],
+      "doi": "10.1016/j.sysarc.2026.103804",
+      "journal_ref": null,
+      "comment": "Accepted for publication in Journal of Systems Architecture (Elsevier)",
+      "abstract_url": "https://arxiv.org/abs/2503.16146v3",
+      "pdf_url": "https://arxiv.org/pdf/2503.16146v3"
+    },
+    {
+      "arxiv_id": "2305.15858",
+      "arxiv_id_versioned": "2305.15858v1",
+      "version": "1",
+      "title": "LLHR: Low Latency and High Reliability CNN Distributed Inference for Resource-Constrained UAV Swarms",
+      "abstract": "Recently, Unmanned Aerial Vehicles (UAVs) have shown impressive performance in many critical applications, such as surveillance, search and rescue operations, environmental monitoring, etc. In many of these applications, the UAVs capture images as well as other sensory data and then send the data processing requests to remote servers. Nevertheless, this approach is not always practical in real-time-based applications due to unstable connections, limited bandwidth, limited energy, and strict end-to-end latency. One promising solution is to divide the inference requests into subtasks that can be distributed among UAVs in a swarm based on the available resources. Moreover, these tasks create intermediate results that need to be transmitted reliably as the swarm moves to cover the area. Our system model deals with real-time requests, aiming to find the optimal transmission power that guarantees higher reliability and low latency. We formulate the Low Latency and High-Reliability (LLHR) distributed inference as an optimization problem, and due to the complexity of the problem, we divide it into three subproblems. In the first subproblem, we find the optimal transmit power of the connected UAVs with guaranteed transmission reliability. The second subproblem aims to find the optimal positions of the UAVs in the grid, while the last subproblem finds the optimal placement of the CNN layers in the available UAVs. We conduct extensive simulations and compare our work to two baseline models demonstrating that our model outperforms the competing models.",
+      "authors": [
+        "Marwan Dhuheir",
+        "Aiman Erbad",
+        "Sinan Sabeeh"
+      ],
+      "published": "2023-05-25T08:47:16Z",
+      "updated": "2023-05-25T08:47:16Z",
+      "primary_category": "cs.DC",
+      "categories": [
+        "cs.DC",
+        "cs.LG"
+      ],
+      "doi": "10.1109/WCNC55385.2023.10118908",
+      "journal_ref": "In2023 IEEE Wireless Communications and Networking Conference (WCNC) 2023 Mar 26 (pp. 1-6). IEEE",
+      "comment": "arXiv admin note: substantial text overlap with arXiv:2212.11201",
+      "abstract_url": "https://arxiv.org/abs/2305.15858v1",
+      "pdf_url": "https://arxiv.org/pdf/2305.15858v1"
+    },
+    {
+      "arxiv_id": "2301.00912",
+      "arxiv_id_versioned": "2301.00912v1",
+      "version": "1",
+      "title": "Distributed Machine Learning for UAV Swarms: Computing, Sensing, and Semantics",
+      "abstract": "Unmanned aerial vehicle (UAV) swarms are considered as a promising technique for next-generation communication networks due to their flexibility, mobility, low cost, and the ability to collaboratively and autonomously provide services. Distributed learning (DL) enables UAV swarms to intelligently provide communication services, multi-directional remote surveillance, and target tracking. In this survey, we first introduce several popular DL algorithms such as federated learning (FL), multi-agent Reinforcement Learning (MARL), distributed inference, and split learning, and present a comprehensive overview of their applications for UAV swarms, such as trajectory design, power control, wireless resource allocation, user assignment, perception, and satellite communications. Then, we present several state-of-the-art applications of UAV swarms in wireless communication systems, such us reconfigurable intelligent surface (RIS), virtual reality (VR), semantic communications, and discuss the problems and challenges that DL-enabled UAV swarms can solve in these applications. Finally, we describe open problems of using DL in UAV swarms and future research directions of DL enabled UAV swarms. In summary, this survey provides a comprehensive survey of various DL applications for UAV swarms in extensive scenarios.",
+      "authors": [
+        "Yahao Ding",
+        "Zhaohui Yang",
+        "Quoc-Viet Pham",
+        "Zhaoyang Zhang",
+        "Mohammad Shikh-Bahaei"
+      ],
+      "published": "2023-01-03T01:05:18Z",
+      "updated": "2023-01-03T01:05:18Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "doi": null,
+      "journal_ref": null,
+      "comment": null,
+      "abstract_url": "https://arxiv.org/abs/2301.00912v1",
+      "pdf_url": "https://arxiv.org/pdf/2301.00912v1"
+    },
+    {
+      "arxiv_id": "2212.11201",
+      "arxiv_id_versioned": "2212.11201v1",
+      "version": "1",
+      "title": "Deep Reinforcement Learning for Trajectory Path Planning and Distributed Inference in Resource-Constrained UAV Swarms",
+      "abstract": "The deployment flexibility and maneuverability of Unmanned Aerial Vehicles (UAVs) increased their adoption in various applications, such as wildfire tracking, border monitoring, etc. In many critical applications, UAVs capture images and other sensory data and then send the captured data to remote servers for inference and data processing tasks. However, this approach is not always practical in real-time applications due to the connection instability, limited bandwidth, and end-to-end latency. One promising solution is to divide the inference requests into multiple parts (layers or segments), with each part being executed in a different UAV based on the available resources. Furthermore, some applications require the UAVs to traverse certain areas and capture incidents; thus, planning their paths becomes critical particularly, to reduce the latency of making the collaborative inference process. Specifically, planning the UAVs trajectory can reduce the data transmission latency by communicating with devices in the same proximity while mitigating the transmission interference. This work aims to design a model for distributed collaborative inference requests and path planning in a UAV swarm while respecting the resource constraints due to the computational load and memory usage of the inference requests. The model is formulated as an optimization problem and aims to minimize latency. The formulated problem is NP-hard so finding the optimal solution is quite complex; thus, this paper introduces a real-time and dynamic solution for online applications using deep reinforcement learning. We conduct extensive simulations and compare our results to the-state-of-the-art studies demonstrating that our model outperforms the competing models.",
+      "authors": [
+        "Marwan Dhuheir",
+        "Emna Baccour",
+        "Aiman Erbad",
+        "Sinan Sabeeh Al-Obaidi",
+        "Mounir Hamdi"
+      ],
+      "published": "2022-12-21T17:16:42Z",
+      "updated": "2022-12-21T17:16:42Z",
+      "primary_category": "cs.DC",
+      "categories": [
+        "cs.DC",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "doi": "10.1109/JIOT.2022.3231341",
+      "journal_ref": null,
+      "comment": "accepted journal paper at IEEE Internet of Things Journal",
+      "abstract_url": "https://arxiv.org/abs/2212.11201v1",
+      "pdf_url": "https://arxiv.org/pdf/2212.11201v1"
+    }
+  ]
+}

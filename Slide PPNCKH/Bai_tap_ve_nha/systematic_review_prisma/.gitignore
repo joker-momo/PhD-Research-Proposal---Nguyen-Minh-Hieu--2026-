@@ -6,3 +6,6 @@ manuscript/**/*.log
 manuscript/**/*.out
 corpus_expansion/*_raw.json
 scripts/__pycache__/
+sources/preserved_candidate_fulltext/*
+!sources/preserved_candidate_fulltext/README.md
+!sources/preserved_candidate_fulltext/checksums.sha256
