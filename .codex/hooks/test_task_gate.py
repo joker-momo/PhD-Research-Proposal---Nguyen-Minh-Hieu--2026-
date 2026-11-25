@@ -16,6 +16,10 @@ class TaskGateTests(unittest.TestCase):
         self.script = self.root / ".codex/hooks/task_gate.py"
         self.script.parent.mkdir(parents=True)
         shutil.copyfile(SOURCE, self.script)
+        self.codex_file = self.root / ".codex/owned.txt"
+        self.codex_file.write_text("baseline\n")
+        self.agents_file = self.root / "AGENTS.md"
+        self.agents_file.write_text("baseline\n")
         self.git("init", "-q")
         self.git("config", "user.name", "Gate Test")
         self.git("config", "user.email", "gate-test@example.invalid")
@@ -23,6 +27,9 @@ class TaskGateTests(unittest.TestCase):
         self.file.write_text("baseline\n")
         self.project = (self.root / "Slide PPNCKH/Bai_tap_ve_nha/"
                         "systematic_review_prisma")
+        self.owned_file = self.project / "owned.txt"
+        self.owned_file.parent.mkdir(parents=True)
+        self.owned_file.write_text("baseline\n")
         self.handoff = (self.project / "MUST_READ_AI_AGENT/"
                         "CURRENT_HANDOFF.md")
         self.tasks = self.project / "corpus_expansion/current_tasks.md"
@@ -104,12 +111,12 @@ class TaskGateTests(unittest.TestCase):
     def test_dirty_a2a_blocked_for_each_residue_type(self):
         for state in ["untracked", "modified", "staged"]:
             if state == "untracked":
-                (self.root / "residue.txt").write_text("pending")
+                (self.project / "residue.txt").write_text("pending")
             else:
-                (self.root / "residue.txt").unlink(missing_ok=True)
-                self.file.write_text("pending\n")
+                (self.project / "residue.txt").unlink(missing_ok=True)
+                self.owned_file.write_text("pending\n")
                 if state == "staged":
-                    self.git("add", "tracked.txt")
+                    self.git("add", str(self.owned_file.relative_to(self.root)))
             for cmd in ["rtk proxy scripts/a2a-route --brief brief.md",
                         "rtk proxy a2a send -a http://127.0.0.1:1 brief",
                         "rtk proxy python3 scripts/run_screening_batches.py --start 2"]:
@@ -118,8 +125,30 @@ class TaskGateTests(unittest.TestCase):
                     self.assertEqual(2, r.returncode)
                     self.assertIn("commit the current task", r.stderr)
 
+    def test_outside_scope_residue_allowed_for_each_residue_type(self):
+        for state in ["untracked", "modified", "staged"]:
+            if state == "untracked":
+                (self.root / "outside-residue.txt").write_text("pending")
+            else:
+                (self.root / "outside-residue.txt").unlink(missing_ok=True)
+                self.file.write_text("pending\n")
+                if state == "staged":
+                    self.git("add", "tracked.txt")
+            with self.subTest(state=state):
+                r = self.call("rtk proxy scripts/a2a-route --brief brief.md")
+                self.assertEqual(0, r.returncode)
+
+    def test_each_owned_scope_blocks_a2a(self):
+        for path in (self.owned_file, self.codex_file, self.agents_file):
+            path.write_text("pending\n")
+            with self.subTest(path=path.relative_to(self.root)):
+                r = self.call("rtk proxy scripts/a2a-route --brief brief.md")
+                self.assertEqual(2, r.returncode)
+                self.assertIn("owned path", r.stderr)
+            path.write_text("baseline\n")
+
     def test_dirty_non_a2a_allowed(self):
-        self.file.write_text("pending\n")
+        self.owned_file.write_text("pending\n")
         for cmd in ["rtk proxy git status --short", "rtk proxy python3 check.py",
                     "rtk proxy git commit -m finish", "rtk proxy a2a task get TASK -o json"]:
             self.assertEqual(0, self.call(cmd).returncode)

@@ -13,14 +13,20 @@ STATUS_DOCUMENTS = (
     PROJECT / "MUST_READ_AI_AGENT/CURRENT_HANDOFF.md",
     PROJECT / "corpus_expansion/current_tasks.md",
 )
+OWNED_GIT_PATHS = (
+    ROOT / "AGENTS.md",
+    ROOT / ".codex",
+    PROJECT,
+)
 REMINDER = """Before EACH new HK261 task publish exactly five fields:
 TASK: concrete task
 OWNER: CODEX_WRITING or GEMINI_RESEARCH
 OWNED_PATHS: explicit paths
 BINARY_ACCEPTANCE: binary/countable checks
 PRE_TASK_GIT_STATUS: observed branch, staged/modified/untracked counts, prior SHA
-Any residue BLOCKS new tasks and A2A. Finish, validate, inspect diff, stage only
-owned paths, commit current task, report SHA, and verify clean before continuing.
+Any residue in HK261/.codex/AGENTS.md BLOCKS new tasks and A2A. Preserve the
+authorized external baseline. Finish, validate, inspect diff, stage only owned
+paths, commit current task, report SHA, and verify clean owned scopes first.
 Codex owns writing/editing, project files, acceptance, and Git. Gemini via router
 owns research/extraction/classification/structured synthesis, read-only. Commit
 briefs before dispatch; require all five brief headings and all mandatory review
@@ -54,16 +60,18 @@ def is_dispatch(payload):
                for index, name in enumerate(names))
 
 
-def git_status():
+def owned_git_status():
+    """Return residue only in HK261 and its repository-level rule surfaces."""
+    relative_paths = [str(path.relative_to(ROOT)) for path in OWNED_GIT_PATHS]
     # No lock/index refresh; inspect this hook's worktree, not the A2A server cwd.
     env = dict(os.environ, GIT_OPTIONAL_LOCKS="0")
     result = subprocess.run(
         ["git", "-C", str(ROOT), "status", "--porcelain=v1", "-z",
-         "--untracked-files=all"], capture_output=True, env=env, timeout=8,
-        check=False,
+         "--untracked-files=all", "--", *relative_paths], capture_output=True,
+        env=env, timeout=8, check=False,
     )
     if result.returncode:
-        raise RuntimeError("Cannot verify project Git status; A2A is blocked.")
+        raise RuntimeError("Cannot verify owned-scope Git status; A2A is blocked.")
     return result.stdout
 
 
@@ -100,11 +108,11 @@ def main():
             return 0
         if event != "PreToolUse" or not is_dispatch(payload):
             return 0
-        if git_status():
+        if owned_git_status():
             reason = ("HK261 A2A blocked: staged/modified/untracked residue "
-                      "exists. Finish, validate and commit the current task, "
-                      "then verify a clean project worktree before dispatching "
-                      "another task.")
+                      "exists in an owned path. Finish, validate and commit the "
+                      "current task, then verify clean HK261/.codex/AGENTS.md "
+                      "scopes before dispatching another task.")
         elif not status_documents_fresh():
             reason = ("HK261 A2A blocked: status documents are stale. Update "
                       "CURRENT_HANDOFF.md and current_tasks.md together in a "

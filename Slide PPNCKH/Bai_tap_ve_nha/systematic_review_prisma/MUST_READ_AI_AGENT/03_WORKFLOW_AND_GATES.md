@@ -80,11 +80,13 @@ Use only evidence-bounded labels:
 Before EACH new task, publish exactly five lines: `TASK`, `OWNER`, `OWNED_PATHS`,
 `BINARY_ACCEPTANCE`, `PRE_TASK_GIT_STATUS`. OWNER is `CODEX_WRITING` or
 `GEMINI_RESEARCH`; report branch, staged/modified/untracked counts, and prior SHA.
-Run Git status immediately before starting. Any residue blocks all new tasks and
-A2A dispatch, including corrective dispatch. Finish the current task, validate,
-inspect the diff/cleanup, stage explicit owned paths, commit atomically, report
-its SHA, and verify a clean tree first. Never stash, delete, ignore, or hide task
-residue to pass the gate. Do not batch unrelated scopes into one commit.
+Run Git status immediately before starting. Any residue in this project,
+repository `.codex/`, or repository `AGENTS.md` blocks all new tasks and A2A
+dispatch, including corrective dispatch. The user's exact pre-existing baseline
+outside those owned scopes is authorized but immutable: do not add to, stash,
+delete, ignore, or hide it. Finish the current task, validate, inspect the
+diff/cleanup, stage explicit owned paths, commit atomically, report its SHA, and
+verify clean owned scopes first. Do not batch unrelated scopes into one commit.
 
 Brief preparation is a writing task: commit the complete brief before dispatch.
 A result collection/review is one task: commit its raw/accepted/quarantined
@@ -95,8 +97,9 @@ allowed. Inspection/monitoring is not permission to start new research.
 
 The active worktree remains isolated until safe integration with the parent;
 commit each task now, never defer commits until a whole screening campaign ends.
-The latest explicit user rule takes precedence over older session-level or
-baseline-residue exceptions. No next task may begin on a dirty tree.
+The latest explicit user rule takes precedence over older session-level rules.
+No next task may begin with residue in an owned scope or agent-created residue
+outside it.
 
 Durable entry points: repository-root `AGENTS.md`, this onboarding manifest,
 and repository-root `.codex/hooks.json`. See `.codex/hooks/README.md` for tested

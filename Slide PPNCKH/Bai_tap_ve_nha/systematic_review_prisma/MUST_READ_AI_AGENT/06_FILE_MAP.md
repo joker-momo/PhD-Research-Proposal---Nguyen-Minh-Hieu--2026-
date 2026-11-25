@@ -43,8 +43,10 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 
 ## Historical or non-canonical by default
 
-- `../manuscript/ieee_access/`
-- `../output/docx/`
+- `../manuscript/ieee_access/` — absent from canonical `main`; retained under
+  `/Volumes/JokerData/PhD/HK261-reconciliation-backups/2026-11-25-split-brain/root_project_live_before_promotion/manuscript/ieee_access/`.
+- `../output/docx/` — absent from canonical `main`; retained under
+  `/Volumes/JokerData/PhD/HK261-reconciliation-backups/2026-11-25-split-brain/root_project_live_before_promotion/output/docx/`.
 - older `interim_*` directories except `interim_27report/`
 - superseded venue decisions and earlier release manifests
 - raw provider JSON, failed/quota-only tasks, unaccepted ledgers, and candidate

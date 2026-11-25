@@ -15,10 +15,12 @@ BINARY_ACCEPTANCE: countable or binary checks
 PRE_TASK_GIT_STATUS: branch, staged/modified/untracked counts, preceding commit
 
 Run Git status immediately before starting. Any staged, modified, or untracked
-residue BLOCKS the next task and any A2A dispatch. Finish, validate, inspect the
-diff, stage explicit owned paths, and commit the current task first. Never erase,
-stash, or hide residue to pass this gate. Record its SHA and verify a clean tree.
-Preparing a new brief is a Codex writing task: commit it before dispatch.
+residue in `systematic_review_prisma/`, `.codex/`, or this `AGENTS.md` BLOCKS the
+next task and any A2A dispatch. The exact pre-existing user-owned residue outside
+those paths is an authorized baseline: preserve it and never add to, erase,
+stash, or hide it. Finish, validate, inspect the diff, stage explicit owned
+paths, and commit the current task first. Record its SHA and verify clean owned
+scopes. Preparing a new brief is a Codex writing task: commit it before dispatch.
 
 Codex owns all writing/editing, project files, acceptance reviews, Git, and final
 text. Gemini via the approved A2A router owns research, discovery, extraction,

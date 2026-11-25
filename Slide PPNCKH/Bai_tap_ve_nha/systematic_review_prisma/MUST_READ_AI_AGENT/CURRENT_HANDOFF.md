@@ -113,15 +113,16 @@ stop and reconcile the conflict before starting or delegating another task.
 - The pre-existing root dirty baseline remains unchanged outside this project:
   50/50 porcelain-status entries match the Task 1 snapshot. Do not reset, stash,
   clean, delete, or overwrite them.
-- The status guard checks the entire repository and blocks recognized A2A
-  dispatch when any Git state is dirty or the latest project commit is newer than
-  `CURRENT_HANDOFF.md` and `current_tasks.md`.
+- The user authorized a baseline-aware status guard. It blocks recognized A2A
+  dispatch when Git residue exists in this project, repository `.codex/`, or
+  repository `AGENTS.md`, or when the latest project commit is newer than
+  `CURRENT_HANDOFF.md` and `current_tasks.md`. It does not hardcode a porcelain
+  count or treat the exact preserved external baseline as task residue.
 - Automatic hook activation remains unverified in the Codex runtime; manual
   clean-tree and freshness checks remain mandatory.
-- Batch 04 remains undispatched and is currently **BLOCKED** by the repository-
-  wide clean-tree rule because the 50 preserved user-owned status entries are
-  present. No research provider task is active. Do not dispatch until the user
-  either resolves that baseline or explicitly authorizes a baseline-aware rule.
+- Batch 04 remains undispatched and no research provider task is active. The
+  clean-tree policy blocker is resolved; prepare, validate, and commit the Batch
+  04 brief before running the clean/fresh pre-dispatch gate.
 
 ## Current submission verdict
 
@@ -130,19 +131,15 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## User confirmation required
 
-- Decide whether to resolve the 50 pre-existing root status entries or authorize
-  a baseline-aware A2A clean-tree rule. Their content must remain preserved until
-  the user makes that choice.
 - Author metadata/approval, verified HCMUT email and student ID, exact
   examination date, declarations, and explicit authorization for submission and
   email forwarding.
 
 ## Next exact action
 
-Open the canonical root checkout and resolve the clean-tree policy blocker. Only
-then prepare/verify the Batch 04 task boundary and dispatch when:
+Prepare and verify the Batch 04 task boundary, then dispatch when:
 
-1. the repository-wide hook reports a clean/authorized baseline;
+1. the path-scoped hook reports clean owned scopes;
 2. `CURRENT_HANDOFF.md` and `current_tasks.md` are fresh at the latest project
    commit;
 3. the five pre-task fields are published; and
