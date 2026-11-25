@@ -1,0 +1,72 @@
+{
+  "parent_task_id": "01a212dd-ca9c-77fa-87a2-13f7dc4f22bc",
+  "records": [
+    {
+      "id": "S07",
+      "title": "Elastic Collaborative Edge Intelligence for UAV Swarm: Architecture, Challenges, and Opportunities",
+      "authors": [
+        "Yuben Qu",
+        "Hao Sun",
+        "Chao Dong",
+        "Jiawen Kang",
+        "Haipeng Dai",
+        "Qihui Wu",
+        "Song Guo"
+      ],
+      "year": 2024,
+      "venue": "IEEE Communications Magazine",
+      "doi": "10.1109/MCOM.002.2300129",
+      "field": "date_window",
+      "replacement": {
+        "status": "YES",
+        "rationale": "Published in the January 2024 issue of IEEE Communications Magazine (page 1), within the 2021-01-01 to 2026-11-25 eligibility window.",
+        "page": 1,
+        "quote": "IEEE Communications Magazine • January 2024"
+      },
+      "source_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S07.pdf",
+      "decision": "INCLUDE",
+      "changes": [
+        "Replaced S07.gates.date_window.quote on page 1 from the reordered/combined footer string '62 0163-6804/24/$25.00 © 2024 IEEE IEEE Communications Magazine • January 2024' to the literal contiguous string 'IEEE Communications Magazine • January 2024'; preserved status YES, decision INCLUDE, and all other S07 gates and identity fields."
+      ],
+      "unresolved": [
+        "Volume number is not printed on the PDF pages (only January 2024 issue and pages 62-68 appear).",
+        "Prototype evaluation uses four benchtop embedded computing boards (Jetson Nano and Jetson TX2) with static pre-set UAV selection strategies rather than outdoor multi-UAV flight trials.",
+        "Shares co-author Yuben Qu with S11; distinct architecture and venue (no study-family duplication observed)."
+      ]
+    },
+    {
+      "id": "S08",
+      "title": "End-to-End Latency Optimization for Resilient Distributed Convolutional Neural Network Inference in Resource-Constrained Unmanned Aerial Vehicle Swarms",
+      "authors": [
+        "Jeongho Kim",
+        "Joonho Seon",
+        "Soohyun Kim",
+        "Seongwoo Lee",
+        "Jinwook Kim",
+        "Byungsun Hwang",
+        "Youngghyu Sun",
+        "Jinyoung Kim"
+      ],
+      "year": 2024,
+      "venue": "Applied Sciences",
+      "doi": "10.3390/app142310832",
+      "field": "multi_uav_evaluated",
+      "replacement": {
+        "status": "YES",
+        "rationale": "Simulates swarms of 5, 10, and 15 UAVs (page 10, Fig. 3) and evaluates fifteen UAVs in baseline comparisons (page 10, Fig. 4 setup) and inoperable-UAV failure tests (page 11, Fig. 6).",
+        "page": 10,
+        "quote": "The performance of the proposed model is evaluated under the same conditions, including fifteen UAVs, 1 GB memory, and a computational capacity of 11.2 GFLOPS."
+      },
+      "source_file": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S08.pdf",
+      "decision": "INCLUDE",
+      "changes": [
+        "Corrected S08.gates.multi_uav_evaluated.page from 11 to 10 after verifying that the contiguous fifteen-UAV evaluation sentence appears on PDF page 10 (Section 5.2, paragraph 2); preserved the exact literal quote, status YES, decision INCLUDE, and all other S08 gates and identity fields."
+      ],
+      "unresolved": [
+        "Evaluated exclusively via numerical simulation at fixed UAV altitude (40 m) and 1 kHz bandwidth, without Doppler effects, onboard battery constraints, or physical hardware/flight testing."
+      ]
+    }
+  ],
+  "shortfall": [],
+  "project_files_changed": 0
+}

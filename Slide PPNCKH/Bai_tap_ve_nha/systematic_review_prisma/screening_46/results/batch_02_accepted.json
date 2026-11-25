@@ -1,0 +1,450 @@
+{
+  "batch": 2,
+  "records": [
+    {
+      "id": "S07",
+      "title": "Elastic Collaborative Edge Intelligence for UAV Swarm: Architecture, Challenges, and Opportunities",
+      "authors": [
+        "Yuben Qu",
+        "Hao Sun",
+        "Chao Dong",
+        "Jiawen Kang",
+        "Haipeng Dai",
+        "Qihui Wu",
+        "Song Guo"
+      ],
+      "year": 2024,
+      "venue": "IEEE Communications Magazine",
+      "doi": "10.1109/MCOM.002.2300129",
+      "source_version": "publisher_pdf",
+      "identity_evidence": {
+        "page": 1,
+        "quote": "Elastic Collaborative Edge Intelligence for UAV Swarm: Architecture, Challenges, and Opportunities"
+      },
+      "gates": {
+        "primary_full_report": {
+          "status": "YES",
+          "rationale": "Seven-page primary magazine article proposing the OODA-loop eCoEI architecture, building an embedded prototype, and presenting experimental evaluation alongside technical challenges.",
+          "page": 1,
+          "quote": "This article proposes a novel architecture based on an observation, orientation, decision, and action (OODA) loop, called elastic collaborative edge intelligence (eCoEI), which could fully utilize the resources of computation and storage in a UAV swarm"
+        },
+        "multi_uav_evaluated": {
+          "status": "YES",
+          "rationale": "Evaluates a four-node UAV prototype setup consisting of one NVIDIA Jetson TX2 and three NVIDIA Jetson Nano units representing UAV#1 through UAV#4.",
+          "page": 5,
+          "quote": "This prototype system contains four UAVs, an NVIDIA Jetson Nano developer kit is set on UAV#1 as computing unit, and an NVIDIA Jetson TX2 as well as two Jetson Nanos are deployed on other three UAVs respectively."
+        },
+        "collaborative_inference": {
+          "status": "YES",
+          "rationale": "Partitions Faster R-CNN object-detection inference across selected UAVs in a pipeline and dynamically reassigns remaining parts when a UAV becomes unavailable.",
+          "page": 4,
+          "quote": "In the action stage, the chosen DNN inference task is partitioned over the UAVs selected in the decision period with task allocation."
+        },
+        "evaluative_evidence": {
+          "status": "YES",
+          "rationale": "Reports measured video inference frame rates (FPS) across one to four embedded nodes and across UAV unavailability and connection recovery stages.",
+          "page": 6,
+          "quote": "As shown in Fig. 5, with the increment of participating UAV number, the average frame rate of inference result increases gradually."
+        },
+        "date_window": {
+          "status": "YES",
+          "rationale": "Published in the January 2024 issue of IEEE Communications Magazine (page 1), within the 2021-01-01 to 2026-11-25 eligibility window.",
+          "page": 1,
+          "quote": "IEEE Communications Magazine • January 2024"
+        },
+        "english": {
+          "status": "YES",
+          "rationale": "Full report is written in English.",
+          "page": 1,
+          "quote": "Over the last decade, due to the flexibility, maneuverability, and wide coverage, unmanned aerial vehicles (UAVs) have been employed as an excellent alternative to traditional technologies"
+        }
+      },
+      "decision": "INCLUDE",
+      "primary_reason": "",
+      "evaluation_modes": [
+        "component_prototype"
+      ],
+      "alignment": {
+        "category": "core_resilience",
+        "rationale": "Proposes an OODA-loop elastic collaborative inference framework specifically designed to tolerate UAV unavailability and air-to-air link failures by rescheduling unfinished DNN partitions.",
+        "page": 6,
+        "quote": "after UAV#3 goes down, the eCoEI updates the partition strategy for the remaining unfinished parts and the previously assigned part in UAV#3 is conducted by other UAVs."
+      },
+      "unresolved": [
+        "Volume number is not printed on the PDF pages (only January 2024 issue and pages 62-68 appear).",
+        "Prototype evaluation uses four benchtop embedded computing boards (Jetson Nano and Jetson TX2) with static pre-set UAV selection strategies rather than outdoor multi-UAV flight trials.",
+        "Shares co-author Yuben Qu with S11; distinct architecture and venue (no study-family duplication observed)."
+      ]
+    },
+    {
+      "id": "S08",
+      "title": "End-to-End Latency Optimization for Resilient Distributed Convolutional Neural Network Inference in Resource-Constrained Unmanned Aerial Vehicle Swarms",
+      "authors": [
+        "Jeongho Kim",
+        "Joonho Seon",
+        "Soohyun Kim",
+        "Seongwoo Lee",
+        "Jinwook Kim",
+        "Byungsun Hwang",
+        "Youngghyu Sun",
+        "Jinyoung Kim"
+      ],
+      "year": 2024,
+      "venue": "Applied Sciences",
+      "doi": "10.3390/app142310832",
+      "source_version": "publisher_pdf",
+      "identity_evidence": {
+        "page": 1,
+        "quote": "End-to-End Latency Optimization for Resilient Distributed Convolutional Neural Network Inference in Resource-Constrained Unmanned Aerial Vehicle Swarms"
+      },
+      "gates": {
+        "primary_full_report": {
+          "status": "YES",
+          "rationale": "Fifteen-page peer-reviewed primary research article formulating an ILP problem and proposing the PPO-based DRL-RLD system for distributed CNN inference.",
+          "page": 1,
+          "quote": "In this paper, a new system called deep reinforcement learning-based resilient layer distribution (DRL-RLD) for distributed inference is designed to minimize end-to-end latency in UAV swarm, considering the resource constraints of UAVs."
+        },
+        "multi_uav_evaluated": {
+          "status": "YES",
+          "rationale": "Simulates swarms of 5, 10, and 15 UAVs (page 10, Fig. 3) and evaluates fifteen UAVs in baseline comparisons (page 10, Fig. 4 setup) and inoperable-UAV failure tests (page 11, Fig. 6).",
+          "page": 10,
+          "quote": "The performance of the proposed model is evaluated under the same conditions, including fifteen UAVs, 1 GB memory, and a computational capacity of 11.2 GFLOPS."
+        },
+        "collaborative_inference": {
+          "status": "YES",
+          "rationale": "Partitions CNN models (AlexNet, VGG16, YOLO) by layer across UAVs over U2U and U2G links and reallocates layers when UAVs become inoperable.",
+          "page": 4,
+          "quote": "Each UAV in the swarm contains a copy of the trained model and performs tasks associated with the activated layers for distributed inference."
+        },
+        "evaluative_evidence": {
+          "status": "YES",
+          "rationale": "Presents simulation results across three CNN models, swarm sizes, memory limits (1 GB and 2 GB), three baselines, and zero to two inoperable UAVs.",
+          "page": 11,
+          "quote": "The end-to-end latency in a scenario with inoperable UAVs is shown in Figure 6. The simulation was conducted using AlexNet with 15 UAVs."
+        },
+        "date_window": {
+          "status": "YES",
+          "rationale": "Published on 22 November 2024 in Applied Sciences, within the 2021-01-01 to 2026-11-25 eligibility window.",
+          "page": 1,
+          "quote": "Received: 25 October 2024 Revised: 16 November 2024 Accepted: 21 November 2024 Published: 22 November 2024"
+        },
+        "english": {
+          "status": "YES",
+          "rationale": "Full report is written in English.",
+          "page": 1,
+          "quote": "An unmanned aerial vehicle (UAV) swarm has emerged as a powerful tool for mission execution in a variety of applications supported by deep neural networks (DNNs)."
+        }
+      },
+      "decision": "INCLUDE",
+      "primary_reason": "",
+      "evaluation_modes": [
+        "simulation"
+      ],
+      "alignment": {
+        "category": "core_resilience",
+        "rationale": "Incorporates an explicit UAV operability state variable into DRL-RLD to dynamically reallocate CNN layers across surviving UAVs when up to two UAVs fail.",
+        "page": 11,
+        "quote": "the proposed model can maintain mission continuity by reallocating layers to the remaining UAVs using the available resources. In contrast, the comparison models lack these resilient mechanisms"
+      },
+      "unresolved": [
+        "Evaluated exclusively via numerical simulation at fixed UAV altitude (40 m) and 1 kHz bandwidth, without Doppler effects, onboard battery constraints, or physical hardware/flight testing."
+      ]
+    },
+    {
+      "id": "S09",
+      "title": "DNN-Based Task Partitioning and Offloading with Reliability Guarantees in Multi-UAV-Assisted MEC System",
+      "authors": [
+        "Ling Wang",
+        "Junhua Wang",
+        "Chen Dai"
+      ],
+      "year": 2024,
+      "venue": "2024 IEEE International Symposium on Product Compliance Engineering - Asia (ISPCE-ASIA)",
+      "doi": "10.1109/ISPCE-ASIA64773.2024.10756252",
+      "source_version": "publisher_pdf",
+      "identity_evidence": {
+        "page": 1,
+        "quote": "DNN-Based Task Partitioning and Offloading with Reliability Guarantees in Multi-UAV-Assisted MEC System"
+      },
+      "gates": {
+        "primary_full_report": {
+          "status": "YES",
+          "rationale": "Eight-page IEEE conference paper presenting a CVaR-based reliable transmission formulation and the CPOO/LaCPOO algorithms for collaborative DNN partitioning and offloading.",
+          "page": 1,
+          "quote": "In this paper, a multi-UAV-assisted MEC architecture is designed, where multiple UAVs are endowed with computing offloading services for the mobile devices (MDs)."
+        },
+        "multi_uav_evaluated": {
+          "status": "YES",
+          "rationale": "Simulates a multi-UAV MEC network with a cluster of 4 UAVs acting as aerial edge servers in a 400m x 400m area.",
+          "page": 6,
+          "quote": "The MDs are randomly distributed in a network area of 400m×400m with UAV clusters including 4 UAVs as edge servers."
+        },
+        "collaborative_inference": {
+          "status": "YES",
+          "rationale": "Partitions CNN convolutional/pooling tasks along input height via AIR across multiple UAV edge servers while MDs run FC layers locally and fall back to a BS.",
+          "page": 2,
+          "quote": "The subtasks can be offloaded to the UAVs for cooperative computing. Note that offloading might fail in a dynamic network, the task can be sent to the BS reprocessing."
+        },
+        "evaluative_evidence": {
+          "status": "YES",
+          "rationale": "Evaluates average inference delay and transmission power across AlexNet, TinyYOLOv2, NiN, and VGG16 against Local, RPOM, and Edgent-P under varying bandwidth and reliability thresholds.",
+          "page": 7,
+          "quote": "To evaluates the performance under different DNN types, We also select well-known DNN models, TinyYOLOv2 [23], NiN [24] and VGG16 [25] for comparison. Fig. 3 shows the average delay under different DNN model types."
+        },
+        "date_window": {
+          "status": "YES",
+          "rationale": "Published in the 2024 IEEE ISPCE-ASIA conference proceedings (copyright 2024), within the 2021-01-01 to 2026-11-25 window.",
+          "page": 1,
+          "quote": "2024 IEEE International Symposium on Product Compliance Engineering - Asia (ISPCE-ASIA) | 979-8-3315-2300-8/24/$31.00 ©2024 IEEE | DOI: 10.1109/ISPCE-ASIA64773.2024.10756252"
+        },
+        "english": {
+          "status": "YES",
+          "rationale": "Full report is written in English.",
+          "page": 1,
+          "quote": "In recent years, artificial intelligence (AI) applications based on Deep Neural Networks (DNN) have gained widespread attention in mobile edge computing (MEC)."
+        }
+      },
+      "decision": "INCLUDE",
+      "primary_reason": "",
+      "evaluation_modes": [
+        "simulation"
+      ],
+      "alignment": {
+        "category": "core_partitioning",
+        "rationale": "Spatially partitions CNN feature-extraction layers into overlapped row subtasks using AIR across multiple UAV edge servers while retaining final classification layers on mobile devices.",
+        "page": 3,
+        "quote": "Assuming that the MD partitions the input data along the height. And if we determine which portions of the output rows at the last layer Lk that the UAV should send back to the MD"
+      },
+      "unresolved": [
+        "Extracted text file (S09.txt) contains garbled math glyphs; all metadata and quotes were verified directly from S09.pdf.",
+        "Evaluated only in simulation with 4 UAVs serving ground MDs and BS fallback (no inter-UAV activation forwarding and no hardware/flight evaluation); minor baseline naming inconsistency (RPOM vs PROM) in Section IV.B."
+      ]
+    },
+    {
+      "id": "S10",
+      "title": "Reinforcement Learning based Edge-Assisted Inference for Maritime UAV Networks",
+      "authors": [
+        "Chuxuan Wang",
+        "Jieling Li",
+        "Liqing Ye",
+        "Yu Liu",
+        "Liang Xiao"
+      ],
+      "year": 2024,
+      "venue": "2024 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)",
+      "doi": "10.1109/ISPA63168.2024.00222",
+      "source_version": "publisher_pdf",
+      "identity_evidence": {
+        "page": 1,
+        "quote": "Reinforcement Learning based Edge-Assisted Inference for Maritime UAV Networks"
+      },
+      "gates": {
+        "primary_full_report": {
+          "status": "YES",
+          "rationale": "Eight-page IEEE ISPA 2024 conference paper proposing the EIMU multi-agent RL collaborative inference scheme, deriving Nash equilibrium bounds, and running simulations.",
+          "page": 1,
+          "quote": "In this paper, we propose an RL-based edge-assisted inference scheme for maritime UAV networks to optimize the deep neural networks partition point, the transmit power and the collaborative edge server"
+        },
+        "multi_uav_evaluated": {
+          "status": "YES",
+          "rationale": "Evaluates maritime networks with 3 UAVs and 2 to 10 UAVs assisted by ship-based edge servers in simulation.",
+          "page": 6,
+          "quote": "As shown in Fig. 5, the average performance of the proposed scheme is better than the benchmark with the number of UAVs ranging from 2 to 10."
+        },
+        "collaborative_inference": {
+          "status": "YES",
+          "rationale": "Splits ResNet-18 inference between each UAV and a selected ship edge server and coordinates neighboring UAVs through shared RL Q-value updates.",
+          "page": 4,
+          "quote": "Each UAV as the agent chooses the edge server on ship with sufficient computation resource and determines the partition point to split the neural network for intermediate results with a reduced data transmission volume."
+        },
+        "evaluative_evidence": {
+          "status": "YES",
+          "rationale": "Provides simulation results on ResNet-18 trained with SeaDronesSee against JOISR across time slots, UAV counts, and sample sizes, plus analytical NE bounds.",
+          "page": 5,
+          "quote": "Simulations are performed to evaluate the proposed RL-based edge-assisted inference scheme to support maritime object recognition and tracking. As shown in Fig. 2, the maritime network contains 3 edge servers on ship moving at a speed of 5 m/s"
+        },
+        "date_window": {
+          "status": "YES",
+          "rationale": "Published in the 2024 IEEE ISPA proceedings (copyright 2024), within the 2021-01-01 to 2026-11-25 window.",
+          "page": 1,
+          "quote": "2024 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA) | 979-8-3315-0971-2/24/$31.00 ©2024 IEEE | DOI 10.1109/ISPA63168.2024.00222"
+        },
+        "english": {
+          "status": "YES",
+          "rationale": "Full report is written in English.",
+          "page": 1,
+          "quote": "Edge-assisted inference in maritime unmanned aerial vehicle (UAV) networks utilizes the computational resources of edge server on ship and UAV as the mobile devices"
+        }
+      },
+      "decision": "INCLUDE",
+      "primary_reason": "",
+      "evaluation_modes": [
+        "simulation",
+        "analytical"
+      ],
+      "alignment": {
+        "category": "core_orchestration",
+        "rationale": "Coordinates DNN partition-point selection, transmit power, and ship edge-server selection across multiple UAVs via neighbor Q-value sharing in a maritime multi-UAV-edge hierarchy.",
+        "page": 2,
+        "quote": "Each UAV updates the learning parameters by applying the Bellman equation to locally collected collaborative inference experience, and integrates the learning parameters of neighboring UAVs to fully leverage the inference experiences"
+      },
+      "unresolved": [
+        "Evaluated only via simulation without real maritime hardware or flight tests; multi-UAV collaboration occurs through shared RL learning updates and joint ship-server selection rather than direct UAV-to-UAV feature forwarding.",
+        "Internal discrepancy between Section VI text (3 edge servers on ship) and Fig. 3 caption (2 edge servers on ship)."
+      ]
+    },
+    {
+      "id": "S11",
+      "title": "Joint UAV Deployment and Model Partition for Efficient Collaborative Inference",
+      "authors": [
+        "Wenjing Xia",
+        "Tao Wu",
+        "Hongjun Wang",
+        "Ruhao Jiang",
+        "Mingjin Zhang",
+        "Yuben Qu"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE 31th International Conference on Parallel and Distributed Systems (ICPADS)",
+      "doi": "10.1109/ICPADS67057.2025.11322921",
+      "source_version": "publisher_pdf",
+      "identity_evidence": {
+        "page": 1,
+        "quote": "Joint UAV Deployment and Model Partition for Efficient Collaborative Inference"
+      },
+      "gates": {
+        "primary_full_report": {
+          "status": "YES",
+          "rationale": "Eight-page IEEE ICPADS 2025 conference paper proposing AirInfer with a two-stage DP and SCA optimization framework and simulation evaluation.",
+          "page": 2,
+          "quote": "To address the aforementioned challenges, we propose AirInfer, a novel collaborative UAV inference framework that minimizes end-to-end inference latency through joint optimization of model partitioning and UAV deployment"
+        },
+        "multi_uav_evaluated": {
+          "status": "YES",
+          "rationale": "Evaluates swarms of 5 to 10 UAVs across convergence, baseline comparison, and sensitivity analyses in Section V.",
+          "page": 7,
+          "quote": "UAV Count (Fig. 6a): As the UAV count increases from 5 to 10, latency decreases significantly for all algorithms."
+        },
+        "collaborative_inference": {
+          "status": "YES",
+          "rationale": "Partitions a chain-structured 10-to-24-layer DNN model layer-by-layer across multiple UAVs in a swarm for pipelined collaborative inference.",
+          "page": 2,
+          "quote": "The UAV swarm collaboratively executes a single DNN model such as ResNet, VGG, or YOLO for inference. Any UAV may act as a source node: capturing an image and transmitting it to the UAV designated to perform the first-layer inference."
+        },
+        "evaluative_evidence": {
+          "status": "YES",
+          "rationale": "Reports simulation results averaged over 100 trials comparing AirInfer against Greedy+SCA, DP+RW, and Joint-PSO across UAV counts, layer counts, coverage thresholds, and bandwidth.",
+          "page": 6,
+          "quote": "All results, averaged over 100 trials with a coverage threshold η = 0.8, plot the end-to-end inference latency against iteration count from a common initial configuration."
+        },
+        "date_window": {
+          "status": "YES",
+          "rationale": "Published in the 2025 IEEE ICPADS conference proceedings (copyright 2025), within the 2021-01-01 to 2026-11-25 window.",
+          "page": 1,
+          "quote": "2025 IEEE 31th International Conference on Parallel and Distributed Systems (ICPADS) | 979-8-3315-4901-5/25/$31.00 ©2025 IEEE | DOI: 10.1109/ICPADS67057.2025.11322921"
+        },
+        "english": {
+          "status": "YES",
+          "rationale": "Full report is written in English.",
+          "page": 1,
+          "quote": "Deep learning-based intelligent perception has become pivotal in enhancing the effectiveness of UAV monitoring systems."
+        }
+      },
+      "decision": "INCLUDE",
+      "primary_reason": "",
+      "evaluation_modes": [
+        "simulation"
+      ],
+      "alignment": {
+        "category": "core_partitioning",
+        "rationale": "Jointly optimizes discrete layer-by-layer DNN partitioning via dynamic programming and continuous 2D UAV swarm deployment via successive convex approximation under area-coverage constraints.",
+        "page": 4,
+        "quote": "To solve problem P1, we decompose the original formulation into two coupled subproblems: model partitioning and UAV deployment."
+      },
+      "unresolved": [
+        "Evaluated via numerical simulation using synthetic per-layer DNN workload ranges (10-24 layers) rather than executed neural network inference on real datasets or physical UAV hardware.",
+        "Shares co-author Yuben Qu with S07; distinct systems and venues (no study-family duplication observed)."
+      ]
+    },
+    {
+      "id": "S12",
+      "title": "Multi-UAV Collaborative Model Inference Based on Hierarchical Reinforcement Learning",
+      "authors": [
+        "Xinchen Li",
+        "Chen Xu",
+        "Lidong Ma",
+        "Wenfei Yuan"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE 25th International Conference on Communication Technology (ICCT)",
+      "doi": "10.1109/ICCT67417.2025.11374232",
+      "source_version": "publisher_pdf",
+      "identity_evidence": {
+        "page": 1,
+        "quote": "Multi-UAV Collaborative Model Inference Based on Hierarchical Reinforcement Learning"
+      },
+      "gates": {
+        "primary_full_report": {
+          "status": "YES",
+          "rationale": "Six-page IEEE ICCT 2025 conference paper proposing an Option-Critic hierarchical reinforcement learning framework for multi-UAV collaborative inference with simulation experiments.",
+          "page": 1,
+          "quote": "This paper proposes a novel UAV-enhanced edge inference framework, in which aerial platforms serve as reconfigurable edge servers to support distributed model inference."
+        },
+        "multi_uav_evaluated": {
+          "status": "YES",
+          "rationale": "Simulates a serverless multi-UAV swarm with N = 8 UAVs and evaluates active executing UAV counts across varying bandwidths.",
+          "page": 6,
+          "quote": "In single-task scenarios, even with 20 MHz bandwidth, fewer than three of eight UAVs are utilized, leaving resources idle."
+        },
+        "collaborative_inference": {
+          "status": "YES",
+          "rationale": "Coordinates early-exit selection and layer-wise DNN partitioning across multiple UAVs using a binary assignment matrix under Option-Critic HRL.",
+          "page": 2,
+          "quote": "The proposed system utilizes a collaborative approach across multiple UAVs for efficient DNN inference. The workflow is divided into three primary components, as illustrated in Fig 1"
+        },
+        "evaluative_evidence": {
+          "status": "YES",
+          "rationale": "Evaluates AlexNet inference in simulation against PSO-GA-Partition, DQN-Partition, and Min-Cost Exit across 1-20 MHz bandwidths on reward, energy, latency, exit point, and active UAVs.",
+          "page": 5,
+          "quote": "The inference model we use is AlexNet. The specific simulation parameters are shown in TABLE I. We have defined three baseline methods for comparison"
+        },
+        "date_window": {
+          "status": "YES",
+          "rationale": "Published in the 2025 IEEE ICCT proceedings (copyright 2025), within the 2021-01-01 to 2026-11-25 window.",
+          "page": 1,
+          "quote": "2025 IEEE 25th International Conference on Communication Technology (ICCT) | 979-8-3315-8578-5/25/$31.00 ©2025 IEEE | DOI: 10.1109/ICCT67417.2025.11374232"
+        },
+        "english": {
+          "status": "YES",
+          "rationale": "Full report is written in English.",
+          "page": 1,
+          "quote": "Camera-equipped unmanned aerial vehicles (UAVs) can execute image processing tasks using cached DNN models."
+        }
+      },
+      "decision": "INCLUDE",
+      "primary_reason": "",
+      "evaluation_modes": [
+        "simulation"
+      ],
+      "alignment": {
+        "category": "core_orchestration",
+        "rationale": "Applies Option-Critic hierarchical reinforcement learning to decouple and jointly optimize high-level early-exit selection and low-level layer-to-UAV partitioning across a serverless UAV swarm.",
+        "page": 6,
+        "quote": "By integrating dynamic model partitioning and adaptive early-exit, it jointly optimizes high- and low-level policies to balance latency, energy, and accuracy."
+      },
+      "unresolved": [
+        "Extracted text file (S12.txt) triggered binary detection in text reader; all metadata and quotes were verified directly from S12.pdf.",
+        "Dataset and training details for AlexNet early-exit branch accuracy A(ei) are not reported, and neither dynamic UAV mobility nor UAV node failure recovery is evaluated."
+      ]
+    }
+  ],
+  "shortfall": [],
+  "project_files_changed": 0,
+  "acceptance": {
+    "status": "ACCEPTED_WORKING_SCREENING",
+    "source_result": "batch_02.json",
+    "correction": "batch_02_correction.json",
+    "human_adjudication": "pending",
+    "final_study_family_count": "not_established"
+  }
+}
