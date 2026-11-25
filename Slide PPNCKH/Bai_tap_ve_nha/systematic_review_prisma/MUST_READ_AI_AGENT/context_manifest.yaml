@@ -1,5 +1,5 @@
 schema_version: 1
-context_version: "2026-11-25.7"
+context_version: "2026-11-25.8"
 project: "HK261 PRISMA systematic review"
 canonical_workspace:
   path: "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)"
@@ -67,5 +67,5 @@ persistent_task_gate:
 next_task:
   id: "screening-batch-04"
   records: [S19, S20, C01, C02, C03, C04]
-  dispatch_status: "READY_FOR_BRIEF_PREPARATION"
+  dispatch_status: "BRIEF_PASS_BLOCKED_DRIVER_SCOPE_CHECK"
   active_research_task_count: 0

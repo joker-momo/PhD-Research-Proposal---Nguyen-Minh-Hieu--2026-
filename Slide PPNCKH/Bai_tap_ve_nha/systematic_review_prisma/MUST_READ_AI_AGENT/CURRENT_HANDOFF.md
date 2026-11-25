@@ -44,7 +44,10 @@ stop and reconcile the conflict before starting or delegating another task.
   `fc8944f`.
 - Progress: 18/46 reports reviewed through an accepted working gate; 17 INCLUDE,
   1 EXCLUDE, 28 not yet screened in this campaign.
-- Batch 04 has not been dispatched. No research task is currently active.
+- Batch 04 has not been dispatched. Its committed brief passed the objective
+  input/contract gate in `screening_46/reviews/batch_04_brief_gate.md`: 5/5
+  headings, 6/6 IDs, 18/18 locators, and 6/6 PDF/checksum checks. No research
+  task is currently active.
 - These working decisions are not final human adjudication, unique-study counts,
   final PRISMA arithmetic, or permission to change manuscript conclusions.
 
@@ -121,8 +124,10 @@ stop and reconcile the conflict before starting or delegating another task.
 - Automatic hook activation remains unverified in the Codex runtime; manual
   clean-tree and freshness checks remain mandatory.
 - Batch 04 remains undispatched and no research provider task is active. The
-  clean-tree policy blocker is resolved; prepare, validate, and commit the Batch
-  04 brief before running the clean/fresh pre-dispatch gate.
+  clean-tree policy blocker is resolved and the Batch 04 brief gate is PASS.
+  `scripts/run_screening_batches.py` still checks repository-wide status and
+  would reject the authorized external baseline; repair and test that driver in
+  a separate commit before dispatch.
 
 ## Current submission verdict
 
@@ -137,10 +142,11 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-Prepare and verify the Batch 04 task boundary, then dispatch when:
+Repair the screening driver's clean-tree check to use the three authorized owned
+scopes, then dispatch Batch 04 when:
 
 1. the path-scoped hook reports clean owned scopes;
 2. `CURRENT_HANDOFF.md` and `current_tasks.md` are fresh at the latest project
    commit;
 3. the five pre-task fields are published; and
-4. batch 04's committed brief has measurable acceptance criteria.
+4. batch 04's committed brief and brief gate remain byte-identical/PASS.
