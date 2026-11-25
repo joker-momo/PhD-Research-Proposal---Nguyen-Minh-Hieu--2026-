@@ -21,6 +21,15 @@ class TaskGateTests(unittest.TestCase):
         self.git("config", "user.email", "gate-test@example.invalid")
         self.file = self.root / "tracked.txt"
         self.file.write_text("baseline\n")
+        self.project = (self.root / "Slide PPNCKH/Bai_tap_ve_nha/"
+                        "systematic_review_prisma")
+        self.handoff = (self.project / "MUST_READ_AI_AGENT/"
+                        "CURRENT_HANDOFF.md")
+        self.tasks = self.project / "corpus_expansion/current_tasks.md"
+        self.handoff.parent.mkdir(parents=True)
+        self.tasks.parent.mkdir(parents=True)
+        self.handoff.write_text("# Current Handoff\n\nCurrent fixture state.\n")
+        self.tasks.write_text("# Current research tasks\n\nNo active task.\n")
         self.git("add", ".")
         self.git("commit", "-qm", "fixture")
         self.addCleanup(self.temp.cleanup)
@@ -48,6 +57,49 @@ class TaskGateTests(unittest.TestCase):
         for cmd in ["rtk proxy /opt/research/scripts/a2a-route --brief brief.md",
                     "rtk proxy a2a send -a http://127.0.0.1:1 brief"]:
             self.assertEqual(0, self.call(cmd).returncode)
+
+    def test_clean_a2a_blocked_when_status_documents_are_stale(self):
+        artifact = self.project / "screening_46/results/batch_99.json"
+        artifact.parent.mkdir(parents=True)
+        artifact.write_text('{"status":"accepted"}\n')
+        self.git("add", str(artifact.relative_to(self.root)))
+        self.git("commit", "-qm", "accepted result without status update")
+
+        result = self.call("rtk proxy scripts/a2a-route --brief next.md")
+
+        self.assertEqual(2, result.returncode)
+        self.assertIn("status documents are stale", result.stderr)
+
+    def test_clean_a2a_allowed_after_status_documents_are_refreshed(self):
+        artifact = self.project / "screening_46/results/batch_99.json"
+        artifact.parent.mkdir(parents=True)
+        artifact.write_text('{"status":"accepted"}\n')
+        self.git("add", str(artifact.relative_to(self.root)))
+        self.git("commit", "-qm", "accepted result without status update")
+        self.handoff.write_text("# Current Handoff\n\nBatch 99 accepted.\n")
+        self.tasks.write_text("# Current research tasks\n\nBatch 100 is next.\n")
+        self.git("add", str(self.handoff.relative_to(self.root)),
+                 str(self.tasks.relative_to(self.root)))
+        self.git("commit", "-qm", "refresh current status")
+
+        result = self.call("rtk proxy scripts/a2a-route --brief next.md")
+
+        self.assertEqual(0, result.returncode)
+
+    def test_clean_a2a_blocked_when_only_one_status_document_is_refreshed(self):
+        artifact = self.project / "screening_46/results/batch_99.json"
+        artifact.parent.mkdir(parents=True)
+        artifact.write_text('{"status":"accepted"}\n')
+        self.git("add", str(artifact.relative_to(self.root)))
+        self.git("commit", "-qm", "accepted result without status update")
+        self.handoff.write_text("# Current Handoff\n\nBatch 99 accepted.\n")
+        self.git("add", str(self.handoff.relative_to(self.root)))
+        self.git("commit", "-qm", "refresh only one status document")
+
+        result = self.call("rtk proxy scripts/a2a-route --brief next.md")
+
+        self.assertEqual(2, result.returncode)
+        self.assertIn("status documents are stale", result.stderr)
 
     def test_dirty_a2a_blocked_for_each_residue_type(self):
         for state in ["untracked", "modified", "staged"]:

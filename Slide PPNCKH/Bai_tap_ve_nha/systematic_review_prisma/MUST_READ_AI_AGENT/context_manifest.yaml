@@ -1,5 +1,5 @@
 schema_version: 1
-context_version: "2026-11-25.2"
+context_version: "2026-11-25.3"
 project: "HK261 PRISMA systematic review"
 required_read_order:
   - README.md
@@ -21,6 +21,7 @@ canonical_external_sources:
   current_submission_readiness: "../submission_readiness_2026-11-25.md"
   a2a_policy: "../corpus_expansion/a2a_routing_policy_2026-11-25.md"
 refresh_triggers:
+  - any task is accepted, rejected, quarantined, or changes next action
   - final search date changes
   - included-study count changes
   - target journal or template changes
@@ -35,3 +36,4 @@ persistent_task_gate:
   hook_evidence: "../../../../.codex/hooks/README.md"
   automatic_runtime_enforcement: "UNVERIFIED; direct subprocess checks pass; manual gate required"
   task_fields: [TASK, OWNER, OWNED_PATHS, BINARY_ACCEPTANCE, PRE_TASK_GIT_STATUS]
+  freshness_rule: "latest project commit must also be the latest commit touching CURRENT_HANDOFF.md and current_tasks.md before recognized A2A dispatch"

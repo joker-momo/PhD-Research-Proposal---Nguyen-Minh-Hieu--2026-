@@ -10,7 +10,11 @@ No manuscript or scientific extraction changes are part of this task.
 - SessionStart repeats the reminder on startup, resume, clear, compact, and fork.
 - PreToolUse (Bash) inspects recognized literal `a2a-route`, `a2a send`, and the
   current `run_screening_batches.py` driver. Dirty Git state returns exit 2 with
-  an explicit instruction to commit the current task. Clean state returns 0.
+  an explicit instruction to commit the current task.
+- A clean tree is necessary but no longer sufficient. The hook compares the
+  latest commit touching the project directory with the latest commit touching
+  each of `CURRENT_HANDOFF.md` and `current_tasks.md`. Either mismatch returns
+  exit 2 because the durable status is stale or only partially updated.
 - The checker reads the worktree containing its own file, regardless of the
   dispatch command's working directory. It checks staged/modified/untracked
   files, including nested untracked files; ignored generated files are outside
@@ -22,20 +26,22 @@ No manuscript or scientific extraction changes are part of this task.
 ## Verification
 
 Command: `rtk proxy env PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_task_gate.py`.
-Observed: 4 tests PASS, 17 actual hook subprocess invocations in disposable local
-Git repositories; no network/provider call. Clean A2A: 2/2 exit 0. Dirty A2A:
-9/9 exit 2 (3 command forms x untracked/modified/staged). Dirty non-A2A: 4/4
-exit 0. Prompt/session reminders: 2/2 contain all five fields. Every invocation
-asserts unchanged Git status, index bytes, and tracked content.
+Observed: 7 tests PASS, 20 actual hook subprocess invocations in disposable local
+Git repositories; no network/provider call. Fresh clean A2A: 3/3 exit 0. Stale
+or partially refreshed clean A2A: 2/2 exit 2. Dirty A2A: 9/9 exit 2 (3 command
+forms x untracked/modified/staged). Dirty non-A2A: 4/4 exit 0. Prompt/session
+reminders: 2/2 contain all five fields. Every invocation asserts unchanged Git
+status, index bytes, and tracked content.
 
 | Criterion | Verdict | Objective evidence |
 |---|---|---|
 | 1. Every new project prompt receives five-field reminder | FAIL | Configuration and 2/2 direct reminder tests pass; no live new-prompt delivery evidence yet |
 | 2. Runtime A2A dispatch reliably blocked while dirty | FAIL | 9/9 direct subprocess blocks; Codex trust/activation not verified and indirect routes are not fully intercepted |
 | 3. Non-A2A commands remain available | PASS | 4/4 direct checks exit 0, including validation and commit |
-| 4. Hook is read-only | PASS | Source contains only input/output and Git status; 17/17 state/index/content invariants pass |
-| 5. Clean, dirty+A2A, dirty+non-A2A direct tests | PASS | All 3 requested scenario groups pass (15/15 command checks) |
+| 4. Hook is read-only | PASS | Source contains only input/output and Git history/status reads; 20/20 state/index/content invariants pass |
+| 5. Fresh clean, stale clean, dirty+A2A, dirty+non-A2A tests | PASS | All 4 scenario groups pass (18/18 command checks) |
 | 6. Owned-only diff, no secrets, focused commit | PASS | Explicit owned paths staged; diff/secret audit performed before commit; commit SHA recorded in Git and chat |
+| 7. Stale durable status blocks the next recognized dispatch | PASS | 1/1 fully stale and 1/1 partially refreshed clean fixture blocked; 1/1 fully refreshed fixture allowed; initial fresh fixtures remain allowed |
 
 ## Activation and limits — do not claim automatic enforcement yet
 

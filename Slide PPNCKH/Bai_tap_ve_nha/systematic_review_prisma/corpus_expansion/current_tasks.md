@@ -1,11 +1,46 @@
-# Current research task: all 46 full texts
+# Current research tasks
 
-25 November 2026. The user authorized re-screening every supplied report and completing the SN Computer Science LaTeX manuscript from accepted findings.
+Updated 25 November 2026. This queue records accepted work boundaries, not
+provider transport alone. Codex owns writing, acceptance, project edits, and Git.
+Gemini 3.8 Flash is the primary read-only research worker; the confined
+`gpt-5.6-luna`/low fallback is permitted only for recognized provider quota.
 
-The current inventory and eight bounded briefs are in `../screening_46/`. The 46 PDFs are readable retrieval records, not 46 included studies. Prior access queues are superseded. The existing 24-study draft remains an interim historical snapshot while new screening decisions are unreviewed.
+## Active queue
 
-Gemini primary task for batch 01: `01a212cd-d9b4-7ee8-a857-8e49c6e26b03`; context `01a212cd-d9b5-75bc-a569-da481c2ba7f1`. It completed transport; Codex review is pending. No further batch is dispatched until current changes and review artifacts are checked and committed.
+| Package | Records | Status | Accepted evidence | Next action |
+|---|---:|---|---|---|
+| Screening batch 01 | S01-S06 | accepted working screening | 5 INCLUDE, 1 EXCLUDE; gate `screening_46/reviews/batch_01_combined_gate.md`; commit `531a54e` | Preserve; reconcile versions/study families later |
+| Screening batch 02 | S07-S12 | accepted working screening | 6 INCLUDE; 48/48 source-page checks; gate `screening_46/reviews/batch_02_combined_gate.md`; commit `c3c6c08` | Preserve; reconcile versions/study families later |
+| Screening batch 03 | S13-S18 | accepted working screening | 6 INCLUDE; 48/48 batch locators plus 30/30 S16 correction locators; gate `screening_46/reviews/batch_03_combined_gate.md`; commit `fc8944f` | Preserve S16 version limits; reconcile later |
+| Screening batch 04 | S19-S20, C01-C04 | not dispatched | 0 accepted batch-04 decisions | Next research task after clean/fresh status gate |
+| Screening batch 05 | C05-C10 | not started | none | Wait for batch 04 commit and clean gate |
+| Screening batch 06 | C11-C16 | not started | none | Wait for batch 05 commit and clean gate |
+| Screening batch 07 | C17-C21 | not started | none | Wait for batch 06 commit and clean gate |
+| Screening batch 08 | C22-C25, SNCS | not started | none | Wait for batch 07 commit and clean gate |
 
-Follow `../screening_46/WORK_PLAN.md`. Each batch result must pass six mandatory criteria, including exact IDs, full bibliographic identity or explicit uncertainty, six source-located eligibility gates, consistent decisions, bounded evaluation claims and zero writes by the researcher. A failed result requires corrective delegation before use.
+## Measured progress
 
-User Git rule: check clean working tree before each new task; finish, check and commit current changes before moving on. Final human author adjudication, formal database reconciliation and submission metadata remain separate gates.
+- Frozen retrieval inventory: 46 reports.
+- Accepted working full-text screening: 18/46 reports.
+- Working decisions: 17 INCLUDE, 1 EXCLUDE, 0 UNCERTAIN in batches 01-03.
+- Remaining in this campaign: 28 reports.
+- Active A2A research task: none.
+- Batch 04 dispatch count: zero.
+- Manuscript changes from batches 01-03: zero.
+
+These are report-level working decisions, not final eligible-study or PRISMA
+counts. Final human adjudication, version/study-family reconciliation, formal
+database searches, extraction/appraisal, and submission metadata remain separate
+gates.
+
+## Status-update rule
+
+Every task-closing or task-changing commit must update both this file and
+`MUST_READ_AI_AGENT/CURRENT_HANDOFF.md`. A clean worktree is insufficient when
+these status documents are older than the latest project commit. Recognized A2A
+dispatch is blocked until both conditions pass.
+
+The primary `main` checkout currently contains pre-existing user modifications
+and untracked files. Do not reset, stash, delete, or overwrite that baseline.
+The accumulated research branch cannot be declared merged or deleted until the
+baseline is reconciled safely.

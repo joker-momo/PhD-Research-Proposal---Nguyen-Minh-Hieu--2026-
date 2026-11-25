@@ -8,6 +8,11 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
+PROJECT = ROOT / "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+STATUS_DOCUMENTS = (
+    PROJECT / "MUST_READ_AI_AGENT/CURRENT_HANDOFF.md",
+    PROJECT / "corpus_expansion/current_tasks.md",
+)
 REMINDER = """Before EACH new HK261 task publish exactly five fields:
 TASK: concrete task
 OWNER: CODEX_WRITING or GEMINI_RESEARCH
@@ -21,6 +26,8 @@ owns research/extraction/classification/structured synthesis, read-only. Commit
 briefs before dispatch; require all five brief headings and all mandatory review
 criteria PASS before adoption. Re-read project AGENTS.md and onboarding manifest
 after restart, compaction, or a model change. Hooks are not a security boundary.
+Update CURRENT_HANDOFF.md and current_tasks.md in the commit that closes or
+changes a task; stale status documents block the next recognized A2A dispatch.
 """
 
 
@@ -60,6 +67,30 @@ def git_status():
     return result.stdout
 
 
+def latest_commit_for(paths):
+    relative_paths = [str(path.relative_to(ROOT)) for path in paths]
+    env = dict(os.environ, GIT_OPTIONAL_LOCKS="0")
+    result = subprocess.run(
+        ["git", "-C", str(ROOT), "rev-list", "-1", "HEAD", "--",
+         *relative_paths], capture_output=True, text=True, env=env, timeout=8,
+        check=False,
+    )
+    if result.returncode:
+        raise RuntimeError("Cannot inspect project status-document history.")
+    return result.stdout.strip()
+
+
+def status_documents_fresh():
+    if any(not path.is_file() for path in STATUS_DOCUMENTS):
+        return False
+    latest_project_commit = latest_commit_for((PROJECT,))
+    latest_status_commits = [latest_commit_for((path,))
+                             for path in STATUS_DOCUMENTS]
+    return bool(latest_project_commit and all(
+        commit == latest_project_commit for commit in latest_status_commits
+    ))
+
+
 def main():
     try:
         payload = json.load(sys.stdin)
@@ -69,11 +100,17 @@ def main():
             return 0
         if event != "PreToolUse" or not is_dispatch(payload):
             return 0
-        if not git_status():
+        if git_status():
+            reason = ("HK261 A2A blocked: staged/modified/untracked residue "
+                      "exists. Finish, validate and commit the current task, "
+                      "then verify a clean project worktree before dispatching "
+                      "another task.")
+        elif not status_documents_fresh():
+            reason = ("HK261 A2A blocked: status documents are stale. Update "
+                      "CURRENT_HANDOFF.md and current_tasks.md together in a "
+                      "focused commit before dispatching another task.")
+        else:
             return 0
-        reason = ("HK261 A2A blocked: staged/modified/untracked residue exists. "
-                  "Finish, validate and commit the current task, then verify a "
-                  "clean project worktree before dispatching another task.")
     except (ValueError, AttributeError, OSError, RuntimeError,
             subprocess.TimeoutExpired) as error:
         reason = "HK261 task gate cannot validate input/state: " + str(error)
