@@ -1,6 +1,12 @@
 # Current Handoff
 
-**Snapshot date:** 25 November 2026
+**updated_at:** 2026-11-25T23:12:19+07:00
+
+**Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
+The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
+LaTeX, continuing autonomously through evidence, search, reconciliation,
+extraction/appraisal, synthesis, integrity, PDF validation and submission
+preparation. Submission and email require all gates plus explicit authorization.
 
 **State through promotion commit:** `5cde6977766c8c083b7e2cb039b862aa8b4d4695`.
 The final handoff commit is the latest commit touching this file; resolve it with
@@ -50,9 +56,12 @@ stop and reconcile the conflict before starting or delegating another task.
   failures, and 6/6 empty `primary_reason` fields. Review:
   `screening_46/reviews/batch_04_review.md`. No research task is currently active
   and no Batch 04 decision is accepted.
-- A focused correction brief targets exactly the six empty reasons and four
-  failed locators, requires a complete six-record replacement, and forces C01/C03
-  multi-UAV semantic reassessment. It must be committed before routing.
+- Correction task `01a21371-c7a6-738e-b56a-57454a1221e6` is complete and
+  **REJECTED_C4**: 48/48 locators match, six reasons are nonempty, but C03's
+  multi-UAV rationale improperly relies on absent simulation/DNN execution.
+  The protocol permits analytical performance studies. Review:
+  `screening_46/reviews/batch_04_correction_review.md`. All six decisions remain
+  quarantined; no provider task is active.
 - These working decisions are not final human adjudication, unique-study counts,
   final PRISMA arithmetic, or permission to change manuscript conclusions.
 
@@ -69,9 +78,10 @@ stop and reconcile the conflict before starting or delegating another task.
 
 ## Critical unresolved work
 
-1. Commit a focused Batch 04 correction brief, route one linked correction task,
-   and accept no decision until every A1–A6 criterion passes; then continue
-   batches 05–08 serially.
+1. Complete the mandatory timestamp-standardization task requested at
+   2026-11-25T23:02:44+07:00 after this correction task is committed, merged and
+   cleaned. Then commit a targeted C03 follow-up brief, route it and require all
+   C1–C6 checks PASS before advancing to batches 05–08.
 2. Reconcile all accepted working decisions with report versions, study families,
    the canonical 27-report dataset, extraction, and quality appraisal.
 3. Execute/export/reconcile IEEE Xplore, ACM Digital Library, Scopus, and Web of
@@ -129,10 +139,9 @@ stop and reconcile the conflict before starting or delegating another task.
   count or treat the exact preserved external baseline as task residue.
 - Automatic hook activation remains unverified in the Codex runtime; manual
   clean-tree and freshness checks remain mandatory.
-- Batch 04 primary transport is complete but rejected evidence is quarantined.
-  The review identifies six A2 schema failures and four A3 locator failures. No
-  provider task is active; the next research action is a separately committed
-  correction brief linked to the primary task.
+- Batch 04 primary and first correction are complete but rejected and retained.
+  The correction resolves schema/locator failures; one protocol-interpretation
+  failure remains. No research worker is active.
 
 ## Current submission verdict
 
@@ -147,11 +156,16 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-Route the committed Batch 04 corrective task when:
+Close this correction task by validation, explicit staging, commit, fast-forward
+merge and task-worktree/branch cleanup. Then start one CODEX_WRITING task to add
+RFC 3339 timestamps with timezone to current task/status records, onboarding,
+handoff template and hook validation. Test valid input, missing fields, missing
+timezone, malformed values and future timestamps. Preserve the external
+50-entry baseline hash `6d697aef1256c93f184e5e269ab8c75992cd98675b4c79dca3f2b98272a16e6c`.
+Only after that task is merged may the targeted C03 follow-up be prepared.
 
-1. the path-scoped hook reports clean owned scopes;
-2. `CURRENT_HANDOFF.md` and `current_tasks.md` are fresh at the latest project
-   commit;
-3. the five pre-task fields are published; and
-4. `screening_46/briefs/batch_04_correction.md` remains committed and the primary
-   result stays quarantined until all C1–C6 checks pass.
+## Current task timestamps
+
+started_at: 2026-11-25T23:02:33+07:00
+updated_at: 2026-11-25T23:12:19+07:00
+completed_at: 2026-11-25T23:12:19+07:00
