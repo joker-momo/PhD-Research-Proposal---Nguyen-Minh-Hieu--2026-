@@ -5,6 +5,11 @@ provider transport alone. Codex owns writing, acceptance, project edits, and Git
 Gemini 3.8 Flash is the primary read-only research worker; the confined
 `gpt-5.6-luna`/low fallback is permitted only for recognized provider quota.
 
+Canonical execution workspace: `/Volumes/JokerData/PhD/PhD Research Proposal -
+Nguyen Minh Hieu (2026) (v3)` on `main`. The split-brain migration was promoted
+through merge `5cde697`; 92/92 evidence checksums pass, 46/46 manifest records
+resolve, and Batch 04 remains undispatched.
+
 ## Active queue
 
 | Package | Records | Status | Accepted evidence | Next action |
@@ -40,7 +45,7 @@ Every task-closing or task-changing commit must update both this file and
 these status documents are older than the latest project commit. Recognized A2A
 dispatch is blocked until both conditions pass.
 
-The primary `main` checkout currently contains pre-existing user modifications
-and untracked files. Do not reset, stash, delete, or overwrite that baseline.
-The accumulated research branch cannot be declared merged or deleted until the
-baseline is reconciled safely.
+The canonical `main` checkout retains 50 pre-existing, out-of-project dirty
+status entries exactly as snapshotted before migration. They are user-owned: do
+not reset, stash, clean, delete, or overwrite them. The project itself is
+integrated; all agents must work from the root checkout after migration cleanup.

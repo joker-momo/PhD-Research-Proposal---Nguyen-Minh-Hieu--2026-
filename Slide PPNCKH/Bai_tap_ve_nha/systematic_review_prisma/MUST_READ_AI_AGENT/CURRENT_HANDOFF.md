@@ -2,7 +2,9 @@
 
 **Snapshot date:** 25 November 2026
 
-**State through commit:** `fc8944f3240441b927532fcb6623c9e85e3ca571`
+**State through promotion commit:** `5cde6977766c8c083b7e2cb039b862aa8b4d4695`.
+The final handoff commit is the latest commit touching this file; resolve it with
+`git log -1 --format=%H -- MUST_READ_AI_AGENT/CURRENT_HANDOFF.md`.
 
 **Authority:** current navigation summary. Git history and accepted review gates
 remain the evidence record. If this file conflicts with a canonical artifact,
@@ -78,17 +80,30 @@ stop and reconcile the conflict before starting or delegating another task.
 
 ## Git and continuity state
 
-- The research worktree stopped clean at `fc8944f`; the main thread was idle and
-  batch 04 was not dispatched when this snapshot task began.
-- Status synchronization runs on its own task branch/worktree. The status guard
-  blocks recognized A2A dispatch when either Git is dirty or the latest project
-  commit is newer than `CURRENT_HANDOFF.md` and `current_tasks.md`.
+- Canonical workspace: `/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen
+  Minh Hieu (2026) (v3)` on branch `main`. Codex, Antigravity, Claude, Grok, and
+  any later agent must use this checkout; the former hidden research worktree is
+  retired after the final review.
+- The split histories were reconciled by non-force merge `5cde697`. The root
+  checkout was promoted with `git merge --ff-only`; no user-owned sibling was
+  moved, reset, stashed, or overwritten.
+- The live project contains the portable evidence pack: 46 PDFs + 46 extracted
+  texts, with 92/92 SHA-256 checks passing and all 46 manifest records resolving
+  from project-relative locators.
+- The obsolete live `sources/candidate_fulltext` symlink is absent. Its original
+  tree and target evidence remain recoverable under
+  `/Volumes/JokerData/PhD/HK261-reconciliation-backups/2026-11-25-split-brain/`;
+  the exact live pre-promotion project is
+  `root_project_live_before_promotion/`.
+- The pre-existing root dirty baseline remains unchanged outside this project:
+  50/50 porcelain-status entries match the Task 1 snapshot. Do not reset, stash,
+  clean, delete, or overwrite them.
+- The status guard blocks recognized A2A dispatch when either agent-owned Git
+  state is dirty or the latest project commit is newer than
+  `CURRENT_HANDOFF.md` and `current_tasks.md`.
 - Automatic hook activation remains unverified in the Codex runtime; manual
   clean-tree and freshness checks remain mandatory.
-- Integration into `main` is not yet safe: the primary `main` checkout contains
-  pre-existing user modifications and many untracked project files, and `main`
-  also has a unique CodeGraph commit. Do not reset, stash, delete, or overwrite
-  that baseline. Reconcile it explicitly before fast-forward integration.
+- Batch 04 remains undispatched; no research provider task is active.
 
 ## Current submission verdict
 
@@ -97,16 +112,14 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## User confirmation required
 
-- Resolution of the pre-existing dirty `main` checkout before the accumulated
-  research branch can be integrated and removed safely.
-- Later: author metadata/approval, verified HCMUT email and student ID, exact
+- Author metadata/approval, verified HCMUT email and student ID, exact
   examination date, declarations, and explicit authorization for submission and
   email forwarding.
 
 ## Next exact action
 
-After this status-synchronization task is committed and the integration baseline
-is resolved, prepare/verify the batch 04 task boundary and dispatch only when:
+Open the canonical root checkout, prepare/verify the Batch 04 task boundary, and
+dispatch only when:
 
 1. the active worktree is clean;
 2. `CURRENT_HANDOFF.md` and `current_tasks.md` are fresh at the latest project

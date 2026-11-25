@@ -1,6 +1,25 @@
 schema_version: 1
-context_version: "2026-11-25.3"
+context_version: "2026-11-25.4"
 project: "HK261 PRISMA systematic review"
+canonical_workspace:
+  path: "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)"
+  branch: "main"
+  promotion_commit: "5cde6977766c8c083b7e2cb039b862aa8b4d4695"
+  required_for_all_agents: true
+evidence_pack:
+  root: "../screening_46"
+  pdf_count: 46
+  text_count: 46
+  checksum_rows: 92
+  checksum_status: "92/92 PASS on 2026-11-25"
+  locator_policy: "project-relative; no live cache or hidden-worktree dependency"
+rollback:
+  root: "/Volumes/JokerData/PhD/HK261-reconciliation-backups/2026-11-25-split-brain"
+  pre_promotion_project: "root_project_live_before_promotion"
+  live_candidate_fulltext_symlink: "REMOVED_FROM_CANONICAL_WORKSPACE"
+root_baseline:
+  preserved_outside_project_status_entries: 50
+  policy: "do not reset, stash, clean, delete, or overwrite"
 required_read_order:
   - README.md
   - 01_PROJECT_CHARTER.md
@@ -37,3 +56,8 @@ persistent_task_gate:
   automatic_runtime_enforcement: "UNVERIFIED; direct subprocess checks pass; manual gate required"
   task_fields: [TASK, OWNER, OWNED_PATHS, BINARY_ACCEPTANCE, PRE_TASK_GIT_STATUS]
   freshness_rule: "latest project commit must also be the latest commit touching CURRENT_HANDOFF.md and current_tasks.md before recognized A2A dispatch"
+next_task:
+  id: "screening-batch-04"
+  records: [S19, S20, C01, C02, C03, C04]
+  dispatch_status: "NOT_DISPATCHED"
+  active_research_task_count: 0
