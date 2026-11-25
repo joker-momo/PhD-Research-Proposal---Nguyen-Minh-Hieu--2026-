@@ -50,6 +50,9 @@ stop and reconcile the conflict before starting or delegating another task.
   failures, and 6/6 empty `primary_reason` fields. Review:
   `screening_46/reviews/batch_04_review.md`. No research task is currently active
   and no Batch 04 decision is accepted.
+- A focused correction brief targets exactly the six empty reasons and four
+  failed locators, requires a complete six-record replacement, and forces C01/C03
+  multi-UAV semantic reassessment. It must be committed before routing.
 - These working decisions are not final human adjudication, unique-study counts,
   final PRISMA arithmetic, or permission to change manuscript conclusions.
 
@@ -144,11 +147,11 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-Prepare the Batch 04 corrective task when:
+Route the committed Batch 04 corrective task when:
 
 1. the path-scoped hook reports clean owned scopes;
 2. `CURRENT_HANDOFF.md` and `current_tasks.md` are fresh at the latest project
    commit;
 3. the five pre-task fields are published; and
-4. the correction brief names every failed field and keeps the primary result
-   quarantined until all A1–A6 checks pass.
+4. `screening_46/briefs/batch_04_correction.md` remains committed and the primary
+   result stays quarantined until all C1–C6 checks pass.
