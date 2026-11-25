@@ -1,0 +1,33 @@
+{
+  "assessed_reports": 26,
+  "included": 23,
+  "excluded": 1,
+  "uncertain": 2,
+  "added_study_ids": [
+    "C02",
+    "C03",
+    "C04",
+    "C07",
+    "C08"
+  ],
+  "evidence_counts": {
+    "physical_prototype": 3,
+    "simulation": 20,
+    "emulation": 1,
+    "analytical_only": 1,
+    "latency_performance_outcome": 19,
+    "energy_outcome": 7,
+    "node_unavailability_evaluated": 3,
+    "recovery_or_migration_mechanism": 6,
+    "uncertainty_or_repeated_run_reporting": 8,
+    "public_artifact_found": 1,
+    "multi_uav_physical_flight_evaluated": 0
+  },
+  "appraisal": {
+    "yes": 95,
+    "partial": 107,
+    "no": 28
+  },
+  "scope": "Qualitative working synthesis; final author adjudication, formal search and expansion pending",
+  "numeric_effects": "No comparative numerical effects from six-candidate raw payload used"
+}

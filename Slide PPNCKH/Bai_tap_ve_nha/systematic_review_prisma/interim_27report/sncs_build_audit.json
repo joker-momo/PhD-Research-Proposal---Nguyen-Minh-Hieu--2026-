@@ -1,0 +1,41 @@
+{
+  "scope": "Interim build/structure checks only; no final completeness claim",
+  "checks": {
+    "expected_dataset_records": "PASS",
+    "expected_unique_matching_table_rows": "PASS",
+    "expected_resolved_unique_citations": "PASS",
+    "all_cited_entries_have_doi": "PASS",
+    "no_bibliography_warnings": "PASS",
+    "no_undefined_or_overfull": "PASS",
+    "structured_abstract_150_to_250": "PASS",
+    "six_keywords": "PASS",
+    "interim_and_not_submitted_disclosed": "PASS",
+    "expected_nonempty_pages": "PASS",
+    "pdf_newer_than_all_build_inputs": "PASS",
+    "single_main_source": "PASS"
+  },
+  "observations": {
+    "included_studies": 24,
+    "table_rows": 24,
+    "unique_citations": 34,
+    "abstract_words_excluding_labels": 173,
+    "pages": 17,
+    "underfull_vbox_warnings": 17
+  },
+  "sha256": {
+    "manuscript/sn_computer_science/main.tex": "622b308f4513211477d745bb3c4cc0a6c48a558f3ee2d266857d41d71e460339",
+    "manuscript/sn_computer_science/main.pdf": "154e824a9f80f8fd3ab04a433258911dfe5d1d1ba1695ab22564f03859ad06c4",
+    "manuscript/sn_computer_science/references.bib": "b2a3bfaaf09a97db60a7b58ce79f0cbeb30cf9b2dfbd428aaa00b6bb4f76798a",
+    "manuscript/sn_computer_science/sn-jnl.cls": "36d0c3273a59d48dc6a9c7b080dfa1ec50dc10229d8751568d1f2e490ffa5ecc",
+    "manuscript/sn_computer_science/sn-vancouver-num.bst": "7fa6df12ec8e8945c86958a50fb703d181522745adcf72bf95a86f3633540e8a"
+  },
+  "not_proven_by_this_check": [
+    "source-level research validity",
+    "46-record alignment acceptance",
+    "30–35-study expanded corpus",
+    "final database PRISMA reconciliation",
+    "author metadata and approval",
+    "journal submission",
+    "visual page inspection"
+  ]
+}

@@ -1,0 +1,8 @@
+tmp/
+manuscript/**/*.aux
+manuscript/**/*.bbl
+manuscript/**/*.blg
+manuscript/**/*.log
+manuscript/**/*.out
+corpus_expansion/*_raw.json
+scripts/__pycache__/

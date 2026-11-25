@@ -1,0 +1,85 @@
+{
+  "assessed_reports": 27,
+  "included": 24,
+  "excluded": 1,
+  "uncertain": 2,
+  "added_study_ids": [
+    "C01"
+  ],
+  "evidence_counts": {
+    "physical_prototype": 3,
+    "simulation": 21,
+    "emulation": 1,
+    "analytical_only": 1,
+    "latency_performance_outcome": 20,
+    "energy_outcome": 7,
+    "node_unavailability_evaluated": 3,
+    "recovery_or_migration_mechanism": 6,
+    "uncertainty_or_repeated_run_reporting": 9,
+    "public_artifact_found": 1,
+    "multi_uav_physical_flight_evaluated": 0
+  },
+  "appraisal": {
+    "yes": 100,
+    "partial": 112,
+    "no": 28
+  },
+  "appraisal_domains": {
+    "q1_question_model": {
+      "yes": 24
+    },
+    "q2_assumptions": {
+      "partial": 6,
+      "yes": 18
+    },
+    "q3_reproducibility": {
+      "partial": 22,
+      "yes": 2
+    },
+    "q4_baselines": {
+      "partial": 8,
+      "yes": 16
+    },
+    "q5_metric_alignment": {
+      "yes": 21,
+      "partial": 3
+    },
+    "q6_uncertainty_sensitivity": {
+      "no": 3,
+      "partial": 16,
+      "yes": 5
+    },
+    "q7_network_realism": {
+      "partial": 23,
+      "no": 1
+    },
+    "q8_claim_bounding": {
+      "partial": 16,
+      "yes": 8
+    },
+    "q9_artifact_availability": {
+      "no": 22,
+      "partial": 2
+    },
+    "q10_limitations_disclosures": {
+      "partial": 16,
+      "no": 2,
+      "yes": 6
+    }
+  },
+  "fulltext_formats": {
+    "PDF": 25,
+    "HTML": 2
+  },
+  "appraisal_boundary": "C01 domain9 applies literal protocol; prior23 domain9 labels require a corpus-wide audit; aggregate provisional",
+  "scope": "Qualitative working synthesis; not final database PRISMA or author-adjudicated corpus",
+  "numeric_effects": "No comparative numerical effects from seven expansion reports used",
+  "appraisal_protocol_consistent_nine_domains": {
+    "domains": 9,
+    "judgments": 216,
+    "yes": 100,
+    "partial": 110,
+    "no": 6
+  },
+  "domain9_status": "WITHHELD_FROM_MANUSCRIPT_AGGREGATE_PENDING_REAUDIT"
+}

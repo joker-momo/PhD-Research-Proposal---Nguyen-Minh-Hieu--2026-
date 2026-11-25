@@ -1,0 +1,20 @@
+{
+  "records": 34,
+  "mismatches": 0,
+  "duplicate_doi_count": 0,
+  "unchanged_prior_entries": 33,
+  "prior_audit": "interim_26report/citation_metadata_check.json",
+  "new_entry": {
+    "key": "candidate01",
+    "doi": "10.3390/drones10060410",
+    "title_match": true,
+    "author_count": 4,
+    "year": 2026,
+    "venue": "Drones",
+    "source_locator": "corpus_expansion/c01_metadata_source_snapshot.json",
+    "original_fulltext": "https://www.mdpi.com/2504-446X/10/6/410",
+    "original_locator": "Publisher header,26May2026,10(6):410"
+  },
+  "scope": "Bibliographic identity only; does not prove retraction/indexing, numerical accuracy or final review completeness",
+  "bibliography_sha256": "b2a3bfaaf09a97db60a7b58ce79f0cbeb30cf9b2dfbd428aaa00b6bb4f76798a"
+}

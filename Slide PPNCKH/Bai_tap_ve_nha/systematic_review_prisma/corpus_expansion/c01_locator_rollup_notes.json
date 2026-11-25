@@ -1,0 +1,31 @@
+{
+  "records": [
+    {
+      "candidate_id": "C01",
+      "title": "Orion: A Collaborative Edge Inference Framework for Large Language Models Processing Multi-Sensor Data in UAV Swarms",
+      "authors": [
+        "Tianchou Yang",
+        "Hongjie Guo",
+        "Zhengyu Zhao",
+        "Donglin Zhu"
+      ],
+      "year": 2026,
+      "venue": "Drones",
+      "doi": "10.3390/drones10060410",
+      "source_url": "https://www.mdpi.com/2504-446X/10/6/410",
+      "source_locators": "Publisher HTML: Sections 3.1-3.3 (methods; lines 248-560); Sections 4.1-4.8 (evaluation; Sections 4.7-4.8 explicitly, lines 561-659); Section 5.5 (physical-validation limitation; lines 689-693); Funding, Data Availability Statement, and Conflicts of Interest sections (lines 701-711 and 705-707); publisher metadata/header (lines 138-161). URL: https://www.mdpi.com/2504-446X/10/6/410",
+      "unresolved_items": [
+        "Random seeds are not reported.",
+        "No public code, dataset, trace archive, or repository is reported.",
+        "No measured onboard execution or physical UAV flight validation is reported; physical deployment remains future work.",
+        "Semantic study-family overlap is not established.",
+        "Potential protocol-versus-operational-anchor coding conflict for the public-artifact appraisal domain remains unresolved."
+      ]
+    }
+  ],
+  "summary": {
+    "records": 1,
+    "duplicates": 0,
+    "files_written": 0
+  }
+}

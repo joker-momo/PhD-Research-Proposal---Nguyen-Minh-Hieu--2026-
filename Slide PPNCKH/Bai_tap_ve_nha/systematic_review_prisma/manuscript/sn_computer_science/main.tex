@@ -1,0 +1,253 @@
+\documentclass[pdflatex,sn-vancouver-num]{sn-jnl}
+\usepackage{amsmath,amssymb,graphicx,booktabs,longtable,array}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\raggedbottom
+\begin{document}
+\title[Collaborative Inference in UAV Swarms]{Collaborative Neural Network Inference in Drone Swarms: A Systematic Review of Partitioning, Orchestration, and Resilience}
+\author*[1]{Nguyen Minh Hieu}
+\author[2]{Nguyen Thanh Cong}
+\author[3]{Pham Hoang Anh}
+\affil[1]{\orgname{Ho Chi Minh City University of Technology (HCMUT), Vietnam National University Ho Chi Minh City},\orgaddress{\city{Ho Chi Minh City},\country{Vietnam}}}
+\affil[2]{\orgname{Affiliation pending author confirmation}}
+\affil[3]{\orgname{Affiliation pending author confirmation}}
+\abstract{\textbf{Purpose:} To examine partitioning, orchestration, and resilience of collaborative neural-network inference in unmanned aerial vehicle (UAV) swarms.
+\textbf{Methods:} A local protocol guided full-text assessment of English primary reports published from 2021 onward. Twenty-four studies from 27 assessed reports entered narrative synthesis and provisional appraisal; one demo was excluded and two reports remain uncertain. Formal database reconciliation, corpus expansion, and author adjudication are incomplete.
+\textbf{Results:} Twenty-one studies used simulation, one used container emulation, and one supplied an analytical model. Three included prototype components; evaluation modalities overlap, and the two physical-flight validations used single UAVs. Twenty reported latency-related outcomes, including one limited to single-hop tensor transmission; seven separately identified inference-energy outcomes. Three directly tested node unavailability. One public code repository was located but not replayed. Architectures ranged from cross-UAV layer execution to shared edge/cloud request scheduling. Heterogeneity precluded meta-analysis.
+\textbf{Conclusion:} Evidence supports separating partition semantics, evaluation realism, and recovery granularity. Joint computation--communication design and controlled failure comparisons warrant further study. These interim findings do not establish a field-wide absence of resilient inference or a validated new algorithm.}
+\keywords{Collaborative inference, UAV swarm, model partitioning, edge intelligence, fault recovery, systematic review}
+\maketitle
+\begin{center}\small
+HK261 coursework draft, 25 November 2026. Not submitted.\\
+Interim 24-study synthesis; expansion to 30--35 studies and final PRISMA reconciliation remain pending.\\
+Corresponding-author HCMUT email and coauthor metadata require confirmation.
+\end{center}
+\section{Introduction}
+\label{sec:introduction}
+
+Unmanned aerial vehicle (UAV) swarms can place sensing and computation close to a mission while avoiding dependence on a single terrestrial edge node. Distributed deep-neural-network (DNN) inference in such swarms, however, couples decisions that are often evaluated separately: where a model is partitioned, which UAV executes each segment, how intermediate activations traverse time-varying wireless links, and how execution continues when a node or link becomes unavailable. A design that reduces computation time can increase feature-transfer cost, while a placement that is efficient for one network state can become infeasible after mobility or failure. Evidence therefore needs to be interpreted across computation, communication, and resilience rather than through latency alone.
+
+Prior surveys address important neighboring areas but do not establish the combined evidence base targeted here. UAV-oriented reviews synthesize Edge AI, resource management, mobile edge computing, or computational-intelligence methods for aerial networking and collaboration~\cite{survey_uav_edge_ai,survey_uav_resource,survey_iouav_mec_ml,survey_uav_swarm_ci}. Other reviews classify collaborative DNN inference or end--edge--cloud deep-learning techniques, including model partitioning, without an explicit UAV-swarm focus~\cite{survey_collab_dnn,survey_end_edge_cloud}. In a conservative comparison of these six reviews, the title and abstract evidence verified an explicit UAV-swarm scope in one review and adjacent model-partitioning coverage in two reviews, but did not verify a review that jointly synthesizes UAV-swarm DNN partitioning, cross-UAV orchestration, and inference recovery after UAV failure. This statement describes the inspected evidence and is not an exhaustive claim that no such review exists.
+
+This systematic review therefore examines distributed DNN inference in architectures containing at least two UAVs, a UAV swarm, a multi-UAV system, or a flying ad hoc network. It asks which inference topologies, DNN families, and mission tasks have been evaluated; how model placement, task assignment, communication, trajectory, and resource decisions are optimized; which datasets, simulators, hardware, network models, baselines, and metrics support the reported findings; and how mobility, intermittent connectivity, UAV failure, and recovery are represented.
+
+The present manuscript reports an interim full-text synthesis of 27 retrieved reports: the original 20-report priority corpus and seven additional candidates. Twenty-four studies were included, one demonstration report was excluded, and two reports remain uncertain. Formal database exports, publication-type and architecture-boundary adjudications remain incomplete. These limitations are reported rather than replaced by projected counts.
+
+The review makes three contributions within this interim evidence boundary:
+\begin{enumerate}
+\item An evidence map connects inference architectures and partition granularity to the actual placement, resource, and mobility decisions evaluated in the included studies.
+\item A resilience synthesis distinguishes analytical reliability constraints, observed node unavailability, service migration, and the evidence needed to establish interrupted-inference recovery.
+\item A ten-domain methodological appraisal identifies limits on reproducibility and quantitative transfer, supporting explicit requirements for network-aware and failure-aware evaluation.
+\end{enumerate}
+
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Review Design and Protocol}
+This review was designed for reporting under PRISMA 2020~\cite{prisma2020}. The protocol was fixed locally before full-text synthesis on 24 November 2026. Two dated amendments narrowed the scope to systems containing at least two UAVs or an explicit UAV swarm and set the publication window to 1 January 2021 through 25 November 2026. The protocol was not externally registered.
+
+\subsection{Review Questions}
+The review examines: 1) swarm architectures, inference tasks, DNN models, and collaboration patterns; 2) partitioning, node or task assignment, compute, communication, trajectory, and deployment decisions; 3) datasets, platforms, network models, baselines, and metrics; 4) treatment of mobility, intermittent links, UAV failure, and recovery; and 5) the strength, reproducibility, and limitations of evidence for latency, energy, communication, accuracy, reliability, and scalability claims.
+
+\subsection{Eligibility Criteria}
+Eligible reports were English-language primary journal or full conference papers published from 1 January 2021 through 25 November 2026. A report had to evaluate a method, model, algorithm, architecture, or system in which at least two UAVs, a UAV swarm, a multi-UAV system, or a flying ad hoc network was present and inference work was distributed, partitioned, assigned, migrated, fused, or jointly orchestrated. An experiment, prototype, emulation, simulation, trace-driven evaluation, or mathematical performance analysis was required. A preprint was eligible only when it supplied unique evidence not available in a peer-reviewed report and was explicitly labeled non-peer-reviewed.
+
+The review excludes distributed training without an inference-stage contribution; generic indivisible-task offloading without explicit DNN inference placement or partitioning; single-UAV perception or a single aerial edge server without multi-UAV inference; communication, routing, caching, or relay studies without an inference workload; and secondary or incomplete publication types. Reviews are retained only for citation searching. Duplicate reports are linked at the study level, and the most complete report supplies the evidence. Reports whose full text remains unavailable after documented attempts are excluded at full-text assessment.
+
+\subsection{Information Sources and Search Strategy}
+The review project defined IEEE Xplore, ACM Digital Library, Scopus, and Web of Science Core Collection as its intended core sources. Semantic Scholar, OpenAlex, Crossref, arXiv, publisher pages, and citation chaining supported pilot discovery, DOI verification, and lawful full-text retrieval. Searches combined UAV-swarm terms with DNN-inference terms and, in complementary queries, model-partitioning and orchestration terms. The present synthesis combines the original 20-report priority corpus with seven additional full-text candidates. Formal core-database exports were not reconciled at the analysis cutoff; consequently, the flow counts and conclusions are labeled interim rather than represented as an exhaustive database search.
+
+\subsection{Record Management and Selection}
+Records were normalized and deduplicated first by DOI and then by normalized title, year, and first author. Preprints and published versions were linked rather than counted independently. Some retrieved full texts were author manuscripts associated with a published DOI. Title and author correspondence was checked, but content equivalence to an inaccessible publisher version was not assumed; source-version caveats were retained with the extracted evidence. Twenty-seven full-text reports were assessed: 25 PDFs and two HTML reports. Publisher HTML was accepted as full text when its complete methods and evaluation were readable. Twenty-four entered the interim qualitative synthesis, one demo was excluded, and two reports remain uncertain. Comparative numerical findings from the seven newly assessed candidates were not used in this synthesis; their qualitative methods and evaluation boundaries were retained. One uncertainty concerns publication type and the other concerns whether central learning-policy coordination establishes multi-UAV inference-time resource orchestration. Gemini and an authorized read-only Codex research fallback prepared research notes and provisional screening and extraction; Codex cross-checked returned evidence against supplied reports and retained explicit unresolved items. Codex also assisted manuscript drafting and editing; the roles of the AI tools are documented under Use of Artificial Intelligence. Final human adjudication by the authors remains pending. This preparation process is not represented as completed single-human review or independent dual-human screening.
+
+\subsection{Data Extraction and Quality Appraisal}
+The extraction form captured bibliographic identity; architecture and UAV role; inference topology; DNN and dataset; partition granularity; decision variables, objective, constraints, and solution method; mobility, channel, and failure models; simulator or hardware; baselines; outcomes with conditions and units; uncertainty or sensitivity analyses; artifact availability; funding and conflicts; and author-reported limitations. Only full-report evidence entered the synthesis.
+
+Partition granularity and execution topology were retained separately. A selectable two-party cut, a per-layer host mapping, and placement or migration of predetermined modules were not assumed to offer the same decision space. Recovery descriptions were checked for the triggering event, reconfiguration action, state retained or recomputed, and reported comparator.
+
+Ten appraisal domains assess the clarity of the system model; explicit assumptions; reproducibility of the configuration; comparability of baselines; alignment between metrics and objectives; variability, repetitions, sensitivity, or convergence evidence; justification of network and mobility assumptions; bounding of claims; artifacts or sufficient implementation details; and reporting of limitations, funding, and conflicts. Each domain is judged \emph{yes}, \emph{partial}, \emph{no}, or \emph{not applicable}. An inconsistency between the literal domain-9 wording and earlier public-artifact coding was identified; its aggregate is withheld pending a corpus-wide reassessment. Studies are not excluded solely by a summed quality score.
+
+\subsection{Synthesis}
+A structured narrative synthesis and evidence map were used because architectures, models, channel assumptions, objectives, and outcome definitions were heterogeneous. Studies were grouped by decision method and compared by evaluation realism, outcomes, mobility and failure treatment, and appraisal domains. Compatible effect estimates with variance information were unavailable; therefore, no pooled effect estimate was calculated.
+
+No formal reporting-bias assessment, outcome-level certainty grading, or sensitivity analysis has yet been completed for this interim synthesis. The ten-domain appraisal describes methodological reporting and does not provide an outcome-level certainty grade. Missing variance information and incomplete identification searches constrain quantitative synthesis, but do not establish that selective reporting or publication bias is absent.
+
+\subsection{Integrity Controls}
+Every included citation was matched to a readable full report and verified DOI metadata. Quantitative findings were retained only when a full-text locator, condition, and unit or clearly defined quantity were available. Constraint-satisfaction percentages were not treated as image-classification accuracy. Reliability models and battery/load-triggered migration were distinguished from demonstrated hard-failure recovery. Approximate values read only from plots were not used as headline findings. A separate doctoral-alignment map prioritizes joint partitioning and UAV assignment, activation-dependent communication cost, online adaptation, and inference continuity; this map does not replace the fixed eligibility criteria or the methodological appraisal.
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Study Selection}
+Twenty-seven reports were retrieved and assessed. One two-page IDEA demonstration was excluded as an incomplete study report~\cite{study03}. Twenty-four studies entered the qualitative synthesis. The ICWS Work-in-Progress report remains pending publication-type adjudication~\cite{study19}. A further journal article remains uncertain because training-time global-policy synchronization and nearest-UAV split inference do not clearly establish runtime orchestration across the multi-UAV hierarchy~\cite{candidate06}. Neither uncertain report contributes to the included-study counts. Figure~\ref{fig:prisma} separates this interim report-level flow from the incomplete database-identification flow.
+
+\begin{figure}[htbp]
+\centering
+\fbox{\parbox{0.85\linewidth}{\centering Priority and expansion reports retrieved: $n=27$}}
+\par\smallskip$\downarrow$\par\smallskip
+\fbox{\parbox{0.85\linewidth}{\centering Full-text reports assessed: $n=27$}}
+\par\smallskip$\downarrow$\par\smallskip
+\begin{tabular}{ccc}
+\fbox{\parbox{0.25\linewidth}{\centering Included\\$n=24$}}&
+\fbox{\parbox{0.25\linewidth}{\centering Excluded demo\\$n=1$}}&
+\fbox{\parbox{0.25\linewidth}{\centering Uncertain\\$n=2$}}
+\end{tabular}
+\caption{Interim report-level selection flow for the priority corpus. Formal database identification and deduplication counts remain pending}
+\label{fig:prisma}
+\end{figure}
+
+\subsection{Study Characteristics}
+The 24 included studies span 2021--2026 and address peer-UAV layer mapping, activation aggregation, model or early-exit selection, service migration, and inference-request scheduling through shared edge/cloud resources. Table~\ref{tab:studies} retains report identifiers and states evaluation boundaries. Whole-model request orchestration qualifies under the amended protocol, but is distinguished from partitioning one model across several UAVs.
+
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{P{0.11\linewidth} P{0.15\linewidth} P{0.17\linewidth} P{0.17\linewidth} P{0.27\linewidth}}
+\caption{Characteristics of the 24 Included Studies}
+\label{tab:studies}\\
+\hline
+Study & Year/method & DNN or workload & Evaluation & Principal decision scope and outcomes \\
+\hline
+\endfirsthead
+\multicolumn{5}{l}{Table~\ref{tab:studies} (continued)}\\
+\hline
+Study & Year/method & DNN or workload & Evaluation & Principal decision scope and outcomes \\
+\hline
+\endhead
+S01~\cite{study01} & 2021, greedy/ILP & Sequential CNN; ResNet & Simulation & Layer placement; latency, rejected requests, transferred activations \\
+S02~\cite{study02} & 2023, PPO2 & LeNet; AlexNet; VGG16 & Simulation & Joint trajectory and layer allocation; latency and constraint satisfaction \\
+S04~\cite{study04} & 2022, DQN & AlexNet; VGG19; GoogLeNet; ResNet101 & Simulation & Replicated layer placement; energy under latency/reliability constraints \\
+S05~\cite{study05} & 2022, Q-learning & Tiny-YOLO & NS-3/PyTorch co-simulation & Partition point; latency under mobility and changing swarm size \\
+S06~\cite{study06} & 2023, decomposed optimization & LeNet; AlexNet & Simulation & Power, positioning, and placement; latency and transmit power \\
+S07~\cite{study07} & 2024, OODA scheduling & Faster R-CNN & Four-device prototype & Elastic repartitioning; frame rate and continuity under one unavailable node \\
+S08~\cite{study08} & 2024, PPO & AlexNet; VGG16; YOLO & Simulation & Layer reassignment; latency under zero to two inoperable UAVs \\
+S09~\cite{study09} & 2024, CVaR/CPOO & AlexNet; NiN; TinyYOLOv2; VGG16 & Simulation & Partition, offload, and power; delay and transmission power \\
+S10~\cite{study10} & 2024, multi-agent RL & ResNet-18 & 50-run simulation & Partition, transmit power, and ship-edge selection; latency and energy \\
+S11~\cite{study11} & 2025, DP/SCA & Synthetic 10--24-layer detector & Simulation, 100 trials & Joint partition and deployment; latency, coverage, and convergence \\
+S12~\cite{study12} & 2025, Option-Critic & AlexNet with early exits & Simulation & Early exit and layer assignment; latency, energy, and accuracy utility \\
+S13~\cite{study13} & 2025, LE-MHAPPO & ResNet-18, five blocks & Simulation; 10 training seeds & Joint cut, offload, power, CPU and bandwidth; delay and energy \\
+S14~\cite{study14} & 2025, alternating optimization & VGG16 & Repeated simulation & Layer and resource allocation; communication/computation latency \\
+S15~\cite{study15} & 2025, model switching; MADDPG & AlexNet; VGG16 & Trace-informed simulation & Model choice and partition; latency under accuracy constraints \\
+S16~\cite{study16} & 2026, diffusive control & Parameterized split workload & 50-run dynamic simulation & Neighbor offload and early exit; latency, energy, fairness, throughput \\
+S17~\cite{study17} & 2025, deployment heuristic & AlexNet; VGG19 & Simulation & Heterogeneous multi-model placement; latency, energy, and longevity \\
+S18~\cite{study18} & 2026, SAC-PER/CVX & AlexNet; VGG16; VGG13 & Multi-seed simulation & Partition, migration, compute, and trajectory; weighted energy \\
+S20~\cite{study20} & 2026, LST-GNN/PDBH & ResNet-18; CIFAR-10 & Simulation; random UAV failures & UAV/service migration; task success, composite cost and accuracy \\
+C01~\cite{candidate01} & 2026, Orion; dynamic programming & Llama-2 7B/13B/70B & Simulation; Monte Carlo trials & Contiguous layer/device mapping, sequence partitioning and speculative decoding; latency \\
+C02~\cite{candidate02} & 2025, meta-RL & LeNet; AlexNet & Simulation & Peer-UAV layers and movement; latency, transmit power and shared data \\
+C03~\cite{candidate03} & 2026, analytical model & Reference activation tensor & Analytical only & L2 activation encapsulation; per-hop traffic, delay and delivery probability \\
+C04~\cite{candidate04} & 2026, hierarchical inference & Ground/edge LLMs & Simulation and hardware profiles & Speculative inference and link-loss fallback; decision latency and traffic \\
+C07~\cite{candidate07} & 2024, A3D & DroNet & Single-drone flight; multi-drone simulation/traces & Shared edge CPU and input adaptation; navigation quality and latency \\
+C08~\cite{candidate08} & 2025, online heuristics & Multiple vision DNNs & Container emulation; single-drone field test & Edge/cloud request queues and migration; deadline completion and cost \\
+\hline
+\end{longtable}
+\endgroup
+
+\subsection{Partitioning and Orchestration}
+Layer-level placement is the common abstraction, but later work expands the action space. Early studies optimize per-layer assignment, select an end--edge cut under mobile multi-hop links, or jointly plan paths and placement~\cite{study01,study02,study05}. Reliability-aware formulations introduce replica placement, transmit power, or uncertain-channel constraints~\cite{study04,study06,study09}. Recent work co-optimizes deployment, ship-edge selection, model switching, communication and compute resources, early exit, or task migration~\cite{study10,study11,study12,study14,study13,study15,study16,study18,study20}.
+
+These formulations represent different partition semantics. S05 selects a front-end/back-end cut relative to one designated computing UAV~\cite{study05}; S13 jointly selects a cut in a five-block ResNet-18 representation and a serving UAV~\cite{study13}. S11 uses layer-to-UAV allocation coupled with UAV deployment~\cite{study11}. S18 combines a ground-user/UAV split with task migration~\cite{study18}, whereas S20 fixes two model modules before optimizing service migrations~\cite{study20}. A migration decision over fixed modules therefore does not establish that partition boundaries are re-optimized. Likewise, a single selectable cut is not equivalent to selecting a bounded number of segments across several execution hosts.
+
+C01 extends the partitioning evidence to a simulated Llama-2 pipeline: contiguous layer blocks are mapped to selected devices under memory constraints, with adaptive sequence partitioning and speculative token execution~\cite{candidate01}. Its rollback corrects token speculation; it is not a failed-UAV recovery mechanism. These LLM-specific decisions are adjacent to a convolutional-model benchmark and do not establish the same optimum for ResNet-18.
+
+The evidence does not identify a universally superior orchestration strategy. S16 reports that distributed collaboration is favored under high load and denser connectivity, whereas local execution can be preferable when arrivals are sparse because coordination overhead dominates~\cite{study16}. S17 similarly demonstrates a trade-off between additional compute capacity and communication contention as more UAVs participate~\cite{study17}. Thus, the supported cross-study conclusion is conditional: collaboration helps when added compute and load balancing outweigh activation transfer, contention, and scheduling overhead.
+
+\subsection{Evaluation Outcomes and Realism}
+Twenty-one studies use simulation, one uses container emulation, and one provides an analytical performance model. Three include prototype components: S07's four-device bench setup, C07's single-drone navigation prototype, and C08's single-drone edge/cloud field test~\cite{study07,candidate07,candidate08}. Evaluation modalities overlap; C07 also supplies hardware-assisted simulation and traces, while C04 combines simulated flight with hardware inference profiling~\cite{candidate04}. These counts do not establish physical multi-UAV flight validation. Twenty studies report latency-related outcomes, including C03's single-hop tensor-transmission calculation rather than end-to-end inference latency~\cite{candidate03}; seven separately identify inference-energy outcomes. Nine report repeated-run or uncertainty information, while two further records provide partial aggregation information. S20's composite migration cost is not counted as a separately reported latency or energy outcome.
+
+S05 couples NS-3 packet-level networking with PyTorch inference~\cite{study05}. C07 supplies a PX4-based physical navigation prototype and AirSim-based multi-drone evaluation, while C08 supplies a containerized multi-drone edge/cloud testbed and a separate single-drone field trial~\cite{candidate07,candidate08}. These provide stronger evaluation precedents than nominal board specifications alone. The inspected reports do not establish a shared reproducible ROS~2/PX4 SITL/Gazebo and packet-network co-simulation pipeline; this observation does not imply that vehicle--network experimentation is absent from the field. C08 links a public scheduler repository, whose README and publication DOI were checked; its experiments were not replayed in this review~\cite{candidate08}.
+
+\subsection{Mobility, Reliability, and Recovery}
+Six included reports describe migration, reassignment, or fallback mechanisms, but these do not form one recovery outcome. C02's scheduled join/leave experiments address changing swarm membership, C04's fallback addresses link disruption, and C08's migration/work stealing reschedules whole inference tasks~\cite{candidate02,candidate04,candidate08}. None of these observations alone establishes recovery from a failed UAV by resuming retained intermediate activations. C03's analytical quorum model does not demonstrate accuracy or execution continuity under a physical node failure~\cite{candidate03}.
+Mobility is represented through planned trajectories, optimized positions, circular paths, random walks, random point group movement, or traces~\cite{study02,study05,study06,study09,study10,study15,study16,study17,study18}. Channel models range from simplified distance-based rates to LoS/NLoS, maritime attenuation, Rician or Rayleigh fading, and 802.11s or NS-3/802.11n contention models. These assumptions are heterogeneous and frequently idealized.
+
+S07, S08, and S20 directly test node unavailability. S07 disables and restores one UAV communication program; frame rate falls from approximately 3 to 2 frames/s and returns after reconnection~\cite{study07}. S08 simulates zero to two inoperable UAVs and reallocates layers~\cite{study08}. S20 injects random simulated UAV failures with probability 0.0001 per time slot across three swarms containing 5, 10, and 15 UAVs. Its results compare predictive and reactive migration strategies through task success, composite migration cost, and classification accuracy, without isolating recovery latency or an activation-resume versus full-restart comparison~\cite{study20}. S18 migrates tasks when battery or CPU-load thresholds are crossed, but does not evaluate unexpected hardware crashes or link disconnections~\cite{study18}. Failure-rate or reliability constraints in S04, S06, and S09 therefore cannot be interpreted as demonstrated recovery~\cite{study04,study06,study09}.
+
+\subsection{Methodological Appraisal}
+Across the nine appraisal domains unaffected by the domain-9 coding discrepancy, 216 judgments comprised 100 \emph{yes}, 110 \emph{partial}, and six \emph{no} ratings. Table~\ref{tab:quality} shows these provisional distributions.
+
+The fixed ninth domain allows code, data, traces, \emph{or sufficient implementation details}; the earlier 23-study coding emphasized public artifacts. C01 was rated partial under the literal protocol because it describes algorithms and simulation settings, while no public implementation was located on the inspected page~\cite{candidate01}. To avoid combining inconsistent interpretations, domain-9 totals are withheld pending reassessment of all prior reports. Separately, one public repository was located, for C08, but was not replayed~\cite{candidate08}.
+
+\begin{table}[!t]
+\caption{Interim Methodological Appraisal; Domain 9 Requires Reassessment}
+\label{tab:quality}
+\centering
+\scriptsize
+\begin{tabular}{p{0.50\columnwidth} r r r}
+\hline
+Domain & Yes & Partial & No \\
+\hline
+Question and system model & 24 & 0 & 0 \\
+Assumptions and constraints & 18 & 6 & 0 \\
+Configuration reproducibility & 2 & 22 & 0 \\
+Comparable baselines & 16 & 8 & 0 \\
+Metric--objective alignment & 21 & 3 & 0 \\
+Uncertainty or sensitivity & 5 & 16 & 3 \\
+Network and mobility realism & 0 & 23 & 1 \\
+Claim bounding & 8 & 16 & 0 \\
+Artifacts or implementation details & -- & -- & -- \\
+Limitations and disclosures & 6 & 16 & 2 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Synthesis Decision}
+Differences in DNNs, objectives, network models, baselines, units, and variance reporting precluded a defensible pooled effect estimate. No meta-analysis was performed. Numeric results remain study-specific and are interpreted only under their reported conditions.
+
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Principal Findings}
+The reviewed literature has progressed from isolated layer-placement decisions toward joint control of model structure, UAV location, communication, compute allocation, and migration. This expansion reflects the coupling inherent in airborne edge intelligence: a partition that is computationally balanced may produce an expensive activation transfer, and a placement that is feasible in one topology may become inefficient after movement or resource depletion.
+
+The central cross-study finding is not that collaboration always reduces latency or energy. Rather, its value is conditional on workload, intermediate-data volume, compute heterogeneity, connectivity, and coordination overhead. This interpretation is directly supported by studies that expose performance reversals or non-monotonic behavior as load, area, or swarm size changes~\cite{study16,study17}. Claims of general superiority should therefore be bounded to the evaluated conditions.
+
+\subsection{Evidence for Resilience}
+Resilience is less mature than partitioning and resource optimization. Reliability probabilities, outage thresholds, or failure rates are useful analytical constraints, but they do not demonstrate that an inference pipeline detects a failed UAV, preserves state, reallocates unfinished work, and meets a recovery-time objective. Three studies directly evaluate node unavailability~\cite{study07,study08,study20}. S20 includes random failures and predictive/reactive service migration in simulation, but reports aggregate success, cost, and accuracy rather than an isolated recovery-time distribution or an activation-resume/full-restart comparison~\cite{study20}. S18 adds proactive migration under battery and load thresholds, but not abrupt crash recovery~\cite{study18}. Future studies should separate fault prediction, failure detection, state checkpointing, reassignment, retransmission, and restoration latency.
+
+\subsection{Evaluation and Reproducibility Gap}
+The simulation-dominated evidence base limits claims about deployability. Wireless assumptions often omit interference, protocol overhead, Doppler, obstacles, or time-correlated link loss. Compute models frequently use nominal board specifications rather than measured layer runtimes under thermal, power, and concurrent-network load. The newly located C08 repository provides a concrete implementation lead; its availability does not resolve missing artifacts or replay evidence in the other studies~\cite{candidate08}.
+
+A reproducible failure-comparison benchmark is a practical next step. S05 supplies packet-level NS-3/PyTorch coupling; C07 and C08 show that shared-edge inference should also be compared under navigation or deadline-oriented workloads~\cite{study05,candidate07,candidate08}. A ResNet-18 benchmark can measure activation traffic, repeated end-to-end timing and computation profiles while controlling mobility and failures. NS-3 or measured network traces can represent wireless behavior, with later ROS~2/PX4 SITL/Gazebo integration when vehicle dynamics are needed. The contribution would have to be demonstrated through new methods and evaluated behavior, rather than the choice of software stack. This is an inferred research direction, not a result already established by the review.
+
+\subsection{Implications for Future Study Design}
+Future evaluations should report at least: exact model and dataset; layer-level compute, memory, and activation profiles; flight and channel parameters; software and simulator versions; baseline implementations; random seeds and repeated-run uncertainty; failure injection and recovery definitions; and code, configuration, and traces. Accuracy must be measured rather than inferred from structural partitioning. Constraint-satisfaction rates must not be labeled as classification accuracy.
+
+For a bounded-partition benchmark, the model graph, permissible cut locations, host set, and maximum segment count should be explicit. Comparisons should separate two-party split inference, layer placement across UAVs, and migration over fixed partitions. A reference method's reported solver name or convergence statement does not establish optimality for a different constraint set; feasibility and applicable guarantees must be checked before reuse. Failure comparisons should hold the failed node, failure time, input workload, and available state constant while accounting for detection, decision, transfer, and repeated-computation costs. These are evaluation requirements derived from the reviewed heterogeneity, not claims of a validated new algorithm.
+
+\subsection{Review Limitations}
+This review has four principal limitations. First, the flow represents 27 priority and expansion reports rather than reconciled exports from all planned databases; two eligibility decisions and further expansion remain unresolved. Second, AI-prepared research notes were source-checked, but final author adjudication and independent dual-human screening were not completed. Third, architecture, outcomes, source versions and evaluation designs are heterogeneous. Some evidence comes from author manuscripts whose content equivalence to publisher versions remains unverified; new-candidate comparative numerical findings were excluded from the qualitative synthesis. Fourth, the target of 30--35 studies, consistent domain-9 reassessment, venue/retraction checks, formal reporting-bias assessment and outcome-level certainty appraisal remain incomplete. Findings are therefore interim and cannot establish exhaustive field coverage or field-wide absence of a mechanism.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+This PRISMA-guided working review synthesized 24 full-text studies across peer-UAV inference and multi-UAV edge/cloud hierarchies. It distinguishes selectable cuts, layer-to-host mappings, fixed-module migration, speculative model cooperation and whole-model request scheduling. Numerical simulation predominates; hardware and field components are limited, and the two physical-flight checks in the additional reports use single UAVs. Empirical node-unavailability testing, uncertainty reporting and reproducible implementations remain uneven.
+
+The available evidence supports conditional benefits rather than a universal advantage for collaboration. Distributed execution is valuable when additional compute and load balancing outweigh intermediate-feature communication and coordination overhead; local execution can remain preferable under sparse load or weak connectivity. Reliability constraints and proactive migration should be distinguished from recovery evaluated under injected faults. S20 supplies a simulated-failure migration precedent, while recovery-time decomposition and controlled activation-resume comparisons remain to be established in the inspected evidence.
+
+A useful next step is an integrated evaluation that couples a representative DNN such as ResNet-18 with measured computation profiles, realistic wireless behavior, and controlled failures. S05 establishes a packet-level NS-3/PyTorch precedent, while C07 and C08 supply adjacent shared-edge evaluation patterns~\cite{study05,candidate07,candidate08}. ROS~2, PX4 SITL and Gazebo are possible later extensions; their absence from the inspected integrated evaluations is not itself proof of algorithmic novelty. Final database reconciliation, two uncertain reports, further corpus expansion and author adjudication remain prerequisites for submission.
+
+\section*{Statements and Declarations}
+\subsection*{Funding}
+
+No funding or institutional support statement has been confirmed for this manuscript.
+
+\subsection*{Competing Interests}
+No conflict-of-interest statement has yet been approved by all listed authors. A final declaration is required before submission.
+
+\subsection*{Data Availability}
+The review protocol, search translations, eligibility log, extraction table, appraisal table, evidence map, and interim PRISMA counts are retained with the coursework project. Publisher PDFs are not redistributed.
+
+\subsection*{Author Contributions}
+The final contribution statement and author order require approval from all listed authors before submission.
+
+\subsection*{Use of Artificial Intelligence}
+Gemini assisted source discovery, metadata checking, and structured evidence extraction. When Gemini reported provider quota, an authorized read-only Codex fallback returned research notes under the same acceptance criteria. Codex handled drafting and editing and cross-checked returned research notes against source reports. Automated task identifiers and acceptance decisions are retained in the project logs. Final author adjudication and approval remain pending. Every eligibility decision, citation, and manuscript claim remains the responsibility of the authors. No AI-generated quantitative result was used as study evidence.
+
+\begin{appendices}
+\section{Review Codebook and Reproducibility Materials}
+
+Reproducibility materials comprise the protocol, amendments, eight platform queries, seed coverage, retrieval and eligibility logs, extraction, evidence maps, appraisal rules, and checked DOI metadata. Record, report, and study counts require formal database reconciliation before submission.
+
+
+\end{appendices}
+\bibliography{references}
+\end{document}

@@ -25,7 +25,7 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 | Formal-search status | `../formal_search_log_v0.2.csv` |
 | Record screening | `../screening_log.csv` |
 | Study/report linkage | `../study_report_map.csv` |
-| Current 26-report dataset | `../interim_26report/` |
+| Current 27-report dataset | `../interim_27report/` |
 | Expansion plan | `../corpus_expansion_30_35_plan_2026-11-25.md` |
 | Full-text priority queue | `../corpus_expansion/doi_fulltext_priority_queue.md` |
 | PRISMA checklist | `../prisma_2020_checklist_working.md` |
@@ -45,7 +45,7 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 
 - `../manuscript/ieee_access/`
 - `../output/docx/`
-- older `interim_*` directories except `interim_26report/`
+- older `interim_*` directories except `interim_27report/`
 - superseded venue decisions and earlier release manifests
 - raw provider JSON, failed/quota-only tasks, unaccepted ledgers, and candidate
   output without a Codex PASS gate

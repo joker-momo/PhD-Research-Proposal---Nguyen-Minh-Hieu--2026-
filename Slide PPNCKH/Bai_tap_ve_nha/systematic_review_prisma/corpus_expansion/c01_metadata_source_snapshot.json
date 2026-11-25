@@ -1,0 +1,743 @@
+{
+  "doi": "10.3390/drones10060410",
+  "status": "retrieved",
+  "title_matches": true,
+  "crossref_title": "Orion: A Collaborative Edge Inference Framework for Large Language Models Processing Multi-Sensor Data in UAV Swarms",
+  "type": "journal-article",
+  "authors": [
+    {
+      "ORCID": "https://orcid.org/0009-0006-9555-7945",
+      "authenticated-orcid": false,
+      "given": "Tianchou",
+      "family": "Yang",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "School of Computer Science and Technology, Zhejiang Normal University, Jinhua 321004, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0009-0004-8366-6998",
+      "authenticated-orcid": false,
+      "given": "Hongjie",
+      "family": "Guo",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "School of Computer Science and Technology, Zhejiang Normal University, Jinhua 321004, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Zhengyu",
+      "family": "Zhao",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "School of Computer Science and Technology, Zhejiang Normal University, Jinhua 321004, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-9868-8103",
+      "authenticated-orcid": false,
+      "given": "Donglin",
+      "family": "Zhu",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "School of Computer Science and Technology, Zhejiang Normal University, Jinhua 321004, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "venue": [
+    "Drones"
+  ],
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        26
+      ]
+    ]
+  },
+  "published_online": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        26
+      ]
+    ]
+  },
+  "published_print": null,
+  "created": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        26
+      ]
+    ],
+    "date-time": "2026-05-26T11:02:51Z",
+    "timestamp": 1779793371000
+  },
+  "relation": {},
+  "source_url": "https://api.crossref.org/works/10.3390/drones10060410",
+  "raw_metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          30
+        ]
+      ],
+      "date-time": "2026-07-30T09:03:22Z",
+      "timestamp": 1785402202417,
+      "version": "3.56.0"
+    },
+    "reference-count": 41,
+    "publisher": "MDPI AG",
+    "issue": "6",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              26
+            ]
+          ],
+          "date-time": "2026-05-26T00:00:00Z",
+          "timestamp": 1779753600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "62402450"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "62402450"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "award": [
+          "62402450"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "62402450"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "https://ror.org/01h0zpd94",
+            "id-type": "ROR",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100004731",
+        "name": "Zhejiang Provincial Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "LQ24F020024"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "LQ24F020024"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100004731",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "award": [
+          "LQ24F020024"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "LQ24F020024"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "https://ror.org/04aqat463",
+            "id-type": "ROR",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Drones"
+    ],
+    "abstract": "<jats:p>Unmanned aerial vehicle (UAV) swarms generate massive multi-modal sensor data streams from onboard payloads such as RGB cameras, LiDAR, and thermal sensors. Large language models (LLMs) can interpret these data for natural language-based swarm coordination. However, deploying LLMs directly on resource-constrained UAV nodes faces a critical bottleneck. Long-context textual sensor logs (e.g., continuous status reports with GPS, altitude, and detection events) lead to high prefill latency. Existing distributed inference frameworks suffer from load imbalance and pipeline bubbles, violating real-time mission requirements. To address these issues, we propose Orion, an edge-only collaborative inference framework for LLM-based sensor data processing in heterogeneous UAV swarms. Orion incorporates three innovations: (1) optimal model partitioning via dynamic programming, (2) adaptive sequence partitioning that balances causal attention load across pipeline stages, and (3) a predictive decoding mechanism that speculatively generates the first token during idle intervals. Experiments on a comprehensive simulation framework ((using Meta’s Llama-2 (Large Language Model Meta AI)) 7B/13B/70B and simulated UAV swarm sensor traces) show that Orion reduces prefill latency by 81% (7B) and 78% (13B) compared to the best cloud–UAV baseline. Among the evaluated frameworks, Orion is the only framework capable of running the full 70B model on memory-constrained UAV nodes, enabling real-time sensor-aware LLM inference.</jats:p>",
+    "DOI": "10.3390/drones10060410",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          26
+        ]
+      ],
+      "date-time": "2026-05-26T11:02:51Z",
+      "timestamp": 1779793371000
+    },
+    "page": "410",
+    "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Orion: A Collaborative Edge Inference Framework for Large Language Models Processing Multi-Sensor Data in UAV Swarms"
+    ],
+    "prefix": "10.3390",
+    "volume": "10",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0006-9555-7945",
+        "authenticated-orcid": false,
+        "given": "Tianchou",
+        "family": "Yang",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, Zhejiang Normal University, Jinhua 321004, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0004-8366-6998",
+        "authenticated-orcid": false,
+        "given": "Hongjie",
+        "family": "Guo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, Zhejiang Normal University, Jinhua 321004, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhengyu",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, Zhejiang Normal University, Jinhua 321004, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9868-8103",
+        "authenticated-orcid": false,
+        "given": "Donglin",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, Zhejiang Normal University, Jinhua 321004, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1968",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          26
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "15226",
+        "DOI": "10.1109/ACCESS.2025.3642325",
+        "article-title": "LLM-guided distributed model predictive control for decentralized UAV formations",
+        "volume": "14",
+        "author": "Ahmed",
+        "year": "2026",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "ref_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "173016",
+        "DOI": "10.1109/ACCESS.2025.3609022",
+        "article-title": "Study on the Path Optimization Method of Autonomous Navigation of Uncrewed Aerial Vehicles Integrating Multi-Sensor Data",
+        "volume": "13",
+        "author": "Yan",
+        "year": "2025",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "ref_3",
+        "doi-asserted-by": "crossref",
+        "first-page": "64",
+        "DOI": "10.1109/MIOT.2025.3575886",
+        "article-title": "SwarmChain: Collaborative LLM Inference for UAV Swarm Control",
+        "volume": "8",
+        "author": "Han",
+        "year": "2025",
+        "journal-title": "IEEE Internet Things Mag."
+      },
+      {
+        "key": "ref_4",
+        "doi-asserted-by": "crossref",
+        "first-page": "1166",
+        "DOI": "10.1109/OJVT.2024.3446799",
+        "article-title": "Large Language Models for UAVs: Current State and Pathways to the Future",
+        "volume": "5",
+        "author": "Javaid",
+        "year": "2024",
+        "journal-title": "IEEE Open J. Veh. Technol."
+      },
+      {
+        "key": "ref_5",
+        "first-page": "87",
+        "article-title": "Agentic AI Meets Edge Computing in Autonomous UAV Swarms",
+        "volume": "8",
+        "author": "Nguyen",
+        "year": "2025",
+        "journal-title": "IEEE Internet Things Mag."
+      },
+      {
+        "key": "ref_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Maletić, M., Peti, M., Petrović, T., and Bogdan, S. (2025, January 2–5). Spatial-Semantic Reasoning using Large Language Models for Efficient UAV Search Operations. Proceedings of the 12th European Conference on Mobile Robots, Padova, Italy.",
+        "DOI": "10.1109/ECMR65884.2025.11163229"
+      },
+      {
+        "key": "ref_7",
+        "doi-asserted-by": "crossref",
+        "first-page": "179",
+        "DOI": "10.55056/jec.1000",
+        "article-title": "Edge intelligence unleashed: A survey on deploying large language models in resource-constrained environments",
+        "volume": "4",
+        "author": "Semerikov",
+        "year": "2025",
+        "journal-title": "J. Edge Comput."
+      },
+      {
+        "key": "ref_8",
+        "doi-asserted-by": "crossref",
+        "first-page": "11253",
+        "DOI": "10.1109/TMC.2024.3415661",
+        "article-title": "Large Language Models (LLMs) Inference Offloading and Resource Allocation in Cloud-Edge Computing: An Active Inference Approach",
+        "volume": "23",
+        "author": "He",
+        "year": "2024",
+        "journal-title": "IEEE Trans. Mob. Comput."
+      },
+      {
+        "key": "ref_9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jin, H.P., and Wu, Y.Z. (2025, January 7–12). CE-CoLLM: Efficient and Adaptive Large Language Models Through Cloud-Edge Collaboration. Proceedings of the 32nd IEEE International Conference on Web Services, Helsinki, Finland.",
+        "DOI": "10.1109/ICWS67624.2025.00046"
+      },
+      {
+        "key": "ref_10",
+        "doi-asserted-by": "crossref",
+        "first-page": "637",
+        "DOI": "10.1109/JIOT.2016.2579198",
+        "article-title": "Edge Computing: Vision and Challenges",
+        "volume": "3",
+        "author": "Shi",
+        "year": "2016",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "key": "ref_11",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kristiani, E., Verma, V.K., and Yang, C.-T. (2026). Deploying LLM Transformer on Edge Computing Devices: A Survey of Strategies, Challenges, and Future Directions. AI, 7.",
+        "DOI": "10.3390/ai7010015"
+      },
+      {
+        "key": "ref_12",
+        "doi-asserted-by": "crossref",
+        "first-page": "3820",
+        "DOI": "10.1109/COMST.2025.3527641",
+        "article-title": "Mobile Edge Intelligence for Large Language Models: A Contemporary Survey",
+        "volume": "27",
+        "author": "Qu",
+        "year": "2025",
+        "journal-title": "IEEE Commun. Surv. Tutor."
+      },
+      {
+        "key": "ref_13",
+        "unstructured": "Li, Y.C., Wen, H., Wang, W.J., Li, X.Y., Yuan, Y.Z., Liu, G.H., Liu, J.C., Xu, W.X., Wang, X., and Sun, Y. (2024). Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security. arXiv."
+      },
+      {
+        "key": "ref_14",
+        "unstructured": "Wang, Y.M., Lin, Y., Zeng, X.D., and Zhang, G.N. (2023). PrivateLoRA For Efficient Privacy Preserving LLM. arXiv."
+      },
+      {
+        "key": "ref_15",
+        "doi-asserted-by": "crossref",
+        "first-page": "137",
+        "DOI": "10.23919/JCIN.2024.10582826",
+        "article-title": "Multi-UAV Collaborative Edge Computing Algorithm for Joint Task Offloading and Channel Resource Allocation",
+        "volume": "9",
+        "author": "Wei",
+        "year": "2024",
+        "journal-title": "J. Commun. Inf. Netw."
+      },
+      {
+        "key": "ref_16",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cai, F.L., Yuan, D., Yang, Z., and Cui, L.Z. (2024, January 7–13). Edge-LLM: A Collaborative Framework for Large Language Model Serving in Edge Computing. Proceedings of the 31st IEEE International Conference on Web Services, Shenzhen, China.",
+        "DOI": "10.1109/ICWS62655.2024.00099"
+      },
+      {
+        "key": "ref_17",
+        "doi-asserted-by": "crossref",
+        "first-page": "404",
+        "DOI": "10.1109/MNET.2024.3376419",
+        "article-title": "NetGPT: An AI-Native Network Architecture for Provisioning Beyond Personalized Generative Services",
+        "volume": "38",
+        "author": "Chen",
+        "year": "2024",
+        "journal-title": "IEEE Netw."
+      },
+      {
+        "key": "ref_18",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Shen, X., Dong, P., Lu, L., Kong, Z.L., Li, Z.G., Lin, M., Wu, C., and Wang, Y.Z. (2024, January 20–27). Agile-Quant: Activation-Guided Quantization for Faster Inference of LLMs on the Edge. Proceedings of the 38th AAAI Conference on Artificial Intelligence, Vancouver, QC, Canada.",
+        "DOI": "10.1609/aaai.v38i17.29860"
+      },
+      {
+        "key": "ref_19",
+        "doi-asserted-by": "crossref",
+        "first-page": "12",
+        "DOI": "10.1145/3714983.3714987",
+        "article-title": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
+        "volume": "28",
+        "author": "Lin",
+        "year": "2025",
+        "journal-title": "GetMobile Mob. Comput. Commun. Rev."
+      },
+      {
+        "key": "ref_20",
+        "doi-asserted-by": "crossref",
+        "first-page": "13119",
+        "DOI": "10.1109/JIOT.2024.3524255",
+        "article-title": "EdgeShard: Efficient LLM Inference via Collaborative Edge Computing",
+        "volume": "12",
+        "author": "Zhang",
+        "year": "2025",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "key": "ref_21",
+        "doi-asserted-by": "crossref",
+        "first-page": "13648",
+        "DOI": "10.1109/TMC.2025.3590969",
+        "article-title": "Quality-of-Service Aware LLM Routing for Edge Computing with Multiple Experts",
+        "volume": "24",
+        "author": "Yang",
+        "year": "2025",
+        "journal-title": "IEEE Trans. Mob. Comput."
+      },
+      {
+        "key": "ref_22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ye, S.Y., Ouyang, B., Zeng, L.K., Qian, T.Y., Chu, X.W., and Tang, J. (2025, January 19–22). Jupiter: Fast and Resource-Efficient Collaborative Inference of Generative LLMs on Edge Devices. Proceedings of the 44th IEEE International Conference on Computer Communications, London, UK.",
+        "DOI": "10.1109/INFOCOM55648.2025.11044734"
+      },
+      {
+        "key": "ref_23",
+        "unstructured": "Brown, T.B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., and Askell, A. (2020, January 6–12). Language Models are Few-Shot Learners. Proceedings of the 34th Conference on Neural Information Processing Systems, Vancouver, QC, Canada."
+      },
+      {
+        "key": "ref_24",
+        "unstructured": "Touvron, H., Martin, L., Stone, K., Albert, P., Almahairi, A., Babaei, Y., Bashlykov, N., Batra, S., Bhargava, P., and Bhosale, S. (2023). Llama 2: Open Foundation and Fine-Tuned Chat Models. arXiv."
+      },
+      {
+        "key": "ref_25",
+        "doi-asserted-by": "crossref",
+        "first-page": "105096",
+        "DOI": "10.1016/j.engappai.2022.105096",
+        "article-title": "Visual Sensor Network Stimulation Model Identification via Gaussian Mixture Model and Deep Embedded Features",
+        "volume": "114",
+        "author": "Varotto",
+        "year": "2022",
+        "journal-title": "Eng. Appl. Artif. Intell."
+      },
+      {
+        "key": "ref_26",
+        "doi-asserted-by": "crossref",
+        "first-page": "3377",
+        "DOI": "10.1109/TAC.2022.3191791",
+        "article-title": "Inference in Opinion Dynamics under Social Pressure",
+        "volume": "68",
+        "author": "Jadbabaie",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Autom. Control"
+      },
+      {
+        "key": "ref_27",
+        "doi-asserted-by": "crossref",
+        "first-page": "3164",
+        "DOI": "10.1109/TSC.2025.3603576",
+        "article-title": "Serving LLM in Distributed GPU Cluster with Fine-Grain Pipeline Constraints",
+        "volume": "18",
+        "author": "Lin",
+        "year": "2025",
+        "journal-title": "IEEE Trans. Serv. Comput."
+      },
+      {
+        "key": "ref_28",
+        "doi-asserted-by": "crossref",
+        "first-page": "1254",
+        "DOI": "10.1016/j.adhoc.2012.12.004",
+        "article-title": "Flying Ad-Hoc Networks (FANETs): A Survey",
+        "volume": "11",
+        "author": "Bekmezci",
+        "year": "2013",
+        "journal-title": "Ad Hoc Netw."
+      },
+      {
+        "key": "ref_29",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tripathi, V., Kadota, I., Tal, E., Rahman, M.S., Warren, A., Karaman, S., and Modiano, E. (2023, January 17–20). WiSwarm: Age-of-Information-Based Wireless Networking for Collaborative Teams of UAVs. Proceedings of the IEEE INFOCOM 2023—IEEE Conference on Computer Communications, Hoboken, NJ, USA.",
+        "DOI": "10.1109/INFOCOM53939.2023.10228860"
+      },
+      {
+        "key": "ref_30",
+        "unstructured": "(2024). IEEE Standard for Information Technology–Telecommunications and Information Exchange Between Systems Local and Metropolitan Area Networks–Specific Requirements Part 11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications (Standard No. IEEE Std 802.11-2024)."
+      },
+      {
+        "key": "ref_31",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Xia, H.M., Yang, Z., Dong, Q.X., Wang, P.Y., Li, Y.Q., Ge, T., Liu, T.Y., Li, W.J., and Sui, Z.F. (2024). Unlocking Efficiency in Large Language Model Inference: A Comprehensive Survey of Speculative Decoding. Findings of the Association for Computational Linguistics: ACL 2024, Bangkok, Thailand, 11–16 August 2024, Association for Computational Linguistics.",
+        "DOI": "10.18653/v1/2024.findings-acl.456"
+      },
+      {
+        "key": "ref_32",
+        "unstructured": "Cai, T., Li, Y., Geng, Z., Peng, H., Lee, J.D., Chen, D., and Dao, T. (2024, January 21–27). Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads. Proceedings of the 41st International Conference on Machine Learning, Vienna, Austria."
+      },
+      {
+        "key": "ref_33",
+        "unstructured": "Leviathan, Y., Kalman, M., and Matias, Y. (2023, January 23–29). Fast Inference from Transformers via Speculative Decoding. Proceedings of the 40th International Conference on Machine Learning, Honolulu, HI, USA."
+      },
+      {
+        "key": "ref_34",
+        "doi-asserted-by": "crossref",
+        "first-page": "386",
+        "DOI": "10.1109/OJCOMS.2025.3649430",
+        "article-title": "Reliability of Wi-Fi, LTE, and 5G-Based UAV RC Links in ISM Bands: Uplink Interference Asymmetry Analysis and HARQ Design",
+        "volume": "7",
+        "author": "Lee",
+        "year": "2026",
+        "journal-title": "IEEE Open J. Commun. Soc."
+      },
+      {
+        "key": "ref_35",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Do, D.-T., Le, N.-K., and Nguyen, L.-M. (2026, January 20–27). AdaSpec: Adaptive Multilingual Speculative Decoding with Self-Synthesized Language-Aware Training and Vocabulary Simplification. Proceedings of the 40th AAAI Conference on Artificial Intelligence, Singapore.",
+        "DOI": "10.1609/aaai.v40i36.40307"
+      },
+      {
+        "key": "ref_36",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Li, X.C., Spatharakis, D., Ghafouri, S., Fan, J.K., Vandierendonck, H., John, D., Ji, B., and Nikolopoulos, D.S. (2025, January 3–6). SLED: A Speculative LLM Decoding Framework for Efficient Edge Serving. Proceedings of the 10th ACM/IEEE Symposium on Edge Computing, Arlington, VA, USA.",
+        "DOI": "10.1145/3769102.3770608"
+      },
+      {
+        "key": "ref_37",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zheng, C., and Yang, T.T. (2025, January 23–25). Communication-Efficient Collaborative LLM Inference via Distributed Speculative Decoding. Proceedings of the 17th International Conference on Wireless Communications and Signal Processing, Chongqing, China.",
+        "DOI": "10.1109/WCSP68525.2025.1010651"
+      },
+      {
+        "key": "ref_38",
+        "unstructured": "Liu, X., Luo, L.Z., Tang, M., Huang, C., and Chen, X. (2025). FlowSpec: Continuous Pipelined Speculative Decoding for Efficient Distributed LLM Inference. arXiv."
+      },
+      {
+        "key": "ref_39",
+        "unstructured": "Wei, J., Wang, X.Z., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q.V., and Zhou, D. (December, January 28). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. Proceedings of the 36th Conference on Neural Information Processing Systems, New Orleans, LA, USA."
+      },
+      {
+        "key": "ref_40",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Shi, L.H., Li, Z.C., Zhang, L.F., Qi, B.Y., Liu, G.M., and Zhao, H. (2026, January 20–27). Scaling LLM Speculative Decoding: Non-Autoregressive Forecasting in Large-Batch Scenarios. Proceedings of the 40th AAAI Conference on Artificial Intelligence, Singapore.",
+        "DOI": "10.1609/aaai.v40i39.40576"
+      },
+      {
+        "key": "ref_41",
+        "unstructured": "Kumar, T., Dao, T., and May, A. (2026). Speculative Speculative Decoding. arXiv."
+      }
+    ],
+    "container-title": [
+      "Drones"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.mdpi.com/2504-446X/10/6/410/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          28
+        ]
+      ],
+      "date-time": "2026-05-28T12:37:59Z",
+      "timestamp": 1779971879000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.mdpi.com/2504-446X/10/6/410"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          26
+        ]
+      ]
+    },
+    "references-count": 41,
+    "journal-issue": {
+      "issue": "6",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "drones10060410"
+    ],
+    "URL": "https://doi.org/10.3390/drones10060410",
+    "relation": {},
+    "ISSN": [
+      "2504-446X"
+    ],
+    "issn-type": [
+      {
+        "value": "2504-446X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          26
+        ]
+      ]
+    }
+  }
+}

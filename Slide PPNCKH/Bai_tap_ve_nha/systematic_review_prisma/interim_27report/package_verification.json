@@ -1,0 +1,16 @@
+{
+  "archive_files": 5,
+  "archive_crc": "PASS",
+  "source_file_hashes": {
+    "main.tex": "622b308f4513211477d745bb3c4cc0a6c48a558f3ee2d266857d41d71e460339",
+    "references.bib": "b2a3bfaaf09a97db60a7b58ce79f0cbeb30cf9b2dfbd428aaa00b6bb4f76798a",
+    "sn-jnl.cls": "36d0c3273a59d48dc6a9c7b080dfa1ec50dc10229d8751568d1f2e490ffa5ecc",
+    "sn-vancouver-num.bst": "7fa6df12ec8e8945c86958a50fb703d181522745adcf72bf95a86f3633540e8a",
+    "README.md": "0687075e6f4b7af4da27e5b50a98b17ddaa064f3efed0a52eb153d843a50cf63"
+  },
+  "clean_rebuild_exit": 0,
+  "page_texts_equal": true,
+  "pages": 17,
+  "archive_sha256": "0fce64db54ce15c0c903c171390c13e0c18445bd344e7265d3c5a2e1cb2bad47",
+  "scope": "Source-package reproducibility only;not final research or portal validation"
+}

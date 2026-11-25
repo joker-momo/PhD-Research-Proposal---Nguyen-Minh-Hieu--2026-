@@ -1,0 +1,370 @@
+{
+  "records": [
+    {
+      "candidate_id": "C01",
+      "title": "Orion: A Collaborative Edge Inference Framework for Large Language Models Processing Multi-Sensor Data in UAV Swarms",
+      "authors": [
+        "Tianchou Yang",
+        "Hongjie Guo",
+        "Zhengyu Zhao",
+        "Donglin Zhu"
+      ],
+      "year": "2026",
+      "venue": "Drones",
+      "doi": "10.3390/drones10060410",
+      "identity_match": "MATCH",
+      "metadata_sources": [
+        {
+          "url": "https://www.mdpi.com/2504-446X/10/6/410",
+          "fields": [
+            "title",
+            "authors",
+            "year",
+            "venue",
+            "doi"
+          ]
+        },
+        {
+          "url": "corpus_expansion/codex_crossref_audit_2026-11-25.json",
+          "fields": [
+            "title",
+            "authors",
+            "year",
+            "venue",
+            "doi"
+          ]
+        }
+      ],
+      "publication": {
+        "online_date": "2026-05-26",
+        "print_date": "NOT_VERIFIED",
+        "window_status": "IN_WINDOW",
+        "basis": "Publisher HTML header gives 26 May 2026; no separate print or cover date was established.",
+        "source_url": "https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      "access_attempts": [
+        {
+          "url": "https://www.mdpi.com/2504-446X/10/6/410",
+          "http_status": "NOT_EXPOSED",
+          "content_type": "text/html",
+          "outcome": "FULLTEXT_BODY_OPENED",
+          "observed_evidence": "Publisher HTML exposed Sections 3 and 4 and body equations, algorithms, setup, baselines, and results."
+        },
+        {
+          "url": "https://www.mdpi.com/2504-446X/10/6/410/pdf",
+          "http_status": "403",
+          "content_type": "NOT_EXPOSED",
+          "outcome": "BLOCKED",
+          "observed_evidence": "Direct publisher PDF request returned 403; no local PDF was claimed."
+        }
+      ],
+      "fulltext_url": "https://www.mdpi.com/2504-446X/10/6/410",
+      "pdf_url": "NOT_FOUND",
+      "version": "PUBLISHER",
+      "page_count": 26,
+      "body_locators": [
+        {
+          "source_url": "https://www.mdpi.com/2504-446X/10/6/410",
+          "locator": "Section 3, lines 248-323",
+          "evidence": "Proposed Solution describes optimal LLM partitioning, contiguous layer blocks, device selection, communication cost, memory constraints, and dynamic programming."
+        },
+        {
+          "source_url": "https://www.mdpi.com/2504-446X/10/6/410",
+          "locator": "Section 4.1, lines 561-591",
+          "evidence": "Case Study describes Python simulation, five heterogeneous devices, bandwidth variation, Llama-2 models, metric, and baselines."
+        },
+        {
+          "source_url": "https://www.mdpi.com/2504-446X/10/6/410",
+          "locator": "Section 4.2, lines 596-606",
+          "evidence": "Case Study reports model-scale latency evaluation and baseline comparisons."
+        }
+      ],
+      "mechanism_notes": [
+        {
+          "claim": "The framework jointly optimizes contiguous LLM layer blocks and edge-device selection using dynamic programming under memory constraints.",
+          "locator": "Section 3.1, lines 262-323",
+          "source_url": "https://www.mdpi.com/2504-446X/10/6/410",
+          "status": "FULLTEXT_VERIFIED"
+        },
+        {
+          "claim": "Adaptive sequence partitioning uses a min-max dynamic program for non-uniform sequence chunks.",
+          "locator": "Section 3.2, lines 407-449",
+          "source_url": "https://www.mdpi.com/2504-446X/10/6/410",
+          "status": "FULLTEXT_VERIFIED"
+        },
+        {
+          "claim": "The evaluation is a Python simulation of heterogeneous UAV and network conditions, not measured physical onboard execution or physical flight.",
+          "locator": "Section 4.1, lines 561-568; Section 5, lines 690-693",
+          "source_url": "https://www.mdpi.com/2504-446X/10/6/410",
+          "status": "FULLTEXT_VERIFIED"
+        }
+      ],
+      "duplicate_existing26": "NO",
+      "study_family": "NOT_VERIFIED",
+      "unresolved_items": [
+        "No publisher PDF opened; publisher HTML was used.",
+        "No physical UAV flight or measured multi-UAV hardware execution was established.",
+        "Study-family overlap with existing reports was not adjudicated."
+      ],
+      "duplicate_check_locator": "corpus_expansion/batchA_existing26_duplicate_check.json"
+    }
+  ],
+  "C01_fulltext_assessment": {
+    "source_url": "https://www.mdpi.com/2504-446X/10/6/410",
+    "source_version": "PUBLISHER_HTML",
+    "inclusion_checks": [
+      {
+        "criterion": "IC1",
+        "status": "YES",
+        "evidence": "The report presents Orion, a collaborative inference framework with system formulation, algorithms, and evaluation.",
+        "locator": "Section 3, lines 248-323; Section 4, lines 561-606, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "criterion": "IC2",
+        "status": "YES",
+        "evidence": "The architecture uses a heterogeneous UAV swarm with multiple UAV onboard devices and a ground/cloud comparison node.",
+        "locator": "Section 4.1, lines 561-567, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "criterion": "IC3",
+        "status": "YES",
+        "evidence": "LLM inference is distributed through layer partitioning, sequence partitioning, and predictive decoding across edge devices.",
+        "locator": "Section 3.1-3.3, lines 248-323 and 407-560, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "criterion": "IC4",
+        "status": "YES",
+        "evidence": "The study provides a Python simulation and reported latency evaluation with named baselines.",
+        "locator": "Section 4.1-4.2, lines 561-606, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "criterion": "IC5",
+        "status": "YES",
+        "evidence": "Publisher header gives 26 May 2026, within 2021-01-01 through 2026-11-25.",
+        "locator": "Publisher header lines 141-160, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "criterion": "IC6",
+        "status": "YES",
+        "evidence": "The publisher HTML is in English.",
+        "locator": "Full publisher HTML, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "criterion": "IC7",
+        "status": "YES",
+        "evidence": "The article is presented as a journal article in Drones 2026, 10(6), 410.",
+        "locator": "Publisher header lines 138-161, https://www.mdpi.com/2504-446X/10/6/410"
+      }
+    ],
+    "exclusion_checks": [
+      {
+        "criterion": "EC1",
+        "status": "NO",
+        "evidence": "The body evaluates inference execution; it is not a training-only or federated-learning study.",
+        "locator": "Section 3.1-3.3, lines 248-560, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "criterion": "EC2",
+        "status": "NO",
+        "evidence": "Model layer partitioning and distributed LLM inference are explicit, so this is not indivisible generic offloading.",
+        "locator": "Section 3.1, lines 262-323, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "criterion": "EC3",
+        "status": "NO",
+        "evidence": "The evaluated architecture is multi-device and multi-UAV rather than single-UAV-only perception.",
+        "locator": "Section 4.1, lines 561-568, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "criterion": "EC4",
+        "status": "NO",
+        "evidence": "The workload is LLM inference and the body evaluates compute/network behavior, not communication-only routing or caching.",
+        "locator": "Section 3.1-3.3 and Section 4.1-4.2, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "criterion": "EC5",
+        "status": "NO",
+        "evidence": "The report is a journal article with full publisher HTML body, not an editorial, tutorial, abstract-only record, thesis, patent, book chapter, or review.",
+        "locator": "Publisher header lines 138-161 and body Sections 3-4, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "criterion": "EC6",
+        "status": "NO",
+        "evidence": "The supplied duplicate audit compares all five candidate DOI/title records against 26 existing rows and reports zero exact DOI/title matches. Semantic study-family overlap remains separate and unresolved.",
+        "locator": "corpus_expansion/batchA_existing26_duplicate_check.json:comparison_count=5, exact_doi_title_matches=0, not_established=semantic study-family identity; interim_26report/eligibility_reaudit.csv"
+      },
+      {
+        "criterion": "EC7",
+        "status": "NO",
+        "evidence": "The publisher HTML body was retrieved and readable; PDF retrieval failure does not prevent HTML full-text assessment.",
+        "locator": "Sections 3-4, https://www.mdpi.com/2504-446X/10/6/410"
+      }
+    ],
+    "decision": "INCLUDE",
+    "primary_reason": "All inherited inclusion statuses IC1-IC7 are YES, EC1-EC5 and EC7 are NO, and EC6 is resolved NO by the exact DOI/title comparison; no mandatory eligibility judgment remains UNCERTAIN.",
+    "study_family": {
+      "related_ids": [],
+      "relationship": "No exact duplicate or related published version identified in the supplied 26-row DOI/title comparison; semantic study-family overlap remains NOT_VERIFIED."
+    },
+    "extraction": {
+      "architecture_and_uav_role": "Heterogeneous UAV swarm and edge-only collaborative inference; Section 4.1 models three NVIDIA AGX Orin modules and one Orin NX module as the UAV swarm, with a cloud base station used for comparison. Locator: Section 4.1, lines 561-567, https://www.mdpi.com/2504-446X/10/6/410",
+      "exact_inference_topology": "Pipeline-parallel distributed LLM inference across selected edge devices; contiguous layer blocks are assigned to distinct devices, with activation transfer between stages. Locator: Section 3.1, lines 262-292, https://www.mdpi.com/2504-446X/10/6/410",
+      "model_and_dataset": "Llama-2 7B, 13B, and 70B; simulated UAV sensor traces and variable sensor-log lengths. No named public dataset reported. Locator: Section 4.1, lines 568-568, and Section 4.2, lines 596-606, https://www.mdpi.com/2504-446X/10/6/410",
+      "partition_granularity": "Contiguous model-layer blocks plus non-uniform input-sequence chunks; predictive decoding operates at token level. Locator: Sections 3.1-3.3, lines 262-323 and 407-560, https://www.mdpi.com/2504-446X/10/6/410",
+      "decision_variables_objective_constraints": "Choose edge-device subset, contiguous layer intervals, and sequence chunk boundaries; minimize maximum pipeline-stage computation-plus-communication latency subject to per-device memory capacity. Locator: Section 3.1, lines 277-292; Section 3.2, lines 421-444, https://www.mdpi.com/2504-446X/10/6/410",
+      "solver": "State-compressed dynamic programming for device/layer partitioning and min-max dynamic programming for sequence partitioning; predictive decoding uses speculative execution. Locator: Sections 3.1-3.3, lines 293-323, 427-449, and 491-560, https://www.mdpi.com/2504-446X/10/6/410",
+      "mobility_channel_failure_assumptions": "Inter-UAV bandwidth is varied from 400-1000 Mb/s with ±20% fluctuation; air-to-ground bandwidth is varied from 100-400 Mb/s. Section 4.8 models computation and communication noise, but no UAV-failure recovery experiment is reported. Predictive-decoding rollback concerns incorrect token speculation, not UAV failure recovery. Locator: https://www.mdpi.com/2504-446X/10/6/410, Sections 4.1, 4.4-4.5, 4.7-4.8, lines 565-567, 617-635, 647-659.",
+      "evaluation_setup": "Python 3.13.5 simulation of five heterogeneous devices, Llama-2 7B/13B/70B, sensor-log lengths, bandwidth settings, prediction-accuracy break-even/rollback evaluation, and environmental-noise sensitivity evaluation. No measured onboard execution or physical flight validation. Locator: https://www.mdpi.com/2504-446X/10/6/410, Sections 4.1-4.8, lines 561-659; Section 5.5, lines 689-693.",
+      "baselines": "Edge-Solo, Cloud-Edge-Even, Cloud-Edge-Opt, EdgeShard, and Jupiter. Locator: Section 4.1, lines 570-590, https://www.mdpi.com/2504-446X/10/6/410",
+      "metric_definitions": "Primary outcome is prefill/end-to-end latency; Section 4.7 evaluates prediction-accuracy break-even using rollback overhead, while Section 4.8 compares static-partition latency with re-optimized latency under computation and communication noise. Locator: https://www.mdpi.com/2504-446X/10/6/410, Sections 3.1 and 3.3, lines 267-292 and 551-560; Sections 4.7-4.8, lines 647-659.",
+      "units": "Latency is reported in milliseconds; bandwidth is reported in Mb/s; sensor input length is reported in tokens; memory is reported in GB; compute capability is reported in TFLOPS. Locator: Sections 3.1 and 4.1-4.2, lines 267-292 and 565-606, https://www.mdpi.com/2504-446X/10/6/410",
+      "repeated_runs_seeds": "Section 4.7 reports 300 Monte Carlo simulations per configuration; Section 4.8 reports N=100 independent trials for each nominal-noise and extreme-noise scenario. Random seeds are not located. Locator: https://www.mdpi.com/2504-446X/10/6/410, Sections 4.7-4.8, lines 647-659.",
+      "outcome_conditions": "Section 4.7 uses Llama-2 13B, 64-token input, 1000 Mb/s inter-UAV bandwidth with ±20% fluctuation, and 300 simulations per configuration. Section 4.8 uses Llama-2 13B, 64-token prefill, four edge devices, nominal noise σcomp=10%, σcomm=20%, extreme noise σ=30%, and 100 trials per scenario. Locator: https://www.mdpi.com/2504-446X/10/6/410, Sections 4.7-4.8, lines 647-659.",
+      "limitations": "Physical deployment, real FANET mobility, interference, topology changes, and thermal effects remain future work; Section 5.5 explicitly states that physical UAV validation has not yet been performed. Locator: https://www.mdpi.com/2504-446X/10/6/410, Section 5.5, lines 689-693.",
+      "code_data_artifacts": "The Data Availability Statement says original contributions are included in the article and directs further inquiries to the corresponding author; no located public code, dataset, trace archive, or repository is reported. Locator: https://www.mdpi.com/2504-446X/10/6/410, lines 705-707.",
+      "funding_conflicts": "Funding: National Natural Science Foundation of China Grant 62402450 and Zhejiang Provincial Natural Science Foundation Grant LQ24F020024; conflicts: authors declare none. Locator: Funding and Conflicts of Interest, lines 701-711, https://www.mdpi.com/2504-446X/10/6/410",
+      "source_locators": "Publisher HTML: Sections 3.1-3.3 (methods; lines 248-560); Sections 4.1-4.8 (evaluation; Sections 4.7-4.8 explicitly, lines 561-659); Section 5.5 (physical-validation limitation; lines 689-693); Funding, Data Availability Statement, and Conflicts of Interest sections (lines 701-711 and 705-707); publisher metadata/header (lines 138-161). URL: https://www.mdpi.com/2504-446X/10/6/410"
+    },
+    "appraisal": [
+      {
+        "domain": "Research question and system model are clearly defined",
+        "verdict": "yes",
+        "rationale": "The framework, device set, workload, and optimization target are explicitly described.",
+        "locator": "Section 3.1, lines 262-292, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "domain": "Assumptions, variables, and constraints are explicit",
+        "verdict": "yes",
+        "rationale": "Layer intervals, device sets, memory, computation, bandwidth, and objective equations are stated.",
+        "locator": "Section 3.1, lines 264-292, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "domain": "Experimental or simulation configuration is reproducible",
+        "verdict": "partial",
+        "rationale": "Device, model, bandwidth, and input-length settings are reported, but seeds and complete implementation details are not reported.",
+        "locator": "Section 4.1, lines 561-591, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "domain": "Baselines are relevant and implemented comparably",
+        "verdict": "partial",
+        "rationale": "Five named baselines are listed, but implementation comparability details are limited.",
+        "locator": "Section 4.1, lines 570-590, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "domain": "Metrics match the stated objective",
+        "verdict": "yes",
+        "rationale": "Prefill latency directly corresponds to the stated latency-minimization objective.",
+        "locator": "Section 3.1, lines 283-292; Section 4.1, lines 568-568, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "domain": "Results include variability, repeated runs, sensitivity analysis, or convergence evidence where applicable",
+        "verdict": "yes",
+        "rationale": "Evaluation includes explicit repetition and uncertainty coverage: 300 Monte Carlo simulations per configuration in Section 4.7 and 100 independent trials per noise scenario in Section 4.8, plus prediction-accuracy and environmental-noise sensitivity analyses. Seeds and intervals are not reported but repeated-run and sensitivity evidence is present.",
+        "locator": "https://www.mdpi.com/2504-446X/10/6/410, Sections 4.7-4.8, lines 647-659"
+      },
+      {
+        "domain": "Network mobility and channel assumptions are justified for the claimed setting",
+        "verdict": "partial",
+        "rationale": "Bandwidth fluctuation is modeled and motivated, but physical mobility and topology dynamics are left for future work.",
+        "locator": "Section 4.1, lines 565-567; Section 5, lines 690-693, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "domain": "Claims are bounded by the evaluated conditions",
+        "verdict": "partial",
+        "rationale": "The paper identifies physical deployment as future work, but broad real-time and robustness implications remain simulation-based.",
+        "locator": "Section 5, lines 690-693, https://www.mdpi.com/2504-446X/10/6/410"
+      },
+      {
+        "domain": "Code, data, traces, or sufficient implementation details are available",
+        "verdict": "partial",
+        "rationale": "The article provides substantial descriptive implementation detail, including dynamic-programming formulations and Algorithm 1 in Sections 3.1-3.3, a Python 3.13.5 simulation description and parameterized testbed in Section 4.1/Table 1, and repeated-run procedures in Sections 4.7-4.8. However, the Data Availability Statement says the original contributions are included in the article and directs further inquiries to the corresponding author; no public code, dataset, or trace repository was located on the publisher page. Therefore, the criterion is partially satisfied through descriptive implementation detail, while public artifact availability is not established.",
+        "locator": "https://www.mdpi.com/2504-446X/10/6/410; Sections3.1-3.3,4.1,4.7-4.8 and Data Availability"
+      },
+      {
+        "domain": "Limitations and conflicts or funding are reported",
+        "verdict": "yes",
+        "rationale": "Future physical-validation limitations, funding, and conflicts are explicitly reported.",
+        "locator": "Section 5, lines 690-693; Funding and Conflicts, lines 701-711, https://www.mdpi.com/2504-446X/10/6/410"
+      }
+    ],
+    "comparative_numeric_findings": [],
+    "doctoral_role": {
+      "role": "ADJACENT",
+      "basis": "The dynamic-programming contiguous layer-partitioning and adaptive sequence-partitioning ideas are transferable as configuration concepts for a ResNet-18 UAV benchmark, but the source evaluates Llama-2 simulation rather than ResNet-18 or measured UAV execution; no equivalence or new algorithm is claimed.",
+      "locator": "Section 3.1-3.2, lines 248-449; Section 4.1, lines 561-568, https://www.mdpi.com/2504-446X/10/6/410"
+    },
+    "unresolved_items": [
+      "Random seeds are not reported.",
+      "No public code, dataset, trace archive, or repository is reported.",
+      "No measured onboard execution or physical UAV flight validation is reported; physical deployment remains future work.",
+      "Semantic study-family overlap is not established."
+    ],
+    "evaluation_coverage": [
+      {
+        "subsection": "4.1",
+        "note": "Python 3.13.5 simulation; five heterogeneous devices; inter-UAV bandwidth 400-1000 Mb/s with ±20% fluctuation; air-to-ground bandwidth 100-400 Mb/s; Llama-2 scales and sensor-log lengths are specified.",
+        "locator": "https://www.mdpi.com/2504-446X/10/6/410, Section 4.1, lines 561-595"
+      },
+      {
+        "subsection": "4.2",
+        "note": "Evaluates latency across Llama-2 7B, 13B, and 70B with 64-token input, 1000 Mb/s inter-UAV bandwidth, and 200 Mb/s air-to-ground bandwidth.",
+        "locator": "https://www.mdpi.com/2504-446X/10/6/410, Section 4.2, lines 596-607"
+      },
+      {
+        "subsection": "4.3",
+        "note": "Evaluates Llama-2 13B latency for 16, 32, 64, and 128 tokens with 1000 Mb/s inter-UAV bandwidth and ±20% fluctuation.",
+        "locator": "https://www.mdpi.com/2504-446X/10/6/410, Section 4.3, lines 608-616"
+      },
+      {
+        "subsection": "4.4",
+        "note": "Evaluates Llama-2 13B latency under 100, 150, 200, and 400 Mb/s air-to-ground bandwidth with fixed inter-UAV bandwidth.",
+        "locator": "https://www.mdpi.com/2504-446X/10/6/410, Section 4.4, lines 617-625"
+      },
+      {
+        "subsection": "4.5",
+        "note": "Evaluates Llama-2 13B latency under 400, 600, 800, and 1000 Mb/s inter-UAV bandwidth with 200 Mb/s air-to-ground bandwidth.",
+        "locator": "https://www.mdpi.com/2504-446X/10/6/410, Section 4.5, lines 626-635"
+      },
+      {
+        "subsection": "4.6",
+        "note": "Ablation compares full Orion, Orion without adaptive sequence partitioning, and Orion without predictive decoding across 7B, 13B, and 70B models.",
+        "locator": "https://www.mdpi.com/2504-446X/10/6/410, Section 4.6, lines 636-645"
+      },
+      {
+        "subsection": "4.7",
+        "note": "Prediction-accuracy break-even/rollback evaluation uses 300 Monte Carlo simulations per configuration; rollback refers to incorrect speculative-token prediction, not UAV-failure recovery.",
+        "locator": "https://www.mdpi.com/2504-446X/10/6/410, Section 4.7, lines 646-655"
+      },
+      {
+        "subsection": "4.8",
+        "note": "Environmental-noise sensitivity uses computation and communication perturbations, nominal and extreme noise settings, and 100 independent trials per scenario.",
+        "locator": "https://www.mdpi.com/2504-446X/10/6/410, Section 4.8, lines 656-659"
+      }
+    ]
+  },
+  "summary": {
+    "accepted_candidate_ids": [
+      "C01"
+    ],
+    "requested": 1,
+    "returned": 1,
+    "fulltext_bodies_opened": 1,
+    "duplicates": 0
+  },
+  "provenance": {
+    "base_task": "01a2121c-dad1-74f5-97cc-e5ff8d69c90e",
+    "repair_task": "01a21225-4f5a-73b5-a21e-dfedbfa9e9db",
+    "rollup_task": "01a21229-e444-7236-9362-382eb4743344",
+    "view_written_by": "Codex",
+    "original_failed_raw_responses_preserved": true,
+    "q9_task": "01a21244-ade6-7c8a-b608-defded801c0c"
+  },
+  "acceptance": "PASS_C01_ONLY_BOUNDED_QUALITATIVE",
+  "limits": [
+    "Publisher HTML used; no local PDF",
+    "Final author and semantic study-family adjudication pending",
+    "C01 q9 corrected to literal protocol; prior23 require separate audit; manuscript domain9 aggregate withheld",
+    "Comparative numeric effects excluded",
+    "No final database selection or submission readiness"
+  ]
+}

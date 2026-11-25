@@ -1,0 +1,3 @@
+# Preserve official publisher template bytes; upstream whitespace is intentional.
+manuscript/sn_computer_science/sn-jnl.cls -text -whitespace
+manuscript/sn_computer_science/sn-vancouver-num.bst -text -whitespace

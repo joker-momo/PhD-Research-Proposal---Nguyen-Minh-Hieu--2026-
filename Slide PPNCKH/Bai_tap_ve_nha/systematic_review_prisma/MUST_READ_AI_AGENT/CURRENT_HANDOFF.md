@@ -9,10 +9,10 @@ in `06_FILE_MAP.md`, stop and reconcile the conflict before using either value.
 - Active target: SN Computer Science.
 - Canonical manuscript: `manuscript/sn_computer_science/main.tex` plus
   `references.bib`; PDF is compiled from LaTeX. Word is historical.
-- Current managed full-text arithmetic: 26 reports assessed = 23 included + 1
+- Current managed full-text arithmetic: 27 reports assessed = 24 included + 1
   excluded + 2 uncertain.
-- Current manuscript snapshot: 17 pages and 33 cited references.
-- Current appraisal snapshot: 230 judgments = 95 yes + 107 partial + 28 no.
+- Current manuscript snapshot: 17 pages and 34 cited references.
+- Current consistent nine-domain snapshot:216 judgments=100yes+110partial+6no. Domain9 aggregate withheld pending prior23 full-text reassessment;stored240 labels remain provisional.
 - The current synthesis is interim. Formal database identification and final
   PRISMA reconciliation are incomplete.
 - The routed A2A mechanism is implemented and verified. Gemini 3.8 Flash is
@@ -21,7 +21,7 @@ in `06_FILE_MAP.md`, stop and reconcile the conflict before using either value.
 
 ## Critical unresolved work
 
-1. Identify and accept 7-12 additional eligible studies only if the evidence
+1. Finish consistent domain9 reassessment and identify and accept 6-11 additional eligible studies only if the evidence
    supports the 30-35 target.
 2. Execute/export/reconcile IEEE Xplore, ACM Digital Library, Scopus, and Web of
    Science searches with complete audit logs.
@@ -52,3 +52,7 @@ exactly:
 - evidence accepted versus quarantined;
 - user confirmation required;
 - one measurable next task.
+
+## Latest source addition
+
+C01 Orion,DOI10.3390/drones10060410,publisher HTML26May2026,accepted only for bounded qualitative synthesis. Source:corpus_expansion/c01_accepted_record_v2.json and c01_combined_qualitative_gate.md. Simulation and speculative-token rollback do not establish physical UAV-failure recovery.

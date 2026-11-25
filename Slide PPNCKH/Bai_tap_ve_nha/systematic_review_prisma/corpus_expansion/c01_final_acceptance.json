@@ -1,0 +1,19 @@
+{
+  "rollup_task": "01a21229-e444-7236-9362-382eb4743344",
+  "checks": {
+    "D1": "PASS",
+    "D2": "PASS",
+    "D3": "PASS",
+    "D4": "PASS"
+  },
+  "combined_counts": {
+    "access_records": 5,
+    "inclusion_judgments": 7,
+    "exclusion_judgments": 7,
+    "extraction_fields": 17,
+    "appraisal_domains": 10,
+    "evaluation_subsections": 8,
+    "comparative_numeric_findings": 0
+  },
+  "scope": "PASS_BOUNDED_QUALITATIVE_WORKING_VIEW"
+}
