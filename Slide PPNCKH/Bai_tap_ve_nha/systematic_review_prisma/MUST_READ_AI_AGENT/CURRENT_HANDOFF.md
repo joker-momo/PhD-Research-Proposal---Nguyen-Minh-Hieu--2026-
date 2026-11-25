@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T06:29:31+07:00
+**updated_at:** 2026-11-26T06:35:14+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -66,6 +66,9 @@ stop and reconcile the conflict before starting or delegating another task.
   Failed primary preserved at `800a2ff`; retry adopted separately.
 - Progress: 41/46 reports through an accepted working gate; 28 INCLUDE,
   2 EXCLUDE, 11 UNCERTAIN; 5 not yet screened. No provider task is active.
+- Batch 08 primary rejected A3/A4/A5: four shared-author count errors and
+  unresolved SNCS scope reasoning; 40/40 literal locators do not cure these
+  failures. Review `screening_46/reviews/batch_08_review.md`. No adoption.
 - These working decisions are not final human adjudication, unique-study counts,
   final PRISMA arithmetic, or permission to change manuscript conclusions.
 
@@ -158,11 +161,11 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-After Batch 07 retry commit/merge/cleanup, route committed Batch 08 once
-(C22–C25 and SNCS) through the approved router. Preserve 11 UNCERTAIN
-decisions and the two exclusions; do not call these final study counts.
-Then reconcile all 46 working decisions, versions and study families.
-No provider task is active.
+After committing/merging/cleaning rejected Batch 08, prepare a targeted correction
+brief for C22,C23,C24,SNCS; preserve C25 unchanged. Correct shared-author counts
+and reassess SNCS under request/resource orchestration scope, without requiring
+layer splitting. Commit the brief before routed correction dispatch.
+No provider task is active; accepted count remains 41/46.
 
 ## Authorized concurrent baseline update
 
@@ -170,10 +173,10 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-07-retry",
-  "status": "completed",
-  "started_at": "2026-11-26T06:23:00+07:00",
-  "updated_at": "2026-11-26T06:29:31+07:00",
-  "completed_at": "2026-11-26T06:28:03+07:00"
+  "task_id": "screening-batch-08-primary",
+  "status": "rejected",
+  "started_at": "2026-11-26T06:29:59+07:00",
+  "updated_at": "2026-11-26T06:35:14+07:00",
+  "completed_at": "2026-11-26T06:35:14+07:00"
 }
 -->

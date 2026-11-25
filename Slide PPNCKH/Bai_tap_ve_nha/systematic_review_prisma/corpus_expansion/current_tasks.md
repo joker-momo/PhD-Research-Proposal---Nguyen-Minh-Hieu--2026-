@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T06:29:31+07:00
+Updated_at: 2026-11-26T06:35:14+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -27,7 +27,7 @@ without blocking dispatch.
 | Screening batch 05 | C05-C10 | accepted working screening with targeted correction | 1 INCLUDE, 5 UNCERTAIN; 48/48 combined locators; `screening_46/reviews/batch_05_correction_review.md` | Preserve unresolved dates/version/scope; batch 06 next after commit/merge/cleanup |
 | Screening batch 06 | C11-C16 | accepted working screening | 4 INCLUDE, 2 UNCERTAIN; 48/48 locators; `screening_46/reviews/batch_06_review.md` | Preserve dates/roles/families; batch 07 after commit/merge/cleanup |
 | Screening batch 07 | C17-C21 | retry accepted working screening | 3 INCLUDE, 1 EXCLUDE, 1 UNCERTAIN; 40/40 locators; `screening_46/reviews/batch_07_retry_review.md` | Preserve failed primary; batch 08 after commit/merge/cleanup |
-| Screening batch 08 | C22-C25, SNCS | not started | none | Wait for batch 07 commit and clean gate |
+| Screening batch 08 | C22-C25, SNCS | primary rejected A3/A4/A5 | 40/40 locators, four author-count errors and SNCS scope issue; `screening_46/reviews/batch_08_review.md` | Prepare targeted four-record correction after commit/merge/cleanup |
 
 ## Measured progress
 
@@ -70,10 +70,10 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-07-retry",
-  "status": "completed",
-  "started_at": "2026-11-26T06:23:00+07:00",
-  "updated_at": "2026-11-26T06:29:31+07:00",
-  "completed_at": "2026-11-26T06:28:03+07:00"
+  "task_id": "screening-batch-08-primary",
+  "status": "rejected",
+  "started_at": "2026-11-26T06:29:59+07:00",
+  "updated_at": "2026-11-26T06:35:14+07:00",
+  "completed_at": "2026-11-26T06:35:14+07:00"
 }
 -->
