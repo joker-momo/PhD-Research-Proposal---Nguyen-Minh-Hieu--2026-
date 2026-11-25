@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T06:47:27+07:00
+Updated_at: 2026-11-26T06:50:03+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -27,6 +27,7 @@ without blocking dispatch.
 | Screening batch 05 | C05-C10 | accepted working screening with targeted correction | 1 INCLUDE, 5 UNCERTAIN; 48/48 combined locators; `screening_46/reviews/batch_05_correction_review.md` | Preserve unresolved dates/version/scope; batch 06 next after commit/merge/cleanup |
 | Screening batch 06 | C11-C16 | accepted working screening | 4 INCLUDE, 2 UNCERTAIN; 48/48 locators; `screening_46/reviews/batch_06_review.md` | Preserve dates/roles/families; batch 07 after commit/merge/cleanup |
 | Screening batch 07 | C17-C21 | retry accepted working screening | 3 INCLUDE, 1 EXCLUDE, 1 UNCERTAIN; 40/40 locators; `screening_46/reviews/batch_07_retry_review.md` | Preserve failed primary; batch 08 after commit/merge/cleanup |
+| Consolidation | 46 reports | completed working ledger | 46 source-identical records; 136 unresolved occurrences; `screening_46/consolidated/validation.md` | Commit brief for nine dates and C08 identity/version |
 | Screening batch 08 | C22-C25, SNCS | correction accepted working screening | 4 INCLUDE, 1 UNCERTAIN; 32 corrected / 40 combined locators; `screening_46/reviews/batch_08_correction_review.md` | Consolidate 46-report ledger, then reconcile |
 
 ## Measured progress
@@ -70,10 +71,10 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-08-correction",
+  "task_id": "screening-46-consolidation",
   "status": "completed",
-  "started_at": "2026-11-26T06:38:05+07:00",
-  "updated_at": "2026-11-26T06:47:27+07:00",
-  "completed_at": "2026-11-26T06:47:27+07:00"
+  "started_at": "2026-11-26T06:49:11+07:00",
+  "updated_at": "2026-11-26T06:50:03+07:00",
+  "completed_at": "2026-11-26T06:50:03+07:00"
 }
 -->

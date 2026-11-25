@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T06:47:27+07:00
+**updated_at:** 2026-11-26T06:50:03+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -86,8 +86,8 @@ stop and reconcile the conflict before starting or delegating another task.
 
 ## Critical unresolved work
 
-1. After Batch 08 correction commit/merge/cleanup, consolidate accepted
-   decisions and prepare identity/date/scope reconciliation briefs. Timestamp
+1. The 46-report consolidation is complete; next prepare the committed
+   identity/date/version reconciliation brief. Timestamp
    standardization is merged at `1f04299` (35/35 tests PASS).
 2. Reconcile all accepted working decisions with report versions, study families,
    the canonical 27-report dataset, extraction, and quality appraisal.
@@ -163,12 +163,12 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-After this acceptance task is committed/merged/cleaned, consolidate the eight
-accepted derivatives into a 46-report decision ledger and an evidence-linked
-unresolved queue. Prepare committed briefs for Gemini identity/date/version and
-scope/family reconciliation; do not overwrite the historical manuscript dataset.
-Formal database searches, extraction/appraisal and final human decisions remain
-necessary. No provider task is active.
+After consolidation commit/merge/cleanup, prepare a committed Gemini brief for
+nine unresolved publication dates and C08 published-identity/preprint status.
+Use `screening_46/consolidated/decision_ledger.json` and its unresolved queue.
+The consolidation contains 46/46 source-identical accepted records and 136
+verbatim unresolved occurrences; `consolidated/validation.md` records all PASS.
+No manuscript changes or final study counts are authorized by this derivative.
 
 ## Authorized concurrent baseline update
 
@@ -176,10 +176,10 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-08-correction",
+  "task_id": "screening-46-consolidation",
   "status": "completed",
-  "started_at": "2026-11-26T06:38:05+07:00",
-  "updated_at": "2026-11-26T06:47:27+07:00",
-  "completed_at": "2026-11-26T06:47:27+07:00"
+  "started_at": "2026-11-26T06:49:11+07:00",
+  "updated_at": "2026-11-26T06:50:03+07:00",
+  "completed_at": "2026-11-26T06:50:03+07:00"
 }
 -->

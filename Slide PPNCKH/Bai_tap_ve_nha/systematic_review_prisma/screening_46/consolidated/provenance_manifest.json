@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "task_id": "screening-46-consolidation",
+  "started_at": "2026-11-26T06:49:11+07:00",
+  "updated_at": "2026-11-26T06:50:03+07:00",
+  "completed_at": "2026-11-26T06:50:03+07:00",
+  "status": "completed",
+  "unit": "report",
+  "eligibility_window": [
+    "2021-01-01",
+    "2026-11-25"
+  ],
+  "working_decisions": {
+    "INCLUDE": 32,
+    "EXCLUDE": 2,
+    "UNCERTAIN": 12
+  },
+  "final_study_count": null,
+  "sources": [
+    {
+      "batch": 1,
+      "accepted_result": "screening_46/results/batch_01_accepted.json",
+      "sha256": "b16d4db60f45d91c2c144da74f3dbc14dfaafcd71933aa87614fb80a18fab426",
+      "review": "screening_46/reviews/batch_01_combined_gate.md",
+      "review_sha256": "a06d861df12dd9045ed0331b676902b9a7dac951bbe4814b5b8737c09b08a142",
+      "source_commit": "531a54e275a1f12a8b8e640a978cf948f9b63916"
+    },
+    {
+      "batch": 2,
+      "accepted_result": "screening_46/results/batch_02_accepted.json",
+      "sha256": "efdb8ba14f7e5d8a47ce5ac892cdcda4349ad16f5fc5ebcf89a70b81212ade51",
+      "review": "screening_46/reviews/batch_02_combined_gate.md",
+      "review_sha256": "230fac8bf0b03372bfa5d6004a5e486a52f7989d246b7b8abdf1b3e4fd78ad0a",
+      "source_commit": "c3c6c0826b4f204f55bf77fc618c497a934d02d0"
+    },
+    {
+      "batch": 3,
+      "accepted_result": "screening_46/results/batch_03_accepted.json",
+      "sha256": "cb304bcd3dab9836fe27ce2da76289b791abf377538c9085db25cefa1ef49651",
+      "review": "screening_46/reviews/batch_03_combined_gate.md",
+      "review_sha256": "c4695b296b5a052c5e613c0fa7fb630bf975c6c4edd5e3eb89ce7abc832e84f0",
+      "source_commit": "fc8944f3240441b927532fcb6623c9e85e3ca571"
+    },
+    {
+      "batch": 4,
+      "accepted_result": "screening_46/results/batch_04_accepted.json",
+      "sha256": "3ff84e0277c3e905c7baff88cd47bd5046ca68dd543a1ca0fb61fb2038e41a48",
+      "review": "screening_46/reviews/batch_04_correction_02_review.md",
+      "review_sha256": "70ce35c7598515f00a562255240d95ee11cc4b7d7c787d843e22905a9c92aa9d",
+      "source_commit": "b6bdf2a0056f9d186b0cd6db43e2fb693542c4de"
+    },
+    {
+      "batch": 5,
+      "accepted_result": "screening_46/results/batch_05_accepted.json",
+      "sha256": "073f84314fa5ddf7b01b5ac5d06730985992c9d7b68d9cea8bd83c302614ee71",
+      "review": "screening_46/reviews/batch_05_correction_review.md",
+      "review_sha256": "0692bf4e8895c4b864cba206a35feae224c4128bdd826adeaa292f769a53ecf6",
+      "source_commit": "9d527d92ad4e788902d7dccd62d745d4f156d874"
+    },
+    {
+      "batch": 6,
+      "accepted_result": "screening_46/results/batch_06_accepted.json",
+      "sha256": "e3efbe57b628f30691d2d30fa741e0c8e60a4cf938822784cfc97ce380fcb5b4",
+      "review": "screening_46/reviews/batch_06_review.md",
+      "review_sha256": "593d1de8a00ba0bbb6d7cf5f5c7e2431ffd45b030432acf09c2fc639ddea98d5",
+      "source_commit": "4e0d5c585cf9c44f3eafac6eb23b7b5cf1581bfd"
+    },
+    {
+      "batch": 7,
+      "accepted_result": "screening_46/results/batch_07_accepted.json",
+      "sha256": "69ac47b41414514ae7e47c31b67d350442efb78e71c3e3f0edcdb81d654d0d46",
+      "review": "screening_46/reviews/batch_07_retry_review.md",
+      "review_sha256": "e23148e3305809c576e8413145f095aade688d505f922a5895014b842aed2d89",
+      "source_commit": "49d740625e4b36a290d848f3d6f29ac2dd7ab182"
+    },
+    {
+      "batch": 8,
+      "accepted_result": "screening_46/results/batch_08_accepted.json",
+      "sha256": "38c94a462014e258ffec3c4d51d61f61c418f41b55891f48a6435cc226894805",
+      "review": "screening_46/reviews/batch_08_correction_review.md",
+      "review_sha256": "63f683f3db7530601c6f2c9b62e5bc8d144f7e0e7a0558125a3b4010b1043397",
+      "source_commit": "7ef64dce622dbd357c9ac97e9bcfcaf551d017a1"
+    }
+  ],
+  "record_count": 46,
+  "unresolved_occurrences": 136,
+  "files": {
+    "decision_ledger.json": "18cd5bcca3350aa581db1b3730505a2461f938970122c388021082701d45b72c",
+    "decision_ledger.csv": "b84201ba1ffd26cc11fc3c7ad2eebfe83dfee0a368602f2a714f7d2b386bb410",
+    "validation.md": "a9ffdb6844f2ff98a1995bac8388ab103710b1dde5874e26f13feb8a0f1791f4",
+    "README.md": "3a9b72d541ee5267eddb59d81c24c803b8631998093af0004142f0e2336645a6",
+    "unresolved_queue.csv": "543c24f0e745990d8af255e1a472292044dff0ce7e7abd79504361546ef7c903"
+  }
+}
