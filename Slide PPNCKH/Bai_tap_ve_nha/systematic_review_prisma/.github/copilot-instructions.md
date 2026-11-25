@@ -1,0 +1,6 @@
+# Mandatory HK261 PRISMA project context
+
+Before any action, read `AI_AGENT_START_HERE.md` and every file listed by
+`MUST_READ_AI_AGENT/context_manifest.yaml` in order. Treat the MUST READ folder
+as canonical project policy. Do not bypass its evidence, LaTeX, A2A, submission,
+authorship, or Git gates.
