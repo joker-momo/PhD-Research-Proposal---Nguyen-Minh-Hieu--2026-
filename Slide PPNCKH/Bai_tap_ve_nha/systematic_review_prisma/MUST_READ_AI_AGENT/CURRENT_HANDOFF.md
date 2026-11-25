@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T06:20:54+07:00
+**updated_at:** 2026-11-26T06:29:31+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -60,17 +60,18 @@ stop and reconcile the conflict before starting or delegating another task.
 - Batch 06, C11–C16: accepted working screening, 4 INCLUDE + 2 UNCERTAIN.
   Gate `screening_46/reviews/batch_06_review.md`; 48/48 locators. C13/C14
   publication dates remain unresolved; C11 relay and C16 jammer roles bounded.
-- Progress: 36/46 reports through an accepted working gate; 25 INCLUDE,
-  1 EXCLUDE, 10 UNCERTAIN; 10 not yet screened. No provider task is active.
-- Batch 07 primary failed after server interruption; 0 artifacts, 0 adopted
-  records. Gate `screening_46/reviews/batch_07_review.md`. Service restored;
-  retry pending commit/merge/cleanup.
+- Batch 07 retry, C17–C21: accepted working screening, 3 INCLUDE, 1 EXCLUDE
+  (C18 generic DAG workload), 1 UNCERTAIN (C19 date). Gate
+  `screening_46/reviews/batch_07_retry_review.md`; 40/40 locators.
+  Failed primary preserved at `800a2ff`; retry adopted separately.
+- Progress: 41/46 reports through an accepted working gate; 28 INCLUDE,
+  2 EXCLUDE, 11 UNCERTAIN; 5 not yet screened. No provider task is active.
 - These working decisions are not final human adjudication, unique-study counts,
   final PRISMA arithmetic, or permission to change manuscript conclusions.
 
 ## Evidence accepted versus quarantined
 
-- Usable working evidence: only the six accepted derivative batch files and
+- Usable working evidence: only the seven accepted derivative batch files and
   their combined PASS gates.
 - Quarantined but retained for audit: original rejected batch outputs, rejected
   corrections, provider raw JSON, and any result without a complete Codex PASS
@@ -81,7 +82,7 @@ stop and reconcile the conflict before starting or delegating another task.
 
 ## Critical unresolved work
 
-1. After Batch 06 commit/merge/cleanup, continue batches 07–08
+1. After Batch 07 retry commit/merge/cleanup, continue batch 08
    serially through brief, dispatch, acceptance and commit gates. Timestamp
    standardization is merged at `1f04299` (35/35 tests PASS).
 2. Reconcile all accepted working decisions with report versions, study families,
@@ -157,18 +158,22 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-After the interrupted Batch 07 primary is committed/merged/cleaned, retry its
-unchanged committed brief (C17–C21) through the approved router. Preserve failed
-task `01a214fe-2fce-723a-a467-83943cc4d44b` and collect under batch_07_retry
-filenames. No fallback for server interruption. Counts remain 36/46; no active
-provider task remains after the confirmed FAILED response.
+After Batch 07 retry commit/merge/cleanup, route committed Batch 08 once
+(C22–C25 and SNCS) through the approved router. Preserve 11 UNCERTAIN
+decisions and the two exclusions; do not call these final study counts.
+Then reconcile all 46 working decisions, versions and study families.
+No provider task is active.
+
+## Authorized concurrent baseline update
+
+User confirmed preservation of the concurrent root .gitignore addition (*.json); it is outside this task. Original 50 entries remain unchanged. Current authorized external status: 51 entries, SHA-256 18f05fa66cb8057d1db255731324438c0519d98b9f09d55991c1b538787105f3.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-07-primary",
-  "status": "rejected",
-  "started_at": "2026-11-26T06:15:33+07:00",
-  "updated_at": "2026-11-26T06:20:54+07:00",
-  "completed_at": "2026-11-26T06:20:54+07:00"
+  "task_id": "screening-batch-07-retry",
+  "status": "completed",
+  "started_at": "2026-11-26T06:23:00+07:00",
+  "updated_at": "2026-11-26T06:29:31+07:00",
+  "completed_at": "2026-11-26T06:28:03+07:00"
 }
 -->

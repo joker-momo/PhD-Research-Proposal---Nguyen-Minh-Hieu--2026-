@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T06:20:54+07:00
+Updated_at: 2026-11-26T06:29:31+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -26,20 +26,20 @@ without blocking dispatch.
 | Timestamp standardization | logs/status/hooks | completed and merged at `1f04299` | requested_at 2026-11-25T23:02:44+07:00; 17 gate tests + 18 skill-router tests PASS | Preserve timestamp checks in every subsequent task |
 | Screening batch 05 | C05-C10 | accepted working screening with targeted correction | 1 INCLUDE, 5 UNCERTAIN; 48/48 combined locators; `screening_46/reviews/batch_05_correction_review.md` | Preserve unresolved dates/version/scope; batch 06 next after commit/merge/cleanup |
 | Screening batch 06 | C11-C16 | accepted working screening | 4 INCLUDE, 2 UNCERTAIN; 48/48 locators; `screening_46/reviews/batch_06_review.md` | Preserve dates/roles/families; batch 07 after commit/merge/cleanup |
-| Screening batch 07 | C17-C21 | primary failed: server interruption | 0 artifacts; `screening_46/reviews/batch_07_review.md` | Retry unchanged brief after commit/merge/cleanup |
+| Screening batch 07 | C17-C21 | retry accepted working screening | 3 INCLUDE, 1 EXCLUDE, 1 UNCERTAIN; 40/40 locators; `screening_46/reviews/batch_07_retry_review.md` | Preserve failed primary; batch 08 after commit/merge/cleanup |
 | Screening batch 08 | C22-C25, SNCS | not started | none | Wait for batch 07 commit and clean gate |
 
 ## Measured progress
 
 - Frozen retrieval inventory: 46 reports.
-- Accepted working full-text screening: 36/46 reports.
-- Working decisions: 25 INCLUDE, 1 EXCLUDE, 10 UNCERTAIN in batches 01-06.
-- Remaining in this campaign: 10 reports.
+- Accepted working full-text screening: 41/46 reports.
+- Working decisions: 28 INCLUDE, 2 EXCLUDE, 11 UNCERTAIN in batches 01-07.
+- Remaining in this campaign: 5 reports.
 - Active A2A research task: none.
-- Batch 06 accepted; all A1–A6 PASS; 6 working decisions.
+- Batch 07 retry accepted; all A1–A6 PASS; 5 working decisions.
 - Batch 04 dispatch count: 1 primary and 2 corrections; accepted-result count 1.
 - Latest Batch 04 mandatory failures: 0; all C1–C6 PASS.
-- Manuscript changes from batches 01-06: zero.
+- Manuscript changes from batches 01-07: zero.
 - Accepted brief mutations from refresh tooling: zero; any batch with a
   transport, result, or review artifact is immutable to the producer.
 
@@ -64,12 +64,16 @@ repository `AGENTS.md`; those scopes must be clean before dispatch. The external
 baseline is not permission to create new residue outside the owned scopes.
 
 
+## Authorized concurrent baseline update
+
+User confirmed preservation of the concurrent root .gitignore addition (*.json); it is outside this task. Original 50 entries remain unchanged. Current authorized external status: 51 entries, SHA-256 18f05fa66cb8057d1db255731324438c0519d98b9f09d55991c1b538787105f3.
+
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-07-primary",
-  "status": "rejected",
-  "started_at": "2026-11-26T06:15:33+07:00",
-  "updated_at": "2026-11-26T06:20:54+07:00",
-  "completed_at": "2026-11-26T06:20:54+07:00"
+  "task_id": "screening-batch-07-retry",
+  "status": "completed",
+  "started_at": "2026-11-26T06:23:00+07:00",
+  "updated_at": "2026-11-26T06:29:31+07:00",
+  "completed_at": "2026-11-26T06:28:03+07:00"
 }
 -->

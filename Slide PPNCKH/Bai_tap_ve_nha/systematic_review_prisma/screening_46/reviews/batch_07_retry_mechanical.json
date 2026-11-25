@@ -1,0 +1,342 @@
+{
+  "file": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/results/batch_07_retry.json",
+  "records": 5,
+  "ids": [
+    "C17",
+    "C18",
+    "C19",
+    "C20",
+    "C21"
+  ],
+  "decisions": {
+    "INCLUDE": 3,
+    "EXCLUDE": 1,
+    "UNCERTAIN": 1
+  },
+  "mechanical_errors": [],
+  "quote_checks": 40,
+  "quote_matches": 40,
+  "semantic_review": "PENDING_CODEX_SOURCE_REVIEW",
+  "evidence": [
+    {
+      "id": "C17",
+      "field": "identity",
+      "page": 1,
+      "quote": "Heading-Coupled STAR-RIS Assisted Multi-UAV Networks for Semantic ISCC",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "C17",
+      "field": "alignment",
+      "page": 3,
+      "quote": "Three-tier DNN inference. A DNN with L layers is partitioned at (l1, l2) across UAV, MEC, and cloud.",
+      "literal_normalized_match": true,
+      "rationale": "Jointly optimizes three-tier DNN layer split points (l1, l2), feature quantization bitwidth, and UAV-MEC-cloud CPU allocation alongside heading-coupled STAR-RIS and multi-UAV mobility."
+    },
+    {
+      "id": "C17",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "The associate editor coordinating the review of this article and approving it for publication was B. Zhou.",
+      "literal_normalized_match": true,
+      "rationale": "Published 5-page peer-reviewed journal letter in IEEE Wireless Communications Letters (vol. 15, pp. 5920-5924, 2026) with associate editor review approval, system model, optimization, 5-seed evaluation, and references."
+    },
+    {
+      "id": "C17",
+      "field": "multi_uav_evaluated",
+      "page": 4,
+      "quote": "The certified swept minimum separation is 79.28 m versus dmin = 20 m.",
+      "literal_normalized_match": true,
+      "rationale": "Models K fixed-altitude UAVs with inter-UAV minimum separation constraint dmin = 20 m and evaluates multi-UAV held-out trajectory replay and 60,000 multi-agent decisions across five seeds."
+    },
+    {
+      "id": "C17",
+      "field": "collaborative_inference",
+      "page": 3,
+      "quote": "Three-tier DNN inference. A DNN with L layers is partitioned at (l1, l2) across UAV, MEC, and cloud.",
+      "literal_normalized_match": true,
+      "rationale": "Explicitly models and optimizes three-tier DNN inference partitioning at (l1, l2) across UAV, MEC, and cloud alongside feature bitwidth selection and three-tier CPU allocation; GAT/MADRL acts only as the outer controller."
+    },
+    {
+      "id": "C17",
+      "field": "evaluative_evidence",
+      "page": 4,
+      "quote": "We evaluate six schemes over five independent training seeds and 3,000 training episodes per seed.",
+      "literal_normalized_match": true,
+      "rationale": "Reports simulation experiments comparing six schemes across five independent training seeds, 3,000 training episodes/seed, 15,000 holdout episodes, OOD scenarios, and runtime over 10,000 decisions per scheme."
+    },
+    {
+      "id": "C17",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Received 6 September 2026; accepted 12 October 2026. Date of publication 15 October 2026; date of current version 23 October 2026.",
+      "literal_normalized_match": true,
+      "rationale": "Published 15 October 2026 (current version 23 October 2026), within the eligible 2021-01-01 through 2026-11-25 window."
+    },
+    {
+      "id": "C17",
+      "field": "english",
+      "page": 1,
+      "quote": "This letter proposes semantic integrated sensing, communication, and computation in a multi-UAV network whose rigidly mounted STAR-RIS service half-spaces rotate with UAV yaw.",
+      "literal_normalized_match": true,
+      "rationale": "Full report is written in English."
+    },
+    {
+      "id": "C18",
+      "field": "identity",
+      "page": 1,
+      "quote": "Joint UAV Placement and Dependent Task Offloading in Multi-UAV MEC Networks: A Graph Attention Enhanced DRL Approach",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "C18",
+      "field": "alignment",
+      "page": 12,
+      "quote": "To evaluate our approach comprehensively, we generate diverse task structures using a DAG generator from [36]. Each node in the DAG represents a specific subtask.",
+      "literal_normalized_match": true,
+      "rationale": "Excluded generic DAG computation offloading in multi-UAV MEC without an evaluated DNN inference workload; GAT and D3QN are used only as the offloading optimization solver."
+    },
+    {
+      "id": "C18",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "Received 21 April 2025; revised 20 October 2025; accepted 29 October 2025. Date of publication 3 November 2025; date of current version 6 March 2026.",
+      "literal_normalized_match": true,
+      "rationale": "Published 17-page peer-reviewed journal article in IEEE Transactions on Mobile Computing (vol. 25, no. 4, pp. 5285-5301, April 2026) with complete formulation, algorithms, simulations, and references."
+    },
+    {
+      "id": "C18",
+      "field": "multi_uav_evaluated",
+      "page": 12,
+      "quote": "The system includes K = 10 GUs and M = 2 UAVs acting as aerial edge servers.",
+      "literal_normalized_match": true,
+      "rationale": "Simulates M = 2 UAVs acting as aerial edge servers deployed across a 1.6 x 1.6 km^2 area serving K = 10 ground users."
+    },
+    {
+      "id": "C18",
+      "field": "collaborative_inference",
+      "page": 12,
+      "quote": "To evaluate our approach comprehensively, we generate diverse task structures using a DAG generator from [36]. Each node in the DAG represents a specific subtask.",
+      "literal_normalized_match": true,
+      "rationale": "Mentions deep neural network inference only as an introductory example; the evaluated workload consists of generic synthetic DAG tasks (random cycles and transfer sizes) offloaded under GU-to-single-UAV binary decisions, while GAT and D3QN serve solely as the optimization solver with no evaluated DNN/CNN/VLM/LLM inference workload or inter-UAV inference collaboration."
+    },
+    {
+      "id": "C18",
+      "field": "evaluative_evidence",
+      "page": 16,
+      "quote": "Extensive simulation results confirmed that our approach significantly reduces the end time compared with existing benchmarks.",
+      "literal_normalized_match": true,
+      "rationale": "Presents simulation evaluations comparing JSPO and GATD3QN against K-Means, RDEG, local, random, DDQN, and D3QN baselines across varying bandwidths and subtask counts."
+    },
+    {
+      "id": "C18",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Date of publication 3 November 2025; date of current version 6 March 2026.",
+      "literal_normalized_match": true,
+      "rationale": "Published online 3 November 2025 with current version 6 March 2026 (April 2026 issue), within 2021-01-01 through 2026-11-25."
+    },
+    {
+      "id": "C18",
+      "field": "english",
+      "page": 1,
+      "quote": "In this paper, we study the joint optimization of UAV deployment, UAV-GU associations, and dependent task offloading decisions within a multi-UAV-enabled MEC system",
+      "literal_normalized_match": true,
+      "rationale": "Full report is written in English."
+    },
+    {
+      "id": "C19",
+      "field": "identity",
+      "page": 1,
+      "quote": "PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference in UAV-Assisted Internet of Vehicles Environments",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "C19",
+      "field": "alignment",
+      "page": 2,
+      "quote": "The proposed protocol can be regarded as a lightweight security layer for multi-agent UAV collaboration, where a coordinator–worker UAV structure is used to coordinate task assignment and secure exchange of intermediate results among UAV agents.",
+      "literal_normalized_match": true,
+      "rationale": "Provides a PUF-enabled self-certified mutual authentication, task-token, and intermediate-feature encryption layer supporting multi-agent UAV cooperative inference."
+    },
+    {
+      "id": "C19",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "This article has been accepted for publication in IEEE Internet of Things Journal. This is the author's version which has not been fully edited and content may change prior to final publication.",
+      "literal_normalized_match": true,
+      "rationale": "15-page full peer-reviewed journal manuscript accepted for publication in IEEE Internet of Things Journal (IEEE Early Access author's version) containing protocol design, formal security proofs, simulations, and testbed studies."
+    },
+    {
+      "id": "C19",
+      "field": "multi_uav_evaluated",
+      "page": 10,
+      "quote": "We set the number of worker UAVs to 10, 20, 30, 40, and 50 for the proposed authentication phase, and have them communicate with one coordinator UAV.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluates inter-UAV authentication across 1 coordinator UAV and 10 to 50 worker UAVs in NS-3, two PX4-Autopilot UAV nodes over Wi-Fi UDP, and two Raspberry Pi 4 nodes for split inference."
+    },
+    {
+      "id": "C19",
+      "field": "collaborative_inference",
+      "page": 11,
+      "quote": "For cooperative inference, we split the AI model into two models, named Part A and Part B, and installed them on two Raspberry Pi 4s.",
+      "literal_normalized_match": true,
+      "rationale": "Designs task-token assignment and intermediate-result encryption for partitioned AI models across coordinator and worker UAVs, and executes partitioned CIFAR-10 SplitNet (CNN Part A and MLP Part B) inference with intermediate tensor encryption across two Raspberry Pi 4 devices."
+    },
+    {
+      "id": "C19",
+      "field": "evaluative_evidence",
+      "page": 11,
+      "quote": "In the result in RP A, the execution times of partial inference computation and encryption are 20209.01ms and 2088.83ms, respectively.",
+      "literal_normalized_match": true,
+      "rationale": "Provides formal ROR/BAN/Scyther security verification, MIRACL cryptographic timings, NS-3 network simulation, PX4-Autopilot authentication testbed, and a two-node Raspberry Pi 4 split-inference testbed measuring computation and encryption times."
+    },
+    {
+      "id": "C19",
+      "field": "date_window",
+      "page": 1,
+      "quote": "© 2026 IEEE. All rights reserved, including rights for text and data mining and training of artificial intelligence and similar technologies.",
+      "literal_normalized_match": true,
+      "rationale": "Accepted author's version reports only copyright year 2026, IEEE IoT Journal acceptance without a dated publication record, URL access dates of 23 March 2026, and an IEEE Xplore download watermark of 25 November 2026; per protocol rules, year-only 2026 acceptance without a dated publication record is UNCERTAIN."
+    },
+    {
+      "id": "C19",
+      "field": "english",
+      "page": 1,
+      "quote": "In this paper, we propose a physical unclonable function (PUF)-enabled self-certified authentication protocol which reduces certificate management and reliance on a central server.",
+      "literal_normalized_match": true,
+      "rationale": "Full report is written in English."
+    },
+    {
+      "id": "C20",
+      "field": "identity",
+      "page": 1,
+      "quote": "Multi-UAV cooperative inference for IoVs: Dynamic partitioning and caching optimization",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "C20",
+      "field": "alignment",
+      "page": 4,
+      "quote": "for a DNN model abstracted into L macro-blocks, the PPO-DMCP agent determines N − 1 internal split points to divide the model across N UAVs.",
+      "literal_normalized_match": true,
+      "rationale": "Jointly optimizes dynamic multi-cut DNN macro-block partitioning, priority-based macro-block caching, and UAV positioning via PPO-DMCP for multi-UAV collaborative inference."
+    },
+    {
+      "id": "C20",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "Received 28 January 2026; Received in revised form 23 June 2026; Accepted 8 July 2026",
+      "literal_normalized_match": true,
+      "rationale": "Published 13-page peer-reviewed journal article in Ad Hoc Networks (vol. 193, article 104347, 2026) with receipt, revision, acceptance, and online publication dates."
+    },
+    {
+      "id": "C20",
+      "field": "multi_uav_evaluated",
+      "page": 8,
+      "quote": "Among them, one UAV is designated as the core UAV, which is responsible for global state collection, decision-making, and execution of the PPO-DMCP algorithm, while the remaining 4 UAVs collaboratively execute distributed DNN inference tasks.",
+      "literal_normalized_match": true,
+      "rationale": "Simulates N = 5 UAVs (1 core scheduling UAV and 4 computing UAVs) in the baseline setup and scales N from 2 to 8 UAVs in robustness evaluation."
+    },
+    {
+      "id": "C20",
+      "field": "collaborative_inference",
+      "page": 4,
+      "quote": "for a DNN model abstracted into L macro-blocks, the PPO-DMCP agent determines N − 1 internal split points to divide the model across N UAVs.",
+      "literal_normalized_match": true,
+      "rationale": "Abstracts DNNs (including ResNet50, MobileNetV3, BERT, and four computational profiles) into L macro-blocks, dynamically selects N - 1 split points for pipelined execution across N UAVs, and coordinates frequency-aware macro-block parameter caching and UAV mobility via PPO-DMCP."
+    },
+    {
+      "id": "C20",
+      "field": "evaluative_evidence",
+      "page": 8,
+      "quote": "To ensure statistical reliability, all experiments are conducted over multiple independent runs with different random seeds. Unless otherwise stated, the reported results are averaged across runs.",
+      "literal_normalized_match": true,
+      "rationale": "Conducts multi-seed simulation experiments evaluating PPO-DMCP against RL baselines (A2C, REINFORCE, SAC), partitioning baselines (Equal, Single, Prop, Layer-PPO), cache-blind ablations, swarm sizes, and DNN structures."
+    },
+    {
+      "id": "C20",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Available online 16 July 2026",
+      "literal_normalized_match": true,
+      "rationale": "Available online 16 July 2026 in Ad Hoc Networks vol. 193, within 2021-01-01 through 2026-11-25."
+    },
+    {
+      "id": "C20",
+      "field": "english",
+      "page": 1,
+      "quote": "In this paper, we propose a multi-UAV collaborative inference scheme based on dynamic partitioning and cache optimization, establishing a systematic framework",
+      "literal_normalized_match": true,
+      "rationale": "Full report is written in English."
+    },
+    {
+      "id": "C21",
+      "field": "identity",
+      "page": 1,
+      "quote": "Toward Inference Latency Optimization for Scalable Collaborative Multi-UAV Analytics",
+      "literal_normalized_match": true,
+      "rationale": ""
+    },
+    {
+      "id": "C21",
+      "field": "alignment",
+      "page": 4,
+      "quote": "Object classification continues until the DAG partition points are reached on the UAVs. At the same time, tasks are offloaded to adjacent UAVs for further classification beyond the DAG partition points.",
+      "literal_normalized_match": true,
+      "rationale": "Jointly optimizes classifier-level DAG partitioning, inter-UAV task offloading, communication resource allocation, and UAV deployment across centralized and distributed multi-UAV control modes."
+    },
+    {
+      "id": "C21",
+      "field": "primary_full_report",
+      "page": 1,
+      "quote": "Received 22 February 2025; revised 28 August 2025; accepted 20 October 2025. Date of publication 27 October 2025; date of current version 23 December 2025.",
+      "literal_normalized_match": true,
+      "rationale": "Published 14-page peer-reviewed journal article in IEEE Transactions on Green Communications and Networking (vol. 10, pp. 1364-1377, 2026) with complete models, algorithms, complexity analysis, simulations, and references."
+    },
+    {
+      "id": "C21",
+      "field": "multi_uav_evaluated",
+      "page": 10,
+      "quote": "Fig. 3 compares the average inference latency of different algorithms across UAV counts ranging from 5 to 200.",
+      "literal_normalized_match": true,
+      "rationale": "Evaluates collaborative multi-UAV video analytics across UAV swarm scales of V = 5, 10, 20, 40, 60, 100, and 200 UAVs under both centralized (JDTSO) and distributed (MAPDP) modes."
+    },
+    {
+      "id": "C21",
+      "field": "collaborative_inference",
+      "page": 4,
+      "quote": "Object classification continues until the DAG partition points are reached on the UAVs. At the same time, tasks are offloaded to adjacent UAVs for further classification beyond the DAG partition points.",
+      "literal_normalized_match": true,
+      "rationale": "Models each video analytics task as a DAG of cascading YOLOv3-tiny DNN classifiers, selects classifier-level DAG partition points, and offloads remaining DAG stages to adjacent UAVs jointly with deployment and bandwidth allocation via JDTSO and MAPDP."
+    },
+    {
+      "id": "C21",
+      "field": "evaluative_evidence",
+      "page": 9,
+      "quote": "We perform extensive simulations to evaluate our algorithm's performance under various conditions, and compare it with other benchmark solutions.",
+      "literal_normalized_match": true,
+      "rationale": "Conducts PyTorch/CVXPY simulation experiments parameterized by pre-measured YOLOv3-tiny Raspberry Pi 3B+ plus NCS1/NCS2 latency and power profiles, comparing JDTSO and MAPDP against five baselines on latency, energy, and throughput."
+    },
+    {
+      "id": "C21",
+      "field": "date_window",
+      "page": 1,
+      "quote": "Date of publication 27 October 2025; date of current version 23 December 2025.",
+      "literal_normalized_match": true,
+      "rationale": "Published 27 October 2025 with current version 23 December 2025 (vol. 10, 2026), within 2021-01-01 through 2026-11-25."
+    },
+    {
+      "id": "C21",
+      "field": "english",
+      "page": 1,
+      "quote": "This paper proposes a scalable cooperative UAV architecture for video analytics, which is optimized for different UAV scales and suitable for both centralized and distributed control modes.",
+      "literal_normalized_match": true,
+      "rationale": "Full report is written in English."
+    }
+  ]
+}
