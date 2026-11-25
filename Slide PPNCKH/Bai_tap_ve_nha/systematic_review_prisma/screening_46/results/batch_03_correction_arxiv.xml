@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/tAEkj1yCeqfWVzEILz9UnoRgCvs</id>
+  <title>arXiv Query: search_query=&amp;id_list=2503.16146&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-25T13:45:47Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2503.16146" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2503.16146v3</id>
+    <title>Distributed Split Computing Using Diffusive Metrics for UAV Swarms</title>
+    <updated>2026-04-08T17:16:15Z</updated>
+    <link href="https://arxiv.org/abs/2503.16146v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.16146v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In large-scale UAV swarms, dynamically executing machine learning tasks can pose significant challenges due to network volatility and the heterogeneous resource constraints of each UAV. Traditional approaches often rely on centralized orchestration to partition tasks among nodes. However, these methods struggle with communication bottlenecks, latency, and reliability when the swarm grows or the topology shifts rapidly. To overcome these limitations, we propose a fully distributed, diffusive metric-based approach for split computing in UAV swarms. Our solution introduces a new iterative measure, termed the aggregated gigaflops, capturing each node's own computing capacity along with that of its neighbors without requiring global network knowledge. By forwarding partial inferences intelligently to underutilized nodes, we achieve improved task throughput, lower latency, and enhanced energy efficiency. Further, to handle sudden workload surges and rapidly changing node conditions, we incorporate an early-exit mechanism that can adapt the inference pathway on-the-fly. Extensive simulations demonstrate that our approach significantly outperforms baseline strategies across multiple performance indices, including latency, fairness, and energy consumption. These results highlight the feasibility of large-scale distributed intelligence in UAV swarms and provide a blueprint for deploying robust, scalable ML services in diverse aerial networks.</summary>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-20T13:49:15Z</published>
+    <arxiv:comment>Accepted for publication in Journal of Systems Architecture (Elsevier)</arxiv:comment>
+    <arxiv:primary_category term="cs.NI"/>
+    <author>
+      <name>Talip Tolga Sarı</name>
+    </author>
+    <author>
+      <name>Gökhan Seçinti</name>
+    </author>
+    <author>
+      <name>Angelo Trotta</name>
+    </author>
+    <arxiv:doi>10.1016/j.sysarc.2026.103804</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.sysarc.2026.103804" title="doi"/>
+  </entry>
+</feed>
