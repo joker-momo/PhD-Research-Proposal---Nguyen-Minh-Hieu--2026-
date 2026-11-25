@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T06:52:20+07:00
+**updated_at:** 2026-11-26T06:53:42+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -169,6 +169,8 @@ S19,S20,C03,C05,C09,C10,C13,C14,C19,C08. Preserve task/context IDs. Review A1–
 retain source-access limitations and do not change accepted screening until PASS.
 The consolidated 46-report ledger remains 32 INCLUDE / 2 EXCLUDE / 12 UNCERTAIN.
 No provider task is active and no manuscript change has been made.
+The first routing attempt was rejected before dispatch because headings used
+level 1; all five headings now use level 2 and the router validator passes.
 
 ## Authorized concurrent baseline update
 
@@ -176,10 +178,10 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-identity-date-brief",
+  "task_id": "reconciliation-identity-date-brief-format",
   "status": "completed",
-  "started_at": "2026-11-26T06:52:20+07:00",
-  "updated_at": "2026-11-26T06:52:20+07:00",
-  "completed_at": "2026-11-26T06:52:20+07:00"
+  "started_at": "2026-11-26T06:53:42+07:00",
+  "updated_at": "2026-11-26T06:53:42+07:00",
+  "completed_at": "2026-11-26T06:53:42+07:00"
 }
 -->

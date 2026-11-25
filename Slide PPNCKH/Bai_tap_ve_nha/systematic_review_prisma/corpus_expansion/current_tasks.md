@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T06:52:20+07:00
+Updated_at: 2026-11-26T06:53:42+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -76,10 +76,10 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-identity-date-brief",
+  "task_id": "reconciliation-identity-date-brief-format",
   "status": "completed",
-  "started_at": "2026-11-26T06:52:20+07:00",
-  "updated_at": "2026-11-26T06:52:20+07:00",
-  "completed_at": "2026-11-26T06:52:20+07:00"
+  "started_at": "2026-11-26T06:53:42+07:00",
+  "updated_at": "2026-11-26T06:53:42+07:00",
+  "completed_at": "2026-11-26T06:53:42+07:00"
 }
 -->

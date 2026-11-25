@@ -1,14 +1,14 @@
-# TASK
+## TASK
 Resolve bibliographic identity, publication-date eligibility and source-version linkage for exactly ten reports: S19,S20,C03,C05,C09,C10,C13,C14,C19,C08. Return structured research evidence only. This does not request technical re-screening, final manuscript prose or file edits.
 
-# REQUIRED WORK
+## REQUIRED WORK
 1. Read the supplied accepted records and first-page/metadata portions of the ten local full texts. Preserve title/author discrepancies explicitly.
 2. For each DOI-bearing record, inspect its official publisher/DOI record and Crossref works metadata. Report both attempts, actual access time and access outcome; if inaccessible do not pretend it was read. Supplementary discovery indexes may locate primary sources but cannot independently prove publication dates. For C08 inspect arXiv:2412.20860 version history/journal reference and verify candidate DOI 10.1016/j.future.2025.107874 against publisher/Crossref metadata.
 3. Distinguish published-online, published-print/issue, conference publication, preprint version, accepted, received, Crossref created/deposited/indexed and file-download dates. Only publication or explicitly labelled preprint release evidence can resolve the relevant date. Keep partial dates at their true precision; do not invent a day. A 2026-only date straddles the fixed cutoff; a verified earlier month can resolve the interval. Current task access date does not move the cutoff 2026-11-25.
 4. For each record return a source-bounded date-window verdict YES/NO/UNCERTAIN with exact evidence. For C08 additionally assess whether the supplied preprint is linked to the journal report using title, authors and explicit DOI/journal-reference evidence; separate identity linkage from full-text/numerical equivalence. If unique-recent-preprint eligibility is not established, state unresolved rather than assuming it.
 5. Return bibliographic discrepancies, limitations and next evidence needed. No scientific study-family, extraction, integrity or scope decisions beyond these identity/date questions. Do not infer peer review from an acceptance banner or DOI existence alone; source the publication type.
 
-# REQUIRED OUTPUT
+## REQUIRED OUTPUT
 One JSON object (no Markdown fences), with these fields:
 - task: "identity_dates_01"
 - window: {from:"2021-01-01",through:"2026-11-25"}
@@ -20,7 +20,7 @@ One JSON object (no Markdown fences), with these fields:
 - project_files_changed: 0
 - final_prose_written: false
 
-# ACCEPTANCE CRITERIA
+## ACCEPTANCE CRITERIA
 A1. Exactly 10 unique requested IDs, 0 omissions and 0 extra records; all required fields present. Missing knowledge is represented explicitly, not by omission.
 A2. Every scholarly record has title, ordered authors, year or documented unknown, venue, DOI/DOI_NOT_FOUND and at least one supplied/primary identity locator. Normalized DOI/title duplicates=0. Crossref and publisher attempts for all 10 records; C08 also has an arXiv attempt. Discrepancies retained, not silently repaired.
 A3. Every factual date/version/identity claim resolves to an accessible source URL or supplied-file locator with an exact excerpt or metadata field; unsupported quantitative claims=0; nonexistent source references=0. All network attempts have valid observed timestamps and outcomes. Failed-access sources support only access limitations.
@@ -28,7 +28,7 @@ A4. Ten explicit date verdicts under the fixed 2021-01-01..2026-11-25 window; 0 
 A5. C08 has explicit title/author/DOI comparisons and version-linkage findings; confirmed identity does not imply numerical/content equivalence. Unique-recent eligibility established only with evidence or explicitly not_established. Exactly one C08 assessment; unresolved list present for every record.
 A6. Project mutations=0; final prose=false; no unauthorized downloading, authentication bypass, contacts, submission or email. Return evidence only. Retain all unresolved issues; access failure is documented, never guessed away.
 
-# BOUNDARIES
+## BOUNDARIES
 Read-only sources and network requests only. Do not save/edit project files, commit, download PDFs, access credentials/private communications, or write manuscript/report prose. Public abstracts support identity only. Do not call a preprint peer-reviewed. Do not rename reports or overwrite accepted results. Shared authors do not establish study identity. Use only the supplied ten reports and targeted bibliographic sources; no new corpus expansion or general literature search. HTTP403, missing metadata and genuine conflicts must remain unresolved. The request date is not the final search cutoff.
 
 Canonical protocol: /Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/protocol.md; amendments 001/002 beside it. Accepted ledger: /Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/consolidated/decision_ledger.json.
