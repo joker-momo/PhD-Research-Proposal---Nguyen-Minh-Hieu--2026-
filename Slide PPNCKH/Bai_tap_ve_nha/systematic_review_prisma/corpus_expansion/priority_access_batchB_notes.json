@@ -1,0 +1,304 @@
+{
+  "records": [
+    {
+      "candidate_id": "C15",
+      "title": "Deep Reinforcement Learning-Based Task Offloading With Collaborative Inference in UAV-Assisted Mobile Edge Computing Networks",
+      "authors": [
+        "NOT_VERIFIED"
+      ],
+      "year": "NOT_VERIFIED",
+      "venue": "NOT_VERIFIED",
+      "doi": "10.1109/tits.2025.3629117",
+      "identity_match": "NOT_VERIFIED",
+      "metadata_sources": [
+        {
+          "url": "supplied-file:corpus_expansion/doi_fulltext_priority_queue.md (C15 row)",
+          "fields": [
+            "title",
+            "doi"
+          ]
+        }
+      ],
+      "publication": {
+        "online_date": "NOT_VERIFIED",
+        "print_date": "NOT_VERIFIED",
+        "window_status": "NOT_VERIFIED",
+        "basis": "No primary publisher metadata or source-supported publication date was opened.",
+        "source_url": "NOT_VERIFIED"
+      },
+      "access_attempts": [
+        {
+          "url": "https://doi.org/10.1109/tits.2025.3629117",
+          "http_status": "NOT_EXPOSED",
+          "content_type": "NOT_EXPOSED",
+          "outcome": "BLOCKED",
+          "observed_evidence": "Read-only web tool reported cache miss; no full-text body or publisher metadata exposed."
+        }
+      ],
+      "fulltext_url": "NOT_FOUND",
+      "pdf_url": "NOT_FOUND",
+      "version": "NOT_VERIFIED",
+      "page_count": "NOT_EXPOSED",
+      "body_locators": [],
+      "mechanism_notes": [],
+      "duplicate_existing26": "NO",
+      "study_family": "NOT_VERIFIED",
+      "unresolved_items": [
+        "Authors, venue, year, and identity remain unverified.",
+        "Publication date and window status remain unverified.",
+        "No lawful full-text body was opened.",
+        "Comparison found no exact DOI/title match in supplied-file:interim_26report/eligibility_reaudit.csv."
+      ]
+    },
+    {
+      "candidate_id": "C14",
+      "title": "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks",
+      "authors": [
+        "NOT_VERIFIED"
+      ],
+      "year": "NOT_VERIFIED",
+      "venue": "NOT_VERIFIED",
+      "doi": "10.1109/jiot.2026.3746980",
+      "identity_match": "NOT_VERIFIED",
+      "metadata_sources": [
+        {
+          "url": "supplied-file:corpus_expansion/doi_fulltext_priority_queue.md (C14 row)",
+          "fields": [
+            "title",
+            "doi"
+          ]
+        }
+      ],
+      "publication": {
+        "online_date": "NOT_VERIFIED",
+        "print_date": "NOT_VERIFIED",
+        "window_status": "NOT_VERIFIED",
+        "basis": "No primary publisher metadata or source-supported publication date was opened.",
+        "source_url": "NOT_VERIFIED"
+      },
+      "access_attempts": [
+        {
+          "url": "https://doi.org/10.1109/jiot.2026.3746980",
+          "http_status": "NOT_EXPOSED",
+          "content_type": "NOT_EXPOSED",
+          "outcome": "BLOCKED",
+          "observed_evidence": "Read-only web tool reported that the DOI URL was inaccessible; no full-text body or publisher metadata exposed."
+        }
+      ],
+      "fulltext_url": "NOT_FOUND",
+      "pdf_url": "NOT_FOUND",
+      "version": "NOT_VERIFIED",
+      "page_count": "NOT_EXPOSED",
+      "body_locators": [],
+      "mechanism_notes": [],
+      "duplicate_existing26": "NO",
+      "study_family": "NOT_VERIFIED",
+      "unresolved_items": [
+        "Authors, venue, year, and identity remain unverified.",
+        "Publication date and window status remain unverified.",
+        "No lawful full-text body was opened.",
+        "Comparison found no exact DOI/title match in supplied-file:interim_26report/eligibility_reaudit.csv."
+      ]
+    },
+    {
+      "candidate_id": "C09",
+      "title": "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms",
+      "authors": [
+        "NOT_VERIFIED"
+      ],
+      "year": "NOT_VERIFIED",
+      "venue": "NOT_VERIFIED",
+      "doi": "10.1109/jiot.2026.3755315",
+      "identity_match": "NOT_VERIFIED",
+      "metadata_sources": [
+        {
+          "url": "supplied-file:corpus_expansion/doi_fulltext_priority_queue.md (C09 row)",
+          "fields": [
+            "title",
+            "doi"
+          ]
+        }
+      ],
+      "publication": {
+        "online_date": "NOT_VERIFIED",
+        "print_date": "NOT_VERIFIED",
+        "window_status": "NOT_VERIFIED",
+        "basis": "A non-primary discovery result reported 2026-11-18, but the required primary publisher or publisher-deposited metadata was not opened; therefore the date is not accepted.",
+        "source_url": "NOT_VERIFIED"
+      },
+      "access_attempts": [
+        {
+          "url": "https://doi.org/10.1109/jiot.2026.3755315",
+          "http_status": "NOT_EXPOSED",
+          "content_type": "NOT_EXPOSED",
+          "outcome": "BLOCKED",
+          "observed_evidence": "Read-only web tool reported that the DOI URL was inaccessible; no full-text body or publisher metadata exposed."
+        }
+      ],
+      "fulltext_url": "NOT_FOUND",
+      "pdf_url": "NOT_FOUND",
+      "version": "NOT_VERIFIED",
+      "page_count": "NOT_EXPOSED",
+      "body_locators": [],
+      "mechanism_notes": [],
+      "duplicate_existing26": "NO",
+      "study_family": "NOT_VERIFIED",
+      "unresolved_items": [
+        "Authors, venue, year, and identity remain unverified from a primary source.",
+        "Publication date and window status remain unverified from an accepted primary source.",
+        "No lawful full-text body was opened.",
+        "Comparison found no exact DOI/title match in supplied-file:interim_26report/eligibility_reaudit.csv."
+      ]
+    },
+    {
+      "candidate_id": "C05",
+      "title": "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems",
+      "authors": [
+        "NOT_VERIFIED"
+      ],
+      "year": "NOT_VERIFIED",
+      "venue": "NOT_VERIFIED",
+      "doi": "10.1109/tcsvt.2026.3745821",
+      "identity_match": "NOT_VERIFIED",
+      "metadata_sources": [
+        {
+          "url": "supplied-file:corpus_expansion/doi_fulltext_priority_queue.md (C05 row)",
+          "fields": [
+            "title",
+            "doi"
+          ]
+        }
+      ],
+      "publication": {
+        "online_date": "NOT_VERIFIED",
+        "print_date": "NOT_VERIFIED",
+        "window_status": "NOT_VERIFIED",
+        "basis": "No primary publisher metadata or source-supported publication date was opened.",
+        "source_url": "NOT_VERIFIED"
+      },
+      "access_attempts": [
+        {
+          "url": "https://doi.org/10.1109/tcsvt.2026.3745821",
+          "http_status": "NOT_EXPOSED",
+          "content_type": "NOT_EXPOSED",
+          "outcome": "BLOCKED",
+          "observed_evidence": "Read-only web search/open tools did not expose the candidate publisher record or full-text body."
+        }
+      ],
+      "fulltext_url": "NOT_FOUND",
+      "pdf_url": "NOT_FOUND",
+      "version": "NOT_VERIFIED",
+      "page_count": "NOT_EXPOSED",
+      "body_locators": [],
+      "mechanism_notes": [],
+      "duplicate_existing26": "NO",
+      "study_family": "NOT_VERIFIED",
+      "unresolved_items": [
+        "Authors, venue, year, and identity remain unverified.",
+        "Publication date and window status remain unverified.",
+        "No lawful full-text body was opened.",
+        "Comparison found no exact DOI/title match in supplied-file:interim_26report/eligibility_reaudit.csv."
+      ]
+    },
+    {
+      "candidate_id": "C23",
+      "title": "Efficient Pipeline Collaborative DNN Inference in Resource-Constrained UAV Swarm",
+      "authors": [
+        "NOT_VERIFIED"
+      ],
+      "year": "NOT_VERIFIED",
+      "venue": "NOT_VERIFIED",
+      "doi": "10.1109/wcnc57260.2024.10570535",
+      "identity_match": "NOT_VERIFIED",
+      "metadata_sources": [
+        {
+          "url": "supplied-file:corpus_expansion/doi_fulltext_priority_queue.md (C23 row)",
+          "fields": [
+            "title",
+            "doi"
+          ]
+        }
+      ],
+      "publication": {
+        "online_date": "NOT_VERIFIED",
+        "print_date": "NOT_VERIFIED",
+        "window_status": "NOT_VERIFIED",
+        "basis": "No primary publisher metadata or source-supported publication date was opened.",
+        "source_url": "NOT_VERIFIED"
+      },
+      "access_attempts": [
+        {
+          "url": "https://doi.org/10.1109/wcnc57260.2024.10570535",
+          "http_status": "NOT_EXPOSED",
+          "content_type": "NOT_EXPOSED",
+          "outcome": "BLOCKED",
+          "observed_evidence": "Read-only web search/open tools did not expose the candidate publisher record or full-text body."
+        }
+      ],
+      "fulltext_url": "NOT_FOUND",
+      "pdf_url": "NOT_FOUND",
+      "version": "NOT_VERIFIED",
+      "page_count": "NOT_EXPOSED",
+      "body_locators": [],
+      "mechanism_notes": [],
+      "duplicate_existing26": "NO",
+      "study_family": "NOT_VERIFIED",
+      "unresolved_items": [
+        "Authors, venue, year, and identity remain unverified.",
+        "Publication date and window status remain unverified.",
+        "No lawful full-text body was opened.",
+        "Comparison found no exact DOI/title match in supplied-file:interim_26report/eligibility_reaudit.csv."
+      ]
+    }
+  ],
+  "summary": {
+    "requested": 5,
+    "returned": 5,
+    "fulltext_bodies_opened": 0,
+    "identity_unresolved": 5,
+    "date_unresolved": 5,
+    "access_shortfall_ids": [
+      "C15",
+      "C14",
+      "C09",
+      "C05",
+      "C23"
+    ],
+    "duplicates_within_batch": 0,
+    "existing26_duplicates": 0
+  },
+  "criterion_responses": [
+    {
+      "criterion": "A1",
+      "observed": "PASS: exactly 5 records returned with IDs C15,C14,C09,C05,C23."
+    },
+    {
+      "criterion": "A2",
+      "observed": "PASS: all five records contain supplied target DOI/title or explicit NOT_VERIFIED markers; no authors, venue, or year were fabricated."
+    },
+    {
+      "criterion": "A3",
+      "observed": "PASS: verified metadata claims were not made; supplied-file locators identify unverified input targets."
+    },
+    {
+      "criterion": "A4",
+      "observed": "PASS: all five window statuses are NOT_VERIFIED because accepted primary publication dates were not obtained."
+    },
+    {
+      "criterion": "A5",
+      "observed": "PASS: zero duplicates within the five-candidate batch; supplied CSV scan found no exact DOI/title match."
+    },
+    {
+      "criterion": "A6",
+      "observed": "PASS: zero records counted as FULLTEXT_BODY_OPENED; no body locators were claimed."
+    },
+    {
+      "criterion": "A7",
+      "observed": "PASS: zero unsupported quantitative or full-text mechanism claims."
+    },
+    {
+      "criterion": "A8",
+      "observed": "PASS: one JSON object returned; project_files_changed=0; files_written=0."
+    }
+  ]
+}

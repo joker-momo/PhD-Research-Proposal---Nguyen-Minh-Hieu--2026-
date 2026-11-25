@@ -1,0 +1,2691 @@
+{
+  "provenance": {
+    "source_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/corpus_expansion/codex_crossref_audit_2026-11-25.json",
+    "sha256": "0c99c9549dbdbec4129e25136e7d4fd49a01e896bc628068281b08cd8d428b9b",
+    "method": "Exact DOI selection; publisher-deposited public metadata snapshot, not newly fabricated metadata"
+  },
+  "records": [
+    {
+      "candidate_id": "C15",
+      "doi": "10.1109/tits.2025.3629117",
+      "status": "retrieved",
+      "title_matches": true,
+      "crossref_title": "Deep Reinforcement Learning-Based Task Offloading With Collaborative Inference in UAV-Assisted Mobile Edge Computing Networks",
+      "type": "journal-article",
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8939-199X",
+          "authenticated-orcid": false,
+          "given": "Xiangping Bryce",
+          "family": "Zhai",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Nanjing University of Aeronautics and Astronautics",
+              "place": [
+                "Nanjing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-3298-9171",
+          "authenticated-orcid": false,
+          "given": "Shuang",
+          "family": "Fu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanjing University of Aeronautics and Astronautics",
+              "place": [
+                "Nanjing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3467-0710",
+          "authenticated-orcid": false,
+          "given": "Changyan",
+          "family": "Yi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanjing University of Aeronautics and Astronautics",
+              "place": [
+                "Nanjing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3934-2177",
+          "authenticated-orcid": false,
+          "given": "Zhiquan",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Jinan University",
+              "place": [
+                "Guangzhou, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0183-0087",
+          "authenticated-orcid": false,
+          "given": "Chao",
+          "family": "Dong",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanjing University of Aeronautics and Astronautics",
+              "place": [
+                "Nanjing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6624-9752",
+          "authenticated-orcid": false,
+          "given": "Chee",
+          "family": "Wei Tan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanyang Technological University",
+              "place": [
+                "Jurong West, Singapore"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "venue": [
+        "IEEE Transactions on Intelligent Transportation Systems"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            13
+          ]
+        ],
+        "date-time": "2025-11-13T18:45:42Z",
+        "timestamp": 1763059542000
+      },
+      "relation": {},
+      "source_url": "https://api.crossref.org/works/10.1109/tits.2025.3629117",
+      "raw_metadata": {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              19
+            ]
+          ],
+          "date-time": "2026-11-19T22:27:29Z",
+          "timestamp": 1795127249602,
+          "version": "4.10.3"
+        },
+        "reference-count": 39,
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "issue": "1",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2026-01-01T00:00:00Z",
+              "timestamp": 1767225600000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2026-01-01T00:00:00Z",
+              "timestamp": 1767225600000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2026-01-01T00:00:00Z",
+              "timestamp": 1767225600000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          }
+        ],
+        "funder": [
+          {
+            "name": "Natural Science Foundation of China",
+            "award": [
+              "62531010"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "62531010"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Natural Science Foundation of Jiangsu Province of China",
+            "award": [
+              "BK20231439"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "BK20231439"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fundamental Research Funds for the Central Universities",
+            "award": [
+              "NS2023052"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "NS2023052"
+                ]
+              }
+            ]
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "IEEE Trans. Intell. Transport. Syst."
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              1
+            ]
+          ]
+        },
+        "DOI": "10.1109/tits.2025.3629117",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              13
+            ]
+          ],
+          "date-time": "2025-11-13T18:45:42Z",
+          "timestamp": 1763059542000
+        },
+        "page": "472-482",
+        "source": "Crossref",
+        "is-referenced-by-count": 11,
+        "title": [
+          "Deep Reinforcement Learning-Based Task Offloading With Collaborative Inference in UAV-Assisted Mobile Edge Computing Networks"
+        ],
+        "prefix": "10.1109",
+        "volume": "27",
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-8939-199X",
+            "authenticated-orcid": false,
+            "given": "Xiangping Bryce",
+            "family": "Zhai",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics",
+                "place": [
+                  "Nanjing, China"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0008-3298-9171",
+            "authenticated-orcid": false,
+            "given": "Shuang",
+            "family": "Fu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics",
+                "place": [
+                  "Nanjing, China"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-3467-0710",
+            "authenticated-orcid": false,
+            "given": "Changyan",
+            "family": "Yi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics",
+                "place": [
+                  "Nanjing, China"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-3934-2177",
+            "authenticated-orcid": false,
+            "given": "Zhiquan",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Jinan University",
+                "place": [
+                  "Guangzhou, China"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0183-0087",
+            "authenticated-orcid": false,
+            "given": "Chao",
+            "family": "Dong",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics",
+                "place": [
+                  "Nanjing, China"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6624-9752",
+            "authenticated-orcid": false,
+            "given": "Chee",
+            "family": "Wei Tan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanyang Technological University",
+                "place": [
+                  "Jurong West, Singapore"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TITS.2024.3422039"
+          },
+          {
+            "key": "ref2",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TITS.2023.3275741"
+          },
+          {
+            "key": "ref3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TWC.2019.2947046"
+          },
+          {
+            "key": "ref4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TMC.2019.2952354"
+          },
+          {
+            "key": "ref5",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TITS.2020.3008612"
+          },
+          {
+            "key": "ref6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TMC.2019.2891736"
+          },
+          {
+            "key": "ref7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TITS.2022.3160594"
+          },
+          {
+            "key": "ref8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JIOT.2021.3123429"
+          },
+          {
+            "key": "ref9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TVT.2022.3183577"
+          },
+          {
+            "key": "ref10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TMC.2021.3059691"
+          },
+          {
+            "key": "ref11",
+            "article-title": "Continuous control with deep reinforcement learning",
+            "author": "Lillicrap",
+            "year": "2015",
+            "journal-title": "arXiv:1509.02971"
+          },
+          {
+            "key": "ref12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.comnet.2023.109940"
+          },
+          {
+            "key": "ref13",
+            "article-title": "Proximal policy optimization algorithms",
+            "author": "Schulman",
+            "year": "2017",
+            "journal-title": "arXiv:1707.06347"
+          },
+          {
+            "key": "ref14",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3093337.3037698"
+          },
+          {
+            "key": "ref15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/INFOCOM.2019.8737614"
+          },
+          {
+            "key": "ref16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JIOT.2018.2890133"
+          },
+          {
+            "key": "ref17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3430503"
+          },
+          {
+            "key": "ref18",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TWC.2017.2789293"
+          },
+          {
+            "key": "ref19",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/LWC.2019.2913843"
+          },
+          {
+            "key": "ref20",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.comnet.2021.108439"
+          },
+          {
+            "key": "ref21",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JSAC.2022.3228558"
+          },
+          {
+            "key": "ref22",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TNET.2022.3152150"
+          },
+          {
+            "key": "ref23",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TWC.2023.3266497"
+          },
+          {
+            "key": "ref24",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JIOT.2024.3483778"
+          },
+          {
+            "key": "ref25",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TMC.2019.2947893"
+          },
+          {
+            "key": "ref26",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1609/aaai.v34i07.6900"
+          },
+          {
+            "key": "ref27",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.18653/v1/2020.acl-main.204"
+          },
+          {
+            "key": "ref28",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3397315"
+          },
+          {
+            "key": "ref29",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3478073"
+          },
+          {
+            "key": "ref30",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IJCNN55064.2022.9892582"
+          },
+          {
+            "key": "ref31",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/MWC.009.2300501"
+          },
+          {
+            "key": "ref32",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/MSN57253.2022.00037"
+          },
+          {
+            "key": "ref33",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3725734"
+          },
+          {
+            "key": "ref34",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JSAC.2018.2864426"
+          },
+          {
+            "key": "ref35",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TWC.2019.2902559"
+          },
+          {
+            "key": "ref36",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3065386"
+          },
+          {
+            "key": "ref37",
+            "article-title": "Very deep convolutional networks for large-scale image recognition",
+            "author": "Simonyan",
+            "year": "2014",
+            "journal-title": "arXiv:1409.1556"
+          },
+          {
+            "key": "ref38",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/CVPR.2016.90"
+          },
+          {
+            "key": "ref39",
+            "first-page": "1587",
+            "article-title": "Addressing function approximation error in actor-critic methods",
+            "volume-title": "Proc. Int. Conf. Mach. Learn.",
+            "author": "Fujimoto"
+          }
+        ],
+        "container-title": [
+          "IEEE Transactions on Intelligent Transportation Systems"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx8/6979/11322649/11247795.pdf?arnumber=11247795",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              7
+            ]
+          ],
+          "date-time": "2026-10-07T19:12:27Z",
+          "timestamp": 1791400347000
+        },
+        "score": 1,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/11247795/"
+          }
+        },
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1
+            ]
+          ]
+        },
+        "references-count": 39,
+        "journal-issue": {
+          "issue": "1"
+        },
+        "URL": "https://doi.org/10.1109/tits.2025.3629117",
+        "relation": {},
+        "ISSN": [
+          "1524-9050",
+          "1558-0016"
+        ],
+        "issn-type": [
+          {
+            "value": "1524-9050",
+            "type": "print"
+          },
+          {
+            "value": "1558-0016",
+            "type": "electronic"
+          }
+        ],
+        "subject": [],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "candidate_id": "C14",
+      "doi": "10.1109/jiot.2026.3746980",
+      "status": "retrieved",
+      "title_matches": true,
+      "crossref_title": "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks",
+      "type": "journal-article",
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0009-0006-9142-8863",
+          "authenticated-orcid": false,
+          "given": "Lianming",
+          "family": "Xu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Beijing University of Posts and Telecommunications",
+              "place": [
+                "Beijing, China"
+              ],
+              "department": [
+                "School of Electronic Engineering"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0001-5307-7402",
+          "authenticated-orcid": false,
+          "given": "Yixue",
+          "family": "Liang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beijing University of Posts and Telecommunications",
+              "place": [
+                "Beijing, China"
+              ],
+              "department": [
+                "School of Electronic Engineering"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4855-2464",
+          "authenticated-orcid": false,
+          "given": "Lei",
+          "family": "Jin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beijing University of Posts and Telecommunications",
+              "place": [
+                "Beijing, China"
+              ],
+              "department": [
+                "School of Electronic Engineering"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0973-1614",
+          "authenticated-orcid": false,
+          "given": "Li",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beijing University of Posts and Telecommunications",
+              "place": [
+                "Beijing, China"
+              ],
+              "department": [
+                "School of Computer Science (National Pilot Software Engineering School)"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7304-6849",
+          "authenticated-orcid": false,
+          "given": "Ying-Jun Angela",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The Chinese University of Hong Kong",
+              "place": [
+                "Hong Kong, China"
+              ],
+              "department": [
+                "Department of Information Engineering"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6911-6683",
+          "authenticated-orcid": false,
+          "given": "Xiaoyu",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Southeast University",
+              "place": [
+                "Nanjing, Jiangsu, China"
+              ],
+              "department": [
+                "School of Cyber Science and Engineering"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7053-9832",
+          "authenticated-orcid": false,
+          "given": "Aiguo",
+          "family": "Fei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National Key Laboratory of Multi-Domain Data Collaborative Processing and Control",
+              "place": [
+                "Xi’an, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "venue": [
+        "IEEE Internet of Things Journal"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ],
+        "date-time": "2026-10-26T19:34:17Z",
+        "timestamp": 1793043257000
+      },
+      "relation": {},
+      "source_url": "https://api.crossref.org/works/10.1109/jiot.2026.3746980",
+      "raw_metadata": {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              27
+            ]
+          ],
+          "date-time": "2026-10-27T19:37:35Z",
+          "timestamp": 1793129855287,
+          "version": "4.5.0"
+        },
+        "reference-count": 0,
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2026-01-01T00:00:00Z",
+              "timestamp": 1767225600000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2026-01-01T00:00:00Z",
+              "timestamp": 1767225600000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2026-01-01T00:00:00Z",
+              "timestamp": 1767225600000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2026-01-01T00:00:00Z",
+              "timestamp": 1767225600000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://ieeexplore.ieee.org/Xplorehelp/tdmrep.html"
+          }
+        ],
+        "funder": [
+          {
+            "name": "National Natural Science Foundation of China",
+            "award": [
+              "62525106"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "62525106"
+                ]
+              }
+            ],
+            "id": [
+              {
+                "id": "https://ror.org/01h0zpd94",
+                "id-type": "ROR",
+                "asserted-by": "crossref"
+              }
+            ]
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "IEEE Internet Things J."
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "DOI": "10.1109/jiot.2026.3746980",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              26
+            ]
+          ],
+          "date-time": "2026-10-26T19:34:17Z",
+          "timestamp": 1793043257000
+        },
+        "page": "1-1",
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+          "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0006-9142-8863",
+            "authenticated-orcid": false,
+            "given": "Lianming",
+            "family": "Xu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Beijing University of Posts and Telecommunications",
+                "place": [
+                  "Beijing, China"
+                ],
+                "department": [
+                  "School of Electronic Engineering"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0001-5307-7402",
+            "authenticated-orcid": false,
+            "given": "Yixue",
+            "family": "Liang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Beijing University of Posts and Telecommunications",
+                "place": [
+                  "Beijing, China"
+                ],
+                "department": [
+                  "School of Electronic Engineering"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-4855-2464",
+            "authenticated-orcid": false,
+            "given": "Lei",
+            "family": "Jin",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Beijing University of Posts and Telecommunications",
+                "place": [
+                  "Beijing, China"
+                ],
+                "department": [
+                  "School of Electronic Engineering"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0973-1614",
+            "authenticated-orcid": false,
+            "given": "Li",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Beijing University of Posts and Telecommunications",
+                "place": [
+                  "Beijing, China"
+                ],
+                "department": [
+                  "School of Computer Science (National Pilot Software Engineering School)"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7304-6849",
+            "authenticated-orcid": false,
+            "given": "Ying-Jun Angela",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "The Chinese University of Hong Kong",
+                "place": [
+                  "Hong Kong, China"
+                ],
+                "department": [
+                  "Department of Information Engineering"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-6911-6683",
+            "authenticated-orcid": false,
+            "given": "Xiaoyu",
+            "family": "Zhao",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Southeast University",
+                "place": [
+                  "Nanjing, Jiangsu, China"
+                ],
+                "department": [
+                  "School of Cyber Science and Engineering"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7053-9832",
+            "authenticated-orcid": false,
+            "given": "Aiguo",
+            "family": "Fei",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "National Key Laboratory of Multi-Domain Data Collaborative Processing and Control",
+                "place": [
+                  "Xi’an, China"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "container-title": [
+          "IEEE Internet of Things Journal"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx8/6488907/6702522/11753908.pdf?arnumber=11753908",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              27
+            ]
+          ],
+          "date-time": "2026-10-27T19:14:18Z",
+          "timestamp": 1793128458000
+        },
+        "score": 1,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/11753908/"
+          }
+        },
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "references-count": 0,
+        "URL": "https://doi.org/10.1109/jiot.2026.3746980",
+        "relation": {},
+        "ISSN": [
+          "2327-4662"
+        ],
+        "issn-type": [
+          {
+            "value": "2327-4662",
+            "type": "electronic"
+          }
+        ],
+        "subject": [],
+        "published": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "candidate_id": "C09",
+      "doi": "10.1109/jiot.2026.3755315",
+      "status": "retrieved",
+      "title_matches": true,
+      "crossref_title": "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms",
+      "type": "journal-article",
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0705-9676",
+          "authenticated-orcid": false,
+          "given": "HyungBin",
+          "family": "Park",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Yonsei University",
+              "place": [
+                "Seoul, South Korea"
+              ],
+              "department": [
+                "Department of Computer Science"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3497-3295",
+          "authenticated-orcid": false,
+          "given": "SuKyoung",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Yonsei University",
+              "place": [
+                "Seoul, South Korea"
+              ],
+              "department": [
+                "Department of Computer Science"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "venue": [
+        "IEEE Internet of Things Journal"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            18
+          ]
+        ],
+        "date-time": "2026-11-18T20:05:10Z",
+        "timestamp": 1795032310000
+      },
+      "relation": {},
+      "source_url": "https://api.crossref.org/works/10.1109/jiot.2026.3755315",
+      "raw_metadata": {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              19
+            ]
+          ],
+          "date-time": "2026-11-19T20:23:12Z",
+          "timestamp": 1795119792381,
+          "version": "4.10.3"
+        },
+        "reference-count": 0,
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2026-01-01T00:00:00Z",
+              "timestamp": 1767225600000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2026-01-01T00:00:00Z",
+              "timestamp": 1767225600000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2026-01-01T00:00:00Z",
+              "timestamp": 1767225600000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2026-01-01T00:00:00Z",
+              "timestamp": 1767225600000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://ieeexplore.ieee.org/Xplorehelp/tdmrep.html"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "IEEE Internet Things J."
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "DOI": "10.1109/jiot.2026.3755315",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              18
+            ]
+          ],
+          "date-time": "2026-11-18T20:05:10Z",
+          "timestamp": 1795032310000
+        },
+        "page": "1-1",
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+          "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-0705-9676",
+            "authenticated-orcid": false,
+            "given": "HyungBin",
+            "family": "Park",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Yonsei University",
+                "place": [
+                  "Seoul, South Korea"
+                ],
+                "department": [
+                  "Department of Computer Science"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-3497-3295",
+            "authenticated-orcid": false,
+            "given": "SuKyoung",
+            "family": "Lee",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Yonsei University",
+                "place": [
+                  "Seoul, South Korea"
+                ],
+                "department": [
+                  "Department of Computer Science"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "container-title": [
+          "IEEE Internet of Things Journal"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx8/6488907/6702522/11804345.pdf?arnumber=11804345",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              19
+            ]
+          ],
+          "date-time": "2026-11-19T20:12:22Z",
+          "timestamp": 1795119142000
+        },
+        "score": 1,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/11804345/"
+          }
+        },
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "references-count": 0,
+        "URL": "https://doi.org/10.1109/jiot.2026.3755315",
+        "relation": {},
+        "ISSN": [
+          "2327-4662"
+        ],
+        "issn-type": [
+          {
+            "value": "2327-4662",
+            "type": "electronic"
+          }
+        ],
+        "subject": [],
+        "published": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "candidate_id": "C05",
+      "doi": "10.1109/tcsvt.2026.3745821",
+      "status": "retrieved",
+      "title_matches": true,
+      "crossref_title": "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems",
+      "type": "journal-article",
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2765-3303",
+          "authenticated-orcid": false,
+          "given": "Hao",
+          "family": "Hao",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Qilu University of Technology (Shandong Academy of Sciences)",
+              "place": [
+                "Jinan, China"
+              ],
+              "department": [
+                "Ministry of Education, Shandong Computer Science Center (National Supercomputer Center in Jinan)"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1467-1086",
+          "authenticated-orcid": false,
+          "given": "Changqiao",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beijing University of Posts and Telecommunications",
+              "place": [
+                "Beijing, China"
+              ],
+              "department": [
+                "State Key Laboratory of Networking and Switching Technology"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8947-9067",
+          "authenticated-orcid": false,
+          "given": "Wei",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Qilu University of Technology (Shandong Academy of Sciences)",
+              "place": [
+                "Jinan, China"
+              ],
+              "department": [
+                "Ministry of Education, Shandong Computer Science Center (National Supercomputer Center in Jinan)"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9597-2659",
+          "authenticated-orcid": false,
+          "given": "Shujie",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beijing University of Posts and Telecommunications",
+              "place": [
+                "Beijing, China"
+              ],
+              "department": [
+                "State Key Laboratory of Networking and Switching Technology"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3695-305X",
+          "authenticated-orcid": false,
+          "given": "Xiaolong",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Qilu University of Technology (Shandong Academy of Sciences)",
+              "place": [
+                "Jinan, China"
+              ],
+              "department": [
+                "Ministry of Education, Shandong Computer Science Center (National Supercomputer Center in Jinan)"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6545-8958",
+          "authenticated-orcid": false,
+          "given": "Huiling",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Qilu University of Technology (Shandong Academy of Sciences)",
+              "place": [
+                "Jinan, China"
+              ],
+              "department": [
+                "Ministry of Education, Shandong Computer Science Center (National Supercomputer Center in Jinan)"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9332-4770",
+          "authenticated-orcid": false,
+          "given": "Gabriel-Miro",
+          "family": "Muntean",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Dublin City University",
+              "place": [
+                "Dublin, Ireland"
+              ],
+              "department": [
+                "School of Electronic Engineering"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "venue": [
+        "IEEE Transactions on Circuits and Systems for Video Technology"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            23
+          ]
+        ],
+        "date-time": "2026-10-23T19:14:19Z",
+        "timestamp": 1792782859000
+      },
+      "relation": {},
+      "source_url": "https://api.crossref.org/works/10.1109/tcsvt.2026.3745821",
+      "raw_metadata": {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              23
+            ]
+          ],
+          "date-time": "2026-10-23T19:47:37Z",
+          "timestamp": 1792784857714,
+          "version": "4.5.0"
+        },
+        "reference-count": 0,
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2026-01-01T00:00:00Z",
+              "timestamp": 1767225600000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "IEEE Trans. Circuits Syst. Video Technol."
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "DOI": "10.1109/tcsvt.2026.3745821",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              23
+            ]
+          ],
+          "date-time": "2026-10-23T19:14:19Z",
+          "timestamp": 1792782859000
+        },
+        "page": "1-1",
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+          "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-2765-3303",
+            "authenticated-orcid": false,
+            "given": "Hao",
+            "family": "Hao",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Qilu University of Technology (Shandong Academy of Sciences)",
+                "place": [
+                  "Jinan, China"
+                ],
+                "department": [
+                  "Ministry of Education, Shandong Computer Science Center (National Supercomputer Center in Jinan)"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1467-1086",
+            "authenticated-orcid": false,
+            "given": "Changqiao",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Beijing University of Posts and Telecommunications",
+                "place": [
+                  "Beijing, China"
+                ],
+                "department": [
+                  "State Key Laboratory of Networking and Switching Technology"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8947-9067",
+            "authenticated-orcid": false,
+            "given": "Wei",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Qilu University of Technology (Shandong Academy of Sciences)",
+                "place": [
+                  "Jinan, China"
+                ],
+                "department": [
+                  "Ministry of Education, Shandong Computer Science Center (National Supercomputer Center in Jinan)"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9597-2659",
+            "authenticated-orcid": false,
+            "given": "Shujie",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Beijing University of Posts and Telecommunications",
+                "place": [
+                  "Beijing, China"
+                ],
+                "department": [
+                  "State Key Laboratory of Networking and Switching Technology"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3695-305X",
+            "authenticated-orcid": false,
+            "given": "Xiaolong",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Qilu University of Technology (Shandong Academy of Sciences)",
+                "place": [
+                  "Jinan, China"
+                ],
+                "department": [
+                  "Ministry of Education, Shandong Computer Science Center (National Supercomputer Center in Jinan)"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6545-8958",
+            "authenticated-orcid": false,
+            "given": "Huiling",
+            "family": "Shi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Qilu University of Technology (Shandong Academy of Sciences)",
+                "place": [
+                  "Jinan, China"
+                ],
+                "department": [
+                  "Ministry of Education, Shandong Computer Science Center (National Supercomputer Center in Jinan)"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9332-4770",
+            "authenticated-orcid": false,
+            "given": "Gabriel-Miro",
+            "family": "Muntean",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Dublin City University",
+                "place": [
+                  "Dublin, Ireland"
+                ],
+                "department": [
+                  "School of Electronic Engineering"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "container-title": [
+          "IEEE Transactions on Circuits and Systems for Video Technology"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx8/76/4358651/11745919.pdf?arnumber=11745919",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              23
+            ]
+          ],
+          "date-time": "2026-10-23T19:14:19Z",
+          "timestamp": 1792782859000
+        },
+        "score": 1,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/11745919/"
+          }
+        },
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "references-count": 0,
+        "URL": "https://doi.org/10.1109/tcsvt.2026.3745821",
+        "relation": {},
+        "ISSN": [
+          "1051-8215",
+          "1558-2205"
+        ],
+        "issn-type": [
+          {
+            "value": "1051-8215",
+            "type": "print"
+          },
+          {
+            "value": "1558-2205",
+            "type": "electronic"
+          }
+        ],
+        "subject": [],
+        "published": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "candidate_id": "C23",
+      "doi": "10.1109/wcnc57260.2024.10570535",
+      "status": "retrieved",
+      "title_matches": true,
+      "crossref_title": "Efficient Pipeline Collaborative DNN Inference in Resource-Constrained UAV Swarm",
+      "type": "proceedings-article",
+      "authors": [
+        {
+          "given": "Weiqing",
+          "family": "Ren",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Nanjing University of Aeronautics and Astronautics,The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space, Ministry of Industry and Information Technology,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuben",
+          "family": "Qu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanjing University of Aeronautics and Astronautics,The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space, Ministry of Industry and Information Technology,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhen",
+          "family": "Qin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Noncommissioned Officer Academy of PAP,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chao",
+          "family": "Dong",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanjing University of Aeronautics and Astronautics,The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space, Ministry of Industry and Information Technology,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fuhui",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanjing University of Aeronautics and Astronautics,The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space, Ministry of Industry and Information Technology,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lei",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanjing University of Aeronautics and Astronautics,The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space, Ministry of Industry and Information Technology,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qihui",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanjing University of Aeronautics and Astronautics,The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space, Ministry of Industry and Information Technology,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "venue": [
+        "2024 IEEE Wireless Communications and Networking Conference (WCNC)"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            21
+          ]
+        ]
+      },
+      "published_online": null,
+      "published_print": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            21
+          ]
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            3
+          ]
+        ],
+        "date-time": "2024-07-03T17:25:49Z",
+        "timestamp": 1720027549000
+      },
+      "relation": {},
+      "source_url": "https://api.crossref.org/works/10.1109/wcnc57260.2024.10570535",
+      "raw_metadata": {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              17
+            ]
+          ],
+          "date-time": "2026-06-17T16:35:33Z",
+          "timestamp": 1781714133389,
+          "version": "3.54.5"
+        },
+        "reference-count": 23,
+        "publisher": "IEEE",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2024,
+                  4,
+                  21
+                ]
+              ],
+              "date-time": "2024-04-21T00:00:00Z",
+              "timestamp": 1713657600000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2024,
+                  4,
+                  21
+                ]
+              ],
+              "date-time": "2024-04-21T00:00:00Z",
+              "timestamp": 1713657600000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          }
+        ],
+        "funder": [
+          {
+            "DOI": "10.13039/501100001809",
+            "name": "National Natural Science Foundation of China",
+            "doi-asserted-by": "publisher",
+            "award": [
+              "61931011,62072303"
+            ],
+            "award-info": [
+              {
+                "award-number": [
+                  "61931011,62072303"
+                ]
+              }
+            ],
+            "id": [
+              {
+                "id": "10.13039/501100001809",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [],
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              21
+            ]
+          ]
+        },
+        "DOI": "10.1109/wcnc57260.2024.10570535",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              3
+            ]
+          ],
+          "date-time": "2024-07-03T17:25:49Z",
+          "timestamp": 1720027549000
+        },
+        "page": "1-6",
+        "source": "Crossref",
+        "is-referenced-by-count": 11,
+        "title": [
+          "Efficient Pipeline Collaborative DNN Inference in Resource-Constrained UAV Swarm"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "given": "Weiqing",
+            "family": "Ren",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics,The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space, Ministry of Industry and Information Technology,China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yuben",
+            "family": "Qu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics,The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space, Ministry of Industry and Information Technology,China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Zhen",
+            "family": "Qin",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Noncommissioned Officer Academy of PAP,China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Chao",
+            "family": "Dong",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics,The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space, Ministry of Industry and Information Technology,China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Fuhui",
+            "family": "Zhou",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics,The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space, Ministry of Industry and Information Technology,China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Lei",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics,The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space, Ministry of Industry and Information Technology,China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Qihui",
+            "family": "Wu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics,The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space, Ministry of Industry and Information Technology,China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/19475705.2016.1238852"
+          },
+          {
+            "key": "ref2",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.cie.2020.106652"
+          },
+          {
+            "key": "ref3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IROS45743.2020.9341790"
+          },
+          {
+            "key": "ref4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICIAI.2019.8850815"
+          },
+          {
+            "key": "ref5",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3093337.3037698"
+          },
+          {
+            "key": "ref6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/HPCA.2018.00018"
+          },
+          {
+            "key": "ref7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/INFOCOM.2019.8737614"
+          },
+          {
+            "key": "ref8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/GLOBECOM38437.2019.9013956"
+          },
+          {
+            "key": "ref9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JIOT.2020.3016694"
+          },
+          {
+            "key": "ref10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/MWC.003.2100690"
+          },
+          {
+            "key": "ref11",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IWCMC51323.2021.9498967"
+          },
+          {
+            "key": "ref12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/GLOBECOM42002.2020.9322470"
+          },
+          {
+            "key": "ref13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TPDS.2021.3058532"
+          },
+          {
+            "key": "ref14",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JIOT.2021.3079164"
+          },
+          {
+            "key": "ref15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3229556.3229562"
+          },
+          {
+            "key": "ref16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IWCMC58020.2023.10182881"
+          },
+          {
+            "key": "ref17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3194554.3194565"
+          },
+          {
+            "key": "ref18",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3472456.3472468"
+          },
+          {
+            "key": "ref19",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TII.2021.3075464"
+          },
+          {
+            "key": "ref20",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TNET.2020.3042320"
+          },
+          {
+            "key": "ref21",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TWC.2017.2688328"
+          },
+          {
+            "key": "ref22",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/CVPRW.2019.00081"
+          },
+          {
+            "key": "ref23",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ISPA-BDCloud-SocialCom-SustainCom57177.2022.00055"
+          }
+        ],
+        "event": {
+          "name": "2024 IEEE Wireless Communications and Networking Conference (WCNC)",
+          "location": "Dubai, United Arab Emirates",
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                21
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                24
+              ]
+            ]
+          }
+        },
+        "container-title": [
+          "2024 IEEE Wireless Communications and Networking Conference (WCNC)"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx8/10570463/10570502/10570535.pdf?arnumber=10570535",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              7
+            ]
+          ],
+          "date-time": "2024-07-07T05:38:49Z",
+          "timestamp": 1720330729000
+        },
+        "score": 1,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/10570535/"
+          }
+        },
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              21
+            ]
+          ]
+        },
+        "references-count": 23,
+        "URL": "https://doi.org/10.1109/wcnc57260.2024.10570535",
+        "relation": {},
+        "subject": [],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              21
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}
