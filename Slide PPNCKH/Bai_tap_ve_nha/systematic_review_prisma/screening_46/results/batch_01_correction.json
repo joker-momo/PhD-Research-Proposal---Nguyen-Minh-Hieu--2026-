@@ -1,0 +1,166 @@
+{
+  "records": [
+    {
+      "id": "S01",
+      "title": "Efficient Real-Time Image Recognition Using Collaborative Swarm of UAVs and Convolutional Networks",
+      "authors": [
+        "Marwan Dhuheir",
+        "Emna Baccour",
+        "Aiman Erbad",
+        "Sinan Sabeeh",
+        "Mounir Hamdi"
+      ],
+      "year": 2021,
+      "venue": "2021 International Wireless Communications and Mobile Computing (IWCMC)",
+      "doi": "10.1109/iwcmc51323.2021.9498967",
+      "matched_published_report": true,
+      "source_version_for_existing_extraction": "preprint (arXiv:2107.04648v1; screening_46/pdf/S01.pdf, pages 1-7), acting as an author copy of the published IWCMC 2021 conference paper",
+      "content_equivalence": "not_assumed",
+      "identity_evidence": [
+        {
+          "source": "/Users/joker/Downloads/bai_tap_lon_ref/dhuheir2021.pdf",
+          "page_or_selector": "page 1 (left margin)",
+          "quote": "2021 International Wireless Communications and Mobile Computing (IWCMC) | 978-1-7281-8616-0/21/$31.00 ©2021 IEEE | DOI: 10.1109/IWCMC51323.2021.9498967"
+        },
+        {
+          "source": "/Users/joker/Downloads/bai_tap_lon_ref/dhuheir2021.pdf",
+          "page_or_selector": "page 1 (title)",
+          "quote": "Efficient Real-Time Image Recognition Using Collaborative Swarm of UAVs and Convolutional Networks"
+        },
+        {
+          "source": "/Users/joker/Downloads/bai_tap_lon_ref/dhuheir2021.pdf",
+          "page_or_selector": "page 1 (byline)",
+          "quote": "Marwan Dhuheir∗, Emna Baccour∗, Aiman Erbad∗, Sinan Sabeeh†, Mounir Hamdi∗"
+        },
+        {
+          "source": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S01.pdf",
+          "page_or_selector": "page 1 (left margin)",
+          "quote": "arXiv:2107.04648v1 [cs.CV] 9 Jul 2021"
+        }
+      ],
+      "primary_full_report": {
+        "status": "YES",
+        "rationale": "Published identity is established directly from the supplied IEEE Xplore publisher PDF dhuheir2021.pdf (6 pages, pp. 1954-1959, 2021 International Wireless Communications and Mobile Computing (IWCMC), DOI 10.1109/IWCMC51323.2021.9498967), whose title and five authors match the 7-page arXiv:2107.04648v1 preprint (S01.pdf) as an author copy. Existing non-identity technical gates in batch_01.json remain anchored to S01.pdf and are retained without validating publisher-version numerical or full-text equivalence.",
+        "source_locator": "/Users/joker/Downloads/bai_tap_lon_ref/dhuheir2021.pdf (pages 1-6, pp. 1954-1959) and /Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S01.pdf (pages 1-7)"
+      },
+      "resulting_decision": "INCLUDE",
+      "unresolved": [
+        "Full-text and numerical equivalence between the extracted 7-page preprint S01.pdf (arXiv:2107.04648v1) and the 6-page published IEEE IWCMC 2021 PDF dhuheir2021.pdf (pp. 1954-1959, where reference [13] fits on page 6 rather than spilling to page 7) has not been verified line-by-line; existing batch_01.json extraction locators refer to S01.pdf only, and this correction does not validate publisher-version numerical equivalence.",
+        "Primary Crossref JSON for 10.1109/iwcmc51323.2021.9498967 is not stored in priority_citation_verification.json; published identity here relies on the supplied IEEE Xplore publisher PDF dhuheir2021.pdf.",
+        "Study-family overlap: shares authors (Dhuheir, Baccour, Erbad, Sabeeh, Hamdi) with S02 (cited in S02 as [20]) and S06 (cited in S06 as [7]).",
+        "Page 4 of S01.pdf and dhuheir2021.pdf explicitly defers UAV mobility impact on link rates to future work; evaluation assumes static link rates and no node/link failure recovery."
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "Deep Reinforcement Learning for Trajectory Path Planning and Distributed Inference in Resource-Constrained UAV Swarms",
+      "authors": [
+        "Marwan Dhuheir",
+        "Emna Baccour",
+        "Aiman Erbad",
+        "Sinan Sabeeh Al-Obaidi",
+        "Mounir Hamdi"
+      ],
+      "year": 2023,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2022.3231341",
+      "matched_published_report": true,
+      "source_version_for_existing_extraction": "preprint (arXiv:2212.11201v1; screening_46/pdf/S02.pdf, pages 1-17), acting as an author copy of the published IEEE Internet of Things Journal article",
+      "content_equivalence": "not_assumed",
+      "identity_evidence": [
+        {
+          "source": "/Users/joker/Downloads/bai_tap_lon_ref/Deep_Reinforcement_Learning_for_Trajectory_Path_Planning_and_Distributed_Inference_in_Resource-Constrained_UAV_Swarms.pdf",
+          "page_or_selector": "page 1 (running header)",
+          "quote": "IEEE INTERNET OF THINGS JOURNAL, VOL. 10, NO. 9, 1 MAY 2023"
+        },
+        {
+          "source": "/Users/joker/Downloads/bai_tap_lon_ref/Deep_Reinforcement_Learning_for_Trajectory_Path_Planning_and_Distributed_Inference_in_Resource-Constrained_UAV_Swarms.pdf",
+          "page_or_selector": "page 1 (manuscript history and DOI line)",
+          "quote": "Date of publication 28 December 2022; date of current version 25 April 2023."
+        },
+        {
+          "source": "/Users/joker/Downloads/bai_tap_lon_ref/Deep_Reinforcement_Learning_for_Trajectory_Path_Planning_and_Distributed_Inference_in_Resource-Constrained_UAV_Swarms.pdf",
+          "page_or_selector": "page 1 (DOI line)",
+          "quote": "Digital Object Identifier 10.1109/JIOT.2022.3231341"
+        },
+        {
+          "source": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/priority_citation_verification.json",
+          "page_or_selector": "metadata[\"10.1109/jiot.2022.3231341\"].authors (line 30)",
+          "quote": "Dhuheir, Marwan Abdou; Baccour, Emna; Erbad, Aiman; Al-Obaidi, Sinan Sabeeh; Hamdi, Mounir"
+        },
+        {
+          "source": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S02.pdf",
+          "page_or_selector": "page 1 (left margin)",
+          "quote": "arXiv:2212.11201v1 [cs.DC] 21 Dec 2022"
+        }
+      ],
+      "primary_full_report": {
+        "status": "YES",
+        "rationale": "Published identity is established from the supplied IEEE Xplore publisher PDF (IEEE Internet of Things Journal, Vol. 10, No. 9, 1 May 2023, pp. 8185-8201, online publication 28 December 2022, DOI 10.1109/JIOT.2022.3231341) and corroborated by primary Crossref metadata in priority_citation_verification.json, confirming that the 17-page arXiv:2212.11201v1 preprint (S02.pdf) is an author copy of a full peer-reviewed journal article. Existing non-identity technical gates in batch_01.json remain anchored to S02.pdf and are retained without validating publisher-version numerical or full-text equivalence.",
+        "source_locator": "/Users/joker/Downloads/bai_tap_lon_ref/Deep_Reinforcement_Learning_for_Trajectory_Path_Planning_and_Distributed_Inference_in_Resource-Constrained_UAV_Swarms.pdf (pp. 8185-8201, PDF pages 1-17), priority_citation_verification.json metadata[\"10.1109/jiot.2022.3231341\"] (lines 27-659), and /Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S02.pdf (pages 1-17)"
+      },
+      "resulting_decision": "INCLUDE",
+      "unresolved": [
+        "Full-text and numerical equivalence between S02.pdf (arXiv:2212.11201v1, numbered pp. 1-17 with placeholder '© 2021 IEEE' footer) and the publisher PDF (pp. 8185-8201, PDF pp. 1-17) has not been verified line-by-line; visible text/reference differences exist (e.g., S02.pdf p. 3 cites 'Hend et al. in [23]' vs. 'Gedawy et al. [23]' on publisher p. 8187, and S02.pdf p. 4 cites 'Huan et al. in [14]' and 'Qian et al. in [25]' vs. 'Chang et al. [14]' and 'Liu et al. [25]' on publisher p. 8188); existing batch_01.json extraction locators refer to S02.pdf only and this correction does not validate publisher-version numerical equivalence.",
+        "First-author given name appears as 'Marwan Dhuheir' on both PDFs versus 'Marwan Abdou Dhuheir' in Crossref metadata; print issue year is 2023 (1 May 2023) with online publication on 28 December 2022 and arXiv posting on 21 December 2022.",
+        "Study-family overlap: extends S01 (cited as [20]) and shares authors with S01 and S06.",
+        "Internal parameter/terminology ambiguities require verification in extraction: Table II (page 11 of S02.pdf and page 8195 of publisher PDF) lists bandwidth B_{i,k}^t as 1 KHz and text on page 11 refers to computation rate e_i as memory capacity."
+      ]
+    },
+    {
+      "id": "S06",
+      "title": "LLHR: Low Latency and High Reliability CNN Distributed Inference for Resource-Constrained UAV Swarms",
+      "authors": [
+        "Marwan Dhuheir",
+        "Aiman Erbad",
+        "Sinan Sabeeh"
+      ],
+      "year": 2023,
+      "venue": "2023 IEEE Wireless Communications and Networking Conference (WCNC)",
+      "doi": "10.1109/wcnc55385.2023.10118908",
+      "matched_published_report": true,
+      "source_version_for_existing_extraction": "preprint (arXiv:2305.15858v1; screening_46/pdf/S06.pdf, pages 1-6), acting as an author copy of the published 2023 IEEE WCNC conference paper",
+      "content_equivalence": "unresolved",
+      "identity_evidence": [
+        {
+          "source": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/priority_citation_verification.json",
+          "page_or_selector": "metadata[\"10.1109/wcnc55385.2023.10118908\"].title (line 1865) and .doi (line 1922)",
+          "quote": "LLHR: Low Latency and High Reliability CNN Distributed Inference for Resource-Constrained UAV Swarms"
+        },
+        {
+          "source": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/priority_citation_verification.json",
+          "page_or_selector": "metadata[\"10.1109/wcnc55385.2023.10118908\"].authors (line 1866), .journal (line 1918), .pages (line 1921), and .crossref_message.resource.primary.URL (line 2187)",
+          "quote": "2023 IEEE Wireless Communications and Networking Conference (WCNC)"
+        },
+        {
+          "source": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/priority_citation_verification.json",
+          "page_or_selector": "metadata[\"10.1109/wcnc55385.2023.10118908\"].crossref_message.resource.primary.URL (line 2187)",
+          "quote": "https://ieeexplore.ieee.org/document/10118908/"
+        },
+        {
+          "source": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S06.pdf",
+          "page_or_selector": "page 1 (left margin)",
+          "quote": "arXiv:2305.15858v1 [cs.DC] 25 May 2023"
+        },
+        {
+          "source": "/Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S06.pdf",
+          "page_or_selector": "page 6 (Acknowledgment)",
+          "quote": "This work was made possible by NPRP grant # NPRP13S-0205-200265 from the Qatar National Research Fund (a member of Qatar Foundation)."
+        }
+      ],
+      "primary_full_report": {
+        "status": "YES",
+        "rationale": "Published identity is established by primary Crossref-deposited IEEE metadata in priority_citation_verification.json (DOI 10.1109/wcnc55385.2023.10118908, type proceedings-article, 2023 IEEE Wireless Communications and Networking Conference (WCNC), Glasgow, United Kingdom, 26-29 March 2023, pp. 1-6, https://ieeexplore.ieee.org/document/10118908/), which matches the exact title, three authors (Dhuheir, Marwan; Erbad, Aiman; Sabeeh, Sinan) and affiliations, Qatar Foundation funder, 6-page length, and all 12 cited references of S06.pdf (arXiv:2305.15858v1). S06.pdf is therefore an author copy of a full peer-reviewed conference paper. Existing non-identity technical gates in batch_01.json remain anchored to S06.pdf and are retained without validating publisher-version numerical or full-text equivalence.",
+        "source_locator": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/priority_citation_verification.json metadata[\"10.1109/wcnc55385.2023.10118908\"] (lines 1863-2214) and /Users/joker/.codex/worktrees/hk261-c01-evidence/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/pdf/S06.pdf (pages 1-6)"
+      },
+      "resulting_decision": "INCLUDE",
+      "unresolved": [
+        "The published IEEE WCNC 2023 PDF (https://ieeexplore.ieee.org/document/10118908/, DOI 10.1109/wcnc55385.2023.10118908, pp. 1-6) has not been retrieved or inspected locally; full-text and numerical equivalence between S06.pdf (arXiv:2305.15858v1, posted 25 May 2023 after the 26-29 March 2023 conference) and the published IEEE proceedings version remains unresolved, and existing batch_01.json technical-gate locators remain grounded in S06.pdf only.",
+        "Study-family overlap: shares authors (Dhuheir, Erbad, Sabeeh) with S01 (cited as [7]) and S02.",
+        "Section IV of S06.pdf (page 5) refers to m = 560, 512, 256 as memory capacity in Fig. 3 while page 5 text defines them as multiplications per second e_i; constraint (8c)-(8d) radius/minimum-distance notation (x_i^2 + y_i^2 <= R^2 and d_{i,k} >= 2R) on page 4 requires verification in extraction."
+      ]
+    }
+  ],
+  "shortfall": [],
+  "project_files_changed": 0
+}
