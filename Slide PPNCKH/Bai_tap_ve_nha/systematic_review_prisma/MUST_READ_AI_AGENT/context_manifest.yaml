@@ -1,5 +1,5 @@
 schema_version: 1
-context_version: "2026-11-25.1"
+context_version: "2026-11-25.2"
 project: "HK261 PRISMA systematic review"
 required_read_order:
   - README.md
@@ -28,3 +28,10 @@ refresh_triggers:
   - A2A model or routing policy changes
   - authorship, affiliation, funding, or submission status changes
   - a new protocol amendment is adopted
+
+persistent_task_gate:
+  root_entry: "../../../../AGENTS.md"
+  hook_config: "../../../../.codex/hooks.json"
+  hook_evidence: "../../../../.codex/hooks/README.md"
+  automatic_runtime_enforcement: "UNVERIFIED; direct subprocess checks pass; manual gate required"
+  task_fields: [TASK, OWNER, OWNED_PATHS, BINARY_ACCEPTANCE, PRE_TASK_GIT_STATUS]

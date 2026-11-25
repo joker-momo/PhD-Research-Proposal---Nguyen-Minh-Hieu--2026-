@@ -1,0 +1,42 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk proxy /usr/bin/python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/task_gate.py\"",
+            "timeout": 10,
+            "statusMessage": "Checking HK261 task ownership and commit gate"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact|fork",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk proxy /usr/bin/python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/task_gate.py\"",
+            "timeout": 10,
+            "statusMessage": "Checking HK261 task ownership and commit gate"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk proxy /usr/bin/python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/task_gate.py\"",
+            "timeout": 10,
+            "statusMessage": "Checking HK261 task ownership and commit gate"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -42,6 +42,22 @@ in `06_FILE_MAP.md`, stop and reconcile the conflict before using either value.
 **NOT READY and NOT SUBMITTED.** A successful build or interim evidence package
 does not satisfy the research, author-approval, portal, or course-evidence gates.
 
+## Active screening and task-gate checkpoint
+
+- Stable intake: `screening_46/manifest.json`, 46 PDFs / 582 readable pages. This
+  is an intake count, not a final eligible-study count.
+- Batch 01 S01-S06: working screening accepted with 5 INCLUDE and 1 EXCLUDE
+  (S03 demo). Original evidence plus publication-identity correction accepted
+  in `screening_46/reviews/batch_01_combined_gate.md`; commit `531a54e`.
+- Published-identity correction does not establish numerical/content equivalence
+  across preprint and publisher versions. Human adjudication remains pending.
+- Current task: durable ownership/commit gate. Direct hook subprocess tests pass;
+  automatic Codex runtime activation remains unverified. See repository-root
+  `.codex/hooks/README.md`. Manual clean-tree checks remain mandatory.
+- Next: only after this gate task is committed and Git is clean, dispatch batch
+  02 S07-S12 via the router, then review and commit before batch 03.
+- No manuscript or included-study aggregate was changed by batch 01 screening.
+
 ## Required first action for the next agent
 
 Read the task-relevant canonical files, inspect current Git/A2A state, then report
