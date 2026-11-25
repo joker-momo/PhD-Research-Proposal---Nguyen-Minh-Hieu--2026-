@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T05:48:14+07:00
+Updated_at: 2026-11-26T05:50:09+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -24,7 +24,7 @@ without blocking dispatch.
 | Screening batch 03 | S13-S18 | accepted working screening | 6 INCLUDE; 48/48 batch locators plus 30/30 S16 correction locators; gate `screening_46/reviews/batch_03_combined_gate.md`; commit `fc8944f` | Preserve S16 version limits; reconcile later |
 | Screening batch 04 | S19-S20, C01-C04 | accepted working screening, correction 02 | 3 INCLUDE, 3 UNCERTAIN; 48/48 locators; `screening_46/reviews/batch_04_correction_02_review.md` | Preserve uncertainty; proceed to batch 05 after commit/merge/cleanup |
 | Timestamp standardization | logs/status/hooks | completed and merged at `1f04299` | requested_at 2026-11-25T23:02:44+07:00; 17 gate tests + 18 skill-router tests PASS | Preserve timestamp checks in every subsequent task |
-| Screening batch 05 | C05-C10 | primary rejected A3/A4 | 48/48 locators; 0 adopted decisions; `screening_46/reviews/batch_05_review.md` | After commit/merge/cleanup, prepare targeted C06/C08 correction |
+| Screening batch 05 | C05-C10 | primary rejected A3/A4 | 48/48 locators; 0 adopted decisions; `screening_46/reviews/batch_05_review.md` | Corrective brief ready after commit; route once for C06/C08 |
 | Screening batch 06 | C11-C16 | not started | none | Wait for batch 05 commit and clean gate |
 | Screening batch 07 | C17-C21 | not started | none | Wait for batch 06 commit and clean gate |
 | Screening batch 08 | C22-C25, SNCS | not started | none | Wait for batch 07 commit and clean gate |
@@ -66,10 +66,10 @@ baseline is not permission to create new residue outside the owned scopes.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "screening-batch-05",
-  "status": "rejected",
-  "started_at": "2026-11-26T05:36:31+07:00",
-  "updated_at": "2026-11-26T05:48:14+07:00",
-  "completed_at": "2026-11-26T05:48:14+07:00"
+  "task_id": "prepare-batch-05-correction",
+  "status": "completed",
+  "started_at": "2026-11-26T05:49:25+07:00",
+  "updated_at": "2026-11-26T05:50:09+07:00",
+  "completed_at": "2026-11-26T05:50:09+07:00"
 }
 -->
