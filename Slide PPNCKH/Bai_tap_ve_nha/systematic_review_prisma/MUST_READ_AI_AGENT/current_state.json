@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T10:18:29+07:00",
+  "updated_at": "2026-11-26T10:21:03+07:00",
   "goal": {
     "version": "HK261-PRISMA-SNCS-v2",
     "status": "active",
@@ -11,16 +11,23 @@
     "owner": "CODEX_WRITING",
     "status": "completed",
     "started_at": "2026-11-26T07:58:00+07:00",
-    "updated_at": "2026-11-26T10:18:29+07:00",
-    "completed_at": "2026-11-26T10:18:29+07:00",
-    "decision_id": "hk261-context-optimization-v3"
+    "updated_at": "2026-11-26T10:21:03+07:00",
+    "completed_at": "2026-11-26T10:21:03+07:00",
+    "decision_id": "hk261-context-optimization-v4"
   },
   "next_task": {
-    "task_id": "reconciliation-dates-02",
+    "task_id": "reconciliation-dates-02-retry",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "After this optimization is merged and cleaned up, dispatch screening_46/reconciliation/briefs/dates_02.md exactly once through the approved Gemini-first A2A router.",
+    "action": "After this optimization is merged and cleaned up, make one bounded retry of the unchanged screening_46/reconciliation/briefs/dates_02.md through the approved Gemini-first A2A router.",
     "acceptance": "Exactly C05, C09, C10, C13, C14 and C19; all D1-D5 PASS with labelled publication dates, bounded source attempts, explicit access gaps and no administrative/download-date substitution.",
+    "prior_attempt": {
+      "status": "rejected with zero accepted records",
+      "primary_task_id": "01a21567-64ad-7831-ba3e-3a0fa167d8cb",
+      "primary_result": "quota-only",
+      "fallback_task_id": "01a2156a-5c7a-7f2a-9214-d3fcbaaf5cc2",
+      "fallback_result": "TASK_STATE_FAILED"
+    },
     "prior_scope_state": "scope_01 accepted working evidence; C06 and SNCS remain uncertain"
   },
   "project": {

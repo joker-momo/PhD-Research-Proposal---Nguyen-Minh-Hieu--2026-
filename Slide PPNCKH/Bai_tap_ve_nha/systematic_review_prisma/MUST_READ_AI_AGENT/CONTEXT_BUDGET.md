@@ -9,9 +9,9 @@ model tokenization varies.
 | Snapshot | Files counted | Bytes | Approx. tokens |
 |---|---|---:|---:|
 | Before | `AGENTS.md` plus the former 10-file mandatory read set | 52,423 | 13,106 |
-| After | `AGENTS.md`, entry point, manifest, README and `current_state.json` | 11,219 | 2,805 |
+| After | `AGENTS.md`, entry point, manifest, README and `current_state.json` | 11,542 | 2,886 |
 
-The optimized set is **78.6% smaller**. The before figure excludes the old
+The optimized set is **78.0% smaller**. The before figure excludes the old
 entry-point and manifest while the after figure includes both, so the reported
 reduction is conservative. Task-specific policy files are loaded only by the
 matching manifest route.
