@@ -160,3 +160,4 @@
 {"timestamp": "2026-11-26T23:09:30+07:00", "task_id": "restart-11-batch01-preflight-review", "event": "batch01-preflight-review", "provider_task_id": "2e3d6de5-0d6f-4fb2-afff-bf00929c1f00", "provider_context_id": "53e79794-b3e6-49da-abc2-61e7f40e745e", "cleanup": "DELETED"}
 {"timestamp": "2026-11-26T23:09:49+07:00", "task_id": "restart-11-batch01-extraction-new-brief", "event": "batch01-extraction-new-brief"}
 {"timestamp": "2026-11-26T23:19:28+07:00", "task_id": "restart-11-batch01-extraction-new-review", "event": "batch01-extraction-new-review", "provider_task_id": "d9b919ae-f917-43ef-a656-9a8dbff893f6", "provider_context_id": "37102fe6-f984-4cd3-8fe0-1e06b0ac93fc", "cleanup": "DELETED", "transport": "TIMEOUT_RECOVERED", "accepted_reports": 0}
+{"timestamp": "2026-11-26T23:19:50+07:00", "task_id": "restart-11-batch02-correction06-brief", "event": "batch02-correction06-brief"}

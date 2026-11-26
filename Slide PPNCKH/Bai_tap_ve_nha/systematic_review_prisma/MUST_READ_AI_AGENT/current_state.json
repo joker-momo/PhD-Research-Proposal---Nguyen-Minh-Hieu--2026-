@@ -1,27 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:19:28+07:00",
+  "updated_at": "2026-11-26T23:19:50+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-batch01-extraction-new-review",
+    "task_id": "restart-11-batch02-correction06-brief",
     "owner": "CODEX_WRITING",
-    "status": "rejected",
-    "started_at": "2026-11-26T23:19:28+07:00",
-    "updated_at": "2026-11-26T23:19:28+07:00",
-    "completed_at": "2026-11-26T23:19:28+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_extraction_new_review.md",
-    "decision_id": "restart-11-batch01-extraction-new-review-v1"
+    "status": "completed",
+    "started_at": "2026-11-26T23:19:50+07:00",
+    "updated_at": "2026-11-26T23:19:50+07:00",
+    "completed_at": "2026-11-26T23:19:50+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_correction06_brief.md",
+    "decision_id": "restart-11-batch02-correction06-brief-v1"
   },
   "next_task": {
     "task_id": "restart-11-batch02-correction06",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Correct exactly the three Batch 02 outcome fields recorded by correction 05.",
-    "acceptance": "Three replacements, no abstract-only or contradicted findings."
+    "action": "Correct the three inherited outcomes fields only.",
+    "acceptance": "3 exact keys; 0 abstract-only, contradictory or unsupported outcomes.",
+    "dispatch_brief": "restart_2026_11_26/extraction/batch_02_correction06_brief.md",
+    "message_id": "hk261-p08-b02-c06-20261126-v1"
   },
   "project": {
     "target_venue": "SN Computer Science",
