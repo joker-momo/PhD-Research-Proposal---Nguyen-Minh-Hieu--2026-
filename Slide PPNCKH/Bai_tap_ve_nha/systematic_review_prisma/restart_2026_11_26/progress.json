@@ -434,7 +434,14 @@
         "unclear": 86,
         "exclude": 261
       },
-      "evidence_index": "restart_2026_11_26/screening_evidence/manifest.json"
+      "evidence_index": "restart_2026_11_26/screening_evidence/manifest.json",
+      "active_batch": {
+        "task_id": "bdabd231-31f8-4d04-ac17-8498c87789b7",
+        "context_id": "240468eb-83d9-447b-b12a-e73eafec6527",
+        "first": "R0391",
+        "last": "R0465",
+        "count": 75
+      }
     },
     {
       "task_id": "restart-08",
