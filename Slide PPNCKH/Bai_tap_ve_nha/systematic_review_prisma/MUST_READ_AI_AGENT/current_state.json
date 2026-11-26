@@ -1,30 +1,30 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T22:24:27+07:00",
+  "updated_at": "2026-11-26T22:33:12+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-batch01-review",
+    "task_id": "restart-11-batch02-review",
     "owner": "CODEX_WRITING",
     "research_owner": "GEMINI_RESEARCH",
     "status": "rejected",
-    "started_at": "2026-11-26T22:19:57+07:00",
-    "updated_at": "2026-11-26T22:24:27+07:00",
-    "completed_at": "2026-11-26T22:24:27+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_review.md",
-    "decision_id": "restart-11-batch01-review-v1"
+    "started_at": "2026-11-26T22:24:41+07:00",
+    "updated_at": "2026-11-26T22:33:12+07:00",
+    "completed_at": "2026-11-26T22:33:12+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_review.md",
+    "decision_id": "restart-11-batch02-review-v1"
   },
   "next_task": {
-    "task_id": "restart-11-batch02",
-    "status": "ready",
+    "task_id": "restart-11-batch02-correction01",
     "owner": "GEMINI_RESEARCH",
-    "dispatch_brief": "restart_2026_11_26/extraction/batch_02_brief.md",
-    "message_id": "hk261-restart-step11-p08-batch02-parent-v1",
-    "action": "Extract 12 previously undispatched P08 reports in one native parent task.",
-    "acceptance": "12 reports, unique internal assignments, 14 fields and verified full-text locators."
+    "status": "ready",
+    "dispatch_brief": "restart_2026_11_26/extraction/batch_02_correction01_brief.md",
+    "message_id": "hk261-restart-step11-p08-batch02-correction01-v1",
+    "action": "Correct only 77 failed P08 entries and the truncated R0121 line, linked to batch 02.",
+    "acceptance": "78 exact correction keys, independently checked and no unsupported numbers."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -137,7 +137,7 @@
         "expected": 25,
         "accepted": 0,
         "not_accessible_to_gemini": 13,
-        "not_dispatched": 12
+        "quarantined_batch02": 12
       }
     }
   },

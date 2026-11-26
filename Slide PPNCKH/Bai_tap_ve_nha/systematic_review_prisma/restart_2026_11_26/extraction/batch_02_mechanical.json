@@ -1,0 +1,431 @@
+{
+  "state": "TASK_STATE_FAILED",
+  "characters": 112879,
+  "errors": [
+    [
+      "A1",
+      "R0121",
+      "Expecting ',' delimiter: line 1 column 8228 (char 8227)"
+    ],
+    [
+      "A1",
+      "BATCH",
+      "ID coverage not exact"
+    ],
+    [
+      "A2",
+      "R0054",
+      "identity/bibliographic_identity: locator/excerpt mismatch p1"
+    ],
+    [
+      "A2",
+      "R0054",
+      "partition_and_assignment/split_points_and_bitwidth: locator/excerpt mismatch p3"
+    ],
+    [
+      "A2",
+      "R0054",
+      "compute_and_radio/compute_and_rf_model: locator/excerpt mismatch p2"
+    ],
+    [
+      "A2",
+      "R0054",
+      "mobility_channel_intermittency_failure_and_recovery/failure_and_recovery: locator/excerpt mismatch p4"
+    ],
+    [
+      "A2",
+      "R0054",
+      "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/holdout_performance: locator/excerpt mismatch p5"
+    ],
+    [
+      "A3",
+      "R0054",
+      "Normalized cost (holdout): missing quantitative components or quote/page mismatch"
+    ],
+    [
+      "A3",
+      "R0054",
+      "Active-queue admission: missing quantitative components or quote/page mismatch"
+    ],
+    [
+      "A3",
+      "R0054",
+      "User data rate: missing quantitative components or quote/page mismatch"
+    ],
+    [
+      "A2",
+      "R0059",
+      "identity/bibliographic_identity: locator/excerpt mismatch p1"
+    ],
+    [
+      "A2",
+      "R0059",
+      "partition_and_assignment/switching_and_layer_partitioning: locator/excerpt mismatch p5"
+    ],
+    [
+      "A2",
+      "R0059",
+      "decision_variables_objectives_constraints_and_solver/minimization_and_two_step_solver: locator/excerpt mismatch p5"
+    ],
+    [
+      "A2",
+      "R0059",
+      "mobility_channel_intermittency_failure_and_recovery/predetermined_trajectory_mobility: locator/excerpt mismatch p3"
+    ],
+    [
+      "A2",
+      "R0059",
+      "baselines_and_workloads/switching_and_partitioning_baselines: locator/excerpt mismatch p8"
+    ],
+    [
+      "A2",
+      "R0059",
+      "sensitivity_and_variability/horizon_bandwidth_memory_compute_uavs: locator/excerpt mismatch p9"
+    ],
+    [
+      "A3",
+      "R0059",
+      "AMSM horizon H=4..7 latency CV: missing quantitative components or quote/page mismatch"
+    ],
+    [
+      "A2",
+      "R0062",
+      "identity/bibliographic_identity: locator/excerpt mismatch p1"
+    ],
+    [
+      "A2",
+      "R0062",
+      "decision_variables_objectives_constraints_and_solver/heuristic_ooda_scheduling: locator/excerpt mismatch p5"
+    ],
+    [
+      "A2",
+      "R0062",
+      "mobility_channel_intermittency_failure_and_recovery/single_point_failure_and_recovery: locator/excerpt mismatch p6"
+    ],
+    [
+      "A2",
+      "R0062",
+      "evaluation_platform_simulator_hardware_and_traces/hardware_testbed: locator/excerpt mismatch p5"
+    ],
+    [
+      "A2",
+      "R0062",
+      "baselines_and_workloads/baselines_and_video_workload: locator/excerpt mismatch p6"
+    ],
+    [
+      "A2",
+      "R0062",
+      "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/frame_rate_and_resilience: locator/excerpt mismatch p6"
+    ],
+    [
+      "A3",
+      "R0062",
+      "Collaborative inference frame rate (4 UAVs, Stage 1): missing quantitative components or quote/page mismatch"
+    ],
+    [
+      "A2",
+      "R0063",
+      "identity/bibliographic_identity: locator/excerpt mismatch p1"
+    ],
+    [
+      "A2",
+      "R0063",
+      "partition_and_assignment/hierarchical_and_speculative_split: locator/excerpt mismatch p8"
+    ],
+    [
+      "A2",
+      "R0063",
+      "decision_variables_objectives_constraints_and_solver/pomg_and_role_decoupled_mappo: locator/excerpt mismatch p4"
+    ],
+    [
+      "A2",
+      "R0063",
+      "baselines_and_workloads/baselines_and_scenarios: locator/excerpt mismatch p11"
+    ],
+    [
+      "A2",
+      "R0063",
+      "sensitivity_and_variability/ablations_and_frequency_sweep: locator/excerpt mismatch p17"
+    ],
+    [
+      "A2",
+      "R0068",
+      "uav_architecture_role_and_topology/ad_hoc_swarm_layers: locator/excerpt mismatch p4"
+    ],
+    [
+      "A2",
+      "R0068",
+      "inference_model_task_and_dataset/cnn_models: locator/excerpt mismatch p10"
+    ],
+    [
+      "A2",
+      "R0068",
+      "partition_and_assignment/layer_wise_partitioning: locator/excerpt mismatch p6"
+    ],
+    [
+      "A2",
+      "R0068",
+      "decision_variables_objectives_constraints_and_solver/ldtp_and_marl_meta: locator/excerpt mismatch p7"
+    ],
+    [
+      "A2",
+      "R0068",
+      "compute_and_radio/compute_and_radio_params: locator/excerpt mismatch p10"
+    ],
+    [
+      "A2",
+      "R0068",
+      "mobility_channel_intermittency_failure_and_recovery/dynamic_swarm_membership_and_energy_return: locator/excerpt mismatch p12"
+    ],
+    [
+      "A2",
+      "R0071",
+      "identity/bibliographic_identity: locator/excerpt mismatch p1"
+    ],
+    [
+      "A2",
+      "R0071",
+      "partition_and_assignment/single_split_offloading: locator/excerpt mismatch p2"
+    ],
+    [
+      "A2",
+      "R0071",
+      "decision_variables_objectives_constraints_and_solver/p_mdp_and_le_mhappo: locator/excerpt mismatch p3"
+    ],
+    [
+      "A2",
+      "R0071",
+      "compute_and_radio/compute_solar_and_ofdm: locator/excerpt mismatch p5"
+    ],
+    [
+      "A2",
+      "R0071",
+      "mobility_channel_intermittency_failure_and_recovery/high_dynamic_mobility_and_energy_depletion: locator/excerpt mismatch p2"
+    ],
+    [
+      "A2",
+      "R0071",
+      "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/weighted_cost_and_degradation: locator/excerpt mismatch p6"
+    ],
+    [
+      "A3",
+      "R0071",
+      "Performance degradation ratio vs MHAPPO as Delta T increases: missing quantitative components or quote/page mismatch"
+    ],
+    [
+      "A2",
+      "R0073",
+      "identity/bibliographic_identity: locator/excerpt mismatch p1"
+    ],
+    [
+      "A2",
+      "R0073",
+      "uav_architecture_role_and_topology/ad_hoc_swarm_with_u2g: locator/excerpt mismatch p9"
+    ],
+    [
+      "A2",
+      "R0073",
+      "inference_model_task_and_dataset/cnn_models_and_datasets: locator/excerpt mismatch p9"
+    ],
+    [
+      "A2",
+      "R0073",
+      "partition_and_assignment/resilient_layer_distribution: locator/excerpt mismatch p5"
+    ],
+    [
+      "A2",
+      "R0073",
+      "decision_variables_objectives_constraints_and_solver/ilp_and_ppo_solver: locator/excerpt mismatch p5"
+    ],
+    [
+      "A2",
+      "R0073",
+      "mobility_channel_intermittency_failure_and_recovery/inoperable_uav_reallocation: locator/excerpt mismatch p4"
+    ],
+    [
+      "A2",
+      "R0073",
+      "reported_limitations/environment_doppler_battery: locator/excerpt mismatch p12"
+    ],
+    [
+      "A2",
+      "R0074",
+      "identity/bibliographic_identity: locator/excerpt mismatch p1"
+    ],
+    [
+      "A2",
+      "R0074",
+      "uav_architecture_role_and_topology/pure_edge_heterogeneous_pipeline: locator/excerpt mismatch p14"
+    ],
+    [
+      "A2",
+      "R0074",
+      "partition_and_assignment/layer_and_sequence_partitioning: locator/excerpt mismatch p6"
+    ],
+    [
+      "A2",
+      "R0074",
+      "mobility_channel_intermittency_failure_and_recovery/channel_and_compute_noise: locator/excerpt mismatch p21"
+    ],
+    [
+      "A2",
+      "R0074",
+      "baselines_and_workloads/five_baselines: locator/excerpt mismatch p15"
+    ],
+    [
+      "A2",
+      "R0074",
+      "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/prefill_latency_and_scalability: locator/excerpt mismatch p16"
+    ],
+    [
+      "A2",
+      "R0074",
+      "sensitivity_and_variability/ablations_breakeven_and_monte_carlo: locator/excerpt mismatch p19"
+    ],
+    [
+      "A2",
+      "R0074",
+      "funding_and_conflicts/funding_and_conflicts: locator/excerpt mismatch p24"
+    ],
+    [
+      "A2",
+      "R0074",
+      "reported_limitations/decoding_determinism_scale_and_sim: locator/excerpt mismatch p22"
+    ],
+    [
+      "A3",
+      "R0074",
+      "Predictive decoding break-even accuracy threshold: missing quantitative components or quote/page mismatch"
+    ],
+    [
+      "A2",
+      "R0083",
+      "identity/bibliographic_identity: locator/excerpt mismatch p1"
+    ],
+    [
+      "A2",
+      "R0083",
+      "uav_architecture_role_and_topology/center_requesting_worker_uavs: locator/excerpt mismatch p3"
+    ],
+    [
+      "A2",
+      "R0083",
+      "partition_and_assignment/containerized_partition_placement: locator/excerpt mismatch p5"
+    ],
+    [
+      "A2",
+      "R0083",
+      "baselines_and_workloads/baselines_and_requests: locator/excerpt mismatch p7"
+    ],
+    [
+      "A2",
+      "R0083",
+      "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/latency_energy_longevity: locator/excerpt mismatch p7"
+    ],
+    [
+      "A2",
+      "R0083",
+      "funding_and_conflicts/funding_and_conflicts: locator/excerpt mismatch p9"
+    ],
+    [
+      "A2",
+      "R0089",
+      "identity/bibliographic_identity: locator/excerpt mismatch p1"
+    ],
+    [
+      "A2",
+      "R0089",
+      "uav_architecture_role_and_topology/drone_terminals_and_aerial_servers: locator/excerpt mismatch p8"
+    ],
+    [
+      "A2",
+      "R0089",
+      "inference_model_task_and_dataset/branchy_resnet_cifar10: locator/excerpt mismatch p5"
+    ],
+    [
+      "A2",
+      "R0089",
+      "partition_and_assignment/hybrid_early_exit_and_offloading: locator/excerpt mismatch p4"
+    ],
+    [
+      "A2",
+      "R0089",
+      "decision_variables_objectives_constraints_and_solver/heuristic_priority_queues_and_balancing: locator/excerpt mismatch p6"
+    ],
+    [
+      "A2",
+      "R0089",
+      "compute_and_radio/compute_and_ofdma_params: locator/excerpt mismatch p8"
+    ],
+    [
+      "A2",
+      "R0089",
+      "sensitivity_and_variability/resource_and_load_sweeps: locator/excerpt mismatch p9"
+    ],
+    [
+      "A2",
+      "R0095",
+      "uav_architecture_role_and_topology/core_and_computing_uavs: locator/excerpt mismatch p8"
+    ],
+    [
+      "A2",
+      "R0095",
+      "inference_model_task_and_dataset/macro_block_dnn_models: locator/excerpt mismatch p8"
+    ],
+    [
+      "A2",
+      "R0095",
+      "decision_variables_objectives_constraints_and_solver/ppo_dmcp_and_cache: locator/excerpt mismatch p5"
+    ],
+    [
+      "A2",
+      "R0095",
+      "baselines_and_workloads/rl_and_partition_baselines: locator/excerpt mismatch p9"
+    ],
+    [
+      "A2",
+      "R0095",
+      "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/completion_latency_and_decision_time: locator/excerpt mismatch p9"
+    ],
+    [
+      "A2",
+      "R0095",
+      "sensitivity_and_variability/coeff_scale_and_model_sweeps: locator/excerpt mismatch p9"
+    ],
+    [
+      "A3",
+      "R0095",
+      "Average single decision time: missing quantitative components or quote/page mismatch"
+    ]
+  ],
+  "observed_ids": [
+    "R0054",
+    "R0059",
+    "R0062",
+    "R0063",
+    "R0068",
+    "R0071",
+    "R0073",
+    "R0074",
+    "R0083",
+    "R0089",
+    "R0095"
+  ],
+  "missing_ids": [
+    "R0121"
+  ],
+  "unexpected_ids": [],
+  "duplicate_ids": 0,
+  "duplicate_doi": 0,
+  "duplicate_title": 0,
+  "counts": {
+    "fields": 154,
+    "status_OBSERVED": 150,
+    "locator_checks": 159,
+    "locator_matches": 90,
+    "status_UNVERIFIED": 1,
+    "status_NOT_REPORTED": 9,
+    "quantitative_claims": 31,
+    "observed_quantitative": 29
+  }
+}
