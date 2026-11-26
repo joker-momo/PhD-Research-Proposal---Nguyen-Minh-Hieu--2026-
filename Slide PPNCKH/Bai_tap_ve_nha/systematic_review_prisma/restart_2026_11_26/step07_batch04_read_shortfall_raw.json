@@ -1,0 +1,45 @@
+{
+  "id": "c4e62a8f-c350-4b05-bdbf-1cba0725d5ec",
+  "contextId": "9f1453e3-bbe6-42d7-988a-cc877d9ca6ca",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T12:12:19.663+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T12:10:25.307+00:00",
+    "updated_at": "2026-11-26T12:12:19.663+00:00",
+    "started_at": "2026-11-26T12:10:25.309+00:00",
+    "completed_at": "2026-11-26T12:12:19.663+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — Systematic Review Record Screening",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "77db2c69-28ca-44fa-95a7-ecae04232d81",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "READ SHORTFALL: Unable to read full records for all 75 requested IDs (R0166 through R0240).\nAffected IDs (75/75): R0166, R0167, R0168, R0169, R0170, R0171, R0172, R0173, R0174, R0175, R0176, R0177, R0178, R0179, R0180, R0181, R0182, R0183, R0184, R0185, R0186, R0187, R0188, R0189, R0190, R0191, R0192, R0193, R0194, R0195, R0196, R0197, R0198, R0199, R0200, R0201, R0202, R0203, R0204, R0205, R0206, R0207, R0208, R0209, R0210, R0211, R0212, R0213, R0214, R0215, R0216, R0217, R0218, R0219, R0220, R0221, R0222, R0223, R0224, R0225, R0226, R0227, R0228, R0229, R0230, R0231, R0232, R0233, R0234, R0235, R0236, R0237, R0238, R0239, R0240.\nCause:\n1. Reading restart_2026_11_26/unique_record_queue.csv (481,359 chars) and restart_2026_11_26/records_normalized.csv (710,592 chars) via the file viewer ignores StartLine/EndLine parameters and truncates output at 256,000 characters, stopping at R0165 (line 166) before R0166 (line 167).\n2. Searching within restart_2026_11_26/unique_record_queue.csv returns only truncated line prefixes (e.g., R0166,2,ACM-HR+COMP:0027...), omitting title, abstract, abstract_snippet, record_type, and publication_date.\n3. restart_2026_11_26/dedup_map.csv was read in full and provides only screening_id, record_id, link_reason, doi_key, and normalized lowercase title_key, which does not supply verbatim titles, abstracts, snippets, or report-type metadata required for E1–E7 screening and exact verbatim span citation.\n4. Task boundaries prohibit executing shell commands or reading files outside the four named project files."
+        }
+      ]
+    }
+  ]
+}

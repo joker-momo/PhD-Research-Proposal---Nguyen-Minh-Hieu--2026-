@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-11-26T19:13:45+07:00",
+  "created_for": "Gemini.app file-reading size limit",
+  "records": 300,
+  "derived_from": {
+    "unique_record_queue.csv": "b790ac15e0d15c2b37622cb57b1256a0441f21d43da10f3239371121bc6d81a0",
+    "records_normalized.csv": "b78129226c82adc3d6eb77b3e8468b0cd22ea8c703cb204a8831bf12ce33660a",
+    "dedup_map.csv": "53e7e918d42b0e96e599cff375556323dd8bf1be2f68f412dad547a30dd0e20f"
+  },
+  "files": [
+    {
+      "file": "R0166-R0240.jsonl",
+      "count": 75,
+      "sha256": "ec62956bb9b16224366cbe3768fdee2f97ac42becb6ca1aefcd169d101ed981c",
+      "bytes": 47974
+    },
+    {
+      "file": "R0241-R0315.jsonl",
+      "count": 75,
+      "sha256": "fb2163d461cc53e84e41fad289ca0be774b7f77876973c6697f3905f74fcde94",
+      "bytes": 33246
+    },
+    {
+      "file": "R0316-R0390.jsonl",
+      "count": 75,
+      "sha256": "7b694086cd40c5bd0026164642755573d29fdfc62396aabb1a5c0165cbe7472b",
+      "bytes": 31398
+    },
+    {
+      "file": "R0391-R0465.jsonl",
+      "count": 75,
+      "sha256": "17a9aa71fb32605ade984834f9b285e6fcff577d28df39236f19c68e30594135",
+      "bytes": 33345
+    }
+  ]
+}
