@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-26T19:22:14+07:00",
+  "updated_at": "2026-11-26T19:22:23+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -321,7 +321,7 @@
       "owner": "GEMINI_RESEARCH + CODEX_WRITING",
       "status": "active",
       "started_at": "2026-11-26T18:50:01+07:00",
-      "updated_at": "2026-11-26T19:22:14+07:00",
+      "updated_at": "2026-11-26T19:22:23+07:00",
       "completed_at": null,
       "artifacts": [
         "restart_2026_11_26/step07_batch01_brief.md",
@@ -356,7 +356,8 @@
         "restart_2026_11_26/step07_batch05_fix_brief.md",
         "restart_2026_11_26/step07_batch05_raw.json",
         "restart_2026_11_26/step07_batch05_accepted.csv",
-        "restart_2026_11_26/step07_batch05_acceptance.md"
+        "restart_2026_11_26/step07_batch05_acceptance.md",
+        "restart_2026_11_26/step07_batch06_brief.md"
       ],
       "acceptance": [
         {
@@ -425,7 +426,14 @@
         "unclear": 78,
         "exclude": 194
       },
-      "evidence_index": "restart_2026_11_26/screening_evidence/manifest.json"
+      "evidence_index": "restart_2026_11_26/screening_evidence/manifest.json",
+      "active_batch": {
+        "task_id": "ad9ca4d5-22a9-421d-b654-53d6188b9841",
+        "context_id": "02bce254-9455-4226-a509-62c587715a2f",
+        "first": "R0316",
+        "last": "R0390",
+        "count": 75
+      }
     },
     {
       "task_id": "restart-08",
