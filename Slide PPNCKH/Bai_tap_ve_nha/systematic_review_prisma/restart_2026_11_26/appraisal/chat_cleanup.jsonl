@@ -2,3 +2,4 @@
 {"timestamp": "2026-11-27T00:41:33+07:00", "uuid": "ddbb7eda-d194-4a22-bbe0-820cb63d9644", "event": "DELETED", "detail": "Native confirmation followed by verified empty new chat", "label": "batch01"}
 {"timestamp": "2026-11-26T17:44:37.271+00:00", "uuid": "33227d72-c81a-415f-8580-224bda4b6635", "event": "DELETED", "detail": "Native bridge reported verified empty New chat and restored Chat mode after durable result save.", "label": "batch01-access-preflight"}
 {"timestamp": "2026-11-26T17:51:06.433+00:00", "uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9", "event": "DELETED", "detail": "Verified empty New chat after official same-UUID recovery, storage and deletion.", "label": "batch01-parent-correction"}
+{"timestamp": "2026-11-26T17:56:18.933+00:00", "uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c", "event": "DELETED", "detail": "Native bridge verified expected empty New chat following terminal capture and durable save.", "label": "batch01-targeted-correction"}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T00:52:08+07:00",
+  "updated_at": "2026-11-27T00:57:26+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step12_active",
@@ -11,18 +11,18 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T00:36:29+07:00",
-    "updated_at": "2026-11-27T00:52:08+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/batch_01_parent_correction_review.md",
+    "updated_at": "2026-11-27T00:57:26+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/batch_01_targeted_correction_review.md",
     "decision_id": "restart-12-p09-v1"
   },
   "next_task": {
-    "task_id": "restart-12-p09-batch-01-targeted-correction",
+    "task_id": "restart-12-p09-batch-01-locator-repair",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Correct only 16 unresolved Batch 01 P09 judgments after original quote and semantic checks.",
-    "acceptance": "16 authorized keys, zero unsupported evidence or reissued checked keys.",
-    "dispatch_brief": "restart_2026_11_26/appraisal/batch_01_targeted_correction_brief.md",
-    "message_id": "3a0f13f8-d725-47a1-8962-0772ba7e81cf"
+    "action": "Repair five quote-mismatch keys and one unsupported solver-behavior key, using original-page anchors already verified by Codex.",
+    "acceptance": "6 unique keys; all original-page anchors and domain rationales independently verified; zero unsupported numerical or implementation claims.",
+    "dispatch_brief": "restart_2026_11_26/appraisal/batch_01_locator_repair_brief.md",
+    "message_id": "05d63eee-ed09-4d5a-9b29-bafa868f660a"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -191,7 +191,9 @@
         "last_batch_01_access_probe_uuid": "33227d72-c81a-415f-8580-224bda4b6635",
         "last_batch_01_parent_task_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
         "last_batch_01_parent_verdict": "FAIL",
-        "batch_01_judgments_needing_targeted_correction": 16
+        "batch_01_judgments_needing_targeted_correction": 6,
+        "last_batch_01_targeted_correction_uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+        "last_batch_01_targeted_correction_verdict": "FAIL"
       }
     }
   },

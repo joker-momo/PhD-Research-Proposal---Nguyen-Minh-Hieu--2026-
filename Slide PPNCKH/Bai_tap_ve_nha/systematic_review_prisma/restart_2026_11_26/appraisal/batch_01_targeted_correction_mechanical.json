@@ -1,0 +1,68 @@
+{
+  "task_id": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+  "transport": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T17:56:18.933+00:00"
+  },
+  "result_chars": 8457,
+  "completion_marker": true,
+  "parsed_rows": 17,
+  "malformed": [],
+  "unknown": [],
+  "expected": 16,
+  "returned": 16,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [],
+  "unexpected_access": [],
+  "summary": [
+    {
+      "returned_keys": [
+        "R0001/D01",
+        "R0001/D02",
+        "R0001/D03",
+        "R0001/D06",
+        "R0002/D03",
+        "R0002/D07",
+        "R0002/D08",
+        "R0002/D09",
+        "R0003/D01",
+        "R0003/D07",
+        "R0006/D07",
+        "R0006/D08",
+        "R0009/D02",
+        "R0009/D04",
+        "R0009/D05",
+        "R0009/D07"
+      ],
+      "unresolved": [],
+      "tools": {
+        "pdf_reader": "direct_pdf_view",
+        "local_cli_tools": "not_used_per_no_command_constraint",
+        "notes": "All five original PDFs (R0001, R0002, R0003, R0006, R0009) and protocol_restart.md were locally accessible and read directly; PyMuPDF, MinerU, and Marker were not invoked because command execution is prohibited."
+      },
+      "workers_used": false
+    }
+  ],
+  "locators": 47,
+  "exact_quote_locators": 36,
+  "needs_visual_cell": [],
+  "bad_domains": {
+    "R0002/D03": [
+      "quote mismatch p7: a ResNet-18 model trained on the CIFAR-10 dataset"
+    ],
+    "R0002/D09": [
+      "quote mismatch p7: a ResNet-18 model trained on the CIFAR-10 dataset"
+    ],
+    "R0003/D07": [
+      "quote mismatch p2: information of all the UAVs' trajectories, channel conditions,"
+    ],
+    "R0006/D08": [
+      "quote mismatch p8: Extensive experiments confirm AirInfer's significant superiority over existing baseline methods."
+    ],
+    "R0009/D05": [
+      "quote mismatch p4: We aim to minimize the system's weighted latency and"
+    ]
+  }
+}
