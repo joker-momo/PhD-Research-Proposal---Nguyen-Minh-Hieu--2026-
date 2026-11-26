@@ -2,6 +2,7 @@
 import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+import shlex
 import shutil
 import subprocess
 import tempfile
@@ -136,6 +137,100 @@ class TaskGateTests(unittest.TestCase):
                     "rtk proxy a2a send -a http://127.0.0.1:1 brief"]:
             self.assertEqual(0, self.call(cmd).returncode)
 
+    def prepare_bridge(self, brief_name="batch 01.md", *, commit_brief=True):
+        brief = self.project / "briefs" / brief_name
+        brief.parent.mkdir(exist_ok=True)
+        brief.write_text("Approved brief.\n")
+        state = json.loads(self.state.read_text())
+        state["next_task"].update(
+            dispatch_brief=brief.relative_to(self.project).as_posix(),
+            message_id=brief.stem.replace(" ", "-"),
+        )
+        checkpoint = brief.with_suffix(".review")
+        checkpoint.write_text("Checkpoint for the next batch.\n")
+        state["task"]["checkpoint_path"] = checkpoint.relative_to(self.project).as_posix()
+        self.state.write_text(json.dumps(state) + "\n")
+        paths = [str(self.state), str(checkpoint)]
+        if commit_brief:
+            paths.append(str(brief))
+        self.git("add", *paths)
+        self.git("commit", "-qm", f"ready for {brief.stem}")
+        return brief, state["next_task"]["message_id"]
+
+    def bridge_command(self, brief, message_id):
+        return shlex.join(["rtk", "proxy", "/opt/Gemini Research/bin/bridge",
+                           "send", "--brief", str(brief), "--message-id", message_id])
+
+    def test_bridge_allowed_after_unrelated_project_commit_and_stable_retry(self):
+        brief, message_id = self.prepare_bridge()
+        self.owned_file.write_text("A later committed project note.\n")
+        self.git("add", str(self.owned_file))
+        self.git("commit", "-qm", "project note without state churn")
+        command = self.bridge_command(brief, message_id)
+        for _ in range(2):
+            result = self.call(command)
+            self.assertEqual(0, result.returncode, result.stderr)
+
+    def test_bridge_blocks_next_batch_until_ready_state_is_committed(self):
+        first, first_id = self.prepare_bridge()
+        second = first.with_name("batch 02.md")
+        second.write_text("Prepared with the other briefs.\n")
+        self.git("add", str(second))
+        self.git("commit", "-qm", "prefile next brief")
+        result = self.call(self.bridge_command(second, "batch-02"))
+        self.assertEqual(2, result.returncode)
+        self.assertIn("preceding batch review", result.stderr)
+        result = self.call(self.bridge_command(first, first_id + "-changed"))
+        self.assertEqual(2, result.returncode)
+        self.assertIn("Brief/message ID", result.stderr)
+        second, second_id = self.prepare_bridge("batch 02.md")
+        result = self.call(self.bridge_command(second, second_id))
+        self.assertEqual(0, result.returncode, result.stderr)
+
+    def test_bridge_blocks_ignored_but_uncommitted_brief(self):
+        (self.root / ".gitignore").write_text("batch 01.md\n")
+        self.git("add", ".gitignore")
+        self.git("commit", "-qm", "ignored brief fixture")
+        brief, message_id = self.prepare_bridge(commit_brief=False)
+        result = self.call(self.bridge_command(brief, message_id))
+        self.assertEqual(2, result.returncode)
+        self.assertIn("Commit batch 01.md", result.stderr)
+
+    def test_bridge_blocks_state_only_change_without_review(self):
+        brief, message_id = self.prepare_bridge()
+        self.commit_timestamp_change(lambda task: task.update(notes="State-only update."))
+        result = self.call(self.bridge_command(brief, message_id))
+        self.assertEqual(2, result.returncode)
+        self.assertIn("together with current_state.json", result.stderr)
+
+    def test_bridge_blocks_active_preceding_task(self):
+        brief, message_id = self.prepare_bridge()
+        def mark_active(task):
+            task["status"] = "active"
+            task.pop("completed_at")
+        self.commit_timestamp_change(mark_active)
+        result = self.call(self.bridge_command(brief, message_id))
+        self.assertEqual(2, result.returncode)
+        self.assertIn("previous batch review", result.stderr)
+
+    def test_bridge_requires_literal_single_dispatch(self):
+        brief, message_id = self.prepare_bridge()
+        command = self.bridge_command(brief, message_id)
+        for invalid in (
+            command + " --message-id duplicate",
+            command + " && " + command,
+            'bridge send --brief "$BRIEF" --message-id batch-01',
+            "bridge send --brief batch01.md --message-id batch-01",
+        ):
+            with self.subTest(command=invalid):
+                self.assertEqual(2, self.call(invalid).returncode)
+
+    def test_bridge_blocks_brief_from_other_checkout(self):
+        brief, message_id = self.prepare_bridge()
+        result = self.call(self.bridge_command(self.root / brief.name, message_id))
+        self.assertEqual(2, result.returncode)
+        self.assertIn("inside this HK261 worktree", result.stderr)
+
     def test_clean_a2a_blocked_when_current_state_is_stale(self):
         artifact = self.project / "screening_46/results/batch_99.json"
         artifact.parent.mkdir(parents=True)
@@ -213,7 +308,8 @@ class TaskGateTests(unittest.TestCase):
                     self.git("add", str(self.owned_file.relative_to(self.root)))
             for cmd in ["rtk proxy scripts/a2a-route --brief brief.md",
                         "rtk proxy a2a send -a http://127.0.0.1:1 brief",
-                        "rtk proxy python3 scripts/run_screening_batches.py --start 2"]:
+                        "rtk proxy python3 scripts/run_screening_batches.py --start 2",
+                        "rtk proxy /opt/bridge send --brief /project/brief.md --message-id batch-01"]:
                 with self.subTest(state=state, command=cmd):
                     r = self.call(cmd)
                     self.assertEqual(2, r.returncode)
@@ -244,7 +340,8 @@ class TaskGateTests(unittest.TestCase):
     def test_dirty_non_a2a_allowed(self):
         self.owned_file.write_text("pending\n")
         for cmd in ["rtk proxy git status --short", "rtk proxy python3 check.py",
-                    "rtk proxy git commit -m finish", "rtk proxy a2a task get TASK -o json"]:
+                    "rtk proxy git commit -m finish", "rtk proxy a2a task get TASK -o json",
+                    "rtk proxy /opt/bridge get TASK"]:
             self.assertEqual(0, self.call(cmd).returncode)
 
     def test_reminder_on_prompt_start_resume_and_compaction_event(self):

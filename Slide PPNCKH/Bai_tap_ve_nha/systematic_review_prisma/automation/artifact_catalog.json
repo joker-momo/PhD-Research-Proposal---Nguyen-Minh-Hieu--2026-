@@ -308,6 +308,29 @@
         "DOI",
         "PDF"
       ]
+    },
+    {
+      "artifact_id": "hk261-prisma-evidence-index",
+      "name": "HK261 PRISMA evidence index",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/prisma_evidence/build_index.py",
+      "purpose": "Expose all sixteen steps and the source links registered in the restart progress ledger.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/prisma_evidence/build_index.py\" [--check]",
+      "inputs": [
+        "Restart progress and raw dataset manifests"
+      ],
+      "outputs": [
+        "Clickable Markdown evidence index with explicit missing-file markers"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/prisma_evidence/test_build_index.py"
+      ],
+      "test_command": "PYTHONDONTWRITEBYTECODE=1 python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/prisma_evidence/test_build_index.py\"",
+      "status": "active",
+      "tags": [
+        "prisma",
+        "evidence",
+        "audit"
+      ]
     }
   ]
 }

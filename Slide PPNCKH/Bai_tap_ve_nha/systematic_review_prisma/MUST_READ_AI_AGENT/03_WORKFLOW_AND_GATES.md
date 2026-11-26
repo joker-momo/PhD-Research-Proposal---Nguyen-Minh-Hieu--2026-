@@ -61,15 +61,17 @@ measurements agree. Never repair a scientific mismatch only by rewriting prose.
 
 For every material change:
 
-1. Work on a dedicated branch/worktree.
-2. Change only task-owned paths.
+1. Work on a dedicated branch/worktree per phase or standalone change.
+2. Change only owned paths. Use one branch/worktree throughout a Gemini.app phase.
 3. Run relevant validation/build/audit.
 4. Inspect diff for dead files, debug output, placeholders, secrets, unsupported
    claims, and unrelated edits.
-5. Commit atomically with an intent-revealing message.
-6. Fast-forward merge, verify the merged result, delete the task branch/worktree.
-7. Update `current_state.json`, append its matching event and decision, then
-   validate both registries before commit.
+5. Commit each checkpoint atomically with an intent-revealing message. Validate
+   canonical state and the automation registry when their records change.
+6. At phase completion, fast-forward, verify the merged result and remove the
+   merged branch/worktree. An early fast-forward is only needed when an approved
+   input is visible to Gemini.app solely from the canonical checkout. Keep the
+   phase branch/worktree in that case.
 
 ## Status language
 
@@ -81,18 +83,36 @@ Use only evidence-bounded labels:
 - `uncertain`: evidence does not support a final eligibility/claim decision.
 - `historical`: retained for audit but not current source of truth.
 
-## Commit before the next task (mandatory user gate, 25 November 2026)
+## Commit checkpoints for Gemini.app phases
 
 Apply the repository-root `AGENTS.md` pre-task, code-first and Git contract.
-One task owns one branch/worktree and closes with canonical state, event and
-decision evidence in the same commit. Brief preparation is a Codex writing task;
-commit it before dispatch. Commit each provider result plus Codex PASS/FAIL
-review before preparing or dispatching another task. A correction remains linked
-to its failed parent. Inspection and monitoring do not authorize new research.
+Apply this workflow from the next phase after integration. Preserve the approved
+scientific sequence and any batches already in flight.
 
-Only current work may be repaired while owned scopes are dirty or canonical
-state is stale. Hooks are not a verified security boundary; manual enforcement
-remains mandatory.
+1. **Setup commit.** Store the phase manifest, predictable briefs and stable
+   message IDs together. Authorize only the first batch in canonical state.
+2. **Send and monitor.** Use the same brief, message ID and inputs to recover a
+   lost receipt. Inspect an existing task by ID once known. The bridge receipt
+   records dispatch between setup and review. Save the receipt with the review.
+3. **One review commit per batch.** Save the receipt, raw provider output,
+   criterion-by-criterion review and only accepted data. Update canonical
+   state and append its matching event in that commit. On PASS authorize the
+   next planned batch. On FAIL quarantine the result and authorize only a
+   committed correction with its own stable ID linked to the failed parent,
+   when a correction is ready. Preserve the reviewed failure if correction
+   preparation is deferred.
+4. **Phase close.** Consolidate and validate the complete phase, record final
+   canonical state/event, integrate and verify it before entering the next
+   approved phase. Record the automation decision once per phase and append a
+   decision when the approach changes.
+
+In each batch/phase acceptance commit, register its artifacts in the progress
+tracker and refresh the [PRISMA evidence index](../prisma_evidence/README.md).
+See [evidence maintenance](../prisma_evidence/MAINTENANCE.md) for required files.
+
+Owned scopes must be clean and the authorized brief must be committed before
+each send. Read-only lookups and repairing current work remain available while
+owned scopes are dirty. Codex verifies these conditions before dispatch.
 
 ## Timestamp rule (user request: 2026-11-25T23:02:44+07:00)
 
@@ -102,6 +122,7 @@ event. Use actual RFC 3339 seconds with a known timezone, normally `+07:00`;
 never use future, date-only, relative or invented historical times. Require
 `started_at <= completed_at <= updated_at <= current time` when completed.
 
-Run `python3 .codex/hooks/project_state.py validate`. The recognized A2A gate
-also requires the current-state file to be touched by the latest project commit.
+Run `python3 .codex/hooks/project_state.py validate`. For Gemini.app, the
+phase manifest or batch review and its state transition share a commit.
+Record provider and acceptance timestamps from their respective observations.
 Compatibility Markdown and the manifest do not duplicate task timestamps.
