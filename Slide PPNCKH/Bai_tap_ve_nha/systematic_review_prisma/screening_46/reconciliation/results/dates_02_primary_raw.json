@@ -1,0 +1,2566 @@
+{
+  "task": {
+    "id": "01a21567-64ad-7831-ba3e-3a0fa167d8cb",
+    "artifacts": [
+      {
+        "artifactId": "01a2156a-51cd-74af-9dc6-0206afe42f3b",
+        "name": "response",
+        "parts": [
+          {
+            "text": "\n⚠ Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 2h22m53s.\n"
+          }
+        ]
+      }
+    ],
+    "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+    "history": [
+      {
+        "messageId": "01a21567-6491-71f4-8d13-a02abfddd9b0",
+        "parts": [
+          {
+            "text": "## TASK\nVerify publication-date eligibility for exactly C05,C09,C10,C13,C14,C19. All currently have year-only2026 dates and UNCERTAIN date gates. Find authoritative publication-date evidence or document the remaining access/evidence gap; do not change scope or identities.\n\n## REQUIRED WORK\n1. Read the six accepted identity/date records and previous attempts below. Crossref originally supplied year-only dates and IEEE Xplore returned WAF HTTP202. Do not present these old attempts as new work.\n2. For each ID make at most5 new targeted public-source attempts: publisher article metadata/official citation export, DOI-deposited publication fields, official journal issue records, or author/institutional repository records. Try at least2 distinct relevant source routes unless a verified publisher publication date resolves the record earlier. Use search only to locate sources; snippets/aggregator dates are discovery leads, not sufficient eligibility evidence. Record actual URL, response/access outcome and RFC3339 accessed_at. No login/challenge bypass or hidden endpoints; stop repeated identical WAF calls.\n3. Identify the date label exactly: online publication/early-access publication, issue publication, acceptance, received, copyright, deposit/created/indexed, download, PDF creation, repository deposit. Only explicitly labeled publication evidence can resolve the date gate. Preserve date precision (day/month/year); do not convert YYYY to January1. Earliest verified publisher online-publication may establish eligibility even when a later issue date exists; record both and explain. Do not substitute administrative/download timestamps or infer date from DOI sequence.\n4. Compare supported publication date/interval with inclusive2021-01-01..2026-11-25. Return YES only when verified publication evidence wholly establishes the within-window condition; NO only if authoritative earliest-publication evidence establishes outside-window; otherwise UNCERTAIN. A failed fetch does not prove absence. Preserve all other accepted gates and source-version limitations. No new study-family/quality/scope claim.\n5. Return structured evidence with exact short excerpt \u003c=25 words per remote source or exact metadata field/value. Each date assertion and eligibility rationale must reference a source ID. If authentication/manual browsing is needed, provide the exact URL, field label and smallest user action required, without asking for credentials. Do not write/save project or downloaded files; Codex will capture accepted sources.\n\n## REQUIRED OUTPUT\nOne JSON object, no fences:\n{\"task\":\"dates_02\",\"window\":{\"start\":\"2021-01-01\",\"end\":\"2026-11-25\"},\"records\":[{\"id\":string,\"title\":string,\"authors\":array,\"year\":integer,\"venue\":string,\"doi\":string,\"prior_date_gate\":\"UNCERTAIN\",\"date_gate\":\"YES|NO|UNCERTAIN\",\"publication_dates\":[{\"value\":string,\"precision\":\"day|month|year\",\"kind\":string,\"source_id\":string,\"field_or_locator\":string}],\"rationale\":string,\"source_ids\":array,\"attempts\":[{\"url\":string,\"accessed_at\":RFC3339,\"outcome\":string,\"source_class\":string}],\"unresolved\":array,\"manual_action\":string|null}],\"sources\":[{\"source_id\":string,\"record_id\":string,\"url_or_file\":string,\"source_class\":string,\"accessed_at\":RFC3339,\"field_or_locator\":string,\"excerpt_or_value\":string,\"evidence_kind\":\"publication|non_publication|access_failure\"}],\"shortfall\":[],\"project_files_changed\":0,\"final_prose_written\":false}\nExactly6 records in requested order, even when evidence is inaccessible. For unresolved gates publication_dates may be empty; do not insert guessed dates. Sources must distinguish accepted prior local evidence from newly accessed remote evidence.\n\n## ACCEPTANCE CRITERIA\nD1: Exactly6 IDs in order, all identity fields equal supplied accepted records, DOI/title duplicates0. Each includes date_gate,attempts,unresolved,manual_action. No report silently dropped.\nD2: Every factual/date assertion has a resolvable source ID and URL/file locator; all source IDs unique; each remote excerpt \u003c=25 words; metadata values exact; unsupported quantitative claims0. At least1 source per record (prior local evidence permitted if labelled); new attempt count1–5 per record with early stop only on verified publisher success, otherwise at least2 distinct routes or documented access shortfall.\nD3: Date kinds/precision correct;0 administrative/download/acceptance dates used as publication;0 padded day/month;0 snippet-only positive decisions; all6 cutoff decisions follow fixed window and preserve uncertainty.\nD4: Every new attempt has actual RFC3339 timestamp with timezone and outcome; no fabricated fetches, HTTP statuses or successful access. All6 unresolved arrays present; access blockers have actionable exact URL/field description.\nD5: 0 other-gate/identity/protocol/corpus edits, project_files_changed0, final_prose_writtenfalse, shortfall explicit. No file downloads/writes, credentials, unauthorized access, submission or messages. Transport completion remains unreviewed until Codex independently checks D1–D5.\n\n## BOUNDARIES\nResearch/source verification only. Codex owns all final prose, project mutations, source snapshots and acceptance. Use only lawful public access; no challenge bypass. Prefer official primary sources. Do not fill research gaps by guessing. Missing publication date is uncertainty, not exclusion. Fixed cutoff2026-11-25; do not silently move it to current date. No secrets or personal account data.\nAccepted prior evidence: /Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json\nPrior source snapshots/review: /Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/reviews/identity_dates_01_correction_review.md\nCanonical local full texts: /Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/\u003cID\u003e.txt\nInput records and historical attempts:\n[\n  {\n    \"id\": \"C05\",\n    \"title\": \"MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems\",\n    \"authors\": [\n      \"Hao Hao\",\n      \"Changqiao Xu\",\n      \"Wei Zhang\",\n      \"Shujie Yang\",\n      \"Xiaolong Wang\",\n      \"Huiling Shi\",\n      \"Gabriel-Miro Muntean\"\n    ],\n    \"year\": 2026,\n    \"venue\": \"IEEE Transactions on Circuits and Systems for Video Technology\",\n    \"doi\": \"10.1109/tcsvt.2026.3745821\",\n    \"prior_attempts\": [\n      {\n        \"url\": \"https://api.crossref.org/works/10.1109/TCSVT.2026.3745821\",\n        \"accessed_at\": \"2026-11-26T06:55:38+07:00\",\n        \"outcome\": \"HTTP 200 OK\",\n        \"observed_detail\": \"Crossref JSON returned type=journal-article, published=[[2026]], created=2026-10-23T19:14:19Z.\"\n      },\n      {\n        \"url\": \"https://doi.org/10.1109/TCSVT.2026.3745821\",\n        \"accessed_at\": \"2026-11-26T06:55:39+07:00\",\n        \"outcome\": \"HTTP 202 (inaccessible: AWS WAF JavaScript challenge)\",\n        \"observed_detail\": \"Resolved to https://ieeexplore.ieee.org/document/11745919/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read.\"\n      }\n    ]\n  },\n  {\n    \"id\": \"C09\",\n    \"title\": \"NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms\",\n    \"authors\": [\n      \"HyungBin Park\",\n      \"SuKyoung Lee\"\n    ],\n    \"year\": 2026,\n    \"venue\": \"IEEE Internet of Things Journal\",\n    \"doi\": \"10.1109/jiot.2026.3755315\",\n    \"prior_attempts\": [\n      {\n        \"url\": \"https://api.crossref.org/works/10.1109/JIOT.2026.3755315\",\n        \"accessed_at\": \"2026-11-26T06:55:39+07:00\",\n        \"outcome\": \"HTTP 200 OK\",\n        \"observed_detail\": \"Crossref JSON returned type=journal-article, published=[[2026]], created=2026-11-18T20:05:10Z.\"\n      },\n      {\n        \"url\": \"https://doi.org/10.1109/JIOT.2026.3755315\",\n        \"accessed_at\": \"2026-11-26T06:55:40+07:00\",\n        \"outcome\": \"HTTP 202 (inaccessible: AWS WAF JavaScript challenge)\",\n        \"observed_detail\": \"Resolved to https://ieeexplore.ieee.org/document/11804345/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read.\"\n      }\n    ]\n  },\n  {\n    \"id\": \"C10\",\n    \"title\": \"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\",\n    \"authors\": [\n      \"Songwei Li\",\n      \"Zhihan Wang\",\n      \"Jiebei Shi\",\n      \"Jiwei Huang\"\n    ],\n    \"year\": 2026,\n    \"venue\": \"IEEE Internet of Things Journal\",\n    \"doi\": \"10.1109/jiot.2026.3740035\",\n    \"prior_attempts\": [\n      {\n        \"url\": \"https://api.crossref.org/works/10.1109/JIOT.2026.3740035\",\n        \"accessed_at\": \"2026-11-26T06:55:40+07:00\",\n        \"outcome\": \"HTTP 200 OK\",\n        \"observed_detail\": \"Crossref JSON returned type=journal-article, published=[[2026]], created=2026-10-06T19:10:19Z.\"\n      },\n      {\n        \"url\": \"https://doi.org/10.1109/JIOT.2026.3740035\",\n        \"accessed_at\": \"2026-11-26T06:55:41+07:00\",\n        \"outcome\": \"HTTP 202 (inaccessible: AWS WAF JavaScript challenge)\",\n        \"observed_detail\": \"Resolved to https://ieeexplore.ieee.org/document/11719586/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read.\"\n      }\n    ]\n  },\n  {\n    \"id\": \"C13\",\n    \"title\": \"RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV Swarm\",\n    \"authors\": [\n      \"Shengjie Zhong\",\n      \"Zhongliang Zhao\",\n      \"Jingxuan Chen\",\n      \"Xianbin Cao\",\n      \"Zhiyi Liu\",\n      \"Dapeng O. Wu\",\n      \"Tony Q. S. Quek\"\n    ],\n    \"year\": 2026,\n    \"venue\": \"IEEE Transactions on Vehicular Technology\",\n    \"doi\": \"10.1109/tvt.2026.3755123\",\n    \"prior_attempts\": [\n      {\n        \"url\": \"https://api.crossref.org/works/10.1109/TVT.2026.3755123\",\n        \"accessed_at\": \"2026-11-26T06:55:41+07:00\",\n        \"outcome\": \"HTTP 200 OK\",\n        \"observed_detail\": \"Crossref JSON returned type=journal-article, published=[[2026]], created=2026-11-18T20:08:05Z.\"\n      },\n      {\n        \"url\": \"https://doi.org/10.1109/TVT.2026.3755123\",\n        \"accessed_at\": \"2026-11-26T06:55:42+07:00\",\n        \"outcome\": \"HTTP 202 (inaccessible: AWS WAF JavaScript challenge)\",\n        \"observed_detail\": \"Resolved to https://ieeexplore.ieee.org/document/11804735/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read.\"\n      }\n    ]\n  },\n  {\n    \"id\": \"C14\",\n    \"title\": \"CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks\",\n    \"authors\": [\n      \"Lianming Xu\",\n      \"Yixue Liang\",\n      \"Lei Jin\",\n      \"Li Wang\",\n      \"Ying-Jun Angela Zhang\",\n      \"Xiaoyu Zhao\",\n      \"Aiguo Fei\"\n    ],\n    \"year\": 2026,\n    \"venue\": \"IEEE Internet of Things Journal\",\n    \"doi\": \"10.1109/jiot.2026.3746980\",\n    \"prior_attempts\": [\n      {\n        \"url\": \"https://api.crossref.org/works/10.1109/JIOT.2026.3746980\",\n        \"accessed_at\": \"2026-11-26T06:55:42+07:00\",\n        \"outcome\": \"HTTP 200 OK\",\n        \"observed_detail\": \"Crossref JSON returned type=journal-article, published=[[2026]], created=2026-10-26T19:34:17Z.\"\n      },\n      {\n        \"url\": \"https://doi.org/10.1109/JIOT.2026.3746980\",\n        \"accessed_at\": \"2026-11-26T06:55:43+07:00\",\n        \"outcome\": \"HTTP 202 (inaccessible: AWS WAF JavaScript challenge)\",\n        \"observed_detail\": \"Resolved to https://ieeexplore.ieee.org/document/11753908/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read.\"\n      }\n    ]\n  },\n  {\n    \"id\": \"C19\",\n    \"title\": \"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference in UAV-Assisted Internet of Vehicles Environments\",\n    \"authors\": [\n      \"DeokKyu Kwon\",\n      \"Ashok Kumar Das\",\n      \"Youngho Park\"\n    ],\n    \"year\": 2026,\n    \"venue\": \"IEEE Internet of Things Journal\",\n    \"doi\": \"10.1109/jiot.2026.3755176\",\n    \"prior_attempts\": [\n      {\n        \"url\": \"https://api.crossref.org/works/10.1109/JIOT.2026.3755176\",\n        \"accessed_at\": \"2026-11-26T06:55:43+07:00\",\n        \"outcome\": \"HTTP 200 OK\",\n        \"observed_detail\": \"Crossref JSON returned type=journal-article, published=[[2026]], created=2026-11-17T20:17:25Z.\"\n      },\n      {\n        \"url\": \"https://doi.org/10.1109/JIOT.2026.3755176\",\n        \"accessed_at\": \"2026-11-26T06:55:44+07:00\",\n        \"outcome\": \"HTTP 202 (inaccessible: AWS WAF JavaScript challenge)\",\n        \"observed_detail\": \"Resolved to https://ieeexplore.ieee.org/document/11803260/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read.\"\n      }\n    ]\n  }\n]\n"
+          }
+        ],
+        "role": "ROLE_USER"
+      },
+      {
+        "messageId": "01a21567-7a1b-7d07-a167-7156c0224aa0",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File AI_AGENT_START_HERE.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15125663893708231731",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/AI_AGENT_START_HERE.md"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File AI_AGENT_START_HERE.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-7a25-7595-b073-118ea2f645e3",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File AI_AGENT_START_HERE.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15125663893708231731",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/AI_AGENT_START_HERE.md"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File AI_AGENT_START_HERE.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-7a27-7b04-835c-355a70c25313",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File MUST_READ_AI_AGENT/context_manifest.yaml"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15125663893708232606",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/context_manifest.yaml"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File MUST_READ_AI_AGENT/context_manifest.yaml"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-7a2e-7213-bb30-a2712e4875f3",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File MUST_READ_AI_AGENT/context_manifest.yaml"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15125663893708232606",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/context_manifest.yaml"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File MUST_READ_AI_AGENT/context_manifest.yaml"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-7a2f-7d6d-bf97-e05a9f650784",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15125663893708233481",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-7a35-7858-9b35-4604a159ae5d",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15125663893708233481",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-7a38-78aa-9567-1e9a291eccca",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File screening_46/reconciliation/reviews/identity_dates_01_correction_review.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15125663893708234356",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/reviews/identity_dates_01_correction_review.md"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File screening_46/reconciliation/reviews/identity_dates_01_correction_review.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-7a3d-70bf-8b96-03ea04a675a1",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File screening_46/reconciliation/reviews/identity_dates_01_correction_review.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15125663893708234356",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/reviews/identity_dates_01_correction_review.md"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File screening_46/reconciliation/reviews/identity_dates_01_correction_review.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-95df-74de-b17c-91360998b66d",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File MUST_READ_AI_AGENT/README.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421811787",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/README.md"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File MUST_READ_AI_AGENT/README.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-95e5-777d-a72c-39825d6063eb",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File MUST_READ_AI_AGENT/README.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421811787",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/README.md"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File MUST_READ_AI_AGENT/README.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-95e9-7afc-b3a5-f99d523372f3",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File MUST_READ_AI_AGENT/01_PROJECT_CHARTER.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421813876",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/01_PROJECT_CHARTER.md"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File MUST_READ_AI_AGENT/01_PROJECT_CHARTER.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-95ef-7d0f-b288-c5c2a1559113",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File MUST_READ_AI_AGENT/01_PROJECT_CHARTER.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421813876",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/01_PROJECT_CHARTER.md"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File MUST_READ_AI_AGENT/01_PROJECT_CHARTER.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-95f1-7db7-a4ca-a5d2a2be5308",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File MUST_READ_AI_AGENT/02_NON_NEGOTIABLE_RULES.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421811869",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/02_NON_NEGOTIABLE_RULES.md"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File MUST_READ_AI_AGENT/02_NON_NEGOTIABLE_RULES.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-95f5-7f32-8d59-5682460bc9e2",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File MUST_READ_AI_AGENT/02_NON_NEGOTIABLE_RULES.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421811869",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/02_NON_NEGOTIABLE_RULES.md"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File MUST_READ_AI_AGENT/02_NON_NEGOTIABLE_RULES.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-95f7-7488-825a-a154acb4d435",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File MUST_READ_AI_AGENT/03_WORKFLOW_AND_GATES.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421813958",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/03_WORKFLOW_AND_GATES.md"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File MUST_READ_AI_AGENT/03_WORKFLOW_AND_GATES.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-95fa-7971-a3f9-c9ab6a8ec5ee",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File MUST_READ_AI_AGENT/03_WORKFLOW_AND_GATES.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421813958",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/03_WORKFLOW_AND_GATES.md"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File MUST_READ_AI_AGENT/03_WORKFLOW_AND_GATES.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-95fc-72a3-8d97-aa22c9769278",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File MUST_READ_AI_AGENT/04_A2A_DELEGATION.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421811951",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/04_A2A_DELEGATION.md"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File MUST_READ_AI_AGENT/04_A2A_DELEGATION.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-9602-787f-8b4e-722ca6ad956e",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File MUST_READ_AI_AGENT/04_A2A_DELEGATION.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421811951",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/04_A2A_DELEGATION.md"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File MUST_READ_AI_AGENT/04_A2A_DELEGATION.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-9604-7599-9074-0b440e562754",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File MUST_READ_AI_AGENT/05_EVIDENCE_AND_CITATION.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421814040",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/05_EVIDENCE_AND_CITATION.md"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File MUST_READ_AI_AGENT/05_EVIDENCE_AND_CITATION.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-9607-7904-8b70-87204b0772fe",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File MUST_READ_AI_AGENT/05_EVIDENCE_AND_CITATION.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421814040",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/05_EVIDENCE_AND_CITATION.md"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File MUST_READ_AI_AGENT/05_EVIDENCE_AND_CITATION.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-960b-76b6-84d6-ae64f8803d2f",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421812033",
+                "input": {
+                  "EndLine": 1600,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json",
+                  "StartLine": 801
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-960e-71d4-a83b-8af6b501a4d2",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421812033",
+                "input": {
+                  "EndLine": 1600,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json",
+                  "StartLine": 801
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-9610-7305-972b-3812b803b528",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421814122",
+                "input": {
+                  "EndLine": 3002,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json",
+                  "StartLine": 1601
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-9612-73a5-8bc7-c29a4134a463",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2930385457421814122",
+                "input": {
+                  "EndLine": 3002,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json",
+                  "StartLine": 1601
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-a5a0-74ba-a912-ede0708d40fa",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15232411822979868281",
+                "input": {
+                  "EndLine": 3002,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json",
+                  "StartLine": 2401
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-a5a6-79bc-a36e-563b0bd0b220",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15232411822979868281",
+                "input": {
+                  "EndLine": 3002,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json",
+                  "StartLine": 2401
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File screening_46/reconciliation/results/identity_dates_01_accepted.json"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-a5a8-7c9a-b359-7366bf7358e1",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File MUST_READ_AI_AGENT/08_AUTOMATION_AND_CODE_REUSE.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15232411822979869738",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/08_AUTOMATION_AND_CODE_REUSE.md"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File MUST_READ_AI_AGENT/08_AUTOMATION_AND_CODE_REUSE.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-a5b1-7124-b44c-3271b8c819e5",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File MUST_READ_AI_AGENT/08_AUTOMATION_AND_CODE_REUSE.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15232411822979869738",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/08_AUTOMATION_AND_CODE_REUSE.md"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File MUST_READ_AI_AGENT/08_AUTOMATION_AND_CODE_REUSE.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-a5b3-7b17-abc3-b3610516d045",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File MUST_READ_AI_AGENT/06_FILE_MAP.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15232411822979867099",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/06_FILE_MAP.md"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File MUST_READ_AI_AGENT/06_FILE_MAP.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-a5ba-74fd-a5cb-027acfa15d5f",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File MUST_READ_AI_AGENT/06_FILE_MAP.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15232411822979867099",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/06_FILE_MAP.md"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File MUST_READ_AI_AGENT/06_FILE_MAP.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-a5c1-7432-848c-c298be16f0b2",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File MUST_READ_AI_AGENT/CURRENT_HANDOFF.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15232411822979868556",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/CURRENT_HANDOFF.md"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File MUST_READ_AI_AGENT/CURRENT_HANDOFF.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-a5c8-780e-9388-5875537fef0b",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File MUST_READ_AI_AGENT/CURRENT_HANDOFF.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15232411822979868556",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/CURRENT_HANDOFF.md"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File MUST_READ_AI_AGENT/CURRENT_HANDOFF.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-a5cb-700f-b8e4-dc0c067f1fc6",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File MUST_READ_AI_AGENT/07_SESSION_HANDOFF_TEMPLATE.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15232411822979870013",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/07_SESSION_HANDOFF_TEMPLATE.md"
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File MUST_READ_AI_AGENT/07_SESSION_HANDOFF_TEMPLATE.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-a5d0-7772-b321-d42e385c60cf",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File MUST_READ_AI_AGENT/07_SESSION_HANDOFF_TEMPLATE.md"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_15232411822979870013",
+                "input": {
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/MUST_READ_AI_AGENT/07_SESSION_HANDOFF_TEMPLATE.md"
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File MUST_READ_AI_AGENT/07_SESSION_HANDOFF_TEMPLATE.md"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e775-7b3e-a4c0-1b76dbc72f7d",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File screening_46/text/C05.txt"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147048",
+                "input": {
+                  "EndLine": 130,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/C05.txt",
+                  "StartLine": 1
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File screening_46/text/C05.txt"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e781-775a-bb25-b93f11a3386b",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File screening_46/text/C05.txt"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147048",
+                "input": {
+                  "EndLine": 130,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/C05.txt",
+                  "StartLine": 1
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File screening_46/text/C05.txt"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e784-7697-ab1c-b347dd19ce9b",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File screening_46/text/C09.txt"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147165",
+                "input": {
+                  "EndLine": 130,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/C09.txt",
+                  "StartLine": 1
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File screening_46/text/C09.txt"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e78b-7670-8382-d070457077f0",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File screening_46/text/C09.txt"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147165",
+                "input": {
+                  "EndLine": 130,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/C09.txt",
+                  "StartLine": 1
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File screening_46/text/C09.txt"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e78d-7509-bf3d-806a4c747258",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File screening_46/text/C10.txt"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147282",
+                "input": {
+                  "EndLine": 130,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/C10.txt",
+                  "StartLine": 1
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File screening_46/text/C10.txt"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e790-7806-a0b5-d7d174e07cdb",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File screening_46/text/C10.txt"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147282",
+                "input": {
+                  "EndLine": 130,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/C10.txt",
+                  "StartLine": 1
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File screening_46/text/C10.txt"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e791-7c58-8b81-875478f0c974",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File screening_46/text/C13.txt"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147399",
+                "input": {
+                  "EndLine": 130,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/C13.txt",
+                  "StartLine": 1
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File screening_46/text/C13.txt"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e794-74d2-a749-7a82f293326c",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File screening_46/text/C13.txt"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147399",
+                "input": {
+                  "EndLine": 130,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/C13.txt",
+                  "StartLine": 1
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File screening_46/text/C13.txt"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e795-74e9-a662-ea582be148a5",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File screening_46/text/C14.txt"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147516",
+                "input": {
+                  "EndLine": 130,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/C14.txt",
+                  "StartLine": 1
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File screening_46/text/C14.txt"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e797-7e67-abdb-5974a249dd19",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Failed File screening_46/text/C14.txt"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147516",
+                "input": {
+                  "EndLine": 130,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/C14.txt",
+                  "StartLine": 1
+                },
+                "kind": "read",
+                "status": "failed",
+                "title": "File screening_46/text/C14.txt"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e798-7aba-aca8-36aaef829f3f",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running File screening_46/text/C19.txt"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147633",
+                "input": {
+                  "EndLine": 130,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/C19.txt",
+                  "StartLine": 1
+                },
+                "kind": "read",
+                "status": "in_progress",
+                "title": "File screening_46/text/C19.txt"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e79b-71f7-8f04-3d5d5f57357b",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished File screening_46/text/C19.txt"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147633",
+                "input": {
+                  "EndLine": 130,
+                  "Path": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/text/C19.txt",
+                  "StartLine": 1
+                },
+                "kind": "read",
+                "status": "completed",
+                "title": "File screening_46/text/C19.txt"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-e79b-7e73-980e-b9e618e042d2",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"10.1109/TCSVT.2026.3745821\\\" OR \\\"MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147750",
+                "input": {
+                  "query": "\"10.1109/TCSVT.2026.3745821\" OR \"MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"10.1109/TCSVT.2026.3745821\\\" OR \\\"MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-f471-7ce4-bf30-bc6d4c2f2381",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"10.1109/TCSVT.2026.3745821\\\" OR \\\"MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147750",
+                "input": {
+                  "query": "\"10.1109/TCSVT.2026.3745821\" OR \"MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"10.1109/TCSVT.2026.3745821\\\" OR \\\"MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-f475-7ee4-b2e1-7aa0329bfeeb",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"10.1109/JIOT.2026.3755315\\\" OR \\\"NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147867",
+                "input": {
+                  "query": "\"10.1109/JIOT.2026.3755315\" OR \"NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"10.1109/JIOT.2026.3755315\\\" OR \\\"NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21567-fe4f-77b8-b6c0-72d82df1d406",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"10.1109/JIOT.2026.3755315\\\" OR \\\"NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_2088925906001147867",
+                "input": {
+                  "query": "\"10.1109/JIOT.2026.3755315\" OR \"NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"10.1109/JIOT.2026.3755315\\\" OR \\\"NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-1771-72d6-ae5e-752742fe581b",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"10.1109/JIOT.2026.3740035\\\" OR \\\"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166425677",
+                "input": {
+                  "query": "\"10.1109/JIOT.2026.3740035\" OR \"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"10.1109/JIOT.2026.3740035\\\" OR \\\"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-2303-708c-b878-51180b722de9",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"10.1109/JIOT.2026.3740035\\\" OR \\\"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166425677",
+                "input": {
+                  "query": "\"10.1109/JIOT.2026.3740035\" OR \"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"10.1109/JIOT.2026.3740035\\\" OR \\\"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-2307-702e-8f08-bd053a99cc65",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"10.1109/TVT.2026.3755123\\\" OR \\\"RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166427160",
+                "input": {
+                  "query": "\"10.1109/TVT.2026.3755123\" OR \"RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"10.1109/TVT.2026.3755123\\\" OR \\\"RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-2e8e-70cb-a076-926b9e7101a9",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"10.1109/TVT.2026.3755123\\\" OR \\\"RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166427160",
+                "input": {
+                  "query": "\"10.1109/TVT.2026.3755123\" OR \"RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"10.1109/TVT.2026.3755123\\\" OR \\\"RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-2e91-7e48-8cda-55697a160a56",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"10.1109/JIOT.2026.3746980\\\" OR \\\"CIDER: Collaborative Inference with Distilled Early-Exit Routing\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166428643",
+                "input": {
+                  "query": "\"10.1109/JIOT.2026.3746980\" OR \"CIDER: Collaborative Inference with Distilled Early-Exit Routing\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"10.1109/JIOT.2026.3746980\\\" OR \\\"CIDER: Collaborative Inference with Distilled Early-Exit Routing\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-3af9-7858-a068-1ebd78c1e43d",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"10.1109/JIOT.2026.3746980\\\" OR \\\"CIDER: Collaborative Inference with Distilled Early-Exit Routing\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166428643",
+                "input": {
+                  "query": "\"10.1109/JIOT.2026.3746980\" OR \"CIDER: Collaborative Inference with Distilled Early-Exit Routing\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"10.1109/JIOT.2026.3746980\\\" OR \\\"CIDER: Collaborative Inference with Distilled Early-Exit Routing\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-3afd-7269-afa5-f05f7c9a4c01",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"10.1109/JIOT.2026.3755176\\\" OR \\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166426030",
+                "input": {
+                  "query": "\"10.1109/JIOT.2026.3755176\" OR \"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"10.1109/JIOT.2026.3755176\\\" OR \\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-4625-71b1-aaf6-cd16c8eaff7d",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"10.1109/JIOT.2026.3755176\\\" OR \\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166426030",
+                "input": {
+                  "query": "\"10.1109/JIOT.2026.3755176\" OR \"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"10.1109/JIOT.2026.3755176\\\" OR \\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-462b-7042-a927-8af1e68d638b",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running python3 -c \"\nwith open('screening_46/text/C14.txt', 'rb') as f:\n    text = f.read().replace(b'\\x00', b'').decode('utf-8', errors='replace')\nfor i, line in enumerate(text.splitlines()[:130], 1):\n    print(f'{i}: {line}')\n\""
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166427513",
+                "input": {
+                  "CommandLine": "python3 -c \"\nwith open('screening_46/text/C14.txt', 'rb') as f:\n    text = f.read().replace(b'\\x00', b'').decode('utf-8', errors='replace')\nfor i, line in enumerate(text.splitlines()[:130], 1):\n    print(f'{i}: {line}')\n\"",
+                  "WaitMsBeforeAsync": 5000,
+                  "toolSummary": "Read C14 text header lines"
+                },
+                "kind": "execute",
+                "status": "in_progress",
+                "title": "python3 -c \"\nwith open('screening_46/text/C14.txt', 'rb') as f:\n    text = f.read().replace(b'\\x00', b'').decode('utf-8', errors='replace')\nfor i, line in enumerate(text.splitlines()[:130], 1):\n    print(f'{i}: {line}')\n\""
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-4b2c-756a-ab39-1903d3c1be56",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running python3 -c \"\nwith open('screening_46/text/C14.txt', 'rb') as f:\n    text = f.read().replace(b'\\x00', b'').decode('utf-8', errors='replace')\nfor i, line in enumerate(text.splitlines()[:130], 1):\n    print(f'{i}: {line}')\n\""
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166427513",
+                "input": {
+                  "CommandLine": "python3 -c \"\nwith open('screening_46/text/C14.txt', 'rb') as f:\n    text = f.read().replace(b'\\x00', b'').decode('utf-8', errors='replace')\nfor i, line in enumerate(text.splitlines()[:130], 1):\n    print(f'{i}: {line}')\n\"",
+                  "WaitMsBeforeAsync": 5000,
+                  "toolSummary": "Read C14 text header lines"
+                },
+                "kind": "execute",
+                "status": "in_progress",
+                "title": "python3 -c \"\nwith open('screening_46/text/C14.txt', 'rb') as f:\n    text = f.read().replace(b'\\x00', b'').decode('utf-8', errors='replace')\nfor i, line in enumerate(text.splitlines()[:130], 1):\n    print(f'{i}: {line}')\n\""
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-4be1-768f-ba77-bbe1d80b8028",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished python3 -c \"\nwith open('screening_46/text/C14.txt', 'rb') as f:\n    text = f.read().replace(b'\\x00', b'').decode('utf-8', errors='replace')\nfor i, line in enumerate(text.splitlines()[:130], 1):\n    print(f'{i}: {line}')\n\""
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166427513",
+                "input": {
+                  "CommandLine": "python3 -c \"\nwith open('screening_46/text/C14.txt', 'rb') as f:\n    text = f.read().replace(b'\\x00', b'').decode('utf-8', errors='replace')\nfor i, line in enumerate(text.splitlines()[:130], 1):\n    print(f'{i}: {line}')\n\"",
+                  "WaitMsBeforeAsync": 5000,
+                  "toolSummary": "Read C14 text header lines"
+                },
+                "kind": "execute",
+                "status": "completed",
+                "title": "python3 -c \"\nwith open('screening_46/text/C14.txt', 'rb') as f:\n    text = f.read().replace(b'\\x00', b'').decode('utf-8', errors='replace')\nfor i, line in enumerate(text.splitlines()[:130], 1):\n    print(f'{i}: {line}')\n\""
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-4be3-75fb-96f0-0f21ea5f36f1",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running python3 -c \"\nimport urllib.request\ntry:\n    r = urllib.request.urlopen('https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821', timeout=5)\n    print(r.status)\nexcept Exception as e:\n    print('ERR:', e)\n\""
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166428996",
+                "input": {
+                  "CommandLine": "python3 -c \"\nimport urllib.request\ntry:\n    r = urllib.request.urlopen('https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821', timeout=5)\n    print(r.status)\nexcept Exception as e:\n    print('ERR:', e)\n\"",
+                  "WaitMsBeforeAsync": 5000,
+                  "toolSummary": "Test OpenAlex API access"
+                },
+                "kind": "execute",
+                "status": "in_progress",
+                "title": "python3 -c \"\nimport urllib.request\ntry:\n    r = urllib.request.urlopen('https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821', timeout=5)\n    print(r.status)\nexcept Exception as e:\n    print('ERR:', e)\n\""
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-4fc5-7f36-b595-5c40730c0b0c",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running python3 -c \"\nimport urllib.request\ntry:\n    r = urllib.request.urlopen('https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821', timeout=5)\n    print(r.status)\nexcept Exception as e:\n    print('ERR:', e)\n\""
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166428996",
+                "input": {
+                  "CommandLine": "python3 -c \"\nimport urllib.request\ntry:\n    r = urllib.request.urlopen('https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821', timeout=5)\n    print(r.status)\nexcept Exception as e:\n    print('ERR:', e)\n\"",
+                  "WaitMsBeforeAsync": 5000,
+                  "toolSummary": "Test OpenAlex API access"
+                },
+                "kind": "execute",
+                "status": "in_progress",
+                "title": "python3 -c \"\nimport urllib.request\ntry:\n    r = urllib.request.urlopen('https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821', timeout=5)\n    print(r.status)\nexcept Exception as e:\n    print('ERR:', e)\n\""
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-50c8-75fb-83ea-42da76df6565",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished python3 -c \"\nimport urllib.request\ntry:\n    r = urllib.request.urlopen('https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821', timeout=5)\n    print(r.status)\nexcept Exception as e:\n    print('ERR:', e)\n\""
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_5685359155166428996",
+                "input": {
+                  "CommandLine": "python3 -c \"\nimport urllib.request\ntry:\n    r = urllib.request.urlopen('https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821', timeout=5)\n    print(r.status)\nexcept Exception as e:\n    print('ERR:', e)\n\"",
+                  "WaitMsBeforeAsync": 5000,
+                  "toolSummary": "Test OpenAlex API access"
+                },
+                "kind": "execute",
+                "status": "completed",
+                "title": "python3 -c \"\nimport urllib.request\ntry:\n    r = urllib.request.urlopen('https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821', timeout=5)\n    print(r.status)\nexcept Exception as e:\n    print('ERR:', e)\n\""
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-a141-797d-9c68-fbbe3e652be4",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"MARL-based Reliability-aware Video Analytics\\\" (\\\"doras.dcu.ie\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924568778",
+                "input": {
+                  "query": "\"MARL-based Reliability-aware Video Analytics\" (\"doras.dcu.ie\" OR \"arxiv\" OR \"published\" OR \"2026\")"
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"MARL-based Reliability-aware Video Analytics\\\" (\\\"doras.dcu.ie\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-aba9-760a-aae5-c289d99970a0",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"MARL-based Reliability-aware Video Analytics\\\" (\\\"doras.dcu.ie\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924568778",
+                "input": {
+                  "query": "\"MARL-based Reliability-aware Video Analytics\" (\"doras.dcu.ie\" OR \"arxiv\" OR \"published\" OR \"2026\")"
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"MARL-based Reliability-aware Video Analytics\\\" (\\\"doras.dcu.ie\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-abad-7ce8-a1be-06442ee7eb50",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"NetMoE: Joint Trajectory Planning\\\" (\\\"yonsei\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924568841",
+                "input": {
+                  "query": "\"NetMoE: Joint Trajectory Planning\" (\"yonsei\" OR \"arxiv\" OR \"published\" OR \"2026\")"
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"NetMoE: Joint Trajectory Planning\\\" (\\\"yonsei\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-b52b-7728-b72d-8c9385b58236",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"NetMoE: Joint Trajectory Planning\\\" (\\\"yonsei\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924568841",
+                "input": {
+                  "query": "\"NetMoE: Joint Trajectory Planning\" (\"yonsei\" OR \"arxiv\" OR \"published\" OR \"2026\")"
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"NetMoE: Joint Trajectory Planning\\\" (\\\"yonsei\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-b530-7d75-bcc0-633e4d4b9f3b",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\\\" (\\\"cup.edu.cn\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924568904",
+                "input": {
+                  "query": "\"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\" (\"cup.edu.cn\" OR \"arxiv\" OR \"published\" OR \"2026\")"
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\\\" (\\\"cup.edu.cn\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-beab-7088-b431-bd4ea9d404ee",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\\\" (\\\"cup.edu.cn\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924568904",
+                "input": {
+                  "query": "\"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\" (\"cup.edu.cn\" OR \"arxiv\" OR \"published\" OR \"2026\")"
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference\\\" (\\\"cup.edu.cn\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-beb0-7626-85b0-4cb305383a01",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"RDI-LLM: A Resilient Distributed Inference Framework\\\" (\\\"cityu.edu.hk\\\" OR \\\"sutd\\\" OR \\\"arxiv\\\" OR \\\"published\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924568967",
+                "input": {
+                  "query": "\"RDI-LLM: A Resilient Distributed Inference Framework\" (\"cityu.edu.hk\" OR \"sutd\" OR \"arxiv\" OR \"published\")"
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"RDI-LLM: A Resilient Distributed Inference Framework\\\" (\\\"cityu.edu.hk\\\" OR \\\"sutd\\\" OR \\\"arxiv\\\" OR \\\"published\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-c9fc-711d-8b8e-435db94bee9a",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"RDI-LLM: A Resilient Distributed Inference Framework\\\" (\\\"cityu.edu.hk\\\" OR \\\"sutd\\\" OR \\\"arxiv\\\" OR \\\"published\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924568967",
+                "input": {
+                  "query": "\"RDI-LLM: A Resilient Distributed Inference Framework\" (\"cityu.edu.hk\" OR \"sutd\" OR \"arxiv\" OR \"published\")"
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"RDI-LLM: A Resilient Distributed Inference Framework\\\" (\\\"cityu.edu.hk\\\" OR \\\"sutd\\\" OR \\\"arxiv\\\" OR \\\"published\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-ca01-77df-b415-e08c9b003190",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"CIDER: Collaborative Inference with Distilled Early-Exit Routing\\\" (\\\"cuhk\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924569030",
+                "input": {
+                  "query": "\"CIDER: Collaborative Inference with Distilled Early-Exit Routing\" (\"cuhk\" OR \"arxiv\" OR \"published\" OR \"2026\")"
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"CIDER: Collaborative Inference with Distilled Early-Exit Routing\\\" (\\\"cuhk\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-d31f-71ff-85aa-10a4ec3f35a7",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"CIDER: Collaborative Inference with Distilled Early-Exit Routing\\\" (\\\"cuhk\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924569030",
+                "input": {
+                  "query": "\"CIDER: Collaborative Inference with Distilled Early-Exit Routing\" (\"cuhk\" OR \"arxiv\" OR \"published\" OR \"2026\")"
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"CIDER: Collaborative Inference with Distilled Early-Exit Routing\\\" (\\\"cuhk\\\" OR \\\"arxiv\\\" OR \\\"published\\\" OR \\\"2026\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-d322-79d7-a239-d1431dfb45e5",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\" (\\\"knu.ac.kr\\\" OR \\\"iiit\\\" OR \\\"arxiv\\\" OR \\\"2026\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924569093",
+                "input": {
+                  "query": "\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\" (\"knu.ac.kr\" OR \"iiit\" OR \"arxiv\" OR \"2026\")"
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\" (\\\"knu.ac.kr\\\" OR \\\"iiit\\\" OR \\\"arxiv\\\" OR \\\"2026\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-e342-7aa6-b224-a3c5f0f8105f",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\" (\\\"knu.ac.kr\\\" OR \\\"iiit\\\" OR \\\"arxiv\\\" OR \\\"2026\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924569093",
+                "input": {
+                  "query": "\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\" (\"knu.ac.kr\" OR \"iiit\" OR \"arxiv\" OR \"2026\")"
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\" (\\\"knu.ac.kr\\\" OR \\\"iiit\\\" OR \\\"arxiv\\\" OR \\\"2026\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21568-e347-7822-b088-03808ed94769",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\nurls = [\n  ('openalex_c05', 'https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821'),\n  ('s2_c05', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TCSVT.2026.3745821?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('orcid_c05_muntean', 'https://pub.orcid.org/v3.0/0000-0002-9332-4770/works'),\n  ('ieee_cite_c05', 'https://ieeexplore.ieee.org/xpl/downloadCitations?recordIds=11745919\u0026citations-format=citation-only\u0026download-format=download-ris')\n]\nfor name, u in urls:\n    ts = now()\n    try:\n        req = urllib.request.Request(u, headers={'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'})\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            print(body[:2000])\n    except urllib.error.HTTPError as e:\n        print(f'=== {name} | {ts} | HTTP {e.code} | {u} ===')\n        print(e.read().decode('utf-8', errors='replace')[:500])\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {u} ===')\n\""
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924569156",
+                "input": {
+                  "BypassSandbox": true,
+                  "CommandLine": "python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\nurls = [\n  ('openalex_c05', 'https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821'),\n  ('s2_c05', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TCSVT.2026.3745821?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('orcid_c05_muntean', 'https://pub.orcid.org/v3.0/0000-0002-9332-4770/works'),\n  ('ieee_cite_c05', 'https://ieeexplore.ieee.org/xpl/downloadCitations?recordIds=11745919\u0026citations-format=citation-only\u0026download-format=download-ris')\n]\nfor name, u in urls:\n    ts = now()\n    try:\n        req = urllib.request.Request(u, headers={'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'})\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            print(body[:2000])\n    except urllib.error.HTTPError as e:\n        print(f'=== {name} | {ts} | HTTP {e.code} | {u} ===')\n        print(e.read().decode('utf-8', errors='replace')[:500])\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {u} ===')\n\"",
+                  "WaitMsBeforeAsync": 10000,
+                  "toolSummary": "Query public metadata endpoints for C05"
+                },
+                "kind": "execute",
+                "status": "in_progress",
+                "title": "python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\nurls = [\n  ('openalex_c05', 'https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821'),\n  ('s2_c05', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TCSVT.2026.3745821?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('orcid_c05_muntean', 'https://pub.orcid.org/v3.0/0000-0002-9332-4770/works'),\n  ('ieee_cite_c05', 'https://ieeexplore.ieee.org/xpl/downloadCitations?recordIds=11745919\u0026citations-format=citation-only\u0026download-format=download-ris')\n]\nfor name, u in urls:\n    ts = now()\n    try:\n        req = urllib.request.Request(u, headers={'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'})\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            print(body[:2000])\n    except urllib.error.HTTPError as e:\n        print(f'=== {name} | {ts} | HTTP {e.code} | {u} ===')\n        print(e.read().decode('utf-8', errors='replace')[:500])\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {u} ===')\n\""
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-06cc-7a35-824b-bedcd4a8e913",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\nurls = [\n  ('openalex_c05', 'https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821'),\n  ('s2_c05', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TCSVT.2026.3745821?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('orcid_c05_muntean', 'https://pub.orcid.org/v3.0/0000-0002-9332-4770/works'),\n  ('ieee_cite_c05', 'https://ieeexplore.ieee.org/xpl/downloadCitations?recordIds=11745919\u0026citations-format=citation-only\u0026download-format=download-ris')\n]\nfor name, u in urls:\n    ts = now()\n    try:\n        req = urllib.request.Request(u, headers={'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'})\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            print(body[:2000])\n    except urllib.error.HTTPError as e:\n        print(f'=== {name} | {ts} | HTTP {e.code} | {u} ===')\n        print(e.read().decode('utf-8', errors='replace')[:500])\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {u} ===')\n\""
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924569156",
+                "input": {
+                  "BypassSandbox": true,
+                  "CommandLine": "python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\nurls = [\n  ('openalex_c05', 'https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821'),\n  ('s2_c05', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TCSVT.2026.3745821?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('orcid_c05_muntean', 'https://pub.orcid.org/v3.0/0000-0002-9332-4770/works'),\n  ('ieee_cite_c05', 'https://ieeexplore.ieee.org/xpl/downloadCitations?recordIds=11745919\u0026citations-format=citation-only\u0026download-format=download-ris')\n]\nfor name, u in urls:\n    ts = now()\n    try:\n        req = urllib.request.Request(u, headers={'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'})\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            print(body[:2000])\n    except urllib.error.HTTPError as e:\n        print(f'=== {name} | {ts} | HTTP {e.code} | {u} ===')\n        print(e.read().decode('utf-8', errors='replace')[:500])\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {u} ===')\n\"",
+                  "WaitMsBeforeAsync": 10000,
+                  "toolSummary": "Query public metadata endpoints for C05"
+                },
+                "kind": "execute",
+                "status": "in_progress",
+                "title": "python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\nurls = [\n  ('openalex_c05', 'https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821'),\n  ('s2_c05', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TCSVT.2026.3745821?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('orcid_c05_muntean', 'https://pub.orcid.org/v3.0/0000-0002-9332-4770/works'),\n  ('ieee_cite_c05', 'https://ieeexplore.ieee.org/xpl/downloadCitations?recordIds=11745919\u0026citations-format=citation-only\u0026download-format=download-ris')\n]\nfor name, u in urls:\n    ts = now()\n    try:\n        req = urllib.request.Request(u, headers={'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'})\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            print(body[:2000])\n    except urllib.error.HTTPError as e:\n        print(f'=== {name} | {ts} | HTTP {e.code} | {u} ===')\n        print(e.read().decode('utf-8', errors='replace')[:500])\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {u} ===')\n\""
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-2319-7ba0-a3c1-e1d03acd563c",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\nurls = [\n  ('openalex_c05', 'https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821'),\n  ('s2_c05', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TCSVT.2026.3745821?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('orcid_c05_muntean', 'https://pub.orcid.org/v3.0/0000-0002-9332-4770/works'),\n  ('ieee_cite_c05', 'https://ieeexplore.ieee.org/xpl/downloadCitations?recordIds=11745919\u0026citations-format=citation-only\u0026download-format=download-ris')\n]\nfor name, u in urls:\n    ts = now()\n    try:\n        req = urllib.request.Request(u, headers={'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'})\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            print(body[:2000])\n    except urllib.error.HTTPError as e:\n        print(f'=== {name} | {ts} | HTTP {e.code} | {u} ===')\n        print(e.read().decode('utf-8', errors='replace')[:500])\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {u} ===')\n\""
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8650693618924569156",
+                "input": {
+                  "BypassSandbox": true,
+                  "CommandLine": "python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\nurls = [\n  ('openalex_c05', 'https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821'),\n  ('s2_c05', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TCSVT.2026.3745821?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('orcid_c05_muntean', 'https://pub.orcid.org/v3.0/0000-0002-9332-4770/works'),\n  ('ieee_cite_c05', 'https://ieeexplore.ieee.org/xpl/downloadCitations?recordIds=11745919\u0026citations-format=citation-only\u0026download-format=download-ris')\n]\nfor name, u in urls:\n    ts = now()\n    try:\n        req = urllib.request.Request(u, headers={'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'})\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            print(body[:2000])\n    except urllib.error.HTTPError as e:\n        print(f'=== {name} | {ts} | HTTP {e.code} | {u} ===')\n        print(e.read().decode('utf-8', errors='replace')[:500])\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {u} ===')\n\"",
+                  "WaitMsBeforeAsync": 10000,
+                  "toolSummary": "Query public metadata endpoints for C05"
+                },
+                "kind": "execute",
+                "status": "completed",
+                "title": "python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\nurls = [\n  ('openalex_c05', 'https://api.openalex.org/works/https://doi.org/10.1109/TCSVT.2026.3745821'),\n  ('s2_c05', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TCSVT.2026.3745821?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('orcid_c05_muntean', 'https://pub.orcid.org/v3.0/0000-0002-9332-4770/works'),\n  ('ieee_cite_c05', 'https://ieeexplore.ieee.org/xpl/downloadCitations?recordIds=11745919\u0026citations-format=citation-only\u0026download-format=download-ris')\n]\nfor name, u in urls:\n    ts = now()\n    try:\n        req = urllib.request.Request(u, headers={'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'})\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            print(body[:2000])\n    except urllib.error.HTTPError as e:\n        print(f'=== {name} | {ts} | HTTP {e.code} | {u} ===')\n        print(e.read().decode('utf-8', errors='replace')[:500])\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {u} ===')\n\""
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-4fbf-70a4-bd17-9233c34ad2bf",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"NetMoE\\\" \\\"HyungBin Park\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_304569379731509380",
+                "input": {
+                  "domain": "yonsei.ac.kr",
+                  "query": "\"NetMoE\" \"HyungBin Park\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"NetMoE\\\" \\\"HyungBin Park\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-5943-76d6-9bc2-dfacac5f5b1b",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"NetMoE\\\" \\\"HyungBin Park\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_304569379731509380",
+                "input": {
+                  "domain": "yonsei.ac.kr",
+                  "query": "\"NetMoE\" \"HyungBin Park\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"NetMoE\\\" \\\"HyungBin Park\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-5948-772f-8b2c-09d1ded9da34",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"RDI-LLM\\\" \\\"Resilient Distributed Inference\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_304569379731511867",
+                "input": {
+                  "domain": "cityu.edu.hk",
+                  "query": "\"RDI-LLM\" \"Resilient Distributed Inference\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"RDI-LLM\\\" \\\"Resilient Distributed Inference\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-65f0-70a7-92b9-cd037e21b4fd",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"RDI-LLM\\\" \\\"Resilient Distributed Inference\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_304569379731511867",
+                "input": {
+                  "domain": "cityu.edu.hk",
+                  "query": "\"RDI-LLM\" \"Resilient Distributed Inference\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"RDI-LLM\\\" \\\"Resilient Distributed Inference\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-65f6-71f0-bcf5-edb1bde18e76",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"MARL-based Reliability-aware Video Analytics\\\" OR \\\"Muntean\\\" \\\"RUVA\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_304569379731510258",
+                "input": {
+                  "domain": "doras.dcu.ie",
+                  "query": "\"MARL-based Reliability-aware Video Analytics\" OR \"Muntean\" \"RUVA\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"MARL-based Reliability-aware Video Analytics\\\" OR \\\"Muntean\\\" \\\"RUVA\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-741f-7a06-b842-d9db959d02d7",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"MARL-based Reliability-aware Video Analytics\\\" OR \\\"Muntean\\\" \\\"RUVA\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_304569379731510258",
+                "input": {
+                  "domain": "doras.dcu.ie",
+                  "query": "\"MARL-based Reliability-aware Video Analytics\" OR \"Muntean\" \"RUVA\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"MARL-based Reliability-aware Video Analytics\\\" OR \\\"Muntean\\\" \\\"RUVA\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-7425-7622-8089-2bfc91fbed69",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"cupofcup/DDCI\\\" OR (\\\"DDCI\\\" \\\"Songwei Li\\\" \\\"UAV\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_304569379731512745",
+                "input": {
+                  "domain": "github.com",
+                  "query": "\"cupofcup/DDCI\" OR (\"DDCI\" \"Songwei Li\" \"UAV\")"
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"cupofcup/DDCI\\\" OR (\\\"DDCI\\\" \\\"Songwei Li\\\" \\\"UAV\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-803d-7edc-b66b-f3b50cbe4377",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"cupofcup/DDCI\\\" OR (\\\"DDCI\\\" \\\"Songwei Li\\\" \\\"UAV\\\")\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_304569379731512745",
+                "input": {
+                  "domain": "github.com",
+                  "query": "\"cupofcup/DDCI\" OR (\"DDCI\" \"Songwei Li\" \"UAV\")"
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"cupofcup/DDCI\\\" OR (\\\"DDCI\\\" \\\"Songwei Li\\\" \\\"UAV\\\")\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-8043-7b7d-a3f4-f4d37778a328",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"11745919\\\" OR \\\"11804345\\\" OR \\\"11719586\\\" OR \\\"11804735\\\" OR \\\"11753908\\\" OR \\\"11803260\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_304569379731511136",
+                "input": {
+                  "domain": "ieeexplore.ieee.org",
+                  "query": "\"11745919\" OR \"11804345\" OR \"11719586\" OR \"11804735\" OR \"11753908\" OR \"11803260\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"11745919\\\" OR \\\"11804345\\\" OR \\\"11719586\\\" OR \\\"11804735\\\" OR \\\"11753908\\\" OR \\\"11803260\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-8ce4-7242-8efd-d02191ca92d2",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"11745919\\\" OR \\\"11804345\\\" OR \\\"11719586\\\" OR \\\"11804735\\\" OR \\\"11753908\\\" OR \\\"11803260\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_304569379731511136",
+                "input": {
+                  "domain": "ieeexplore.ieee.org",
+                  "query": "\"11745919\" OR \"11804345\" OR \"11719586\" OR \"11804735\" OR \"11753908\" OR \"11803260\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"11745919\\\" OR \\\"11804345\\\" OR \\\"11719586\\\" OR \\\"11804735\\\" OR \\\"11753908\\\" OR \\\"11803260\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-8cea-7088-8885-8e92c263985e",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"10.1109/JIOT.2026.3755315\\\" OR \\\"10.1109/JIOT.2026.3740035\\\" OR \\\"10.1109/JIOT.2026.3746980\\\" OR \\\"10.1109/TCSVT.2026.3745821\\\" OR \\\"10.1109/TVT.2026.3755123\\\" OR \\\"10.1109/JIOT.2026.3755176\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_304569379731509527",
+                "input": {
+                  "domain": "scilit.com",
+                  "query": "\"10.1109/JIOT.2026.3755315\" OR \"10.1109/JIOT.2026.3740035\" OR \"10.1109/JIOT.2026.3746980\" OR \"10.1109/TCSVT.2026.3745821\" OR \"10.1109/TVT.2026.3755123\" OR \"10.1109/JIOT.2026.3755176\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"10.1109/JIOT.2026.3755315\\\" OR \\\"10.1109/JIOT.2026.3740035\\\" OR \\\"10.1109/JIOT.2026.3746980\\\" OR \\\"10.1109/TCSVT.2026.3745821\\\" OR \\\"10.1109/TVT.2026.3755123\\\" OR \\\"10.1109/JIOT.2026.3755176\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-9835-7c31-ab6d-d3a14efbebe4",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"10.1109/JIOT.2026.3755315\\\" OR \\\"10.1109/JIOT.2026.3740035\\\" OR \\\"10.1109/JIOT.2026.3746980\\\" OR \\\"10.1109/TCSVT.2026.3745821\\\" OR \\\"10.1109/TVT.2026.3755123\\\" OR \\\"10.1109/JIOT.2026.3755176\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_304569379731509527",
+                "input": {
+                  "domain": "scilit.com",
+                  "query": "\"10.1109/JIOT.2026.3755315\" OR \"10.1109/JIOT.2026.3740035\" OR \"10.1109/JIOT.2026.3746980\" OR \"10.1109/TCSVT.2026.3745821\" OR \"10.1109/TVT.2026.3755123\" OR \"10.1109/JIOT.2026.3755176\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"10.1109/JIOT.2026.3755315\\\" OR \\\"10.1109/JIOT.2026.3740035\\\" OR \\\"10.1109/JIOT.2026.3746980\\\" OR \\\"10.1109/TCSVT.2026.3745821\\\" OR \\\"10.1109/TVT.2026.3755123\\\" OR \\\"10.1109/JIOT.2026.3755176\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-eddc-76b2-b077-aa4d26b3466a",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"RDI-LLM\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8815396989348760362",
+                "input": {
+                  "domain": "scholars.cityu.edu.hk",
+                  "query": "\"RDI-LLM\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"RDI-LLM\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-faae-7449-96a8-d46b0b0f2df1",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"RDI-LLM\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8815396989348760362",
+                "input": {
+                  "domain": "scholars.cityu.edu.hk",
+                  "query": "\"RDI-LLM\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"RDI-LLM\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a21569-fab4-7509-ae85-7c7f9a5cec48",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"NetMoE\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8815396989348759421",
+                "input": {
+                  "domain": "yonsei.pure.elsevier.com",
+                  "query": "\"NetMoE\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"NetMoE\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a2156a-055b-71d8-a932-7a31f959d1df",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"NetMoE\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8815396989348759421",
+                "input": {
+                  "domain": "yonsei.pure.elsevier.com",
+                  "query": "\"NetMoE\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"NetMoE\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a2156a-0567-7c31-a26d-7dae3d5f69e8",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"RUVA\\\" OR \\\"NetMoE\\\" OR \\\"RDI-LLM\\\" OR \\\"CIDER\\\" OR \\\"DRL-Assisted Decentralized Framework for UAV Swarm\\\" OR \\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8815396989348758480",
+                "input": {
+                  "domain": "dblp.org",
+                  "query": "\"RUVA\" OR \"NetMoE\" OR \"RDI-LLM\" OR \"CIDER\" OR \"DRL-Assisted Decentralized Framework for UAV Swarm\" OR \"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"RUVA\\\" OR \\\"NetMoE\\\" OR \\\"RDI-LLM\\\" OR \\\"CIDER\\\" OR \\\"DRL-Assisted Decentralized Framework for UAV Swarm\\\" OR \\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a2156a-1c2c-73cc-9c1c-ce5f93ffbfa2",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"RUVA\\\" OR \\\"NetMoE\\\" OR \\\"RDI-LLM\\\" OR \\\"CIDER\\\" OR \\\"DRL-Assisted Decentralized Framework for UAV Swarm\\\" OR \\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8815396989348758480",
+                "input": {
+                  "domain": "dblp.org",
+                  "query": "\"RUVA\" OR \"NetMoE\" OR \"RDI-LLM\" OR \"CIDER\" OR \"DRL-Assisted Decentralized Framework for UAV Swarm\" OR \"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"RUVA\\\" OR \\\"NetMoE\\\" OR \\\"RDI-LLM\\\" OR \\\"CIDER\\\" OR \\\"DRL-Assisted Decentralized Framework for UAV Swarm\\\" OR \\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a2156a-1c31-7a9a-9c14-7cc352630dcd",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running \"\\\"MARL-based Reliability-aware Video Analytics\\\" OR \\\"NetMoE: Joint Trajectory Planning\\\" OR \\\"DRL-Assisted Decentralized Framework for UAV Swarm\\\" OR \\\"RDI-LLM\\\" OR \\\"CIDER: Collaborative Inference\\\" OR \\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8815396989348757539",
+                "input": {
+                  "domain": "arxiv.org",
+                  "query": "\"MARL-based Reliability-aware Video Analytics\" OR \"NetMoE: Joint Trajectory Planning\" OR \"DRL-Assisted Decentralized Framework for UAV Swarm\" OR \"RDI-LLM\" OR \"CIDER: Collaborative Inference\" OR \"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\""
+                },
+                "kind": "search",
+                "status": "in_progress",
+                "title": "\"\\\"MARL-based Reliability-aware Video Analytics\\\" OR \\\"NetMoE: Joint Trajectory Planning\\\" OR \\\"DRL-Assisted Decentralized Framework for UAV Swarm\\\" OR \\\"RDI-LLM\\\" OR \\\"CIDER: Collaborative Inference\\\" OR \\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a2156a-2887-76ce-ba75-f44f74541d26",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished \"\\\"MARL-based Reliability-aware Video Analytics\\\" OR \\\"NetMoE: Joint Trajectory Planning\\\" OR \\\"DRL-Assisted Decentralized Framework for UAV Swarm\\\" OR \\\"RDI-LLM\\\" OR \\\"CIDER: Collaborative Inference\\\" OR \\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\"\" on Web"
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8815396989348757539",
+                "input": {
+                  "domain": "arxiv.org",
+                  "query": "\"MARL-based Reliability-aware Video Analytics\" OR \"NetMoE: Joint Trajectory Planning\" OR \"DRL-Assisted Decentralized Framework for UAV Swarm\" OR \"RDI-LLM\" OR \"CIDER: Collaborative Inference\" OR \"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\""
+                },
+                "kind": "search",
+                "status": "completed",
+                "title": "\"\\\"MARL-based Reliability-aware Video Analytics\\\" OR \\\"NetMoE: Joint Trajectory Planning\\\" OR \\\"DRL-Assisted Decentralized Framework for UAV Swarm\\\" OR \\\"RDI-LLM\\\" OR \\\"CIDER: Collaborative Inference\\\" OR \\\"PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference\\\"\" on Web"
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a2156a-288d-7854-89f8-e1310e2a75ba",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\n\ndef fetch(name, url, headers=None):\n    ts = now()\n    h = {'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'}\n    if headers:\n        h.update(headers)\n    try:\n        req = urllib.request.Request(url, headers=h)\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            return r.status, r.geturl(), ts, body\n    except urllib.error.HTTPError as e:\n        body = e.read().decode('utf-8', errors='replace')\n        print(f'=== {name} | {ts} | HTTP {e.code} | {url} ===')\n        print(body[:400])\n        return e.code, url, ts, body\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {url} ===')\n        return None, url, ts, ''\n\ntargets = [\n  ('c09_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755315'),\n  ('c09_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755315?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c09_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0705-9676/works'),\n  ('c10_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3740035'),\n  ('c10_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3740035?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c10_orcid', 'https://pub.orcid.org/v3.0/0000-0002-1882-9357/works'),\n  ('c13_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/TVT.2026.3755123'),\n  ('c13_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TVT.2026.3755123?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3746980'),\n  ('c14_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3746980?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0973-1614/works'),\n  ('c19_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755176'),\n  ('c19_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755176?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c19_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0406-6547/works'),\n]\n\nfor name, url in targets:\n    st, final_u, ts, body = fetch(name, url)\n    if st == 200:\n        if '_oa' in name:\n            d = json.loads(body)\n            out = {k: d.get(k) for k in ['id','doi','title','publication_year','publication_date','created_date','updated_date','indexed_in','biblio','primary_location','locations','open_access']}\n            print(json.dumps(out, indent=2)[:1500])\n        elif '_s2' in name:\n            print(body[:1000])\n        elif '_orcid' in name:\n            d = json.loads(body)\n            hits = []\n            for g in d.get('group', []):\n                for ws in g.get('work-summary', []):\n                    t = ((ws.get('title') or {}).get('title') or {}).get('value','')\n                    if any(w in t.lower() for w in ['netmoe','drl-assisted','cider','puf-enabled','uav','inference']):\n                        hits.append({\n                            'title': t,\n                            'type': ws.get('type'),\n                            'pub_date': ws.get('publication-date'),\n                            'source': ((ws.get('source') or {}).get('source-name') or {}).get('value'),\n                            'ext_ids': [(e.get('external-id-type'), e.get('external-id-value')) for e in (ws.get('external-ids') or {}).get('external-id', [])],\n                            'created_ms': (ws.get('created-date') or {}).get('value'),\n                            'last_mod_ms': (ws.get('last-modified-date') or {}).get('value'),\n                        })\n            print('ORCID matching works:', json.dumps(hits, indent=2)[:1500])\n\""
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8815396989348760694",
+                "input": {
+                  "BypassSandbox": true,
+                  "CommandLine": "python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\n\ndef fetch(name, url, headers=None):\n    ts = now()\n    h = {'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'}\n    if headers:\n        h.update(headers)\n    try:\n        req = urllib.request.Request(url, headers=h)\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            return r.status, r.geturl(), ts, body\n    except urllib.error.HTTPError as e:\n        body = e.read().decode('utf-8', errors='replace')\n        print(f'=== {name} | {ts} | HTTP {e.code} | {url} ===')\n        print(body[:400])\n        return e.code, url, ts, body\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {url} ===')\n        return None, url, ts, ''\n\ntargets = [\n  ('c09_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755315'),\n  ('c09_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755315?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c09_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0705-9676/works'),\n  ('c10_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3740035'),\n  ('c10_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3740035?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c10_orcid', 'https://pub.orcid.org/v3.0/0000-0002-1882-9357/works'),\n  ('c13_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/TVT.2026.3755123'),\n  ('c13_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TVT.2026.3755123?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3746980'),\n  ('c14_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3746980?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0973-1614/works'),\n  ('c19_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755176'),\n  ('c19_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755176?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c19_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0406-6547/works'),\n]\n\nfor name, url in targets:\n    st, final_u, ts, body = fetch(name, url)\n    if st == 200:\n        if '_oa' in name:\n            d = json.loads(body)\n            out = {k: d.get(k) for k in ['id','doi','title','publication_year','publication_date','created_date','updated_date','indexed_in','biblio','primary_location','locations','open_access']}\n            print(json.dumps(out, indent=2)[:1500])\n        elif '_s2' in name:\n            print(body[:1000])\n        elif '_orcid' in name:\n            d = json.loads(body)\n            hits = []\n            for g in d.get('group', []):\n                for ws in g.get('work-summary', []):\n                    t = ((ws.get('title') or {}).get('title') or {}).get('value','')\n                    if any(w in t.lower() for w in ['netmoe','drl-assisted','cider','puf-enabled','uav','inference']):\n                        hits.append({\n                            'title': t,\n                            'type': ws.get('type'),\n                            'pub_date': ws.get('publication-date'),\n                            'source': ((ws.get('source') or {}).get('source-name') or {}).get('value'),\n                            'ext_ids': [(e.get('external-id-type'), e.get('external-id-value')) for e in (ws.get('external-ids') or {}).get('external-id', [])],\n                            'created_ms': (ws.get('created-date') or {}).get('value'),\n                            'last_mod_ms': (ws.get('last-modified-date') or {}).get('value'),\n                        })\n            print('ORCID matching works:', json.dumps(hits, indent=2)[:1500])\n\"",
+                  "WaitMsBeforeAsync": 10000,
+                  "toolSummary": "Query OpenAlex, Semantic Scholar, and ORCID for C09-C19"
+                },
+                "kind": "execute",
+                "status": "in_progress",
+                "title": "python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\n\ndef fetch(name, url, headers=None):\n    ts = now()\n    h = {'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'}\n    if headers:\n        h.update(headers)\n    try:\n        req = urllib.request.Request(url, headers=h)\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            return r.status, r.geturl(), ts, body\n    except urllib.error.HTTPError as e:\n        body = e.read().decode('utf-8', errors='replace')\n        print(f'=== {name} | {ts} | HTTP {e.code} | {url} ===')\n        print(body[:400])\n        return e.code, url, ts, body\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {url} ===')\n        return None, url, ts, ''\n\ntargets = [\n  ('c09_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755315'),\n  ('c09_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755315?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c09_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0705-9676/works'),\n  ('c10_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3740035'),\n  ('c10_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3740035?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c10_orcid', 'https://pub.orcid.org/v3.0/0000-0002-1882-9357/works'),\n  ('c13_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/TVT.2026.3755123'),\n  ('c13_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TVT.2026.3755123?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3746980'),\n  ('c14_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3746980?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0973-1614/works'),\n  ('c19_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755176'),\n  ('c19_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755176?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c19_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0406-6547/works'),\n]\n\nfor name, url in targets:\n    st, final_u, ts, body = fetch(name, url)\n    if st == 200:\n        if '_oa' in name:\n            d = json.loads(body)\n            out = {k: d.get(k) for k in ['id','doi','title','publication_year','publication_date','created_date','updated_date','indexed_in','biblio','primary_location','locations','open_access']}\n            print(json.dumps(out, indent=2)[:1500])\n        elif '_s2' in name:\n            print(body[:1000])\n        elif '_orcid' in name:\n            d = json.loads(body)\n            hits = []\n            for g in d.get('group', []):\n                for ws in g.get('work-summary', []):\n                    t = ((ws.get('title') or {}).get('title') or {}).get('value','')\n                    if any(w in t.lower() for w in ['netmoe','drl-assisted','cider','puf-enabled','uav','inference']):\n                        hits.append({\n                            'title': t,\n                            'type': ws.get('type'),\n                            'pub_date': ws.get('publication-date'),\n                            'source': ((ws.get('source') or {}).get('source-name') or {}).get('value'),\n                            'ext_ids': [(e.get('external-id-type'), e.get('external-id-value')) for e in (ws.get('external-ids') or {}).get('external-id', [])],\n                            'created_ms': (ws.get('created-date') or {}).get('value'),\n                            'last_mod_ms': (ws.get('last-modified-date') or {}).get('value'),\n                        })\n            print('ORCID matching works:', json.dumps(hits, indent=2)[:1500])\n\""
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a2156a-2e1f-7a60-88a7-99553dede88a",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Running python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\n\ndef fetch(name, url, headers=None):\n    ts = now()\n    h = {'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'}\n    if headers:\n        h.update(headers)\n    try:\n        req = urllib.request.Request(url, headers=h)\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            return r.status, r.geturl(), ts, body\n    except urllib.error.HTTPError as e:\n        body = e.read().decode('utf-8', errors='replace')\n        print(f'=== {name} | {ts} | HTTP {e.code} | {url} ===')\n        print(body[:400])\n        return e.code, url, ts, body\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {url} ===')\n        return None, url, ts, ''\n\ntargets = [\n  ('c09_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755315'),\n  ('c09_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755315?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c09_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0705-9676/works'),\n  ('c10_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3740035'),\n  ('c10_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3740035?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c10_orcid', 'https://pub.orcid.org/v3.0/0000-0002-1882-9357/works'),\n  ('c13_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/TVT.2026.3755123'),\n  ('c13_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TVT.2026.3755123?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3746980'),\n  ('c14_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3746980?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0973-1614/works'),\n  ('c19_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755176'),\n  ('c19_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755176?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c19_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0406-6547/works'),\n]\n\nfor name, url in targets:\n    st, final_u, ts, body = fetch(name, url)\n    if st == 200:\n        if '_oa' in name:\n            d = json.loads(body)\n            out = {k: d.get(k) for k in ['id','doi','title','publication_year','publication_date','created_date','updated_date','indexed_in','biblio','primary_location','locations','open_access']}\n            print(json.dumps(out, indent=2)[:1500])\n        elif '_s2' in name:\n            print(body[:1000])\n        elif '_orcid' in name:\n            d = json.loads(body)\n            hits = []\n            for g in d.get('group', []):\n                for ws in g.get('work-summary', []):\n                    t = ((ws.get('title') or {}).get('title') or {}).get('value','')\n                    if any(w in t.lower() for w in ['netmoe','drl-assisted','cider','puf-enabled','uav','inference']):\n                        hits.append({\n                            'title': t,\n                            'type': ws.get('type'),\n                            'pub_date': ws.get('publication-date'),\n                            'source': ((ws.get('source') or {}).get('source-name') or {}).get('value'),\n                            'ext_ids': [(e.get('external-id-type'), e.get('external-id-value')) for e in (ws.get('external-ids') or {}).get('external-id', [])],\n                            'created_ms': (ws.get('created-date') or {}).get('value'),\n                            'last_mod_ms': (ws.get('last-modified-date') or {}).get('value'),\n                        })\n            print('ORCID matching works:', json.dumps(hits, indent=2)[:1500])\n\""
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8815396989348760694",
+                "input": {
+                  "BypassSandbox": true,
+                  "CommandLine": "python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\n\ndef fetch(name, url, headers=None):\n    ts = now()\n    h = {'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'}\n    if headers:\n        h.update(headers)\n    try:\n        req = urllib.request.Request(url, headers=h)\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            return r.status, r.geturl(), ts, body\n    except urllib.error.HTTPError as e:\n        body = e.read().decode('utf-8', errors='replace')\n        print(f'=== {name} | {ts} | HTTP {e.code} | {url} ===')\n        print(body[:400])\n        return e.code, url, ts, body\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {url} ===')\n        return None, url, ts, ''\n\ntargets = [\n  ('c09_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755315'),\n  ('c09_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755315?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c09_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0705-9676/works'),\n  ('c10_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3740035'),\n  ('c10_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3740035?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c10_orcid', 'https://pub.orcid.org/v3.0/0000-0002-1882-9357/works'),\n  ('c13_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/TVT.2026.3755123'),\n  ('c13_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TVT.2026.3755123?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3746980'),\n  ('c14_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3746980?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0973-1614/works'),\n  ('c19_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755176'),\n  ('c19_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755176?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c19_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0406-6547/works'),\n]\n\nfor name, url in targets:\n    st, final_u, ts, body = fetch(name, url)\n    if st == 200:\n        if '_oa' in name:\n            d = json.loads(body)\n            out = {k: d.get(k) for k in ['id','doi','title','publication_year','publication_date','created_date','updated_date','indexed_in','biblio','primary_location','locations','open_access']}\n            print(json.dumps(out, indent=2)[:1500])\n        elif '_s2' in name:\n            print(body[:1000])\n        elif '_orcid' in name:\n            d = json.loads(body)\n            hits = []\n            for g in d.get('group', []):\n                for ws in g.get('work-summary', []):\n                    t = ((ws.get('title') or {}).get('title') or {}).get('value','')\n                    if any(w in t.lower() for w in ['netmoe','drl-assisted','cider','puf-enabled','uav','inference']):\n                        hits.append({\n                            'title': t,\n                            'type': ws.get('type'),\n                            'pub_date': ws.get('publication-date'),\n                            'source': ((ws.get('source') or {}).get('source-name') or {}).get('value'),\n                            'ext_ids': [(e.get('external-id-type'), e.get('external-id-value')) for e in (ws.get('external-ids') or {}).get('external-id', [])],\n                            'created_ms': (ws.get('created-date') or {}).get('value'),\n                            'last_mod_ms': (ws.get('last-modified-date') or {}).get('value'),\n                        })\n            print('ORCID matching works:', json.dumps(hits, indent=2)[:1500])\n\"",
+                  "WaitMsBeforeAsync": 10000,
+                  "toolSummary": "Query OpenAlex, Semantic Scholar, and ORCID for C09-C19"
+                },
+                "kind": "execute",
+                "status": "in_progress",
+                "title": "python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\n\ndef fetch(name, url, headers=None):\n    ts = now()\n    h = {'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'}\n    if headers:\n        h.update(headers)\n    try:\n        req = urllib.request.Request(url, headers=h)\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            return r.status, r.geturl(), ts, body\n    except urllib.error.HTTPError as e:\n        body = e.read().decode('utf-8', errors='replace')\n        print(f'=== {name} | {ts} | HTTP {e.code} | {url} ===')\n        print(body[:400])\n        return e.code, url, ts, body\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {url} ===')\n        return None, url, ts, ''\n\ntargets = [\n  ('c09_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755315'),\n  ('c09_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755315?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c09_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0705-9676/works'),\n  ('c10_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3740035'),\n  ('c10_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3740035?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c10_orcid', 'https://pub.orcid.org/v3.0/0000-0002-1882-9357/works'),\n  ('c13_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/TVT.2026.3755123'),\n  ('c13_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TVT.2026.3755123?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3746980'),\n  ('c14_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3746980?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0973-1614/works'),\n  ('c19_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755176'),\n  ('c19_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755176?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c19_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0406-6547/works'),\n]\n\nfor name, url in targets:\n    st, final_u, ts, body = fetch(name, url)\n    if st == 200:\n        if '_oa' in name:\n            d = json.loads(body)\n            out = {k: d.get(k) for k in ['id','doi','title','publication_year','publication_date','created_date','updated_date','indexed_in','biblio','primary_location','locations','open_access']}\n            print(json.dumps(out, indent=2)[:1500])\n        elif '_s2' in name:\n            print(body[:1000])\n        elif '_orcid' in name:\n            d = json.loads(body)\n            hits = []\n            for g in d.get('group', []):\n                for ws in g.get('work-summary', []):\n                    t = ((ws.get('title') or {}).get('title') or {}).get('value','')\n                    if any(w in t.lower() for w in ['netmoe','drl-assisted','cider','puf-enabled','uav','inference']):\n                        hits.append({\n                            'title': t,\n                            'type': ws.get('type'),\n                            'pub_date': ws.get('publication-date'),\n                            'source': ((ws.get('source') or {}).get('source-name') or {}).get('value'),\n                            'ext_ids': [(e.get('external-id-type'), e.get('external-id-value')) for e in (ws.get('external-ids') or {}).get('external-id', [])],\n                            'created_ms': (ws.get('created-date') or {}).get('value'),\n                            'last_mod_ms': (ws.get('last-modified-date') or {}).get('value'),\n                        })\n            print('ORCID matching works:', json.dumps(hits, indent=2)[:1500])\n\""
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      },
+      {
+        "messageId": "01a2156a-4edb-78d9-b200-7e30df5a8504",
+        "contextId": "01a21567-64ad-7afc-8625-880430ef2fcb",
+        "parts": [
+          {
+            "text": "Finished python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\n\ndef fetch(name, url, headers=None):\n    ts = now()\n    h = {'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'}\n    if headers:\n        h.update(headers)\n    try:\n        req = urllib.request.Request(url, headers=h)\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            return r.status, r.geturl(), ts, body\n    except urllib.error.HTTPError as e:\n        body = e.read().decode('utf-8', errors='replace')\n        print(f'=== {name} | {ts} | HTTP {e.code} | {url} ===')\n        print(body[:400])\n        return e.code, url, ts, body\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {url} ===')\n        return None, url, ts, ''\n\ntargets = [\n  ('c09_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755315'),\n  ('c09_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755315?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c09_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0705-9676/works'),\n  ('c10_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3740035'),\n  ('c10_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3740035?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c10_orcid', 'https://pub.orcid.org/v3.0/0000-0002-1882-9357/works'),\n  ('c13_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/TVT.2026.3755123'),\n  ('c13_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TVT.2026.3755123?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3746980'),\n  ('c14_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3746980?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0973-1614/works'),\n  ('c19_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755176'),\n  ('c19_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755176?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c19_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0406-6547/works'),\n]\n\nfor name, url in targets:\n    st, final_u, ts, body = fetch(name, url)\n    if st == 200:\n        if '_oa' in name:\n            d = json.loads(body)\n            out = {k: d.get(k) for k in ['id','doi','title','publication_year','publication_date','created_date','updated_date','indexed_in','biblio','primary_location','locations','open_access']}\n            print(json.dumps(out, indent=2)[:1500])\n        elif '_s2' in name:\n            print(body[:1000])\n        elif '_orcid' in name:\n            d = json.loads(body)\n            hits = []\n            for g in d.get('group', []):\n                for ws in g.get('work-summary', []):\n                    t = ((ws.get('title') or {}).get('title') or {}).get('value','')\n                    if any(w in t.lower() for w in ['netmoe','drl-assisted','cider','puf-enabled','uav','inference']):\n                        hits.append({\n                            'title': t,\n                            'type': ws.get('type'),\n                            'pub_date': ws.get('publication-date'),\n                            'source': ((ws.get('source') or {}).get('source-name') or {}).get('value'),\n                            'ext_ids': [(e.get('external-id-type'), e.get('external-id-value')) for e in (ws.get('external-ids') or {}).get('external-id', [])],\n                            'created_ms': (ws.get('created-date') or {}).get('value'),\n                            'last_mod_ms': (ws.get('last-modified-date') or {}).get('value'),\n                        })\n            print('ORCID matching works:', json.dumps(hits, indent=2)[:1500])\n\""
+          },
+          {
+            "data": {
+              "toolCall": {
+                "id": "call_8815396989348760694",
+                "input": {
+                  "BypassSandbox": true,
+                  "CommandLine": "python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\n\ndef fetch(name, url, headers=None):\n    ts = now()\n    h = {'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'}\n    if headers:\n        h.update(headers)\n    try:\n        req = urllib.request.Request(url, headers=h)\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            return r.status, r.geturl(), ts, body\n    except urllib.error.HTTPError as e:\n        body = e.read().decode('utf-8', errors='replace')\n        print(f'=== {name} | {ts} | HTTP {e.code} | {url} ===')\n        print(body[:400])\n        return e.code, url, ts, body\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {url} ===')\n        return None, url, ts, ''\n\ntargets = [\n  ('c09_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755315'),\n  ('c09_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755315?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c09_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0705-9676/works'),\n  ('c10_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3740035'),\n  ('c10_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3740035?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c10_orcid', 'https://pub.orcid.org/v3.0/0000-0002-1882-9357/works'),\n  ('c13_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/TVT.2026.3755123'),\n  ('c13_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TVT.2026.3755123?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3746980'),\n  ('c14_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3746980?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0973-1614/works'),\n  ('c19_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755176'),\n  ('c19_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755176?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c19_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0406-6547/works'),\n]\n\nfor name, url in targets:\n    st, final_u, ts, body = fetch(name, url)\n    if st == 200:\n        if '_oa' in name:\n            d = json.loads(body)\n            out = {k: d.get(k) for k in ['id','doi','title','publication_year','publication_date','created_date','updated_date','indexed_in','biblio','primary_location','locations','open_access']}\n            print(json.dumps(out, indent=2)[:1500])\n        elif '_s2' in name:\n            print(body[:1000])\n        elif '_orcid' in name:\n            d = json.loads(body)\n            hits = []\n            for g in d.get('group', []):\n                for ws in g.get('work-summary', []):\n                    t = ((ws.get('title') or {}).get('title') or {}).get('value','')\n                    if any(w in t.lower() for w in ['netmoe','drl-assisted','cider','puf-enabled','uav','inference']):\n                        hits.append({\n                            'title': t,\n                            'type': ws.get('type'),\n                            'pub_date': ws.get('publication-date'),\n                            'source': ((ws.get('source') or {}).get('source-name') or {}).get('value'),\n                            'ext_ids': [(e.get('external-id-type'), e.get('external-id-value')) for e in (ws.get('external-ids') or {}).get('external-id', [])],\n                            'created_ms': (ws.get('created-date') or {}).get('value'),\n                            'last_mod_ms': (ws.get('last-modified-date') or {}).get('value'),\n                        })\n            print('ORCID matching works:', json.dumps(hits, indent=2)[:1500])\n\"",
+                  "WaitMsBeforeAsync": 10000,
+                  "toolSummary": "Query OpenAlex, Semantic Scholar, and ORCID for C09-C19"
+                },
+                "kind": "execute",
+                "status": "completed",
+                "title": "python3 -c \"\nimport urllib.request, json, datetime\nnow = lambda: datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).isoformat(timespec='seconds')\n\ndef fetch(name, url, headers=None):\n    ts = now()\n    h = {'User-Agent': 'HK261-PRISMA-Research/1.0', 'Accept': 'application/json'}\n    if headers:\n        h.update(headers)\n    try:\n        req = urllib.request.Request(url, headers=h)\n        with urllib.request.urlopen(req, timeout=15) as r:\n            body = r.read().decode('utf-8', errors='replace')\n            print(f'=== {name} | {ts} | HTTP {r.status} | {r.geturl()} ===')\n            return r.status, r.geturl(), ts, body\n    except urllib.error.HTTPError as e:\n        body = e.read().decode('utf-8', errors='replace')\n        print(f'=== {name} | {ts} | HTTP {e.code} | {url} ===')\n        print(body[:400])\n        return e.code, url, ts, body\n    except Exception as e:\n        print(f'=== {name} | {ts} | ERR {e} | {url} ===')\n        return None, url, ts, ''\n\ntargets = [\n  ('c09_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755315'),\n  ('c09_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755315?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c09_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0705-9676/works'),\n  ('c10_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3740035'),\n  ('c10_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3740035?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c10_orcid', 'https://pub.orcid.org/v3.0/0000-0002-1882-9357/works'),\n  ('c13_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/TVT.2026.3755123'),\n  ('c13_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TVT.2026.3755123?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3746980'),\n  ('c14_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3746980?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c14_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0973-1614/works'),\n  ('c19_oa', 'https://api.openalex.org/works/https://doi.org/10.1109/JIOT.2026.3755176'),\n  ('c19_s2', 'https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/JIOT.2026.3755176?fields=title,year,publicationDate,venue,externalIds,openAccessPdf,url'),\n  ('c19_orcid', 'https://pub.orcid.org/v3.0/0000-0002-0406-6547/works'),\n]\n\nfor name, url in targets:\n    st, final_u, ts, body = fetch(name, url)\n    if st == 200:\n        if '_oa' in name:\n            d = json.loads(body)\n            out = {k: d.get(k) for k in ['id','doi','title','publication_year','publication_date','created_date','updated_date','indexed_in','biblio','primary_location','locations','open_access']}\n            print(json.dumps(out, indent=2)[:1500])\n        elif '_s2' in name:\n            print(body[:1000])\n        elif '_orcid' in name:\n            d = json.loads(body)\n            hits = []\n            for g in d.get('group', []):\n                for ws in g.get('work-summary', []):\n                    t = ((ws.get('title') or {}).get('title') or {}).get('value','')\n                    if any(w in t.lower() for w in ['netmoe','drl-assisted','cider','puf-enabled','uav','inference']):\n                        hits.append({\n                            'title': t,\n                            'type': ws.get('type'),\n                            'pub_date': ws.get('publication-date'),\n                            'source': ((ws.get('source') or {}).get('source-name') or {}).get('value'),\n                            'ext_ids': [(e.get('external-id-type'), e.get('external-id-value')) for e in (ws.get('external-ids') or {}).get('external-id', [])],\n                            'created_ms': (ws.get('created-date') or {}).get('value'),\n                            'last_mod_ms': (ws.get('last-modified-date') or {}).get('value'),\n                        })\n            print('ORCID matching works:', json.dumps(hits, indent=2)[:1500])\n\""
+              }
+            }
+          }
+        ],
+        "role": "ROLE_AGENT",
+        "taskId": "01a21567-64ad-7831-ba3e-3a0fa167d8cb"
+      }
+    ],
+    "status": {
+      "state": "TASK_STATE_COMPLETED",
+      "timestamp": "2026-11-26T01:13:39.024Z"
+    }
+  }
+}

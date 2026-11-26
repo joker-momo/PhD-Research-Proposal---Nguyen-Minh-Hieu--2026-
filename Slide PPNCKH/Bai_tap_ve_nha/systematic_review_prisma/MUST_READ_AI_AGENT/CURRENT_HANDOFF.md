@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T08:09:31+07:00
+**updated_at:** 2026-11-26T10:17:33+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -163,14 +163,15 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-Date reconciliation brief ready: `screening_46/reconciliation/briefs/dates_02.md`
-for exactly C05,C09,C10,C13,C14,C19. After commit/merge/cleanup route once through
-approved Gemini-first router. D1–D5 require6 exact identities, labelled publication
-dates, bounded actual source attempts and explicit access gaps; no administrative
-or download date substitution, no cutoff change. Scope working evidence at
-`scope_01_accepted.json` remains accepted; C06/SNCS uncertain. Current report
-counts36/2/8. No active provider task. Decision `reconciliation-dates-02-brief-v1`
-is MANUAL, with heading/ID assertions and registry validation.
+Dates02 returned no usable research: Gemini primary
+`01a21567-64ad-7831-ba3e-3a0fa167d8cb` quota-only, authorized fixed fallback
+`01a2156a-5c7a-7f2a-9214-d3fcbaaf5cc2` TASK_STATE_FAILED (exit1; underlying cause
+not exposed). Both terminal; D1–D5 FAIL on missing final output. Reviews and raw
+artifacts preserved under reconciliation/dates_02*. No active provider task.
+After commit/merge/cleanup, one bounded retry of unchanged dates_02 brief may be
+routed; never infer success or retry a still-working task. Six dates remain
+UNCERTAIN, overlay36/2/8 unchanged; no manuscript changes.
+Decision `reconciliation-dates-02-v1`: REUSE_EXISTING.
 
 ## Current bibliographic overlay
 
@@ -191,10 +192,10 @@ The boundary hold has been released by the coordinating handoff.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-dates-02-brief",
-  "status": "completed",
-  "started_at": "2026-11-26T08:09:31+07:00",
-  "updated_at": "2026-11-26T08:09:31+07:00",
-  "completed_at": "2026-11-26T08:09:31+07:00"
+  "task_id": "reconciliation-dates-02",
+  "status": "rejected",
+  "started_at": "2026-11-26T08:10:27+07:00",
+  "updated_at": "2026-11-26T10:17:33+07:00",
+  "completed_at": "2026-11-26T10:17:33+07:00"
 }
 -->
