@@ -1,0 +1,234 @@
+{
+  "task_id": "SEARCH-DATASET-LOCK-AUDIT-v1",
+  "checked_at": "2026-11-26T15:50:49+07:00",
+  "scholarly_record_count": 0,
+  "scholarly_record_fields_applicability": "NOT_APPLICABLE_NO_SCHOLARLY_RECORD_DISCOVERY",
+  "query_variant_audit": [
+    {
+      "row_id": "IEEE-HR",
+      "reported_total": 42,
+      "exported_total": 42,
+      "local_locator": "sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv",
+      "admissibility": "IMPORTABLE_RECORDS",
+      "finding": "High-recall IEEE Xplore search completed with 42 reported and 42 exported records."
+    },
+    {
+      "row_id": "IEEE-COMP",
+      "reported_total": 21,
+      "exported_total": 21,
+      "local_locator": "sources/raw/core_searches/ieee_xplore_complementary_export_2026-11-26.csv",
+      "admissibility": "IMPORTABLE_RECORDS",
+      "finding": "Complementary IEEE Xplore search completed with 21 reported and 21 exported records."
+    },
+    {
+      "row_id": "ACM-HR",
+      "reported_total": 79,
+      "exported_total": 0,
+      "local_locator": "sources/raw/core_searches/acm_high_recall_2026-11-26.json",
+      "admissibility": "COUNTS_ONLY_NOT_IMPORTABLE",
+      "finding": "High-recall ACM Digital Library search observed 79 hits, but 0 records were exported because Basic Edition blocks bulk downloads/export."
+    },
+    {
+      "row_id": "ACM-COMP",
+      "reported_total": 325,
+      "exported_total": 0,
+      "local_locator": "sources/raw/core_searches/acm_complementary_2026-11-26.json",
+      "admissibility": "COUNTS_ONLY_NOT_IMPORTABLE",
+      "finding": "Complementary ACM Digital Library search observed 325 hits, but 0 records were exported because Basic Edition blocks bulk downloads/export."
+    },
+    {
+      "row_id": "SCOPUS-HR",
+      "reported_total": 77,
+      "exported_total": 77,
+      "local_locator": "sources/raw/core_searches/scopus_high_recall_export_2026-11-26.csv",
+      "admissibility": "IMPORTABLE_RECORDS",
+      "finding": "High-recall Scopus search completed with 77 reported and 77 exported records."
+    },
+    {
+      "row_id": "SCOPUS-COMP",
+      "reported_total": 33,
+      "exported_total": 33,
+      "local_locator": "sources/raw/core_searches/scopus_complementary_export_2026-11-26.csv",
+      "admissibility": "IMPORTABLE_RECORDS",
+      "finding": "Complementary Scopus search completed with 33 reported and 33 exported records."
+    },
+    {
+      "row_id": "WOS-HR",
+      "reported_total": null,
+      "exported_total": 0,
+      "local_locator": "sources/raw/core_searches/web_of_science_free_view_recheck_2026-11-26.json",
+      "admissibility": "UNAVAILABLE_NO_COUNT",
+      "finding": "High-recall Web of Science Core Collection search could not be executed because post-sign-in access was limited to Free View without Core Collection Document Search entitlement; reported_total remains null."
+    },
+    {
+      "row_id": "WOS-COMP",
+      "reported_total": null,
+      "exported_total": 0,
+      "local_locator": "sources/raw/core_searches/web_of_science_free_view_recheck_2026-11-26.json",
+      "admissibility": "UNAVAILABLE_NO_COUNT",
+      "finding": "Complementary Web of Science Core Collection search could not be executed because post-sign-in access was limited to Free View without Core Collection Document Search entitlement; reported_total remains null."
+    },
+    {
+      "row_id": "OPENALEX-HR",
+      "reported_total": 85,
+      "exported_total": 85,
+      "local_locator": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_raw.json",
+      "admissibility": "IMPORTABLE_RECORDS",
+      "finding": "High-recall OpenAlex supplementary compensatory search completed with 85 reported and 85 exported records."
+    },
+    {
+      "row_id": "OPENALEX-COMP",
+      "reported_total": 26,
+      "exported_total": 26,
+      "local_locator": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_raw.json",
+      "admissibility": "IMPORTABLE_RECORDS",
+      "finding": "Complementary OpenAlex supplementary compensatory search completed with 26 reported and 26 exported records."
+    }
+  ],
+  "source_dispositions": [
+    {
+      "source": "IEEE Xplore",
+      "disposition": "INCLUDE_IN_RECORD_CORPUS",
+      "record_rows_admitted": 63,
+      "reason": "Both high_recall (42) and complementary (21) searches completed with full CSV record exports matching reported totals.",
+      "official_source_urls": [
+        "https://ieeexplore-custom.ieee.org/search/advanced"
+      ]
+    },
+    {
+      "source": "ACM Digital Library",
+      "disposition": "SEARCH_EVIDENCE_ONLY_NO_RECORDS",
+      "record_rows_admitted": 0,
+      "reason": "Observed hit counts (79 + 325 = 404, overlap unknown) were recorded, but 0 records were exported because ACM Digital Library Basic Edition blocks bulk downloads and automated metadata harvesting is prohibited by policy.",
+      "official_source_urls": [
+        "https://libraries.acm.org/digital-library/platform-and-features",
+        "https://libraries.acm.org/digital-library/policies"
+      ]
+    },
+    {
+      "source": "Scopus",
+      "disposition": "INCLUDE_IN_RECORD_CORPUS",
+      "record_rows_admitted": 110,
+      "reason": "Both high_recall (77) and complementary (33) searches completed with full CSV record exports matching reported totals.",
+      "official_source_urls": [
+        "https://www.elsevier.support/scopus/answer/how-do-i-export-documents-from-scopus"
+      ]
+    },
+    {
+      "source": "Web of Science Core Collection",
+      "disposition": "UNAVAILABLE_NOT_SEARCHED",
+      "record_rows_admitted": 0,
+      "reason": "Post-sign-in access provided only Web of Science Free View, which excludes Document Search and Core Collection bibliographic exports; reported totals remain null and must not be converted to zero.",
+      "official_source_urls": [
+        "https://webofscience.zendesk.com/hc/en-us/articles/25349933314193-About-Web-of-Science-Researcher-Profiles",
+        "https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection/"
+      ]
+    },
+    {
+      "source": "OpenAlex",
+      "disposition": "SUPPLEMENTARY_DISCOVERY_ONLY",
+      "record_rows_admitted": 111,
+      "reason": "Executed as a supplementary compensatory catalog yielding 111 exported rows (102 unique OpenAlex IDs after removing 9 cross-query overlaps); explicitly distinct from Web of Science Core Collection with no claim of equivalent coverage.",
+      "official_source_urls": [
+        "https://help.openalex.org/data/how-its-built/",
+        "https://openalex.org/about"
+      ]
+    },
+    {
+      "source": "Research Horizon Navigator",
+      "disposition": "NOT_EXECUTED_EXCLUDE_FROM_FREEZE",
+      "record_rows_admitted": 0,
+      "reason": "Assessed but not executed for this review (0 records); it is an InCites Benchmarking & Analytics module for emerging-topic discovery via co-citation clustering rather than a systematic-review Core Collection search.",
+      "official_source_urls": [
+        "https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/incites-benchmarking-analytics/research-horizon-navigator/"
+      ]
+    }
+  ],
+  "arithmetic": {
+    "ieee_scopus_exported_rows": 173,
+    "openalex_exported_rows": 111,
+    "currently_importable_rows": 284,
+    "openalex_cross_query_overlap": 9,
+    "openalex_union_ids": 102,
+    "acm_observed_counts_not_importable": 404,
+    "wos_reported_totals": [
+      null,
+      null
+    ],
+    "cross_platform_unique_records": null
+  },
+  "methodological_findings": [
+    {
+      "claim": "PRISMA 2020 Item 6 and Item 7 require reporting every database and other information source searched or consulted, the date each was last searched, and the full search strategies including any limits or restrictions.",
+      "official_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8005925/",
+      "source_class": "official_guideline",
+      "implication": "The frozen package must document IEEE Xplore, Scopus, OpenAlex, ACM Digital Library (search-only), and Web of Science Core Collection (unavailable) separately with exact search dates and query strings."
+    },
+    {
+      "claim": "PRISMA 2020 Item 24c requires describing any amendments to information provided at registration or in the protocol.",
+      "official_source_url": "https://www.bmj.com/content/372/bmj.n71",
+      "source_class": "official_guideline",
+      "implication": "Protocol deviations—specifically the unavailability of Web of Science Core Collection, export blockage on ACM Digital Library Basic Edition, and addition of OpenAlex as a supplementary compensatory source—must be formally logged via protocol amendment."
+    },
+    {
+      "claim": "PRISMA-S Items 1, 7, 13, 15, and 16 require naming each database and platform, describing additional/supplementary sources or methods, reporting search dates, documenting total records identified per source, and describing deduplication processes.",
+      "official_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8270366/",
+      "source_class": "official_guideline",
+      "implication": "Observed counts without exported records (ACM 404) and unexecuted sources (WoS Core null, RHN 0) must be kept separate from the 284 importable rows and excluded from deduplication denominators."
+    },
+    {
+      "claim": "ACM Digital Library Basic Edition provides public open access to ACM-published articles and basic search, but explicitly excludes bulk downloads, saved searches, alerts, and the ACM Guide to Computing Literature, while ACM policies prohibit automated metadata harvesting.",
+      "official_source_url": "https://libraries.acm.org/digital-library/platform-and-features",
+      "source_class": "official_provider_documentation",
+      "implication": "ACM's 404 observed hits cannot be bulk-exported or scraped into the record corpus under Basic Edition and must remain search-evidence-only unless institutional Premium access is obtained."
+    },
+    {
+      "claim": "Web of Science Free access and Registered Access without a subscription exclude Document Search, Citing Articles lists, and Citation Reports; searching the Web of Science Core Collection requires an institutional subscription.",
+      "official_source_url": "https://webofscience.zendesk.com/hc/en-us/articles/25349933314193-About-Web-of-Science-Researcher-Profiles",
+      "source_class": "official_provider_documentation",
+      "implication": "Web of Science Core Collection was not searched (Free View only) and must be reported as unavailable with null counts rather than zero results."
+    },
+    {
+      "claim": "OpenAlex is a free CC0 open scholarly catalog seeded by Microsoft Academic Graph and aggregated from Crossref, DataCite, PubMed/PMC, DOAJ, arXiv, and repositories rather than a publisher-curated selective citation index.",
+      "official_source_url": "https://help.openalex.org/data/how-its-built/",
+      "source_class": "official_provider_documentation",
+      "implication": "OpenAlex's 111 exported rows (102 union IDs) may be frozen as a supplementary compensatory discovery source without claiming equivalence to Web of Science Core Collection."
+    },
+    {
+      "claim": "Research Horizon Navigator is an AI-native module within InCites Benchmarking & Analytics for discovering emerging research topics via co-citation clustering over the past five years.",
+      "official_source_url": "https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/incites-benchmarking-analytics/research-horizon-navigator/",
+      "source_class": "official_provider_documentation",
+      "implication": "Research Horizon Navigator is not a systematic-review Core Collection search interface, was not executed, and must be excluded from the frozen search dataset."
+    }
+  ],
+  "recommendation": {
+    "decision": "FREEZE_NOW",
+    "frozen_record_sources": [
+      "IEEE Xplore",
+      "Scopus",
+      "OpenAlex"
+    ],
+    "search_evidence_only_sources": [
+      "ACM Digital Library"
+    ],
+    "excluded_unexecuted_sources": [
+      "Web of Science Core Collection",
+      "Research Horizon Navigator"
+    ],
+    "required_protocol_action": "Finalize and log Amendment 006 under PRISMA 2020 Item 24c recording (a) Web of Science Core Collection as unavailable due to Free View entitlement limits, (b) ACM Digital Library as search-evidence-only (404 observed hits, 0 exported) due to Basic Edition bulk-export restrictions, (c) OpenAlex as a supplementary compensatory discovery source without claiming WoS Core equivalence, and (d) exclusion of unexecuted Research Horizon Navigator.",
+    "required_disclosure": [
+      "Report 284 currently importable rows (63 IEEE Xplore + 110 Scopus + 111 OpenAlex, with 102 unique OpenAlex IDs after 9 cross-query overlaps) as pre-deduplication rows; cross_platform_unique_records remains null until cross-platform deduplication runs.",
+      "Disclose ACM Digital Library separately as search-evidence-only with 404 observed hits (79 high_recall + 325 complementary, within-source overlap unknown) and 0 exported/imported records; never add 404 to imported or unique record counts.",
+      "Disclose Web of Science Core Collection as UNAVAILABLE_NOT_SEARCHED with null reported counts (not zero results) because post-sign-in access provided Free View only without Document Search entitlement.",
+      "Disclose OpenAlex explicitly as a supplementary compensatory discovery source, not a Web of Science Core Collection search or coverage-equivalent substitute.",
+      "Disclose Research Horizon Navigator as not executed and excluded from the frozen search dataset."
+    ],
+    "next_step": "Lock the 284 importable rows from IEEE Xplore, Scopus, and OpenAlex (verified by sources/raw/core_searches/checksums.sha256) and run cross-platform deduplication to establish the deduplicated screening denominator while publishing Amendment 006."
+  },
+  "unresolved_items": [
+    "Cross-platform deduplication across the 284 importable rows (173 IEEE Xplore + Scopus and 111 OpenAlex / 102 OpenAlex union IDs) has not yet been executed, so cross_platform_unique_records is null.",
+    "Within-source overlap between ACM-HR (79) and ACM-COMP (325) is unknown because 0 records could be exported under ACM Digital Library Basic Edition.",
+    "Formal team sign-off on whether to pursue future institutional/Premium access for ACM Digital Library and Web of Science Core Collection or close them permanently under Amendment 006 remains pending."
+  ],
+  "unsupported_quantitative_claims": []
+}

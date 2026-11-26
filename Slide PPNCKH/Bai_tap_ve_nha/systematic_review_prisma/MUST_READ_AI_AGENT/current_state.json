@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T15:48:10+07:00",
+  "updated_at": "2026-11-26T15:55:36+07:00",
   "goal": {
     "version": "HK261-PRISMA-completion-spec-v2",
-    "status": "search_dataset_lock_app_transport_blocked",
-    "summary": "User requires native Gemini.app Task. First app attempt failed before send due to false generation detection; no dataset lock adopted."
+    "status": "search_dataset_lock_correction_ready",
+    "summary": "Native Gemini.app audit reviewed:8/10 criteria PASS, C6/C10 fail. Counts verified; methodological recommendation remains quarantined pending targeted correction."
   },
   "task": {
-    "task_id": "research-search-dataset-lock-app-attempt-01",
+    "task_id": "research-search-dataset-lock-app-audit",
     "owner": "GEMINI_RESEARCH",
     "status": "rejected",
-    "started_at": "2026-11-26T15:46:01+07:00",
-    "completed_at": "2026-11-26T15:48:10+07:00",
-    "updated_at": "2026-11-26T15:48:10+07:00",
-    "decision_id": "research-search-dataset-lock-app-attempt-01-v1"
+    "started_at": "2026-11-26T15:50:35+07:00",
+    "completed_at": "2026-11-26T15:55:36+07:00",
+    "updated_at": "2026-11-26T15:55:36+07:00",
+    "decision_id": "research-search-dataset-lock-app-audit-v1"
   },
   "next_task": {
-    "task_id": "fix-gemini-app-generation-detection",
-    "owner": "CODEX_WRITING",
+    "task_id": "research-search-dataset-lock-app-correction",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Fix the native app bridge false-positive stop detection in its own repository, verify without bypassing safeguards, then resume the committed search lock brief through Gemini.app Task.",
-    "acceptance": "Suggestion labels do not count as active generation; genuine stop controls still block; bridge tests pass before linked retry."
+    "action": "Send the committed targeted correction via native Gemini.app Task with copied brief and parent JSON; original app chat was cleaned so new linked task/context is required.",
+    "acceptance": "Patch only failed fields; all10 original criteria PASS before any dataset lock."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -62,11 +62,12 @@
     "research_route_override": {
       "backend": "Gemini.app Accessibility",
       "mode": "task",
-      "recorded_at": "2026-11-26T15:48:10+07:00",
+      "recorded_at": "2026-11-26T15:55:36+07:00",
       "superseded_task_id": "01a21703-7809-7cb5-9880-0d502f49ccb9",
-      "app_task_id": "b2616477-c4c6-4113-81d5-d5aa786af714",
-      "app_context_id": "294c1815-1d7a-424d-9238-bc66f19fb839",
-      "review": "corpus_expansion/reviews/search_dataset_lock_app_attempt_01_review.md"
+      "app_task_id": "68bfd2a8-833d-4ec0-91d7-64ee35b03c63",
+      "app_context_id": "b18ad5c5-6b10-4938-85f9-3cac38faac37",
+      "review": "corpus_expansion/reviews/search_dataset_lock_app_review.md",
+      "bridge_commit": "cbbfab9"
     }
   },
   "evidence": {

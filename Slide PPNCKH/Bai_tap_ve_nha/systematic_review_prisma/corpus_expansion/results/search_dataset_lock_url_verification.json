@@ -1,0 +1,70 @@
+[
+  {
+    "url": "https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection/",
+    "status": 200,
+    "text_sha256": "50aa439b007ba77f2ac1528ba7ee6202bc91d0bf63aabdaee48eddb7a9ecba5b",
+    "text_chars": 23436,
+    "checked_at": "2026-11-26T15:55:36+07:00"
+  },
+  {
+    "url": "https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/incites-benchmarking-analytics/research-horizon-navigator/",
+    "status": 200,
+    "text_sha256": "5f22584e229f656e7a60877b6275ff458fe29e7b49ae149672b2b14db73d1270",
+    "text_chars": 14708,
+    "checked_at": "2026-11-26T15:55:36+07:00"
+  },
+  {
+    "url": "https://help.openalex.org/data/how-its-built/",
+    "error": "HTTP Error 403: Forbidden",
+    "checked_at": "2026-11-26T15:55:36+07:00"
+  },
+  {
+    "url": "https://ieeexplore-custom.ieee.org/search/advanced",
+    "error": "HTTP Error 418: Unknown Code",
+    "checked_at": "2026-11-26T15:55:36+07:00"
+  },
+  {
+    "url": "https://libraries.acm.org/digital-library/platform-and-features",
+    "error": "HTTP Error 403: Forbidden",
+    "checked_at": "2026-11-26T15:55:36+07:00"
+  },
+  {
+    "url": "https://libraries.acm.org/digital-library/policies",
+    "error": "HTTP Error 403: Forbidden",
+    "checked_at": "2026-11-26T15:55:36+07:00"
+  },
+  {
+    "url": "https://openalex.org/about",
+    "error": "HTTP Error 403: Forbidden",
+    "checked_at": "2026-11-26T15:55:36+07:00"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8005925/",
+    "status": 200,
+    "text_sha256": "1493c49479ea1d595419568ddc8a57f197b21d895ea7430b6cc69938214af822",
+    "text_chars": 236656,
+    "checked_at": "2026-11-26T15:55:36+07:00"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8270366/",
+    "status": 200,
+    "text_sha256": "7f86c4402b3b8b9fc1dc45e05f3efbae7df485fdb3a6f7b8ad0b3d7ccb904c0a",
+    "text_chars": 126819,
+    "checked_at": "2026-11-26T15:55:36+07:00"
+  },
+  {
+    "url": "https://webofscience.zendesk.com/hc/en-us/articles/25349933314193-About-Web-of-Science-Researcher-Profiles",
+    "error": "HTTP Error 403: Forbidden",
+    "checked_at": "2026-11-26T15:55:36+07:00"
+  },
+  {
+    "url": "https://www.bmj.com/content/372/bmj.n71",
+    "error": "HTTP Error 403: Forbidden",
+    "checked_at": "2026-11-26T15:55:36+07:00"
+  },
+  {
+    "url": "https://www.elsevier.support/scopus/answer/how-do-i-export-documents-from-scopus",
+    "error": "HTTP Error 403: Forbidden",
+    "checked_at": "2026-11-26T15:55:36+07:00"
+  }
+]
