@@ -1,0 +1,45 @@
+{
+  "id": "8d95f3d2-10d1-43b9-9906-ef7c48614d55",
+  "contextId": "de08f9dd-412b-42ff-8c52-62f62fde2c4c",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T11:39:59.707+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T11:37:41.303+00:00",
+    "updated_at": "2026-11-26T11:39:59.707+00:00",
+    "started_at": "2026-11-26T11:37:41.305+00:00",
+    "completed_at": "2026-11-26T11:39:59.707+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — Systematic Review Query Audit",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "92f26fd0-1a3a-45ef-b51b-831dd0d94f20",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "PARENT | a6938ff5-c0e4-40bd-94da-807344534581\nRUN | IEEE | high_recall | sources/raw/core_searches/ieee_xplore_high_recall_authenticated_2026-11-26.json | 42 | 2026-11-26T14:13:05+07:00 | RETAIN | Matches P03/P04 (2021-2026, Journals and Conferences, core high-recall terms). No language facet in UI; English eligibility deferred to screening. Timestamp is export mtime; official IEEE command docs inaccessible here.\nRUN | IEEE | complementary | sources/raw/core_searches/ieee_xplore_complementary_authenticated_2026-11-26.json | 21 | 2026-11-26T14:15:41+07:00 | RETAIN | Matches P03/P04 (2021-2026 active, 2022-2026 observed, Journals and Conferences, complementary terms). No language facet in UI; English deferred to screening. Timestamp is export mtime; official IEEE docs inaccessible.\nRUN | SCOPUS | high_recall | sources/raw/core_searches/scopus_high_recall_authenticated_2026-11-26.json | 77 | 2026-11-26T14:08:35+07:00 | RETAIN | Matches P03/P04 (TITLE-ABS-KEY, 2021-2026 via PUBYEAR AFT 2020/BEF 2027, ar/cp DOCTYPE, English LANGUAGE). Syntax aligns with Scopus Advanced Search docs. Timestamp is local export mtime.\nRUN | SCOPUS | complementary | sources/raw/core_searches/scopus_complementary_authenticated_2026-11-26.json | 33 | 2026-11-26T14:09:24+07:00 | RETAIN | Matches P03/P04 (TITLE-ABS-KEY, 2021-2026 active with 2022-2026 observed, ar/cp DOCTYPE, English LANGUAGE). Syntax aligns with Scopus Advanced Search docs. Timestamp is local export mtime.\nRUN | OPENALEX | high_recall | sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_manifest.json | 85 | 2026-11-26T14:54:14+07:00 | RETAIN | Matches P03/P04 (stemmed search.title_and_abstract, 2021-01-01 to 2026-11-26, language:en). Supplementary/compensatory source with distinct coverage; broad work types require E7 screening and raw JSON abstract checks.\nRUN | OPENALEX | complementary | sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_manifest.json | 26 | 2026-11-26T14:54:14+07:00 | REVISE | Uses unstemmed search.title_and_abstract.exact for four wildcards, leaving non-wildcard UAV/DNN terms unstemmed. Revision warranted to add plural/spelling OR variants while keeping all four wildcards, existing OR tail, and filters (2021-01-01 to 2026-11-26, language:en).\nRUN | ACM | high_recall | sources/raw/core_searches/acm_high_recall_2026-11-26.json | 79 | 2026-11-26T13:50:14+07:00 | RETAIN | Query aligns with P03/P04, but Basic Edition blocked native export (0); manual capture recovered 79 positions. Upper date 2026-11-30 exceeds 2026-11-26 cutoff; broad type and missing language facet require downstream screening.\nRUN | ACM | complementary | sources/raw/core_searches/acm_complementary_2026-11-26.json | 325 | 2026-11-26T13:50:14+07:00 | RETAIN | Query aligns with P03/P04, but Basic Edition blocked native export (0); manual capture recovered 325 positions. Upper date 2026-11-30 exceeds 2026-11-26 cutoff; broad type and missing language facet require downstream screening.\nDOC | IEEE | https://ieeexplore-custom.ieee.org/search/advanced/command?reload=true | local_unverified_official_url_inaccessible | Official IEEE URL was inaccessible in this session; All Metadata syntax, wildcard behavior, and missing language facet are local observations. Timestamps derive from export mtime; no cross-platform causal attribution.\nDOC | SCOPUS | https://service.elsevier.com/app/answers/detail/a_id/11365/supporthub/scopus/~/how-can-i-best-use-the-advanced-search%3F/ | Field codes, Boolean/precedence, wildcards | Official docs confirm TITLE-ABS-KEY, PUBYEAR AFT/BEF, DOCTYPE, LANGUAGE, straight quotes, and wildcards. Local limitation: timestamps derive from export mtime, and complementary export has no 2021 hits.\nDOC | ACM | https://libraries.acm.org/binaries/content/assets/libraries/new_acm-digital-library-user-guide.pdf | Advanced Search (pp. 19-21), Web Account (pp. 5-9) | Official guide confirms Advanced Search collection scope, date filters, and Boolean operators. Local limitations: Basic Edition blocked native export (0), manual capture has 79 plus 325 positions, 2026-11-30 bound exceeds 2026-11-26, missing authors/abstracts/venue/DOI.\nDOC | OPENALEX | https://help.openalex.org/api/searching/ | Text processing, Exact search, Wildcards | Official docs confirm stemmed search.title_and_abstract and unstemmed search.title_and_abstract.exact (required for wildcards with 3+ chars). Local limitations: supplementary coverage distinct from WoS, broad work types exported, normalized CSV lacks abstract column.\nQUERY | complementary | search.title_and_abstract.exact | (\"UAV swarm\" OR \"UAV swarms\" OR \"drone swarm\" OR \"drone swarms\" OR \"multi-UAV\" OR \"multi-UAVs\" OR \"multi UAV\" OR \"multiple UAVs\" OR \"multiple UAV\" OR \"aerial network\" OR \"aerial networks\" OR FANET OR FANETs) AND ((\"deep neural network\" OR \"deep neural networks\" OR DNN OR DNNs OR \"deep learning\") AND inference) AND (partition* OR offload* OR placement OR schedul* OR assign* OR \"resource allocation\")\nLIMIT | Web of Science Core Collection unsearched due to unavailable access; reported count is null.\nLIMIT | OpenAlex complementary exact-mode query unrevised/unexecuted; candidate OR-expanded query proposed without measured recall.\nLIMIT | IEEE Xplore official command-search URL inaccessible during audit; platform syntax remains locally observed.\nLIMIT | ACM upper date bound 2026-11-30 exceeds 2026-11-26 cutoff; exact cutoff, English, and E7 type screening pending.\nLIMIT | IEEE and Scopus timestamps derive from local export mtime rather than independent live search logs.\nLIMIT | 688 raw rows not yet deduplicated or reconciled; OpenAlex normalized CSV lacks abstract column.\nACM | 79 | 325 | native export 0\nWOS | null\nACTIONS | 0 | 0 | 0 | 0"
+        }
+      ]
+    }
+  ]
+}

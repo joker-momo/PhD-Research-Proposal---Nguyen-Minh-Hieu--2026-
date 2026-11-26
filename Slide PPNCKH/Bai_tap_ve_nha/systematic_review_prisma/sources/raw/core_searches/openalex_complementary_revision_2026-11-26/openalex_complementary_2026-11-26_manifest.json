@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "source": "OpenAlex",
+  "source_role": "supplementary_compensatory_search",
+  "query_set_version": "1.4-openalex-2",
+  "observed_at": "2026-11-26T18:41:10+07:00",
+  "query_variant": "complementary",
+  "search_parameter": "search.title_and_abstract.exact",
+  "exact_query": "(\"UAV swarm\" OR \"UAV swarms\" OR \"drone swarm\" OR \"drone swarms\" OR \"multi-UAV\" OR \"multi-UAVs\" OR \"multi UAV\" OR \"multiple UAVs\" OR \"multiple UAV\" OR \"aerial network\" OR \"aerial networks\" OR FANET OR FANETs) AND ((\"deep neural network\" OR \"deep neural networks\" OR DNN OR DNNs OR \"deep learning\") AND inference) AND (partition* OR offload* OR placement OR schedul* OR assign* OR \"resource allocation\")",
+  "interpreted_query": "get works from 2021-01-01 through 2026-11-26 with (\"inference\" AND (\"DNN\" OR \"DNNs\" OR \"deep learning\" OR \"deep neural network\" OR \"deep neural networks\") AND (\"FANET\" OR \"FANETs\" OR \"UAV swarm\" OR \"UAV swarms\" OR \"aerial network\" OR \"aerial networks\" OR \"drone swarm\" OR \"drone swarms\" OR \"multi UAV\" OR \"multiple UAV\" OR \"multiple UAVs\" OR \"multi-UAV\" OR \"multi-UAVs\") AND (\"resource allocation\" OR assign* OR offload* OR partition* OR \"placement\" OR schedul*)) in the title or abstract where language is [English](en)",
+  "filters": "from_publication_date:2021-01-01,to_publication_date:2026-11-26,language:en",
+  "api_reported_total": 31,
+  "exported_total": 31,
+  "page_count": 1,
+  "duplicate_counts": {
+    "openalex_id_duplicates": 0,
+    "doi_duplicates": 0,
+    "title_duplicates": 0
+  },
+  "raw_file": "openalex_complementary_2026-11-26_raw.json",
+  "normalized_file": "openalex_complementary_2026-11-26_normalized.csv",
+  "manifest_file": "openalex_complementary_2026-11-26_manifest.json",
+  "checksum_file": "openalex_complementary_2026-11-26_checksums.sha256",
+  "sha256": {
+    "openalex_complementary_2026-11-26_raw.json": "05eb0e66003a81518a85035dae2feed4460a8d67d0ad0cb2ea5be7fd33b7840e",
+    "openalex_complementary_2026-11-26_normalized.csv": "c8b14cca849d9d58293471067e5ee7fcc8815d773e0b0fe9310fa0e4b1c72af5"
+  },
+  "limitations": [
+    "OpenAlex is not Web of Science Core Collection and has different coverage.",
+    "Publication type is exported broadly and must be enforced during screening.",
+    "Search results are supplementary/compensatory evidence until a protocol amendment adopts them."
+  ]
+}

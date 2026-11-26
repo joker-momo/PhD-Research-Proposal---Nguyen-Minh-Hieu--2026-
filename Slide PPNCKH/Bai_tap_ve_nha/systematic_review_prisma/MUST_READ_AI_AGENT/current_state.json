@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:39:08+07:00",
+  "updated_at": "2026-11-26T18:41:53+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
@@ -9,24 +9,25 @@
   "task": {
     "task_id": "restart-03",
     "owner": "GEMINI_RESEARCH",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-26T18:28:26+07:00",
-    "updated_at": "2026-11-26T18:39:08+07:00",
-    "decision_id": "restart-03-delimited-query-correction-v3",
+    "updated_at": "2026-11-26T18:41:53+07:00",
+    "decision_id": "restart-03-accept-and-rerun-v4",
     "provider_task_id": "468fa8b0-d511-4876-b682-812933a3b82d",
     "provider_context_id": "b7c4f243-c3ac-42c0-883d-ac14ebc43962",
     "failed_before_send_task_id": "f238bff7-3de5-47b9-9d59-b70a1592d63e",
     "correction_task_id": "a6938ff5-c0e4-40bd-94da-807344534581",
     "correction_context_id": "f6c84538-629d-4a7f-9aa6-78f56805358a",
     "delimited_task_id": "8d95f3d2-10d1-43b9-9906-ef7c48614d55",
-    "delimited_context_id": "de08f9dd-412b-42ff-8c52-62f62fde2c4c"
+    "delimited_context_id": "de08f9dd-412b-42ff-8c52-62f62fde2c4c",
+    "completed_at": "2026-11-26T18:41:53+07:00"
   },
   "next_task": {
-    "task_id": "restart-03-delimited-correction",
-    "owner": "GEMINI_RESEARCH",
-    "status": "active",
-    "action": "Collect the existing Gemini.app Task and validate D1–D5. Do not send it again.",
-    "acceptance": "D1–D5 all PASS before adoption."
+    "task_id": "restart-04",
+    "owner": "CODEX_WRITING",
+    "status": "ready",
+    "action": "Lock exact source versions, verify hash/count/time and generate manifest and search log.",
+    "acceptance": "Four sources with eight selected runs; all seven import files hash verified; WoS count null; no version double count."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -45,7 +46,7 @@
         "ACM Digital Library": "Basic Edition; manual position-level capture79/79 and325/325",
         "Scopus": "institutional; 2 CSV exports",
         "Web of Science": "Free View; Core unavailable",
-        "OpenAlex": "compensatory 85/26 exports; not WoS Core"
+        "OpenAlex": "Supplementary, 85 high recall and 31 revised complementary; original 26 retained as history; not WoS Core"
       }
     },
     "submission_status": "NOT_SUBMITTED_OUTSIDE_CURRENT_SCOPE",
@@ -90,13 +91,13 @@
       "unique_records": null,
       "final_included_reports": null,
       "dataset_locked": false,
-      "search_audit_complete": false,
-      "old_decisions_imported": 0
+      "search_audit_complete": true,
+      "old_decisions_imported": 0,
+      "step03_acceptance": "restart_2026_11_26/step03_query_audit_acceptance.md",
+      "expected_revised_input_rows": 693
     }
   },
-  "blockers": [
-    "Query and filter fitness must pass step 03 before the final dataset lock."
-  ],
+  "blockers": [],
   "user_confirmation_required": [
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
     "Contributions, funding, conflicts, data availability and AI disclosure.",

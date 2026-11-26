@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "source": "OpenAlex",
+  "source_role": "supplementary_compensatory_search",
+  "base_url": "https://api.openalex.org/works",
+  "query_set_version": "1.4-openalex-2",
+  "from_date": "2021-01-01",
+  "to_date": "2026-11-26",
+  "language": "en",
+  "per_page": 200,
+  "select": [
+    "id",
+    "doi",
+    "title",
+    "display_name",
+    "publication_year",
+    "publication_date",
+    "type",
+    "language",
+    "authorships",
+    "primary_location",
+    "locations_count",
+    "is_retracted"
+  ],
+  "variants": [
+    {
+      "id": "complementary",
+      "search_parameter": "search.title_and_abstract.exact",
+      "query": "(\"UAV swarm\" OR \"UAV swarms\" OR \"drone swarm\" OR \"drone swarms\" OR \"multi-UAV\" OR \"multi-UAVs\" OR \"multi UAV\" OR \"multiple UAVs\" OR \"multiple UAV\" OR \"aerial network\" OR \"aerial networks\" OR FANET OR FANETs) AND ((\"deep neural network\" OR \"deep neural networks\" OR DNN OR DNNs OR \"deep learning\") AND inference) AND (partition* OR offload* OR placement OR schedul* OR assign* OR \"resource allocation\")"
+    }
+  ]
+}

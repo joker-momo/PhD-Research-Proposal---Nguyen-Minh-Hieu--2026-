@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-26T18:39:08+07:00",
+  "updated_at": "2026-11-26T18:41:53+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -141,10 +141,10 @@
       "task_id": "restart-03",
       "title": "Rà soát truy vấn đã thực sự chạy",
       "owner": "GEMINI_RESEARCH + CODEX_WRITING",
-      "status": "active",
+      "status": "completed",
       "started_at": "2026-11-26T18:28:26+07:00",
-      "updated_at": "2026-11-26T18:39:08+07:00",
-      "completed_at": null,
+      "updated_at": "2026-11-26T18:41:53+07:00",
+      "completed_at": "2026-11-26T18:41:53+07:00",
       "artifacts": [
         "restart_2026_11_26/step03_query_audit_brief.md",
         "restart_2026_11_26/step03_query_audit_primary_raw.json",
@@ -152,9 +152,45 @@
         "restart_2026_11_26/step03_query_audit_correction_brief.md",
         "restart_2026_11_26/step03_query_audit_correction_01_raw.json",
         "restart_2026_11_26/step03_query_audit_correction_01_review.md",
-        "restart_2026_11_26/step03_query_audit_delimited_brief.md"
+        "restart_2026_11_26/step03_query_audit_delimited_brief.md",
+        "restart_2026_11_26/step03_query_audit_acceptance.md",
+        "restart_2026_11_26/step03_query_audit_delimited_raw.json",
+        "automation/search_configs/openalex_query_set_1.4_revised.json",
+        "sources/raw/core_searches/openalex_complementary_revision_2026-11-26/openalex_complementary_2026-11-26_manifest.json",
+        "sources/raw/core_searches/openalex_complementary_revision_2026-11-26/openalex_run_summary_2026-11-26.json"
       ],
-      "acceptance": [],
+      "acceptance": [
+        {
+          "criterion": "D1",
+          "verdict": "PASS",
+          "evidence": "8/8 unique runs, 4/4 documentation entries, valid field counts and exact parent ID."
+        },
+        {
+          "criterion": "D2",
+          "verdict": "PASS",
+          "evidence": "8/8 locators, reported counts and archived timestamps matched. ACM 79 + 325 captured positions, 0 initial native exports. WoS count null."
+        },
+        {
+          "criterion": "D3",
+          "verdict": "PASS",
+          "evidence": "4/4 platforms supported by official documentation or labeled as local observations. ACM guide section independently located at slide 16. No cross-source causal claim accepted."
+        },
+        {
+          "criterion": "D4",
+          "verdict": "PASS",
+          "evidence": "7 RETAIN and 1 REVISE. OpenAlex kept all original terms, the four wildcards, the OR tail, dates and language."
+        },
+        {
+          "criterion": "D5",
+          "verdict": "PASS",
+          "evidence": "Four zero action counters and 6 explicit limitations. Provider result has zero screened or discovered records and zero reported edits. All 51 original checksum checks and 7 CSV row counts match."
+        },
+        {
+          "criterion": "R1",
+          "verdict": "PASS",
+          "evidence": "Codex rerun archived: API 31, CSV 31, 26 original IDs retained, 5 newly observed IDs. Raw/CSV hashes match."
+        }
+      ],
       "provider_task_id": "468fa8b0-d511-4876-b682-812933a3b82d",
       "provider_context_id": "b7c4f243-c3ac-42c0-883d-ac14ebc43962",
       "correction_task_id": "a6938ff5-c0e4-40bd-94da-807344534581",
@@ -166,9 +202,9 @@
       "task_id": "restart-04",
       "title": "Khóa phiên bản dữ liệu tìm kiếm",
       "owner": "CODEX_WRITING",
-      "status": "pending",
+      "status": "ready",
       "started_at": null,
-      "updated_at": "2026-11-26T18:07:38+07:00",
+      "updated_at": "2026-11-26T18:41:53+07:00",
       "completed_at": null,
       "artifacts": [],
       "acceptance": []
