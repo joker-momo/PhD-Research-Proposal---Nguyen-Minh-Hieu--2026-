@@ -15,7 +15,7 @@ from datetime import datetime
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import quote, urlsplit
+from urllib.parse import quote, urljoin, urlsplit
 from urllib.request import Request, HTTPRedirectHandler, build_opener
 from zoneinfo import ZoneInfo
 
@@ -216,6 +216,7 @@ def verify_one(record, lead, local, out):
     publisher = ""
     candidates = {}
     checked_html = None
+    html_candidates = {}
     if DOI.fullmatch(doi):
         metadata_url = "https://api.crossref.org/works/" + quote(doi, safe="/")
         cross_event, cross_body = attempt(metadata_url, "crossref")
@@ -247,7 +248,7 @@ def verify_one(record, lead, local, out):
         if landing_body and landing_event.get("media_type") in {"text/html","application/xhtml+xml"}:
             text, pdf_link = article_html(landing_body, rec["title"], doi)
             if text:
-                checked_html = (publisher, text)
+                checked_html = (publisher, text, "PUBLISHER_VERSION")
                 rec.update(verified_doi=doi, identity_url=publisher)
             if pdf_link.startswith("https://"):
                 candidates[pdf_link]=("publishedversion",publisher,True)
@@ -260,8 +261,12 @@ def verify_one(record, lead, local, out):
             if not rec["verified_doi"]:
                 rec.update(verified_doi=doi, identity_url=lookup_url)
             for loc in [oa.get("best_oa_location")] + (oa.get("locations") or []):
-                if loc and loc.get("is_oa") and loc.get("pdf_url"):
+                if not loc or not loc.get("is_oa"):
+                    continue
+                if loc.get("pdf_url"):
                     candidates[loc["pdf_url"]] = (loc.get("version") or "", lookup_url, True)
+                if loc.get("landing_page_url") and loc["landing_page_url"] != publisher:
+                    html_candidates[loc["landing_page_url"]] = loc.get("version") or ""
         elif oa_id:
             oa_event["outcome"] = "exact_doi_title_mismatch"
         if doi.startswith("10.1145/") and rec["verified_doi"]:
@@ -273,14 +278,39 @@ def verify_one(record, lead, local, out):
                     candidates.setdefault(link["URL"],("publishedversion",metadata_url,True))
     for lead_candidate in lead.get("candidates", []):
         url = lead_candidate.get("url", "")
-        if lead_candidate.get("format") == "PDF" and url.startswith("https://"):
+        if not url.startswith("https://"):
+            continue
+        if lead_candidate.get("format") == "PDF":
             candidates.setdefault(url,(lead_candidate.get("version",""),lead_candidate.get("evidence_url",""),False))
+        elif lead_candidate.get("format") == "HTML":
+            html_candidates.setdefault(url, lead_candidate.get("version",""))
+    for url,version in list(html_candidates.items())[:3]:
+        if checked_html:
+            break
+        event, body = attempt(url,"public_html_candidate")
+        if not body or not doi or "preprint" in version.casefold() or (urlsplit(url).hostname or "").endswith("arxiv.org"):
+            continue
+        text,pdf_link=article_html(body,rec["title"],doi)
+        final=event.get("final_url",url)
+        if pdf_link:
+            candidates[urljoin(final,pdf_link)]=(version,final,True)
+        if text and version.casefold() in {"publishedversion","acceptedversion"}:
+            checked_html=(final,text,"ACCEPTED_MANUSCRIPT" if version.casefold()=="acceptedversion" else "PUBLISHER_VERSION")
+            rec.update(verified_doi=doi, identity_url=final)
     if not doi and lead.get("publisher_url","").startswith("https://"):
         landing_event,_=attempt(lead["publisher_url"],"title_lead_landing")
         rec["landing_url"] = landing_event.get("final_url",lead["publisher_url"])
     for url,(version,evidence,linked) in list(candidates.items())[:6]:
         event, body = attempt(url,"public_pdf_candidate")
         event.update(version_metadata=version,evidence_url=evidence)
+        if body and not body.startswith(b"%PDF-") and doi:
+            text,pdf_link=article_html(body,rec["title"],doi)
+            if text and not checked_html and version.casefold() in {"publishedversion","acceptedversion"} and linked:
+                checked_html=(event.get("final_url",url),text,"ACCEPTED_MANUSCRIPT" if version.casefold()=="acceptedversion" else "PUBLISHER_VERSION")
+            if pdf_link:
+                mapped=urljoin(event.get("final_url",url),pdf_link)
+                if mapped != url:
+                    event,body=attempt(mapped,"publisher_declared_pdf_link")
         if not body.startswith(b"%PDF-"):
             if body:
                 event["outcome"]="non_pdf_response"
@@ -328,14 +358,14 @@ def verify_one(record, lead, local, out):
     else:
         rec["reason_if_no_pdf"]="NO_VERIFIED_PDF_FROM_CHECKED_ROUTES"
     if checked_html:
-        url,text=checked_html
+        url,text,version=checked_html
         html=out.parent/"html"
         html.mkdir(exist_ok=True)
         path=html/f"{sid}.txt"
         path.write_text(text)
-        rec.update(status="RETRIEVED_HTML",version="PUBLISHER_VERSION",source_url=url,source_class="PUBLISHER",
+        rec.update(status="RETRIEVED_HTML",version=version,source_url=url,source_class=source_class(url,publisher),
                    local_path=f"html/{path.name}",sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
-                   identity_check="PUBLISHER_CITATION_TITLE_AND_DOI_WITH_FULL_SECTIONS")
+                   identity_check="CITATION_TITLE_AND_DOI_WITH_FULL_SECTIONS")
     rec["next_route"]="Open the DOI/publisher link in a standard browser or via HCMUT library access. Request an author manuscript if needed."
     if not rec["landing_url"]:
         rec["next_route"]="Use the exact title in HCMUT library search and provide the publisher link or PDF."
