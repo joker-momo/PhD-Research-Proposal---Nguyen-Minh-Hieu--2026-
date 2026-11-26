@@ -1,29 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:39:39+07:00",
+  "updated_at": "2026-11-26T23:41:36+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-b02-r0062-precision-brief",
+    "task_id": "restart-11-b02-r0062-precision-review",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T23:39:39+07:00",
-    "updated_at": "2026-11-26T23:39:39+07:00",
-    "completed_at": "2026-11-26T23:39:39+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_r0062_precision_brief.md",
-    "decision_id": "restart-11-b02-r0062-precision-brief-v1"
+    "started_at": "2026-11-26T23:41:36+07:00",
+    "updated_at": "2026-11-26T23:41:36+07:00",
+    "completed_at": "2026-11-26T23:41:36+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_r0062_precision_review.md",
+    "decision_id": "restart-11-b02-r0062-precision-review-v1"
   },
   "next_task": {
-    "task_id": "restart-11-b02-r0062-precision",
+    "task_id": "restart-11-p08-unblock",
     "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Ask Gemini.app to correct T03 Stage 2 precision only.",
-    "acceptance": "One parseable and independently verified R0062 outcome with units/conditions and approximation, or explicit unavailable reason.",
-    "dispatch_brief": "restart_2026_11_26/extraction/batch_02_r0062_precision_brief.md",
-    "message_id": "hk261-p08-b02-r0062-precision-v1"
+    "status": "blocked",
+    "action": "Resolve Batch 01 native multi-PDF access and obtain authorization for Batch 02 issues outside the three specified fields.",
+    "acceptance": "No new dispatch until the access condition changes or new scope is authorized; P09 waits for P08."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -137,7 +135,7 @@
         "accepted": 0,
         "not_accessible_to_gemini": 0,
         "quarantined_batch02": 12,
-        "cleanup_deleted": 8,
+        "cleanup_deleted": 12,
         "cleanup_blocked": 3,
         "confirmed_batch02_semantic_failures": 3,
         "correction05_accepted_metric_keys": 2,
@@ -149,11 +147,20 @@
         "batch01_targeted_correction_unresolved": 43,
         "batch01_targeted_correction_pdf_inaccessible": 13,
         "batch_01_reports_accepted": 0,
-        "batch_01_targeted_unresolved": 43
+        "batch_01_targeted_unresolved": 43,
+        "batch02_requested_fields_exact_passed": 2,
+        "batch02_r0062_approximation_verified": true,
+        "batch02_r0062_new_exact_quote": "FAIL",
+        "batch02_legacy_out_of_scope_issue": "R0059",
+        "batch_02_reports_accepted": 0,
+        "canonical_pdf_hashes_matched": 25
       }
     }
   },
-  "blockers": [],
+  "blockers": [
+    "Batch 01: two targeted Gemini.app Tasks returned 13/13 paths inaccessible even after a successful one-file probe. 43 keys remain unresolved.",
+    "Batch 02: R0062 T03 exact quotation remains defective; retain C04-06. R0059 inherited claim maps two evaluation contexts to one wrong locator and is outside the authorized corrections."
+  ],
   "user_confirmation_required": [
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
     "Contributions, funding, conflicts, data availability and AI disclosure.",

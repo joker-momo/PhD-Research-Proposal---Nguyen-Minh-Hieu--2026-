@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "A1_exact_key": true,
+    "A2_body_source": true,
+    "A3_literal_approximation": true,
+    "A4_numeric_metadata": true,
+    "A5_schema_scope": true
+  },
+  "source_formats": [
+    "-raw"
+  ],
+  "pdf_sha256": "6d0c4eab7261f241261a3e8f3b3898f785e8658acd4a17ca1aa27184d70d349f",
+  "record": {
+    "key": "T03",
+    "report_id": "R0062",
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0062.pdf",
+    "status": "OBSERVED",
+    "page": 6,
+    "section": "EFFECT OF UAV UNAVAILABILITY",
+    "excerpt": "The inference process was not interrupted, but at a lower speed, 2 FPS, in the experiment.",
+    "finding": "In Stage 2, when UAV#3's communication program was disabled and UAV#3 became unavailable, the eCoEl prototype continued collaborative Faster R-CNN video-stream inference without interruption at approximately 2 FPS.",
+    "quantitative": {
+      "value": "approximately 2",
+      "units": "FPS",
+      "baseline": "~3 FPS with four UAVs (UAV#1 to UAV#4) collaborating in Stage 1",
+      "denominator": "per second",
+      "workload": "Faster R-CNN object detection on a video stream",
+      "conditions": "Stage 2: communication program of UAV#3 disabled (one of four UAVs unavailable)"
+    },
+    "reason": "",
+    "subagent_status": "UNAVAILABLE"
+  }
+}
