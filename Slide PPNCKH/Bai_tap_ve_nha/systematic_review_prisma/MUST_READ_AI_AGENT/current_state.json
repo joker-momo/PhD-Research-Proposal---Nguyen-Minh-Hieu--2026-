@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T11:09:11+07:00",
+  "updated_at": "2026-11-26T12:19:55+07:00",
   "goal": {
-    "version": "HK261-PRISMA-SNCS-v3-bounded-46-delivery",
-    "status": "bounded_delivery_completed_with_limitations",
-    "summary": "User timebox override: deliver only the 46-report Springer LaTeX/PDF interim review with honest PRISMA accounting and limitations; no new research dispatch, submission or course email. The broader systematic-search/submission objective is not claimed complete.",
+    "version": "HK261-PRISMA-completion-spec-v1",
+    "status": "specification_ready_awaiting_user_approval",
+    "summary": "A complete execution specification now separates systematic-review completion, submission-ready manuscript completion and HK261 external submission/evidence. No research, manuscript revision, submission or email resumes until the user approves or amends the specification.",
     "goal_engine_status_observed": "usageLimited"
   },
   "task": {
-    "task_id": "complete-prisma-46-manuscript",
+    "task_id": "create-prisma-completion-spec",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T10:56:31+07:00",
-    "updated_at": "2026-11-26T11:09:11+07:00",
-    "completed_at": "2026-11-26T11:09:11+07:00",
-    "decision_id": "complete-prisma-46-manuscript-v1"
+    "started_at": "2026-11-26T12:15:51+07:00",
+    "updated_at": "2026-11-26T12:19:55+07:00",
+    "completed_at": "2026-11-26T12:19:55+07:00",
+    "decision_id": "create-prisma-completion-spec-v1"
   },
   "next_task": {
-    "task_id": "none-in-current-delivery-scope",
+    "task_id": "approve-prisma-completion-spec",
     "owner": "CODEX_WRITING",
-    "status": "none",
-    "action": "Deliver the checked 46-report review copy. Do not automatically resume formal searches, author forms, corpus expansion, A2A dispatch, submission or email under this bounded override.",
-    "acceptance": "Current delivery: 46=36+2+8, 36 extraction rows, 27 checklist items, 22 visually inspected PDF pages, 53 resolved references; limitations retained."
+    "status": "ready",
+    "action": "Review specs/PRISMA_COMPLETION_SPEC.md and either approve HK261-PRISMA-COMPLETION-SPEC-v1 or request explicit amendments. Approval does not authorize submission, email, public upload or protocol changes.",
+    "acceptance": "One explicit user approval or a bounded amendment list; zero implementation tasks started before the decision."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -76,12 +76,14 @@
     }
   },
   "blockers": [
+    "The completion specification requires explicit user approval before implementation starts.",
     "Not a completed exhaustive search: core database exports and identification counts remain incomplete.",
     "Eight reports await classification; study-family independence and final human adjudication are unresolved.",
     "Twelve included reports have minimum extraction only and are not appraised; domain 9 is withheld for the 24-report subset.",
     "Authorship/declarations are unconfirmed; no submission-ready claim, submission or email is authorized in the current task."
   ],
   "user_confirmation_required": [
+    "Approval or amendment of HK261-PRISMA-COMPLETION-SPEC-v1.",
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
     "Contributions, funding, conflicts, data availability and AI disclosure.",
     "Exact examination date for calculating the course deadline.",
