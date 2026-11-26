@@ -1,0 +1,45 @@
+{
+  "id": "f46f6928-dcc7-4f5e-ad5e-72553b60bd67",
+  "contextId": "1086707b-3b0f-43a5-98b3-8ddacf623500",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T13:46:14.363+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T13:43:01.653+00:00",
+    "updated_at": "2026-11-26T13:46:14.363+00:00",
+    "started_at": "2026-11-26T13:43:01.656+00:00",
+    "completed_at": "2026-11-26T13:46:14.363+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — HK261 Batch 02 Correction",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "f159540a-57bb-4f6c-ba06-9214c9712d43",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"id\": \"R0048\", \"decision\": \"INCLUDE\", \"primary\": \"\", \"reason\": \"Peer-reviewed IEEE TGCN article evaluating scalable collaborative multi-UAV DAG-partitioned DNN video analytics.\", \"e\": {\"E2\": [\"T\", 10, \"VII. NUMERICAL RESULTS - B. Ablation Study\", \"Fig. 3 compares the average inference latency of different algorithms across UAV counts ranging from 5 to 200.\", \"Simulation discussion explicitly evaluates multi-UAV scales from 5 to 200 UAVs.\", \"R0048.pdf\"], \"E6\": [\"T\", 1, \"Abstract\", \"Collaborative multiple uncrewed aerial vehicles (UAVs) demonstrate significant potential for real-time video analytics applications.\", \"Full report is written in English.\", \"R0048.pdf\"]}}\n{\"id\": \"R0054\", \"decision\": \"INCLUDE\", \"primary\": \"\", \"reason\": \"Peer-reviewed IEEE WCL letter evaluating multi-UAV semantic ISCC with three-tier DNN inference.\", \"e\": {\"E6\": [\"T\", 1, \"I. INTRODUCTION\", \"However, UAVs must simultaneously maintain reliable links, sense surrounding targets, and execute computation-intensive inference tasks under stringent energy and coordination constraints.\", \"Full report body is written in English.\", \"R0054.pdf\"]}}\n{\"id\": \"R0059\", \"decision\": \"INCLUDE\", \"primary\": \"\", \"reason\": \"Peer-reviewed CJA full-length article evaluating adaptive model switching and collaborative CNN partitioning in UAV swarms.\", \"e\": {\"E2\": [\"T\", 9, \"5.2.2. Evaluation for model partitioning algorithm\", \"In Fig. 5(a), we set up 3 task UAVs and 6 relay UAVs\", \"Simulation explicitly evaluates a multi-UAV swarm with 3 task UAVs and 6 relay UAVs.\", \"R0059.pdf\"]}}\n{\"id\": \"R0061\", \"decision\": \"EXCLUDE\", \"primary\": \"E3\", \"reason\": \"Each UAV runs standalone onboard wildfire detection with alert sharing rather than collaborative DNN inference.\", \"e\": {\"E6\": [\"T\", 2, \"Introduction\", \"The use of Unmanned Aerial Vehicles (UAVs) has become an efficient technological means\", \"Full report body is written in English.\", \"R0061.pdf\"]}}\n{\"id\": \"R0062\", \"decision\": \"INCLUDE\", \"primary\": \"\", \"reason\": \"Peer-reviewed IEEE Communications Magazine feature article with 4-UAV eCoEI prototype evaluation.\", \"e\": {\"E7\": [\"T\", 0, \"Editorial Review Process / Policies & Guidelines (supplied publisher policy)\", \"are responsible for managing and overseeing the review process of manuscripts\", \"Supplied publisher policy establishes manuscript peer review for IEEE Communications Magazine feature articles (distinguished from columns); supplied HKUST record classifies this paper as a peer-reviewed journal article, and R0062.pdf p.1 and p.5-6 show a 7-page feature article with a 4-UAV prototype evaluation (direct browser access to both external URLs was blocked).\", \"https://www.comsoc.org/publications/magazines/ieee-communications-magazine/policies-guidelines\"]}}\n{\"id\": \"R0063\", \"decision\": \"INCLUDE\", \"primary\": \"\", \"reason\": \"Peer-reviewed Frontiers in Neurorobotics original research article evaluating speculative collaborative LLM inference in multi-UAV simulation.\", \"e\": {\"E2\": [\"T\", 11, \"5.1 Experimental setup - 5.1.1 Simulation platform\", \"Building on this core, we developed a Partially Observable Markov Game (POMG) interface that supports heterogeneous multi-agent setups.\", \"Evaluation explicitly uses a multi-agent UAV simulation environment.\", \"R0063.pdf\"], \"E6\": [\"T\", 2, \"1 Introduction\", \"The remainder of this paper is organized as follows: Section 2 reviews related work. Section 3 formulates the problem and environment.\", \"Full report body is written in English.\", \"R0063.pdf\"]}}\n{\"id\": \"R0068\", \"decision\": \"INCLUDE\", \"primary\": \"\", \"reason\": \"Peer-reviewed IEEE Access research article evaluating multi-agent meta-RL for distributed CNN inference in UAV swarms.\", \"e\": {\"E1\": [\"T\", 7, \"V. THE PROPOSED SOLUTION APPROACHES\", \"In this work, we propose two solution approaches for solving OP.\", \"Presents original optimization and multi-agent meta-RL solution approaches for distributed CNN inference.\", \"R0068.pdf\"]}}"
+        }
+      ]
+    }
+  ]
+}
