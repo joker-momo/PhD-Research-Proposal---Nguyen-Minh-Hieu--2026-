@@ -1,0 +1,17 @@
+{
+  "primary_task_id": "01a215dc-a11b-70c7-8434-792ab19b3d9c",
+  "primary_context_id": "01a215dc-a11b-7e25-9f01-994a680f2afb",
+  "fallback_task_id": "01a215dc-cc27-73fb-8933-0a471cf3ac32",
+  "fallback_context_id": "01a215dc-cc27-7622-85d9-41ed5c597739",
+  "fallback_completed_at": "2026-11-26T10:20:52.255+07:00",
+  "fallback_reason": "provider_quota",
+  "fallback_model": "gpt-5.6-luna",
+  "reasoning_effort": "low",
+  "reviewed_at": "2026-11-26T10:22:52+07:00",
+  "review_state": "rejected",
+  "failed_criteria": [
+    "D2",
+    "D3",
+    "D4"
+  ]
+}

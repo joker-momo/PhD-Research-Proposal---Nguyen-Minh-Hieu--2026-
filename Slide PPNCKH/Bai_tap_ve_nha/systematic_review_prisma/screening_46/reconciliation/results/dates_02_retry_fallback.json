@@ -1,0 +1,533 @@
+{
+  "task": "dates_02",
+  "window": {
+    "start": "2021-01-01",
+    "end": "2026-11-25"
+  },
+  "records": [
+    {
+      "id": "C05",
+      "title": "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems",
+      "authors": [
+        "Hao Hao",
+        "Changqiao Xu",
+        "Wei Zhang",
+        "Shujie Yang",
+        "Xiaolong Wang",
+        "Huiling Shi",
+        "Gabriel-Miro Muntean"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "doi": "10.1109/tcsvt.2026.3745821",
+      "prior_date_gate": "UNCERTAIN",
+      "date_gate": "UNCERTAIN",
+      "publication_dates": [],
+      "rationale": "Only year-level publication metadata was available in the accepted prior evidence; new publisher access was unavailable and no authoritative day/month publication field was verified.",
+      "source_ids": [
+        "C05_LOCAL_PRIOR",
+        "C05_CROSSREF_PRIOR",
+        "C05_PUBLISHER_ATTEMPT",
+        "C05_SEARCH_ATTEMPT"
+      ],
+      "attempts": [
+        {
+          "url": "https://ieeexplore.ieee.org/document/11745919",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Inaccessible via public web tool; publisher page could not be read.",
+          "source_class": "official publisher"
+        },
+        {
+          "url": "https://www.google.com/search?q=%2210.1109%2FTCSVT.2026.3745821%22",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Search located no authoritative accessible publication-date record; aggregator result was not used as eligibility evidence.",
+          "source_class": "search discovery"
+        }
+      ],
+      "unresolved": [
+        "Exact IEEE Xplore online-publication date remains unverified.",
+        "Crossref prior metadata provides only published year 2026 and is insufficient for a precise publication-date gate under the supplied rule."
+      ],
+      "manual_action": "Open https://ieeexplore.ieee.org/document/11745919 and read the field labeled “Date of Publication” or “Early Access.”"
+    },
+    {
+      "id": "C09",
+      "title": "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms",
+      "authors": [
+        "HyungBin Park",
+        "SuKyoung Lee"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3755315",
+      "prior_date_gate": "UNCERTAIN",
+      "date_gate": "UNCERTAIN",
+      "publication_dates": [],
+      "rationale": "A non-authoritative search result displayed 2026-11-18, but this was not accepted as authoritative publisher evidence. IEEE Xplore remained inaccessible; the accepted Crossref record contains only year-level publication data.",
+      "source_ids": [
+        "C09_LOCAL_PRIOR",
+        "C09_CROSSREF_PRIOR",
+        "C09_PUBLISHER_ATTEMPT",
+        "C09_SEARCH_ATTEMPT"
+      ],
+      "attempts": [
+        {
+          "url": "https://ieeexplore.ieee.org/document/11804345",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Inaccessible via public web tool; publisher page could not be read.",
+          "source_class": "official publisher"
+        },
+        {
+          "url": "https://www.google.com/search?q=%2210.1109%2FJIOT.2026.3755315%22",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Search found aggregator entries reporting 2026-11-18, but no authoritative accessible publication-date record; result not used positively.",
+          "source_class": "search discovery"
+        }
+      ],
+      "unresolved": [
+        "Exact IEEE Xplore online-publication date remains unverified.",
+        "Aggregator date cannot resolve the date gate."
+      ],
+      "manual_action": "Open https://ieeexplore.ieee.org/document/11804345 and read the field labeled “Date of Publication” or “Early Access.”"
+    },
+    {
+      "id": "C10",
+      "title": "A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference",
+      "authors": [
+        "Songwei Li",
+        "Zhihan Wang",
+        "Jiebei Shi",
+        "Jiwei Huang"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3740035",
+      "prior_date_gate": "UNCERTAIN",
+      "date_gate": "UNCERTAIN",
+      "publication_dates": [],
+      "rationale": "A discovery result reproduced the title and DOI but did not provide authoritative publisher publication metadata. IEEE Xplore was inaccessible and accepted Crossref evidence remained year-only.",
+      "source_ids": [
+        "C10_LOCAL_PRIOR",
+        "C10_CROSSREF_PRIOR",
+        "C10_PUBLISHER_ATTEMPT",
+        "C10_SEARCH_ATTEMPT"
+      ],
+      "attempts": [
+        {
+          "url": "https://ieeexplore.ieee.org/document/11719586",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Inaccessible via public web tool; publisher page could not be read.",
+          "source_class": "official publisher"
+        },
+        {
+          "url": "https://www.google.com/search?q=%2210.1109%2FJIOT.2026.3740035%22",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Search located a non-authoritative bibliographic entry without verified publisher date labeling; not used positively.",
+          "source_class": "search discovery"
+        }
+      ],
+      "unresolved": [
+        "Exact IEEE Xplore online-publication date remains unverified.",
+        "Search result metadata is insufficient to establish eligibility."
+      ],
+      "manual_action": "Open https://ieeexplore.ieee.org/document/11719586 and read the field labeled “Date of Publication” or “Early Access.”"
+    },
+    {
+      "id": "C13",
+      "title": "RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV Swarm",
+      "authors": [
+        "Shengjie Zhong",
+        "Zhongliang Zhao",
+        "Jingxuan Chen",
+        "Xianbin Cao",
+        "Zhiyi Liu",
+        "Dapeng O. Wu",
+        "Tony Q. S. Quek"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Vehicular Technology",
+      "doi": "10.1109/tvt.2026.3755123",
+      "prior_date_gate": "UNCERTAIN",
+      "date_gate": "UNCERTAIN",
+      "publication_dates": [],
+      "rationale": "An author publication page stated acceptance but not publication date. A non-authoritative aggregator displayed 2026-11-18, which was not accepted as publication evidence. IEEE Xplore remained inaccessible and Crossref was year-only.",
+      "source_ids": [
+        "C13_LOCAL_PRIOR",
+        "C13_CROSSREF_PRIOR",
+        "C13_AUTHOR_ATTEMPT",
+        "C13_PUBLISHER_ATTEMPT",
+        "C13_SEARCH_ATTEMPT"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.cs.cityu.edu.hk/~dapengwu/publications_areaJ.html",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Public author page accessible; it stated accepted by IEEE Transactions on Vehicular Technology but did not expose an explicit publication date.",
+          "source_class": "author/institutional page"
+        },
+        {
+          "url": "https://ieeexplore.ieee.org/document/11804735",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Inaccessible via public web tool; publisher page could not be read.",
+          "source_class": "official publisher"
+        },
+        {
+          "url": "https://www.google.com/search?q=%2210.1109%2FTVT.2026.3755123%22",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Search found an aggregator entry reporting 2026-11-18, but no authoritative accessible publication-date record; result not used positively.",
+          "source_class": "search discovery"
+        }
+      ],
+      "unresolved": [
+        "Exact IEEE Xplore online-publication date remains unverified.",
+        "Author-page acceptance evidence is not publication evidence.",
+        "Aggregator date cannot resolve the date gate."
+      ],
+      "manual_action": "Open https://ieeexplore.ieee.org/document/11804735 and read the field labeled “Date of Publication” or “Early Access.”"
+    },
+    {
+      "id": "C14",
+      "title": "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks",
+      "authors": [
+        "Lianming Xu",
+        "Yixue Liang",
+        "Lei Jin",
+        "Li Wang",
+        "Ying-Jun Angela Zhang",
+        "Xiaoyu Zhao",
+        "Aiguo Fei"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3746980",
+      "prior_date_gate": "UNCERTAIN",
+      "date_gate": "UNCERTAIN",
+      "publication_dates": [],
+      "rationale": "A non-authoritative search result displayed 2026-10-26, but it was not accepted as authoritative publisher evidence. IEEE Xplore remained inaccessible and accepted Crossref metadata contained only year-level publication fields.",
+      "source_ids": [
+        "C14_LOCAL_PRIOR",
+        "C14_CROSSREF_PRIOR",
+        "C14_PUBLISHER_ATTEMPT",
+        "C14_SEARCH_ATTEMPT"
+      ],
+      "attempts": [
+        {
+          "url": "https://ieeexplore.ieee.org/document/11753908",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Inaccessible via public web tool; publisher page could not be read.",
+          "source_class": "official publisher"
+        },
+        {
+          "url": "https://www.google.com/search?q=%2210.1109%2FJIOT.2026.3746980%22",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Search found aggregator entries reporting 2026-10-26, but no authoritative accessible publication-date record; result not used positively.",
+          "source_class": "search discovery"
+        }
+      ],
+      "unresolved": [
+        "Exact IEEE Xplore online-publication date remains unverified.",
+        "Aggregator date cannot resolve the date gate."
+      ],
+      "manual_action": "Open https://ieeexplore.ieee.org/document/11753908 and read the field labeled “Date of Publication” or “Early Access.”"
+    },
+    {
+      "id": "C19",
+      "title": "PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference in UAV-Assisted Internet of Vehicles Environments",
+      "authors": [
+        "DeokKyu Kwon",
+        "Ashok Kumar Das",
+        "Youngho Park"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3755176",
+      "prior_date_gate": "UNCERTAIN",
+      "date_gate": "UNCERTAIN",
+      "publication_dates": [],
+      "rationale": "Non-authoritative search results displayed 2026-11-17, but no authoritative publisher publication field was accessible. IEEE Xplore remained inaccessible and accepted Crossref metadata contained only year-level publication fields.",
+      "source_ids": [
+        "C19_LOCAL_PRIOR",
+        "C19_CROSSREF_PRIOR",
+        "C19_PUBLISHER_ATTEMPT",
+        "C19_SEARCH_ATTEMPT"
+      ],
+      "attempts": [
+        {
+          "url": "https://ieeexplore.ieee.org/document/11803260",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Inaccessible via public web tool; publisher page could not be read.",
+          "source_class": "official publisher"
+        },
+        {
+          "url": "https://www.google.com/search?q=%2210.1109%2FJIOT.2026.3755176%22",
+          "accessed_at": "2026-11-26T10:17:33+07:00",
+          "outcome": "Search found aggregator entries reporting 2026-11-17, but no authoritative accessible publication-date record; result not used positively.",
+          "source_class": "search discovery"
+        }
+      ],
+      "unresolved": [
+        "Exact IEEE Xplore online-publication date remains unverified.",
+        "Aggregator date cannot resolve the date gate."
+      ],
+      "manual_action": "Open https://ieeexplore.ieee.org/document/11803260 and read the field labeled “Date of Publication” or “Early Access.”"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "C05_LOCAL_PRIOR",
+      "record_id": "C05",
+      "url_or_file": "screening_46/text/C05.txt",
+      "source_class": "supplied_full_text_prior",
+      "accessed_at": "2026-11-26T06:55:15+07:00",
+      "field_or_locator": "accepted prior identity/date record; PDF page 1",
+      "excerpt_or_value": "Accepted prior evidence preserves copyright year 2026 and no day/month publication date.",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C05_CROSSREF_PRIOR",
+      "record_id": "C05",
+      "url_or_file": "https://api.crossref.org/works/10.1109/TCSVT.2026.3745821",
+      "source_class": "crossref_prior",
+      "accessed_at": "2026-11-26T06:55:38+07:00",
+      "field_or_locator": "message.published.date-parts",
+      "excerpt_or_value": "published=[[2026]]",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C05_PUBLISHER_ATTEMPT",
+      "record_id": "C05",
+      "url_or_file": "https://ieeexplore.ieee.org/document/11745919",
+      "source_class": "official publisher",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "article metadata / Date of Publication",
+      "excerpt_or_value": "Public page inaccessible; publication field not observed.",
+      "evidence_kind": "access_failure"
+    },
+    {
+      "source_id": "C05_SEARCH_ATTEMPT",
+      "record_id": "C05",
+      "url_or_file": "https://www.google.com/search?q=%2210.1109%2FTCSVT.2026.3745821%22",
+      "source_class": "search discovery",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "search results",
+      "excerpt_or_value": "No authoritative publication-date record verified.",
+      "evidence_kind": "access_failure"
+    },
+    {
+      "source_id": "C09_LOCAL_PRIOR",
+      "record_id": "C09",
+      "url_or_file": "screening_46/text/C09.txt",
+      "source_class": "supplied_full_text_prior",
+      "accessed_at": "2026-11-26T06:55:15+07:00",
+      "field_or_locator": "accepted prior identity/date record; PDF page 1",
+      "excerpt_or_value": "Accepted prior evidence preserves copyright year 2026 and no day/month publication date.",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C09_CROSSREF_PRIOR",
+      "record_id": "C09",
+      "url_or_file": "https://api.crossref.org/works/10.1109/JIOT.2026.3755315",
+      "source_class": "crossref_prior",
+      "accessed_at": "2026-11-26T06:55:39+07:00",
+      "field_or_locator": "message.published.date-parts",
+      "excerpt_or_value": "published=[[2026]]",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C09_PUBLISHER_ATTEMPT",
+      "record_id": "C09",
+      "url_or_file": "https://ieeexplore.ieee.org/document/11804345",
+      "source_class": "official publisher",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "article metadata / Date of Publication",
+      "excerpt_or_value": "Public page inaccessible; publication field not observed.",
+      "evidence_kind": "access_failure"
+    },
+    {
+      "source_id": "C09_SEARCH_ATTEMPT",
+      "record_id": "C09",
+      "url_or_file": "https://www.google.com/search?q=%2210.1109%2FJIOT.2026.3755315%22",
+      "source_class": "search discovery",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "search results",
+      "excerpt_or_value": "Aggregator date not accepted as authoritative publication evidence.",
+      "evidence_kind": "access_failure"
+    },
+    {
+      "source_id": "C10_LOCAL_PRIOR",
+      "record_id": "C10",
+      "url_or_file": "screening_46/text/C10.txt",
+      "source_class": "supplied_full_text_prior",
+      "accessed_at": "2026-11-26T06:55:15+07:00",
+      "field_or_locator": "accepted prior identity/date record; PDF page 1",
+      "excerpt_or_value": "Accepted prior evidence preserves copyright year 2026 and no day/month publication date.",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C10_CROSSREF_PRIOR",
+      "record_id": "C10",
+      "url_or_file": "https://api.crossref.org/works/10.1109/JIOT.2026.3740035",
+      "source_class": "crossref_prior",
+      "accessed_at": "2026-11-26T06:55:40+07:00",
+      "field_or_locator": "message.published.date-parts",
+      "excerpt_or_value": "published=[[2026]]",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C10_PUBLISHER_ATTEMPT",
+      "record_id": "C10",
+      "url_or_file": "https://ieeexplore.ieee.org/document/11719586",
+      "source_class": "official publisher",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "article metadata / Date of Publication",
+      "excerpt_or_value": "Public page inaccessible; publication field not observed.",
+      "evidence_kind": "access_failure"
+    },
+    {
+      "source_id": "C10_SEARCH_ATTEMPT",
+      "record_id": "C10",
+      "url_or_file": "https://www.google.com/search?q=%2210.1109%2FJIOT.2026.3740035%22",
+      "source_class": "search discovery",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "search results",
+      "excerpt_or_value": "No authoritative publication-date record verified.",
+      "evidence_kind": "access_failure"
+    },
+    {
+      "source_id": "C13_LOCAL_PRIOR",
+      "record_id": "C13",
+      "url_or_file": "screening_46/text/C13.txt",
+      "source_class": "supplied_full_text_prior",
+      "accessed_at": "2026-11-26T06:55:15+07:00",
+      "field_or_locator": "accepted prior identity/date record; PDF page 1",
+      "excerpt_or_value": "Accepted prior evidence preserves copyright year 2026 and no day/month publication date.",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C13_CROSSREF_PRIOR",
+      "record_id": "C13",
+      "url_or_file": "https://api.crossref.org/works/10.1109/TVT.2026.3755123",
+      "source_class": "crossref_prior",
+      "accessed_at": "2026-11-26T06:55:41+07:00",
+      "field_or_locator": "message.published.date-parts",
+      "excerpt_or_value": "published=[[2026]]",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C13_AUTHOR_ATTEMPT",
+      "record_id": "C13",
+      "url_or_file": "https://www.cs.cityu.edu.hk/~dapengwu/publications_areaJ.html",
+      "source_class": "author/institutional page",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "publication listing",
+      "excerpt_or_value": "RDI-LLM accepted by IEEE Transactions on Vehicular Technology.",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C13_PUBLISHER_ATTEMPT",
+      "record_id": "C13",
+      "url_or_file": "https://ieeexplore.ieee.org/document/11804735",
+      "source_class": "official publisher",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "article metadata / Date of Publication",
+      "excerpt_or_value": "Public page inaccessible; publication field not observed.",
+      "evidence_kind": "access_failure"
+    },
+    {
+      "source_id": "C13_SEARCH_ATTEMPT",
+      "record_id": "C13",
+      "url_or_file": "https://www.google.com/search?q=%2210.1109%2FTVT.2026.3755123%22",
+      "source_class": "search discovery",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "search results",
+      "excerpt_or_value": "Aggregator date not accepted as authoritative publication evidence.",
+      "evidence_kind": "access_failure"
+    },
+    {
+      "source_id": "C14_LOCAL_PRIOR",
+      "record_id": "C14",
+      "url_or_file": "screening_46/text/C14.txt",
+      "source_class": "supplied_full_text_prior",
+      "accessed_at": "2026-11-26T06:55:15+07:00",
+      "field_or_locator": "accepted prior identity/date record; PDF page 1",
+      "excerpt_or_value": "Accepted prior evidence preserves copyright year 2026 and no day/month publication date.",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C14_CROSSREF_PRIOR",
+      "record_id": "C14",
+      "url_or_file": "https://api.crossref.org/works/10.1109/JIOT.2026.3746980",
+      "source_class": "crossref_prior",
+      "accessed_at": "2026-11-26T06:55:42+07:00",
+      "field_or_locator": "message.published.date-parts",
+      "excerpt_or_value": "published=[[2026]]",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C14_PUBLISHER_ATTEMPT",
+      "record_id": "C14",
+      "url_or_file": "https://ieeexplore.ieee.org/document/11753908",
+      "source_class": "official publisher",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "article metadata / Date of Publication",
+      "excerpt_or_value": "Public page inaccessible; publication field not observed.",
+      "evidence_kind": "access_failure"
+    },
+    {
+      "source_id": "C14_SEARCH_ATTEMPT",
+      "record_id": "C14",
+      "url_or_file": "https://www.google.com/search?q=%2210.1109%2FJIOT.2026.3746980%22",
+      "source_class": "search discovery",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "search results",
+      "excerpt_or_value": "Aggregator date not accepted as authoritative publication evidence.",
+      "evidence_kind": "access_failure"
+    },
+    {
+      "source_id": "C19_LOCAL_PRIOR",
+      "record_id": "C19",
+      "url_or_file": "screening_46/text/C19.txt",
+      "source_class": "supplied_full_text_prior",
+      "accessed_at": "2026-11-26T06:55:15+07:00",
+      "field_or_locator": "accepted prior identity/date record; PDF page 1",
+      "excerpt_or_value": "Accepted prior evidence preserves copyright year 2026 and no day/month publication date.",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C19_CROSSREF_PRIOR",
+      "record_id": "C19",
+      "url_or_file": "https://api.crossref.org/works/10.1109/JIOT.2026.3755176",
+      "source_class": "crossref_prior",
+      "accessed_at": "2026-11-26T06:55:43+07:00",
+      "field_or_locator": "message.published.date-parts",
+      "excerpt_or_value": "published=[[2026]]",
+      "evidence_kind": "non_publication"
+    },
+    {
+      "source_id": "C19_PUBLISHER_ATTEMPT",
+      "record_id": "C19",
+      "url_or_file": "https://ieeexplore.ieee.org/document/11803260",
+      "source_class": "official publisher",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "article metadata / Date of Publication",
+      "excerpt_or_value": "Public page inaccessible; publication field not observed.",
+      "evidence_kind": "access_failure"
+    },
+    {
+      "source_id": "C19_SEARCH_ATTEMPT",
+      "record_id": "C19",
+      "url_or_file": "https://www.google.com/search?q=%2210.1109%2FJIOT.2026.3755176%22",
+      "source_class": "search discovery",
+      "accessed_at": "2026-11-26T10:17:33+07:00",
+      "field_or_locator": "search results",
+      "excerpt_or_value": "Aggregator date not accepted as authoritative publication evidence.",
+      "evidence_kind": "access_failure"
+    }
+  ],
+  "shortfall": [
+    "No authoritative publisher publication-date field was publicly accessible for any of the six requested records; all date gates remain UNCERTAIN.",
+    "The web-tool access timestamps for new attempts are recorded at the task execution timestamp 2026-11-26T10:17:33+07:00."
+  ],
+  "project_files_changed": 0,
+  "final_prose_written": false
+}
