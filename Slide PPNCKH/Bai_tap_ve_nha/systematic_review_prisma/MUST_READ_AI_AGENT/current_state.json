@@ -1,33 +1,26 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:41:53+07:00",
+  "updated_at": "2026-11-26T18:42:41+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
-    "task_id": "restart-03",
-    "owner": "GEMINI_RESEARCH",
-    "status": "completed",
-    "started_at": "2026-11-26T18:28:26+07:00",
-    "updated_at": "2026-11-26T18:41:53+07:00",
-    "decision_id": "restart-03-accept-and-rerun-v4",
-    "provider_task_id": "468fa8b0-d511-4876-b682-812933a3b82d",
-    "provider_context_id": "b7c4f243-c3ac-42c0-883d-ac14ebc43962",
-    "failed_before_send_task_id": "f238bff7-3de5-47b9-9d59-b70a1592d63e",
-    "correction_task_id": "a6938ff5-c0e4-40bd-94da-807344534581",
-    "correction_context_id": "f6c84538-629d-4a7f-9aa6-78f56805358a",
-    "delimited_task_id": "8d95f3d2-10d1-43b9-9906-ef7c48614d55",
-    "delimited_context_id": "de08f9dd-412b-42ff-8c52-62f62fde2c4c",
-    "completed_at": "2026-11-26T18:41:53+07:00"
-  },
-  "next_task": {
     "task_id": "restart-04",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-26T18:42:41+07:00",
+    "updated_at": "2026-11-26T18:42:41+07:00",
+    "completed_at": "2026-11-26T18:42:41+07:00",
+    "decision_id": "restart-04-lock-v1"
+  },
+  "next_task": {
+    "task_id": "restart-05",
+    "owner": "CODEX_WRITING + GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Lock exact source versions, verify hash/count/time and generate manifest and search log.",
-    "acceptance": "Four sources with eight selected runs; all seven import files hash verified; WoS count null; no version double count."
+    "action": "Normalize every locked row, preserve provenance and catalog missing fields without screening.",
+    "acceptance": "693/693 raw rows accounted, one provenance trail each; missing evidence explicit."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -90,11 +83,13 @@
       "checksum_checks_pass": 51,
       "unique_records": null,
       "final_included_reports": null,
-      "dataset_locked": false,
+      "dataset_locked": true,
       "search_audit_complete": true,
       "old_decisions_imported": 0,
       "step03_acceptance": "restart_2026_11_26/step03_query_audit_acceptance.md",
-      "expected_revised_input_rows": 693
+      "expected_revised_input_rows": 693,
+      "locked_dataset_manifest": "restart_2026_11_26/search_dataset_manifest.json",
+      "locked_input_rows": 693
     }
   },
   "blockers": [],
