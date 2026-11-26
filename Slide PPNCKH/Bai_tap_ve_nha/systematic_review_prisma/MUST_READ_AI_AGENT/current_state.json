@@ -1,27 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:39:20+07:00",
+  "updated_at": "2026-11-26T23:39:39+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-b01-verified-path-review",
+    "task_id": "restart-11-b02-r0062-precision-brief",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T23:39:20+07:00",
-    "updated_at": "2026-11-26T23:39:20+07:00",
-    "completed_at": "2026-11-26T23:39:20+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_verified_path_correction_review.md",
-    "decision_id": "restart-11-b01-verified-path-review-v1"
+    "started_at": "2026-11-26T23:39:39+07:00",
+    "updated_at": "2026-11-26T23:39:39+07:00",
+    "completed_at": "2026-11-26T23:39:39+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_r0062_precision_brief.md",
+    "decision_id": "restart-11-b02-r0062-precision-brief-v1"
   },
   "next_task": {
     "task_id": "restart-11-b02-r0062-precision",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Correct only the unresolved R0062 Stage 2 precision in the outcomes field.",
-    "acceptance": "One key, exact body source, approximate typed value and conditions; preserve other fields."
+    "action": "Ask Gemini.app to correct T03 Stage 2 precision only.",
+    "acceptance": "One parseable and independently verified R0062 outcome with units/conditions and approximation, or explicit unavailable reason.",
+    "dispatch_brief": "restart_2026_11_26/extraction/batch_02_r0062_precision_brief.md",
+    "message_id": "hk261-p08-b02-r0062-precision-v1"
   },
   "project": {
     "target_venue": "SN Computer Science",
