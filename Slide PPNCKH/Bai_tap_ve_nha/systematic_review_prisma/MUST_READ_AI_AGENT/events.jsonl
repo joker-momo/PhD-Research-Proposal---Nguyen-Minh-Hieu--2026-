@@ -175,3 +175,4 @@
 {"timestamp": "2026-11-26T23:41:36+07:00", "task_id": "restart-11-b02-r0062-precision-review", "event": "b02-r0062-precision-review", "uuid": "5cdcf3fe-4935-4c36-a140-a27876e49318", "context_id": "aaff2d12-fd3a-4285-a6a8-991dfbcea18c", "cleanup": "DELETED", "batch_verdict": "FAIL"}
 {"timestamp": "2026-11-26T23:42:36+07:00", "task_id": "restart-11-b01-parent-only-brief", "event": "b01-parent-only-brief"}
 {"timestamp": "2026-11-26T23:53:32+07:00", "task_id": "restart-11-b01-parent-only-review", "event": "b01-parent-only-review", "uuid": "fa4c883e-442b-416a-8818-5f468013ec4c", "context_id": "8e54a1f8-55cc-4cd6-ad5a-62e5cdbb27df", "cleanup": "DELETED", "batch_verdict": "FAIL"}
+{"timestamp": "2026-11-26T23:57:05+07:00", "task_id": "restart-11-scoped-pdf-repairs", "event": "scoped-pdf-repairs", "tool": "PyMuPDF 1.26.7", "source_repairs": 47, "full_p08_verdict": "FAIL", "P09": "NOT_STARTED"}

@@ -1,0 +1,2135 @@
+{
+  "method": "PyMuPDF 1.26.7 plus visual inspection for scanned/vector table cells, reading order and approximation symbols",
+  "scope": "Repairs only; not a full or adopted P08 extraction table",
+  "source_task_uuid": "fa4c883e-442b-416a-8818-5f468013ec4c",
+  "sha256_matched_manifest_pdfs": 25,
+  "rows": [
+    {
+      "key": "F01",
+      "report_id": "R0001",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+      "locator": "II-E PPO-Based Online Orchestration",
+      "status": "OBSERVED",
+      "claim": "The method uses PPO for online orchestration and solves remaining continuous allocation variables through convex subproblems.",
+      "sources": [
+        {
+          "physical_page": 2,
+          "excerpt": "we adopt Proximal Policy Optimization (PPO)",
+          "regions_pt": [
+            [
+              314.13,
+              580.79,
+              550.13,
+              670.01
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 2,
+          "excerpt": "solving convex subproblems",
+          "regions_pt": [
+            [
+              314.13,
+              656.73,
+              550.13,
+              702.54
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "decision_variables_objectives_constraints_and_solver/optimization_and_solver"
+    },
+    {
+      "key": "F02",
+      "report_id": "R0001",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+      "locator": "Results, Fig. 3",
+      "status": "OBSERVED",
+      "claim": "In the latency-weight sweep, reward falls as the weight rises for all tested methods; CAPRIC has the highest reward at the tested settings.",
+      "sources": [
+        {
+          "physical_page": 3,
+          "excerpt": "α is the latency weight",
+          "regions_pt": [
+            [
+              59.48,
+              437.34,
+              295.48,
+              480.79
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 3,
+          "excerpt": "the rewards of all methods exhibit a decreasing trend",
+          "regions_pt": [
+            [
+              314.89,
+              369.31,
+              550.9,
+              446.1
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 3,
+          "excerpt": "CAPRIC achieves the highest reward across all configurations",
+          "regions_pt": [
+            [
+              314.89,
+              369.31,
+              550.9,
+              446.1
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "sensitivity_and_variability/alpha_sensitivity"
+    },
+    {
+      "key": "F03",
+      "report_id": "R0002",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+      "locator": "VII-B, Evaluation of Promise",
+      "status": "OBSERVED",
+      "claim": "Promise makes more frequent migrations in the reported comparison and incurs additional migration cost; the paper reports increased task success in that tradeoff.",
+      "sources": [
+        {
+          "physical_page": 8,
+          "excerpt": "the Promise performs more frequent migrations than other schemes",
+          "regions_pt": [
+            [
+              59.67,
+              350.7,
+              295.68,
+              573.58
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 8,
+          "excerpt": "this additional cost is justified by substantial gains in task success rate",
+          "regions_pt": [
+            [
+              59.67,
+              350.7,
+              295.68,
+              573.58
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/success_cost_accuracy"
+    },
+    {
+      "key": "F04",
+      "report_id": "R0003",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+      "locator": "V-B, Fig. 2",
+      "status": "OBSERVED",
+      "claim": "Utility falls as requests increase in both tested model pairings; DMS gives the best utility in those comparisons.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "the utility values of all algorithms gradually decrease",
+          "regions_pt": [
+            [
+              313.56,
+              208.62,
+              567.01,
+              722.41
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "our DMS algorithm consistently outperforms the other four algorithms",
+          "regions_pt": [
+            [
+              313.56,
+              208.62,
+              567.01,
+              722.41
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/latency_and_accuracy"
+    },
+    {
+      "key": "F05",
+      "report_id": "R0006",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "locator": "V-A, UAV specifications and communication/energy parameter bullets",
+      "status": "OBSERVED",
+      "claim": "The setup lists per-UAV compute capacity, memory, transmit power and coverage radius, with separate radio and energy parameters.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "UAV Specifications: Computational capability",
+          "regions_pt": [
+            [
+              58.93,
+              458.47,
+              300.02,
+              493.84
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "Communication and Energy Parameters: Bandwidth",
+          "regions_pt": [
+            [
+              58.93,
+              494.8,
+              300.02,
+              541.66
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "compute_and_radio/uav_compute_radio_params"
+    },
+    {
+      "key": "F06",
+      "report_id": "R0006",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "locator": "V-A, paragraph before baseline list",
+      "status": "OBSERVED",
+      "claim": "End-to-end inference latency is evaluated against iteration count using results averaged across 100 trials, a coverage threshold of 0.8 and a common initial configuration.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "All results, averaged over 100 trials with a coverage threshold",
+          "regions_pt": [
+            [
+              48.96,
+              593.53,
+              300.04,
+              639.36
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "iteration count from a common initial configuration",
+          "regions_pt": [
+            [
+              48.96,
+              593.53,
+              300.04,
+              639.36
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "evaluation_platform_simulator_hardware_and_traces/simulation_trials"
+    },
+    {
+      "key": "F07",
+      "report_id": "R0006",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "locator": "V-A, baseline list",
+      "status": "OBSERVED",
+      "claim": "Three baselines are Greedy+SCA, DP+RW and Joint-PSO.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "Greedy+SCA: Employs greedy layer assignment",
+          "regions_pt": [
+            [
+              58.93,
+              644.39,
+              300.02,
+              666.35
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "DP+RW: Uses Dynamic Programming for partitioning",
+          "regions_pt": [
+            [
+              58.93,
+              668.3,
+              300.02,
+              690.26
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "Joint-PSO: Jointly optimizes allocation and deployment",
+          "regions_pt": [
+            [
+              58.93,
+              692.21,
+              300.02,
+              714.17
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "baselines_and_workloads/baselines"
+    },
+    {
+      "key": "F08",
+      "report_id": "R0009",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "locator": "III, opening system model",
+      "status": "OBSERVED",
+      "claim": "In the multi-UAV MEC model, UAV edge servers provide communication and computation for ground users.",
+      "sources": [
+        {
+          "physical_page": 3,
+          "excerpt": "Consider a multi-UAV assisted MEC system",
+          "regions_pt": [
+            [
+              48.96,
+              729.99,
+              300.02,
+              751.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 3,
+          "excerpt": "computing server and provides communication",
+          "regions_pt": [
+            [
+              311.98,
+              58.51,
+              563.04,
+              504.83
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "uav_architecture_role_and_topology/uav_assisted_mec"
+    },
+    {
+      "key": "F09",
+      "report_id": "R0009",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "locator": "III, partition point and boundary cases",
+      "status": "OBSERVED",
+      "claim": "The ground user executes the first part, and the matched UAV executes the remainder. The partition decision also allows all local execution or full offloading.",
+      "sources": [
+        {
+          "physical_page": 3,
+          "excerpt": "executed locally, while the second half",
+          "regions_pt": [
+            [
+              311.98,
+              584.12,
+              563.04,
+              751.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 3,
+          "excerpt": "the task is completely offloaded",
+          "regions_pt": [
+            [
+              311.98,
+              584.12,
+              563.04,
+              751.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 3,
+          "excerpt": "means executed locally",
+          "regions_pt": [
+            [
+              311.98,
+              584.12,
+              563.04,
+              751.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "partition_and_assignment/gu_uav_split"
+    },
+    {
+      "key": "F10",
+      "report_id": "R0009",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "locator": "IV-A, partition-point example",
+      "status": "OBSERVED",
+      "claim": "The AlexNet partition-point example uses a 10 MHz channel and compute frequencies of 1 GHz on the user device and 15 GHz on the UAV.",
+      "sources": [
+        {
+          "physical_page": 5,
+          "excerpt": "bandwidth condition is 10 MHz",
+          "regions_pt": [
+            [
+              48.96,
+              443.06,
+              300.03,
+              751.9
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 5,
+          "excerpt": "15 GHz, respectively",
+          "regions_pt": [
+            [
+              48.96,
+              443.06,
+              300.03,
+              751.9
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "compute_and_radio/compute_and_radio_params"
+    },
+    {
+      "key": "F11",
+      "report_id": "R0009",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "locator": "V-A, workload and baseline list",
+      "status": "OBSERVED",
+      "claim": "User workloads are ResNet-34, VGG-16 and AlexNet. The comparison uses DTS, RAT, EE-PPO and DPRT.",
+      "sources": [
+        {
+          "physical_page": 8,
+          "excerpt": "ResNet-34, VGG-16, and AlexNet",
+          "regions_pt": [
+            [
+              48.96,
+              413.8,
+              300.02,
+              686.78
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 8,
+          "excerpt": "the following four algorithms are selected",
+          "regions_pt": [
+            [
+              48.96,
+              413.8,
+              300.02,
+              686.78
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 8,
+          "excerpt": "DPRT: This method is a variation",
+          "regions_pt": [
+            [
+              321.94,
+              234.49,
+              563.04,
+              388.33
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "baselines_and_workloads/baselines_and_arrivals"
+    },
+    {
+      "key": "F12",
+      "report_id": "R0009",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "locator": "V-B, Figs. 6–7",
+      "status": "OBSERVED",
+      "claim": "The evaluation varies the number of ground users and bandwidth. The authors report lower task-offloading delay and energy consumption with larger bandwidth.",
+      "sources": [
+        {
+          "physical_page": 9,
+          "excerpt": "of GUs increases",
+          "regions_pt": [
+            [
+              48.96,
+              490.88,
+              300.02,
+              751.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 9,
+          "excerpt": "different communication bandwidths",
+          "regions_pt": [
+            [
+              311.98,
+              538.7,
+              563.04,
+              751.9
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 9,
+          "excerpt": "both energy consumption and delay show a downward trend",
+          "regions_pt": [
+            [
+              311.98,
+              538.7,
+              563.04,
+              751.9
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "sensitivity_and_variability/radius_users_bandwidth"
+    },
+    {
+      "key": "F13",
+      "report_id": "R0009",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "locator": "V-B, discussion of Fig. 6(a), continuation across columns on page 9",
+      "status": "OBSERVED",
+      "claim": "DPDTS reports a total system energy consumption of 2209.0 J at 70 ground users.",
+      "sources": [
+        {
+          "physical_page": 9,
+          "excerpt": "Especially when the number of GUs is",
+          "regions_pt": [
+            [
+              48.96,
+              490.88,
+              300.02,
+              751.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 9,
+          "excerpt": "70, the energy consumption generated by DPDTS is 2209.0J",
+          "regions_pt": [
+            [
+              311.98,
+              538.7,
+              563.04,
+              751.9
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "total_energy_70_gus",
+      "quantitative": {
+        "value": "2209.0",
+        "units": "J",
+        "baseline": "absolute value for DPDTS; no comparative reduction claimed here",
+        "denominator": "total system energy consumption",
+        "workload": "DNN inference tasks from ground users",
+        "conditions": "70 ground users, the user-count sweep in Fig. 6(a)"
+      }
+    },
+    {
+      "key": "F14",
+      "report_id": "R0010",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "locator": "V-A, simulation workload",
+      "status": "OBSERVED",
+      "claim": "The evaluation uses AlexNet, GoogleNet and VGG-16 and reuses existing UAV trajectories to calculate varying inter-UAV transmission rates.",
+      "sources": [
+        {
+          "physical_page": 5,
+          "excerpt": "AlexNet, GoogleNet, and VGG-16",
+          "regions_pt": [
+            [
+              48.96,
+              192.34,
+              300.03,
+              489.58
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 5,
+          "excerpt": "we use existing UAV trajectory data",
+          "regions_pt": [
+            [
+              48.96,
+              192.34,
+              300.03,
+              489.58
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "inference_model_task_and_dataset/cnn_models"
+    },
+    {
+      "key": "F15",
+      "report_id": "R0010",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "locator": "IV-B, actions adaptation",
+      "status": "OBSERVED",
+      "claim": "The hierarchical DQN action pairs one UAV increasing its layer count with another UAV decreasing its layer count.",
+      "sources": [
+        {
+          "physical_page": 4,
+          "excerpt": "The increase and decrease actions are paired accordingly",
+          "regions_pt": [
+            [
+              48.96,
+              218.57,
+              300.03,
+              539.52
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "decision_variables_objectives_constraints_and_solver/dqn_action_disassembly"
+    },
+    {
+      "key": "F16",
+      "report_id": "R0010",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "locator": "V-B, Fig. 5",
+      "status": "OBSERVED",
+      "claim": "For the three tested CNNs in the task-count sweep, the proposed method reports the lowest total inference latency and the smallest increase as task count rises.",
+      "sources": [
+        {
+          "physical_page": 5,
+          "excerpt": "our method always performs best under three different models",
+          "regions_pt": [
+            [
+              311.98,
+              280.72,
+              563.04,
+              613.66
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 5,
+          "excerpt": "the smallest",
+          "regions_pt": [
+            [
+              311.98,
+              280.72,
+              563.04,
+              613.66
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/latency_reduction"
+    },
+    {
+      "key": "F17",
+      "report_id": "R0010",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "locator": "Acknowledgement",
+      "status": "OBSERVED",
+      "claim": "The paper reports National Natural Science Foundation of China grants 61931011 and 62072303.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "This work is supported by the National Natural Science Foundation of China",
+          "regions_pt": [
+            [
+              48.96,
+              358.71,
+              300.02,
+              392.58
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "61931011 and Grant No. 62072303",
+          "regions_pt": [
+            [
+              48.96,
+              358.71,
+              300.02,
+              392.58
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "funding_and_conflicts/funding"
+    },
+    {
+      "key": "F18",
+      "report_id": "R0010",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "locator": "Acknowledgement and inspection of PDF pages 1–6",
+      "status": "NOT_REPORTED",
+      "claim": "",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "ACKNOWLEDGEMENT",
+          "regions_pt": [
+            [
+              128.37,
+              341.75,
+              220.63,
+              351.71
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "This work is supported by the National Natural Science Foundation of China",
+          "regions_pt": [
+            [
+              48.96,
+              358.71,
+              300.02,
+              392.58
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "funding_and_conflicts/conflicts",
+      "reason": "Inspected all six physical pages, with particular attention to the front matter and the Acknowledgement before the references. The document gives a funding statement and no conflict-of-interest declaration. This absence does not establish a lack of conflict."
+    },
+    {
+      "key": "F19",
+      "report_id": "R0015",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "locator": "IV-A, channel simplification",
+      "status": "OBSERVED",
+      "claim": "The simulator holds the inter-UAV rate constant during an inference request and assumes all devices are mutually reachable.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "constant in a complete collaborative inference request",
+          "regions_pt": [
+            [
+              58.79,
+              254.92,
+              297.3,
+              400.67
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "they can all reach each others",
+          "regions_pt": [
+            [
+              58.79,
+              254.92,
+              297.3,
+              400.67
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "mobility_channel_intermittency_failure_and_recovery/simplified_static_channel"
+    },
+    {
+      "key": "F20",
+      "report_id": "R0015",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "locator": "IV-A, simulation settings",
+      "status": "OBSERVED",
+      "claim": "The heterogeneous simulated UAV computing platforms are Raspberry Pi 3B+, Orange Pi Zero and Odroid; the workload is image classification.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "including Raspberry Pi 3B+, Orange Pi Zero, and Odroid",
+          "regions_pt": [
+            [
+              58.79,
+              107.14,
+              297.29,
+              252.89
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "incoming image classification requests",
+          "regions_pt": [
+            [
+              58.79,
+              107.14,
+              297.29,
+              252.89
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "evaluation_platform_simulator_hardware_and_traces/simulation_platform"
+    },
+    {
+      "key": "F21",
+      "report_id": "R0015",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "locator": "IV-B, Fig. 3 discussion and Table II",
+      "status": "OBSERVED",
+      "claim": "The authors report EECIA running times similar to Random, Nearest and DistInference; OPT has the longest running time in the reported comparison.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "The running time of EECIA is similar to Random, Nearest and DistInference",
+          "regions_pt": [
+            [
+              314.19,
+              280.86,
+              552.7,
+              358.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "it gets the longest running time",
+          "regions_pt": [
+            [
+              314.19,
+              280.86,
+              552.7,
+              358.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/latency_and_runtime"
+    },
+    {
+      "key": "F22",
+      "report_id": "R0015",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "locator": "IV-B, Fig. 3 results narrative crossing two columns of page 6",
+      "status": "OBSERVED",
+      "claim": "Compared with DistInference, EECIA reports 4.55% lower inference latency for AlexNet under the specified Fig. 3 setup.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "we set the data rate",
+          "regions_pt": [
+            [
+              58.8,
+              572.66,
+              297.32,
+              707.05
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "use three UAVs to collaboratively execute inference task of",
+          "regions_pt": [
+            [
+              58.8,
+              572.66,
+              297.32,
+              707.05
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "ResNet152 and VGG-16 are reduced by 4.55%, 7.57% and",
+          "regions_pt": [
+            [
+              58.8,
+              572.66,
+              297.32,
+              707.05
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "7.97%, respectively",
+          "regions_pt": [
+            [
+              314.19,
+              280.86,
+              552.7,
+              358.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "latency_reduction_alexnet_72mbps",
+      "quantitative": {
+        "value": "4.55",
+        "units": "%",
+        "baseline": "DistInference",
+        "denominator": "DistInference inference latency for AlexNet at that configuration",
+        "workload": "AlexNet collaborative image-classification inference",
+        "conditions": "Fig. 3, 3 participating UAVs, 72.2 Mbps"
+      }
+    },
+    {
+      "key": "F23",
+      "report_id": "R0015",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "locator": "IV-B, Fig. 3 results narrative crossing two columns of page 6",
+      "status": "OBSERVED",
+      "claim": "Compared with DistInference, EECIA reports 7.57% lower inference latency for ResNet152 under the specified Fig. 3 setup.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "we set the data rate",
+          "regions_pt": [
+            [
+              58.8,
+              572.66,
+              297.32,
+              707.05
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "AlexNet, five UAVs to execute ResNet152 and VGG-16",
+          "regions_pt": [
+            [
+              58.8,
+              572.66,
+              297.32,
+              707.05
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "ResNet152 and VGG-16 are reduced by 4.55%, 7.57% and",
+          "regions_pt": [
+            [
+              58.8,
+              572.66,
+              297.32,
+              707.05
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "7.97%, respectively",
+          "regions_pt": [
+            [
+              314.19,
+              280.86,
+              552.7,
+              358.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "latency_reduction_resnet152_72mbps",
+      "quantitative": {
+        "value": "7.57",
+        "units": "%",
+        "baseline": "DistInference",
+        "denominator": "DistInference inference latency for ResNet152 at that configuration",
+        "workload": "ResNet152 collaborative image-classification inference",
+        "conditions": "Fig. 3, 5 participating UAVs, 72.2 Mbps"
+      }
+    },
+    {
+      "key": "F24",
+      "report_id": "R0015",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "locator": "IV-B, Fig. 3 results narrative crossing two columns of page 6",
+      "status": "OBSERVED",
+      "claim": "Compared with DistInference, EECIA reports 7.97% lower inference latency for VGG-16 under the specified Fig. 3 setup.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "we set the data rate",
+          "regions_pt": [
+            [
+              58.8,
+              572.66,
+              297.32,
+              707.05
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "AlexNet, five UAVs to execute ResNet152 and VGG-16",
+          "regions_pt": [
+            [
+              58.8,
+              572.66,
+              297.32,
+              707.05
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "ResNet152 and VGG-16 are reduced by 4.55%, 7.57% and",
+          "regions_pt": [
+            [
+              58.8,
+              572.66,
+              297.32,
+              707.05
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "7.97%, respectively",
+          "regions_pt": [
+            [
+              314.19,
+              280.86,
+              552.7,
+              358.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "latency_reduction_vgg16_72mbps",
+      "quantitative": {
+        "value": "7.97",
+        "units": "%",
+        "baseline": "DistInference",
+        "denominator": "DistInference inference latency for VGG-16 at that configuration",
+        "workload": "VGG-16 collaborative image-classification inference",
+        "conditions": "Fig. 3, 5 participating UAVs, 72.2 Mbps"
+      }
+    },
+    {
+      "key": "F25",
+      "report_id": "R0015",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "locator": "Table II, VGG-16 / I=5 column, EECIA row, physical page 6",
+      "status": "OBSERVED",
+      "claim": "The EECIA runtime is 0.0090 s for the VGG-16, I=5 entry in Table II.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "0.0090",
+          "regions_pt": [
+            [
+              322.3,
+              394.2,
+              544.6,
+              469.8
+            ]
+          ],
+          "check": "Visual row/column and units plus PyMuPDF table block; another algorithm also has 0.0090 in a different column"
+        }
+      ],
+      "label": "eecia_runtime_vgg16_i5",
+      "quantitative": {
+        "value": "0.0090",
+        "units": "s",
+        "baseline": "absolute EECIA runtime",
+        "denominator": "table-reported algorithm runtime",
+        "workload": "VGG-16",
+        "conditions": "Table II, I=5; the row does not label its communication rate"
+      }
+    },
+    {
+      "key": "F26",
+      "report_id": "R0019",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+      "locator": "III-C, RL action and task allocation",
+      "status": "OBSERVED",
+      "claim": "One RL agent chooses the UAV locations and whether an individual UAV executes the current CNN layer.",
+      "sources": [
+        {
+          "physical_page": 7,
+          "excerpt": "the RL agent chooses the location of each UAV",
+          "regions_pt": [
+            [
+              311.98,
+              416.32,
+              563.05,
+              748.97
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 7,
+          "excerpt": "handle the current layer of the CNN",
+          "regions_pt": [
+            [
+              311.98,
+              416.32,
+              563.05,
+              748.97
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "uav_architecture_role_and_topology/centralized_rl_swarm"
+    },
+    {
+      "key": "F27",
+      "report_id": "R0019",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+      "locator": "IV, simulation results and analysis",
+      "status": "OBSERVED",
+      "claim": "The surveillance simulation tests three classification networks: LeNet, AlexNet and VGG16.",
+      "sources": [
+        {
+          "physical_page": 11,
+          "excerpt": "Our system covers a surveillance scenario",
+          "regions_pt": [
+            [
+              48.96,
+              224.93,
+              300.03,
+              748.96
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 11,
+          "excerpt": "a medium-sized CNN network, namely, AlexNet",
+          "regions_pt": [
+            [
+              48.96,
+              224.93,
+              300.03,
+              748.96
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 11,
+          "excerpt": "the VGG16 CNN network",
+          "regions_pt": [
+            [
+              48.96,
+              224.93,
+              300.03,
+              748.96
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "inference_model_task_and_dataset/cnn_surveillance"
+    },
+    {
+      "key": "F28",
+      "report_id": "R0022",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+      "locator": "II, model partition workflow",
+      "status": "OBSERVED",
+      "claim": "The selected early-exit point limits the executed layers. The preceding model segments are distributed across multiple UAVs.",
+      "sources": [
+        {
+          "physical_page": 2,
+          "excerpt": "After the exit point is selected",
+          "regions_pt": [
+            [
+              48.96,
+              383.79,
+              298.81,
+              718.85
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 2,
+          "excerpt": "executing the necessary layers before the exit point is reached",
+          "regions_pt": [
+            [
+              48.96,
+              383.79,
+              298.81,
+              718.85
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "partition_and_assignment/exit_and_layer_partition"
+    },
+    {
+      "key": "F29",
+      "report_id": "R0029",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+      "locator": "IV-A, simulation settings",
+      "status": "OBSERVED",
+      "claim": "The simulation specifies bandwidth, noise, transmit power, channel and communication-radius inputs, with UAV CPU frequencies evenly distributed across a range.",
+      "sources": [
+        {
+          "physical_page": 5,
+          "excerpt": "The system parameters of simulation are set as follows",
+          "regions_pt": [
+            [
+              55.99,
+              345.3,
+              300.11,
+              634.17
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 5,
+          "excerpt": "are evenly distributed from 2 to 4 GHz",
+          "regions_pt": [
+            [
+              55.99,
+              345.3,
+              300.11,
+              634.17
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "compute_and_radio/compute_and_radio_params"
+    },
+    {
+      "key": "F30",
+      "report_id": "R0044",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0044.pdf",
+      "sha256": "764cc894f9711a4b0e6f74ce45c1df93d3d1b6d9ed9c6a3b9534bb68801bc029",
+      "locator": "III-C, joint optimization",
+      "status": "OBSERVED",
+      "claim": "LaCPOO combines subgradient projection and CPOO; transmission powers are updated using KKT conditions.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "combines subgradient projection with the CPOO method",
+          "regions_pt": [
+            [
+              48.96,
+              294.58,
+              300.03,
+              436.18
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "transmission powers are adjusted according to the KKT conditions",
+          "regions_pt": [
+            [
+              48.96,
+              294.58,
+              300.03,
+              436.18
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "decision_variables_objectives_constraints_and_solver/cvar_bat_subgradient"
+    },
+    {
+      "key": "F31",
+      "report_id": "R0044",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0044.pdf",
+      "sha256": "764cc894f9711a4b0e6f74ce45c1df93d3d1b6d9ed9c6a3b9534bb68801bc029",
+      "locator": "II-C.2, Offload to BS",
+      "status": "OBSERVED",
+      "claim": "For failed return data under unreliable connections, the mobile device sends the whole task to the base station for reprocessing using maximum device transmission power.",
+      "sources": [
+        {
+          "physical_page": 3,
+          "excerpt": "send the whole task to the BS for reprocessing",
+          "regions_pt": [
+            [
+              311.98,
+              444.76,
+              563.05,
+              586.33
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 3,
+          "excerpt": "the MD transmits to the BS with the maximum power",
+          "regions_pt": [
+            [
+              311.98,
+              444.76,
+              563.05,
+              586.33
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "mobility_channel_intermittency_failure_and_recovery/fading_and_bs_fallback"
+    },
+    {
+      "key": "F32",
+      "report_id": "R0044",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0044.pdf",
+      "sha256": "764cc894f9711a4b0e6f74ce45c1df93d3d1b6d9ed9c6a3b9534bb68801bc029",
+      "locator": "IV-A, simulation setup",
+      "status": "OBSERVED",
+      "claim": "The simulation distributes mobile devices across a square area and employs four clockwise-moving UAV edge servers at a fixed altitude with the base station at the centre.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "with UAV clusters including 4 UAVs as edge servers",
+          "regions_pt": [
+            [
+              311.98,
+              469.87,
+              563.05,
+              718.94
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "the UAVs is 10 m/s in a clockwise direction",
+          "regions_pt": [
+            [
+              311.98,
+              469.87,
+              563.05,
+              718.94
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "The BS is deployed at",
+          "regions_pt": [
+            [
+              311.98,
+              469.87,
+              563.05,
+              718.94
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "evaluation_platform_simulator_hardware_and_traces/simulation_area"
+    },
+    {
+      "key": "F33",
+      "report_id": "R0044",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0044.pdf",
+      "sha256": "764cc894f9711a4b0e6f74ce45c1df93d3d1b6d9ed9c6a3b9534bb68801bc029",
+      "locator": "IV-A, comparison baseline list",
+      "status": "OBSERVED",
+      "claim": "The comparison includes local execution, RPOM and Edgent-P.",
+      "sources": [
+        {
+          "physical_page": 7,
+          "excerpt": "It processes all DNN inferences locally",
+          "regions_pt": [
+            [
+              58.93,
+              461.61,
+              300.02,
+              483.94
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 7,
+          "excerpt": "It partitions the last convolutional layer randomly",
+          "regions_pt": [
+            [
+              58.93,
+              461.61,
+              300.02,
+              483.94
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 7,
+          "excerpt": "Each MD selects the nearest UAV",
+          "regions_pt": [
+            [
+              58.93,
+              485.93,
+              300.02,
+              507.85
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "baselines_and_workloads/baselines"
+    },
+    {
+      "key": "F34",
+      "report_id": "R0044",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0044.pdf",
+      "sha256": "764cc894f9711a4b0e6f74ce45c1df93d3d1b6d9ed9c6a3b9534bb68801bc029",
+      "locator": "IV-B, Fig. 5",
+      "status": "OBSERVED",
+      "claim": "In the bandwidth sweep all compared algorithms reduce average inference delay as bandwidth increases.",
+      "sources": [
+        {
+          "physical_page": 7,
+          "excerpt": "progressively reduce the average delay as the transmission bandwidth increases",
+          "regions_pt": [
+            [
+              311.98,
+              501.22,
+              563.05,
+              606.82
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "sensitivity_and_variability/bw_reliability_psi1"
+    },
+    {
+      "key": "F35",
+      "report_id": "R0045",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0045.pdf",
+      "sha256": "9b5e95e1b30fa30510772f0d7fd0d4524b634a4d0d7fca27f49b105dbacacc52",
+      "locator": "II-C, DNN Partitioning Model",
+      "status": "OBSERVED",
+      "claim": "An integer partition variable sets local and UAV segments and allows either full offloading or all-local execution.",
+      "sources": [
+        {
+          "physical_page": 4,
+          "excerpt": "the first part is processed locally",
+          "regions_pt": [
+            [
+              48.96,
+              58.09,
+              300.03,
+              331.48
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 4,
+          "excerpt": "the entire DNN-based task",
+          "regions_pt": [
+            [
+              48.96,
+              58.09,
+              300.03,
+              331.48
+            ],
+            [
+              311.98,
+              424.82,
+              563.05,
+              545.23
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 4,
+          "excerpt": "will be calculated locally",
+          "regions_pt": [
+            [
+              48.96,
+              58.09,
+              300.03,
+              331.48
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "partition_and_assignment/two_part_split_and_migration"
+    },
+    {
+      "key": "F36",
+      "report_id": "R0045",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0045.pdf",
+      "sha256": "9b5e95e1b30fa30510772f0d7fd0d4524b634a4d0d7fca27f49b105dbacacc52",
+      "locator": "III, proposed approach",
+      "status": "OBSERVED",
+      "claim": "A SAC policy with prioritized experience replay makes high-level decisions; a separate convex module solves UAV computing-resource allocation each slot.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "Built upon the SAC algorithm",
+          "regions_pt": [
+            [
+              48.96,
+              359.38,
+              300.03,
+              751.9
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "prioritized experience replay (PER) mechanism is incorporated",
+          "regions_pt": [
+            [
+              48.96,
+              359.38,
+              300.03,
+              751.9
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "solves this subproblem separately at each time slot",
+          "regions_pt": [
+            [
+              48.96,
+              359.38,
+              300.03,
+              751.9
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "decision_variables_objectives_constraints_and_solver/sac_per_cvx"
+    },
+    {
+      "key": "F37",
+      "report_id": "R0045",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0045.pdf",
+      "sha256": "9b5e95e1b30fa30510772f0d7fd0d4524b634a4d0d7fca27f49b105dbacacc52",
+      "locator": "IV-B.3 and IV-C, trajectory and migration trigger",
+      "status": "OBSERVED",
+      "claim": "The method adjusts UAV trajectories through horizontal movement and altitude control. Task migration is triggered by remaining-energy or computational-load thresholds.",
+      "sources": [
+        {
+          "physical_page": 11,
+          "excerpt": "By jointly optimizing horizontal movement and altitude control",
+          "regions_pt": [
+            [
+              48.96,
+              396.34,
+              300.03,
+              537.87
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 11,
+          "excerpt": "task migration is triggered when the remaining energy of a UAV falls below",
+          "regions_pt": [
+            [
+              48.96,
+              574.57,
+              300.03,
+              751.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "mobility_channel_intermittency_failure_and_recovery/threshold_migration_3d"
+    },
+    {
+      "key": "F38",
+      "report_id": "R0045",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0045.pdf",
+      "sha256": "9b5e95e1b30fa30510772f0d7fd0d4524b634a4d0d7fca27f49b105dbacacc52",
+      "locator": "IV-C, Fig. 10",
+      "status": "OBSERVED",
+      "claim": "Small remaining-energy thresholds delay migration, and large ones cause premature migration. Excessively low or high computational-load thresholds have different overhead mechanisms.",
+      "sources": [
+        {
+          "physical_page": 11,
+          "excerpt": "a small µ1 delays task migration",
+          "regions_pt": [
+            [
+              48.96,
+              574.57,
+              300.03,
+              751.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 11,
+          "excerpt": "a small ρth causes unnecessary migration",
+          "regions_pt": [
+            [
+              48.96,
+              574.57,
+              300.03,
+              751.91
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 11,
+          "excerpt": "a large ρth leads to heavy UAV load",
+          "regions_pt": [
+            [
+              311.98,
+              58.09,
+              563.05,
+              116.29
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "sensitivity_and_variability/seeds_and_thresholds"
+    },
+    {
+      "key": "F39",
+      "report_id": "R0048",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0048.pdf",
+      "sha256": "27e027ecd322e4f06af79412bca5c603c304fd38e7cde7de75adefe66f843d98",
+      "locator": "I, contributions for JDTSO and MAPDP",
+      "status": "OBSERVED",
+      "claim": "Centralized JDTSO uses genetic-algorithm positioning and dynamic programming with DAG partitioning for scheduling. Distributed MAPDP combines MAPPO and DAG partitioning.",
+      "sources": [
+        {
+          "physical_page": 2,
+          "excerpt": "a genetic algorithm (GA) is presented to determine UAV positions",
+          "regions_pt": [
+            [
+              48.96,
+              227.65,
+              300.02,
+              694.93
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 2,
+          "excerpt": "dynamic programming (DP) and a DAG partition strategy",
+          "regions_pt": [
+            [
+              48.96,
+              227.65,
+              300.02,
+              694.93
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 2,
+          "excerpt": "MAPDP, combines multi-agent proximal policy optimization",
+          "regions_pt": [
+            [
+              48.96,
+              227.65,
+              300.02,
+              694.93
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "decision_variables_objectives_constraints_and_solver/jdtso_and_mapdp"
+    },
+    {
+      "key": "F40",
+      "report_id": "R0048",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0048.pdf",
+      "sha256": "27e027ecd322e4f06af79412bca5c603c304fd38e7cde7de75adefe66f843d98",
+      "locator": "VII-A, baselines",
+      "status": "OBSERVED",
+      "claim": "The comparison uses C-PPO, C-DQN, MADDPG, Random and IND-UAV.",
+      "sources": [
+        {
+          "physical_page": 10,
+          "excerpt": "Centralized Global Optimization Based on PPO",
+          "regions_pt": [
+            [
+              57.44,
+              291.97,
+              300.02,
+              302.55
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 10,
+          "excerpt": "Centralized Global Optimization Based on DQN",
+          "regions_pt": [
+            [
+              57.44,
+              304.55,
+              300.02,
+              481.88
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 10,
+          "excerpt": "Each UAV independently performs the inference tasks it generates",
+          "regions_pt": [
+            [
+              57.44,
+              304.55,
+              300.02,
+              481.88
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "baselines_and_workloads/baselines"
+    },
+    {
+      "key": "F41",
+      "report_id": "R0048",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0048.pdf",
+      "sha256": "27e027ecd322e4f06af79412bca5c603c304fd38e7cde7de75adefe66f843d98",
+      "locator": "Table III, energy efficiency 0.7 row; the accompanying paragraph identifies 60 UAVs",
+      "status": "OBSERVED",
+      "claim": "At energy efficiency 0.7 in the 60-UAV analysis, the reported average inference latency is 0.511 s.",
+      "sources": [
+        {
+          "physical_page": 12,
+          "excerpt": "0.511",
+          "regions_pt": [
+            [
+              49,
+              479,
+              300,
+              555
+            ]
+          ],
+          "check": "Rendered Table III at 1.9x; exact printed cell and original column units; Poppler/PyMuPDF text omit table cells"
+        },
+        {
+          "physical_page": 12,
+          "excerpt": "energy efficiency with 60 UAVs",
+          "regions_pt": [
+            [
+              48.96,
+              577.01,
+              300.02,
+              682.61
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "inference_latency_60_uavs_eff07",
+      "quantitative": {
+        "value": "0.511",
+        "units": "s",
+        "baseline": "absolute table value; comparison rows are not combined",
+        "denominator": "average inference latency as defined in the study",
+        "workload": "collaborative video analytics",
+        "conditions": "Table III, energy efficiency 0.7, 60 UAVs"
+      }
+    },
+    {
+      "key": "F42",
+      "report_id": "R0048",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0048.pdf",
+      "sha256": "27e027ecd322e4f06af79412bca5c603c304fd38e7cde7de75adefe66f843d98",
+      "locator": "Table III, energy efficiency 0.7 row; the accompanying paragraph identifies 60 UAVs",
+      "status": "OBSERVED",
+      "claim": "At energy efficiency 0.7 in the 60-UAV analysis, the reported average UAV energy consumption is 670.8 J.",
+      "sources": [
+        {
+          "physical_page": 12,
+          "excerpt": "670.8",
+          "regions_pt": [
+            [
+              49,
+              479,
+              300,
+              555
+            ]
+          ],
+          "check": "Rendered Table III at 1.9x; exact printed cell and original column units; Poppler/PyMuPDF text omit table cells"
+        },
+        {
+          "physical_page": 12,
+          "excerpt": "energy efficiency with 60 UAVs",
+          "regions_pt": [
+            [
+              48.96,
+              577.01,
+              300.02,
+              682.61
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "energy_consumption_60_uavs_eff07",
+      "quantitative": {
+        "value": "670.8",
+        "units": "J",
+        "baseline": "absolute table value; comparison rows are not combined",
+        "denominator": "energy consumption averaged over UAVs, as described below Table III",
+        "workload": "collaborative video analytics",
+        "conditions": "Table III, energy efficiency 0.7, 60 UAVs"
+      }
+    },
+    {
+      "key": "F43",
+      "report_id": "R0048",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0048.pdf",
+      "sha256": "27e027ecd322e4f06af79412bca5c603c304fd38e7cde7de75adefe66f843d98",
+      "locator": "Table III, energy efficiency 0.7 row; the accompanying paragraph identifies 60 UAVs",
+      "status": "OBSERVED",
+      "claim": "At energy efficiency 0.7 in the 60-UAV analysis, the reported system throughput is 117.4 IPS.",
+      "sources": [
+        {
+          "physical_page": 12,
+          "excerpt": "117.4",
+          "regions_pt": [
+            [
+              49,
+              479,
+              300,
+              555
+            ]
+          ],
+          "check": "Rendered Table III at 1.9x; exact printed cell and original column units; Poppler/PyMuPDF text omit table cells"
+        },
+        {
+          "physical_page": 12,
+          "excerpt": "energy efficiency with 60 UAVs",
+          "regions_pt": [
+            [
+              48.96,
+              577.01,
+              300.02,
+              682.61
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "label": "throughput_60_uavs_eff07",
+      "quantitative": {
+        "value": "117.4",
+        "units": "IPS",
+        "baseline": "absolute table value; comparison rows are not combined",
+        "denominator": "inferences per second, table-reported system throughput",
+        "workload": "collaborative video analytics",
+        "conditions": "Table III, energy efficiency 0.7, 60 UAVs"
+      }
+    },
+    {
+      "key": "R0059-OVERHEAD",
+      "report_id": "R0059",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0059.pdf",
+      "sha256": "9e8c96dbe6c3717efd91c23f02c3c8fcb10b8aa034ab7be150d9da74b85c0957",
+      "locator": "Algorithm 3 discussion, Task UAV 1 example",
+      "status": "OBSERVED",
+      "claim": "The authors estimate about 28 bytes per step for Task UAV 1 coordination, approximately 0.68% of the 4096-byte output of the smallest VGG16 layer.",
+      "sources": [
+        {
+          "physical_page": 7,
+          "excerpt": "28 Bytes. This is approximately 0.68%",
+          "regions_pt": [
+            [
+              302.36,
+              434.63,
+              541.49,
+              728.53
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 7,
+          "excerpt": "put layer of VGG16, which produces 4 096 Bytes",
+          "regions_pt": [
+            [
+              302.36,
+              434.63,
+              541.49,
+              728.53
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "quantitative": {
+        "value": [
+          "about 28",
+          "approximately 0.68"
+        ],
+        "units": [
+          "bytes",
+          "%"
+        ],
+        "baseline": "4096-byte smallest VGG16 output layer",
+        "denominator": "bytes per decision step and fraction of that layer output",
+        "workload": "coordination messages in the Task UAV 1 example",
+        "conditions": "three relay positions plus action/reward data from two other task UAVs; a size estimate, separate from simulation latency"
+      },
+      "target_field": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability",
+      "target_scope": "replace the inherited joint switching/partition/overhead statement"
+    },
+    {
+      "key": "R0059-PARTITIONING",
+      "report_id": "R0059",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0059.pdf",
+      "sha256": "9e8c96dbe6c3717efd91c23f02c3c8fcb10b8aa034ab7be150d9da74b85c0957",
+      "locator": "Model partitioning, Fig. 5 discussion",
+      "status": "OBSERVED",
+      "claim": "AMSM reports average latency improvements of 16.5%, 19.9%, 53.8% and 58.5% relative to MCIA, DistInference, average-partition and random-partition respectively.",
+      "sources": [
+        {
+          "physical_page": 10,
+          "excerpt": "performance improvement of 16.5%, 19.9%, 53.8%, and",
+          "regions_pt": [
+            [
+              53.79,
+              271.13,
+              292.91,
+              521.12
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 10,
+          "excerpt": "58.5% over the MCIA, DistInference, average-partition, and random-partition algorithms",
+          "regions_pt": [
+            [
+              53.79,
+              271.13,
+              292.91,
+              521.12
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "quantitative": {
+        "value": [
+          "16.5",
+          "19.9",
+          "53.8",
+          "58.5"
+        ],
+        "units": "%",
+        "baseline": [
+          "MCIA",
+          "DistInference",
+          "average-partition",
+          "random-partition"
+        ],
+        "denominator": "respective baseline aggregate latency in Fig. 5",
+        "workload": "collaborative CNN partitioning",
+        "conditions": "Fig. 5 aggregate latency across varying task counts and the three stated configurations; separate from Table 5 bandwidth sweep"
+      },
+      "target_field": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability",
+      "target_scope": "replace the inherited joint switching/partition/overhead statement"
+    },
+    {
+      "key": "R0059-SWITCHING",
+      "report_id": "R0059",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0059.pdf",
+      "sha256": "9e8c96dbe6c3717efd91c23f02c3c8fcb10b8aa034ab7be150d9da74b85c0957",
+      "locator": "Model switching, Fig. 3, Algorithm 1 comparison",
+      "status": "OBSERVED",
+      "claim": "AMSM reports lower mean latency in the model-switching comparison by 38.3% vs Big-only, 28.9% vs Random-selection and 8.3% vs GA.",
+      "sources": [
+        {
+          "physical_page": 8,
+          "excerpt": "latency by an average of 38.3% compared to Big-only",
+          "regions_pt": [
+            [
+              310.82,
+              211.81,
+              549.95,
+              483.75
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        },
+        {
+          "physical_page": 8,
+          "excerpt": "28.9% compared to Random-selection, and 8.3% compared to GA",
+          "regions_pt": [
+            [
+              310.82,
+              211.81,
+              549.95,
+              483.75
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "quantitative": {
+        "value": [
+          "38.3",
+          "28.9",
+          "8.3"
+        ],
+        "units": "%",
+        "baseline": [
+          "Big-only",
+          "Random-selection",
+          "GA"
+        ],
+        "denominator": "respective baseline latency in the model-switching comparison",
+        "workload": "VGG16 / AlexNet task streams",
+        "conditions": "Fig. 3, different task counts; Algorithm 2 kept as the model partitioning policy"
+      },
+      "target_field": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability",
+      "target_scope": "replace the inherited joint switching/partition/overhead statement"
+    },
+    {
+      "key": "T03",
+      "report_id": "R0062",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0062.pdf",
+      "sha256": "6d0c4eab7261f241261a3e8f3b3898f785e8658acd4a17ca1aa27184d70d349f",
+      "locator": "Effect of UAV Unavailability, stage 2 paragraph",
+      "status": "OBSERVED",
+      "claim": "The prototype continued collaborative inference at approximately 2 FPS after one UAV became unavailable.",
+      "sources": [
+        {
+          "physical_page": 6,
+          "excerpt": "but at a lower speed, ∼ 2 FPS, in the experiment.",
+          "regions_pt": [
+            [
+              39.9,
+              215.2,
+              233.1,
+              482.2
+            ]
+          ],
+          "check": "Visual rendering verifies the printed tilde; PyMuPDF and Poppler return private-use U+F07E in the source font"
+        },
+        {
+          "physical_page": 6,
+          "excerpt": "the communication program of UAV#3 was disabled",
+          "regions_pt": [
+            [
+              39.9,
+              215.23,
+              233.08,
+              482.19
+            ]
+          ],
+          "check": "PyMuPDF text block; source read in context"
+        }
+      ],
+      "quantitative": {
+        "value": "approximately 2",
+        "units": "FPS",
+        "baseline": "Stage 1 with four active UAVs",
+        "denominator": "video frames per second",
+        "workload": "collaborative video-stream inference",
+        "conditions": "Stage 2, one UAV unavailable after its communication program was disabled"
+      },
+      "preserve_existing": "C04-06 metric and independently verified qualitative recovery",
+      "target_field": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability",
+      "target_scope": "replace only the Stage 2 excerpt in T03"
+    }
+  ],
+  "preservation": "Apply only these entries against the prior approved slots. No previous report record is overwritten by this scoped repair."
+}

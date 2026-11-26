@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:53:32+07:00",
+  "updated_at": "2026-11-26T23:57:05+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-b01-parent-only-review",
+    "task_id": "restart-11-scoped-pdf-repairs",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T23:53:32+07:00",
-    "updated_at": "2026-11-26T23:53:32+07:00",
-    "completed_at": "2026-11-26T23:53:32+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_parent_only_review.md",
-    "decision_id": "restart-11-b01-parent-only-review-v1"
+    "started_at": "2026-11-26T23:57:05+07:00",
+    "updated_at": "2026-11-26T23:57:05+07:00",
+    "completed_at": "2026-11-26T23:57:05+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/scoped_pdf_repairs_review.md",
+    "decision_id": "restart-11-scoped-pdf-repairs-v1"
   },
   "next_task": {
-    "task_id": "restart-11-b02-excerpt-split",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "restart-11-p08-reconcile",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Correct only R0062 source excerpt and split R0059 outcomes anchors.",
-    "acceptance": "Exact approximation glyph; three independent R0059 anchors with their applicable measurement contexts."
+    "action": "Apply the verified repairs to the two draft extraction batches and verify all adopted assertions before locking P08.",
+    "acceptance": "25/25 reports independently verified with complete extraction and zero unsupported claims; P09 waits for the P08 commit."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -147,7 +147,7 @@
         "batch01_targeted_correction_unresolved": 43,
         "batch01_targeted_correction_pdf_inaccessible": 13,
         "batch_01_reports_accepted": 0,
-        "batch_01_targeted_unresolved": 43,
+        "batch_01_targeted_unresolved": 0,
         "batch02_requested_fields_exact_passed": 2,
         "batch02_r0062_approximation_verified": true,
         "batch02_r0062_new_exact_quote": "FAIL",
@@ -156,13 +156,17 @@
         "canonical_pdf_hashes_matched": 25,
         "batch01_parent_only_scope_rows": 43,
         "batch01_parent_only_mechanical_matches": 39,
-        "batch01_parent_only_access_anchor_matches": 2
+        "batch01_parent_only_access_anchor_matches": 2,
+        "batch01_local_verified_repairs": 43,
+        "batch02_r0062_local_exact_source": "PASS",
+        "batch02_r0059_local_source_groups": 3,
+        "p08_targeted_repairs_verified": 47,
+        "p08_full_gate": "FAIL_PENDING_INTEGRATION"
       }
     }
   },
   "blockers": [
-    "Batch 01: two targeted Gemini.app Tasks returned 13/13 paths inaccessible even after a successful one-file probe. 43 keys remain unresolved.",
-    "Batch 02: R0062 T03 exact quotation remains defective; retain C04-06. R0059 inherited claim maps two evaluation contexts to one wrong locator and is outside the authorized corrections."
+    "P08 full-batch integration and independent semantic validation remain pending for the 25 draft reports. Base and prior passed fields are preserved and Step 12 is unopened."
   ],
   "user_confirmation_required": [
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
