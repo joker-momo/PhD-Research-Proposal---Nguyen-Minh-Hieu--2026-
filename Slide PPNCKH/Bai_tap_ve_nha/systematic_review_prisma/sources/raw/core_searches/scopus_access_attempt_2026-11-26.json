@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "attempt_id": "SCOPUS-S04-ACCESS-20261126",
+  "platform": "Scopus",
+  "target_url": "https://www.scopus.com/search/form.uri?display=advanced",
+  "observed_at": "2026-11-26T13:50:14+07:00",
+  "status": "blocked_before_query_execution",
+  "blocker": "The official URL redirected to Elsevier sign-in and required an email or institutional sign-in.",
+  "queries_pasted": 0,
+  "reported_total": null,
+  "exported_total": 0,
+  "credentials_entered_by_codex": 0,
+  "required_user_action": "Complete institutional sign-in in the local browser, then return control.",
+  "unsupported_quantitative_claims": 0
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "run_id": "IEEE-S02-HR-20261126",
+  "platform": "IEEE Xplore",
+  "collection": "IEEE Xplore",
+  "query_variant": "high_recall",
+  "query_set_version": "1.3",
+  "search_observed_at": "2026-11-26T13:50:14+07:00",
+  "source_url": "https://ieeexplore.ieee.org/search/advanced/command",
+  "exact_query": "(\"All Metadata\":\"UAV swarm\" OR \"All Metadata\":\"drone swarm\" OR \"All Metadata\":\"multi-UAV\" OR \"All Metadata\":\"multiple UAVs\" OR \"All Metadata\":\"aerial network\" OR \"All Metadata\":FANET) AND (\"All Metadata\":\"distributed inference\" OR \"All Metadata\":\"collaborative inference\" OR \"All Metadata\":\"cooperative inference\" OR \"All Metadata\":\"split inference\" OR \"All Metadata\":\"split computing\" OR \"All Metadata\":\"edge intelligence\")",
+  "active_filters": {
+    "publication_year": "2021-2026",
+    "content_type": "all_results_because_type_filter_was_not_applied_before_count",
+    "language": "facet_not_available"
+  },
+  "reported_total": 47,
+  "exported_total": 0,
+  "export_format": null,
+  "raw_artifact_type": "manual_ui_observation_record",
+  "export_status": "blocked_personal_account_sign_in_required",
+  "limitations": [
+    "Bulk export opened a Personal Account sign-in dialog and Download remained disabled.",
+    "The count is year-filtered but not restricted to Journals and Conferences; publication type and English eligibility must be enforced downstream.",
+    "No record-level export was obtained; this observation file is not an importable bibliographic export."
+  ],
+  "unsupported_quantitative_claims": 0
+}
