@@ -1,0 +1,129 @@
+{
+  "audit": {
+    "issues": [],
+    "counts": {
+      "total": 2,
+      "unresolved": 0,
+      "sources": 2
+    },
+    "access": [
+      {
+        "report_id": "R0062",
+        "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0062.pdf",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt": "First, four UAVs (i.e., UAV#1 to UAV#4) were selected to perform inference collaboratively",
+        "reason": "Accessed R0062.pdf directly and verified physical page 6 under Effect of UAV Unavailability."
+      }
+    ],
+    "assignments": {
+      "subagent_status": "UNAVAILABLE",
+      "reason": "Parent read R0062.pdf directly as instructed for this single-PDF correction; no subagent was spawned.",
+      "assignments": [
+        {
+          "worker": "parent",
+          "report_ids": [
+            "R0062"
+          ]
+        }
+      ]
+    },
+    "rows": [
+      {
+        "key": "C04-05",
+        "report_id": "R0062",
+        "metric": "frame_rate",
+        "status": "OBSERVED",
+        "value": "~3",
+        "units": "FPS",
+        "baseline": "NOT_APPLICABLE",
+        "denominator": "per second (video stream frames per second)",
+        "workload": "Video stream collaborative inference across four UAVs (Stage 1)",
+        "conditions": "Stage 1: four UAVs (UAV#1 to UAV#4) selected and available for collaborative inference",
+        "hardware_status": "NOT_APPLICABLE",
+        "sources": [
+          {
+            "file": "R0062.pdf",
+            "page": 6,
+            "section": "EFFECT OF UAV UNAVAILABILITY",
+            "locator": "Physical page 6 (journal p. 67), Effect of UAV Unavailability, paragraph 1",
+            "excerpt": "can process the video stream at a speed of ~ 3 FPS.",
+            "supports": [
+              "value",
+              "units",
+              "denominator",
+              "workload",
+              "conditions"
+            ]
+          }
+        ],
+        "reason": "Observed approximate Stage 1 frame rate (~3 FPS) on physical page 6. Baseline is NOT_APPLICABLE because Stage 1 is the initial four-UAV reference state. Hardware status is NOT_APPLICABLE because previously verified hardware is outside the two keys being fixed."
+      },
+      {
+        "key": "C04-06",
+        "report_id": "R0062",
+        "metric": "frame_rate",
+        "status": "OBSERVED",
+        "value": "~2",
+        "units": "FPS",
+        "baseline": "Stage 1 four-UAV collaborative inference (~3 FPS); conventional CoEl terminates when a UAV is unavailable",
+        "denominator": "per second (video stream frames per second)",
+        "workload": "Video stream collaborative inference with remaining unfinished parts redistributed among available UAVs (Stage 2)",
+        "conditions": "Stage 2: one UAV (UAV#3 communication program disabled) unavailable; partition strategy updated for remaining UAVs",
+        "hardware_status": "NOT_APPLICABLE",
+        "sources": [
+          {
+            "file": "R0062.pdf",
+            "page": 6,
+            "section": "EFFECT OF UAV UNAVAILABILITY",
+            "locator": "Physical page 6 (journal p. 67), Effect of UAV Unavailability, paragraph 1",
+            "excerpt": "but at a lower speed, ~ 2 FPS, in the experiment.",
+            "supports": [
+              "value",
+              "units",
+              "baseline",
+              "denominator",
+              "workload",
+              "conditions"
+            ]
+          }
+        ],
+        "reason": "Observed approximate Stage 2 frame rate (~2 FPS) on physical page 6 with the printed tilde approximation preserved. Hardware status is NOT_APPLICABLE because previously verified hardware is outside the two keys being fixed."
+      }
+    ]
+  },
+  "visual_check": "R0062 physical p6 cropped PDF verifies both tilde marks; workload and stage confirmed on same page.",
+  "transport_status": "TASK_STATE_COMPLETED",
+  "initial_automatic_cleanup": {
+    "state": "not_verified",
+    "detail": "Accessibility prepare-delete failed: Gemini snapshot failed: Gemini window did not become active"
+  },
+  "final_cleanup": {
+    "timestamp": "2026-11-26T23:05:17+07:00",
+    "uuid": "e6c139ad-e556-47be-a24a-da94c4de1a9f",
+    "event": "DELETED",
+    "detail": "Native confirmation followed by verified empty new chat",
+    "label": "c05"
+  },
+  "batch02_remaining_identified_field_issues": [
+    {
+      "report_id": "R0068",
+      "field": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability",
+      "page": 1,
+      "issue": "Legacy outcomes row still embeds the three abstract-only percentages even though correction 04 returned UNVERIFIED for the three metrics. Figures 5–9 have comparative trends, no exact percentage labels."
+    },
+    {
+      "report_id": "R0074",
+      "field": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability",
+      "page": 1,
+      "issue": "Legacy outcomes row has only one excerpt from the abstract. The exclusivity assertion is inconsistent with Section 4.2 on physical pages 16–17, which reports successful 70B distributed alternatives."
+    },
+    {
+      "report_id": "R0121",
+      "field": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability",
+      "page": 1,
+      "issue": "Legacy outcomes row has one excerpt from the abstract. It does not substantiate every component of the compound result. Independently locate each retained part in body Tables 2–3 or Section results, or withhold."
+    }
+  ],
+  "other_batch02_assertions_fully_adjudicated": false
+}

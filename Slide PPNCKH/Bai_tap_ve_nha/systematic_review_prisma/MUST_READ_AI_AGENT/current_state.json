@@ -1,29 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:03:20+07:00",
+  "updated_at": "2026-11-26T23:05:56+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-batch02-correction05-brief",
+    "task_id": "restart-11-batch02-correction05-review",
     "owner": "CODEX_WRITING",
+    "research_owner": "GEMINI_RESEARCH",
     "status": "completed",
-    "started_at": "2026-11-26T23:03:20+07:00",
-    "updated_at": "2026-11-26T23:03:20+07:00",
-    "completed_at": "2026-11-26T23:03:20+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_correction05_brief.md",
-    "decision_id": "restart-11-batch02-correction05-brief-v1"
+    "started_at": "2026-11-26T23:03:37+07:00",
+    "updated_at": "2026-11-26T23:05:56+07:00",
+    "completed_at": "2026-11-26T23:05:56+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_correction05_review.md",
+    "decision_id": "restart-11-batch02-correction05-review-v1"
   },
   "next_task": {
-    "task_id": "restart-11-batch02-correction05",
+    "task_id": "restart-11-batch02-outcomes-and-access-resolution",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "dispatch_brief": "restart_2026_11_26/extraction/batch_02_correction05_brief.md",
-    "message_id": "hk261-restart-step11-p08-batch02-correction05-v1",
-    "action": "Resolve exactly C04-05 and C04-06 in the original R0062 on physical page 6.",
-    "acceptance": "Two source keys, exact short excerpts, both approximations preserved."
+    "action": "On resume, correct only the three logged Batch 02 outcomes fields and finish independent assertion verification. P08 completion awaits user direction for the 13 reports from locked Batch 01.",
+    "acceptance": "Zero abstract-only or contradicted assertions. All 25 reports accepted under P08 before P09."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -137,13 +136,16 @@
         "accepted": 0,
         "not_accessible_to_gemini": 13,
         "quarantined_batch02": 12,
-        "cleanup_deleted": 3,
+        "cleanup_deleted": 4,
         "cleanup_blocked": 3,
-        "confirmed_batch02_semantic_failures": 2
+        "confirmed_batch02_semantic_failures": 3,
+        "correction05_accepted_metric_keys": 2
       }
     }
   },
-  "blockers": [],
+  "blockers": [
+    "P08 completion: Gemini.app did not access 13 Batch 01 reports in the original task; user locked those IDs against redispatch. No authorized alternative extraction route."
+  ],
   "user_confirmation_required": [
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
     "Contributions, funding, conflicts, data availability and AI disclosure.",

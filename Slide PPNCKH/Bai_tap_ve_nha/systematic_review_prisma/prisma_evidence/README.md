@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-26T23:03:20+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-26T23:05:56+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -356,9 +356,9 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=5.
 <a id="buoc-11"></a>
 ## Bước 11 · Trích xuất dữ liệu mới
 
-**Đang làm** · `2026-11-26T23:03:20+07:00`
+**Đang làm** · `2026-11-26T23:05:56+07:00`
 
-Nghiệm thu cấp bước đã ghi trong sổ: FAIL=6.
+Nghiệm thu cấp bước đã ghi trong sổ: FAIL=7, PASS=1.
 
 - [manifest.json](../restart_2026_11_26/extraction/manifest.json)
 - [batch_01_brief.md](../restart_2026_11_26/extraction/batch_01_brief.md)
@@ -390,6 +390,9 @@ Nghiệm thu cấp bước đã ghi trong sổ: FAIL=6.
 - [batch_02_correction04_mechanical.json](../restart_2026_11_26/extraction/batch_02_correction04_mechanical.json)
 - [batch_02_correction04_review.md](../restart_2026_11_26/extraction/batch_02_correction04_review.md)
 - [batch_02_correction05_brief.md](../restart_2026_11_26/extraction/batch_02_correction05_brief.md)
+- [batch_02_correction05_raw.json](../restart_2026_11_26/extraction/batch_02_correction05_raw.json)
+- [batch_02_correction05_mechanical.json](../restart_2026_11_26/extraction/batch_02_correction05_mechanical.json)
+- [batch_02_correction05_review.md](../restart_2026_11_26/extraction/batch_02_correction05_review.md)
 
 <a id="buoc-12"></a>
 ## Bước 12 · Đánh giá chất lượng và nguy cơ sai lệch
