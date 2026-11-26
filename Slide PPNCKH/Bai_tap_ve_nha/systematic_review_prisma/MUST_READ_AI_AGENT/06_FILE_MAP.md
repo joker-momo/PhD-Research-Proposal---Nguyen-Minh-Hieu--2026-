@@ -14,6 +14,8 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 | Fixed protocol | `../protocol.md` |
 | Scope amendment | `../protocol_amendment_001.md` |
 | 2021+ amendment | `../protocol_amendment_002.md` |
+| Report-completeness amendment | `../protocol_amendment_003_report_completeness.md` |
+| Query-validation amendment | `../protocol_amendment_004_query_validation.md` |
 | Stage/status plan | `../project_plan.md` |
 | Current completion audit | `../completion_audit_2026-11-25.md` |
 | Submission blockers | `../submission_readiness_2026-11-25.md` |
@@ -31,6 +33,8 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 | Query seed-coverage matrix | `../seed_query_coverage_matrix.csv` |
 | Four-source access readiness | `../search_access_readiness_2026-11-26.md` |
 | Current committed S-01 research brief | `../corpus_expansion/briefs/s01_query_validation_brief.md` |
+| Accepted corrected S-01 result | `../corpus_expansion/s01_query_validation_corrected_result.json` |
+| Corrected S-01 acceptance review | `../corpus_expansion/reviews/s01_query_validation_correction_acceptance.md` |
 | Formal-search status | `../formal_search_log_v0.2.csv` |
 | Record screening | `../screening_log.csv` |
 | Study/report linkage | `../study_report_map.csv` |

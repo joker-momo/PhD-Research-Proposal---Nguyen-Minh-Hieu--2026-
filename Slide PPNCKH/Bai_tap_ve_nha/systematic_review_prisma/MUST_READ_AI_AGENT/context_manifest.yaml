@@ -1,6 +1,6 @@
 schema_version: 2
-context_version: "2026-11-26.26"
-policy_updated_at: "2026-11-26T13:04:45+07:00"
+context_version: "2026-11-26.27"
+policy_updated_at: "2026-11-26T13:27:46+07:00"
 project: "HK261 PRISMA systematic review"
 canonical_workspace:
   path: "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)"
@@ -50,6 +50,7 @@ canonical_external_sources:
   protocol_amendment_scope: "../protocol_amendment_001.md"
   protocol_amendment_year: "../protocol_amendment_002.md"
   protocol_amendment_report_completeness: "../protocol_amendment_003_report_completeness.md"
+  protocol_amendment_query_validation: "../protocol_amendment_004_query_validation.md"
   file_map: 06_FILE_MAP.md
 
 persistent_task_gate:
