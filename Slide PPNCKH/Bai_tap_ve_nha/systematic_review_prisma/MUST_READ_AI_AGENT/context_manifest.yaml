@@ -1,6 +1,6 @@
 schema_version: 2
-context_version: "2026-11-26.28"
-policy_updated_at: "2026-11-26T13:35:13+07:00"
+context_version: "2026-11-26.29"
+policy_updated_at: "2026-11-26T19:54:05+07:00"
 project: "HK261 PRISMA systematic review"
 canonical_workspace:
   path: "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)"
@@ -60,7 +60,7 @@ persistent_task_gate:
   automatic_runtime_enforcement: "UNVERIFIED; manual gate remains mandatory"
   task_fields: [TASK, OWNER, OWNED_PATHS, BINARY_ACCEPTANCE, PRE_TASK_GIT_STATUS]
   code_first_decision: "REUSE_EXISTING, WRITE_SCRIPT, or MANUAL with reason"
-  freshness_rule: "latest project commit must also touch current_state.json before recognized A2A dispatch"
+  freshness_rule: "Gemini.app requires a committed brief, matching ready state and a phase manifest or previous review committed with state; legacy routes require state in the latest project commit"
 
 default_exclusions_from_context:
   - events.jsonl

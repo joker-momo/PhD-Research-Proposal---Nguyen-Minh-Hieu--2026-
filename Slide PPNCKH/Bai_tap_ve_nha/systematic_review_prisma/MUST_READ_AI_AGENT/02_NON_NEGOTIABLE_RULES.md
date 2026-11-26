@@ -64,9 +64,9 @@
   unrelated private project material in an A2A brief or committed artifact.
 - Preserve every pre-existing user change. Never use destructive cleanup or
   broad staging.
-- Use a dedicated branch/worktree for each agent mutation; stage explicit paths,
-  verify, merge fast-forward, delete the branch/worktree, and leave zero new
-  uncommitted agent changes.
+- Use a dedicated branch/worktree per phase or standalone change. Stage explicit
+  paths and verify each checkpoint. At phase close, fast-forward, remove the
+  merged branch/worktree and leave zero new uncommitted agent changes.
 - The parent repository may already contain unrelated dirty/untracked user work.
   Capture the baseline and ensure the agent adds no new residue; do not claim the
   whole repository was clean when it was not.

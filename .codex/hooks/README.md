@@ -14,14 +14,18 @@ real prompt delivery and a harmless blocked dispatch.
 | SessionStart | `task_gate.py` | Prints the same compact reminder |
 | PreToolUse/Bash | `task_gate.py` | Checks recognized A2A dispatch without changing files |
 
-The gate recognizes literal `a2a-route`, `a2a send` and
-`run_screening_batches.py` commands. Before allowing them it requires:
+The gate recognizes literal `bridge send`, `a2a-route`, `a2a send` and
+`run_screening_batches.py` commands. All require clean owned scopes, valid
+canonical state with a matching latest event, and a matching code-first
+decision in the valid registry.
 
-1. no residue in HK261, `.codex/` or root `AGENTS.md`;
-2. the latest project commit to include
-   `MUST_READ_AI_AGENT/current_state.json`;
-3. valid canonical state and matching latest event;
-4. one matching active code-first decision and valid artifact registry.
+For `bridge send`, use one literal command per tool call with an absolute
+`--brief` path and explicit `--message-id`. Both must match the committed
+`next_task` and the brief must exist in Git. The named phase manifest or
+preceding batch review must be committed with canonical state. Later commits
+to other project files leave this authorization valid. Read-only `bridge get`
+is available during review. Legacy routes retain their latest-project-commit
+state freshness check.
 
 `CURRENT_HANDOFF.md` and `corpus_expansion/current_tasks.md` are static
 compatibility pointers. They are no longer task-state inputs.
@@ -72,8 +76,6 @@ hook package valid:
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s .codex/hooks -p 'test_*.py' -q
 ```
 
-Current expected total: 78 tests = 4 context + 7 state + 33 router + 16 registry
-+ 18 gate.
 The gate suite uses disposable Git repositories and is intentionally slower than
 the pure unit tier.
 

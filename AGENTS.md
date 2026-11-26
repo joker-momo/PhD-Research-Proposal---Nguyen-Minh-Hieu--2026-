@@ -19,10 +19,12 @@ CODE_FIRST_DECISION: REUSE_EXISTING | WRITE_SCRIPT | MANUAL -- one sentence
 ```
 
 Run Git status first. Residue in this project, `.codex/`, or `AGENTS.md` blocks
-new work and A2A dispatch. Preserve unrelated user work. Use a dedicated
-branch/worktree, explicit staging, relevant tests, dead-code/secret/diff audit,
-an atomic commit, fast-forward integration and branch/worktree cleanup. Never
-start a second task before the first is committed and its owned scopes are clean.
+new work and research dispatch. Preserve unrelated user work. Use a dedicated
+branch/worktree per phase or standalone change. Use explicit staging, relevant
+tests and dead-code/secret/diff audit. For Gemini.app phases, commit setup once,
+then commit each batch's result and review before sending the next batch.
+Fast-forward, verify and clean up once per phase. Advance the approved plan only
+after the phase acceptance gate passes.
 
 ## Code-first and durable evidence
 
@@ -38,8 +40,10 @@ append-only; supersede a decision instead of rewriting it.
 ## Current state and history
 
 `MUST_READ_AI_AGENT/current_state.json` is the only current-state source. Update
-it in every task-closing or task-changing commit, append one matching event to
-`events.jsonl`, and keep the active decision ID consistent. Validate with
+it at phase setup, batch acceptance/rejection and phase completion, and append
+a matching event to `events.jsonl`. Keep the active decision ID consistent.
+For Gemini.app, a dispatch or polling receipt is recovered from the bridge and
+saved with the batch review. Validate with
 `python3 .codex/hooks/project_state.py validate`; render with `... show`.
 `CURRENT_HANDOFF.md` and `corpus_expansion/current_tasks.md` are compatibility
 pointers, not independent state. Git, events and decisions preserve history.
@@ -52,12 +56,15 @@ state `updated_at`.
 ## Ownership and A2A
 
 Codex owns writing/editing, project files, acceptance, Git and final text.
-Gemini through the approved router owns read-only research, discovery,
-extraction, verification, classification and structured synthesis. Each brief
+Gemini through the approved Gemini.app bridge or legacy router owns read-only
+research, discovery, extraction, verification, classification and structured
+synthesis. Each brief
 must contain TASK, REQUIRED WORK, REQUIRED OUTPUT, ACCEPTANCE CRITERIA and
 BOUNDARIES with numeric/binary checks. Codex must issue a criterion-by-criterion
 PASS/FAIL review; use research only when every mandatory criterion passes.
-Commit a brief before dispatch and a result/review before the next task.
+For Gemini.app, commit the brief before dispatch and authorize only the next
+batch in canonical state. See the workflow and delegation rules for the exact
+checkpoint fields.
 
 ## Skills and hooks
 
