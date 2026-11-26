@@ -1,34 +1,33 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T10:25:28+07:00",
+  "updated_at": "2026-11-26T10:28:44+07:00",
   "goal": {
     "version": "HK261-PRISMA-SNCS-v2",
     "status": "active",
     "summary": "Complete the evidence-bounded PRISMA 2020 review, Springer Nature LaTeX manuscript, integrity checks and submission package; submission and course email remain user-authorized actions."
   },
   "task": {
-    "task_id": "integrate-dates-02-retry",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T10:24:23+07:00",
-    "updated_at": "2026-11-26T10:25:28+07:00",
-    "completed_at": "2026-11-26T10:25:28+07:00",
-    "decision_id": "integrate-dates-02-retry-v1"
-  },
-  "next_task": {
     "task_id": "reconciliation-dates-02-evidence-correction-brief",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-26T10:28:44+07:00",
+    "updated_at": "2026-11-26T10:28:44+07:00",
+    "completed_at": "2026-11-26T10:28:44+07:00",
+    "decision_id": "reconciliation-dates-02-evidence-correction-brief-v1"
+  },
+  "next_task": {
+    "task_id": "reconciliation-dates-02-evidence-correction",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Prepare a targeted corrective brief for fresh direct Crossref and publisher reads of C05, C09, C10, C13, C14 and C19; commit the brief before any dispatch.",
-    "acceptance": "Exactly six identities; each fresh attempt captures actual start/end times and original URL; date-kind labels preserve year-only publication evidence; inaccessible dates remain UNCERTAIN; zero invented historical timestamps or aggregator claims without destination evidence.",
+    "action": "Route committed dates_02_evidence_correction.md once; preserve primary/fallback identifiers; review D1-D5 before adoption.",
+    "acceptance": "6 identities,12 direct-route attempt records; runtime timestamps or honest unavailable-clock shortfall; correct publication date kinds; zero invented source facts.",
     "prior_attempt": {
       "status": "REJECTED_D2_D3_D4 with zero adopted records",
       "primary_task_id": "01a215dc-a11b-70c7-8434-792ab19b3d9c",
       "primary_result": "quota-only",
       "fallback_task_id": "01a215dc-cc27-73fb-8933-0a471cf3ac32",
       "fallback_result": "completed but rejected: 13 invalid timestamps and 6 misclassified date sources"
-    },
-    "prior_scope_state": "scope_01 accepted working evidence; C06 and SNCS remain uncertain"
+    }
   },
   "project": {
     "target_venue": "SN Computer Science",
