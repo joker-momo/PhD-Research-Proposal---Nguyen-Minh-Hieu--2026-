@@ -1,0 +1,332 @@
+{
+  "transport_status": "TASK_STATE_COMPLETED",
+  "audit": {
+    "issues": [
+      [
+        "A2",
+        "C04-05",
+        "mismatching anchor p6"
+      ],
+      [
+        "A3",
+        "C04-06",
+        "approximation missing"
+      ]
+    ],
+    "counts": {
+      "total": 6,
+      "unresolved": 3,
+      "sources": 16
+    },
+    "access": [
+      {
+        "report_id": "R0054",
+        "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0054.pdf",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt": "We address this gap by developing a hierarchical semantic-aware framework for heading-coupled STAR-RIS assisted multi-UAV ISCC networks.",
+        "reason": "PDF opened directly and body text verified."
+      },
+      {
+        "report_id": "R0062",
+        "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0062.pdf",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt": "To resolve the contradiction between great resource demand of DNNs and limited resource supply of UAVs, there exist two main solutions",
+        "reason": "PDF opened directly and body text verified."
+      },
+      {
+        "report_id": "R0068",
+        "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0068.pdf",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt": "The widespread deployment of Industrial Internet of Things (IIoT) devices in smart cities has driven the need for advanced techniques to meet the ultra-reliability and low latency demands of modern applications.",
+        "reason": "PDF opened directly and body text verified."
+      }
+    ],
+    "assignments": {
+      "subagent_status": "UNAVAILABLE",
+      "reason": "Parent opened and verified all three PDFs directly without spawning subagent workers.",
+      "assignments": [
+        {
+          "worker": "parent",
+          "report_ids": [
+            "R0054",
+            "R0062",
+            "R0068"
+          ]
+        }
+      ]
+    },
+    "rows": [
+      {
+        "key": "C04-01",
+        "report_id": "R0068",
+        "metric": "latency improvement vs competitive baselines",
+        "status": "UNVERIFIED",
+        "value": null,
+        "units": null,
+        "baseline": null,
+        "denominator": null,
+        "workload": null,
+        "conditions": null,
+        "hardware_status": "UNVERIFIED",
+        "sources": [
+          {
+            "file": "R0068.pdf",
+            "page": 11,
+            "section": "VI. Simulation Results and Analysis - B.2) Effect of Bandwidths",
+            "locator": "Section VI-B.2, para. 1",
+            "excerpt": "In contrast, traditional MARL algorithms (MARL-AC, MARL-DQN, and MARL-SAC) consistently demonstrate higher latency and power usage, underscoring the practical benefits of meta-learning techniques.",
+            "supports": [
+              "inspection"
+            ]
+          },
+          {
+            "file": "R0068.pdf",
+            "page": 13,
+            "section": "VII. Conclusion",
+            "locator": "Section VII, para. 1",
+            "excerpt": "Our approach outperformed traditional multi-agent DRL-based algorithms, including MARL-AC, MARL-DQN, and MARL-SAC, in terms of bandwidth adaptation, UAV scalability, and different memory resources.",
+            "supports": [
+              "inspection"
+            ]
+          }
+        ],
+        "reason": "The around 29% latency improvement appears only in the Abstract (p. 1) and is not printed in Methods (Section V, pp. 6-10), Simulation Results and Analysis (Section VI, pp. 10-13, Figs. 4-9), or Conclusion (Section VII, p. 13)."
+      },
+      {
+        "key": "C04-02",
+        "report_id": "R0068",
+        "metric": "transmission power improvement vs competitive baselines",
+        "status": "UNVERIFIED",
+        "value": null,
+        "units": null,
+        "baseline": null,
+        "denominator": null,
+        "workload": null,
+        "conditions": null,
+        "hardware_status": "UNVERIFIED",
+        "sources": [
+          {
+            "file": "R0068.pdf",
+            "page": 11,
+            "section": "VI. Simulation Results and Analysis - B.2) Effect of Bandwidths",
+            "locator": "Section VI-B.2, para. 1",
+            "excerpt": "In contrast, traditional MARL algorithms (MARL-AC, MARL-DQN, and MARL-SAC) consistently demonstrate higher latency and power usage, underscoring the practical benefits of meta-learning techniques.",
+            "supports": [
+              "inspection"
+            ]
+          },
+          {
+            "file": "R0068.pdf",
+            "page": 13,
+            "section": "VII. Conclusion",
+            "locator": "Section VII, para. 1",
+            "excerpt": "Our approach outperformed traditional multi-agent DRL-based algorithms, including MARL-AC, MARL-DQN, and MARL-SAC, in terms of bandwidth adaptation, UAV scalability, and different memory resources.",
+            "supports": [
+              "inspection"
+            ]
+          }
+        ],
+        "reason": "The around 23% transmission power improvement appears only in the Abstract (p. 1) and is not printed in Methods (Section V, pp. 6-10), Simulation Results and Analysis (Section VI, pp. 10-13, Figs. 4-9), or Conclusion (Section VII, p. 13)."
+      },
+      {
+        "key": "C04-03",
+        "report_id": "R0068",
+        "metric": "latency gap vs LDTP",
+        "status": "UNVERIFIED",
+        "value": null,
+        "units": null,
+        "baseline": null,
+        "denominator": null,
+        "workload": null,
+        "conditions": null,
+        "hardware_status": "UNVERIFIED",
+        "sources": [
+          {
+            "file": "R0068.pdf",
+            "page": 11,
+            "section": "VI. Simulation Results and Analysis - B.2) Effect of Bandwidths",
+            "locator": "Section VI-B.2, para. 1",
+            "excerpt": "When comparing the proposed solutions with the competitive algorithms of traditional RL, the LDTP approach establishes a theoretical sub-optimal benchmark due to its optimized nature, and our proposed meta-MARL method closely matches this benchmark, showcasing its capability to quickly adapt to dynamic environmental conditions.",
+            "supports": [
+              "inspection"
+            ]
+          },
+          {
+            "file": "R0068.pdf",
+            "page": 12,
+            "section": "VI. Simulation Results and Analysis - B.4) Effect of Memory Resources",
+            "locator": "Section VI-B.4, para. 1",
+            "excerpt": "Notably, the MARL-meta solution consistently delivers latency performance closest to the optimal LDTP solution, outperforming other traditional MARL approaches.",
+            "supports": [
+              "inspection"
+            ]
+          }
+        ],
+        "reason": "The around 9% latency gap relative to LDTP appears only in the Abstract (p. 1) and is not printed in Methods (Section V, pp. 6-10), Simulation Results and Analysis (Section VI, pp. 10-13, Figs. 4-9), or Conclusion (Section VII, p. 13)."
+      },
+      {
+        "key": "C04-04",
+        "report_id": "R0054",
+        "metric": "online decision runtime (P50/P95)",
+        "status": "OBSERVED",
+        "value": "30.92/50.56",
+        "units": "ms",
+        "baseline": "Six-scheme comparison (GAT-HSMAO, No-GAT, Fixed-Heading, CSI-Only, Fixed-RIS, No-RIS)",
+        "denominator": "per decision over 10,000 decisions/scheme (60,000 total)",
+        "workload": "GAT-HSMAO online decision inference under frozen policies",
+        "conditions": "Measured online time reported separately from training under frozen policies; training ran 30 policies as 15 processes/GPU on two RTX6000PRO GPUs in 2.703 h",
+        "hardware_status": "NOT_REPORTED",
+        "sources": [
+          {
+            "file": "R0054.pdf",
+            "page": 5,
+            "section": "IV. Numerical Results - Generalization and runtime",
+            "locator": "Section IV, Generalization and runtime, para. 1",
+            "excerpt": "Panel (f) gives GAT-HSMAO P50/P95 times of 30.92/50.56 ms over 10,000 decisions/scheme (60,000 total).",
+            "supports": [
+              "value",
+              "units",
+              "denominator",
+              "workload"
+            ]
+          },
+          {
+            "file": "R0054.pdf",
+            "page": 5,
+            "section": "IV. Numerical Results",
+            "locator": "Figure 3(f) caption",
+            "excerpt": "(f) reports six-scheme P50-P95 time over 10,000 decisions/scheme.",
+            "supports": [
+              "baseline",
+              "denominator"
+            ]
+          },
+          {
+            "file": "R0054.pdf",
+            "page": 4,
+            "section": "III. Proposed Hierarchical Optimization - B. Inner-Layer Resource Optimization",
+            "locator": "Section III-B, para. 2",
+            "excerpt": "Measured online time is reported separately from training under frozen policies.",
+            "supports": [
+              "conditions"
+            ]
+          },
+          {
+            "file": "R0054.pdf",
+            "page": 5,
+            "section": "IV. Numerical Results - Generalization and runtime",
+            "locator": "Section IV, Generalization and runtime, para. 1",
+            "excerpt": "30 policies run as 15 processes/GPU on two RTX6000PRO GPUs in 2.703 h.",
+            "supports": [
+              "hardware",
+              "inspection"
+            ]
+          }
+        ],
+        "reason": "P50/P95 online decision runtime of 30.92/50.56 ms is printed in Section IV and Figure 3(f); two RTX6000PRO GPUs are reported for training only, while online runtime measurement hardware is NOT_REPORTED."
+      },
+      {
+        "key": "C04-05",
+        "report_id": "R0062",
+        "metric": "Stage 1 collaborative inference frame rate",
+        "status": "OBSERVED",
+        "value": "~ 3",
+        "units": "FPS",
+        "baseline": "NOT_APPLICABLE",
+        "denominator": "frames per second",
+        "workload": "Collaborative DNN inference across four UAVs",
+        "conditions": "Stage 1: four UAVs (UAV#1 to UAV#4) performing collaborative inference",
+        "hardware_status": "REPORTED",
+        "sources": [
+          {
+            "file": "R0062.pdf",
+            "page": 6,
+            "section": "Performance Evaluation - Effect of UAV Unavailability",
+            "locator": "Page 6, Effect of UAV Unavailability, para. 1",
+            "excerpt": "First, four UAVs (i.e., UAV#1 to UAV#4) were selected to perform inference collaboratively, as Fig. 6 illustrated, the CoEl system can process the video stream at a speed of ~ 3 FPS.",
+            "supports": [
+              "value",
+              "units",
+              "workload",
+              "conditions"
+            ]
+          },
+          {
+            "file": "R0062.pdf",
+            "page": 6,
+            "section": "Performance Evaluation - Effect of UAV Unavailability",
+            "locator": "Figure 6, Stage 1 label",
+            "excerpt": "Collaborative inference with four UAVs",
+            "supports": [
+              "conditions"
+            ]
+          },
+          {
+            "file": "R0062.pdf",
+            "page": 5,
+            "section": "Performance Evaluation - Experiment Setup",
+            "locator": "Page 5, Experiment Setup, para. 1",
+            "excerpt": "This prototype system contains four UAVs, an NVIDIA Jetson Nano developer kit is set on UAV#1 as computing unit, and an NVIDIA Jetson TX2 as well as two Jetson Nanos are deployed on other three UAVs respectively.",
+            "supports": [
+              "hardware"
+            ]
+          }
+        ],
+        "reason": "Stage 1 four-UAV collaborative inference frame rate is printed as ~ 3 FPS; baseline is NOT_APPLICABLE because Stage 1 is the initial four-UAV configuration."
+      },
+      {
+        "key": "C04-06",
+        "report_id": "R0062",
+        "metric": "Stage 2 collaborative inference frame rate with one UAV unavailable",
+        "status": "OBSERVED",
+        "value": "2",
+        "units": "FPS",
+        "baseline": "Stage 1 four-UAV collaborative inference (~ 3 FPS)",
+        "denominator": "frames per second",
+        "workload": "Collaborative DNN inference with one UAV unavailable",
+        "conditions": "Stage 2: communication program of UAV#3 disabled (one UAV unavailable); eCoEI updates partition strategy among remaining UAVs",
+        "hardware_status": "REPORTED",
+        "sources": [
+          {
+            "file": "R0062.pdf",
+            "page": 6,
+            "section": "Performance Evaluation - Effect of UAV Unavailability",
+            "locator": "Page 6, Effect of UAV Unavailability, para. 1",
+            "excerpt": "The inference process was not interrupted, but at a lower speed, 2 FPS, in the experiment.",
+            "supports": [
+              "value",
+              "units"
+            ]
+          },
+          {
+            "file": "R0062.pdf",
+            "page": 6,
+            "section": "Performance Evaluation - Effect of UAV Unavailability",
+            "locator": "Figure 6, Stage 2 label",
+            "excerpt": "A UAV is unavailable",
+            "supports": [
+              "conditions"
+            ]
+          },
+          {
+            "file": "R0062.pdf",
+            "page": 5,
+            "section": "Performance Evaluation - Experiment Setup",
+            "locator": "Page 5, Experiment Setup, para. 1",
+            "excerpt": "This prototype system contains four UAVs, an NVIDIA Jetson Nano developer kit is set on UAV#1 as computing unit, and an NVIDIA Jetson TX2 as well as two Jetson Nanos are deployed on other three UAVs respectively.",
+            "supports": [
+              "hardware"
+            ]
+          }
+        ],
+        "reason": "Stage 2 frame rate when one UAV (UAV#3) is unavailable is printed as 2 FPS (no approximation marker printed in the Stage 2 sentence)."
+      }
+    ]
+  },
+  "reported_one_send_at": "2026-11-26T22:59:49+07:00",
+  "cleanup_at": "2026-11-26T23:02:01+07:00",
+  "result_sha256": "f79acb7a6887f951186e51388e5b3b72c6d3eadc3f2b3fdbb5e0ad7253506915"
+}

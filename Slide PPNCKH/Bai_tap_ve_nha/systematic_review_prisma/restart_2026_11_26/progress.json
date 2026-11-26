@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-26T22:59:33+07:00",
+  "updated_at": "2026-11-26T23:02:57+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -671,7 +671,7 @@
       "owner": "GEMINI_RESEARCH + CODEX_WRITING",
       "status": "active",
       "started_at": "2026-11-26T22:19:35+07:00",
-      "updated_at": "2026-11-26T22:59:33+07:00",
+      "updated_at": "2026-11-26T23:02:57+07:00",
       "completed_at": null,
       "artifacts": [
         "restart_2026_11_26/extraction/manifest.json",
@@ -699,7 +699,10 @@
         "restart_2026_11_26/extraction/batch_02_correction03_mechanical.json",
         "restart_2026_11_26/extraction/batch_02_correction03_review.md",
         "restart_2026_11_26/extraction/step11_chat_cleanup.jsonl",
-        "restart_2026_11_26/extraction/batch_02_correction04_brief.md"
+        "restart_2026_11_26/extraction/batch_02_correction04_brief.md",
+        "restart_2026_11_26/extraction/batch_02_correction04_raw.json",
+        "restart_2026_11_26/extraction/batch_02_correction04_mechanical.json",
+        "restart_2026_11_26/extraction/batch_02_correction04_review.md"
       ],
       "acceptance": [
         {
@@ -726,6 +729,11 @@
           "criterion": "B02-C03-A2/A3/A4",
           "verdict": "FAIL",
           "evidence": "9/9 keys and 172/172 mechanical anchors; at least six semantic numeric failures; 0/12 admitted. Two chats deleted by verified UUID; three blocked."
+        },
+        {
+          "criterion": "B02-C04-A2/A3",
+          "verdict": "FAIL",
+          "evidence": "6/6 keys, 3/3 access anchors, 15/16 source anchors, 1/3 observed rows misstates precision; 0/12 reports accepted. Chat deleted after evidence save."
         }
       ]
     },

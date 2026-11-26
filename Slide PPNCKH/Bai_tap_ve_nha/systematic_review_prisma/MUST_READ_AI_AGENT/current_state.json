@@ -1,29 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T22:59:33+07:00",
+  "updated_at": "2026-11-26T23:02:57+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-batch02-correction04-brief",
+    "task_id": "restart-11-batch02-correction04-review",
     "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T22:59:33+07:00",
-    "updated_at": "2026-11-26T22:59:33+07:00",
-    "completed_at": "2026-11-26T22:59:33+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_correction04_brief.md",
-    "decision_id": "restart-11-batch02-correction04-brief-v1"
+    "research_owner": "GEMINI_RESEARCH",
+    "status": "rejected",
+    "started_at": "2026-11-26T22:59:49+07:00",
+    "updated_at": "2026-11-26T23:02:57+07:00",
+    "completed_at": "2026-11-26T23:02:57+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_correction04_review.md",
+    "decision_id": "restart-11-batch02-correction04-review-v1"
   },
   "next_task": {
-    "task_id": "restart-11-batch02-correction04",
+    "task_id": "restart-11-batch02-correction05",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "dispatch_brief": "restart_2026_11_26/extraction/batch_02_correction04_brief.md",
-    "message_id": "hk261-restart-step11-p08-batch02-correction04-v1",
-    "action": "Resolve exactly C04-01 through C04-06 in three Batch 02 reports via one Gemini.app Task.",
-    "acceptance": "6/6 keys or explicit access shortfall; zero unsupported observed evidence."
+    "action": "Correct only C04-05 and C04-06 at the verified physical page of R0062.",
+    "acceptance": "Two source keys, exact short excerpts, both approximations preserved."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -137,9 +136,9 @@
         "accepted": 0,
         "not_accessible_to_gemini": 13,
         "quarantined_batch02": 12,
-        "cleanup_deleted": 2,
+        "cleanup_deleted": 3,
         "cleanup_blocked": 3,
-        "confirmed_batch02_semantic_failures": 6
+        "confirmed_batch02_semantic_failures": 2
       }
     }
   },
