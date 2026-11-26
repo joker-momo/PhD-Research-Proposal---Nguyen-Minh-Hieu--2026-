@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T13:15:33+07:00",
+  "updated_at": "2026-11-26T13:23:31+07:00",
   "goal": {
     "version": "HK261-PRISMA-completion-spec-v2",
-    "status": "execution_in_progress_s01_correction_required",
-    "summary": "The first user-pasted S-01 research result is quarantined and rejected after Codex review: 11 of 13 mandatory criteria passed, while criteria 4 and 10 failed because four non-blocked language or collection/scope conclusions lacked conclusion-matched official evidence. A targeted corrective brief is ready; no query change or search result has been adopted.",
+    "status": "execution_in_progress_s01_accepted_pending_adoption",
+    "summary": "The user-relayed corrected S-01 result passes all 13 parent and 8 corrective criteria. Four former evidence gaps are resolved with official Scopus and Web of Science locators; the 20-by-8 seed matrix remains valid. The result is scientifically accepted with attachment-hash provenance, but no A2A transport task/context ID is claimed. Query revisions still require a Codex-owned adoption commit before any database run.",
     "goal_engine_status_observed": "usageLimited"
   },
   "task": {
-    "task_id": "review-s01-query-validation-v1",
+    "task_id": "review-s01-query-validation-correction-v1",
     "owner": "CODEX_WRITING",
-    "status": "rejected",
-    "started_at": "2026-11-26T13:14:38+07:00",
-    "updated_at": "2026-11-26T13:15:33+07:00",
-    "completed_at": "2026-11-26T13:15:33+07:00",
-    "decision_id": "review-s01-query-validation-v1"
+    "status": "completed",
+    "started_at": "2026-11-26T13:22:53+07:00",
+    "updated_at": "2026-11-26T13:23:31+07:00",
+    "completed_at": "2026-11-26T13:23:31+07:00",
+    "decision_id": "review-s01-query-validation-correction-v1"
   },
   "next_task": {
-    "task_id": "correct-s01-query-validation-v1",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "adopt-s01-query-revisions",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "After this rejection commit is integrated and the repository is clean, dispatch corpus_expansion/briefs/s01_query_validation_corrective_brief.md through the approved Gemini router; record its provider task/context ID and quarantine the corrected JSON until a new Codex review.",
-    "acceptance": "One provider task/context ID recorded; all 4 previously unsupported non-blocked filter conclusions receive matching official evidence or become BLOCKED; internal contradictions equal zero; all 13 parent criteria pass; project files modified by Gemini equal zero."
+    "action": "After this acceptance commit is integrated and the repository is clean, prospectively apply only the accepted S-01 query/filter revisions to final_query_translations.md and the protocol amendment trail; keep IEEE and ACM execution blocked until authenticated interface verification resolves their documented gaps.",
+    "acceptance": "All accepted Scopus/WoS query revisions and the ACM Short-Paper filter removal are represented exactly once; IEEE/ACM unresolved behavior remains explicit; no database search or result count is claimed; validators/tests pass and the adoption commit leaves main clean."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -49,6 +49,8 @@
     "s01_result": "corpus_expansion/s01_query_validation_result.json",
     "s01_review": "corpus_expansion/reviews/s01_query_validation_acceptance.md",
     "s01_corrective_brief": "corpus_expansion/briefs/s01_query_validation_corrective_brief.md",
+    "s01_corrected_result": "corpus_expansion/s01_query_validation_corrected_result.json",
+    "s01_correction_review": "corpus_expansion/reviews/s01_query_validation_correction_acceptance.md",
     "seed_query_matrix": "seed_query_coverage_matrix.csv",
     "manuscript_pages": 22,
     "cited_references": 53,
@@ -72,16 +74,17 @@
     "screening_batches_accepted": 8,
     "evidence_checksums": "92/92 PASS",
     "s01_query_validation": {
-      "status": "REJECTED_NEEDS_TARGETED_CORRECTION",
-      "mandatory_pass": 11,
-      "mandatory_fail": 2,
-      "failed_criteria": [
-        4,
-        10
-      ],
+      "status": "SCIENTIFICALLY_ACCEPTED_USER_RELAYED",
+      "mandatory_pass": 13,
+      "mandatory_fail": 0,
+      "corrective_pass": 8,
+      "corrective_fail": 0,
+      "failed_criteria": [],
       "database_result_counts_claimed": 0,
       "project_files_modified_by_research_agent": 0,
-      "provider_task_or_context_id": "NOT_PROVIDED_IN_USER_PASTED_RESULT"
+      "provider_task_or_context_id": "NOT_PROVIDED_IN_USER_PASTED_RESULT",
+      "provenance": "USER_RELAYED_ATTACHMENT",
+      "attachment_sha256": "a17bbfca001a37332c9370fc0fff4a2464df0e2e615fbacd043f14b059b0d556"
     },
     "family_audit": {
       "reports_accounted": 46,
