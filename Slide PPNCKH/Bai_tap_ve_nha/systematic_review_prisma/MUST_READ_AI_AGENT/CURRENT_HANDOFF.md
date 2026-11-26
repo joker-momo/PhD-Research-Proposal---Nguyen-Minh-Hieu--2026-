@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T08:00:01+07:00
+**updated_at:** 2026-11-26T08:02:12+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -163,15 +163,15 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-Scope correction is rejected and quarantined. Gemini primary
-`01a21556-4587-7524-8edb-d2d9ec56465d` returned only quota; approved router used
-fixed gpt-5.6-luna/low fallback `01a21559-eec5-7109-9445-388ddba4e2e1`.
-Fallback corrects3 semantic issues but passes only17/20 quote locators; A2/C1 FAIL.
-Reviews: `screening_46/reconciliation/reviews/scope_01_correction_review.md` and
-`scope_01_correction_primary_review.md`. After commit/merge/cleanup, prepare a
-small correction for exactly C06_E4,SNCS_E2,SNCS_E3 (no other edits); then recheck
-combined20 quotes and full gate. No active provider task. Overlay stays36/2/8.
-Decision: `reconciliation-scope-01-correction-v1`, REUSE_EXISTING.
+Three-locator corrective brief ready at
+`screening_46/reconciliation/briefs/scope_01_locators.md`. After commit/merge/cleanup,
+route once via Gemini-first router; quota-only fixed fallback remains permitted.
+Return exactly C06_E4,SNCS_E2,SNCS_E3 plus2 unchanged source identities. Combine
+only these3 evidence objects with preserved fallback and recheck all20 quotes,
+original A1–A6/C1–C2 and new L1–L5. No other record data may change.
+Parent `01a21559-eec5-7109-9445-388ddba4e2e1` remains rejected; no active provider.
+Working overlay36/2/8 unchanged. Decision `reconciliation-scope-01-locators-brief-v1`
+is MANUAL; deterministic heading/ID/schema assertions passed.
 
 ## Current bibliographic overlay
 
@@ -192,10 +192,10 @@ The boundary hold has been released by the coordinating handoff.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-scope-01-correction",
-  "status": "rejected",
-  "started_at": "2026-11-26T07:51:45+07:00",
-  "updated_at": "2026-11-26T08:00:01+07:00",
-  "completed_at": "2026-11-26T08:00:01+07:00"
+  "task_id": "reconciliation-scope-01-locators-brief",
+  "status": "completed",
+  "started_at": "2026-11-26T08:02:12+07:00",
+  "updated_at": "2026-11-26T08:02:12+07:00",
+  "completed_at": "2026-11-26T08:02:12+07:00"
 }
 -->
