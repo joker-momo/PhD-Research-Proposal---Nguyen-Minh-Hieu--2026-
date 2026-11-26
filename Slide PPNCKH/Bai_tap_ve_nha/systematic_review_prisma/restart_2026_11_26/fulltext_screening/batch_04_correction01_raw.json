@@ -1,0 +1,45 @@
+{
+  "id": "0a85c729-29cd-48c0-bd52-6a5b9f239284",
+  "contextId": "e21403f3-5c19-4c8e-869f-49bc073dbc42",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T14:17:49.334+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T14:13:45.504+00:00",
+    "updated_at": "2026-11-26T14:17:49.334+00:00",
+    "started_at": "2026-11-26T14:13:45.511+00:00",
+    "completed_at": "2026-11-26T14:17:49.334+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — Systematic Review Evidence Correction",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "cfcbb1cc-446a-4b55-92ed-6a145c025995",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"id\":\"R0118\",\"decision\":\"AWAITING_CLASSIFICATION\",\"primary\":\"\",\"reason\":\"E5 publication date unresolved\",\"e\":{\"E2\":[\"T\",15,\"VI-H. Planner Overhead and Scalability\",\"We sweep N from 6 to 50 under the nominal mission\",\"Evaluates N=6 to 50 UAVs.\",\"R0118.pdf\"]}}\n{\"id\":\"R0121\",\"decision\":\"INCLUDE\",\"primary\":\"\",\"reason\":\"All E1-E7 satisfied with analytical evaluation and 2026-10-22 peer-reviewed publication\",\"e\":{\"E5\":[\"T\",0,\"meta citation_publication_date\",\"Thu, 10/22/2026 - 14:04\",\"Published online 2026-10-22 (Crossref published-online 2026-10, print 2026-11), within 2021-01-01..2026-11-26.\",\"https://science.lpnu.ua/ictee/all-volumes-and-issues/volume-6-number-2-2026/link-layer-model-uav-swarm-mesh-network\"],\"E7\":[\"T\",0,\"Reviewing Policy\",\"All manuscripts submitted to the journal undergo a double-blind peer review process\",\"Double-blind peer-reviewed journal; PDF §§3,5,6 provide method and analytical evaluation.\",\"https://science.lpnu.ua/node/23327\"]}}\n{\"id\":\"R0138\",\"decision\":\"EXCLUDE\",\"primary\":\"E6\",\"reason\":\"Full-text body is in Chinese, not English\",\"e\":{\"E1\":[\"T\",1,\"摘要\",\"本文设计了 MASSIVE 系统\",\"Primary research presenting the MASSIVE system.\",\"R0138.pdf\"],\"E2\":[\"F\",10,\"5.1 实验环境\",\"终端设备选用了基于mt7628芯片的开发板\",\"Evaluated on mt7628 boards rather than multi-UAVs.\",\"R0138.pdf\"],\"E4\":[\"T\",10,\"5.1 实验环境\",\"我们在商用设备上测试了 MASSIVE 系统\",\"Evaluated MASSIVE on commercial hardware and simulator.\",\"R0138.pdf\"]}}\n{\"id\":\"R0139\",\"decision\":\"EXCLUDE\",\"primary\":\"E2\",\"reason\":\"Evaluated on cloud GPU cluster rather than multi-UAVs\",\"e\":{\"E7\":[\"T\",0,\"Step 2: Peer Review Assignment through Scholar9 Portal\",\"The editorial team assigns the paper to expert reviewers in the relevant field.\",\"Peer-reviewed journal policy; PDF pp.3-4 report method and results.\",\"https://rjwave.org/ijedr/TransparentPeerReview.php\"]}}\n{\"id\":\"R0233\",\"decision\":\"EXCLUDE\",\"primary\":\"E2\",\"reason\":\"Evaluated on single Cortex-M0 MCU, no multi-UAV setting\",\"e\":{\"E5\":[\"T\",0,\"published-online.date-parts\",\"[[2026,4,26]]\",\"Published online 2026-04-26 per Crossref, within 2021-01-01..2026-11-26.\",\"https://api.crossref.org/works/10.1145/3767295.3769380\"]}}\n{\"id\":\"R0241\",\"decision\":\"EXCLUDE\",\"primary\":\"E1\",\"reason\":\"Survey paper rather than primary research\",\"e\":{\"E5\":[\"T\",0,\"published-online.date-parts\",\"[[2025,9,8]]\",\"Published online 2025-09-08 (issue/print 2026-01), within 2021-01-01..2026-11-26.\",\"https://api.crossref.org/works/10.1145/3760389\"]}}\n{\"id\":\"R0262\",\"decision\":\"EXCLUDE\",\"primary\":\"E1\",\"reason\":\"Survey/taxonomy categorizing 104 CPS-AI studies, not primary research\",\"e\":{\"E3\":[\"F\",3,\"1 Introduction\",\"We categorize 104 studies and provide unique insights from a CPAI perspective.\",\"Survey/taxonomy of 104 CPS-AI studies, not collaborative DNN inference.\",\"R0262.pdf\"]}}\n{\"id\":\"R0288\",\"decision\":\"EXCLUDE\",\"primary\":\"E3\",\"reason\":\"DRL/bandit optimizes UAV monitoring assignment, not collaborative DNN inference\",\"e\":{\"E2\":[\"T\",14,\"5.1 Evaluation Setup\",\"cell grid with 10 UAVs deployed for monitoring\",\"Multi-UAV setting explicitly evaluated with 10 UAVs.\",\"R0288.pdf\"],\"E4\":[\"F\",14,\"5 Performance Evaluation\",\"The performance is evaluated in terms of monitoring coverage and UAV resource usage.\",\"Evaluates monitoring coverage and resource usage of assignment policy, not an inference method.\",\"R0288.pdf\"]}}\n{\"id\":\"R0445\",\"decision\":\"EXCLUDE\",\"primary\":\"E2\",\"reason\":\"Evaluated on LHCONE wired network, no multi-UAV setting; E4 also fails\",\"e\":{\"E4\":[\"F\",10,\"V-A. Methodology\",\"We evaluate the performance of BoxOpt on the topology from LHC Open\",\"Section V evaluates network bandwidth reservation (BoxOpt), not a DNN inference method.\",\"R0445.pdf\"]}}\nUnresolved items and unavailable sources:\n￼R0118 E5: Remains unresolved (U) because R0118.pdf only states copyright year 2026 without an authoritative publication month/day.\n￼Unavailable external URLs in browser tool: ⁠[https://science.lpnu.ua/ictee/all-volumes-and-issues/volume-6-number-2-2026/link-layer-model-uav-swarm-mesh-network](https://science.lpnu.ua/ictee/all-volumes-and-issues/volume-6-number-2-2026/link-layer-model-uav-swarm-mesh-network)⁠, ⁠[https://science.lpnu.ua/node/23327](https://science.lpnu.ua/node/23327)⁠, ⁠[https://science.lpnu.ua/ictee](https://science.lpnu.ua/ictee)⁠, ⁠[https://api.crossref.org/works/10.23939/ictee2026.02.144](https://api.crossref.org/works/10.23939/ictee2026.02.144)⁠, ⁠[https://api.crossref.org/works/10.1145/3767295.3769380](https://api.crossref.org/works/10.1145/3767295.3769380)⁠, and ⁠[https://api.crossref.org/works/10.1145/3760389](https://api.crossref.org/works/10.1145/3760389)⁠ were blocked/inaccessible from the browser tool; the explicitly supplied verified metadata from the prompt was used for R0121 E5/E7, R0233 E5, and R0241 E5."
+        }
+      ]
+    }
+  ]
+}
