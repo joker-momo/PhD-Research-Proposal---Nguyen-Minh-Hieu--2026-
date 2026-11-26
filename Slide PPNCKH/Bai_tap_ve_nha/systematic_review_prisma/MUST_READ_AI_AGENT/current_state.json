@@ -1,28 +1,26 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:47:38+07:00",
+  "updated_at": "2026-11-26T18:49:12+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
-    "task_id": "restart-05",
-    "owner": "CODEX_WRITING + GEMINI_RESEARCH",
+    "task_id": "restart-06",
+    "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T18:44:17+07:00",
-    "updated_at": "2026-11-26T18:47:38+07:00",
-    "decision_id": "restart-05-metadata-normalize-v1",
-    "provider_task_id": "2f1423a8-3a09-41f8-8c86-c76a7f7c5e67",
-    "provider_context_id": "925af9d5-77c5-4dd9-b1a4-8e2880019223",
-    "completed_at": "2026-11-26T18:47:38+07:00"
+    "started_at": "2026-11-26T18:47:38+07:00",
+    "updated_at": "2026-11-26T18:49:12+07:00",
+    "completed_at": "2026-11-26T18:49:12+07:00",
+    "decision_id": "restart-06-dedup-v1"
   },
   "next_task": {
-    "task_id": "restart-06",
-    "owner": "CODEX_WRITING + GEMINI_RESEARCH",
+    "task_id": "restart-07",
+    "owner": "GEMINI_RESEARCH + CODEX_WRITING",
     "status": "ready",
-    "action": "Deduplicate normalized records with complete provenance and verify only genuinely ambiguous pairs.",
-    "acceptance": "693/693 input IDs accounted for; every merge evidence based; unclear pairs explicitly retained."
+    "action": "Screen all 465 queue records by title/abstract under restart-1.1 via Gemini.app Task. Each input gets one reason and locator.",
+    "acceptance": "465/465 decisions or explicit unresolved states; zero use of old 46 decisions."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -83,7 +81,7 @@
       "raw_rows": 688,
       "query_variants": 8,
       "checksum_checks_pass": 51,
-      "unique_records": null,
+      "unique_records": 465,
       "final_included_reports": null,
       "dataset_locked": true,
       "search_audit_complete": true,
@@ -93,7 +91,10 @@
       "locked_dataset_manifest": "restart_2026_11_26/search_dataset_manifest.json",
       "locked_input_rows": 693,
       "normalized_rows": 693,
-      "metadata_issue_log": "restart_2026_11_26/metadata_issue_log.json"
+      "metadata_issue_log": "restart_2026_11_26/metadata_issue_log.json",
+      "removed_duplicate_rows": 228,
+      "metadata_year_conflicts": 12,
+      "dedup_map": "restart_2026_11_26/dedup_map.csv"
     }
   },
   "blockers": [],

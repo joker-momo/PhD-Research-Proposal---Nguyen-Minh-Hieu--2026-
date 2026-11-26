@@ -1,0 +1,694 @@
+screening_id,record_id,link_reason,doi_key,title_key
+R0001,IEEE-HR:0001,representative,10.1109/icws72778.2026.00154,adaptive partition and resource allocation for collaborative inference services in uav swarm
+R0001,IEEE-COMP:0001,matching_doi_and_title,10.1109/icws72778.2026.00154,adaptive partition and resource allocation for collaborative inference services in uav swarm
+R0001,SCOPUS-HR:0004,matching_doi_and_title,10.1109/icws72778.2026.00154,adaptive partition and resource allocation for collaborative inference services in uav swarm
+R0001,SCOPUS-COMP:0006,matching_doi_and_title,10.1109/icws72778.2026.00154,adaptive partition and resource allocation for collaborative inference services in uav swarm
+R0001,OPENALEX-HR:0007,matching_doi_and_title,10.1109/icws72778.2026.00154,adaptive partition and resource allocation for collaborative inference services in uav swarm
+R0001,OPENALEX-COMP:0003,matching_doi_and_title,10.1109/icws72778.2026.00154,adaptive partition and resource allocation for collaborative inference services in uav swarm
+R0002,IEEE-HR:0002,representative,10.1109/icws72778.2026.00067,promise predictive and cost optimal migrations for service continuous edge intelligence in multi uav networks
+R0002,SCOPUS-HR:0054,matching_doi_and_title,10.1109/icws72778.2026.00067,promise predictive and cost optimal migrations for service continuous edge intelligence in multi uav networks
+R0002,OPENALEX-HR:0023,matching_doi_and_title,10.1109/icws72778.2026.00067,promise predictive and cost optimal migrations for service continuous edge intelligence in multi uav networks
+R0003,IEEE-HR:0003,representative,10.1109/wcsp58612.2023.10405273,dynamic dnn model switching for collaborative edge intelligence in uav swarm
+R0003,SCOPUS-HR:0048,matching_doi_and_title,10.1109/wcsp58612.2023.10405273,dynamic dnn model switching for collaborative edge intelligence in uav swarm
+R0003,OPENALEX-HR:0008,matching_doi_and_title,10.1109/wcsp58612.2023.10405273,dynamic dnn model switching for collaborative edge intelligence in uav swarm
+R0004,IEEE-HR:0004,representative,10.1109/sagc52752.2021.00026,efficient edge intelligence under clustering for uav swarm networks
+R0004,SCOPUS-HR:0065,matching_doi_and_title,10.1109/sagc52752.2021.00026,efficient edge intelligence under clustering for uav swarm networks
+R0004,OPENALEX-HR:0005,matching_doi_and_title,10.1109/sagc52752.2021.00026,efficient edge intelligence under clustering for uav swarm networks
+R0005,IEEE-HR:0005,representative,10.1109/mpcon69668.2026.11508434,a hybrid multi objective optimization framework for energy aware uav swarm coordination in dynamic environments
+R0005,SCOPUS-HR:0009,matching_doi_and_title,10.1109/mpcon69668.2026.11508434,a hybrid multi objective optimization framework for energy aware uav swarm coordination in dynamic environments
+R0006,IEEE-HR:0006,representative,10.1109/icpads67057.2025.11322921,joint uav deployment and model partition for efficient collaborative inference
+R0006,IEEE-COMP:0013,matching_doi_and_title,10.1109/icpads67057.2025.11322921,joint uav deployment and model partition for efficient collaborative inference
+R0006,SCOPUS-HR:0069,matching_doi_and_title,10.1109/icpads67057.2025.11322921,joint uav deployment and model partition for efficient collaborative inference
+R0006,SCOPUS-COMP:0028,matching_doi_and_title,10.1109/icpads67057.2025.11322921,joint uav deployment and model partition for efficient collaborative inference
+R0006,OPENALEX-HR:0035,matching_doi_and_title,10.1109/icpads67057.2025.11322921,joint uav deployment and model partition for efficient collaborative inference
+R0006,OPENALEX-COMP:0024,matching_doi_and_title,10.1109/icpads67057.2025.11322921,joint uav deployment and model partition for efficient collaborative inference
+R0007,IEEE-HR:0007,representative,10.1109/mass56207.2022.00043,ciofl collaborative inference based online federated learning for uav object detection
+R0007,SCOPUS-HR:0044,matching_doi_and_title,10.1109/mass56207.2022.00043,ciofl collaborative inference based online federated learning for uav object detection
+R0007,OPENALEX-HR:0040,matching_doi_and_title,10.1109/mass56207.2022.00043,ciofl collaborative inference based online federated learning for uav object detection
+R0008,IEEE-HR:0008,representative,10.1109/tvt.2022.3217331,green edge intelligence for smart management of a fanet in disaster recovery scenarios
+R0008,SCOPUS-HR:0036,matching_doi_and_title,10.1109/tvt.2022.3217331,green edge intelligence for smart management of a fanet in disaster recovery scenarios
+R0008,OPENALEX-HR:0009,matching_doi_and_title,10.1109/tvt.2022.3217331,green edge intelligence for smart management of a fanet in disaster recovery scenarios
+R0009,IEEE-HR:0009,representative,10.1109/tits.2025.3629117,deep reinforcement learning based task offloading with collaborative inference in uav assisted mobile edge computing networks
+R0009,IEEE-COMP:0005,matching_doi_and_title,10.1109/tits.2025.3629117,deep reinforcement learning based task offloading with collaborative inference in uav assisted mobile edge computing networks
+R0009,SCOPUS-HR:0006,matching_doi_and_title,10.1109/tits.2025.3629117,deep reinforcement learning based task offloading with collaborative inference in uav assisted mobile edge computing networks
+R0009,SCOPUS-COMP:0011,matching_doi_and_title,10.1109/tits.2025.3629117,deep reinforcement learning based task offloading with collaborative inference in uav assisted mobile edge computing networks
+R0009,OPENALEX-HR:0048,matching_doi_and_title,10.1109/tits.2025.3629117,deep reinforcement learning based task offloading with collaborative inference in uav assisted mobile edge computing networks
+R0009,OPENALEX-COMP:0023,matching_doi_and_title,10.1109/tits.2025.3629117,deep reinforcement learning based task offloading with collaborative inference in uav assisted mobile edge computing networks
+R0010,IEEE-HR:0010,representative,10.1109/wcnc57260.2024.10570535,efficient pipeline collaborative dnn inference in resource constrained uav swarm
+R0010,SCOPUS-HR:0031,matching_doi_and_title,10.1109/wcnc57260.2024.10570535,efficient pipeline collaborative dnn inference in resource constrained uav swarm
+R0010,OPENALEX-HR:0034,matching_doi_and_title,10.1109/wcnc57260.2024.10570535,efficient pipeline collaborative dnn inference in resource constrained uav swarm
+R0011,IEEE-HR:0011,representative,10.1109/jiot.2026.3714884,edge intelligence for iot terminal coordination a low power soc embedded gnn framework for uav swarm task allocation in smart city environments
+R0011,SCOPUS-HR:0001,matching_doi_and_title,10.1109/jiot.2026.3714884,edge intelligence for iot terminal coordination a low power soc embedded gnn framework for uav swarm task allocation in smart city environments
+R0011,OPENALEX-HR:0031,matching_doi_and_title,10.1109/jiot.2026.3714884,edge intelligence for iot terminal coordination a low power soc embedded gnn framework for uav swarm task allocation in smart city environments
+R0012,IEEE-HR:0012,representative,10.1109/ojcoms.2021.3084532,safeguarding cluster heads in uav swarm using edge intelligence linear discriminant analysis based cross layer authentication
+R0012,SCOPUS-HR:0071,matching_doi_and_title,10.1109/ojcoms.2021.3084532,safeguarding cluster heads in uav swarm using edge intelligence linear discriminant analysis based cross layer authentication
+R0012,OPENALEX-HR:0024,matching_doi_and_title,10.1109/ojcoms.2021.3084532,safeguarding cluster heads in uav swarm using edge intelligence linear discriminant analysis based cross layer authentication
+R0013,IEEE-HR:0013,representative,10.1109/icus66297.2025.11294397,research on multi uav buoy deployment based on non fragile consistent control
+R0014,IEEE-HR:0014,representative,10.1109/tmc.2024.3427420,all sky autonomous computing in uav swarm
+R0014,IEEE-COMP:0009,matching_doi_and_title,10.1109/tmc.2024.3427420,all sky autonomous computing in uav swarm
+R0014,SCOPUS-HR:0059,matching_doi_and_title,10.1109/tmc.2024.3427420,all sky autonomous computing in uav swarm
+R0014,SCOPUS-COMP:0019,matching_doi_and_title,10.1109/tmc.2024.3427420,all sky autonomous computing in uav swarm
+R0014,OPENALEX-COMP:0019,matching_doi_and_title,10.1109/tmc.2024.3427420,all sky autonomous computing in uav swarm
+R0015,IEEE-HR:0015,representative,10.1109/bigcom61073.2023.00034,energy efficient collaborative dnn inference in uav swarm
+R0015,IEEE-COMP:0008,matching_doi_and_title,10.1109/bigcom61073.2023.00034,energy efficient collaborative dnn inference in uav swarm
+R0015,SCOPUS-HR:0074,matching_doi_and_title,10.1109/bigcom61073.2023.00034,energy efficient collaborative dnn inference in uav swarm
+R0015,SCOPUS-COMP:0031,matching_doi_and_title,10.1109/bigcom61073.2023.00034,energy efficient collaborative dnn inference in uav swarm
+R0015,OPENALEX-COMP:0005,matching_doi_and_title,10.1109/bigcom61073.2023.00034,energy efficient collaborative dnn inference in uav swarm
+R0016,IEEE-HR:0016,representative,10.23919/fitce56290.2022.9934750,a fanet to provide blockchain on demand at the extreme edge of a 6g network
+R0016,SCOPUS-HR:0019,matching_doi_and_title,10.23919/fitce56290.2022.9934750,a fanet to provide blockchain on demand at the extreme edge of a 6g network
+R0017,IEEE-HR:0017,representative,10.1109/ants63515.2024.10898655,network slice admission control for enhanced resource utilization in 6g multi uav networks
+R0017,SCOPUS-HR:0050,matching_doi_and_title,10.1109/ants63515.2024.10898655,network slice admission control for enhanced resource utilization in 6g multi uav networks
+R0018,IEEE-HR:0018,representative,10.1109/tmc.2026.3683128,large language model based qos aware resource allocation for multi uav cooperative edge computing networks
+R0018,SCOPUS-HR:0040,matching_doi_and_title,10.1109/tmc.2026.3683128,large language model based qos aware resource allocation for multi uav cooperative edge computing networks
+R0019,IEEE-HR:0019,representative,10.1109/jiot.2022.3231341,deep reinforcement learning for trajectory path planning and distributed inference in resource constrained uav swarms
+R0019,SCOPUS-HR:0057,matching_doi_and_title,10.1109/jiot.2022.3231341,deep reinforcement learning for trajectory path planning and distributed inference in resource constrained uav swarms
+R0019,OPENALEX-HR:0002,matching_doi_and_title,10.1109/jiot.2022.3231341,deep reinforcement learning for trajectory path planning and distributed inference in resource constrained uav swarms
+R0020,IEEE-HR:0020,representative,10.1109/iccc52777.2021.9580225,edge intelligence enabled soft decentralized authentication in uav swarm
+R0020,SCOPUS-HR:0012,matching_doi_and_title,10.1109/iccc52777.2021.9580225,edge intelligence enabled soft decentralized authentication in uav swarm
+R0020,OPENALEX-HR:0004,matching_doi_and_title,10.1109/iccc52777.2021.9580225,edge intelligence enabled soft decentralized authentication in uav swarm
+R0021,IEEE-HR:0021,representative,10.1109/jiot.2022.3152829,joint training and resource allocation optimization for federated learning in uav swarm
+R0021,SCOPUS-HR:0033,matching_doi_and_title,10.1109/jiot.2022.3152829,joint training and resource allocation optimization for federated learning in uav swarm
+R0021,OPENALEX-HR:0030,matching_doi_and_title,10.1109/jiot.2022.3152829,joint training and resource allocation optimization for federated learning in uav swarm
+R0022,IEEE-HR:0022,representative,10.1109/icct67417.2025.11374232,multi uav collaborative model inference based on hierarchical reinforcement learning
+R0022,IEEE-COMP:0007,matching_doi_and_title,10.1109/icct67417.2025.11374232,multi uav collaborative model inference based on hierarchical reinforcement learning
+R0022,SCOPUS-HR:0052,matching_doi_and_title,10.1109/icct67417.2025.11374232,multi uav collaborative model inference based on hierarchical reinforcement learning
+R0022,SCOPUS-COMP:0015,matching_doi_and_title,10.1109/icct67417.2025.11374232,multi uav collaborative model inference based on hierarchical reinforcement learning
+R0022,OPENALEX-HR:0043,matching_doi_and_title,10.1109/icct67417.2025.11374232,multi uav collaborative model inference based on hierarchical reinforcement learning
+R0022,OPENALEX-COMP:0006,matching_doi_and_title,10.1109/icct67417.2025.11374232,multi uav collaborative model inference based on hierarchical reinforcement learning
+R0023,IEEE-HR:0023,representative,10.1109/acdsa67686.2026.11467610,edge agentic systems architecture easa design patterns for decentralized and collaborative edge intelligence
+R0023,SCOPUS-HR:0010,matching_doi_and_title,10.1109/acdsa67686.2026.11467610,edge agentic systems architecture easa design patterns for decentralized and collaborative edge intelligence
+R0023,OPENALEX-HR:0050,matching_doi_and_title,10.1109/acdsa67686.2026.11467610,edge agentic systems architecture easa design patterns for decentralized and collaborative edge intelligence
+R0024,IEEE-HR:0024,representative,10.1109/globecom54140.2023.10436927,collaborative smart environmental monitoring using flying edge intelligence
+R0024,SCOPUS-HR:0015,matching_doi_and_title,10.1109/globecom54140.2023.10436927,collaborative smart environmental monitoring using flying edge intelligence
+R0024,OPENALEX-HR:0041,matching_doi_and_title,10.1109/globecom54140.2023.10436927,collaborative smart environmental monitoring using flying edge intelligence
+R0025,IEEE-HR:0025,representative,10.1109/cictn57981.2023.10140227,a new way of improving network by smart ioe with uav
+R0025,SCOPUS-HR:0029,matching_doi_and_title,10.1109/cictn57981.2023.10140227,a new way of improving network by smart ioe with uav
+R0026,IEEE-HR:0026,representative,10.1109/vtc2025-fall65116.2025.11310119,fl assisted offloading and resource allocation in 6g noma based low altitude economy networks
+R0026,SCOPUS-HR:0063,matching_doi_and_title,10.1109/vtc2025-fall65116.2025.11310119,fl assisted offloading and resource allocation in 6g noma based low altitude economy networks
+R0026,OPENALEX-HR:0061,matching_doi_and_title,10.1109/vtc2025-fall65116.2025.11310119,fl assisted offloading and resource allocation in 6g noma based low altitude economy networks
+R0027,IEEE-HR:0027,representative,10.1109/icass69550.2026.11547499,easa distributed agentic framework for scalable federated edge intelligence
+R0027,SCOPUS-HR:0047,matching_doi_and_title,10.1109/icass69550.2026.11547499,easa distributed agentic framework for scalable federated edge intelligence
+R0027,OPENALEX-HR:0042,matching_doi_and_title,10.1109/icass69550.2026.11547499,easa distributed agentic framework for scalable federated edge intelligence
+R0028,IEEE-HR:0028,representative,10.1109/netsoft70012.2026.11603504,closing the loop link aware dataset generation and edge learning in uav based inference aerial platforms
+R0028,OPENALEX-HR:0071,matching_doi_and_title,10.1109/netsoft70012.2026.11603504,closing the loop link aware dataset generation and edge learning in uav based inference aerial platforms
+R0029,IEEE-HR:0029,representative,10.1109/iwcmc55113.2022.9824945,reliable dnn partitioning for uav swarm
+R0029,IEEE-COMP:0004,matching_doi_and_title,10.1109/iwcmc55113.2022.9824945,reliable dnn partitioning for uav swarm
+R0029,SCOPUS-HR:0038,matching_doi_and_title,10.1109/iwcmc55113.2022.9824945,reliable dnn partitioning for uav swarm
+R0029,SCOPUS-COMP:0010,matching_doi_and_title,10.1109/iwcmc55113.2022.9824945,reliable dnn partitioning for uav swarm
+R0029,OPENALEX-HR:0025,matching_doi_and_title,10.1109/iwcmc55113.2022.9824945,reliable dnn partitioning for uav swarm
+R0029,OPENALEX-COMP:0004,matching_doi_and_title,10.1109/iwcmc55113.2022.9824945,reliable dnn partitioning for uav swarm
+R0030,IEEE-HR:0030,representative,10.1109/comsnets67989.2026.11418212,qos driven user offloading via irs in uec 6g networks
+R0030,SCOPUS-HR:0056,matching_doi_and_title,10.1109/comsnets67989.2026.11418212,qos driven user offloading via irs in uec 6g networks
+R0031,IEEE-HR:0031,representative,10.1109/jiot.2023.3341307,distributed machine learning for uav swarms computing sensing and semantics
+R0031,SCOPUS-HR:0007,matching_doi_and_title,10.1109/jiot.2023.3341307,distributed machine learning for uav swarms computing sensing and semantics
+R0031,OPENALEX-HR:0027,matching_doi_and_title,10.1109/jiot.2023.3341307,distributed machine learning for uav swarms computing sensing and semantics
+R0032,IEEE-HR:0032,representative,10.1109/tce.2025.3649242,joint uav trajectory optimization and edge end resource coordination via lyapunov guided multi agent drl
+R0032,SCOPUS-HR:0075,matching_doi_and_title,10.1109/tce.2025.3649242,joint uav trajectory optimization and edge end resource coordination via lyapunov guided multi agent drl
+R0032,OPENALEX-HR:0072,matching_doi_and_title,10.1109/tce.2025.3649242,joint uav trajectory optimization and edge end resource coordination via lyapunov guided multi agent drl
+R0033,IEEE-HR:0033,representative,10.1109/jiot.2024.3418882,distributed drl based intelligent over the air computation in unmanned aerial vehicle swarm assisted intelligent transportation system
+R0033,SCOPUS-HR:0035,matching_doi_and_title,10.1109/jiot.2024.3418882,distributed drl based intelligent over the air computation in unmanned aerial vehicle swarm assisted intelligent transportation system
+R0034,IEEE-HR:0034,representative,10.1109/jiot.2026.3710742,internet of drones iod for environmental monitoring a review of applications challenges and simulation methodologies
+R0034,OPENALEX-HR:0077,matching_doi_and_title,10.1109/jiot.2026.3710742,internet of drones iod for environmental monitoring a review of applications challenges and simulation methodologies
+R0035,IEEE-HR:0035,representative,10.1109/access.2026.3718358,uav based target detection tracking and prediction a survey from classical models to ai ran intelligence
+R0035,SCOPUS-HR:0021,matching_doi_and_title,10.1109/access.2026.3718358,uav based target detection tracking and prediction a survey from classical models to ai ran intelligence
+R0035,OPENALEX-HR:0084,matching_doi_and_title,10.1109/access.2026.3718358,uav based target detection tracking and prediction a survey from classical models to ai ran intelligence
+R0036,IEEE-HR:0036,representative,10.1109/tccn.2025.3641511,wider eyes in the sky scene adaptive video analytics in low altitude surveillance networks
+R0036,SCOPUS-HR:0032,matching_doi_and_title,10.1109/tccn.2025.3641511,wider eyes in the sky scene adaptive video analytics in low altitude surveillance networks
+R0037,IEEE-HR:0037,representative,10.1109/jiot.2026.3710025,federated multiagent reinforcement learning with knowledge reuse for robust cooperation in edge intelligent iot systems
+R0037,SCOPUS-HR:0045,matching_doi_and_title,10.1109/jiot.2026.3710025,federated multiagent reinforcement learning with knowledge reuse for robust cooperation in edge intelligent iot systems
+R0038,IEEE-HR:0038,representative,10.1109/wincom65874.2025.11313424,on convolutional neural networks for mini uav swarms
+R0038,SCOPUS-HR:0076,matching_doi_and_title,10.1109/wincom65874.2025.11313424,on convolutional neural networks for mini uav swarms
+R0038,OPENALEX-HR:0032,matching_doi_and_title,10.1109/wincom65874.2025.11313424,on convolutional neural networks for mini uav swarms
+R0039,IEEE-HR:0039,representative,10.1109/vtc2026-fall68024.2026.11758490,muninn multi hop uav network for intelligent non synchronous nodes
+R0039,OPENALEX-HR:0064,matching_doi_and_title,10.1109/vtc2026-fall68024.2026.11758490,muninn multi hop uav network for intelligent non synchronous nodes
+R0040,IEEE-HR:0040,representative,10.1109/tmc.2024.3455417,blockchain aided digital twin offloading mechanism in space air ground networks
+R0040,SCOPUS-HR:0061,matching_doi_and_title,10.1109/tmc.2024.3455417,blockchain aided digital twin offloading mechanism in space air ground networks
+R0040,OPENALEX-HR:0081,matching_doi_and_title,10.1109/tmc.2024.3455417,blockchain aided digital twin offloading mechanism in space air ground networks
+R0041,IEEE-HR:0041,representative,10.1109/icscn67106.2025.11308381,ai enabled cross layer qos routing framework for mission critical 5g 6g integrated manets and uav swarms
+R0041,SCOPUS-HR:0051,matching_doi_and_title,10.1109/icscn67106.2025.11308381,ai enabled cross layer qos routing framework for mission critical 5g 6g integrated manets and uav swarms
+R0041,OPENALEX-HR:0051,matching_doi_and_title,10.1109/icscn67106.2025.11308381,ai enabled cross layer qos routing framework for mission critical 5g 6g integrated manets and uav swarms
+R0042,IEEE-HR:0042,representative,10.1109/ispa67752.2025.00141,research on bipartite synchronization of multi agent systems in complex networks under distributed control strategies
+R0042,SCOPUS-HR:0077,matching_doi_and_title,10.1109/ispa67752.2025.00141,research on bipartite synchronization of multi agent systems in complex networks under distributed control strategies
+R0042,OPENALEX-HR:0074,matching_doi_and_title,10.1109/ispa67752.2025.00141,research on bipartite synchronization of multi agent systems in complex networks under distributed control strategies
+R0043,IEEE-COMP:0002,representative,10.1109/ucom59132.2023.10257649,multi uav maritime search and rescue with dnn inference acceleration
+R0043,SCOPUS-COMP:0012,matching_doi_and_title,10.1109/ucom59132.2023.10257649,multi uav maritime search and rescue with dnn inference acceleration
+R0043,OPENALEX-COMP:0001,matching_doi_and_title,10.1109/ucom59132.2023.10257649,multi uav maritime search and rescue with dnn inference acceleration
+R0044,IEEE-COMP:0003,representative,10.1109/ispce-asia64773.2024.10756252,dnn based task partitioning and offloading with reliability guarantees in multi uav assisted mec system
+R0044,SCOPUS-COMP:0033,matching_doi_and_title,10.1109/ispce-asia64773.2024.10756252,dnn based task partitioning and offloading with reliability guarantees in multi uav assisted mec system
+R0044,OPENALEX-COMP:0009,matching_doi_and_title,10.1109/ispce-asia64773.2024.10756252,dnn based task partitioning and offloading with reliability guarantees in multi uav assisted mec system
+R0045,IEEE-COMP:0006,representative,10.1109/jiot.2026.3685675,dnn task partitioning and migration strategies in multi uav assisted mobile edge computing
+R0045,SCOPUS-COMP:0008,matching_doi_and_title,10.1109/jiot.2026.3685675,dnn task partitioning and migration strategies in multi uav assisted mobile edge computing
+R0045,OPENALEX-COMP:0007,matching_doi_and_title,10.1109/jiot.2026.3685675,dnn task partitioning and migration strategies in multi uav assisted mobile edge computing
+R0046,IEEE-COMP:0010,representative,10.1109/twc.2026.3737476,intelligent 3d trajectory planning and resource allocation for heterogeneous multi uav communications using deep learning
+R0046,SCOPUS-COMP:0029,matching_doi_and_title,10.1109/twc.2026.3737476,intelligent 3d trajectory planning and resource allocation for heterogeneous multi uav communications using deep learning
+R0046,OPENALEX-COMP:0002,matching_doi_and_title,10.1109/twc.2026.3737476,intelligent 3d trajectory planning and resource allocation for heterogeneous multi uav communications using deep learning
+R0047,IEEE-COMP:0011,representative,10.1109/tmc.2025.3628608,joint uav placement and dependent task offloading in multi uav mec networks a graph attention enhanced drl approach
+R0047,SCOPUS-COMP:0016,matching_doi_and_title,10.1109/tmc.2025.3628608,joint uav placement and dependent task offloading in multi uav mec networks a graph attention enhanced drl approach
+R0047,OPENALEX-COMP:0011,matching_doi_and_title,10.1109/tmc.2025.3628608,joint uav placement and dependent task offloading in multi uav mec networks a graph attention enhanced drl approach
+R0048,IEEE-COMP:0012,representative,10.1109/tgcn.2025.3625726,toward inference latency optimization for scalable collaborative multi uav analytics
+R0049,IEEE-COMP:0014,representative,10.1109/tii.2025.3640714,multi uav interception decision making via meta reinforcement learning
+R0050,IEEE-COMP:0015,representative,10.1109/iccworkshops59551.2024.10615342,knowledge distillation based robust uav swarm communication under malicious attacks
+R0050,SCOPUS-COMP:0003,matching_doi_and_title,10.1109/iccworkshops59551.2024.10615342,knowledge distillation based robust uav swarm communication under malicious attacks
+R0050,OPENALEX-COMP:0021,matching_doi_and_title,10.1109/iccworkshops59551.2024.10615342,knowledge distillation based robust uav swarm communication under malicious attacks
+R0051,IEEE-COMP:0016,representative,10.1109/aset56582.2023.10180864,a review of link scheduling strategies in low density multi relay uavs assisted fanet
+R0052,IEEE-COMP:0017,representative,10.1109/icces67310.2025.11337136,energy efficient decentralized ai rfde drone swarm defense using transformer perception drl coordination and bayesian risk modeling
+R0053,IEEE-COMP:0018,representative,10.1109/tsmc.2026.3703463,aoi and energy efficient multi uav coordination via hierarchical deep reinforcement learning
+R0054,IEEE-COMP:0019,representative,10.1109/lwc.2026.3743641,heading coupled star ris assisted multi uav networks for semantic iscc
+R0054,SCOPUS-COMP:0013,matching_doi_and_title,10.1109/lwc.2026.3743641,heading coupled star ris assisted multi uav networks for semantic iscc
+R0054,OPENALEX-COMP:0013,matching_doi_and_title,10.1109/lwc.2026.3743641,heading coupled star ris assisted multi uav networks for semantic iscc
+R0055,IEEE-COMP:0020,representative,10.1109/wowmom69805.2026.00045,xgboost with temporal features for intra cluster uplink throughput prediction in 3d mobile hierarchical fanet scenarios
+R0055,SCOPUS-COMP:0030,matching_doi_and_title,10.1109/wowmom69805.2026.00045,xgboost with temporal features for intra cluster uplink throughput prediction in 3d mobile hierarchical fanet scenarios
+R0055,OPENALEX-COMP:0022,matching_doi_and_title,10.1109/wowmom69805.2026.00045,xgboost with temporal features for intra cluster uplink throughput prediction in 3d mobile hierarchical fanet scenarios
+R0056,IEEE-COMP:0021,representative,10.1109/sec62691.2024.00010,righteous automatic right sizing for complex edge deployments
+R0056,SCOPUS-COMP:0014,matching_doi_and_title,10.1109/sec62691.2024.00010,righteous automatic right sizing for complex edge deployments
+R0056,OPENALEX-COMP:0029,matching_doi_and_title,10.1109/sec62691.2024.00010,righteous automatic right sizing for complex edge deployments
+R0057,SCOPUS-HR:0002,representative,10.1109/icnc68183.2026.11416848,deepset enhanced edge reinforcement learning for uav autonomous landing and takeoff at portable vertiports
+R0058,SCOPUS-HR:0003,representative,10.1142/s0218126626440020,efficient ai inference offloading for uavs via distributed auctions in dynamic edge environments
+R0058,OPENALEX-HR:0062,matching_doi_and_title,10.1142/s0218126626440020,efficient ai inference offloading for uavs via distributed auctions in dynamic edge environments
+R0059,SCOPUS-HR:0005,representative,10.1016/j.cja.2025.103564,adaptive model switching of collaborative inference for multi cnn streams in uav swarm
+R0059,OPENALEX-HR:0012,matching_doi_and_title,10.1016/j.cja.2025.103564,adaptive model switching of collaborative inference for multi cnn streams in uav swarm
+R0060,SCOPUS-HR:0008,representative,10.3390/electronics15051016,distributed privacy preserving fusion for multi uav target localization via free noise masking
+R0061,SCOPUS-HR:0011,representative,10.71086/iajse/v12i3/iajse1273,autonomous drone swarms for environmental monitoring and wildfire detection using edge intelligence
+R0061,OPENALEX-HR:0014,matching_doi_and_title,10.71086/iajse/v12i3/iajse1273,autonomous drone swarms for environmental monitoring and wildfire detection using edge intelligence
+R0062,SCOPUS-HR:0013,representative,10.1109/mcom.002.2300129,elastic collaborative edge intelligence for uav swarm architecture challenges and opportunities
+R0062,OPENALEX-HR:0001,matching_doi_and_title,10.1109/mcom.002.2300129,elastic collaborative edge intelligence for uav swarm architecture challenges and opportunities
+R0063,SCOPUS-HR:0014,representative,10.3389/fnbot.2026.1799054,a cognitive synergetic hierarchical framework for uav swarm combat via speculative inference and role decoupled reinforcement learning
+R0063,OPENALEX-HR:0047,matching_doi_and_title,10.3389/fnbot.2026.1799054,a cognitive synergetic hierarchical framework for uav swarm combat via speculative inference and role decoupled reinforcement learning
+R0064,SCOPUS-HR:0016,representative,10.1016/j.comnet.2025.111540,joint optimization of data sensing and computing in the air ground collaborative inference framework a multi agent hybrid action drl approach
+R0064,SCOPUS-COMP:0018,matching_doi_and_title,10.1016/j.comnet.2025.111540,joint optimization of data sensing and computing in the air ground collaborative inference framework a multi agent hybrid action drl approach
+R0064,OPENALEX-HR:0053,matching_doi_and_title,10.1016/j.comnet.2025.111540,joint optimization of data sensing and computing in the air ground collaborative inference framework a multi agent hybrid action drl approach
+R0064,OPENALEX-COMP:0025,matching_doi_and_title,10.1016/j.comnet.2025.111540,joint optimization of data sensing and computing in the air ground collaborative inference framework a multi agent hybrid action drl approach
+R0065,SCOPUS-HR:0017,representative,10.1109/jiot.2025.3640212,data poisoning offensive and defensive system in fl enabled low altitude iot scenario unlearnable example attack and model similarity defend
+R0065,OPENALEX-HR:0076,matching_doi_and_title,10.1109/jiot.2025.3640212,data poisoning offensive and defensive system in fl enabled low altitude iot scenario unlearnable example attack and model similarity defend
+R0066,SCOPUS-HR:0018,representative,10.3390/drones10010021,adaptive edge intelligent joint optimization of uav computation offloading and trajectory under time varying channels
+R0067,SCOPUS-HR:0020,representative,10.1109/access.2026.3717031,edge responsive local repair particle swarm optimization for dynamic spatiotemporal task allocation of iot connected uav swarms
+R0067,OPENALEX-HR:0052,matching_doi_and_title,10.1109/access.2026.3717031,edge responsive local repair particle swarm optimization for dynamic spatiotemporal task allocation of iot connected uav swarms
+R0068,SCOPUS-HR:0022,representative,10.1109/access.2025.3572036,multi agent meta reinforcement learning for reliable and low latency distributed inference in resource constrained uav swarms
+R0068,OPENALEX-HR:0020,matching_doi_and_title,10.1109/access.2025.3572036,multi agent meta reinforcement learning for reliable and low latency distributed inference in resource constrained uav swarms
+R0069,SCOPUS-HR:0023,representative,10.1109/icdcsw63273.2025.00070,bridging mobility and federated learning toward dynamic client orchestration in distributed edge systems
+R0070,SCOPUS-HR:0024,representative,10.1049/cmu2.12570,joint uav deployment sf placement and collaborative task scheduling in heterogeneous multi uav empowered edge intelligence
+R0070,OPENALEX-HR:0029,matching_doi_and_title,10.1049/cmu2.12570,joint uav deployment sf placement and collaborative task scheduling in heterogeneous multi uav empowered edge intelligence
+R0071,SCOPUS-HR:0025,representative,10.1109/icc52391.2025.11162059,le mhappo enhanced dnn task partitioning in energy harvesting heterogeneous uav swarms
+R0071,SCOPUS-COMP:0027,matching_doi_and_title,10.1109/icc52391.2025.11162059,le mhappo enhanced dnn task partitioning in energy harvesting heterogeneous uav swarms
+R0072,SCOPUS-HR:0026,representative,10.1109/ciot67574.2025.11410131,safelearning mobility aware client selection in federated edge learning over uav networks
+R0073,SCOPUS-HR:0027,representative,10.3390/app142310832,end to end latency optimization for resilient distributed convolutional neural network inference in resource constrained unmanned aerial vehicle swarms
+R0073,OPENALEX-HR:0060,matching_doi_and_title,10.3390/app142310832,end to end latency optimization for resilient distributed convolutional neural network inference in resource constrained unmanned aerial vehicle swarms
+R0074,SCOPUS-HR:0028,representative,10.3390/drones10060410,orion a collaborative edge inference framework for large language models processing multi sensor data in uav swarms
+R0074,OPENALEX-HR:0045,matching_doi_and_title,10.3390/drones10060410,orion a collaborative edge inference framework for large language models processing multi sensor data in uav swarms
+R0075,SCOPUS-HR:0030,representative,10.1109/jiot.2026.3746980,cider collaborative inference with distilled early exit routing for multi uav edge networks
+R0075,SCOPUS-COMP:0001,matching_doi_and_title,10.1109/jiot.2026.3746980,cider collaborative inference with distilled early exit routing for multi uav edge networks
+R0075,OPENALEX-HR:0022,matching_doi_and_title,10.1109/jiot.2026.3746980,cider collaborative inference with distilled early exit routing for multi uav edge networks
+R0075,OPENALEX-COMP:0010,matching_doi_and_title,10.1109/jiot.2026.3746980,cider collaborative inference with distilled early exit routing for multi uav edge networks
+R0076,SCOPUS-HR:0034,representative,10.1109/lwc.2024.3518694,communication aware optimizers for fedmeta learning in aerial wireless networks
+R0076,OPENALEX-HR:0079,matching_doi_and_title,10.1109/lwc.2024.3518694,communication aware optimizers for fedmeta learning in aerial wireless networks
+R0077,SCOPUS-HR:0037,representative,10.1016/j.sysarc.2026.103804,distributed split computing using diffusive metrics for uav swarms
+R0077,OPENALEX-HR:0003,matching_doi_and_title,10.1016/j.sysarc.2026.103804,distributed split computing using diffusive metrics for uav swarms
+R0078,SCOPUS-HR:0039,representative,10.1038/s41598-026-46456-3,an intelligent and adaptive security framework for uav swarms a cross layer approach integrating highly reliable epuf drl based key management and distributed ledger technology
+R0078,OPENALEX-HR:0058,matching_doi_and_title,10.1038/s41598-026-46456-3,an intelligent and adaptive security framework for uav swarms a cross layer approach integrating highly reliable epuf drl based key management and distributed ledger technology
+R0079,SCOPUS-HR:0041,representative,10.3390/drones10070481,cc mbs a missing modality robust multimodal sample selection strategy for uav swarms
+R0080,SCOPUS-HR:0042,representative,10.1109/vtc2025-fall65116.2025.11310097,edge cloud collaborative model inference for aerial networks with distributionally diverse data
+R0080,OPENALEX-HR:0054,matching_doi_and_title,10.1109/vtc2025-fall65116.2025.11310097,edge cloud collaborative model inference for aerial networks with distributionally diverse data
+R0081,SCOPUS-HR:0043,representative,10.1145/3498361.3538674,idea intelligent divine eye on air through multi uav collaborative inference
+R0081,OPENALEX-HR:0015,matching_doi_and_title,10.1145/3498361.3538674,idea intelligent divine eye on air through multi uav collaborative inference
+R0081,ACM-HR+COMP:0003,matching_doi_and_title,10.1145/3498361.3538674,idea intelligent divine eye on air through multi uav collaborative inference
+R0081,ACM-HR+COMP:0092,matching_doi_and_title,10.1145/3498361.3538674,idea intelligent divine eye on air through multi uav collaborative inference
+R0082,SCOPUS-HR:0046,representative,10.1109/wcnc55385.2023.10118908,llhr low latency and high reliability cnn distributed inference for resource constrained uav swarms
+R0082,OPENALEX-HR:0017,matching_doi_and_title,10.1109/wcnc55385.2023.10118908,llhr low latency and high reliability cnn distributed inference for resource constrained uav swarms
+R0083,SCOPUS-HR:0049,representative,10.1016/j.iot.2024.101479,distributed inference in iot based aerial network of uavs
+R0083,OPENALEX-HR:0013,matching_doi_and_title,10.1016/j.iot.2024.101479,distributed inference in iot based aerial network of uavs
+R0084,SCOPUS-HR:0053,representative,10.1109/jiot.2025.3631644,quarta 6g unified post quantum security and quantum learning for uavs in 6g iot
+R0084,OPENALEX-HR:0067,matching_doi_and_title,10.1109/jiot.2025.3631644,quarta 6g unified post quantum security and quantum learning for uavs in 6g iot
+R0085,SCOPUS-HR:0055,representative,10.1007/s11276-024-03804-3,enhancing uav assisted vehicle edge computing networks through a digital twin driven task offloading framework
+R0086,SCOPUS-HR:0058,representative,10.1109/wcnc57260.2024.10570608,a time continuous federated learning framework for enabling intelligent applications over latency critical aerial networks
+R0087,SCOPUS-HR:0060,representative,10.1109/tce.2025.3528928,qoe aware multicast unicast transmission scheme for multi uav assisted virtual reality live streaming systems
+R0087,OPENALEX-HR:0057,matching_doi_and_title,10.1109/tce.2025.3528928,qoe aware multicast unicast transmission scheme for multi uav assisted virtual reality live streaming systems
+R0088,SCOPUS-HR:0062,representative,10.3390/sym17101758,an efficient task scheduling framework for large scale 3d reconstruction in multi uav edge intelligence systems
+R0088,OPENALEX-HR:0028,matching_doi_and_title,10.3390/sym17101758,an efficient task scheduling framework for large scale 3d reconstruction in multi uav edge intelligence systems
+R0089,SCOPUS-HR:0064,representative,10.1016/j.phycom.2023.102129,a hybrid fast inference approach with distributed neural networks for edge computing enabled uav swarm
+R0089,SCOPUS-COMP:0022,matching_doi_and_title,10.1016/j.phycom.2023.102129,a hybrid fast inference approach with distributed neural networks for edge computing enabled uav swarm
+R0089,OPENALEX-COMP:0018,matching_doi_and_title,10.1016/j.phycom.2023.102129,a hybrid fast inference approach with distributed neural networks for edge computing enabled uav swarm
+R0090,SCOPUS-HR:0066,representative,10.1109/icoeit63558.2025.11457712,aeroagrinet swarm enabled flying edge framework for real time agricultural intelligence
+R0091,SCOPUS-HR:0067,representative,10.1016/j.comcom.2022.06.017,deep reinforcement learning based joint task and energy offloading in uav aided 6g intelligent edge networks
+R0091,OPENALEX-HR:0065,matching_doi_and_title,10.1016/j.comcom.2022.06.017,deep reinforcement learning based joint task and energy offloading in uav aided 6g intelligent edge networks
+R0092,SCOPUS-HR:0068,representative,10.1109/jiot.2026.3740035,a drl assisted decentralized framework for uav swarm collaborative inference
+R0092,SCOPUS-COMP:0025,matching_doi_and_title,10.1109/jiot.2026.3740035,a drl assisted decentralized framework for uav swarm collaborative inference
+R0092,OPENALEX-HR:0006,matching_doi_and_title,10.1109/jiot.2026.3740035,a drl assisted decentralized framework for uav swarm collaborative inference
+R0092,OPENALEX-COMP:0015,matching_doi_and_title,10.1109/jiot.2026.3740035,a drl assisted decentralized framework for uav swarm collaborative inference
+R0093,SCOPUS-HR:0070,representative,10.1109/ccgrid68966.2026.00051,rda cafl reputation dynamic and distillation based asynchronous conflict aware federated learning for uav networks
+R0093,OPENALEX-HR:0068,matching_doi_and_title,10.1109/ccgrid68966.2026.00051,rda cafl reputation dynamic and distillation based asynchronous conflict aware federated learning for uav networks
+R0094,SCOPUS-HR:0072,representative,10.1016/j.pmcj.2021.101340,geese edge computing enabled by uavs
+R0095,SCOPUS-HR:0073,representative,10.1016/j.adhoc.2026.104347,multi uav cooperative inference for iovs dynamic partitioning and caching optimization
+R0095,OPENALEX-HR:0011,matching_doi_and_title,10.1016/j.adhoc.2026.104347,multi uav cooperative inference for iovs dynamic partitioning and caching optimization
+R0096,SCOPUS-COMP:0002,representative,10.1145/3714394.3756181,aries autonomous reconnaissance inspection and exploration system for hybrid single and multi uav building inspection approach after disaster
+R0096,OPENALEX-COMP:0020,matching_doi_and_title,10.1145/3714394.3756181,aries autonomous reconnaissance inspection and exploration system for hybrid single and multi uav building inspection approach after disaster
+R0096,ACM-HR+COMP:0086,matching_doi_and_title,10.1145/3714394.3756181,aries autonomous reconnaissance inspection and exploration system for hybrid single and multi uav building inspection approach after disaster
+R0097,SCOPUS-COMP:0004,representative,10.1109/jiot.2025.3601983,ai empowered multi uav and irs collaboration for spectrum and energy optimization in b5g networks
+R0098,SCOPUS-COMP:0005,representative,10.1007/s42486-024-00159-8,distributed multi agent deep reinforcement learning for trajectory planning in uavs assisted edge offloading
+R0099,SCOPUS-COMP:0007,representative,10.18196/jrc.v6i6.28366,high throughput uav video processing a multithreaded architecture for real time deep learning based image analysis
+R0099,OPENALEX-COMP:0026,matching_doi_and_title,10.18196/jrc.v6i6.28366,high throughput uav video processing a multithreaded architecture for real time deep learning based image analysis
+R0100,SCOPUS-COMP:0009,representative,10.1109/tnse.2025.3621064,gae lstms an end to end method for topology inference in dynamic communication networks
+R0100,OPENALEX-COMP:0027,matching_doi_and_title,10.1109/tnse.2025.3621064,gae lstms an end to end method for topology inference in dynamic communication networks
+R0101,SCOPUS-COMP:0017,representative,10.1007/s11760-026-05331-4,a hybrid deep learning and heuristic framework for optimizing 3d deployment of multi uav assisted multi user systems
+R0101,OPENALEX-COMP:0012,matching_doi_and_title,10.1007/s11760-026-05331-4,a hybrid deep learning and heuristic framework for optimizing 3d deployment of multi uav assisted multi user systems
+R0102,SCOPUS-COMP:0020,representative,10.1007/978-981-95-3324-4_49,a lightweight resource scheduling method for multi uavs based on eas lrpo
+R0103,SCOPUS-COMP:0021,representative,10.1109/icpsasia70813.2026.11692071,joint task allocation and charging scheduling for uavs managing corridor congestion and non linear hovering penalties
+R0104,SCOPUS-COMP:0023,representative,10.3390/drones10050394,adaptive reinforcement learning driven jellyfish search optimizer for cooperative multi uav path planning under dynamic and adversarial conditions
+R0105,SCOPUS-COMP:0024,representative,10.1109/ccpqt66408.2025.11383452,green multi agent collaborative networking with integrated sensing communication and computing a reinforcement learning approach
+R0106,SCOPUS-COMP:0026,representative,10.1109/twc.2025.3573654,robust group target awareness inference in multi uav enabled iscc networks based on split deep reinforcement learning
+R0107,SCOPUS-COMP:0032,representative,10.1109/tvt.2026.3733130,joint semantic compression and resource allocation for multi uav networks a knowledge guided reinforcement learning approach
+R0108,OPENALEX-HR:0010,representative,10.64771/ijesat.2023.v23.i11.3915,blockchain integrated secure edge intelligence framework for autonomous drone swarms
+R0109,OPENALEX-HR:0016,representative,10.48550/arxiv.2606.09099,laei layered autonomous edge intelligence framework for robust uav swarm operations
+R0110,OPENALEX-HR:0018,representative,10.1109/tvt.2026.3755123,rdi llm a resilient distributed inference framework for llms in resource constrained uav swarms
+R0111,OPENALEX-HR:0019,representative,10.47297/taposatwsp2633-456945.20250608,research on ground wide area network communication coverage method based on multi uav swarm
+R0112,OPENALEX-HR:0021,representative,10.1007/978-3-032-23347-9_10,architectures and methods for cooperative autonomy in multi uav swarms a prisma guided systematic review and research agenda
+R0113,OPENALEX-HR:0026,representative,,a neuromorphic spiking neural network based continual learning framework for energy efficient edge intelligence in autonomous uav swarm navigation
+R0114,OPENALEX-HR:0033,representative,10.62311/nesx/rb978-81-981662-2-7,ai in autonomous drone swarms coordinating complex missions
+R0115,OPENALEX-HR:0036,representative,10.57945/manara.hbku.31989888,efficient management of resource constrained uav swarms in critical applications
+R0116,OPENALEX-HR:0037,representative,10.5281/zenodo.20404255,d maker distributed evidential reasoning for interpretable collaborative inference
+R0117,OPENALEX-HR:0038,representative,10.59461/ijdiic.v5i3.298,an integrated iot ai uav swarm architecture for intelligent autonomous airport security
+R0118,OPENALEX-HR:0039,representative,10.1109/jiot.2026.3755315,netmoe joint trajectory planning and distributed mixture of experts inference for uav swarms
+R0118,OPENALEX-COMP:0016,matching_doi_and_title,10.1109/jiot.2026.3755315,netmoe joint trajectory planning and distributed mixture of experts inference for uav swarms
+R0119,OPENALEX-HR:0044,representative,10.36094/sc.v92.2026.reinforcement_learning_for_routing_and_resource.roy.711,reinforcement learning for routing and resource allocation in fanet a review
+R0120,OPENALEX-HR:0046,representative,10.36227/techrxiv.176800919.99207548/v1,lsp swarm a learned semantic protocol for resilient multi hop distributed inference
+R0121,OPENALEX-HR:0049,representative,10.23939/ictee2026.02.144,a link layer model of a uav swarm mesh network with encapsulation of intermediate deep neural network activations analytical evaluation of latency and traffic volume
+R0121,OPENALEX-COMP:0017,matching_doi_and_title,10.23939/ictee2026.02.144,a link layer model of a uav swarm mesh network with encapsulation of intermediate deep neural network activations analytical evaluation of latency and traffic volume
+R0122,OPENALEX-HR:0055,representative,10.1145/3842721.3850224,trust driven multi criteria aerial networking for mission critical iot with localization uncertainty
+R0123,OPENALEX-HR:0056,representative,10.62306/d54q8p10,multimodal large models driven precise perception in complex low altitude uav environments a survey on adaptive edge intelligence and swarm collaboration
+R0124,OPENALEX-HR:0059,representative,10.1109/access.2026.3752136,edge intelligence for resource constrained micro and nano uavs a cross layer review from onboard tinyml to cooperative swarm autonomy
+R0125,OPENALEX-HR:0063,representative,10.1109/sm69703.2026.11614110,uav extreme edge computing for real time ai inference a distributed processing approach
+R0126,OPENALEX-HR:0066,representative,10.5772/intechopen.1011880,knowledge aggregation in autonomous systems via pre trained model
+R0127,OPENALEX-HR:0069,representative,10.20944/preprints202601.1224.v1,energy efficient drone design with solar powered hybrid propulsion system for extended flight duration
+R0128,OPENALEX-HR:0070,representative,10.1109/miot.2026.3711893,toward secure visual semantic communication a semantic segmentation perspective
+R0129,OPENALEX-HR:0073,representative,10.48550/arxiv.2607.20280,chained attacks on drone based federated learning from network disruption to device impersonation
+R0130,OPENALEX-HR:0075,representative,10.1007/978-3-032-39125-4_4,digital twin assisted offloading and resource allocation optimisation for a multi agent low altitude economy networks
+R0131,OPENALEX-HR:0078,representative,10.54097/99gpx908,toward 6g empowered multi machine collaboration in smart agriculture a communication control co design survey
+R0132,OPENALEX-HR:0080,representative,10.5281/zenodo.20445205,human centred and explainable ai framework for operational deployment of transformer marl distributed air defence systems in contested electromagnetic environments
+R0133,OPENALEX-HR:0082,representative,10.62762/jcn.2026.328644,toward low carbon aerial intelligence a comprehensive review of evolution applications and future trends
+R0134,OPENALEX-HR:0083,representative,10.1007/s44163-026-02678-y,intelligent uav technologies for public safety applications a structured narrative review and future research directions
+R0135,OPENALEX-HR:0085,representative,10.32604/cmc.2026.085383,a comprehensive review on integrated sensing communication and computing in internet of vehicles through unmanned aerial vehicle recent advances key technologies and future directions
+R0136,OPENALEX-COMP:0008,representative,10.48550/arxiv.2605.03898,joint scheduling of sensing data offloading and edge inference for multi uav networks
+R0137,OPENALEX-COMP:0014,representative,10.1109/tcsvt.2026.3745821,marl based reliability aware video analytics in multi uav assisted mec systems
+R0138,OPENALEX-COMP:0028,representative,10.1360/ssi-2021-0179,toward cooperative multi agent video streaming perception
+R0139,OPENALEX-COMP:0030,representative,10.56975/ijedr.v13i1.309323,high performance aerial object detection leveraging yolo and pyspark in a distributed computing environment
+R0140,OPENALEX-COMP:0031,representative,,decentralized mission planning for multiple unmanned aerial vehicles
+R0141,ACM-HR+COMP:0001,representative,10.1145/3786145,dnn partitioning for cooperative inference in edge intelligence modeling solutions toolchains
+R0141,ACM-HR+COMP:0089,matching_doi_and_title,10.1145/3786145,dnn partitioning for cooperative inference in edge intelligence modeling solutions toolchains
+R0142,ACM-HR+COMP:0002,representative,10.1145/3817395.3817421,development of drone swarm intelligence applications
+R0143,ACM-HR+COMP:0004,representative,10.1109/tnet.2024.3423316,cost efficient federated learning for edge intelligence in multi cell networks
+R0144,ACM-HR+COMP:0005,representative,10.1145/3770501.3770508,real time edge intelligence in uav for search and rescue onboard energy efficient video summarisation with reduced data transmission
+R0145,ACM-HR+COMP:0006,representative,10.1145/3774655,llm based uav path planning for autonomous and adaptive industry systems
+R0145,ACM-HR+COMP:0094,matching_doi_and_title,10.1145/3774655,llm based uav path planning for autonomous and adaptive industry systems
+R0146,ACM-HR+COMP:0007,representative,10.1145/3769102.3774243,edge enabled scalable routing via graph neural network pruning and metaheuristic optimization
+R0147,ACM-HR+COMP:0008,representative,10.1145/3848509,training machine learning models at the edge a survey
+R0147,ACM-HR+COMP:0155,matching_doi_and_title,10.1145/3848509,training machine learning models at the edge a survey
+R0148,ACM-HR+COMP:0009,representative,10.1145/3801359.3801406,two stage deep energy optimization for uav assisted edge computing jointtask offloading and deployment
+R0149,ACM-HR+COMP:0010,representative,10.1145/3828658,recent advances in transformer and large language models for uav applications
+R0149,ACM-HR+COMP:0109,matching_doi_and_title,10.1145/3828658,recent advances in transformer and large language models for uav applications
+R0150,ACM-HR+COMP:0011,representative,10.1145/3817395,bdim 26 proceedings of the 2026 international conference on big data and intelligent manufacturing
+R0150,ACM-HR+COMP:0111,exact_title_year_acm_proceeding,,bdim 26 proceedings of the 2026 international conference on big data and intelligent manufacturing
+R0151,ACM-HR+COMP:0012,representative,10.1145/3761817,introduction to the special issue on intelligent applications of web 3 0 and metaverse for connected autonomous vehicles
+R0152,ACM-HR+COMP:0013,representative,10.1145/3626566,a survey on uav enabled edge computing resource management perspective
+R0153,ACM-HR+COMP:0014,representative,10.1145/3737899,fledge ai 25 proceedings of the federated learning and edge ai for privacy and mobility
+R0153,ACM-HR+COMP:0136,exact_title_year_acm_proceeding,,fledge ai 25 proceedings of the federated learning and edge ai for privacy and mobility
+R0154,ACM-HR+COMP:0015,representative,10.1145/3606018,a survey of next generation computing technologies in space air ground integrated networks
+R0154,ACM-HR+COMP:0143,matching_doi_and_title,10.1145/3606018,a survey of next generation computing technologies in space air ground integrated networks
+R0155,ACM-HR+COMP:0016,representative,10.1145/3811238,icaiagent 26 proceedings of the 2026 international conference on artificial intelligence and agents
+R0155,ACM-HR+COMP:0149,exact_title_year_acm_proceeding,,icaiagent 26 proceedings of the 2026 international conference on artificial intelligence and agents
+R0156,ACM-HR+COMP:0017,representative,10.1145/3749566,iotml 25 proceedings of the 2025 5th international conference on internet of things and machine learning
+R0156,ACM-HR+COMP:0125,exact_title_year_acm_proceeding,,iotml 25 proceedings of the 2025 5th international conference on internet of things and machine learning
+R0157,ACM-HR+COMP:0018,matching_doi_and_title,10.1145/3769102.3774247,e2ar an energy efficient augmented reality framework for collaborative multi drone systems
+R0157,ACM-HR+COMP:0174,representative,10.1145/3769102.3774247,e2ar an energy efficient augmented reality framework for collaborative multi drone systems
+R0158,ACM-HR+COMP:0019,representative,10.1145/3768740,smbd 25 proceedings of the 2025 international conference on simulation modeling and big data
+R0158,ACM-HR+COMP:0133,exact_title_year_acm_proceeding,,smbd 25 proceedings of the 2025 international conference on simulation modeling and big data
+R0159,ACM-HR+COMP:0020,representative,10.1145/3842721,mobihoc 26 proceedings of the twenty seventh international symposium on theory algorithmic foundations and protocol design for mobile networks and mobile computing
+R0159,ACM-HR+COMP:0159,exact_title_year_acm_proceeding,,mobihoc 26 proceedings of the twenty seventh international symposium on theory algorithmic foundations and protocol design for mobile networks and mobile computing
+R0160,ACM-HR+COMP:0021,representative,10.1145/3797911,energy efficient resource management in microservices based fog and edge computing state of the art and future directions
+R0160,ACM-HR+COMP:0100,matching_doi_and_title,10.1145/3797911,energy efficient resource management in microservices based fog and edge computing state of the art and future directions
+R0161,ACM-HR+COMP:0022,representative,10.1145/3727505,bdcta 25 proceedings of the 2025 international conference on big data communication technology and computer applications
+R0161,ACM-HR+COMP:0147,exact_title_year_acm_proceeding,,bdcta 25 proceedings of the 2025 international conference on big data communication technology and computer applications
+R0162,ACM-HR+COMP:0023,representative,10.1145/3703154,a survey on emerging trends and applications of 5g and 6g to healthcare environments
+R0163,ACM-HR+COMP:0024,matching_doi_and_title,10.1145/3603165,acm turc 23 proceedings of the acm turing award celebration conference china 2023
+R0163,ACM-HR+COMP:0201,representative,10.1145/3603165,acm turc 23 proceedings of the acm turing award celebration conference china 2023
+R0164,ACM-HR+COMP:0025,representative,10.1145/3659946,integration of sensing communication and computing for metaverse a survey
+R0164,ACM-HR+COMP:0207,matching_doi_and_title,10.1145/3659946,integration of sensing communication and computing for metaverse a survey
+R0165,ACM-HR+COMP:0026,representative,10.1145/3735672,qstmf quantum secured trust management framework for vanets in web 3 0 and metaverse
+R0166,ACM-HR+COMP:0027,representative,10.1145/3677404,ecpdc 24 proceedings of the 2024 international academic conference on edge computing parallel and distributed computing
+R0166,ACM-HR+COMP:0237,matching_doi_and_title,10.1145/3677404,ecpdc 24 proceedings of the 2024 international academic conference on edge computing parallel and distributed computing
+R0167,ACM-HR+COMP:0028,representative,10.1145/3760269,acaib 25 proceedings of the 2025 5th international conference on automation control algorithm and intelligent bionics
+R0167,ACM-HR+COMP:0245,matching_doi_and_title,10.1145/3760269,acaib 25 proceedings of the 2025 5th international conference on automation control algorithm and intelligent bionics
+R0168,ACM-HR+COMP:0029,representative,10.1145/3770501,iot 25 proceedings of the 15th international conference on the internet of things
+R0168,ACM-HR+COMP:0221,matching_doi_and_title,10.1145/3770501,iot 25 proceedings of the 15th international conference on the internet of things
+R0169,ACM-HR+COMP:0030,representative,10.1145/3804601,caice 26 proceedings of the 5th international conference on computer artificial intelligence and control engineering
+R0169,ACM-HR+COMP:0161,exact_title_year_acm_proceeding,,caice 26 proceedings of the 5th international conference on computer artificial intelligence and control engineering
+R0170,ACM-HR+COMP:0031,representative,10.1109/tnet.2022.3226458,a secure and intelligent data sharing scheme for uav assisted disaster rescue
+R0171,ACM-HR+COMP:0032,representative,10.1145/3789456,iccns 25 proceedings of the 2025 15th international conference on communication and network security
+R0171,ACM-HR+COMP:0293,matching_doi_and_title,10.1145/3789456,iccns 25 proceedings of the 2025 15th international conference on communication and network security
+R0172,ACM-HR+COMP:0033,representative,10.1145/3631461,icdcn 24 proceedings of the 25th international conference on distributed computing and networking
+R0172,ACM-HR+COMP:0240,matching_doi_and_title,10.1145/3631461,icdcn 24 proceedings of the 25th international conference on distributed computing and networking
+R0173,ACM-HR+COMP:0034,matching_doi_and_title,10.1145/3813822,cibda 26 proceedings of the 2026 7th international conference on computer information and big data applications
+R0173,ACM-HR+COMP:0182,representative,10.1145/3813822,cibda 26 proceedings of the 2026 7th international conference on computer information and big data applications
+R0174,ACM-HR+COMP:0035,matching_doi_and_title,10.1145/3701100,admit 24 proceedings of the 2024 3rd international conference on algorithms data mining and information technology
+R0174,ACM-HR+COMP:0206,representative,10.1145/3701100,admit 24 proceedings of the 2024 3rd international conference on algorithms data mining and information technology
+R0175,ACM-HR+COMP:0036,representative,10.1145/3801359,bdcta 26 proceedings of the 2026 2nd international conference on big data communication technology and computer applications
+R0175,ACM-HR+COMP:0151,exact_title_year_acm_proceeding,,bdcta 26 proceedings of the 2026 2nd international conference on big data communication technology and computer applications
+R0176,ACM-HR+COMP:0037,matching_doi_and_title,10.1145/3856389,aiiip 26 proceedings of the 2026 5th international conference on artificial intelligence and intelligent information processing
+R0176,ACM-HR+COMP:0198,representative,10.1145/3856389,aiiip 26 proceedings of the 2026 5th international conference on artificial intelligence and intelligent information processing
+R0176,ACM-HR+COMP:0200,matching_doi_and_title,10.1145/3856389,aiiip 26 proceedings of the 2026 5th international conference on artificial intelligence and intelligent information processing
+R0177,ACM-HR+COMP:0038,representative,10.1145/3838323,icdsic 26 proceedings of the 2026 2nd international conference on digital society and intelligent computing
+R0177,ACM-HR+COMP:0168,exact_title_year_acm_proceeding,,icdsic 26 proceedings of the 2026 2nd international conference on digital society and intelligent computing
+R0178,ACM-HR+COMP:0039,representative,10.1145/3620665,asplos 24 proceedings of the 29th acm international conference on architectural support for programming languages and operating systems volume 2
+R0178,ACM-HR+COMP:0231,matching_doi_and_title,10.1145/3620665,asplos 24 proceedings of the 29th acm international conference on architectural support for programming languages and operating systems volume 2
+R0179,ACM-HR+COMP:0040,representative,10.1145/3672758,caice 24 proceedings of the 3rd international conference on computer artificial intelligence and control engineering
+R0179,ACM-HR+COMP:0275,matching_doi_and_title,10.1145/3672758,caice 24 proceedings of the 3rd international conference on computer artificial intelligence and control engineering
+R0180,ACM-HR+COMP:0041,matching_doi_and_title,10.1145/3583740,sec 23 proceedings of the eighth acm ieee symposium on edge computing
+R0180,ACM-HR+COMP:0192,representative,10.1145/3583740,sec 23 proceedings of the eighth acm ieee symposium on edge computing
+R0181,ACM-HR+COMP:0042,representative,10.1145/3776865,iotcct 25 proceedings of the 2025 3rd international conference on internet of things and cloud computing technology
+R0181,ACM-HR+COMP:0307,matching_doi_and_title,10.1145/3776865,iotcct 25 proceedings of the 2025 3rd international conference on internet of things and cloud computing technology
+R0182,ACM-HR+COMP:0043,representative,10.1145/3789418,icacs 25 proceedings of the 9th international conference on algorithms computing and systems
+R0182,ACM-HR+COMP:0316,matching_doi_and_title,10.1145/3789418,icacs 25 proceedings of the 9th international conference on algorithms computing and systems
+R0183,ACM-HR+COMP:0044,representative,10.1145/3795866,mobicom 26 proceedings of the 32nd annual international conference on mobile computing and networking
+R0184,ACM-HR+COMP:0045,matching_doi_and_title,10.1145/3841323,icccm 26 proceedings of the 14th international conference on computer and communications management
+R0184,ACM-HR+COMP:0180,representative,10.1145/3841323,icccm 26 proceedings of the 14th international conference on computer and communications management
+R0185,ACM-HR+COMP:0046,matching_doi_and_title,10.1145/3800227,icbar 25 proceedings of the 2025 5th international conference on big data artificial intelligence and risk management
+R0185,ACM-HR+COMP:0203,representative,10.1145/3800227,icbar 25 proceedings of the 2025 5th international conference on big data artificial intelligence and risk management
+R0186,ACM-HR+COMP:0047,representative,10.1145/3821725,mlnn 26 proceedings of the 2026 international conference on machine learning and neural networks
+R0186,ACM-HR+COMP:0175,exact_title_year_acm_proceeding,,mlnn 26 proceedings of the 2026 international conference on machine learning and neural networks
+R0187,ACM-HR+COMP:0048,representative,10.1145/3686490,spml 24 proceedings of the 2024 7th international conference on signal processing and machine learning
+R0187,ACM-HR+COMP:0327,matching_doi_and_title,10.1145/3686490,spml 24 proceedings of the 2024 7th international conference on signal processing and machine learning
+R0188,ACM-HR+COMP:0049,matching_doi_and_title,10.1145/3807246,caic 26 proceedings of the 2026 international conference on artificial intelligence and control
+R0188,ACM-HR+COMP:0188,representative,10.1145/3807246,caic 26 proceedings of the 2026 international conference on artificial intelligence and control
+R0189,ACM-HR+COMP:0050,representative,10.1145/3801438,mida 2026 proceedings of the 3rd international conference on machine intelligence and digital applications
+R0189,ACM-HR+COMP:0170,exact_title_year_acm_proceeding,,mida 2026 proceedings of the 3rd international conference on machine intelligence and digital applications
+R0190,ACM-HR+COMP:0051,representative,10.1145/3664647,mm 24 proceedings of the 32nd acm international conference on multimedia
+R0190,ACM-HR+COMP:0312,matching_doi_and_title,10.1145/3664647,mm 24 proceedings of the 32nd acm international conference on multimedia
+R0191,ACM-HR+COMP:0052,matching_doi_and_title,10.1145/3829441,mlic 26 proceedings of the 2026 3rd international conference on machine learning and intelligent computing
+R0191,ACM-HR+COMP:0185,representative,10.1145/3829441,mlic 26 proceedings of the 2026 3rd international conference on machine learning and intelligent computing
+R0192,ACM-HR+COMP:0053,representative,10.1145/3856520,bdaie 2026 proceedings of the 2026 2nd international conference on big data artificial intelligence and digital economy
+R0192,ACM-HR+COMP:0225,matching_doi_and_title,10.1145/3856520,bdaie 2026 proceedings of the 2026 2nd international conference on big data artificial intelligence and digital economy
+R0193,ACM-HR+COMP:0054,representative,10.1145/3661638,aisns 23 proceedings of the 2023 international conference on artificial intelligence systems and network security
+R0193,ACM-HR+COMP:0352,matching_doi_and_title,10.1145/3661638,aisns 23 proceedings of the 2023 international conference on artificial intelligence systems and network security
+R0194,ACM-HR+COMP:0055,representative,10.1145/3638884,iccip 23 proceedings of the 2023 9th international conference on communication and information processing
+R0194,ACM-HR+COMP:0276,matching_doi_and_title,10.1145/3638884,iccip 23 proceedings of the 2023 9th international conference on communication and information processing
+R0195,ACM-HR+COMP:0056,representative,10.5555/3635637,aamas 24 proceedings of the 23rd international conference on autonomous agents and multiagent systems
+R0195,ACM-HR+COMP:0353,matching_doi_and_title,10.5555/3635637,aamas 24 proceedings of the 23rd international conference on autonomous agents and multiagent systems
+R0196,ACM-HR+COMP:0057,representative,10.1145/3609437,internetware 23 proceedings of the 14th asia pacific symposium on internetware
+R0196,ACM-HR+COMP:0296,matching_doi_and_title,10.1145/3609437,internetware 23 proceedings of the 14th asia pacific symposium on internetware
+R0197,ACM-HR+COMP:0058,representative,10.1145/3776759,aicss 25 proceedings of the 2025 international symposium on artificial intelligence and computational social sciences
+R0198,ACM-HR+COMP:0059,representative,10.1145/3560905,sensys 22 proceedings of the 20th acm conference on embedded networked sensor systems
+R0198,ACM-HR+COMP:0340,matching_doi_and_title,10.1145/3560905,sensys 22 proceedings of the 20th acm conference on embedded networked sensor systems
+R0199,ACM-HR+COMP:0060,representative,10.1145/3576841,iccps 23 proceedings of the acm ieee 14th international conference on cyber physical systems with cps iot week 2023
+R0199,ACM-HR+COMP:0061,matching_doi_and_title,10.1145/3576841,iccps 23 proceedings of the acm ieee 14th international conference on cyber physical systems with cps iot week 2023
+R0199,ACM-HR+COMP:0369,matching_doi_and_title,10.1145/3576841,iccps 23 proceedings of the acm ieee 14th international conference on cyber physical systems with cps iot week 2023
+R0200,ACM-HR+COMP:0062,representative,10.1145/3829918,aipd 26 proceedings of the 2nd international conference on artificial intelligence and product design
+R0200,ACM-HR+COMP:0261,matching_doi_and_title,10.1145/3829918,aipd 26 proceedings of the 2nd international conference on artificial intelligence and product design
+R0201,ACM-HR+COMP:0063,representative,10.1145/3708657,iccip 24 proceedings of the 2024 10th international conference on communication and information processing
+R0201,ACM-HR+COMP:0227,matching_doi_and_title,10.1145/3708657,iccip 24 proceedings of the 2024 10th international conference on communication and information processing
+R0202,ACM-HR+COMP:0064,representative,10.1145/3757749,iccmt 25 proceedings of the 2025 2nd international conference on computer and multimedia technology
+R0202,ACM-HR+COMP:0326,matching_doi_and_title,10.1145/3757749,iccmt 25 proceedings of the 2025 2nd international conference on computer and multimedia technology
+R0203,ACM-HR+COMP:0065,representative,10.1145/3614008,spml 23 proceedings of the 2023 6th international conference on signal processing and machine learning
+R0204,ACM-HR+COMP:0066,matching_doi_and_title,10.1145/3795154,iccsmt 25 proceedings of the 2025 6th international conference on computer science and management technology
+R0204,ACM-HR+COMP:0184,representative,10.1145/3795154,iccsmt 25 proceedings of the 2025 6th international conference on computer science and management technology
+R0205,ACM-HR+COMP:0067,representative,10.1145/3760023,msce 25 proceedings of the 2025 international conference on management science and computer engineering
+R0205,ACM-HR+COMP:0223,matching_doi_and_title,10.1145/3760023,msce 25 proceedings of the 2025 international conference on management science and computer engineering
+R0206,ACM-HR+COMP:0068,representative,10.1145/3756423,icaism 25 proceedings of the 2025 international conference on artificial intelligence and smart manufacturing
+R0206,ACM-HR+COMP:0262,matching_doi_and_title,10.1145/3756423,icaism 25 proceedings of the 2025 international conference on artificial intelligence and smart manufacturing
+R0207,ACM-HR+COMP:0069,representative,10.5555/3581644,cnsm 22 proceedings of the 18th international conference on network and service management
+R0207,ACM-HR+COMP:0338,matching_doi_and_title,10.5555/3581644,cnsm 22 proceedings of the 18th international conference on network and service management
+R0208,ACM-HR+COMP:0070,representative,10.1145/3673277,cnsct 24 proceedings of the 2024 3rd international conference on cryptography network security and communication technology
+R0208,ACM-HR+COMP:0347,matching_doi_and_title,10.1145/3673277,cnsct 24 proceedings of the 2024 3rd international conference on cryptography network security and communication technology
+R0209,ACM-HR+COMP:0071,representative,10.1145/3570361,acm mobicom 23 proceedings of the 29th annual international conference on mobile computing and networking
+R0209,ACM-HR+COMP:0344,matching_doi_and_title,10.1145/3570361,acm mobicom 23 proceedings of the 29th annual international conference on mobile computing and networking
+R0210,ACM-HR+COMP:0072,representative,10.1145/3647444,icimmi 23 proceedings of the 5th international conference on information management machine intelligence
+R0210,ACM-HR+COMP:0252,matching_doi_and_title,10.1145/3647444,icimmi 23 proceedings of the 5th international conference on information management machine intelligence
+R0211,ACM-HR+COMP:0073,matching_doi_and_title,10.1145/3828183,edcs 26 proceedings of the 3rd international conference on educational digitalization and computer science in the guangdong hong kong macao greater bay area
+R0211,ACM-HR+COMP:0216,representative,10.1145/3828183,edcs 26 proceedings of the 3rd international conference on educational digitalization and computer science in the guangdong hong kong macao greater bay area
+R0212,ACM-HR+COMP:0074,matching_doi_and_title,10.1145/3745238,deai 25 proceedings of the 2nd guangdong hong kong macao greater bay area international conference on digital economy and artificial intelligence
+R0212,ACM-HR+COMP:0213,representative,10.1145/3745238,deai 25 proceedings of the 2nd guangdong hong kong macao greater bay area international conference on digital economy and artificial intelligence
+R0213,ACM-HR+COMP:0075,representative,10.1145/3656766,icbar 23 proceedings of the 2023 3rd international conference on big data artificial intelligence and risk management
+R0213,ACM-HR+COMP:0374,matching_doi_and_title,10.1145/3656766,icbar 23 proceedings of the 2023 3rd international conference on big data artificial intelligence and risk management
+R0214,ACM-HR+COMP:0076,representative,10.1145/3712285,sc 25 proceedings of the international conference for high performance computing networking storage and analysis
+R0214,ACM-HR+COMP:0318,matching_doi_and_title,10.1145/3712285,sc 25 proceedings of the international conference for high performance computing networking storage and analysis
+R0214,ACM-HR+COMP:0320,matching_doi_and_title,10.1145/3712285,sc 25 proceedings of the international conference for high performance computing networking storage and analysis
+R0215,ACM-HR+COMP:0077,representative,10.1145/3773365,cisai 25 proceedings of the 2025 8th international conference on computer information science and artificial intelligence
+R0215,ACM-HR+COMP:0236,matching_doi_and_title,10.1145/3773365,cisai 25 proceedings of the 2025 8th international conference on computer information science and artificial intelligence
+R0216,ACM-HR+COMP:0078,representative,10.1145/3658644,ccs 24 proceedings of the 2024 on acm sigsac conference on computer and communications security
+R0216,ACM-HR+COMP:0365,matching_doi_and_title,10.1145/3658644,ccs 24 proceedings of the 2024 on acm sigsac conference on computer and communications security
+R0217,ACM-HR+COMP:0079,representative,10.1145/3832783,ase 26 proceedings of the 41st ieee acm international conference on automated software engineering
+R0217,ACM-HR+COMP:0311,matching_doi_and_title,10.1145/3832783,ase 26 proceedings of the 41st ieee acm international conference on automated software engineering
+R0218,ACM-HR+COMP:0080,representative,10.1145/3817444,large scale uav swarm coordination for sensing and communication a spatiotemporal perspective
+R0219,ACM-HR+COMP:0081,representative,10.1145/3703625,a survey on security of uav swarm networks attacks and countermeasures
+R0220,ACM-HR+COMP:0082,representative,10.1145/3727993.3728075,screening method of distributed cooperative navigation factors for uav swarm
+R0221,ACM-HR+COMP:0083,representative,10.1145/3820709.3820744,mace a physics informed multi modal large language model for strategic uav swarm confrontation
+R0222,ACM-HR+COMP:0084,representative,10.1145/3828836.3828907,research review on the application of deep reinforcement learning in fixed wing uav swarm control
+R0223,ACM-HR+COMP:0085,representative,10.1145/3760269.3760299,outdoor multi uav collaborative task planning system based on multi agent and improved ppo algorithm
+R0224,ACM-HR+COMP:0087,representative,10.1145/3696414,deep learning aided intelligent reflective surfaces for 6g a survey
+R0225,ACM-HR+COMP:0088,representative,10.1145/3846184,swarmupdate hierarchical software updates and deep learning model patching for heterogeneous uav swarms
+R0226,ACM-HR+COMP:0090,representative,,hnndl 26 proceedings of the 2026 international conference on human computer interaction neural networks and deep learning
+R0227,ACM-HR+COMP:0091,representative,,cvdl 24 proceedings of the international conference on computer vision and deep learning
+R0228,ACM-HR+COMP:0093,representative,10.1145/3711875.3737659,gazebons3 a digital twin system for uav swarms
+R0229,ACM-HR+COMP:0095,representative,10.1145/3838457.3838477,federated learning based trajectory optimization for uav swarms with wind impact analysis
+R0230,ACM-HR+COMP:0096,representative,10.1145/3700838.3700857,federated learning enabled network incident anomaly detection optimization for drone swarms
+R0231,ACM-HR+COMP:0097,representative,10.1145/3772281,c2mec cooperative multi split and multi hop edge computing based on deep reinforcement learning
+R0232,ACM-HR+COMP:0098,representative,10.1145/3597060.3597240,object recognition offloading in augmented reality assisted uav ugv systems
+R0233,ACM-HR+COMP:0099,representative,10.1145/3767295.3769380,neuro c neural inference shaped by hardware limits
+R0234,ACM-HR+COMP:0101,representative,10.1145/3844610,task offloading with temporal awareness in heterogeneous cloud edge ground systems
+R0235,ACM-HR+COMP:0102,representative,10.1145/3571072,five facets of 6g research challenges and opportunities
+R0236,ACM-HR+COMP:0103,representative,10.1145/3604933,mobile edge computing and machine learning in the internet of unmanned aerial vehicles a survey
+R0237,ACM-HR+COMP:0104,representative,10.1145/3571728,machine learning applications in internet of drones systematic review recent deployments and open issues
+R0238,ACM-HR+COMP:0105,representative,10.1145/3821725.3821803,a method for dynamic knowledge graph and two stage subgraph matching for pattern recognition and risk assessment in situation awareness
+R0239,ACM-HR+COMP:0106,representative,10.1145/3620665.3640420,mulberry enabling bit error robustness for energy efficient multi agent autonomous systems
+R0240,ACM-HR+COMP:0107,representative,10.1145/3842435.3843959,poster cma fl cognitive multi agent federated learning for resource aware drone communication attack detection
+R0241,ACM-HR+COMP:0108,representative,10.1145/3760389,future uav drone systems for intelligent active surveillance and monitoring
+R0242,ACM-HR+COMP:0110,representative,10.1145/3807408.3807409,real time drone car collaboration for future mobility vision and challenge
+R0243,ACM-HR+COMP:0112,representative,,uavm 24 proceedings of the 2nd workshop on uavs in multimedia capturing the world from a new perspective
+R0244,ACM-HR+COMP:0113,representative,10.1145/3842435.3843954,attention guided uav intrusion detection with bso based feature selection
+R0245,ACM-HR+COMP:0114,representative,10.1145/3638884.3638938,multi height visual drone positioning based on lstm and convolutional neural networks
+R0246,ACM-HR+COMP:0115,representative,10.1145/3641512.3686384,skyscale a radio tomographic approach towards scaling uav network deployments
+R0247,ACM-HR+COMP:0116,representative,10.1145/3568231.3568233,a comparative study of yolov5 models on american sign language dataset
+R0248,ACM-HR+COMP:0117,representative,10.1109/tnet.2023.3289172,ensuring threshold aoi for uav assisted mobile crowdsensing by multi agent deep reinforcement learning with transformer
+R0249,ACM-HR+COMP:0118,representative,10.1145/3637528.3672027,physics informed neural ode for post disaster mobility recovery
+R0250,ACM-HR+COMP:0119,representative,10.1145/3777367,digital twins paradigm a systematic review from the reinforcement learning perspective
+R0251,ACM-HR+COMP:0120,representative,10.1145/3795154.3795350,research on accurate operation system of uav in complex scene based on multi source intelligent fusion and dynamic management
+R0252,ACM-HR+COMP:0121,representative,10.1145/3507902,the elements of end to end deep face recognition a survey of recent advances
+R0253,ACM-HR+COMP:0122,representative,10.1145/3770651,hierarchical human uav cooperative task allocation for spatiotemporal crowdsensing in disaster response
+R0254,ACM-HR+COMP:0123,representative,10.1145/3777379,a review of open ran intelligence opportunities challenges real life applications and impacts
+R0255,ACM-HR+COMP:0124,representative,10.1145/3840749.3841574,edgecurator efficient cross modal grounding for real time language guided uav navigation
+R0256,ACM-HR+COMP:0126,representative,,ctcnet 24 proceedings of the 2024 asia pacific conference on computing technologies communications and networking
+R0257,ACM-HR+COMP:0127,representative,10.1145/3725221,gsfl a privacy preserving grouping split federated learning approach in resource constrained edge computing scenarios
+R0258,ACM-HR+COMP:0128,representative,10.1145/3804601.3804797,research progress and review of uav trajectory planning algorithms
+R0259,ACM-HR+COMP:0129,representative,10.1145/3789418.3789446,semanticblock blockchain assisted secure and energy aware uav bs deployment leveraging semantic learning
+R0260,ACM-HR+COMP:0130,representative,10.1145/3769102.3770616,does accurate real time ai need edge offload
+R0261,ACM-HR+COMP:0131,representative,10.1145/3801359.3801401,application of cognitive radio in anti jamming of satellite and aircraft communication
+R0262,ACM-HR+COMP:0132,representative,10.1145/3721437,cyber physical ai systematic research domain for integrating ai and cyber physical systems
+R0263,ACM-HR+COMP:0134,representative,10.1145/3632178,2bivqa double bi lstm based video quality assessment of ugc videos
+R0264,ACM-HR+COMP:0135,representative,,ceta 26 proceedings of the 5th international conference on computer engineering technologies and applications
+R0265,ACM-HR+COMP:0137,representative,,iar 24 proceedings of the 2024 international conference on industrial automation and robotics
+R0266,ACM-HR+COMP:0138,representative,10.1145/3860892,mind the attack how security threats are shaping software deployed on unmanned aerial vehicles
+R0267,ACM-HR+COMP:0139,representative,10.1145/3652620.3688253,ai simulation by digital twins systematic survey of the state of the art and a reference framework
+R0268,ACM-HR+COMP:0140,representative,,acaib 26 proceedings of the 2026 6th international conference on automation control algorithm and intelligent bionics
+R0269,ACM-HR+COMP:0141,representative,10.1145/3534598,reliable digital forensics in the air exploring an rf based drone identification system
+R0270,ACM-HR+COMP:0142,representative,10.1145/3767308.3835545,medxplore towards reliable and unbiased generalized category discovery in medical imaging
+R0271,ACM-HR+COMP:0144,representative,10.1145/3711875.3729156,detection and tracking of drone swarms using lidar
+R0272,ACM-HR+COMP:0145,representative,10.1145/3789206,drl based charging strategy optimization for irs assisted uav in wireless rechargeable sensor networks
+R0273,ACM-HR+COMP:0146,representative,,iccms 25 proceedings of the 2025 17th international conference on computer modeling and simulation
+R0274,ACM-HR+COMP:0148,representative,,icslt 24 proceedings of the 2024 10th international conference on e society e learning and e technologies icslt
+R0275,ACM-HR+COMP:0150,representative,,metasys 23 proceedings of the first workshop on metaverse systems and applications
+R0276,ACM-HR+COMP:0152,representative,,aiiip 24 proceedings of the 2024 3rd international conference on artificial intelligence and intelligent information processing
+R0277,ACM-HR+COMP:0153,representative,,dronet 23 proceedings of the ninth workshop on micro aerial vehicle networks systems and applications
+R0278,ACM-HR+COMP:0154,representative,,csaide 25 proceedings of the 2025 4th international conference on cyber security artificial intelligence and the digital economy
+R0279,ACM-HR+COMP:0156,representative,,iccns 23 proceedings of the 2023 13th international conference on communication and network security
+R0280,ACM-HR+COMP:0157,representative,,bdicn 26 proceedings of the 2026 5th international conference on big data information and computer network
+R0281,ACM-HR+COMP:0158,representative,10.1145/3767308.3842139,the 4th workshop on uavs in multimedia capturing the world from a new perspective
+R0282,ACM-HR+COMP:0160,representative,,cnsse 25 proceedings of the 2025 5th international conference on computer network security and software engineering
+R0283,ACM-HR+COMP:0162,representative,,iotml 26 proceedings of the 2026 6th international conference on internet of things and machine learning
+R0284,ACM-HR+COMP:0163,representative,,ai2a 23 proceedings of the 2023 3rd international conference on artificial intelligence automation and algorithms
+R0285,ACM-HR+COMP:0164,representative,,icrsa 22 proceedings of the 2022 5th international conference on robot systems and applications
+R0286,ACM-HR+COMP:0165,representative,,iccip 25 proceedings of the 2025 11th international conference on communication and information processing
+R0287,ACM-HR+COMP:0166,representative,,gaiis 24 proceedings of the 2024 international conference on generative artificial intelligence and information security
+R0288,ACM-HR+COMP:0167,representative,10.1145/3733836,preus proactive and robust edge uav systems for autonomous monitoring in dynamic environments
+R0289,ACM-HR+COMP:0169,representative,,robce 26 proceedings of the 6th international conference on robotics and control engineering
+R0290,ACM-HR+COMP:0171,representative,,csai 25 proceedings of the 2025 9th international conference on computer science and artificial intelligence
+R0291,ACM-HR+COMP:0172,representative,,cceai 24 proceedings of the 2024 8th international conference on control engineering and artificial intelligence
+R0292,ACM-HR+COMP:0173,representative,10.1145/3711875.3737661,continuous marine monitoring via autonomous uav handoff
+R0293,ACM-HR+COMP:0176,representative,,internetware 24 proceedings of the 15th asia pacific symposium on internetware
+R0294,ACM-HR+COMP:0177,representative,10.1145/3469259.3470488,towards adaptive self configuring networked unmanned aerial vehicles
+R0295,ACM-HR+COMP:0178,representative,,adist 26 proceedings of the 2026 3rd international conference on autonomous driving and intelligent sensing technology
+R0296,ACM-HR+COMP:0179,representative,,aici 26 proceedings of the 2026 2nd international conference on artificial intelligence and computational intelligence
+R0297,ACM-HR+COMP:0181,representative,10.1145/3655532,icrsa 23 proceedings of the 2023 6th international conference on robot systems and applications
+R0298,ACM-HR+COMP:0183,representative,10.1145/3641512.3686367,multi task oriented uav crowd sensing with charging budget constraint
+R0299,ACM-HR+COMP:0186,representative,10.1145/3757749.3757787,low altitude economy meets safety management leveraging a multi attention high resolution network for enhanced uav detection
+R0300,ACM-HR+COMP:0187,representative,10.1145/3732945,isccn 25 proceedings of the 2025 4th international conference on intelligent systems communications and computer networks
+R0301,ACM-HR+COMP:0189,representative,10.1145/3821162,cncit 26 proceedings of the 2026 5th international conference on networks communications and information technology
+R0302,ACM-HR+COMP:0190,representative,10.1145/3719210,an efficient ground aerial transportation system for pest control enabled by ai based autonomous nano uavs
+R0303,ACM-HR+COMP:0191,representative,10.1145/3661810,dronet 24 proceedings of the 10th workshop on micro aerial vehicle networks systems and applications
+R0304,ACM-HR+COMP:0193,representative,10.1145/3817124,cammic 26 proceedings of the 2026 6th international conference on applied mathematics modelling and intelligent computing
+R0305,ACM-HR+COMP:0194,representative,10.1145/3702879,iotcct 24 proceedings of the 2024 2nd international conference on internet of things and cloud computing technology
+R0306,ACM-HR+COMP:0195,representative,10.1145/3565386,middleware demos and posters 22 proceedings of the 23rd international middleware conference demos and posters
+R0307,ACM-HR+COMP:0196,representative,10.1145/3640912,cnml 23 proceedings of the 2023 international conference on communication network and machine learning
+R0308,ACM-HR+COMP:0197,representative,10.1145/3745756.3809186,needle in a haystack tracking uavs from massive noise in real world 5g a base station data
+R0309,ACM-HR+COMP:0199,representative,10.1145/3703935.3704093,improved yolov8n algorithm for small target detection in uav perspective
+R0310,ACM-HR+COMP:0202,representative,10.1145/3746709,cibda 25 proceedings of the 2025 6th international conference on computer information and big data applications
+R0311,ACM-HR+COMP:0204,representative,10.1145/3703935,aipr 24 proceedings of the 2024 7th international conference on artificial intelligence and pattern recognition
+R0312,ACM-HR+COMP:0205,representative,10.1145/3757110,cmnm 25 proceedings of the 2025 2nd international conference on modeling natural language processing and machine learning
+R0313,ACM-HR+COMP:0208,representative,10.1145/3829641,seca 26 proceedings of the 2nd international conference on software engineering and computer applications
+R0314,ACM-HR+COMP:0209,representative,10.1145/3700838,icdcn 25 proceedings of the 26th international conference on distributed computing and networking
+R0315,ACM-HR+COMP:0210,representative,10.1145/3652628,icaice 23 proceedings of the 4th international conference on artificial intelligence and computer engineering
+R0316,ACM-HR+COMP:0211,representative,10.1145/3789982,aiccc 25 proceedings of the 2025 8th artificial intelligence and cloud computing conference
+R0317,ACM-HR+COMP:0212,representative,10.1109/tnet.2024.3438462,de rpota decentralized learning with resource adaptation and privacy preservation through over the air computation
+R0318,ACM-HR+COMP:0214,representative,10.1145/3716550.3722038,trust based assured sensor fusion in distributed aerial autonomy
+R0319,ACM-HR+COMP:0215,representative,10.1145/3838079,saai 26 proceedings of the 2026 2nd international conference on smart agriculture and artificial intelligence
+R0320,ACM-HR+COMP:0217,representative,10.1145/3662739,mida 24 proceedings of the 2024 international conference on machine intelligence and digital applications
+R0321,ACM-HR+COMP:0218,representative,10.1145/3696419,malicious participants and fake task detection incorporating gaussian bias
+R0322,ACM-HR+COMP:0219,representative,10.1145/3568199,mlmi 22 proceedings of the 2022 5th international conference on machine learning and machine intelligence
+R0322,ACM-HR+COMP:0220,matching_doi_and_title,10.1145/3568199,mlmi 22 proceedings of the 2022 5th international conference on machine learning and machine intelligence
+R0323,ACM-HR+COMP:0222,representative,10.1145/3542945,testing validation and verification of robotic and autonomous systems a systematic review
+R0324,ACM-HR+COMP:0224,representative,10.1145/3755881.3755926,generating sysml behavior models via large language models an empirical study
+R0325,ACM-HR+COMP:0226,representative,10.1145/3847445,ipmlp 26 proceedings of the 3rd international conference on image processing machine learning and pattern recognition
+R0326,ACM-HR+COMP:0228,representative,10.1145/3848774,icaisl 26 proceedings of the 2026 international conference on artificial intelligence and smart life
+R0327,ACM-HR+COMP:0229,representative,10.1145/3842793,icaism 2026 proceedings of the 2026 2nd international conference on artificial intelligence and smart manufacturing
+R0328,ACM-HR+COMP:0230,representative,10.1145/3727993,cmsda 24 proceedings of the 2024 4th international conference on computational modeling simulation and data analysis
+R0329,ACM-HR+COMP:0232,representative,10.1145/3565287,mobihoc 23 proceedings of the twenty fourth international symposium on theory algorithmic foundations and protocol design for mobile networks and mobile computing
+R0330,ACM-HR+COMP:0233,representative,10.1145/3575810,a survey on soft computing techniques for federated learning applications challenges and future directions
+R0331,ACM-HR+COMP:0234,representative,10.1145/3712464,spct 24 proceedings of the 2024 4th international conference on signal processing and communication technology
+R0332,ACM-HR+COMP:0235,representative,10.1145/3559712,sbcars 22 proceedings of the 16th brazilian symposium on software components architectures and reuse
+R0333,ACM-HR+COMP:0238,representative,10.1145/3727648,caice 25 proceedings of the 4th international conference on computer artificial intelligence and control engineering
+R0333,ACM-HR+COMP:0241,matching_doi_and_title,10.1145/3727648,caice 25 proceedings of the 4th international conference on computer artificial intelligence and control engineering
+R0334,ACM-HR+COMP:0239,representative,10.1145/3726122,icfnds 24 proceedings of the 8th international conference on future networks distributed systems
+R0335,ACM-HR+COMP:0242,representative,10.1145/3788550,seams 26 proceedings of the 21st international conference on software engineering for adaptive and self managing systems
+R0336,ACM-HR+COMP:0243,representative,10.1145/3748825,dsai 25 proceedings of the 2025 2nd international conference on digital society and artificial intelligence
+R0337,ACM-HR+COMP:0244,representative,10.1145/3768801,icbddm 25 proceedings of the 2025 2nd international conference on big data and digital management
+R0338,ACM-HR+COMP:0246,representative,10.1145/3723178,icca 24 proceedings of the 3rd international conference on computing advancements
+R0339,ACM-HR+COMP:0247,representative,10.1145/3704558,cfima 24 proceedings of the 2024 2nd international conference on frontiers of intelligent manufacturing and automation
+R0340,ACM-HR+COMP:0248,representative,10.1145/3796731,cmsda 25 proceedings of the 2025 5th international conference on computational modeling simulation and data analysis
+R0341,ACM-HR+COMP:0249,representative,10.1145/3705754,cecct 24 proceedings of the 2024 2nd international conference on electronics computers and communication technology
+R0342,ACM-HR+COMP:0250,representative,10.1145/3797552,icaie 25 proceedings of the 2025 4th international conference on artificial intelligence and education
+R0343,ACM-HR+COMP:0251,representative,10.1145/3556223,icccm 22 proceedings of the 10th international conference on computer and communications management
+R0344,ACM-HR+COMP:0253,representative,10.1145/3573428,eitce 22 proceedings of the 2022 6th international conference on electronic information technology and computer engineering
+R0345,ACM-HR+COMP:0254,representative,10.1145/3689236,iccsie 24 proceedings of the 2024 9th international conference on cyber security and information engineering
+R0346,ACM-HR+COMP:0255,representative,10.1145/3607947,ic3 2023 proceedings of the 2023 fifteenth international conference on contemporary computing
+R0347,ACM-HR+COMP:0256,representative,10.1145/3677182,asens 24 proceedings of the international conference on algorithms software engineering and network security
+R0348,ACM-HR+COMP:0257,representative,10.5555/3709347,aamas 25 proceedings of the 24th international conference on autonomous agents and multiagent systems
+R0349,ACM-HR+COMP:0258,representative,10.1145/3726854,sigmetrics 25 abstracts of the 2025 acm sigmetrics international conference on measurement and modeling of computer systems
+R0350,ACM-HR+COMP:0259,representative,10.1145/3846279,cmica 2026 proceedings of the 2nd international conference on computational methods intelligent control and aerospace
+R0350,ACM-HR+COMP:0265,matching_doi_and_title,10.1145/3846279,cmica 2026 proceedings of the 2nd international conference on computational methods intelligent control and aerospace
+R0351,ACM-HR+COMP:0260,representative,10.1145/3729706.3729731,intelligent inspection and deicing system for power transmission lines based on uav platform
+R0352,ACM-HR+COMP:0263,representative,10.1145/3650400,eitce 23 proceedings of the 2023 7th international conference on electronic information technology and computer engineering
+R0353,ACM-HR+COMP:0264,representative,10.1145/3803833,ieea 26 proceedings of the 2026 15th international conference on informatics environment energy and applications
+R0354,ACM-HR+COMP:0266,representative,10.1145/3745812,icimmi 24 proceedings of the 6 th international conference on information management machine intelligence
+R0355,ACM-HR+COMP:0267,representative,10.1145/3755881,internetware 25 proceedings of the 16th international conference on internetware
+R0356,ACM-HR+COMP:0268,representative,10.1145/3772290,icdcn 26 proceedings of the 27th international conference on distributed computing and networking
+R0357,ACM-HR+COMP:0269,representative,10.1145/3793853,mmsys 26 proceedings of the acm multimedia systems conference 2026
+R0358,ACM-HR+COMP:0270,representative,10.1145/3711129,eitce 24 proceedings of the 2024 8th international conference on electronic information technology and computer engineering
+R0359,ACM-HR+COMP:0271,representative,10.1145/3712335,spcnc 24 proceedings of the 3rd international conference on signal processing computer networks and communications
+R0360,ACM-HR+COMP:0272,representative,10.1145/3718751,icbar 24 proceedings of the 2024 4th international conference on big data artificial intelligence and risk management
+R0361,ACM-HR+COMP:0273,representative,10.1145/3594739,ubicomp iswc 23 adjunct adjunct proceedings of the 2023 acm international joint conference on pervasive and ubiquitous computing the 2023 acm international symposium on wearable computing
+R0362,ACM-HR+COMP:0274,representative,10.1145/3547578,iccms 22 proceedings of the 14th international conference on computer modeling and simulation
+R0363,ACM-HR+COMP:0277,representative,10.1145/3727353,bdicn 25 proceedings of the 2025 4th international conference on big data information and computer network
+R0364,ACM-HR+COMP:0278,representative,10.1145/3610419,air 23 proceedings of the 2023 6th international conference on advances in robotics
+R0364,ACM-HR+COMP:0280,matching_doi_and_title,10.1145/3610419,air 23 proceedings of the 2023 6th international conference on advances in robotics
+R0365,ACM-HR+COMP:0279,representative,10.1145/3590837,icimmi 22 proceedings of the 4th international conference on information management machine intelligence
+R0365,ACM-HR+COMP:0282,matching_doi_and_title,10.1145/3590837,icimmi 22 proceedings of the 4th international conference on information management machine intelligence
+R0366,ACM-HR+COMP:0281,representative,10.1145/3718491,aibdf 24 proceedings of the 4th asia pacific artificial intelligence and big data forum
+R0367,ACM-HR+COMP:0283,representative,10.1145/3526195,digital twin enabled ai enhancement in smart critical infrastructures for 5g
+R0368,ACM-HR+COMP:0284,representative,10.1145/3661725,cmlds 24 proceedings of the international conference on computing machine learning and data science
+R0369,ACM-HR+COMP:0285,representative,10.1145/3840749,erel mir 26 proceedings of the 2nd international workshop on efficient representation learning for multimodal information retrieval
+R0370,ACM-HR+COMP:0286,representative,10.1145/3688671,setn 24 proceedings of the 13th hellenic conference on artificial intelligence
+R0371,ACM-HR+COMP:0287,representative,10.1145/3674558,iccta 24 proceedings of the 2024 10th international conference on computer technology applications
+R0372,ACM-HR+COMP:0288,representative,10.1145/3565473,gnnet 22 proceedings of the 1st international workshop on graph neural networking
+R0373,ACM-HR+COMP:0289,representative,10.1145/3680207.3765244,auto uit automating uav inspection trajectory by recognizing pylon structure from 3d point cloud
+R0374,ACM-HR+COMP:0290,representative,10.1145/3687488,iccir 24 proceedings of the 2024 4th international conference on control and intelligent robotics
+R0375,ACM-HR+COMP:0291,representative,10.1145/3616901,faiml 23 proceedings of the 2023 international conference on frontiers of artificial intelligence and machine learning
+R0376,ACM-HR+COMP:0292,representative,10.1145/3796563,isec 26 proceedings of the 19th innovations in software engineering conference
+R0377,ACM-HR+COMP:0294,representative,10.1145/3715319,adaptive strategies in enhancing physical layer security a comprehensive survey
+R0378,ACM-HR+COMP:0295,representative,10.1145/3548608,iccir 22 proceedings of the 2022 2nd international conference on control and intelligent robotics
+R0379,ACM-HR+COMP:0297,representative,10.1145/3573942,aipr 22 proceedings of the 2022 5th international conference on artificial intelligence and pattern recognition
+R0379,ACM-HR+COMP:0302,matching_doi_and_title,10.1145/3573942,aipr 22 proceedings of the 2022 5th international conference on artificial intelligence and pattern recognition
+R0380,ACM-HR+COMP:0298,representative,10.1145/3651781,icsca 24 proceedings of the 2024 13th international conference on software and computer applications
+R0380,ACM-HR+COMP:0300,matching_doi_and_title,10.1145/3651781,icsca 24 proceedings of the 2024 13th international conference on software and computer applications
+R0381,ACM-HR+COMP:0299,representative,10.1145/3742889,immercom 25 proceedings of the 3rd acm workshop on mobile immersive computing networking and systems
+R0382,ACM-HR+COMP:0301,representative,10.1145/3632971,jcrai 23 proceedings of the 2023 international joint conference on robotics and artificial intelligence
+R0383,ACM-HR+COMP:0303,representative,10.1145/3638584,csai 23 proceedings of the 2023 7th international conference on computer science and artificial intelligence
+R0384,ACM-HR+COMP:0304,representative,10.1145/3658644.3670293,sub play adversarial policies against partially observed multi agent reinforcement learning systems
+R0385,ACM-HR+COMP:0305,representative,10.1145/3704323,iccpr 24 proceedings of the 2024 13th international conference on computing and pattern recognition
+R0386,ACM-HR+COMP:0306,representative,10.1145/3654823,cacml 24 proceedings of the 2024 3rd asia conference on algorithms computing and machine learning
+R0387,ACM-HR+COMP:0308,representative,10.1145/3603781,cniot 23 proceedings of the 2023 4th international conference on computing networks and internet of things
+R0388,ACM-HR+COMP:0309,representative,10.1145/3703790,iot 24 proceedings of the 14th international conference on the internet of things
+R0389,ACM-HR+COMP:0310,representative,10.1145/3700035,ippr 24 proceedings of the 2024 international conference on intelligent perception and pattern recognition
+R0390,ACM-HR+COMP:0313,representative,10.1145/3605764,aisec 23 proceedings of the 16th acm workshop on artificial intelligence and security
+R0391,ACM-HR+COMP:0314,representative,10.1145/3701047,cnml 24 proceedings of the 2024 2nd international conference on communication networks and machine learning
+R0392,ACM-HR+COMP:0315,representative,10.1145/3756580,icekim 25 proceedings of the 2025 6th international conference on education knowledge and information management
+R0393,ACM-HR+COMP:0317,representative,10.1145/3672919,csaide 24 proceedings of the 2024 3rd international conference on cyber security artificial intelligence and digital economy
+R0394,ACM-HR+COMP:0319,representative,10.1145/3565267,pav sod a new task towards panoramic audiovisual saliency detection
+R0395,ACM-HR+COMP:0321,representative,10.1145/3715669,etra 25 proceedings of the 2025 symposium on eye tracking research and applications
+R0396,ACM-HR+COMP:0322,representative,10.1145/3644523,iccsmt 23 proceedings of the 2023 4th international conference on computer science and management technology
+R0397,ACM-HR+COMP:0323,representative,10.1145/3702250,icvgip 24 proceedings of the fifteenth indian conference on computer vision graphics and image processing
+R0398,ACM-HR+COMP:0324,representative,10.1145/3652037,petra 24 proceedings of the 17th international conference on pervasive technologies related to assistive environments
+R0399,ACM-HR+COMP:0325,representative,10.1145/3544793,ubicomp iswc 22 adjunct adjunct proceedings of the 2022 acm international joint conference on pervasive and ubiquitous computing and the 2022 acm international symposium on wearable computers
+R0400,ACM-HR+COMP:0328,representative,10.1145/3609437.3609448,ubicap a capability based run time model for heterogeneous sensors management in ubiquitous operating system
+R0401,ACM-HR+COMP:0329,representative,10.1145/3745533,cammic 25 proceedings of the 2025 5th international conference on applied mathematics modelling and intelligent computing
+R0402,ACM-HR+COMP:0330,representative,10.1145/3842435.3843964,pdt tcn prefix drop temporal convolutional networks for early attack detection in uav gcs communications
+R0403,ACM-HR+COMP:0331,representative,10.1145/3674225,peai 24 proceedings of the 2024 international conference on power electronics and artificial intelligence
+R0404,ACM-HR+COMP:0332,representative,10.1145/3594315,iccai 23 proceedings of the 2023 9th international conference on computing and artificial intelligence
+R0405,ACM-HR+COMP:0333,representative,10.1145/3708778,ciis 24 proceedings of the 2024 7th international conference on computational intelligence and intelligent systems
+R0406,ACM-HR+COMP:0334,representative,10.1145/3590003,cacml 23 proceedings of the 2023 2nd asia conference on algorithms computing and machine learning
+R0407,ACM-HR+COMP:0335,representative,10.1145/3821581,mobilehci 26 proceedings of the 28th international conference on mobile human computer interaction
+R0408,ACM-HR+COMP:0336,representative,10.1145/3686038,tas 24 proceedings of the second international symposium on trustworthy autonomous systems
+R0409,ACM-HR+COMP:0337,representative,10.1145/3487920,developing action policies with q learning and shallow neural networks on reconfigurable embedded devices
+R0410,ACM-HR+COMP:0339,representative,10.1145/3577065,ictce 22 proceedings of the 2022 5th international conference on telecommunications and communication engineering
+R0410,ACM-HR+COMP:0342,matching_doi_and_title,10.1145/3577065,ictce 22 proceedings of the 2022 5th international conference on telecommunications and communication engineering
+R0411,ACM-HR+COMP:0341,representative,10.1145/3589737,icons 23 proceedings of the 2023 international conference on neuromorphic systems
+R0412,ACM-HR+COMP:0343,representative,10.1145/3775042,cpss 26 proceedings of the 12th acm cyber physical system security workshop
+R0413,ACM-HR+COMP:0345,representative,10.1145/3584376,ricai 22 proceedings of the 2022 4th international conference on robotics intelligent control and artificial intelligence
+R0414,ACM-HR+COMP:0346,representative,10.1145/3597503,icse 24 proceedings of the ieee acm 46th international conference on software engineering
+R0415,ACM-HR+COMP:0348,representative,10.1145/3716550,iccps 25 proceedings of the acm ieee 16th international conference on cyber physical systems with cps iot week 2025
+R0416,ACM-HR+COMP:0349,representative,10.1145/3626090,surveying emerging network approaches for military command and control systems
+R0417,ACM-HR+COMP:0350,representative,10.1145/3556055,icnser 22 proceedings of the 3rd international conference on industrial control network and system engineering research
+R0418,ACM-HR+COMP:0351,representative,10.1145/3655497,iciai 24 proceedings of the 2024 international conference on innovation in artificial intelligence
+R0419,ACM-HR+COMP:0354,representative,10.1145/3793653,cain 26 proceedings of the ieee acm 5th international conference on ai engineering software engineering for ai
+R0420,ACM-HR+COMP:0355,representative,10.1145/3716553,icmi 25 proceedings of the 27th international conference on multimodal interaction
+R0421,ACM-HR+COMP:0356,representative,10.1145/3772429,dai 25 proceedings of the 2025 7th international conference on distributed artificial intelligence
+R0422,ACM-HR+COMP:0357,representative,10.1145/3623377,explainability in deep reinforcement learning a review into current methods and applications
+R0423,ACM-HR+COMP:0358,representative,10.1145/3650215,icmlca 23 proceedings of the 2023 4th international conference on machine learning and computer application
+R0424,ACM-HR+COMP:0359,representative,10.1145/3665689,bic 24 proceedings of the 2024 4th international conference on bioinformatics and intelligent computing
+R0425,ACM-HR+COMP:0360,representative,10.1145/3634737,asia ccs 24 proceedings of the 19th acm asia conference on computer and communications security
+R0426,ACM-HR+COMP:0361,representative,10.1145/3638529,gecco 24 proceedings of the genetic and evolutionary computation conference
+R0427,ACM-HR+COMP:0362,representative,10.1145/3696409,mmasia 24 proceedings of the 6th acm international conference on multimedia in asia
+R0428,ACM-HR+COMP:0363,representative,10.1145/3641584,aipr 23 proceedings of the 2023 6th international conference on artificial intelligence and pattern recognition
+R0429,ACM-HR+COMP:0364,representative,10.1145/3736178,quantitative data valuation methods a systematic review and taxonomy
+R0430,ACM-HR+COMP:0366,representative,10.1145/3605655,ecce 23 proceedings of the european conference on cognitive ergonomics 2023
+R0431,ACM-HR+COMP:0367,representative,10.1145/3697090,ladc 24 proceedings of the 13th latin american symposium on dependable and secure computing
+R0432,ACM-HR+COMP:0368,representative,10.1145/3604280,vprnet voxel based efficient and partial to partial point cloud registration on mobile devices
+R0433,ACM-HR+COMP:0370,representative,10.1145/3776734,hri companion 26 companion proceedings of the 21st acm ieee international conference on human robot interaction
+R0434,ACM-HR+COMP:0371,representative,10.1145/3687272,hai 24 proceedings of the 12th international conference on human agent interaction
+R0435,ACM-HR+COMP:0372,representative,10.1145/3555776,sac 23 proceedings of the 38th acm sigapp symposium on applied computing
+R0436,ACM-HR+COMP:0373,representative,10.1145/3549737,setn 22 proceedings of the 12th hellenic conference on artificial intelligence
+R0437,ACM-HR+COMP:0375,representative,10.1145/3801146,hscc 26 proceedings of the 29th acm international conference on hybrid systems computation and control
+R0438,ACM-HR+COMP:0376,representative,10.1145/3643655.3643882,self adaptation of loosely coupled systems across a system of small uncrewed aerial systems
+R0439,ACM-HR+COMP:0377,representative,10.1145/3757374,sa posters 25 proceedings of the siggraph asia 2025 posters
+R0440,ACM-HR+COMP:0378,representative,10.1145/3702250.3702289,hierarchical feature integrated bot unet with contextual feature enhancement for retinal vessel segmentation
+R0441,ACM-HR+COMP:0379,representative,10.1145/3769534,vinci 25 proceedings of the 18th international symposium on visual information communication and interaction
+R0442,ACM-HR+COMP:0380,representative,10.1145/3562007,ccris 22 proceedings of the 2022 3rd international conference on control robotics and intelligent system
+R0443,ACM-HR+COMP:0381,representative,10.1145/3654446,spcnc 23 proceedings of the 2nd international conference on signal processing computer networks and communications
+R0444,ACM-HR+COMP:0382,representative,10.1145/3565387,csae 22 proceedings of the 6th international conference on computer science and application engineering
+R0445,ACM-HR+COMP:0383,representative,10.1109/tnet.2020.3045595,optimizing in the dark learning optimal network resource reservation through a simple request interface
+R0446,ACM-HR+COMP:0384,representative,10.1145/3610978,hri companion 24 companion proceedings of the 2024 acm ieee international conference on human robot interaction
+R0447,ACM-HR+COMP:0385,representative,10.1145/3829807,nordichi 26 proceedings of the 14th nordic conference on human computer interaction
+R0448,ACM-HR+COMP:0386,representative,10.1145/3573900,sigsim pads 23 proceedings of the 2023 acm sigsim conference on principles of advanced discrete simulation
+R0449,ACM-HR+COMP:0387,representative,10.1145/3524842.3527948,problems and solutions in applying continuous integration and delivery to 20 open source cyber physical systems
+R0450,ACM-HR+COMP:0388,representative,10.1145/3610977,hri 24 proceedings of the 2024 acm ieee international conference on human robot interaction
+R0451,ACM-HR+COMP:0389,representative,10.1145/3659211,bdeim 23 proceedings of the 2023 4th international conference on big data economy and information management
+R0452,ACM-HR+COMP:0390,representative,10.1145/3664647.3681070,instance level panoramic audio visual saliency detection and ranking
+R0453,ACM-HR+COMP:0391,representative,10.1145/3639053,mcfnet multi attentional class feature augmentation network for real time scene parsing
+R0454,ACM-HR+COMP:0392,representative,10.1145/3764687,ozchi 25 proceedings of the 37th australian conference on human computer interaction
+R0455,ACM-HR+COMP:0393,representative,10.1145/3765712,ihm 25 proceedings of the 36th conference on l interaction humain machine
+R0456,ACM-HR+COMP:0394,representative,10.1145/3583131,gecco 23 proceedings of the genetic and evolutionary computation conference
+R0457,ACM-HR+COMP:0395,representative,10.1145/3544549,chi ea 23 extended abstracts of the 2023 chi conference on human factors in computing systems
+R0458,ACM-HR+COMP:0396,representative,10.1145/3568231,siet 22 proceedings of the 7th international conference on sustainable information engineering and technology
+R0459,ACM-HR+COMP:0397,representative,10.1145/3687054,stylewe towards style fusion in generative fashion design with efficient federated ai
+R0460,ACM-HR+COMP:0398,representative,10.1145/3474085.3475500,ftaface context enhanced face detector with fine grained task attention
+R0461,ACM-HR+COMP:0399,representative,10.1145/3474085.3475372,asfd automatic and scalable face detector
+R0461,ACM-HR+COMP:0401,matching_doi_and_title,10.1145/3474085.3475372,asfd automatic and scalable face detector
+R0462,ACM-HR+COMP:0400,representative,10.1145/3561877,iciss 22 proceedings of the 5th international conference on information science and systems
+R0463,ACM-HR+COMP:0402,representative,10.1145/3613904,chi 24 proceedings of the 2024 chi conference on human factors in computing systems
+R0464,ACM-HR+COMP:0403,representative,10.1145/3716863,hscc 25 proceedings of the 28th acm international conference on hybrid systems computation and control
+R0465,ACM-HR+COMP:0404,representative,10.1145/3465481.3470084,adaptive mitigation of tactical denial of sustainability

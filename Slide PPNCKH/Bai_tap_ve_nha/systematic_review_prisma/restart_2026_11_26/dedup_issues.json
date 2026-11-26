@@ -1,0 +1,150 @@
+{
+  "input_records": 693,
+  "removed_duplicate_rows": 228,
+  "screening_records": 465,
+  "unresolved_identity_groups": [],
+  "metadata_year_conflicts": [
+    {
+      "screening_id": "R0009",
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "record_ids": [
+        "IEEE-HR:0009",
+        "IEEE-COMP:0005",
+        "SCOPUS-HR:0006",
+        "SCOPUS-COMP:0011",
+        "OPENALEX-HR:0048",
+        "OPENALEX-COMP:0023"
+      ]
+    },
+    {
+      "screening_id": "R0019",
+      "years": [
+        "2022",
+        "2023"
+      ],
+      "record_ids": [
+        "IEEE-HR:0019",
+        "SCOPUS-HR:0057",
+        "OPENALEX-HR:0002"
+      ]
+    },
+    {
+      "screening_id": "R0021",
+      "years": [
+        "2022",
+        "2023"
+      ],
+      "record_ids": [
+        "IEEE-HR:0021",
+        "SCOPUS-HR:0033",
+        "OPENALEX-HR:0030"
+      ]
+    },
+    {
+      "screening_id": "R0031",
+      "years": [
+        "2023",
+        "2024"
+      ],
+      "record_ids": [
+        "IEEE-HR:0031",
+        "SCOPUS-HR:0007",
+        "OPENALEX-HR:0027"
+      ]
+    },
+    {
+      "screening_id": "R0032",
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "record_ids": [
+        "IEEE-HR:0032",
+        "SCOPUS-HR:0075",
+        "OPENALEX-HR:0072"
+      ]
+    },
+    {
+      "screening_id": "R0040",
+      "years": [
+        "2024",
+        "2025"
+      ],
+      "record_ids": [
+        "IEEE-HR:0040",
+        "SCOPUS-HR:0061",
+        "OPENALEX-HR:0081"
+      ]
+    },
+    {
+      "screening_id": "R0047",
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "record_ids": [
+        "IEEE-COMP:0011",
+        "SCOPUS-COMP:0016",
+        "OPENALEX-COMP:0011"
+      ]
+    },
+    {
+      "screening_id": "R0062",
+      "years": [
+        "2023",
+        "2024"
+      ],
+      "record_ids": [
+        "SCOPUS-HR:0013",
+        "OPENALEX-HR:0001"
+      ]
+    },
+    {
+      "screening_id": "R0065",
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "record_ids": [
+        "SCOPUS-HR:0017",
+        "OPENALEX-HR:0076"
+      ]
+    },
+    {
+      "screening_id": "R0076",
+      "years": [
+        "2024",
+        "2025"
+      ],
+      "record_ids": [
+        "SCOPUS-HR:0034",
+        "OPENALEX-HR:0079"
+      ]
+    },
+    {
+      "screening_id": "R0084",
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "record_ids": [
+        "SCOPUS-HR:0053",
+        "OPENALEX-HR:0067"
+      ]
+    },
+    {
+      "screening_id": "R0100",
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "record_ids": [
+        "SCOPUS-COMP:0009",
+        "OPENALEX-COMP:0027"
+      ]
+    }
+  ]
+}
