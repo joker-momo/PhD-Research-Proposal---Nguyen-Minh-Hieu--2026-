@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-26T19:23:41+07:00",
+  "updated_at": "2026-11-26T19:25:16+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -321,7 +321,7 @@
       "owner": "GEMINI_RESEARCH + CODEX_WRITING",
       "status": "active",
       "started_at": "2026-11-26T18:50:01+07:00",
-      "updated_at": "2026-11-26T19:23:41+07:00",
+      "updated_at": "2026-11-26T19:25:16+07:00",
       "completed_at": null,
       "artifacts": [
         "restart_2026_11_26/step07_batch01_brief.md",
@@ -359,7 +359,10 @@
         "restart_2026_11_26/step07_batch05_acceptance.md",
         "restart_2026_11_26/step07_batch06_brief.md",
         "restart_2026_11_26/step07_batch06_transport_failure.json",
-        "restart_2026_11_26/step07_batch06_transport_review.md"
+        "restart_2026_11_26/step07_batch06_transport_review.md",
+        "restart_2026_11_26/step07_batch06_raw.json",
+        "restart_2026_11_26/step07_batch06_accepted.csv",
+        "restart_2026_11_26/step07_batch06_acceptance.md"
       ],
       "acceptance": [
         {
@@ -422,20 +425,13 @@
       "correction_task_id": "0ef18a72-08c1-4981-98b3-9548ed2d127e",
       "correction_context_id": "eaa8678b-e8ce-4fd7-9f95-a09aecfc32b3",
       "screening_counts": {
-        "accepted_records": 315,
-        "pending": 150,
+        "accepted_records": 390,
+        "pending": 75,
         "retrieve_full_text": 43,
-        "unclear": 78,
-        "exclude": 194
+        "unclear": 86,
+        "exclude": 261
       },
-      "evidence_index": "restart_2026_11_26/screening_evidence/manifest.json",
-      "active_batch": {
-        "task_id": "e50b8f94-b249-4d0f-b7f7-aec900ce269e",
-        "context_id": "16c86c40-2176-47f7-b24b-841d3b446d1e",
-        "first": "R0316",
-        "last": "R0390",
-        "count": 75
-      }
+      "evidence_index": "restart_2026_11_26/screening_evidence/manifest.json"
     },
     {
       "task_id": "restart-08",
