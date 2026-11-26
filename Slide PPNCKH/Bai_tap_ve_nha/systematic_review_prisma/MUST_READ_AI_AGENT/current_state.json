@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T08:10:38+07:00",
+  "updated_at": "2026-11-26T10:18:29+07:00",
   "goal": {
     "version": "HK261-PRISMA-SNCS-v2",
     "status": "active",
@@ -11,9 +11,9 @@
     "owner": "CODEX_WRITING",
     "status": "completed",
     "started_at": "2026-11-26T07:58:00+07:00",
-    "updated_at": "2026-11-26T08:10:38+07:00",
-    "completed_at": "2026-11-26T08:10:38+07:00",
-    "decision_id": "hk261-context-optimization-v2"
+    "updated_at": "2026-11-26T10:18:29+07:00",
+    "completed_at": "2026-11-26T10:18:29+07:00",
+    "decision_id": "hk261-context-optimization-v3"
   },
   "next_task": {
     "task_id": "reconciliation-dates-02",

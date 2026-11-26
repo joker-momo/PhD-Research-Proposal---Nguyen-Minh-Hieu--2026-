@@ -9,7 +9,7 @@ model tokenization varies.
 | Snapshot | Files counted | Bytes | Approx. tokens |
 |---|---|---:|---:|
 | Before | `AGENTS.md` plus the former 10-file mandatory read set | 52,423 | 13,106 |
-| After | `AGENTS.md`, entry point, manifest, README and `current_state.json` | 11,223 | 2,806 |
+| After | `AGENTS.md`, entry point, manifest, README and `current_state.json` | 11,219 | 2,805 |
 
 The optimized set is **78.6% smaller**. The before figure excludes the old
 entry-point and manifest while the after figure includes both, so the reported
