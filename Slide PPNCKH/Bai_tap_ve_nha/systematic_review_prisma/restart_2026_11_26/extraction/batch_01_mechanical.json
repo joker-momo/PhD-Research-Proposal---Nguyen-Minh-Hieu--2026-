@@ -1,0 +1,29 @@
+{
+  "state": "TASK_STATE_COMPLETED",
+  "characters": 65930,
+  "errors": [],
+  "observed_ids": [
+    "R0001",
+    "R0002",
+    "R0003",
+    "R0006",
+    "R0009",
+    "R0010",
+    "R0015",
+    "R0019",
+    "R0022",
+    "R0029",
+    "R0044",
+    "R0045",
+    "R0048"
+  ],
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": 0,
+  "duplicate_doi": 0,
+  "duplicate_title": 0,
+  "counts": {
+    "fields": 182,
+    "status_NOT_ACCESSIBLE": 182
+  }
+}

@@ -163,9 +163,11 @@
         "R0121"
       ],
       "brief": "restart_2026_11_26/extraction/batch_02_brief.md",
-      "message_id": "hk261-restart-step11-p08-batch02-v1"
+      "message_id": "hk261-restart-step11-p08-batch02-parent-v1",
+      "delegation": "One Gemini.app parent task; internal workers only after attached project access is verified; report actual use."
     }
   ],
   "dispatch_mode": "sequential",
-  "dispatch_reason": "Concurrent direct project attachments and recovery are unverified on the production bridge. Preserve independent scopes and one receipt/review per batch."
+  "dispatch_reason": "Concurrent direct project attachments and recovery are unverified on the production bridge. Preserve independent scopes and one receipt/review per batch.",
+  "batch01_disposition": "Rejected: 0/13 accessible to Gemini. Do not resend these IDs under user instruction."
 }

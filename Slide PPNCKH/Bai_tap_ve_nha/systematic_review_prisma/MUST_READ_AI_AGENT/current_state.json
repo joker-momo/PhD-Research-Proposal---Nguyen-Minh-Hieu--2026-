@@ -1,29 +1,30 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T22:19:35+07:00",
+  "updated_at": "2026-11-26T22:24:27+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-setup",
+    "task_id": "restart-11-batch01-review",
     "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T22:19:35+07:00",
-    "updated_at": "2026-11-26T22:19:35+07:00",
-    "completed_at": "2026-11-26T22:19:35+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/manifest.json",
-    "decision_id": "restart-11-setup-v1"
+    "research_owner": "GEMINI_RESEARCH",
+    "status": "rejected",
+    "started_at": "2026-11-26T22:19:57+07:00",
+    "updated_at": "2026-11-26T22:24:27+07:00",
+    "completed_at": "2026-11-26T22:24:27+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_review.md",
+    "decision_id": "restart-11-batch01-review-v1"
   },
   "next_task": {
-    "task_id": "restart-11-batch01",
+    "task_id": "restart-11-batch02",
     "status": "ready",
     "owner": "GEMINI_RESEARCH",
-    "dispatch_brief": "restart_2026_11_26/extraction/batch_01_brief.md",
-    "message_id": "hk261-restart-step11-p08-batch01-v1",
-    "action": "Extract fresh P08 evidence for the first 13 reports in Gemini.app Task.",
-    "acceptance": "13 exact IDs, 14 fields each, source locators and zero unsupported claims."
+    "dispatch_brief": "restart_2026_11_26/extraction/batch_02_brief.md",
+    "message_id": "hk261-restart-step11-p08-batch02-parent-v1",
+    "action": "Extract 12 previously undispatched P08 reports in one native parent task.",
+    "acceptance": "12 reports, unique internal assignments, 14 fields and verified full-text locators."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -131,6 +132,12 @@
         "documented_shortfalls": 0,
         "current_groups": 25,
         "final_unique_studies": 25
+      },
+      "extraction": {
+        "expected": 25,
+        "accepted": 0,
+        "not_accessible_to_gemini": 13,
+        "not_dispatched": 12
       }
     }
   },
