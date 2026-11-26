@@ -1,0 +1,1734 @@
+{
+  "task": "family_01",
+  "generated_at": "2026-11-26T10:47:56+07:00",
+  "status": "MECHANICAL_CANDIDATES_NOT_STUDY_LINKAGE",
+  "method": {
+    "normalization": "casefold; replace every non-alphanumeric character with a space; collapse spaces",
+    "stopwords": [
+      "a",
+      "an",
+      "and",
+      "by",
+      "for",
+      "from",
+      "in",
+      "of",
+      "on",
+      "the",
+      "to",
+      "using",
+      "via",
+      "with"
+    ],
+    "candidate_rules": [
+      "same DOI",
+      "same normalized title",
+      "at least2 shared normalized full author names",
+      "title token set Jaccard>=0.35"
+    ],
+    "pairs_checked": 1035,
+    "explicit_fulltext_link_search": "not performed by this deterministic derivative"
+  },
+  "record_count": 46,
+  "records": [
+    {
+      "id": "S01",
+      "title": "Efficient Real-Time Image Recognition Using Collaborative Swarm of UAVs and Convolutional Networks",
+      "authors": [
+        "Marwan Dhuheir",
+        "Emna Baccour",
+        "Aiman Erbad",
+        "Sinan Sabeeh",
+        "Mounir Hamdi"
+      ],
+      "year": 2021,
+      "venue": "2021 International Wireless Communications and Mobile Computing (IWCMC)",
+      "doi": "10.1109/iwcmc51323.2021.9498967",
+      "source_version": "preprint",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/0/accepted_record",
+      "local_text": "screening_46/text/S01.txt",
+      "candidate_partner_ids": [
+        "S02",
+        "S06",
+        "C02"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S02",
+      "title": "Deep Reinforcement Learning for Trajectory Path Planning and Distributed Inference in Resource-Constrained UAV Swarms",
+      "authors": [
+        "Marwan Dhuheir",
+        "Emna Baccour",
+        "Aiman Erbad",
+        "Sinan Sabeeh Al-Obaidi",
+        "Mounir Hamdi"
+      ],
+      "year": 2023,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2022.3231341",
+      "source_version": "preprint",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/1/accepted_record",
+      "local_text": "screening_46/text/S02.txt",
+      "candidate_partner_ids": [
+        "S01",
+        "S06",
+        "C02",
+        "C09"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S03",
+      "title": "Demo: IDEA: Intelligent Divine Eye on Air through Multi-UAV Collaborative Inference",
+      "authors": [
+        "Hao Sun",
+        "Chao Dong",
+        "Yuben Qu",
+        "Feiyu Wu",
+        "Lei Zhang",
+        "Qihui Wu"
+      ],
+      "year": 2022,
+      "venue": "The 20th Annual International Conference on Mobile Systems, Applications and Services (MobiSys ’22)",
+      "doi": "10.1145/3498361.3538674",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/2/accepted_record",
+      "local_text": "screening_46/text/S03.txt",
+      "candidate_partner_ids": [
+        "S07",
+        "S15",
+        "C22",
+        "C23",
+        "C24"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S04",
+      "title": "Reliable DNN Partitioning for UAV Swarm",
+      "authors": [
+        "Mingyue Zhao",
+        "Xing Zhang",
+        "Zezhao Meng",
+        "Xiangwang Hou"
+      ],
+      "year": 2022,
+      "venue": "2022 International Wireless Communications and Mobile Computing (IWCMC)",
+      "doi": "10.1109/iwcmc55113.2022.9824945",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/3/accepted_record",
+      "local_text": "screening_46/text/S04.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "S05",
+      "title": "Online object detection task offloading in UAV ad hoc networks",
+      "authors": [
+        "Shengqing Wang",
+        "Zhiyong Du",
+        "Yang Du",
+        "Jiaqi Chen"
+      ],
+      "year": 2022,
+      "venue": "2022 IEEE International Conference on Unmanned Systems (ICUS)",
+      "doi": "10.1109/icus55513.2022.9987114",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/4/accepted_record",
+      "local_text": "screening_46/text/S05.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "S06",
+      "title": "LLHR: Low Latency and High Reliability CNN Distributed Inference for Resource-Constrained UAV Swarms",
+      "authors": [
+        "Marwan Dhuheir",
+        "Aiman Erbad",
+        "Sinan Sabeeh"
+      ],
+      "year": 2023,
+      "venue": "2023 IEEE Wireless Communications and Networking Conference (WCNC)",
+      "doi": "10.1109/wcnc55385.2023.10118908",
+      "source_version": "preprint",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/5/accepted_record",
+      "local_text": "screening_46/text/S06.txt",
+      "candidate_partner_ids": [
+        "S01",
+        "S02",
+        "C02"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S07",
+      "title": "Elastic Collaborative Edge Intelligence for UAV Swarm: Architecture, Challenges, and Opportunities",
+      "authors": [
+        "Yuben Qu",
+        "Hao Sun",
+        "Chao Dong",
+        "Jiawen Kang",
+        "Haipeng Dai",
+        "Qihui Wu",
+        "Song Guo"
+      ],
+      "year": 2024,
+      "venue": "IEEE Communications Magazine",
+      "doi": "10.1109/MCOM.002.2300129",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/6/accepted_record",
+      "local_text": "screening_46/text/S07.txt",
+      "candidate_partner_ids": [
+        "S03",
+        "S15",
+        "C22",
+        "C23",
+        "C24"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S08",
+      "title": "End-to-End Latency Optimization for Resilient Distributed Convolutional Neural Network Inference in Resource-Constrained Unmanned Aerial Vehicle Swarms",
+      "authors": [
+        "Jeongho Kim",
+        "Joonho Seon",
+        "Soohyun Kim",
+        "Seongwoo Lee",
+        "Jinwook Kim",
+        "Byungsun Hwang",
+        "Youngghyu Sun",
+        "Jinyoung Kim"
+      ],
+      "year": 2024,
+      "venue": "Applied Sciences",
+      "doi": "10.3390/app142310832",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/7/accepted_record",
+      "local_text": "screening_46/text/S08.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "S09",
+      "title": "DNN-Based Task Partitioning and Offloading with Reliability Guarantees in Multi-UAV-Assisted MEC System",
+      "authors": [
+        "Ling Wang",
+        "Junhua Wang",
+        "Chen Dai"
+      ],
+      "year": 2024,
+      "venue": "2024 IEEE International Symposium on Product Compliance Engineering - Asia (ISPCE-ASIA)",
+      "doi": "10.1109/ISPCE-ASIA64773.2024.10756252",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/8/accepted_record",
+      "local_text": "screening_46/text/S09.txt",
+      "candidate_partner_ids": [
+        "S18",
+        "C05"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S10",
+      "title": "Reinforcement Learning based Edge-Assisted Inference for Maritime UAV Networks",
+      "authors": [
+        "Chuxuan Wang",
+        "Jieling Li",
+        "Liqing Ye",
+        "Yu Liu",
+        "Liang Xiao"
+      ],
+      "year": 2024,
+      "venue": "2024 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)",
+      "doi": "10.1109/ISPA63168.2024.00222",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/9/accepted_record",
+      "local_text": "screening_46/text/S10.txt",
+      "candidate_partner_ids": [
+        "S12",
+        "C15"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S11",
+      "title": "Joint UAV Deployment and Model Partition for Efficient Collaborative Inference",
+      "authors": [
+        "Wenjing Xia",
+        "Tao Wu",
+        "Hongjun Wang",
+        "Ruhao Jiang",
+        "Mingjin Zhang",
+        "Yuben Qu"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE 31th International Conference on Parallel and Distributed Systems (ICPADS)",
+      "doi": "10.1109/ICPADS67057.2025.11322921",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/10/accepted_record",
+      "local_text": "screening_46/text/S11.txt",
+      "candidate_partner_ids": [
+        "C22"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S12",
+      "title": "Multi-UAV Collaborative Model Inference Based on Hierarchical Reinforcement Learning",
+      "authors": [
+        "Xinchen Li",
+        "Chen Xu",
+        "Lidong Ma",
+        "Wenfei Yuan"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE 25th International Conference on Communication Technology (ICCT)",
+      "doi": "10.1109/ICCT67417.2025.11374232",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/11/accepted_record",
+      "local_text": "screening_46/text/S12.txt",
+      "candidate_partner_ids": [
+        "S10",
+        "S15",
+        "C15"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S13",
+      "title": "LE-MHAPPO-Enhanced DNN Task Partitioning in Energy-harvesting Heterogeneous UAV Swarms",
+      "authors": [
+        "Ke Gao",
+        "Jun Du",
+        "Chunxiao Jiang",
+        "Debashisha Mishra",
+        "Chao Zhang",
+        "Merouane Debbah"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE International Conference on Communications (ICC): IoT and Sensor Networks Symposium",
+      "doi": "10.1109/ICC52391.2025.11162059",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/12/accepted_record",
+      "local_text": "screening_46/text/S13.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "S14",
+      "title": "Computation Offloading and Resource Allocation for Deep Neural Network Inference in UAV Wireless Networks",
+      "authors": [
+        "Muhammad Ismail",
+        "Long Bao Le"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE International Conference on Communications (ICC): Next-Generation Networking and Internet Symposium",
+      "doi": "10.1109/ICC52391.2025.11161364",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/13/accepted_record",
+      "local_text": "screening_46/text/S14.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "S15",
+      "title": "Adaptive model switching of collaborative inference for multi-CNN streams in UAV swarm",
+      "authors": [
+        "Yu Li",
+        "Yuben Qu",
+        "Chao Dong",
+        "Zhen Qin",
+        "Lei Zhang",
+        "Qihui Wu"
+      ],
+      "year": 2025,
+      "venue": "Chinese Journal of Aeronautics, 38(8): 103564",
+      "doi": "10.1016/j.cja.2025.103564",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/14/accepted_record",
+      "local_text": "screening_46/text/S15.txt",
+      "candidate_partner_ids": [
+        "S03",
+        "S07",
+        "S12",
+        "S19",
+        "C22",
+        "C23",
+        "C24"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S16",
+      "title": "Distributed Split Computing Using Diffusive Metrics for UAV Swarms",
+      "authors": [
+        "Talip Tolga Sarı",
+        "Gökhan Seçinti",
+        "Angelo Trotta"
+      ],
+      "year": 2026,
+      "venue": "Journal of Systems Architecture, 176: 103804",
+      "doi": "10.1016/j.sysarc.2026.103804",
+      "source_version": "preprint",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/15/accepted_record",
+      "local_text": "screening_46/text/S16.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "S17",
+      "title": "Distributed inference in IoT-based aerial network of UAVs",
+      "authors": [
+        "HyungBin Park",
+        "SuKyoung Lee",
+        "ShinYoung Cho"
+      ],
+      "year": 2025,
+      "venue": "Internet of Things, 30: 101479",
+      "doi": "10.1016/j.iot.2024.101479",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/16/accepted_record",
+      "local_text": "screening_46/text/S17.txt",
+      "candidate_partner_ids": [
+        "C09"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S18",
+      "title": "DNN Task Partitioning and Migration Strategies in Multi-UAV-Assisted Mobile Edge Computing",
+      "authors": [
+        "Shuman Meng",
+        "Bin Li",
+        "Zhao Yi",
+        "Lei Liu",
+        "Zesong Fei"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal, 13(13): 28758-28769",
+      "doi": "10.1109/JIOT.2026.3685675",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/17/accepted_record",
+      "local_text": "screening_46/text/S18.txt",
+      "candidate_partner_ids": [
+        "S09"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S19",
+      "title": "Adaptive Partition and Resource Allocation for Collaborative Inference Services in UAV Swarm",
+      "authors": [
+        "Ying Dong",
+        "Jiebei Shi",
+        "Songwei Li",
+        "Yuzhou Gao",
+        "Yeping Zhu",
+        "Jianbing Zhang",
+        "Jiwei Huang"
+      ],
+      "year": 2026,
+      "venue": "2026 IEEE International Conference on Web Services (ICWS)",
+      "doi": "10.1109/icws72778.2026.00154",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=S19]",
+      "local_text": "screening_46/text/S19.txt",
+      "candidate_partner_ids": [
+        "S15",
+        "C10",
+        "C23"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "S20",
+      "title": "Promise: Predictive and Cost-Optimal Migrations for Service-Continuous Edge Intelligence in Multi-UAV Networks",
+      "authors": [
+        "Jian Zhang",
+        "Ming Tao",
+        "Renping Xie",
+        "Yin Zhang"
+      ],
+      "year": 2026,
+      "venue": "2026 IEEE International Conference on Web Services (ICWS)",
+      "doi": "10.1109/icws72778.2026.00067",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=S20]",
+      "local_text": "screening_46/text/S20.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C01",
+      "title": "Orion: A Collaborative Edge Inference Framework for Large Language Models Processing Multi-Sensor Data in UAV Swarms",
+      "authors": [
+        "Tianchou Yang",
+        "Hongjie Guo",
+        "Zhengyu Zhao",
+        "Donglin Zhu"
+      ],
+      "year": 2026,
+      "venue": "Drones",
+      "doi": "10.3390/drones10060410",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/20/accepted_record",
+      "local_text": "screening_46/text/C01.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C02",
+      "title": "Multi-Agent Meta Reinforcement Learning for Reliable and Low-Latency Distributed Inference in Resource-Constrained UAV Swarms",
+      "authors": [
+        "Marwan Dhuheir",
+        "Aiman Erbad",
+        "Bechir Hamdaoui",
+        "Samir Brahim Belhaouari",
+        "Mohsen Guizani",
+        "Thang X. Vu"
+      ],
+      "year": 2025,
+      "venue": "IEEE Access",
+      "doi": "10.1109/ACCESS.2025.3572036",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/21/accepted_record",
+      "local_text": "screening_46/text/C02.txt",
+      "candidate_partner_ids": [
+        "S01",
+        "S02",
+        "S06",
+        "C11"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "C03",
+      "title": "A LINK-LAYER MODEL OF A UAV SWARM MESH NETWORK WITH ENCAPSULATION OF INTERMEDIATE DEEP NEURAL NETWORK ACTIVATIONS: ANALYTICAL EVALUATION OF LATENCY AND TRAFFIC VOLUME",
+      "authors": [
+        "Artem Kasianchuk",
+        "Halyna Lastivka"
+      ],
+      "year": 2026,
+      "venue": "Infocommunication technologies and electronic engineering",
+      "doi": "10.23939/ictee2026.02.144",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C03]",
+      "local_text": "screening_46/text/C03.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C04",
+      "title": "A cognitive synergetic hierarchical framework for UAV swarm combat via speculative inference and role-decoupled reinforcement learning",
+      "authors": [
+        "Lixa Wang",
+        "Yunqing Liu",
+        "Linyang Guo",
+        "Ran Zhang",
+        "Yu Cui",
+        "Yihan Cui",
+        "Chunlin Xu"
+      ],
+      "year": 2026,
+      "venue": "Frontiers in Neurorobotics",
+      "doi": "10.3389/fnbot.2026.1799054",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/23/accepted_record",
+      "local_text": "screening_46/text/C04.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C05",
+      "title": "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems",
+      "authors": [
+        "Hao Hao",
+        "Changqiao Xu",
+        "Wei Zhang",
+        "Shujie Yang",
+        "Xiaolong Wang",
+        "Huiling Shi",
+        "Gabriel-Miro Muntean"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "doi": "10.1109/tcsvt.2026.3745821",
+      "source_version": "author_manuscript",
+      "identity_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C05]",
+      "local_text": "screening_46/text/C05.txt",
+      "candidate_partner_ids": [
+        "S09"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "C06",
+      "title": "Joint Model Partitioning and Bandwidth Allocation for UAV-Assisted Space–Air–Ground–Sea Integrated Network: A Hybrid A3C-PPO Approach",
+      "authors": [
+        "Yuanmo Lin",
+        "Yuanyuan Han",
+        "Minmin Wu",
+        "Shaoyu Lin",
+        "Xia Zhang",
+        "Zhiyong Xu"
+      ],
+      "year": 2026,
+      "venue": "Entropy",
+      "doi": "10.3390/e28030337",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/25/accepted_record",
+      "local_text": "screening_46/text/C06.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C07",
+      "title": "A3D: Adaptive, Accurate, and Autonomous Navigation for Edge-Assisted Drones",
+      "authors": [
+        "Liekang Zeng",
+        "Haowei Chen",
+        "Daipeng Feng",
+        "Xiaoxi Zhang",
+        "Xu Chen"
+      ],
+      "year": 2024,
+      "venue": "IEEE/ACM Transactions on Networking",
+      "doi": "10.1109/TNET.2023.3297876",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/26/accepted_record",
+      "local_text": "screening_46/text/C07.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C08",
+      "title": "Adaptive Heuristics for Scheduling DNN Inferencing on Edge and Cloud for Personalized UAV Fleets",
+      "authors": [
+        "Suman Raj",
+        "Radhika Mittal",
+        "Harshil Gupta",
+        "Yogesh Simmhan"
+      ],
+      "year": 2025,
+      "venue": "Future Generation Computer Systems (supplied preprint: arXiv:2412.20860v2)",
+      "doi": "10.1016/j.future.2025.107874",
+      "source_version": "preprint",
+      "identity_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C08]",
+      "local_text": "screening_46/text/C08.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C09",
+      "title": "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms",
+      "authors": [
+        "HyungBin Park",
+        "SuKyoung Lee"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3755315",
+      "source_version": "author_manuscript",
+      "identity_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C09]",
+      "local_text": "screening_46/text/C09.txt",
+      "candidate_partner_ids": [
+        "S02",
+        "S17"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "C10",
+      "title": "A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference",
+      "authors": [
+        "Songwei Li",
+        "Zhihan Wang",
+        "Jiebei Shi",
+        "Jiwei Huang"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3740035",
+      "source_version": "author_manuscript",
+      "identity_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C10]",
+      "local_text": "screening_46/text/C10.txt",
+      "candidate_partner_ids": [
+        "S19",
+        "C12",
+        "C22"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "C11",
+      "title": "Quantum-Enhanced Multi-Agent Reinforcement Learning for Ubiquitous LLM Inference via Embodied UAV Swarms",
+      "authors": [
+        "Xiangdong Zheng",
+        "Long Luo",
+        "Hongfang Yu",
+        "Haoxiang Luo"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Cognitive Communications and Networking",
+      "doi": "10.1109/TCCN.2026.3716252",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/30/accepted_record",
+      "local_text": "screening_46/text/C11.txt",
+      "candidate_partner_ids": [
+        "C02"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "C12",
+      "title": "SwarmChain: Collaborative LLM Inference for UAV Swarm Control",
+      "authors": [
+        "Biao Han",
+        "Yitang Chen",
+        "Jinrong Li",
+        "Jie Li",
+        "Jinshu Su"
+      ],
+      "year": 2025,
+      "venue": "IEEE Internet of Things Magazine",
+      "doi": "10.1109/MIOT.2025.3575886",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/31/accepted_record",
+      "local_text": "screening_46/text/C12.txt",
+      "candidate_partner_ids": [
+        "C10",
+        "C22"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "C13",
+      "title": "RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV Swarm",
+      "authors": [
+        "Shengjie Zhong",
+        "Zhongliang Zhao",
+        "Jingxuan Chen",
+        "Xianbin Cao",
+        "Zhiyi Liu",
+        "Dapeng O. Wu",
+        "Tony Q. S. Quek"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Vehicular Technology",
+      "doi": "10.1109/tvt.2026.3755123",
+      "source_version": "author_manuscript",
+      "identity_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C13]",
+      "local_text": "screening_46/text/C13.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C14",
+      "title": "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks",
+      "authors": [
+        "Lianming Xu",
+        "Yixue Liang",
+        "Lei Jin",
+        "Li Wang",
+        "Ying-Jun Angela Zhang",
+        "Xiaoyu Zhao",
+        "Aiguo Fei"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3746980",
+      "source_version": "author_manuscript",
+      "identity_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C14]",
+      "local_text": "screening_46/text/C14.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C15",
+      "title": "Deep Reinforcement Learning-Based Task Offloading With Collaborative Inference in UAV-Assisted Mobile Edge Computing Networks",
+      "authors": [
+        "Xiangping Bryce Zhai",
+        "Shuang Fu",
+        "Changyan Yi",
+        "Zhiquan Liu",
+        "Chao Dong",
+        "Chee Wei Tan"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Intelligent Transportation Systems",
+      "doi": "10.1109/TITS.2025.3629117",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/34/accepted_record",
+      "local_text": "screening_46/text/C15.txt",
+      "candidate_partner_ids": [
+        "S10",
+        "S12"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "C16",
+      "title": "Secure Split Offloading and Trajectory Design for UAV-Assisted Multi-Exit Collaborative DNN Inference",
+      "authors": [
+        "Mengru Wu",
+        "Haonan Wu",
+        "Weidang Lu",
+        "Zhaolong Ning",
+        "Lei Guo",
+        "Abbas Jamalipour"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Mobile Computing",
+      "doi": "10.1109/TMC.2026.3708394",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/35/accepted_record",
+      "local_text": "screening_46/text/C16.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C17",
+      "title": "Heading-Coupled STAR-RIS Assisted Multi-UAV Networks for Semantic ISCC",
+      "authors": [
+        "Menghui Shen",
+        "Honggui Deng",
+        "Shujiang Zeng",
+        "Jingyue Fang",
+        "Yuxiang Deng",
+        "Dehua Wu",
+        "Yun Ou"
+      ],
+      "year": 2026,
+      "venue": "IEEE Wireless Communications Letters",
+      "doi": "10.1109/LWC.2026.3743641",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/36/accepted_record",
+      "local_text": "screening_46/text/C17.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C18",
+      "title": "Joint UAV Placement and Dependent Task Offloading in Multi-UAV MEC Networks: A Graph Attention Enhanced DRL Approach",
+      "authors": [
+        "Cheng Zhan",
+        "Wei Liu",
+        "Kaifeng Song",
+        "Rongfei Fan",
+        "Jun Liu",
+        "Han Hu"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Mobile Computing",
+      "doi": "10.1109/TMC.2025.3628608",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/37/accepted_record",
+      "local_text": "screening_46/text/C18.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C19",
+      "title": "PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference in UAV-Assisted Internet of Vehicles Environments",
+      "authors": [
+        "DeokKyu Kwon",
+        "Ashok Kumar Das",
+        "Youngho Park"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3755176",
+      "source_version": "author_manuscript",
+      "identity_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C19]",
+      "local_text": "screening_46/text/C19.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C20",
+      "title": "Multi-UAV cooperative inference for IoVs: Dynamic partitioning and caching optimization",
+      "authors": [
+        "Qiutian Xu",
+        "Chao Yang",
+        "Xuandong Lai",
+        "Yi Liu",
+        "Xin Chen"
+      ],
+      "year": 2026,
+      "venue": "Ad Hoc Networks",
+      "doi": "10.1016/j.adhoc.2026.104347",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/39/accepted_record",
+      "local_text": "screening_46/text/C20.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C21",
+      "title": "Toward Inference Latency Optimization for Scalable Collaborative Multi-UAV Analytics",
+      "authors": [
+        "Ying Wang",
+        "Jingling Yuan",
+        "Wenbo Wu",
+        "Quanfeng Yao",
+        "Donglei Xu",
+        "Zhishu Shen"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Green Communications and Networking",
+      "doi": "10.1109/TGCN.2025.3625726",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/40/accepted_record",
+      "local_text": "screening_46/text/C21.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "C22",
+      "title": "Energy-Efficient Collaborative DNN Inference in UAV Swarm",
+      "authors": [
+        "Weiqing Ren",
+        "Yuben Qu",
+        "Zhen Qin",
+        "Chao Dong",
+        "Hao Sun",
+        "Lei Zhang",
+        "Qihui Wu"
+      ],
+      "year": 2023,
+      "venue": "2023 9th International Conference on Big Data Computing and Communications (BIGCOM)",
+      "doi": "10.1109/BIGCOM61073.2023.00034",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/41/accepted_record",
+      "local_text": "screening_46/text/C22.txt",
+      "candidate_partner_ids": [
+        "S03",
+        "S07",
+        "S11",
+        "S15",
+        "C10",
+        "C12",
+        "C23",
+        "C24"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "C23",
+      "title": "Efficient Pipeline Collaborative DNN Inference in Resource-constrained UAV Swarm",
+      "authors": [
+        "Weiqing Ren",
+        "Yuben Qu",
+        "Zhen Qin",
+        "Chao Dong",
+        "Fuhui Zhou",
+        "Lei Zhang",
+        "Qihui Wu"
+      ],
+      "year": 2024,
+      "venue": "2024 IEEE Wireless Communications and Networking Conference (WCNC)",
+      "doi": "10.1109/WCNC57260.2024.10570535",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/42/accepted_record",
+      "local_text": "screening_46/text/C23.txt",
+      "candidate_partner_ids": [
+        "S03",
+        "S07",
+        "S15",
+        "S19",
+        "C22",
+        "C24"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "C24",
+      "title": "Dynamic DNN Model Switching for Collaborative Edge Intelligence in UAV Swarm",
+      "authors": [
+        "Yu Li",
+        "Yuben Qu",
+        "Chao Dong",
+        "Fuhui Zhou",
+        "Lei Zhang",
+        "Qihui Wu"
+      ],
+      "year": 2023,
+      "venue": "2023 International Conference on Wireless Communications and Signal Processing (WCSP)",
+      "doi": "10.1109/WCSP58612.2023.10405273",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/43/accepted_record",
+      "local_text": "screening_46/text/C24.txt",
+      "candidate_partner_ids": [
+        "S03",
+        "S07",
+        "S15",
+        "C22",
+        "C23"
+      ],
+      "family_status": "UNRESOLVED",
+      "study_id": null
+    },
+    {
+      "id": "C25",
+      "title": "A hybrid fast inference approach with distributed neural networks for edge computing enabled UAV swarm",
+      "authors": [
+        "Peng Zhang",
+        "Hui Tian",
+        "Hao Luo",
+        "XingWang Li",
+        "GaoFeng Nie"
+      ],
+      "year": 2023,
+      "venue": "Physical Communication",
+      "doi": "10.1016/j.phycom.2023.102129",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/44/accepted_record",
+      "local_text": "screening_46/text/C25.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    },
+    {
+      "id": "SNCS",
+      "title": "Learning-Based UAV Swarm Video Analytics Orchestration in Disaster Response Management",
+      "authors": [
+        "Tiying Gao",
+        "Dwight Goins",
+        "Chaise Ballotti",
+        "Jiaqing Liu",
+        "Chengyi Qu"
+      ],
+      "year": 2025,
+      "venue": "SN Computer Science",
+      "doi": "10.1007/s42979-025-04063-5",
+      "source_version": "publisher_pdf",
+      "identity_locator": "screening_46/consolidated/decision_ledger.json#/records/45/accepted_record",
+      "local_text": "screening_46/text/SNCS.txt",
+      "candidate_partner_ids": [],
+      "family_status": "NO_CANDIDATE_UNDER_MECHANICAL_SCREEN",
+      "study_id": null
+    }
+  ],
+  "candidate_count": 37,
+  "candidate_pairs": [
+    {
+      "left_id": "S01",
+      "right_id": "S02",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "aiman erbad",
+        "emna baccour",
+        "marwan dhuheir",
+        "mounir hamdi"
+      ],
+      "title_jaccard": 0.0,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/0/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/1/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S01",
+      "right_id": "S06",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "aiman erbad",
+        "marwan dhuheir",
+        "sinan sabeeh"
+      ],
+      "title_jaccard": 0.0,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/0/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/5/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S01",
+      "right_id": "C02",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "aiman erbad",
+        "marwan dhuheir"
+      ],
+      "title_jaccard": 0.0,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/0/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/21/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S02",
+      "right_id": "S06",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "aiman erbad",
+        "marwan dhuheir"
+      ],
+      "title_jaccard": 0.3333333333333333,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/1/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/5/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S02",
+      "right_id": "C02",
+      "signals": [
+        "shared_authors_ge2",
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [
+        "aiman erbad",
+        "marwan dhuheir"
+      ],
+      "title_jaccard": 0.4444444444444444,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/1/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/21/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S02",
+      "right_id": "C09",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.375,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/1/accepted_record",
+        "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C09]"
+      ]
+    },
+    {
+      "left_id": "S03",
+      "right_id": "S07",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "hao sun",
+        "qihui wu",
+        "yuben qu"
+      ],
+      "title_jaccard": 0.1111111111111111,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/2/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/6/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S03",
+      "right_id": "S15",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "lei zhang",
+        "qihui wu",
+        "yuben qu"
+      ],
+      "title_jaccard": 0.23529411764705882,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/2/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/14/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S03",
+      "right_id": "C22",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "hao sun",
+        "lei zhang",
+        "qihui wu",
+        "yuben qu"
+      ],
+      "title_jaccard": 0.2,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/2/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/41/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S03",
+      "right_id": "C23",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "lei zhang",
+        "qihui wu",
+        "yuben qu"
+      ],
+      "title_jaccard": 0.17647058823529413,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/2/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/42/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S03",
+      "right_id": "C24",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "lei zhang",
+        "qihui wu",
+        "yuben qu"
+      ],
+      "title_jaccard": 0.1111111111111111,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/2/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/43/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S06",
+      "right_id": "C02",
+      "signals": [
+        "shared_authors_ge2",
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [
+        "aiman erbad",
+        "marwan dhuheir"
+      ],
+      "title_jaccard": 0.4444444444444444,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/5/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/21/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S07",
+      "right_id": "S15",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "qihui wu",
+        "yuben qu"
+      ],
+      "title_jaccard": 0.1875,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/6/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/14/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S07",
+      "right_id": "C22",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "hao sun",
+        "qihui wu",
+        "yuben qu"
+      ],
+      "title_jaccard": 0.23076923076923078,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/6/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/41/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S07",
+      "right_id": "C23",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "qihui wu",
+        "yuben qu"
+      ],
+      "title_jaccard": 0.2,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/6/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/42/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S07",
+      "right_id": "C24",
+      "signals": [
+        "shared_authors_ge2",
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "qihui wu",
+        "yuben qu"
+      ],
+      "title_jaccard": 0.38461538461538464,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/6/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/43/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S09",
+      "right_id": "S18",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.35294117647058826,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/8/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/17/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S09",
+      "right_id": "C05",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.35294117647058826,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/8/accepted_record",
+        "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C05]"
+      ]
+    },
+    {
+      "left_id": "S10",
+      "right_id": "S12",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.38461538461538464,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/9/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/11/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S10",
+      "right_id": "C15",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.5333333333333333,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/9/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/34/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S11",
+      "right_id": "C22",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [
+        "yuben qu"
+      ],
+      "title_jaccard": 0.36363636363636365,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/10/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/41/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S12",
+      "right_id": "S15",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.35714285714285715,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/11/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/14/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S12",
+      "right_id": "C15",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.35294117647058826,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/11/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/34/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S15",
+      "right_id": "S19",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.35714285714285715,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/14/accepted_record",
+        "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=S19]"
+      ]
+    },
+    {
+      "left_id": "S15",
+      "right_id": "C22",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "lei zhang",
+        "qihui wu",
+        "yuben qu",
+        "zhen qin"
+      ],
+      "title_jaccard": 0.3076923076923077,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/14/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/41/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S15",
+      "right_id": "C23",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "lei zhang",
+        "qihui wu",
+        "yuben qu",
+        "zhen qin"
+      ],
+      "title_jaccard": 0.26666666666666666,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/14/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/42/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S15",
+      "right_id": "C24",
+      "signals": [
+        "shared_authors_ge2",
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "lei zhang",
+        "qihui wu",
+        "yu li",
+        "yuben qu"
+      ],
+      "title_jaccard": 0.35714285714285715,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/14/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/43/accepted_record"
+      ]
+    },
+    {
+      "left_id": "S17",
+      "right_id": "C09",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "hyungbin park",
+        "sukyoung lee"
+      ],
+      "title_jaccard": 0.13333333333333333,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/16/accepted_record",
+        "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C09]"
+      ]
+    },
+    {
+      "left_id": "S19",
+      "right_id": "C10",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "jiebei shi",
+        "jiwei huang",
+        "songwei li"
+      ],
+      "title_jaccard": 0.3076923076923077,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=S19]",
+        "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C10]"
+      ]
+    },
+    {
+      "left_id": "S19",
+      "right_id": "C23",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.38461538461538464,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=S19]",
+        "screening_46/consolidated/decision_ledger.json#/records/42/accepted_record"
+      ]
+    },
+    {
+      "left_id": "C02",
+      "right_id": "C11",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.3684210526315789,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/21/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/30/accepted_record"
+      ]
+    },
+    {
+      "left_id": "C10",
+      "right_id": "C12",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.36363636363636365,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C10]",
+        "screening_46/consolidated/decision_ledger.json#/records/31/accepted_record"
+      ]
+    },
+    {
+      "left_id": "C10",
+      "right_id": "C22",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.36363636363636365,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/reconciliation/results/identity_dates_01_accepted.json#records[id=C10]",
+        "screening_46/consolidated/decision_ledger.json#/records/41/accepted_record"
+      ]
+    },
+    {
+      "left_id": "C12",
+      "right_id": "C22",
+      "signals": [
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [],
+      "title_jaccard": 0.4,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/31/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/41/accepted_record"
+      ]
+    },
+    {
+      "left_id": "C22",
+      "right_id": "C23",
+      "signals": [
+        "shared_authors_ge2",
+        "title_jaccard_ge0.35"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "lei zhang",
+        "qihui wu",
+        "weiqing ren",
+        "yuben qu",
+        "zhen qin"
+      ],
+      "title_jaccard": 0.6,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/41/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/42/accepted_record"
+      ]
+    },
+    {
+      "left_id": "C22",
+      "right_id": "C24",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "lei zhang",
+        "qihui wu",
+        "yuben qu"
+      ],
+      "title_jaccard": 0.3333333333333333,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/41/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/43/accepted_record"
+      ]
+    },
+    {
+      "left_id": "C23",
+      "right_id": "C24",
+      "signals": [
+        "shared_authors_ge2"
+      ],
+      "shared_authors": [
+        "chao dong",
+        "fuhui zhou",
+        "lei zhang",
+        "qihui wu",
+        "yuben qu"
+      ],
+      "title_jaccard": 0.2857142857142857,
+      "status": "UNRESOLVED",
+      "merger_authorized": false,
+      "identity_locators": [
+        "screening_46/consolidated/decision_ledger.json#/records/42/accepted_record",
+        "screening_46/consolidated/decision_ledger.json#/records/43/accepted_record"
+      ]
+    }
+  ],
+  "same_doi_pairs": 0,
+  "same_title_pairs": 0,
+  "merges": 0,
+  "final_study_count": null,
+  "limitation": "This is an index of metadata signals only. It neither proves that reports share a study nor establishes independence. No scientific finding from pending provider is adopted."
+}

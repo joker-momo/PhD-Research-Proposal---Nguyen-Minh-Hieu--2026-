@@ -1,24 +1,18 @@
-# Completion audit: 25 November 2026
+# Completion audit
 
-Authoritative corpus:interim_27report/. Manuscript:Springer Nature LaTeX for SN Computer Science. Coursework remains separate from the dissertation roadmap.
+Updated at: 2026-11-26T10:50:28+07:00. The dated filename is retained for existing links. Canonical state: `MUST_READ_AI_AGENT/current_state.json`.
 
-| Requirement | Observed evidence | Status |
-|---|---|---|
-| Approximately20 relevant primary reports | 24 included among27 assessed;1excluded,2uncertain | Interim quantity met; final eligibility/adjudication pending |
-| One review idea aligned with UAV-edge direction | Partitioning,orchestration and resilience,with explicit inference topology and evaluation boundaries | Working synthesis |
-| Scientific manuscript | LaTeX with34 references and required sections;current artifact audits stored with dataset | Interim draft |
-| Official specialist-journal format | Springer sn-jnl and numbered Vancouver bibliography | Template applied |
-| 2021 onward | Current studies2021–2026;final cutoff25Nov2026 | Bounded current window |
-| 30–35 eligible studies | Need6–11 more after C01 addition | INCOMPLETE |
-| PRISMA systematic review | Protocol,amendments,queries and report-level flow;formal database identification unresolved | INCOMPLETE |
-| Evidence integrity | C01-only gate;comparative expansion effects excluded;domain9 inconsistency explicitly withheld | Working gate;remaining audit required |
-| Research ownership | Gemini-first router,quota-only fixed read-only fallback;Codex writing and acceptance | Applied |
-| LaTeX-only delivery | main.tex plus bibliography;PDF built from them | Applied |
-| HCMUT correspondence and supervisor | Metadata and author consent pending | INCOMPLETE |
-| Actual journal submission | No manuscript ID or receipt | NOT SUBMITTED |
-| Course proof forwarding | No receipt/forwarded email | INCOMPLETE |
-| Deadline three days before exam | Examination date unknown | Cannot calculate |
+| Requirement | Evidence and remaining work |
+|---|---|
+| Paper foundation | 46 retrieved and screened reports; 36 working INCLUDE. Final eligibility and study count remain open. |
+| Scope and dates | Protocol and amendments exist; six dates and two scope cases need adjudication. |
+| Family linkage | Phase closed with 46 accounted reports, 37 unresolved candidate pairs and zero merges. No provider linkage claims accepted. |
+| Formal search | arXiv has a completed log; IEEE/ACM failed access and Scopus/WoS have no completed exports. Four-source coverage is incomplete. |
+| Extraction and appraisal | 24 existing rows; exact-delta work and domain-9 acceptance remain. |
+| PRISMA and synthesis | Interim artifacts exist; final traceable arithmetic and synthesis are incomplete. |
+| Manuscript | Existing 17-page Springer LaTeX/PDF with 34 references. Matching stored hashes do not establish final research readiness. |
+| Author/HCMUT metadata | User and coauthor confirmation required. |
+| Submission and course proof | No manuscript ID, receipt or sent course evidence. NOT SUBMITTED. |
+| Deadline | Exact exam date unknown; official deadline is three days before the exam. |
 
-The full240 stored appraisal values are provisional because earlier23 domain9 labels emphasized public artifacts while the protocol also permits sufficient implementation details. The manuscript withholds domain9 and reports216 judgments from the other9 domains. This is not a completed final appraisal.
-
-Remaining independent work includes full-text expansion, consistent domain9 reassessment, final source/version/study-family/retraction/numerical checks, database exports/reconciliation, S19/C06 adjudication, author metadata and approval, submission and course proof. A successful PDF build does not close these gates.
+Approximately 20 papers are required by the assignment; the desired 30–35 comes from the user. Do not pad or truncate evidence to force either number. No invented review results, source claims, dates or approvals are permitted. Submission/email require explicit authorization.

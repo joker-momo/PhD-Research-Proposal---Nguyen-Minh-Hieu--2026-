@@ -1,26 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T10:37:31+07:00",
+  "updated_at": "2026-11-26T10:51:05+07:00",
   "goal": {
     "version": "HK261-PRISMA-SNCS-v2",
     "status": "active",
     "summary": "Complete the evidence-bounded PRISMA 2020 review, Springer Nature LaTeX manuscript, integrity checks and submission package; submission and course email remain user-authorized actions."
   },
   "task": {
-    "task_id": "reconciliation-study-family-brief",
+    "task_id": "reconciliation-family-01",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T10:37:31+07:00",
-    "updated_at": "2026-11-26T10:37:31+07:00",
-    "completed_at": "2026-11-26T10:37:31+07:00",
-    "decision_id": "reconciliation-study-family-brief-v1"
+    "started_at": "2026-11-26T10:38:07+07:00",
+    "updated_at": "2026-11-26T10:51:05+07:00",
+    "completed_at": "2026-11-26T10:51:05+07:00",
+    "decision_id": "reconciliation-family-01-v1"
   },
   "next_task": {
-    "task_id": "reconciliation-family-01",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "author-adjudication-and-search-preparation",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Route committed family_01.md once; check46 identities,version locators and1035-pair candidate screen; preserve unresolved links and no final study count.",
-    "acceptance": "F1-F5 allPASS or corrective follow-up;46 records retained;positive links require local evidence;no manuscript adoption."
+    "action": "Create one eight-case adjudication table and consolidated author form; prepare one four-source search/export brief. Ask once; then run the formal-search phase without repeated blocked attempts.",
+    "acceptance": "Exactly8 cases,official URLs,binary questions andimpact;all author metadata fields covered;four-source brief with export-or-specific-blocker gate.",
+    "family_boundary": "46 accounted;37 mechanical candidate pairs unresolved;0 merges;provider evidence rejected;no family retry"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -45,7 +46,16 @@
       "status": "working report-level overlay; not final study or PRISMA counts"
     },
     "screening_batches_accepted": 8,
-    "evidence_checksums": "92/92 PASS"
+    "evidence_checksums": "92/92 PASS",
+    "family_audit": {
+      "reports_accounted": 46,
+      "mechanical_pairs_checked": 1035,
+      "candidate_pairs_unresolved": 37,
+      "merges": 0,
+      "final_study_count": null,
+      "provider_status": "canceled_after_user_scope_reduction",
+      "index": "screening_46/reconciliation/results/family_01_mechanical_candidates.json"
+    }
   },
   "blockers": [
     "Formal IEEE Xplore, ACM Digital Library, Scopus and Web of Science searches and exports are incomplete.",

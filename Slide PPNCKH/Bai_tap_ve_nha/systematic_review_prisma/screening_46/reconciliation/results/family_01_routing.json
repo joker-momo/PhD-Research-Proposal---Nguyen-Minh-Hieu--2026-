@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "provider": "codex",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "low",
+  "fallback_from_task_id": "01a215ee-954b-7dd3-b5ec-453beba7c878",
+  "fallback_reason": "provider_quota",
+  "quality_gate": "codex_criterion_review_required"
+}

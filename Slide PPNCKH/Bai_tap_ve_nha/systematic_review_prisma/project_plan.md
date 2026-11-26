@@ -1,39 +1,34 @@
-# Current status update:25 November2026
+# HK261 PRISMA completion plan
 
-Canonical dataset is interim_27report/:27 assessed=24 included+1excluded+2uncertain;17-page LaTeX manuscript,34 references. Domain9 aggregate withheld until prior23 ratings consistently reassessed. Need6–11 additional eligible studies;formal database reconciliation and author/submission gates remain open. This update supersedes earlier snapshot counts below.
+Updated at: 2026-11-26T10:50:28+07:00. Current truth: `MUST_READ_AI_AGENT/current_state.json`.
+Target: SN Computer Science, official Springer Nature LaTeX. Coursework is separate from dissertation planning.
 
-# HK261 PRISMA Review — Project Plan and Status
+## Current evidence
 
-Updated 25 November 2026. Active target: **SN Computer Science**, selected by the user. Original IEEE sources are retained as historical work. PRISMA eligibility, methodological appraisal and doctoral relevance are separate assessments. The 30–35-study target must not be reached by padding.
+There are 46 PDFs and 46 extracted texts. Eight screening batches have passed the working-report gate: 36 INCLUDE, 2 EXCLUDE and 8 UNCERTAIN. These are not final study counts or author-approved decisions. Six publication dates and two scope judgments remain unresolved.
 
-**Central idea:** Systematically review how distributed DNN inference is partitioned, orchestrated, and made resilient in UAV swarms, then derive evidence-bounded requirements for reproducible failure-aware systems.
+The existing manuscript has 17 pages and 34 cited references. Its source/PDF/template hashes still match the stored interim 27-report audit. It uses 24 extraction rows. Appraisal domain 9 is withheld: batches 1–2 have combined gates, but batch 3 has not completed acceptance. Reuse accepted evidence; repair only missing or incorrect fields.
 
-| Stage | Required output | Objective completion rule | Status |
-|---:|---|---|---|
-| 1 | Assignment checklist and evidence list | Every official requirement mapped to one artifact or action | Complete |
-| 2 | Protocol and amendment | RQs, eligibility, search, extraction, appraisal, synthesis, and amendment timing documented | Complete |
-| 3 | Corpus expansion and doctoral alignment | 30–35 unique eligible studies if supported by evidence; every report has an explicit doctoral role or limitation | 23 included from26 assessed reports. Five additions accepted for bounded qualitative use;7–12 further eligible studies needed. Full46-record alignment coverage incomplete |
-| 4 | Target venue and template | One venue selected; official current template archived with provenance and checksum | Official Springer Nature template archived; active manuscript converted to sn-jnl |
-| 5 | Full-text intake | Every managed full text opened and identity/version checked | 26/26 managed full texts opened; C07/C08 author-copy/publisher-version equivalence unverified |
-| 6 | Formal identification search | Exact source, query, date, returned/exported count, raw file, and limitation logged for every source | In progress — 8 core queries syntax-checked and locked; arXiv complete; core database execution/exports incomplete |
-| 7 | Eligibility screening | Every record has title/abstract decision; every sought report has full-text decision and one exclusion reason if excluded | 26 assessed:23 INCLUDE,1 EXCLUDE demo,2 UNCERTAIN (S19,C06); formal database screening pending |
-| 8 | Extraction | 100% included reports have every required field completed or `not reported` | 23 source-located extraction/evidence rows; new comparative numerical effects quarantined |
-| 9 | Quality appraisal | 10 domains completed for every included study with rationale | 230 judgments:95 yes,107 partial,28 no |
-| 10 | PRISMA reconciliation | Arithmetic checks pass at record, report, and study levels; 0 unexplained difference | Interim26=23+1+2; formal database record/report/study reconciliation pending |
-| 11 | Synthesis | RQ1–RQ5 evidence tables complete; no claim lacks an included-report locator | 23-study qualitative synthesis available; final expanded synthesis and counterexample assessment pending |
-| 12 | Manuscript drafting | HCMUT order: authors, abstract draft, keywords, title, Methods, Results, Discussion, Introduction, Conclusion, Acknowledgment, References, Appendix; iterate Methods–Results–Discussion–Introduction | Interim Springer manuscript compiled; final expanded evidence and reconciliation pending |
-| 13 | Integrity and format audit | 0 placeholders, 0 unverified citations, 0 fabricated values, 0 visual defects; LaTeX and PDF match | 17-page PDF,33 citation identities,230 appraisal judgments. Bounded build/visual/package checks recorded separately; final source/author/declaration gates pending |
-| 14 | Author approval and metadata | 3/3 authors approve; verified affiliations, emails and required identifiers match the journal metadata | Pending user/coauthors |
-| 15 | Journal submission | Verified live journal route returns manuscript ID and receipt | Pending final manuscript, approval and live portal check |
-| 16 | Course evidence forwarding | Correct subject, recipient, name, student ID, manuscript ID, and receipt included | Pending after submission |
+Family phase is closed under the user's reduced gate. The provider supplied no accepted research evidence. A mechanical index accounts for all 46 reports and preserves 37 candidate pairs as unresolved, with zero merges. Final study-level reconciliation remains open.
 
-Gemini3.8 Flash only. The completed six-report correction supports bounded qualitative use; the later normalization job is terminal on quota. Priority10 research is queued and must not be described as running.
+## Approved critical path
 
-## Current critical path
+| Phase | Work and exit criterion |
+|---|---|
+| Author decision packet | One table for exactly eight unresolved cases, with official links, binary questions and impact; one metadata form. Ask once and continue independent work. |
+| Four-source search/export | One phase for IEEE, ACM, Scopus and WoS. Run accessible routes once; blocked routes get specific manual export instructions. Preserve actual dates and raw exports. |
+| Import and delta screening | Import all exports in one pass. Link existing 46 reports and screen only new records. Resolve duplicates and record every full-text exclusion reason. |
+| Delta extraction/appraisal | Reuse the 24 existing accepted rows. Identify the exact delta. Use at most two batches of 8–12 reports, combining extraction, ten appraisal domains and locators. Correct failed fields only. |
+| Synthesis | One phase for RQ1–RQ5 and a claim-source matrix. Every numerical claim retains units, conditions and a source locator. |
+| PRISMA | One phase for record/report/study reconciliation, flow and checklist. Zero unexplained arithmetic differences; unresolved family links must not become unsupported study counts. |
+| LaTeX and integrity | Methods → Results → Discussion → Introduction, then Title/Abstract/Conclusion. Verify citations, retraction/correction status and numerical provenance; compile and inspect the PDF. |
+| Approval and package | Confirm authors, HCMUT email and declarations; prepare source/PDF/supplement/checklist/cover letter and obtain final approval. |
+| Submission and course evidence | After explicit authorization, use the verified journal route, retain the system-generated submitted copy and receipt, then send the authorized course email. |
 
-1. Apply the accepted46-record alignment map to deep-reading priority while preserving its20 unresolved records and separate eligibility. See corpus_expansion/phd_alignment_review_gate_v2.md and doctoral_foundation_reading_note.md.
-2. Correct the remaining candidate metadata, publication dates, study-family overlap and311-row SNCS ledger; every further full text passes identity, eligibility, extraction and appraisal checks. Missing core candidates receive prioritized DOI-download requests.
-3. Formal IEEE Xplore, ACM Digital Library, Scopus, and Web of Science exports are completed and reconciled into final record-level PRISMA counts.
-4. Update the active Springer manuscript, evidence tables, references and final PRISMA flow only from accepted, reconciled evidence; compile and inspect every page.
-5. All authors supply metadata, approve authorship and the final text, and finalize funding, conflict, contribution, and AI-use declarations.
-6. The user completes the live submission route linked from the SN Computer Science journal home page with the verified HCMUT email; the manuscript ID and receipt are then archived and forwarded for the course.
+## Basis and efficiency
+
+The assignment requires approximately 20 papers, an idea, a manuscript, journal formatting, actual submission and course evidence. PRISMA, the 2021+ window, the desired 30–35 studies, SNCS/LaTeX and A2A ownership are later user requirements. Four core sources, ten appraisal domains and final author adjudication are protocol choices. Pair thresholds and quote counts are implementation choices, not PRISMA mandates.
+
+Do not add governance frameworks, repeat blocked date lookups, re-screen all 46 reports, or repeat full batches to repair a few fields. Keep one branch/worktree and focused commit per large phase, with state/event/decision updates together. Never pad or arbitrarily trim eligible studies to meet a number.
+
+The user's planning target is 7–13 hours of agent work after exports/access are available, plus user response time. New-record volume is unknown, so this is not a completion promise. The exam date and deadline must not be guessed.
