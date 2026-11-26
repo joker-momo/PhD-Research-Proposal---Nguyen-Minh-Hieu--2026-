@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T07:45:52+07:00
+Updated_at: 2026-11-26T07:49:10+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -32,22 +32,16 @@ without blocking dispatch.
 
 ## Reconciliation next task
 
-The scope reconciliation mechanical checker is complete and registered in
-`automation/artifact_catalog.json`; decision `scope-reconciliation-checker-v1`
-is appended to `automation/decision_log.jsonl`. Focused validation: 15/15 checker
-tests and 64/64 hook tests PASS. It does not accept scientific semantics.
-
-Correction to the prior navigation summary: scope_01 WAS dispatched before the
-pause. Task ID `01a21542-51c7-70a0-a294-86819046d794`, context ID
-`01a21542-51c8-78dd-9cb8-369993e83bea`; dispatched_at
-2026-11-26T07:29:58+07:00, from preserved A2A task metadata. Live terminal state
-has not yet been re-queried; do not infer completion or dispatch a duplicate.
-After this code task is committed, merged and its worktree removed, collect and
-review that existing task in a dedicated task worktree. Require A1–A6 PASS,
-including 20 quote locators and ten scope verdicts, before adoption. No manuscript
-or accepted evidence changed. Current working overlay remains 36/2/8 reports.
-The code implementation began before the pause; its exact start time was not
-captured. The task-state timestamp below records this observed closing checkpoint.
+Scope_01 primary is REJECTED_A2_A4 and quarantined. Existing task
+`01a21542-51c7-70a0-a294-86819046d794` completed at
+2026-11-26T07:41:33.227+07:00; no redispatch occurred. Mechanical checks pass
+20/20 locators; A1/A3/A5/A6 PASS, A2/A4 FAIL because of C16 unsupported wording
+and incomplete C06/SNCS context. Review: `screening_46/reconciliation/reviews/scope_01_review.md`.
+After this review commit is merged and cleaned, prepare a corrective brief with
+full five-record replacement; preserve all primary artifacts. No provider task
+is active. Working overlay remains 36 INCLUDE / 2 EXCLUDE / 8 UNCERTAIN.
+No manuscript or accepted scientific evidence changed. CODE_FIRST_DECISION is
+REUSE_EXISTING, decision `reconciliation-scope-01-review-v1`.
 
 ## Measured progress
 
@@ -55,7 +49,7 @@ captured. The task-state timestamp below records this observed closing checkpoin
 - Accepted working full-text screening: 46/46 reports.
 - Working decisions: 32 INCLUDE, 2 EXCLUDE, 12 UNCERTAIN in batches 01-08.
 - Remaining in this campaign: 0 reports.
-- Existing scope_01 provider task: dispatched; current terminal state unqueried; IDs above.
+- Existing scope_01 provider task: completed, rejected A2/A4; no active provider task.
 - Batch 08 correction accepted; all C1–C6 PASS; 5 combined working decisions.
 - Batch 04 dispatch count: 1 primary and 2 corrections; accepted-result count 1.
 - Latest Batch 04 mandatory failures: 0; all C1–C6 PASS.
@@ -96,10 +90,10 @@ Correction brief is ready; route only after this task closes.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "scope-reconciliation-checker",
-  "status": "completed",
-  "started_at": "2026-11-26T07:45:52+07:00",
-  "updated_at": "2026-11-26T07:45:52+07:00",
-  "completed_at": "2026-11-26T07:45:52+07:00"
+  "task_id": "reconciliation-scope-01-review",
+  "status": "rejected",
+  "started_at": "2026-11-26T07:47:28+07:00",
+  "updated_at": "2026-11-26T07:49:10+07:00",
+  "completed_at": "2026-11-26T07:49:10+07:00"
 }
 -->

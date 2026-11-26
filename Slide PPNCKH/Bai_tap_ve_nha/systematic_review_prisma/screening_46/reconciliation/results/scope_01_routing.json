@@ -1,0 +1,14 @@
+{
+  "task_id": "01a21542-51c7-70a0-a294-86819046d794",
+  "context_id": "01a21542-51c8-78dd-9cb8-369993e83bea",
+  "provider": "gemini-3.8-flash-high",
+  "agent_url": "http://127.0.0.1:51698",
+  "dispatched_at": "2026-11-26T07:29:58+07:00",
+  "completed_at": "2026-11-26T07:41:33.227+07:00",
+  "collected_at": "2026-11-26T07:47:28+07:00",
+  "reviewed_at": "2026-11-26T07:49:10+07:00",
+  "verdict": "REJECTED_A2_A4",
+  "fallback_used": false,
+  "collection": "supported task get; no redispatch",
+  "raw_sha256": "4fe47bbe042e3621e0ebe30a36060a44f835134f1fa86fe9a5d712d98e8f6772"
+}
