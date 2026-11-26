@@ -38,3 +38,5 @@ Six assessed reports remain awaiting classification. R0075, R0092, R0110, R0118 
 | P08 and P09 align to the included set | PASS | P08/P09 gate labels and 14 locked file hashes verified. Both map to the same 25 reports. P09 has 250 judgments and 0 pending. |
 | Flow and checklist | PASS | [Flow PDF](prisma_flow.pdf) built and inspected, 1/1 pages. [Checklist](prisma_checklist.md) contains 27/27 numbered items with status, locator and limitations, with final manuscript locations deferred to drafting. |
 | Restart-only scope | PASS | Seven raw input file hashes checked. Old corpus import rows = 0. WoS status remains unsearched with null count. |
+
+The independent [Gemini.app composite review](audit_review.md) passed after correcting five column locators. The provider result did not change the reconciled counts.

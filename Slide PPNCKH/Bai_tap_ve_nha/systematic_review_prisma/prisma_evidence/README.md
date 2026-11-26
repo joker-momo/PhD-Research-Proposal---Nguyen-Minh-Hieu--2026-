@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T01:50:07+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T02:15:42+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -531,9 +531,28 @@ Nghiệm thu cấp bước đã ghi trong sổ: FAIL=7, PASS=7.
 <a id="buoc-13"></a>
 ## Bước 13 · Hòa giải PRISMA
 
-**Chưa bắt đầu** · `2026-11-26T18:07:38+07:00`
+**Đã chốt theo sổ tiến độ** · `2026-11-27T02:15:42+07:00`
 
-Chưa có tệp minh chứng được đăng ký cho bước này.
+Nghiệm thu cấp bước đã ghi trong sổ: PASS=4.
+
+- [audit_brief.md](../restart_2026_11_26/prisma/audit_brief.md)
+- [audit_correction_brief.md](../restart_2026_11_26/prisma/audit_correction_brief.md)
+- [audit_correction_dispatch.json](../restart_2026_11_26/prisma/audit_correction_dispatch.json)
+- [audit_correction_raw.json](../restart_2026_11_26/prisma/audit_correction_raw.json)
+- [audit_dispatch.json](../restart_2026_11_26/prisma/audit_dispatch.json)
+- [audit_primary_review.md](../restart_2026_11_26/prisma/audit_primary_review.md)
+- [audit_raw.json](../restart_2026_11_26/prisma/audit_raw.json)
+- [audit_recovery.json](../restart_2026_11_26/prisma/audit_recovery.json)
+- [audit_review.md](../restart_2026_11_26/prisma/audit_review.md)
+- [audit_transport_failure.json](../restart_2026_11_26/prisma/audit_transport_failure.json)
+- [flow_template.tex](../restart_2026_11_26/prisma/flow_template.tex)
+- [prisma_checklist.md](../restart_2026_11_26/prisma/prisma_checklist.md)
+- [prisma_counts.json](../restart_2026_11_26/prisma/prisma_counts.json)
+- [prisma_flow.pdf](../restart_2026_11_26/prisma/prisma_flow.pdf)
+- [prisma_flow.tex](../restart_2026_11_26/prisma/prisma_flow.tex)
+- [reconcile.py](../restart_2026_11_26/prisma/reconcile.py)
+- [reconciliation_review.md](../restart_2026_11_26/prisma/reconciliation_review.md)
+- [test_reconcile.py](../restart_2026_11_26/prisma/test_reconcile.py)
 
 <a id="buoc-14"></a>
 ## Bước 14 · Tổng hợp theo câu hỏi nghiên cứu

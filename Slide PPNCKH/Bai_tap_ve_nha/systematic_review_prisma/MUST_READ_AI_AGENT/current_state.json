@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T01:50:07+07:00",
+  "updated_at": "2026-11-27T02:15:42+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step12_complete_step13_ready",
     "summary": "P09 quality appraisal passed for all 25 locked P08 reports. Approved step 13 PRISMA reconciliation is ready."
   },
   "task": {
-    "task_id": "restart-12",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T00:36:29+07:00",
-    "updated_at": "2026-11-27T01:50:07+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/p09_phase_review.md",
-    "decision_id": "restart-12-p09-v1",
-    "completed_at": "2026-11-27T01:50:07+07:00"
-  },
-  "next_task": {
     "task_id": "restart-13",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-27T02:07:21+07:00",
+    "updated_at": "2026-11-27T02:15:42+07:00",
+    "checkpoint_path": "restart_2026_11_26/prisma/reconciliation_review.md",
+    "decision_id": "restart-13-prisma-v1",
+    "completed_at": "2026-11-27T02:15:42+07:00"
+  },
+  "next_task": {
+    "task_id": "restart-14",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Reconcile the approved restart PRISMA record, report and study counts using the locked scientific outputs and primary ledgers.",
-    "acceptance": "No unexplained difference, each count traceable to IDs, flow and all 27 checklist items record locations or limits."
+    "action": "Synthesize RQ1–RQ5 from the reconciled restart with the frozen P08 and P09 data.",
+    "acceptance": "All adopted claims have supported locators, counts include denominators, and no incompatible performance effects are pooled."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -68,14 +68,13 @@
     "manuscript_status": "HISTORICAL_DRAFT_NOT_VALIDATED_FOR_RESTART"
   },
   "evidence": {
-    "retrieval_reports": 0,
-    "screened_reports": 0,
+    "retrieval_reports": 44,
+    "screened_reports": 44,
     "working_decisions": {
-      "include": 0,
-      "exclude": 0,
-      "uncertain": 0
+      "include": 25,
+      "exclude": 13,
+      "uncertain": 6
     },
-    "meaning_of_zeros": "No reports processed in the restart yet; NOT evidence that no eligible studies exist. Final included count remains unknown.",
     "restart_inventory": {
       "manifest": "restart_2026_11_26/step01_inventory.json",
       "input_files": 7,
@@ -212,6 +211,28 @@
         "pending_judgments": 0,
         "source_locators": 615,
         "lock_file": "restart_2026_11_26/appraisal/p09_appraisal_lock.json"
+      },
+      "prisma_reconciliation": {
+        "gate": "PASS",
+        "completed_at": "2026-11-27T02:15:42+07:00",
+        "counts": {
+          "duplicate_records_removed": 228,
+          "included_reports": 25,
+          "included_studies": 25,
+          "raw_records": 693,
+          "records_excluded": 328,
+          "records_screened": 465,
+          "reports_assessed": 44,
+          "reports_awaiting_classification": 6,
+          "reports_excluded": 13,
+          "reports_not_retrieved": 93,
+          "reports_sought": 137
+        },
+        "unexplained_differences": 0,
+        "checklist_items": 27,
+        "gemini_audit_verdict": "PASS",
+        "gemini_task_id": "38e73b37-23c9-415a-8b38-51c7e42b4563",
+        "counts_path": "restart_2026_11_26/prisma/prisma_counts.json"
       }
     }
   },

@@ -331,6 +331,35 @@
         "evidence",
         "audit"
       ]
+    },
+    {
+      "artifact_id": "hk261-restart-prisma-reconciliation",
+      "name": "HK261 restart PRISMA reconciliation",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/prisma/reconcile.py",
+      "purpose": "Validate source hashes and reconcile raw records, PDFs and study IDs against restart ledgers and locks.",
+      "entrypoint": "python3 restart_2026_11_26/prisma/reconcile.py --check",
+      "inputs": [
+        "search_dataset_manifest.json",
+        "restart selection and linkage CSV ledgers",
+        "P08/P09 lock manifests"
+      ],
+      "outputs": [
+        "prisma_counts.json",
+        "prisma_flow.tex",
+        "diagnostic and nonzero exit if any check fails"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/prisma/test_reconcile.py"
+      ],
+      "test_command": "PYTHONDONTWRITEBYTECODE=1 python3 restart_2026_11_26/prisma/test_reconcile.py",
+      "status": "active",
+      "tags": [
+        "hk261",
+        "restart",
+        "prisma",
+        "reconciliation",
+        "report-study-map"
+      ]
     }
   ]
 }

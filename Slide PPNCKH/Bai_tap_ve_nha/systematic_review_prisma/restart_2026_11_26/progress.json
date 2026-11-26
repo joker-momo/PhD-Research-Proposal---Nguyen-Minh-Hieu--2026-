@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T01:50:07+07:00",
+  "updated_at": "2026-11-27T02:15:42+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -1044,12 +1044,52 @@
       "task_id": "restart-13",
       "title": "Hòa giải PRISMA",
       "owner": "CODEX_WRITING + GEMINI_RESEARCH",
-      "status": "pending",
-      "started_at": null,
-      "updated_at": "2026-11-26T18:07:38+07:00",
-      "completed_at": null,
-      "artifacts": [],
-      "acceptance": []
+      "status": "completed",
+      "started_at": "2026-11-27T02:07:21+07:00",
+      "updated_at": "2026-11-27T02:15:42+07:00",
+      "completed_at": "2026-11-27T02:15:42+07:00",
+      "artifacts": [
+        "restart_2026_11_26/prisma/audit_brief.md",
+        "restart_2026_11_26/prisma/audit_correction_brief.md",
+        "restart_2026_11_26/prisma/audit_correction_dispatch.json",
+        "restart_2026_11_26/prisma/audit_correction_raw.json",
+        "restart_2026_11_26/prisma/audit_dispatch.json",
+        "restart_2026_11_26/prisma/audit_primary_review.md",
+        "restart_2026_11_26/prisma/audit_raw.json",
+        "restart_2026_11_26/prisma/audit_recovery.json",
+        "restart_2026_11_26/prisma/audit_review.md",
+        "restart_2026_11_26/prisma/audit_transport_failure.json",
+        "restart_2026_11_26/prisma/flow_template.tex",
+        "restart_2026_11_26/prisma/prisma_checklist.md",
+        "restart_2026_11_26/prisma/prisma_counts.json",
+        "restart_2026_11_26/prisma/prisma_flow.pdf",
+        "restart_2026_11_26/prisma/prisma_flow.tex",
+        "restart_2026_11_26/prisma/reconcile.py",
+        "restart_2026_11_26/prisma/reconciliation_review.md",
+        "restart_2026_11_26/prisma/test_reconcile.py"
+      ],
+      "acceptance": [
+        {
+          "criterion": "Gemini.app ledger audit",
+          "verdict": "PASS",
+          "evidence": "restart_2026_11_26/prisma/audit_review.md"
+        },
+        {
+          "criterion": "Exact ID handoffs and PRISMA reconciliation",
+          "verdict": "PASS",
+          "evidence": "693 raw record IDs across 7 source files and 8 documented runs, 465 screened records, 137 sought and 44 assessed reports, 25 report-study IDs. Zero unexplained difference."
+        },
+        {
+          "criterion": "P08/P09 evidence locks",
+          "verdict": "PASS",
+          "evidence": "14 file hashes revalidated, identical 25 included report IDs, 250 appraisal judgments, no pending judgments."
+        },
+        {
+          "criterion": "Flow and 27-item checklist",
+          "verdict": "PASS",
+          "evidence": "Vector diagram compiled and inspected 1/1 pages. Checklist 27/27 statuses, locators and limits."
+        }
+      ]
     },
     {
       "task_id": "restart-14",
