@@ -13,9 +13,10 @@ import unicodedata
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from html.parser import HTMLParser
+from http.client import HTTPException
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import quote, urljoin, urlsplit
+from urllib.parse import quote, urljoin, urlsplit, urlunsplit
 from urllib.request import Request, HTTPRedirectHandler, build_opener
 from zoneinfo import ZoneInfo
 
@@ -62,8 +63,9 @@ class PublicRedirect(HTTPRedirectHandler):
 def fetch(url, kind):
     event = {"timestamp": now(), "route": kind, "url": url}
     try:
-        public_url(url)
-        request = Request(url, headers={"User-Agent": "HK261-Scholarly-Fulltext/1.0", "Accept": "*/*"})
+        parsed = public_url(url)
+        sanitized = urlunsplit(parsed._replace(path=quote(parsed.path,safe="/%:;,+@()=~"), query=quote(parsed.query,safe="%&=;+,:/?@-._~"), fragment=""))
+        request = Request(sanitized, headers={"User-Agent": "HK261-Scholarly-Fulltext/1.0", "Accept": "*/*"})
         with build_opener(PublicRedirect()).open(request, timeout=5) as response:
             event.update(http=response.status, final_url=response.url, media_type=response.headers.get_content_type())
             cap = 3 * 1024 * 1024 if kind in {"crossref", "openalex", "publisher_landing"} else LIMIT
@@ -74,7 +76,7 @@ def fetch(url, kind):
     except HTTPError as e:
         outcome = "anti_bot_challenge" if e.headers.get("cf-mitigated") == "challenge" else "http_error"
         return event | {"outcome": outcome, "http": e.code, "final_url": e.url}, b""
-    except (URLError, OSError, ValueError) as e:
+    except (URLError, OSError, ValueError, HTTPException) as e:
         return event | {"outcome": "unavailable", "detail": str(e)[:220]}, b""
 
 

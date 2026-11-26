@@ -19,6 +19,16 @@ class RetrievalTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 retrieval.public_url("https://127.0.0.1/")
 
+    def test_literal_spaces_in_public_pdf_url_are_encoded(self):
+        from urllib.parse import urlsplit
+        url = "https://example.org/files/example paper.pdf"
+        with patch.object(retrieval, "public_url", side_effect=urlsplit), patch.object(retrieval, "build_opener") as opener:
+            opener.return_value.open.side_effect = retrieval.HTTPException("transport")
+            event, _ = retrieval.fetch(url, "public_pdf_candidate")
+            self.assertEqual(event["outcome"], "unavailable")
+            request = opener.return_value.open.call_args.args[0]
+            self.assertTrue(request.full_url.endswith("example%20paper.pdf"))
+
     def test_unavailable_remains_unretrieved(self):
         record={"screening_id":"R0001","doi":"10.1234/test","title":"Example paper","authors":"J. Doe"}
         with tempfile.TemporaryDirectory() as d, patch.object(retrieval,"fetch",side_effect=lambda url, route: ({"route":route,"url":url,"outcome":"http_error","http":403},b"")):
