@@ -1,30 +1,25 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:26:39+07:00",
+  "updated_at": "2026-11-26T18:28:26+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step02_protocol_accepted",
+    "status": "step03_query_audit_brief_ready",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
-    "task_id": "restart-02",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T18:13:36+07:00",
-    "updated_at": "2026-11-26T18:26:39+07:00",
-    "decision_id": "restart-02-protocol-accepted-v3",
-    "provider_task_id": "fb0bd54c-1cbe-4c73-87f7-9e4703a07478",
-    "provider_context_id": "936b6a79-101a-4763-a4a8-89666aa9fe39",
-    "completed_at": "2026-11-26T18:26:39+07:00",
-    "correction_task_id": "cfe6791b-4fe0-4e35-804b-9616584802cb",
-    "correction_context_id": "cb5d389f-e127-4919-8178-3059cb6ee042"
-  },
-  "next_task": {
     "task_id": "restart-03",
     "owner": "GEMINI_RESEARCH",
+    "status": "active",
+    "started_at": "2026-11-26T18:28:26+07:00",
+    "updated_at": "2026-11-26T18:28:26+07:00",
+    "decision_id": "restart-03-direct-query-audit-v1"
+  },
+  "next_task": {
+    "task_id": "restart-03-app-audit",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Audit actual query syntax, filters and coverage on all four approved sources against restart protocol.",
-    "acceptance": "4/4 platforms and 8/8 query variants assessed with source locators; any change/rerun versioned."
+    "action": "Run the committed audit brief through native Gemini.app Task using --project-dir for the canonical HK261 review folder. No copied context.",
+    "acceptance": "Five criteria in step03_query_audit_brief.md."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -60,8 +55,11 @@
     "research_route_override": {
       "backend": "Gemini.app Accessibility",
       "mode": "task",
-      "recorded_at": "2026-11-26T18:09:24+07:00",
-      "restriction": "No CLI/research-agent/model fallback; review before adoption"
+      "recorded_at": "2026-11-26T18:28:26+07:00",
+      "restriction": "No CLI/research-agent/model fallback; review before adoption",
+      "context_kind": "direct_project",
+      "context_scope": "Canonical systematic_review_prisma directory only; name relevant file paths in each brief",
+      "bridge_commit": "efd717c"
     },
     "approved_plan": "restart_2026_11_26/approved_plan.md",
     "progress_tracker": "restart_2026_11_26/progress.json",
