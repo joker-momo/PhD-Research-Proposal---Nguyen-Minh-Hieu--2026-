@@ -1,0 +1,45 @@
+{
+  "id": "38e73b37-23c9-415a-8b38-51c7e42b4563",
+  "contextId": "b82d6127-64a2-4cf4-a988-bb3c1636ece4",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T19:13:07.111+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T19:07:21.486+00:00",
+    "updated_at": "2026-11-26T19:13:07.111+00:00",
+    "started_at": "2026-11-26T19:07:21.492+00:00",
+    "completed_at": "2026-11-26T19:13:07.111+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — Restart PRISMA Ledger Reconciliation",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "ab4a794d-0465-4ee5-a3e0-acbeb1a340c9",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"key\":\"IDENTIFICATION\",\"values\":{\"raw\":693,\"duplicates\":228,\"sources\":{\"IEEE\":63,\"SCOPUS\":110,\"ACM\":404,\"OPENALEX\":116},\"wos_count\":null,\"wos_status\":\"not_searched_access_unavailable\"},\"locators\":[\"restart_2026_11_26/search_dataset_manifest.json#rows_before_normalization_and_dedup\",\"restart_2026_11_26/search_dataset_manifest.json#rows_by_source\",\"restart_2026_11_26/search_dataset_manifest.json#wos\",\"restart_2026_11_26/records_normalized.csv#record_id\",\"restart_2026_11_26/dedup_map.csv#screening_id,record_id,link_reason\"],\"unresolved\":[]}\n{\"key\":\"TITLE_ABSTRACT\",\"values\":{\"screened\":465,\"excluded\":328,\"forwarded_full_text\":44,\"forwarded_unclear\":93},\"locators\":[\"restart_2026_11_26/dedup_map.csv#screening_id\",\"restart_2026_11_26/title_abstract_screening.csv#screening_id,decision\"],\"unresolved\":[]}\n{\"key\":\"RETRIEVAL\",\"values\":{\"sought\":137,\"assessed\":44,\"not_retrieved\":93,\"retrieved_from_full_text\":30,\"missing_from_full_text\":14,\"retrieved_from_unclear\":14,\"missing_from_unclear\":79},\"locators\":[\"restart_2026_11_26/title_abstract_screening.csv#screening_id,decision\",\"restart_2026_11_26/fulltext_retrieval/retrieval_log.csv#screening_id,ta_decision,retrieval_status\",\"restart_2026_11_26/fulltext_retrieval/missing_pdf.csv#screening_id,ta_decision,retrieval_status\",\"restart_2026_11_26/fulltext_screening/fulltext_screening.csv#screening_id\"],\"unresolved\":[]}\n{\"key\":\"FULL_TEXT\",\"values\":{\"included\":25,\"excluded\":13,\"pending_ids\":[\"R0075\",\"R0081\",\"R0092\",\"R0110\",\"R0118\",\"R0137\"],\"primary_exclusion_reasons\":{\"E1\":4,\"E2\":3,\"E3\":4,\"E6\":1,\"E7\":1}},\"locators\":[\"restart_2026_11_26/fulltext_screening/fulltext_screening.csv#screening_id,decision,primary_E_code\",\"restart_2026_11_26/fulltext_screening/exclusions.csv#screening_id,primary_E_code\"],\"unresolved\":[]}\n{\"key\":\"STUDIES\",\"values\":{\"reports\":25,\"studies\":25,\"candidate_pairs\":13,\"merged_pairs\":0,\"p08_gate\":\"LOCKED_P08_PASS\",\"p09_gate\":\"PASS\"},\"locators\":[\"restart_2026_11_26/study_linkage/report_study_map.csv#screening_id,study_id,linkage_status\",\"restart_2026_11_26/study_linkage/pair_evidence.csv#pair_id,decision\",\"restart_2026_11_26/extraction/p08_extraction_lock.json#status\",\"restart_2026_11_26/appraisal/p09_appraisal_lock.json#gate\"],\"unresolved\":[]}\n{\"summary\":true,\"tools\":[\"client:find_by_name\",\"client:list_dir\",\"client:view_file\",\"client:grep_search\"],\"table_analysis_note\":\"Local shell/script execution disallowed by brief; verified deterministically via full-file inspection and literal grep counting.\",\"workers_used\":false,\"missing_keys\":[],\"unresolved\":[]}\nHK261_RESTART_13_AUDIT_COMPLETE"
+        }
+      ]
+    }
+  ]
+}
