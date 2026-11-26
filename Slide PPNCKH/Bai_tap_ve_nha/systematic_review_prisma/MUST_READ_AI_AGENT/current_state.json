@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:13:36+07:00",
+  "updated_at": "2026-11-26T18:21:14+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step02_protocol_draft_ready_for_app_audit",
+    "status": "step02_primary_audit_rejected_c2_correction_ready",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
@@ -11,15 +11,17 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-26T18:13:36+07:00",
-    "updated_at": "2026-11-26T18:13:36+07:00",
-    "decision_id": "restart-02-protocol-v1"
+    "updated_at": "2026-11-26T18:21:14+07:00",
+    "decision_id": "restart-02-protocol-correction-v2",
+    "provider_task_id": "fb0bd54c-1cbe-4c73-87f7-9e4703a07478",
+    "provider_context_id": "936b6a79-101a-4763-a4a8-89666aa9fe39"
   },
   "next_task": {
-    "task_id": "restart-02-app-audit",
+    "task_id": "restart-02-app-correction",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Dispatch committed step02 protocol consistency brief to native Gemini.app Task, then validate9criteria before adopting evidence. No step03 work yet.",
-    "acceptance": "12/12 topic checks; validJSON; all claims source-located; zero unauthorized changes; contextunchanged;9/9mandatorycriteriaPASS."
+    "action": "Send committed3check corrective brief via Gemini.app. Parent response quarantined; user peerreview policy recorded. Do not proceed to step03 until protocol gate passes.",
+    "acceptance": "K1–K6 and reconciled C1–C9 PASS; exact locators;3/3 replacement IDs; userpublication policy verified."
   },
   "project": {
     "target_venue": "SN Computer Science",

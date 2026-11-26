@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-26T18:13:36+07:00",
+  "updated_at": "2026-11-26T18:21:14+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -51,13 +51,59 @@
       "owner": "CODEX_WRITING + GEMINI_RESEARCH",
       "status": "active",
       "started_at": "2026-11-26T18:13:36+07:00",
-      "updated_at": "2026-11-26T18:13:36+07:00",
+      "updated_at": "2026-11-26T18:21:14+07:00",
       "completed_at": null,
       "artifacts": [
         "restart_2026_11_26/protocol_restart.md",
         "restart_2026_11_26/step02_protocol_audit_brief.md"
       ],
-      "acceptance": []
+      "acceptance": [
+        {
+          "criterion": "C1",
+          "verdict": "PASS",
+          "evidence": "12/12 distinct T01–T12; JSON parsed."
+        },
+        {
+          "criterion": "C2",
+          "verdict": "FAIL",
+          "evidence": "36/37 quotes verbatim; T12/P12 locator contains an invented ellipsis joining non-contiguous text."
+        },
+        {
+          "criterion": "C3",
+          "verdict": "PASS",
+          "evidence": "1 ISSUE T03 has correction;1 UNRESOLVED T02 appears in unresolved_items;10 CONSISTENT have null correction."
+        },
+        {
+          "criterion": "C4",
+          "verdict": "PASS",
+          "evidence": "12 findings inspected against supplied files; no invented external methodological rule; T02 explicitly reports missing policy confirmation. The abbreviated locator itself fails C2."
+        },
+        {
+          "criterion": "C5",
+          "verdict": "PASS",
+          "evidence": "0 legacy scientific rows imported;4 source boundary and WoSnull preserved; no fixedincludedtarget."
+        },
+        {
+          "criterion": "C6",
+          "verdict": "PASS",
+          "evidence": "Returned actions_taken:0 searches,0 records screened,0 project edits,false final prose; local context3/3 hashes unchanged."
+        },
+        {
+          "criterion": "C7",
+          "verdict": "PASS",
+          "evidence": "T02 flagged requires_user_approval=true and in unresolved_items; no scope change adopted."
+        },
+        {
+          "criterion": "C8",
+          "verdict": "PASS",
+          "evidence": "0 scholarly records, explicitN/A;0 duplicate check IDs."
+        },
+        {
+          "criterion": "C9",
+          "verdict": "PASS",
+          "evidence": "Structured audit only;3/3 context hashes match. Original UUID response recovered with2identical readouts. Transport remainsFAILED; chat preserved and cleanup not claimed."
+        }
+      ]
     },
     {
       "task_id": "restart-03",

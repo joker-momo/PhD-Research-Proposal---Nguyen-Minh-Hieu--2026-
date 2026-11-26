@@ -1,0 +1,309 @@
+{
+  "task_id": "restart-02-protocol-audit",
+  "checks": [
+    {
+      "id": "T01",
+      "status": "CONSISTENT",
+      "locators": [
+        {
+          "file": "approved_plan.md",
+          "section": "Phạm vi và điều kiện không được thay đổi ngầm",
+          "quote": "Không ấn định 20/30–35/36/46 included reports. Số lượng được suy ra từ tìm kiếm và các gate."
+        },
+        {
+          "file": "approved_plan.md",
+          "section": "Bước 02 — Chốt protocol cho quy trình mới",
+          "quote": "Gemini.app kiểm tra sự nhất quán của RQ, UAV–edge/collaborative DNN inference và tiêu chí."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P01 — Objective and unit",
+          "quote": "Review distributed/collaborative DNN inference in UAV swarms and multi-UAV edge systems."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P02 — Review questions",
+          "quote": "RQ1 maps to E2/E3 and architecture/workload fields; RQ2 to E3/E4 and decision/optimization fields; RQ3 to E4 and evaluation fields; RQ4 to resilience/network fields; RQ5 to outcome/condition/appraisal fields."
+        }
+      ],
+      "finding": "Scope, unit distinctions (record/report/study), absence of a fixed included count, and RQ1–RQ5 mappings to eligibility and extraction/appraisal fields align with approved_plan.md.",
+      "required_correction": null,
+      "requires_user_approval": false
+    },
+    {
+      "id": "T02",
+      "status": "UNRESOLVED",
+      "locators": [
+        {
+          "file": "approved_plan.md",
+          "section": "Phân biệt nguồn yêu cầu",
+          "quote": "khoảng 20 bài journal/conference liên quan hướng NCS"
+        },
+        {
+          "file": "approved_plan.md",
+          "section": "Bước 02 — Chốt protocol cho quy trình mới",
+          "quote": "Đầu vào: Yêu cầu môn; skill; protocol/amendment và kiểm kê bước 01."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P03 — Eligibility (all E1–E7 must be established for INCLUDE)",
+          "quote": "A unique preprint may be considered only if it contains eligible substantive evidence and no corresponding peer-reviewed report supplies that same evidence; mark non-peer-reviewed and analyze separately. Do not exclude a short paper/demo/poster/work-in-progress by page count or label alone: assess substantive method and evaluation"
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P03 — Eligibility (all E1–E7 must be established for INCLUDE)",
+          "quote": "Eligible preprints are a protocol choice inherited explicitly from protocol.md section4.1, not a new database."
+        }
+      ],
+      "finding": "E1–E4 eligibility rules match approved_plan.md (no inference of unclear multi-UAV settings; explicit collaborative/distributed DNN inference). However, E7's inclusion of non-peer-reviewed preprints and demo/poster/work-in-progress short reports is a protocol policy choice rather than a requirement stated in approved_plan.md (whose course PDF cites journal/conference papers), relies on protocol.md section4.1 which is not in the supplied audit files, and lacks an explicit minimum operational threshold for substantive method and evaluation on short reports.",
+      "required_correction": "Confirm with user whether non-peer-reviewed preprints and demo/poster/work-in-progress short reports are eligible in the restart scope (and verify protocol.md section4.1 if retained), or restrict E7 to peer-reviewed journal/conference full reports; if short reports are retained, define explicit minimum method/evaluation thresholds.",
+      "requires_user_approval": true
+    },
+    {
+      "id": "T03",
+      "status": "ISSUE",
+      "locators": [
+        {
+          "file": "approved_plan.md",
+          "section": "Bước 02 — Chốt protocol cho quy trình mới",
+          "quote": "Ghi thời gian từ 2021 đến ngày tìm kiếm cuối thật"
+        },
+        {
+          "file": "step01_inventory.md",
+          "section": "Khoảng thiếu phải xử lý đúng bước",
+          "quote": "I03: ACM upper filter2026-11-30 exceeds actual search date2026-11-26; eligibility must use actual cutoff after query/protocol audit."
+        },
+        {
+          "file": "step01_inventory.md",
+          "section": "Khoảng thiếu phải xử lý đúng bước",
+          "quote": "I05: IEEE/Scopus stored search times derive from export mtime; preserve basis, do not describe as independently logged live search timestamps."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P03 — Eligibility (all E1–E7 must be established for INCLUDE)",
+          "quote": "publication from 2021-01-01 through the actual final accepted search date. The current source runs were recorded on 2026-11-26; the final cutoff is finalized at step04 if step03 requires reruns."
+        }
+      ],
+      "finding": "The 2021-01-01 start, deferral of final upper cutoff to step04, ACM 2026-11-30 filter handling, and export-mtime preservation align with approved_plan.md and step01_inventory.md. However, P03 E5 omits operational rules for (1) year-only publication dates in the cutoff year without month/day and (2) multi-version preprints whose versions span 2021-01-01 or the upper cutoff.",
+      "required_correction": "Add explicit E5 boundary rules specifying that records with year-only dates in the cutoff year without verifiable month/day are assigned AWAITING_CLASSIFICATION pending publisher-date verification, and that multi-version preprints use the authoritative date of the assessed version.",
+      "requires_user_approval": false
+    },
+    {
+      "id": "T04",
+      "status": "CONSISTENT",
+      "locators": [
+        {
+          "file": "approved_plan.md",
+          "section": "Phạm vi và điều kiện không được thay đổi ngầm",
+          "quote": "Bắt đầu từ dữ liệu tìm kiếm IEEE Xplore, Scopus, ACM Digital Library và OpenAlex. OpenAlex là nguồn bổ sung, không phải WoS. WoS không thực hiện, kết quả không biết (null), không báo zero hits."
+        },
+        {
+          "file": "step01_inventory.md",
+          "section": "Bước 01 — Kiểm kê đầu vào",
+          "quote": "WoS không tìm do thiếu quyền; count=null. Không sử dụng bộ 46 cũ."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P04 — Source scope and search audit",
+          "quote": "Web of Science Core Collection is not searched because access is unavailable and the user removed it from this run; its result count is null, not zero. Do not rename OpenAlex as WoS."
+        }
+      ],
+      "finding": "Only the four approved discovery sources are authorized, OpenAlex is kept distinct from WoS, WoS remains unsearched with null count, and no citation chaining or old seed inputs are imported.",
+      "required_correction": null,
+      "requires_user_approval": false
+    },
+    {
+      "id": "T05",
+      "status": "CONSISTENT",
+      "locators": [
+        {
+          "file": "approved_plan.md",
+          "section": "Bước 05 — Chuẩn hóa metadata và provenance",
+          "quote": "100% hàng thô được hạch toán; mọi hàng có provenance; không tự bịa DOI/abstract/year; không lọc nội dung ở bước này."
+        },
+        {
+          "file": "approved_plan.md",
+          "section": "Bước 06 — Khử trùng lặp",
+          "quote": "duplicate chắc chắn còn sót=0; cặp chưa giải quyết được liệt kê, không ngụy tạo unique count."
+        },
+        {
+          "file": "step01_inventory.md",
+          "section": "Khoảng thiếu phải xử lý đúng bước",
+          "quote": "I02: OpenAlex normalized CSV has no abstract column; raw payload availability must be checked in step05."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P05 — Record management (steps05–06)",
+          "quote": "Each row receives a stable raw ID with source/query/file/SHA256/row locator. Normalize DOI/title/author/year fields while retaining original values. Missing values remain explicit; provenance-supported enrichment is logged separately."
+        }
+      ],
+      "finding": "P05 preserves raw immutability, row provenance, explicit missing markers, evidence-based deduplication with unresolved pairs preserved, and zero inheritance of old46 labels or pools.",
+      "required_correction": null,
+      "requires_user_approval": false
+    },
+    {
+      "id": "T06",
+      "status": "CONSISTENT",
+      "locators": [
+        {
+          "file": "approved_plan.md",
+          "section": "Bước 07 — Sàng lọc tiêu đề và abstract",
+          "quote": "Thiếu abstract không tự động exclude."
+        },
+        {
+          "file": "approved_plan.md",
+          "section": "Bước 08 — Thu thập và xác minh toàn văn",
+          "quote": "Chỉ tái dùng PDF sẵn có nếu record được tìm độc lập ở quy trình mới và identity khớp. Tách không lấy được toàn văn thành not retrieved."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P06 — Selection and retrieval (steps07–09)",
+          "quote": "missing abstract, author, DOI, venue or language metadata is not itself evidence of ineligibility. UNCLEAR moves forward for full-text clarification."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P06 — Selection and retrieval (steps07–09)",
+          "quote": "A sought report that cannot be retrieved is NOT_RETRIEVED, separate from an assessed full-text exclusion. An abstract-only publication type is different from failure to retrieve an otherwise full report."
+        }
+      ],
+      "finding": "P06 cleanly separates missing-abstract records (forwarded as UNCLEAR), unretrieved sought reports (NOT_RETRIEVED), and verified abstract-only publication types (ineligible under E7), and restricts PDF reuse to independently rediscovered and verified records.",
+      "required_correction": null,
+      "requires_user_approval": false
+    },
+    {
+      "id": "T07",
+      "status": "CONSISTENT",
+      "locators": [
+        {
+          "file": "approved_plan.md",
+          "section": "Bước 09 — Sàng lọc toàn văn mới",
+          "quote": "Đánh giá mới từng report; include/exclude/awaiting classification; một lý do chính cho exclude; trích dẫn trang/đoạn hỗ trợ; Codex nghiệm thu. Không kế thừa quyết định 46 cũ."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P06 — Selection and retrieval (steps07–09)",
+          "quote": "Decisions are INCLUDE, EXCLUDE or AWAITING_CLASSIFICATION. For EXCLUDE store one primary reason and any secondary flags."
+        }
+      ],
+      "finding": "Full-text decisions (INCLUDE, EXCLUDE, AWAITING_CLASSIFICATION), single primary exclusion reason with secondary flags, and exact locator requirements match approved_plan.md; the 7-step exclusion priority order is a protocol policy choice consistent with storing one primary reason.",
+      "required_correction": null,
+      "requires_user_approval": false
+    },
+    {
+      "id": "T08",
+      "status": "CONSISTENT",
+      "locators": [
+        {
+          "file": "approved_plan.md",
+          "section": "Phạm vi và điều kiện không được thay đổi ngầm",
+          "quote": "Research/extraction/classification/structured synthesis giao đúng Gemini.app Task; Codex sở hữu writing/editing/code/acceptance/Git. Không thay bằng Gemini CLI hoặc model khác."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P06 — Selection and retrieval (steps07–09)",
+          "quote": "Gemini.app performs an AI-assisted first pass; Codex checks acceptance and supporting sources and requests targeted corrections. These are two AI roles, not two independent human reviewers. No human screening or author adjudication is claimed unless actually recorded."
+        }
+      ],
+      "finding": "P06 and P11–P12 accurately reflect the two AI roles (Gemini.app and Codex), explicitly prohibit claiming two independent human reviewers, and require author referral and disclosure of human-review limits.",
+      "required_correction": null,
+      "requires_user_approval": false
+    },
+    {
+      "id": "T09",
+      "status": "CONSISTENT",
+      "locators": [
+        {
+          "file": "approved_plan.md",
+          "section": "Bước 10 — Liên kết report với study",
+          "quote": "chỉ gộp khi có bằng chứng hai phía; giữ report ID và study ID riêng."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P07 — Reports and study families (step10)",
+          "quote": "A merge requires evidence from both reports, such as explicit version linkage, shared experiment/cohort/dataset design with an established relationship or author statement. Common authors/title topics alone are insufficient. Unresolved families remain separate reports with uncertain independence; do not invent a final unique-study count."
+        }
+      ],
+      "finding": "P07 preserves separate report and study IDs, requires two-sided evidence for merges, and keeps unresolved families as separate reports with uncertain independence without inventing a unique-study count.",
+      "required_correction": null,
+      "requires_user_approval": false
+    },
+    {
+      "id": "T10",
+      "status": "CONSISTENT",
+      "locators": [
+        {
+          "file": "approved_plan.md",
+          "section": "Bước 11 — Trích xuất dữ liệu mới",
+          "quote": "100% included reports có trường dữ liệu hoặc not reported; unsupported quantitative claims=0; không biến thiếu trích xuất thành not reported."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P08 — New extraction (step11)",
+          "quote": "If full-text inspection establishes a field is absent, use NOT_REPORTED with an inspection locator; if extraction is not done, use NOT_YET_ASSESSED. These are not interchangeable."
+        }
+      ],
+      "finding": "P08 covers all required extraction domains, mandates source/unit/condition locators for quantitative claims, forbids old46 extraction imports, and separates NOT_REPORTED from NOT_YET_ASSESSED.",
+      "required_correction": null,
+      "requires_user_approval": false
+    },
+    {
+      "id": "T11",
+      "status": "CONSISTENT",
+      "locators": [
+        {
+          "file": "approved_plan.md",
+          "section": "Bước 12 — Đánh giá chất lượng và nguy cơ sai lệch",
+          "quote": "Dùng domain phù hợp nghiên cứu mô phỏng/hệ thống; ghi rationale/locator và trạng thái chưa đánh giá; phân biệt không báo cáo với bằng chứng âm; không loại bằng điểm tổng tùy tiện."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P09 — Appraisal (step12)",
+          "quote": "Separate reporting absence from evidence of actual bias. Do not exclude by summed score; use domains to qualify synthesis. Do not describe this bespoke appraisal as a validated risk-of-bias instrument."
+        }
+      ],
+      "finding": "P09 operationalizes a domain-based systems/simulation appraisal with explicit status separation, rationale/locator requirements, and a ban on summed-score exclusion.",
+      "required_correction": null,
+      "requires_user_approval": false
+    },
+    {
+      "id": "T12",
+      "status": "CONSISTENT",
+      "locators": [
+        {
+          "file": "approved_plan.md",
+          "section": "Bước 15 — Viết manuscript LaTeX SN Computer Science",
+          "quote": "Viết Methods → Results → Discussion → Introduction rồi Title/Abstract/Conclusion; đồng bộ bảng/hình/references/supplements; công khai giới hạn và vai trò AI/người."
+        },
+        {
+          "file": "approved_plan.md",
+          "section": "Phạm vi và điều kiện không được thay đổi ngầm",
+          "quote": "Phạm vi hiện tại không submit/email."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P10 — Reconciliation and synthesis (steps13–14)",
+          "quote": "There is no authorized new meta-analysis in this restart plan; any such scope expansion requires approval."
+        },
+        {
+          "file": "protocol_restart.md",
+          "section": "P12 — Audit and change control",
+          "quote": "Keep the approved16-step plan unchanged as baseline... any change to approved scope/sequence requires user approval before execution."
+        }
+      ],
+      "finding": "P10–P12 preserve PRISMA reconciliation, narrative synthesis bounds, SN Computer Science LaTeX writing sequence, final integrity checks, no-submit/no-email scope, and user-approval gates for any scope or sequence change.",
+      "required_correction": null,
+      "requires_user_approval": false
+    }
+  ],
+  "unresolved_items": [
+    "T02: Eligibility of non-peer-reviewed preprints (citing unattached protocol.md section4.1) and demo/poster/work-in-progress short reports is a protocol policy choice not mandated by approved_plan.md and requires user approval or restriction to peer-reviewed journal/conference full reports."
+  ],
+  "scholarly_records": [],
+  "scholarly_records_not_applicable": "No scholarly discovery requested; supplied-file protocol consistency audit only",
+  "actions_taken": {
+    "external_searches": 0,
+    "records_screened": 0,
+    "project_files_changed": 0,
+    "final_prose_written": false
+  }
+}
