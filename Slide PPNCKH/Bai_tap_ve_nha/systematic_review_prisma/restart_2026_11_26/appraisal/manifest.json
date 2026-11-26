@@ -1,0 +1,149 @@
+{
+  "phase": "restart-12",
+  "protocol": "P09",
+  "p08_commit": "4b58140",
+  "started_at": "2026-11-27T00:36:29+07:00",
+  "p08_lock": {
+    "path": "restart_2026_11_26/extraction/p08_extraction_lock.json",
+    "sha256": "ab54de5cf60ea77d590e58adeeb7ac57b9fdfa66eb9750a53feda680e9a3f8d3"
+  },
+  "locked_artifacts": {
+    "restart_2026_11_26/extraction/p08_extraction_table.json": "455af97503534a0c494429677ffed67d3492d29f0af0ba6ab360f8a2f9b5af9e",
+    "restart_2026_11_26/extraction/p08_quantitative_claim_source_matrix.csv": "103fe97ce7c89d5b35d106d5092db67cb2a93547765ac1e290fe298303676af0",
+    "restart_2026_11_26/extraction/p08_integrated_candidate.json": "08b7c91c8eb566afd66766a322bb361ab7bcd6db34f9e04fa8b10fbcbe5b4ff9",
+    "restart_2026_11_26/extraction/p08_source_inventory.json": "791c0ce21becf674a96fdc11ef365d6ba87826c122ed95ea78edfcdac238b10b",
+    "restart_2026_11_26/extraction/manifest.json": "a7e48262ed75f8ceaa343d7adbb59652bfb47da854bede7241419b70a3da2474"
+  },
+  "domains": [
+    {
+      "id": "D01",
+      "name": "Question and system model",
+      "interpretation": "Clear technical question and enough system/workflow description to locate the proposed mechanism."
+    },
+    {
+      "id": "D02",
+      "name": "Assumptions, variables and constraints",
+      "interpretation": "Explicit critical assumptions, decision variables and constraints or experimental boundaries."
+    },
+    {
+      "id": "D03",
+      "name": "Reproducible configuration",
+      "interpretation": "Operational setup and key parameter values sufficient to interpret and plausibly reconstruct the reported experiment. Identify material gaps."
+    },
+    {
+      "id": "D04",
+      "name": "Baseline comparability",
+      "interpretation": "Named comparators and evidence of common workloads, resources, protocol or stated differences. Distinguish tunings disclosed from tuning parity not established."
+    },
+    {
+      "id": "D05",
+      "name": "Metric–objective alignment",
+      "interpretation": "Key outcomes measure the stated objective. Note simulation proxy or mismatch if material."
+    },
+    {
+      "id": "D06",
+      "name": "Variability, repetitions, sensitivity or convergence",
+      "interpretation": "Assess facets applicable to the design. A sensitivity sweep or convergence plot alone does not establish uncertainty across repeated random trials."
+    },
+    {
+      "id": "D07",
+      "name": "Network and mobility realism relative to claims",
+      "interpretation": "Compare channel, mobility, network, topology assumptions and evaluation modality with the actual scope claimed. Simulation is not automatically inadequate."
+    },
+    {
+      "id": "D08",
+      "name": "Claim bounds",
+      "interpretation": "Identify how claims and conclusions are bounded to the evaluated workloads, scenarios, systems and modality. Cite both scope and claim if needed."
+    },
+    {
+      "id": "D09",
+      "name": "Code, data, traces and implementation availability",
+      "interpretation": "Identify an explicit release, access route, statement of restriction, or the exact methods, end matter and supplement sections checked for availability. Mention of a named component or third-party dataset is not author artifact availability."
+    },
+    {
+      "id": "D10",
+      "name": "Limitations, funding and conflict reporting",
+      "interpretation": "Give explicit evidence for each of three subfacets as reported or searched; an acknowledgment listing funding does not establish absence of conflicts. Distinguish implicit setup boundaries from explicit author limitations."
+    }
+  ],
+  "judgments": [
+    "YES",
+    "PARTIAL",
+    "NO",
+    "NOT_REPORTED",
+    "NOT_APPLICABLE",
+    "NOT_YET_ASSESSED"
+  ],
+  "batches": [
+    {
+      "batch": "01",
+      "task_id": "restart-12-p09-batch-01",
+      "dispatch_brief": "restart_2026_11_26/appraisal/batch_01_brief.md",
+      "message_id": "ab2a8fe1-984a-4bff-b13c-38becf577582",
+      "marker": "P09_BATCH_01_COMPLETE",
+      "reports": [
+        "R0001",
+        "R0002",
+        "R0003",
+        "R0006",
+        "R0009"
+      ]
+    },
+    {
+      "batch": "02",
+      "task_id": "restart-12-p09-batch-02",
+      "dispatch_brief": "restart_2026_11_26/appraisal/batch_02_brief.md",
+      "message_id": "95b54792-75a7-448d-b7dc-60ff3a921ed1",
+      "marker": "P09_BATCH_02_COMPLETE",
+      "reports": [
+        "R0010",
+        "R0015",
+        "R0019",
+        "R0022",
+        "R0029"
+      ]
+    },
+    {
+      "batch": "03",
+      "task_id": "restart-12-p09-batch-03",
+      "dispatch_brief": "restart_2026_11_26/appraisal/batch_03_brief.md",
+      "message_id": "1f7d024f-154c-4bb0-bbaf-b0b86d4515fb",
+      "marker": "P09_BATCH_03_COMPLETE",
+      "reports": [
+        "R0044",
+        "R0045",
+        "R0048",
+        "R0054",
+        "R0059"
+      ]
+    },
+    {
+      "batch": "04",
+      "task_id": "restart-12-p09-batch-04",
+      "dispatch_brief": "restart_2026_11_26/appraisal/batch_04_brief.md",
+      "message_id": "44cb8eba-890f-4bbb-a863-c0d089e97e8f",
+      "marker": "P09_BATCH_04_COMPLETE",
+      "reports": [
+        "R0062",
+        "R0063",
+        "R0068",
+        "R0071",
+        "R0073"
+      ]
+    },
+    {
+      "batch": "05",
+      "task_id": "restart-12-p09-batch-05",
+      "dispatch_brief": "restart_2026_11_26/appraisal/batch_05_brief.md",
+      "message_id": "8badf377-348d-4f50-8c84-e2ad1496a858",
+      "marker": "P09_BATCH_05_COMPLETE",
+      "reports": [
+        "R0074",
+        "R0083",
+        "R0089",
+        "R0095",
+        "R0121"
+      ]
+    }
+  ]
+}

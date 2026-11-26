@@ -1,27 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T00:33:28+07:00",
+  "updated_at": "2026-11-27T00:36:29+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step11_completed",
-    "summary": "Approved HK261 restart: step 11 P08 extraction is locked for the 25 included reports; step 12 P09 appraisal is ready."
+    "status": "step12_active",
+    "summary": "Step 12 P09 appraisal for the locked 25-report restart corpus."
   },
   "task": {
-    "task_id": "restart-11-p08-extraction-lock",
+    "task_id": "restart-12",
     "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T00:25:39+07:00",
-    "updated_at": "2026-11-27T00:33:28+07:00",
-    "completed_at": "2026-11-27T00:33:28+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/p08_reconciliation_review.md",
-    "decision_id": "restart-11-p08-extraction-lock-v1"
+    "status": "active",
+    "started_at": "2026-11-27T00:36:29+07:00",
+    "updated_at": "2026-11-27T00:36:29+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/manifest.json",
+    "decision_id": "restart-12-p09-v1"
   },
   "next_task": {
-    "task_id": "restart-12",
+    "task_id": "restart-12-p09-batch-01",
+    "dispatch_brief": "restart_2026_11_26/appraisal/batch_01_brief.md",
+    "message_id": "ab2a8fe1-984a-4bff-b13c-38becf577582",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Perform P09 domain-based appraisal for the 25 included reports using the locked P08 extraction and original PDFs.",
-    "acceptance": "All 25 reports have appraisal/status and every domain judgment has rationale and original-PDF locator."
+    "action": "Native Gemini.app audit of original PDF evidence for P09 Batch 01.",
+    "acceptance": "5 reports, 50 report/domain keys, source validity and explicit unresolved keys."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -177,6 +178,12 @@
         "p08_locked_extraction": "restart_2026_11_26/extraction/p08_extraction_table.json",
         "p08_quantitative_claim_source_matrix": "restart_2026_11_26/extraction/p08_quantitative_claim_source_matrix.csv",
         "p08_lock": "restart_2026_11_26/extraction/p08_extraction_lock.json"
+      },
+      "appraisal": {
+        "batches_accepted": 0,
+        "reports_accepted": 0,
+        "domains_accepted": 0,
+        "p08_commit": "4b58140"
       }
     }
   },
