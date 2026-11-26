@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T07:51:03+07:00
+Updated_at: 2026-11-26T08:00:01+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -32,15 +32,15 @@ without blocking dispatch.
 
 ## Reconciliation next task
 
-Corrective brief ready: `screening_46/reconciliation/briefs/scope_01_correction.md`.
-After commit/merge/cleanup, route this correction once through approved A2A router.
-Parent task `01a21542-51c7-70a0-a294-86819046d794` remains rejected A2/A4;
-primary must not be redispatched or overwritten. Require full five-record/20-quote
-replacement, all A1–A6 and C1–C2 PASS. Correct C06 baseline context, SNCS offline
-hierarchy assessment, and C16 unsupported optimization wording. No forced decisions.
-No active provider task. Working overlay remains 36/2/8, not final study counts.
-CODE_FIRST_DECISION: MANUAL; decision `reconciliation-scope-01-correction-brief-v1`.
-Brief-writing checkpoint timestamps below denote this recorded preparation pass.
+Scope correction is rejected and quarantined. Gemini primary
+`01a21556-4587-7524-8edb-d2d9ec56465d` returned only quota; approved router used
+fixed gpt-5.6-luna/low fallback `01a21559-eec5-7109-9445-388ddba4e2e1`.
+Fallback corrects3 semantic issues but passes only17/20 quote locators; A2/C1 FAIL.
+Reviews: `screening_46/reconciliation/reviews/scope_01_correction_review.md` and
+`scope_01_correction_primary_review.md`. After commit/merge/cleanup, prepare a
+small correction for exactly C06_E4,SNCS_E2,SNCS_E3 (no other edits); then recheck
+combined20 quotes and full gate. No active provider task. Overlay stays36/2/8.
+Decision: `reconciliation-scope-01-correction-v1`, REUSE_EXISTING.
 
 ## Measured progress
 
@@ -89,10 +89,10 @@ Correction brief is ready; route only after this task closes.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-scope-01-correction-brief",
-  "status": "completed",
-  "started_at": "2026-11-26T07:51:03+07:00",
-  "updated_at": "2026-11-26T07:51:03+07:00",
-  "completed_at": "2026-11-26T07:51:03+07:00"
+  "task_id": "reconciliation-scope-01-correction",
+  "status": "rejected",
+  "started_at": "2026-11-26T07:51:45+07:00",
+  "updated_at": "2026-11-26T08:00:01+07:00",
+  "completed_at": "2026-11-26T08:00:01+07:00"
 }
 -->

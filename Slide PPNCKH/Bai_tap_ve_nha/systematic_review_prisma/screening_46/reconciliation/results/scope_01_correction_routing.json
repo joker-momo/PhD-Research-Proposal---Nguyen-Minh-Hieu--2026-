@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "provider": "codex",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "low",
+  "fallback_from_task_id": "01a21556-4587-7524-8edb-d2d9ec56465d",
+  "fallback_reason": "provider_quota",
+  "quality_gate": "codex_criterion_review_required",
+  "primary_task_id": "01a21556-4587-7524-8edb-d2d9ec56465d",
+  "primary_context_id": "01a21556-4589-73eb-a991-5db03a2a67e5",
+  "fallback_task_id": "01a21559-eec5-7109-9445-388ddba4e2e1",
+  "fallback_context_id": "01a21559-eec5-71bd-88ad-9cb52a8ec751",
+  "reviewed_at": "2026-11-26T08:00:01+07:00",
+  "review_state": "rejected",
+  "failed_criteria": [
+    "A2",
+    "C1"
+  ]
+}

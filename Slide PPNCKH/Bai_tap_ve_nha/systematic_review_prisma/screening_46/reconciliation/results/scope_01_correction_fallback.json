@@ -1,0 +1,598 @@
+{
+  "task": "scope_01_correction",
+  "records": [
+    {
+      "id": "C06",
+      "title": "Joint Model Partitioning and Bandwidth Allocation for UAV-Assisted Space–Air–Ground–Sea Integrated Network: A Hybrid A3C-PPO Approach",
+      "authors": [
+        "Yuanmo Lin",
+        "Yuanyuan Han",
+        "Minmin Wu",
+        "Shaoyu Lin",
+        "Xia Zhang",
+        "Zhiyong Xu"
+      ],
+      "year": 2026,
+      "venue": "Entropy",
+      "doi": "10.3390/e28030337",
+      "prior_decision": "UNCERTAIN",
+      "proposed_decision": "UNCERTAIN",
+      "scope_gates": {
+        "multi_uav_evaluated": {
+          "status": "UNCERTAIN",
+          "rationale": "The report specifies a three-UAV simulation and a central/worker policy architecture, but the Only-A3C baseline paragraph describes an environment with four terminals connected to the UAV. The text does not conclusively link the main inference results to runtime evaluation across all three UAVs.",
+          "evidence_ids": [
+            "C06_E2",
+            "C06_E3",
+            "C06_E4"
+          ]
+        },
+        "collaborative_inference": {
+          "status": "UNCERTAIN",
+          "rationale": "Terminal-to-UAV DNN partitioning is explicit, but the central/worker coordination is described as policy state collection and sampling. The report does not establish whether the evaluated inference results coordinate live multi-UAV placement or resources rather than training-related policy activity.",
+          "evidence_ids": [
+            "C06_E1",
+            "C06_E2",
+            "C06_E4"
+          ]
+        }
+      },
+      "other_gates_preserved": {
+        "primary_full_report": "YES",
+        "evaluative_evidence": "YES",
+        "date_window": "YES",
+        "english": "YES"
+      },
+      "architecture": {
+        "uav_roles": "Three UAVs are configured in SAGSIN simulation; one hosts a global policy and the others act as workers for local state collection and policy sampling.",
+        "inference_execution_nodes": "The intelligent terminal executes the front DNN partition and a UAV edge server executes the remaining partition.",
+        "inference_workload": "Continuously generated partitioned DNN inference tasks.",
+        "coordinated_decisions": "Terminal-to-UAV partitioning and bandwidth/policy decisions; whether these are jointly evaluated across the three-UAV runtime remains unresolved.",
+        "evaluated_conditions": "Simulation includes three hovering UAVs; the Only-A3C baseline separately states four terminals connected to the UAV.",
+        "evidence_ids": [
+          "C06_E1",
+          "C06_E2",
+          "C06_E3",
+          "C06_E4"
+        ]
+      },
+      "supporting_interpretation": {
+        "note": "The three-UAV configuration and central/worker policy architecture could satisfy the fixed scope if the main A3C-PPO results evaluate runtime inference coordination across that architecture; Amendment 001 does not require every UAV to compute or require inter-UAV layer splitting.",
+        "evidence_ids": [
+          "C06_E1",
+          "C06_E2",
+          "C06_E3"
+        ]
+      },
+      "contrary_interpretation": {
+        "note": "E4 is located in the Only-A3C baseline paragraph. Its sentence that the environment matches A3C-PPO and its singular UAV phrasing do not prove that the proposed method was evaluated only on one UAV, but they leave the multi-UAV runtime linkage unresolved. Worker policy sampling may represent training coordination rather than inference orchestration.",
+        "evidence_ids": [
+          "C06_E2",
+          "C06_E4"
+        ]
+      },
+      "evidence": [
+        {
+          "evidence_id": "C06_E1",
+          "file": "screening_46/text/C06.txt",
+          "page": 6,
+          "line_range": "282-285",
+          "quote": "The DNN model is partitioned into two parts: the front part is executed locally on the intelligent terminal, and the intermediate feature results are transmitted to the UAV, where the remaining part is executed by the UAV of edge server."
+        },
+        {
+          "evidence_id": "C06_E2",
+          "file": "screening_46/text/C06.txt",
+          "page": 13,
+          "line_range": "716-719",
+          "quote": "During deployment, one UAV serves as the central node hosting the global policy network for coordinated decision-making, while the remaining UAVs act as worker agents responsible for local state collection and policy sampling."
+        },
+        {
+          "evidence_id": "C06_E3",
+          "file": "screening_46/text/C06.txt",
+          "page": 15,
+          "line_range": "835-836",
+          "quote": "Three UAVs are deployed in the UAV-assisted edge network under SAGSIN scenarios. UAVs hover at heights of 40–100 m above ground to execute predefined tasks."
+        },
+        {
+          "evidence_id": "C06_E4",
+          "file": "screening_46/text/C06.txt",
+          "page": 20,
+          "line_range": "1031-1048",
+          "quote": "Only-A3C and Only-PPO are constructed as baseline strategies. The experimental environment is configured identically to that of the A3C-PPO framework. Four intelligent terminals are connected to the UAV."
+        }
+      ],
+      "unresolved": [
+        "Whether the main A3C-PPO inference results execute across the three-UAV architecture or aggregate per-UAV evaluations.",
+        "Whether central/worker policy coordination is runtime inference-resource coordination or training-only coordination."
+      ],
+      "human_question": "Do the main A3C-PPO inference results evaluate the three-UAV architecture at runtime, or are the reported inference experiments per-UAV while worker agents are used only for policy training and sampling?"
+    },
+    {
+      "id": "SNCS",
+      "title": "Learning-Based UAV Swarm Video Analytics Orchestration in Disaster Response Management",
+      "authors": [
+        "Tiying Gao",
+        "Dwight Goins",
+        "Chaise Ballotti",
+        "Jiaqing Liu",
+        "Chengyi Qu"
+      ],
+      "year": 2025,
+      "venue": "SN Computer Science",
+      "doi": "10.1007/s42979-025-04063-5",
+      "prior_decision": "UNCERTAIN",
+      "proposed_decision": "UNCERTAIN",
+      "scope_gates": {
+        "multi_uav_evaluated": {
+          "status": "YES",
+          "rationale": "The offline experiment explicitly uses a hierarchical UAV configuration with varying fleet sizes, and Table 2 reports 10–30 drones. This establishes evaluated multi-UAV hierarchy evidence independently of the separate online ten-UAV routing experiment.",
+          "evidence_ids": [
+            "SNCS_E1",
+            "SNCS_E2"
+          ]
+        },
+        "collaborative_inference": {
+          "status": "UNCERTAIN",
+          "rationale": "The offline setup evaluates UAV-edge-server orchestration, video streaming, and YoloV8 processing, while the application-policy evaluation compares collaboration decisions. However, the supplied passages do not conclusively establish that the DNN inference workload itself is distributed or jointly orchestrated across the multi-UAV hierarchy rather than transported to one processing node.",
+          "evidence_ids": [
+            "SNCS_E1",
+            "SNCS_E2",
+            "SNCS_E3",
+            "SNCS_E4"
+          ]
+        }
+      },
+      "other_gates_preserved": {
+        "primary_full_report": "YES",
+        "evaluative_evidence": "YES",
+        "date_window": "YES",
+        "english": "YES"
+      },
+      "architecture": {
+        "uav_roles": "A hierarchical UAV-edge-server network with offline fleet-size experiments and separate online UAV trajectory/networking collaboration.",
+        "inference_execution_nodes": "YoloV8 is processed on a Jetson Xavier NX, with UAV-edge-server streaming and offloading evaluated.",
+        "inference_workload": "Video analytics and YoloV8 object detection over generated clips.",
+        "coordinated_decisions": "Offline UAV-edge-server orchestration and application collaboration decisions; the separate online Q-learning experiment coordinates movement and receiving/forwarding/dropping status.",
+        "evaluated_conditions": "Offline Table 2 reports 10–30 drones; the offline hierarchy uses simulated mobility, fleet sizes, UAV-edge-server streaming, and Jetson/YoloV8 processing. Online ten-UAV routing is supplementary, not the sole multi-UAV evidence.",
+        "evidence_ids": [
+          "SNCS_E1",
+          "SNCS_E2",
+          "SNCS_E3",
+          "SNCS_E4"
+        ]
+      },
+      "supporting_interpretation": {
+        "note": "The offline hierarchical UAV-edge-server setup and 10–30-drone fleet evidence satisfy the evaluated multi-UAV architecture gate. If the application-policy and YoloV8 experiments are interpreted as the inference workload governed by that hierarchy, the collaborative-inference gate also passes.",
+        "evidence_ids": [
+          "SNCS_E1",
+          "SNCS_E2"
+        ]
+      },
+      "contrary_interpretation": {
+        "note": "The Jetson/YoloV8 processing and policy-based application evaluation may remain decoupled from the multi-UAV routing and mobility experiments. Batch RL and online Q-learning passages describe task execution, movement, and data forwarding rather than demonstrating distributed DNN inference execution or feature/layer/request placement across multiple UAVs. Venue fit is not evidence.",
+        "evidence_ids": [
+          "SNCS_E2",
+          "SNCS_E3",
+          "SNCS_E4"
+        ]
+      },
+      "evidence": [
+        {
+          "evidence_id": "SNCS_E1",
+          "file": "screening_46/text/SNCS.txt",
+          "page": 15,
+          "line_range": "1251-1258",
+          "quote": "Number of drones 10–30 Application bit rate 6 Mbps Flight area 10–15 miles Tx power 32–48 dBm Transmission range 50–250 m"
+        },
+        {
+          "evidence_id": "SNCS_E2",
+          "file": "screening_46/text/SNCS.txt",
+          "page": 17,
+          "line_range": "1352-1409",
+          "quote": "To evaluate the performance of our edge network orchestration algorithms, we utilized data collected from a hierarchical UAV configuration, as described in Sect. 3. This configuration operates within a UAV-Edge-Server network and considers various factors such as different mobility models and fleet sizes."
+        },
+        {
+          "evidence_id": "SNCS_E3",
+          "file": "screening_46/text/SNCS.txt",
+          "page": 19,
+          "line_range": "1543-1567",
+          "quote": "This effort resulted in the creation of 320 distinct video clips. These videos were then processed on a Nvidia Jetson Xavier NX using the YoloV8 model to conduct real-time object detection."
+        },
+        {
+          "evidence_id": "SNCS_E4",
+          "file": "screening_46/text/SNCS.txt",
+          "page": 14,
+          "line_range": "1176-1178",
+          "quote": "Here the action helps to determine if the UAV should move to another position or stay, change it’s status from receiving data, to forwarding data, to dropping data."
+        }
+      ],
+      "unresolved": [
+        "Whether offline multi-UAV fleet orchestration is coupled to the evaluated YoloV8 inference workload.",
+        "Whether the application-policy evaluation distributes inference requests, features, layers, or resources across multiple UAVs rather than using one inference device with UAV transport/orchestration."
+      ],
+      "human_question": "Does the offline 10–30-drone UAV-edge-server hierarchy directly execute or assign the YoloV8 inference workload across multiple UAVs, or are the fleet orchestration and single-device video-policy evaluations separate?"
+    },
+    {
+      "id": "C04",
+      "title": "A cognitive synergetic hierarchical framework for UAV swarm combat via speculative inference and role-decoupled reinforcement learning",
+      "authors": [
+        "Lixa Wang",
+        "Yunqing Liu",
+        "Linyang Guo",
+        "Ran Zhang",
+        "Yu Cui",
+        "Yihan Cui",
+        "Chunlin Xu"
+      ],
+      "year": 2026,
+      "venue": "Frontiers in Neurorobotics",
+      "doi": "10.3389/fnbot.2026.1799054",
+      "prior_decision": "INCLUDE",
+      "proposed_decision": "INCLUDE",
+      "scope_gates": {
+        "multi_uav_evaluated": {
+          "status": "YES",
+          "rationale": "The report evaluates 2v2 and 6v6 multi-UAV scenarios.",
+          "evidence_ids": [
+            "C04_E3"
+          ]
+        },
+        "collaborative_inference": {
+          "status": "YES",
+          "rationale": "It evaluates cloud-to-edge speculative inference and intra-swarm latent-intention sharing/fusion.",
+          "evidence_ids": [
+            "C04_E1",
+            "C04_E2",
+            "C04_E4"
+          ]
+        }
+      },
+      "other_gates_preserved": {
+        "primary_full_report": "YES",
+        "evaluative_evidence": "YES",
+        "date_window": "YES",
+        "english": "YES"
+      },
+      "architecture": {
+        "uav_roles": "Leader and peer UAVs in 2v2 and 6v6 swarm teams.",
+        "inference_execution_nodes": "Cloud/edge 70B/7B speculative-decoding pipeline plus peer UAV policy inference.",
+        "inference_workload": "Strategic LLM inference and shared-intention policy inference.",
+        "coordinated_decisions": "Speculative draft/verification and sequential intention embedding broadcast/fusion.",
+        "evaluated_conditions": "Simulated 2v2 and 6v6 combat scenarios with simulated SIP timing.",
+        "evidence_ids": [
+          "C04_E1",
+          "C04_E2",
+          "C04_E3",
+          "C04_E4"
+        ]
+      },
+      "supporting_interpretation": {
+        "note": "Both fixed scope gates are met by an evaluated multi-UAV architecture with vertical cloud-edge inference and horizontal intra-swarm intention fusion.",
+        "evidence_ids": [
+          "C04_E1",
+          "C04_E2",
+          "C04_E3"
+        ]
+      },
+      "contrary_interpretation": {
+        "note": "The evidence is simulation-based and the report notes that real large-swarm cascaded transmission may exceed the control window; this limits physical interpretation but does not defeat Amendment 001 eligibility.",
+        "evidence_ids": [
+          "C04_E3",
+          "C04_E4"
+        ]
+      },
+      "evidence": [
+        {
+          "evidence_id": "C04_E1",
+          "file": "screening_46/text/C04.txt",
+          "page": 8,
+          "line_range": "670-672",
+          "quote": "To get 70B-level intelligence at 7B-level speeds on the edge, we’ve built a “cloud-to-edge” inference pipeline based on speculative decoding."
+        },
+        {
+          "evidence_id": "C04_E2",
+          "file": "screening_46/text/C04.txt",
+          "page": 9,
+          "line_range": "799-803",
+          "quote": "The Leader (u(1)) outputs its intention embedding m(1),t, which is broadcasted to all subsequent peers. Each following agent then updates the “Shared Mental Model” by adding its own intended vector to the pool."
+        },
+        {
+          "evidence_id": "C04_E3",
+          "file": "screening_46/text/C04.txt",
+          "page": 13,
+          "line_range": "1173-1176",
+          "quote": "we ran our Brain-Torso setup against five baselines in Scenario B (2v2 coordination) and Scenario C (6v6 scale combat"
+        },
+        {
+          "evidence_id": "C04_E4",
+          "file": "screening_46/text/C04.txt",
+          "page": 20,
+          "line_range": "1736-1741",
+          "quote": "while our Sequential Intention Propagation (SIP) mechanism resolves within 20 ms in simulation, real-world cascaded transmission across a large swarm will inevitably accumulate multi-hop latency"
+        }
+      ],
+      "unresolved": [
+        "Simulation-to-physical scalability remains limited; final human adjudication remains required."
+      ],
+      "human_question": null
+    },
+    {
+      "id": "C11",
+      "title": "Quantum-Enhanced Multi-Agent Reinforcement Learning for Ubiquitous LLM Inference via Embodied UAV Swarms",
+      "authors": [
+        "Xiangdong Zheng",
+        "Long Luo",
+        "Hongfang Yu",
+        "Haoxiang Luo"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Cognitive Communications and Networking",
+      "doi": "10.1109/TCCN.2026.3716252",
+      "prior_decision": "INCLUDE",
+      "proposed_decision": "INCLUDE",
+      "scope_gates": {
+        "multi_uav_evaluated": {
+          "status": "YES",
+          "rationale": "Two UAVs are evaluated in both simulation scenarios.",
+          "evidence_ids": [
+            "C11_E3"
+          ]
+        },
+        "collaborative_inference": {
+          "status": "YES",
+          "rationale": "The UAV swarm coordinates inference-request routing across terrestrial edge servers that perform LLM prefill and decoding.",
+          "evidence_ids": [
+            "C11_E1",
+            "C11_E2",
+            "C11_E3"
+          ]
+        }
+      },
+      "other_gates_preserved": {
+        "primary_full_report": "YES",
+        "evaluative_evidence": "YES",
+        "date_window": "YES",
+        "english": "YES"
+      },
+      "architecture": {
+        "uav_roles": "Two UAVs perform sensing, trajectory control, user association, inference-request routing, and relay functions.",
+        "inference_execution_nodes": "Terrestrial edge servers execute LLM prefill and decoding; UAVs route and relay requests/tokens.",
+        "inference_workload": "Multi-turn LLM prefill and token decoding.",
+        "coordinated_decisions": "Trajectory, association, and inference-request routing across the UAV-edge hierarchy.",
+        "evaluated_conditions": "Simulated two-UAV edge-inference scenarios.",
+        "evidence_ids": [
+          "C11_E1",
+          "C11_E2",
+          "C11_E3",
+          "C11_E4"
+        ]
+      },
+      "supporting_interpretation": {
+        "note": "Amendment 001 does not require UAVs to execute inference layers. C11 evaluates a two-UAV hierarchy that coordinates inference requests to terrestrial LLM execution nodes.",
+        "evidence_ids": [
+          "C11_E1",
+          "C11_E2",
+          "C11_E3"
+        ]
+      },
+      "contrary_interpretation": {
+        "note": "UAVs do not execute LLM prefill or decoding; entangled resources concern learning updates. Eligibility therefore depends on accepting inference-request routing as collaborative orchestration across the multi-UAV-edge hierarchy.",
+        "evidence_ids": [
+          "C11_E1",
+          "C11_E2",
+          "C11_E4"
+        ]
+      },
+      "evidence": [
+        {
+          "evidence_id": "C11_E1",
+          "file": "screening_46/text/C11.txt",
+          "page": 1,
+          "line_range": "16-20",
+          "quote": "this paper studies an edge inference system assisted by an embodied UAV agent swarm, where UAVs actively sense user mobility and neighboring UAV states to make local decisions on trajectory control, user association, and inference-request routing."
+        },
+        {
+          "evidence_id": "C11_E2",
+          "file": "screening_46/text/C11.txt",
+          "page": 4,
+          "line_range": "373-376",
+          "quote": "the ES performs prefill using the new input and the uncached historical context. Then, the ES decodes output tokens and streams the generated tokens back to the user through the UAV-assisted downlink."
+        },
+        {
+          "evidence_id": "C11_E3",
+          "file": "screening_46/text/C11.txt",
+          "page": 8,
+          "line_range": "911-913",
+          "quote": "In both scenarios, two rotary-wing UAVs, i.e., U = 2, deploy from [0, 500] and [500, 500] m at a constant altitude H = 100 m."
+        },
+        {
+          "evidence_id": "C11_E4",
+          "file": "screening_46/text/C11.txt",
+          "page": 7,
+          "line_range": "764-768",
+          "quote": "The entangled resources are consumed during learning updates rather than assumed to persist over the full mission horizon"
+        }
+      ],
+      "unresolved": [
+        "Whether the reviewer accepts inference-request routing with terrestrial execution as sufficient collaborative inference under Amendment 001."
+      ],
+      "human_question": null
+    },
+    {
+      "id": "C16",
+      "title": "Secure Split Offloading and Trajectory Design for UAV-Assisted Multi-Exit Collaborative DNN Inference",
+      "authors": [
+        "Mengru Wu",
+        "Haonan Wu",
+        "Weidang Lu",
+        "Zhaolong Ning",
+        "Lei Guo",
+        "Abbas Jamalipour"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Mobile Computing",
+      "doi": "10.1109/TMC.2026.3708394",
+      "prior_decision": "INCLUDE",
+      "proposed_decision": "INCLUDE",
+      "scope_gates": {
+        "multi_uav_evaluated": {
+          "status": "YES",
+          "rationale": "Simulation deploys a UAV server and a cooperative UAV jammer.",
+          "evidence_ids": [
+            "C16_E4"
+          ]
+        },
+        "collaborative_inference": {
+          "status": "YES",
+          "rationale": "Device-to-UAV split DNN inference is jointly orchestrated with dual-UAV trajectories, early-exit selection, partitioning, and computation allocation. The jammer role supports secure inference transmission; artificial noise is not claimed to be an optimized variable.",
+          "evidence_ids": [
+            "C16_E1",
+            "C16_E2",
+            "C16_E3",
+            "C16_E4"
+          ]
+        }
+      },
+      "other_gates_preserved": {
+        "primary_full_report": "YES",
+        "evaluative_evidence": "YES",
+        "date_window": "YES",
+        "english": "YES"
+      },
+      "architecture": {
+        "uav_roles": "One UAV server executes the remaining DNN layers; one cooperative UAV jammer transmits artificial noise for secure offloading.",
+        "inference_execution_nodes": "Device executes initial layers and UAV server executes remaining layers; jammer supports secure transmission.",
+        "inference_workload": "Multi-exit split DNN inference.",
+        "coordinated_decisions": "Dual-UAV trajectories, early-exit selection, DNN partitioning, and computation allocation; artificial noise is documented as jammer transmission, not an independently optimized variable.",
+        "evaluated_conditions": "Simulated dual-UAV server/jammer deployment.",
+        "evidence_ids": [
+          "C16_E1",
+          "C16_E2",
+          "C16_E3",
+          "C16_E4"
+        ]
+      },
+      "supporting_interpretation": {
+        "note": "The fixed rule does not require every UAV to compute. C16 evaluates a dual-UAV architecture in which one UAV computes DNN layers and the second UAV's jointly coordinated trajectory supports secure inference offloading.",
+        "evidence_ids": [
+          "C16_E1",
+          "C16_E2",
+          "C16_E3",
+          "C16_E4"
+        ]
+      },
+      "contrary_interpretation": {
+        "note": "Only the UAV server executes DNN layers; the second UAV jams the channel. Artificial noise transmission is evidenced, but its optimization is not claimed. Excluding the record solely because the jammer does not compute would add an unstated all-UAV-compute requirement.",
+        "evidence_ids": [
+          "C16_E1",
+          "C16_E2",
+          "C16_E3"
+        ]
+      },
+      "evidence": [
+        {
+          "evidence_id": "C16_E1",
+          "file": "screening_46/text/C16.txt",
+          "page": 1,
+          "line_range": "21-26",
+          "quote": "Our objective is to minimize total energy consumption while maximizing inference accuracy, subject to inference delay requirements and secure offloading rate constraints by jointly optimizing dual-UAV trajectories, EE selection, DNN partitioning, and computation resource allocation."
+        },
+        {
+          "evidence_id": "C16_E2",
+          "file": "screening_46/text/C16.txt",
+          "page": 4,
+          "line_range": "316-319",
+          "quote": "To prevent the malicious interception of the Eve on IFD, we propose a secure split offloading scheme that leverages cooperative jamming, where the UAV jammer transmits artificial noise to confuse the Eve."
+        },
+        {
+          "evidence_id": "C16_E3",
+          "file": "screening_46/text/C16.txt",
+          "page": 4,
+          "line_range": "346-349",
+          "quote": "device k executes the initial layers from 0 to mk[n] and the UAV server handles the remaining layers from mk[n] + 1 to Msk[n]."
+        },
+        {
+          "evidence_id": "C16_E4",
+          "file": "screening_46/text/C16.txt",
+          "page": 11,
+          "line_range": "1171-1173",
+          "quote": "We consider that a UAV server and a UAV jammer are deployed within an area of 800 × 800 m2 to provide CI."
+        }
+      ],
+      "unresolved": [
+        "Whether final adjudication accepts the jammer's jointly coordinated trajectory as inference orchestration under Amendment 001."
+      ],
+      "human_question": null
+    }
+  ],
+  "consistency_checks": [
+    {
+      "principle": "Not all UAVs must execute DNN computation or participate in inter-UAV layer splitting.",
+      "applies_to_ids": [
+        "C04",
+        "C11",
+        "C16"
+      ],
+      "evidence_ids": [
+        "C04_E1",
+        "C04_E2",
+        "C11_E1",
+        "C11_E2",
+        "C11_E3",
+        "C16_E1",
+        "C16_E2",
+        "C16_E3",
+        "C16_E4"
+      ],
+      "assessment": "C11 assigns LLM execution to terrestrial edge servers while UAVs route requests; C16 assigns DNN execution to one UAV server while the second UAV jams; C04 combines cloud-edge inference with peer intention sharing. None requires every UAV to compute."
+    },
+    {
+      "principle": "Training coordination, ordinary transport, security alone, or mobility routing is not automatically inference coordination.",
+      "applies_to_ids": [
+        "C06",
+        "SNCS",
+        "C11",
+        "C16"
+      ],
+      "evidence_ids": [
+        "C06_E1",
+        "C06_E2",
+        "C06_E4",
+        "SNCS_E1",
+        "SNCS_E2",
+        "SNCS_E3",
+        "SNCS_E4",
+        "C11_E1",
+        "C11_E2",
+        "C11_E4",
+        "C16_E1",
+        "C16_E2"
+      ],
+      "assessment": "C06 remains unresolved because central/worker policy sampling may be training coordination; SNCS remains unresolved because offline hierarchy and video-policy evidence may be decoupled from DNN placement; C11 has direct inference-request routing to ES execution; C16 has jointly optimized inference partitioning/resources and a jammer role, but artificial-noise optimization is not claimed."
+    },
+    {
+      "principle": "Simulation and analytical evidence is eligible when both fixed Amendment 001 scope criteria are met.",
+      "applies_to_ids": [
+        "C04",
+        "C06",
+        "SNCS",
+        "C11",
+        "C16"
+      ],
+      "evidence_ids": [
+        "C04_E3",
+        "C04_E4",
+        "C06_E2",
+        "C06_E3",
+        "SNCS_E1",
+        "SNCS_E2",
+        "C11_E3",
+        "C16_E4"
+      ],
+      "assessment": "Simulation is not a disqualifier. C04, C11, and C16 satisfy both scope gates on the supplied evidence. C06 and SNCS remain unresolved because the evidence does not conclusively link the multi-UAV architecture to evaluated runtime collaborative inference."
+    }
+  ],
+  "shortfall": [],
+  "project_files_changed": 0,
+  "final_prose_written": false
+}
