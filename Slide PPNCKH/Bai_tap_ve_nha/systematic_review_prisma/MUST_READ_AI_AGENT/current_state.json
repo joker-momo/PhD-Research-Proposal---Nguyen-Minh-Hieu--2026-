@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T12:56:35+07:00",
+  "updated_at": "2026-11-26T13:00:52+07:00",
   "goal": {
     "version": "HK261-PRISMA-completion-spec-v2",
-    "status": "specification_approved_execution_ready",
-    "summary": "HK261-PRISMA-COMPLETION-SPEC-v2 is explicitly approved. Batch B01 recorded the single SN Computer Science/Springer Nature LaTeX venue profile; execution may proceed sequentially from B02 without authorizing submission, email, public upload or protocol changes.",
+    "status": "execution_in_progress_b03_ready",
+    "summary": "HK261-PRISMA-COMPLETION-SPEC-v2 is approved and Batch B02 restored a clean canonical workspace with one verified manuscript PDF. Batch B03 may now freeze protocol/access rules and prepare the committed S-01 Gemini research brief; submission and email remain unauthorized.",
     "goal_engine_status_observed": "usageLimited"
   },
   "task": {
-    "task_id": "approve-prisma-completion-spec-v2",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T12:56:23+07:00",
-    "updated_at": "2026-11-26T12:56:35+07:00",
-    "completed_at": "2026-11-26T12:56:35+07:00",
-    "decision_id": "approve-prisma-completion-spec-v2"
-  },
-  "next_task": {
     "task_id": "restore-canonical-workspace-baseline-b02",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-26T13:00:39+07:00",
+    "updated_at": "2026-11-26T13:00:52+07:00",
+    "completed_at": "2026-11-26T13:00:52+07:00",
+    "decision_id": "restore-canonical-workspace-baseline-b02-v1"
+  },
+  "next_task": {
+    "task_id": "prepare-b03-protocol-access-and-s01-brief",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Execute Batch B02/G-02: preserve user data while restoring one canonical manuscript PDF and resolving project .DS_Store residue; commit and integrate before B03.",
-    "acceptance": "Canonical main.pdf exists with a verified hash; ambiguous active duplicate PDFs equal zero; B02-owned paths are clean; unrelated user work is preserved."
+    "action": "Execute the Codex-owned preparation portion of Batch B03: freeze G-04 protocol/access/report-completeness rules and commit one five-section S-01 Gemini research brief before any A2A dispatch.",
+    "acceptance": "Protocol/access decision is explicit; short/demo rule uses substantive content rather than page count; S-01 brief contains all five mandatory sections and numeric/binary criteria; no research dispatch occurs before the brief commit."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -40,6 +40,9 @@
     "canonical_manuscript": "manuscript/sn_computer_science/main.tex",
     "canonical_bibliography": "manuscript/sn_computer_science/references.bib",
     "approved_build_profile": "manuscript/sn_computer_science/build_profile.json",
+    "canonical_pdf": "manuscript/sn_computer_science/main.pdf",
+    "canonical_pdf_git_blob": "c563e5b6a8543de5631f7370057f1b1c979616cd",
+    "workspace_baseline_status": "CLEAN_AFTER_B02",
     "manuscript_pages": 22,
     "cited_references": 53,
     "release_audit": "release_46report/integrity_audit.json",
