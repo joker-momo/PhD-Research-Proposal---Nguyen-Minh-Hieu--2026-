@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T20:13:03+07:00",
+  "updated_at": "2026-11-26T20:13:09+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
@@ -10,19 +10,20 @@
     "task_id": "restart-08",
     "owner": "CODEX_WRITING",
     "research_owner": "GEMINI_RESEARCH",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-26T19:30:11+07:00",
     "decision_id": "restart-08-pdf-verification-v2",
     "records_total": 137,
     "records_reviewed": 137,
-    "updated_at": "2026-11-26T20:13:03+07:00"
+    "updated_at": "2026-11-26T20:13:09+07:00",
+    "completed_at": "2026-11-26T20:13:09+07:00"
   },
   "next_task": {
-    "task_id": "restart-08-reconcile",
-    "owner": "CODEX_WRITING",
+    "task_id": "restart-09",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Reconcile all accepted full-text batch logs and file identities.",
-    "acceptance": "Exact IDs and one verified full-text result or exact access shortfall per queued row."
+    "action": "Screen 44 independently verified full reports using protocol P06.",
+    "acceptance": "Every retrieved report has a decision and page/section evidence. No previously inherited decision."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -110,7 +111,9 @@
         "reviewed": 137,
         "retrieved_pdf": 44,
         "retrieved_html": 0,
-        "not_retrieved": 93
+        "not_retrieved": 93,
+        "reused_pdf": 31,
+        "downloaded_pdf": 13
       }
     }
   },
