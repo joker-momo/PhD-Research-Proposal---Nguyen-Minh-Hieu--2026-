@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T07:18:56+07:00
+**updated_at:** 2026-11-26T07:21:10+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -163,11 +163,17 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-After correction acceptance commit/merge/cleanup, prepare scope reconciliation
-for C06 and SNCS plus the already flagged boundary cases C04,C11,C16. Use fixed
-Amendment 001, require supporting and contrary full-text evidence, and keep
-human adjudication explicit. Then reconcile study families and the historical
-27-report dataset; formal database searches remain incomplete.
+**USER-REQUESTED HOLD:** Complete scope-brief commit/merge/cleanup, then stop
+before dispatch or any next task. The coordinating chat will add the requested
+automation/code-first rule in a separate task on clean main and provide a new
+handoff. No scope research has been dispatched.
+
+
+After scope brief commit/merge/cleanup, route
+`screening_46/reconciliation/briefs/scope_01.md` for C06,SNCS,C04,C11,C16.
+Require 20 exact quote/page/line matches, ten scope-gate verdicts and all A1–A6.
+Preserve fixed Amendment001 and human adjudication. No provider task is active.
+Current working report total remains 36 INCLUDE / 2 EXCLUDE / 8 UNCERTAIN.
 
 ## Current bibliographic overlay
 
@@ -188,10 +194,10 @@ The boundary hold has been released by the coordinating handoff.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-identity-date-correction",
+  "task_id": "reconciliation-scope-brief",
   "status": "completed",
-  "started_at": "2026-11-26T07:15:12+07:00",
-  "updated_at": "2026-11-26T07:18:56+07:00",
-  "completed_at": "2026-11-26T07:18:56+07:00"
+  "started_at": "2026-11-26T07:20:46+07:00",
+  "updated_at": "2026-11-26T07:21:10+07:00",
+  "completed_at": "2026-11-26T07:21:10+07:00"
 }
 -->

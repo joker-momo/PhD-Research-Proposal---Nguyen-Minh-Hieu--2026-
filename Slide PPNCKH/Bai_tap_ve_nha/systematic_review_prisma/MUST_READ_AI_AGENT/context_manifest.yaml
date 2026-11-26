@@ -1,5 +1,5 @@
 schema_version: 1
-context_version: "2026-11-26.18"
+context_version: "2026-11-26.19"
 project: "HK261 PRISMA systematic review"
 canonical_workspace:
   path: "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)"
@@ -66,13 +66,13 @@ persistent_task_gate:
   automatic_runtime_enforcement: "UNVERIFIED; direct subprocess checks pass; manual gate required"
   task_fields: [TASK, OWNER, OWNED_PATHS, BINARY_ACCEPTANCE, PRE_TASK_GIT_STATUS]
   freshness_rule: "latest project commit must also be the latest commit touching CURRENT_HANDOFF.md and current_tasks.md before recognized A2A dispatch"
-updated_at: "2026-11-26T07:18:56+07:00"
+updated_at: "2026-11-26T07:21:10+07:00"
 goal_version: "HK261-PRISMA-SNCS-v2"
 goal_adopted_at: "2026-11-25T23:03:52+07:00"
 next_task:
-  id: "reconciliation-scope-brief"
-  owner: "CODEX_WRITING"
-  dispatch_status: "BLOCKED_UNTIL_CURRENT_TASK_COMMIT_MERGE_CLEANUP"
+  id: "reconciliation-scope-01"
+  owner: "GEMINI_RESEARCH"
+  dispatch_status: "USER_HOLD_PENDING_AUTOMATION_CODE_FIRST_RULE"
   active_research_task_count: 0
 timestamp_policy:
   format: "RFC 3339 with seconds and known timezone; default Asia/Ho_Chi_Minh"
