@@ -120,3 +120,4 @@
 {"timestamp": "2026-11-26T19:48:44+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_leads_quarantined", "batch": 4, "provider_task_id": "a33d1ae9-0b17-40eb-a677-bef6dac9bc2e", "issues": {"T1": [], "T2": ["R0220 invalid link field"], "T3": [], "T4": []}}
 {"timestamp": "2026-11-26T19:48:45+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_dispatched", "batch": 4, "provider_task_id": "3aa88422-5ce9-42a8-9eba-865a50d8b838", "provider_context_id": "a207715b-ac4d-4af7-b585-cf25d7d82500"}
 {"timestamp": "2026-11-26T19:52:54+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_batch_accepted", "batch": 4, "provider_task_id": "a33d1ae9-0b17-40eb-a677-bef6dac9bc2e", "local_reused": 2, "sought": 137, "reviewed": 80, "retrieved_pdf": 39, "retrieved_html": 0, "not_retrieved": 41}
+{"timestamp": "2026-11-26T19:53:35+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_brief_prepared", "batch": 5, "records": 20}
