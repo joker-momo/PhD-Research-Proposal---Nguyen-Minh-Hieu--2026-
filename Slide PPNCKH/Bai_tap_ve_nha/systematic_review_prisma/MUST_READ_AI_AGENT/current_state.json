@@ -1,29 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:27:15+07:00",
+  "updated_at": "2026-11-26T23:31:08+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-batch01-43-brief",
+    "task_id": "restart-11-batch01-43-review",
     "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T23:27:15+07:00",
-    "updated_at": "2026-11-26T23:27:15+07:00",
-    "completed_at": "2026-11-26T23:27:15+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_targeted_correction_brief.md",
-    "decision_id": "restart-11-batch01-43-brief-v1"
+    "status": "rejected",
+    "started_at": "2026-11-26T23:31:08+07:00",
+    "updated_at": "2026-11-26T23:31:08+07:00",
+    "completed_at": "2026-11-26T23:31:08+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_targeted_correction_review.md",
+    "decision_id": "restart-11-batch01-43-review-v1"
   },
   "next_task": {
-    "task_id": "restart-11-batch01-43",
+    "task_id": "restart-11-batch02-locator-precision",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Correct the 43 rejected slots only.",
-    "acceptance": "43 unique keys, 35 source corrections and 8 numeric corrections.",
-    "dispatch_brief": "restart_2026_11_26/extraction/batch_01_targeted_correction_brief.md",
-    "message_id": "hk261-p08-b01-target43-v1"
+    "action": "Correct the three authorized Batch 02 fields first.",
+    "acceptance": "Three verified corrections and zero changes outside scope."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -137,7 +135,7 @@
         "accepted": 0,
         "not_accessible_to_gemini": 0,
         "quarantined_batch02": 12,
-        "cleanup_deleted": 7,
+        "cleanup_deleted": 8,
         "cleanup_blocked": 3,
         "confirmed_batch02_semantic_failures": 3,
         "correction05_accepted_metric_keys": 2,
@@ -145,7 +143,9 @@
         "batch01_new_verified_access": 13,
         "quarantined_batch01": 13,
         "batch02_correction06_verified_fields": 1,
-        "batch02_correction06_failed_fields": 2
+        "batch02_correction06_failed_fields": 2,
+        "batch01_targeted_correction_unresolved": 43,
+        "batch01_targeted_correction_pdf_inaccessible": 13
       }
     }
   },

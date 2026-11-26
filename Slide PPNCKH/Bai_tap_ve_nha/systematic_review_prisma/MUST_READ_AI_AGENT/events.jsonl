@@ -164,3 +164,4 @@
 {"timestamp": "2026-11-26T23:23:30+07:00", "task_id": "restart-11-batch02-correction06-review", "event": "batch02-correction06-review", "provider_task_id": "432bbd73-3594-440b-a7a2-104f1804e2a3", "provider_context_id": "aedec5c1-d3fa-4e6a-8c1e-cf79afa5be61", "cleanup": "DELETED", "accepted_reports": 0}
 {"timestamp": "2026-11-26T23:23:47+07:00", "task_id": "restart-11-p08-count-errata", "event": "p08-count-errata"}
 {"timestamp": "2026-11-26T23:27:15+07:00", "task_id": "restart-11-batch01-43-brief", "event": "batch01-43-brief"}
+{"timestamp": "2026-11-26T23:31:08+07:00", "task_id": "restart-11-batch01-43-review", "event": "batch01-43-review", "provider_task_id": "9739168f-ebd1-4da7-a576-38b39481648b", "provider_context_id": "c12d5401-b5b8-46a8-a415-3e520e1f79d3", "cleanup": "DELETED", "accepted_reports": 0}
