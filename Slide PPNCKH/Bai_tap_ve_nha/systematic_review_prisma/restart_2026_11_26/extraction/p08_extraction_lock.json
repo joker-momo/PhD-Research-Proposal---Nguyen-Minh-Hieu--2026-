@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "status": "LOCKED_P08_PASS",
+  "locked_at": "2026-11-27T00:33:28+07:00",
+  "baseline": "55023bb",
+  "reports": 25,
+  "required_field_groups": 350,
+  "audited_keys": 455,
+  "retained_keys": 444,
+  "accepted_quantitative_rows": 58,
+  "withheld_keys": 11,
+  "previous_pass_preserved": 238,
+  "previous_withheld_preserved": 9,
+  "newly_reviewed": 208,
+  "not_yet_assessed": 0,
+  "artifacts": {
+    "restart_2026_11_26/extraction/p08_extraction_table.json": "455af97503534a0c494429677ffed67d3492d29f0af0ba6ab360f8a2f9b5af9e",
+    "restart_2026_11_26/extraction/p08_quantitative_claim_source_matrix.csv": "103fe97ce7c89d5b35d106d5092db67cb2a93547765ac1e290fe298303676af0",
+    "restart_2026_11_26/extraction/p08_integrated_candidate.json": "08b7c91c8eb566afd66766a322bb361ab7bcd6db34f9e04fa8b10fbcbe5b4ff9",
+    "restart_2026_11_26/extraction/p08_source_inventory.json": "791c0ce21becf674a96fdc11ef365d6ba87826c122ed95ea78edfcdac238b10b",
+    "restart_2026_11_26/extraction/manifest.json": "a7e48262ed75f8ceaa343d7adbb59652bfb47da854bede7241419b70a3da2474"
+  },
+  "withheld_dispositions": [
+    {
+      "report_id": "R0010",
+      "key": "quantity:1",
+      "decision": "EXCLUDE_EXACT_VALUE",
+      "source_review": "Physical p. 2 Introduction gives the AlexNet average. Figure 5(a) and discussion on pp. 5–6 do not specify comparator weights or reconstruct the reported aggregation. Retain the already verified qualitative sweep only.",
+      "eligible_for_synthesis": false
+    },
+    {
+      "report_id": "R0010",
+      "key": "quantity:2",
+      "decision": "EXCLUDE_EXACT_VALUE",
+      "source_review": "Physical p. 2 Introduction gives the GoogLeNet average. Figure 5(b) and discussion on pp. 5–6 do not specify comparator weights or reconstruct the reported aggregation. Retain the already verified qualitative sweep only.",
+      "eligible_for_synthesis": false
+    },
+    {
+      "report_id": "R0045",
+      "key": "quantity:1",
+      "decision": "EXCLUDE_EXACT_VALUE",
+      "source_review": "p. 1 Abstract states 14.6%. §IV.B, Figs. 5–8 on pp. 9–10 do not label a matching comparison, denominator and exact value. Use only the scoped qualitative comparisons.",
+      "eligible_for_synthesis": false
+    },
+    {
+      "report_id": "R0054",
+      "key": "uav_architecture_role_and_topology:2",
+      "decision": "EXCLUDE_UNVERIFIED_DETAIL",
+      "source_review": "p. 4 §IV/Fig. 1 and p. 5 Table I/Fig. 3(c): retain replay count and OOD levels as separate settings. Exact matched-holdout K/M/N_tar is not identified and stays out of synthesis.",
+      "eligible_for_synthesis": false
+    },
+    {
+      "report_id": "R0059",
+      "key": "quantity:4",
+      "decision": "EXCLUDE_EXACT_VALUE",
+      "source_review": "Physical p. 11 §5.2.2 reports a 2.1% gap and Fig. 6(b) shows the four homogeneous capacity settings. The paper does not specify how it aggregates the relative gap over these settings. The candidate assertion that it is averaged cannot be verified. Preserve the supports for workload and parameter sweep separately.",
+      "eligible_for_synthesis": false
+    },
+    {
+      "report_id": "R0068",
+      "key": "quantity:1",
+      "decision": "EXCLUDE_EXACT_VALUE",
+      "source_review": "p. 1 Abstract gives around 29%. §VI.B, Figs. 5–9 on pp. 11–13 give individual comparisons; no corresponding pooled denominator or aggregation is stated.",
+      "eligible_for_synthesis": false
+    },
+    {
+      "report_id": "R0068",
+      "key": "quantity:2",
+      "decision": "EXCLUDE_EXACT_VALUE",
+      "source_review": "p. 1 Abstract gives around 23%. §VI.B, Figs. 8–9 on p. 13 give per-configuration power bars; no corresponding pooled denominator or aggregation is stated.",
+      "eligible_for_synthesis": false
+    },
+    {
+      "report_id": "R0068",
+      "key": "quantity:3",
+      "decision": "EXCLUDE_EXACT_VALUE",
+      "source_review": "p. 1 Abstract gives 9%. §VI.B, Figs. 5, 8–9 on pp. 11–13 support closeness to LDTP in tested scenarios but do not give the matched aggregate calculation.",
+      "eligible_for_synthesis": false
+    },
+    {
+      "report_id": "R0071",
+      "key": "quantity:2",
+      "decision": "EXCLUDE_EXACT_VALUE",
+      "source_review": "p. 6 §IV and Fig. 3(a) report a cap of 27.7% of MHAPPO degradation as the slot length grows, but do not specify the exact endpoints or aggregation used to calculate the cap. Preserve the qualitative stability claim only.",
+      "eligible_for_synthesis": false
+    },
+    {
+      "report_id": "R0073",
+      "key": "quantity:1",
+      "decision": "QUALITATIVE_ONLY",
+      "source_review": "pp. 10–12 §5.2/Figs. 4–6 show latency ordering. Exact coordinates are not labeled; preserve the separately verified qualitative result and the distinct failure scenario.",
+      "eligible_for_synthesis": false
+    },
+    {
+      "report_id": "R0089",
+      "key": "quantity:1",
+      "decision": "QUALITATIVE_ONLY",
+      "source_review": "pp. 9–10 rendered Figs. 4(b), 5(b), 6(b) and §§5.1–5.3 support the now scoped directional comparisons. No point values were read off the curves.",
+      "eligible_for_synthesis": false
+    }
+  ]
+}

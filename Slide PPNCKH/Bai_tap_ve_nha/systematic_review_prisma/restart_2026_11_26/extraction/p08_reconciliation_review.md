@@ -1,6 +1,6 @@
 # P08 reconciliation and source review
 
-**Gate: FAIL, extraction remains open.** This checkpoint retains a quarantined candidate for the two batches. It does not authorize synthesis, a dataset lock, or progression to Step 12.
+**Initial gate: FAIL.** This checkpoint retains a quarantined candidate for the two batches. It does not authorize synthesis, a dataset lock, or progression to Step 12.
 
 ## Acceptance
 
@@ -47,3 +47,15 @@ Physical page numbers are one-based. Each row records the specific outcome or cl
 | R0121 | pp. 6–8, Tables 3–4 and discussion | The 3.7% traffic change is a modeled single-hop comparison. The (q=3) and (q=4) probabilities on p. 7 need equation-aware visual verification for exact quoting, rather than relying on PDF text order. |
 
 The next P08 pass should adjudicate the discrepancies above, inspect the eight text-order exceptions, and compare each remaining claim and every numeric condition with the source. Withheld rows stay excluded from synthesis. The source inventory is not an extraction acceptance manifest.
+
+## Final decision
+
+Recorded at `2026-11-27T00:33:28+07:00`. **P08 PASS.** Independent verification against hash-checked originals accounted for 455/455 keys from 25 reports, including the remaining 208 at 55023bb. The previous 238 PASS entries and nine dispositions are unchanged. There are 444 retained keys and 11 documented exclusions, with zero pending. Both batches retained 350/350 field groups in total and 58 standalone quantitative rows, each linked to original-page evidence. Reasons for withheld details are in the lock and the ledger. Two newly withheld values have inadequate aggregation or comparator definition.
+
+- [Locked extraction table](p08_extraction_table.json)
+- [Quantitative claim-source matrix](p08_quantitative_claim_source_matrix.csv)
+- [Lock and exclusions](p08_extraction_lock.json)
+- [Batch 01 verification](p08_batch_01_source_review.md)
+- [Batch 02 verification](p08_batch_02_source_review.md)
+
+Use only the locked table and matrix downstream. The candidate retains all historical entries, including excluded rows.

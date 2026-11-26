@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T00:25:17+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T00:33:28+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -356,9 +356,9 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=5.
 <a id="buoc-11"></a>
 ## Bước 11 · Trích xuất dữ liệu mới
 
-**Đang làm** · `2026-11-27T00:25:17+07:00`
+**Đã chốt theo sổ tiến độ** · `2026-11-27T00:33:28+07:00`
 
-Nghiệm thu cấp bước đã ghi trong sổ: FAIL=18, PASS=4.
+Nghiệm thu cấp bước đã ghi trong sổ: FAIL=19, PASS=5.
 
 - [manifest.json](../restart_2026_11_26/extraction/manifest.json)
 - [batch_01_brief.md](../restart_2026_11_26/extraction/batch_01_brief.md)
@@ -426,6 +426,12 @@ Nghiệm thu cấp bước đã ghi trong sổ: FAIL=18, PASS=4.
 - [p08_source_inventory.json](../restart_2026_11_26/extraction/p08_source_inventory.json)
 - [p08_batch_01_source_review.md](../restart_2026_11_26/extraction/p08_batch_01_source_review.md)
 - [p08_batch_02_source_review.md](../restart_2026_11_26/extraction/p08_batch_02_source_review.md)
+- [p08_source_assist_batch_01_raw.json](../restart_2026_11_26/extraction/p08_source_assist_batch_01_raw.json)
+- [p08_source_assist_batch_01_review.md](../restart_2026_11_26/extraction/p08_source_assist_batch_01_review.md)
+- [p08_extraction_table.json](../restart_2026_11_26/extraction/p08_extraction_table.json)
+- [p08_quantitative_claim_source_matrix.csv](../restart_2026_11_26/extraction/p08_quantitative_claim_source_matrix.csv)
+- [p08_extraction_lock.json](../restart_2026_11_26/extraction/p08_extraction_lock.json)
+- [p08_source_assist_batch_01_brief.md](../restart_2026_11_26/extraction/p08_source_assist_batch_01_brief.md)
 
 <a id="buoc-12"></a>
 ## Bước 12 · Đánh giá chất lượng và nguy cơ sai lệch

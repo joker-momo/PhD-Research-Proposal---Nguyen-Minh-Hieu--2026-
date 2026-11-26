@@ -1,6 +1,6 @@
 # P08 Batch 01 independent PDF review
 
-**Verdict: FAIL.** The batch retains all 13 report IDs and 228 candidate entries. The row-level ledger records 198 PASS, 3 WITHHELD, and 27 NOT_YET_ASSESSED. All rows adjudicated for R0001, R0002, R0003, R0006, R0009, R0010, R0015, R0019, R0022, R0029, R0045. Batch adoption remains 0/13 pending the gate.
+**Initial verdict: FAIL.** The batch retains all 13 report IDs and 228 candidate entries. The row-level ledger records 198 PASS, 3 WITHHELD, and 27 NOT_YET_ASSESSED. All rows adjudicated for R0001, R0002, R0003, R0006, R0009, R0010, R0015, R0019, R0022, R0029, R0045. Batch adoption remains 0/13 pending the gate.
 
 | Criterion | Verdict | Evidence |
 |---|---|---|
@@ -34,3 +34,16 @@ Recorded at `2026-11-27T00:20:24+07:00`. Prior PASS entries retained. The remain
 ## Source recheck from 55023bb
 
 Recorded at `2026-11-27T00:25:17+07:00`. Independent review verified original PDF hashes for 25/25 reports. This batch has 198 PASS, 3 previously adjudicated exclusions, and 27 pending entries. Pass/fail evidence by key is in the [source ledger](p08_source_inventory.json). Existing PASS entries and exclusions were preserved. Batch adoption remains zero.
+
+## Final P08 acceptance
+
+Reviewed at `2026-11-27T00:33:28+07:00`.
+
+| Criterion | Verdict | Evidence |
+|---|---|---|
+| Scope and original source integrity | PASS | 13/13 reports and manifest-matched PDF SHA-256 values. |
+| Full source adjudication | PASS | 89/89 pending keys at 55023bb checked against original physical PDF pages. 225 PASS, 3 adjudicated WITHHELD, 0 NOT_YET_ASSESSED. |
+| Preserve prior decisions | PASS | Every row marked PASS or WITHHELD at 55023bb is unchanged in the ledger and candidate. |
+| Downstream output | PASS | 13/13 reports have all 14 accepted field groups. Only accepted assertions are in the locked output. Exact key dispositions are in the source ledger and lock. |
+
+13/13 reports accepted. Withheld details remain outside the extraction table and numerical source matrix.

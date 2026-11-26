@@ -1,29 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T00:25:17+07:00",
+  "updated_at": "2026-11-27T00:33:28+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step10_completed",
-    "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
+    "status": "step11_completed",
+    "summary": "Approved HK261 restart: step 11 P08 extraction is locked for the 25 included reports; step 12 P09 appraisal is ready."
   },
   "task": {
-    "task_id": "restart-11-p08-source-review-55023bb",
+    "task_id": "restart-11-p08-extraction-lock",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T00:22:14+07:00",
-    "updated_at": "2026-11-27T00:25:17+07:00",
-    "completed_at": "2026-11-27T00:25:17+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/p08_batch_01_source_review.md",
-    "decision_id": "restart-11-p08-source-review-55023bb-v1"
+    "started_at": "2026-11-27T00:25:39+07:00",
+    "updated_at": "2026-11-27T00:33:28+07:00",
+    "completed_at": "2026-11-27T00:33:28+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/p08_reconciliation_review.md",
+    "decision_id": "restart-11-p08-extraction-lock-v1"
   },
   "next_task": {
-    "task_id": "restart-11-p08-gemini-source-assist-batch-01",
+    "task_id": "restart-12",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Native Gemini.app evidence assistance for 27 remaining Batch 01 keys, followed by independent source review.",
-    "acceptance": "27/27 keys or documented shortfall; 0 unsupported evidence used.",
-    "dispatch_brief": "restart_2026_11_26/extraction/p08_source_assist_batch_01_brief.md",
-    "message_id": "ea4eaafd-3372-44aa-b0c0-e15e86de7dc7"
+    "action": "Perform P09 domain-based appraisal for the 25 included reports using the locked P08 extraction and original PDFs.",
+    "acceptance": "All 25 reports have appraisal/status and every domain judgment has rationale and original-PDF locator."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -148,13 +146,13 @@
         "batch02_correction06_failed_fields": 2,
         "batch01_targeted_correction_unresolved": 43,
         "batch01_targeted_correction_pdf_inaccessible": 13,
-        "batch_01_reports_accepted": 0,
+        "batch_01_reports_accepted": 13,
         "batch_01_targeted_unresolved": 0,
         "batch02_requested_fields_exact_passed": 2,
         "batch02_r0062_approximation_verified": true,
         "batch02_r0062_new_exact_quote": "FAIL",
         "batch02_legacy_out_of_scope_issue": "R0059",
-        "batch_02_reports_accepted": 0,
+        "batch_02_reports_accepted": 12,
         "canonical_pdf_hashes_matched": 25,
         "batch01_parent_only_scope_rows": 43,
         "batch01_parent_only_mechanical_matches": 39,
@@ -163,25 +161,26 @@
         "batch02_r0062_local_exact_source": "PASS",
         "batch02_r0059_local_source_groups": 3,
         "p08_targeted_repairs_verified": 47,
-        "p08_full_gate": "FAIL_SEMANTIC_REVIEW_OPEN",
-        "p08_quarantined_reports": 25,
+        "p08_full_gate": "PASS",
+        "p08_quarantined_reports": 0,
         "p08_scoped_repairs_integrated": 47,
         "p08_semantic_initial_report_checks": 25,
         "p08_mechanically_inventoried_entries": 455,
         "p08_normalized_excerpt_matches": 447,
-        "p08_semantic_entries_pass": 300,
-        "p08_semantic_entries_withheld": 9,
-        "p08_semantic_entries_pending": 146,
-        "p08_semantically_reviewed_reports": 10,
+        "p08_semantic_entries_pass": 444,
+        "p08_semantic_entries_withheld": 11,
+        "p08_semantic_entries_pending": 0,
+        "p08_semantically_reviewed_reports": 25,
         "p08_prior_excerpt_exceptions_reviewed": 8,
-        "p08_reports_all_rows_adjudicated": 15,
-        "p08_withheld_dispositions_recorded": 9
+        "p08_reports_all_rows_adjudicated": 25,
+        "p08_withheld_dispositions_recorded": 11,
+        "p08_locked_extraction": "restart_2026_11_26/extraction/p08_extraction_table.json",
+        "p08_quantitative_claim_source_matrix": "restart_2026_11_26/extraction/p08_quantitative_claim_source_matrix.csv",
+        "p08_lock": "restart_2026_11_26/extraction/p08_extraction_lock.json"
       }
     }
   },
-  "blockers": [
-    "P08 full-batch integration and independent semantic validation remain pending for the 25 draft reports. Base and prior passed fields are preserved and Step 12 is unopened."
-  ],
+  "blockers": [],
   "user_confirmation_required": [
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
     "Contributions, funding, conflicts, data availability and AI disclosure.",

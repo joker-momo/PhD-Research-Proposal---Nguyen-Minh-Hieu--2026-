@@ -3520,20 +3520,44 @@
           {
             "subtopic": "md_uav_bs_hierarchy",
             "status": "OBSERVED",
-            "finding": "4 UAVs at fixed altitude H=100 m (circular flight at 10 m/s, radius R=200 m) act as MEC servers for mobile devices (MDs) with 1 BS at (200,200) m as fallback cloud server.",
+            "finding": "The default simulation uses four UAV MEC servers at 100 m altitude moving clockwise at 10 m/s and a BS at (200, 200) m for fallback. The 200 m radius is the maximum ground coverage radius.",
             "page": 6,
             "locator": "IV.A Simulation Setup",
-            "excerpt": "UAV clusters including 4 UAVs as edge servers. The UAVs fly at a fixed altitude (i.e., H) of 100 meters."
+            "excerpt": "UAV clusters including 4 UAVs as edge servers. The UAVs fly at a fixed altitude (i.e., H) of 100 meters.",
+            "sources": [
+              {
+                "physical_page": 2,
+                "locator": "§II.A system/fallback"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§IV.A default setup"
+              }
+            ]
           }
         ],
         "inference_model_task_and_dataset": [
           {
             "subtopic": "four_dnn_models",
             "status": "OBSERVED",
-            "finding": "Evaluated on AlexNet (default), TinyYOLOv2, NiN, and VGG16; feature extraction (conv/pool) offloaded, FC layers run on MD; dataset not named.",
+            "finding": "The simulation uses AlexNet by default, and also compares TinyYOLOv2, NiN and VGG16. Feature-extraction subregions are offloaded to UAVs. The setup does not name an image dataset.",
             "page": 7,
             "locator": "IV.B Numerical Results",
-            "excerpt": "We also select well-known DNN models, TinyYOLOv2 [23] NiN [24] and VGG16 [25] for comparison."
+            "excerpt": "We also select well-known DNN models, TinyYOLOv2 [23] NiN [24] and VGG16 [25] for comparison.",
+            "sources": [
+              {
+                "physical_page": 3,
+                "locator": "§II.C names convolution/pooling"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§IV.A default task"
+              },
+              {
+                "physical_page": 7,
+                "locator": "§IV.B DNN comparisons/Fig. 3"
+              }
+            ]
           }
         ],
         "partition_and_assignment": [
@@ -3766,7 +3790,7 @@
           {
             "subtopic": "bw_reliability_psi1",
             "status": "OBSERVED",
-            "finding": "In the bandwidth sweep all compared algorithms reduce average inference delay as bandwidth increases.",
+            "finding": "In Fig. 5, the offloading schemes reduce average inference delay as bandwidth increases. The plotted Local baseline is flat across the sweep.",
             "reason": "",
             "repair_key": "F34",
             "page": 7,
@@ -3785,6 +3809,10 @@
                   ]
                 ],
                 "check": "PyMuPDF text block; source read in context"
+              },
+              {
+                "physical_page": 7,
+                "locator": "§IV.B and Fig. 5, Local trace and offloading traces"
               }
             ]
           }
@@ -4225,10 +4253,20 @@
           {
             "subtopic": "centralized_and_distributed_modes",
             "status": "OBSERVED",
-            "finding": "Scalable UCAA supporting 5-200 UAVs hovering at 200 m over 500m x 500m area: centralized BS mode (JDTSO) for <=20 UAVs and distributed Dec-POMDP mode (MAPDP) for >20 UAVs.",
+            "finding": "The study compares centralized BS-based JDTSO with distributed MAPDP in a 500 m × 500 m simulation at 200 m altitude. Counts are 5, 10, 20, 40, 60, 100 and 200. JDTSO results are reported up to 20 UAVs; MAPDP is evaluated at larger counts.",
             "page": 10,
             "locator": "VII.B Ablation Study",
-            "excerpt": "JDTSO algorithm is suitable for small-scale UAVs or setups with a central BS, while MAPDP algorithm is preferable for large-scale UAVs"
+            "excerpt": "JDTSO algorithm is suitable for small-scale UAVs or setups with a central BS, while MAPDP algorithm is preferable for large-scale UAVs",
+            "sources": [
+              {
+                "physical_page": 9,
+                "locator": "§VII.A and Table II"
+              },
+              {
+                "physical_page": 10,
+                "locator": "§VII.B and Figs. 3–4"
+              }
+            ]
           }
         ],
         "inference_model_task_and_dataset": [
@@ -4308,20 +4346,40 @@
           {
             "subtopic": "rpi_ncs_and_radio",
             "status": "OBSERVED",
-            "finding": "2 UAV hardware types: RPi 3B+ with Intel Movidius NCS1 (0.25 s latency, 6 W) and NCS2 (0.2 s, 5.6 W); UAV-UAV 2 GHz LoS (P_v=30 dBm), UAV-BS 28 GHz mmWave, total bandwidth 20 MHz, noise -174 dBm, hovering power 60 W.",
+            "finding": "The two YOLOv3-tiny hardware profiles are Raspberry Pi 3B+ with NCS1 (0.25 s, 6 W) and NCS2 (0.20 s, 5.6 W). Table II gives 2 GHz carrier, 5 dB LoS attenuation, 28 GHz mmWave link, 30 dBm transmit power, 20 MHz available at each UAV, −174 dBm labeled noise and 60 W hover power.",
             "page": 9,
             "locator": "VII.A.2 & Table II",
-            "excerpt": "The Raspberry Pi 3B+ combined with the NCS1 execution model exhibits a latency of 0.25s and power consumption of 6W"
+            "excerpt": "The Raspberry Pi 3B+ combined with the NCS1 execution model exhibits a latency of 0.25s and power consumption of 6W",
+            "sources": [
+              {
+                "physical_page": 9,
+                "locator": "Table II hardware/radio entries and §VII.A.2"
+              }
+            ]
           }
         ],
         "mobility_channel_intermittency_failure_and_recovery": [
           {
             "subtopic": "hovering_and_static_dist",
             "status": "OBSERVED",
-            "finding": "UAVs hover at 200 m with minimum separation d_min=10 m and LoS attenuation 5 dB; trajectory planning, turning/climb constraints, and failures deferred to future work.",
+            "finding": "Table II assumes 200 m hovering altitude, 10 m minimum separation and 5 dB additional LoS attenuation. The conclusion defers trajectory planning, turning/climb constraints and interference. The simulation does not report node failure/recovery runs.",
             "page": 12,
             "locator": "VIII. CONCLUSION",
-            "excerpt": "In future work, we will consider UAV trajectory planning, mobility constraints (e.g., minimum turning radius and climb rate), and interference from other UAVs."
+            "excerpt": "In future work, we will consider UAV trajectory planning, mobility constraints (e.g., minimum turning radius and climb rate), and interference from other UAVs.",
+            "sources": [
+              {
+                "physical_page": 9,
+                "locator": "Table II"
+              },
+              {
+                "physical_page": 10,
+                "locator": "§VII.B experiment"
+              },
+              {
+                "physical_page": 12,
+                "locator": "§VIII"
+              }
+            ]
           }
         ],
         "evaluation_platform_simulator_hardware_and_traces": [
@@ -4391,10 +4449,24 @@
           {
             "subtopic": "scalability_and_table3",
             "status": "OBSERVED",
-            "finding": "JDTSO achieves lowest latency/energy and highest throughput for <=20 UAVs (times out >20); MAPDP outperforms all baselines for 40-200 UAVs (Fig. 3-8); Table III reports 60-UAV metrics (0.511-0.515 s, 596.1-778.7 J, 116.6-117.4 IPS).",
+            "finding": "The paper reports JDTSO performs well for deployments through 20 UAVs and does not find a suitable solution within a realistic calculation time at larger evaluated sizes. MAPDP performs well on latency, energy and throughput at larger sizes in the illustrated comparisons. For the separate 60-UAV efficiency sweep, Table III reports 0.511–0.515 s, 596.1–778.7 J and 116.6–117.4 IPS across efficiencies 0.6, 0.7 and 0.8.",
             "page": 12,
             "locator": "Table III & VII.B",
-            "excerpt": "Table III presents the sensitivity analysis results for the energy efficiency with 60 UAVs."
+            "excerpt": "Table III presents the sensitivity analysis results for the energy efficiency with 60 UAVs.",
+            "sources": [
+              {
+                "physical_page": 10,
+                "locator": "§VII.B text and Figs. 3–4"
+              },
+              {
+                "physical_page": 11,
+                "locator": "Figs. 5–8"
+              },
+              {
+                "physical_page": 12,
+                "locator": "§VII.C and Table III"
+              }
+            ]
           }
         ],
         "sensitivity_and_variability": [
@@ -4606,10 +4678,24 @@
           {
             "subtopic": "swarm_roles_and_count",
             "status": "OBSERVED",
-            "finding": "K fixed-altitude rotary-wing UAVs at H=100 m each carry an N-element vertically mounted STAR-RIS, shared scalar RF chain, and compute, serving M ground users and N_tar targets with MEC and cloud tiers; Fig. 1 shows 3 UAVs (U1, U2, U3).",
+            "finding": "The network model has K fixed-altitude UAVs serving M ground users and N_tar targets. Each carries a vertically mounted N-element STAR-RIS, a shared scalar RF chain and compute capacity. Figure 1 is one three-UAV trajectory replay with H = 100 m.",
             "page": 1,
             "locator": "Section II-A, p. 1",
-            "excerpt": "K fixed-altitude UAVs serve M ground users and N_tar targets. Each UAV carries an N-element STAR-RIS, a shared scalar RF chain, and compute; tasks are split across UAV, MEC, and cloud."
+            "excerpt": "K fixed-altitude UAVs serve M ground users and N_tar targets. Each UAV carries an N-element STAR-RIS, a shared scalar RF chain, and compute; tasks are split across UAV, MEC, and cloud.",
+            "sources": [
+              {
+                "physical_page": 1,
+                "locator": "§II.A system model"
+              },
+              {
+                "physical_page": 3,
+                "locator": "§II.B rotary-wing energy model"
+              },
+              {
+                "physical_page": 4,
+                "locator": "Fig. 1 replay"
+              }
+            ]
           },
           {
             "subtopic": "exact_K_and_M_in_table_I",
@@ -4736,10 +4822,20 @@
           {
             "subtopic": "seeds_ci_and_ood",
             "status": "OBSERVED",
-            "finding": "Reports 5-seed Student-t 95% CIs (df=4) and tests OOD generalization across M in {5, 15} under zero-shot, fine-tune, and from-scratch modes.",
+            "finding": "The protocol reports five-seed Student-t 95% intervals (df = 4). The OOD plot tests group sizes M = 5 and 15 under zero-shot, fine-tuning and from-scratch conditions.",
             "page": 4,
             "locator": "Section IV, p. 4",
-            "excerpt": "All results report Student-t 95% confidence intervals with n = 5 independent seeds (df = 4)."
+            "excerpt": "All results report Student-t 95% confidence intervals with n = 5 independent seeds (df = 4).",
+            "sources": [
+              {
+                "physical_page": 4,
+                "locator": "§IV protocol and Fig. 2"
+              },
+              {
+                "physical_page": 5,
+                "locator": "Fig. 3(c) caption"
+              }
+            ]
           }
         ],
         "code_and_data": [
@@ -4931,10 +5027,28 @@
           {
             "subtopic": "trajectory_and_image_datasets",
             "status": "OBSERVED",
-            "finding": "Uses Mid-Air real-world UAV trajectory traces (Ref. 34); specific image dataset for top-5 accuracy is NOT_REPORTED.",
+            "finding": "The flight trajectories cite Mid-Air. The simulation setup specifies top-5 accuracy but gives no named image dataset for this metric.",
             "page": 2,
             "locator": "Section 1 and Section 3, pp. 2-3",
-            "excerpt": "We conduct extensive simulations based on real-world UAV trajectory traces to validate the effectiveness of the proposed AMSM algorithm."
+            "excerpt": "We conduct extensive simulations based on real-world UAV trajectory traces to validate the effectiveness of the proposed AMSM algorithm.",
+            "sources": [
+              {
+                "physical_page": 2,
+                "locator": "§1 contribution statement"
+              },
+              {
+                "physical_page": 3,
+                "locator": "§3 uses ref. 34"
+              },
+              {
+                "physical_page": 8,
+                "locator": "§5.1 accuracy metric"
+              },
+              {
+                "physical_page": 12,
+                "locator": "Reference 34"
+              }
+            ]
           }
         ],
         "partition_and_assignment": [
@@ -4971,10 +5085,20 @@
           {
             "subtopic": "channel_and_bandwidth",
             "status": "OBSERVED",
-            "finding": "Air-to-air and air-to-ground Shannon links with Rayleigh-style CN(0,1) fading and path loss exponents alpha_air, alpha_ground; Table 5 tests bandwidths 0.5-2.0 MHz.",
+            "finding": "Air-to-air and air-to-ground rates use distance-dependent links and separate path-loss exponents. Table 5 tests 0.5 to 2.0 MHz across two links.",
             "page": 4,
             "locator": "Section 3.1 and Table 5, pp. 4, 10",
-            "excerpt": "the transmission rate between any two UAVs i and j and between a UAV i and the ground station G at time t are given by"
+            "excerpt": "the transmission rate between any two UAVs i and j and between a UAV i and the ground station G at time t are given by",
+            "sources": [
+              {
+                "physical_page": 4,
+                "locator": "§3.1 Eqs. (1)–(2)"
+              },
+              {
+                "physical_page": 10,
+                "locator": "Table 5; bandwidth column for both links"
+              }
+            ]
           }
         ],
         "mobility_channel_intermittency_failure_and_recovery": [
@@ -5304,10 +5428,20 @@
           {
             "subtopic": "prototype_and_ooda_architecture",
             "status": "OBSERVED",
-            "finding": "OODA-loop (Observe-Orient-Decide-Act) Device-Device CoEI architecture (eCoEI). Proof-of-concept prototype uses 4 UAV nodes: UAV#1 plans collaborative inference strategy and executes inference; UAV#2-UAV#4 execute partitioned inference in a pipeline.",
+            "finding": "The OODA-loop device–device architecture is tested on four UAV nodes. UAV #1 plans and participates in inference with UAVs #2–#4.",
             "page": 5,
             "locator": "Experiment Setup, p. 5",
-            "excerpt": "This prototype system contains four UAVs, an NVIDIA Jetson Nano developer kit is set on UAV#1 as computing unit, and an NVIDIA Jetson TX2 as well as two Jetson Nanos are deployed on other three UAVs respectively."
+            "excerpt": "This prototype system contains four UAVs, an NVIDIA Jetson Nano developer kit is set on UAV#1 as computing unit, and an NVIDIA Jetson TX2 as well as two Jetson Nanos are deployed on other three UAVs respectively.",
+            "sources": [
+              {
+                "physical_page": 4,
+                "locator": "Architecture Overview"
+              },
+              {
+                "physical_page": 5,
+                "locator": "Experiment Setup and Fig. 4"
+              }
+            ]
           }
         ],
         "inference_model_task_and_dataset": [
@@ -5324,10 +5458,20 @@
           {
             "subtopic": "pipelined_submodel_partitioning",
             "status": "OBSERVED",
-            "finding": "Dynamic layer-wise partitioning of DNN across available UAVs in a pipeline; partition strategy is updated at runtime for remaining unfinished parts if a UAV becomes unavailable.",
+            "finding": "The architecture allocates portions of a pre-stored DNN to selected UAVs. It replans the unfinished portion when a selected UAV becomes unavailable.",
             "page": 4,
             "locator": "Architecture Overview, p. 4",
-            "excerpt": "If some selected UAVs become unavailable during the execution, the partition strategy will be updated for the remaining unfinished parts of the task."
+            "excerpt": "If some selected UAVs become unavailable during the execution, the partition strategy will be updated for the remaining unfinished parts of the task.",
+            "sources": [
+              {
+                "physical_page": 4,
+                "locator": "Architecture Overview action stage"
+              },
+              {
+                "physical_page": 6,
+                "locator": "Effect of UAV Unavailability/Fig. 6"
+              }
+            ]
           }
         ],
         "decision_variables_objectives_constraints_and_solver": [
@@ -5377,11 +5521,21 @@
           {
             "subtopic": "baselines_and_workloads/baselines_and_video_workload",
             "status": "OBSERVED",
-            "finding": "Evaluates Faster R-CNN object detection on a video stream, comparing 4-UAV collaboration against single Jetson Nano execution and conventional CoEI failure termination.",
+            "finding": "The video task applies Faster R-CNN. Figure 5 includes a single Jetson Nano and two to four collaborating UAVs. Figure 6 measures the prototype under node unavailability; the narrative describes conventional CoEI termination without presenting a measured conventional-CoEI run.",
             "page": 5,
             "locator": "Section EXPERIMENT SETUP",
             "excerpt": "Faster R-CNN is selected as the target algorithm",
-            "reason": "Verified directly on PDF page 5."
+            "reason": "Verified directly on PDF page 5.",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "Experiment Setup"
+              },
+              {
+                "physical_page": 6,
+                "locator": "Figs. 5–6 and adjoining prose"
+              }
+            ]
           }
         ],
         "outcomes_latency_energy_communication_accuracy_reliability_and_scalability": [
@@ -5466,10 +5620,20 @@
           {
             "subtopic": "funding",
             "status": "OBSERVED",
-            "finding": "Funded by NSFC Grants 61931011, 62072303, 62102099, 62272223, U22A2031; National Key R&D Program 2022YFB3104500; Guangdong Key-Area R&D 202180101400003; Hong Kong RGC RIF/AoE/GRF; Shenzhen STI JCYJ20200109142008673. Conflict statement is NOT_REPORTED.",
+            "finding": "Acknowledgments list NSFC grants 61931011, 62072303, 62102099, 62272223 and U22A2031; National Key R&D grant 2022YFB3104500; Guangdong grant 2021B0101400003; Hong Kong RGC RIF/AoE/GRF; and Shenzhen STI JCYJ20200109142008673. The article does not contain a conflict statement.",
             "page": 7,
             "locator": "ACKNOWLEDGMENTS, p. 7",
-            "excerpt": "This work is supported in part by the National Natural Science Foundation of China under Grants 61931011 and 62072303"
+            "excerpt": "This work is supported in part by the National Natural Science Foundation of China under Grants 61931011 and 62072303",
+            "sources": [
+              {
+                "physical_page": 7,
+                "locator": "Acknowledgments"
+              },
+              {
+                "physical_page": 1,
+                "locator": "Title block"
+              }
+            ]
           }
         ],
         "reported_limitations": [
@@ -5581,20 +5745,52 @@
           {
             "subtopic": "brain_torso_and_swarm_roles",
             "status": "OBSERVED",
-            "finding": "Hierarchical Brain-Torso architecture over a Relative Pose Graph (RPG) in simulated aerial confrontation scenarios (1v1, 2v2, 4v4, 6v6, 8v8) with heterogeneous roles (scout, attacker, decoy/jammer) and sequential intention propagation (SIP).",
+            "finding": "The simulated system uses a hierarchical Brain–Torso architecture, relative pose graph and sequential intention propagation for heterogeneous roles. The main scenarios are 1v1, 2v2 and 6v6; a separate scalability comparison uses 2v2, 4v4, 6v6 and 8v8.",
             "page": 11,
             "locator": "Section 5.1.2 and Table 2, pp. 11-12",
-            "excerpt": "This 6v6 fight includes attackers, scouts, and jammers."
+            "excerpt": "This 6v6 fight includes attackers, scouts, and jammers.",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "§4.1 architecture"
+              },
+              {
+                "physical_page": 11,
+                "locator": "§5.1.2/Table 2"
+              },
+              {
+                "physical_page": 14,
+                "locator": "Table 6 and discussion"
+              }
+            ]
           }
         ],
         "inference_model_task_and_dataset": [
           {
             "subtopic": "llm_and_marl_models",
             "status": "OBSERVED",
-            "finding": "Strategic Brain pairs DeepSeek-R1-Distill-Llama-70B (4-bit AWQ on ground/cloud workstation) with DeepSeek-R1-Distill-Qwen-7B (INT4 on edge Jetson AGX Orin) via speculative decoding at 5 Hz; Tactical Torso uses 3x256 MLP Actor and 2-layer 4-head GAT Critic at 50 Hz in JSBSim 6-DOF simulation.",
+            "finding": "The strategic inference experiment uses a workstation-based DeepSeek-R1-Distill-Llama-70B verifier (AWQ 4-bit) and Jetson-based DeepSeek-R1-Distill-Qwen-7B draft model (INT4). The tactical controller uses a 3×256 actor and two-layer, four-head GAT critic. The modeled strategic and controller frequencies are 5 Hz and 50 Hz.",
             "page": 11,
             "locator": "Section 5.1.1 and Table 3, pp. 11, 13",
-            "excerpt": "Running the DeepSeek-R1-Distill-Llama-70B model required us to use 4-bit AWQ quantization. On the other end, the Tactical Execution Layer (Torso) lived on an NVIDIA Jetson AGX Orin (64GB). This edge platform ran a quantized DeepSeek-R1-Distill-Qwen-7B alongside our MAPPO Actor network."
+            "excerpt": "Running the DeepSeek-R1-Distill-Llama-70B model required us to use 4-bit AWQ quantization. On the other end, the Tactical Execution Layer (Torso) lived on an NVIDIA Jetson AGX Orin (64GB). This edge platform ran a quantized DeepSeek-R1-Distill-Qwen-7B alongside our MAPPO Actor network.",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "§4.1 model timescales"
+              },
+              {
+                "physical_page": 11,
+                "locator": "§5.1.1"
+              },
+              {
+                "physical_page": 13,
+                "locator": "Table 3"
+              },
+              {
+                "physical_page": 15,
+                "locator": "§5.3 and Table 7"
+              }
+            ]
           }
         ],
         "partition_and_assignment": [
@@ -5643,31 +5839,77 @@
           {
             "subtopic": "jsbsim_and_hardware",
             "status": "OBSERVED",
-            "finding": "JSBSim non-linear 6-DOF flight dynamics engine (F-16 aerodynamic data, 50 Hz physics / 10 Hz decision) wrapped via Python C-API, PyTorch 2.1 / CUDA 12.1 on Ubuntu 22.04, with dual RTX 3090 + Jetson AGX Orin.",
+            "finding": "The simulation uses JSBSim nonlinear six-DOF dynamics and the reported Python C-API wrapper, PyTorch 2.1/CUDA 12.1 and Ubuntu 22.04. The hardware described in §5.1.1 includes two RTX 3090 GPUs and a Jetson AGX Orin.",
             "page": 11,
             "locator": "Section 5.1.1 and Table 3, pp. 11, 13",
-            "excerpt": "instead built our environment on the JSBSim flight dynamics engine to capture the true nuances of aerial combat."
+            "excerpt": "instead built our environment on the JSBSim flight dynamics engine to capture the true nuances of aerial combat.",
+            "sources": [
+              {
+                "physical_page": 11,
+                "locator": "§5.1.1 and Table 1"
+              },
+              {
+                "physical_page": 12,
+                "locator": "training platform paragraph"
+              },
+              {
+                "physical_page": 13,
+                "locator": "Table 3"
+              }
+            ]
           }
         ],
         "baselines_and_workloads": [
           {
             "subtopic": "baselines_and_workloads/baselines_and_scenarios",
             "status": "OBSERVED",
-            "finding": "Compares against six baselines (HAPPO, MAT, MADiff, LATS, CaP, Zheng et al. 2024) across multi-agent JSBSim 6-DOF simulation scenarios (1v1, 2v2, 6v6, and 8v8 scalability) over 500 trials.",
+            "finding": "The main 2v2 and 6v6 comparisons list HAPPO, MAT, MADiff, LATS, CaP and Zheng et al. in Table 4, which reports averages from 500 independent trials. Separate 1v1 and scalability tests do not share this reported trial count.",
             "page": 11,
             "locator": "Section 5.1.3 Baseline algorithms",
             "excerpt": "We compared our framework against six state-of-the-art methods",
-            "reason": "Verified benign baseline and aggregate scenario counts on PDF pages 11-14."
+            "reason": "Verified benign baseline and aggregate scenario counts on PDF pages 11-14.",
+            "sources": [
+              {
+                "physical_page": 11,
+                "locator": "§§5.1.2–5.1.3"
+              },
+              {
+                "physical_page": 13,
+                "locator": "§5.2.1 original Table 4"
+              },
+              {
+                "physical_page": 14,
+                "locator": "Table 6"
+              }
+            ]
           }
         ],
         "outcomes_latency_energy_communication_accuracy_reliability_and_scalability": [
           {
             "subtopic": "effectiveness_latency_compression_scalability",
             "status": "OBSERVED",
-            "finding": "Achieves 0.880 +/- 0.02 WR (2v2) and 0.790 +/- 0.04 WR (6v6), 0.74 WR at 8v8, 520 ms speculative sequence latency (2.78x speedup vs 1,450 ms 70B base, 91.1% success rate), and 74.8% traffic compression in 6v6 (45.2 to 11.4 KB/s, 99.5% parsing success).",
+            "finding": "Table 4 reports mean win rates of 0.880 ± 0.02 in 2v2 and 0.790 ± 0.04 in 6v6 (SD), and Table 6 shows 0.74 for 8v8. Table 7 reports 520 ms sequence latency (2.78× relative to 1,450 ms for the 70B base model) and 91.1% success as defined in §5.3.1. Table 8 gives 45.2 to 11.4 KB/s in the 6v6 scenario (74.8% reported compression and 99.5% parsing success).",
             "page": 13,
             "locator": "Tables 4, 6, 7, 8, pp. 13-16",
-            "excerpt": "Ours 0.880 +/- 0.02 / 4.120 +/- 0.15 | 0.790 +/- 0.04 / 3.450 +/- 0.21 | 34.2"
+            "excerpt": "Ours 0.880 +/- 0.02 / 4.120 +/- 0.15 | 0.790 +/- 0.04 / 3.450 +/- 0.21 | 34.2",
+            "sources": [
+              {
+                "physical_page": 13,
+                "locator": "Table 4"
+              },
+              {
+                "physical_page": 14,
+                "locator": "Table 6"
+              },
+              {
+                "physical_page": 15,
+                "locator": "§5.3.1/Table 7"
+              },
+              {
+                "physical_page": 16,
+                "locator": "Table 8"
+              }
+            ]
           }
         ],
         "sensitivity_and_variability": [
@@ -5705,35 +5947,41 @@
           {
             "subtopic": "sip_scaling_and_sim_gap",
             "status": "OBSERVED",
-            "finding": "Authors note physical multi-hop SIP latency in large swarms could exceed the 20 ms (50 Hz) window (requiring 3-4 UAV sub-squads), and note need for P3DP training and BVR integration.",
+            "finding": "The authors caution that the modeled 20 ms propagation window may be exceeded by multi-hop delay in physical deployments; several follow-up training and integration directions are described in §6.",
             "page": 20,
             "locator": "Section 6, p. 20",
-            "excerpt": "while our Sequential Intention Propagation (SIP) mechanism resolves within 20 ms in simulation, real-world cascaded transmission across a large swarm will inevitably accumulate multi-hop latency that exceeds this 50 Hz control window"
+            "excerpt": "while our Sequential Intention Propagation (SIP) mechanism resolves within 20 ms in simulation, real-world cascaded transmission across a large swarm will inevitably accumulate multi-hop latency that exceeds this 50 Hz control window",
+            "sources": [
+              {
+                "physical_page": 20,
+                "locator": "§6 Discussion"
+              }
+            ]
           }
         ]
       },
       "quantitative_claims": [
         {
-          "metric": "Speculative sequence latency and speedup",
-          "value": "520 (2.78x speedup)",
+          "metric": "sequence latency (speedup reported separately)",
+          "value": 520,
           "units": "ms",
-          "baseline": "70B Base (1,450 ms, 1.00x); 7B Draft (185 ms, 7.84x)",
+          "baseline": "70B base: 1,450 ms (reference for 2.78×); 7B draft: 185 ms, as shown in Table 7",
           "denominator": "Single sequence inference",
           "workload": "DeepSeek-R1 70B + 7B strategic reasoning",
-          "conditions": "Dual RTX 3090 (AWQ 4-bit) + Jetson AGX Orin (INT4)",
+          "conditions": "Inference-mode timing in §5.3.1 with the workstation/edge deployment described at §5.1.1.",
           "page": 15,
           "locator": "Table 7, p. 15",
           "excerpt": "Ours (Synergy) | 3.5 (equiv.) | 520 | 2.78 | 91.1",
           "status": "OBSERVED"
         },
         {
-          "metric": "6v6 compressed traffic bandwidth",
-          "value": "11.4 (74.8% CR)",
+          "metric": "compressed network traffic",
+          "value": 11.4,
           "units": "KB/s",
-          "baseline": "Raw CoT original traffic (45.2 KB/s)",
+          "baseline": "Uncompressed traffic 45.2 KB/s (reported reduction 74.8%)",
           "denominator": "6v6 swarm scale",
           "workload": "Scenario C 6v6 swarm",
-          "conditions": "50 ms delay, jamming",
+          "conditions": "Table 8 Scenario C scale 6v6. The source does not identify this traffic row as a separate jamming-sweep result.",
           "page": 16,
           "locator": "Table 8, p. 16",
           "excerpt": "6v6 (Scenario C) | 45.2 | 11.4 | 74.8 | 99.5",
@@ -5746,7 +5994,7 @@
           "baseline": "HAPPO (0.480/1.120), MAT (0.520/1.340), Zheng et al. (0.650/1.880)",
           "denominator": "500 independent trials",
           "workload": "Scenario C 6v6 heterogeneous swarm",
-          "conditions": "50 ms Gaussian delay + 20 km jamming",
+          "conditions": "Table 4 Scenario C simulated 6v6 conditions described in §5.1.2 with Gaussian link delay; the WR and exchange ratio are means ± SD, based on the trials described in §5.2.1.",
           "page": 13,
           "locator": "Table 4, p. 13",
           "excerpt": "Ours | 0.880 +/- 0.02/4.120 +/- 0.15 | 0.790 +/- 0.04/3.450 +/- 0.21 | 34.2",
@@ -6125,11 +6373,21 @@
           {
             "subtopic": "mobility_channel_intermittency_failure_and_recovery/high_dynamic_mobility_and_energy_depletion",
             "status": "OBSERVED",
-            "finding": "Models high-speed dynamic UAV mobility with repulsive collision avoidance and explicit energy-depletion pause states (SLEI and SLEO) when q_i^E(t)=0.",
+            "finding": "The motion model has velocity and acceleration constraints and repulsive collision avoidance. The long-timescale energy model represents separate local-computation and offloading pauses when the relevant energy counter reaches zero.",
             "page": 2,
             "locator": "Section II-B Energy Harvesting Model",
             "excerpt": "pauses local computation due to energy depletion.",
-            "reason": "Verified directly on PDF page 2."
+            "reason": "Verified directly on PDF page 2.",
+            "sources": [
+              {
+                "physical_page": 2,
+                "locator": "§II.B–C"
+              },
+              {
+                "physical_page": 4,
+                "locator": "§III.A state and transitions"
+              }
+            ]
           }
         ],
         "evaluation_platform_simulator_hardware_and_traces": [
@@ -6167,10 +6425,20 @@
           {
             "subtopic": "weight_V_and_slot_length",
             "status": "OBSERVED",
-            "finding": "Evaluates trade-off weight V in {0.1, 0.3, 0.5, 0.7, 0.9} and slot length Delta T in {1s, 2s, 3s} with shaded variance bands over 10 seeds (Fig. 2) and 5 test trajectories.",
+            "finding": "Convergence at 1 s used five V settings and averaging over 10 seeds. Figure 3 compares 1, 2 and 3 s slots. Separate performance tests average over five presampled trajectories. The captions do not define the shaded regions statistically.",
             "page": 5,
             "locator": "Section IV, Fig. 2-3, pp. 5-6",
-            "excerpt": "First, Fig. 2 shows the training convergence of the LE-MHAPPO algorithm with different weight values of V, averaged over 10 seeds."
+            "excerpt": "First, Fig. 2 shows the training convergence of the LE-MHAPPO algorithm with different weight values of V, averaged over 10 seeds.",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "§IV and Fig. 2 caption"
+              },
+              {
+                "physical_page": 6,
+                "locator": "Fig. 3 and adjoining text"
+              }
+            ]
           }
         ],
         "code_and_data": [
@@ -6198,11 +6466,21 @@
           {
             "subtopic": "limitations_section",
             "status": "NOT_REPORTED",
-            "finding": "No dedicated limitations section is reported (authors note SUAV computation delay is neglected in Eq. 6, p. 3).",
+            "finding": "The model neglects SUAV-edge computation delay; the paper has no dedicated limitations section.",
             "page": 6,
             "locator": "Section V, p. 6",
             "excerpt": "Due to the LSTM's ability to extract temporal features and predict motion states, LE-MHAPPO achieved better performance",
-            "reason": "Checked Sections IV and V; no formal limitations or future-work section is included."
+            "reason": "Checked Sections IV and V; no formal limitations or future-work section is included.",
+            "sources": [
+              {
+                "physical_page": 3,
+                "locator": "§II.A following Eq. (6)"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§V Conclusion"
+              }
+            ]
           }
         ]
       },
@@ -6724,10 +7002,24 @@
           {
             "subtopic": "heterogeneous_multi_dnn",
             "status": "OBSERVED",
-            "finding": "Simultaneous deployment of heterogeneous pre-trained CNNs: AlexNet and VGG19 for object/person classification in disaster/search missions; no empirical dataset used (analytical layer profiles only).",
+            "finding": "The simulated search-and-rescue scenario includes concurrent AlexNet and VGG19 requests for object/person detection. The evaluation uses modeled inference profiles; the data availability statement says no data was used.",
             "page": 6,
             "locator": "Section 4.1 and Data availability, pp. 6, 9",
-            "excerpt": "We incorporated both AlexNet and VGG19 as DNN models for our simulation [12]."
+            "excerpt": "We incorporated both AlexNet and VGG19 as DNN models for our simulation [12].",
+            "sources": [
+              {
+                "physical_page": 3,
+                "locator": "§3.1.1 application scenario"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§4.1 DNNs"
+              },
+              {
+                "physical_page": 9,
+                "locator": "Data availability"
+              }
+            ]
           }
         ],
         "partition_and_assignment": [
@@ -6745,10 +7037,20 @@
           {
             "subtopic": "milp_and_greedy_heuristic",
             "status": "OBSERVED",
-            "finding": "MILP minimizing weighted normalized e2e latency (w_t=0.9) and per-UAV energy ratio (w_e=0.1) subject to battery, compute, memory, bandwidth, and single-UAV-per-partition constraints; solved via O(|R||N|^2) greedy sorting heuristic (Algorithm 1).",
+            "finding": "A MILP jointly accounts for normalized end-to-end delay and per-device energy consumption relative to available energy, under compute, memory, bandwidth, battery and placement constraints. Algorithm 1 greedily sorts candidate assignments. Reported complexity is O(|R||N|²) when the maximum number of partitions is fixed. Simulation weights are 0.9 and 0.1.",
             "page": 6,
             "locator": "Section 3.5 and 3.6, pp. 5-6",
-            "excerpt": "Hence to give a fast, approximate solution for this problem, we propose a heuristic algorithm for partition deployment and resource allocation."
+            "excerpt": "Hence to give a fast, approximate solution for this problem, we propose a heuristic algorithm for partition deployment and resource allocation.",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "§3 optimization, Eq. (8)"
+              },
+              {
+                "physical_page": 6,
+                "locator": "Algorithm 1 and §4.1"
+              }
+            ]
           }
         ],
         "compute_and_radio": [
@@ -6876,12 +7178,12 @@
         },
         {
           "metric": "Energy reduction (max battery) vs NN / HRE / LO",
-          "value": "up to 90 / 85 / 81",
+          "value": "up to 90 / up to 85 / 81",
           "units": "%",
           "baseline": "NN, HRE, LO",
           "denominator": "1-10 requests",
           "workload": "AlexNet and VGG19",
-          "conditions": "10 UAVs, homogeneous max battery",
+          "conditions": "Homogeneous maximum battery, Fig. 4(a); equal distribution of simulated AlexNet and VGG19 workloads; the narrative reports the three comparisons.",
           "page": 7,
           "locator": "Section 4.2, p. 7",
           "excerpt": "The proposed method reduces up to 90% in energy over NN, up to 85% over HRE and 81% over LO.",
@@ -7198,10 +7500,24 @@
           {
             "subtopic": "2d_mobility_and_proposed_failover",
             "status": "OBSERVED",
-            "finding": "Continuous 2D displacement control with d_min=5 m safety distance; Section 4.5 describes a conceptual backup-controller failover mechanism for core UAV failure, though failure/recovery is not empirically simulated.",
+            "finding": "The model controls planar displacement with a 5 m minimum separation. A backup controller is described as a possible failover for the core UAV. The reported experiments do not include a failover evaluation.",
             "page": 8,
             "locator": "Section 3.1 and 4.5, pp. 4, 8",
-            "excerpt": "In the event of a core UAV failure, a leader election mechanism such as heartbeat-based or priority-based selection can be triggered to activate the backup UAV"
+            "excerpt": "In the event of a core UAV failure, a leader election mechanism such as heartbeat-based or priority-based selection can be triggered to activate the backup UAV",
+            "sources": [
+              {
+                "physical_page": 8,
+                "locator": "§§4.5 and 5.1/Table 1"
+              },
+              {
+                "physical_page": 9,
+                "locator": "§5.4 experiment scope"
+              },
+              {
+                "physical_page": 11,
+                "locator": "§5.4.5 robustness"
+              }
+            ]
           }
         ],
         "evaluation_platform_simulator_hardware_and_traces": [
@@ -7318,12 +7634,12 @@
           "value": "31.9287",
           "units": "ms",
           "baseline": "Prop (1.78 us), Layer-PPO (117.1472 ms)",
-          "denominator": "per single decision (number of runs/steps for Fig. 9(c) not separately tabulated)",
+          "denominator": "Mean single-decision runtime; the number of observations in Fig. 9(c) is not specified.",
           "workload": "20 inference tasks per episode, 10 DNN macro-blocks, 5 UAVs (1 core UAV + 4 computing UAVs)",
-          "conditions": "Simulation on Intel Core i5-12600KF, 32 GB RAM, NVIDIA GeForce RTX 4060 GPU, Windows 11 (64-bit); alpha = 1, beta = 1, eta = 1, timeout = 1.5 s",
+          "conditions": "Fig. 9(c) partitioner comparison in the simulation described in §5.1; subsequent experiments use alpha = beta = eta = 1. The 1.5 s timeout is stated for the separate panel (b) comparison.",
           "page": 10,
-          "locator": "Fig. 9(c) ('Average single decision time.'), bar 'PPO-DMCP'",
-          "excerpt": "(c) Average single decision time.",
+          "locator": "Fig. 9(c), label on PPO-DMCP bar; render physical p. 10",
+          "excerpt": "31.9287 ms (label on PPO-DMCP bar)",
           "status": "OBSERVED",
           "reason": "Exact value 31.9287 ms is printed directly above the PPO-DMCP bar in Fig. 9(c) on physical page 10."
         }
@@ -7425,7 +7741,7 @@
         ],
         "outcomes_latency_energy_communication_accuracy_reliability_and_scalability": [
           {
-            "finding": "L2 encapsulation (SwarmNS-MAC) reduces inter-node traffic volume by approximately 3.7% compared to the L2-L7 protocol stack.",
+            "finding": "The single-hop analytical comparison reports a reduction of ≈3.7% in total traffic volume for L2 relative to L2–L7. It compares the reference 256×80×80 activation tensor at 12 Mbit/s with modeled medium access. The reported approximation is reproduced from the FP32 row and model parameters.",
             "page": 6,
             "locator": "Section 6, paragraph 2",
             "excerpt": "traffic volume is reduced by ≈3.7%",
@@ -7439,10 +7755,24 @@
             },
             "subtopic": "K03-01",
             "status": "OBSERVED",
-            "repair_key": "K03-01"
+            "repair_key": "K03-01",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "§5 traffic Equations (2)–(3)"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§6 paragraph after Table 2"
+              },
+              {
+                "physical_page": 7,
+                "locator": "Table 3 FP32 row"
+              }
+            ]
           },
           {
-            "finding": "L2 encapsulation (SwarmNS-MAC) reduces transmission time by approximately 7.9% compared to the L2-L7 protocol stack.",
+            "finding": "The single-hop analytical comparison reports a reduction of ≈7.9% in transmission time for L2 relative to L2–L7. It compares the reference 256×80×80 activation tensor at 12 Mbit/s with modeled medium access. The reported approximation is reproduced from the FP32 row and model parameters.",
             "page": 6,
             "locator": "Section 6, paragraph 2",
             "excerpt": "transmission time by ≈7.9%",
@@ -7456,10 +7786,24 @@
             },
             "subtopic": "K03-02",
             "status": "OBSERVED",
-            "repair_key": "K03-02"
+            "repair_key": "K03-02",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "§5 traffic Equations (2)–(3)"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§6 paragraph after Table 2"
+              },
+              {
+                "physical_page": 7,
+                "locator": "Table 3 FP32 row"
+              }
+            ]
           },
           {
-            "finding": "L2 encapsulation (SwarmNS-MAC) reduces the number of transmitted frames by approximately 36.5% compared to the L2-L7 protocol stack.",
+            "finding": "The single-hop analytical comparison reports a reduction of ≈36.5% in frame count for L2 relative to L2–L7. It compares the reference 256×80×80 activation tensor at 12 Mbit/s with modeled medium access. The reported approximation is reproduced from the FP32 row and model parameters.",
             "page": 6,
             "locator": "Section 6, paragraph 2",
             "excerpt": "the number of frames is reduced by ≈36.5%",
@@ -7473,10 +7817,24 @@
             },
             "subtopic": "K03-03",
             "status": "OBSERVED",
-            "repair_key": "K03-03"
+            "repair_key": "K03-03",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "§5 traffic Equations (2)–(3)"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§6 paragraph after Table 2"
+              },
+              {
+                "physical_page": 7,
+                "locator": "Table 3 FP32 row"
+              }
+            ]
           },
           {
-            "finding": "Post-training quantization from FP32 to 0.8 bits/element reduces per-hop transmission time by approximately 40 times at an effective rate of 12 Mbit/s.",
+            "finding": "In the 12 Mbit/s single-hop L2 analytical comparison for the 256×80×80 tensor, post-training compression from FP32 to 0.8 bits/element reduces modeled time from 4.911 s to 122.8 ms, approximately 40-fold.",
             "page": 6,
             "locator": "6. Numerical Results and Their Discussion",
             "excerpt": "the transition from FP32 to post-training compression of 0.8 bits/element [15, 16] reduces transmission time by approximately 40 times - from 4.9 s to 122.8 ms per hop at a rate of 12 Mbit/s (Fig. 2).",
@@ -7490,10 +7848,20 @@
             },
             "subtopic": "T02",
             "status": "OBSERVED",
-            "repair_key": "T02"
+            "repair_key": "T02",
+            "sources": [
+              {
+                "physical_page": 6,
+                "locator": "§6 final paragraph"
+              },
+              {
+                "physical_page": 7,
+                "locator": "Fig. 2 and Table 3"
+              }
+            ]
           },
           {
-            "finding": "For FP32 (32 bits), SwarmNS-MAC L2 encapsulation transmits in 4911 ms (2875 frames) versus 5332 ms (4526 frames) for L2-L7.",
+            "finding": "For FP32 (32 bits) and a modeled 256×80×80 tensor over one hop at 12 Mbit/s, modeled time is 4911 ms (2875 frames) with L2 versus 5332 ms (4526 frames) with L2–L7.",
             "page": 7,
             "locator": "Table 3, row FP32 (32 bits), columns Frames L2/L7 and T_tx L2/L7",
             "excerpt": "FP32 (32 bits) 6553.6 2875 4526 4911 5332",
@@ -7507,10 +7875,16 @@
             },
             "subtopic": "K03-05",
             "status": "OBSERVED",
-            "repair_key": "K03-05"
+            "repair_key": "K03-05",
+            "sources": [
+              {
+                "physical_page": 7,
+                "locator": "Table 3 caption and FP32 (32 bits) row"
+              }
+            ]
           },
           {
-            "finding": "For INT8 (8 bits), SwarmNS-MAC L2 encapsulation transmits in 1228 ms (719 frames) versus 1333 ms (1132 frames) for L2-L7.",
+            "finding": "For INT8 (8 bits) and a modeled 256×80×80 tensor over one hop at 12 Mbit/s, modeled time is 1228 ms (719 frames) with L2 versus 1333 ms (1132 frames) with L2–L7.",
             "page": 7,
             "locator": "Table 3, row INT8 (8 bits), columns Frames L2/L7 and T_tx L2/L7",
             "excerpt": "INT8 (8 bits) 1638.4 719 1132 1228 1333",
@@ -7524,10 +7898,16 @@
             },
             "subtopic": "K03-06",
             "status": "OBSERVED",
-            "repair_key": "K03-06"
+            "repair_key": "K03-06",
+            "sources": [
+              {
+                "physical_page": 7,
+                "locator": "Table 3 caption and INT8 (8 bits) row"
+              }
+            ]
           },
           {
-            "finding": "For ADT (0.8 bits), SwarmNS-MAC L2 encapsulation transmits in 122.8 ms (72 frames) versus 133.5 ms (114 frames) for L2-L7.",
+            "finding": "For ADT (0.8 bits) and a modeled 256×80×80 tensor over one hop at 12 Mbit/s, modeled time is 122.8 ms (72 frames) with L2 versus 133.5 ms (114 frames) with L2–L7.",
             "page": 7,
             "locator": "Table 3, row ADT (0.8 bits) [16], columns Frames L2/L7 and T_tx L2/L7",
             "excerpt": "ADT (0.8 bits) [16] 163.8 72 114 122.8 133.5",
@@ -7541,10 +7921,16 @@
             },
             "subtopic": "K03-07",
             "status": "OBSERVED",
-            "repair_key": "K03-07"
+            "repair_key": "K03-07",
+            "sources": [
+              {
+                "physical_page": 7,
+                "locator": "Table 3 caption and ADT (0.8 bits) row"
+              }
+            ]
           },
           {
-            "finding": "For an INT8 tensor at per-frame success probability p_f = 0.9995, timely intact tensor delivery probability is 0.70 for SwarmNS-MAC (719 frames) versus 0.57 for L2-L7 (1,132 frames).",
+            "finding": "For a 256×80×80 INT8 activation tensor, independent frame successes with p_f = 0.9995 give modeled intact delivery probability 0.70 for SwarmNS-MAC (719 frames) versus 0.57 for L2–L7 (1,132 frames). These are single-hop analytical probabilities.",
             "page": 7,
             "locator": "Section 6, paragraph below Fig. 2",
             "excerpt": "the probability of timely delivery of the complete tensor is 0.70 for SwarmNS-MAC (719 frames) versus 0.57 for the L2-L7 stack (1,132 frames).",
@@ -7558,7 +7944,17 @@
             },
             "subtopic": "K03-08",
             "status": "OBSERVED",
-            "repair_key": "K03-08"
+            "repair_key": "K03-08",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "§5 Eq. (6)"
+              },
+              {
+                "physical_page": 7,
+                "locator": "Table 3 INT8 row and paragraph below Fig. 2"
+              }
+            ]
           },
           {
             "finding": "With n = 6 neighbors and timely tensor delivery probability p_d = 0.70, aggregation quorum probability is 0.93 for q = 3 versus 0.74 for q = 4.",
@@ -7989,6 +8385,206 @@
       "report_id": "R0029",
       "key": "funding_and_conflicts:1",
       "reason": "The local text layer renders the first award with O where the previous extraction used zero; omitted the ambiguous ID."
+    },
+    {
+      "report_id": "R0054",
+      "key": "uav_architecture_role_and_topology:1",
+      "reason": "Separates symbolic topology from the example replay and avoids applying its settings to the final holdout."
+    },
+    {
+      "report_id": "R0054",
+      "key": "sensitivity_and_variability:1",
+      "reason": "Moves OOD numerical settings to their original figure caption."
+    },
+    {
+      "report_id": "R0059",
+      "key": "inference_model_task_and_dataset:2",
+      "reason": "The paper calls the trajectory trace real-world; the cited dataset is identified by name without inferring physical-flight provenance."
+    },
+    {
+      "report_id": "R0059",
+      "key": "compute_and_radio:2",
+      "reason": "Removes inferred fading-family label and distinguishes throughput equations from the bandwidth experiment."
+    },
+    {
+      "report_id": "R0062",
+      "key": "uav_architecture_role_and_topology:1",
+      "reason": "Avoids attributing pipelining to this experimental passage, which names collaborative execution and hardware roles."
+    },
+    {
+      "report_id": "R0062",
+      "key": "partition_and_assignment:1",
+      "reason": "The architecture text supports partitioning and reassignment without specifying pipeline behavior in the prototype."
+    },
+    {
+      "report_id": "R0062",
+      "key": "baselines_and_workloads:1",
+      "reason": "Separates measured comparisons from the conceptual comparator in the unavailability discussion."
+    },
+    {
+      "report_id": "R0062",
+      "key": "funding_and_conflicts:1",
+      "reason": "Corrected the Guangdong grant characters as printed and checked the title and end matter."
+    },
+    {
+      "report_id": "R0071",
+      "key": "mobility_channel_intermittency_failure_and_recovery:1",
+      "reason": "Avoids conflating temporary battery depletion with node or link failure."
+    },
+    {
+      "report_id": "R0071",
+      "key": "sensitivity_and_variability:1",
+      "reason": "The original figure shows bands but does not define them as variance."
+    },
+    {
+      "report_id": "R0071",
+      "key": "reported_limitations:1",
+      "reason": "Locates the assumption in the model rather than the conclusion."
+    },
+    {
+      "report_id": "R0095",
+      "key": "mobility_channel_intermittency_failure_and_recovery:1",
+      "reason": "Distinguishes model (§4.5) from experiments."
+    },
+    {
+      "report_id": "R0095",
+      "key": "quantity:2",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0083",
+      "key": "inference_model_task_and_dataset:1",
+      "reason": "Removes unverified claim of concrete pretrained model weights."
+    },
+    {
+      "report_id": "R0083",
+      "key": "decision_variables_objectives_constraints_and_solver:1",
+      "reason": "The simplified complexity needs the fixed-partition assumption."
+    },
+    {
+      "report_id": "R0083",
+      "key": "quantity:2",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0121",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+      "reason": "Scopes the source claim to the original printed model, setup and experiment."
+    },
+    {
+      "report_id": "R0121",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
+      "reason": "Scopes the source claim to the original printed model, setup and experiment."
+    },
+    {
+      "report_id": "R0121",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:3",
+      "reason": "Scopes the source claim to the original printed model, setup and experiment."
+    },
+    {
+      "report_id": "R0121",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:4",
+      "reason": "Scopes the source claim to the original printed model, setup and experiment."
+    },
+    {
+      "report_id": "R0121",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:5",
+      "reason": "Scopes the source claim to the original printed model, setup and experiment."
+    },
+    {
+      "report_id": "R0121",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:6",
+      "reason": "Scopes the source claim to the original printed model, setup and experiment."
+    },
+    {
+      "report_id": "R0121",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:7",
+      "reason": "Scopes the source claim to the original printed model, setup and experiment."
+    },
+    {
+      "report_id": "R0121",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:8",
+      "reason": "Scopes the source claim to the original printed model, setup and experiment."
+    },
+    {
+      "report_id": "R0063",
+      "key": "uav_architecture_role_and_topology:1",
+      "reason": "Separates Tables 2 and 6."
+    },
+    {
+      "report_id": "R0063",
+      "key": "inference_model_task_and_dataset:1",
+      "reason": "Distinguishes model modes/frequencies from per-sequence measured latency."
+    },
+    {
+      "report_id": "R0063",
+      "key": "evaluation_platform_simulator_hardware_and_traces:1",
+      "reason": "Table 1 specifies 50 Hz physics; retained controller/model timings under 3.1 and did not assert a shared 10 Hz decision loop."
+    },
+    {
+      "report_id": "R0063",
+      "key": "baselines_and_workloads:1",
+      "reason": "Table 4 lists six baselines despite introductory prose saying five; scopes the trial count to Table 4."
+    },
+    {
+      "report_id": "R0063",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+      "reason": "Separates the 500-trial scenario test, scalability comparison, model timing and bandwidth experiment."
+    },
+    {
+      "report_id": "R0063",
+      "key": "reported_limitations:1",
+      "reason": "Physical latency concern is prospective, and grouping is presented as future work."
+    },
+    {
+      "report_id": "R0063",
+      "key": "quantity:1",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0063",
+      "key": "quantity:2",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0063",
+      "key": "quantity:3",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0044",
+      "key": "uav_architecture_role_and_topology:1",
+      "reason": "Coverage radius is distinct from a flight orbit radius."
+    },
+    {
+      "report_id": "R0044",
+      "key": "inference_model_task_and_dataset:1",
+      "reason": "Avoids inferring the same final fully connected layers across all architectures, including TinyYOLOv2."
+    },
+    {
+      "report_id": "R0044",
+      "key": "sensitivity_and_variability:1",
+      "reason": "The plotted trace contradicts the prose generalization that all methods improve."
+    },
+    {
+      "report_id": "R0048",
+      "key": "uav_architecture_role_and_topology:1",
+      "reason": "Reports what the benchmark evaluated and avoids treating 20 as a universal architecture threshold."
+    },
+    {
+      "report_id": "R0048",
+      "key": "compute_and_radio:1",
+      "reason": "Records available bandwidth per UAV as printed, not a swarm-wide total."
+    },
+    {
+      "report_id": "R0048",
+      "key": "mobility_channel_intermittency_failure_and_recovery:1",
+      "reason": "Distinguishes explicitly stated future work from absence of node-failure experiments."
+    },
+    {
+      "report_id": "R0048",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+      "reason": "Distinguishes the larger-size narrative from 60-UAV sensitivity values and avoids an all-baselines claim across every point."
     }
   ]
 }
