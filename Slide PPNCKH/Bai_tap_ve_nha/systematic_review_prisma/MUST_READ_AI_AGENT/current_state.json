@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T13:04:45+07:00",
+  "updated_at": "2026-11-26T13:15:33+07:00",
   "goal": {
     "version": "HK261-PRISMA-completion-spec-v2",
-    "status": "execution_in_progress_s01_brief_ready",
-    "summary": "B02 restored the canonical workspace. The Codex-owned B03 preparation is complete: Amendment 003 freezes the substantive report-completeness rule, 4/4 access entitlement is recorded without execution claims, the 20-by-8 seed matrix is restored and the five-section S-01 Gemini brief is ready for committed read-only dispatch.",
+    "status": "execution_in_progress_s01_correction_required",
+    "summary": "The first user-pasted S-01 research result is quarantined and rejected after Codex review: 11 of 13 mandatory criteria passed, while criteria 4 and 10 failed because four non-blocked language or collection/scope conclusions lacked conclusion-matched official evidence. A targeted corrective brief is ready; no query change or search result has been adopted.",
     "goal_engine_status_observed": "usageLimited"
   },
   "task": {
-    "task_id": "prepare-b03-protocol-access-and-s01-brief",
+    "task_id": "review-s01-query-validation-v1",
     "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T13:02:22+07:00",
-    "updated_at": "2026-11-26T13:04:45+07:00",
-    "completed_at": "2026-11-26T13:04:45+07:00",
-    "decision_id": "prepare-b03-protocol-access-and-s01-brief-v1"
+    "status": "rejected",
+    "started_at": "2026-11-26T13:14:38+07:00",
+    "updated_at": "2026-11-26T13:15:33+07:00",
+    "completed_at": "2026-11-26T13:15:33+07:00",
+    "decision_id": "review-s01-query-validation-v1"
   },
   "next_task": {
-    "task_id": "dispatch-s01-query-validation",
+    "task_id": "correct-s01-query-validation-v1",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "After this brief-preparation commit is integrated and the repository is clean, dispatch corpus_expansion/briefs/s01_query_validation_brief.md through the approved Gemini router; quarantine the returned JSON until Codex issues a criterion-by-criterion review.",
-    "acceptance": "One provider task/context ID recorded; returned JSON covers 4 platforms, 8 queries and the 20-by-8 matrix; project files modified by Gemini equal zero; no result is adopted before every mandatory criterion passes."
+    "action": "After this rejection commit is integrated and the repository is clean, dispatch corpus_expansion/briefs/s01_query_validation_corrective_brief.md through the approved Gemini router; record its provider task/context ID and quarantine the corrected JSON until a new Codex review.",
+    "acceptance": "One provider task/context ID recorded; all 4 previously unsupported non-blocked filter conclusions receive matching official evidence or become BLOCKED; internal contradictions equal zero; all 13 parent criteria pass; project files modified by Gemini equal zero."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -46,6 +46,9 @@
     "effective_protocol": "protocol.md plus protocol_amendment_001.md, protocol_amendment_002.md and protocol_amendment_003_report_completeness.md",
     "access_readiness_record": "search_access_readiness_2026-11-26.md",
     "s01_brief": "corpus_expansion/briefs/s01_query_validation_brief.md",
+    "s01_result": "corpus_expansion/s01_query_validation_result.json",
+    "s01_review": "corpus_expansion/reviews/s01_query_validation_acceptance.md",
+    "s01_corrective_brief": "corpus_expansion/briefs/s01_query_validation_corrective_brief.md",
     "seed_query_matrix": "seed_query_coverage_matrix.csv",
     "manuscript_pages": 22,
     "cited_references": 53,
@@ -68,6 +71,18 @@
     },
     "screening_batches_accepted": 8,
     "evidence_checksums": "92/92 PASS",
+    "s01_query_validation": {
+      "status": "REJECTED_NEEDS_TARGETED_CORRECTION",
+      "mandatory_pass": 11,
+      "mandatory_fail": 2,
+      "failed_criteria": [
+        4,
+        10
+      ],
+      "database_result_counts_claimed": 0,
+      "project_files_modified_by_research_agent": 0,
+      "provider_task_or_context_id": "NOT_PROVIDED_IN_USER_PASTED_RESULT"
+    },
     "family_audit": {
       "reports_accounted": 46,
       "mechanical_pairs_checked": 1035,

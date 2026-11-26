@@ -1,0 +1,415 @@
+{
+  "task_id": "S01-QUERY-VALIDATION-v1",
+  "checked_at": "2026-11-26T13:12:00+07:00",
+  "platforms": [
+    {
+      "platform": "IEEE Xplore",
+      "official_documentation": [
+        {
+          "url": "https://developer.ieee.org/docs/read/Metadata_API_details",
+          "locator": "Search Parameters (meta_data, querytext, publication_year, d-pubtype)",
+          "supports": [
+            "field syntax",
+            "wildcard",
+            "filter"
+          ]
+        },
+        {
+          "url": "https://developer.ieee.org/Terminology",
+          "locator": "Terminology (Boolean Operators, Wildcard)",
+          "supports": [
+            "field syntax",
+            "wildcard"
+          ]
+        }
+      ],
+      "access_or_export_claimed": false
+    },
+    {
+      "platform": "ACM Digital Library",
+      "official_documentation": [
+        {
+          "url": "https://libraries.acm.org/training-resources/search-tools",
+          "locator": "Search the Guide to Computing Literature vs. Searching the ACM Digital Library; Faceted Search; Advanced Search",
+          "supports": [
+            "filter",
+            "collection"
+          ]
+        },
+        {
+          "url": "https://libraries.acm.org/acmopen/article-types",
+          "locator": "APC-Eligible (Research Article, Short Paper); Non-APC-Eligible (Demonstration, Extended abstract, Poster, Work in Progress)",
+          "supports": [
+            "filter"
+          ]
+        }
+      ],
+      "access_or_export_claimed": false
+    },
+    {
+      "platform": "Scopus",
+      "official_documentation": [
+        {
+          "url": "https://www.elsevier.support/scopus/answer/how-can-i-best-use-the-advanced-search",
+          "locator": "Operators ~ boolean and proximity operators; Advanced search strategy for Proximity and Boolean operators; All available field codes (TITLE-ABS-KEY, PUBYEAR, DOCTYPE, LANGUAGE); Find exact or approximate phrases and words ~ wildcards, braces, quotation marks",
+          "supports": [
+            "field syntax",
+            "wildcard",
+            "filter",
+            "collection"
+          ]
+        },
+        {
+          "url": "https://www.elsevier.support/scopus/answer/search-tips-what-makes-a-scopus-search-complex",
+          "locator": "PUBYEAR; Singular/plural forms; Wildcards",
+          "supports": [
+            "wildcard",
+            "filter"
+          ]
+        }
+      ],
+      "access_or_export_claimed": false
+    },
+    {
+      "platform": "Web of Science Core Collection",
+      "official_documentation": [
+        {
+          "url": "https://webofscience.zendesk.com/hc/en-us/articles/25350084904721-Search-Rules",
+          "locator": "Lemmatization and Quotation Marks; Using Quotation Marks; Wildcards; Right-Hand and Internal Truncation; Hyphens and Apostrophes",
+          "supports": [
+            "field syntax",
+            "wildcard"
+          ]
+        },
+        {
+          "url": "https://webofscience.zendesk.com/hc/en-us/articles/26916347018257-Web-of-Science-Core-Collection-Advanced-Search-Field-Tags",
+          "locator": "TS=Topic; PY=Year Published; FPY=Final publication year",
+          "supports": [
+            "field syntax",
+            "filter"
+          ]
+        },
+        {
+          "url": "https://webofscience.zendesk.com/hc/en-us/articles/20016122409105-Search-Operators",
+          "locator": "Boolean Operators; Search Operator Precedence; Use of Parentheses",
+          "supports": [
+            "field syntax"
+          ]
+        },
+        {
+          "url": "https://webofscience.zendesk.com/hc/en-us/articles/26916283577745-Document-Types",
+          "locator": "Article; Proceedings Paper; Early Access",
+          "supports": [
+            "filter",
+            "collection"
+          ]
+        }
+      ],
+      "access_or_export_claimed": false
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "IEEE_HR",
+      "platform": "IEEE Xplore",
+      "verdict": "BLOCKED",
+      "unsupported_or_ambiguous_constructs": [
+        "Official IEEE Xplore Web Command Search documentation (https://ieeexplore.ieee.org/Xplorehelp/searching-ieee-xplore/command-search) was blocked during automated retrieval; exact Web Command Search syntax for quoted field prefix \"All Metadata\":, phrase quoting behavior, and Web UI filter facets (Journals, Conferences, English, 2021-2026) could not be verified from reachable official web-interface documentation."
+      ],
+      "corrected_query": null,
+      "changed_tokens_or_filters": [],
+      "filter_verdicts": {
+        "publication_year": "BLOCKED",
+        "document_type": "BLOCKED",
+        "language": "BLOCKED",
+        "collection_or_scope": "BLOCKED"
+      },
+      "evidence": [
+        {
+          "url": "https://developer.ieee.org/Terminology",
+          "locator": "Terminology: Boolean Operators",
+          "claim": "IEEE metadata searches support Boolean operators AND, OR, NOT in applicable interfaces; web command-search field tag \"All Metadata\": requires direct verification against the blocked Xplorehelp command-search page."
+        },
+        {
+          "url": "https://developer.ieee.org/docs/read/Metadata_API_details",
+          "locator": "Search Parameters: publication_year",
+          "claim": "Official IEEE API documentation states that publication year formatting varies by publication and explicitly advises verifying format within the IEEE Xplore Web product."
+        }
+      ]
+    },
+    {
+      "query_id": "IEEE_COMP",
+      "platform": "IEEE Xplore",
+      "verdict": "BLOCKED",
+      "unsupported_or_ambiguous_constructs": [
+        "Official IEEE Xplore Web Command Search documentation (https://ieeexplore.ieee.org/Xplorehelp/searching-ieee-xplore/command-search) was blocked during automated retrieval; exact Web Command Search wildcard count limit and \"All Metadata\": field syntax could not be verified from reachable official web-interface docs.",
+        "Query contains 4 wildcard terms (partition*, offload*, schedul*, assign*). Reachable IEEE Metadata API docs specify a minimum of 3 characters before '*' (satisfied by all 4 terms) but cap API parameters (meta_data, querytext) at no more than 2 wildcard words; Web Command Search wildcard limits must be verified directly in the authenticated IEEE Xplore Web interface before S-02."
+      ],
+      "corrected_query": null,
+      "changed_tokens_or_filters": [],
+      "filter_verdicts": {
+        "publication_year": "BLOCKED",
+        "document_type": "BLOCKED",
+        "language": "BLOCKED",
+        "collection_or_scope": "BLOCKED"
+      },
+      "evidence": [
+        {
+          "url": "https://developer.ieee.org/docs/read/Metadata_API_details",
+          "locator": "Search Parameters: meta_data and querytext",
+          "claim": "Official IEEE Metadata API docs require at least 3 characters preceding '*' and limit meta_data/querytext to no more than two wildcard words; Web Command Search wildcard caps could not be confirmed because Xplorehelp was blocked."
+        }
+      ]
+    },
+    {
+      "query_id": "ACM_HR",
+      "platform": "ACM Digital Library",
+      "verdict": "BLOCKED",
+      "unsupported_or_ambiguous_constructs": [
+        "Official ACM Digital Library Search and Browse syntax page (https://libraries.acm.org/digital-library/search-and-browse) was inaccessible during automated retrieval; exact field-prefix syntax, default search scope of an unscoped Boolean string, and Language facet availability could not be verified from reachable official ACM syntax documentation.",
+        "Interface instruction specifies search scope 'The ACM Digital Library' and content types 'Research-Article' and 'Conference-Paper' while excluding 'Short-Paper'; official ACM documentation names the two scope toggles 'Publications of the ACM and Affiliated Organizations' vs. 'The ACM Guide to Computing Literature' and defines 'Short Paper' as a fully peer-reviewed original research article."
+      ],
+      "corrected_query": null,
+      "changed_tokens_or_filters": [
+        "document_type filter: remove 'Do not include Short-Paper' per Amendment 003 and official ACM article-type definitions (retain Research Article and Short Paper; exclude Demonstration, Extended abstract, Poster, Work in Progress).",
+        "collection_or_scope filter: record explicitly whether search is limited to 'Publications of the ACM and Affiliated Organizations' or expanded to 'The ACM Guide to Computing Literature'."
+      ],
+      "filter_verdicts": {
+        "publication_year": "PASS",
+        "document_type": "REVISE",
+        "language": "BLOCKED",
+        "collection_or_scope": "REVISE"
+      },
+      "evidence": [
+        {
+          "url": "https://libraries.acm.org/training-resources/search-tools",
+          "locator": "Search the Guide to Computing Literature vs. Searching the ACM Digital Library; Faceted Search",
+          "claim": "Official ACM documentation confirms publication-date and content-format faceting and distinguishes two toggleable scopes: 'Publications of the ACM and Affiliated Organizations' versus 'The ACM Guide to Computing Literature'."
+        },
+        {
+          "url": "https://libraries.acm.org/acmopen/article-types",
+          "locator": "APC-Eligible: Research Article, Short Paper; Non-APC-Eligible: Demonstration, Extended abstract, Poster, Work in Progress",
+          "claim": "ACM defines Short Paper as a fully peer-reviewed, self-contained original research article, separate from Demonstration, Extended abstract, Poster, and Work in Progress."
+        }
+      ]
+    },
+    {
+      "query_id": "ACM_COMP",
+      "platform": "ACM Digital Library",
+      "verdict": "BLOCKED",
+      "unsupported_or_ambiguous_constructs": [
+        "Official ACM Digital Library Search and Browse syntax page (https://libraries.acm.org/digital-library/search-and-browse) was inaccessible during automated retrieval; exact field-prefix syntax, trailing wildcard '*' support (partition*, offload*, schedul*, assign*), and Language facet availability could not be verified from reachable official ACM syntax documentation.",
+        "Interface instruction 'Do not include Short-Paper' conflicts with Amendment 003 given ACM's official definition of Short Paper; scope label 'The ACM Digital Library' omits the official toggle distinction between 'Publications of the ACM and Affiliated Organizations' and 'The ACM Guide to Computing Literature'."
+      ],
+      "corrected_query": null,
+      "changed_tokens_or_filters": [
+        "document_type filter: remove 'Do not include Short-Paper' per Amendment 003 and official ACM article-type definitions.",
+        "collection_or_scope filter: record explicitly whether search is limited to 'Publications of the ACM and Affiliated Organizations' or expanded to 'The ACM Guide to Computing Literature'."
+      ],
+      "filter_verdicts": {
+        "publication_year": "PASS",
+        "document_type": "REVISE",
+        "language": "BLOCKED",
+        "collection_or_scope": "REVISE"
+      },
+      "evidence": [
+        {
+          "url": "https://libraries.acm.org/training-resources/search-tools",
+          "locator": "Search the Guide to Computing Literature vs. Searching the ACM Digital Library; Faceted Search",
+          "claim": "Official ACM documentation confirms publication-date and content-format faceting and distinguishes 'Publications of the ACM and Affiliated Organizations' from 'The ACM Guide to Computing Literature'."
+        },
+        {
+          "url": "https://libraries.acm.org/acmopen/article-types",
+          "locator": "APC-Eligible: Research Article, Short Paper",
+          "claim": "ACM defines Short Paper as a fully peer-reviewed, self-contained original research article, so filtering it out before screening conflicts with Amendment 003."
+        }
+      ]
+    },
+    {
+      "query_id": "SCOPUS_HR",
+      "platform": "Scopus",
+      "verdict": "REVISE",
+      "unsupported_or_ambiguous_constructs": [
+        "PUBYEAR > 2020 AND PUBYEAR < 2027 uses '>' and '<' rather than the official documented PUBYEAR operators AFT and BEF; 2026 is a provisional execution-window upper bound and PUBYEAR includes in-press articles.",
+        "English language restriction is omitted from the query string despite LANGUAGE(english) being an official Advanced Search field code."
+      ],
+      "corrected_query": "TITLE-ABS-KEY((\"UAV swarm\" OR \"drone swarm\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR FANET) AND (\"distributed inference\" OR \"collaborative inference\" OR \"cooperative inference\" OR \"split inference\" OR \"split computing\" OR \"edge intelligence\")) AND PUBYEAR AFT 2020 AND PUBYEAR BEF 2027 AND (DOCTYPE(ar) OR DOCTYPE(cp)) AND LANGUAGE(english)",
+      "changed_tokens_or_filters": [
+        "Replaced 'PUBYEAR > 2020 AND PUBYEAR < 2027' with official documented operators 'PUBYEAR AFT 2020 AND PUBYEAR BEF 2027' (provisional 2021-2026 execution window).",
+        "Appended 'AND LANGUAGE(english)' directly to the query string instead of relying solely on a post-hoc UI refinement."
+      ],
+      "filter_verdicts": {
+        "publication_year": "REVISE",
+        "document_type": "PASS",
+        "language": "REVISE",
+        "collection_or_scope": "PASS"
+      },
+      "evidence": [
+        {
+          "url": "https://www.elsevier.support/scopus/answer/how-can-i-best-use-the-advanced-search",
+          "locator": "All available field codes: TITLE-ABS-KEY, PUBYEAR, DOCTYPE, LANGUAGE; Find exact or approximate phrases and words",
+          "claim": "TITLE-ABS-KEY searches title, abstract, and keywords; straight double quotes perform loose phrase matching (handling hyphens and plurals); PUBYEAR documents operators AFT, BEF, and IS; DOCTYPE supports ar (Article) and cp (Conference Paper); LANGUAGE(english) filters original document language."
+        },
+        {
+          "url": "https://www.elsevier.support/scopus/answer/search-tips-what-makes-a-scopus-search-complex",
+          "locator": "PUBYEAR",
+          "claim": "PUBYEAR includes 'in-press' articles slated for a given publication year without a finalized publication date."
+        }
+      ]
+    },
+    {
+      "query_id": "SCOPUS_COMP",
+      "platform": "Scopus",
+      "verdict": "REVISE",
+      "unsupported_or_ambiguous_constructs": [
+        "PUBYEAR > 2020 AND PUBYEAR < 2027 uses '>' and '<' rather than official documented PUBYEAR operators AFT and BEF; 2026 is a provisional execution-window upper bound and PUBYEAR includes in-press articles.",
+        "English language restriction is omitted from the query string despite LANGUAGE(english) being an official Advanced Search field code."
+      ],
+      "corrected_query": "TITLE-ABS-KEY((\"UAV swarm\" OR \"drone swarm\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR FANET) AND ((\"deep neural network\" OR DNN OR \"deep learning\") AND inference) AND (partition* OR offload* OR placement OR schedul* OR assign* OR \"resource allocation\")) AND PUBYEAR AFT 2020 AND PUBYEAR BEF 2027 AND (DOCTYPE(ar) OR DOCTYPE(cp)) AND LANGUAGE(english)",
+      "changed_tokens_or_filters": [
+        "Replaced 'PUBYEAR > 2020 AND PUBYEAR < 2027' with official documented operators 'PUBYEAR AFT 2020 AND PUBYEAR BEF 2027' (provisional 2021-2026 execution window).",
+        "Appended 'AND LANGUAGE(english)' directly to the query string instead of relying solely on a post-hoc UI refinement."
+      ],
+      "filter_verdicts": {
+        "publication_year": "REVISE",
+        "document_type": "PASS",
+        "language": "REVISE",
+        "collection_or_scope": "PASS"
+      },
+      "evidence": [
+        {
+          "url": "https://www.elsevier.support/scopus/answer/how-can-i-best-use-the-advanced-search",
+          "locator": "All available field codes: TITLE-ABS-KEY, PUBYEAR, DOCTYPE, LANGUAGE; Find exact or approximate phrases and words",
+          "claim": "TITLE-ABS-KEY, loose phrase quotes \"\", right-hand wildcards attached to words (partition*, offload*, schedul*, assign*), PUBYEAR AFT/BEF, DOCTYPE(ar)/DOCTYPE(cp), and LANGUAGE(english) are all supported; parentheses override OR > W/n > AND precedence."
+        },
+        {
+          "url": "https://www.elsevier.support/scopus/answer/search-tips-what-makes-a-scopus-search-complex",
+          "locator": "PUBYEAR; Wildcards",
+          "claim": "Trailing word wildcards without adjacent dots/slashes/hyphens are valid; PUBYEAR includes in-press articles."
+        }
+      ]
+    },
+    {
+      "query_id": "WOS_HR",
+      "platform": "Web of Science Core Collection",
+      "verdict": "REVISE",
+      "unsupported_or_ambiguous_constructs": [
+        "Enclosing phrases in quotation marks disables Web of Science lemmatization; therefore \"UAV swarm\", \"drone swarm\", and \"aerial network\" miss plural forms (\"UAV swarms\", \"drone swarms\", \"aerial networks\").",
+        "Publication-year range (provisional 2021-2026 execution window) is omitted from the query string; note official PY= documentation advises restricting single PY ranges to five years or less and states that PY matches both Published Early Access Year and Final Publication Year.",
+        "Web of Science Core Collection edition scope (e.g., SCI-EXPANDED, CPCI-S, ESCI) must be explicitly recorded because Proceedings Paper records reside in CPCI-S/CPCI-SSH."
+      ],
+      "corrected_query": "TS=((\"UAV swarm\" OR \"UAV swarms\" OR \"drone swarm\" OR \"drone swarms\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR \"aerial networks\" OR FANET) AND (\"distributed inference\" OR \"collaborative inference\" OR \"cooperative inference\" OR \"split inference\" OR \"split computing\" OR \"edge intelligence\")) AND (PY=(2021-2025) OR PY=2026)",
+      "changed_tokens_or_filters": [
+        "Added explicit plural quoted phrases: \"UAV swarms\", \"drone swarms\", \"aerial networks\" to compensate for quotation marks disabling lemmatization.",
+        "Added 'AND (PY=(2021-2025) OR PY=2026)' to encode the provisional 2021-2026 window while respecting the official <=5-year single-range advisory.",
+        "Keep UI refinements: Language=English, Document Types=Article and Proceedings Paper (note Early Access carries dual type 'Article; Early Access'), and log active Core Collection editions including CPCI-S."
+      ],
+      "filter_verdicts": {
+        "publication_year": "REVISE",
+        "document_type": "PASS",
+        "language": "PASS",
+        "collection_or_scope": "REVISE"
+      },
+      "evidence": [
+        {
+          "url": "https://webofscience.zendesk.com/hc/en-us/articles/25350084904721-Search-Rules",
+          "locator": "Lemmatization and Quotation Marks; Using Quotation Marks",
+          "claim": "Quotation marks turn off lemmatization and synonym matching in Web of Science, so singular quoted phrases do not retrieve plural forms."
+        },
+        {
+          "url": "https://webofscience.zendesk.com/hc/en-us/articles/26916347018257-Web-of-Science-Core-Collection-Advanced-Search-Field-Tags",
+          "locator": "TS=Topic; PY=Year Published",
+          "claim": "TS= searches Title, Abstract, Author Keywords, and Keywords Plus; PY= combines with AND, advises <=5-year ranges per range expression, and matches both Published Early Access Year and Final Publication Year."
+        },
+        {
+          "url": "https://webofscience.zendesk.com/hc/en-us/articles/26916283577745-Document-Types",
+          "locator": "Article; Proceedings Paper; Early Access",
+          "claim": "Official document types are 'Article' and 'Proceedings Paper' (covered in CPCI-S/CPCI-SSH); Early Access items receive dual type 'Article; Early Access'."
+        },
+        {
+          "url": "https://webofscience.zendesk.com/hc/en-us/articles/20016122409105-Search-Operators",
+          "locator": "Boolean Operators; Search Operator Precedence; Use of Parentheses",
+          "claim": "TS= queries have no Boolean operator limit and parentheses override NEAR/x > SAME > NOT > AND > OR precedence."
+        }
+      ]
+    },
+    {
+      "query_id": "WOS_COMP",
+      "platform": "Web of Science Core Collection",
+      "verdict": "REVISE",
+      "unsupported_or_ambiguous_constructs": [
+        "Enclosing phrases in quotation marks disables Web of Science lemmatization; therefore \"UAV swarm\", \"drone swarm\", \"aerial network\", and \"deep neural network\" miss plural forms (\"UAV swarms\", \"drone swarms\", \"aerial networks\", \"deep neural networks\").",
+        "Publication-year range (provisional 2021-2026 execution window) is omitted from the query string; official PY= documentation advises <=5-year ranges per range expression and notes PY matches both Early Access Year and Final Publication Year.",
+        "Web of Science Core Collection edition scope (including CPCI-S for Proceedings Paper) must be explicitly logged."
+      ],
+      "corrected_query": "TS=((\"UAV swarm\" OR \"UAV swarms\" OR \"drone swarm\" OR \"drone swarms\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR \"aerial networks\" OR FANET) AND ((\"deep neural network\" OR \"deep neural networks\" OR DNN OR \"deep learning\") AND inference) AND (partition* OR offload* OR placement OR schedul* OR assign* OR \"resource allocation\")) AND (PY=(2021-2025) OR PY=2026)",
+      "changed_tokens_or_filters": [
+        "Added explicit plural quoted phrases: \"UAV swarms\", \"drone swarms\", \"aerial networks\", \"deep neural networks\" because quotation marks turn off lemmatization.",
+        "Added 'AND (PY=(2021-2025) OR PY=2026)' for the provisional 2021-2026 execution window while respecting the official <=5-year single-range advisory.",
+        "Keep UI refinements: Language=English, Document Types=Article and Proceedings Paper, and log active Core Collection editions including CPCI-S."
+      ],
+      "filter_verdicts": {
+        "publication_year": "REVISE",
+        "document_type": "PASS",
+        "language": "PASS",
+        "collection_or_scope": "REVISE"
+      },
+      "evidence": [
+        {
+          "url": "https://webofscience.zendesk.com/hc/en-us/articles/25350084904721-Search-Rules",
+          "locator": "Lemmatization and Quotation Marks; Right-Hand and Internal Truncation",
+          "claim": "Quotation marks turn off lemmatization; right-hand wildcards in TS= require at least 3 preceding characters (satisfied by partition*, offload*, schedul*, assign*)."
+        },
+        {
+          "url": "https://webofscience.zendesk.com/hc/en-us/articles/26916347018257-Web-of-Science-Core-Collection-Advanced-Search-Field-Tags",
+          "locator": "TS=Topic; PY=Year Published",
+          "claim": "TS= searches Title, Abstract, Author Keywords, and Keywords Plus; PY= matches both Early Access Year and Final Publication Year and advises <=5-year ranges."
+        },
+        {
+          "url": "https://webofscience.zendesk.com/hc/en-us/articles/26916283577745-Document-Types",
+          "locator": "Article; Proceedings Paper",
+          "claim": "Official document types 'Article' and 'Proceedings Paper' require logging active Core Collection editions (CPCI-S/CPCI-SSH for Proceedings Paper)."
+        }
+      ]
+    }
+  ],
+  "acm_short_paper_assessment": {
+    "verdict": "REMOVE_FILTER",
+    "reason": "Official ACM article-type documentation defines Short Paper as an APC-eligible, fully peer-reviewed article that reports on original research, contains many of the same characteristics as a Research Article, and is intended to be self-contained—distinct from Non-APC-Eligible types such as Demonstration, Extended abstract, Poster, and Work in Progress. Protocol Amendment 003 specifies that report completeness is judged by substantive primary-research content (method/architecture, system/assumptions, evaluation method, and analyzable results) rather than page count or a venue label such as 'short paper'. Keeping the database-level instruction 'Do not include Short-Paper' would therefore risk excluding substantively complete primary-research reports before full-text screening.",
+    "official_evidence": [
+      {
+        "url": "https://libraries.acm.org/acmopen/article-types",
+        "locator": "APC-Eligible: Short Paper; Non-APC-Eligible: Demonstration, Extended abstract, Poster, Work in Progress"
+      }
+    ],
+    "protocol_effect": "Prospective filter update required before executing S-03: remove the 'Do not include Short-Paper' exclusion from ACM interface filters so ACM Short Papers are retrieved and evaluated under Amendment 003's substantive-content rule during screening (while Demonstration, Extended abstract, Poster, and Work in Progress may remain excluded)."
+  },
+  "seed_matrix_audit": {
+    "unique_doi_rows": 20,
+    "query_columns": 8,
+    "expectation_cells": 160,
+    "duplicate_doi_rows": 0,
+    "missing_cells": 0,
+    "invalid_values": [],
+    "per_query_expected_match_counts": {
+      "IEEE_HR": 9,
+      "IEEE_COMP": 8,
+      "ACM_HR": 1,
+      "ACM_COMP": 0,
+      "SCOPUS_HR": 14,
+      "SCOPUS_COMP": 8,
+      "WOS_HR": 14,
+      "WOS_COMP": 8
+    },
+    "interpretation_boundary": "expected sensitivity only; 62 total EXPECTED_MATCH cells and 98 EXPECTED_MISS cells across 160 cells represent pre-search calibration hypotheses only, with zero claim of platform indexing, database coverage, or executed searches; 3 of 20 seed DOIs (10.1109/icus55513.2022.9987114, 10.1109/ispa63168.2024.00222, 10.1109/icc52391.2025.11161364) are EXPECTED_MISS across all 8 queries."
+  },
+  "unresolved_items": [
+    "IEEE Xplore Web Command Search documentation (https://ieeexplore.ieee.org/Xplorehelp/searching-ieee-xplore/command-search) was blocked during automated browsing; verify \"All Metadata\": syntax, Web Command Search wildcard limit for the 4 wildcards in IEEE_COMP (vs. Metadata API's 2-wildcard limit), and Web UI Language/Content-Type/Year facet behavior directly in the authenticated IEEE Xplore Web interface before S-02.",
+    "ACM Digital Library Search and Browse syntax documentation (https://libraries.acm.org/digital-library/search-and-browse) was inaccessible during automated browsing; verify exact field-prefix syntax (whether unscoped queries default to full text vs. metadata), trailing wildcard '*' support in ACM_COMP, exact UI content-type labels ('Conference-Paper' vs. 'Research Article'/'Short Paper'), and Language filter availability directly in the authenticated ACM DL Advanced Search interface before S-03.",
+    "Web of Science Core Collection: verify exact Language filter syntax/UI control (LA= was not listed on the browsed Advanced Search Field Tags page) and confirm institutional Core Collection edition subscriptions (SCI-EXPANDED, CPCI-S, ESCI) before S-05.",
+    "Scopus and Web of Science date bounds: 2026 upper bounds (PUBYEAR BEF 2027; PY=2026) are provisional execution-window syntax and do not imply 2026 coverage is complete; both PUBYEAR (Scopus in-press) and PY (WoS Early Access Year vs. Final Publication Year) can return records whose online-first and issue years differ, requiring exact date verification during screening.",
+    "Scholarly-record discovery criterion is NOT_APPLICABLE for S01-QUERY-VALIDATION-v1 (requested scholarly records = 0)."
+  ],
+  "database_result_counts_claimed": 0,
+  "project_files_modified": 0
+}
