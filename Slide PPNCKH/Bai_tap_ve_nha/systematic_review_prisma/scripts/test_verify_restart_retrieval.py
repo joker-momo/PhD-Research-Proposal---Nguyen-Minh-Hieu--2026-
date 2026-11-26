@@ -29,6 +29,22 @@ class RetrievalTests(unittest.TestCase):
             request = opener.return_value.open.call_args.args[0]
             self.assertTrue(request.full_url.endswith("example%20paper.pdf"))
 
+    def test_slow_pdf_body_stops_at_deadline(self):
+        from urllib.parse import urlsplit
+
+        url = "https://example.org/files/example.pdf"
+        with patch.object(retrieval, "public_url", side_effect=urlsplit), \
+             patch.object(retrieval, "build_opener") as opener, \
+             patch.object(retrieval, "monotonic", side_effect=[0, 1, 16]):
+            response = opener.return_value.open.return_value.__enter__.return_value
+            response.read1.return_value = b"%PDF-"
+            event, data = retrieval.fetch(url, "public_pdf_candidate")
+
+        self.assertEqual(event["outcome"], "unavailable")
+        self.assertIn("body budget", event["detail"])
+        self.assertEqual(data, b"")
+        self.assertEqual(response.read1.call_count, 1)
+
     def test_unavailable_remains_unretrieved(self):
         record={"screening_id":"R0001","doi":"10.1234/test","title":"Example paper","authors":"J. Doe"}
         with tempfile.TemporaryDirectory() as d, patch.object(retrieval,"fetch",side_effect=lambda url, route: ({"route":route,"url":url,"outcome":"http_error","http":403},b"")):

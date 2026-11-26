@@ -15,6 +15,7 @@ from datetime import datetime
 from html.parser import HTMLParser
 from http.client import HTTPException
 from pathlib import Path
+from time import monotonic
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urljoin, urlsplit, urlunsplit
 from urllib.request import Request, HTTPRedirectHandler, build_opener
@@ -69,10 +70,18 @@ def fetch(url, kind):
         with build_opener(PublicRedirect()).open(request, timeout=5) as response:
             event.update(http=response.status, final_url=response.url, media_type=response.headers.get_content_type())
             cap = 3 * 1024 * 1024 if kind in {"crossref", "openalex", "publisher_landing"} else LIMIT
-            data = response.read(cap + 1)
+            data = bytearray()
+            deadline = monotonic() + 15
+            while len(data) <= cap:
+                if monotonic() >= deadline:
+                    raise TimeoutError("Full response exceeded the 15-second body budget")
+                chunk = response.read1(min(256 * 1024, cap + 1 - len(data)))
+                if not chunk:
+                    break
+                data.extend(chunk)
             if len(data) > cap:
                 return event | {"outcome": "size_limit"}, b""
-            return event | {"outcome": "response"}, data
+            return event | {"outcome": "response"}, bytes(data)
     except HTTPError as e:
         outcome = "anti_bot_challenge" if e.headers.get("cf-mitigated") == "challenge" else "http_error"
         return event | {"outcome": outcome, "http": e.code, "final_url": e.url}, b""

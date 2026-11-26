@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T20:01:22+07:00",
+  "updated_at": "2026-11-26T20:08:32+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
@@ -14,19 +14,13 @@
     "started_at": "2026-11-26T19:30:11+07:00",
     "decision_id": "restart-08-pdf-verification-v2",
     "records_total": 137,
-    "records_reviewed": 100,
-    "updated_at": "2026-11-26T20:01:22+07:00",
-    "active_batch": {
-      "batch": 6,
-      "task_id": "7a419e99-4258-4dc8-ae9b-6d403d0c2fed",
-      "context_id": "5c77c75b-17dc-45cf-9416-60eb4a1c52fe",
-      "submitted_at": "2026-11-26T20:01:22+07:00"
-    }
+    "records_reviewed": 120,
+    "updated_at": "2026-11-26T20:08:32+07:00"
   },
   "next_task": {
-    "task_id": "restart-08-batch06",
+    "task_id": "restart-08-batch07",
     "owner": "GEMINI_RESEARCH",
-    "status": "active",
+    "status": "ready",
     "action": "Process the next committed direct project queue.",
     "acceptance": "Exact IDs and one verified full-text result or exact access shortfall per queued row."
   },
@@ -113,10 +107,10 @@
       },
       "fulltext_retrieval": {
         "sought": 137,
-        "reviewed": 100,
-        "retrieved_pdf": 41,
+        "reviewed": 120,
+        "retrieved_pdf": 43,
         "retrieved_html": 0,
-        "not_retrieved": 59
+        "not_retrieved": 77
       }
     }
   },
