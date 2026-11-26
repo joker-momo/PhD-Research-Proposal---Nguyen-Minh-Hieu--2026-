@@ -1,10 +1,24 @@
-# Canonical SN Computer Science LaTeX source
+# SN Computer Science coursework manuscript
 
-User policy:always LaTeX compiled to PDF. main.tex and references.bib are canonical;Word is historical.
+Active source: `main.tex`; bibliography: `references.bib`; compiled output: `main.pdf`.
+The original Springer Nature `sn-jnl.cls` and `sn-vancouver-num.bst` are retained unchanged.
 
-The source uses the official sn-jnl class with sn-vancouver-num bibliography. Current working corpus:24 included among27 assessed;34 cited references;17pages. Domain9 aggregate is withheld pending consistent reassessment. Author metadata/declarations are provisional;this is not a submission-approved manuscript.
+Current basis: 46 full-text reports screened, 36 working included, two excluded,
+eight awaiting classification. Unique-study count is unknown. This is an interim
+review copy, not a submission-ready or author-approved manuscript.
 
-Build with Tectonic:tectonic --keep-logs --keep-intermediates main.tex.
-Native alternative:pdflatex main.tex,bibtex main,pdflatex main.tex,pdflatex main.tex. A complete TeX Live installation needs the standard packages used by the official class,including sttools(cuted),appendix,booktabs,threeparttable and wrapfig. The isolated TeX Live2025 user-tree compatibility check is recorded with the dataset.
+Build in this directory:
 
-Checks cover resolved citations,counts,build warnings and rendered pages. They do not establish final PRISMA completeness or author consent. Dated releases preserve their source hashes;older23-study releases remain historical.
+```sh
+tectonic --keep-logs --keep-intermediates main.tex
+```
+
+The release audit and 36-row extraction table are in `../../release_46report/`.
+The complete 27-item reporting checklist is `../../prisma_2020_checklist_working.md`.
+Twenty-four reports have detailed extraction and nine usable appraisal domains;
+12 additional reports have minimum source-located extraction and no detailed
+appraisal. Missing conference page metadata is omitted, not invented.
+
+Authorship, declarations, complete database searches, study-family reconciliation,
+and uniform appraisal remain outside the completed bounded delivery. No submission
+or email has been performed. Historical packages must not be used as the current PDF.

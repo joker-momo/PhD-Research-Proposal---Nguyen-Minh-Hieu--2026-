@@ -1,0 +1,98 @@
+{
+  "checked_at": "2026-11-26T11:08:27+07:00",
+  "checks": {
+    "all_46_reports_accounted": "PASS",
+    "decision_arithmetic": "PASS",
+    "36_extraction_rows_and_table_rows_match": "PASS",
+    "every_extraction_row_has_locator": "PASS",
+    "12_delta_records_24_exact_page_quotes": "PASS",
+    "92_original_evidence_hashes_match": "PASS",
+    "retained_appraisal_216": "PASS",
+    "appraisal_missingness_explicit": "PASS",
+    "53_citations_resolved_exact_bib_set": "PASS",
+    "53_dois_unique": "PASS",
+    "no_missing_bibliographic_identity": "PASS",
+    "no_undefined_citations_or_overfull_boxes": "PASS",
+    "no_manuscript_placeholder_markers": "PASS",
+    "27_checklist_items": "PASS",
+    "abstract_word_range": "PASS",
+    "22_nonempty_pdf_pages": "PASS",
+    "source_newer_than_historical_pdf": "PASS",
+    "author_identities_not_imputed": "PASS",
+    "no_new_performance_effects": "PASS",
+    "unknown_study_count_retained": "PASS",
+    "all_36_extraction_cells_explicit": "PASS",
+    "46_report_dois_unique": "PASS",
+    "no_unapproved_submission_changes": "PASS"
+  },
+  "observations": {
+    "reports": 46,
+    "working_included": 36,
+    "excluded": 2,
+    "awaiting_classification": 8,
+    "extraction_rows": 36,
+    "detailed_extraction": 24,
+    "minimum_extraction": 12,
+    "accepted_appraisal_judgments": 216,
+    "citation_count": 53,
+    "abstract_words": 194,
+    "pages": 22,
+    "bibliography_warnings": [
+      "Warning--empty pages in candidate22",
+      "Warning--empty pages in candidate23",
+      "Warning--empty pages in candidate24"
+    ],
+    "updated_pages_inspected": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ]
+  },
+  "visual_review": {
+    "status": "PASS",
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "method": "pdftoppm 110 dpi; all 22 pages inspected; after final wording edit pages 1-14 pixel-identical and changed pages 15-22 re-inspected",
+    "findings": "No clipped content, overlapping text, unresolved citation marks or overflowing tables observed."
+  },
+  "boundaries": [
+    "This audit verifies release accounting and reused evidence; it is not a full-corpus appraisal, retraction audit, new systematic search or human adjudication.",
+    "12 delta reports have minimum extraction only; absent detail marked NOT_EXTRACTED.",
+    "3 BibTeX warnings for missing conference page ranges; no pages invented.",
+    "All 36 are working report-level inclusions; unique-study count unknown."
+  ],
+  "sha256": {
+    "main.tex": "dc6d65e25814cd669f1c3ec408c59c79950bc92b241d0ea3a50534cf2c27639c",
+    "main.pdf": "68f5b476dcb7b8594b118d1d7903bdee3b2e70456eefd98bb01cd88cba40c900",
+    "references.bib": "066b720dc707f1e66c840d3bffbe700d45ce7fbe823d1139891d04e6b08b8806",
+    "sn-jnl.cls": "36d0c3273a59d48dc6a9c7b080dfa1ec50dc10229d8751568d1f2e490ffa5ecc",
+    "sn-vancouver-num.bst": "7fa6df12ec8e8945c86958a50fb703d181522745adcf72bf95a86f3633540e8a"
+  }
+}

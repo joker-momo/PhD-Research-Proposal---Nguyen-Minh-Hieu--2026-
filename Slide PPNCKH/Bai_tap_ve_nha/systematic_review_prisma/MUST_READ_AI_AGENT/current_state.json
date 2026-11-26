@@ -1,49 +1,51 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T10:51:05+07:00",
+  "updated_at": "2026-11-26T11:09:11+07:00",
   "goal": {
-    "version": "HK261-PRISMA-SNCS-v2",
-    "status": "active",
-    "summary": "Complete the evidence-bounded PRISMA 2020 review, Springer Nature LaTeX manuscript, integrity checks and submission package; submission and course email remain user-authorized actions."
+    "version": "HK261-PRISMA-SNCS-v3-bounded-46-delivery",
+    "status": "bounded_delivery_completed_with_limitations",
+    "summary": "User timebox override: deliver only the 46-report Springer LaTeX/PDF interim review with honest PRISMA accounting and limitations; no new research dispatch, submission or course email. The broader systematic-search/submission objective is not claimed complete.",
+    "goal_engine_status_observed": "usageLimited"
   },
   "task": {
-    "task_id": "reconciliation-family-01",
+    "task_id": "complete-prisma-46-manuscript",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T10:38:07+07:00",
-    "updated_at": "2026-11-26T10:51:05+07:00",
-    "completed_at": "2026-11-26T10:51:05+07:00",
-    "decision_id": "reconciliation-family-01-v1"
+    "started_at": "2026-11-26T10:56:31+07:00",
+    "updated_at": "2026-11-26T11:09:11+07:00",
+    "completed_at": "2026-11-26T11:09:11+07:00",
+    "decision_id": "complete-prisma-46-manuscript-v1"
   },
   "next_task": {
-    "task_id": "author-adjudication-and-search-preparation",
+    "task_id": "none-in-current-delivery-scope",
     "owner": "CODEX_WRITING",
-    "status": "ready",
-    "action": "Create one eight-case adjudication table and consolidated author form; prepare one four-source search/export brief. Ask once; then run the formal-search phase without repeated blocked attempts.",
-    "acceptance": "Exactly8 cases,official URLs,binary questions andimpact;all author metadata fields covered;four-source brief with export-or-specific-blocker gate.",
-    "family_boundary": "46 accounted;37 mechanical candidate pairs unresolved;0 merges;provider evidence rejected;no family retry"
+    "status": "none",
+    "action": "Deliver the checked 46-report review copy. Do not automatically resume formal searches, author forms, corpus expansion, A2A dispatch, submission or email under this bounded override.",
+    "acceptance": "Current delivery: 46=36+2+8, 36 extraction rows, 27 checklist items, 22 visually inspected PDF pages, 53 resolved references; limitations retained."
   },
   "project": {
     "target_venue": "SN Computer Science",
-    "submission_status": "NOT_READY_NOT_SUBMITTED",
+    "submission_status": "NOT_SUBMITTED_OUTSIDE_CURRENT_SCOPE",
     "canonical_manuscript": "manuscript/sn_computer_science/main.tex",
     "canonical_bibliography": "manuscript/sn_computer_science/references.bib",
-    "manuscript_pages": 17,
-    "cited_references": 34
+    "manuscript_pages": 22,
+    "cited_references": 53,
+    "release_audit": "release_46report/integrity_audit.json",
+    "release_review": "release_46report/acceptance_review.md"
   },
   "evidence": {
     "retrieval_reports": 46,
     "screened_reports": 46,
     "working_decisions": {
-      "include": 32,
+      "include": 36,
       "exclude": 2,
-      "uncertain": 12
+      "uncertain": 8
     },
     "reconciliation_overlay": {
       "include": 36,
       "exclude": 2,
       "uncertain": 8,
-      "status": "working report-level overlay; not final study or PRISMA counts"
+      "status": "Accepted working report-level overlay adopted for this explicitly bounded manuscript; not final unique-study counts"
     },
     "screening_batches_accepted": 8,
     "evidence_checksums": "92/92 PASS",
@@ -55,13 +57,29 @@
       "final_study_count": null,
       "provider_status": "canceled_after_user_scope_reduction",
       "index": "screening_46/reconciliation/results/family_01_mechanical_candidates.json"
+    },
+    "manuscript_release": {
+      "screened_reports": 46,
+      "included_reports_working": 36,
+      "excluded_reports": 2,
+      "awaiting_classification_reports": 8,
+      "unique_studies": null,
+      "detailed_extraction_reports": 24,
+      "minimum_extraction_reports": 12,
+      "appraised_reports": 24,
+      "accepted_judgments": 216,
+      "withheld_domain": 9,
+      "audit_checks_passed": 23,
+      "audit_checks_total": 23,
+      "pages_visually_checked": 22,
+      "new_a2a_dispatches": 0
     }
   },
   "blockers": [
-    "Formal IEEE Xplore, ACM Digital Library, Scopus and Web of Science searches and exports are incomplete.",
-    "Report-version, study-family, extraction, appraisal and final PRISMA reconciliation are incomplete.",
-    "The manuscript must not absorb the 46-report working overlay before accepted reconciliation and synthesis gates.",
-    "Automatic Codex hook activation remains unverified; manual governance checks remain mandatory."
+    "Not a completed exhaustive search: core database exports and identification counts remain incomplete.",
+    "Eight reports await classification; study-family independence and final human adjudication are unresolved.",
+    "Twelve included reports have minimum extraction only and are not appraised; domain 9 is withheld for the 24-report subset.",
+    "Authorship/declarations are unconfirmed; no submission-ready claim, submission or email is authorized in the current task."
   ],
   "user_confirmation_required": [
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",

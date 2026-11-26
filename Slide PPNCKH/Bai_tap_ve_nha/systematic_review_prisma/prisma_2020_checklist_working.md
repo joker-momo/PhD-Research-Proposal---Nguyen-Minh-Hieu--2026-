@@ -1,52 +1,39 @@
-# PRISMA2020 working checklist:23-study Springer revision
+# PRISMA 2020 reporting checklist: 46-report coursework review
 
-Status:25 November2026. Page mapping refers to the17-page manuscript. Official guideline retained under reporting_guidelines/. This is a reporting map, not certification of a completed systematic review.
+Updated at: 2026-11-26T11:02:55+07:00
 
-Current evidence:26 assessed reports,23 included,1 excluded demo,2 uncertain (S19,C06). Formal database exports/reconciliation, expansion to30–35 and final author adjudication remain incomplete.
+This checklist maps all 27 items, including subitems, to the current Springer LaTeX review copy. It is a reporting map, not certification that the search or systematic-review process is complete. Corpus: **46 assessed reports = 36 working included + 2 excluded + 8 awaiting classification**. The number of unique studies is unknown.
 
-| Item | Requirement | Current evidence and remaining action |
-|---|---|---|
-|1|Systematic review in title|Reported,p.1; interim status also explicit |
-|2|Abstract reporting|Structured173-word abstract,p.1. Final source-specific search dates and complete selection results depend on unfinished searches |
-|3|Rationale|Introduction,pp.2–3; six-survey comparison bounded to inspected evidence |
-|4|Objectives/questions|Five questions and three numbered contributions,pp.2–3 |
-|5|Eligibility/grouping|Methods,pp.3–5; protocol and two dated amendments; distinguish partitioning from request/resource orchestration |
-|6|Sources/last search dates|Partial,Methods; planned IEEE/ACM/Scopus/WoS exports unresolved |
-|7|Full search strategies|Eight query translations retained; executed raw core exports incomplete |
-|8|Selection/reviewers/automation|Methods,p.4:Gemini notes,Codex checks,pending human adjudication; no dual-human screening claimed |
-|9|Collection/verification|Methods,p.4; source-located extraction and version flags; final author verification pending |
-|10a|Outcomes/result selection|Methods and Results,pp.4–5,9; new comparative candidate numeric effects not used |
-|10b|Other variables/missing data|Extraction schema and explicit unknown/not-reported fields; author-copy equivalence caveats |
-|11|Appraisal methods|Ten engineering-method domains,Methods; not a validated clinical bias instrument or certainty grade |
-|12|Effect measures|Study-specific definitions retained;19 latency-related outcomes are not a common effect scale; no pooled estimate |
-|13a|Synthesis contributors|23-study grouping,pp.5–9; final expansion/grouping pending |
-|13b|Preparation/conversion|No common-effect conversion or imputation; comparative new-candidate numeric findings quarantined |
-|13c|Displays|Interim flow,p.6;23-study table,pp.6–8; appraisal,p.10 |
-|13d|Synthesis method|Narrative/evidence-map synthesis,pp.5,10; heterogeneous outcomes/designs preclude defensible pooling in this dataset |
-|13e|Heterogeneity|Partition semantics,modality,workload,network/failure definitions,pp.8–12 |
-|13f|Sensitivity methods|Explicitly not performed,Methods; alternative J coding note is not a performed manuscript analysis |
-|14|Reporting-bias methods|Explicitly not formally assessed,Methods; absence of meta-analysis is not proof of no reporting bias |
-|15|Certainty methods|No outcome-level certainty framework applied; appraisal not presented as certainty |
-|16a|Selection/flow|Partial,pp.5–6:26=23+1+2. Final database record/report/study reconciliation incomplete |
-|16b|Excluded/uncertain reports|S03 demo excluded; S19 WIP and C06 runtime boundary uncertain,pp.5–6 and eligibility CSV |
-|17|Characteristics|23-study Table1,pp.6–8;interim_26report/data_extraction_eligible.csv |
-|18|Study appraisal|230 source-located judgments,95 yes/107 partial/28 no;Table2,p.10 and study-level CSV |
-|19|Individual results|Results,pp.8–10 and extraction CSV; qualitative additions carry source/version limits |
-|20a|Contributing characteristics/appraisal|Tables and Results,pp.6–10; full subgroup/sensitivity audit pending |
-|20b|Statistical synthesis|None performed; no pooled effect/variance estimate claimed |
-|20c|Heterogeneity findings|Narrative differences,pp.8–12; no universal superiority claim |
-|20d|Sensitivity findings|None performed; no unrun robustness claim |
-|21|Reporting-bias results|No formal results; explicit limitation,p.12 |
-|22|Certainty results|No outcome-level grades; methodological appraisal/generalizability distinct |
-|23a|Interpretation|Discussion,pp.10–12:conditional collaboration benefit |
-|23b|Evidence limitations|Simulation dominance,prototype/fault/artifact limits and author versions,pp.9–12 |
-|23c|Review limitations|Incomplete searches,target count,uncertain reports,AI-prepared decisions/no dual-human screening,p.12 |
-|23d|Implications|Bounded-partition/failure-comparison requirements,pp.11–13; proposed evaluation,not a validated new algorithm |
-|24a|Registration|Local protocol,not externally registered,Methods |
-|24b|Protocol access|Locally retained and included in interim supplementary package; final repository/upload decision pending |
-|24c|Amendments|Two dated files; title/scope/year changes tracked; doctoral roles do not change eligibility |
-|25|Support|Unconfirmed,Declarations,p.13; author-approved final statement required |
-|26|Interests|Pending all-author declarations,p.13 |
-|27|Materials|Local protocol/logs/tables retained; final supplementary/public availability decision pending,p.13 |
+| Item | Topic | Status | Locator | Limitation / evidence |
+|---|---|---|---|---|
+| 1 | Title | REPORTED | Title, p. 1 | Identifies an interim systematic review; no exhaustive-completeness claim. |
+| 2 | Abstract | PARTIAL | Structured abstract, p. 1 | Reports 46/36/2/8, extraction depth and limitations; complete database identification is unavailable. |
+| 3 | Rationale | REPORTED | Introduction | Six neighboring reviews; novelty claim bounded to inspected title/abstract evidence. |
+| 4 | Objectives | REPORTED | Methods: Review Questions; Introduction contributions | Five questions covering architecture, decisions, evaluation, resilience and evidence strength. |
+| 5 | Eligibility criteria | REPORTED | Methods: Eligibility Criteria | English primary reports, 2021-01-01 to 2026-11-25; multi-UAV inference/orchestration scope; working decisions. |
+| 6 | Information sources | PARTIAL | Methods: Information Sources and Search Strategy; formal_search_log_v0.2.csv | arXiv executed 2026-11-24; three access failures recorded; Scopus/WoS unexecuted; no invented last-search dates. |
+| 7 | Search strategies | PARTIAL | Methods: Information Sources and Search Strategy; sources/raw/arxiv_swarm_query_2026-11-24.xml; final_query_translations.md | Executed arXiv query/parameters reproduced; eight planned queries are not evidence of execution; pilot discovery not fully reproducible. |
+| 8 | Selection process | PARTIAL | Methods: Record Management and Selection | Eight AI-assisted batches plus accepted corrections; no independent dual-human screening; final adjudication pending. |
+| 9 | Data collection process | PARTIAL | Methods: Data Extraction and Quality Appraisal; release_46report/data_extraction_eligible.csv | 24 detailed rows and 12 minimum rows; source locators checked; remaining fields explicitly NOT_EXTRACTED. |
+| 10 | Data items (10a,10b) | PARTIAL | Methods: Data Extraction and Quality Appraisal; extraction field headers | Outcomes and contextual variables specified; no completeness claim for minimum rows; missing fields not treated as study-level absence. |
+| 11 | Study risk of bias assessment | PARTIAL | Methods: Data Extraction and Quality Appraisal; Results: Methodological Appraisal | Custom methodological appraisal, not a validated domain-specific risk-of-bias tool; nine domains in 24 reports; domain 9 withheld; 12 reports not assessed. |
+| 12 | Effect measures | NOT POOLED; LIMITATION REPORTED | Methods: Synthesis; Results: Synthesis Decision | Latency, energy, success and related quantities remain in source units/conditions; no common standardized effect estimate. |
+| 13 | Synthesis methods (13a-13f) | PARTIAL | Methods: Synthesis; Results: Partitioning and Orchestration | 13a grouping by topology/decisions; 13b no effect imputation; 13c narrative and characteristics/appraisal tables; 13d no meta-analysis; 13e qualitative heterogeneity only; 13f no formal sensitivity analysis. |
+| 14 | Reporting bias assessment | NOT PERFORMED | Methods: Synthesis; Discussion: Review Limitations | No formal reporting-bias method used; omission disclosed, not interpreted as low bias. |
+| 15 | Certainty assessment | NOT PERFORMED | Methods: Synthesis; Discussion: Review Limitations | No outcome-level certainty grading; methodological appraisal does not substitute for certainty. |
+| 16 | Selection results (16a,16b) | PARTIAL | Results: Report Selection; Figure 1; release_46report/report_accounting.csv | 46 assessed = 36 working included + 2 excluded + 8 awaiting classification; two cited exclusion reasons; identification-stage counts and unique studies unknown. |
+| 17 | Study characteristics | REPORTED AT REPORT LEVEL | Results: Report Characteristics; Table 1; extraction CSV | 36 rows with citations; 24 detailed and 12 minimum extraction; study-family unit unresolved. |
+| 18 | Risk of bias results | PARTIAL | Results: Methodological Appraisal; Table 2; release_46report/quality_appraisal_status.csv | 216 retained judgments across 24 reports and nine domains; domain 9 withheld; 12 unassessed; no full-corpus risk-of-bias estimate. |
+| 19 | Results of individual studies | PARTIAL | Table 1; Results subsections; extraction CSV | Report-level methods and source-located outcomes; no newly adopted comparative performance effects from the 12 additions. |
+| 20 | Synthesis results (20a-20d) | PARTIAL | Results: Partitioning and Orchestration through Synthesis Decision | 20a narrative and subset appraisal; 20b no pooled estimate; 20c heterogeneity described, not statistically tested; 20d no sensitivity analysis. |
+| 21 | Reporting biases | NOT ASSESSED | Methods: Synthesis; Discussion: Review Limitations | No reporting-bias result; coverage and selective-reporting uncertainty disclosed. |
+| 22 | Certainty of evidence | NOT ASSESSED | Methods: Synthesis; Discussion: Review Limitations | No certainty grades assigned. |
+| 23 | Discussion (23a-23d) | REPORTED | Discussion: Principal Findings, Evidence for Resilience, Evaluation and Reproducibility Gap, Implications for Future Study Design, Review Limitations | Interpretation, evidence limitations, review-process limitations and research implications separated; no validated new algorithm claimed. |
+| 24 | Registration/protocol (24a-24c) | REPORTED WITH DEVIATIONS | Methods: Review Design and Protocol; protocol.md; protocol_amendment_001.md; protocol_amendment_002.md | Locally fixed 2026-11-24; not registered; two amendments retained; incomplete searching and uneven extraction/appraisal disclosed as deviations. |
+| 25 | Support | UNCONFIRMED; DISCLOSED | Statements and Declarations: Funding | No funding/support statement confirmed; no fabricated no-funding declaration; no submission. |
+| 26 | Competing interests | UNCONFIRMED; DISCLOSED | Statements and Declarations: Competing Interests | Not approved by prospective authors; no fabricated absence of conflicts. |
+| 27 | Availability of data/code/materials | REPORTED LOCALLY | Statements and Declarations: Data Availability; Appendix; release_46report/README.md | Protocol, raw search response, accepted screening, extraction, appraisal and accounting retained locally; no public repository claimed; publisher PDFs not redistributed. |
 
-Final gate:complete actual searches/selection and source checks; reach or transparently resolve the30–35-study target; adjudicate uncertain reports; obtain author approval; resolve or justify partial/unperformed items; regenerate final tables/flow/page mapping. A successful build does not replace these requirements.
+## Page map for the compiled 22-page review copy
+
+Title/abstract: p. 1; Introduction: pp. 1–2; Methods: pp. 3–6; report selection: p. 6; flow: p. 7; Table 1: pp. 7–10; partitioning/orchestration: pp. 10–11; evaluation: pp. 11–12; mobility/recovery and appraisal: p. 12; Table 2 and synthesis decision: p. 13; Discussion: pp. 13–15; Conclusion: pp. 15–16; declarations: p. 16; Appendix A: pp. 16–17; References: pp. 17–22. These anchors were checked against the compiled PDF.

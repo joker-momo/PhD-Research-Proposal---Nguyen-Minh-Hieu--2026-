@@ -1,0 +1,11 @@
+claim_id,statement,source
+FLOW,46 = 36 + 2 + 8,report_accounting.csv; prisma_counts.json
+EXTRACT,36 = 24 detailed + 12 minimum,data_extraction_eligible.csv
+APPRAISAL,216 = 24 reports * 9 domains = 100 yes + 110 partial + 6 no,quality_appraisal_status.csv
+MODALITIES_SUBSET,21 simulation; 3 prototype components; 1 emulation; 1 analytical; categories overlap; denominator 24,../interim_27report/evidence_map.csv
+OUTCOMES_SUBSET,20 latency; 7 energy; denominator 24,../interim_27report/evidence_map.csv
+UNCERTAINTY_SUBSET,9 repeated-run/uncertainty; denominator 24,../interim_27report/evidence_map.csv
+MECHANISMS_SUBSET,6 migration/reassignment/fallback; denominator 24,../interim_27report/evidence_map.csv
+ARTIFACT_SUBSET,1 located public repository; denominator 24; not replayed,../interim_27report/evidence_map.csv
+ARXIV,4 returned records; not added to 46 before mapping,../sources/raw/arxiv_swarm_query_2026-11-24.xml
+DELTA_LOCATORS,12 reports; 24/24 inference/evaluation page-quote matches,delta_extraction_evidence.json
