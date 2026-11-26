@@ -1,0 +1,75 @@
+{
+  "task_id": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+  "transport": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T17:51:06.433+00:00"
+  },
+  "result_chars": 27345,
+  "completion_marker": true,
+  "parsed_rows": 56,
+  "malformed": [],
+  "unknown": [],
+  "expected": 50,
+  "returned": 50,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [],
+  "unexpected_access": [],
+  "summary": [
+    {
+      "summary": true,
+      "returned_keys": 50,
+      "unresolved": [],
+      "tools": {
+        "used": [
+          "client:view_file",
+          "client:grep_search"
+        ],
+        "unavailable": [
+          "PyMuPDF",
+          "MinerU",
+          "Marker (local command execution prohibited by brief)"
+        ]
+      },
+      "workers_used": false,
+      "worker_assignments": []
+    }
+  ],
+  "locators": 105,
+  "exact_quote_locators": 67,
+  "needs_visual_cell": [],
+  "bad_domains": {
+    "R0001/D01": [
+      "quote mismatch p1: We develop a cloud-edge-end collaborative inference service framework for dynamic UAV scenarios"
+    ],
+    "R0001/D06": [
+      "quote mismatch p3: as a increases, the rewards of all methods exhibit a decreasing trend.",
+      "no observed anchor"
+    ],
+    "R0002/D07": [
+      "quote mismatch p7: Considering the cost and complexity of real-world large-scale deployment, simulation experiments are performed"
+    ],
+    "R0002/D08": [
+      "quote mismatch p9: The experiments based on real-world platform configurations comprehensively verified the effectiveness and efficiency of Promise."
+    ],
+    "R0002/D09": [
+      "quote mismatch p7: a ResNet-18 model trained on the CIFAR-10 dataset is adopted for image classification."
+    ],
+    "R0003/D01": [
+      "quote mismatch p2: Within the swarm, UAV U1 has the information of all the UAVs' trajectories, channel conditions, and inference task distributions."
+    ],
+    "R0003/D07": [
+      "quote mismatch p2: Within the swarm, UAV U1 has the information of all the UAVs' trajectories, channel conditions, and inference task distributions."
+    ],
+    "R0006/D08": [
+      "quote mismatch p7: Two-Stage attains 527 ms, outperforming Greedy+SCA (1,292 ms), DP+RW (1,643 ms), and Joint-PSO (1,239 ms) by 57.5%-67.9%."
+    ],
+    "R0009/D02": [
+      "quote mismatch p4: The constraints C3-C4 limit the range and speed of the activity of the UAVs"
+    ],
+    "R0009/D05": [
+      "quote mismatch p4: We aim to minimize the system's weighted latency and energy consumption"
+    ]
+  }
+}
