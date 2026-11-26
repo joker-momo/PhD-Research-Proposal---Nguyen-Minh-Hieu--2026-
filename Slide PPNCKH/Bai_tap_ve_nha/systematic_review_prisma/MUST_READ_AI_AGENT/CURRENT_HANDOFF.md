@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T07:09:59+07:00
+**updated_at:** 2026-11-26T07:10:25+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -163,6 +163,13 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
+**USER-REQUESTED HOLD:** Finish merge/cleanup of identity_dates_01, then stop
+before preparing or dispatching its correction. The coordinating chat will
+commit the 51 authorized external baseline entries on a separate branch and
+merge/clean it. Resume only after that handoff confirms the new canonical state.
+This thread must not stage or modify the external baseline.
+
+
 After rejection commit/merge/cleanup, prepare a targeted correction brief for
 `screening_46/reconciliation/results/identity_dates_01.json`, parent task
 01a21521-896b-7bdf-8bcb-1b0cfda69f2f. Review A3 failed: seven noncontiguous
@@ -180,7 +187,7 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
   "task_id": "reconciliation-identity-date-01",
   "status": "rejected",
   "started_at": "2026-11-26T06:54:09+07:00",
-  "updated_at": "2026-11-26T07:09:59+07:00",
+  "updated_at": "2026-11-26T07:10:25+07:00",
   "completed_at": "2026-11-26T07:09:59+07:00"
 }
 -->

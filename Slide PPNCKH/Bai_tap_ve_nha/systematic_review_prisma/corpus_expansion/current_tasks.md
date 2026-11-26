@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T07:09:59+07:00
+Updated_at: 2026-11-26T07:10:25+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -31,6 +31,13 @@ without blocking dispatch.
 | Screening batch 08 | C22-C25, SNCS | correction accepted working screening | 4 INCLUDE, 1 UNCERTAIN; 32 corrected / 40 combined locators; `screening_46/reviews/batch_08_correction_review.md` | Consolidate 46-report ledger, then reconcile |
 
 ## Reconciliation next task
+
+**USER-REQUESTED HOLD:** Finish merge/cleanup of identity_dates_01, then stop
+before preparing or dispatching its correction. The coordinating chat will
+commit the 51 authorized external baseline entries on a separate branch and
+merge/clean it. Resume only after that handoff confirms the new canonical state.
+This thread must not stage or modify the external baseline.
+
 
 Identity/date primary completed but rejected A3: 7 noncontiguous excerpts,
 1 unsupported full-text equivalence and 1 incorrect title word count. Other
@@ -81,7 +88,7 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
   "task_id": "reconciliation-identity-date-01",
   "status": "rejected",
   "started_at": "2026-11-26T06:54:09+07:00",
-  "updated_at": "2026-11-26T07:09:59+07:00",
+  "updated_at": "2026-11-26T07:10:25+07:00",
   "completed_at": "2026-11-26T07:09:59+07:00"
 }
 -->
