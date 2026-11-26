@@ -1,27 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:41:36+07:00",
+  "updated_at": "2026-11-26T23:42:36+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-b02-r0062-precision-review",
+    "task_id": "restart-11-b01-parent-only-brief",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T23:41:36+07:00",
-    "updated_at": "2026-11-26T23:41:36+07:00",
-    "completed_at": "2026-11-26T23:41:36+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_r0062_precision_review.md",
-    "decision_id": "restart-11-b02-r0062-precision-review-v1"
+    "started_at": "2026-11-26T23:42:36+07:00",
+    "updated_at": "2026-11-26T23:42:36+07:00",
+    "completed_at": "2026-11-26T23:42:36+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_parent_only_brief.md",
+    "decision_id": "restart-11-b01-parent-only-brief-v1"
   },
   "next_task": {
-    "task_id": "restart-11-p08-unblock",
+    "task_id": "restart-11-b01-parent-only",
     "owner": "GEMINI_RESEARCH",
-    "status": "blocked",
-    "action": "Resolve Batch 01 native multi-PDF access and obtain authorization for Batch 02 issues outside the three specified fields.",
-    "acceptance": "No new dispatch until the access condition changes or new scope is authorized; P09 waits for P08."
+    "status": "ready",
+    "action": "Open 13 named PDFs serially in one Gemini.app parent; correct only the 43 failed keys.",
+    "acceptance": "43/43 exact keys; 13/13 access dispositions; zero workers and unsupported claims.",
+    "dispatch_brief": "restart_2026_11_26/extraction/batch_01_parent_only_brief.md",
+    "message_id": "hk261-p08-b01-parent-only-43-v1"
   },
   "project": {
     "target_venue": "SN Computer Science",
