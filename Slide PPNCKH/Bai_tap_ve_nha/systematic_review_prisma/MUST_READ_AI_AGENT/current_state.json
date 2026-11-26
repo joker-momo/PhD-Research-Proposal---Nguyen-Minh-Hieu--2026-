@@ -1,33 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T10:28:44+07:00",
+  "updated_at": "2026-11-26T10:34:25+07:00",
   "goal": {
     "version": "HK261-PRISMA-SNCS-v2",
     "status": "active",
     "summary": "Complete the evidence-bounded PRISMA 2020 review, Springer Nature LaTeX manuscript, integrity checks and submission package; submission and course email remain user-authorized actions."
   },
   "task": {
-    "task_id": "reconciliation-dates-02-evidence-correction-brief",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T10:28:44+07:00",
-    "updated_at": "2026-11-26T10:28:44+07:00",
-    "completed_at": "2026-11-26T10:28:44+07:00",
-    "decision_id": "reconciliation-dates-02-evidence-correction-brief-v1"
-  },
-  "next_task": {
     "task_id": "reconciliation-dates-02-evidence-correction",
     "owner": "GEMINI_RESEARCH",
+    "status": "completed",
+    "started_at": "2026-11-26T10:29:27+07:00",
+    "updated_at": "2026-11-26T10:34:25+07:00",
+    "completed_at": "2026-11-26T10:34:25+07:00",
+    "decision_id": "reconciliation-dates-02-evidence-correction-v1"
+  },
+  "next_task": {
+    "task_id": "reconciliation-study-family-brief",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Route committed dates_02_evidence_correction.md once; preserve primary/fallback identifiers; review D1-D5 before adoption.",
-    "acceptance": "6 identities,12 direct-route attempt records; runtime timestamps or honest unavailable-clock shortfall; correct publication date kinds; zero invented source facts.",
-    "prior_attempt": {
-      "status": "REJECTED_D2_D3_D4 with zero adopted records",
-      "primary_task_id": "01a215dc-a11b-70c7-8434-792ab19b3d9c",
-      "primary_result": "quota-only",
-      "fallback_task_id": "01a215dc-cc27-73fb-8933-0a471cf3ac32",
-      "fallback_result": "completed but rejected: 13 invalid timestamps and 6 misclassified date sources"
-    }
+    "action": "Prepare bounded report-version and study-family reconciliation from accepted local full texts/identity evidence; preserve6 unresolved publication dates and2 unresolved scope gates. Do not repeat the unavailable direct date route.",
+    "acceptance": "All46 report IDs accounted for;version/family links sourced;unknown equivalence explicit;no final PRISMA counts before reconciliation.",
+    "date_audit": "screening_46/reconciliation/results/dates_02_evidence_correction_accepted_access_audit.json"
   },
   "project": {
     "target_venue": "SN Computer Science",

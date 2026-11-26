@@ -1,0 +1,25 @@
+{
+  "accepted_at": "2026-11-26T10:34:25+07:00",
+  "status": "accepted_access_limitation_only",
+  "provider_result": "dates_02_evidence_correction_fallback.json",
+  "review": "../reviews/dates_02_evidence_correction_fallback_review.md",
+  "record_ids": [
+    "C05",
+    "C09",
+    "C10",
+    "C13",
+    "C14",
+    "C19"
+  ],
+  "new_publication_dates": 0,
+  "eligibility_changes": 0,
+  "prior_accepted_evidence": "identity_dates_01_accepted.json",
+  "unresolved_date_ids": [
+    "C05",
+    "C09",
+    "C10",
+    "C13",
+    "C14",
+    "C19"
+  ]
+}

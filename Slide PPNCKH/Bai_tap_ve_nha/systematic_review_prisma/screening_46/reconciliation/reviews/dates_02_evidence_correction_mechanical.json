@@ -1,0 +1,17 @@
+{
+  "reviewed_at": "2026-11-26T10:34:25+07:00",
+  "records": 6,
+  "exact_identities": 6,
+  "duplicate_doi_title": 0,
+  "sources": 18,
+  "attempt_records": 12,
+  "routes_per_record": 2,
+  "unavailable_tool_records": 12,
+  "null_unobserved_clock_status_fields": 12,
+  "unresolved_date_gates": 6,
+  "new_publication_dates": 0,
+  "independent_tool_errors": 12,
+  "missing_references": 0,
+  "verdict": "ACCEPTED_ACCESS_LIMITATION_ONLY",
+  "private_provider_trace": "not exposed; independent current web tool corroboration saved separately"
+}

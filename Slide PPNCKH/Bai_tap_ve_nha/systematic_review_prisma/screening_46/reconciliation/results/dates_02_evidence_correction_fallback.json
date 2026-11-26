@@ -1,0 +1,599 @@
+{
+  "task": "dates_02_evidence_correction",
+  "parent_task_id": "01a215dc-cc27-73fb-8933-0a471cf3ac32",
+  "window": {
+    "start": "2021-01-01",
+    "end": "2026-11-25"
+  },
+  "records": [
+    {
+      "id": "C05",
+      "title": "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems",
+      "authors": [
+        "Hao Hao",
+        "Changqiao Xu",
+        "Wei Zhang",
+        "Shujie Yang",
+        "Xiaolong Wang",
+        "Huiling Shi",
+        "Gabriel-Miro Muntean"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "doi": "10.1109/tcsvt.2026.3745821",
+      "date_gate": "UNCERTAIN",
+      "publication_dates": [],
+      "rationale": "Identity preserved from supplied canonical input and accepted prior local evidence [C05_ID]. Both requested direct routes were attempted by the available web tool but were inaccessible; no authoritative publication date was observed [C05_XR_ATTEMPT,C05_IEEE_ATTEMPT].",
+      "source_ids": [
+        "C05_ID",
+        "C05_XR_FAIL",
+        "C05_IEEE_FAIL"
+      ],
+      "attempt_ids": [
+        "C05_XR_ATTEMPT",
+        "C05_IEEE_ATTEMPT"
+      ],
+      "unresolved": [
+        "Authoritative publication date was not observed from either requested direct URL [C05_XR_FAIL,C05_IEEE_FAIL]."
+      ],
+      "manual_action": {
+        "url": "https://api.crossref.org/works/10.1109/tcsvt.2026.3745821",
+        "field": "message.published.date-parts",
+        "action": "Perform one authorized direct observation and classify using the observed publication date."
+      }
+    },
+    {
+      "id": "C09",
+      "title": "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms",
+      "authors": [
+        "HyungBin Park",
+        "SuKyoung Lee"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3755315",
+      "date_gate": "UNCERTAIN",
+      "publication_dates": [],
+      "rationale": "Identity preserved from supplied canonical input and accepted prior local evidence [C09_ID]. Both requested direct routes were attempted by the available web tool but were inaccessible; no authoritative publication date was observed [C09_XR_ATTEMPT,C09_IEEE_ATTEMPT].",
+      "source_ids": [
+        "C09_ID",
+        "C09_XR_FAIL",
+        "C09_IEEE_FAIL"
+      ],
+      "attempt_ids": [
+        "C09_XR_ATTEMPT",
+        "C09_IEEE_ATTEMPT"
+      ],
+      "unresolved": [
+        "Authoritative publication date was not observed from either requested direct URL [C09_XR_FAIL,C09_IEEE_FAIL]."
+      ],
+      "manual_action": {
+        "url": "https://api.crossref.org/works/10.1109/jiot.2026.3755315",
+        "field": "message.published.date-parts",
+        "action": "Perform one authorized direct observation and classify using the observed publication date."
+      }
+    },
+    {
+      "id": "C10",
+      "title": "A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference",
+      "authors": [
+        "Songwei Li",
+        "Zhihan Wang",
+        "Jiebei Shi",
+        "Jiwei Huang"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3740035",
+      "date_gate": "UNCERTAIN",
+      "publication_dates": [],
+      "rationale": "Identity preserved from supplied canonical input and accepted prior local evidence [C10_ID]. Both requested direct routes were attempted by the available web tool but were inaccessible; no authoritative publication date was observed [C10_XR_ATTEMPT,C10_IEEE_ATTEMPT].",
+      "source_ids": [
+        "C10_ID",
+        "C10_XR_FAIL",
+        "C10_IEEE_FAIL"
+      ],
+      "attempt_ids": [
+        "C10_XR_ATTEMPT",
+        "C10_IEEE_ATTEMPT"
+      ],
+      "unresolved": [
+        "Authoritative publication date was not observed from either requested direct URL [C10_XR_FAIL,C10_IEEE_FAIL]."
+      ],
+      "manual_action": {
+        "url": "https://api.crossref.org/works/10.1109/jiot.2026.3740035",
+        "field": "message.published.date-parts",
+        "action": "Perform one authorized direct observation and classify using the observed publication date."
+      }
+    },
+    {
+      "id": "C13",
+      "title": "RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV Swarm",
+      "authors": [
+        "Shengjie Zhong",
+        "Zhongliang Zhao",
+        "Jingxuan Chen",
+        "Xianbin Cao",
+        "Zhiyi Liu",
+        "Dapeng O. Wu",
+        "Tony Q. S. Quek"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Vehicular Technology",
+      "doi": "10.1109/tvt.2026.3755123",
+      "date_gate": "UNCERTAIN",
+      "publication_dates": [],
+      "rationale": "Identity preserved from supplied canonical input and accepted prior local evidence [C13_ID]. Both requested direct routes were attempted by the available web tool but were inaccessible; no authoritative publication date was observed [C13_XR_ATTEMPT,C13_IEEE_ATTEMPT].",
+      "source_ids": [
+        "C13_ID",
+        "C13_XR_FAIL",
+        "C13_IEEE_FAIL"
+      ],
+      "attempt_ids": [
+        "C13_XR_ATTEMPT",
+        "C13_IEEE_ATTEMPT"
+      ],
+      "unresolved": [
+        "Authoritative publication date was not observed from either requested direct URL [C13_XR_FAIL,C13_IEEE_FAIL]."
+      ],
+      "manual_action": {
+        "url": "https://api.crossref.org/works/10.1109/tvt.2026.3755123",
+        "field": "message.published.date-parts",
+        "action": "Perform one authorized direct observation and classify using the observed publication date."
+      }
+    },
+    {
+      "id": "C14",
+      "title": "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks",
+      "authors": [
+        "Lianming Xu",
+        "Yixue Liang",
+        "Lei Jin",
+        "Li Wang",
+        "Ying-Jun Angela Zhang",
+        "Xiaoyu Zhao",
+        "Aiguo Fei"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3746980",
+      "date_gate": "UNCERTAIN",
+      "publication_dates": [],
+      "rationale": "Identity preserved from supplied canonical input and accepted prior local evidence [C14_ID]. Both requested direct routes were attempted by the available web tool but were inaccessible; no authoritative publication date was observed [C14_XR_ATTEMPT,C14_IEEE_ATTEMPT].",
+      "source_ids": [
+        "C14_ID",
+        "C14_XR_FAIL",
+        "C14_IEEE_FAIL"
+      ],
+      "attempt_ids": [
+        "C14_XR_ATTEMPT",
+        "C14_IEEE_ATTEMPT"
+      ],
+      "unresolved": [
+        "Authoritative publication date was not observed from either requested direct URL [C14_XR_FAIL,C14_IEEE_FAIL]."
+      ],
+      "manual_action": {
+        "url": "https://api.crossref.org/works/10.1109/jiot.2026.3746980",
+        "field": "message.published.date-parts",
+        "action": "Perform one authorized direct observation and classify using the observed publication date."
+      }
+    },
+    {
+      "id": "C19",
+      "title": "PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference in UAV-Assisted Internet of Vehicles Environments",
+      "authors": [
+        "DeokKyu Kwon",
+        "Ashok Kumar Das",
+        "Youngho Park"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3755176",
+      "date_gate": "UNCERTAIN",
+      "publication_dates": [],
+      "rationale": "Identity preserved from supplied canonical input and accepted prior local evidence [C19_ID]. Both requested direct routes were attempted by the available web tool but were inaccessible; no authoritative publication date was observed [C19_XR_ATTEMPT,C19_IEEE_ATTEMPT].",
+      "source_ids": [
+        "C19_ID",
+        "C19_XR_FAIL",
+        "C19_IEEE_FAIL"
+      ],
+      "attempt_ids": [
+        "C19_XR_ATTEMPT",
+        "C19_IEEE_ATTEMPT"
+      ],
+      "unresolved": [
+        "Authoritative publication date was not observed from either requested direct URL [C19_XR_FAIL,C19_IEEE_FAIL]."
+      ],
+      "manual_action": {
+        "url": "https://api.crossref.org/works/10.1109/jiot.2026.3755176",
+        "field": "message.published.date-parts",
+        "action": "Perform one authorized direct observation and classify using the observed publication date."
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_id": "C05_XR_ATTEMPT",
+      "record_id": "C05",
+      "route": "crossref",
+      "requested_url": "https://api.crossref.org/works/10.1109/tcsvt.2026.3745821",
+      "final_url": null,
+      "started_at": null,
+      "completed_at": null,
+      "http_status": null,
+      "outcome": "tool_unavailable",
+      "tool": "web.open",
+      "error_or_limitation": "Tool reported the direct URL was not accessible; tool exposed neither a runtime clock nor a verifiable HTTP response status.",
+      "source_ids": [
+        "C05_XR_FAIL"
+      ]
+    },
+    {
+      "attempt_id": "C05_IEEE_ATTEMPT",
+      "record_id": "C05",
+      "route": "publisher",
+      "requested_url": "https://ieeexplore.ieee.org/document/11745919/",
+      "final_url": null,
+      "started_at": null,
+      "completed_at": null,
+      "http_status": null,
+      "outcome": "tool_unavailable",
+      "tool": "web.open",
+      "error_or_limitation": "Tool reported the direct URL was not accessible; tool exposed neither a runtime clock nor a verifiable HTTP response status.",
+      "source_ids": [
+        "C05_IEEE_FAIL"
+      ]
+    },
+    {
+      "attempt_id": "C09_XR_ATTEMPT",
+      "record_id": "C09",
+      "route": "crossref",
+      "requested_url": "https://api.crossref.org/works/10.1109/jiot.2026.3755315",
+      "final_url": null,
+      "started_at": null,
+      "completed_at": null,
+      "http_status": null,
+      "outcome": "tool_unavailable",
+      "tool": "web.open",
+      "error_or_limitation": "Tool reported the direct URL was not accessible; tool exposed neither a runtime clock nor a verifiable HTTP response status.",
+      "source_ids": [
+        "C09_XR_FAIL"
+      ]
+    },
+    {
+      "attempt_id": "C09_IEEE_ATTEMPT",
+      "record_id": "C09",
+      "route": "publisher",
+      "requested_url": "https://ieeexplore.ieee.org/document/11804345/",
+      "final_url": null,
+      "started_at": null,
+      "completed_at": null,
+      "http_status": null,
+      "outcome": "tool_unavailable",
+      "tool": "web.open",
+      "error_or_limitation": "Tool reported the direct URL was not accessible; tool exposed neither a runtime clock nor a verifiable HTTP response status.",
+      "source_ids": [
+        "C09_IEEE_FAIL"
+      ]
+    },
+    {
+      "attempt_id": "C10_XR_ATTEMPT",
+      "record_id": "C10",
+      "route": "crossref",
+      "requested_url": "https://api.crossref.org/works/10.1109/jiot.2026.3740035",
+      "final_url": null,
+      "started_at": null,
+      "completed_at": null,
+      "http_status": null,
+      "outcome": "tool_unavailable",
+      "tool": "web.open",
+      "error_or_limitation": "Tool reported the direct URL was not accessible; tool exposed neither a runtime clock nor a verifiable HTTP response status.",
+      "source_ids": [
+        "C10_XR_FAIL"
+      ]
+    },
+    {
+      "attempt_id": "C10_IEEE_ATTEMPT",
+      "record_id": "C10",
+      "route": "publisher",
+      "requested_url": "https://ieeexplore.ieee.org/document/11719586/",
+      "final_url": null,
+      "started_at": null,
+      "completed_at": null,
+      "http_status": null,
+      "outcome": "tool_unavailable",
+      "tool": "web.open",
+      "error_or_limitation": "Tool reported the direct URL was not accessible; tool exposed neither a runtime clock nor a verifiable HTTP response status.",
+      "source_ids": [
+        "C10_IEEE_FAIL"
+      ]
+    },
+    {
+      "attempt_id": "C13_XR_ATTEMPT",
+      "record_id": "C13",
+      "route": "crossref",
+      "requested_url": "https://api.crossref.org/works/10.1109/tvt.2026.3755123",
+      "final_url": null,
+      "started_at": null,
+      "completed_at": null,
+      "http_status": null,
+      "outcome": "tool_unavailable",
+      "tool": "web.open",
+      "error_or_limitation": "Tool reported the direct URL was not accessible; tool exposed neither a runtime clock nor a verifiable HTTP response status.",
+      "source_ids": [
+        "C13_XR_FAIL"
+      ]
+    },
+    {
+      "attempt_id": "C13_IEEE_ATTEMPT",
+      "record_id": "C13",
+      "route": "publisher",
+      "requested_url": "https://ieeexplore.ieee.org/document/11804735/",
+      "final_url": null,
+      "started_at": null,
+      "completed_at": null,
+      "http_status": null,
+      "outcome": "tool_unavailable",
+      "tool": "web.open",
+      "error_or_limitation": "Tool reported the direct URL was not accessible; tool exposed neither a runtime clock nor a verifiable HTTP response status.",
+      "source_ids": [
+        "C13_IEEE_FAIL"
+      ]
+    },
+    {
+      "attempt_id": "C14_XR_ATTEMPT",
+      "record_id": "C14",
+      "route": "crossref",
+      "requested_url": "https://api.crossref.org/works/10.1109/jiot.2026.3746980",
+      "final_url": null,
+      "started_at": null,
+      "completed_at": null,
+      "http_status": null,
+      "outcome": "tool_unavailable",
+      "tool": "web.open",
+      "error_or_limitation": "Tool reported the direct URL was not accessible; tool exposed neither a runtime clock nor a verifiable HTTP response status.",
+      "source_ids": [
+        "C14_XR_FAIL"
+      ]
+    },
+    {
+      "attempt_id": "C14_IEEE_ATTEMPT",
+      "record_id": "C14",
+      "route": "publisher",
+      "requested_url": "https://ieeexplore.ieee.org/document/11753908/",
+      "final_url": null,
+      "started_at": null,
+      "completed_at": null,
+      "http_status": null,
+      "outcome": "tool_unavailable",
+      "tool": "web.open",
+      "error_or_limitation": "Tool reported the direct URL was not accessible; tool exposed neither a runtime clock nor a verifiable HTTP response status.",
+      "source_ids": [
+        "C14_IEEE_FAIL"
+      ]
+    },
+    {
+      "attempt_id": "C19_XR_ATTEMPT",
+      "record_id": "C19",
+      "route": "crossref",
+      "requested_url": "https://api.crossref.org/works/10.1109/jiot.2026.3755176",
+      "final_url": null,
+      "started_at": null,
+      "completed_at": null,
+      "http_status": null,
+      "outcome": "tool_unavailable",
+      "tool": "web.open",
+      "error_or_limitation": "Tool reported the direct URL was not accessible; tool exposed neither a runtime clock nor a verifiable HTTP response status.",
+      "source_ids": [
+        "C19_XR_FAIL"
+      ]
+    },
+    {
+      "attempt_id": "C19_IEEE_ATTEMPT",
+      "record_id": "C19",
+      "route": "publisher",
+      "requested_url": "https://ieeexplore.ieee.org/document/11803260/",
+      "final_url": null,
+      "started_at": null,
+      "completed_at": null,
+      "http_status": null,
+      "outcome": "tool_unavailable",
+      "tool": "web.open",
+      "error_or_limitation": "Tool reported the direct URL was not accessible; tool exposed neither a runtime clock nor a verifiable HTTP response status.",
+      "source_ids": [
+        "C19_IEEE_FAIL"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "C05_ID",
+      "record_id": "C05",
+      "url_or_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json",
+      "attempt_id": null,
+      "provenance": "accepted_prior_local",
+      "evidence_kind": "identity",
+      "field_or_locator": "supplied input record C05; accepted identity_dates_01_accepted.json historical identity evidence",
+      "observed_value": "Canonical identity preserved exactly as supplied."
+    },
+    {
+      "source_id": "C09_ID",
+      "record_id": "C09",
+      "url_or_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json",
+      "attempt_id": null,
+      "provenance": "accepted_prior_local",
+      "evidence_kind": "identity",
+      "field_or_locator": "supplied input record C09; accepted identity_dates_01_accepted.json historical identity evidence",
+      "observed_value": "Canonical identity preserved exactly as supplied."
+    },
+    {
+      "source_id": "C10_ID",
+      "record_id": "C10",
+      "url_or_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json",
+      "attempt_id": null,
+      "provenance": "accepted_prior_local",
+      "evidence_kind": "identity",
+      "field_or_locator": "supplied input record C10; accepted identity_dates_01_accepted.json historical identity evidence",
+      "observed_value": "Canonical identity preserved exactly as supplied."
+    },
+    {
+      "source_id": "C13_ID",
+      "record_id": "C13",
+      "url_or_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json",
+      "attempt_id": null,
+      "provenance": "accepted_prior_local",
+      "evidence_kind": "identity",
+      "field_or_locator": "supplied input record C13; accepted identity_dates_01_accepted.json historical identity evidence",
+      "observed_value": "Canonical identity preserved exactly as supplied."
+    },
+    {
+      "source_id": "C14_ID",
+      "record_id": "C14",
+      "url_or_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json",
+      "attempt_id": null,
+      "provenance": "accepted_prior_local",
+      "evidence_kind": "identity",
+      "field_or_locator": "supplied input record C14; accepted identity_dates_01_accepted.json historical identity evidence",
+      "observed_value": "Canonical identity preserved exactly as supplied."
+    },
+    {
+      "source_id": "C19_ID",
+      "record_id": "C19",
+      "url_or_file": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/screening_46/reconciliation/results/identity_dates_01_accepted.json",
+      "attempt_id": null,
+      "provenance": "accepted_prior_local",
+      "evidence_kind": "identity",
+      "field_or_locator": "supplied input record C19; accepted identity_dates_01_accepted.json historical identity evidence",
+      "observed_value": "Canonical identity preserved exactly as supplied."
+    },
+    {
+      "source_id": "C05_XR_FAIL",
+      "record_id": "C05",
+      "url_or_file": "https://api.crossref.org/works/10.1109/tcsvt.2026.3745821",
+      "attempt_id": "C05_XR_ATTEMPT",
+      "provenance": "fresh_remote",
+      "evidence_kind": "access_failure",
+      "field_or_locator": "web.open result: URL not accessible via tool",
+      "observed_value": "Internal tool error; no response body, final URL, runtime clock, or verifiable HTTP status exposed."
+    },
+    {
+      "source_id": "C05_IEEE_FAIL",
+      "record_id": "C05",
+      "url_or_file": "https://ieeexplore.ieee.org/document/11745919/",
+      "attempt_id": "C05_IEEE_ATTEMPT",
+      "provenance": "fresh_remote",
+      "evidence_kind": "access_failure",
+      "field_or_locator": "web.open result: URL not accessible via tool",
+      "observed_value": "Internal tool error; no response body, final URL, runtime clock, or verifiable HTTP status exposed."
+    },
+    {
+      "source_id": "C09_XR_FAIL",
+      "record_id": "C09",
+      "url_or_file": "https://api.crossref.org/works/10.1109/jiot.2026.3755315",
+      "attempt_id": "C09_XR_ATTEMPT",
+      "provenance": "fresh_remote",
+      "evidence_kind": "access_failure",
+      "field_or_locator": "web.open result: URL not accessible via tool",
+      "observed_value": "Internal tool error; no response body, final URL, runtime clock, or verifiable HTTP status exposed."
+    },
+    {
+      "source_id": "C09_IEEE_FAIL",
+      "record_id": "C09",
+      "url_or_file": "https://ieeexplore.ieee.org/document/11804345/",
+      "attempt_id": "C09_IEEE_ATTEMPT",
+      "provenance": "fresh_remote",
+      "evidence_kind": "access_failure",
+      "field_or_locator": "web.open result: URL not accessible via tool",
+      "observed_value": "Internal tool error; no response body, final URL, runtime clock, or verifiable HTTP status exposed."
+    },
+    {
+      "source_id": "C10_XR_FAIL",
+      "record_id": "C10",
+      "url_or_file": "https://api.crossref.org/works/10.1109/jiot.2026.3740035",
+      "attempt_id": "C10_XR_ATTEMPT",
+      "provenance": "fresh_remote",
+      "evidence_kind": "access_failure",
+      "field_or_locator": "web.open result: URL not accessible via tool",
+      "observed_value": "Internal tool error; no response body, final URL, runtime clock, or verifiable HTTP status exposed."
+    },
+    {
+      "source_id": "C10_IEEE_FAIL",
+      "record_id": "C10",
+      "url_or_file": "https://ieeexplore.ieee.org/document/11719586/",
+      "attempt_id": "C10_IEEE_ATTEMPT",
+      "provenance": "fresh_remote",
+      "evidence_kind": "access_failure",
+      "field_or_locator": "web.open result: URL not accessible via tool",
+      "observed_value": "Internal tool error; no response body, final URL, runtime clock, or verifiable HTTP status exposed."
+    },
+    {
+      "source_id": "C13_XR_FAIL",
+      "record_id": "C13",
+      "url_or_file": "https://api.crossref.org/works/10.1109/tvt.2026.3755123",
+      "attempt_id": "C13_XR_ATTEMPT",
+      "provenance": "fresh_remote",
+      "evidence_kind": "access_failure",
+      "field_or_locator": "web.open result: URL not accessible via tool",
+      "observed_value": "Internal tool error; no response body, final URL, runtime clock, or verifiable HTTP status exposed."
+    },
+    {
+      "source_id": "C13_IEEE_FAIL",
+      "record_id": "C13",
+      "url_or_file": "https://ieeexplore.ieee.org/document/11804735/",
+      "attempt_id": "C13_IEEE_ATTEMPT",
+      "provenance": "fresh_remote",
+      "evidence_kind": "access_failure",
+      "field_or_locator": "web.open result: URL not accessible via tool",
+      "observed_value": "Internal tool error; no response body, final URL, runtime clock, or verifiable HTTP status exposed."
+    },
+    {
+      "source_id": "C14_XR_FAIL",
+      "record_id": "C14",
+      "url_or_file": "https://api.crossref.org/works/10.1109/jiot.2026.3746980",
+      "attempt_id": "C14_XR_ATTEMPT",
+      "provenance": "fresh_remote",
+      "evidence_kind": "access_failure",
+      "field_or_locator": "web.open result: URL not accessible via tool",
+      "observed_value": "Internal tool error; no response body, final URL, runtime clock, or verifiable HTTP status exposed."
+    },
+    {
+      "source_id": "C14_IEEE_FAIL",
+      "record_id": "C14",
+      "url_or_file": "https://ieeexplore.ieee.org/document/11753908/",
+      "attempt_id": "C14_IEEE_ATTEMPT",
+      "provenance": "fresh_remote",
+      "evidence_kind": "access_failure",
+      "field_or_locator": "web.open result: URL not accessible via tool",
+      "observed_value": "Internal tool error; no response body, final URL, runtime clock, or verifiable HTTP status exposed."
+    },
+    {
+      "source_id": "C19_XR_FAIL",
+      "record_id": "C19",
+      "url_or_file": "https://api.crossref.org/works/10.1109/jiot.2026.3755176",
+      "attempt_id": "C19_XR_ATTEMPT",
+      "provenance": "fresh_remote",
+      "evidence_kind": "access_failure",
+      "field_or_locator": "web.open result: URL not accessible via tool",
+      "observed_value": "Internal tool error; no response body, final URL, runtime clock, or verifiable HTTP status exposed."
+    },
+    {
+      "source_id": "C19_IEEE_FAIL",
+      "record_id": "C19",
+      "url_or_file": "https://ieeexplore.ieee.org/document/11803260/",
+      "attempt_id": "C19_IEEE_ATTEMPT",
+      "provenance": "fresh_remote",
+      "evidence_kind": "access_failure",
+      "field_or_locator": "web.open result: URL not accessible via tool",
+      "observed_value": "Internal tool error; no response body, final URL, runtime clock, or verifiable HTTP status exposed."
+    }
+  ],
+  "shortfall": [
+    "The available web tool could not access any of the 12 requested direct URLs. It exposed no runtime clock and no verifiable HTTP status for these attempts, so all timestamps and statuses are null.",
+    "No Crossref message metadata or publisher HTML was observed; publication date gates remain UNCERTAIN for all six records."
+  ],
+  "unresolved": [
+    "All six records require manual direct observation of authoritative publication evidence before date classification."
+  ],
+  "project_files_changed": 0,
+  "final_prose_written": false
+}
