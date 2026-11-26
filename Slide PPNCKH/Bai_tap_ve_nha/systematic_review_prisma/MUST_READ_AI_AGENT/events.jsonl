@@ -118,3 +118,4 @@
 {"timestamp": "2026-11-26T19:44:05+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_brief_prepared", "batch": 4, "records": 20}
 {"timestamp": "2026-11-26T19:44:06+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_dispatched", "batch": 4, "provider_task_id": "a33d1ae9-0b17-40eb-a677-bef6dac9bc2e", "provider_context_id": "26547085-c23a-49d7-ad3f-f00e5d5b793f"}
 {"timestamp": "2026-11-26T19:48:44+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_leads_quarantined", "batch": 4, "provider_task_id": "a33d1ae9-0b17-40eb-a677-bef6dac9bc2e", "issues": {"T1": [], "T2": ["R0220 invalid link field"], "T3": [], "T4": []}}
+{"timestamp": "2026-11-26T19:48:45+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_dispatched", "batch": 4, "provider_task_id": "3aa88422-5ce9-42a8-9eba-865a50d8b838", "provider_context_id": "a207715b-ac4d-4af7-b585-cf25d7d82500"}
