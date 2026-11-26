@@ -203,10 +203,16 @@
           {
             "subtopic": "compute_and_radio_model",
             "status": "OBSERVED",
-            "finding": "UAV CPU frequency fn bounded in [f_min, f_max] with DVFS (Eq. 10), edge computing ratio lambda_k,m, wireless bandwidth ratio eta_k,m with Shannon capacity and path-loss exponent mu.",
+            "finding": "The model optimizes UAV CPU frequency within its lower and upper bounds and allocates edge computing and wireless bandwidth fractions. The bandwidth model uses a logarithmic link-rate expression with a distance-dependent path-loss term.",
             "page": 3,
             "locator": "II.F Analytical Resource Allocation",
-            "excerpt": "the optimal value of the computation frequency is obtained as"
+            "excerpt": "the optimal value of the computation frequency is obtained as",
+            "sources": [
+              {
+                "physical_page": 3,
+                "locator": "§II.F, Eqs. (7)–(12)"
+              }
+            ]
           }
         ],
         "mobility_channel_intermittency_failure_and_recovery": [
@@ -308,9 +314,9 @@
             "status": "NOT_REPORTED",
             "finding": "",
             "page": 3,
-            "locator": "III.A-IV",
+            "locator": "Physical pp. 1–3, including §III.A and references [3]–[4]",
             "excerpt": "REFERENCES",
-            "reason": "No code repository URL or code availability statement found in paper."
+            "reason": "The simulation sources are identified in §III.A and references [3]–[4]. No code repository or code availability statement was found in physical pp. 1–3."
           }
         ],
         "funding_and_conflicts": [
@@ -335,12 +341,12 @@
         "reported_limitations": [
           {
             "subtopic": "limitations",
-            "status": "NOT_REPORTED",
-            "finding": "",
-            "page": 3,
-            "locator": "III-IV",
-            "excerpt": "IV. ACKNOWLEDGEMENTS",
-            "reason": "No limitations section or explicit limitations statement in the 3-page paper."
+            "status": "OBSERVED",
+            "finding": "The latency model omits inference-result return time on the assumption that result data are small.",
+            "page": 2,
+            "locator": "§II.B, Latency Model",
+            "excerpt": "Due to the result data is too small to calculate, in this paper, we ignore the return time.",
+            "reason": ""
           }
         ]
       },
@@ -514,9 +520,9 @@
             "status": "NOT_REPORTED",
             "finding": "",
             "page": 9,
-            "locator": "VIII. CONCLUSION",
+            "locator": "Physical pp. 1–9; §VII.A dataset and §VIII/end matter reviewed for availability",
             "excerpt": "ACKNOWLEDGEMENT",
-            "reason": "No code repository URL or code availability statement found."
+            "reason": "Section VII.A identifies CIFAR-10 as the training dataset for the evaluation model. The PDF does not supply an implementation repository or availability statement."
           }
         ],
         "funding_and_conflicts": [
@@ -592,10 +598,24 @@
           {
             "subtopic": "models_and_task",
             "status": "OBSERVED",
-            "finding": "Image classification (ImageNet top-5 accuracy) switching between large model VGG16 (138M params, 91.90%) and small models AlexNet (62M params, 84.60%) or SqueezeNet (80.40%).",
+            "finding": "DMS evaluates the VGG16–AlexNet and VGG16–SqueezeNet pairings. Section V.A states that evaluation uses top-5 model accuracy, but Section III calls the AlexNet example of 84.60% top-1. Table I labels the column average accuracy without a top-k label.",
             "page": 5,
             "locator": "V.A Simulation Settings",
-            "excerpt": "we employ VGG16 as the large complex model, while for the small lightweight model, we utilize both AlexNet and SqueezeNet."
+            "excerpt": "we employ VGG16 as the large complex model, while for the small lightweight model, we utilize both AlexNet and SqueezeNet.",
+            "sources": [
+              {
+                "physical_page": 3,
+                "locator": "§III.A, example ImageNet accuracies"
+              },
+              {
+                "physical_page": 5,
+                "locator": "§V.A, evaluation accuracy definition"
+              },
+              {
+                "physical_page": 6,
+                "locator": "Table I, average accuracy column"
+              }
+            ]
           }
         ],
         "partition_and_assignment": [
@@ -767,13 +787,27 @@
           "value": 87.73,
           "units": "%",
           "baseline": "Small-only (84.60%), Large-only (91.90%)",
-          "denominator": "ImageNet top-5 accuracy",
+          "denominator": "Table I average accuracy; §V.A says top-5, but §III labels the AlexNet 84.60% example top-1",
           "workload": "7 inference requests (VGG16 + AlexNet)",
           "conditions": "5 heterogeneous UAVs",
           "page": 6,
           "locator": "Table 1(a)",
           "excerpt": "Average Accuracy (%) 87.73 87.73 87.73 84.60 91.90",
-          "status": "OBSERVED"
+          "status": "OBSERVED",
+          "sources": [
+            {
+              "physical_page": 6,
+              "locator": "Table I, average accuracy (%)"
+            },
+            {
+              "physical_page": 5,
+              "locator": "§V.A, evaluation accuracy definition"
+            },
+            {
+              "physical_page": 3,
+              "locator": "§III.A, example AlexNet metric label"
+            }
+          ]
         },
         {
           "metric": "average_latency_vgg16_squeezenet",
@@ -793,13 +827,27 @@
           "value": 85.32,
           "units": "%",
           "baseline": "Small-only (80.40%), Large-only (91.90%)",
-          "denominator": "ImageNet top-5 accuracy",
+          "denominator": "Table I average accuracy; §V.A says top-5, but §III labels the AlexNet 84.60% example top-1",
           "workload": "7 inference requests (VGG16 + SqueezeNet)",
           "conditions": "5 heterogeneous UAVs",
           "page": 6,
           "locator": "Table 1(b)",
           "excerpt": "Average Accuracy (%) 85.32 85.32 85.32 80.40 91.90",
-          "status": "OBSERVED"
+          "status": "OBSERVED",
+          "sources": [
+            {
+              "physical_page": 6,
+              "locator": "Table I, average accuracy (%)"
+            },
+            {
+              "physical_page": 5,
+              "locator": "§V.A, evaluation accuracy definition"
+            },
+            {
+              "physical_page": 3,
+              "locator": "§III.A, example AlexNet metric label"
+            }
+          ]
         },
         {
           "metric": "latency_reduction_vs_large_only",
@@ -1024,10 +1072,24 @@
           {
             "subtopic": "latency_and_coverage",
             "status": "OBSERVED",
-            "finding": "Two-Stage attains 527 ms latency vs Greedy+SCA (1,292 ms), DP+RW (1,643 ms), Joint-PSO (1,239 ms), reducing latency by 57.5%-67.9% (and at least 37% vs closest competitor); coverage stabilizes at 87.0% from 47.0%.",
+            "finding": "In the Fig. 5 comparison, Two-Stage attained 527 ms versus 1,292 ms (Greedy+SCA), 1,643 ms (DP+RW), and 1,239 ms (Joint-PSO). The corresponding relative reductions calculated from the listed latencies span 57.5–67.9% (rounded). The separate coverage experiment starts at 47.0% and reaches 87.0%.",
             "page": 7,
             "locator": "V.C Performance Comparison",
-            "excerpt": "Two-Stage attains 527 ms, outperforming Greedy+SCA (1,292 ms), DP+RW (1,643 ms), and Joint-PSO (1,239 ms) by 57.5%-67.9%."
+            "excerpt": "Two-Stage attains 527 ms, outperforming Greedy+SCA (1,292 ms), DP+RW (1,643 ms), and Joint-PSO (1,239 ms) by 57.5%-67.9%.",
+            "sources": [
+              {
+                "physical_page": 7,
+                "locator": "Fig. 5 and the accompanying results"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§V.B, Fig. 3b discussion and Fig. 4 callout"
+              },
+              {
+                "physical_page": 7,
+                "locator": "Fig. 4, initial and optimized deployment labels"
+              }
+            ]
           }
         ],
         "sensitivity_and_variability": [
@@ -1119,7 +1181,17 @@
           "page": 6,
           "locator": "V.B Effectiveness",
           "excerpt": "during which the critical area coverage substantially increased from 47.0% to 87.0%.",
-          "status": "OBSERVED"
+          "status": "OBSERVED",
+          "sources": [
+            {
+              "physical_page": 6,
+              "locator": "§V.B, coverage progression and Fig. 4 callout"
+            },
+            {
+              "physical_page": 7,
+              "locator": "Fig. 4a–b, labels 47.00% and 87.00%"
+            }
+          ]
         }
       ],
       "unresolved": []
@@ -1374,10 +1446,21 @@
           {
             "subtopic": "energy_and_latency",
             "status": "OBSERVED",
-            "finding": "At radius 50 m (M=50), DPDTS uses 1536.9 J (22.6%-54.2% lower) and 253.7 ms avg delay (19.26%-49.1% faster); at M=80 GUs, avg delay is 389 ms (20.0%-68.5% faster).",
+            "finding": "At a UAV coverage radius of 50 m, DPDTS used 1,536.9 J, reductions of 22.6%, 35.5%, 17.6%, and 54.2% versus DTS, RAT, EE-PPO, and DPRT, respectively. Average processing delay was 253.7 ms. In the separate user-count sweep, average user processing delay was 389 ms at 80 ground users.",
             "page": 9,
             "locator": "V.B Performance Evaluation",
-            "excerpt": "when the radius is 50, DPDTS consumes 1536.9J, which is reduced by 22.6%, 35.5%, 17.6%, and 54.2%"
+            "excerpt": "when the radius is 50, DPDTS consumes 1536.9J, which is reduced by 22.6%, 35.5%, 17.6%, and 54.2%",
+            "sources": [
+              {
+                "physical_page": 9,
+                "locator": "Figs. 5a–b and results; radius sweep"
+              },
+              {
+                "physical_page": 9,
+                "locator": "Fig. 6b and results; user-count sweep",
+                "excerpt": "389ms for a user amount of 80"
+              }
+            ]
           }
         ],
         "sensitivity_and_variability": [
@@ -1549,13 +1632,23 @@
           "value": 389,
           "units": "ms",
           "baseline": "DTS (-20.0%), RAT (-41.2%), EE-PPO (-24.2%), DPRT (-68.5%)",
-          "denominator": "50 episodes",
+          "denominator": "Average processing delay per ground user in Fig. 6(b); aggregation episode count not separately specified for Fig. 6",
           "workload": "M=80 GUs",
-          "conditions": "4 UAVs, d_max=50 m, B=10 MHz",
+          "conditions": "80 ground users in Fig. 6(b); four UAVs in the general simulation setup",
           "page": 9,
           "locator": "V.B Performance Evaluation",
           "excerpt": "with an average user processing delay of 389ms for a user amount of 80, which is 20.0%, 41.2%, 24.2%, and 68.5% faster",
-          "status": "OBSERVED"
+          "status": "OBSERVED",
+          "sources": [
+            {
+              "physical_page": 9,
+              "locator": "§V.B, Fig. 6(b) results"
+            },
+            {
+              "physical_page": 8,
+              "locator": "§V.A, general simulation setup"
+            }
+          ]
         }
       ],
       "unresolved": []
@@ -1868,7 +1961,8 @@
           "page": 2,
           "locator": "I. INTRODUCTION",
           "excerpt": "reduce the inference latency of AlexNet, GoogLeNet, and VGG-16 by 25.11%, 28.2%, and 17.56% on average.",
-          "status": "OBSERVED"
+          "status": "UNVERIFIED",
+          "reason": "Withheld from quantitative synthesis pending enough evidence for the scenario and aggregation denominator. See physical p. 2, Introduction, and physical p. 5, §V.B, Figs. 4–5."
         },
         {
           "metric": "avg_latency_reduction_googlenet",
@@ -1881,7 +1975,8 @@
           "page": 2,
           "locator": "I. INTRODUCTION",
           "excerpt": "reduce the inference latency of AlexNet, GoogLeNet, and VGG-16 by 25.11%, 28.2%, and 17.56% on average.",
-          "status": "OBSERVED"
+          "status": "UNVERIFIED",
+          "reason": "Withheld from quantitative synthesis pending enough evidence for the scenario and aggregation denominator. See physical p. 2, Introduction, and physical p. 5, §V.B, Figs. 4–5."
         },
         {
           "metric": "avg_latency_reduction_vgg16",
@@ -1975,30 +2070,60 @@
           {
             "subtopic": "sublayer_parallel_split",
             "status": "OBSERVED",
-            "finding": "Fine-grained partitioning: individual CNN layers can be divided into subtasks executed in parallel by up to N UAVs, with at most S layers per UAV.",
+            "finding": "Individual CNN layers can be divided into subtasks and executed in parallel. Equation (14) uses N assigned UAVs per layer, and Eq. (15) assigns at most S layers per UAV.",
             "page": 3,
             "locator": "III.A System Model",
-            "excerpt": "the calculation of one layer can be divided into multiple subtasks and allocated to multiple UAVs for parallel calculation"
+            "excerpt": "the calculation of one layer can be divided into multiple subtasks and allocated to multiple UAVs for parallel calculation",
+            "sources": [
+              {
+                "physical_page": 3,
+                "locator": "§III.A, layer partitioning"
+              },
+              {
+                "physical_page": 4,
+                "locator": "§III.B, Eqs. (14)–(15)"
+              }
+            ]
           }
         ],
         "decision_variables_objectives_constraints_and_solver": [
           {
             "subtopic": "binary_nlp_eecia",
             "status": "OBSERVED",
-            "finding": "Binary nonlinear program minimizing decision-making latency T_tot over assignment alpha_i,l subject to energy, memory, compute, N UAVs/layer, and S layers/UAV; solved via online greedy heuristic EECIA (complexity O(IL)).",
+            "finding": "The binary nonlinear program minimizes capture-to-inference-output latency, with UAV energy, memory, computation and per-layer and per-UAV assignment constraints. The authors propose the online EECIA heuristic with stated complexity O(I × L).",
             "page": 5,
             "locator": "III.C Online Heuristic",
-            "excerpt": "we propose an online heuristic solution called EECIA to perform the real-time allocation"
+            "excerpt": "we propose an online heuristic solution called EECIA to perform the real-time allocation",
+            "sources": [
+              {
+                "physical_page": 4,
+                "locator": "§III.B, Eqs. (10)–(16)"
+              },
+              {
+                "physical_page": 5,
+                "locator": "§III.C, EECIA and its stated complexity"
+              }
+            ]
           }
         ],
         "compute_and_radio": [
           {
             "subtopic": "embedded_boards_and_rate",
             "status": "OBSERVED",
-            "finding": "Heterogeneous UAVs with RPi 3B+ (1.4GHz quad-core, 1GB RAM, f=560), Orange Pi Zero (800MHz-1.2GHz quad-core, 256MB RAM, f=480), Odroid (1GHz dual-core, 1GB RAM, f=307.2); constant data rate (default 72.2 Mbps, varied 10-100 Mbps).",
+            "finding": "Simulated boards are Raspberry Pi 3B+ (1.4 GHz quad-core, 1 GB RAM), Orange Pi Zero (800 MHz–1.2 GHz quad-core, 256 MB RAM), and Odroid (1 GHz dual-core, 1 GB RAM). The paper assigns 560, 480 and 307.2 million multiplications per second, respectively. Link rate is fixed within a request; Figs. 3 and 5 use 72.2 Mbps, and Fig. 4 varies it.",
             "page": 6,
             "locator": "IV.A-B",
-            "excerpt": "Raspberry Pi 3B+ is a powerful device endowed with 1.4GHz quad-core processor and 1GB of RAM"
+            "excerpt": "Raspberry Pi 3B+ is a powerful device endowed with 1.4GHz quad-core processor and 1GB of RAM",
+            "sources": [
+              {
+                "physical_page": 6,
+                "locator": "§IV.A and Fig. 3 setup"
+              },
+              {
+                "physical_page": 7,
+                "locator": "Figs. 4 and 5"
+              }
+            ]
           }
         ],
         "mobility_channel_intermittency_failure_and_recovery": [
@@ -2807,10 +2932,20 @@
           {
             "subtopic": "compute_and_radio_params",
             "status": "OBSERVED",
-            "finding": "UAV compute capability C_i^u uniformly in 1-2 GHz, energy coeff epsilon_i=0.2 J/s, P_Tx=1.258 W, bandwidth B=20 MHz (varied 1-20 MHz), path loss alpha=3, noise N0=-100 dBm, Rayleigh fading CN(0,1).",
+            "finding": "UAV computing capability is evenly distributed between 1 and 2 GHz. Table I gives an energy coefficient of 0.2 J/s, transmission power of 1.258 W, nominal bandwidth of 20 MHz, path-loss exponent 3, noise of −100 dBm and a complex-normal coefficient CN(0,1). Figures 4–5 sweep bandwidth from 1 to 20 MHz.",
             "page": 5,
             "locator": "Table I",
-            "excerpt": "C_i^u evenly distributed from 1GHz to 2GHz"
+            "excerpt": "evenly distributed from 1GHz to 2GHz",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "Table I, visual reading; values in rows for Cᵘᵢ through g₀"
+              },
+              {
+                "physical_page": 5,
+                "locator": "Figs. 4–5, visual reading; bandwidth axes"
+              }
+            ]
           }
         ],
         "mobility_channel_intermittency_failure_and_recovery": [
@@ -3411,10 +3546,20 @@
           {
             "subtopic": "delay_and_power",
             "status": "OBSERVED",
-            "finding": "LaCPOO achieves lowest average delay and lowest average transmission power across AlexNet, NiN, TinyYOLOv2, VGG16 (Fig. 3-4), bandwidths 10-30 MHz (Fig. 5), and reliability 0.8-0.9 (Fig. 6-7); exact numeric values only in plots.",
+            "finding": "LaCPOO achieved the lowest average delay for most tested DNNs and reduced transmission power relative to CPOO in the model comparison. It had the lowest average delay in the plotted bandwidth sweep and lower average transmission power than the comparators in the reported offloading-reliability sweep.",
             "page": 7,
             "locator": "IV.B Numerical Results",
-            "excerpt": "our proposed LaCPOO algorithm can provide the lowest average delay even in uncertain environments"
+            "excerpt": "For most classical DNN models, our proposed LaCPOO algorithm can provide the lowest average delay even in uncertain environments",
+            "sources": [
+              {
+                "physical_page": 7,
+                "locator": "§IV.B, Figs. 3–4 model comparisons"
+              },
+              {
+                "physical_page": 7,
+                "locator": "§IV.B, Fig. 5 bandwidth and Figs. 6–7 reliability"
+              }
+            ]
           }
         ],
         "sensitivity_and_variability": [
@@ -4259,11 +4404,21 @@
           {
             "subtopic": "exact_K_and_M_in_table_I",
             "status": "UNVERIFIED",
-            "finding": "Fig. 1 shows 3 UAVs (U1-U3) and Fig. 3c tests M in {5, 15} for OOD, while baseline K, M, N_tar for Table I are not explicitly stated in text.",
+            "finding": "Figure 1 is an illustrative replay and shows UAV labels U1–U3. Figure 3(c) tests M ∈ {5, 15} in the OOD comparison. These sources do not establish the exact K, M and N_tar for the Table I baseline.",
             "page": 4,
-            "locator": "Fig. 1 and Section IV, p. 4",
-            "excerpt": "Frozen GAT-HSMAO trajectory replay on held-out scenario 905001 ... U1, U2, U3",
-            "reason": "Baseline K, M, and N_tar values for Table I are not numerically stated in Sections II-IV."
+            "locator": "pp. 4–5, Fig. 1 and Fig. 3(c); Table I baseline counts unverified",
+            "excerpt": "Frozen GAT-HSMAO trajectory replay on held-out scenario 905001",
+            "reason": "Baseline K, M, and N_tar values for Table I are not numerically stated in Sections II-IV.",
+            "sources": [
+              {
+                "physical_page": 4,
+                "locator": "Fig. 1, caption and U1–U3 labels"
+              },
+              {
+                "physical_page": 5,
+                "locator": "Fig. 3(c), caption and panels"
+              }
+            ]
           }
         ],
         "inference_model_task_and_dataset": [
@@ -5511,13 +5666,24 @@
         ],
         "outcomes_latency_energy_communication_accuracy_reliability_and_scalability": [
           {
-            "finding": "MARL-meta converges to maximum expected rewards with higher accuracy than MARL-AC, MARL-DQN, and MARL-SAC on 5-layer LeNet and 8-layer AlexNet.",
+            "finding": "The authors report that MARL-meta outperforms MARL-AC, MARL-DQN and MARL-SAC in convergence toward the maximum expected reward in the LeNet and AlexNet comparisons. Accuracy here refers to the percentage of cases satisfying the optimization constraints.",
             "page": 10,
             "locator": "VI-B.1, Fig. 4(a)-(b)",
             "excerpt": "meta-RL converges to the maximum expected reward with higher accuracy than the competitive algorithms (MARL-AC, MARL-DQN, and MARL-SAC) in the two CNN networks, LeNet and AlexNet.",
             "subtopic": "K01-01",
             "status": "OBSERVED",
-            "repair_key": "K01-01"
+            "repair_key": "K01-01",
+            "sources": [
+              {
+                "physical_page": 10,
+                "locator": "§VI.B(1), convergence results"
+              },
+              {
+                "physical_page": 11,
+                "locator": "§VI.B(1) continued",
+                "excerpt": "represents the successful percentage of respecting the constraints"
+              }
+            ]
           },
           {
             "finding": "Across varying channel bandwidths, MARL-meta closely matches the theoretical sub-optimal LDTP benchmark in latency and transmit power while MARL-AC, MARL-DQN, and MARL-SAC exhibit higher latency and power usage.",
@@ -6031,14 +6197,29 @@
           "value": "UNVERIFIED",
           "units": "s",
           "baseline": "Layer-Avg, Comp-Avg, Heuristic",
-          "denominator": "1-10 requests, 15 UAVs",
+          "denominator": "1–10 requests in Figs. 4–5; 15 UAVs in all three comparisons",
           "workload": "AlexNet, YOLO, VGG16",
-          "conditions": "1 GB / 2 GB memory, 0-2 inoperable UAVs",
-          "page": 11,
-          "locator": "Figs. 4-6, pp. 11-12",
+          "conditions": "Fig. 4: 1 GB and 11.2 GFLOPS; Fig. 5: 1 or 2 GB and 11.2 GFLOPS; Fig. 6: AlexNet only, 1 GB, 11.2 GFLOPS, and 0, 1, or 2 inoperable UAVs",
+          "page": 10,
+          "locator": "§5.2, Figs. 4–6; physical pp. 10–12",
           "excerpt": "The performance of the proposed model compared to three baselines is shown in Figure 4.",
           "status": "UNVERIFIED",
-          "reason": "Exact numeric latency values are only shown in line/bar plots (Figs. 4-6) and not reported as numbers in text or tables; plot estimation is prohibited."
+          "reason": "Exact numeric latency values are only shown in line/bar plots (Figs. 4-6) and not reported as numbers in text or tables; plot estimation is prohibited.",
+          "sources": [
+            {
+              "physical_page": 10,
+              "locator": "§5.2, Fig. 4 conditions",
+              "excerpt": "The performance of the proposed model compared to three baselines is shown in Figure 4."
+            },
+            {
+              "physical_page": 11,
+              "locator": "§5.2, conditions for Figs. 5–6"
+            },
+            {
+              "physical_page": 12,
+              "locator": "Figs. 5–6, visual check of plotted series and absence of exact point labels"
+            }
+          ]
         }
       ],
       "unresolved": [
@@ -6221,29 +6402,31 @@
       "quantitative_claims": [
         {
           "metric": "Llama-2 7B prefill latency",
-          "value": "8,864 (81% reduction vs Cloud-Edge-Opt)",
+          "value": "8864",
           "units": "ms",
           "baseline": "Cloud-Edge-Opt (46,522 ms); Edge-Solo (8,047 ms); Jupiter (11,260 ms); EdgeShard (24,629 ms)",
           "denominator": "Single 64-token request",
           "workload": "Llama-2 7B FP16, 64-token sensor log",
           "conditions": "1000 Mb/s inter-UAV, 200 Mb/s A2G, 4 UAV edge nodes",
           "page": 16,
-          "locator": "Abstract and Section 4.2, Fig. 4, pp. 1, 16",
+          "locator": "§4.2, Fig. 4 and results (p. 16)",
           "excerpt": "For the 7B model, Orion achieved a latency of 8864 ms, representing a substantial reduction compared to Cloud-Edge-Opt (46,522 ms).",
-          "status": "OBSERVED"
+          "status": "OBSERVED",
+          "reason": "Reference: 46,522 ms for Cloud-Edge-Opt. Derived relative reduction 1 − 8864/46522 ≈ 81.0%, retained as audit information only."
         },
         {
           "metric": "Llama-2 13B prefill latency",
-          "value": "11,824 (78% reduction vs Cloud-Edge-Opt)",
+          "value": "11824",
           "units": "ms",
           "baseline": "Cloud-Edge-Opt (53,166 ms); Jupiter (16,870 ms); EdgeShard (29,045 ms); Edge-Solo (OOM)",
           "denominator": "Single 64-token request",
           "workload": "Llama-2 13B FP16, 64-token sensor log",
           "conditions": "1000 Mb/s inter-UAV, 200 Mb/s A2G, 4 UAV edge nodes",
           "page": 16,
-          "locator": "Abstract and Section 4.2, Fig. 4, pp. 1, 16",
+          "locator": "§4.2, Fig. 4 and results (p. 16)",
           "excerpt": "Orion successfully executed inference at 11,824 ms, not only massively outperforming cloud-edge alternatives but also maintaining a clear lead over Jupiter (16,870 ms) and EdgeShard (29,045 ms).",
-          "status": "OBSERVED"
+          "status": "OBSERVED",
+          "reason": "Reference: 53,166 ms for Cloud-Edge-Opt. Derived relative reduction 1 − 11824/53166 ≈ 77.8%, retained as audit information only."
         },
         {
           "metric": "Llama-2 70B prefill latency",
@@ -6262,7 +6445,7 @@
           "metric": "Predictive decoding break-even accuracy threshold",
           "value": "8.94",
           "units": "%",
-          "baseline": "Orion-no-pre (16.22 s at break-even, Fig. 9)",
+          "baseline": "Orion-no-pre; baseline latency at the intersection is withheld because Fig. 9 labels its y-axis ms but the point annotation says s.",
           "denominator": "100% first-token prediction accuracy scale",
           "workload": "Llama-2 13B with 64-token sensor input sequence",
           "conditions": "1000 Mb/s inter-UAV bandwidth with ±20% fluctuation, 300 Monte Carlo simulations per configuration",
@@ -6270,7 +6453,17 @@
           "locator": "Section 4.7 and Fig. 9",
           "excerpt": "at an accuracy threshold of merely 8.94%.",
           "status": "OBSERVED",
-          "reason": "Verified directly in Section 4.7 and Fig. 9 on page 20."
+          "reason": "Body text confirms the 8.94% threshold. The reported intersection latency is not accepted because its units conflict.",
+          "sources": [
+            {
+              "physical_page": 20,
+              "locator": "§4.7, body paragraphs before and after Fig. 9"
+            },
+            {
+              "physical_page": 20,
+              "locator": "Fig. 9, visible axis label and intersection annotation; original units conflict"
+            }
+          ]
         }
       ],
       "unresolved": []
@@ -6383,11 +6576,26 @@
           {
             "subtopic": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/latency_energy_longevity",
             "status": "OBSERVED",
-            "finding": "Reduces e2e latency by up to 88% vs NN/HRE and 77% vs LO, cuts energy by up to 90-91%, and extends swarm longevity to 19 consecutive runs.",
+            "finding": "In the 100 m² scenario, the authors report end-to-end latency advantages of up to 88% versus NN and HRE and 77% versus LO. Compared with NN, the authors report up to 90% less energy per device for homogeneous full-capacity batteries and up to 91% less when half the devices had half capacity. In the longevity simulation, the proposed method lasted 19 consecutive runs with 10 simultaneous requests per run on 10 UAVs.",
             "page": 7,
             "locator": "Section 4.2 Simulation results",
             "excerpt": "improve the performance up to 88% compared to the NN and HRE",
-            "reason": "Verified directly on PDF pages 7-8."
+            "reason": "Verified directly on PDF pages 7-8.",
+            "sources": [
+              {
+                "physical_page": 7,
+                "locator": "§4.2 and Fig. 3a, latency under the 100 m² scenario"
+              },
+              {
+                "physical_page": 7,
+                "locator": "§4.2 and Figs. 4a–b, per-device energy"
+              },
+              {
+                "physical_page": 8,
+                "locator": "§4.2 and Fig. 5, simulated longevity",
+                "excerpt": "lasted 19 consecutive runs of 10 simultaneous requests on 10 UAVs"
+              }
+            ]
           }
         ],
         "sensitivity_and_variability": [
@@ -6463,14 +6671,20 @@
           "metric": "System longevity (consecutive runs)",
           "value": "19",
           "units": "runs",
-          "baseline": "LO (13 max / 11 half), NN (12 max / 10 half), HRE (5)",
+          "baseline": "NN, LO, HRE; the authors report earlier depletion for the baselines. Exact comparator run counts withheld.",
           "denominator": "10 simultaneous requests per run",
           "workload": "AlexNet and VGG19",
           "conditions": "10 UAVs, both homogeneous and half-battery settings",
           "page": 8,
           "locator": "Section 4.2 and Fig. 5, p. 8",
-          "excerpt": "our method lasted 19 consecutive runs of 10 simultaneous requests on 10 UAVs, which is almost double the number of runs on comparison methods.",
-          "status": "OBSERVED"
+          "excerpt": "lasted 19 consecutive runs of 10 simultaneous requests on 10 UAVs",
+          "status": "OBSERVED",
+          "sources": [
+            {
+              "physical_page": 8,
+              "locator": "Fig. 5a–b and longevity results"
+            }
+          ]
         },
         {
           "metric": "Algorithm 1 Python runtime (N=5, 10, 15, 20)",
@@ -6785,11 +6999,22 @@
           {
             "subtopic": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/completion_latency_and_decision_time",
             "status": "OBSERVED",
-            "finding": "Achieves 100% task completion rate within 1.5 s, reduces cumulative latency by 40-230% vs partitioning baselines, and averages 31.9287 ms per decision.",
+            "finding": "At a maximum task completion time of 1.5 s, PPO-DMCP reached 100% completion and the lowest cumulative inference latency in the compared partitioning schemes. Figure 9(c) separately reports an average single-decision time of 31.9287 ms.",
             "page": 10,
             "locator": "Section 5.4.2 and Fig. 9(b)-(c)",
             "excerpt": "PPO-DMCP strategy achieves a 100% completion rate with the lowest total latency",
-            "reason": "Verified directly on PDF page 10."
+            "reason": "Verified directly on PDF page 10.",
+            "sources": [
+              {
+                "physical_page": 10,
+                "locator": "§5.4.2 and Fig. 9(b), completion and cumulative latency"
+              },
+              {
+                "physical_page": 10,
+                "locator": "Fig. 9(c), PPO-DMCP bar label",
+                "excerpt": "31.9287"
+              }
+            ]
           }
         ],
         "sensitivity_and_variability": [
@@ -6839,14 +7064,24 @@
           "metric": "Cumulative inference latency and completion rate (alpha=1, beta=1)",
           "value": "19.539 s / 100%",
           "units": "s / %",
-          "baseline": "Equal (~75% higher), Prop (50% higher), Layer-PPO (~40% worse), Single (>100% higher)",
+          "baseline": "Absolute PPO-DMCP sensitivity result at alpha=1 and beta=1; other Table 2 rows vary those weights",
           "denominator": "20 tasks/episode, 1.5 s timeout",
           "workload": "10-macro-block DNN, 0.1 s arrival gap",
           "conditions": "5 UAVs (1 core + 4 compute), 200 MB cache, 1.0 MHz",
           "page": 9,
-          "locator": "Table 2 and Section 5.4.2, pp. 9-10",
+          "locator": "Table 2 (p. 9) and §5.1 configuration (p. 8)",
           "excerpt": "1 | 1 | 19.539 | 100",
-          "status": "OBSERVED"
+          "status": "OBSERVED",
+          "sources": [
+            {
+              "physical_page": 9,
+              "locator": "Table 2, alpha=1, beta=1 row"
+            },
+            {
+              "physical_page": 8,
+              "locator": "§5.1, Table 1 run configuration"
+            }
+          ]
         },
         {
           "metric": "average decision time",
@@ -7098,7 +7333,7 @@
           {
             "finding": "With n = 6 neighbors and timely tensor delivery probability p_d = 0.70, aggregation quorum probability is 0.93 for q = 3 versus 0.74 for q = 4.",
             "page": 7,
-            "locator": "Section 6, paragraph below Fig. 2, Fig. 3",
+            "locator": "p. 7, paragraph below Fig. 2, Eq. (7) and Fig. 3 callout; formula visually checked",
             "excerpt": "for n = 6 neighbors and q = 3, we have P_q = 0.93 versus 0.74 for q = 4 when p_d = 0.70",
             "quantitative": {
               "value": "0.93 vs 0.74",
@@ -7110,7 +7345,13 @@
             },
             "subtopic": "K03-09",
             "status": "OBSERVED",
-            "repair_key": "K03-09"
+            "repair_key": "K03-09",
+            "sources": [
+              {
+                "physical_page": 7,
+                "locator": "Paragraph below Fig. 2; visually transcribed math, subscripts represented by underscores"
+              }
+            ]
           }
         ],
         "sensitivity_and_variability": [
@@ -7203,9 +7444,15 @@
           "workload": "INT8 tensor delivery with p_d = 0.70",
           "conditions": "Independent deliveries, binomial model Eq. (7)",
           "page": 7,
-          "locator": "Section 6",
+          "locator": "p. 7, paragraph below Fig. 2, Eq. (7) and Fig. 3 callout; formula visually checked",
           "excerpt": "for n = 6 neighbors and q = 3, we have P_q = 0.93 versus 0.74 for q = 4 when p_d = 0.70",
-          "status": "OBSERVED"
+          "status": "OBSERVED",
+          "sources": [
+            {
+              "physical_page": 7,
+              "locator": "Paragraph below Fig. 2; visually transcribed math, subscripts represented by underscores"
+            }
+          ]
         }
       ],
       "unresolved": [
@@ -7220,6 +7467,158 @@
           "checked": "restart_2026_11_26/fulltext_retrieval/pdf/R0121.pdf, pages 1-11 (p. 1 author/copyright block, p. 9 Conclusions-to-References transition, p. 11 back matter)"
         }
       ]
+    }
+  ],
+  "adjudicated_repairs": [
+    {
+      "report_id": "R0006",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+      "reason": "The stated 37% conflicts with 527 ms and 1239 ms. The result and coverage are attached to separate source locations."
+    },
+    {
+      "report_id": "R0009",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+      "reason": "Corrects the energy range, explicitly identifies the baseline-specific percentages and distinguishes the coverage and user-count sweeps."
+    },
+    {
+      "report_id": "R0044",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+      "reason": "Preserves the band-limited and reliability comparisons and restricts the across-model statement to what the authors report."
+    },
+    {
+      "report_id": "R0068",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+      "reason": "Disambiguates accuracy using the continued definition in the body rather than implying CNN top-1 accuracy."
+    },
+    {
+      "report_id": "R0083",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+      "reason": "Separates three outcome families and includes deployment, battery, request count and comparator conditions."
+    },
+    {
+      "report_id": "R0095",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+      "reason": "The relative outperformance denominator is not specified. Keeps the observed ranking, completion and distinct decision overhead without converting percentages."
+    },
+    {
+      "report_id": "R0022",
+      "key": "compute_and_radio:1",
+      "reason": "Table visual confirms the subscripts and cell values. The table specifies complex-normal channel coefficient; Rayleigh terminology applies to its magnitude."
+    },
+    {
+      "report_id": "R0054",
+      "key": "uav_architecture_role_and_topology:2",
+      "reason": "The old excerpt combined caption and figure labels with an ellipsis. Split its anchors and leave the exact baseline counts unresolved."
+    },
+    {
+      "report_id": "R0073",
+      "key": "quantity:1",
+      "reason": "The excerpt starts on physical page 10. The three experiments have different conditions; no exact plotted point is claimed."
+    },
+    {
+      "report_id": "R0121",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:9",
+      "reason": "Rendered PDF confirms the value and conditions; normalized text misses reordered subscripts and equations."
+    },
+    {
+      "report_id": "R0121",
+      "key": "quantity:4",
+      "reason": "Rendered PDF confirms the value and conditions; normalized text misses reordered subscripts and equations."
+    },
+    {
+      "report_id": "R0001",
+      "key": "compute_and_radio:1",
+      "reason": "The source optimizes CPU frequency without identifying a DVFS implementation."
+    },
+    {
+      "report_id": "R0001",
+      "key": "reported_limitations:1",
+      "reason": "The paper explicitly omits return time in its latency model."
+    },
+    {
+      "report_id": "R0003",
+      "key": "inference_model_task_and_dataset:1",
+      "reason": "Section III calls the AlexNet example top-1, while §V.A describes top-5 evaluation."
+    },
+    {
+      "report_id": "R0003",
+      "key": "quantity:2",
+      "reason": "Preserves the table values and discloses the conflicting metric label."
+    },
+    {
+      "report_id": "R0003",
+      "key": "quantity:4",
+      "reason": "Preserves the table values and discloses the conflicting metric label."
+    },
+    {
+      "report_id": "R0006",
+      "key": "quantity:3",
+      "reason": "Fig. 4 supplies both endpoints. Fig. 3b discussion separately identifies iteration 11."
+    },
+    {
+      "report_id": "R0095",
+      "key": "quantity:1",
+      "reason": "Separates Table 2 reward-weight sensitivity from the Fig. 9 partitioning comparisons."
+    },
+    {
+      "report_id": "R0083",
+      "key": "quantity:3",
+      "reason": "The 19 runs for the proposed method are supported. Exact baseline run counts are withheld where the prose and plotting do not unambiguously support the extracted assignments."
+    },
+    {
+      "report_id": "R0074",
+      "key": "quantity:1",
+      "reason": "Stores the observed latency in ms without mixing in a derived percent."
+    },
+    {
+      "report_id": "R0074",
+      "key": "quantity:2",
+      "reason": "Stores the observed latency in ms without mixing in a derived percent."
+    },
+    {
+      "report_id": "R0001",
+      "key": "code_and_data:1",
+      "reason": "Preserves the observed datasets and states the actual span searched for code."
+    },
+    {
+      "report_id": "R0002",
+      "key": "code_and_data:1",
+      "reason": "CIFAR-10 is reported as a data input. Explicitly records the sections inspected for absent code."
+    },
+    {
+      "report_id": "R0010",
+      "key": "quantity:1",
+      "reason": "The Introduction states the percentage, but §V.B does not identify an exact comparison supporting this model-specific aggregate and its denominator."
+    },
+    {
+      "report_id": "R0010",
+      "key": "quantity:2",
+      "reason": "The Introduction states the percentage, but §V.B does not identify an exact comparison supporting this model-specific aggregate and its denominator."
+    },
+    {
+      "report_id": "R0009",
+      "key": "quantity:4",
+      "reason": "Corrects scope of the averaging claim. The explicit 50-episode statement accompanies the separate radius sweep."
+    },
+    {
+      "report_id": "R0074",
+      "key": "quantity:4",
+      "reason": "Figure 9 has conflicting latency units (axis ms; annotation s). The 8.94% threshold is given in the body and is retained independently of the disputed latency."
+    },
+    {
+      "report_id": "R0015",
+      "key": "partition_and_assignment:1",
+      "reason": "Equation (14) sets an equality for N; Eq. (15) sets an upper bound for S."
+    },
+    {
+      "report_id": "R0015",
+      "key": "decision_variables_objectives_constraints_and_solver:1",
+      "reason": "Distinguishes the modeled inference latency objective from the separate runtime of the assignment algorithm."
+    },
+    {
+      "report_id": "R0015",
+      "key": "compute_and_radio:1",
+      "reason": "States the computing-power units and scopes the 72.2 Mbps condition to Figs. 3 and 5."
     }
   ]
 }

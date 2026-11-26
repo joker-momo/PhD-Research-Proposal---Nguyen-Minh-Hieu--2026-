@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T00:01:18+07:00",
+  "updated_at": "2026-11-27T00:12:47+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-p08-reconcile",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T00:01:18+07:00",
-    "updated_at": "2026-11-27T00:01:18+07:00",
-    "completed_at": "2026-11-27T00:01:18+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/p08_reconciliation_review.md",
-    "decision_id": "restart-11-p08-reconcile-v1"
-  },
-  "next_task": {
     "task_id": "restart-11-p08-source-adjudication",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-27T00:08:18+07:00",
+    "updated_at": "2026-11-27T00:12:47+07:00",
+    "completed_at": "2026-11-27T00:12:47+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/p08_batch_01_source_review.md",
+    "decision_id": "restart-11-p08-source-adjudication-v1"
+  },
+  "next_task": {
+    "task_id": "restart-11-p08-remaining-source-audit",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Resolve source discrepancies and verify the remaining assertions in the 25-report quarantined candidate.",
-    "acceptance": "25 reports independently verified, all retained assertions source-located, quantities include units and conditions, and P08 must pass before Step 12."
+    "action": "Continue semantic verification of the 304 explicitly unassessed entries and reconcile the 9 withheld entries under P08.",
+    "acceptance": "Every retained assertion and quantitative condition has a checked source, 25/25 reports meet the extraction acceptance gate; Step 12 remains gated by P08."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -166,7 +166,12 @@
         "p08_scoped_repairs_integrated": 47,
         "p08_semantic_initial_report_checks": 25,
         "p08_mechanically_inventoried_entries": 455,
-        "p08_normalized_excerpt_matches": 444
+        "p08_normalized_excerpt_matches": 447,
+        "p08_semantic_entries_pass": 142,
+        "p08_semantic_entries_withheld": 9,
+        "p08_semantic_entries_pending": 304,
+        "p08_semantically_reviewed_reports": 5,
+        "p08_prior_excerpt_exceptions_reviewed": 8
       }
     }
   },

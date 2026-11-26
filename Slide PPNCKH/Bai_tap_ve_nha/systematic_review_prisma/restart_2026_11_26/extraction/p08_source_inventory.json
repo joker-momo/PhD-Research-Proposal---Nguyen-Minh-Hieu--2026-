@@ -7,93 +7,124 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 proceedings header and DOI; PDF spans three physical pages."
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–2, Fig. 1 and §II; p. 3, §III.A lists 10 UAVs, four edge servers, one cloud."
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1, §II defines convolutional and fully connected sets; p. 3, §III.A names two data inputs and does not name the simulated DNN."
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–2, §II.A introduces k-specific edge/cloud and p/q cut points and enumerates five configurations."
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2, §II.E states PPO and convex subproblems; p. 3, §II.F solves continuous allocations."
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3, Eqs. (7)–(12); frequency bounds and formula, resource fractions and log-rate formula checked."
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1, Introduction; p. 2, §§II.B,E; mobility changes distances/link quality. No failure/recovery mechanism in pp. 1–3."
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1 and 3, Introduction/§III.A, dataset sources [3]–[4]; §III.A supplies no simulator or host name."
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3, §III.A numbered baseline list explicitly enumerates seven."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3, Figs. 2–3 and adjacent results; both are reward comparisons. Exact plotted outcome values are not printed."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3, §II.F identifies alpha as latency weight; Fig. 3 and adjacent text support falling rewards."
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–3, body and end matter; dataset inputs cited, no implementation repository."
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3, Acknowledgements lists all three grants."
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–3, title footnotes and Acknowledgements/References: no conflict statement located."
       },
       {
         "key": "reported_limitations:1",
-        "status": "NOT_REPORTED",
-        "page": 3,
-        "excerpt_check": "MATCH"
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2, §II.B explicitly excludes return time on the grounds that result data are small."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf"
   },
   "R0002": {
     "sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
@@ -103,93 +134,124 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 proceedings footer gives 2026 ICWS; nine physical pages."
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, §VII.A and Fig. 2(a); 5+10+15=30, ground station at origin, 100 m triangular deployment, and pictured migration pathways."
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, §VII.A states ResNet-18, CIFAR-10, image classification and urban monitoring."
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, §VII.A describes equal two-module Greedy initial allocation; p. 6, §VI defines PDBH cross/intra-swarm decisions."
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6, Eqs. (24)–(25), P1/P2 and theorem; §VI Algorithm 1 and p. 9 conclusion identify LST-GNN/PDBH."
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, Fig. 2(b) and §VII.A specify bandwidth, computing power, transmit/receive/flight power, speed and hardware profiles."
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–4, system delays and battery threshold; p. 7, §VII.A states simulated probability 0.0001 per slot; p. 8, §VII.B describes proactive migration."
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, §VII.A lists CPU, clock, RAM and describes a simulation with parameter profiles from the platform."
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 7–8, §VII.A–B and Figs. 3–4 axes identify four baselines, three arrival scales and axis reaching slot 1000."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8, discussion of Figs. 3–4 explicitly links more migrations, higher cost and greater task success."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 7–8, setup and plots; three workload scales, without reported multi-seed error bars."
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–9, full-text availability inspection; §VII.A names CIFAR-10, no implementation repository stated."
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, Acknowledgement gives grant 62572122."
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1 and 9, title matter and conclusion/end matter; no conflict statement located."
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, §VIII identifies joining/exiting, location disruptions, and intermittent GCS connectivity as future work."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf"
   },
   "R0003": {
     "sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
@@ -199,123 +261,164 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–2, IEEE WCSP 2023 proceedings footer, DOI and DMS name; PDF has seven physical pages."
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 Fig. 1 and §III define the coordinator and its local-versus-swarm decision; pp. 6–7 Figs. 2–3 and Table I support the range and reference case."
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3, 5–6; metric-label inconsistency explicitly retained."
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–4 §§III.A–C, Eqs. (1), (4) and (13): the complete small model runs at U1 and each large-model layer has one UAV assignment."
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 Eqs. (10)–(14) and §IV; normalized accuracy and latency weights, compute/memory limits and genetic algorithm."
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 Eq. (3) gives path loss, complex normal coefficient and AWGN; p. 5 §V.A gives all five board profiles and RAM convention."
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3 and 5, Eq. (3) and §V.A: moving traces inform distances and rates; no failure/recovery stage in the system model or evaluation."
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 accuracy example, p. 5 §V.A and p. 7 reference [21]; named model dataset and trace dataset checked separately."
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–7, §V and Figs. 2–3; enumerated baselines, sweeps and Table I reference case."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 2; utility ranking and decline supported for both pairings."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Figs. 2–3 axes and §V.B report narrowing gap against GA-uniform as swarm size increases."
       },
       {
         "key": "code_and_data:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 trace data citation and p. 7 reference [21]; reviewed pp. 5–7 setup, results, end matter for implementation URL."
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 Acknowledgement lists both NSFC grants."
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 author block and p. 7 Acknowledgement/References show no conflict declaration."
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 objective has accuracy and latency only; p. 7 Conclusions state energy as future work."
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, Table I(a) and discussion; five UAVs, seven requests; all four baseline values match."
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3, 5–7; Table I(a) values and baseline match; metric-label ambiguity preserved."
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, Table I(b) and discussion; five UAVs, seven requests; all four baseline values match."
       },
       {
         "key": "quantity:4",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3, 5–7; Table I(b) values and baseline match; metric-label ambiguity preserved."
       },
       {
         "key": "quantity:5",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, Table I and §V.B; overall latency reduction checked against both pairings and Large-only."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf"
   },
   "R0006": {
     "sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
@@ -325,111 +428,148 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, §V.B–C and Figs. 4–5; relative span recomputed from listed baselines; contradictory 37% withheld."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, Fig. 3b narrative states stability by iteration 11; Fig. 4 renders the endpoints exactly."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf"
   },
   "R0009": {
     "sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
@@ -439,117 +579,156 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, Figs. 5–6; radius and ground-user sweeps separated; four energy percentages checked."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, preceding and following columns of Fig. 6a discussion specify 70 users and 2,209.0 J."
       },
       {
         "key": "quantity:4",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8–9, Fig. 6b verifies 389 ms at 80 users and comparator order. Fig. 5's stated episode count is not transferred to Fig. 6b."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf"
   },
   "R0010": {
     "sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
@@ -559,123 +738,164 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
-        "status": "OBSERVED",
+        "status": "UNVERIFIED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "p. 2 abstracted comparison in Introduction; p. 5 plots do not establish identical comparator aggregation and scenario."
       },
       {
         "key": "quantity:2",
-        "status": "OBSERVED",
+        "status": "UNVERIFIED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "p. 2 abstracted comparison in Introduction; p. 5 plots do not establish identical comparator aggregation and scenario."
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, Fig. 4 and Results; five UAVs, 30 VGG-16 tasks, high computing power."
       },
       {
         "key": "quantity:4",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, Fig. 4 and Results; exact 2.78% reduction against CoDNN at high computing power."
       },
       {
         "key": "quantity:5",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, Fig. 4 and Results; exact 7.61% reduction against CoDNN at low computing power."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf"
   },
   "R0015": {
     "sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
@@ -685,117 +905,156 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 IEEE BIGCOM proceedings, 2023; PDF has eight physical pages; p. 5 names EECIA."
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 2–3 §III.A defines rotary-wing wireless ad hoc swarm and both node roles; p. 7 Fig. 5 gives the simulated UAV ranges and local architecture is reiterated in the conclusion."
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV.A gives the three named architectures and image classification workload; no dataset name in simulation settings."
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–5 §III.A–C and Eqs. (14)–(15); confirms N as equality and S as a bound."
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5 Eq. (10) includes input transfer, layer processing and intermediate transfer, with Eqs. (11)–(16) constraints and §III.C heuristic."
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7 §IV.A and Figs. 3–5; board profiles, million multiplications/second and task-specific link rates."
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV.A states rate constant during each request and that all devices can reach each other."
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV.A explicitly describes hardware profiles in the simulated image classification setting."
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV.A identifies four baselines and describes each."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV.B and Table II distinguish algorithm running time from inference latency."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 Fig. 4 and Fig. 5 sweep axes; pp. 5–7 methods and results do not present multi-run variance."
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–8 setup/results, Conclusions, Acknowledgement and References checked for replication artifacts."
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 Acknowledgement lists R&D grant and both NSFC grants."
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1 and 7 author/end matter checked; no conflict declaration."
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 Conclusions identify RL for future dynamic networks."
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 3 discussion; AlexNet, three UAVs, 72.2 Mbps, DistInference and 4.55% checked."
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 3 discussion; ResNet152, five UAVs, 72.2 Mbps, DistInference and 7.57% checked."
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 3 discussion; VGG-16, five UAVs, 72.2 Mbps, DistInference and 7.97% checked."
       },
       {
         "key": "quantity:4",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Table II and its running-time heading; EECIA, VGG-16, I=5, 0.0090 s."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf"
   },
   "R0019": {
     "sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
@@ -805,117 +1064,156 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 15,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 14,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 13,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 15,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 15,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 15,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 15,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 13,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:4",
         "status": "OBSERVED",
         "page": 13,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf"
   },
   "R0022": {
     "sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
@@ -925,93 +1223,125 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, rendered Table I and Figs. 4–5; rows, numeric units and bandwidth sweep checked.",
+        "prior_excerpt_exception_review": "VISUAL"
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf"
   },
   "R0029": {
     "sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
@@ -1021,117 +1351,156 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "NOT_REPORTED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, §§IV.A–B, default configuration and AlexNet at 700 ms, RA 45.5%."
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, §§IV.A–B, default configuration and AlexNet at 700 ms, PSO 36.8%."
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, §§IV.A–B, default configuration and AlexNet at 700 ms, GA 36.0%."
       },
       {
         "key": "quantity:4",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6, Fig. 5a discussion; poor-environment rates and comparator order checked."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf"
   },
   "R0044": {
     "sha256": "764cc894f9711a4b0e6f74ce45c1df93d3d1b6d9ed9c6a3b9534bb68801bc029",
@@ -1141,93 +1510,124 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 7–8, §IV.B, Figs. 3–7; model, bandwidth and reliability findings kept distinct."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "NOT_REPORTED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "NOT_REPORTED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0044.pdf"
   },
   "R0045": {
     "sha256": "9b5e95e1b30fa30510772f0d7fd0d4524b634a4d0d7fca27f49b105dbacacc52",
@@ -1237,99 +1637,132 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "UNVERIFIED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "p. 1 abstract gives 14.6%; numerical results do not explicitly state the value, comparator and denominator together."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0045.pdf"
   },
   "R0048": {
     "sha256": "27e027ecd322e4f06af79412bca5c603c304fd38e7cde7de75adefe66f843d98",
@@ -1339,111 +1772,151 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 12,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:2",
         "status": "NOT_REPORTED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12, rendered Table III and adjacent body: 0.511 s at 0.7, 60 UAVs.",
+        "prior_excerpt_exception_review": "VISUAL"
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12, rendered Table III and adjacent body: 670.8 J at 0.7, 60 UAVs.",
+        "prior_excerpt_exception_review": "VISUAL"
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12, rendered Table III and adjacent body: 117.4 IPS at 0.7, 60 UAVs.",
+        "prior_excerpt_exception_review": "VISUAL"
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0048.pdf"
   },
   "R0054": {
     "sha256": "48138e33b7cec08714cea8472199fcb44117893e6fd0c24ab9fa8d308dcc87e5",
@@ -1453,129 +1926,173 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:2",
         "status": "UNVERIFIED",
         "page": 4,
-        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "p. 4 Fig. 1 shows U1–U3 in a replay and p. 5 Fig. 3c shows out-of-distribution M levels. Table I baseline counts are unverified.",
+        "prior_excerpt_exception_review": "CORRECTED"
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:2",
         "status": "NOT_REPORTED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:2",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "NOT_REPORTED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5, §IV and rendered Table I; four held-out metrics are means with Student-t 95% CI half-widths."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5, protocol and rendered Table I; cost and five baselines match. CI half-width and train/holdout distinction verified."
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 2, 4–5, §II-A, §IV and rendered Table I; active-queue definition, admitted percentage and all comparators checked."
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5, protocol and rendered Table I; rates, Mbit/s and all comparator CIs checked."
       },
       {
         "key": "quantity:4",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5, Fig. 3(f) and numerical results; frozen policies, P50/P95, 10,000 decisions/scheme. Training GPU timing is separate."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0054.pdf"
   },
   "R0059": {
     "sha256": "9e8c96dbe6c3717efd91c23f02c3c8fcb10b8aa034ab7be150d9da74b85c0957",
@@ -1585,135 +2102,180 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:2",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:2",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, Task UAV 1 overhead and 4096-B reference; 28 B and approximate 0.68% preserved."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 9–10, §5.2.2 and Fig. 5; four named partitioning baselines and percentages checked."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:3",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8, §5.2.1, Fig. 3; three comparator-specific switching percentages checked."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 9–10, Fig. 5 and its separated columns; range 10–80 tasks, both three-task-UAV links and the four-task-UAV case, six relays, and four named comparator values."
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, Table 4 and text; 2.65% is across four task counts and four horizon settings."
       },
       {
         "key": "quantity:4",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0059.pdf"
   },
   "R0062": {
     "sha256": "6d0c4eab7261f241261a3e8f3b3898f785e8658acd4a17ca1aa27184d70d349f",
@@ -1723,105 +2285,140 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 6 and Stage 2 body; 2 FPS is approximate and applies after the communication program is disabled."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Stage 3 body; previous throughput refers to Stage 1."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 6 and Stage 1; four UAVs, Faster R-CNN and approximate 3 FPS."
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 6 and Stage 2; approximate 2 FPS and reassignment; conventional CoEI contrast stated by authors."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0062.pdf"
   },
   "R0063": {
     "sha256": "85df65849c3d01c7532c20c8d19d978455becf0590c1f91da79d8a4ee0c100b9",
@@ -1831,111 +2428,148 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 16,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 13,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 18,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "OBSERVED",
         "page": 20,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 20,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 20,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 15,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 16,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 13,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:4",
         "status": "OBSERVED",
         "page": 17,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0063.pdf"
   },
   "R0068": {
     "sha256": "30ab2b2966529939f9d4c04eeed75689126fccfdc2b9b345e3b0d6aaffbb630a",
@@ -1945,147 +2579,196 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 10–11, Fig. 4 and paragraph continuation; accuracy denotes constraints satisfied."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11, §VI.B(2), Fig. 5; closest to LDTP in the authors' bandwidth comparison."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:3",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11, §VI.B(3), Fig. 6a; convergence and sustained reliably shared data."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:4",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 11–12, Fig. 6b and §VI.B(4); three memory sizes and comparison supported."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:5",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12, Fig. 7a–b, §VI.B(5); 5+3−2 UAVs, rewards and latency."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:6",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12, Fig. 7c, §VI.B(5); fixed five UAVs and 560→256→512 MB."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:7",
         "status": "OBSERVED",
         "page": 13,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:8",
         "status": "OBSERVED",
         "page": 13,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 15,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 13,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "UNVERIFIED",
         "page": null,
-        "excerpt_check": "NO_SINGLE_LOCATOR"
+        "excerpt_check": "NO_SINGLE_LOCATOR",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "pp. 11–13, VI.B plots/body not sufficient to reproduce the headline numeric aggregation."
       },
       {
         "key": "quantity:2",
         "status": "UNVERIFIED",
         "page": null,
-        "excerpt_check": "NO_SINGLE_LOCATOR"
+        "excerpt_check": "NO_SINGLE_LOCATOR",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "pp. 11–13, VI.B plots/body not sufficient to reproduce the headline numeric aggregation."
       },
       {
         "key": "quantity:3",
         "status": "UNVERIFIED",
         "page": null,
-        "excerpt_check": "NO_SINGLE_LOCATOR"
+        "excerpt_check": "NO_SINGLE_LOCATOR",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "pp. 11–13, VI.B plots/body not sufficient to reproduce the headline numeric aggregation."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0068.pdf"
   },
   "R0071": {
     "sha256": "75526755f4f92c411c109aadcad0e02dd870504649976b77ce7c6f6d0d68f025",
@@ -2095,99 +2778,132 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 2,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 3 and §IV; at least 13.8% applies only to the weighted sum, relative to MHAPPO."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "NOT_REPORTED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0071.pdf"
   },
   "R0073": {
     "sha256": "597ff420ac58a13811f5f13f06faa60803529a1f149875161cd39e80cc9ca312",
@@ -2197,93 +2913,125 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "OBSERVED",
         "page": 13,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 13, author Data Availability Statement; both dataset references checked; no code repository supplied there."
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 13,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 13, Funding and Conflicts of Interest, employment and both sources of funding checked."
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 13,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "UNVERIFIED",
-        "page": 11,
-        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "pp. 10–12, §5.2 and rendered Figs. 4–6. Source location and scenario conditions corrected; exact plotted observations are withheld.",
+        "prior_excerpt_exception_review": "CORRECTED"
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0073.pdf"
   },
   "R0074": {
     "sha256": "f9dc09402cc09d3e426cc693458070cee2e480acab8f538da24ecbaa3c93d151",
@@ -2293,117 +3041,156 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 title block, date, authors, journal, article number and DOI footnote."
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 §3.1.1 sets the no-cloud constraint; pp. 14–15 §4.1 and Table 1 give emulated swarm hardware and the separate cloud baseline."
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 15,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 14–16 §4.1 and Table 1 give modeled attention, precision, model scales and log lengths; p. 23 §5.4 confirms logs are textual."
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–13 §3, Algorithms 1–2 and §3.3 separate layer placement, adaptive sequence chunking and predictive first-token decoding."
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8–11 §§3.1.2 and 3.2.2, recurrence, memory constraint, algorithm complexity and min-max partition objective."
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 15,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 14–15 §4.1 and Table 1 list emulated hardware, link ranges, jitter and activation size."
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 21,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 15 §4.1 uniform bandwidth fluctuation setting; p. 21 §4.8 lists separate multiplicative Gaussian perturbations and percentages."
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 14,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 14 §4.1 gives Python 3.13.5 and describes simulated hardware/network/inference processes."
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 15,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 15–16 §4.1 and Table 1 enumerate all five baselines, model scales and token lengths."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 16,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 16–17 §4.2 and Fig. 4 supply network/token conditions and distinguish OOM (Edge-Solo and both cloud-edge baselines) at 70B."
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
         "status": "OBSERVED",
         "page": 17,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 17 §4.2 gives all three successful distributed solutions and their three latencies in its results paragraph."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 19,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 19–21 §§4.6–4.8: ablation variants, 300 simulations per configuration for break-even, 100 independent trials per noise scenario."
       },
       {
         "key": "code_and_data:1",
         "status": "OBSERVED",
         "page": 24,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 24, Data Availability Statement; article contributions and correspondence, no code URL stated."
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 24,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 24, Funding and Conflicts, two grants and no conflicts."
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 22,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 22–23 §§5.1, 5.3–5.5 distinguish current decoding, assumed latency and cluster size, textual-only input and proposed physical validation."
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 16,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 16, §4.2 and Fig. 4; absolute prefill ms and baseline comparison under fixed token/bandwidth settings."
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 16,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 16, §4.2 and Fig. 4; absolute prefill ms and baseline comparison under fixed token/bandwidth settings."
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 17,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 16–17, §4.2 and Fig. 4; separates OOM from completed runs and checks the three successful latency values."
       },
       {
         "key": "quantity:4",
         "status": "OBSERVED",
         "page": 20,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 20 §4.7 and rendered Fig. 9; 8.94% is supported by body and annotations, with 300 Monte Carlo runs, 64 tokens, and 1000 Mb/s ±20%. Intersection latency withheld because units conflict."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0074.pdf"
   },
   "R0083": {
     "sha256": "f339a0eb83ca064fb88e73360af42a22cb5bd8210534c8755bebf40c8726604e",
@@ -2413,111 +3200,148 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 3,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 7–8, Figs. 3–5 and adjacent body; area, per-device battery scenarios and longevity configuration separated."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, author Data availability declaration; no data was used."
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, declaration and acknowledgement; both funding and conflicts checked."
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8, Fig. 5a–b and paragraph; 19 runs on 10 UAVs with 10 simultaneous requests per run under both stated battery settings."
       },
       {
         "key": "quantity:4",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0083.pdf"
   },
   "R0089": {
     "sha256": "44e2147c5d37b416a5fd19b690ec44354e1a340ef29459e77ac21e813e8248be",
@@ -2527,93 +3351,124 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "NOT_REPORTED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8 and 11, evaluation and Data availability; CIFAR used, data sharing permission absent."
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11, competing-interest declaration and both grant identifiers."
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "UNVERIFIED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "pp. 9–10, Figs. 4–6 compare directional accuracy; exact plot values are withheld."
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0089.pdf"
   },
   "R0095": {
     "sha256": "a86e926de0d40dddd292784362c655a1eb3f35fb61aed98e02c817410f56adad",
@@ -2623,99 +3478,132 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 10, rendered Figs. 9b–c and discussion; 100% at 1.5 s, 31.9287 ms decision overhead. Relative reduction removed."
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "OBSERVED",
         "page": 12,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12, author declaration that no data were used; no code link in adjacent declarations."
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 11,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8–9, Tables 1–2; run conditions and row 19.539 s, 100%, at alpha=1 and beta=1."
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 10,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0095.pdf"
   },
   "R0121": {
     "sha256": "83b93927c7a804b04412f6aa0c7b438817c9f114dbc3d061f08840b77a361ec0",
@@ -2725,158 +3613,213 @@
         "key": "identity:1",
         "status": "OBSERVED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "uav_architecture_role_and_topology:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "inference_model_task_and_dataset:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "partition_and_assignment:1",
         "status": "OBSERVED",
         "page": 4,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "decision_variables_objectives_constraints_and_solver:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "compute_and_radio:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "mobility_channel_intermittency_failure_and_recovery:1",
         "status": "OBSERVED",
         "page": 5,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "evaluation_platform_simulator_hardware_and_traces:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "baselines_and_workloads:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:3",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:4",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:5",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:6",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:7",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:8",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:9",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 rendered formula paragraph; n=6, p_d=0.70, q=3 gives 0.93 versus 0.74 for q=4.",
+        "prior_excerpt_exception_review": "VISUAL"
       },
       {
         "key": "sensitivity_and_variability:1",
         "status": "OBSERVED",
         "page": 6,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "code_and_data:1",
         "status": "NOT_REPORTED",
         "page": 9,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "funding_and_conflicts:1",
         "status": "NOT_REPORTED",
         "page": 1,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "reported_limitations:1",
         "status": "OBSERVED",
         "page": 8,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "NOT_YET_ASSESSED",
+        "semantic_evidence": null
       },
       {
         "key": "quantity:1",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, Tables 2–3; 150 microsecond overhead, 12 Mbit/s, FP32 workload and both endpoint results."
       },
       {
         "key": "quantity:2",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, Tables 2–3; 0.8-bit tensor, both latency values and FP32 comparison."
       },
       {
         "key": "quantity:3",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "MATCH"
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, Table 3 and Eq. (6) discussion below Fig. 2; source probabilities, frame counts and success rate."
       },
       {
         "key": "quantity:4",
         "status": "OBSERVED",
         "page": 7,
-        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, Eq. (7) callout; rendered symbols and both probabilities checked.",
+        "prior_excerpt_exception_review": "VISUAL"
       }
-    ]
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0121.pdf"
   }
 }
