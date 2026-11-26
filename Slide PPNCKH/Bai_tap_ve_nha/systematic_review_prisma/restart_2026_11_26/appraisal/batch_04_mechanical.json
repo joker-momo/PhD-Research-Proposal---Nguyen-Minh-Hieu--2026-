@@ -1,0 +1,51 @@
+{
+  "task_id": "2e19b1a7-4fc2-4202-9e5b-a86a91e1ca2c",
+  "transport": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T18:29:36.660+00:00"
+  },
+  "result_chars": 25029,
+  "completion_marker": true,
+  "parsed_rows": 56,
+  "malformed": [],
+  "unknown": [],
+  "expected": 50,
+  "returned": 50,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [],
+  "unexpected_access": [],
+  "summary": [
+    {
+      "returned_keys": 50,
+      "unresolved": [],
+      "tools": {
+        "used": [
+          "client:view_file",
+          "client:grep_search"
+        ],
+        "unavailable": [
+          "PyMuPDF",
+          "MinerU",
+          "Marker",
+          "shell_commands_disallowed_by_brief"
+        ]
+      },
+      "workers_used": 0,
+      "worker_assignments": []
+    }
+  ],
+  "locators": 109,
+  "exact_quote_locators": 81,
+  "needs_visual_cell": [],
+  "bad_domains": {
+    "R0068/D06": [
+      "quote mismatch p11: respect to the convergence of algorithms to the maximum",
+      "no observed anchor"
+    ],
+    "R0073/D05": [
+      "quote mismatch p9: The end-to-end latency is employed to evaluate the performance"
+    ]
+  }
+}

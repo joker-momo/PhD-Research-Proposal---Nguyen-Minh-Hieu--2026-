@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T01:23:27+07:00",
+  "updated_at": "2026-11-27T01:30:40+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step12_active",
@@ -11,18 +11,18 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T00:36:29+07:00",
-    "updated_at": "2026-11-27T01:23:27+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/batch_03_correction_review.md",
+    "updated_at": "2026-11-27T01:30:40+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/batch_04_review.md",
     "decision_id": "restart-12-p09-v1"
   },
   "next_task": {
-    "task_id": "restart-12-p09-batch-04",
-    "dispatch_brief": "restart_2026_11_26/appraisal/batch_04_brief.md",
-    "message_id": "44cb8eba-890f-4bbb-a863-c0d089e97e8f",
+    "task_id": "restart-12-p09-batch-04-correction",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Check the next five frozen P08 reports across all ten P09 domains in the Gemini.app parent Task.",
-    "acceptance": "5 original PDF access passages and 50 unique domain keys with independently verified rationale and source locators."
+    "dispatch_brief": "restart_2026_11_26/appraisal/batch_04_correction_brief.md",
+    "message_id": "8c348dc7-c739-4e21-9e9d-a946164e310a",
+    "action": "Correct nine precisely identified Batch 04 keys from original full text.",
+    "acceptance": "9/9 exact keys and source-supported judgments with strict page, transcription and scope; 41 other rows retained."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -201,7 +201,10 @@
         "batch_02_unresolved_keys": 0,
         "last_batch_03_uuid": "fd935e09-dd2b-41bc-937f-ac6b00155003",
         "last_batch_03_verdict": "PASS",
-        "batch_03_unresolved_keys": 0
+        "batch_03_unresolved_keys": 0,
+        "last_batch_04_uuid": "2e19b1a7-4fc2-4202-9e5b-a86a91e1ca2c",
+        "last_batch_04_verdict": "FAIL",
+        "batch_04_unresolved_keys": 9
       }
     }
   },
