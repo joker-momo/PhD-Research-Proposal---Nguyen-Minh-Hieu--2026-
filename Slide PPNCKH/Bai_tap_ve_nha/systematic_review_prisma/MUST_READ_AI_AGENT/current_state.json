@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T01:02:32+07:00",
+  "updated_at": "2026-11-27T01:09:07+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step12_active",
@@ -11,18 +11,18 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T00:36:29+07:00",
-    "updated_at": "2026-11-27T01:02:32+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/batch_01_locator_repair_review.md",
+    "updated_at": "2026-11-27T01:09:07+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/batch_02_review.md",
     "decision_id": "restart-12-p09-v1"
   },
   "next_task": {
-    "task_id": "restart-12-p09-batch-02",
-    "dispatch_brief": "restart_2026_11_26/appraisal/batch_02_brief.md",
-    "message_id": "95b54792-75a7-448d-b7dc-60ff3a921ed1",
+    "task_id": "restart-12-p09-batch-02-correction",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Check the next five frozen P08 reports across all ten P09 domains in the Gemini.app parent Task.",
-    "acceptance": "5 original PDF access passages and 50 unique domain keys with independently verified rationale and source locators."
+    "action": "Correct five identified appraisal issues in Batch 02 and retain the other 45 keys for composite review.",
+    "acceptance": "Five unique correction keys with verified original-body source evidence and scope. Zero extra keys or unsupported conclusions.",
+    "dispatch_brief": "restart_2026_11_26/appraisal/batch_02_correction_brief.md",
+    "message_id": "8da1ea73-45ff-4200-8f62-dbc6b7cbefa4"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -195,7 +195,10 @@
         "last_batch_01_targeted_correction_uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
         "last_batch_01_targeted_correction_verdict": "FAIL",
         "last_batch_01_locator_repair_uuid": "8a5f0cb9-1977-4914-a564-e3e8e449bbe8",
-        "last_batch_01_locator_repair_verdict": "PASS"
+        "last_batch_01_locator_repair_verdict": "PASS",
+        "last_batch_02_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+        "last_batch_02_verdict": "FAIL",
+        "batch_02_unresolved_keys": 5
       }
     }
   },

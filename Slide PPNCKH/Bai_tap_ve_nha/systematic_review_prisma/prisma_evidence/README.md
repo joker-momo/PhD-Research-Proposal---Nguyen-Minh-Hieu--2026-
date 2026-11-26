@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T01:02:32+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T01:09:07+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -436,9 +436,9 @@ Nghiệm thu cấp bước đã ghi trong sổ: FAIL=19, PASS=5.
 <a id="buoc-12"></a>
 ## Bước 12 · Đánh giá chất lượng và nguy cơ sai lệch
 
-**Đang làm** · `2026-11-27T01:02:32+07:00`
+**Đang làm** · `2026-11-27T01:09:07+07:00`
 
-Nghiệm thu cấp bước đã ghi trong sổ: FAIL=3, PASS=2.
+Nghiệm thu cấp bước đã ghi trong sổ: FAIL=4, PASS=2.
 
 - [manifest.json](../restart_2026_11_26/appraisal/manifest.json)
 - [batch_01_brief.md](../restart_2026_11_26/appraisal/batch_01_brief.md)
@@ -474,6 +474,11 @@ Nghiệm thu cấp bước đã ghi trong sổ: FAIL=3, PASS=2.
 - [batch_01_locator_repair_mechanical.json](../restart_2026_11_26/appraisal/batch_01_locator_repair_mechanical.json)
 - [batch_01_locator_repair_review.md](../restart_2026_11_26/appraisal/batch_01_locator_repair_review.md)
 - [batch_01_accepted.json](../restart_2026_11_26/appraisal/batch_01_accepted.json)
+- [batch_02_raw.json](../restart_2026_11_26/appraisal/batch_02_raw.json)
+- [batch_02_dispatch.json](../restart_2026_11_26/appraisal/batch_02_dispatch.json)
+- [batch_02_mechanical.json](../restart_2026_11_26/appraisal/batch_02_mechanical.json)
+- [batch_02_review.md](../restart_2026_11_26/appraisal/batch_02_review.md)
+- [batch_02_correction_brief.md](../restart_2026_11_26/appraisal/batch_02_correction_brief.md)
 
 <a id="buoc-13"></a>
 ## Bước 13 · Hòa giải PRISMA

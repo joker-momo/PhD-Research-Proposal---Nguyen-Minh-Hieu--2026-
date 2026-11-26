@@ -1,0 +1,48 @@
+{
+  "task_id": "be0b8973-d10e-419c-8698-dc00069feb3c",
+  "transport": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T18:07:41.404+00:00"
+  },
+  "result_chars": 27494,
+  "completion_marker": true,
+  "parsed_rows": 56,
+  "malformed": [],
+  "unknown": [],
+  "expected": 50,
+  "returned": 50,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [],
+  "unexpected_access": [],
+  "summary": [
+    {
+      "returned_keys": 50,
+      "unresolved": [],
+      "tools": {
+        "used": [
+          "client:view_file"
+        ],
+        "unavailable": [
+          "PyMuPDF (shell command execution prohibited by brief)",
+          "MinerU (shell command execution prohibited by brief)",
+          "Marker (shell command execution prohibited by brief)"
+        ]
+      },
+      "workers_used": 0,
+      "worker_assignments": []
+    }
+  ],
+  "locators": 130,
+  "exact_quote_locators": 99,
+  "needs_visual_cell": [],
+  "bad_domains": {
+    "R0010/D01": [
+      "quote mismatch p4: propose an efficient algorithm for task allocation in"
+    ],
+    "R0015/D08": [
+      "quote mismatch p7: the running time meets the real-time requirements."
+    ]
+  }
+}
