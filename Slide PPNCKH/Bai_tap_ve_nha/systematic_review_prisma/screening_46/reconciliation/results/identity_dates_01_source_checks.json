@@ -1,0 +1,408 @@
+[
+  {
+    "source_id": "S19_CROSSREF",
+    "url": "https://api.crossref.org/works/10.1109/ICWS72778.2026.00154",
+    "checked_at": "2026-11-26T07:05:59+07:00",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "source_id": "S20_CROSSREF",
+    "url": "https://api.crossref.org/works/10.1109/ICWS72778.2026.00067",
+    "checked_at": "2026-11-26T07:05:59+07:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1109/ICWS72778.2026.00067",
+    "sha256": "78442d3d1cc67b530a2b5f476451f9aee30f7b4603f8644f6fb8307abae919e5",
+    "snapshot": "S20_CROSSREF.json",
+    "mismatched_fields": [
+      "created",
+      "deposited",
+      "indexed",
+      "author"
+    ],
+    "date_fields": {
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "source_id": "C03_CROSSREF",
+    "url": "https://api.crossref.org/works/10.23939/ictee2026.02.144",
+    "checked_at": "2026-11-26T07:05:59+07:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.23939/ictee2026.02.144",
+    "sha256": "023a4a57b465bb9aa84a0105c1ae4c207dcf83676d5ff1af1f09f58e5c561c56",
+    "snapshot": "C03_CROSSREF.json",
+    "mismatched_fields": [
+      "created",
+      "deposited",
+      "indexed",
+      "author"
+    ],
+    "date_fields": {
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            11
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            10
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            10
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "source_id": "C03_PUBLISHER",
+    "url": "https://science.lpnu.ua/ictee/all-volumes-and-issues/volume-6-number-2-2026/link-layer-model-uav-swarm-mesh-network",
+    "checked_at": "2026-11-26T07:05:59+07:00",
+    "status": 200,
+    "final_url": "https://science.lpnu.ua/ictee/all-volumes-and-issues/volume-6-number-2-2026/link-layer-model-uav-swarm-mesh-network",
+    "sha256": "adf338e127a61f0e8815934a3583a2135d66d044d1b20bce27aa9b5151357171",
+    "snapshot": "C03_PUBLISHER.txt.gz",
+    "compression": "gzip",
+    "stored_sha256": "97c443752319906984a142077771050278981da515cf6fa05b1ef2cfdf767168"
+  },
+  {
+    "source_id": "C03_JOURNAL_HOME",
+    "url": "https://science.lpnu.ua/ictee",
+    "checked_at": "2026-11-26T07:05:59+07:00",
+    "status": 200,
+    "final_url": "https://science.lpnu.ua/ictee",
+    "sha256": "f9c75a7fb876c71da38fafee6db3930bd4a459b9137131786dfa577778e4012c",
+    "snapshot": "C03_JOURNAL_HOME.txt.gz",
+    "compression": "gzip",
+    "stored_sha256": "d90629227443af9b4069042ba48ae92df47926780eaa342d85a2d9161183435b"
+  },
+  {
+    "source_id": "C05_CROSSREF",
+    "url": "https://api.crossref.org/works/10.1109/TCSVT.2026.3745821",
+    "checked_at": "2026-11-26T07:06:00+07:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1109/TCSVT.2026.3745821",
+    "sha256": "f95e31e8763222c10f6051c484f6ce0aef860bd372e52ad374bcae8a0ad55068",
+    "snapshot": "C05_CROSSREF.json",
+    "mismatched_fields": [
+      "created",
+      "deposited",
+      "indexed",
+      "author"
+    ],
+    "date_fields": {
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "source_id": "C09_CROSSREF",
+    "url": "https://api.crossref.org/works/10.1109/JIOT.2026.3755315",
+    "checked_at": "2026-11-26T07:06:00+07:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1109/JIOT.2026.3755315",
+    "sha256": "9fa21a0cbf0337f40a4e37bccafadf0347cb6306feba931aa785a0b16119ac36",
+    "snapshot": "C09_CROSSREF.json",
+    "mismatched_fields": [
+      "created",
+      "deposited",
+      "indexed",
+      "author"
+    ],
+    "date_fields": {
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "source_id": "C10_CROSSREF",
+    "url": "https://api.crossref.org/works/10.1109/JIOT.2026.3740035",
+    "checked_at": "2026-11-26T07:06:00+07:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1109/JIOT.2026.3740035",
+    "sha256": "4d71a756caf16ebd003956eb38f955f6c8e6c2514c5d8388a7127cffdb71919d",
+    "snapshot": "C10_CROSSREF.json",
+    "mismatched_fields": [
+      "created",
+      "deposited",
+      "indexed",
+      "author"
+    ],
+    "date_fields": {
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "source_id": "C13_CROSSREF",
+    "url": "https://api.crossref.org/works/10.1109/TVT.2026.3755123",
+    "checked_at": "2026-11-26T07:06:00+07:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1109/TVT.2026.3755123",
+    "sha256": "c6623f7e8f87edd5305cfc6baac3a6aab3d194efab230dbc4aaebb5ce79938b2",
+    "snapshot": "C13_CROSSREF.json",
+    "mismatched_fields": [
+      "created",
+      "deposited",
+      "indexed",
+      "author"
+    ],
+    "date_fields": {
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "source_id": "C14_CROSSREF",
+    "url": "https://api.crossref.org/works/10.1109/JIOT.2026.3746980",
+    "checked_at": "2026-11-26T07:06:00+07:00",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "source_id": "C19_CROSSREF",
+    "url": "https://api.crossref.org/works/10.1109/JIOT.2026.3755176",
+    "checked_at": "2026-11-26T07:06:01+07:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1109/JIOT.2026.3755176",
+    "sha256": "16a3505153c7b9d418159226de605ebf11ca42a8ceffffbbc8b874311da24a18",
+    "snapshot": "C19_CROSSREF.json",
+    "mismatched_fields": [
+      "created",
+      "deposited",
+      "indexed",
+      "author"
+    ],
+    "date_fields": {
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "source_id": "C08_ARXIV_ABS",
+    "url": "https://arxiv.org/abs/2412.20860",
+    "checked_at": "2026-11-26T07:06:01+07:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2412.20860",
+    "sha256": "684b0f916b8657bf4fd9cf634abbf48ba947232a7d46d6d9999d81171021a454",
+    "snapshot": "C08_ARXIV_ABS.txt.gz",
+    "compression": "gzip",
+    "stored_sha256": "558fe3e12368553e3b22fb6671eb49bab3bc21ebe76b567b987c451c1f919a7e"
+  },
+  {
+    "source_id": "C08_ARXIV_API",
+    "url": "https://export.arxiv.org/api/query?id_list=2412.20860",
+    "checked_at": "2026-11-26T07:06:01+07:00",
+    "status": 200,
+    "final_url": "https://export.arxiv.org/api/query?id_list=2412.20860",
+    "sha256": "37ba8a5454cfb18402220591a680ad13c9c9e48bfe4029478902fef18ab515b0",
+    "snapshot": "C08_ARXIV_API.txt.gz",
+    "compression": "gzip",
+    "stored_sha256": "4f203c3e6ad853bbb0411a75ee96df2ba91b69e6835d7321b4c7ca83b633546b"
+  },
+  {
+    "source_id": "C08_CROSSREF",
+    "url": "https://api.crossref.org/works/10.1016/j.future.2025.107874",
+    "checked_at": "2026-11-26T07:06:01+07:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1016/j.future.2025.107874",
+    "sha256": "fe310d73f710889dfb53dae667977a9168f24ba0a53433187adee780203592c5",
+    "snapshot": "C08_CROSSREF.json",
+    "mismatched_fields": [
+      "created",
+      "deposited",
+      "indexed",
+      "author"
+    ],
+    "date_fields": {
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "source_id": "C08_LINKINGHUB",
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0167739X25001694",
+    "checked_at": "2026-11-26T07:06:01+07:00",
+    "status": 200,
+    "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0167739X25001694",
+    "sha256": "48a87f76abe0c63ee5d940982251cc9bc189a968d57f57dd683cfaee38e688a3",
+    "snapshot": "C08_LINKINGHUB.txt.gz",
+    "compression": "gzip",
+    "stored_sha256": "2eab0cf2103b16f4755e536a523b5d25cb1cca2be6a60beb8b8ff448576dad5f"
+  },
+  {
+    "source_id": "S19_CROSSREF",
+    "url": "https://api.crossref.org/works/10.1109/ICWS72778.2026.00154",
+    "checked_at": "2026-11-26T07:07:16+07:00",
+    "retry": 1,
+    "status": 200,
+    "sha256": "9e7b4c2c63b0f6d010d91b12e879e6b74d478951c16835d9ba90aead6375deb3",
+    "snapshot": "S19_CROSSREF.json"
+  },
+  {
+    "source_id": "C14_CROSSREF",
+    "url": "https://api.crossref.org/works/10.1109/JIOT.2026.3746980",
+    "checked_at": "2026-11-26T07:07:17+07:00",
+    "retry": 1,
+    "status": 200,
+    "sha256": "de25281eef7227a3866de034b2fda5b7e2fe948436ef85bc236d381de2ae1265",
+    "snapshot": "C14_CROSSREF.json"
+  }
+]

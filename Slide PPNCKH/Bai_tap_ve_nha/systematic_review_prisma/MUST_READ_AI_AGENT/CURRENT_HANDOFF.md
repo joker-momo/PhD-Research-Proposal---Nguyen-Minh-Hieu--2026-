@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T06:53:42+07:00
+**updated_at:** 2026-11-26T07:09:59+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -163,14 +163,13 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-After brief commit/merge/cleanup, route the committed brief
-`screening_46/reconciliation/briefs/identity_dates_01.md` for exactly ten reports:
-S19,S20,C03,C05,C09,C10,C13,C14,C19,C08. Preserve task/context IDs. Review A1–A6;
-retain source-access limitations and do not change accepted screening until PASS.
-The consolidated 46-report ledger remains 32 INCLUDE / 2 EXCLUDE / 12 UNCERTAIN.
-No provider task is active and no manuscript change has been made.
-The first routing attempt was rejected before dispatch because headings used
-level 1; all five headings now use level 2 and the router validator passes.
+After rejection commit/merge/cleanup, prepare a targeted correction brief for
+`screening_46/reconciliation/results/identity_dates_01.json`, parent task
+01a21521-896b-7bdf-8bcb-1b0cfda69f2f. Review A3 failed: seven noncontiguous
+local excerpts, C03 unsupported content equivalence and C08 title word count.
+Ten Crossref metadata subsets matched independent checks, but no result is
+adopted. Ledger remains 32 INCLUDE / 2 EXCLUDE / 12 UNCERTAIN. No provider task
+is active. Correct exactly the named fields; keep prior result quarantined.
 
 ## Authorized concurrent baseline update
 
@@ -178,10 +177,10 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-identity-date-brief-format",
-  "status": "completed",
-  "started_at": "2026-11-26T06:53:42+07:00",
-  "updated_at": "2026-11-26T06:53:42+07:00",
-  "completed_at": "2026-11-26T06:53:42+07:00"
+  "task_id": "reconciliation-identity-date-01",
+  "status": "rejected",
+  "started_at": "2026-11-26T06:54:09+07:00",
+  "updated_at": "2026-11-26T07:09:59+07:00",
+  "completed_at": "2026-11-26T07:09:59+07:00"
 }
 -->

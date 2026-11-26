@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-26T07:08:34+07:00",
+  "record_count": 10,
+  "source_count": 25,
+  "attempt_count": 24,
+  "crossref_subset_matches": 10,
+  "local_excerpt_matches": 3,
+  "local_excerpt_nonmatches": [
+    "C03_LOCAL_TXT",
+    "C05_LOCAL_TXT",
+    "C09_LOCAL_TXT",
+    "C10_LOCAL_TXT",
+    "C13_LOCAL_TXT",
+    "C14_LOCAL_TXT",
+    "C19_LOCAL_TXT"
+  ],
+  "source_id_missing": 0,
+  "duplicate_doi": 0,
+  "duplicate_title": 0,
+  "c08_title_word_count": 14,
+  "unsupported_content_equivalence": [
+    "C03"
+  ],
+  "verdict": "REJECTED_A3"
+}

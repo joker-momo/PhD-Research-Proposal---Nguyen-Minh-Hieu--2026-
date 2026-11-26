@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T06:53:42+07:00
+Updated_at: 2026-11-26T07:09:59+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -32,8 +32,10 @@ without blocking dispatch.
 
 ## Reconciliation next task
 
-Identity/date brief ready for ten reports (nine dates plus C08 version status).
-Dispatch only after this task is committed/merged/cleaned; A1–A6 all required.
+Identity/date primary completed but rejected A3: 7 noncontiguous excerpts,
+1 unsupported full-text equivalence and 1 incorrect title word count. Other
+A1/A2/A4/A5/A6 PASS; 10/10 Crossref metadata subsets match. Result is quarantined;
+accepted screening unchanged. Prepare targeted correction after task closure.
 
 ## Measured progress
 
@@ -76,10 +78,10 @@ User confirmed preservation of the concurrent root .gitignore addition (*.json);
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-identity-date-brief-format",
-  "status": "completed",
-  "started_at": "2026-11-26T06:53:42+07:00",
-  "updated_at": "2026-11-26T06:53:42+07:00",
-  "completed_at": "2026-11-26T06:53:42+07:00"
+  "task_id": "reconciliation-identity-date-01",
+  "status": "rejected",
+  "started_at": "2026-11-26T06:54:09+07:00",
+  "updated_at": "2026-11-26T07:09:59+07:00",
+  "completed_at": "2026-11-26T07:09:59+07:00"
 }
 -->
