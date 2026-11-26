@@ -1,27 +1,26 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T13:35:13+07:00",
+  "updated_at": "2026-11-26T13:51:18+07:00",
   "goal": {
     "version": "HK261-PRISMA-completion-spec-v2",
-    "status": "execution_in_progress_b04_core_searches_ready",
-    "summary": "Query set 1.3 and Amendment 005 clear IEEE/ACM syntax for formal runs with declared facet fallbacks. No search, result, export or corpus decision changed.",
+    "status": "blocked_b04_user_institutional_sign_in",
+    "summary": "Four of eight official-interface runs are archived: IEEE returned 47 and 26 year-filtered results; ACM returned 79 and 325 broad Full-Text results. Record-level exports remain zero, and Scopus/Web of Science require user institutional sign-in before their four queries can run.",
     "goal_engine_status_observed": "usageLimited"
   },
   "task": {
-    "task_id": "verify-ieee-acm-authenticated-interfaces",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T13:33:49+07:00",
-    "updated_at": "2026-11-26T13:35:13+07:00",
-    "completed_at": "2026-11-26T13:35:13+07:00",
-    "decision_id": "verify-ieee-acm-authenticated-interfaces-v1"
-  },
-  "next_task": {
     "task_id": "execute-and-archive-core-searches-b04",
     "owner": "CODEX_WRITING",
-    "status": "ready",
-    "action": "Execute S-02–S-05 in official interfaces, archive immutable raw exports and complete the formal search log.",
-    "acceptance": "Eight runs have exact query, filters, RFC3339 time, reported/exported totals, raw file, checksum and limitations; every raw export parses; caps/continuations reconcile; no failed-access count is inferred."
+    "status": "blocked",
+    "started_at": "2026-11-26T13:50:14+07:00",
+    "updated_at": "2026-11-26T13:51:18+07:00",
+    "decision_id": "execute-and-archive-core-searches-b04-checkpoint-v1"
+  },
+  "next_task": {
+    "task_id": "resume-b04-after-institutional-sign-in",
+    "owner": "CODEX_WRITING",
+    "status": "blocked",
+    "action": "User signs in to Scopus and Web of Science in the local browser; Codex then executes the remaining four queries and obtains or explicitly resolves all record-level export blockers.",
+    "acceptance": "Eight runs have exact query, filters, RFC3339 time, reported/exported totals, immutable raw file, checksum and limitations; every nonzero raw export parses; caps/continuations reconcile; no failed-access count is inferred."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -74,8 +73,13 @@
       "s01_validation": "ACCEPTED_USER_RELAYED_13_OF_13_PLUS_8_OF_8",
       "query_set": "1.3",
       "ieee_acm_interface_records": 2,
-      "formal_searches_executed": 0,
-      "result_or_export_counts_claimed": 0,
+      "formal_searches_executed": 4,
+      "result_counts_claimed": 4,
+      "record_level_exports_obtained": 0,
+      "reported_totals": "IEEE 47/26; ACM 79/325",
+      "blocked_runs": 4,
+      "checkpoint_review": "corpus_expansion/reviews/b04_core_search_checkpoint_review.md",
+      "raw_evidence_checksums": "sources/raw/core_searches/checksums.sha256",
       "existing_corpus_decisions_changed": 0
     },
     "family_audit": {
@@ -105,14 +109,14 @@
     }
   },
   "blockers": [
-    "Not a completed exhaustive search: core database exports and identification counts remain incomplete.",
-    "B04 may require user takeover for institutional sign-in; ACM login/export and both platforms' results-page facets remain execution-time checks.",
+    "Not a completed exhaustive search: four of eight official-interface runs remain unexecuted and record-level exports are 0/8.",
+    "B04 is blocked on user institutional sign-in for Scopus and Web of Science; IEEE personal-sign-in export and ACM Premium export also remain unresolved.",
     "Eight reports await classification; study-family independence and final human adjudication are unresolved.",
     "Twelve included reports have minimum extraction only and are not appraised; domain 9 is withheld for the 24-report subset.",
     "Authorship/declarations are unconfirmed; no submission-ready claim, submission or email is authorized in the current task."
   ],
   "user_confirmation_required": [
-    "Institutional-login takeover if a B04 core database prompts for authentication; credentials must not be relayed to another agent.",
+    "Complete institutional sign-in to Scopus and Web of Science in the local Chrome session, then return control; credentials must not be sent to Codex or another agent.",
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
     "Contributions, funding, conflicts, data availability and AI disclosure.",
     "Exact examination date for calculating the course deadline.",
