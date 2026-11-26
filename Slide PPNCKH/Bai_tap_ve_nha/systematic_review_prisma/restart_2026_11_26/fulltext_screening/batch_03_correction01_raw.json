@@ -1,0 +1,45 @@
+{
+  "id": "ef92e6e4-bd09-4267-9a41-d54134d002a9",
+  "contextId": "513d937c-065f-4e69-a79b-577731783f4f",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T14:02:42.389+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T13:59:54.066+00:00",
+    "updated_at": "2026-11-26T14:02:42.389+00:00",
+    "started_at": "2026-11-26T13:59:54.072+00:00",
+    "completed_at": "2026-11-26T14:02:42.389+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — HK261 Batch 03 Criteria Correction",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "4e91ad59-facc-491a-9f4f-b96285d60572",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"id\":\"R0081\",\"decision\":\"AWAITING_CLASSIFICATION\",\"primary\":\"\",\"reason\":\"E1=T, E2=T, E3=T, E4=T, E5=T, E6=T, E7=U; awaiting classification on E7 because the official MobiSys '22 demo procedure does not establish full report peer-review status.\",\"e\":{\"E5\":[\"T\",0,\"message.published.date-parts\",\"[[2022,6,27]]\",\"Crossref publisher deposit gives published date 2022-06-27 (within 2021-01-01..2026-11-26; direct Crossref API fetch unavailable in this session, pending Codex verification). Conference range June 25-July 1, 2022 on PDF p.1 is event date, not publication date.\",\"https://api.crossref.org/works/10.1145/3498361.3538674\"]}}\n{\"id\":\"R0083\",\"decision\":\"INCLUDE\",\"primary\":\"\",\"reason\":\"E1=T, E2=T, E3=T, E4=T, E5=T, E6=T, E7=T; included with report-level simulation evaluation evidence in Section 4.2 (p.7).\",\"e\":{\"E4\":[\"T\",7,\"Section 4.2 Simulation results\",\"our method was able to obtain the lowest e2e latency\",\"Report-level evaluation evidence: simulation of the proposed distributed partition deployment method across 10 UAVs and two deployment areas measuring e2e latency, per-device energy usage, and system longevity against NN, HRE, and LO baselines.\",\"pdf/R0083.pdf\"]}}\n{\"id\":\"R0108\",\"decision\":\"EXCLUDE\",\"primary\":\"E3\",\"reason\":\"E1=T, E2=T, E3=F, E4=F, E5=T, E6=T, E7=T; excluded with primary code E3 (no collaborative DNN inference method, only federated learning and generic task offloading) and secondary failure on E4 (architecture-level simulation metrics only without inference evaluation).\",\"e\":{\"E1\":[\"T\",2,\"I. INTRODUCTION\",\"this paper proposes a Secure and Intelligent Edge Computing Architecture\",\"Primary research article proposing a multi-layer secure edge computing architecture for autonomous drone swarm management.\",\"pdf/R0108.pdf\"],\"E4\":[\"F\",7,\"IV. RESULTS AND DISCUSSIONS\",\"Performance metrics including latency, energy consumption, packet delivery ratio, and task completion rate were evaluated.\",\"Sections III-IV (pp.4-7) describe a generic four-layer framework with federated learning training and task offloading, and Section IV reports only architecture-level simulation metrics without a defined evaluated inference method or inference outcomes.\",\"pdf/R0108.pdf\"],\"E6\":[\"T\",2,\"I. INTRODUCTION\",\"this paper proposes a Secure and Intelligent Edge Computing Architecture\",\"Full report is written in English (p.2 left column, no column overlap).\",\"pdf/R0108.pdf\"]}}"
+        }
+      ]
+    }
+  ]
+}
