@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T19:23:25+07:00",
+  "updated_at": "2026-11-26T19:23:41+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
@@ -11,7 +11,7 @@
     "owner": "GEMINI_RESEARCH + CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-26T18:50:01+07:00",
-    "updated_at": "2026-11-26T19:23:25+07:00",
+    "updated_at": "2026-11-26T19:23:41+07:00",
     "decision_id": "restart-07-direct-screening-batch01-v1",
     "provider_task_id": "c22d8c48-f9ff-48a1-9489-47135b78d4e6",
     "provider_context_id": "55b86c49-5420-426b-a89a-552e445c05a2",
@@ -21,7 +21,14 @@
     "screening_total": 465,
     "last_accepted_id": "R0315",
     "batch01_completed_at": "2026-11-26T18:55:53+07:00",
-    "evidence_index": "restart_2026_11_26/screening_evidence/manifest.json"
+    "evidence_index": "restart_2026_11_26/screening_evidence/manifest.json",
+    "active_batch": {
+      "task_id": "e50b8f94-b249-4d0f-b7f7-aec900ce269e",
+      "context_id": "16c86c40-2176-47f7-b24b-841d3b446d1e",
+      "first": "R0316",
+      "last": "R0390",
+      "count": 75
+    }
   },
   "next_task": {
     "task_id": "restart-07-batch06",
