@@ -1,0 +1,44 @@
+{
+  "id": "cbfc9595-a49c-4952-8abb-7ebde3dd614d",
+  "contextId": "3503a4f3-5aa1-4da6-8f07-0603f03a9b27",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T13:32:50.976+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T13:29:38.217+00:00",
+    "updated_at": "2026-11-26T13:32:50.976+00:00",
+    "started_at": "2026-11-26T13:29:38.218+00:00",
+    "completed_at": "2026-11-26T13:32:50.976+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — HK261 Systematic Review Correction",
+    "chat_cleanup": {
+      "state": "not_verified",
+      "detail": "Accessibility prepare-delete failed: Gemini snapshot failed: Chat actions menu unavailable"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "c9c4837c-3e6d-4875-9e89-923c7b3b4ae7",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"id\": \"R0001\", \"decision\": \"INCLUDE\", \"primary\": \"\", \"reason\": \"E1-E7 established; supplied Date Added is within cutoff.\", \"e\": {\"E5\": [\"T\", 0, \"Date Added\", \"Date Added to IEEE Xplore: 07 September 2026\", \"Supplied authoritative publisher evidence (not opened directly); Date Added is within 2021-01-01 to 2026-11-26.\", \"https://xplorestaging.ieee.org/document/11670054/\"]}}\n{\"id\": \"R0002\", \"decision\": \"INCLUDE\", \"primary\": \"\", \"reason\": \"E1-E7 established; supplied Date Added is within cutoff.\", \"e\": {\"E5\": [\"T\", 0, \"Date Added\", \"Date Added to IEEE Xplore: 07 September 2026\", \"Supplied authoritative publisher evidence (not opened directly); Date Added is within 2021-01-01 to 2026-11-26.\", \"https://ieeexplore.ieee.org/abstract/document/11670091/\"]}}\n{\"id\": \"R0019\", \"decision\": \"INCLUDE\", \"primary\": \"\", \"reason\": \"E1-E7 established; simulation evaluation confirmed on p.12.\", \"e\": {\"E4\": [\"T\", 12, \"IV. SIMULATION RESULTS AND ANALYSIS\", \"Comparing optimal and RL solutions in terms of latency.\", \"Simulation evaluation comparing suboptimal and RL solutions in terms of latency.\", \"PDF\"]}}"
+        }
+      ]
+    }
+  ]
+}
