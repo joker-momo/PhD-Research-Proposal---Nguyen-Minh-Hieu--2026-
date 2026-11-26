@@ -1,30 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T22:49:43+07:00",
+  "updated_at": "2026-11-26T22:58:52+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-batch02-correction02-review",
+    "task_id": "restart-11-batch02-correction03-review",
     "owner": "CODEX_WRITING",
     "research_owner": "GEMINI_RESEARCH",
     "status": "rejected",
-    "started_at": "2026-11-26T22:43:03+07:00",
-    "updated_at": "2026-11-26T22:49:43+07:00",
-    "completed_at": "2026-11-26T22:49:43+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_correction02_review.md",
-    "decision_id": "restart-11-batch02-correction02-review-v1"
+    "started_at": "2026-11-26T22:49:43+07:00",
+    "updated_at": "2026-11-26T22:58:52+07:00",
+    "completed_at": "2026-11-26T22:58:52+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_correction03_review.md",
+    "decision_id": "restart-11-batch02-correction03-review-v1"
   },
   "next_task": {
-    "task_id": "restart-11-batch02-correction03",
+    "task_id": "restart-11-batch02-scoped-source-followup",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "dispatch_brief": "restart_2026_11_26/extraction/batch_02_correction03_brief.md",
-    "message_id": "hk261-restart-step11-p08-batch02-correction03-v1",
-    "action": "Resolve eight source checks and one schema confirmation without repeating batch 01.",
-    "acceptance": "Exact body access anchor; nine keys, no unsupported values, and complete schema."
+    "action": "Correct only the six identified Batch 02 metric keys. Keep Batch 01 locked.",
+    "acceptance": "Every returned assertion has a body source, correct precision and unit, measurement conditions, or explicit UNVERIFIED."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -137,7 +135,10 @@
         "expected": 25,
         "accepted": 0,
         "not_accessible_to_gemini": 13,
-        "quarantined_batch02": 12
+        "quarantined_batch02": 12,
+        "cleanup_deleted": 2,
+        "cleanup_blocked": 3,
+        "confirmed_batch02_semantic_failures": 6
       }
     }
   },

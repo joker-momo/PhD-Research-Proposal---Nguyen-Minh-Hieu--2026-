@@ -1,0 +1,105 @@
+{
+  "merge": {
+    "issues": [],
+    "access_ok": true,
+    "access": {
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0054.pdf",
+      "page": 1,
+      "excerpt": "However, UAVs must simultaneously maintain reliable links, sense surrounding targets, and execute computation-intensive inference tasks under stringent energy and coordination constraints."
+    },
+    "keys": {
+      "C01": 1,
+      "C02": 1,
+      "C03": 1,
+      "C04": 1,
+      "C05": 1,
+      "C07": 1,
+      "C09": 1,
+      "C10": 1,
+      "SCHEMA": 1
+    },
+    "coordination": {
+      "subagent_status": "UNCONFIRMED",
+      "reason": "Worker sharing of parent local folder attachment is unconfirmed; parent handles all four assigned PDFs directly.",
+      "assignments": [
+        {
+          "worker": "parent",
+          "report_ids": [
+            "R0054",
+            "R0062",
+            "R0095",
+            "R0121"
+          ]
+        }
+      ]
+    }
+  },
+  "diagnostic": {
+    "state": "TASK_STATE_FAILED",
+    "characters": 116309,
+    "errors": [],
+    "observed_ids": [
+      "R0054",
+      "R0059",
+      "R0062",
+      "R0063",
+      "R0068",
+      "R0071",
+      "R0073",
+      "R0074",
+      "R0083",
+      "R0089",
+      "R0095",
+      "R0121"
+    ],
+    "missing_ids": [],
+    "unexpected_ids": [],
+    "duplicate_ids": 0,
+    "duplicate_doi": 0,
+    "duplicate_title": 0,
+    "counts": {
+      "fields": 168,
+      "status_OBSERVED": 161,
+      "locator_checks": 172,
+      "locator_matches": 172,
+      "status_UNVERIFIED": 1,
+      "status_NOT_REPORTED": 11,
+      "quantitative_claims": 35,
+      "observed_quantitative": 33
+    }
+  },
+  "matching_snapshot_sha256": [
+    "eef1a6987a9c20e4f37e8ee617a58ffa88eb40c30ae539bb9e39b4a27fbdec9e",
+    "d576c57d2ac87910e134eb4d6f6233fd7073bb53bdc366ed76a894789d57b682"
+  ],
+  "semantic_deficits": [
+    {
+      "report_id": "R0068",
+      "metrics": [
+        "Latency improvement vs competitive RL baselines",
+        "Transmission power improvement vs competitive RL baselines",
+        "Latency gap vs LDTP optimization"
+      ],
+      "page": 1,
+      "issue": "Reported numerical result anchored to abstract only. Exact percentages were not located in the searchable body."
+    },
+    {
+      "report_id": "R0054",
+      "metrics": [
+        "Online decision runtime (P50 / P95)"
+      ],
+      "page": 5,
+      "issue": "The timing and decision count are reported. The quoted GPU configuration is tied to training on the cited page; the same configuration for measuring runtime is not established by this anchor."
+    },
+    {
+      "report_id": "R0062",
+      "metrics": [
+        "collaborative inference frame rate",
+        "Degraded frame rate on single-UAV loss (Stage 2)"
+      ],
+      "page": 6,
+      "issue": "The source prints approximate frame rates in both stages. Both rows omit approximation for Stage 2, and the first row uses only the Stage 2 anchor for a two-stage value."
+    }
+  ],
+  "accepted_reports": 0
+}
