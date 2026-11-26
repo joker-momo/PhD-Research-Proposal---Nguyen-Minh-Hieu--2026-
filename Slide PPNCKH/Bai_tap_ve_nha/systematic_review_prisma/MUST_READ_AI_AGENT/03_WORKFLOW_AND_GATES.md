@@ -106,6 +106,10 @@ scientific sequence and any batches already in flight.
    approved phase. Record the automation decision once per phase and append a
    decision when the approach changes.
 
+In each batch/phase acceptance commit, register its artifacts in the progress
+tracker and refresh the [PRISMA evidence index](../prisma_evidence/README.md).
+See [evidence maintenance](../prisma_evidence/MAINTENANCE.md) for required files.
+
 Owned scopes must be clean and the authorized brief must be committed before
 each send. Read-only lookups and repairing current work remain available while
 owned scopes are dirty. Codex verifies these conditions before dispatch.
