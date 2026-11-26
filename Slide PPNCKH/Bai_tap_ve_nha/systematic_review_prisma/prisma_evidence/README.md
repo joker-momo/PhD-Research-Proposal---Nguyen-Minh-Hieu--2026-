@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-26T21:41:35+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-26T22:19:35+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -356,9 +356,11 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=5.
 <a id="buoc-11"></a>
 ## Bước 11 · Trích xuất dữ liệu mới
 
-**Chưa bắt đầu** · `2026-11-26T18:07:38+07:00`
+**Đang làm** · `2026-11-26T22:19:35+07:00`
 
-Chưa có tệp minh chứng được đăng ký cho bước này.
+- [manifest.json](../restart_2026_11_26/extraction/manifest.json)
+- [batch_01_brief.md](../restart_2026_11_26/extraction/batch_01_brief.md)
+- [batch_02_brief.md](../restart_2026_11_26/extraction/batch_02_brief.md)
 
 <a id="buoc-12"></a>
 ## Bước 12 · Đánh giá chất lượng và nguy cơ sai lệch

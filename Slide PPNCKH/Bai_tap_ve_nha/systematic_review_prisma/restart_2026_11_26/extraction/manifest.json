@@ -1,0 +1,171 @@
+{
+  "step": "restart-11",
+  "started_at": "2026-11-26T22:19:35+07:00",
+  "protocol": "P08",
+  "input_hashes": {
+    "restart_2026_11_26/study_linkage/report_study_map.csv": "b9d6db6fb62254e95f5640c43043be39964d63a4a7e6d2527f5f65c31489b2c3",
+    "restart_2026_11_26/fulltext_retrieval/fulltext_identity_index.csv": "fd6967eb7f9280352ec292a6c882c4f023c056148decae20f20168e55d7c1233",
+    "restart_2026_11_26/protocol_restart.md": "8de60a831a87a0b4bc79c77b78d82565afc985fddb44fd9cf130efa999288d51"
+  },
+  "pdfs": {
+    "R0001": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0"
+    },
+    "R0002": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f"
+    },
+    "R0003": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3"
+    },
+    "R0006": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030"
+    },
+    "R0009": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf"
+    },
+    "R0010": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8"
+    },
+    "R0015": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83"
+    },
+    "R0019": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1"
+    },
+    "R0022": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc"
+    },
+    "R0029": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89"
+    },
+    "R0044": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0044.pdf",
+      "sha256": "764cc894f9711a4b0e6f74ce45c1df93d3d1b6d9ed9c6a3b9534bb68801bc029"
+    },
+    "R0045": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0045.pdf",
+      "sha256": "9b5e95e1b30fa30510772f0d7fd0d4524b634a4d0d7fca27f49b105dbacacc52"
+    },
+    "R0048": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0048.pdf",
+      "sha256": "27e027ecd322e4f06af79412bca5c603c304fd38e7cde7de75adefe66f843d98"
+    },
+    "R0054": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0054.pdf",
+      "sha256": "48138e33b7cec08714cea8472199fcb44117893e6fd0c24ab9fa8d308dcc87e5"
+    },
+    "R0059": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0059.pdf",
+      "sha256": "9e8c96dbe6c3717efd91c23f02c3c8fcb10b8aa034ab7be150d9da74b85c0957"
+    },
+    "R0062": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0062.pdf",
+      "sha256": "6d0c4eab7261f241261a3e8f3b3898f785e8658acd4a17ca1aa27184d70d349f"
+    },
+    "R0063": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0063.pdf",
+      "sha256": "85df65849c3d01c7532c20c8d19d978455becf0590c1f91da79d8a4ee0c100b9"
+    },
+    "R0068": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0068.pdf",
+      "sha256": "30ab2b2966529939f9d4c04eeed75689126fccfdc2b9b345e3b0d6aaffbb630a"
+    },
+    "R0071": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0071.pdf",
+      "sha256": "75526755f4f92c411c109aadcad0e02dd870504649976b77ce7c6f6d0d68f025"
+    },
+    "R0073": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0073.pdf",
+      "sha256": "597ff420ac58a13811f5f13f06faa60803529a1f149875161cd39e80cc9ca312"
+    },
+    "R0074": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0074.pdf",
+      "sha256": "f9dc09402cc09d3e426cc693458070cee2e480acab8f538da24ecbaa3c93d151"
+    },
+    "R0083": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0083.pdf",
+      "sha256": "f339a0eb83ca064fb88e73360af42a22cb5bd8210534c8755bebf40c8726604e"
+    },
+    "R0089": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0089.pdf",
+      "sha256": "44e2147c5d37b416a5fd19b690ec44354e1a340ef29459e77ac21e813e8248be"
+    },
+    "R0095": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0095.pdf",
+      "sha256": "a86e926de0d40dddd292784362c655a1eb3f35fb61aed98e02c817410f56adad"
+    },
+    "R0121": {
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0121.pdf",
+      "sha256": "83b93927c7a804b04412f6aa0c7b438817c9f114dbc3d061f08840b77a361ec0"
+    }
+  },
+  "fields": [
+    "identity",
+    "uav_architecture_role_and_topology",
+    "inference_model_task_and_dataset",
+    "partition_and_assignment",
+    "decision_variables_objectives_constraints_and_solver",
+    "compute_and_radio",
+    "mobility_channel_intermittency_failure_and_recovery",
+    "evaluation_platform_simulator_hardware_and_traces",
+    "baselines_and_workloads",
+    "outcomes_latency_energy_communication_accuracy_reliability_and_scalability",
+    "sensitivity_and_variability",
+    "code_and_data",
+    "funding_and_conflicts",
+    "reported_limitations"
+  ],
+  "batches": [
+    {
+      "batch": 1,
+      "ids": [
+        "R0001",
+        "R0002",
+        "R0003",
+        "R0006",
+        "R0009",
+        "R0010",
+        "R0015",
+        "R0019",
+        "R0022",
+        "R0029",
+        "R0044",
+        "R0045",
+        "R0048"
+      ],
+      "brief": "restart_2026_11_26/extraction/batch_01_brief.md",
+      "message_id": "hk261-restart-step11-p08-batch01-v1"
+    },
+    {
+      "batch": 2,
+      "ids": [
+        "R0054",
+        "R0059",
+        "R0062",
+        "R0063",
+        "R0068",
+        "R0071",
+        "R0073",
+        "R0074",
+        "R0083",
+        "R0089",
+        "R0095",
+        "R0121"
+      ],
+      "brief": "restart_2026_11_26/extraction/batch_02_brief.md",
+      "message_id": "hk261-restart-step11-p08-batch02-v1"
+    }
+  ],
+  "dispatch_mode": "sequential",
+  "dispatch_reason": "Concurrent direct project attachments and recovery are unverified on the production bridge. Preserve independent scopes and one receipt/review per batch."
+}

@@ -1,28 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T21:41:35+07:00",
+  "updated_at": "2026-11-26T22:19:35+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-10",
+    "task_id": "restart-11-setup",
     "owner": "CODEX_WRITING",
-    "research_owner": "GEMINI_RESEARCH",
     "status": "completed",
-    "started_at": "2026-11-26T21:26:29+07:00",
-    "updated_at": "2026-11-26T21:41:35+07:00",
-    "completed_at": "2026-11-26T21:41:35+07:00",
-    "checkpoint_path": "restart_2026_11_26/study_linkage/step10_linkage_summary.md",
-    "decision_id": "restart-10-v1"
+    "started_at": "2026-11-26T22:19:35+07:00",
+    "updated_at": "2026-11-26T22:19:35+07:00",
+    "completed_at": "2026-11-26T22:19:35+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/manifest.json",
+    "decision_id": "restart-11-setup-v1"
   },
   "next_task": {
-    "task_id": "restart-11",
+    "task_id": "restart-11-batch01",
     "status": "ready",
     "owner": "GEMINI_RESEARCH",
-    "action": "Extract new included full-text evidence under Step 11 / P08.",
-    "acceptance": "All included reports covered; report-located data and no unsupported numbers."
+    "dispatch_brief": "restart_2026_11_26/extraction/batch_01_brief.md",
+    "message_id": "hk261-restart-step11-p08-batch01-v1",
+    "action": "Extract fresh P08 evidence for the first 13 reports in Gemini.app Task.",
+    "acceptance": "13 exact IDs, 14 fields each, source locators and zero unsupported claims."
   },
   "project": {
     "target_venue": "SN Computer Science",
