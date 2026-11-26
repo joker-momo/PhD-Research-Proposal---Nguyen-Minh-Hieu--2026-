@@ -1,0 +1,44 @@
+{
+  "task_id": "75bd8baa-78fd-40b3-8d2a-bfe7fe53bfb3",
+  "transport": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T18:18:56.613+00:00"
+  },
+  "result_chars": 25957,
+  "completion_marker": true,
+  "parsed_rows": 56,
+  "malformed": [],
+  "unknown": [],
+  "expected": 50,
+  "returned": 50,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [],
+  "unexpected_access": [],
+  "summary": [
+    {
+      "returned_keys": 50,
+      "unresolved": [],
+      "tools": {
+        "pymupdf": "UNAVAILABLE_NO_SHELL_EXECUTION",
+        "mineru": "UNAVAILABLE_NO_SHELL_EXECUTION",
+        "marker": "UNAVAILABLE_NO_SHELL_EXECUTION",
+        "client_view_file": "USED_DIRECT_PDF_READ"
+      },
+      "workers_used": 0,
+      "worker_assignments": {}
+    }
+  ],
+  "locators": 117,
+  "exact_quote_locators": 85,
+  "needs_visual_cell": [],
+  "bad_domains": {
+    "R0048/D05": [
+      "quote mismatch p10: primary metric to evaluate the system's responsiveness."
+    ],
+    "R0059/D07": [
+      "quote mismatch p8: one-tenth of the clock cycles per number of cores."
+    ]
+  }
+}

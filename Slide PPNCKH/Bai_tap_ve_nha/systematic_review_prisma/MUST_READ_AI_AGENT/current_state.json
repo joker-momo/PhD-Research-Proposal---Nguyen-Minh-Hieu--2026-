@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T01:12:55+07:00",
+  "updated_at": "2026-11-27T01:19:54+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step12_active",
@@ -11,18 +11,18 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T00:36:29+07:00",
-    "updated_at": "2026-11-27T01:12:55+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/batch_02_correction_review.md",
+    "updated_at": "2026-11-27T01:19:54+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/batch_03_review.md",
     "decision_id": "restart-12-p09-v1"
   },
   "next_task": {
-    "task_id": "restart-12-p09-batch-03",
-    "dispatch_brief": "restart_2026_11_26/appraisal/batch_03_brief.md",
-    "message_id": "1f7d024f-154c-4bb0-bbaf-b0b86d4515fb",
+    "task_id": "restart-12-p09-batch-03-correction",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Check the next five frozen P08 reports across all ten P09 domains in the Gemini.app parent Task.",
-    "acceptance": "5 original PDF access passages and 50 unique domain keys with independently verified rationale and source locators."
+    "action": "Resolve exactly three Batch 03 issues. Keep 47 source-reviewed keys for composite review.",
+    "acceptance": "Three distinct keys, zero unsupported claims, final excerpts and physical pages align with originals.",
+    "dispatch_brief": "restart_2026_11_26/appraisal/batch_03_correction_brief.md",
+    "message_id": "f56e7d24-9cc5-444e-a8b1-cdb588c23ade"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -198,7 +198,10 @@
         "last_batch_01_locator_repair_verdict": "PASS",
         "last_batch_02_uuid": "031166a6-27d9-43f0-af09-bcf4daaf50dc",
         "last_batch_02_verdict": "PASS",
-        "batch_02_unresolved_keys": 0
+        "batch_02_unresolved_keys": 0,
+        "last_batch_03_uuid": "75bd8baa-78fd-40b3-8d2a-bfe7fe53bfb3",
+        "last_batch_03_verdict": "FAIL",
+        "batch_03_unresolved_keys": 3
       }
     }
   },
