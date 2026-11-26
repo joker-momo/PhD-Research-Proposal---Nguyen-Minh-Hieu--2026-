@@ -1,0 +1,39 @@
+{
+  "task_id": "031166a6-27d9-43f0-af09-bcf4daaf50dc",
+  "transport": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T18:12:26.079+00:00"
+  },
+  "result_chars": 3261,
+  "completion_marker": true,
+  "parsed_rows": 6,
+  "malformed": [],
+  "unknown": [],
+  "expected": 5,
+  "returned": 5,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [],
+  "unexpected_access": [],
+  "summary": [
+    {
+      "returned_keys": [
+        "R0010/D01",
+        "R0015/D07",
+        "R0015/D08",
+        "R0019/D09",
+        "R0022/D08"
+      ],
+      "unresolved": [],
+      "workers_used": false,
+      "tools": [
+        "client:view_file"
+      ]
+    }
+  ],
+  "locators": 18,
+  "exact_quote_locators": 13,
+  "needs_visual_cell": [],
+  "bad_domains": {}
+}

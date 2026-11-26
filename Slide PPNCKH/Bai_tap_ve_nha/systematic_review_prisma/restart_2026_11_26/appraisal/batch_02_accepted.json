@@ -1,0 +1,1502 @@
+{
+  "gate": "PASS",
+  "batch": "02",
+  "p08_commit": "4b58140",
+  "reviewed_at": "2026-11-27T01:12:55+07:00",
+  "task_ids": [
+    "be0b8973-d10e-419c-8698-dc00069feb3c",
+    "031166a6-27d9-43f0-af09-bcf4daaf50dc"
+  ],
+  "judgments": [
+    {
+      "report_id": "R0010",
+      "domain": "D01",
+      "judgment": "YES",
+      "rationale": "Clearly defines the N-UAV pipeline system model, formalizes the latency-minimization objective under energy and memory constraints, and specifies the DRL-based task allocation mechanism.",
+      "locators": [
+        {
+          "page": 2,
+          "section": "III.A System Model",
+          "quote": "The system consists of N UAVs, and each UAV"
+        },
+        {
+          "page": 3,
+          "section": "III.B Problem Formulation",
+          "quote": "Our goal is to minimize the total latency required for"
+        },
+        {
+          "page": 3,
+          "section": "IV. SOLUTION",
+          "quote": "pipeline collaborative DNN inference based on DRL, outlined"
+        }
+      ],
+      "provider_uuid": "031166a6-27d9-43f0-af09-bcf4daaf50dc",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "pdf_sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p2 §III.A; p3 §III.B",
+        "independent_source_note": "Defines trace-driven multi-UAV pipeline inference and a total completion latency objective."
+      }
+    },
+    {
+      "report_id": "R0010",
+      "domain": "D02",
+      "judgment": "YES",
+      "rationale": "Explicitly states trajectory and arrival assumptions, split-point decision variables, and formal ordering, energy, and memory constraints in the problem formulation.",
+      "locators": [
+        {
+          "page": 2,
+          "section": "III.A System Model",
+          "quote": "flies with a constant speed according to the predetermined"
+        },
+        {
+          "page": 3,
+          "section": "III.B Problem Formulation",
+          "quote": "computation energy consumption and transmission energy"
+        },
+        {
+          "page": 3,
+          "section": "III.B Problem Formulation",
+          "quote": "does not exceed the resource limit of each UAV"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "pdf_sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp2–3 §III.A–B and Eq. 6",
+        "independent_source_note": "Describes inference stage dependencies, dynamic links, and energy/computation constraints for layer allocations."
+      }
+    },
+    {
+      "report_id": "R0010",
+      "domain": "D03",
+      "judgment": "PARTIAL",
+      "rationale": "Names CNN models, trajectory traces, UAV count, and task counts, but omits numeric radio, compute, energy, memory, arrival, and DQN hyperparameters needed to reconstruct experiments.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "V.A Simulation Settings",
+          "quote": "we use existing UAV trajectory data [22]"
+        },
+        {
+          "page": 5,
+          "section": "V.B Results Analysis",
+          "quote": "we use two types of devices with different computing power."
+        },
+        {
+          "page": 5,
+          "section": "V.A–V.B Simulation Settings and Results Analysis",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "pdf_sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp4–5 §§IV.C and V.A–B",
+        "independent_source_note": "Names CNN models, trace and scenario sizes; full simulator and randomization settings are not reported."
+      }
+    },
+    {
+      "report_id": "R0010",
+      "domain": "D04",
+      "judgment": "PARTIAL",
+      "rationale": "Evaluates five named baselines on shared CNN models, UAV counts, and task counts, but omits hyperparameter and tuning disclosures needed to establish comparator parity.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "V.A Simulation Settings",
+          "quote": "and allocates tasks based on the principle of minimizing the"
+        },
+        {
+          "page": 5,
+          "section": "V.B Results Analysis",
+          "quote": "five UAVs to collaboratively execute 30 inference tasks"
+        },
+        {
+          "page": 5,
+          "section": "V.A–V.B Simulation Settings and Results Analysis",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "pdf_sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p5 §V.A–B Fig. 4",
+        "independent_source_note": "Five comparator policies are described and evaluated on common model and computing scenarios; tuning parity is not documented."
+      }
+    },
+    {
+      "report_id": "R0010",
+      "domain": "D05",
+      "judgment": "YES",
+      "rationale": "Reported total completion time and latency outcomes directly measure the stated optimization objective of minimizing multi-task pipeline completion latency within the simulation model.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III.B Problem Formulation",
+          "quote": "Our goal is to minimize the total latency"
+        },
+        {
+          "page": 5,
+          "section": "V.B Results Analysis",
+          "quote": "showing the total time in the collaborative tasks"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "pdf_sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p3 §III.B Eq. 6; pp5–6 Figs. 3–5",
+        "independent_source_note": "Training reward and completion time are plotted, with total completion latency matching the optimization target."
+      }
+    },
+    {
+      "report_id": "R0010",
+      "domain": "D06",
+      "judgment": "PARTIAL",
+      "rationale": "Reports training convergence and sensitivity across models, compute tiers, and task counts, but omits multi-seed repetitions and uncertainty bounds for stochastic DRL and Random evaluations.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "V.B Results Analysis, Fig. 3",
+          "quote": "Measurement results during algorithm training process."
+        },
+        {
+          "page": 6,
+          "section": "V.B Results Analysis, Fig. 5",
+          "quote": "Influence of the number of tasks."
+        },
+        {
+          "page": 5,
+          "section": "V.A–V.B Simulation Settings and Results Analysis",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "pdf_sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp5–6 §V.B Figs. 3–5",
+        "independent_source_note": "Shows training trajectory and varies task count, compute profile, and model; run dispersion or seeds are not reported."
+      }
+    },
+    {
+      "report_id": "R0010",
+      "domain": "D07",
+      "judgment": "PARTIAL",
+      "rationale": "Uses real UAV trajectory traces for distance-varying rates, but relies on deterministic free-space links, predetermined constant-speed paths, and simulation without fading, interference, or outage modeling.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "V.A Simulation Settings",
+          "quote": "we use existing UAV trajectory data [22]"
+        },
+        {
+          "page": 2,
+          "section": "III.A System Model",
+          "quote": "flies with a constant speed according to the predetermined"
+        },
+        {
+          "page": 6,
+          "section": "VI. CONCLUSION",
+          "quote": "verify the performance of the proposed algorithm in real environments."
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "pdf_sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p2 §III.A Eq. 1; p5 §V.A; p6 §VI",
+        "independent_source_note": "Inter-UAV rate follows a model driven by existing UAV trajectories; field verification is identified as future work."
+      }
+    },
+    {
+      "report_id": "R0010",
+      "domain": "D08",
+      "judgment": "PARTIAL",
+      "rationale": "Conclusion acknowledges real-environment verification as future work, but claims minimum completion latency from a heuristic DRL simulation without bounding all reported average reductions to specific conditions.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "VI. CONCLUSION",
+          "quote": "verify the performance of the proposed algorithm in real environments."
+        },
+        {
+          "page": 6,
+          "section": "VI. CONCLUSION",
+          "quote": "provides a minimum inference task completion latency"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "pdf_sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp5–6 §V.B and §VI",
+        "independent_source_note": "Future field verification is explicit. Minimum-latency language is bounded by tested benchmarks and scenarios rather than a proved global optimum."
+      }
+    },
+    {
+      "report_id": "R0010",
+      "domain": "D09",
+      "judgment": "NOT_REPORTED",
+      "rationale": "Cites third-party Mid-Air trajectory traces, but inspection of methods, simulation settings, conclusion, acknowledgement, and references found no author code, scripts, or availability statement.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "V.A Simulation Settings",
+          "quote": "we use existing UAV trajectory data [22]"
+        },
+        {
+          "page": 6,
+          "section": "VI. CONCLUSION and ACKNOWLEDGEMENT",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "pdf_sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "source_review": {
+        "reference_judgment": "NOT_REPORTED",
+        "pages_and_sections_checked": "p5 §V.A; p6 §VI and end matter",
+        "independent_source_note": "Trajectory source [22] is named. No release or access route for the authors' trained policy, code, or configured traces is given here."
+      }
+    },
+    {
+      "report_id": "R0010",
+      "domain": "D10",
+      "judgment": "PARTIAL",
+      "rationale": "Reports NSFC funding and notes real-environment verification as future work, but omits explicit methodological limitations and provides no conflict-of-interest disclosure.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "VI. CONCLUSION",
+          "quote": "verify the performance of the proposed algorithm in real environments."
+        },
+        {
+          "page": 6,
+          "section": "ACKNOWLEDGEMENT",
+          "quote": "This work is supported by the National Natural Science"
+        },
+        {
+          "page": 6,
+          "section": "ACKNOWLEDGEMENT and front/end matter",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "pdf_sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p6 §VI and Acknowledgement",
+        "independent_source_note": "Funding and future real-environment verification/dynamic swarm extensions are stated; no conflict declaration was found in end matter."
+      }
+    },
+    {
+      "report_id": "R0015",
+      "domain": "D01",
+      "judgment": "YES",
+      "rationale": "Clearly defines the fine-grained sub-layer collaborative CNN inference question, rotary-wing ad hoc UAV system model, latency and energy formulations, and EECIA greedy heuristic.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III.A System Model",
+          "quote": "calculation of one layer can be divided into multiple subtasks"
+        },
+        {
+          "page": 4,
+          "section": "III.B Problem Formulation",
+          "quote": "Our goal is to minimize the latency"
+        },
+        {
+          "page": 5,
+          "section": "III.C Online Heuristic",
+          "quote": "we propose an online heuristic solution called EECIA"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "pdf_sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp2–3 §III.A–B",
+        "independent_source_note": "Jointly describes partitioning and intermediate inference across resource-limited UAVs, with a latency objective."
+      }
+    },
+    {
+      "report_id": "R0015",
+      "domain": "D02",
+      "judgment": "YES",
+      "rationale": "Explicitly states static-rate and full-connectivity assumptions, binary allocation variables, and formal energy, memory, computation, per-layer UAV count, and layer-cap constraints.",
+      "locators": [
+        {
+          "page": 4,
+          "section": "III.B Problem Formulation",
+          "quote": "The constraints in Eq. (11) limits the energy consumption"
+        },
+        {
+          "page": 6,
+          "section": "IV.A Simulation Settings",
+          "quote": "all devices are not isolated and they can all"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "pdf_sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp3–5 §III.B–C",
+        "independent_source_note": "Defines energy, memory, layer assignment and resource constraints and gives the online heuristic."
+      }
+    },
+    {
+      "report_id": "R0015",
+      "domain": "D03",
+      "judgment": "PARTIAL",
+      "rationale": "Specifies embedded board compute profiles, CNN models, data rates, and swarm sizes, but omits energy parameters, board composition, layer/subtask hyperparameters, and host platform for runtime measurements.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "IV.A Simulation Settings",
+          "quote": "including Raspberry Pi 3B+, Orange Pi Zero, and Odroid"
+        },
+        {
+          "page": 6,
+          "section": "IV.B Results Analysis",
+          "quote": "use three UAVs to collaboratively execute inference task"
+        },
+        {
+          "page": 6,
+          "section": "IV.A Simulation Settings",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "pdf_sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp5–6 §IV.A",
+        "independent_source_note": "Provides hardware profiles, CNNs and simplified data rates; the evaluation lacks full rerun configuration."
+      }
+    },
+    {
+      "report_id": "R0015",
+      "domain": "D04",
+      "judgment": "PARTIAL",
+      "rationale": "Compares four named baselines on shared CNNs, rates, and UAV counts, but baseline constraint handling differs and solver/tuning implementation details are not disclosed.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "IV.B Results Analysis",
+          "quote": "Random, Nearest and DistInference, which is nearest to OPT."
+        },
+        {
+          "page": 6,
+          "section": "IV.A Simulation Settings",
+          "quote": "the nearest one with enough memory to process"
+        },
+        {
+          "page": 6,
+          "section": "IV.A–IV.B Simulation Settings and Results Analysis",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "pdf_sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p6 §IV.A–B Fig. 3",
+        "independent_source_note": "Defines Random, Nearest, DistInference and exhaustive OPT and states the common data rate and CNN-specific swarm sizes in Fig. 3.",
+        "final_adjudication": "Decision applies the source-supported reporting limits stated in the final rationale. The independent note identifies the passages checked."
+      }
+    },
+    {
+      "report_id": "R0015",
+      "domain": "D05",
+      "judgment": "PARTIAL",
+      "rationale": "Latency and runtime metrics align with the latency-minimization objective and real-time claim, but energy consumption is never reported despite the energy-efficient framing.",
+      "locators": [
+        {
+          "page": 4,
+          "section": "III.B Problem Formulation",
+          "quote": "Our goal is to minimize the latency"
+        },
+        {
+          "page": 6,
+          "section": "IV.B Results Analysis, Table II",
+          "quote": "RUNNING TIME COMPARISON OF DIFFERENT ALGORITHMS."
+        },
+        {
+          "page": 7,
+          "section": "IV.B Results Analysis",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "pdf_sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp3–4 §III.B; pp6–7 §IV.B",
+        "independent_source_note": "Reports the latency outcomes optimized under resource constraints and separately evaluates algorithm run time.",
+        "final_adjudication": "Decision applies the source-supported reporting limits stated in the final rationale. The independent note identifies the passages checked."
+      }
+    },
+    {
+      "report_id": "R0015",
+      "domain": "D06",
+      "judgment": "PARTIAL",
+      "rationale": "Includes data-rate and swarm-size sensitivity sweeps across three CNNs, but omits repeated trials and uncertainty measures for stochastic Random outcomes and runtime benchmarks.",
+      "locators": [
+        {
+          "page": 7,
+          "section": "IV.B Results Analysis, Fig. 4",
+          "quote": "Influence of different data rates."
+        },
+        {
+          "page": 7,
+          "section": "IV.B Results Analysis, Fig. 5",
+          "quote": "Influence of the number of UAVs."
+        },
+        {
+          "page": 6,
+          "section": "IV.A–IV.B Simulation Settings and Results Analysis",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "pdf_sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp6–7 §IV.B Figs. 3–5",
+        "independent_source_note": "Varies DNN, hardware, data rate and swarm size; across-run uncertainty is not reported."
+      }
+    },
+    {
+      "report_id": "R0015",
+      "domain": "D07",
+      "judgment": "PARTIAL",
+      "rationale": "Evaluates multiple data rates and defers dynamic networks to future work, but assumes constant per-request links and full reachability without modeling UAV mobility or link dynamics.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "IV.A Simulation Settings",
+          "quote": "constant in a complete collaborative inference request."
+        },
+        {
+          "page": 6,
+          "section": "IV.A Simulation Settings",
+          "quote": "we assume that all devices are not isolated and they can all"
+        },
+        {
+          "page": 7,
+          "section": "V. CONCLUSION",
+          "quote": "UAV swarm under dynamic networks."
+        }
+      ],
+      "provider_uuid": "031166a6-27d9-43f0-af09-bcf4daaf50dc",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "pdf_sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p6 §IV.A; p7 §V",
+        "independent_source_note": "Constant data rate during a request and mutual reachability explicitly simplify network conditions; dynamic networks remain future work."
+      }
+    },
+    {
+      "report_id": "R0015",
+      "domain": "D08",
+      "judgment": "PARTIAL",
+      "rationale": "Bounds comparative latency and runtime gains to simulation and defers dynamic networks, but claims real-time suitability without defining an explicit deadline threshold or validating on hardware.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "IV.B Results Analysis",
+          "quote": "running time of EECIA is similar to Random, Nearest"
+        },
+        {
+          "page": 7,
+          "section": "IV.B Results Analysis",
+          "quote": "reduce the total inference latency as the number of UAVs"
+        },
+        {
+          "page": 7,
+          "section": "V. CONCLUSION",
+          "quote": "time requirements. One promising future work would be using"
+        }
+      ],
+      "provider_uuid": "031166a6-27d9-43f0-af09-bcf4daaf50dc",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "pdf_sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p6 §IV.A–B; p7 §V",
+        "independent_source_note": "Setup scopes the evidence to simulation, but the conclusion's real-time suitability has no field verification in the report."
+      }
+    },
+    {
+      "report_id": "R0015",
+      "domain": "D09",
+      "judgment": "NOT_REPORTED",
+      "rationale": "Inspection of simulation settings, conclusion, acknowledgement, and references found no author code release, named image dataset, or artifact availability statement.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "IV.A Simulation Settings",
+          "quote": "evaluate the performance of our system on three different"
+        },
+        {
+          "page": 7,
+          "section": "V. CONCLUSION and ACKNOWLEDGEMENT",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "pdf_sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "source_review": {
+        "reference_judgment": "NOT_REPORTED",
+        "pages_and_sections_checked": "pp5–6 §IV.A; pp7–8 §V and end matter",
+        "independent_source_note": "No author code, evaluation data or trace availability statement in setup, conclusion or end matter."
+      }
+    },
+    {
+      "report_id": "R0015",
+      "domain": "D10",
+      "judgment": "PARTIAL",
+      "rationale": "Discloses national research grants and notes dynamic-network future work, but lacks explicit methodological limitations and omits any conflict-of-interest statement.",
+      "locators": [
+        {
+          "page": 7,
+          "section": "V. CONCLUSION",
+          "quote": "using reinforcement learning as an alternative optimization scheme"
+        },
+        {
+          "page": 7,
+          "section": "ACKNOWLEDGEMENT",
+          "quote": "National Key R&D Program of China No. 2018YFB1800801"
+        },
+        {
+          "page": 7,
+          "section": "ACKNOWLEDGEMENT and front/end matter",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "pdf_sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p6 §IV.A; p7 §V and Acknowledgement",
+        "independent_source_note": "States network simplifying assumptions and dynamic-network future work, and acknowledges funding; conflict reporting is absent from end matter."
+      }
+    },
+    {
+      "report_id": "R0019",
+      "domain": "D01",
+      "judgment": "YES",
+      "rationale": "Clearly specifies the joint trajectory planning and per-layer CNN distribution problem, grid surveillance model, ILP formulation, and PPO MDP design.",
+      "locators": [
+        {
+          "page": 4,
+          "section": "III.A System Model",
+          "quote": "divide the covered area into equal cell sizes"
+        },
+        {
+          "page": 7,
+          "section": "III.C Reinforcement Learning",
+          "quote": "the RL agent chooses the location of each UAV"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "pdf_sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp4–5 §III.A–B",
+        "independent_source_note": "Describes surveillance-grid motion and CNN layer allocation with a joint system model."
+      }
+    },
+    {
+      "report_id": "R0019",
+      "domain": "D02",
+      "judgment": "YES",
+      "rationale": "Explicitly documents grid, CNN, and radio assumptions, binary placement and allocation variables, and memory, compute, collision, and hot-cell constraints.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "III.A System Model",
+          "quote": "All UAVs are assumed to transmit a fixed power"
+        },
+        {
+          "page": 6,
+          "section": "III.B Problem Formulation",
+          "quote": "This condition is added to avoid collision between different"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "pdf_sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp5–7 §III.B–C",
+        "independent_source_note": "Defines resource boundaries, safe trajectory conditions and hot-cell constraints in the formulation."
+      }
+    },
+    {
+      "report_id": "R0019",
+      "domain": "D03",
+      "judgment": "PARTIAL",
+      "rationale": "Lists PPO hyperparameters, grid size, CNNs, and radio values in Table II, but omits Poisson arrival rate, channel gain h0, hot-cell specs, and simulator software.",
+      "locators": [
+        {
+          "page": 11,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS",
+          "quote": "characterized by a 1.4-GHz 64-bit quad-core processor"
+        },
+        {
+          "page": 11,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS",
+          "quote": "our classification request generation follows a Poisson process."
+        },
+        {
+          "page": 11,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS, Table II",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "pdf_sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p9 §III.C; pp10–11 §IV Table II",
+        "independent_source_note": "Reports PPO implementation and simulation parameters plus CNN workload dimensions; complete randomization and reproduction artifacts are not identified."
+      }
+    },
+    {
+      "report_id": "R0019",
+      "domain": "D04",
+      "judgment": "PARTIAL",
+      "rationale": "Uses shared environment settings and identical PPO parameters for OULD, but omits hyperparameter and tuning disclosures for Actor-Critic and QoS demand baselines.",
+      "locators": [
+        {
+          "page": 10,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS",
+          "quote": "we applied the same configuration of the environment"
+        },
+        {
+          "page": 14,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS",
+          "quote": "applied the same DRL algorithm, the PPO algorithm"
+        },
+        {
+          "page": 14,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "pdf_sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp10–11 §IV opening and Table II",
+        "independent_source_note": "Explicit common environmental configurations across methods, including UAV types/counts, cell size and request mix.",
+        "final_adjudication": "Decision applies the source-supported reporting limits stated in the final rationale. The independent note identifies the passages checked."
+      }
+    },
+    {
+      "report_id": "R0019",
+      "domain": "D05",
+      "judgment": "YES",
+      "rationale": "Latency, shared data, hot-cell QoS, and explicitly defined constraint-satisfaction accuracy directly measure the formulated optimization objective and surveillance constraints.",
+      "locators": [
+        {
+          "page": 11,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS",
+          "quote": "delay from capturing an image from the ground until"
+        },
+        {
+          "page": 11,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS",
+          "quote": "percentage of respecting the constraints of the two tasks"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "pdf_sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp10–11 §IV and Table II",
+        "independent_source_note": "Defines classification latency, shared data, hot-cell service QoS and constraint satisfaction; the latter is not image-classification accuracy."
+      }
+    },
+    {
+      "report_id": "R0019",
+      "domain": "D06",
+      "judgment": "PARTIAL",
+      "rationale": "Provides convergence curves and broad sensitivity sweeps across models, capacities, grids, QoS, and swarm dynamics, but omits multi-seed repetitions and statistical uncertainty bounds.",
+      "locators": [
+        {
+          "page": 11,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS, Fig. 4",
+          "quote": "Average cumulative rewards for LeNet."
+        },
+        {
+          "page": 13,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS, Fig. 13",
+          "quote": "minimum number of UAVs to start respecting the two"
+        },
+        {
+          "page": 11,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "pdf_sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp12–15 §IV Figs. 12–19",
+        "independent_source_note": "Sweeps cell count, device capability, QoS and swarm change; no explicit repeated-run dispersion identified in these results."
+      }
+    },
+    {
+      "report_id": "R0019",
+      "domain": "D07",
+      "judgment": "PARTIAL",
+      "rationale": "Models grid mobility, collision avoidance, and distance-dependent rates, but omits interference from the rate equation and defers LoS/NLoS channels and Doppler effects to future work.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "III.A System Model",
+          "quote": "the Doppler effect is out of the scope"
+        },
+        {
+          "page": 5,
+          "section": "III.A System Model, Eq. (5)",
+          "quote": "the achievable data rate can be calculated as follows:"
+        },
+        {
+          "page": 15,
+          "section": "V. CONCLUSION",
+          "quote": "different modes like an LoS and an NLoS."
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "pdf_sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp4–5 §III.A; p15 §IV Fig. 19 and §V",
+        "independent_source_note": "Includes grid motion, collision rules and node-count changes; LoS/NLoS effects and Doppler remain future work."
+      }
+    },
+    {
+      "report_id": "R0019",
+      "domain": "D08",
+      "judgment": "PARTIAL",
+      "rationale": "Frames outcomes as simulation results with future-work bounds, but overclaims identical generalization across similar systems and interference mitigation despite omitting interference in the rate model.",
+      "locators": [
+        {
+          "page": 11,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS",
+          "quote": "we believe that similar systems will perform identically."
+        },
+        {
+          "page": 15,
+          "section": "V. CONCLUSION",
+          "quote": "Our simulation results demonstrated the effectiveness of our proposed"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "pdf_sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p11 §IV; p15 §V",
+        "independent_source_note": "Page 11 §IV explicitly suggests similar systems will perform identically despite empirically chosen settings. Page 15 §V scopes the numerical results to simulation and leaves communication limits for future work."
+      }
+    },
+    {
+      "report_id": "R0019",
+      "domain": "D09",
+      "judgment": "NOT_REPORTED",
+      "rationale": "No author code repository, dataset, trace, or implementation artifact availability statement appears in the RL algorithm methods, simulation settings, conclusion, or end matter.",
+      "locators": [
+        {
+          "page": 9,
+          "section": "III.C.4 RL Agent Design; III.C.5 PPO Algorithm",
+          "quote": null
+        },
+        {
+          "page": 10,
+          "section": "III.C.5 PPO Algorithm; IV. SIMULATION RESULTS AND ANALYSIS",
+          "quote": null
+        },
+        {
+          "page": 11,
+          "section": "IV. SIMULATION RESULTS AND ANALYSIS",
+          "quote": null
+        },
+        {
+          "page": 15,
+          "section": "V. CONCLUSION",
+          "quote": null
+        },
+        {
+          "page": 15,
+          "section": "ACKNOWLEDGMENT",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "031166a6-27d9-43f0-af09-bcf4daaf50dc",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "pdf_sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+      "source_review": {
+        "reference_judgment": "NOT_REPORTED",
+        "pages_and_sections_checked": "p9 §III.C; pp10–11 §IV; p15 §V",
+        "independent_source_note": "Library/algorithm implementation details are listed but no release of the authors' configured artifacts is given in these sections."
+      }
+    },
+    {
+      "report_id": "R0019",
+      "domain": "D10",
+      "judgment": "PARTIAL",
+      "rationale": "Reports QNRF funding and explicitly scopes out Doppler, LoS/NLoS, and security, but provides no conflict-of-interest disclosure.",
+      "locators": [
+        {
+          "page": 15,
+          "section": "V. CONCLUSION",
+          "quote": "investigate the Doppler effect of moving UAVs as it"
+        },
+        {
+          "page": 1,
+          "section": "Title Footnote",
+          "quote": "13th Cycle from the Qatar National Research Fund under"
+        },
+        {
+          "page": 15,
+          "section": "ACKNOWLEDGMENT and front/end matter",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "pdf_sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p1 funding footnote; p15 §V and Acknowledgment",
+        "independent_source_note": "Funding and future channel/security work are stated. A responsibility disclaimer does not establish a conflict declaration."
+      }
+    },
+    {
+      "report_id": "R0022",
+      "domain": "D01",
+      "judgment": "YES",
+      "rationale": "Clearly presents the joint early-exit and partitioning problem, serverless UAV swarm framework, delay and energy models, and Option-Critic HRL architecture.",
+      "locators": [
+        {
+          "page": 2,
+          "section": "II. SYSTEM MODEL",
+          "quote": "To mitigate these challenges, we introduce Early Exit Points"
+        },
+        {
+          "page": 3,
+          "section": "III.A Architecture",
+          "quote": "each corresponding to a distinct early-exit point of"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "pdf_sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p2 §II.A–B; p3 §II.D",
+        "independent_source_note": "Defines early-exit and model partitioning in a serverless swarm and makes the latency–energy–accuracy tradeoff explicit."
+      }
+    },
+    {
+      "report_id": "R0022",
+      "domain": "D02",
+      "judgment": "PARTIAL",
+      "rationale": "Defines assignment variables, weighted utility objective, and latency/energy constraints, but leaves mobility assumptions, memory bounds, and whether N=8 includes coordinator ur0 ambiguous.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "II.D Problem Formulation",
+          "quote": "maximize a weighted utility function that balances total latency"
+        },
+        {
+          "page": 2,
+          "section": "II.B Collaborative UAV Swarm Framework",
+          "quote": "the group owner, responsible for coordinating the other"
+        },
+        {
+          "page": 6,
+          "section": "IV. PERFORMANCE EVALUATION",
+          "quote": "fewer than three of eight UAVs are utilized"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "pdf_sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp2–3 §II.A–D",
+        "independent_source_note": "Describes layer and exit decisions, distance-related links, time and energy constraints and the combined reward.",
+        "final_adjudication": "Decision applies the source-supported reporting limits stated in the final rationale. The independent note identifies the passages checked."
+      }
+    },
+    {
+      "report_id": "R0022",
+      "domain": "D03",
+      "judgment": "PARTIAL",
+      "rationale": "Reports basic radio and CPU parameters in Table I for AlexNet, but omits objective weights, constraint limits, exit accuracies, dataset, all HRL hyperparameters, and simulator details.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "IV. PERFORMANCE EVALUATION, Table I",
+          "quote": "evenly distributed from 1GHz to 2GHz"
+        },
+        {
+          "page": 5,
+          "section": "IV. PERFORMANCE EVALUATION",
+          "quote": "The specific simulation parameters are shown in TABLE I."
+        },
+        {
+          "page": 5,
+          "section": "III.C–IV Algorithm and Performance Evaluation",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "pdf_sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp4–5 §III.C and §IV Table I",
+        "independent_source_note": "Reports simulation and training setup plus AlexNet workload; run seed and reproducible experiment artifacts are not specified."
+      }
+    },
+    {
+      "report_id": "R0022",
+      "domain": "D04",
+      "judgment": "PARTIAL",
+      "rationale": "Compares three named baselines across shared bandwidth sweeps on AlexNet, but omits hyperparameter and tuning disclosures needed to establish comparator parity.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "IV. PERFORMANCE EVALUATION",
+          "quote": "We have defined three baseline methods for comparison:"
+        },
+        {
+          "page": 5,
+          "section": "IV. PERFORMANCE EVALUATION",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "pdf_sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p5 §IV Table I; pp5–6 Figs. 3–6",
+        "independent_source_note": "PSO-GA, DQN and early-exit comparison methods are described and share reported bandwidth scenarios; training comparability is incompletely documented."
+      }
+    },
+    {
+      "report_id": "R0022",
+      "domain": "D05",
+      "judgment": "PARTIAL",
+      "rationale": "Reports reward, energy, time, and exit-point selection, but omits direct accuracy outcomes, constraint-violation rates, and axis units for energy and time.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "II.D Problem Formulation",
+          "quote": "maximize a weighted utility function that balances total latency"
+        },
+        {
+          "page": 6,
+          "section": "IV. PERFORMANCE EVALUATION, Fig. 6",
+          "quote": "method to select deeper exit points, where the gains"
+        },
+        {
+          "page": 5,
+          "section": "IV. PERFORMANCE EVALUATION, Figs. 4–5",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "pdf_sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p3 §II.D; pp5–6 §IV Figs. 3–6",
+        "independent_source_note": "Figs. 3–6 report reward, energy, time and exit choices rather than measured accuracy across bandwidths. Original page rendering confirms the energy and time axes lack units."
+      }
+    },
+    {
+      "report_id": "R0022",
+      "domain": "D06",
+      "judgment": "PARTIAL",
+      "rationale": "Shows training convergence and a bandwidth sensitivity sweep, but omits repeated random trials, uncertainty bounds, and multi-task or swarm-size sensitivity.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "IV. PERFORMANCE EVALUATION, Fig. 3",
+          "quote": "faster and achieves a higher final reward than DQN."
+        },
+        {
+          "page": 6,
+          "section": "IV. PERFORMANCE EVALUATION, Fig. 6",
+          "quote": "Model of Exit Point Selection and Average Number"
+        },
+        {
+          "page": 5,
+          "section": "IV. PERFORMANCE EVALUATION",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "pdf_sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp5–6 §IV Figs. 3–6",
+        "independent_source_note": "Convergence curve and bandwidth sweep are provided; independent-seed dispersion is not defined in the evaluation."
+      }
+    },
+    {
+      "report_id": "R0022",
+      "domain": "D07",
+      "judgment": "PARTIAL",
+      "rationale": "Includes Rayleigh fading and distance path loss in simulation, but omits UAV mobility dynamics, outages, and multi-task contention despite claiming dynamic multi-UAV environments.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "IV. PERFORMANCE EVALUATION",
+          "quote": "objects waiting to be recognized by images are randomly"
+        },
+        {
+          "page": 6,
+          "section": "V. CONCLUSION",
+          "quote": "complex UAV swarm dynamics and real-world"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "pdf_sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p3 §II.C; p5 §IV Table I; p6 §V",
+        "independent_source_note": "Expresses distance/channel effects and varies simulated bandwidth; more complex swarm dynamics and real communications are future work."
+      }
+    },
+    {
+      "report_id": "R0022",
+      "domain": "D08",
+      "judgment": "YES",
+      "rationale": "Conclusions stay bounded to the AlexNet simulation under varying bandwidth; real-world deployment is framed only as promise, with swarm dynamics and real-world communication uncertainties deferred to future work.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "IV. PERFORMANCE EVALUATION",
+          "quote": "use is AlexNet. The specific simulation parameters are shown"
+        },
+        {
+          "page": 6,
+          "section": "V. CONCLUSION",
+          "quote": "We construct a simulation environment for multi-UAV"
+        },
+        {
+          "page": 6,
+          "section": "V. CONCLUSION",
+          "quote": "This work shows promise for real-world deployments where"
+        },
+        {
+          "page": 6,
+          "section": "V. CONCLUSION",
+          "quote": "complex UAV swarm dynamics"
+        }
+      ],
+      "provider_uuid": "031166a6-27d9-43f0-af09-bcf4daaf50dc",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "pdf_sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp5–6 §IV and §V",
+        "independent_source_note": "Qualifies results as simulation under varying network conditions and frames real deployment as a prospect for further validation."
+      }
+    },
+    {
+      "report_id": "R0022",
+      "domain": "D09",
+      "judgment": "NOT_REPORTED",
+      "rationale": "Inspection of evaluation, conclusion, acknowledgment, and references found no author code release, dataset link, or artifact availability statement.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "IV. PERFORMANCE EVALUATION",
+          "quote": "The specific simulation parameters are shown in TABLE I."
+        },
+        {
+          "page": 6,
+          "section": "V. CONCLUSION and ACKNOWLEDGMENT",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "pdf_sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+      "source_review": {
+        "reference_judgment": "NOT_REPORTED",
+        "pages_and_sections_checked": "p5 §III.C and §IV; p6 §V and end matter",
+        "independent_source_note": "Does not identify author code, data or traces for rerunning the specified experiment."
+      }
+    },
+    {
+      "report_id": "R0022",
+      "domain": "D10",
+      "judgment": "PARTIAL",
+      "rationale": "Reports NSFC funding and notes swarm dynamics and communication uncertainty as future work, but provides no conflict-of-interest disclosure.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "V. CONCLUSION",
+          "quote": "complex UAV swarm dynamics and real-world"
+        },
+        {
+          "page": 6,
+          "section": "ACKNOWLEDGMENT",
+          "quote": "National Natural Science Foundation of China (NSFC) under"
+        },
+        {
+          "page": 6,
+          "section": "ACKNOWLEDGMENT and front/end matter",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "pdf_sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p6 §V and Acknowledgment",
+        "independent_source_note": "Names future realism limitations and funding; no separate conflict declaration was identified."
+      }
+    },
+    {
+      "report_id": "R0029",
+      "domain": "D01",
+      "judgment": "YES",
+      "rationale": "Clearly specifies the reliable DAG partitioning problem, active-replication reliability and latency models, energy-minimization formulation, and DQN solution.",
+      "locators": [
+        {
+          "page": 2,
+          "section": "II. SYSTEM MODEL",
+          "quote": "Each UAV has saved a trained DNN model"
+        },
+        {
+          "page": 3,
+          "section": "II.A Reliability Model",
+          "quote": "each layer has a certain number of replicas"
+        },
+        {
+          "page": 4,
+          "section": "II.C Problem Formulation",
+          "quote": "minimize energy consumption with the reliability and latency"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "pdf_sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp2–3 §II; p4 §II.C",
+        "independent_source_note": "Defines reliable drone inference using active layer replication and constrained energy minimization."
+      }
+    },
+    {
+      "report_id": "R0029",
+      "domain": "D02",
+      "judgment": "YES",
+      "rationale": "Explicitly states transient Poisson failure assumptions, serialization and precedence rules, binary replication variables, and latency, reliability, and replication constraints.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "II.A Reliability Model",
+          "quote": "In this study, transient failure is considered only."
+        },
+        {
+          "page": 3,
+          "section": "II.B Latency Model",
+          "quote": "each layer should wait for completion"
+        },
+        {
+          "page": 4,
+          "section": "II.C Problem Formulation",
+          "quote": "minimize energy consumption with the reliability and latency"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "pdf_sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp3–4 §II.A–C",
+        "independent_source_note": "Specifies failure modeling, partition/replica decisions, latency and minimum reliability constraints."
+      }
+    },
+    {
+      "report_id": "R0029",
+      "domain": "D03",
+      "judgment": "PARTIAL",
+      "rationale": "Provides radio, CPU, swarm size, failure-rate, and deadline parameters, but omits reliability threshold R0, energy coefficient, penalty weight, all DQN hyperparameters, and simulator details.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "IV.A Simulation Setup",
+          "quote": "The system parameters of simulation are set as follows:"
+        },
+        {
+          "page": 5,
+          "section": "IV.A Simulation Setup",
+          "quote": "The experiments use four typical DNNs, AlexNet, VGG19,"
+        },
+        {
+          "page": 5,
+          "section": "III–IV.A Algorithm and Simulation Setup",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "pdf_sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p5 §IV.A",
+        "independent_source_note": "Reports channel/failure distributions, model inputs and benchmark parameters by reference; complete generation and rerun details remain unspecified."
+      }
+    },
+    {
+      "report_id": "R0029",
+      "domain": "D04",
+      "judgment": "PARTIAL",
+      "rationale": "Evaluates three named baselines on shared DNNs, deadlines, and failure regimes, citing [10] for GA/PSO parameters, but omits DQN tuning details and feasibility parity.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "IV.A Simulation Setup",
+          "quote": "random allocation (RA), genetic algorithm (GA), and a"
+        },
+        {
+          "page": 5,
+          "section": "IV.A Simulation Setup",
+          "quote": "fitness function and parameters of GA and PSO"
+        },
+        {
+          "page": 5,
+          "section": "IV.A–IV.B Simulation Setup and Experiments Analysis",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "pdf_sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p5 §IV.A–B",
+        "independent_source_note": "Defines comparators and points to a parameter source for GA and PSO. The experiment compares under the deadline/failure sweeps. A matched, numeric reliability target or comparator tuning protocol was not identified."
+      }
+    },
+    {
+      "report_id": "R0029",
+      "domain": "D05",
+      "judgment": "PARTIAL",
+      "rationale": "Plots energy consumption aligned with the minimization objective, but omits achieved reliability, latency, constraint-violation rates under soft penalties, and energy axis units.",
+      "locators": [
+        {
+          "page": 4,
+          "section": "II.C Problem Formulation",
+          "quote": "minimize energy consumption with the reliability and latency"
+        },
+        {
+          "page": 5,
+          "section": "IV.B Experiments Analysis, Fig. 4",
+          "quote": "energy consumption performance of different strategies with different"
+        },
+        {
+          "page": 5,
+          "section": "IV.B Experiments Analysis, Figs. 4–5",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "pdf_sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p4 §II.C; pp5–6 §IV.B Figs. 4–5",
+        "independent_source_note": "Graphs plot energy by deadline and failure regime, aligned with the objective. Their energy axes do not state units, and §IV.B does not report attained reliability for each method."
+      }
+    },
+    {
+      "report_id": "R0029",
+      "domain": "D06",
+      "judgment": "PARTIAL",
+      "rationale": "Conducts deadline and failure-environment sweeps across four DNNs, but omits DQN convergence curves, repeated random trials, and uncertainty bounds for stochastic algorithms.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "IV.B Experiments Analysis, Fig. 4",
+          "quote": "energy consumption performance of different strategies with different"
+        },
+        {
+          "page": 5,
+          "section": "IV.B Experiments Analysis, Fig. 5",
+          "quote": "we can see the energy consumption of different"
+        },
+        {
+          "page": 5,
+          "section": "IV.A–IV.B Simulation Setup and Experiments Analysis",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "pdf_sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp5–6 §IV.B Figs. 4–5",
+        "independent_source_note": "Tests deadline and failure-condition sweeps without published across-run dispersion or seed protocol in those results."
+      }
+    },
+    {
+      "report_id": "R0029",
+      "domain": "D07",
+      "judgment": "PARTIAL",
+      "rationale": "Models transient Poisson node/link failures and Rayleigh-faded path loss, but assumes static UAV positions without mobility, permanent failures, or wireless interference in simulation.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "II.A Reliability Model",
+          "quote": "In this study, transient failure is considered only."
+        },
+        {
+          "page": 5,
+          "section": "IV.A Simulation Setup",
+          "quote": "We consider several UAVs distributed randomly in area"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "pdf_sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p3 §II.A; p5 §IV.A",
+        "independent_source_note": "Models link and node failures explicitly. Random spatial placement, simplified distributions and simulation scope limit transfer."
+      }
+    },
+    {
+      "report_id": "R0029",
+      "domain": "D08",
+      "judgment": "PARTIAL",
+      "rationale": "Frames outcomes as simulation comparisons against three baselines, but claims latency and reliability guarantees despite using soft penalties without reporting constraint compliance.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "V. CONCLUSION",
+          "quote": "By a series of simulations, we show that compared"
+        },
+        {
+          "page": 6,
+          "section": "V. CONCLUSION",
+          "quote": "minimize the energy consumption of the DNN inference task"
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "pdf_sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp5–6 §IV.B and §V",
+        "independent_source_note": "Conclusion expressly ties comparisons to simulations and the analyzed failure conditions and constraints.",
+        "final_adjudication": "Decision applies the source-supported reporting limits stated in the final rationale. The independent note identifies the passages checked."
+      }
+    },
+    {
+      "report_id": "R0029",
+      "domain": "D09",
+      "judgment": "NOT_REPORTED",
+      "rationale": "Cites [10] for DNN layer profiles, but inspection of setup, conclusion, acknowledgment, and references found no author code, data, or availability statement.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "IV.A Simulation Setup",
+          "quote": "which are obtained from experiments according to [10]."
+        },
+        {
+          "page": 6,
+          "section": "V. CONCLUSION and ACKNOWLEDGMENT",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "pdf_sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+      "source_review": {
+        "reference_judgment": "NOT_REPORTED",
+        "pages_and_sections_checked": "p5 §IV.A; p6 §V and Acknowledgment",
+        "independent_source_note": "External prior measurements are cited; a release for the authors' evaluated code/data/traces is not identified."
+      }
+    },
+    {
+      "report_id": "R0029",
+      "domain": "D10",
+      "judgment": "PARTIAL",
+      "rationale": "Reports Zhijiang Laboratory and NSFC funding, but omits explicit author limitations in the conclusion and provides no conflict-of-interest disclosure.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "ACKNOWLEDGMENT",
+          "quote": "supported by the Zhijiang Laboratory Open Project Fund"
+        },
+        {
+          "page": 6,
+          "section": "V. CONCLUSION",
+          "quote": null
+        },
+        {
+          "page": 6,
+          "section": "ACKNOWLEDGMENT and front/end matter",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "be0b8973-d10e-419c-8698-dc00069feb3c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "pdf_sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p5 §IV.A; p6 §V and Acknowledgment",
+        "independent_source_note": "Funding is acknowledged. Scenario assumptions are reported, but no explicit limitations discussion or conflict statement was identified."
+      }
+    }
+  ]
+}
