@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T19:30:39+07:00",
+  "updated_at": "2026-11-26T19:30:40+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
@@ -15,12 +15,18 @@
     "decision_id": "restart-08-native-app-retrieval-v1",
     "records_total": 137,
     "records_reviewed": 0,
-    "updated_at": "2026-11-26T19:30:39+07:00"
+    "updated_at": "2026-11-26T19:30:40+07:00",
+    "active_batch": {
+      "batch": 1,
+      "task_id": "77c97618-7804-4d4e-a2dd-ec94aecd2760",
+      "context_id": "a8dcb3d5-77da-43ff-9abc-6b9dfe8662cb",
+      "submitted_at": "2026-11-26T19:30:40+07:00"
+    }
   },
   "next_task": {
     "task_id": "restart-08-batch01",
     "owner": "GEMINI_RESEARCH",
-    "status": "ready",
+    "status": "active",
     "action": "Find lawful full text for the first 20 queued records through Gemini.app Task.",
     "acceptance": "20/20 identities and logged results, with independently verified local files or explicit reasons."
   },
