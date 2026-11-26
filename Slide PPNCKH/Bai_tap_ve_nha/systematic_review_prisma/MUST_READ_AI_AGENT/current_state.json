@@ -1,30 +1,30 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T20:35:45+07:00",
+  "updated_at": "2026-11-26T20:42:50+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
-    "task_id": "restart-09-batch-02-transport01",
+    "task_id": "restart-09-batch-02-retry01",
     "status": "rejected",
     "owner": "CODEX_WRITING",
     "research_owner": "GEMINI_RESEARCH",
-    "started_at": "2026-11-26T13:34:27+00:00",
-    "updated_at": "2026-11-26T20:35:45+07:00",
-    "completed_at": "2026-11-26T20:35:45+07:00",
-    "checkpoint_path": "restart_2026_11_26/fulltext_screening/batch_02_transport01_review.md",
-    "decision_id": "restart-09-batch-02-transport01-v1"
+    "started_at": "2026-11-26T13:35:50+00:00",
+    "updated_at": "2026-11-26T20:42:50+07:00",
+    "completed_at": "2026-11-26T20:42:50+07:00",
+    "checkpoint_path": "restart_2026_11_26/fulltext_screening/batch_02_retry01_review.md",
+    "decision_id": "restart-09-batch-02-retry01-v1"
   },
   "next_task": {
-    "task_id": "restart-09-batch-02-retry01",
+    "task_id": "restart-09-batch-02-correction01",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Retry exact second screening batch after confirming no prompt was sent.",
-    "acceptance": "One direct native Task, same 11 exact PDFs and P06 evidence gate.",
-    "dispatch_brief": "restart_2026_11_26/fulltext_screening/batch_02_retry01_brief.md",
-    "message_id": "hk261-restart-step09-batch02-retry01-v1"
+    "action": "Correct nine source locators and verify the report-type source.",
+    "acceptance": "Seven exact IDs, nine patch fields, exact source locations or documented uncertainty.",
+    "dispatch_brief": "restart_2026_11_26/fulltext_screening/batch_02_correction01_brief.md",
+    "message_id": "hk261-restart-step09-batch02-correction01-v1"
   },
   "project": {
     "target_venue": "SN Computer Science",

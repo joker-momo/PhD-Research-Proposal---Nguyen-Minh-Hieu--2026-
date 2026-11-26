@@ -1,0 +1,18 @@
+# TASK
+Correct nine source-evidence fields in HK261 Batch 02, linked to Gemini.app Task 00f37c26-646b-4365-8933-cd7e5b5c97ce, context 59890b30-faaf-4aa0-bdc4-9ec9ec6f5fc5.
+
+# REQUIRED WORK
+1. Read P03/P06 and open the exact target PDFs directly under restart_2026_11_26/fulltext_retrieval/pdf/. R0048 E2: PDF p.10 §VII, use a short continuous excerpt from the discussion around "counts ranging from 5 to 200", not Table II. R0048 E6: cite a continuous English sentence fragment from p.1 that does not run across a dropped capital. R0054 E6: p.1 use a short contiguous English body fragment excluding the dropped capital.
+2. R0059 E2: the exact matching quote "we set up 3 task UAVs and 6 relay UAVs" is on PDF page 9, verify the subsection and locator. R0061 E6: the quote "The use of Unmanned Aerial Vehicles (UAVs) has become an efficient technological means" is on p.2, verify the heading. R0068 E1: quote a continuous sentence fragment of the original contribution (prefer §V) without combining title with a guessed article-type label.
+3. R0062 E7: the previously cited IEEE Technology Navigator text does not establish peer review. Inspect the official https://www.comsoc.org/publications/magazines/ieee-communications-magazine/policies-guidelines, specifically the editorial review process and columns policy. Codex observed the exact fragment "are responsible for managing and overseeing the review process of manuscripts" on that page. Distinguish the peer-reviewed feature article from a column, with the exact report's PDF p.5 evaluation and journal type/peer-review if available. The author's university record https://researchportal.hkust.edu.hk/en/publications/elastic-collaborative-edge-intelligence-for-uav-swarm-architectur/ classifies it as a peer-reviewed journal article; use the publisher policy as the primary source and cite paper-specific evidence. Treat these as supplied sources if your own browser cannot open one.
+4. R0063 E2/E6: choose short neutral passages from physical p.11 §5.1 or p.2 §1 supporting evaluated multi-UAV setting/full text in English. Cite the neutral simulation section heading or a short exact sentence fragment that does not reproduce tactics, target details or operating instructions. For E6 the previously submitted quote begins on p.2. Keep evidence limited to eligibility.
+5. Give only the specified nine fields. Keep decisions consistent with all E1–E7. Use an empty primary code for INCLUDE or AWAITING_CLASSIFICATION. R0061 remains EXCLUDE E3 unless new evidence clearly contradicts that decision.
+
+# REQUIRED OUTPUT
+Exactly 7 JSONL rows, id, decision, primary, reason, e. Only patch keys for each ID: R0048 E2/E6; R0054 E6; R0059 E2; R0061 E6; R0062 E7; R0063 E2/E6; R0068 E1. Each entry [T/F/U, physical PDF page or 0 for exact external URL, heading, short contiguous exact quote, note, PDF or exact URL]. The record metadata joins by ID. No extra numerical performance claims.
+
+# ACCEPTANCE CRITERIA
+C1 7 unique expected IDs, 9 exact patch fields, zero extra. C2 9/9 locators and excerpts or declared source limitation. C3 7/7 consistent decisions under P06 and one main E code per EXCLUDE. C4 unsupported and operational claims zero.
+
+# BOUNDARIES
+Read-only; named files/sources only. Do not invent or guess sources, identifiers, file contents, quotes, locators, search results, access attempts, decisions or numbers. Report only what you observed in a source you actually opened. If the source was inaccessible, missing, ambiguous or contradictory, declare the gap and give its specific reason. Keep any candidate URL or title separate as an unverified lead. Never present an abstract or search snippet as full-text evidence.
