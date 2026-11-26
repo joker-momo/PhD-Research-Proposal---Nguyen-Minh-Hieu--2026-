@@ -1,0 +1,349 @@
+{
+  "diag": {
+    "state": "TASK_STATE_FAILED",
+    "characters": 96107,
+    "errors": [
+      [
+        "A2",
+        "R0001",
+        "decision_variables_objectives_constraints_and_solver/optimization_and_solver: locator/excerpt mismatch p2"
+      ],
+      [
+        "A2",
+        "R0001",
+        "sensitivity_and_variability/alpha_sensitivity: locator/excerpt mismatch p3"
+      ],
+      [
+        "A2",
+        "R0002",
+        "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/success_cost_accuracy: locator/excerpt mismatch p8"
+      ],
+      [
+        "A2",
+        "R0003",
+        "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/latency_and_accuracy: locator/excerpt mismatch p6"
+      ],
+      [
+        "A2",
+        "R0006",
+        "compute_and_radio/uav_compute_radio_params: locator/excerpt mismatch p6"
+      ],
+      [
+        "A2",
+        "R0006",
+        "evaluation_platform_simulator_hardware_and_traces/simulation_trials: locator/excerpt mismatch p6"
+      ],
+      [
+        "A2",
+        "R0006",
+        "baselines_and_workloads/baselines: locator/excerpt mismatch p6"
+      ],
+      [
+        "A2",
+        "R0009",
+        "uav_architecture_role_and_topology/uav_assisted_mec: locator/excerpt mismatch p8"
+      ],
+      [
+        "A2",
+        "R0009",
+        "partition_and_assignment/gu_uav_split: locator/excerpt mismatch p5"
+      ],
+      [
+        "A2",
+        "R0009",
+        "compute_and_radio/compute_and_radio_params: locator/excerpt mismatch p8"
+      ],
+      [
+        "A2",
+        "R0009",
+        "baselines_and_workloads/baselines_and_arrivals: locator/excerpt mismatch p8"
+      ],
+      [
+        "A2",
+        "R0009",
+        "sensitivity_and_variability/radius_users_bandwidth: locator/excerpt mismatch p9"
+      ],
+      [
+        "A3",
+        "R0009",
+        "total_energy_70_gus: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A2",
+        "R0010",
+        "inference_model_task_and_dataset/cnn_models: locator/excerpt mismatch p5"
+      ],
+      [
+        "A2",
+        "R0010",
+        "decision_variables_objectives_constraints_and_solver/dqn_action_disassembly: locator/excerpt mismatch p4"
+      ],
+      [
+        "A2",
+        "R0010",
+        "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/latency_reduction: locator/excerpt mismatch p5"
+      ],
+      [
+        "A2",
+        "R0010",
+        "funding_and_conflicts/funding: locator/excerpt mismatch p6"
+      ],
+      [
+        "A2",
+        "R0010",
+        "funding_and_conflicts/conflicts: locator/excerpt mismatch p6"
+      ],
+      [
+        "A2",
+        "R0015",
+        "mobility_channel_intermittency_failure_and_recovery/simplified_static_channel: locator/excerpt mismatch p6"
+      ],
+      [
+        "A2",
+        "R0015",
+        "evaluation_platform_simulator_hardware_and_traces/simulation_platform: locator/excerpt mismatch p6"
+      ],
+      [
+        "A2",
+        "R0015",
+        "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/latency_and_runtime: locator/excerpt mismatch p6"
+      ],
+      [
+        "A3",
+        "R0015",
+        "latency_reduction_alexnet_72mbps: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A3",
+        "R0015",
+        "latency_reduction_resnet152_72mbps: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A3",
+        "R0015",
+        "latency_reduction_vgg16_72mbps: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A3",
+        "R0015",
+        "eecia_runtime_vgg16_i5: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A2",
+        "R0019",
+        "uav_architecture_role_and_topology/centralized_rl_swarm: locator/excerpt mismatch p11"
+      ],
+      [
+        "A2",
+        "R0019",
+        "inference_model_task_and_dataset/cnn_surveillance: locator/excerpt mismatch p11"
+      ],
+      [
+        "A2",
+        "R0022",
+        "partition_and_assignment/exit_and_layer_partition: locator/excerpt mismatch p2"
+      ],
+      [
+        "A2",
+        "R0029",
+        "compute_and_radio/compute_and_radio_params: locator/excerpt mismatch p5"
+      ],
+      [
+        "A2",
+        "R0044",
+        "decision_variables_objectives_constraints_and_solver/cvar_bat_subgradient: locator/excerpt mismatch p6"
+      ],
+      [
+        "A2",
+        "R0044",
+        "mobility_channel_intermittency_failure_and_recovery/fading_and_bs_fallback: locator/excerpt mismatch p3"
+      ],
+      [
+        "A2",
+        "R0044",
+        "evaluation_platform_simulator_hardware_and_traces/simulation_area: locator/excerpt mismatch p6"
+      ],
+      [
+        "A2",
+        "R0044",
+        "baselines_and_workloads/baselines: locator/excerpt mismatch p7"
+      ],
+      [
+        "A2",
+        "R0044",
+        "sensitivity_and_variability/bw_reliability_psi1: locator/excerpt mismatch p7"
+      ],
+      [
+        "A2",
+        "R0045",
+        "partition_and_assignment/two_part_split_and_migration: locator/excerpt mismatch p4"
+      ],
+      [
+        "A2",
+        "R0045",
+        "decision_variables_objectives_constraints_and_solver/sac_per_cvx: locator/excerpt mismatch p6"
+      ],
+      [
+        "A2",
+        "R0045",
+        "mobility_channel_intermittency_failure_and_recovery/threshold_migration_3d: locator/excerpt mismatch p9"
+      ],
+      [
+        "A2",
+        "R0045",
+        "sensitivity_and_variability/seeds_and_thresholds: locator/excerpt mismatch p11"
+      ],
+      [
+        "A2",
+        "R0048",
+        "decision_variables_objectives_constraints_and_solver/jdtso_and_mapdp: locator/excerpt mismatch p7"
+      ],
+      [
+        "A2",
+        "R0048",
+        "baselines_and_workloads/baselines: locator/excerpt mismatch p10"
+      ],
+      [
+        "A3",
+        "R0048",
+        "inference_latency_60_uavs_eff07: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A3",
+        "R0048",
+        "energy_consumption_60_uavs_eff07: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A3",
+        "R0048",
+        "throughput_60_uavs_eff07: missing quantitative components or quote/page mismatch"
+      ]
+    ],
+    "observed_ids": [
+      "R0001",
+      "R0002",
+      "R0003",
+      "R0006",
+      "R0009",
+      "R0010",
+      "R0015",
+      "R0019",
+      "R0022",
+      "R0029",
+      "R0044",
+      "R0045",
+      "R0048"
+    ],
+    "missing_ids": [],
+    "unexpected_ids": [],
+    "duplicate_ids": 0,
+    "duplicate_doi": 0,
+    "duplicate_title": 0,
+    "counts": {
+      "fields": 182,
+      "status_OBSERVED": 166,
+      "locator_checks": 195,
+      "locator_matches": 160,
+      "status_NOT_REPORTED": 29,
+      "quantitative_claims": 33,
+      "observed_quantitative": 32
+    }
+  },
+  "access": {
+    "access_rows": 13,
+    "mechanical_access_matches": [
+      "R0001",
+      "R0002",
+      "R0003",
+      "R0006",
+      "R0009",
+      "R0010",
+      "R0015",
+      "R0019",
+      "R0022",
+      "R0029",
+      "R0044",
+      "R0045",
+      "R0048"
+    ],
+    "cannot_access": [],
+    "errors": [],
+    "coordination": {
+      "subagent_status": "UNAVAILABLE",
+      "reason": "Five spawned subagents lacked access to the connected local folder and could not open the PDFs; the parent read all 13 PDFs directly.",
+      "assignments": [
+        {
+          "worker": "parent",
+          "report_ids": [
+            "R0001",
+            "R0002",
+            "R0003",
+            "R0006",
+            "R0009",
+            "R0010",
+            "R0015",
+            "R0019",
+            "R0022",
+            "R0029",
+            "R0044",
+            "R0045",
+            "R0048"
+          ]
+        }
+      ]
+    },
+    "summary": {
+      "returned_ids": [
+        "R0001",
+        "R0002",
+        "R0003",
+        "R0006",
+        "R0009",
+        "R0010",
+        "R0015",
+        "R0019",
+        "R0022",
+        "R0029",
+        "R0044",
+        "R0045",
+        "R0048"
+      ],
+      "inaccessible_ids": [],
+      "unresolved_ids": [
+        "R0001",
+        "R0002",
+        "R0010",
+        "R0022",
+        "R0044",
+        "R0045"
+      ]
+    }
+  },
+  "body_section_verified_ids": [
+    "R0001",
+    "R0002",
+    "R0003",
+    "R0006",
+    "R0009",
+    "R0010",
+    "R0015",
+    "R0019",
+    "R0022",
+    "R0029",
+    "R0044",
+    "R0045",
+    "R0048"
+  ],
+  "stable_capture_sha256": [
+    "8974ee05aa3570b8dd1299ec664350e3f7f742220dfbb6172e942228dfec63eb",
+    "4e04736e2706f7a224295515d23df0301d68aa93e3f048bde6b00ea3bdb966f4"
+  ],
+  "accepted_reports": 0,
+  "cleanup": {
+    "timestamp": "2026-11-26T23:18:53+07:00",
+    "uuid": "d9b919ae-f917-43ef-a656-9a8dbff893f6",
+    "event": "DELETED",
+    "detail": "Native confirmation followed by verified empty new chat",
+    "label": "b01new"
+  }
+}

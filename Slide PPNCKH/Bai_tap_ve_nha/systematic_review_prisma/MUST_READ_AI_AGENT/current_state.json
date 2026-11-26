@@ -1,29 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:09:49+07:00",
+  "updated_at": "2026-11-26T23:19:28+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-batch01-extraction-new-brief",
+    "task_id": "restart-11-batch01-extraction-new-review",
     "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T23:09:49+07:00",
-    "updated_at": "2026-11-26T23:09:49+07:00",
-    "completed_at": "2026-11-26T23:09:49+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_extraction_new_brief.md",
-    "decision_id": "restart-11-batch01-extraction-new-brief-v1"
+    "status": "rejected",
+    "started_at": "2026-11-26T23:19:28+07:00",
+    "updated_at": "2026-11-26T23:19:28+07:00",
+    "completed_at": "2026-11-26T23:19:28+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_extraction_new_review.md",
+    "decision_id": "restart-11-batch01-extraction-new-review-v1"
   },
   "next_task": {
-    "task_id": "restart-11-batch01-extraction-new",
+    "task_id": "restart-11-batch02-correction06",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Extract from 13 authorized IDs after PASS on native PDF preflight.",
-    "acceptance": "13/13 access dispositions and 14 P08 fields per report. No unsupported claims.",
-    "dispatch_brief": "restart_2026_11_26/extraction/batch_01_extraction_new_brief.md",
-    "message_id": "hk261-p08-b01-extraction-20261126-v2"
+    "action": "Correct exactly the three Batch 02 outcome fields recorded by correction 05.",
+    "acceptance": "Three replacements, no abstract-only or contradicted findings."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -135,13 +133,15 @@
       "extraction": {
         "expected": 25,
         "accepted": 0,
-        "not_accessible_to_gemini": 13,
+        "not_accessible_to_gemini": 0,
         "quarantined_batch02": 12,
-        "cleanup_deleted": 5,
+        "cleanup_deleted": 6,
         "cleanup_blocked": 3,
         "confirmed_batch02_semantic_failures": 3,
         "correction05_accepted_metric_keys": 2,
-        "batch01_preflight": "PASS"
+        "batch01_preflight": "PASS",
+        "batch01_new_verified_access": 13,
+        "quarantined_batch01": 13
       }
     }
   },
