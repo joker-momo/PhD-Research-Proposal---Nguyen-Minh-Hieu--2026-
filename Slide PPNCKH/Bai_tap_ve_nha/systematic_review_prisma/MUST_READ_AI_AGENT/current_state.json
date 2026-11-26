@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T15:55:36+07:00",
+  "updated_at": "2026-11-26T16:02:08+07:00",
   "goal": {
     "version": "HK261-PRISMA-completion-spec-v2",
-    "status": "search_dataset_lock_correction_ready",
-    "summary": "Native Gemini.app audit reviewed:8/10 criteria PASS, C6/C10 fail. Counts verified; methodological recommendation remains quarantined pending targeted correction."
+    "status": "search_input_snapshot_locked_with_shortfalls",
+    "summary": "Native Gemini.app Task correction accepted10/10. Snapshot locks284 pre-dedup rows from IEEE/Scopus/OpenAlex; ACM counts-only, WoS unavailable and RHN unexecuted remain disclosed. Search completeness and manuscript readiness are not claimed."
   },
   "task": {
-    "task_id": "research-search-dataset-lock-app-audit",
-    "owner": "GEMINI_RESEARCH",
-    "status": "rejected",
-    "started_at": "2026-11-26T15:50:35+07:00",
-    "completed_at": "2026-11-26T15:55:36+07:00",
-    "updated_at": "2026-11-26T15:55:36+07:00",
-    "decision_id": "research-search-dataset-lock-app-audit-v1"
-  },
-  "next_task": {
     "task_id": "research-search-dataset-lock-app-correction",
     "owner": "GEMINI_RESEARCH",
+    "status": "completed",
+    "started_at": "2026-11-26T15:56:14+07:00",
+    "completed_at": "2026-11-26T16:02:08+07:00",
+    "updated_at": "2026-11-26T16:02:08+07:00",
+    "decision_id": "research-search-dataset-lock-app-correction-v1"
+  },
+  "next_task": {
+    "task_id": "normalize-deduplicate-locked-search-input",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Send the committed targeted correction via native Gemini.app Task with copied brief and parent JSON; original app chat was cleaned so new linked task/context is required.",
-    "acceptance": "Patch only failed fields; all10 original criteria PASS before any dataset lock."
+    "action": "Use the locked6 CSVs/284 rows to normalize and deduplicate with row-level provenance, then map to existing46 reports. Delegate semantic ambiguities through native Gemini.app Task; do not redo accepted screening.",
+    "acceptance": "284/284 raw rows accounted; deterministic duplicate mapping auditable; conflicting/missing identifiers explicit; unique count computed rather than assumed; no existing screening decision silently overwritten."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -62,11 +62,11 @@
     "research_route_override": {
       "backend": "Gemini.app Accessibility",
       "mode": "task",
-      "recorded_at": "2026-11-26T15:55:36+07:00",
+      "recorded_at": "2026-11-26T16:02:08+07:00",
       "superseded_task_id": "01a21703-7809-7cb5-9880-0d502f49ccb9",
-      "app_task_id": "68bfd2a8-833d-4ec0-91d7-64ee35b03c63",
-      "app_context_id": "b18ad5c5-6b10-4938-85f9-3cac38faac37",
-      "review": "corpus_expansion/reviews/search_dataset_lock_app_review.md",
+      "app_task_id": "f37b9d7d-c382-4313-8554-ea9d8c549055",
+      "app_context_id": "023047ed-ac29-4d1a-ad03-f88a33b4cdcb",
+      "review": "corpus_expansion/reviews/search_dataset_lock_app_correction_review.md",
       "bridge_commit": "cbbfab9"
     }
   },
@@ -133,6 +133,23 @@
       "audit_checks_total": 23,
       "pages_visually_checked": 22,
       "new_a2a_dispatches": 0
+    },
+    "search_input_snapshot": {
+      "snapshot_id": "HK261-SEARCH-INPUT-20261126-v1",
+      "manifest": "corpus_expansion/search_dataset_lock_2026-11-26.json",
+      "decision_note": "corpus_expansion/search_dataset_lock_2026-11-26.md",
+      "record_sources": [
+        "IEEE Xplore",
+        "Scopus",
+        "OpenAlex"
+      ],
+      "importable_csv_files": 6,
+      "rows_before_deduplication": 284,
+      "cross_platform_unique_records": null,
+      "acceptance": "10/10 PASS",
+      "raw_evidence_checksum_pass": "25/25",
+      "search_complete": false,
+      "manuscript_ready": false
     }
   },
   "blockers": [

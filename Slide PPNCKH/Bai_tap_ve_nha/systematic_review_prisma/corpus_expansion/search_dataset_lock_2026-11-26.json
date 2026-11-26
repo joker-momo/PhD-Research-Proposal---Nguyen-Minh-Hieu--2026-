@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "HK261-SEARCH-INPUT-20261126-v1",
+  "locked_at": "2026-11-26T16:00:26+07:00",
+  "status": "LOCKED_INPUT_SNAPSHOT_WITH_DISCLOSED_SHORTFALLS",
+  "search_complete": false,
+  "manuscript_ready": false,
+  "acceptance_review": "corpus_expansion/reviews/search_dataset_lock_app_correction_review.md",
+  "accepted_result": "corpus_expansion/results/search_dataset_lock_app_reconciled.json",
+  "provider": {
+    "backend": "Gemini.app Accessibility",
+    "mode": "task",
+    "parent_task_id": "68bfd2a8-833d-4ec0-91d7-64ee35b03c63",
+    "correction_task_id": "f37b9d7d-c382-4313-8554-ea9d8c549055",
+    "correction_context_id": "023047ed-ac29-4d1a-ad03-f88a33b4cdcb"
+  },
+  "importable_files": [
+    {
+      "query_id": "IEEE-HR",
+      "path": "sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv",
+      "rows": 42,
+      "sha256": "b7144436386f015eec92fa3dc2f568c1b7c0e3794d438564e16ad81287ff067f",
+      "raw_locator": "sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv"
+    },
+    {
+      "query_id": "IEEE-COMP",
+      "path": "sources/raw/core_searches/ieee_xplore_complementary_export_2026-11-26.csv",
+      "rows": 21,
+      "sha256": "913d2c1ada71f4a865ee2a6ecc78a048d94552204ebd0ff63c539a9a515237f8",
+      "raw_locator": "sources/raw/core_searches/ieee_xplore_complementary_export_2026-11-26.csv"
+    },
+    {
+      "query_id": "SCOPUS-HR",
+      "path": "sources/raw/core_searches/scopus_high_recall_export_2026-11-26.csv",
+      "rows": 77,
+      "sha256": "92201eb7431a1828792e2aac75a22b0b1b67e70f749a978617e70d924185dd58",
+      "raw_locator": "sources/raw/core_searches/scopus_high_recall_export_2026-11-26.csv"
+    },
+    {
+      "query_id": "SCOPUS-COMP",
+      "path": "sources/raw/core_searches/scopus_complementary_export_2026-11-26.csv",
+      "rows": 33,
+      "sha256": "1858cedf423e71cac13429eebaab5aae031e9e6f41e19179c0667662eb57ceca",
+      "raw_locator": "sources/raw/core_searches/scopus_complementary_export_2026-11-26.csv"
+    },
+    {
+      "query_id": "OPENALEX-HR",
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_normalized.csv",
+      "rows": 85,
+      "sha256": "673d2ab06811432f24903598fa49935d085da5f89d026512e2b2f6dc04cbe8bb",
+      "raw_locator": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_raw.json"
+    },
+    {
+      "query_id": "OPENALEX-COMP",
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_normalized.csv",
+      "rows": 26,
+      "sha256": "0be3322c2adcae027834cfdca0456cc1b815cf0bbeb9fb2348d33733f7924d57",
+      "raw_locator": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_raw.json"
+    }
+  ],
+  "query_variants": [
+    {
+      "row_id": "IEEE-HR",
+      "reported_total": 42,
+      "exported_total": 42,
+      "local_locator": "sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv",
+      "admissibility": "IMPORTABLE_RECORDS",
+      "finding": "High-recall IEEE Xplore search completed with 42 reported and 42 exported records."
+    },
+    {
+      "row_id": "IEEE-COMP",
+      "reported_total": 21,
+      "exported_total": 21,
+      "local_locator": "sources/raw/core_searches/ieee_xplore_complementary_export_2026-11-26.csv",
+      "admissibility": "IMPORTABLE_RECORDS",
+      "finding": "Complementary IEEE Xplore search completed with 21 reported and 21 exported records."
+    },
+    {
+      "row_id": "ACM-HR",
+      "reported_total": 79,
+      "exported_total": 0,
+      "local_locator": "sources/raw/core_searches/acm_high_recall_2026-11-26.json",
+      "admissibility": "COUNTS_ONLY_NOT_IMPORTABLE",
+      "finding": "High-recall ACM Digital Library search observed 79 hits in the supplied session, with 0 records exported due to observed Basic Edition export blockage (sources/raw/core_searches/acm_high_recall_2026-11-26.json)."
+    },
+    {
+      "row_id": "ACM-COMP",
+      "reported_total": 325,
+      "exported_total": 0,
+      "local_locator": "sources/raw/core_searches/acm_complementary_2026-11-26.json",
+      "admissibility": "COUNTS_ONLY_NOT_IMPORTABLE",
+      "finding": "Complementary ACM Digital Library search observed 325 hits in the supplied session, with 0 records exported due to observed Basic Edition export blockage (sources/raw/core_searches/acm_complementary_2026-11-26.json)."
+    },
+    {
+      "row_id": "SCOPUS-HR",
+      "reported_total": 77,
+      "exported_total": 77,
+      "local_locator": "sources/raw/core_searches/scopus_high_recall_export_2026-11-26.csv",
+      "admissibility": "IMPORTABLE_RECORDS",
+      "finding": "High-recall Scopus search completed with 77 reported and 77 exported records."
+    },
+    {
+      "row_id": "SCOPUS-COMP",
+      "reported_total": 33,
+      "exported_total": 33,
+      "local_locator": "sources/raw/core_searches/scopus_complementary_export_2026-11-26.csv",
+      "admissibility": "IMPORTABLE_RECORDS",
+      "finding": "Complementary Scopus search completed with 33 reported and 33 exported records."
+    },
+    {
+      "row_id": "WOS-HR",
+      "reported_total": null,
+      "exported_total": 0,
+      "local_locator": "sources/raw/core_searches/web_of_science_free_view_recheck_2026-11-26.json",
+      "admissibility": "UNAVAILABLE_NO_COUNT",
+      "finding": "High-recall Web of Science Core Collection search could not be executed because post-sign-in access was limited to Free View without Core Collection Document Search entitlement; reported_total remains null."
+    },
+    {
+      "row_id": "WOS-COMP",
+      "reported_total": null,
+      "exported_total": 0,
+      "local_locator": "sources/raw/core_searches/web_of_science_free_view_recheck_2026-11-26.json",
+      "admissibility": "UNAVAILABLE_NO_COUNT",
+      "finding": "Complementary Web of Science Core Collection search could not be executed because post-sign-in access was limited to Free View without Core Collection Document Search entitlement; reported_total remains null."
+    },
+    {
+      "row_id": "OPENALEX-HR",
+      "reported_total": 85,
+      "exported_total": 85,
+      "local_locator": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_raw.json",
+      "admissibility": "IMPORTABLE_RECORDS",
+      "finding": "High-recall OpenAlex supplementary compensatory search completed with 85 reported and 85 exported records."
+    },
+    {
+      "row_id": "OPENALEX-COMP",
+      "reported_total": 26,
+      "exported_total": 26,
+      "local_locator": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_raw.json",
+      "admissibility": "IMPORTABLE_RECORDS",
+      "finding": "Complementary OpenAlex supplementary compensatory search completed with 26 reported and 26 exported records."
+    }
+  ],
+  "source_dispositions": [
+    {
+      "source": "IEEE Xplore",
+      "disposition": "INCLUDE_IN_RECORD_CORPUS",
+      "record_rows_admitted": 63,
+      "reason": "Both high_recall (42) and complementary (21) searches completed with full CSV record exports matching reported totals.",
+      "official_source_urls": [
+        "https://ieeexplore-custom.ieee.org/search/advanced"
+      ]
+    },
+    {
+      "source": "ACM Digital Library",
+      "disposition": "SEARCH_EVIDENCE_ONLY_NO_RECORDS",
+      "record_rows_admitted": 0,
+      "reason": "Observed hit counts (79 + 325 = 404, overlap unknown) were recorded in the supplied session, with 0 records exported due to observed Basic Edition export blockage (sources/raw/core_searches/acm_high_recall_2026-11-26.json, sources/raw/core_searches/acm_complementary_2026-11-26.json); general ACM Digital Library platform and policy verification remains unresolved because the cited ACM pages returned 403 to Codex.",
+      "official_source_urls": [
+        "https://libraries.acm.org/digital-library/platform-and-features",
+        "https://libraries.acm.org/digital-library/policies"
+      ]
+    },
+    {
+      "source": "Scopus",
+      "disposition": "INCLUDE_IN_RECORD_CORPUS",
+      "record_rows_admitted": 110,
+      "reason": "Both high_recall (77) and complementary (33) searches completed with full CSV record exports matching reported totals.",
+      "official_source_urls": [
+        "https://www.elsevier.support/scopus/answer/how-do-i-export-documents-from-scopus"
+      ]
+    },
+    {
+      "source": "Web of Science Core Collection",
+      "disposition": "UNAVAILABLE_NOT_SEARCHED",
+      "record_rows_admitted": 0,
+      "reason": "Post-sign-in access in the supplied session provided only Web of Science Free View (sources/raw/core_searches/web_of_science_free_view_recheck_2026-11-26.json); Clarivate documentation confirms free and unsubscribed registered access excludes Document Search (https://webofscience.zendesk.com/hc/en-us/articles/25349933314193-About-Web-of-Science-Researcher-Profiles), so reported totals remain null and must not be converted to zero.",
+      "official_source_urls": [
+        "https://webofscience.zendesk.com/hc/en-us/articles/25349933314193-About-Web-of-Science-Researcher-Profiles",
+        "https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection/"
+      ]
+    },
+    {
+      "source": "OpenAlex",
+      "disposition": "SUPPLEMENTARY_DISCOVERY_ONLY",
+      "record_rows_admitted": 111,
+      "reason": "Executed as a supplementary compensatory catalog yielding 111 exported rows (102 unique OpenAlex IDs after removing 9 cross-query overlaps); explicitly distinct from Web of Science Core Collection with no claim of equivalent coverage.",
+      "official_source_urls": [
+        "https://help.openalex.org/data/how-its-built/",
+        "https://openalex.org/about"
+      ]
+    },
+    {
+      "source": "Research Horizon Navigator",
+      "disposition": "NOT_EXECUTED_EXCLUDE_FROM_FREEZE",
+      "record_rows_admitted": 0,
+      "reason": "Assessed but not executed for this review (0 records); Clarivate documentation describes Research Horizon Navigator as a module within InCites Benchmarking & Analytics for discovering emerging research topics (https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/incites-benchmarking-analytics/research-horizon-navigator/), not a Web of Science Core Collection search.",
+      "official_source_urls": [
+        "https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/incites-benchmarking-analytics/research-horizon-navigator/"
+      ]
+    }
+  ],
+  "arithmetic": {
+    "ieee_scopus_exported_rows": 173,
+    "openalex_exported_rows": 111,
+    "currently_importable_rows": 284,
+    "openalex_cross_query_overlap": 9,
+    "openalex_union_ids": 102,
+    "acm_observed_counts_not_importable": 404,
+    "wos_reported_totals": [
+      null,
+      null
+    ],
+    "cross_platform_unique_records": null
+  },
+  "raw_evidence_files": [
+    {
+      "path": "sources/raw/core_searches/acm_basic_edition_recheck_2026-11-26.json",
+      "sha256": "e4ef43defc7f0845741d1818e128c7e156d124ecbc2e4d2c43f6b99b11ab98be"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_complementary_2026-11-26.json",
+      "sha256": "232c17fd7605d3403d21cc211c438aa2b8e705949dbccd743bbeff9a41e146aa"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_high_recall_2026-11-26.json",
+      "sha256": "dc15f897af69398ae3caffd252206ccddaf41403486eac106f0b5612035939ff"
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_complementary_2026-11-26.json",
+      "sha256": "3fbd7294cc5cd57ef75221491470e74c292fd0b4f53c8ca186728152550d932a"
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_complementary_authenticated_2026-11-26.json",
+      "sha256": "ae8673b6149eaab8e9f36743e7a55bc52ed66a0c18b165f68a8ec9d4a05010f2"
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_complementary_export_2026-11-26.csv",
+      "sha256": "913d2c1ada71f4a865ee2a6ecc78a048d94552204ebd0ff63c539a9a515237f8"
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_high_recall_2026-11-26.json",
+      "sha256": "6d49178bf1051f1aeb5482d1299c44ac7eaf51221e067f2b933bdba20ac749c7"
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_high_recall_authenticated_2026-11-26.json",
+      "sha256": "ec742fe25ba4c1d0ccbf070502f4fe6d46ca074bb17cd5763b7c4ae5de578aea"
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv",
+      "sha256": "b7144436386f015eec92fa3dc2f568c1b7c0e3794d438564e16ad81287ff067f"
+    },
+    {
+      "path": "sources/raw/core_searches/scopus_access_attempt_2026-11-26.json",
+      "sha256": "9ab138211a968648e2dd0f26a370b477943c670c7554b8fa8d326c5291515dbd"
+    },
+    {
+      "path": "sources/raw/core_searches/scopus_complementary_authenticated_2026-11-26.json",
+      "sha256": "5e9d06d8056f6b73a38378d26ad9e95a7796180bdb9fb5dbad7dbd865c2b76ee"
+    },
+    {
+      "path": "sources/raw/core_searches/scopus_complementary_export_2026-11-26.csv",
+      "sha256": "1858cedf423e71cac13429eebaab5aae031e9e6f41e19179c0667662eb57ceca"
+    },
+    {
+      "path": "sources/raw/core_searches/scopus_high_recall_authenticated_2026-11-26.json",
+      "sha256": "6e2869b2fa491113df1ae269918a91350b484cfe75f89cec0243b3acde6c8573"
+    },
+    {
+      "path": "sources/raw/core_searches/scopus_high_recall_export_2026-11-26.csv",
+      "sha256": "92201eb7431a1828792e2aac75a22b0b1b67e70f749a978617e70d924185dd58"
+    },
+    {
+      "path": "sources/raw/core_searches/web_of_science_access_attempt_2026-11-26.json",
+      "sha256": "b6c41df009ae2180ebeb470b5a07614096826044c6f07ee9cb7785a3c7ce37f0"
+    },
+    {
+      "path": "sources/raw/core_searches/web_of_science_free_view_recheck_2026-11-26.json",
+      "sha256": "1b3e4f28de70892ab7cb8d632acf37eee479f603d41718f380e81b72a4a3d940"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_checksums.sha256",
+      "sha256": "4e0ac4b4413b8a08be8b3edb60076856a9d315ff4f51f8dc7068a4f43be83fb7"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_manifest.json",
+      "sha256": "e80fa0bb95f6408e50cb8b760815a5f6729cdef1c3ded182a3eb2a62d227d5d6"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_normalized.csv",
+      "sha256": "0be3322c2adcae027834cfdca0456cc1b815cf0bbeb9fb2348d33733f7924d57"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_raw.json",
+      "sha256": "f105674ed7fe148dcd917135bbb1362e01ce18399e57ac14438a0fa5ba6e23d1"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_checksums.sha256",
+      "sha256": "2756cabde637c15d3889c2916a41d684204af21a4f149fe5a33f3138bf9a51d4"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_manifest.json",
+      "sha256": "fb00ddc38dfa0120dcba67e8318d9a305708fab527af8bb126da7c6d5bdbf0f7"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_normalized.csv",
+      "sha256": "673d2ab06811432f24903598fa49935d085da5f89d026512e2b2f6dc04cbe8bb"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_raw.json",
+      "sha256": "850a1fc7d9bd86a5f3f91aa608aff0abd526aee2a8f1277e1610acef66f12ce0"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_run_summary_2026-11-26.json",
+      "sha256": "051ed9aecca87de1a5855ef4a54e88e05f20c64ee08b6e98a310692cdd87a7f2"
+    }
+  ],
+  "query_versions": {
+    "core": "1.3",
+    "openalex": "1.4"
+  },
+  "protocol_preserved": "protocol_amendment_006_openalex_compensatory_search.md",
+  "unresolved_items": [
+    "Cross-platform deduplication across the 284 importable rows (173 IEEE Xplore + Scopus and 111 OpenAlex / 102 OpenAlex union IDs) has not yet been executed, so cross_platform_unique_records is null.",
+    "Within-source overlap between ACM-HR (79) and ACM-COMP (325) is unknown because 0 records were exported in the supplied session (sources/raw/core_searches/acm_high_recall_2026-11-26.json, sources/raw/core_searches/acm_complementary_2026-11-26.json).",
+    "Official ACM Digital Library platform-capability and policy verification (https://libraries.acm.org/digital-library/platform-and-features, https://libraries.acm.org/digital-library/policies) remains unresolved because those URLs returned HTTP 403 to Codex, so general ACM export/harvesting rules and lawful alternative collection routes are unverified.",
+    "Coverage of Web of Science Core Collection remains unassessed (reported_total is null, 0 exported) because post-sign-in access in the supplied session was limited to Free View (sources/raw/core_searches/web_of_science_free_view_recheck_2026-11-26.json)."
+  ],
+  "existing_report_screening_changes": 0,
+  "retained_report_counts": {
+    "screened": 46,
+    "working_include": 36,
+    "exclude": 2,
+    "uncertain": 8
+  },
+  "next_action": "Normalize and deduplicate the284 rows with row-level provenance; then reconcile against existing46 reports. No final unique count yet."
+}
