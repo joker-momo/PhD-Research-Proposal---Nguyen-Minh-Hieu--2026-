@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-26T18:44:17+07:00",
+  "updated_at": "2026-11-26T18:45:29+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -239,14 +239,16 @@
       "owner": "CODEX_WRITING + GEMINI_RESEARCH",
       "status": "active",
       "started_at": "2026-11-26T18:44:17+07:00",
-      "updated_at": "2026-11-26T18:44:17+07:00",
+      "updated_at": "2026-11-26T18:45:29+07:00",
       "completed_at": null,
       "artifacts": [
         "restart_2026_11_26/records_normalized.csv",
         "restart_2026_11_26/metadata_issue_log.json",
         "restart_2026_11_26/step05_metadata_brief.md"
       ],
-      "acceptance": []
+      "acceptance": [],
+      "provider_task_id": "2f1423a8-3a09-41f8-8c86-c76a7f7c5e67",
+      "provider_context_id": "925af9d5-77c5-4dd9-b1a4-8e2880019223"
     },
     {
       "task_id": "restart-06",

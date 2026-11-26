@@ -77,3 +77,4 @@
 {"timestamp": "2026-11-26T18:41:53+07:00", "task_id": "restart-03", "event": "query_audit_accepted_and_revised_openalex_run_archived", "provider_task_id": "8d95f3d2-10d1-43b9-9906-ef7c48614d55", "context_copies": 0, "provider_acceptance": "5/5", "revised_openalex_rows": 31, "old_only": 0, "new_only": 5}
 {"timestamp": "2026-11-26T18:42:41+07:00", "task_id": "restart-04", "event": "search_dataset_locked", "selected_runs": 8, "files": 7, "source_rows": 693, "wos_count": null}
 {"timestamp": "2026-11-26T18:44:17+07:00", "task_id": "restart-05", "event": "raw_rows_normalized_and_metadata_brief_prepared", "rows": 693, "expected_gemini_records": 3}
+{"timestamp": "2026-11-26T18:45:29+07:00", "task_id": "restart-05", "event": "direct_project_metadata_check_prompt_sent", "provider_task_id": "2f1423a8-3a09-41f8-8c86-c76a7f7c5e67", "provider_context_id": "925af9d5-77c5-4dd9-b1a4-8e2880019223", "context_copies": 0}
