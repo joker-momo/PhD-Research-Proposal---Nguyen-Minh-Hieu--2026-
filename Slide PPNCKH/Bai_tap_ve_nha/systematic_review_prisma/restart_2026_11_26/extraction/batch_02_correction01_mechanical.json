@@ -1,0 +1,200 @@
+{
+  "strict_key_check": {
+    "primary_id": "e891c230-d182-4bfa-8068-1cba64226569",
+    "correction_id": "9e1ac0d2-3423-44e9-b446-a38239ad7345",
+    "issues": [
+      [
+        "P08_DELEGATION",
+        "invalid actual assignment, workers or scope"
+      ]
+    ],
+    "applied_keys": [
+      "R0054-01",
+      "R0054-02",
+      "R0054-03",
+      "R0054-04",
+      "R0054-05",
+      "R0054-06",
+      "R0054-07",
+      "R0054-08",
+      "R0059-01",
+      "R0059-02",
+      "R0059-03",
+      "R0059-04",
+      "R0059-05",
+      "R0059-06",
+      "R0059-07",
+      "R0062-01",
+      "R0062-02",
+      "R0062-03",
+      "R0062-04",
+      "R0062-05",
+      "R0062-06",
+      "R0062-07",
+      "R0063-01",
+      "R0063-02",
+      "R0063-03",
+      "R0063-04",
+      "R0063-05",
+      "R0068-01",
+      "R0068-02",
+      "R0068-03",
+      "R0068-04",
+      "R0068-05",
+      "R0068-06",
+      "R0071-01",
+      "R0071-02",
+      "R0071-03",
+      "R0071-04",
+      "R0071-05",
+      "R0071-06",
+      "R0071-07",
+      "R0073-01",
+      "R0073-02",
+      "R0073-03",
+      "R0073-04",
+      "R0073-05",
+      "R0073-06",
+      "R0073-07",
+      "R0074-01",
+      "R0074-02",
+      "R0074-03",
+      "R0074-04",
+      "R0074-05",
+      "R0074-06",
+      "R0074-07",
+      "R0074-08",
+      "R0074-09",
+      "R0074-10",
+      "R0083-01",
+      "R0083-02",
+      "R0083-03",
+      "R0083-04",
+      "R0083-05",
+      "R0083-06",
+      "R0089-01",
+      "R0089-02",
+      "R0089-03",
+      "R0089-04",
+      "R0089-05",
+      "R0089-06",
+      "R0089-07",
+      "R0095-01",
+      "R0095-02",
+      "R0095-03",
+      "R0095-04",
+      "R0095-05",
+      "R0095-06",
+      "R0095-07",
+      "FULL-R0121"
+    ],
+    "parent_parse_issues": [
+      [
+        "R0121",
+        "Expecting ',' delimiter: line 1 column 8228 (char 8227)"
+      ]
+    ],
+    "expected_keys": 78,
+    "returned_keys": 78,
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "duplicate_keys": 0
+  },
+  "diagnostic_with_format_aliases": {
+    "state": "TASK_STATE_COMPLETED",
+    "characters": 112660,
+    "errors": [
+      [
+        "A5",
+        "R0054",
+        "mobility_channel_intermittency_failure_and_recovery/mobility_channel_intermittency_failure_and_recovery/failure_and_recovery: invalid status"
+      ],
+      [
+        "A3",
+        "R0054",
+        "Normalized cost (holdout): missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A3",
+        "R0054",
+        "Active-queue admission: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A3",
+        "R0054",
+        "User data rate: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A3",
+        "R0062",
+        "Collaborative inference frame rate (4 UAVs, Stage 1): missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A2",
+        "R0095",
+        "sensitivity_and_variability/sensitivity_and_variability/coeff_scale_and_model_sweeps: locator/excerpt mismatch p11"
+      ],
+      [
+        "A3",
+        "R0095",
+        "Average single decision time: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A2",
+        "R0121",
+        "inference_model_task_and_dataset/: locator/excerpt mismatch p6"
+      ],
+      [
+        "A2",
+        "R0121",
+        "code_and_data/: locator/excerpt mismatch p11"
+      ],
+      [
+        "A5",
+        "R0121",
+        "code_and_data/: missing reason"
+      ],
+      [
+        "A2",
+        "R0121",
+        "funding_and_conflicts/: locator/excerpt mismatch p11"
+      ],
+      [
+        "A5",
+        "R0121",
+        "funding_and_conflicts/: missing reason"
+      ]
+    ],
+    "observed_ids": [
+      "R0054",
+      "R0059",
+      "R0062",
+      "R0063",
+      "R0068",
+      "R0071",
+      "R0073",
+      "R0074",
+      "R0083",
+      "R0089",
+      "R0095",
+      "R0121"
+    ],
+    "missing_ids": [],
+    "unexpected_ids": [],
+    "duplicate_ids": 0,
+    "duplicate_doi": 0,
+    "duplicate_title": 0,
+    "counts": {
+      "fields": 168,
+      "status_OBSERVED": 162,
+      "locator_checks": 172,
+      "locator_matches": 168,
+      "status_UNVERIFIED": 1,
+      "status_NOT_REPORTED": 10,
+      "status_PARTIAL": 1,
+      "quantitative_claims": 35,
+      "observed_quantitative": 33
+    }
+  },
+  "admitted": false
+}
