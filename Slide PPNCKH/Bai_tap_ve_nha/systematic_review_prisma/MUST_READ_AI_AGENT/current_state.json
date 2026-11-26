@@ -1,29 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:42:36+07:00",
+  "updated_at": "2026-11-26T23:53:32+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-b01-parent-only-brief",
+    "task_id": "restart-11-b01-parent-only-review",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T23:42:36+07:00",
-    "updated_at": "2026-11-26T23:42:36+07:00",
-    "completed_at": "2026-11-26T23:42:36+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_parent_only_brief.md",
-    "decision_id": "restart-11-b01-parent-only-brief-v1"
+    "started_at": "2026-11-26T23:53:32+07:00",
+    "updated_at": "2026-11-26T23:53:32+07:00",
+    "completed_at": "2026-11-26T23:53:32+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_parent_only_review.md",
+    "decision_id": "restart-11-b01-parent-only-review-v1"
   },
   "next_task": {
-    "task_id": "restart-11-b01-parent-only",
+    "task_id": "restart-11-b02-excerpt-split",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Open 13 named PDFs serially in one Gemini.app parent; correct only the 43 failed keys.",
-    "acceptance": "43/43 exact keys; 13/13 access dispositions; zero workers and unsupported claims.",
-    "dispatch_brief": "restart_2026_11_26/extraction/batch_01_parent_only_brief.md",
-    "message_id": "hk261-p08-b01-parent-only-43-v1"
+    "action": "Correct only R0062 source excerpt and split R0059 outcomes anchors.",
+    "acceptance": "Exact approximation glyph; three independent R0059 anchors with their applicable measurement contexts."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -137,7 +135,7 @@
         "accepted": 0,
         "not_accessible_to_gemini": 0,
         "quarantined_batch02": 12,
-        "cleanup_deleted": 12,
+        "cleanup_deleted": 13,
         "cleanup_blocked": 3,
         "confirmed_batch02_semantic_failures": 3,
         "correction05_accepted_metric_keys": 2,
@@ -155,7 +153,10 @@
         "batch02_r0062_new_exact_quote": "FAIL",
         "batch02_legacy_out_of_scope_issue": "R0059",
         "batch_02_reports_accepted": 0,
-        "canonical_pdf_hashes_matched": 25
+        "canonical_pdf_hashes_matched": 25,
+        "batch01_parent_only_scope_rows": 43,
+        "batch01_parent_only_mechanical_matches": 39,
+        "batch01_parent_only_access_anchor_matches": 2
       }
     }
   },

@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-26T23:42:36+07:00",
+  "updated_at": "2026-11-26T23:53:32+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -671,7 +671,7 @@
       "owner": "GEMINI_RESEARCH + CODEX_WRITING",
       "status": "active",
       "started_at": "2026-11-26T22:19:35+07:00",
-      "updated_at": "2026-11-26T23:42:36+07:00",
+      "updated_at": "2026-11-26T23:53:32+07:00",
       "completed_at": null,
       "artifacts": [
         "restart_2026_11_26/extraction/manifest.json",
@@ -732,7 +732,8 @@
         "restart_2026_11_26/extraction/batch_01_verified_path_correction_review.md",
         "restart_2026_11_26/extraction/batch_02_r0062_precision_brief.md",
         "restart_2026_11_26/extraction/batch_02_r0062_precision_review.md",
-        "restart_2026_11_26/extraction/batch_01_parent_only_brief.md"
+        "restart_2026_11_26/extraction/batch_01_parent_only_brief.md",
+        "restart_2026_11_26/extraction/batch_01_parent_only_review.md"
       ],
       "acceptance": [
         {
@@ -814,6 +815,11 @@
           "criterion": "P08 latest Batch 01 and 02 acceptance",
           "verdict": "FAIL",
           "evidence": "Batch 01 43/43 unresolved as NOT_ACCESSIBLE. R0074/R0121 corrections passed; R0062 approximate value confirmed, new excerpt fails literal check; R0059 inherited locator/condition issue. All 25 canonical hashes match."
+        },
+        {
+          "criterion": "Batch 01 parent-only targeted correction",
+          "verdict": "FAIL",
+          "evidence": "43/43 keys; 39/43 mechanical quote matches, 2/13 strict access-heading matches and numeric evidence gaps. Same-UUID answer recovered after deadline and chat deletion verified."
         }
       ]
     },

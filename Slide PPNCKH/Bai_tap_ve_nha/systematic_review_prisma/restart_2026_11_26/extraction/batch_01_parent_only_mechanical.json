@@ -1,0 +1,714 @@
+{
+  "transport": "TASK_STATE_FAILED",
+  "chars": 36790,
+  "rows": [
+    {
+      "key": "F01",
+      "report_id": "R0001",
+      "kind": "FIELD",
+      "label": "decision_variables_objectives_constraints_and_solver/optimization_and_solver",
+      "status": "OBSERVED",
+      "finding": "The coupled collaborative inference optimization problem is solved by adopting Proximal Policy Optimization (PPO) for online partition decisions while remaining continuous resource allocation variables are obtained analytically by solving convex subproblems.",
+      "page": 2,
+      "locator": "Section II.E PPO-Based Online Orchestration, paragraph 1",
+      "excerpt": "To solve the high-dimensional and strongly coupled decision problem in dynamic multi-UAV collaborative inference, we adopt Proximal Policy Optimization (PPO).",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F02",
+      "report_id": "R0001",
+      "kind": "FIELD",
+      "label": "sensitivity_and_variability/alpha_sensitivity",
+      "status": "OBSERVED",
+      "finding": "In the sensitivity analysis varying the latency weight parameter, rewards exhibit a decreasing trend across all evaluated algorithms as the weight increases, while the proposed method achieves the highest reward across all configurations.",
+      "page": 3,
+      "locator": "Section III.A Simulation Setup, paragraph 1",
+      "excerpt": "Nevertheless, CAPRIC achieves the highest reward across all configurations, indicating that CAPRIC effectively balances latency and energy consumption in resource-constrained mobile edge computing scenarios.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F03",
+      "report_id": "R0002",
+      "kind": "FIELD",
+      "label": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/success_cost_accuracy",
+      "status": "OBSERVED",
+      "finding": "Promise triggers more frequent migrations than baseline schemes, incurring additional migration cost that is justified by substantial gains in task execution success rate and preserved collaborative inference accuracy.",
+      "page": 8,
+      "locator": "Section VII.B Evaluation of Promise, paragraph 1",
+      "excerpt": "However, this additional cost is justified by substantial gains in task success rate, demonstrating a favorable cost-benefit tradeoff.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F04",
+      "report_id": "R0003",
+      "kind": "FIELD",
+      "label": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/latency_and_accuracy",
+      "status": "OBSERVED",
+      "finding": "As arriving inference requests increase, utility values decline across all methods due to higher collaborative inference latency over larger inter-UAV distances, but DMS consistently outperforms the baselines by achieving lower latency while maintaining the same level of accuracy.",
+      "page": 6,
+      "locator": "Section V.B Results Analysis, paragraph 1",
+      "excerpt": "Despite the continuous decrease in utility values, our DMS algorithm consistently outperforms the other four algorithms, indicating that it consistently achieves lower latency while maintaining the same level of accuracy.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F05",
+      "report_id": "R0006",
+      "kind": "FIELD",
+      "label": "compute_and_radio/uav_compute_radio_params",
+      "status": "OBSERVED",
+      "finding": "The experimental setup specifies per-UAV computational capability, memory threshold, transmit power, and coverage radius alongside wireless channel bandwidth, reference channel gain, noise power, hovering power, and processor switched capacitance.",
+      "page": 6,
+      "locator": "Section V.A Experimental Setup, bullet 1",
+      "excerpt": "UAV Specifications: Computational capability",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F06",
+      "report_id": "R0006",
+      "kind": "FIELD",
+      "label": "evaluation_platform_simulator_hardware_and_traces/simulation_trials",
+      "status": "OBSERVED",
+      "finding": "Simulation results are averaged over 100 trials under a target coverage threshold, plotting end-to-end inference latency against iteration count from a common initial configuration.",
+      "page": 6,
+      "locator": "Section V.A Experimental Setup, paragraph 2",
+      "excerpt": "All results, averaged over 100 trials with a coverage threshold",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F07",
+      "report_id": "R0006",
+      "kind": "FIELD",
+      "label": "baselines_and_workloads/baselines",
+      "status": "OBSERVED",
+      "finding": "AirInfer is compared against three baseline methods: Greedy+SCA (greedy layer assignment with SCA-based deployment), DP+RW (dynamic programming partitioning with random UAV deployment), and Joint-PSO (joint allocation and deployment via particle swarm optimization).",
+      "page": 6,
+      "locator": "Section V.A Experimental Setup, baselines list",
+      "excerpt": "Jointly optimizes allocation and deployment via Particle Swarm Optimization (PSO).",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F08",
+      "report_id": "R0009",
+      "kind": "FIELD",
+      "label": "uav_architecture_role_and_topology/uav_assisted_mec",
+      "status": "OBSERVED",
+      "finding": "The system models a multi-UAV assisted MEC network in which K UAVs equipped with edge computing servers circle at a constant altitude to provide communication and computation offloading services to M ground users within their coverage area.",
+      "page": 3,
+      "locator": "Section III. SYSTEM MODEL AND PROBLEM FORMULATION, paragraph 1",
+      "excerpt": "Consider a multi-UAV assisted MEC system, where the network has K UAVs, each of which is equipped with the edge computing server and provides communication and computation services for M GUs.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F09",
+      "report_id": "R0009",
+      "kind": "FIELD",
+      "label": "partition_and_assignment/gu_uav_split",
+      "status": "OBSERVED",
+      "finding": "Each ground user's DNN task is split at an optimal partition point so that the first part executes locally on the ground user and the second part is offloaded to a matched UAV within coverage, including full offloading or full local execution as boundary cases.",
+      "page": 3,
+      "locator": "Section III. SYSTEM MODEL AND PROBLEM FORMULATION, paragraph 3",
+      "excerpt": "The first half of each task of the ith GU is executed locally, while the second half of each task of the ith GU is offloaded to the UAV for execution.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F10",
+      "report_id": "R0009",
+      "kind": "FIELD",
+      "label": "compute_and_radio/compute_and_radio_params",
+      "status": "OBSERVED",
+      "finding": "The partition analysis configures a 10 MHz wireless channel bandwidth with computing frequencies of 1 GHz for ground user devices and 15 GHz for UAV edge servers.",
+      "page": 5,
+      "locator": "Section IV.A Optimal Partition Point Selection Algorithm for DNN Tasks, paragraph 2",
+      "excerpt": "When the bandwidth condition is 10 MHz, and the computing frequencies of user devices and UAVs are 1 GHz and 15 GHz, respectively",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F11",
+      "report_id": "R0009",
+      "kind": "FIELD",
+      "label": "baselines_and_workloads/baselines_and_arrivals",
+      "status": "OBSERVED",
+      "finding": "Ground users generate ResNet-34, VGG-16, and AlexNet inference tasks, and DPDTS is evaluated against four benchmark methods: DTS (binary offloading without collaborative inference), RAT (DDPG-based trajectory with binary offloading), EE-PPO (PPO-based energy efficiency maximization), and DPRT (random trajectory and transmit power without dynamic trajectory planning).",
+      "page": 8,
+      "locator": "Section V.A Simulation Settings, paragraph 2",
+      "excerpt": "To validate the performance of the proposed DPDTS method, the following four algorithms are selected as benchmarks for comparison:",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F12",
+      "report_id": "R0009",
+      "kind": "FIELD",
+      "label": "sensitivity_and_variability/radius_users_bandwidth",
+      "status": "OBSERVED",
+      "finding": "Performance evaluations on page 9 examine total system energy consumption and average per-user task processing delay across varying UAV signal coverage radius (Fig. 5), number of ground users (Fig. 6), and communication bandwidth (Fig. 7), showing overhead rises with more ground users and declines with larger coverage radius and bandwidth while DPDTS consistently achieves the lowest energy and delay.",
+      "page": 9,
+      "locator": "Section V.B Performance Evaluation, paragraphs 2 and 3",
+      "excerpt": "Fig. 7 shows the total system energy consumption and each user's average task processing delay obtained by DPDTS and other schemes under different communication bandwidths.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F13",
+      "report_id": "R0009",
+      "kind": "NUMBER",
+      "label": "total_energy_70_gus",
+      "status": "OBSERVED",
+      "finding": "When the number of ground users is 70, DPDTS generates a total system energy consumption of 2209.0 J, which is 21.3%, 26.7%, 17.8%, and 48.9% lower than DTS, RAT, EE-PPO, and DPRT, respectively.",
+      "page": 9,
+      "locator": "Section V.B Performance Evaluation, paragraph 2 (Fig. 6a analysis)",
+      "excerpt": "Especially when the number of GUs is 70, the energy consumption generated by DPDTS is 2209.0J, which is 21.3%, 26.7%, 17.8%, and 48.9% lower than that of DTS, RAT, EE-PPO, and DPRT, respectively.",
+      "quantitative": {
+        "value": "2209.0",
+        "units": "J",
+        "baseline": "21.3%, 26.7%, 17.8%, and 48.9% lower than DTS, RAT, EE-PPO, and DPRT, respectively",
+        "denominator": "Total system energy consumption across 4 UAVs and 70 ground users per service round averaged over 50 episodes",
+        "workload": "ResNet-34, VGG-16, and AlexNet DNN inference tasks with Poisson arrival rate in [0, 5]",
+        "conditions": "70 GUs in a 400m x 400m area, 4 UAVs at 50m altitude and 50m coverage radius, 10 MHz bandwidth, 1 GHz GU and 15 GHz UAV computing frequencies"
+      },
+      "reason": ""
+    },
+    {
+      "key": "F14",
+      "report_id": "R0010",
+      "kind": "FIELD",
+      "label": "inference_model_task_and_dataset/cnn_models",
+      "status": "OBSERVED",
+      "finding": "The system evaluates collaborative pipeline DNN inference across three CNN models (AlexNet, GoogleNet, and VGG-16) using existing UAV trajectory data to model dynamic inter-UAV transmission rates.",
+      "page": 5,
+      "locator": "Section V.A Simulation Settings, paragraph 2",
+      "excerpt": "AlexNet, GoogleNet, and VGG-16. We explore the impact of dynamic data rates between UAVs on the performance of collaborative inference.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F15",
+      "report_id": "R0010",
+      "kind": "FIELD",
+      "label": "decision_variables_objectives_constraints_and_solver/dqn_action_disassembly",
+      "status": "OBSERVED",
+      "finding": "To reduce the combinatorial DQN action space for layer allocation across tasks and UAVs, a hierarchical action decomposition pairs one UAV performing a layer-increase action with another UAV performing a corresponding layer-decrease action at each step.",
+      "page": 4,
+      "locator": "Section IV.B Actions Adaptation, paragraph 2",
+      "excerpt": "The increase and decrease actions are paired accordingly, with one UAV performing the increase action while the other UAV generates the corresponding decrease action.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F16",
+      "report_id": "R0010",
+      "kind": "FIELD",
+      "label": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/latency_reduction",
+      "status": "OBSERVED",
+      "finding": "Across both high and low device computational power scenarios and increasing task quantities, the proposed DRL pipeline method consistently achieves the lowest total inference completion latency and smallest latency growth across AlexNet, GoogleNet, and VGG-16 compared to all five benchmark methods.",
+      "page": 5,
+      "locator": "Section V.B Results Analysis, paragraph 2",
+      "excerpt": "We can observe that although the total inference latency of each method increases as the number of tasks increases, our method always performs best under three different models, and the total latency increasing with the growth in inference tasks is the smallest.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F17",
+      "report_id": "R0010",
+      "kind": "FIELD",
+      "label": "funding_and_conflicts/funding",
+      "status": "OBSERVED",
+      "finding": "The work is supported by the National Natural Science Foundation of China under Grant No. 61931011 and Grant No. 62072303.",
+      "page": 6,
+      "locator": "ACKNOWLEDGEMENT, paragraph 1",
+      "excerpt": "This work is supported by the National Natural Science Foundation of China under Grant No. 61931011 and Grant No. 62072303.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F18",
+      "report_id": "R0010",
+      "kind": "FIELD",
+      "label": "funding_and_conflicts/conflicts",
+      "status": "NOT_REPORTED",
+      "finding": "No conflict of interest disclosure is reported in the article.",
+      "page": 6,
+      "locator": "ACKNOWLEDGEMENT, paragraph 1",
+      "excerpt": "This work is supported by the National Natural Science Foundation of China under Grant No. 61931011 and Grant No. 62072303.",
+      "quantitative": null,
+      "reason": "Inspected the author footnotes on page 1 and the conclusion and acknowledgement sections on page 6; only funding grants are declared and no conflict-of-interest statement is reported."
+    },
+    {
+      "key": "F19",
+      "report_id": "R0015",
+      "kind": "FIELD",
+      "label": "mobility_channel_intermittency_failure_and_recovery/simplified_static_channel",
+      "status": "OBSERVED",
+      "finding": "The simulation simplifies the wireless channel model by treating the inter-UAV data rate as constant during a complete collaborative inference request and assuming all UAV devices are mutually reachable without isolation.",
+      "page": 6,
+      "locator": "Section IV.A Simulation Settings, paragraph 4",
+      "excerpt": "Finally, we assume that all devices are not isolated and they can all reach each others [23].",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F20",
+      "report_id": "R0015",
+      "kind": "FIELD",
+      "label": "evaluation_platform_simulator_hardware_and_traces/simulation_platform",
+      "status": "OBSERVED",
+      "finding": "The simulation models a heterogeneous UAV swarm equipped with Raspberry Pi 3B+, Orange Pi Zero, and Odroid embedded computing boards to execute collaborative CNN image classification requests.",
+      "page": 6,
+      "locator": "Section IV.A Simulation Settings, paragraph 2",
+      "excerpt": "Our system consists of heterogeneous UAVs equipped with different technological devices including Raspberry Pi 3B+, Orange Pi Zero, and Odroid that use limited resources to participate in collaborative inference on incoming image classification requests.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F21",
+      "report_id": "R0015",
+      "kind": "FIELD",
+      "label": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability/latency_and_runtime",
+      "status": "OBSERVED",
+      "finding": "EECIA consistently achieves lower collaborative inference latency than Random, Nearest, and DistInference across AlexNet, ResNet152, and VGG-16 (approaching OPT) while maintaining an online running time similar to the heuristic benchmarks and orders of magnitude faster than OPT.",
+      "page": 6,
+      "locator": "Section IV.B Results Analysis, paragraph 1",
+      "excerpt": "The running time of EECIA is similar to Random, Nearest and DistInference. Although OPT performs best, it gets the longest running time, even when the sample space is small, the results cannot be obtained in a limited time, which is unacceptable.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F22",
+      "report_id": "R0015",
+      "kind": "NUMBER",
+      "label": "latency_reduction_alexnet_72mbps",
+      "status": "OBSERVED",
+      "finding": "At a data rate of 72.2 Mbps using 3 UAVs, EECIA reduces collaborative inference latency on AlexNet by 4.55% compared with DistInference.",
+      "page": 6,
+      "locator": "Section IV.B Results Analysis, paragraph 1",
+      "excerpt": "Compared with DistInference, the latency of our EECIA on AlexNet, ResNet152 and VGG-16 are reduced by 4.55%, 7.57% and 7.97%, respectively.",
+      "quantitative": {
+        "value": "4.55",
+        "units": "%",
+        "baseline": "DistInference",
+        "denominator": "DistInference collaborative inference latency on AlexNet",
+        "workload": "AlexNet CNN image classification inference task",
+        "conditions": "3 heterogeneous UAVs (Raspberry Pi 3B+, Orange Pi Zero, Odroid), constant inter-UAV data rate rho = 72.2 Mbps"
+      },
+      "reason": ""
+    },
+    {
+      "key": "F23",
+      "report_id": "R0015",
+      "kind": "NUMBER",
+      "label": "latency_reduction_resnet152_72mbps",
+      "status": "OBSERVED",
+      "finding": "At a data rate of 72.2 Mbps using 5 UAVs, EECIA reduces collaborative inference latency on ResNet152 by 7.57% compared with DistInference.",
+      "page": 6,
+      "locator": "Section IV.B Results Analysis, paragraph 1",
+      "excerpt": "Compared with DistInference, the latency of our EECIA on AlexNet, ResNet152 and VGG-16 are reduced by 4.55%, 7.57% and 7.97%, respectively.",
+      "quantitative": {
+        "value": "7.57",
+        "units": "%",
+        "baseline": "DistInference",
+        "denominator": "DistInference collaborative inference latency on ResNet152",
+        "workload": "ResNet152 CNN image classification inference task",
+        "conditions": "5 heterogeneous UAVs (Raspberry Pi 3B+, Orange Pi Zero, Odroid), constant inter-UAV data rate rho = 72.2 Mbps"
+      },
+      "reason": ""
+    },
+    {
+      "key": "F24",
+      "report_id": "R0015",
+      "kind": "NUMBER",
+      "label": "latency_reduction_vgg16_72mbps",
+      "status": "OBSERVED",
+      "finding": "At a data rate of 72.2 Mbps using 5 UAVs, EECIA reduces collaborative inference latency on VGG-16 by 7.97% compared with DistInference.",
+      "page": 6,
+      "locator": "Section IV.B Results Analysis, paragraph 1",
+      "excerpt": "Compared with DistInference, the latency of our EECIA on AlexNet, ResNet152 and VGG-16 are reduced by 4.55%, 7.57% and 7.97%, respectively.",
+      "quantitative": {
+        "value": "7.97",
+        "units": "%",
+        "baseline": "DistInference",
+        "denominator": "DistInference collaborative inference latency on VGG-16",
+        "workload": "VGG-16 CNN image classification inference task",
+        "conditions": "5 heterogeneous UAVs (Raspberry Pi 3B+, Orange Pi Zero, Odroid), constant inter-UAV data rate rho = 72.2 Mbps"
+      },
+      "reason": ""
+    },
+    {
+      "key": "F25",
+      "report_id": "R0015",
+      "kind": "NUMBER",
+      "label": "eecia_runtime_vgg16_i5",
+      "status": "OBSERVED",
+      "finding": "For VGG-16 collaborative inference with I = 5 UAVs (Table II), EECIA has an algorithm running time of 0.0090 s.",
+      "page": 6,
+      "locator": "Section IV.B Results Analysis, paragraph 1 and Table II (row EECIA, column VGG-16, I=5)",
+      "excerpt": "Meanwhile, Table. II shows the running time of these algorithms under different configures.",
+      "quantitative": {
+        "value": "0.0090",
+        "units": "s",
+        "baseline": "Random (0.0070 s), Nearest (0.0010 s), DistInference (0.0070 s), and OPT (56571 s)",
+        "denominator": "Single online task allocation execution run of EECIA",
+        "workload": "VGG-16 CNN collaborative inference task allocation",
+        "conditions": "I = 5 heterogeneous UAVs (Raspberry Pi 3B+, Orange Pi Zero, Odroid), constant inter-UAV data rate rho = 72.2 Mbps"
+      },
+      "reason": ""
+    },
+    {
+      "key": "F26",
+      "report_id": "R0019",
+      "kind": "FIELD",
+      "label": "uav_architecture_role_and_topology/centralized_rl_swarm",
+      "status": "OBSERVED",
+      "finding": "A centralized RL agent coordinates a swarm of connected UAVs over a grid-divided surveillance region, selecting each UAV's cell location and per-layer CNN task allocation at each time step so inference is completed onboard within the swarm without remote servers.",
+      "page": 7,
+      "locator": "Section III.C, paragraph 3",
+      "excerpt": "At each time step, the RL agent chooses the location of each UAV and decides if this UAV can handle the current layer of the CNN.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F27",
+      "report_id": "R0019",
+      "kind": "FIELD",
+      "label": "inference_model_task_and_dataset/cnn_surveillance",
+      "status": "OBSERVED",
+      "finding": "For the aerial surveillance image classification scenario, the simulation evaluates three CNN architectures of varying depth: LeNet (two convolutional and three fully connected layers), AlexNet (five convolutional and three fully connected layers), and VGG16 (13 convolutional and three fully connected layers).",
+      "page": 11,
+      "locator": "Section IV. SIMULATION RESULTS AND ANALYSIS, paragraph 2",
+      "excerpt": "Our system covers a surveillance scenario. In the simulation testing, we used three different CNN networks, a small CNN network, namely, LeNet (two convolutional layers and three fully connected layers)",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F28",
+      "report_id": "R0022",
+      "kind": "FIELD",
+      "label": "partition_and_assignment/exit_and_layer_partition",
+      "status": "OBSERVED",
+      "finding": "The collaborative workflow first selects an early-exit branch and then partitions the DNN layers preceding that exit point into segments distributed across multiple UAVs, with each layer assigned to a single UAV and no subsequent layers executed beyond the triggered exit branch.",
+      "page": 2,
+      "locator": "Section II. SYSTEM MODEL, item 2 (Model Partition)",
+      "excerpt": "After the exit point is selected, the model is partitioned into segments that can be processed across multiple UAVs. Each UAV will handle a portion of the model, executing the necessary layers before the exit point is reached.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F29",
+      "report_id": "R0029",
+      "kind": "FIELD",
+      "label": "compute_and_radio/compute_and_radio_params",
+      "status": "OBSERVED",
+      "finding": "The simulation setup defines the wireless channel bandwidth, noise power, UAV transmit power, path loss exponent, complex normal channel coefficient, maximum communication radius, and UAV swarm CPU frequencies evenly distributed across the swarm.",
+      "page": 5,
+      "locator": "Section IV.A Simulation Setup, paragraph 1",
+      "excerpt": "The system parameters of simulation are set as follows:",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F30",
+      "report_id": "R0044",
+      "kind": "FIELD",
+      "label": "decision_variables_objectives_constraints_and_solver/cvar_bat_subgradient",
+      "status": "OBSERVED",
+      "finding": "The framework reformulates worst-case channel reliability power minimization via Conditional Value-at-Risk (CVaR), solves collaborative DNN partitioning and offloading via the Bat-inspired CPOO algorithm, and solves the coupled master problem via the LaCPOO algorithm combining Lagrangian subgradient projection and KKT power updates with CPOO.",
+      "page": 6,
+      "locator": "Section III.C Joint optimization of two subproblems, paragraph 2",
+      "excerpt": "The algorithm iteratively combines subgradient projection with the CPOO method to find feasible solutions.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F31",
+      "report_id": "R0044",
+      "kind": "FIELD",
+      "label": "mobility_channel_intermittency_failure_and_recovery/fading_and_bs_fallback",
+      "status": "OBSERVED",
+      "finding": "Ground-to-UAV offloading is designed under worst-case channel fading to ensure transmission reliability, and if an MD fails to receive returned results from all offloading UAVs due to unreliable channels, it transmits the whole task at maximum power to the base station for fallback reprocessing.",
+      "page": 3,
+      "locator": "Section II.C.2 Offload to BS, paragraph 1",
+      "excerpt": "Since the Ground-to-UAV (G2U) transmission has already been considered under the worst-case channel fading, the reliability is largely guaranteed.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F32",
+      "report_id": "R0044",
+      "kind": "FIELD",
+      "label": "evaluation_platform_simulator_hardware_and_traces/simulation_area",
+      "status": "OBSERVED",
+      "finding": "The simulation models mobile devices randomly distributed in a square network area with a base station at the center and four edge-server UAVs flying clockwise at 10 m/s at a fixed altitude.",
+      "page": 6,
+      "locator": "Section IV.A Simulation Setup and Pameters, paragraph 1",
+      "excerpt": "And flying speed of the UAVs is 10 m/s in a clockwise direction.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F33",
+      "report_id": "R0044",
+      "kind": "FIELD",
+      "label": "baselines_and_workloads/baselines",
+      "status": "OBSERVED",
+      "finding": "CPOO and LaCPOO are compared against three baselines: Local (all DNN inferences processed locally), RPOM (random partitioning of the last convolutional layer and random subtask offloading), and Edgent-P (nearest-UAV selection with two-part computing-resource-based task division between UAV and local MD).",
+      "page": 7,
+      "locator": "Section IV.A Simulation Setup and Pameters, baselines list",
+      "excerpt": "Each MD selects the nearest UAV, and then divides the DNN-based task into two parts based on computing resources. The former is offloaded to the UAV, while the latter is processed locally.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F34",
+      "report_id": "R0044",
+      "kind": "FIELD",
+      "label": "sensitivity_and_variability/bw_reliability_psi1",
+      "status": "OBSERVED",
+      "finding": "Sensitivity evaluations on page 7 examine average inference delay and transmission power across varying transmission bandwidth (Fig. 5), offloading reliability threshold (Figs. 6 and 7), and latency weight parameter (Fig. 8), showing delay decreases with higher bandwidth and higher reliability thresholds while transmission power increases with stricter reliability.",
+      "page": 7,
+      "locator": "Section IV.B Numerical Results, paragraphs 3 and 4, and Figs. 5-8",
+      "excerpt": "Fig. 5 depicts the average delay under different bandwidth. As shown in the figure, all the algorithms progressively reduce the average delay as the transmission bandwidth increases.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F35",
+      "report_id": "R0045",
+      "kind": "FIELD",
+      "label": "partition_and_assignment/two_part_split_and_migration",
+      "status": "OBSERVED",
+      "finding": "An integer partitioning decision divides each user's DNN task into two segments where the first part executes locally on the user device and the second part is offloaded to an associated UAV, including full offloading and full local execution as boundary cases.",
+      "page": 4,
+      "locator": "Section II.C DNN Partitioning Model, paragraph 2",
+      "excerpt": "When the DNN-based task is divided into two parts, the first part is processed locally, and the second part is offloaded onto UAVs for processing.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F36",
+      "report_id": "R0045",
+      "kind": "FIELD",
+      "label": "decision_variables_objectives_constraints_and_solver/sac_per_cvx",
+      "status": "OBSERVED",
+      "finding": "A hierarchical DRL and convex optimization framework minimizes total weighted energy consumption by using a soft actor-critic with prioritized experience replay (SAC-PER) agent for high-level DNN partitioning, user-UAV association, task migration, and UAV trajectory decisions while embedding a CVX convex optimization subroutine as an inner-loop deterministic solver for UAV computing resource allocation at each time slot.",
+      "page": 6,
+      "locator": "Section III. PROPOSED APPROACH, paragraph 3",
+      "excerpt": "Based on these decisions, the convex computing resource allocation subproblem is constructed and solved via the CO module to obtain the optimal computing resource allocation. In this manner, the CO solver serves as an inner loop deterministic optimizer embedded within each DRL interaction step.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F37",
+      "report_id": "R0045",
+      "kind": "FIELD",
+      "label": "mobility_channel_intermittency_failure_and_recovery/threshold_migration_3d",
+      "status": "OBSERVED",
+      "finding": "UAVs dynamically adjust their 3-D flight trajectories across horizontal movement and altitude control to approach user-dense areas and conserve flight energy while supporting threshold-triggered inter-UAV task migration.",
+      "page": 11,
+      "locator": "Section IV.B.3 Trajectory, paragraph 1",
+      "excerpt": "During task execution, UAVs dynamically adjust their trajectories according to the spatial distribution of users, actively approaching user-dense areas to perform tasks, which effectively improve the service coverage and resource utilization.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F38",
+      "report_id": "R0045",
+      "kind": "FIELD",
+      "label": "sensitivity_and_variability/seeds_and_thresholds",
+      "status": "OBSERVED",
+      "finding": "Sensitivity analysis on page 11 evaluates total weighted energy consumption across varying UAV remaining-energy threshold and computational-load threshold parameters (Fig. 10), showing that overly small or overly large thresholds increase energy overhead by either delaying migration or triggering premature migration.",
+      "page": 11,
+      "locator": "Section IV.C Sensitivity Analysis of Migration Thresholds, paragraph 1",
+      "excerpt": "In the proposed framework, task migration is triggered when the remaining energy of a UAV falls below a predefined threshold or its computational load exceeds a certain level.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F39",
+      "report_id": "R0048",
+      "kind": "FIELD",
+      "label": "decision_variables_objectives_constraints_and_solver/jdtso_and_mapdp",
+      "status": "OBSERVED",
+      "finding": "For centralized multi-UAV video analytics, the two-layer JDTSO algorithm uses a genetic algorithm at the upper layer for UAV position deployment and dynamic programming, convex optimization, and DAG partitioning at the lower layer for task scheduling; for distributed control, MAPDP integrates multi-agent proximal policy optimization (MAPPO) with decoupled DAG partition point selection.",
+      "page": 2,
+      "locator": "Section I. INTRODUCTION, bullets 2 and 3",
+      "excerpt": "A two-layer optimization algorithm, called JDTSO, is employed to jointly optimize the deployment of UAVs and task scheduling. At the upper layer optimization, a genetic algorithm (GA) is presented to determine UAV positions.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F40",
+      "report_id": "R0048",
+      "kind": "FIELD",
+      "label": "baselines_and_workloads/baselines",
+      "status": "OBSERVED",
+      "finding": "JDTSO and MAPDP are evaluated against five baselines: C-PPO (centralized global optimization based on PPO), C-DQN (centralized global optimization based on DQN), MADDPG (multi-agent deep deterministic policy gradient), Random (random decisions without latency consideration), and IND-UAV (independent local UAV inference).",
+      "page": 10,
+      "locator": "Section VII.A.3 Baselines, bullet list",
+      "excerpt": "It is assumed that a central controller is installed in a UAV to coordinate the behaviors of all UAVs.",
+      "quantitative": null,
+      "reason": ""
+    },
+    {
+      "key": "F41",
+      "report_id": "R0048",
+      "kind": "NUMBER",
+      "label": "inference_latency_60_uavs_eff07",
+      "status": "OBSERVED",
+      "finding": "In the sensitivity analysis with 60 UAVs at an energy efficiency of 0.7 (Table III), the average inference latency is 0.511 s.",
+      "page": 12,
+      "locator": "Section VII.C Sensitivity Analysis, paragraph 2 and Table III (row Energy efficiency = 0.7, column Inference latency)",
+      "excerpt": "Table III presents the sensitivity analysis results for the energy efficiency with 60 UAVs.",
+      "quantitative": {
+        "value": "0.511",
+        "units": "s",
+        "baseline": "Energy efficiency 0.6 (0.515 s) and 0.8 (0.513 s) in Table III",
+        "denominator": "Average inference latency per video analytics task across 60 UAVs",
+        "workload": "Real-time video analytics attribute recognition DAG using YOLOv3-tiny classifiers on extracted ROIs every 10 frames",
+        "conditions": "60 UAVs (Raspberry Pi 3B+ with Intel Movidius NCS1/NCS2) at 200 m hovering altitude in a 500 m x 500 m area, 20 MHz bandwidth, MAPDP algorithm, rotor energy efficiency phi_v = 0.7"
+      },
+      "reason": ""
+    },
+    {
+      "key": "F42",
+      "report_id": "R0048",
+      "kind": "NUMBER",
+      "label": "energy_consumption_60_uavs_eff07",
+      "status": "OBSERVED",
+      "finding": "In the sensitivity analysis with 60 UAVs at an energy efficiency of 0.7 (Table III), the average UAV energy consumption is 670.8 J.",
+      "page": 12,
+      "locator": "Section VII.C Sensitivity Analysis, paragraph 2 and Table III (row Energy efficiency = 0.7, column Energy consumption)",
+      "excerpt": "Table III presents the sensitivity analysis results for the energy efficiency with 60 UAVs.",
+      "quantitative": {
+        "value": "670.8",
+        "units": "J",
+        "baseline": "Energy efficiency 0.6 (778.7 J) and 0.8 (596.1 J) in Table III",
+        "denominator": "Average energy consumption per UAV across 60 UAVs",
+        "workload": "Real-time video analytics attribute recognition DAG using YOLOv3-tiny classifiers on extracted ROIs every 10 frames",
+        "conditions": "60 UAVs (Raspberry Pi 3B+ with Intel Movidius NCS1/NCS2) at 200 m hovering altitude in a 500 m x 500 m area, 20 MHz bandwidth, MAPDP algorithm, rotor energy efficiency phi_v = 0.7"
+      },
+      "reason": ""
+    },
+    {
+      "key": "F43",
+      "report_id": "R0048",
+      "kind": "NUMBER",
+      "label": "throughput_60_uavs_eff07",
+      "status": "OBSERVED",
+      "finding": "In the sensitivity analysis with 60 UAVs at an energy efficiency of 0.7 (Table III), the system throughput is 117.4 IPS.",
+      "page": 12,
+      "locator": "Section VII.C Sensitivity Analysis, paragraph 2 and Table III (row Energy efficiency = 0.7, column Throughput)",
+      "excerpt": "Table III presents the sensitivity analysis results for the energy efficiency with 60 UAVs.",
+      "quantitative": {
+        "value": "117.4",
+        "units": "IPS",
+        "baseline": "Energy efficiency 0.6 (116.6 IPS) and 0.8 (117.1 IPS) in Table III",
+        "denominator": "System throughput in inferences processed per second across 60 UAVs",
+        "workload": "Real-time video analytics attribute recognition DAG using YOLOv3-tiny classifiers on extracted ROIs every 10 frames",
+        "conditions": "60 UAVs (Raspberry Pi 3B+ with Intel Movidius NCS1/NCS2) at 200 m hovering altitude in a 500 m x 500 m area, 20 MHz bandwidth, MAPDP algorithm, rotor energy efficiency phi_v = 0.7"
+      },
+      "reason": ""
+    }
+  ],
+  "coverage": 43,
+  "missing_keys": [],
+  "access_verified": [
+    "R0009",
+    "R0022"
+  ],
+  "source_counts": {
+    "required": 43,
+    "matched": 39
+  },
+  "state_counts": {
+    "FIELD/OBSERVED": 34,
+    "NUMBER/OBSERVED": 8,
+    "FIELD/NOT_REPORTED": 1
+  },
+  "unresolved": [],
+  "issues": [
+    {
+      "criterion": "A2",
+      "key": "R0001",
+      "reason": "access excerpt/heading does not match body page"
+    },
+    {
+      "criterion": "A2",
+      "key": "R0002",
+      "reason": "access excerpt/heading does not match body page"
+    },
+    {
+      "criterion": "A2",
+      "key": "R0003",
+      "reason": "access excerpt/heading does not match body page"
+    },
+    {
+      "criterion": "A2",
+      "key": "R0006",
+      "reason": "access excerpt/heading does not match body page"
+    },
+    {
+      "criterion": "A2",
+      "key": "R0010",
+      "reason": "access excerpt/heading does not match body page"
+    },
+    {
+      "criterion": "A2",
+      "key": "R0015",
+      "reason": "access excerpt/heading does not match body page"
+    },
+    {
+      "criterion": "A2",
+      "key": "R0019",
+      "reason": "access excerpt/heading does not match body page"
+    },
+    {
+      "criterion": "A2",
+      "key": "R0029",
+      "reason": "access excerpt/heading does not match body page"
+    },
+    {
+      "criterion": "A2",
+      "key": "R0044",
+      "reason": "access excerpt/heading does not match body page"
+    },
+    {
+      "criterion": "A2",
+      "key": "R0045",
+      "reason": "access excerpt/heading does not match body page"
+    },
+    {
+      "criterion": "A2",
+      "key": "R0048",
+      "reason": "access excerpt/heading does not match body page"
+    },
+    {
+      "criterion": "A2",
+      "key": "F13",
+      "reason": "missing or mismatching body anchor p9"
+    },
+    {
+      "criterion": "A2",
+      "key": "F22",
+      "reason": "missing or mismatching body anchor p6"
+    },
+    {
+      "criterion": "A2",
+      "key": "F23",
+      "reason": "missing or mismatching body anchor p6"
+    },
+    {
+      "criterion": "A2",
+      "key": "F24",
+      "reason": "missing or mismatching body anchor p6"
+    }
+  ]
+}
