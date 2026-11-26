@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-26T21:39:30+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-26T21:41:35+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -336,7 +336,9 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=4.
 <a id="buoc-10"></a>
 ## Bước 10 · Liên kết report với study
 
-**Đang làm** · `2026-11-26T21:39:30+07:00`
+**Đã chốt theo sổ tiến độ** · `2026-11-26T21:41:35+07:00`
+
+Nghiệm thu cấp bước đã ghi trong sổ: PASS=5.
 
 - [manifest.json](../restart_2026_11_26/study_linkage/manifest.json)
 - [batch_01_brief.md](../restart_2026_11_26/study_linkage/batch_01_brief.md)
@@ -344,6 +346,12 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=4.
 - [batch_01_raw.json](../restart_2026_11_26/study_linkage/batch_01_raw.json)
 - [batch_01_transport_raw.json](../restart_2026_11_26/study_linkage/batch_01_transport_raw.json)
 - [batch_01_correction01_brief.md](../restart_2026_11_26/study_linkage/batch_01_correction01_brief.md)
+- [batch_01_correction01_review.md](../restart_2026_11_26/study_linkage/batch_01_correction01_review.md)
+- [batch_01_correction01_raw.json](../restart_2026_11_26/study_linkage/batch_01_correction01_raw.json)
+- [report_study_map.csv](../restart_2026_11_26/study_linkage/report_study_map.csv)
+- [pair_evidence.csv](../restart_2026_11_26/study_linkage/pair_evidence.csv)
+- [unresolved_families.csv](../restart_2026_11_26/study_linkage/unresolved_families.csv)
+- [step10_linkage_summary.md](../restart_2026_11_26/study_linkage/step10_linkage_summary.md)
 
 <a id="buoc-11"></a>
 ## Bước 11 · Trích xuất dữ liệu mới

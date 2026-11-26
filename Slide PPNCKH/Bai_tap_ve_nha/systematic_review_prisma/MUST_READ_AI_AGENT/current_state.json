@@ -1,30 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T21:39:30+07:00",
+  "updated_at": "2026-11-26T21:41:35+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step09_completed",
-    "summary": "Continue the approved 16-step HK261 PRISMA restart. Step 09 screened 44 verified full texts from the new retrieval inventory. Step 10 links reports to studies."
+    "status": "step10_completed",
+    "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-10-batch-01-review",
+    "task_id": "restart-10",
     "owner": "CODEX_WRITING",
     "research_owner": "GEMINI_RESEARCH",
-    "status": "rejected",
+    "status": "completed",
     "started_at": "2026-11-26T21:26:29+07:00",
-    "updated_at": "2026-11-26T21:39:30+07:00",
-    "completed_at": "2026-11-26T21:39:30+07:00",
-    "checkpoint_path": "restart_2026_11_26/study_linkage/batch_01_review.md",
-    "decision_id": "restart-10-batch-01-review-v1"
+    "updated_at": "2026-11-26T21:41:35+07:00",
+    "completed_at": "2026-11-26T21:41:35+07:00",
+    "checkpoint_path": "restart_2026_11_26/study_linkage/step10_linkage_summary.md",
+    "decision_id": "restart-10-v1"
   },
   "next_task": {
-    "task_id": "restart-10-batch-01-correction01",
+    "task_id": "restart-11",
     "status": "ready",
     "owner": "GEMINI_RESEARCH",
-    "action": "Correct only failed items under P07.",
-    "dispatch_brief": "restart_2026_11_26/study_linkage/batch_01_correction01_brief.md",
-    "message_id": "hk261-restart-step10-study-linkage-correction01-v1",
-    "acceptance": "All failed mandatory criteria corrected."
+    "action": "Extract new included full-text evidence under Step 11 / P08.",
+    "acceptance": "All included reports covered; report-located data and no unsupported numbers."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -122,6 +120,16 @@
         "included": 25,
         "excluded": 13,
         "awaiting_classification": 6
+      },
+      "study_linkage": {
+        "reports": 25,
+        "tested_candidate_pairs": 13,
+        "verified_merge_edges": 0,
+        "distinct_pairs": 13,
+        "unresolved_pairs": 0,
+        "documented_shortfalls": 0,
+        "current_groups": 25,
+        "final_unique_studies": 25
       }
     }
   },
