@@ -1,27 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:23:47+07:00",
+  "updated_at": "2026-11-26T23:27:15+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-p08-count-errata",
+    "task_id": "restart-11-batch01-43-brief",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T23:23:47+07:00",
-    "updated_at": "2026-11-26T23:23:47+07:00",
-    "completed_at": "2026-11-26T23:23:47+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_extraction_new_review.md",
-    "decision_id": "restart-11-p08-count-errata-v1"
+    "started_at": "2026-11-26T23:27:15+07:00",
+    "updated_at": "2026-11-26T23:27:15+07:00",
+    "completed_at": "2026-11-26T23:27:15+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_targeted_correction_brief.md",
+    "decision_id": "restart-11-batch01-43-brief-v1"
   },
   "next_task": {
-    "task_id": "restart-11-p08-targeted-resolution",
+    "task_id": "restart-11-batch01-43",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Resolve remaining P08 verification within the authorized correction scope.",
-    "acceptance": "No reports enter P09 before the P08 gate."
+    "action": "Correct the 43 rejected slots only.",
+    "acceptance": "43 unique keys, 35 source corrections and 8 numeric corrections.",
+    "dispatch_brief": "restart_2026_11_26/extraction/batch_01_targeted_correction_brief.md",
+    "message_id": "hk261-p08-b01-target43-v1"
   },
   "project": {
     "target_venue": "SN Computer Science",
