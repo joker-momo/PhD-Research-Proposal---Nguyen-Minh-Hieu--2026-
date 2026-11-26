@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:29:46+07:00",
+  "updated_at": "2026-11-26T18:34:10+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step03_query_audit_dispatched",
+    "status": "step03_primary_held_for_correction",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
@@ -11,18 +11,18 @@
     "owner": "GEMINI_RESEARCH",
     "status": "active",
     "started_at": "2026-11-26T18:28:26+07:00",
-    "updated_at": "2026-11-26T18:29:46+07:00",
-    "decision_id": "restart-03-direct-query-audit-v1",
+    "updated_at": "2026-11-26T18:34:10+07:00",
+    "decision_id": "restart-03-direct-query-correction-v2",
     "provider_task_id": "468fa8b0-d511-4876-b682-812933a3b82d",
     "provider_context_id": "b7c4f243-c3ac-42c0-883d-ac14ebc43962",
     "failed_before_send_task_id": "f238bff7-3de5-47b9-9d59-b70a1592d63e"
   },
   "next_task": {
-    "task_id": "restart-03-app-audit",
+    "task_id": "restart-03-app-correction",
     "owner": "GEMINI_RESEARCH",
-    "status": "active",
-    "action": "Collect and independently verify the existing native Gemini.app Task via its provider ID. Do not redispatch it.",
-    "acceptance": "Five criteria in step03_query_audit_brief.md."
+    "status": "ready",
+    "action": "Send the committed corrective brief in Gemini.app Task using direct project context.",
+    "acceptance": "Corrected C1–C5 PASS."
   },
   "project": {
     "target_venue": "SN Computer Science",

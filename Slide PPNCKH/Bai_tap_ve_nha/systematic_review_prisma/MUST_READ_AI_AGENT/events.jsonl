@@ -70,3 +70,4 @@
 {"timestamp": "2026-11-26T18:26:39+07:00", "task_id": "restart-02", "event": "protocol_accepted", "provider_task_id": "cfe6791b-4fe0-4e35-804b-9616584802cb", "checks": 12, "quotes": 45, "next_task": "restart-03"}
 {"timestamp": "2026-11-26T18:28:26+07:00", "task_id": "restart-03", "event": "query_audit_brief_prepared_for_direct_gemini_access", "bridge_commit": "efd717c"}
 {"timestamp": "2026-11-26T18:29:46+07:00", "task_id": "restart-03", "event": "direct_project_query_audit_prompt_sent", "provider_task_id": "468fa8b0-d511-4876-b682-812933a3b82d", "provider_context_id": "b7c4f243-c3ac-42c0-883d-ac14ebc43962", "bridge_commit": "445da31", "context_copies": 0, "prior_attempt": "guard rejected before send"}
+{"timestamp": "2026-11-26T18:34:10+07:00", "task_id": "restart-03", "event": "primary_query_audit_quarantined", "provider_task_id": "468fa8b0-d511-4876-b682-812933a3b82d", "criteria_failed": ["C1", "C3", "C4"], "context_copies": 0}
