@@ -108,7 +108,7 @@ the repository root. The agent must independently enforce the same gate.
 
 ## Timestamp evidence before dispatch
 
-Apply the timestamp rule in `03_WORKFLOW_AND_GATES.md`: verify both task-state
-blocks, manifest updated_at and latest event-log entry. Record actual provider
+Apply the timestamp rule in `03_WORKFLOW_AND_GATES.md`: validate
+`current_state.json` and its matching latest event. Record actual provider
 start/completion times and task/context IDs. A completed provider event is not
 an acceptance event; give Codex review its own observed timestamp.

@@ -1,78 +1,32 @@
 # Session Handoff Template
 
-Use this structure at the end of every material work session. Update
-`CURRENT_HANDOFF.md` when project-level status, canonical paths, counts, blockers,
-or next actions changed.
+Do not create another current-state document. Update `current_state.json`,
+append one matching event to `events.jsonl`, and append the task's final
+decision to `../automation/decision_log.jsonl` in the same commit.
 
-```markdown
-# Session handoff
+Required `current_state.json` task fields:
 
-started_at: [actual RFC 3339 time with timezone]
-updated_at: [actual RFC 3339 time with timezone]
-completed_at: [actual RFC 3339 time when finished; omit while active]
-Agent/model:
-Task:
-Code-first decision: [REUSE_EXISTING | WRITE_SCRIPT | MANUAL -- reason]
-Decision ID: [active decision_log.jsonl record]
-Reusable artifact IDs: [catalog IDs or none for MANUAL]
-Branch/worktree:
-
-## Completed
-- [Concrete output with path]
-
-## Acceptance gate
-| Criterion | PASS/FAIL | Objective evidence |
-|---|---|---|
-
-## Evidence used
-- [Source/report ID, DOI, and file/page/table/section locator]
-
-## Files changed
-- [Path: reason]
-
-## Verification performed
-- [Command/check and observed result]
-- [For REUSE_EXISTING: tool verification; for WRITE_SCRIPT: focused tests; for
-  MANUAL: why automation was unsuitable and any automated substeps]
-- `python3 .codex/hooks/automation_registry.py validate`: [observed result]
-
-## Intentionally not changed
-- [Out-of-scope path or decision]
-
-## Unresolved and quarantined
-- [Exact missing evidence or failed criterion]
-
-## User confirmation required
-- [Authorship, metadata, deadline, submission, or other decision]
-
-## A2A continuity
-- Primary task/context ID:
-- Fallback task/context ID, if any:
-- Review path and verdict:
-
-## Git state
-- Baseline pre-existing changes preserved:
-- Agent-owned changes committed:
-- Merge verification:
-- Remaining agent-created branches/worktrees: 0
-
-## Next exact action
-1. [One measurable task with completion rule]
+```json
+{
+  "task_id": "task-name",
+  "owner": "CODEX_WRITING",
+  "status": "completed",
+  "started_at": "RFC3339-with-timezone",
+  "updated_at": "RFC3339-with-timezone",
+  "completed_at": "RFC3339-with-timezone",
+  "decision_id": "task-name-v1"
+}
 ```
 
-Never write “done”, “verified”, “ready”, or “submitted” without the concrete
-evidence path and the gate that supports that status.
+Also update `next_task`, current evidence counts, blockers and user
+confirmations only when they changed. Validate:
 
-Copy the current task metadata into exactly one JSON comment block in both
-CURRENT_HANDOFF.md and current_tasks.md (replace values with observed times):
-
-```text
-<!-- HK261_TASK_STATE
-{"task_id":"task-name","status":"completed","started_at":"<RFC3339>","updated_at":"<RFC3339>","completed_at":"<RFC3339>"}
--->
+```bash
+python3 .codex/hooks/project_state.py validate
+python3 .codex/hooks/automation_registry.py validate
 ```
 
-Use the same updated_at in context_manifest.yaml and append one event with
-`timestamp`, `task_id`, and `event` to events.jsonl. Actual time is required;
-placeholders in this template must never enter current state. Historical unknown
-timestamps remain explicitly unknown, never estimated as midnight.
+For a human summary run `python3 .codex/hooks/project_state.py show`; do not
+commit that output as a second source of truth. A session note may exist for a
+material investigation, but it must point to the canonical state, objective
+PASS/FAIL evidence, changed paths, tests, commit SHA and next measurable action.

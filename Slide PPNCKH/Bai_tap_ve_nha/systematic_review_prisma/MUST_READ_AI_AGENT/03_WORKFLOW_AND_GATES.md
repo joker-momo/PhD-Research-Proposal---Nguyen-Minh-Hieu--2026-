@@ -2,7 +2,7 @@
 
 ## Session start gate
 
-1. Complete the manifest reading order.
+1. Complete the manifest core and the smallest matching task route.
 2. Read only the task-relevant canonical files from `06_FILE_MAP.md`.
 3. Inspect Git status/branches and record pre-existing changes.
 4. State one concrete task and measurable completion criteria.
@@ -68,8 +68,8 @@ For every material change:
    claims, and unrelated edits.
 5. Commit atomically with an intent-revealing message.
 6. Fast-forward merge, verify the merged result, delete the task branch/worktree.
-7. Update `CURRENT_HANDOFF.md` if status, canonical paths, counts, blockers, or
-   next actions changed.
+7. Update `current_state.json`, append its matching event and decision, then
+   validate both registries before commit.
 
 ## Status language
 
@@ -83,71 +83,25 @@ Use only evidence-bounded labels:
 
 ## Commit before the next task (mandatory user gate, 25 November 2026)
 
-Before EACH new task, publish exactly five lines: `TASK`, `OWNER`, `OWNED_PATHS`,
-`BINARY_ACCEPTANCE`, `PRE_TASK_GIT_STATUS`. OWNER is `CODEX_WRITING` or
-`GEMINI_RESEARCH`; report branch, staged/modified/untracked counts, and prior SHA.
-Run Git status immediately before starting. Any residue in this project,
-repository `.codex/`, or repository `AGENTS.md` blocks all new tasks and A2A
-dispatch, including corrective dispatch. The user's exact pre-existing baseline
-outside those owned scopes is authorized but immutable: do not add to, stash,
-delete, ignore, or hide it. Finish the current task, validate, inspect the
-diff/cleanup, stage explicit owned paths, commit atomically, report its SHA, and
-verify clean owned scopes first. Do not batch unrelated scopes into one commit.
+Apply the repository-root `AGENTS.md` pre-task, code-first and Git contract.
+One task owns one branch/worktree and closes with canonical state, event and
+decision evidence in the same commit. Brief preparation is a Codex writing task;
+commit it before dispatch. Commit each provider result plus Codex PASS/FAIL
+review before preparing or dispatching another task. A correction remains linked
+to its failed parent. Inspection and monitoring do not authorize new research.
 
-Brief preparation is a writing task: commit the complete brief before dispatch.
-A result collection/review is one task: commit its raw/accepted/quarantined
-artifacts and verdict before preparing the next task. A correction stays linked
-to the failed research task; commit the correction brief before retrying.
-Commands needed to finish, validate, inspect, or commit current work remain
-allowed. Inspection/monitoring is not permission to start new research.
-
-The active worktree remains isolated until safe integration with the parent;
-commit each task now, never defer commits until a whole screening campaign ends.
-The latest explicit user rule takes precedence over older session-level rules.
-No next task may begin with residue in an owned scope or agent-created residue
-outside it.
-
-Durable entry points: repository-root `AGENTS.md`, this onboarding manifest,
-and repository-root `.codex/hooks.json`. See `.codex/hooks/README.md` for tested
-behavior and runtime limits. The hook is a guardrail, not verified complete
-runtime enforcement. Manual clean-tree/ownership checks remain mandatory.
-
-The code-first line is separate from the five governance fields; it does not
-change their count or the clean-tree gate. For `REUSE_EXISTING`, record the tool
-and verification performed. For `WRITE_SCRIPT`, define inputs/outputs and focused
-tests, then commit the reusable artifact. For `MANUAL`, record why automation is
-unsafe, unavailable, judgment-heavy, or uneconomical, and still automate any
-safe deterministic substeps. Never create a framework solely to satisfy the
-rule.
-
-The final decision is not durable merely because it appeared in chat. In the
-same commit that closes a task, append it to `automation/decision_log.jsonl`,
-register all reused/new reusable code in `automation/artifact_catalog.json`,
-and run `.codex/hooks/automation_registry.py validate`. Never edit an accepted
-decision line; append a superseding record. Git history, the decision record,
-catalog path and test evidence together form the audit trail.
+Only current work may be repaired while owned scopes are dirty or canonical
+state is stale. Hooks are not a verified security boundary; manual enforcement
+remains mandatory.
 
 ## Timestamp rule (user request: 2026-11-25T23:02:44+07:00)
 
-Every new task/work record must have `started_at` and `updated_at`, plus
-`completed_at` when completed or rejected. Every new event-log entry must have
-`timestamp`. Use RFC 3339 with seconds and a known timezone, default
-Asia/Ho_Chi_Minh (`+07:00`). Future timestamps, date-only values and relative
-phrases are not valid event times. Planned deadlines belong in separate fields.
-Never infer an unknown historical time; retain immutable raw/accepted history
-and label missing historical time explicitly rather than rewriting provenance.
+Store task timestamps once in `current_state.json`: `started_at`, `updated_at`,
+and `completed_at` for completed/rejected work. Append a matching timestamped
+event. Use actual RFC 3339 seconds with a known timezone, normally `+07:00`;
+never use future, date-only, relative or invented historical times. Require
+`started_at <= completed_at <= updated_at <= current time` when completed.
 
-Keep exactly one `HK261_TASK_STATE` JSON comment block in each current handoff
-and task queue. Both blocks must match: `task_id`, `status` (`active`, `completed`,
-`rejected`, `blocked`), `started_at`, `updated_at`, and `completed_at` when finished.
-Require started_at <= completed_at <= updated_at <= current time (omit the
-completion comparison for unfinished work). Manifest `updated_at` and the last
-`MUST_READ_AI_AGENT/events.jsonl` entry must match the current task's updated_at;
-the last event task_id must also match. Append log entries, never overwrite them.
-Update these artifacts in the same task commit. Use a fresh time for the actual
-update; do not use a planned commit or dispatch time as an observed event.
-
-The read-only gate blocks recognized A2A dispatch for invalid timestamps, in
-addition to dirty owned scopes and stale status documents. Non-A2A commands
-remain available to finish and repair the current task. Direct tests do not prove
-live hook activation; manual enforcement remains mandatory.
+Run `python3 .codex/hooks/project_state.py validate`. The recognized A2A gate
+also requires the current-state file to be touched by the latest project commit.
+Compatibility Markdown and the manifest do not duplicate task timestamps.

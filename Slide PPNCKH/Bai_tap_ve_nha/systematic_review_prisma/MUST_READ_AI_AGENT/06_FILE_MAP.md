@@ -6,6 +6,9 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 
 | Purpose | Canonical path |
 |---|---|
+| Single current-state source | `current_state.json` |
+| Validate/render current state | `../../../../.codex/hooks/project_state.py validate\|show` |
+| Context/token budget evidence | `CONTEXT_BUDGET.md` |
 | Official assignment | `../../HK261 - Bài tập lớn-Tiểu luận.pdf` from the project directory; equivalently `../../../HK261 - Bài tập lớn-Tiểu luận.pdf` from this folder |
 | Current project overview | `../README.md` |
 | Fixed protocol | `../protocol.md` |
@@ -15,7 +18,7 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 | Current completion audit | `../completion_audit_2026-11-25.md` |
 | Submission blockers | `../submission_readiness_2026-11-25.md` |
 | A2A policy | `../corpus_expansion/a2a_routing_policy_2026-11-25.md` |
-| Current research queue | `../corpus_expansion/current_tasks.md` |
+| Current research queue | `current_state.json` field `next_task`; `../corpus_expansion/current_tasks.md` is a compatibility pointer |
 | Automation/code decision history | `../automation/decision_log.jsonl` |
 | Reusable code catalog | `../automation/artifact_catalog.json` |
 | Automation registry instructions | `../automation/README.md` |
@@ -46,6 +49,9 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 
 ## Historical or non-canonical by default
 
+- `history/CURRENT_HANDOFF.pre-state-v1.2026-11-26.md` and
+  `../corpus_expansion/history/current_tasks.pre-state-v1.2026-11-26.md` preserve
+  the verbose pre-migration state; do not load them as current truth.
 - `../manuscript/ieee_access/` — absent from canonical `main`; retained under
   `/Volumes/JokerData/PhD/HK261-reconciliation-backups/2026-11-25-split-brain/root_project_live_before_promotion/manuscript/ieee_access/`.
 - `../output/docx/` — absent from canonical `main`; retained under
@@ -66,4 +72,4 @@ current truth without a documented decision.
 - Put normalized derivatives under `sources/normalized/` and record provenance.
 - Do not overwrite an accepted dated release; create a new dated release and
   manifest.
-- Update this map and `CURRENT_HANDOFF.md` whenever a canonical path changes.
+- Update this map and `current_state.json` whenever a canonical path changes.

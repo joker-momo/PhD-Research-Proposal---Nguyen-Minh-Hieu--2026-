@@ -103,10 +103,11 @@
         "exit 2 with a specific schema, timestamp or event mismatch"
       ],
       "tests": [
+        ".codex/hooks/test_context_contract.py",
         ".codex/hooks/test_project_state.py",
         ".codex/hooks/test_task_gate.py"
       ],
-      "test_command": "PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_project_state.py && PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_task_gate.py",
+      "test_command": "PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_context_contract.py && PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_project_state.py && PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_task_gate.py",
       "status": "active",
       "tags": [
         "current-state",

@@ -1,150 +1,94 @@
-# HK261 task gate and advisory skill router — verification, 25 November 2026
+# HK261 hooks and validation
 
-Owned scope: repository AGENTS.md; project AGENTS.md; workflow/delegation docs;
-context manifest/handoff; this project-local .codex hook configuration/scripts.
-No manuscript or scientific extraction changes are part of this task.
+These hooks are project guardrails, not a security boundary. They use the
+repository selected by Codex and do not change tracked project content.
+Automatic live activation remains **UNVERIFIED** until the Codex UI records a
+real prompt delivery and a harmless blocked dispatch.
 
-## Installed behavior
+## Hook map
 
-- UserPromptSubmit prints all five required task fields and ownership/commit rules.
-- SessionStart repeats the reminder on startup, resume, clear, compact, and fork.
-- PreToolUse (Bash) inspects recognized literal `a2a-route`, `a2a send`, and the
-  current `run_screening_batches.py` driver. Git residue in the owned scopes
-  returns exit 2 with an explicit instruction to commit the current task.
-- Owned scopes are `systematic_review_prisma/`, repository `.codex/`, and
-  repository `AGENTS.md`. The exact pre-existing user-owned residue outside
-  those paths is preserved and does not block A2A. No baseline count is encoded
-  in the hook.
-- Clean owned scopes are necessary but no longer sufficient. The hook compares the
-  latest commit touching the project directory with the latest commit touching
-  each of `CURRENT_HANDOFF.md` and `current_tasks.md`. Either mismatch returns
-  exit 2 because the durable status is stale or only partially updated.
-- The checker reads the worktree containing its own file, regardless of the
-  dispatch command's working directory. It checks staged/modified/untracked
-  files in every owned scope, including nested untracked files; ignored generated
-  files are outside Git's residue definition. Never add ignores to hide
-  unfinished task output.
-- No stage/commit/delete/write operation exists in the checker. Git optional
-  locking is disabled; file content and index bytes remain unchanged in tests.
-- Non-A2A finishing/validation/Git commands and task-status retrieval pass.
-
-### Advisory skill routing
-
-- `UserPromptSubmit` also runs `skill_router.py` after the durable task reminder.
-- It discovers installed `SKILL.md` files from the user Codex, shared-agent, and
-  plugin-cache skill roots. Duplicate names resolve in that priority order.
-- It selects at most one primary and two supporting skills. Explicitly named
-  installed skills lead; an unknown explicit skill is reported, never invented.
-- Skills in the same constrained family are not co-loaded. If
-  `academic-pipeline` is active, equivalent academic/deep-research pipelines are
-  skipped so there is one orchestrator.
-- Paper retrieval uses only `paper-lookup` -> `lawful-paper-pdf-retriever` ->
-  `nature-downloader`. The router never automatically selects a flow that names
-  unauthorized download sources.
-- Research, discovery, verification, extraction, classification, and structured
-  synthesis route to `GEMINI_RESEARCH`; writing/editing route to
-  `CODEX_WRITING`. Multi-goal prompts print both owners explicitly.
-- Every selected skill prints its actual `SKILL.md` path with a mandatory
-  `READ_FULL_SKILL_MD` reminder. The agent must read the whole file before work.
-- `ADVISORY_ONLY: true` is unconditional. Empty, malformed, unknown, or
-  unclassified input prints `SKILLS: none — <reason>` and exits zero.
-
-### Automation-first / code mode
-
-- Every routed prompt prints exactly one `CODE_FIRST_DECISION` with one of
-  `REUSE_EXISTING`, `WRITE_SCRIPT`, or `MANUAL`, plus a concrete reason.
-- Decision order is reuse an existing verified tool first, create a small
-  tested reusable script for deterministic/repeated work second, and use manual
-  execution only for human judgment, communication, unsafe automation, or a
-  one-off task where code would cost more than it saves.
-- A manual overall decision does not excuse repetitive manual substeps; automate
-  deterministic substeps when doing so is safe and cheaper.
-- The recommendation is advisory and never executes code. The acting agent must
-  reject overengineering, verify any reused tool, and test newly written
-  automation before relying on it.
-- Every route points to the read-only registry search command and the durable
-  decision/catalog evidence paths. The project task gate validates that the
-  current task has one active decision before recognized A2A dispatch.
-- `automation/decision_log.jsonl` is append-only. `artifact_catalog.json`
-  provides repository-relative code paths, entrypoints, inputs/outputs, tests
-  and tags. `automation_registry.py validate|search` is the supported interface.
-
-## Verification
-
-Command: `rtk proxy env PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_task_gate.py`.
-Observed: 9 tests PASS, 26 actual hook subprocess invocations in disposable local
-Git repositories; no network/provider call. Fresh clean A2A: 3/3 exit 0. Stale
-or partially refreshed clean A2A: 2/2 exit 2. Dirty A2A: 9/9 exit 2 (3 command
-forms x untracked/modified/staged in an owned scope). External baseline residue:
-3/3 exit 0 (untracked/modified/staged outside owned scopes). Dirty non-A2A: 4/4
-exit 0. Each owned scope: 3/3 modified fixtures exit 2. Prompt/session reminders:
-2/2 contain all five fields. Every invocation asserts unchanged Git status,
-index bytes, and tracked content.
-
-Command: `rtk proxy env PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_skill_router.py`.
-Observed: 30 tests PASS across explicit installed skill priority, unknown skill,
-academic orchestrator exclusivity, Gemini research ownership, Codex writing
-ownership, lawful paper retrieval order, debugging/TDD, image generation,
-no-skill prompt, multi-goal ownership, research/debug overlap suppression, direct-skill
-preference over nested bundle duplicates, readable skill paths/full-read
-reminders, three-skill cap, malformed JSON exit-zero behavior, payload
-extraction, hook registration, one decision on each of 10 prompt groups, three
-reuse cases, three script cases, three manual cases, and mixed-task precedence.
-Tests use temporary skill catalogs; the
-integration check below uses the installed catalog.
-
-Command: `PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_automation_registry.py`.
-Observed: 16 tests PASS across valid registry loading, path containment, missing
-code/tests, duplicate IDs, artifact references, mode-specific evidence,
-append-only supersession, timestamps, search and CLI JSON output.
-
-| Criterion | Verdict | Objective evidence |
+| Event | Script | Behavior |
 |---|---|---|
-| 1. Every new project prompt receives five-field reminder | FAIL | Configuration and 2/2 direct reminder tests pass; no live new-prompt delivery evidence yet |
-| 2. Runtime A2A dispatch reliably blocked for owned-scope residue | FAIL | 9/9 direct subprocess blocks; Codex trust/activation not verified and indirect routes are not fully intercepted |
-| 3. Non-A2A commands remain available | PASS | 4/4 direct checks exit 0, including validation and commit |
-| 4. Hook is read-only | PASS | Source contains only input/output and Git history/status reads; 26/26 state/index/content invariants pass |
-| 5. Fresh clean, stale clean, owned-dirty+A2A, outside-baseline+A2A, dirty+non-A2A tests | PASS | All 5 scenario groups pass (24/24 command checks) |
-| 6. Owned-only diff, no secrets, focused commit | PASS | Explicit owned paths staged; diff/secret audit performed before commit; commit SHA recorded in Git and chat |
-| 7. Stale durable status blocks the next recognized dispatch | PASS | 1/1 fully stale and 1/1 partially refreshed clean fixture blocked; 1/1 fully refreshed fixture allowed; initial fresh fixtures remain allowed |
-| 8. External baseline does not weaken owned-path enforcement | PASS | Outside-scope untracked/modified/staged fixtures allow 3/3 dispatches; owned-scope equivalents block 9/9 recognized command forms |
+| UserPromptSubmit | `task_gate.py` | Prints one compact AGENTS/pre-task reminder |
+| UserPromptSubmit | `skill_router.py` | Suggests owner, code-first mode and at most three skills |
+| SessionStart | `task_gate.py` | Prints the same compact reminder |
+| PreToolUse/Bash | `task_gate.py` | Checks recognized A2A dispatch without changing files |
 
-## Activation and limits — do not claim automatic enforcement yet
+The gate recognizes literal `a2a-route`, `a2a send` and
+`run_screening_batches.py` commands. Before allowing them it requires:
 
-Installed CLI reports version 0.144.4 and hooks enabled. Official documentation
-supports project `.codex/hooks.json`, the Bash alias for unified exec, exit-2
-blocking, prompt context, and compact SessionStart. It also requires trust of
-new hook definitions and warns that tool hooks are not a complete boundary.
-Source: https://learn.chatgpt.com/docs/hooks (checked 25 November 2026).
+1. no residue in HK261, `.codex/` or root `AGENTS.md`;
+2. the latest project commit to include
+   `MUST_READ_AI_AGENT/current_state.json`;
+3. valid canonical state and matching latest event;
+4. one matching active code-first decision and valid artifact registry.
 
-After loading this worktree in Codex, use Review hooks / Settings > Hooks (or
-`/hooks` in CLI) to review this project's definitions. No trust override or global
-configuration change was made. Then verify prompt delivery and a harmless live
-blocked dispatch before upgrading criteria 1/2. A config file and unit tests
-alone do not prove runtime activation. Keep both FAIL until live evidence exists.
+`CURRENT_HANDOFF.md` and `corpus_expansion/current_tasks.md` are static
+compatibility pointers. They are no longer task-state inputs.
 
-Literal parsing is deliberately limited: shell aliases, dynamically constructed
-commands, unknown wrapper scripts, interactive write_stdin, MCP dispatch, and
-specialized tool paths may evade it. The checker is not a security boundary.
-The root AGENTS.md plus mandatory pre-task Git check remains the enforceable
-agent workflow. Continue serial work only after the current task is committed
-and all owned scopes are clean; preserve the external baseline exactly. Never
-interpret these limitations as permission to skip manual checks. The user
-explicitly requested honest FAIL rather than pretending hook enforcement. This
-task delivers the configured guardrail and limitations.
+## Canonical state commands
 
-## Timestamp validation update
+```bash
+python3 .codex/hooks/project_state.py validate
+python3 .codex/hooks/project_state.py show
+python3 .codex/hooks/automation_registry.py validate
+python3 .codex/hooks/automation_registry.py search "<task keywords>"
+```
 
-The gate now validates task-state blocks in both current status documents,
-manifest updated_at and the append-only event log. It rejects missing fields,
-timezone-free/date-only/malformed/future values, unknown `-00:00` offsets,
-inverted task times and inconsistent current metadata. No dependency was added.
-Historical raw evidence remains unchanged; the event log begins at adoption.
+`project_state.py` rejects duplicate JSON keys, invalid/future/unknown-zone
+timestamps, inconsistent task times, malformed evidence counts and an event that
+does not match the current task and `updated_at`.
 
-Validation: 18 task-gate tests, 30 skill-router tests and 16 automation-registry
-tests PASS. The task-gate suite
-includes the previous 9 tests and 8 timestamp tests; its valid clean fixture
-covers valid timestamps. Missing-field, timezone, format and future tests invoke
-the real hook subprocess. Every invocation checks unchanged Git status, index
-bytes and a tracked control file. Invalid timestamps still allow finishing Git
-commands. Live Codex activation remains UNVERIFIED.
+## Skill catalog cache
+
+`skill_router.py` caches discovered skill names and paths for 600 seconds at
+`~/.cache/codex/skill_router/catalog-v1.json`. A valid cache avoids recursive
+`SKILL.md` discovery on every prompt. Missing files, changed roots, expiry,
+invalid JSON or schema mismatch trigger a safe rescan. Cache write failure never
+blocks the prompt. Override the location with `CODEX_SKILL_CACHE`; tests use
+temporary paths.
+
+The router remains advisory. An explicitly named installed skill wins; it
+suppresses equivalent pipelines, caps the route at one primary plus two support
+skills and prints each selected `SKILL.md` path for the agent to read.
+
+## Test tiers
+
+Use the smallest tier affected by the change; do not repeatedly run an unchanged
+green command merely for reassurance.
+
+Quick unit tier for state/router/registry changes:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_project_state.py -q
+PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_skill_router.py -q
+PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_automation_registry.py -q
+```
+
+Full hook tier before merge, after gate/config changes, or before claiming the
+hook package valid:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s .codex/hooks -p 'test_*.py' -q
+```
+
+Current expected total: 77 tests = 4 context + 6 state + 33 router + 16 registry
++ 18 gate.
+The gate suite uses disposable Git repositories and is intentionally slower than
+the pure unit tier.
+
+Measured budgets and the reproducible before/after method are recorded in
+`MUST_READ_AI_AGENT/CONTEXT_BUDGET.md`. The compact task reminder is 69
+characters (about 17 heuristic tokens); the warm router uses its catalog cache.
+
+## Activation evidence and limits
+
+Direct subprocess tests prove implementation behavior, not Codex UI activation.
+Before upgrading activation to PASS, review/trust `.codex/hooks.json` in Codex,
+observe the compact reminder on a real prompt, and perform a harmless live
+blocked-dispatch check.
+
+Aliases, dynamically constructed commands, unknown wrappers, interactive stdin,
+MCP dispatch and specialized tool paths can evade literal detection. Finishing
+commands remain available so invalid state can be repaired. The root
+`AGENTS.md` contract remains mandatory even when a hook is skipped.
