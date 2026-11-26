@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T19:16:12+07:00",
+  "updated_at": "2026-11-26T19:19:14+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
@@ -11,7 +11,7 @@
     "owner": "GEMINI_RESEARCH + CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-26T18:50:01+07:00",
-    "updated_at": "2026-11-26T19:16:12+07:00",
+    "updated_at": "2026-11-26T19:19:14+07:00",
     "decision_id": "restart-07-direct-screening-batch01-v1",
     "provider_task_id": "c22d8c48-f9ff-48a1-9489-47135b78d4e6",
     "provider_context_id": "55b86c49-5420-426b-a89a-552e445c05a2",
@@ -27,14 +27,22 @@
       "context_id": "18f3e391-b35a-4a08-b94a-2610ec10872d",
       "first": "R0241",
       "last": "R0315",
-      "count": 75
+      "count": 75,
+      "patch": {
+        "task_id": "879f5605-503e-44bb-a714-29d322af59f6",
+        "context_id": "51b2e89a-f520-4179-9bfe-924333118db3",
+        "expected": [
+          "R0257",
+          "R0261"
+        ]
+      }
     }
   },
   "next_task": {
     "task_id": "restart-07-batch05",
     "owner": "GEMINI_RESEARCH",
     "status": "active",
-    "action": "Collect this Gemini.app task by ID; do not redispatch.",
+    "action": "Collect the two-row native correction, then revalidate batch 05.",
     "acceptance": "All expected IDs and S1–S4 PASS."
   },
   "project": {
