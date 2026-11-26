@@ -1,0 +1,49 @@
+{
+  "task_id": "cfae1b3e-aa5a-4ddf-b543-5968066d1bf1",
+  "transport": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T18:34:42.888+00:00"
+  },
+  "result_chars": 8949,
+  "completion_marker": true,
+  "parsed_rows": 10,
+  "malformed": [],
+  "unknown": [],
+  "expected": 9,
+  "returned": 9,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [],
+  "unexpected_access": [],
+  "summary": [
+    {
+      "returned_keys": [
+        "R0062/D07",
+        "R0062/D08",
+        "R0063/D04",
+        "R0063/D06",
+        "R0063/D07",
+        "R0068/D06",
+        "R0068/D08",
+        "R0068/D10",
+        "R0073/D05"
+      ],
+      "unresolved": [],
+      "tools": [
+        "client:list_dir",
+        "client:find_by_name",
+        "client:view_file"
+      ],
+      "workers_used": false
+    }
+  ],
+  "locators": 29,
+  "exact_quote_locators": 25,
+  "needs_visual_cell": [],
+  "bad_domains": {
+    "R0068/D10": [
+      "quote mismatch p15: Open Access funding provided by 'Qatar National Library' within the CRUI CARE Agreement"
+    ]
+  }
+}

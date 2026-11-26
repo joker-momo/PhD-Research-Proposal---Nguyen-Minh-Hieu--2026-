@@ -1,0 +1,21 @@
+{
+  "task_id": "local-composite",
+  "transport": {},
+  "result_chars": 54420,
+  "completion_marker": true,
+  "parsed_rows": 55,
+  "malformed": [],
+  "unknown": [],
+  "expected": 50,
+  "returned": 50,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [],
+  "unexpected_access": [],
+  "summary": [],
+  "locators": 119,
+  "exact_quote_locators": 94,
+  "needs_visual_cell": [],
+  "bad_domains": {}
+}
