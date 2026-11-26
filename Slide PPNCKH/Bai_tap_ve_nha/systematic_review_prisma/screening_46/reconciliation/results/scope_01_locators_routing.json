@@ -1,0 +1,23 @@
+{
+  "primary_task_id": "01a21560-a8e6-762a-984c-99d7ba3617ed",
+  "primary_context_id": "01a21560-a8e6-7a6b-a9b4-52b33e00f94a",
+  "model": "gemini-3.8-flash-high",
+  "fallback_used": false,
+  "dispatched_at": "2026-11-26T08:03:06+07:00",
+  "completed_at": "2026-11-26T08:04:45.791+07:00",
+  "reviewed_at": "2026-11-26T08:07:36+07:00",
+  "review_state": "accepted",
+  "parent_fallback_task_id": "01a21559-eec5-7109-9445-388ddba4e2e1",
+  "replaced_evidence_ids": [
+    "C06_E4",
+    "SNCS_E2",
+    "SNCS_E3"
+  ],
+  "unchanged_other_evidence_count": 17,
+  "unchanged_non_evidence_fields": true,
+  "sha256": {
+    "scope_01_correction_fallback.json": "6857ee569be14277f6565f5754e5fc28620c3f21f49e4ab2739c071071ff0c59",
+    "scope_01_locators_primary.json": "91475b4bd099816a4e3ea11c2547df569cfd7b8fc06593b4db7306cece5f061a",
+    "scope_01_accepted.json": "26d87a045a004a46a0cdb7854f85e5ac0ce4a1b481cd9aa9f7c4ac584decbddb"
+  }
+}

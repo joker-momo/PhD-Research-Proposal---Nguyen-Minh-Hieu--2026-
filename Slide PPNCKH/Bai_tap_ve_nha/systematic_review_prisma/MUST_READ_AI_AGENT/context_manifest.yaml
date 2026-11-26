@@ -1,5 +1,5 @@
 schema_version: 1
-context_version: "2026-11-26.26"
+context_version: "2026-11-26.27"
 project: "HK261 PRISMA systematic review"
 canonical_workspace:
   path: "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)"
@@ -72,17 +72,17 @@ persistent_task_gate:
   code_decision_log: "../automation/decision_log.jsonl"
   code_registry_validator: "../../../../.codex/hooks/automation_registry.py"
   freshness_rule: "latest project commit must also be the latest commit touching CURRENT_HANDOFF.md and current_tasks.md before recognized A2A dispatch"
-updated_at: "2026-11-26T08:02:12+07:00"
+updated_at: "2026-11-26T08:07:36+07:00"
 goal_version: "HK261-PRISMA-SNCS-v2"
 goal_adopted_at: "2026-11-25T23:03:52+07:00"
 next_task:
-  id: "reconciliation-scope-01-locators"
-  owner: "GEMINI_RESEARCH"
-  dispatch_status: "THREE_LOCATOR_BRIEF_READY_AFTER_COMMIT"
+  id: "reconciliation-dates-02-brief"
+  owner: "CODEX_WRITING"
+  dispatch_status: "SCOPE_ACCEPTED_PREPARE_SIX_DATE_BRIEF"
   active_research_task_count: 0
-  provider_task_id: "01a21559-eec5-7109-9445-388ddba4e2e1"
-  provider_context_id: "01a21559-eec5-71bd-88ad-9cb52a8ec751"
-  provider_state: "TASK_STATE_COMPLETED_REJECTED_A2_C1"
+  provider_task_id: "01a21560-a8e6-762a-984c-99d7ba3617ed"
+  provider_context_id: "01a21560-a8e6-7a6b-a9b4-52b33e00f94a"
+  provider_state: "TASK_STATE_COMPLETED_ACCEPTED_WORKING"
 timestamp_policy:
   format: "RFC 3339 with seconds and known timezone; default Asia/Ho_Chi_Minh"
   event_log: "events.jsonl"

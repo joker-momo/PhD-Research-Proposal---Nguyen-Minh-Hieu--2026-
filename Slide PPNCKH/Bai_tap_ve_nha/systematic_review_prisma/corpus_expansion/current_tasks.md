@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T08:02:12+07:00
+Updated_at: 2026-11-26T08:07:36+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -32,15 +32,18 @@ without blocking dispatch.
 
 ## Reconciliation next task
 
-Three-locator corrective brief ready at
-`screening_46/reconciliation/briefs/scope_01_locators.md`. After commit/merge/cleanup,
-route once via Gemini-first router; quota-only fixed fallback remains permitted.
-Return exactly C06_E4,SNCS_E2,SNCS_E3 plus2 unchanged source identities. Combine
-only these3 evidence objects with preserved fallback and recheck all20 quotes,
-original A1–A6/C1–C2 and new L1–L5. No other record data may change.
-Parent `01a21559-eec5-7109-9445-388ddba4e2e1` remains rejected; no active provider.
-Working overlay36/2/8 unchanged. Decision `reconciliation-scope-01-locators-brief-v1`
-is MANUAL; deterministic heading/ID/schema assertions passed.
+Scope reconciliation accepted as working evidence through the three-locator
+correction from Gemini task `01a21560-a8e6-762a-984c-99d7ba3617ed` (no fallback).
+L1–L5,A1–A6,C1–C2 PASS;3/3 corrected and20/20 combined quote locators;17 other
+quotes/all non-evidence fields unchanged. `scope_01_accepted.json` plus
+`scope_01_screening_overlay.json` are the accepted derivatives; review is
+`screening_46/reconciliation/reviews/scope_01_locators_review.md`.
+Prior primary/quota/fallback results remain rejected and immutable.
+No decision changes: C06/SNCS UNCERTAIN; C04/C11/C16 INCLUDE. Total36/2/8 reports,
+not final unique studies. After commit/merge/cleanup prepare date reconciliation
+for C05,C09,C10,C13,C14,C19, preserving cutoff2026-11-25 and not substituting
+acceptance/download/Crossref-created dates for publication. No active provider.
+Decision `reconciliation-scope-01-locators-v1`: REUSE_EXISTING.
 
 ## Measured progress
 
@@ -48,7 +51,7 @@ is MANUAL; deterministic heading/ID/schema assertions passed.
 - Accepted working full-text screening: 46/46 reports.
 - Working decisions: 32 INCLUDE, 2 EXCLUDE, 12 UNCERTAIN in batches 01-08.
 - Remaining in this campaign: 0 reports.
-- Existing scope_01 provider task: completed, rejected A2/A4; no active provider task.
+- Scope reconciliation accepted through corrected derivative; no active provider task.
 - Batch 08 correction accepted; all C1–C6 PASS; 5 combined working decisions.
 - Batch 04 dispatch count: 1 primary and 2 corrections; accepted-result count 1.
 - Latest Batch 04 mandatory failures: 0; all C1–C6 PASS.
@@ -89,10 +92,10 @@ Correction brief is ready; route only after this task closes.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-scope-01-locators-brief",
+  "task_id": "reconciliation-scope-01-locators",
   "status": "completed",
-  "started_at": "2026-11-26T08:02:12+07:00",
-  "updated_at": "2026-11-26T08:02:12+07:00",
-  "completed_at": "2026-11-26T08:02:12+07:00"
+  "started_at": "2026-11-26T08:03:06+07:00",
+  "updated_at": "2026-11-26T08:07:36+07:00",
+  "completed_at": "2026-11-26T08:07:36+07:00"
 }
 -->

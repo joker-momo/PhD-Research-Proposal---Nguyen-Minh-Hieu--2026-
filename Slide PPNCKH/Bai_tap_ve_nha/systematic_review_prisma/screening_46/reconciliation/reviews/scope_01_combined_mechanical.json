@@ -1,0 +1,229 @@
+{
+  "records": 5,
+  "evidence_count": 20,
+  "quote_matches": 20,
+  "errors": [],
+  "quote_checks": [
+    {
+      "id": "C06",
+      "evidence_id": "C06_E1",
+      "match": true,
+      "page": 6,
+      "line_range": [
+        282,
+        285
+      ],
+      "words": 40
+    },
+    {
+      "id": "C06",
+      "evidence_id": "C06_E2",
+      "match": true,
+      "page": 13,
+      "line_range": [
+        716,
+        719
+      ],
+      "words": 33
+    },
+    {
+      "id": "C06",
+      "evidence_id": "C06_E3",
+      "match": true,
+      "page": 15,
+      "line_range": [
+        835,
+        836
+      ],
+      "words": 25
+    },
+    {
+      "id": "C06",
+      "evidence_id": "C06_E4",
+      "match": true,
+      "page": 20,
+      "line_range": [
+        1039,
+        1041
+      ],
+      "words": 21
+    },
+    {
+      "id": "SNCS",
+      "evidence_id": "SNCS_E1",
+      "match": true,
+      "page": 15,
+      "line_range": [
+        1251,
+        1258
+      ],
+      "words": 21
+    },
+    {
+      "id": "SNCS",
+      "evidence_id": "SNCS_E2",
+      "match": true,
+      "page": 17,
+      "line_range": [
+        1354,
+        1358
+      ],
+      "words": 33
+    },
+    {
+      "id": "SNCS",
+      "evidence_id": "SNCS_E3",
+      "match": true,
+      "page": 17,
+      "line_range": [
+        1398,
+        1402
+      ],
+      "words": 39
+    },
+    {
+      "id": "SNCS",
+      "evidence_id": "SNCS_E4",
+      "match": true,
+      "page": 14,
+      "line_range": [
+        1176,
+        1178
+      ],
+      "words": 28
+    },
+    {
+      "id": "C04",
+      "evidence_id": "C04_E1",
+      "match": true,
+      "page": 8,
+      "line_range": [
+        670,
+        672
+      ],
+      "words": 20
+    },
+    {
+      "id": "C04",
+      "evidence_id": "C04_E2",
+      "match": true,
+      "page": 9,
+      "line_range": [
+        799,
+        803
+      ],
+      "words": 33
+    },
+    {
+      "id": "C04",
+      "evidence_id": "C04_E3",
+      "match": true,
+      "page": 13,
+      "line_range": [
+        1173,
+        1176
+      ],
+      "words": 19
+    },
+    {
+      "id": "C04",
+      "evidence_id": "C04_E4",
+      "match": true,
+      "page": 20,
+      "line_range": [
+        1736,
+        1741
+      ],
+      "words": 25
+    },
+    {
+      "id": "C11",
+      "evidence_id": "C11_E1",
+      "match": true,
+      "page": 1,
+      "line_range": [
+        16,
+        20
+      ],
+      "words": 36
+    },
+    {
+      "id": "C11",
+      "evidence_id": "C11_E2",
+      "match": true,
+      "page": 4,
+      "line_range": [
+        373,
+        376
+      ],
+      "words": 32
+    },
+    {
+      "id": "C11",
+      "evidence_id": "C11_E3",
+      "match": true,
+      "page": 8,
+      "line_range": [
+        911,
+        913
+      ],
+      "words": 26
+    },
+    {
+      "id": "C11",
+      "evidence_id": "C11_E4",
+      "match": true,
+      "page": 7,
+      "line_range": [
+        764,
+        768
+      ],
+      "words": 18
+    },
+    {
+      "id": "C16",
+      "evidence_id": "C16_E1",
+      "match": true,
+      "page": 1,
+      "line_range": [
+        21,
+        26
+      ],
+      "words": 35
+    },
+    {
+      "id": "C16",
+      "evidence_id": "C16_E2",
+      "match": true,
+      "page": 4,
+      "line_range": [
+        316,
+        319
+      ],
+      "words": 32
+    },
+    {
+      "id": "C16",
+      "evidence_id": "C16_E3",
+      "match": true,
+      "page": 4,
+      "line_range": [
+        346,
+        349
+      ],
+      "words": 24
+    },
+    {
+      "id": "C16",
+      "evidence_id": "C16_E4",
+      "match": true,
+      "page": 11,
+      "line_range": [
+        1171,
+        1173
+      ],
+      "words": 23
+    }
+  ],
+  "semantic_review": "PENDING_CODEX_SOURCE_REVIEW"
+}

@@ -1,0 +1,74 @@
+{
+  "task": "scope_01_locators",
+  "parent_task_id": "01a21559-eec5-7109-9445-388ddba4e2e1",
+  "sources": [
+    {
+      "id": "C06",
+      "title": "Joint Model Partitioning and Bandwidth Allocation for UAV-Assisted Space–Air–Ground–Sea Integrated Network: A Hybrid A3C-PPO Approach",
+      "authors": [
+        "Yuanmo Lin",
+        "Yuanyuan Han",
+        "Minmin Wu",
+        "Shaoyu Lin",
+        "Xia Zhang",
+        "Zhiyong Xu"
+      ],
+      "year": 2026,
+      "venue": "Entropy",
+      "doi": "10.3390/e28030337"
+    },
+    {
+      "id": "SNCS",
+      "title": "Learning-Based UAV Swarm Video Analytics Orchestration in Disaster Response Management",
+      "authors": [
+        "Tiying Gao",
+        "Dwight Goins",
+        "Chaise Ballotti",
+        "Jiaqing Liu",
+        "Chengyi Qu"
+      ],
+      "year": 2025,
+      "venue": "SN Computer Science",
+      "doi": "10.1007/s42979-025-04063-5"
+    }
+  ],
+  "replacements": [
+    {
+      "report_id": "C06",
+      "evidence_id": "C06_E4",
+      "file": "screening_46/text/C06.txt",
+      "page": 20,
+      "line_range": [
+        1039,
+        1041
+      ],
+      "quote": "The experimental environment is configured identically to that of the A3C-PPO framework. Four intelligent terminals are connected to the UAV ."
+    },
+    {
+      "report_id": "SNCS",
+      "evidence_id": "SNCS_E2",
+      "file": "screening_46/text/SNCS.txt",
+      "page": 17,
+      "line_range": [
+        1354,
+        1358
+      ],
+      "quote": "we utilized data collected from a hierarchical UAV configuration, as described in Sect. 3. This configuration operates within a UAV-Edge-Server network and considers various factors such as different mobility models and fleet sizes."
+    },
+    {
+      "report_id": "SNCS",
+      "evidence_id": "SNCS_E3",
+      "file": "screening_46/text/SNCS.txt",
+      "page": 17,
+      "line_range": [
+        1398,
+        1402
+      ],
+      "quote": "This effort resulted in the creation of 320 distinct video clips. These videos were then processed on a Nvidia Jetson Xavier NX using the YoloV8 model [48] to conduct real-time object detection, providing key confidence data and processing speed."
+    }
+  ],
+  "unresolved": [],
+  "shortfall": [],
+  "project_files_changed": 0,
+  "final_prose_written": false
+}

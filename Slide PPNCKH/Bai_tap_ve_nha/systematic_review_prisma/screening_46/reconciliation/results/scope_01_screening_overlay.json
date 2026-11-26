@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "task_id": "reconciliation-scope-01-locators",
+  "started_at": "2026-11-26T08:03:06+07:00",
+  "updated_at": "2026-11-26T08:07:36+07:00",
+  "completed_at": "2026-11-26T08:07:36+07:00",
+  "status": "accepted_working",
+  "human_adjudication": "PENDING",
+  "unit": "reports",
+  "base_ledger": "screening_46/consolidated/decision_ledger.json",
+  "prior_overlay": "screening_46/reconciliation/results/identity_dates_01_screening_overlay.json",
+  "source": "screening_46/reconciliation/results/scope_01_accepted.json",
+  "review": "screening_46/reconciliation/reviews/scope_01_locators_review.md",
+  "records": [
+    {
+      "report_id": "C06",
+      "prior_decision": "UNCERTAIN",
+      "working_decision": "UNCERTAIN"
+    },
+    {
+      "report_id": "SNCS",
+      "prior_decision": "UNCERTAIN",
+      "working_decision": "UNCERTAIN"
+    },
+    {
+      "report_id": "C04",
+      "prior_decision": "INCLUDE",
+      "working_decision": "INCLUDE"
+    },
+    {
+      "report_id": "C11",
+      "prior_decision": "INCLUDE",
+      "working_decision": "INCLUDE"
+    },
+    {
+      "report_id": "C16",
+      "prior_decision": "INCLUDE",
+      "working_decision": "INCLUDE"
+    }
+  ],
+  "decision_changes": 0,
+  "working_counts": {
+    "INCLUDE": 36,
+    "EXCLUDE": 2,
+    "UNCERTAIN": 8
+  },
+  "final_study_count": null
+}
