@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T15:38:29+07:00",
+  "updated_at": "2026-11-26T15:48:10+07:00",
   "goal": {
     "version": "HK261-PRISMA-completion-spec-v2",
-    "status": "search_dataset_lock_research_ready",
-    "summary": "Gemini brief prepared to audit a proposed freeze of 284 importable rows from IEEE, Scopus and OpenAlex while ACM remains counts-only, WoS Core unavailable and RHN unexecuted."
+    "status": "search_dataset_lock_app_transport_blocked",
+    "summary": "User requires native Gemini.app Task. First app attempt failed before send due to false generation detection; no dataset lock adopted."
   },
   "task": {
-    "task_id": "prepare-search-dataset-lock-gemini-brief",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T15:37:16+07:00",
-    "completed_at": "2026-11-26T15:38:29+07:00",
-    "updated_at": "2026-11-26T15:38:29+07:00",
-    "decision_id": "prepare-search-dataset-lock-gemini-brief-v1"
+    "task_id": "research-search-dataset-lock-app-attempt-01",
+    "owner": "GEMINI_RESEARCH",
+    "status": "rejected",
+    "started_at": "2026-11-26T15:46:01+07:00",
+    "completed_at": "2026-11-26T15:48:10+07:00",
+    "updated_at": "2026-11-26T15:48:10+07:00",
+    "decision_id": "research-search-dataset-lock-app-attempt-01-v1"
   },
   "next_task": {
-    "task_id": "research-search-dataset-lock",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "fix-gemini-app-generation-detection",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Dispatch the committed structured brief through Gemini Research App, then quarantine the response until Codex completes the ten-criterion QA gate.",
-    "acceptance": "Gemini returns exactly 10 query rows, 6 source dispositions, fixed arithmetic and official-source locators; Codex records PASS/FAIL for all ten criteria before adopting any recommendation."
+    "action": "Fix the native app bridge false-positive stop detection in its own repository, verify without bypassing safeguards, then resume the committed search lock brief through Gemini.app Task.",
+    "acceptance": "Suggestion labels do not count as active generation; genuine stop controls still block; bridge tests pass before linked retry."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -58,7 +58,16 @@
     "manuscript_pages": 22,
     "cited_references": 53,
     "release_audit": "release_46report/integrity_audit.json",
-    "release_review": "release_46report/acceptance_review.md"
+    "release_review": "release_46report/acceptance_review.md",
+    "research_route_override": {
+      "backend": "Gemini.app Accessibility",
+      "mode": "task",
+      "recorded_at": "2026-11-26T15:48:10+07:00",
+      "superseded_task_id": "01a21703-7809-7cb5-9880-0d502f49ccb9",
+      "app_task_id": "b2616477-c4c6-4113-81d5-d5aa786af714",
+      "app_context_id": "294c1815-1d7a-424d-9238-bc66f19fb839",
+      "review": "corpus_expansion/reviews/search_dataset_lock_app_attempt_01_review.md"
+    }
   },
   "evidence": {
     "retrieval_reports": 46,
@@ -90,7 +99,10 @@
       "raw_evidence_checksums": "sources/raw/core_searches/checksums.sha256",
       "openalex_compensatory": {
         "runs_exports": "2/2",
-        "totals": [85, 26],
+        "totals": [
+          85,
+          26
+        ],
         "union_ids": 102,
         "review": "corpus_expansion/reviews/openalex_compensatory_search_review.md"
       },

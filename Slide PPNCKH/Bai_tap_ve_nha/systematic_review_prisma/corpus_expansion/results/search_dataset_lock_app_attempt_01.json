@@ -1,0 +1,41 @@
+{
+  "id": "b2616477-c4c6-4113-81d5-d5aa786af714",
+  "contextId": "294c1815-1d7a-424d-9238-bc66f19fb839",
+  "status": {
+    "state": "TASK_STATE_FAILED",
+    "timestamp": "2026-11-26T08:46:11.301+00:00",
+    "message": {
+      "messageId": "2accbdc4-87eb-41d3-a03e-63c7ebcbed61",
+      "role": "ROLE_AGENT",
+      "parts": [
+        {
+          "text": "Accessibility send failed: /Users/joker/Projects/gemini-app-a2a-bridge/bridge/accessibility.js: execution error: Error: Error: New conversation no longer empty; no prompt sent (-2700)"
+        }
+      ],
+      "taskId": "b2616477-c4c6-4113-81d5-d5aa786af714",
+      "contextId": "294c1815-1d7a-424d-9238-bc66f19fb839"
+    }
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T08:46:01.987+00:00",
+    "updated_at": "2026-11-26T08:46:11.301+00:00",
+    "started_at": "2026-11-26T08:46:01.993+00:00",
+    "completed_at": "2026-11-26T08:46:11.301+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Users/joker/Projects/gemini-task-hk261-search-lock-context",
+      "files": {
+        "TASK_BRIEF.md": {
+          "sha256": "ff7b112adc7f4355d30c0eddb67d5ced29a969db469e2095659314ab1bf04a33",
+          "bytes": 9329
+        }
+      },
+      "folder": "/Users/joker/Projects/gemini-app-a2a-bridge/.runtime/tasks/b2616477-c4c6-4113-81d5-d5aa786af714/context-b2616477-c4c6-4113-81d5-d5aa786af714"
+    }
+  },
+  "codex_acceptance": "REJECTED_NO_RESEARCH_OUTPUT",
+  "codex_reviewed_at": "2026-11-26T15:48:10+07:00"
+}

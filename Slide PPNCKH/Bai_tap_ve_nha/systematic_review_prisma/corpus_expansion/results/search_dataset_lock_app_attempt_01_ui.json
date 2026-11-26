@@ -1,0 +1,38 @@
+{
+  "observed_at": "2026-11-26T15:48:10+07:00",
+  "snapshot": {
+    "buttonDescriptions": [
+      "Attach",
+      "Remove",
+      "context-b2616477-c4c6-4113-81d5-d5aa786af714",
+      "Share screen",
+      "Hydrogen, Choose model",
+      "Use microphone (⌘D)",
+      "Chat",
+      "Task",
+      "Remind me of birthdays a week ahead",
+      "Stop overpaying on bills",
+      "Rename and sort desktop screenshots"
+    ],
+    "buttonLabels": [
+      "Add files and tools (⌘U)",
+      "Remove this selection",
+      "context-b2616477-c4c6-4113-81d5-d5aa786af714",
+      "",
+      "Next model (⇧⌘]), Next model (⇧⌘])",
+      "Use microphone (⌘D)",
+      "Switch to chat (⌘.)",
+      "Switch to chat (⌘.)",
+      "Remind me of birthdays a week ahead",
+      "Stop overpaying on bills",
+      "Rename and sort desktop screenshots"
+    ],
+    "draft": "",
+    "generating": true,
+    "hasSelection": true,
+    "mode": "task",
+    "rows": [],
+    "selectionCount": 1,
+    "title": "Gemini — New chat"
+  }
+}
