@@ -1,27 +1,26 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T10:34:25+07:00",
+  "updated_at": "2026-11-26T10:37:31+07:00",
   "goal": {
     "version": "HK261-PRISMA-SNCS-v2",
     "status": "active",
     "summary": "Complete the evidence-bounded PRISMA 2020 review, Springer Nature LaTeX manuscript, integrity checks and submission package; submission and course email remain user-authorized actions."
   },
   "task": {
-    "task_id": "reconciliation-dates-02-evidence-correction",
-    "owner": "GEMINI_RESEARCH",
-    "status": "completed",
-    "started_at": "2026-11-26T10:29:27+07:00",
-    "updated_at": "2026-11-26T10:34:25+07:00",
-    "completed_at": "2026-11-26T10:34:25+07:00",
-    "decision_id": "reconciliation-dates-02-evidence-correction-v1"
-  },
-  "next_task": {
     "task_id": "reconciliation-study-family-brief",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-26T10:37:31+07:00",
+    "updated_at": "2026-11-26T10:37:31+07:00",
+    "completed_at": "2026-11-26T10:37:31+07:00",
+    "decision_id": "reconciliation-study-family-brief-v1"
+  },
+  "next_task": {
+    "task_id": "reconciliation-family-01",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Prepare bounded report-version and study-family reconciliation from accepted local full texts/identity evidence; preserve6 unresolved publication dates and2 unresolved scope gates. Do not repeat the unavailable direct date route.",
-    "acceptance": "All46 report IDs accounted for;version/family links sourced;unknown equivalence explicit;no final PRISMA counts before reconciliation.",
-    "date_audit": "screening_46/reconciliation/results/dates_02_evidence_correction_accepted_access_audit.json"
+    "action": "Route committed family_01.md once; check46 identities,version locators and1035-pair candidate screen; preserve unresolved links and no final study count.",
+    "acceptance": "F1-F5 allPASS or corrective follow-up;46 records retained;positive links require local evidence;no manuscript adoption."
   },
   "project": {
     "target_venue": "SN Computer Science",
