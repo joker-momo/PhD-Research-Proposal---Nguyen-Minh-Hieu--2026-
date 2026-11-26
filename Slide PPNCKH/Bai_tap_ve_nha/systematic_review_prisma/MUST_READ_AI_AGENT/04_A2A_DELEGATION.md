@@ -94,6 +94,49 @@ Both primary and fallback receive the same validated brief. A read-only worker
 must not be told to download or save project files; it returns lawful URLs and
 evidence for Codex to handle.
 
+### No fabrication and independently checkable evidence
+
+Copy this clause into `BOUNDARIES` in every Gemini brief, including corrections:
+
+> Do not invent or guess sources, identifiers, file contents, quotes, locators,
+> search results, access attempts, decisions or numbers. Report only what you
+> observed in a source you actually opened. If the source was inaccessible,
+> missing, ambiguous or contradictory, declare the gap and give its specific
+> reason. Keep any candidate URL or title separate as an unverified lead.
+> Never present an abstract or search snippet as full-text evidence.
+
+In `REQUIRED OUTPUT`, require one traceable evidence entry per asserted fact
+or decision: `record_id` (or task item ID), `claim_or_decision`, `source`
+(URL or supplied file path), `locator` (page and section, table/figure,
+or precise field/row/paragraph), and a short verbatim excerpt in the source
+language or the exact source field/value. For PDF pages, specify whether the
+locator uses the PDF page index (starting at 1) or printed pagination. For
+numbers, include original units, denominator where applicable and conditions.
+For unresolved items, require an explicit status, reason and any source actually
+checked. Use `NOT_REPORTED` only after checking the relevant part of an
+accessible source. Use `NOT_ACCESSIBLE` or `UNVERIFIED` when that check
+was impossible. Retain task-specific labels for decisions and access outcomes.
+
+Add these minimum `ACCEPTANCE CRITERIA`:
+
+- Every expected ID is accounted for exactly once or has a documented
+  shortfall. Unexpected or duplicate IDs equal zero.
+- Codex independently opens the actual source and checks identity, locator,
+  excerpt and whether it supports the precise claim or decision for **100% of
+  assertions proposed for adoption**. For full-text screening, verify each
+  disposition against the protocol and relevant source passages. If a decision
+  relies on absence, check the relevant sections and record which were checked.
+- Unsupported or contradicted assertions, mismatched locators or quotes,
+  and unverifiable assertions represented as verified each equal zero.
+  Explicitly unresolved items remain outside the accepted evidence.
+
+Reuse existing tools for ID, DOI, exact quote matching and count checks where
+they apply. A resolving link, matching text or a provider self-check alone
+does not establish the meaning of the evidence. In the batch review, record
+counts checked/passed, the locators checked and the failed or unresolved IDs.
+Keep failing output raw and quarantined. Send a linked correction for the
+failed IDs and recheck before adoption.
+
 ## Review gate
 
 After each result, Codex writes a criterion-by-criterion table containing

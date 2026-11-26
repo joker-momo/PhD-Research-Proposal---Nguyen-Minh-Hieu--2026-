@@ -58,10 +58,12 @@ state `updated_at`.
 Codex owns writing/editing, project files, acceptance, Git and final text.
 Gemini through the approved Gemini.app bridge or legacy router owns read-only
 research, discovery, extraction, verification, classification and structured
-synthesis. Each brief
-must contain TASK, REQUIRED WORK, REQUIRED OUTPUT, ACCEPTANCE CRITERIA and
-BOUNDARIES with numeric/binary checks. Codex must issue a criterion-by-criterion
-PASS/FAIL review; use research only when every mandatory criterion passes.
+synthesis. Each brief must contain TASK, REQUIRED WORK, REQUIRED OUTPUT,
+ACCEPTANCE CRITERIA and BOUNDARIES with numeric/binary checks. Codex must issue
+a criterion-by-criterion PASS/FAIL review; use research only when every
+mandatory criterion passes.
+Use the mandatory no-fabrication clause and independent source verification
+in HK261's `MUST_READ_AI_AGENT/04_A2A_DELEGATION.md`.
 For Gemini.app, commit the brief before dispatch and authorize only the next
 batch in canonical state. See the workflow and delegation rules for the exact
 checkpoint fields.
