@@ -3,8 +3,8 @@
 **Version:** 1.3
 **Adopted:** 2026-11-26 after S-01 validation and direct IEEE/ACM interface verification
 **Protocol alignment:** Amendments 001–005
-**Execution status:** `UNEXECUTED` on all four core platforms
-**Reported counts:** `COUNT_NOT_OBTAINED`
+**Execution status:** 6/8 query variants executed on three core platforms; Web of Science Core Collection remains unavailable
+**Reported counts:** IEEE Xplore 42/21 after required content-type filtering; ACM Digital Library 79/325 broad Full-Text results; Scopus 77/33; Web of Science `COUNT_NOT_OBTAINED`
 
 Every query requires at least one swarm-specific expression and an inference expression. Standalone `UAV` or `drone` is not sufficient. The complementary query adds DNN and partitioning/orchestration concepts. Eligibility is limited to English-language journal articles and full conference/proceedings papers published from 2021 through the final search date; the current execution window is 2021–2026.
 
@@ -113,7 +113,7 @@ Apply interface refinements: document types `Article` and `Proceedings Paper`; l
 
 ## Execution rule
 
-Version 1.3 is prospective and has not been executed. For each eventual run, record the exact pasted query, platform, collection, filters, local search date and time, reported result count, exported count, export format, raw file name, and any cap or failure. A missing facet triggers broader export plus downstream screening, not an inferred count. Do not replace an executed query silently; any change after the first formal run requires a dated protocol amendment and a rerun on every affected platform.
+Version 1.3 has been executed for IEEE Xplore, ACM Digital Library, and Scopus. IEEE Xplore and Scopus produced four importable CSV exports; ACM returned two visible totals but Basic Edition did not provide record-level export; Web of Science personal sign-in exposed only Free View and did not permit either Core Collection query. The append-only ledger and raw records retain exact queries, filters, timestamps, totals, export formats, checksums, and blockers. A missing facet triggers broader export plus downstream screening, not an inferred count. Do not replace an executed query silently; any change after the first formal run requires a dated protocol amendment and a rerun on every affected platform.
 
 The seed matrix in `seed_query_coverage_matrix.csv` contains expected query sensitivity only. It is not evidence that any database search has been executed or that a seed record is indexed by a platform on the final search date.
 

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "run_id": "ACM-ACCESS-RECHECK-20261126",
+  "platform": "ACM Digital Library",
+  "collection": "The ACM Full-Text collection",
+  "query_set_version": "1.3",
+  "recorded_at": "2026-11-26T14:17:08+07:00",
+  "timestamp_note": "Recorded immediately after the live access check; an exact UI observation timestamp was not separately retained.",
+  "source_url": "https://dl.acm.org/search/advanced",
+  "access_context": "Basic Edition",
+  "status": "search_counts_retained_export_still_premium",
+  "prior_reported_totals": {
+    "high_recall": 79,
+    "complementary": 325
+  },
+  "record_level_exports_obtained": 0,
+  "observations": [
+    "The live header displayed Basic Edition and an Upgrade link.",
+    "The advanced-search page labeled Advanced Search as a Premium feature.",
+    "No authenticated institutional export entitlement was visible; the earlier exact-run totals remain valid observations but are not record-level exports."
+  ],
+  "unsupported_quantitative_claims": 0
+}

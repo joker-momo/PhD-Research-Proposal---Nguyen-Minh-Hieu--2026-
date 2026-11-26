@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "run_id": "IEEE-S02-COMP-AUTH-20261126",
+  "platform": "IEEE Xplore",
+  "collection": "IEEE Xplore",
+  "query_variant": "complementary",
+  "query_set_version": "1.3",
+  "search_observed_at": "2026-11-26T14:15:41+07:00",
+  "timestamp_basis": "Local filesystem modification time of the completed export.",
+  "source_url": "https://ieeexplore.ieee.org/search/advanced/command",
+  "access_context": "Access provided by Viet Nam National University Ho Chi Minh City",
+  "exact_query": "(\"All Metadata\":\"UAV swarm\" OR \"All Metadata\":\"drone swarm\" OR \"All Metadata\":\"multi-UAV\" OR \"All Metadata\":\"multiple UAVs\" OR \"All Metadata\":\"aerial network\" OR \"All Metadata\":FANET) AND ((\"All Metadata\":\"deep neural network\" OR \"All Metadata\":DNN OR \"All Metadata\":\"deep learning\") AND \"All Metadata\":inference) AND (\"All Metadata\":partition* OR \"All Metadata\":offload* OR \"All Metadata\":placement OR \"All Metadata\":schedul* OR \"All Metadata\":assign* OR \"All Metadata\":\"resource allocation\")",
+  "active_filters": {
+    "publication_year": "2021-2026",
+    "content_type": [
+      "Conferences",
+      "Journals"
+    ],
+    "language": "facet_not_available_screen_downstream"
+  },
+  "reported_total": 21,
+  "facet_totals": {
+    "Conferences": 12,
+    "Journals": 9
+  },
+  "exported_total": 21,
+  "export_format": "CSV",
+  "raw_export": "ieee_xplore_complementary_export_2026-11-26.csv",
+  "raw_export_sha256": "913d2c1ada71f4a865ee2a6ecc78a048d94552204ebd0ff63c539a9a515237f8",
+  "parse_validation": {
+    "data_rows": 21,
+    "year_range_observed": "2022-2026",
+    "document_identifiers": [
+      "IEEE Conferences",
+      "IEEE Journals"
+    ],
+    "duplicate_titles": 0,
+    "duplicate_nonempty_dois": 0
+  },
+  "export_status": "complete",
+  "limitations": [
+    "IEEE Xplore exposed no language facet in the observed results interface; English-language eligibility must be enforced during screening.",
+    "No 2021 record occurred in the export even though the active range was 2021-2026.",
+    "This run supersedes the earlier 26-result checkpoint count, which included four Early Access Articles and one Magazine excluded by the required content-type filters."
+  ],
+  "unsupported_quantitative_claims": 0
+}

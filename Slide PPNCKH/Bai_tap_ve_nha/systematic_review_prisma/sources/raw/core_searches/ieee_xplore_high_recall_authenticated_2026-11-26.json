@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "run_id": "IEEE-S02-HR-AUTH-20261126",
+  "platform": "IEEE Xplore",
+  "collection": "IEEE Xplore",
+  "query_variant": "high_recall",
+  "query_set_version": "1.3",
+  "search_observed_at": "2026-11-26T14:13:05+07:00",
+  "timestamp_basis": "Local filesystem modification time of the completed export.",
+  "source_url": "https://ieeexplore.ieee.org/search/advanced/command",
+  "access_context": "Access provided by Viet Nam National University Ho Chi Minh City",
+  "exact_query": "(\"All Metadata\":\"UAV swarm\" OR \"All Metadata\":\"drone swarm\" OR \"All Metadata\":\"multi-UAV\" OR \"All Metadata\":\"multiple UAVs\" OR \"All Metadata\":\"aerial network\" OR \"All Metadata\":FANET) AND (\"All Metadata\":\"distributed inference\" OR \"All Metadata\":\"collaborative inference\" OR \"All Metadata\":\"cooperative inference\" OR \"All Metadata\":\"split inference\" OR \"All Metadata\":\"split computing\" OR \"All Metadata\":\"edge intelligence\")",
+  "active_filters": {
+    "publication_year": "2021-2026",
+    "content_type": [
+      "Conferences",
+      "Journals"
+    ],
+    "language": "facet_not_available_screen_downstream"
+  },
+  "reported_total": 42,
+  "facet_totals": {
+    "Conferences": 26,
+    "Journals": 16
+  },
+  "exported_total": 42,
+  "export_format": "CSV",
+  "raw_export": "ieee_xplore_high_recall_export_2026-11-26.csv",
+  "raw_export_sha256": "b7144436386f015eec92fa3dc2f568c1b7c0e3794d438564e16ad81287ff067f",
+  "parse_validation": {
+    "data_rows": 42,
+    "year_range": "2021-2026",
+    "document_identifiers": [
+      "IEEE Conferences",
+      "IEEE Journals"
+    ],
+    "duplicate_titles": 0,
+    "duplicate_nonempty_dois": 0
+  },
+  "export_status": "complete",
+  "limitations": [
+    "IEEE Xplore exposed no language facet in the observed results interface; English-language eligibility must be enforced during screening.",
+    "This run supersedes the earlier 47-result checkpoint count, which had not applied the required Journals and Conferences filters."
+  ],
+  "unsupported_quantitative_claims": 0
+}

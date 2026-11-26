@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "run_id": "SCOPUS-S04-COMP-AUTH-20261126",
+  "platform": "Scopus",
+  "collection": "Scopus",
+  "query_variant": "complementary",
+  "query_set_version": "1.3",
+  "search_observed_at": "2026-11-26T14:09:24+07:00",
+  "timestamp_basis": "Local filesystem modification time of the completed export.",
+  "source_url": "https://www.scopus.com/search/form.uri?display=advanced",
+  "exact_query": "TITLE-ABS-KEY((\"UAV swarm\" OR \"drone swarm\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR FANET) AND ((\"deep neural network\" OR DNN OR \"deep learning\") AND inference) AND (partition* OR offload* OR placement OR schedul* OR assign* OR \"resource allocation\")) AND PUBYEAR AFT 2020 AND PUBYEAR BEF 2027 AND (DOCTYPE(ar) OR DOCTYPE(cp)) AND LANGUAGE(english)",
+  "active_filters": {
+    "publication_year": "2021-2026",
+    "document_type": [
+      "Article",
+      "Conference paper"
+    ],
+    "language": "English"
+  },
+  "reported_total": 33,
+  "facet_totals": {
+    "Article": 18,
+    "Conference paper": 15,
+    "English": 33
+  },
+  "exported_total": 33,
+  "export_format": "CSV",
+  "raw_export": "scopus_complementary_export_2026-11-26.csv",
+  "raw_export_sha256": "1858cedf423e71cac13429eebaab5aae031e9e6f41e19179c0667662eb57ceca",
+  "parse_validation": {
+    "data_rows": 33,
+    "year_range_observed": "2022-2026",
+    "document_types": [
+      "Article",
+      "Conference paper"
+    ],
+    "languages": [
+      "English"
+    ],
+    "duplicate_titles": 0,
+    "duplicate_nonempty_dois": 0
+  },
+  "export_status": "complete",
+  "limitations": [
+    "No 2021 record occurred in the export even though the embedded query range was 2021-2026."
+  ],
+  "unsupported_quantitative_claims": 0
+}

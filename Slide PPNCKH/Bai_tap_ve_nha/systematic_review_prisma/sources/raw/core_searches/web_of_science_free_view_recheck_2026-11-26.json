@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "run_id": "WOS-ACCESS-RECHECK-20261126",
+  "platform": "Web of Science",
+  "intended_collection": "Web of Science Core Collection",
+  "query_set_version": "1.3",
+  "recorded_at": "2026-11-26T14:17:08+07:00",
+  "timestamp_note": "Recorded immediately after the live access check; an exact UI observation timestamp was not separately retained.",
+  "source_url": "https://www.webofscience.com/wos/woscc/advanced-search",
+  "access_context": "Clarivate personal account authenticated; interface labeled Web of Science Free View",
+  "query_variants_attempted": [],
+  "reported_totals": {
+    "high_recall": null,
+    "complementary": null
+  },
+  "exported_totals": {
+    "high_recall": 0,
+    "complementary": 0
+  },
+  "status": "blocked_core_collection_unavailable",
+  "observations": [
+    "The Documents search control was disabled in Free View.",
+    "Opening the Core Collection advanced-search URL did not provide an executable Core Collection search interface.",
+    "No query was pasted, no result count was observed, and no count is inferred."
+  ],
+  "unsupported_quantitative_claims": 0
+}
