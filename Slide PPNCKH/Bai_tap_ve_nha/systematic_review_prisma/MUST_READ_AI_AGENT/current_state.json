@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:53:44+07:00",
+  "updated_at": "2026-11-26T18:55:53+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
@@ -11,19 +11,23 @@
     "owner": "GEMINI_RESEARCH + CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-26T18:50:01+07:00",
-    "updated_at": "2026-11-26T18:53:44+07:00",
+    "updated_at": "2026-11-26T18:55:53+07:00",
     "decision_id": "restart-07-direct-screening-batch01-v1",
     "provider_task_id": "c22d8c48-f9ff-48a1-9489-47135b78d4e6",
     "provider_context_id": "55b86c49-5420-426b-a89a-552e445c05a2",
     "correction_task_id": "0ef18a72-08c1-4981-98b3-9548ed2d127e",
-    "correction_context_id": "eaa8678b-e8ce-4fd7-9f95-a09aecfc32b3"
+    "correction_context_id": "eaa8678b-e8ce-4fd7-9f95-a09aecfc32b3",
+    "screened_records": 30,
+    "screening_total": 465,
+    "last_accepted_id": "R0030",
+    "batch01_completed_at": "2026-11-26T18:55:53+07:00"
   },
   "next_task": {
-    "task_id": "restart-07-batch01-correction",
+    "task_id": "restart-07-batch02",
     "owner": "GEMINI_RESEARCH",
-    "status": "active",
-    "action": "Collect already-submitted native correction and validate all 12 targeted fixes, then recheck all 30.",
-    "acceptance": "S1–S5 mandatory; 30 records."
+    "status": "ready",
+    "action": "Continue title/abstract screening from R0031 through the remaining queue via direct Gemini.app Task, with the E-code worked example.",
+    "acceptance": "Full batch ID coverage, correct record evidence and no NONE codes."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -97,7 +101,14 @@
       "metadata_issue_log": "restart_2026_11_26/metadata_issue_log.json",
       "removed_duplicate_rows": 228,
       "metadata_year_conflicts": 12,
-      "dedup_map": "restart_2026_11_26/dedup_map.csv"
+      "dedup_map": "restart_2026_11_26/dedup_map.csv",
+      "title_abstract_screening": {
+        "accepted_records": 30,
+        "pending": 435,
+        "retrieve_full_text": 11,
+        "unclear": 5,
+        "exclude": 14
+      }
     }
   },
   "blockers": [],
