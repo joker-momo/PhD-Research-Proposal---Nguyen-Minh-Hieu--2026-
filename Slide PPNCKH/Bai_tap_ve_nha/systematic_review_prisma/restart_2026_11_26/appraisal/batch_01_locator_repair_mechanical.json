@@ -1,0 +1,58 @@
+{
+  "task_id": "8a5f0cb9-1977-4914-a564-e3e8e449bbe8",
+  "transport": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T18:01:42.213+00:00"
+  },
+  "result_chars": 3647,
+  "completion_marker": true,
+  "parsed_rows": 7,
+  "malformed": [],
+  "unknown": [],
+  "expected": 6,
+  "returned": 6,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [],
+  "unexpected_access": [],
+  "summary": [
+    {
+      "returned_keys": [
+        "R0001/D02",
+        "R0002/D03",
+        "R0002/D09",
+        "R0003/D07",
+        "R0006/D08",
+        "R0009/D05"
+      ],
+      "unresolved": [],
+      "workers_used": false,
+      "tools": [
+        "client:view_file",
+        "client:list_dir",
+        "client:grep_search"
+      ]
+    }
+  ],
+  "locators": 16,
+  "exact_quote_locators": 8,
+  "needs_visual_cell": [],
+  "bad_domains": {
+    "R0002/D03": [
+      "quote mismatch p7: a ResNet-18 model trained on the CIFAR-10 dataset is adopted for image classification."
+    ],
+    "R0002/D09": [
+      "quote mismatch p7: a ResNet-18 model trained on the CIFAR-10 dataset is adopted for image classification."
+    ],
+    "R0003/D07": [
+      "quote mismatch p2: has the information of all the UAVs' trajectories, channel conditions, and inference task distributions."
+    ],
+    "R0006/D08": [
+      "quote mismatch p6: critical area coverage substantially increased from 47.0% to 87.0%. This confirms AirInfer's effectiveness in achieving complete monitoring coverage."
+    ],
+    "R0009/D05": [
+      "quote mismatch p4: We aim to minimize the system's weighted latency and energy consumption"
+    ]
+  }
+}

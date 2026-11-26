@@ -1,0 +1,45 @@
+{
+  "id": "8a5f0cb9-1977-4914-a564-e3e8e449bbe8",
+  "contextId": "688ff68a-6073-4e0a-8149-80b142b4b94b",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T18:01:42.213+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T17:57:32.436+00:00",
+    "updated_at": "2026-11-26T18:01:42.213+00:00",
+    "started_at": "2026-11-26T17:57:32.440+00:00",
+    "completed_at": "2026-11-26T18:01:42.213+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — P09 Batch 01 Key Resolution",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "272e4834-2c30-49ec-b744-7674715afcd2",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"report_id\":\"R0001\",\"domain\":\"D02\",\"judgment\":\"PARTIAL\",\"rationale\":\"Formulation defines partition, resource, and delay/energy constraints, but §II.E fixes ES selection to the closest ES despite §II.D's objective, and limit values are not specified.\",\"locators\":[{\"page\":2,\"section\":\"II.D\",\"quote\":\"Constraint (C3) declares the range of the partition points. (C4) illustrates the limited delay and energy consumption\"},{\"page\":2,\"section\":\"II.E\",\"quote\":\"select the ES closest to the UAV.\"},{\"page\":3,\"section\":\"III.A\",\"quote\":null}]}\n{\"report_id\":\"R0002\",\"domain\":\"D03\",\"judgment\":\"PARTIAL\",\"rationale\":\"Topology, workload, and platform parameters are reported in §VII.A and Fig. 2(b), but LST-GNN training details, window length Y, prediction thresholds, and simulator software are omitted.\",\"locators\":[{\"page\":5,\"section\":\"IV.B\",\"quote\":\"within a historical window of length Y.\"},{\"page\":7,\"section\":\"VII.A\",\"quote\":\"the real-world UAV platform and parameter configurations are shown in Fig. 2.\"},{\"page\":7,\"section\":\"VII.A\",\"quote\":\"a ResNet-18 model trained on the CIFAR-10 dataset is adopted for image classification.\"},{\"page\":7,\"section\":\"VII.A (Fig. 2(b))\",\"quote\":null}]}\n{\"report_id\":\"R0002\",\"domain\":\"D09\",\"judgment\":\"NOT_REPORTED\",\"rationale\":\"Inspected §VII.A, §VIII, and end matter for author code, simulation scripts, traces, or trained-model releases; only public CIFAR-10 use is mentioned, with no author-released artifacts reported.\",\"locators\":[{\"page\":7,\"section\":\"VII.A\",\"quote\":\"a ResNet-18 model trained on the CIFAR-10 dataset is adopted for image classification.\"},{\"page\":9,\"section\":\"VIII and end matter\",\"quote\":null}]}\n{\"report_id\":\"R0003\",\"domain\":\"D07\",\"judgment\":\"PARTIAL\",\"rationale\":\"Trace-driven simulation uses real-world UAV trajectory traces, but assumes centralized global knowledge of trajectories, channels, and tasks at U1 and lacks physical flight validation.\",\"locators\":[{\"page\":2,\"section\":\"III\",\"quote\":\"has the information of all the UAVs' trajectories, channel conditions, and inference task distributions.\"},{\"page\":5,\"section\":\"V.A\",\"quote\":\"the trajectories of the UAVs in our simulation are based on the real-world trajectory traces obtained from [21].\"}]}\n{\"report_id\":\"R0006\",\"domain\":\"D08\",\"judgment\":\"PARTIAL\",\"rationale\":\"Observed critical-area coverage plateaus at a partial level that meets the spatial constraint, so the same paragraph's claim of complete monitoring coverage overstates the reported coverage.\",\"locators\":[{\"page\":6,\"section\":\"V.B\",\"quote\":\"stabilizes at 87.0%, indicating that AirInfer effectively adheres to spatial constraints.\"},{\"page\":6,\"section\":\"V.B\",\"quote\":\"critical area coverage substantially increased from 47.0% to 87.0%. This confirms AirInfer's effectiveness in achieving complete monitoring coverage.\"}]}\n{\"report_id\":\"R0009\",\"domain\":\"D05\",\"judgment\":\"YES\",\"rationale\":\"Objective minimizes weighted system latency and energy consumption, and evaluation directly reports cumulative rewards alongside total energy consumption and average task latency across test conditions.\",\"locators\":[{\"page\":4,\"section\":\"III\",\"quote\":\"We aim to minimize the system's weighted latency and energy consumption\"},{\"page\":8,\"section\":\"V.B\",\"quote\":\"Fig. 4. The cumulative rewards versus time slots.\"},{\"page\":9,\"section\":\"V.B\",\"quote\":\"Fig. 5. The total energy consumption and average task latency versus coverage radius size of UAVs.\"}]}\n{\"returned_keys\":[\"R0001/D02\",\"R0002/D03\",\"R0002/D09\",\"R0003/D07\",\"R0006/D08\",\"R0009/D05\"],\"unresolved\":[],\"workers_used\":false,\"tools\":[\"client:view_file\",\"client:list_dir\",\"client:grep_search\"]}\nP09_B01_LOCATOR_REPAIR_COMPLETE"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1410 @@
+{
+  "gate": "PASS",
+  "batch": "01",
+  "p08_commit": "4b58140",
+  "reviewed_at": "2026-11-27T01:02:32+07:00",
+  "task_ids": [
+    "54788143-35ba-47eb-9df9-76b6f3609ef9",
+    "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+    "8a5f0cb9-1977-4914-a564-e3e8e449bbe8"
+  ],
+  "judgments": [
+    {
+      "report_id": "R0001",
+      "domain": "D01",
+      "judgment": "YES",
+      "rationale": "Defines the multi-UAV, edge-server, and cloud system model and states the joint model partitioning, ES selection, and resource allocation objective.",
+      "locators": [
+        {
+          "page": 1,
+          "section": "II",
+          "quote": "As shown in Fig. 1, we consider a scenario"
+        },
+        {
+          "page": 2,
+          "section": "II.D",
+          "quote": "The objective of this paper is to obtain model partition"
+        }
+      ],
+      "provider_uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "pdf_sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p1 §II and Fig. 1; p2 §II.D",
+        "independent_source_note": "Defines UAV, edge and cloud workflow and optimization of service cost."
+      }
+    },
+    {
+      "report_id": "R0001",
+      "domain": "D02",
+      "judgment": "PARTIAL",
+      "rationale": "Documents partitioning and resource constraints. The formulation frames edge selection as a decision, while the described orchestration uses the closest edge server.",
+      "locators": [
+        {
+          "page": 2,
+          "section": "II.D",
+          "quote": "Constraint (C3) declares the range of the partition points. (C4) illustrates the limited delay and energy consumption"
+        },
+        {
+          "page": 2,
+          "section": "II.E",
+          "quote": "select the ES closest to the UAV."
+        },
+        {
+          "page": 3,
+          "section": "III.A",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "8a5f0cb9-1977-4914-a564-e3e8e449bbe8",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "pdf_sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p1 §II.A; p2 §II.D Eq. 6",
+        "independent_source_note": "Specifies service partition points and edge selection, constrained edge allocations and latency and energy ceilings.",
+        "final_adjudication": "The source note records the independent reading. The retained judgment applies the provider's supported narrower scope or reporting shortfall, as given in the final rationale."
+      },
+      "review_edit": "Removed the unneeded parameter-sufficiency appraisal from this domain. Kept the explicit formulation/implementation distinction."
+    },
+    {
+      "report_id": "R0001",
+      "domain": "D03",
+      "judgment": "PARTIAL",
+      "rationale": "Reports node counts and public UAV and base-station datasets, but omits DNN architecture, compute/channel values, PPO hyperparameters, and random seeds.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III.A",
+          "quote": "This experiment considers 10 UAVs, 4 ESs and one cloud server."
+        },
+        {
+          "page": 3,
+          "section": "III.A",
+          "quote": "This paper adopts the public drone delivery dataset [3]."
+        },
+        {
+          "page": 3,
+          "section": "III.A",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "pdf_sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p2 §§II.D–E; p3 §III.A",
+        "independent_source_note": "Node counts and two input datasets are identifiable, but model architecture and PPO run configuration are not specified in the evaluation."
+      }
+    },
+    {
+      "report_id": "R0001",
+      "domain": "D04",
+      "judgment": "PARTIAL",
+      "rationale": "Names seven baselines and states DQN keeps other training methods unchanged, but omits hyperparameter disclosure and tuning parity details across methods.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III.A Simulation Setup",
+          "quote": "2.DQN: Using the DQN algorithm, while keeping other training methods unchanged."
+        },
+        {
+          "page": 3,
+          "section": "III.A Simulation Setup",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "pdf_sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p3 §III.A",
+        "independent_source_note": "Local, DQN, cloud and other ablations are defined; only the DQN substitution explicitly mentions unchanged training methods."
+      }
+    },
+    {
+      "report_id": "R0001",
+      "domain": "D05",
+      "judgment": "PARTIAL",
+      "rationale": "Evaluation reports negative weighted latency-energy reward aligned with P, but omits disaggregated latency, energy, and C4 constraint-violation metrics.",
+      "locators": [
+        {
+          "page": 2,
+          "section": "II.E PPO-Based Online Orchestration",
+          "quote": "The reward is"
+        },
+        {
+          "page": 3,
+          "section": "III.A Simulation Setup",
+          "quote": "the reward convergence of all algorithms, where CAPRIC outperforms all other baseline methods."
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "pdf_sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p2 §II.D Eq. 6; p3 §III.A Figs. 2–3",
+        "independent_source_note": "Reward and tradeoff sweep track the stated latency–energy objective under the model.",
+        "final_adjudication": "The source note records the independent reading. The retained judgment applies the provider's supported narrower scope or reporting shortfall, as given in the final rationale."
+      }
+    },
+    {
+      "report_id": "R0001",
+      "domain": "D06",
+      "judgment": "PARTIAL",
+      "rationale": "Shows reward convergence and sensitivity across α, but omits repetition counts and leaves Fig. 2 shaded-band uncertainty undefined.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III.A",
+          "quote": "Fig. 2: Reward convergence"
+        },
+        {
+          "page": 3,
+          "section": "III.A",
+          "quote": "Fig. 3: Rewards on α"
+        },
+        {
+          "page": 3,
+          "section": "III.A",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "pdf_sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p3 §III.A Figs. 2–3",
+        "independent_source_note": "Reports convergence and sensitivity to objective weighting. Figure 2 has shaded bands whose uncertainty meaning and repetition count are not defined in the results."
+      }
+    },
+    {
+      "report_id": "R0001",
+      "domain": "D07",
+      "judgment": "PARTIAL",
+      "rationale": "Uses delivery trajectories and real base-station locations with distance-based rates, but omits flight energy, return links, and channel details for dynamic claims.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III.A Simulation Setup",
+          "quote": "This paper adopts the public drone delivery dataset [3]. The edge servers utilize a real dataset of base station locations [4]."
+        },
+        {
+          "page": 2,
+          "section": "II.B Latency Model",
+          "quote": "Due to the result data is too small to calculate, in this paper, we ignore the return time."
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "pdf_sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p2 §§II.B–C; p3 §III.A",
+        "independent_source_note": "Delivery traces and edge site locations inform simulation; the link and energy models are not validated by flight measurements here."
+      }
+    },
+    {
+      "report_id": "R0001",
+      "domain": "D08",
+      "judgment": "PARTIAL",
+      "rationale": "Simulation Settings delimit the evaluated configuration. The closing statement generalizes the latency and energy balance to resource-constrained mobile edge scenarios.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III.A Simulation Setup",
+          "quote": "CAPRIC achieves the highest reward across all configurations"
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "pdf_sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p3 §III.A, final paragraph",
+        "independent_source_note": "Test scope is described, but the closing inference about resource-constrained mobile edge computing is broader than the single reported deployment setup."
+      },
+      "review_edit": "Removed the abstract locator and grounded the rationale in the same verified closing body paragraph."
+    },
+    {
+      "report_id": "R0001",
+      "domain": "D09",
+      "judgment": "NOT_REPORTED",
+      "rationale": "Cites third-party datasets [3] and [4], but pp. 1-3 including Simulation Setup, Acknowledgements, and References report no author code or artifact availability.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III.A Simulation Setup",
+          "quote": "This paper adopts the public drone delivery dataset [3]."
+        },
+        {
+          "page": 3,
+          "section": "IV. ACKNOWLEDGEMENTS and REFERENCES",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "pdf_sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+      "source_review": {
+        "reference_judgment": "NOT_REPORTED",
+        "pages_and_sections_checked": "p3 §III.A; References [3]–[4]",
+        "independent_source_note": "Identifies third-party delivery and edge location datasets as simulation inputs; finding them does not establish availability of the authors' code or exact derived inputs."
+      }
+    },
+    {
+      "report_id": "R0001",
+      "domain": "D10",
+      "judgment": "PARTIAL",
+      "rationale": "Funding grants are disclosed in Acknowledgements, but explicit author limitations and conflict-of-interest statements are absent across pp. 1-3.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "IV. ACKNOWLEDGEMENTS",
+          "quote": "National Natural Science Foundation of China (No. 62572484)"
+        },
+        {
+          "page": 2,
+          "section": "II.B Latency Model",
+          "quote": "Due to the result data is too small to calculate, in this paper, we ignore the return time."
+        },
+        {
+          "page": 3,
+          "section": "III.A-IV and front matter",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "pdf_sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p2 §II.B; p3 §III.A and §IV",
+        "independent_source_note": "Funding is acknowledged. The model and results show scope restrictions, but experiments contain no explicit limitations discussion and end matter has no conflict declaration."
+      }
+    },
+    {
+      "report_id": "R0002",
+      "domain": "D01",
+      "judgment": "YES",
+      "rationale": "Clearly specifies service-continuous multi-UAV migration goals, GCS-coordinated multi-swarm architecture, spatiotemporal graph, LST-GNN predictor, MINLP decoupling, and PDBH workflow.",
+      "locators": [
+        {
+          "page": 2,
+          "section": "II. SCHEMA OF PROMISE",
+          "quote": "The system allows both cross-swarm UAV migration and intra-swarm service migration."
+        },
+        {
+          "page": 6,
+          "section": "VI. PDBH-BASED SOLUTION",
+          "quote": "Algorithm 1 PDBH-based Solution"
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "pdf_sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p2 §II; pp3–4 §III; p5 §V.A",
+        "independent_source_note": "Defines continuous collaborative inference and migration across and within swarms, with an explicit cost objective."
+      }
+    },
+    {
+      "report_id": "R0002",
+      "domain": "D02",
+      "judgment": "YES",
+      "rationale": "Explicitly specifies time-slot, failure, and battery-swap assumptions, binary UAV and service migration variables, and battery, capacity, and deadline constraints.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III.B UAV Migration Model",
+          "quote": "the decision of UAV migration is defined as"
+        },
+        {
+          "page": 5,
+          "section": "V.A Problem Formulation",
+          "quote": "we decouple the original problem into a hierarchical decision-making process."
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "pdf_sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp3–4 §III.A–C; pp5–6 §V.A",
+        "independent_source_note": "Models migration states, communications and resource limits, and formulates constrained decisions."
+      }
+    },
+    {
+      "report_id": "R0002",
+      "domain": "D03",
+      "judgment": "PARTIAL",
+      "rationale": "Platform, simulated topology and workload are described. The predictor formulation specifies a window symbol but the experimental settings do not give its configured value.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "IV.B",
+          "quote": "within a historical window of length Y."
+        },
+        {
+          "page": 7,
+          "section": "VII.A",
+          "quote": "the real-world UAV platform and parameter configurations are shown in Fig. 2."
+        },
+        {
+          "page": 7,
+          "section": "VII.A",
+          "quote": "trained on the CIFAR-10 dataset is adopted for"
+        },
+        {
+          "page": 7,
+          "section": "VII.A (Fig. 2(b))",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "8a5f0cb9-1977-4914-a564-e3e8e449bbe8",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "pdf_sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p7 §VII.A and Fig. 2",
+        "independent_source_note": "Provides CPU, hardware examples, topology, workload and failure setup; the selected simulation settings do not fully identify prediction training and rerun settings."
+      },
+      "review_edit": "Narrowed the provider excerpt to exact text on the same original page. The source and judgment are unchanged. Limited the reported reproduction gap to the historical-window setting, checked against the original formulation and experimental settings."
+    },
+    {
+      "report_id": "R0002",
+      "domain": "D04",
+      "judgment": "PARTIAL",
+      "rationale": "Compares four named baselines across identical task scales and 1000 slots, but omits baseline hyperparameters and training details, leaving tuning parity unestablished.",
+      "locators": [
+        {
+          "page": 7,
+          "section": "VII.B Evaluation of Promise",
+          "quote": "several representative schemes are selected for comparative study, including the No-Prediction and Greedy Migration (NPG) [20]"
+        },
+        {
+          "page": 7,
+          "section": "VII.B Evaluation of Promise",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "pdf_sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p7 §VII.A–B; p8 Figs. 3–5",
+        "independent_source_note": "Compares named alternatives over the same reported scale scenarios; independent training and tuning parity are not established."
+      }
+    },
+    {
+      "report_id": "R0002",
+      "domain": "D05",
+      "judgment": "YES",
+      "rationale": "Evaluates task success rate, cumulative migration cost, and ResNet-18 inference accuracy, directly aligning with stated service-continuity and cost-minimization objectives.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "V.A Problem Formulation",
+          "quote": "the migration problem is formulated as a MINLP to obtain the efficient migration strategy"
+        },
+        {
+          "page": 8,
+          "section": "VII.B Evaluation of Promise, Figs. 3-5",
+          "quote": "this additional cost is justified by substantial gains in task success rate"
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "pdf_sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p5 §V.A; pp7–8 §VII.B",
+        "independent_source_note": "Execution success and migration costs address continuity and cost; classification accuracy addresses inference quality after migration."
+      }
+    },
+    {
+      "report_id": "R0002",
+      "domain": "D06",
+      "judgment": "PARTIAL",
+      "rationale": "Evaluates sensitivity across 20, 40, and 80 tasks/time-slot over 1000 slots, but reports no repeated random trials, variance, or prediction convergence.",
+      "locators": [
+        {
+          "page": 7,
+          "section": "VII.A Experimental Settings",
+          "quote": "each swarm independently generates 20, 40, or 80 tasks per time-slot, corresponding to three experimental scenarios."
+        },
+        {
+          "page": 8,
+          "section": "VII.B Evaluation of Promise, Figs. 3-5",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "pdf_sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p7 §VII.A; p8 Figs. 3–5",
+        "independent_source_note": "Sweeps task scales and models random failures; uncertainty across repeated runs and seed protocol are not reported in the evaluation."
+      }
+    },
+    {
+      "report_id": "R0002",
+      "domain": "D07",
+      "judgment": "PARTIAL",
+      "rationale": "Uses server-based simulation parameterized by hardware specs, with a static triangular swarm topology and 0.0001 random slot failures rather than flight tests.",
+      "locators": [
+        {
+          "page": 7,
+          "section": "VII.A",
+          "quote": "simulation experiments are performed to evaluate the effectiveness"
+        },
+        {
+          "page": 7,
+          "section": "VII.A",
+          "quote": "triangular topology with a side length of 100 m"
+        },
+        {
+          "page": 7,
+          "section": "VII.A",
+          "quote": "introduced in each time-slot with a probability of 0.0001."
+        }
+      ],
+      "provider_uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "pdf_sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p7 §VII.A and Fig. 2; p9 §VIII",
+        "independent_source_note": "Simulation uses hardware-informed configurations and stochastic failures; dynamic membership and intermittent GCS connectivity are future scenarios."
+      }
+    },
+    {
+      "report_id": "R0002",
+      "domain": "D08",
+      "judgment": "PARTIAL",
+      "rationale": "Conclusion broadly claims verified effectiveness from simulation, though p.8 notes higher migration cost traded for success rate and p.9 defers GCS intermittency.",
+      "locators": [
+        {
+          "page": 7,
+          "section": "VII.A",
+          "quote": "simulation experiments are performed to evaluate the effectiveness"
+        },
+        {
+          "page": 8,
+          "section": "VII.B",
+          "quote": "justified by substantial gains in task success rate"
+        },
+        {
+          "page": 9,
+          "section": "VIII",
+          "quote": "intermittent GCS connectivity, remain interests."
+        }
+      ],
+      "provider_uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "pdf_sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p7 §VII.A; pp8–9 §VIII",
+        "independent_source_note": "Conclusions identify use of real-world platform configurations and leave some scenarios for future work; those configurations are used in simulation."
+      }
+    },
+    {
+      "report_id": "R0002",
+      "domain": "D09",
+      "judgment": "NOT_REPORTED",
+      "rationale": "Inspected §VII.A, §VIII, and end matter for author code, simulation scripts, traces, or trained-model releases; only public CIFAR-10 use is mentioned, with no author-released artifacts reported.",
+      "locators": [
+        {
+          "page": 7,
+          "section": "VII.A",
+          "quote": "trained on the CIFAR-10 dataset is adopted for"
+        },
+        {
+          "page": 9,
+          "section": "VIII and end matter",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "8a5f0cb9-1977-4914-a564-e3e8e449bbe8",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "pdf_sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+      "source_review": {
+        "reference_judgment": "NOT_REPORTED",
+        "pages_and_sections_checked": "p7 §VII.A; p9 §VIII and end matter",
+        "independent_source_note": "Names CIFAR-10 for the workload but does not identify an author release for the code, traces or trained model."
+      },
+      "review_edit": "Narrowed the provider excerpt to exact text on the same original page. The source and judgment are unchanged."
+    },
+    {
+      "report_id": "R0002",
+      "domain": "D10",
+      "judgment": "PARTIAL",
+      "rationale": "Reports future-work limitations in Section VIII and NSFC funding in Acknowledgement, but provides no conflict-of-interest statement across pp. 1-9.",
+      "locators": [
+        {
+          "page": 9,
+          "section": "VIII. CONCLUSION",
+          "quote": "anomalies such as locating disruptions and intermittent GCS connectivity, remain interests."
+        },
+        {
+          "page": 9,
+          "section": "ACKNOWLEDGEMENT",
+          "quote": "This work was supported in part by the National Natural Science Foundation of China under Grants 62572122."
+        },
+        {
+          "page": 9,
+          "section": "ACKNOWLEDGEMENT and front matter",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "pdf_sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p9 §VIII and Acknowledgement",
+        "independent_source_note": "Future-work paragraph names membership and connectivity gaps and the acknowledgment names funding; no conflict declaration is present in the end matter."
+      }
+    },
+    {
+      "report_id": "R0003",
+      "domain": "D01",
+      "judgment": "YES",
+      "rationale": "Clearly defines the multi-UAV system model and dynamic switching objective between single-UAV lightweight and collaborative large CNN inference.",
+      "locators": [
+        {
+          "page": 2,
+          "section": "III",
+          "quote": "an informed decision on whether to execute the inference task"
+        },
+        {
+          "page": 4,
+          "section": "IV",
+          "quote": "represents a model execution policy for R inference requests."
+        }
+      ],
+      "provider_uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "pdf_sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p2 §III and Fig. 1; p3 §III.C",
+        "independent_source_note": "Distinguishes single-UAV lightweight inference from swarm execution of a complex model and defines the utility objective."
+      }
+    },
+    {
+      "report_id": "R0003",
+      "domain": "D02",
+      "judgment": "YES",
+      "rationale": "Explicitly states coordinator-information and hardware-capacity assumptions, binary model-selection and layer-assignment variables, and memory, compute, and single-execution constraints.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III.C Problem Formulation",
+          "quote": "Two decision variables are involved: The first one is the selection of the model"
+        },
+        {
+          "page": 4,
+          "section": "III.C Problem Formulation",
+          "quote": "The presence of constraints (11) and (12) ensures that each UAV can effectively handle multiple layers"
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "pdf_sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp2–3 §III; p5 §V.A",
+        "independent_source_note": "Describes information assumed at the decision node, layer demands and UAV resource constraints, with explicit device capacity assumptions."
+      }
+    },
+    {
+      "report_id": "R0003",
+      "domain": "D03",
+      "judgment": "PARTIAL",
+      "rationale": "Specifies five embedded board profiles, CNN pairs, and Mid-Air traces, but omits wireless parameters, utility weights, GA hyperparameters, and simulator details.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "V.A Simulation Settings",
+          "quote": "the available memory of these devices is defined as half of their actual maximum memory."
+        },
+        {
+          "page": 5,
+          "section": "V.A Simulation Settings",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "pdf_sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p5 §V.A; p6 §V.B",
+        "independent_source_note": "Embedded device profiles and model pairs are identified, but rerun details for the full genetic search and trace experiment are incomplete."
+      }
+    },
+    {
+      "report_id": "R0003",
+      "domain": "D04",
+      "judgment": "PARTIAL",
+      "rationale": "Evaluates four named baselines on identical CNN pairings and sweeps, but omits GA hyperparameters, leaving tuning parity across GA comparators unestablished.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "V.A Simulation Settings",
+          "quote": "we also introduced four baseline algorithms, namely GA-uniform, GA-random, Small-only, and Large-only."
+        },
+        {
+          "page": 5,
+          "section": "V.A Simulation Settings",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "pdf_sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp5–6 §V.A–B and Table 1",
+        "independent_source_note": "Four comparator strategies use the reported scenario grid and model pairs; tuning parity for search-based variants is not demonstrated."
+      }
+    },
+    {
+      "report_id": "R0003",
+      "domain": "D05",
+      "judgment": "PARTIAL",
+      "rationale": "Reports utility, latency, and accuracy matching Eq. (10), but relies on static ImageNet accuracy lookups with a top-1/top-5 label inconsistency.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III. SYSTEM MODEL",
+          "quote": "the VGG16 model, with approximately 138 million parameters, achieves a top-5 accuracy of 91.90% on the ImageNet dataset."
+        },
+        {
+          "page": 5,
+          "section": "V.A Simulation Settings",
+          "quote": "The top-5 accuracy of the models is utilized as the metric for evaluating the precision of the inference process."
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "pdf_sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p3 §III.C; p6 Table 1 and §V.B",
+        "independent_source_note": "Utility and latency are evaluated, but the paper describes top-1 and top-5 accuracy on p.3 and claims top-5 in the evaluation setup on p.5. Table 1 does not qualify the accuracy columns."
+      }
+    },
+    {
+      "report_id": "R0003",
+      "domain": "D06",
+      "judgment": "PARTIAL",
+      "rationale": "Sweeps request counts (4-8) and UAV counts (4-8) across two model pairings, but omits repeated trials, variance bars, and GA convergence.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "V.B Results Analysis",
+          "quote": "we further investigated the utility values under different numbers of UAVs when there are seven inference requests."
+        },
+        {
+          "page": 6,
+          "section": "V.B Results Analysis, Figs. 2-3 and Table 1",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "pdf_sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp6–7 §V.B Figs. 2–3",
+        "independent_source_note": "Varies request count and swarm size; repeated-run distribution or seeds are not reported in the settings/results."
+      }
+    },
+    {
+      "report_id": "R0003",
+      "domain": "D07",
+      "judgment": "PARTIAL",
+      "rationale": "Trace-driven simulation uses real-world UAV trajectory traces, but assumes centralized global knowledge of trajectories, channels, and tasks at U1 and lacks physical flight validation.",
+      "locators": [
+        {
+          "page": 2,
+          "section": "III",
+          "quote": "trajectories, channel conditions,"
+        },
+        {
+          "page": 5,
+          "section": "V.A",
+          "quote": "the trajectories of the UAVs in our simulation are based on the real-world trajectory traces obtained from [21]."
+        }
+      ],
+      "provider_uuid": "8a5f0cb9-1977-4914-a564-e3e8e449bbe8",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "pdf_sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p2 §III; pp5–6 §V.A–B",
+        "independent_source_note": "Trajectory-based simulation varies inter-UAV distances and hardware, with a central node assumed to know trajectories and channels; flight validation is not reported."
+      },
+      "review_edit": "Narrowed the provider excerpt to exact text on the same original page. The source and judgment are unchanged."
+    },
+    {
+      "report_id": "R0003",
+      "domain": "D08",
+      "judgment": "YES",
+      "rationale": "Bounds claims to trace-driven simulation against four baselines, notes narrowing gains at larger UAV counts, and defers energy consumption to future work.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "V.B Results Analysis",
+          "quote": "as the number of UAVs increases, although DMS still outperforms GA-uniform, the gap between them gradually narrows."
+        },
+        {
+          "page": 7,
+          "section": "VI. CONCLUSIONS",
+          "quote": "In future work, we will further investigate the impact of energy consumption on the UAV swarm"
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "pdf_sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp6–7 §V.B and §VI",
+        "independent_source_note": "Comparison claims are explicitly introduced as simulation results, with model pair and scenario dependence and energy left for future work."
+      }
+    },
+    {
+      "report_id": "R0003",
+      "domain": "D09",
+      "judgment": "NOT_REPORTED",
+      "rationale": "Cites third-party Mid-Air dataset [21], but pp. 1-7 including Simulation Results, Conclusions, Acknowledgement, and References report no author code or artifact availability.",
+      "locators": [
+        {
+          "page": 5,
+          "section": "V.A Simulation Settings",
+          "quote": "real-world trajectory traces obtained from [21]."
+        },
+        {
+          "page": 7,
+          "section": "VI. CONCLUSIONS and ACKNOWLEDGEMENT",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "pdf_sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+      "source_review": {
+        "reference_judgment": "NOT_REPORTED",
+        "pages_and_sections_checked": "p5 §V.A; p7 §VI, acknowledgment and references",
+        "independent_source_note": "Trace/device sources are described for simulation; no author release for executable or experiment artifacts is identified in these sections."
+      }
+    },
+    {
+      "report_id": "R0003",
+      "domain": "D10",
+      "judgment": "PARTIAL",
+      "rationale": "Notes energy-consumption omission in Conclusions and discloses NSFC funding in Acknowledgement, but omits any conflict-of-interest statement across pp. 1-7.",
+      "locators": [
+        {
+          "page": 7,
+          "section": "VI. CONCLUSIONS",
+          "quote": "In future work, we will further investigate the impact of energy consumption on the UAV swarm"
+        },
+        {
+          "page": 7,
+          "section": "ACKNOWLEDGEMENT",
+          "quote": "This work is supported by the National Natural Science Foundation of China under Grant No. 61931011 and Grant No. 62072303."
+        },
+        {
+          "page": 7,
+          "section": "ACKNOWLEDGEMENT and front matter",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "pdf_sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p7 §VI and Acknowledgement",
+        "independent_source_note": "Energy impact is left to future work and grants are named; conflict status is not stated in end matter."
+      }
+    },
+    {
+      "report_id": "R0006",
+      "domain": "D01",
+      "judgment": "YES",
+      "rationale": "Clearly defines the coverage-constrained latency minimization question, dual-role UAV swarm model, chain-structured DNN partitioning, and alternating DP-SCA workflow.",
+      "locators": [
+        {
+          "page": 1,
+          "section": "I. INTRODUCTION",
+          "quote": "how to partition a deep learning model across a UAV swarm for collaborative inference so as to minimize end-to-end inference latency while ensuring persistent coverage"
+        },
+        {
+          "page": 4,
+          "section": "IV. SOLUTION",
+          "quote": "we decompose the original formulation into two coupled subproblems: model partitioning and UAV deployment."
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "pdf_sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p2 §III.A; p3 §III.B",
+        "independent_source_note": "Defines swarm roles and co-optimization of deployment and partitioning under surveillance coverage requirements."
+      }
+    },
+    {
+      "report_id": "R0006",
+      "domain": "D02",
+      "judgment": "YES",
+      "rationale": "Explicitly specifies fixed-altitude hovering, neglected ground-return delay, deployment and binary partition variables, and memory, energy, exclusivity, and coverage constraints.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III.A Energy Consumption Model",
+          "quote": "We assume all UAV devices maintain a fixed hovering duration"
+        },
+        {
+          "page": 4,
+          "section": "III.B Problem Formulation",
+          "quote": "The problem is formulated as a total decision latency minimization problem subject to UAV computational, energy, and memory constraints."
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "pdf_sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp2–4 §III.A–B",
+        "independent_source_note": "States fixed altitude, chain layers, assignments, fixed-cycle arrivals, resource and coverage constraints."
+      }
+    },
+    {
+      "report_id": "R0006",
+      "domain": "D03",
+      "judgment": "PARTIAL",
+      "rationale": "Lists area, UAV, radio, and synthetic layer ranges, but omits altitude, energy budget, task interval, SCA/PSO hyperparameters, and simulator details.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "V.A Experimental Setup",
+          "quote": "UAV Specifications: Computational capability"
+        },
+        {
+          "page": 6,
+          "section": "V.A Experimental Setup",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "pdf_sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p6 §V.A; p7 §V.D",
+        "independent_source_note": "Publishes operating area and parameter ranges, common starting configuration and repetition count; exact workload artifacts/instance generation and seed settings are not specified."
+      }
+    },
+    {
+      "report_id": "R0006",
+      "domain": "D04",
+      "judgment": "PARTIAL",
+      "rationale": "Benchmarks three named baselines from a common initial configuration, but omits PSO and SCA hyperparameter settings, leaving tuning parity unestablished.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "V.A Experimental Setup",
+          "quote": "plot the end-to-end inference latency against iteration count from a common initial configuration."
+        },
+        {
+          "page": 6,
+          "section": "V.A Experimental Setup",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "pdf_sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp6–7 §V.A and §V.C",
+        "independent_source_note": "Defines three comparators, common starting configuration and same latency/iteration outcomes; reports nonconvergence in the comparisons.",
+        "final_adjudication": "The source note records the independent reading. The retained judgment applies the provider's supported narrower scope or reporting shortfall, as given in the final rationale."
+      }
+    },
+    {
+      "report_id": "R0006",
+      "domain": "D05",
+      "judgment": "PARTIAL",
+      "rationale": "Measures end-to-end latency and area coverage matching P1 and (15f), but does not report energy consumption or verify energy-constraint satisfaction.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "V.B Effectiveness of the Proposed Algorithm",
+          "quote": "the inference latency decreases consistently as the number of iterations increases."
+        },
+        {
+          "page": 7,
+          "section": "V.C-D, Figs. 5-6",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "pdf_sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp3–4 §III.B; pp6–7 §V.B–C",
+        "independent_source_note": "End-to-end latency and coverage/constraint checks align with the objective and feasibility conditions.",
+        "final_adjudication": "The source note records the independent reading. The retained judgment applies the provider's supported narrower scope or reporting shortfall, as given in the final rationale."
+      }
+    },
+    {
+      "report_id": "R0006",
+      "domain": "D06",
+      "judgment": "PARTIAL",
+      "rationale": "Averages over 100 trials with convergence curves and four sensitivity sweeps, but omits standard deviations, confidence intervals, or error bars.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "V.A Experimental Setup",
+          "quote": "All results, averaged over 100 trials with a coverage threshold"
+        },
+        {
+          "page": 7,
+          "section": "V.C-D, Figs. 5-6",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "pdf_sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p6 §V.A–B Fig. 3; p7 §V.D Fig. 6",
+        "independent_source_note": "Reports averaged repeated trials, numerical convergence and sensitivity sweeps; spread of repeated outcomes is not specified in the setup or plots."
+      }
+    },
+    {
+      "report_id": "R0006",
+      "domain": "D07",
+      "judgment": "PARTIAL",
+      "rationale": "Simulation assumes fixed altitude, static hovering, and a simplified transmission model without field tests, limiting direct transfer to dynamic flight.",
+      "locators": [
+        {
+          "page": 2,
+          "section": "III.A",
+          "quote": "are assumed to operate at a fixed altitude H,"
+        },
+        {
+          "page": 3,
+          "section": "III.A",
+          "quote": "The UAVs hover at fixed positions to simultaneously collect"
+        },
+        {
+          "page": 6,
+          "section": "V",
+          "quote": "simplifies the transmission model to ensure computational tractability."
+        }
+      ],
+      "provider_uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "pdf_sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p2 §III.A; p6 §V and §V.A",
+        "independent_source_note": "Fixed altitude and simplified transmission assumptions are declared; simulation varies link parameters but does not validate flight/network performance."
+      }
+    },
+    {
+      "report_id": "R0006",
+      "domain": "D08",
+      "judgment": "PARTIAL",
+      "rationale": "Observed critical-area coverage plateaus at a partial level that meets the spatial constraint, so the same paragraph's claim of complete monitoring coverage overstates the reported coverage.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "§V.B, Fig. 3b, critical-area coverage for the five-UAV ten-layer simulation",
+          "quote": "stabilizes at 87.0%, indicating that"
+        },
+        {
+          "page": 6,
+          "section": "§V.B, coverage description after Fig. 4",
+          "quote": "complete monitoring coverage"
+        }
+      ],
+      "provider_uuid": "8a5f0cb9-1977-4914-a564-e3e8e449bbe8",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "pdf_sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p6 §V; p7 §V.C–D; p8 §VI",
+        "independent_source_note": "Page 6 §V.B calls the observed sub-complete critical-area coverage complete in the same paragraph. The appraisal addresses that claim; conflicting latency statements are outside this appraisal rationale."
+      },
+      "review_edit": "Split the same original-body evidence into two exact excerpts and retained the tested scenario and percentage units."
+    },
+    {
+      "report_id": "R0006",
+      "domain": "D09",
+      "judgment": "NOT_REPORTED",
+      "rationale": "Inspected pp. 1-8 including Experimental Evaluation, Conclusion, Acknowledgment, and References; no author code, simulation script, or dataset availability is reported.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "V.A Experimental Setup",
+          "quote": null
+        },
+        {
+          "page": 8,
+          "section": "VI. CONCLUSION and ACKNOWLEDGMENT",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "pdf_sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "source_review": {
+        "reference_judgment": "NOT_REPORTED",
+        "pages_and_sections_checked": "p6 §V.A; p7 §V.D; p8 §VI and Acknowledgment",
+        "independent_source_note": "Inspected configuration, sensitivity and end matter; no release, access route or restriction statement for author code, data, or traces."
+      }
+    },
+    {
+      "report_id": "R0006",
+      "domain": "D10",
+      "judgment": "PARTIAL",
+      "rationale": "Notes simplified transmission in Section V and discloses funding in Acknowledgment, but omits explicit Conclusion limitations and any conflict-of-interest statement.",
+      "locators": [
+        {
+          "page": 6,
+          "section": "V. EXPERIMENTAL EVALUATION",
+          "quote": "The experimental design simplifies the transmission model to ensure computational tractability."
+        },
+        {
+          "page": 8,
+          "section": "ACKNOWLEDGMENT",
+          "quote": "This work is supported by NSFC with No. 62372456"
+        },
+        {
+          "page": 8,
+          "section": "VI. CONCLUSION and front matter",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "pdf_sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p6 §V; p8 §VI and Acknowledgment",
+        "independent_source_note": "States the transmission-model simplification for tractability and acknowledges funding; no conflict statement in end matter."
+      }
+    },
+    {
+      "report_id": "R0009",
+      "domain": "D01",
+      "judgment": "YES",
+      "rationale": "Clearly defines the multi-UAV MEC DNN offloading problem, ground-to-air system model, and three-stage OPPS, fairness-matching, and TD3 workflow.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "quote": "Consider a multi-UAV assisted MEC system, where the network has K UAVs"
+        },
+        {
+          "page": 5,
+          "section": "IV. ALGORITHM DESIGN",
+          "quote": "we adopt an Alternating Optimization framework and decompose it into three subproblems."
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "pdf_sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p3 §III; p5 §IV",
+        "independent_source_note": "Defines ground users and UAV servers, and joint DNN partitioning, scheduling and trajectory decisions for latency and energy."
+      }
+    },
+    {
+      "report_id": "R0009",
+      "domain": "D02",
+      "judgment": "YES",
+      "rationale": "Explicitly specifies constant-altitude, free-space LoS, and TDMA assumptions, all five decision variables, and constraints C1-C11 in Eq. (15).",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III",
+          "quote": "All UAVs are assumed to fly at a constant height H"
+        },
+        {
+          "page": 4,
+          "section": "III",
+          "quote": "C2 indicates that the radius of coverage of the UAV signal"
+        },
+        {
+          "page": 5,
+          "section": "III",
+          "quote": "the power consumption of each UAV to not exceed the battery"
+        }
+      ],
+      "provider_uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "pdf_sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp3–5 §III",
+        "independent_source_note": "Poisson arrivals, fixed-altitude slots, resource and coverage constraints are stated."
+      }
+    },
+    {
+      "report_id": "R0009",
+      "domain": "D03",
+      "judgment": "PARTIAL",
+      "rationale": "Table I and Section V.A detail most network and TD3 parameters, but omit simulator software, exploration noise, penalty weight, and layer profile values.",
+      "locators": [
+        {
+          "page": 8,
+          "section": "V. SIMULATION RESULTS, Table I",
+          "quote": "SIMULATION AND TRAINING-RELATED PARAMETERS"
+        },
+        {
+          "page": 8,
+          "section": "V.A Simulation Settings",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "pdf_sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p8 §V.A Table I",
+        "independent_source_note": "Documents simulated area, speed and height, DNN workloads and training parameters; does not supply rerun seed configuration."
+      }
+    },
+    {
+      "report_id": "R0009",
+      "domain": "D04",
+      "judgment": "PARTIAL",
+      "rationale": "Compares DTS, RAT, EE-PPO, and DPRT under shared scenario settings in §V.A-B, but does not document baseline training or tuning parity.",
+      "locators": [
+        {
+          "page": 8,
+          "section": "V.A",
+          "quote": "the following four algorithms are selected as benchmarks for comparison:"
+        },
+        {
+          "page": 8,
+          "section": "V.B",
+          "quote": "We set the number of GUs M to be 50,"
+        },
+        {
+          "page": 8,
+          "section": "V.A",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "pdf_sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp8–9 §V.A–B",
+        "independent_source_note": "Named alternatives and ablations are compared on reported workloads; full tuning equivalence for reimplemented comparators is not established."
+      }
+    },
+    {
+      "report_id": "R0009",
+      "domain": "D05",
+      "judgment": "YES",
+      "rationale": "Objective minimizes weighted system latency and energy consumption, and evaluation directly reports cumulative rewards alongside total energy consumption and average task latency across test conditions.",
+      "locators": [
+        {
+          "page": 4,
+          "section": "III",
+          "quote": "the system’s weighted latency and"
+        },
+        {
+          "page": 8,
+          "section": "V.B",
+          "quote": "Fig. 4. The cumulative rewards versus time slots."
+        },
+        {
+          "page": 9,
+          "section": "V.B",
+          "quote": "Fig. 5. The total energy consumption and average task latency versus coverage radius size of UAVs."
+        }
+      ],
+      "provider_uuid": "8a5f0cb9-1977-4914-a564-e3e8e449bbe8",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "pdf_sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "pp4–5 §III; pp8–10 §V.B",
+        "independent_source_note": "Figures evaluating latency and energy address the objective and report workload-dependent behavior."
+      },
+      "review_edit": "Narrowed the provider excerpt to exact text on the same original page. The source and judgment are unchanged."
+    },
+    {
+      "report_id": "R0009",
+      "domain": "D06",
+      "judgment": "PARTIAL",
+      "rationale": "Shows convergence and parameter sweeps. Figure 5 averages across episodes. An independent seed count and interpretation of the plotted dispersion are unspecified in the evaluation.",
+      "locators": [
+        {
+          "page": 8,
+          "section": "V.B Performance Evaluation",
+          "quote": "the evaluation data are the average values obtained by the different methods over 50 episodes."
+        },
+        {
+          "page": 9,
+          "section": "V.B Performance Evaluation, Figs. 5-7",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "pdf_sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "pp8–10 §V.B Figs. 4–9",
+        "independent_source_note": "Shows reward convergence and parameter/load sweeps. Figure 5 averages over 50 episodes; independent seeds and dispersion definitions remain unspecified in the evaluation."
+      },
+      "review_edit": "Restricted the averaging statement to Figure 5 as specified in original p.8 §V.B."
+    },
+    {
+      "report_id": "R0009",
+      "domain": "D07",
+      "judgment": "PARTIAL",
+      "rationale": "Simulation uses discrete time slots, fixed altitude, and free-space LoS path loss, and §VI acknowledges the gap to actual scenarios.",
+      "locators": [
+        {
+          "page": 3,
+          "section": "III",
+          "quote": "divided into N time slots with a slot length"
+        },
+        {
+          "page": 3,
+          "section": "III",
+          "quote": "All UAVs are assumed to fly at a constant height H"
+        },
+        {
+          "page": 3,
+          "section": "III",
+          "quote": "We adopt the free space path loss model [34]"
+        },
+        {
+          "page": 10,
+          "section": "VI",
+          "quote": "the gap between the simulation experiments and the actual scenarios."
+        }
+      ],
+      "provider_uuid": "643cc6f4-a83e-4caa-b6bd-1ddb01c4fa4c",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "pdf_sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p3 §III; p8 §V.A; p10 §VI",
+        "independent_source_note": "Mobility and communication assumptions enter the simulation, and the authors recognize a gap to field conditions."
+      }
+    },
+    {
+      "report_id": "R0009",
+      "domain": "D08",
+      "judgment": "YES",
+      "rationale": "Bounds findings to simulation benchmarks and explicitly acknowledges insufficient algorithm scalability and the gap between simulation experiments and actual scenarios.",
+      "locators": [
+        {
+          "page": 10,
+          "section": "VI. CONCLUSION",
+          "quote": "Simulation experiments are conducted to verify the superiority of the proposed scheme"
+        },
+        {
+          "page": 10,
+          "section": "VI. CONCLUSION",
+          "quote": "such as the insufficient scalability of the algorithm and the gap between the simulation experiments and the actual scenarios."
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "pdf_sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "source_review": {
+        "reference_judgment": "YES",
+        "pages_and_sections_checked": "p10 §VI",
+        "independent_source_note": "Conclusions identify numerical simulation and explicitly bound transfer by scalability and real-scenario limitations."
+      }
+    },
+    {
+      "report_id": "R0009",
+      "domain": "D09",
+      "judgment": "NOT_REPORTED",
+      "rationale": "Inspected pp. 1-11 including Simulation Settings, Conclusion, References, and Biographies; no author code, profiled layer data, or implementation availability is reported.",
+      "locators": [
+        {
+          "page": 8,
+          "section": "V.A Simulation Settings",
+          "quote": null
+        },
+        {
+          "page": 10,
+          "section": "VI. CONCLUSION and end matter",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "pdf_sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "source_review": {
+        "reference_judgment": "NOT_REPORTED",
+        "pages_and_sections_checked": "p8 §V.A Table I; pp10–11 §VI and back matter",
+        "independent_source_note": "Settings, conclusion and end matter provide no author source/data/traces release statement."
+      }
+    },
+    {
+      "report_id": "R0009",
+      "domain": "D10",
+      "judgment": "PARTIAL",
+      "rationale": "Reports scalability and simulation-gap limitations in Section VI and four funding grants in p. 1 footnote, but omits any conflict-of-interest statement.",
+      "locators": [
+        {
+          "page": 10,
+          "section": "VI. CONCLUSION",
+          "quote": "such as the insufficient scalability of the algorithm and the gap between the simulation experiments and the actual scenarios."
+        },
+        {
+          "page": 1,
+          "section": "Title Footnote",
+          "quote": "This work was supported in part by the Natural Science Foundation of China under Grant 62531010"
+        },
+        {
+          "page": 11,
+          "section": "End matter and Title Footnote",
+          "quote": null
+        }
+      ],
+      "provider_uuid": "54788143-35ba-47eb-9df9-76b6f3609ef9",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "pdf_sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+      "source_review": {
+        "reference_judgment": "PARTIAL",
+        "pages_and_sections_checked": "p1 title footnote; p10 §VI; p11 back matter",
+        "independent_source_note": "Funding is stated in the title footnote and scalability and field limitations are identified in the conclusion; no separately stated conflict status was found."
+      }
+    }
+  ]
+}
