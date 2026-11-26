@@ -1,27 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:31:08+07:00",
+  "updated_at": "2026-11-26T23:31:31+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-batch01-43-review",
+    "task_id": "restart-11-batch02-three-field-brief",
     "owner": "CODEX_WRITING",
-    "status": "rejected",
-    "started_at": "2026-11-26T23:31:08+07:00",
-    "updated_at": "2026-11-26T23:31:08+07:00",
-    "completed_at": "2026-11-26T23:31:08+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_targeted_correction_review.md",
-    "decision_id": "restart-11-batch01-43-review-v1"
+    "status": "completed",
+    "started_at": "2026-11-26T23:31:31+07:00",
+    "updated_at": "2026-11-26T23:31:31+07:00",
+    "completed_at": "2026-11-26T23:31:31+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_three_field_correction_brief.md",
+    "decision_id": "restart-11-batch02-three-field-brief-v1"
   },
   "next_task": {
-    "task_id": "restart-11-batch02-locator-precision",
+    "task_id": "restart-11-batch02-three-field",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Correct the three authorized Batch 02 fields first.",
-    "acceptance": "Three verified corrections and zero changes outside scope."
+    "action": "Verify one locator and two approximation corrections in three authorized report fields.",
+    "acceptance": "Three records scoped to R0074, R0121, R0062, no other changes.",
+    "dispatch_brief": "restart_2026_11_26/extraction/batch_02_three_field_correction_brief.md",
+    "message_id": "hk261-p08-b02-three-field-v1"
   },
   "project": {
     "target_venue": "SN Computer Science",
