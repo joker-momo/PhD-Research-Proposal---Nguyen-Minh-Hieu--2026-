@@ -46,3 +46,7 @@ Recorded at `2026-11-27T00:20:24+07:00`. Prior PASS entries retained. The remain
 | R0068 `quantity:3` | EXCLUDE_EXACT_VALUE | p. 1 Abstract gives 9%. §VI.B, Figs. 5, 8–9 on pp. 11–13 support closeness to LDTP in tested scenarios but do not give the matched aggregate calculation. |
 | R0073 `quantity:1` | QUALITATIVE_ONLY | pp. 10–12 §5.2/Figs. 4–6 show latency ordering. Exact coordinates are not labeled; preserve the separately verified qualitative result and the distinct failure scenario. |
 | R0089 `quantity:1` | QUALITATIVE_ONLY | pp. 9–10 rendered Figs. 4(b), 5(b), 6(b) and §§5.1–5.3 support the now scoped directional comparisons. No point values were read off the curves. |
+
+## Source recheck from 55023bb
+
+Recorded at `2026-11-27T00:25:17+07:00`. Independent review verified original PDF hashes for 25/25 reports. This batch has 102 PASS, 6 previously adjudicated exclusions, and 119 pending entries. Pass/fail evidence by key is in the [source ledger](p08_source_inventory.json). Existing PASS entries and exclusions were preserved. Batch adoption remains zero.

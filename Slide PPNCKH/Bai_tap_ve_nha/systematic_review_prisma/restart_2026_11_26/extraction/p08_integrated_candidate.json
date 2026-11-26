@@ -889,10 +889,24 @@
           {
             "subtopic": "dual_role_adhoc_swarm",
             "status": "OBSERVED",
-            "finding": "Swarm of N UAVs (5-10 evaluated, default 5) in wireless ad hoc network at fixed altitude H; each UAV acts dually as image-capturing source node and partial DNN compute node.",
+            "finding": "Each UAV can act as an image-capture source and compute node at the modeled fixed altitude; five UAVs are used in the convergence example and 5–10 in the sensitivity sweep.",
             "page": 2,
             "locator": "III.A System Model",
-            "excerpt": "Each UAV can operate dually as both a data-generating node by capturing images and issuing inference requests, and as a computational unit"
+            "excerpt": "Each UAV can operate dually as both a data-generating node by capturing images and issuing inference requests, and as a computational unit",
+            "sources": [
+              {
+                "physical_page": 2,
+                "locator": "§III.A"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§V.B"
+              },
+              {
+                "physical_page": 7,
+                "locator": "Fig. 6(a)"
+              }
+            ]
           }
         ],
         "inference_model_task_and_dataset": [
@@ -969,17 +983,35 @@
           {
             "subtopic": "static_hover_deployment",
             "status": "OBSERVED",
-            "finding": "UAVs reposition to optimized 2D hovering coordinates; LoS free-space path-loss channel; failures and recovery not modeled.",
+            "finding": "The model optimizes fixed-altitude planar hovering positions and uses a distance-based rate model. The evaluation does not model failures or recovery.",
             "page": 3,
             "locator": "III.A Latency & Energy Model",
-            "excerpt": "The UAVs hover at fixed positions to simultaneously collect data from their coverage areas and perform inference tasks"
+            "excerpt": "The UAVs hover at fixed positions to simultaneously collect data from their coverage areas and perform inference tasks",
+            "sources": [
+              {
+                "physical_page": 3,
+                "locator": "§III.A rate model"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§V.A"
+              },
+              {
+                "physical_page": 7,
+                "locator": "§V.C–D"
+              },
+              {
+                "physical_page": 8,
+                "locator": "§VI"
+              }
+            ]
           }
         ],
         "evaluation_platform_simulator_hardware_and_traces": [
           {
             "subtopic": "simulation_trials",
             "status": "OBSERVED",
-            "finding": "End-to-end inference latency is evaluated against iteration count using results averaged across 100 trials, a coverage threshold of 0.8 and a common initial configuration.",
+            "finding": "The setup reports averaging over 100 trials at coverage threshold 0.8 with a common initial configuration. The separate performance comparison specifies a threshold of 0.7.",
             "reason": "",
             "repair_key": "F06",
             "page": 6,
@@ -1011,6 +1043,10 @@
                   ]
                 ],
                 "check": "PyMuPDF text block; source read in context"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§V.A and §V.C"
               }
             ]
           }
@@ -1096,10 +1132,16 @@
           {
             "subtopic": "four_parameter_sensitivity",
             "status": "OBSERVED",
-            "finding": "Sensitivity tested over UAV counts (5-10), model layers (10-24), coverage threshold (0.6-1.0), and bandwidth (0.5-5 MHz) in Fig. 6; averaged over 100 trials.",
+            "finding": "Fig. 6 reports four sensitivity sweeps: UAV count (5–10), DNN depth, coverage threshold (0.6–1.0), and bandwidth.",
             "page": 7,
             "locator": "V.D Algorithm Sensitivity Analysis",
-            "excerpt": "Fig. 6 presents a sensitivity analysis of AirInfer under four key parameters: UAV count, model depth, coverage threshold, and communication bandwidth."
+            "excerpt": "Fig. 6 presents a sensitivity analysis of AirInfer under four key parameters: UAV count, model depth, coverage threshold, and communication bandwidth.",
+            "sources": [
+              {
+                "physical_page": 7,
+                "locator": "Fig. 6(a–d)"
+              }
+            ]
           }
         ],
         "code_and_data": [
@@ -1150,8 +1192,8 @@
           "units": "ms",
           "baseline": "Greedy+SCA (1292 ms), DP+RW (1643 ms), Joint-PSO (1239 ms)",
           "denominator": "32 iterations",
-          "workload": "10-layer DNN detection model",
-          "conditions": "5 UAVs, 100m x 100m area, eta=0.7, 100 trials",
+          "workload": "DNN depth is not specified for Fig. 5.",
+          "conditions": "Fig. 5 compares methods through 32 iterations with coverage threshold 0.7; trial count and UAV count are not specified for this comparison.",
           "page": 7,
           "locator": "V.C Performance Comparison",
           "excerpt": "Two-Stage attains 527 ms, outperforming Greedy+SCA (1,292 ms), DP+RW (1,643 ms), and Joint-PSO (1,239 ms) by 57.5%-67.9%.",
@@ -1163,8 +1205,8 @@
           "units": "%",
           "baseline": "Greedy+SCA, DP+RW, Joint-PSO",
           "denominator": "Baseline latency",
-          "workload": "10-layer DNN",
-          "conditions": "5 UAVs, 32 iterations",
+          "workload": "DNN depth is not specified for Fig. 5.",
+          "conditions": "Fig. 5 compares methods through 32 iterations with coverage threshold 0.7; trial count and UAV count are not specified for this comparison.",
           "page": 7,
           "locator": "V.C Performance Comparison",
           "excerpt": "outperforming Greedy+SCA (1,292 ms), DP+RW (1,643 ms), and Joint-PSO (1,239 ms) by 57.5%-67.9%.",
@@ -1383,10 +1425,20 @@
           {
             "subtopic": "numerical_simulation",
             "status": "OBSERVED",
-            "finding": "Numerical simulation averaged over 50 episodes (1500 slots x 0.6 s = 900 s); simulator software/hardware not stated.",
+            "finding": "The coverage-radius comparison averages results over 50 episodes. Table I gives 1,500 slots of 0.6 s for the simulation horizon (900 s by multiplication). The evaluation setup does not identify the simulator or host.",
             "page": 8,
             "locator": "Table I & V.B",
-            "excerpt": "the evaluation data are the average values obtained by the different methods over 50 episodes."
+            "excerpt": "the evaluation data are the average values obtained by the different methods over 50 episodes.",
+            "sources": [
+              {
+                "physical_page": 8,
+                "locator": "§V.A/Table I and §V.B Fig. 5 setup"
+              },
+              {
+                "physical_page": 9,
+                "locator": "Fig. 5"
+              }
+            ]
           }
         ],
         "baselines_and_workloads": [
@@ -1565,7 +1617,7 @@
           "baseline": "DTS (-22.6%), RAT (-35.5%), EE-PPO (-17.6%), DPRT (-54.2%)",
           "denominator": "50 episodes",
           "workload": "M=50 GUs, Poisson [0,5], ResNet-34/VGG-16/AlexNet",
-          "conditions": "4 UAVs, d_max=50 m, B=10 MHz",
+          "conditions": "Simulation with four UAVs; Fig. 5 coverage-radius sweep, evaluated at d_max = 50 m, averaged over 50 episodes. The 10 MHz setting is explicitly stated for the preceding Fig. 4, not for this sweep.",
           "page": 9,
           "locator": "V.B Performance Evaluation",
           "excerpt": "when the radius is 50, DPDTS consumes 1536.9J, which is reduced by 22.6%, 35.5%, 17.6%, and 54.2% compared to DTS, RAT, EE-PPO, and DPRT, respectively.",
@@ -1578,7 +1630,7 @@
           "baseline": "DTS (-24.8%), RAT (-36.8%), EE-PPO (-19.26%), DPRT (-49.1%)",
           "denominator": "50 episodes",
           "workload": "M=50 GUs, ResNet-34/VGG-16/AlexNet",
-          "conditions": "4 UAVs, d_max=50 m, B=10 MHz",
+          "conditions": "Simulation with four UAVs; Fig. 5 coverage-radius sweep, evaluated at d_max = 50 m, averaged over 50 episodes. The 10 MHz setting is explicitly stated for the preceding Fig. 4, not for this sweep.",
           "page": 9,
           "locator": "V.B Performance Evaluation",
           "excerpt": "the average processing delay per user is 253.7ms, which is 24.8%, 36.8%, 19.26%, and 49.1% faster",
@@ -2685,30 +2737,68 @@
           {
             "subtopic": "ilp_and_ppo2",
             "status": "OBSERVED",
-            "finding": "ILP minimizing total classification latency over cell placement Psi and layer allocation delta subject to memory, compute, collision avoidance, and hot-cell coverage; solved online via PPO2 (2-layer MLP, 64 neurons/layer).",
+            "finding": "The formulation minimizes total classification latency over grid-cell placement and layer allocation under memory, computation, collision and hot-cell constraints. The proposed online approach uses PPO with penalties for constraint violations. The implementation uses PPO2/MlpPolicy with a two-layer, 64-neuron-per-layer MLP.",
             "page": 9,
             "locator": "III.C.5 PPO Algorithm",
-            "excerpt": "we chose the PPO as it can relax the complex constraints and replace them with flexible ones"
+            "excerpt": "we chose the PPO as it can relax the complex constraints and replace them with flexible ones",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "§III.B formulation"
+              },
+              {
+                "physical_page": 8,
+                "locator": "§III.C network configuration"
+              },
+              {
+                "physical_page": 9,
+                "locator": "§III.C.5 PPO"
+              },
+              {
+                "physical_page": 11,
+                "locator": "Table II"
+              }
+            ]
           }
         ],
         "compute_and_radio": [
           {
             "subtopic": "rpi_and_radio_params",
             "status": "OBSERVED",
-            "finding": "3 Raspberry Pi B+ tiers (1.4 GHz quad-core, 1 GB RAM; e_i = 560, 512, 256 million mults/s); tx power 0.1 W, bandwidth 1 kHz, noise 7.9e-9, distance-dependent channel gain.",
+            "finding": "The simulated devices are Raspberry Pi B+ profiles with 1.4 GHz quad-core CPUs and 1 GB RAM. The paper gives e_i profile values of 560, 512 and 256 without labeling those values as millions. It sets transmit power to 0.1 W and bandwidth to 1 kHz and uses distance-dependent channel gain.",
             "page": 11,
             "locator": "IV & Table II",
-            "excerpt": "characterized by a 1.4-GHz 64-bit quad-core processor and 1-GB RAM while they have a different number of multiplications per second e_i [18] which are 560, 512, and 256."
+            "excerpt": "characterized by a 1.4-GHz 64-bit quad-core processor and 1-GB RAM while they have a different number of multiplications per second e_i [18] which are 560, 512, and 256.",
+            "sources": [
+              {
+                "physical_page": 11,
+                "locator": "§IV/Table II"
+              },
+              {
+                "physical_page": 4,
+                "locator": "§III.A transmission model"
+              }
+            ]
           }
         ],
         "mobility_channel_intermittency_failure_and_recovery": [
           {
             "subtopic": "grid_mobility_and_joining",
             "status": "OBSERVED",
-            "finding": "Discrete grid cell transitions with collision avoidance; dynamic UAV joining/leaving (e.g., 3->4->2 UAVs for charging) evaluated in Fig. 19; Doppler effect and LoS/NLoS deferred to future work.",
+            "finding": "The grid mobility model includes collision avoidance. Figure 19 changes the active swarm from three to four to two UAVs; the paper mentions charging and rejoining as possible motivations. Doppler effects and LoS/NLoS remain future work.",
             "page": 15,
             "locator": "IV & V. CONCLUSION",
-            "excerpt": "the number of UAVs can be increased or decreased at any time to go to the charging station, for example, and rejoin the swarm"
+            "excerpt": "the number of UAVs can be increased or decreased at any time to go to the charging station, for example, and rejoin the swarm",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "§III.B collision constraint"
+              },
+              {
+                "physical_page": 15,
+                "locator": "Fig. 19 and §V"
+              }
+            ]
           }
         ],
         "evaluation_platform_simulator_hardware_and_traces": [
@@ -2725,30 +2815,68 @@
           {
             "subtopic": "baselines_and_requests",
             "status": "OBSERVED",
-            "finding": "Baselines: Sub-optimal ILP solution, OULD [19] (static paths), Greedy Heuristic, Random selection, Actor-Critic, plus Sigmoid [14] and Linear [25] demand functions for QoS; 1-25 requests.",
+            "finding": "Comparisons use a suboptimal mathematical solution (Figs. 9–10), OULD, greedy and random selection (Fig. 16), actor–critic (Fig. 17), and sigmoid and linear demand functions (Figs. 14–15).",
             "page": 14,
             "locator": "IV. SIMULATION RESULTS",
-            "excerpt": "Fig. 16 shows a comparison of our system to the approach in [19], namely, optimal UAV-based layer distribution (OULD)."
+            "excerpt": "Fig. 16 shows a comparison of our system to the approach in [19], namely, optimal UAV-based layer distribution (OULD).",
+            "sources": [
+              {
+                "physical_page": 12,
+                "locator": "Figs. 9–10"
+              },
+              {
+                "physical_page": 13,
+                "locator": "Fig. 14"
+              },
+              {
+                "physical_page": 14,
+                "locator": "Figs. 15–17"
+              }
+            ]
           }
         ],
         "outcomes_latency_energy_communication_accuracy_reliability_and_scalability": [
           {
             "subtopic": "constraint_accuracy_and_latency",
             "status": "OBSERVED",
-            "finding": "Constraint-meeting accuracy: 96.45% (LeNet), 91.23% (AlexNet), 82.50% (VGG16); PPO 94% vs Actor-Critic 88%; LeNet 20-request avg latency 5.22 s (m=560) and 10.68 s (m=256).",
+            "finding": "The paper reports 96.45%, 91.23% and 82.50% constraint-satisfaction accuracy for LeNet, AlexNet and VGG16. In a separate policy comparison PPO achieved 94% versus actor–critic at 88%. At 20 LeNet requests, mean total latency was 5.22 s at the 560 profile and 10.68 s at the 256 profile.",
             "page": 12,
             "locator": "IV. SIMULATION RESULTS",
-            "excerpt": "The accuracy percentage of LeNet is 96.45%, AlexNet is 91.23%, and VGG16 is 82.50%."
+            "excerpt": "The accuracy percentage of LeNet is 96.45%, AlexNet is 91.23%, and VGG16 is 82.50%.",
+            "sources": [
+              {
+                "physical_page": 12,
+                "locator": "§IV/Fig. 8 discussion"
+              },
+              {
+                "physical_page": 13,
+                "locator": "§IV/Fig. 11 discussion"
+              },
+              {
+                "physical_page": 15,
+                "locator": "§IV/Fig. 17 discussion"
+              }
+            ]
           }
         ],
         "sensitivity_and_variability": [
           {
             "subtopic": "uav_count_memory_qos",
             "status": "OBSERVED",
-            "finding": "Evaluated across UAV counts (2-7), grid cells (9-36), memory capacities (256/512/560), QoS factor S_f (0-1), and dynamic UAV count changes (3->4->2).",
+            "finding": "Figure 13 plots minimum UAV count (2–7) for the tested grid sizes (9–36). The evaluation separately compares capacity profiles 256/512/560, the QoS factor from 0 to 1, and active swarm counts 3→4→2.",
             "page": 13,
             "locator": "IV. SIMULATION RESULTS",
-            "excerpt": "Fig. 13, we present the minimum number of UAVs to start respecting the two constraints."
+            "excerpt": "Fig. 13, we present the minimum number of UAVs to start respecting the two constraints.",
+            "sources": [
+              {
+                "physical_page": 13,
+                "locator": "Figs. 11, 13–14"
+              },
+              {
+                "physical_page": 15,
+                "locator": "Fig. 19"
+              }
+            ]
           }
         ],
         "code_and_data": [
@@ -2800,7 +2928,7 @@
           "baseline": "AlexNet (91.23%), VGG16 (82.50%)",
           "denominator": "Evaluated steps after convergence",
           "workload": "5-layer LeNet",
-          "conditions": "16 cells, Raspberry Pi 3B+",
+          "conditions": "Three CNN classifications compared in §IV; metric is constraint satisfaction. Fig. 8 shows the 16-cell scenario with multiple UAV counts; the paragraph does not assign the exact percentages to a single count.",
           "page": 12,
           "locator": "IV. SIMULATION RESULTS",
           "excerpt": "The accuracy percentage of LeNet is 96.45%, AlexNet is 91.23%, and VGG16 is 82.50%.",
@@ -2813,7 +2941,7 @@
           "baseline": "Actor-Critic (88%)",
           "denominator": "Evaluated steps",
           "workload": "5-layer LeNet",
-          "conditions": "Raspberry Pi 3B+",
+          "conditions": "PPO vs. actor–critic policy comparison in Fig. 17 and adjacent §IV discussion; the text reporting the percentages does not give a separate hardware or workload assignment.",
           "page": 15,
           "locator": "IV. SIMULATION RESULTS",
           "excerpt": "Finally, the accuracy of respecting the constraints of PPO is 94%, whereas Actor-Critic achieves 88%.",
@@ -2826,7 +2954,7 @@
           "baseline": "m=256 (10.68 s)",
           "denominator": "20 requests (0.26 s/request)",
           "workload": "20 requests, 5-layer LeNet",
-          "conditions": "Raspberry Pi 3B+, e=560",
+          "conditions": "Fig. 11, five-layer LeNet, 20 requests, capacity profile 560 as labeled in the figure.",
           "page": 13,
           "locator": "IV. SIMULATION RESULTS",
           "excerpt": "For the highest device capacity, for 20 requests, the average total latency is 5.22 s, where the average latency per request is 0.26 s",
@@ -2839,7 +2967,7 @@
           "baseline": "m=560 (5.22 s)",
           "denominator": "20 requests (0.53 s/request)",
           "workload": "20 requests, 5-layer LeNet",
-          "conditions": "Raspberry Pi 3B+, e=256",
+          "conditions": "Fig. 11, five-layer LeNet, 20 requests, capacity profile 256 as labeled in the figure.",
           "page": 13,
           "locator": "IV. SIMULATION RESULTS",
           "excerpt": "the average total latency of 20 requests for the lowest device capacity is 10.68 s. It means that the latency per request is equal to 0.53 s.",
@@ -3204,10 +3332,24 @@
           {
             "subtopic": "poisson_transient_failures",
             "status": "OBSERVED",
-            "finding": "Transient UAV node failure rate lambda_i and link failure rate mu_i,j modeled as Poisson processes (varied from U[0,0.005] Best to U[0.1,0.5] Poor); mitigated via active layer replication.",
+            "finding": "The paper models transient node and link failures by Poisson processes and mitigates them by active layer replication. The rate distributions used in the evaluation include U[0,0.005] (Best) and U[0.1,0.5] (Poor).",
             "page": 3,
             "locator": "II.A Reliability Model",
-            "excerpt": "The failure rate of the UAV dr_i and communication links between dr_i and dr_j follow the Poisson process [14]"
+            "excerpt": "The failure rate of the UAV dr_i and communication links between dr_i and dr_j follow the Poisson process [14]",
+            "sources": [
+              {
+                "physical_page": 3,
+                "locator": "§II.A reliability model"
+              },
+              {
+                "physical_page": 5,
+                "locator": "§IV.A and Fig. 5"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§IV.B environment comparison"
+              }
+            ]
           }
         ],
         "evaluation_platform_simulator_hardware_and_traces": [
@@ -3265,10 +3407,16 @@
           {
             "subtopic": "funding",
             "status": "OBSERVED",
-            "finding": "Supported by Zhijiang Laboratory Open Project Fund 2020LC0AB01 and NSFC Grant 62071063.",
+            "finding": "Acknowledgment identifies the Zhijiang Laboratory Open Project Fund and National Science Foundation of China grant 62071063.",
             "page": 6,
             "locator": "ACKNOWLEDGMENT",
-            "excerpt": "National Science Foundation of China under Grant 62071063."
+            "excerpt": "National Science Foundation of China under Grant 62071063.",
+            "sources": [
+              {
+                "physical_page": 6,
+                "locator": "Acknowledgment"
+              }
+            ]
           },
           {
             "subtopic": "conflicts",
@@ -7736,6 +7884,111 @@
       "report_id": "R0022",
       "key": "mobility_channel_intermittency_failure_and_recovery:1",
       "reason": "Records the model and evaluation scope without attributing a named fading law to the authors."
+    },
+    {
+      "report_id": "R0006",
+      "key": "uav_architecture_role_and_topology:1",
+      "reason": "The five-UAV value is scoped to the convergence example."
+    },
+    {
+      "report_id": "R0006",
+      "key": "mobility_channel_intermittency_failure_and_recovery:1",
+      "reason": "The original rate equation and setup do not establish an explicit LoS assumption."
+    },
+    {
+      "report_id": "R0006",
+      "key": "evaluation_platform_simulator_hardware_and_traces:1",
+      "reason": "Separated the setup from the threshold of the specific comparison."
+    },
+    {
+      "report_id": "R0006",
+      "key": "sensitivity_and_variability:1",
+      "reason": "Preserves the four sweeps without assuming the setup ranges apply to every panel."
+    },
+    {
+      "report_id": "R0006",
+      "key": "quantity:1",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0006",
+      "key": "quantity:2",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0009",
+      "key": "evaluation_platform_simulator_hardware_and_traces:1",
+      "reason": "The source attributes 50 episodes to Fig. 5; do not generalize to every evaluation."
+    },
+    {
+      "report_id": "R0009",
+      "key": "quantity:1",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0009",
+      "key": "quantity:2",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0019",
+      "key": "decision_variables_objectives_constraints_and_solver:1",
+      "reason": "Separates the optimization formulation from the PPO policy and its constraint handling."
+    },
+    {
+      "report_id": "R0019",
+      "key": "compute_and_radio:1",
+      "reason": "Removes unsupported scale multiplier and omits the noise number from this extraction because the supplied finding did not specify its unit."
+    },
+    {
+      "report_id": "R0019",
+      "key": "mobility_channel_intermittency_failure_and_recovery:1",
+      "reason": "The experiment changes the active count without testing a charging station or rejoin mechanism."
+    },
+    {
+      "report_id": "R0019",
+      "key": "baselines_and_workloads:1",
+      "reason": "Does not assign the same request sweep to these separate comparisons."
+    },
+    {
+      "report_id": "R0019",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+      "reason": "Distinguishes constraint satisfaction from classification accuracy and cites all three experiment locations."
+    },
+    {
+      "report_id": "R0019",
+      "key": "sensitivity_and_variability:1",
+      "reason": "Scopes count values and axes to the individual tests."
+    },
+    {
+      "report_id": "R0019",
+      "key": "quantity:1",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0019",
+      "key": "quantity:2",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0019",
+      "key": "quantity:3",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0019",
+      "key": "quantity:4",
+      "reason": "Scoped quantitative evidence to the source comparison and removed unsupported transfer of experimental conditions."
+    },
+    {
+      "report_id": "R0029",
+      "key": "mobility_channel_intermittency_failure_and_recovery:1",
+      "reason": "Distinguishes stochastic failure events from sampled failure-rate parameters."
+    },
+    {
+      "report_id": "R0029",
+      "key": "funding_and_conflicts:1",
+      "reason": "The local text layer renders the first award with O where the previous extraction used zero; omitted the ambiguous ID."
     }
   ]
 }

@@ -1,6 +1,6 @@
 # P08 Batch 01 independent PDF review
 
-**Verdict: FAIL.** The batch retains all 13 report IDs and 228 candidate entries. The row-level ledger records 136 PASS, 3 WITHHELD, and 89 NOT_YET_ASSESSED. All rows adjudicated for R0001, R0002, R0003, R0010, R0015, R0022, R0045. Batch adoption remains 0/13 pending the gate.
+**Verdict: FAIL.** The batch retains all 13 report IDs and 228 candidate entries. The row-level ledger records 198 PASS, 3 WITHHELD, and 27 NOT_YET_ASSESSED. All rows adjudicated for R0001, R0002, R0003, R0006, R0009, R0010, R0015, R0019, R0022, R0029, R0045. Batch adoption remains 0/13 pending the gate.
 
 | Criterion | Verdict | Evidence |
 |---|---|---|
@@ -8,7 +8,7 @@
 | Preserve non-target entries | PASS | The parent candidate was compared entry by entry after the bounded repairs. Unchanged entries retain their original objects. |
 | Recheck every prior excerpt exception | PASS | 4/4 exceptions reviewed below. Three table cells are visually verified despite being absent from the text layer. |
 | Account for every claim | PASS | 228/228 entries have a disposition in the ledger; unreviewed entries explicitly say NOT_YET_ASSESSED. |
-| Complete the source and conditions review | FAIL | 89 entries still require semantic adjudication. Three numeric entries are withheld. Counts and exact keys are in the ledger. |
+| Complete the source and conditions review | FAIL | 27 entries still require semantic adjudication. Three numeric entries are withheld. Counts and exact keys are in the ledger. |
 
 ## Prior excerpt exceptions
 
@@ -30,3 +30,7 @@ Recorded at `2026-11-27T00:20:24+07:00`. Prior PASS entries retained. The remain
 | R0010 `quantity:1` | EXCLUDE_EXACT_VALUE | Physical p. 2 Introduction gives the AlexNet average. Figure 5(a) and discussion on pp. 5–6 do not specify comparator weights or reconstruct the reported aggregation. Retain the already verified qualitative sweep only. |
 | R0010 `quantity:2` | EXCLUDE_EXACT_VALUE | Physical p. 2 Introduction gives the GoogLeNet average. Figure 5(b) and discussion on pp. 5–6 do not specify comparator weights or reconstruct the reported aggregation. Retain the already verified qualitative sweep only. |
 | R0045 `quantity:1` | EXCLUDE_EXACT_VALUE | p. 1 Abstract states 14.6%. §IV.B, Figs. 5–8 on pp. 9–10 do not label a matching comparison, denominator and exact value. Use only the scoped qualitative comparisons. |
+
+## Source recheck from 55023bb
+
+Recorded at `2026-11-27T00:25:17+07:00`. Independent review verified original PDF hashes for 25/25 reports. This batch has 198 PASS, 3 previously adjudicated exclusions, and 27 pending entries. Pass/fail evidence by key is in the [source ledger](p08_source_inventory.json). Existing PASS entries and exclusions were preserved. Batch adoption remains zero.

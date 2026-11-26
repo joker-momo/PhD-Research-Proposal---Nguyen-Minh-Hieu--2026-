@@ -1,27 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T00:20:24+07:00",
+  "updated_at": "2026-11-27T00:25:17+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-p08-remaining-source-audit",
+    "task_id": "restart-11-p08-source-review-55023bb",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T00:17:22+07:00",
-    "updated_at": "2026-11-27T00:20:24+07:00",
-    "completed_at": "2026-11-27T00:20:24+07:00",
+    "started_at": "2026-11-27T00:22:14+07:00",
+    "updated_at": "2026-11-27T00:25:17+07:00",
+    "completed_at": "2026-11-27T00:25:17+07:00",
     "checkpoint_path": "restart_2026_11_26/extraction/p08_batch_01_source_review.md",
-    "decision_id": "restart-11-p08-remaining-source-audit-v1"
+    "decision_id": "restart-11-p08-source-review-55023bb-v1"
   },
   "next_task": {
-    "task_id": "restart-11-p08-source-audit-remainder",
-    "owner": "CODEX_WRITING",
+    "task_id": "restart-11-p08-gemini-source-assist-batch-01",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Continue the 208 unassessed entries under P08. The nine scoped exclusions remain documented in batch reviews and the source ledger.",
-    "acceptance": "Every retained assertion and quantitative condition has a checked source, 25/25 reports meet the extraction acceptance gate; Step 12 remains gated by P08."
+    "action": "Native Gemini.app evidence assistance for 27 remaining Batch 01 keys, followed by independent source review.",
+    "acceptance": "27/27 keys or documented shortfall; 0 unsupported evidence used.",
+    "dispatch_brief": "restart_2026_11_26/extraction/p08_source_assist_batch_01_brief.md",
+    "message_id": "ea4eaafd-3372-44aa-b0c0-e15e86de7dc7"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -167,12 +169,12 @@
         "p08_semantic_initial_report_checks": 25,
         "p08_mechanically_inventoried_entries": 455,
         "p08_normalized_excerpt_matches": 447,
-        "p08_semantic_entries_pass": 238,
+        "p08_semantic_entries_pass": 300,
         "p08_semantic_entries_withheld": 9,
-        "p08_semantic_entries_pending": 208,
-        "p08_semantically_reviewed_reports": 6,
+        "p08_semantic_entries_pending": 146,
+        "p08_semantically_reviewed_reports": 10,
         "p08_prior_excerpt_exceptions_reviewed": 8,
-        "p08_reports_all_rows_adjudicated": 11,
+        "p08_reports_all_rows_adjudicated": 15,
         "p08_withheld_dispositions_recorded": 9
       }
     }
