@@ -1,30 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T21:18:47+07:00",
+  "updated_at": "2026-11-26T21:23:51+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
-    "task_id": "restart-09-batch-04-correction01-rejection",
-    "status": "rejected",
+    "task_id": "restart-09-batch04",
+    "status": "completed",
     "owner": "CODEX_WRITING",
-    "started_at": "2026-11-26T14:13:45.511+00:00",
-    "updated_at": "2026-11-26T21:18:47+07:00",
-    "completed_at": "2026-11-26T21:18:47+07:00",
-    "checkpoint_path": "restart_2026_11_26/fulltext_screening/batch_04_correction01_review.md",
-    "decision_id": "restart-09-batch-04-correction01-rejection-v1",
+    "started_at": "2026-11-26T14:03:25.046+00:00",
+    "updated_at": "2026-11-26T21:23:51+07:00",
+    "completed_at": "2026-11-26T21:23:51+07:00",
+    "checkpoint_path": "restart_2026_11_26/fulltext_screening/batch_04_review.md",
+    "decision_id": "restart-09-batch04-v1",
     "research_owner": "GEMINI_RESEARCH"
   },
   "next_task": {
-    "task_id": "restart-09-batch04-correction02",
+    "task_id": "restart-09-close",
     "status": "ready",
-    "owner": "GEMINI_RESEARCH",
-    "action": "Replace only the R0121 E7 publisher policy anchor with the exact ICTEE policy.",
-    "acceptance": "One record, one field, exact ICTEE policy locator and quote, consistent P06 disposition.",
-    "dispatch_brief": "restart_2026_11_26/fulltext_screening/batch_04_correction02_brief.md",
-    "message_id": "hk261-restart-step09-batch04-correction02-v1"
+    "owner": "CODEX_WRITING",
+    "action": "Reconcile the four accepted batches, verify 44 IDs and close Step 09.",
+    "acceptance": "Four accepted batches; 44 unique reports; zero arithmetic, hash and reason discrepancies."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -118,10 +116,10 @@
       },
       "fulltext_screening": {
         "total": 44,
-        "reviewed": 33,
-        "included": 24,
-        "excluded": 5,
-        "awaiting_classification": 4
+        "reviewed": 44,
+        "included": 25,
+        "excluded": 13,
+        "awaiting_classification": 6
       }
     }
   },
