@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-26T20:47:57+07:00",
+  "updated_at": "2026-11-26T20:59:30+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -542,7 +542,7 @@
       "owner": "GEMINI_RESEARCH + CODEX_WRITING",
       "status": "active",
       "started_at": "2026-11-26T20:18:29+07:00",
-      "updated_at": "2026-11-26T20:47:57+07:00",
+      "updated_at": "2026-11-26T20:59:30+07:00",
       "completed_at": null,
       "artifacts": [
         "restart_2026_11_26/fulltext_screening/manifest.json",
@@ -569,7 +569,11 @@
         "restart_2026_11_26/fulltext_screening/batch_02_retry01_transport_raw.json",
         "restart_2026_11_26/fulltext_screening/batch_02_correction01_raw.json",
         "restart_2026_11_26/fulltext_screening/batch_02_accepted.csv",
-        "restart_2026_11_26/fulltext_screening/batch_02_review.md"
+        "restart_2026_11_26/fulltext_screening/batch_02_review.md",
+        "restart_2026_11_26/fulltext_screening/batch_03_review.md",
+        "restart_2026_11_26/fulltext_screening/batch_03_correction01_brief.md",
+        "restart_2026_11_26/fulltext_screening/batch_03_raw.json",
+        "restart_2026_11_26/fulltext_screening/batch_03_transport_raw.json"
       ],
       "acceptance": []
     },

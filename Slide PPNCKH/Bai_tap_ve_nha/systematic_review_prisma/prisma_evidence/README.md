@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-26T20:47:57+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-26T20:59:30+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -282,7 +282,7 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=3.
 <a id="buoc-09"></a>
 ## Bước 09 · Sàng lọc toàn văn mới
 
-**Đang làm** · `2026-11-26T20:47:57+07:00`
+**Đang làm** · `2026-11-26T20:59:30+07:00`
 
 - [manifest.json](../restart_2026_11_26/fulltext_screening/manifest.json)
 - [fulltext_identity_index.csv](../restart_2026_11_26/fulltext_retrieval/fulltext_identity_index.csv)
@@ -309,6 +309,10 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=3.
 - [batch_02_correction01_raw.json](../restart_2026_11_26/fulltext_screening/batch_02_correction01_raw.json)
 - [batch_02_accepted.csv](../restart_2026_11_26/fulltext_screening/batch_02_accepted.csv)
 - [batch_02_review.md](../restart_2026_11_26/fulltext_screening/batch_02_review.md)
+- [batch_03_review.md](../restart_2026_11_26/fulltext_screening/batch_03_review.md)
+- [batch_03_correction01_brief.md](../restart_2026_11_26/fulltext_screening/batch_03_correction01_brief.md)
+- [batch_03_raw.json](../restart_2026_11_26/fulltext_screening/batch_03_raw.json)
+- [batch_03_transport_raw.json](../restart_2026_11_26/fulltext_screening/batch_03_transport_raw.json)
 
 <a id="buoc-10"></a>
 ## Bước 10 · Liên kết report với study
