@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T15:12:17+07:00",
+  "updated_at": "2026-11-26T15:38:29+07:00",
   "goal": {
     "version": "HK261-PRISMA-completion-spec-v2",
-    "status": "blocked_b04_acm_export_wos_core_compensated_not_replaced",
-    "summary": "Core: 6/8 runs and 4/8 exports; ACM has 79/325 counts only and WoS Core is unavailable. Amendment 006 adds separate OpenAlex 85/26 exports (102 union IDs), not WoS Core."
+    "status": "search_dataset_lock_research_ready",
+    "summary": "Gemini brief prepared to audit a proposed freeze of 284 importable rows from IEEE, Scopus and OpenAlex while ACM remains counts-only, WoS Core unavailable and RHN unexecuted."
   },
   "task": {
-    "task_id": "build-and-run-openalex-compensatory-search",
+    "task_id": "prepare-search-dataset-lock-gemini-brief",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T14:50:50+07:00",
-    "completed_at": "2026-11-26T15:12:17+07:00",
-    "updated_at": "2026-11-26T15:12:17+07:00",
-    "decision_id": "build-and-run-openalex-compensatory-search-v1"
+    "started_at": "2026-11-26T15:37:16+07:00",
+    "completed_at": "2026-11-26T15:38:29+07:00",
+    "updated_at": "2026-11-26T15:38:29+07:00",
+    "decision_id": "prepare-search-dataset-lock-gemini-brief-v1"
   },
   "next_task": {
-    "task_id": "resolve-b04-acm-record-export",
-    "owner": "CODEX_WRITING",
-    "status": "blocked",
-    "action": "Obtain a lawful ACM record-level capture route for both observed searches; keep WoS unavailable and OpenAlex separately labelled.",
-    "acceptance": "Both ACM exports reconcile with documented live totals and retain exact query, filters, timestamp, raw evidence, limitations and checksum; inferred WoS counts remain zero."
+    "task_id": "research-search-dataset-lock",
+    "owner": "GEMINI_RESEARCH",
+    "status": "ready",
+    "action": "Dispatch the committed structured brief through Gemini Research App, then quarantine the response until Codex completes the ten-criterion QA gate.",
+    "acceptance": "Gemini returns exactly 10 query rows, 6 source dispositions, fixed arithmetic and official-source locators; Codex records PASS/FAIL for all ten criteria before adopting any recommendation."
   },
   "project": {
     "target_venue": "SN Computer Science",
