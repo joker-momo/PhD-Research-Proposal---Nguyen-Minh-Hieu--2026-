@@ -1,0 +1,45 @@
+{
+  "id": "3aa88422-5ce9-42a8-9eba-865a50d8b838",
+  "contextId": "a207715b-ac4d-4af7-b585-cf25d7d82500",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T12:52:03.991+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T12:48:45.370+00:00",
+    "updated_at": "2026-11-26T12:52:03.991+00:00",
+    "started_at": "2026-11-26T12:48:45.372+00:00",
+    "completed_at": "2026-11-26T12:52:03.991+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — Correction of Batch 04 Records",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "e4f469b0-a5b9-430d-bbcb-3e617ec00cf2",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"id\":\"R0220\",\"doi\":\"10.1145/3727993.3728075\",\"identity_url\":\"\",\"publisher_url\":\"\",\"publisher_observation\":\"Crossref/DOI registry and ACM Digital Library pages could not be accessed via browse tool, and web search returned no indexed ACM DL record for DOI 10.1145/3727993.3728075; a ResearchGate citation list (https://www.researchgate.net/publication/384735453_Multi-AUV_Cooperative_Navigation_Algorithm_Based_on_Factor_Graph_With_Stretching_Nodes'_Strategy) cites the title as a May 2025 conference paper by Zhang Can, Li Qun, Lun WeiCheng, and Guo Dong without a full-text link.\",\"oa_lookup_url\":\"\",\"oa_observation\":\"OpenAlex API could not be accessed via browse tool, and web search found no open-access repository, preprint, or public full-text PDF/HTML for this title or DOI.\",\"candidates\":[],\"reason_if_no_pdf\":\"No public full-text PDF or HTML route was found via web search, and direct lookup of the publisher page, Crossref API, and OpenAlex API could not be completed in this environment.\",\"unresolved\":[\"identity_url (Crossref/DOI registry not accessible)\",\"publisher_url (ACM Digital Library page not indexed in search and not accessible via browse)\",\"oa_lookup_url (OpenAlex API not accessible and no OA copy found in web search)\"]}"
+        }
+      ]
+    }
+  ]
+}
