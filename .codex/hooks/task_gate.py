@@ -9,6 +9,8 @@ import shlex
 import subprocess
 import sys
 
+from automation_registry import validate_registry
+
 ROOT = Path(__file__).resolve().parents[2]
 PROJECT = ROOT / "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
 STATUS_DOCUMENTS = (
@@ -20,6 +22,8 @@ OWNED_GIT_PATHS = (
     ROOT / ".codex",
     PROJECT,
 )
+AUTOMATION_CATALOG = PROJECT / "automation/artifact_catalog.json"
+AUTOMATION_DECISIONS = PROJECT / "automation/decision_log.jsonl"
 REMINDER = """Before EACH new HK261 task publish exactly five fields:
 TASK: concrete task
 OWNER: CODEX_WRITING or GEMINI_RESEARCH
@@ -38,6 +42,9 @@ Update CURRENT_HANDOFF.md and current_tasks.md in the commit that closes or
 changes a task; stale status documents block the next recognized A2A dispatch.
 Use RFC 3339 timestamps with timezone (default Asia/Ho_Chi_Minh): started_at,
 updated_at, completed_at for finished tasks; timestamp for every new log event.
+Persist each CODE_FIRST_DECISION in automation/decision_log.jsonl. Register every
+reused or newly written code artifact in automation/artifact_catalog.json so a
+later agent can validate, search, test and reuse the exact committed path.
 """
 
 
@@ -162,6 +169,16 @@ def status_timestamps_valid():
     last = events[-1]
     if last["task_id"] != records[0]["task_id"] or last["timestamp"] != records[0]["updated_at"]:
         raise ValueError("latest event must match current task and updated_at")
+    registry = validate_registry(
+        AUTOMATION_CATALOG, AUTOMATION_DECISIONS, ROOT, now=now
+    )
+    decision = registry["active_by_task"].get(records[0]["task_id"])
+    if decision is None:
+        raise ValueError("current task requires one active code-first decision")
+    if parse_timestamp(decision["decided_at"], now) > parse_timestamp(
+        records[0]["updated_at"], now
+    ):
+        raise ValueError("code-first decision must not be after task updated_at")
     return True
 
 

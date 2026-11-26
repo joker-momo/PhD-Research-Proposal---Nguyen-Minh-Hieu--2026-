@@ -229,6 +229,18 @@ class SkillRouterTests(unittest.TestCase):
                     r"(REUSE_EXISTING|WRITE_SCRIPT|MANUAL) — .+$",
                 )
 
+    def test_every_route_points_to_reuse_lookup_and_decision_evidence(self):
+        rendered = skill_router.render_route(self.route("Kiểm tra hàng loạt DOI."))
+
+        self.assertIn(
+            "CODE_REUSE_LOOKUP: python3 .codex/hooks/automation_registry.py search",
+            rendered,
+        )
+        self.assertIn(
+            "CODE_DECISION_EVIDENCE: append automation/decision_log.jsonl",
+            rendered,
+        )
+
     def test_existing_project_tool_is_reused(self):
         route = self.route("Chạy test hiện có và báo kết quả.")
 

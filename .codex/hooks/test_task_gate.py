@@ -9,6 +9,7 @@ import tempfile
 import unittest
 
 SOURCE = Path(__file__).with_name("task_gate.py")
+REGISTRY_SOURCE = Path(__file__).with_name("automation_registry.py")
 
 
 class TaskGateTests(unittest.TestCase):
@@ -18,6 +19,7 @@ class TaskGateTests(unittest.TestCase):
         self.script = self.root / ".codex/hooks/task_gate.py"
         self.script.parent.mkdir(parents=True)
         shutil.copyfile(SOURCE, self.script)
+        shutil.copyfile(REGISTRY_SOURCE, self.script.with_name("automation_registry.py"))
         self.codex_file = self.root / ".codex/owned.txt"
         self.codex_file.write_text("baseline\n")
         self.agents_file = self.root / "AGENTS.md"
@@ -56,6 +58,36 @@ class TaskGateTests(unittest.TestCase):
         self.events = self.handoff.parent / "events.jsonl"
         self.events.write_text(json.dumps(dict(task_id="fixture", event="completed",
                                               timestamp=timestamp)) + "\n")
+        automation = self.project / "automation"
+        automation.mkdir(exist_ok=True)
+        self.catalog = automation / "artifact_catalog.json"
+        self.catalog.write_text(json.dumps({
+            "schema_version": 1,
+            "artifacts": [{
+                "artifact_id": "fixture-tool",
+                "name": "Fixture tool",
+                "path": ".codex/hooks/automation_registry.py",
+                "purpose": "Exercise the registry gate fixture.",
+                "entrypoint": "python3 .codex/hooks/automation_registry.py validate",
+                "inputs": ["Fixture catalog and decision log"],
+                "outputs": ["Validation status"],
+                "tests": [".codex/hooks/task_gate.py"],
+                "test_command": "python3 .codex/hooks/task_gate.py",
+                "status": "active",
+                "tags": ["fixture", "gate"],
+            }],
+        }) + "\n")
+        self.decisions = automation / "decision_log.jsonl"
+        self.decisions.write_text(json.dumps({
+            "decision_id": "fixture-v1",
+            "task_id": "fixture",
+            "decided_at": timestamp,
+            "recorded_at": timestamp,
+            "mode": "REUSE_EXISTING",
+            "reason": "The existing fixture tool is sufficient.",
+            "artifact_ids": ["fixture-tool"],
+            "verification": ["Fixture validation PASS"],
+        }) + "\n")
 
     def commit_timestamp_change(self, mutate):
         for path in (self.handoff, self.tasks):
@@ -118,6 +150,27 @@ class TaskGateTests(unittest.TestCase):
         result = self.call("rtk proxy scripts/a2a-route --brief next.md")
 
         self.assertEqual(0, result.returncode)
+
+    def test_clean_a2a_blocked_without_current_task_code_decision(self):
+        self.decisions.write_text(json.dumps({
+            "decision_id": "other-v1",
+            "task_id": "other-task",
+            "decided_at": "2026-01-01T00:00:00Z",
+            "recorded_at": "2026-01-01T00:00:00Z",
+            "mode": "MANUAL",
+            "reason": "A different historical task.",
+            "artifact_ids": [],
+            "verification": ["Historical evidence"],
+        }) + "\n")
+        for path in (self.handoff, self.tasks):
+            path.write_text(path.read_text() + "\n")
+        self.git("add", str(self.project.relative_to(self.root)))
+        self.git("commit", "-qm", "remove current code decision")
+
+        result = self.call("rtk proxy scripts/a2a-route --brief next.md")
+
+        self.assertEqual(2, result.returncode)
+        self.assertIn("active code-first decision", result.stderr)
 
     def test_clean_a2a_blocked_when_only_one_status_document_is_refreshed(self):
         artifact = self.project / "screening_46/results/batch_99.json"

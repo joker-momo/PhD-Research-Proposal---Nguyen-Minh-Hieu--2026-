@@ -12,7 +12,9 @@
    after the five governance fields. Verify existing automation before writing
    new code; write code before repetitive manual work; keep judgment-heavy or
    uneconomical one-off work manual.
-7. Report current evidence boundary and any missing user decision.
+7. Search `automation/artifact_catalog.json` through
+   `.codex/hooks/automation_registry.py search` before implementing code.
+8. Report current evidence boundary and any missing user decision.
 
 ## Project workflow
 
@@ -117,6 +119,13 @@ tests, then commit the reusable artifact. For `MANUAL`, record why automation is
 unsafe, unavailable, judgment-heavy, or uneconomical, and still automate any
 safe deterministic substeps. Never create a framework solely to satisfy the
 rule.
+
+The final decision is not durable merely because it appeared in chat. In the
+same commit that closes a task, append it to `automation/decision_log.jsonl`,
+register all reused/new reusable code in `automation/artifact_catalog.json`,
+and run `.codex/hooks/automation_registry.py validate`. Never edit an accepted
+decision line; append a superseding record. Git history, the decision record,
+catalog path and test evidence together form the audit trail.
 
 ## Timestamp rule (user request: 2026-11-25T23:02:44+07:00)
 

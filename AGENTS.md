@@ -31,6 +31,17 @@ have focused tests, and be committed as a reusable project artifact. The
 router's recommendation is advisory; the acting agent owns and records the
 final decision.
 
+Before writing code, search the durable registry with
+`python3 .codex/hooks/automation_registry.py search "<task keywords>"`. The
+task-closing commit must append the final decision and verification evidence to
+`systematic_review_prisma/automation/decision_log.jsonl`. Every reused or newly
+written code artifact must have an active entry in `artifact_catalog.json` with
+its repository-relative path, entrypoint, inputs/outputs, tests and tags. A
+changed decision is appended with `supersedes_decision_id`; never rewrite or
+delete accepted history. Run `python3 .codex/hooks/automation_registry.py
+validate` before commit. The current task state, event log and active code-first
+decision must agree before recognized A2A dispatch.
+
 Run Git status immediately before starting. Any staged, modified, or untracked
 residue in `systematic_review_prisma/`, `.codex/`, or this `AGENTS.md` BLOCKS the
 next task and any A2A dispatch. The exact pre-existing user-owned residue outside

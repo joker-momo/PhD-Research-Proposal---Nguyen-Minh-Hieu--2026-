@@ -1,7 +1,7 @@
 # MUST READ - HK261 PRISMA Project
 
-**Context version:** 1.0
-**updated_at:** 2026-11-25T23:15:36+07:00
+**Context version:** 1.1
+**updated_at:** 2026-11-26T07:36:59+07:00
 **Scope:** HK261 scientific-methods coursework and its PRISMA systematic review
 only. This project must not be merged with the PhD dissertation-roadmap work.
 
@@ -56,3 +56,6 @@ or `MISSING REQUIREMENT` note. Never invent the missing decision.
 
 Current timestamps follow `03_WORKFLOW_AND_GATES.md`. Read `events.jsonl` for
 post-adoption events; legacy artifacts retain their original provenance.
+Search and validate reusable automation through
+`.codex/hooks/automation_registry.py`; the mandatory evidence contract is in
+`08_AUTOMATION_AND_CODE_REUSE.md`.

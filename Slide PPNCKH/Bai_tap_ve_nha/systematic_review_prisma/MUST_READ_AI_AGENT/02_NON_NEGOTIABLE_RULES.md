@@ -88,3 +88,7 @@
   idempotency, and a committed reusable home in the project.
 - Code does not replace scientific judgment, source verification, authorship
   approval, or any user-only external action.
+- Preserve every final code-first decision in `../automation/decision_log.jsonl`
+  and every reusable code path in `../automation/artifact_catalog.json`. Search
+  the registry before writing code; append superseding decisions instead of
+  editing accepted history; validate the registry before commit.

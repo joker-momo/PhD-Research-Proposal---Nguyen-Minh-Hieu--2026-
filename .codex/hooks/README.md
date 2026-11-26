@@ -62,6 +62,12 @@ No manuscript or scientific extraction changes are part of this task.
 - The recommendation is advisory and never executes code. The acting agent must
   reject overengineering, verify any reused tool, and test newly written
   automation before relying on it.
+- Every route points to the read-only registry search command and the durable
+  decision/catalog evidence paths. The project task gate validates that the
+  current task has one active decision before recognized A2A dispatch.
+- `automation/decision_log.jsonl` is append-only. `artifact_catalog.json`
+  provides repository-relative code paths, entrypoints, inputs/outputs, tests
+  and tags. `automation_registry.py validate|search` is the supported interface.
 
 ## Verification
 
@@ -76,7 +82,7 @@ exit 0. Each owned scope: 3/3 modified fixtures exit 2. Prompt/session reminders
 index bytes, and tracked content.
 
 Command: `rtk proxy env PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_skill_router.py`.
-Observed: 29 tests PASS across explicit installed skill priority, unknown skill,
+Observed: 30 tests PASS across explicit installed skill priority, unknown skill,
 academic orchestrator exclusivity, Gemini research ownership, Codex writing
 ownership, lawful paper retrieval order, debugging/TDD, image generation,
 no-skill prompt, multi-goal ownership, research/debug overlap suppression, direct-skill
@@ -86,6 +92,11 @@ extraction, hook registration, one decision on each of 10 prompt groups, three
 reuse cases, three script cases, three manual cases, and mixed-task precedence.
 Tests use temporary skill catalogs; the
 integration check below uses the installed catalog.
+
+Command: `PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_automation_registry.py`.
+Observed: 16 tests PASS across valid registry loading, path containment, missing
+code/tests, duplicate IDs, artifact references, mode-specific evidence,
+append-only supersession, timestamps, search and CLI JSON output.
 
 | Criterion | Verdict | Objective evidence |
 |---|---|---|
@@ -130,7 +141,8 @@ timezone-free/date-only/malformed/future values, unknown `-00:00` offsets,
 inverted task times and inconsistent current metadata. No dependency was added.
 Historical raw evidence remains unchanged; the event log begins at adoption.
 
-Validation: 17 task-gate tests and 29 skill-router tests PASS. The task-gate suite
+Validation: 18 task-gate tests, 30 skill-router tests and 16 automation-registry
+tests PASS. The task-gate suite
 includes the previous 9 tests and 8 timestamp tests; its valid clean fixture
 covers valid timestamps. Missing-field, timezone, format and future tests invoke
 the real hook subprocess. Every invocation checks unchanged Git status, index

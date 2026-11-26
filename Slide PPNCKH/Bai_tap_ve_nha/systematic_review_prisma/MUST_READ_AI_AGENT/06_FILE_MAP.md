@@ -16,6 +16,9 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 | Submission blockers | `../submission_readiness_2026-11-25.md` |
 | A2A policy | `../corpus_expansion/a2a_routing_policy_2026-11-25.md` |
 | Current research queue | `../corpus_expansion/current_tasks.md` |
+| Automation/code decision history | `../automation/decision_log.jsonl` |
+| Reusable code catalog | `../automation/artifact_catalog.json` |
+| Automation registry instructions | `../automation/README.md` |
 
 ## Active research artifacts
 

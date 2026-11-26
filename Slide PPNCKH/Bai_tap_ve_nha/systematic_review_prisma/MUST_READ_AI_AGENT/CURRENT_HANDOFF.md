@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T07:25:51+07:00
+**updated_at:** 2026-11-26T07:36:59+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -166,8 +166,12 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 The automation-first/code-mode rule is installed in the repository entry point,
 MUST READ workflow, handoff template, and advisory router. Every prompt now
 receives one `REUSE_EXISTING`, `WRITE_SCRIPT`, or `MANUAL` recommendation with
-a reason; 29/29 router tests and 17/17 task-gate tests pass. No scope research
-has been dispatched.
+a reason. Decisions are durably retained in append-only
+`automation/decision_log.jsonl`; reusable code is indexed in
+`automation/artifact_catalog.json` with paths, entrypoints and tests. The
+read-only registry CLI validates and searches these artifacts. Tests pass:
+16/16 registry, 30/30 router and 18/18 task gate. No scope research has been
+dispatched.
 
 From clean `main`, route
 `screening_46/reconciliation/briefs/scope_01.md` for C06,SNCS,C04,C11,C16.
@@ -194,10 +198,10 @@ The boundary hold has been released by the coordinating handoff.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "automation-code-first-rule",
+  "task_id": "automation-evidence-registry",
   "status": "completed",
-  "started_at": "2026-11-26T07:25:24+07:00",
-  "updated_at": "2026-11-26T07:25:51+07:00",
-  "completed_at": "2026-11-26T07:25:51+07:00"
+  "started_at": "2026-11-26T07:34:52+07:00",
+  "updated_at": "2026-11-26T07:36:59+07:00",
+  "completed_at": "2026-11-26T07:36:59+07:00"
 }
 -->

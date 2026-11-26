@@ -353,6 +353,8 @@ def render_route(route: Route) -> str:
         "ADVISORY_ONLY: true",
         f"OWNER: {route.owner}",
         f"CODE_FIRST_DECISION: {route.code_first_mode} — {route.code_first_reason}",
+        "CODE_REUSE_LOOKUP: python3 .codex/hooks/automation_registry.py search <query>",
+        "CODE_DECISION_EVIDENCE: append automation/decision_log.jsonl and register code in automation/artifact_catalog.json",
     ]
     if route.unknown_explicit:
         lines.append("UNKNOWN_EXPLICIT_SKILLS: " + ", ".join(route.unknown_explicit))

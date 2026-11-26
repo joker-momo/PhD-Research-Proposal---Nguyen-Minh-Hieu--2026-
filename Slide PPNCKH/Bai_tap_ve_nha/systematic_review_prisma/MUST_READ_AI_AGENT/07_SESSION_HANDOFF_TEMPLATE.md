@@ -13,6 +13,8 @@ completed_at: [actual RFC 3339 time when finished; omit while active]
 Agent/model:
 Task:
 Code-first decision: [REUSE_EXISTING | WRITE_SCRIPT | MANUAL -- reason]
+Decision ID: [active decision_log.jsonl record]
+Reusable artifact IDs: [catalog IDs or none for MANUAL]
 Branch/worktree:
 
 ## Completed
@@ -32,6 +34,7 @@ Branch/worktree:
 - [Command/check and observed result]
 - [For REUSE_EXISTING: tool verification; for WRITE_SCRIPT: focused tests; for
   MANUAL: why automation was unsuitable and any automated substeps]
+- `python3 .codex/hooks/automation_registry.py validate`: [observed result]
 
 ## Intentionally not changed
 - [Out-of-scope path or decision]

@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T07:25:51+07:00
+Updated_at: 2026-11-26T07:36:59+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -40,7 +40,11 @@ remain uncertain. Primary result remains quarantined; no provider task active.
 The automation/code-first rule is complete: reuse verified existing automation
 first, write a focused reusable script for deterministic/repeated work second,
 and use manual execution only with a recorded reason. Router tests pass 29/29;
-task-gate tests pass 17/17. Dispatch the committed scope brief from clean main.
+task-gate tests pass 17/17. Its durable evidence registry is also complete:
+append-only decisions, a searchable reusable-code catalog and task-gate
+validation. Current tests pass 16/16 registry, 30/30 router and 18/18 task gate.
+Dispatch the committed scope brief from clean main only after searching the
+registry and recording the task's own decision.
 
 ## Measured progress
 
@@ -89,10 +93,10 @@ Correction brief is ready; route only after this task closes.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "automation-code-first-rule",
+  "task_id": "automation-evidence-registry",
   "status": "completed",
-  "started_at": "2026-11-26T07:25:24+07:00",
-  "updated_at": "2026-11-26T07:25:51+07:00",
-  "completed_at": "2026-11-26T07:25:51+07:00"
+  "started_at": "2026-11-26T07:34:52+07:00",
+  "updated_at": "2026-11-26T07:36:59+07:00",
+  "completed_at": "2026-11-26T07:36:59+07:00"
 }
 -->
