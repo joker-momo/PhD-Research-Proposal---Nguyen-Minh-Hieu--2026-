@@ -1,8 +1,8 @@
 # Final Planned Query Translations
 
-**Version:** 1.2
-**Adopted:** 2026-11-26 after S-01 query validation and Codex acceptance review
-**Protocol alignment:** Amendments 001–004
+**Version:** 1.3
+**Adopted:** 2026-11-26 after S-01 validation and direct IEEE/ACM interface verification
+**Protocol alignment:** Amendments 001–005
 **Execution status:** `UNEXECUTED` on all four core platforms
 **Reported counts:** `COUNT_NOT_OBTAINED`
 
@@ -12,7 +12,7 @@ Every query requires at least one swarm-specific expression and an inference exp
 
 Official syntax documentation: https://ieeexplore.ieee.org/Xplorehelp/searching-ieee-xplore/command-search
 
-**Execution gate:** `BLOCKED_PENDING_AUTHENTICATED_UI_VERIFICATION`. Before either query is run, verify the exact Web Command Search behavior of the quoted `"All Metadata":` prefix, phrase quoting, wildcard limits, and the year, content-type, and English-language facets in the authenticated IEEE Xplore interface. The API documentation checked in S-01 does not establish those Web UI behaviors.
+**Execution gate:** `READY_FOR_S02_WITH_RESULTS_PAGE_FACET_CHECK`. Official help and the live Command Search interface verified the quoted `"All Metadata":` field syntax, exact phrases, Boolean grouping, the 25-term-per-clause ceiling, the 10-wildcard ceiling, and the three-character wildcard minimum. The complementary query uses four valid trailing wildcards. Results-page year, content-type and language facets must still be recorded during S-02.
 
 ### High-recall query
 
@@ -42,14 +42,14 @@ AND
  OR "All Metadata":assign* OR "All Metadata":"resource allocation")
 ```
 
-Planned interface filters, pending the same authenticated verification: year 2021–2026; content types `Journals` and `Conferences`; language `English`.
+Planned result-page filters: year 2021–2026; content types `Journals` and `Conferences`; language `English`. If any facet is absent, export the broader permitted set, log the absent facet, and apply the corresponding eligibility rule during screening; do not infer a filtered count.
 
 ## ACM Digital Library
 
 Official advanced search: https://dl.acm.org/search/advanced  
 Official search guidance: https://libraries.acm.org/digital-library/search-and-browse
 
-**Execution gate:** `BLOCKED_PENDING_AUTHENTICATED_UI_VERIFICATION`. Before either query is run, verify field/default-scope behavior, trailing wildcard support, the English-language facet, and the selected collection toggle in the authenticated ACM Digital Library interface.
+**Execution gate:** `READY_FOR_S03_WITH_LOGIN_EXPORT_CHECK`. The live Advanced Search page verified Boolean operators, exact phrases, trailing wildcards outside quoted phrases, `Search Within = Anywhere`, custom publication dates, and both collection labels. The observed session was Basic Edition, so sign-in/export capability and any results-page language/type facets must be recorded during S-03.
 
 ### High-recall query
 
@@ -73,7 +73,7 @@ AND
  OR "resource allocation")
 ```
 
-Apply the date-published filter 2021–2026. Retain `Research Article` and `Short Paper` records for substantive eligibility screening; exclude `Demonstration`, `Extended abstract`, `Poster`, and `Work in Progress` records when those types do not provide the substantive method-and-results content required by Amendment 003. Record explicitly whether the run uses `Publications of the ACM and Affiliated Organizations` or `The ACM Guide to Computing Literature`; do not label either scope generically as `The ACM Digital Library` in the execution log.
+Use `The ACM Full-Text collection`, `Search Within = Anywhere`, and a custom date range from January 2021 through the month containing the search date. If the interface cannot express the exact search-day boundary, enforce it during screening. Retain `Research Article` and `Short Paper` records for substantive eligibility screening; exclude `Demonstration`, `Extended abstract`, `Poster`, and `Work in Progress` records when those types do not provide the substantive method-and-results content required by Amendment 003. If language or publication-type facets are absent, export the broader permitted set and enforce those criteria during screening. Any separate use of `The ACM Guide to Computing Literature` is supplementary and must be logged separately.
 
 ## Scopus
 
@@ -113,7 +113,7 @@ Apply interface refinements: document types `Article` and `Proceedings Paper`; l
 
 ## Execution rule
 
-Version 1.2 is prospective and has not been executed. IEEE and ACM runs remain prohibited until their authenticated-interface gates above are resolved and recorded. For each eventual run, record the exact pasted query, platform, collection, filters, local search date and time, reported result count, exported count, export format, raw file name, and any cap or failure. Do not replace an executed query silently; any change after the first formal run requires a dated protocol amendment and a rerun on every affected platform.
+Version 1.3 is prospective and has not been executed. For each eventual run, record the exact pasted query, platform, collection, filters, local search date and time, reported result count, exported count, export format, raw file name, and any cap or failure. A missing facet triggers broader export plus downstream screening, not an inferred count. Do not replace an executed query silently; any change after the first formal run requires a dated protocol amendment and a rerun on every affected platform.
 
 The seed matrix in `seed_query_coverage_matrix.csv` contains expected query sensitivity only. It is not evidence that any database search has been executed or that a seed record is indexed by a platform on the final search date.
 

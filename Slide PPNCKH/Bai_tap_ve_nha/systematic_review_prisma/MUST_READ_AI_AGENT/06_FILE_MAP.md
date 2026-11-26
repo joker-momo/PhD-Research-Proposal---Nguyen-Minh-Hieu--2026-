@@ -16,6 +16,7 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 | 2021+ amendment | `../protocol_amendment_002.md` |
 | Report-completeness amendment | `../protocol_amendment_003_report_completeness.md` |
 | Query-validation amendment | `../protocol_amendment_004_query_validation.md` |
+| IEEE/ACM interface amendment | `../protocol_amendment_005_interface_verification.md` |
 | Stage/status plan | `../project_plan.md` |
 | Current completion audit | `../completion_audit_2026-11-25.md` |
 | Submission blockers | `../submission_readiness_2026-11-25.md` |
@@ -35,6 +36,9 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 | Current committed S-01 research brief | `../corpus_expansion/briefs/s01_query_validation_brief.md` |
 | Accepted corrected S-01 result | `../corpus_expansion/s01_query_validation_corrected_result.json` |
 | Corrected S-01 acceptance review | `../corpus_expansion/reviews/s01_query_validation_correction_acceptance.md` |
+| IEEE interface verification | `../corpus_expansion/interface_verification/ieee_xplore_2026-11-26.md` |
+| ACM interface verification | `../corpus_expansion/interface_verification/acm_dl_2026-11-26.md` |
+| IEEE/ACM Codex review | `../corpus_expansion/reviews/ieee_acm_interface_verification_acceptance.md` |
 | Formal-search status | `../formal_search_log_v0.2.csv` |
 | Record screening | `../screening_log.csv` |
 | Study/report linkage | `../study_report_map.csv` |

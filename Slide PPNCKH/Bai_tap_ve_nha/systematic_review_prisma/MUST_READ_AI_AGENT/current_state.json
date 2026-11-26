@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T13:27:46+07:00",
+  "updated_at": "2026-11-26T13:35:13+07:00",
   "goal": {
     "version": "HK261-PRISMA-completion-spec-v2",
-    "status": "execution_in_progress_s01_adopted_pending_authenticated_ui_verification",
-    "summary": "S-01 is adopted prospectively in query set 1.2 and Amendment 004. IEEE and ACM remain blocked pending authenticated-interface verification. No search, export or corpus decision changed.",
+    "status": "execution_in_progress_b04_core_searches_ready",
+    "summary": "Query set 1.3 and Amendment 005 clear IEEE/ACM syntax for formal runs with declared facet fallbacks. No search, result, export or corpus decision changed.",
     "goal_engine_status_observed": "usageLimited"
   },
   "task": {
-    "task_id": "adopt-s01-query-revisions",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T13:26:57+07:00",
-    "updated_at": "2026-11-26T13:27:46+07:00",
-    "completed_at": "2026-11-26T13:27:46+07:00",
-    "decision_id": "adopt-s01-query-revisions-v1"
-  },
-  "next_task": {
     "task_id": "verify-ieee-acm-authenticated-interfaces",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-26T13:33:49+07:00",
+    "updated_at": "2026-11-26T13:35:13+07:00",
+    "completed_at": "2026-11-26T13:35:13+07:00",
+    "decision_id": "verify-ieee-acm-authenticated-interfaces-v1"
+  },
+  "next_task": {
+    "task_id": "execute-and-archive-core-searches-b04",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Verify the unresolved IEEE/ACM syntax, wildcard, scope and facet behavior in authenticated interfaces before any formal search.",
-    "acceptance": "Two timestamped platform records resolve or retain every S-01 gap with exact syntax, facets, scope and evidence locators; zero searches, counts or exports; Codex review and validators pass."
+    "action": "Execute S-02–S-05 in official interfaces, archive immutable raw exports and complete the formal search log.",
+    "acceptance": "Eight runs have exact query, filters, RFC3339 time, reported/exported totals, raw file, checksum and limitations; every raw export parses; caps/continuations reconcile; no failed-access count is inferred."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -43,9 +43,9 @@
     "canonical_pdf": "manuscript/sn_computer_science/main.pdf",
     "canonical_pdf_git_blob": "c563e5b6a8543de5631f7370057f1b1c979616cd",
     "workspace_baseline_status": "CLEAN_AFTER_B02",
-    "effective_protocol": "protocol.md plus protocol_amendment_001.md, protocol_amendment_002.md, protocol_amendment_003_report_completeness.md and protocol_amendment_004_query_validation.md",
+    "effective_protocol": "protocol.md plus protocol_amendment_001.md through protocol_amendment_005_interface_verification.md",
     "query_translations": "final_query_translations.md",
-    "query_translations_version": "1.2",
+    "query_translations_version": "1.3",
     "access_readiness_record": "search_access_readiness_2026-11-26.md",
     "s01_evidence_index": "MUST_READ_AI_AGENT/06_FILE_MAP.md",
     "seed_query_matrix": "seed_query_coverage_matrix.csv",
@@ -70,28 +70,13 @@
     },
     "screening_batches_accepted": 8,
     "evidence_checksums": "92/92 PASS",
-    "s01_query_validation": {
-      "status": "SCIENTIFICALLY_ACCEPTED_USER_RELAYED",
-      "mandatory_pass": 13,
-      "mandatory_fail": 0,
-      "corrective_pass": 8,
-      "corrective_fail": 0,
-      "failed_criteria": [],
-      "database_result_counts_claimed": 0,
-      "project_files_modified_by_research_agent": 0,
-      "provider_task_or_context_id": "NOT_PROVIDED_IN_USER_PASTED_RESULT",
-      "provenance": "USER_RELAYED_ATTACHMENT",
-      "attachment_sha256": "a17bbfca001a37332c9370fc0fff4a2464df0e2e615fbacd043f14b059b0d556"
-    },
-    "s01_query_adoption": {
-      "status": "ADOPTED_PROSPECTIVELY",
-      "scopus_wos_queries_revised": 4,
-      "acm_filter_rules_revised": 1,
-      "ieee_acm_platforms_still_blocked": 2,
-      "database_searches_executed": 0,
-      "database_result_counts_claimed": 0,
-      "existing_corpus_decisions_changed": 0,
-      "protocol_amendment": "protocol_amendment_004_query_validation.md"
+    "search_preparation": {
+      "s01_validation": "ACCEPTED_USER_RELAYED_13_OF_13_PLUS_8_OF_8",
+      "query_set": "1.3",
+      "ieee_acm_interface_records": 2,
+      "formal_searches_executed": 0,
+      "result_or_export_counts_claimed": 0,
+      "existing_corpus_decisions_changed": 0
     },
     "family_audit": {
       "reports_accounted": 46,
@@ -121,12 +106,13 @@
   },
   "blockers": [
     "Not a completed exhaustive search: core database exports and identification counts remain incomplete.",
-    "IEEE Xplore and ACM Digital Library formal runs remain blocked until authenticated-interface verification resolves the syntax, wildcard, scope and facet gaps recorded in query set 1.2.",
+    "B04 may require user takeover for institutional sign-in; ACM login/export and both platforms' results-page facets remain execution-time checks.",
     "Eight reports await classification; study-family independence and final human adjudication are unresolved.",
     "Twelve included reports have minimum extraction only and are not appraised; domain 9 is withheld for the 24-report subset.",
     "Authorship/declarations are unconfirmed; no submission-ready claim, submission or email is authorized in the current task."
   ],
   "user_confirmation_required": [
+    "Institutional-login takeover if a B04 core database prompts for authentication; credentials must not be relayed to another agent.",
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
     "Contributions, funding, conflicts, data availability and AI disclosure.",
     "Exact examination date for calculating the course deadline.",
