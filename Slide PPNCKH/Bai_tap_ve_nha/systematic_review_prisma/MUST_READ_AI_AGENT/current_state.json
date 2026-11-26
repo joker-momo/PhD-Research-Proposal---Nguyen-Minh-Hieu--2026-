@@ -1,28 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:05:56+07:00",
+  "updated_at": "2026-11-26T23:07:38+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-batch02-correction05-review",
+    "task_id": "restart-11-batch01-preflight-brief",
     "owner": "CODEX_WRITING",
-    "research_owner": "GEMINI_RESEARCH",
     "status": "completed",
-    "started_at": "2026-11-26T23:03:37+07:00",
-    "updated_at": "2026-11-26T23:05:56+07:00",
-    "completed_at": "2026-11-26T23:05:56+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_correction05_review.md",
-    "decision_id": "restart-11-batch02-correction05-review-v1"
+    "started_at": "2026-11-26T23:07:38+07:00",
+    "updated_at": "2026-11-26T23:07:38+07:00",
+    "completed_at": "2026-11-26T23:07:38+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_preflight_brief.md",
+    "decision_id": "restart-11-batch01-preflight-brief-v1"
   },
   "next_task": {
-    "task_id": "restart-11-batch02-outcomes-and-access-resolution",
+    "task_id": "restart-11-batch01-preflight",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "On resume, correct only the three logged Batch 02 outcomes fields and finish independent assertion verification. P08 completion awaits user direction for the 13 reports from locked Batch 01.",
-    "acceptance": "Zero abstract-only or contradicted assertions. All 25 reports accepted under P08 before P09."
+    "action": "Probe Gemini.app access to R0001 body PDF.",
+    "acceptance": "One exact source-grounded body excerpt on physical page >=2.",
+    "dispatch_brief": "restart_2026_11_26/extraction/batch_01_preflight_brief.md",
+    "message_id": "hk261-p08-b01-preflight-20261126-v1"
   },
   "project": {
     "target_venue": "SN Computer Science",
