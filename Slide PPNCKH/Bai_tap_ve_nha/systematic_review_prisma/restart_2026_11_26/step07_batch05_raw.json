@@ -1,0 +1,45 @@
+{
+  "id": "879f5605-503e-44bb-a714-29d322af59f6",
+  "contextId": "51b2e89a-f520-4179-9bfe-924333118db3",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T12:20:20.182+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T12:19:14.358+00:00",
+    "updated_at": "2026-11-26T12:20:20.182+00:00",
+    "started_at": "2026-11-26T12:19:14.361+00:00",
+    "completed_at": "2026-11-26T12:20:20.182+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — Systematic Review Screening Reassessment",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "bd5af5b1-8e76-4b6a-bc41-0c098c3bec6f",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "R0257 | U | E3 | REP | T | Grouping-Split Federated Learning Approach in Resource-Constrained Edge Computing Scenarios | Missing abstract; split federated learning title cannot confirm or exclude collaborative inference\nR0261 | U | E3 | REP | T | Application of cognitive radio in anti jamming of satellite and aircraft communication | Missing abstract; cognitive radio communication title cannot confirm or exclude collaborative inference"
+        }
+      ]
+    }
+  ]
+}
