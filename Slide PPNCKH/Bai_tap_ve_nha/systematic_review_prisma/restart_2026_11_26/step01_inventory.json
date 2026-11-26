@@ -1,0 +1,969 @@
+{
+  "inventory_id": "HK261-RESTART-STEP01-v1",
+  "created_at": "2026-11-26T18:08:34+07:00",
+  "updated_at": "2026-11-26T18:08:34+07:00",
+  "base_commit": "ffd488a4f2f8d7b4bc6324f8b7066bd62cb9c2cb",
+  "scope": "Inventory only; not dataset lock, deduplication, screening, or scientific acceptance",
+  "files": [
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv",
+      "source": "IEEE",
+      "query_id": "IEEE-HR",
+      "format": "CSV",
+      "rows": 42,
+      "columns": [
+        "Document Title",
+        "Authors",
+        "Author Affiliations",
+        "Publication Title",
+        "Date Added To Xplore",
+        "Publication Year",
+        "Volume",
+        "Issue",
+        "Start Page",
+        "End Page",
+        "Abstract",
+        "ISSN",
+        "ISBNs",
+        "DOI",
+        "Funding Information",
+        "PDF Link",
+        "Author Keywords",
+        "IEEE Terms",
+        "Mesh_Terms",
+        "Article Citation Count",
+        "Patent Citation Count",
+        "Reference Count",
+        "License",
+        "Online Date",
+        "Issue Date",
+        "Meeting Date",
+        "Publisher",
+        "Document Identifier"
+      ],
+      "missing_or_absent_column": {
+        "Document Title": 0,
+        "Authors": 0,
+        "Publication Year": 0,
+        "Publication Title": 0,
+        "Abstract": 0,
+        "DOI": 0
+      },
+      "explicit_missing_markers": {},
+      "sha256": "b7144436386f015eec92fa3dc2f568c1b7c0e3794d438564e16ad81287ff067f",
+      "hash_matches_manifest": true,
+      "year_values": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "query_split": null
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_complementary_export_2026-11-26.csv",
+      "source": "IEEE",
+      "query_id": "IEEE-COMP",
+      "format": "CSV",
+      "rows": 21,
+      "columns": [
+        "Document Title",
+        "Authors",
+        "Author Affiliations",
+        "Publication Title",
+        "Date Added To Xplore",
+        "Publication Year",
+        "Volume",
+        "Issue",
+        "Start Page",
+        "End Page",
+        "Abstract",
+        "ISSN",
+        "ISBNs",
+        "DOI",
+        "Funding Information",
+        "PDF Link",
+        "Author Keywords",
+        "IEEE Terms",
+        "Mesh_Terms",
+        "Article Citation Count",
+        "Patent Citation Count",
+        "Reference Count",
+        "License",
+        "Online Date",
+        "Issue Date",
+        "Meeting Date",
+        "Publisher",
+        "Document Identifier"
+      ],
+      "missing_or_absent_column": {
+        "Document Title": 0,
+        "Authors": 0,
+        "Publication Year": 0,
+        "Publication Title": 0,
+        "Abstract": 0,
+        "DOI": 0
+      },
+      "explicit_missing_markers": {},
+      "sha256": "913d2c1ada71f4a865ee2a6ecc78a048d94552204ebd0ff63c539a9a515237f8",
+      "hash_matches_manifest": true,
+      "year_values": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "query_split": null
+    },
+    {
+      "path": "sources/raw/core_searches/scopus_high_recall_export_2026-11-26.csv",
+      "source": "SCOPUS",
+      "query_id": "SCOPUS-HR",
+      "format": "CSV",
+      "rows": 77,
+      "columns": [
+        "Authors",
+        "Author full names",
+        "Author(s) ID",
+        "Title",
+        "Year",
+        "Source title",
+        "Volume",
+        "Issue",
+        "Art. No.",
+        "Page start",
+        "Page end",
+        "Cited by",
+        "DOI",
+        "Link",
+        "Affiliations",
+        "Authors with affiliations",
+        "Abstract",
+        "Author Keywords",
+        "Index Keywords",
+        "Molecular Sequence Numbers",
+        "Chemicals/CAS",
+        "Tradenames",
+        "Manufacturers",
+        "Funding Details",
+        "Funding Texts",
+        "References",
+        "Correspondence Address",
+        "Editors",
+        "Publisher",
+        "Sponsors",
+        "Conference name",
+        "Conference date",
+        "Conference location",
+        "Conference code",
+        "ISSN",
+        "ISBN",
+        "CODEN",
+        "PubMed ID",
+        "Language of Original Document",
+        "Abbreviated Source Title",
+        "Document Type",
+        "Publication Stage",
+        "Open Access",
+        "Source",
+        "EID"
+      ],
+      "missing_or_absent_column": {
+        "Title": 0,
+        "Authors": 0,
+        "Year": 0,
+        "Source title": 0,
+        "Abstract": 0,
+        "DOI": 0
+      },
+      "explicit_missing_markers": {},
+      "sha256": "92201eb7431a1828792e2aac75a22b0b1b67e70f749a978617e70d924185dd58",
+      "hash_matches_manifest": true,
+      "year_values": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "query_split": null
+    },
+    {
+      "path": "sources/raw/core_searches/scopus_complementary_export_2026-11-26.csv",
+      "source": "SCOPUS",
+      "query_id": "SCOPUS-COMP",
+      "format": "CSV",
+      "rows": 33,
+      "columns": [
+        "Authors",
+        "Author full names",
+        "Author(s) ID",
+        "Title",
+        "Year",
+        "Source title",
+        "Volume",
+        "Issue",
+        "Art. No.",
+        "Page start",
+        "Page end",
+        "Cited by",
+        "DOI",
+        "Link",
+        "Affiliations",
+        "Authors with affiliations",
+        "Abstract",
+        "Author Keywords",
+        "Index Keywords",
+        "Molecular Sequence Numbers",
+        "Chemicals/CAS",
+        "Tradenames",
+        "Manufacturers",
+        "Funding Details",
+        "Funding Texts",
+        "References",
+        "Correspondence Address",
+        "Editors",
+        "Publisher",
+        "Sponsors",
+        "Conference name",
+        "Conference date",
+        "Conference location",
+        "Conference code",
+        "ISSN",
+        "ISBN",
+        "CODEN",
+        "PubMed ID",
+        "Language of Original Document",
+        "Abbreviated Source Title",
+        "Document Type",
+        "Publication Stage",
+        "Open Access",
+        "Source",
+        "EID"
+      ],
+      "missing_or_absent_column": {
+        "Title": 0,
+        "Authors": 0,
+        "Year": 0,
+        "Source title": 0,
+        "Abstract": 0,
+        "DOI": 0
+      },
+      "explicit_missing_markers": {},
+      "sha256": "1858cedf423e71cac13429eebaab5aae031e9e6f41e19179c0667662eb57ceca",
+      "hash_matches_manifest": true,
+      "year_values": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "query_split": null
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_normalized.csv",
+      "source": "OPENALEX",
+      "query_id": "OPENALEX-HR",
+      "format": "CSV",
+      "rows": 85,
+      "columns": [
+        "record_id",
+        "source",
+        "query_variant",
+        "openalex_id",
+        "doi",
+        "title",
+        "authors",
+        "publication_year",
+        "publication_date",
+        "type",
+        "language",
+        "venue",
+        "landing_page_url",
+        "locations_count",
+        "is_retracted"
+      ],
+      "missing_or_absent_column": {
+        "title": 0,
+        "authors": 0,
+        "publication_year": 0,
+        "venue": 1,
+        "abstract": 85,
+        "doi": 1
+      },
+      "explicit_missing_markers": {},
+      "sha256": "673d2ab06811432f24903598fa49935d085da5f89d026512e2b2f6dc04cbe8bb",
+      "hash_matches_manifest": true,
+      "year_values": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "query_split": null
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_normalized.csv",
+      "source": "OPENALEX",
+      "query_id": "OPENALEX-COMP",
+      "format": "CSV",
+      "rows": 26,
+      "columns": [
+        "record_id",
+        "source",
+        "query_variant",
+        "openalex_id",
+        "doi",
+        "title",
+        "authors",
+        "publication_year",
+        "publication_date",
+        "type",
+        "language",
+        "venue",
+        "landing_page_url",
+        "locations_count",
+        "is_retracted"
+      ],
+      "missing_or_absent_column": {
+        "title": 0,
+        "authors": 0,
+        "publication_year": 0,
+        "venue": 0,
+        "abstract": 26,
+        "doi": 1
+      },
+      "explicit_missing_markers": {},
+      "sha256": "0be3322c2adcae027834cfdca0456cc1b815cf0bbeb9fb2348d33733f7924d57",
+      "hash_matches_manifest": true,
+      "year_values": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "query_split": null
+    },
+    {
+      "path": "sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_all_records.csv",
+      "source": "ACM",
+      "query_id": "ACM-HR+COMP",
+      "format": "CSV",
+      "rows": 404,
+      "columns": [
+        "source",
+        "collection",
+        "query_variant",
+        "page",
+        "rank",
+        "record_type",
+        "display_date",
+        "year",
+        "title",
+        "authors",
+        "venue",
+        "doi",
+        "url",
+        "abstract_snippet",
+        "source_page_url",
+        "captured_at"
+      ],
+      "missing_or_absent_column": {
+        "title": 0,
+        "authors": 215,
+        "year": 0,
+        "venue": 0,
+        "abstract_snippet": 335,
+        "doi": 0
+      },
+      "explicit_missing_markers": {
+        "venue": 238,
+        "doi": 39,
+        "url": 35
+      },
+      "sha256": "44ddc082686f54af1f2c8199ee0db613296f84d7f5b8e3b5d510bc76fd510a06",
+      "hash_matches_manifest": true,
+      "year_values": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "query_split": {
+        "high_recall": 79,
+        "complementary": 325
+      }
+    }
+  ],
+  "query_evidence": [
+    {
+      "source": "IEEE",
+      "variant": "high_recall",
+      "evidence_locator": "sources/raw/core_searches/ieee_xplore_high_recall_authenticated_2026-11-26.json",
+      "exact_query": "(\"All Metadata\":\"UAV swarm\" OR \"All Metadata\":\"drone swarm\" OR \"All Metadata\":\"multi-UAV\" OR \"All Metadata\":\"multiple UAVs\" OR \"All Metadata\":\"aerial network\" OR \"All Metadata\":FANET) AND (\"All Metadata\":\"distributed inference\" OR \"All Metadata\":\"collaborative inference\" OR \"All Metadata\":\"cooperative inference\" OR \"All Metadata\":\"split inference\" OR \"All Metadata\":\"split computing\" OR \"All Metadata\":\"edge intelligence\")",
+      "filters": {
+        "publication_year": "2021-2026",
+        "content_type": [
+          "Conferences",
+          "Journals"
+        ],
+        "language": "facet_not_available_screen_downstream"
+      },
+      "recorded_search_time": "2026-11-26T14:13:05+07:00",
+      "timestamp_basis": "Local filesystem modification time of the completed export.",
+      "query_version": "1.3",
+      "note": null
+    },
+    {
+      "source": "IEEE",
+      "variant": "complementary",
+      "evidence_locator": "sources/raw/core_searches/ieee_xplore_complementary_authenticated_2026-11-26.json",
+      "exact_query": "(\"All Metadata\":\"UAV swarm\" OR \"All Metadata\":\"drone swarm\" OR \"All Metadata\":\"multi-UAV\" OR \"All Metadata\":\"multiple UAVs\" OR \"All Metadata\":\"aerial network\" OR \"All Metadata\":FANET) AND ((\"All Metadata\":\"deep neural network\" OR \"All Metadata\":DNN OR \"All Metadata\":\"deep learning\") AND \"All Metadata\":inference) AND (\"All Metadata\":partition* OR \"All Metadata\":offload* OR \"All Metadata\":placement OR \"All Metadata\":schedul* OR \"All Metadata\":assign* OR \"All Metadata\":\"resource allocation\")",
+      "filters": {
+        "publication_year": "2021-2026",
+        "content_type": [
+          "Conferences",
+          "Journals"
+        ],
+        "language": "facet_not_available_screen_downstream"
+      },
+      "recorded_search_time": "2026-11-26T14:15:41+07:00",
+      "timestamp_basis": "Local filesystem modification time of the completed export.",
+      "query_version": "1.3",
+      "note": null
+    },
+    {
+      "source": "SCOPUS",
+      "variant": "high_recall",
+      "evidence_locator": "sources/raw/core_searches/scopus_high_recall_authenticated_2026-11-26.json",
+      "exact_query": "TITLE-ABS-KEY((\"UAV swarm\" OR \"drone swarm\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR FANET) AND (\"distributed inference\" OR \"collaborative inference\" OR \"cooperative inference\" OR \"split inference\" OR \"split computing\" OR \"edge intelligence\")) AND PUBYEAR AFT 2020 AND PUBYEAR BEF 2027 AND (DOCTYPE(ar) OR DOCTYPE(cp)) AND LANGUAGE(english)",
+      "filters": {
+        "publication_year": "2021-2026",
+        "document_type": [
+          "Article",
+          "Conference paper"
+        ],
+        "language": "English"
+      },
+      "recorded_search_time": "2026-11-26T14:08:35+07:00",
+      "timestamp_basis": "Local filesystem modification time of the completed export.",
+      "query_version": "1.3",
+      "note": null
+    },
+    {
+      "source": "SCOPUS",
+      "variant": "complementary",
+      "evidence_locator": "sources/raw/core_searches/scopus_complementary_authenticated_2026-11-26.json",
+      "exact_query": "TITLE-ABS-KEY((\"UAV swarm\" OR \"drone swarm\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR FANET) AND ((\"deep neural network\" OR DNN OR \"deep learning\") AND inference) AND (partition* OR offload* OR placement OR schedul* OR assign* OR \"resource allocation\")) AND PUBYEAR AFT 2020 AND PUBYEAR BEF 2027 AND (DOCTYPE(ar) OR DOCTYPE(cp)) AND LANGUAGE(english)",
+      "filters": {
+        "publication_year": "2021-2026",
+        "document_type": [
+          "Article",
+          "Conference paper"
+        ],
+        "language": "English"
+      },
+      "recorded_search_time": "2026-11-26T14:09:24+07:00",
+      "timestamp_basis": "Local filesystem modification time of the completed export.",
+      "query_version": "1.3",
+      "note": null
+    },
+    {
+      "source": "OPENALEX",
+      "variant": "high_recall",
+      "evidence_locator": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_manifest.json",
+      "exact_query": "(\"UAV swarm\" OR \"drone swarm\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR FANET) AND (\"distributed inference\" OR \"collaborative inference\" OR \"cooperative inference\" OR \"split inference\" OR \"split computing\" OR \"edge intelligence\")",
+      "filters": "from_publication_date:2021-01-01,to_publication_date:2026-11-26,language:en",
+      "recorded_search_time": "2026-11-26T14:54:14+07:00",
+      "timestamp_basis": "As recorded in source evidence; not a new search",
+      "query_version": "1.4-openalex-1",
+      "note": null
+    },
+    {
+      "source": "OPENALEX",
+      "variant": "complementary",
+      "evidence_locator": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_manifest.json",
+      "exact_query": "(\"UAV swarm\" OR \"drone swarm\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR FANET) AND ((\"deep neural network\" OR DNN OR \"deep learning\") AND inference) AND (partition* OR offload* OR placement OR schedul* OR assign* OR \"resource allocation\")",
+      "filters": "from_publication_date:2021-01-01,to_publication_date:2026-11-26,language:en",
+      "recorded_search_time": "2026-11-26T14:54:14+07:00",
+      "timestamp_basis": "As recorded in source evidence; not a new search",
+      "query_version": "1.4-openalex-1",
+      "note": null
+    },
+    {
+      "source": "ACM",
+      "variant": "high_recall",
+      "evidence_locator": "sources/raw/core_searches/acm_high_recall_2026-11-26.json",
+      "exact_query": "(\"UAV swarm\" OR \"drone swarm\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR FANET) AND (\"distributed inference\" OR \"collaborative inference\" OR \"cooperative inference\" OR \"split inference\" OR \"split computing\" OR \"edge intelligence\")",
+      "filters": {
+        "search_within": "Anywhere",
+        "e_publication_date": "2021-01-01 through 2026-11-30",
+        "content_type": "broad_full_text_collection",
+        "language": "facet_not_available"
+      },
+      "recorded_search_time": "2026-11-26T13:50:14+07:00",
+      "timestamp_basis": "As recorded in source evidence; not a new search",
+      "query_version": "1.3",
+      "note": "ACM count-only observation supplemented by later 404-row capture"
+    },
+    {
+      "source": "ACM",
+      "variant": "complementary",
+      "evidence_locator": "sources/raw/core_searches/acm_complementary_2026-11-26.json",
+      "exact_query": "(\"UAV swarm\" OR \"drone swarm\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR FANET) AND ((\"deep neural network\" OR DNN OR \"deep learning\") AND inference) AND (partition* OR offload* OR placement OR schedul* OR assign* OR \"resource allocation\")",
+      "filters": {
+        "search_within": "Anywhere",
+        "e_publication_date": "2021-01-01 through 2026-11-30",
+        "content_type": "broad_full_text_collection",
+        "language": "facet_not_available"
+      },
+      "recorded_search_time": "2026-11-26T13:50:14+07:00",
+      "timestamp_basis": "As recorded in source evidence; not a new search",
+      "query_version": "1.3",
+      "note": "ACM count-only observation supplemented by later 404-row capture"
+    }
+  ],
+  "checksum_checks": [
+    {
+      "path": "sources/raw/core_searches/acm_basic_edition_recheck_2026-11-26.json",
+      "expected_sha256": "e4ef43defc7f0845741d1818e128c7e156d124ecbc2e4d2c43f6b99b11ab98be",
+      "actual_sha256": "e4ef43defc7f0845741d1818e128c7e156d124ecbc2e4d2c43f6b99b11ab98be",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_complementary_2026-11-26.json",
+      "expected_sha256": "232c17fd7605d3403d21cc211c438aa2b8e705949dbccd743bbeff9a41e146aa",
+      "actual_sha256": "232c17fd7605d3403d21cc211c438aa2b8e705949dbccd743bbeff9a41e146aa",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_high_recall_2026-11-26.json",
+      "expected_sha256": "dc15f897af69398ae3caffd252206ccddaf41403486eac106f0b5612035939ff",
+      "actual_sha256": "dc15f897af69398ae3caffd252206ccddaf41403486eac106f0b5612035939ff",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_complementary_2026-11-26.json",
+      "expected_sha256": "3fbd7294cc5cd57ef75221491470e74c292fd0b4f53c8ca186728152550d932a",
+      "actual_sha256": "3fbd7294cc5cd57ef75221491470e74c292fd0b4f53c8ca186728152550d932a",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_complementary_authenticated_2026-11-26.json",
+      "expected_sha256": "ae8673b6149eaab8e9f36743e7a55bc52ed66a0c18b165f68a8ec9d4a05010f2",
+      "actual_sha256": "ae8673b6149eaab8e9f36743e7a55bc52ed66a0c18b165f68a8ec9d4a05010f2",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_complementary_export_2026-11-26.csv",
+      "expected_sha256": "913d2c1ada71f4a865ee2a6ecc78a048d94552204ebd0ff63c539a9a515237f8",
+      "actual_sha256": "913d2c1ada71f4a865ee2a6ecc78a048d94552204ebd0ff63c539a9a515237f8",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_high_recall_2026-11-26.json",
+      "expected_sha256": "6d49178bf1051f1aeb5482d1299c44ac7eaf51221e067f2b933bdba20ac749c7",
+      "actual_sha256": "6d49178bf1051f1aeb5482d1299c44ac7eaf51221e067f2b933bdba20ac749c7",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_high_recall_authenticated_2026-11-26.json",
+      "expected_sha256": "ec742fe25ba4c1d0ccbf070502f4fe6d46ca074bb17cd5763b7c4ae5de578aea",
+      "actual_sha256": "ec742fe25ba4c1d0ccbf070502f4fe6d46ca074bb17cd5763b7c4ae5de578aea",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv",
+      "expected_sha256": "b7144436386f015eec92fa3dc2f568c1b7c0e3794d438564e16ad81287ff067f",
+      "actual_sha256": "b7144436386f015eec92fa3dc2f568c1b7c0e3794d438564e16ad81287ff067f",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/scopus_access_attempt_2026-11-26.json",
+      "expected_sha256": "9ab138211a968648e2dd0f26a370b477943c670c7554b8fa8d326c5291515dbd",
+      "actual_sha256": "9ab138211a968648e2dd0f26a370b477943c670c7554b8fa8d326c5291515dbd",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/scopus_complementary_authenticated_2026-11-26.json",
+      "expected_sha256": "5e9d06d8056f6b73a38378d26ad9e95a7796180bdb9fb5dbad7dbd865c2b76ee",
+      "actual_sha256": "5e9d06d8056f6b73a38378d26ad9e95a7796180bdb9fb5dbad7dbd865c2b76ee",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/scopus_complementary_export_2026-11-26.csv",
+      "expected_sha256": "1858cedf423e71cac13429eebaab5aae031e9e6f41e19179c0667662eb57ceca",
+      "actual_sha256": "1858cedf423e71cac13429eebaab5aae031e9e6f41e19179c0667662eb57ceca",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/scopus_high_recall_authenticated_2026-11-26.json",
+      "expected_sha256": "6e2869b2fa491113df1ae269918a91350b484cfe75f89cec0243b3acde6c8573",
+      "actual_sha256": "6e2869b2fa491113df1ae269918a91350b484cfe75f89cec0243b3acde6c8573",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/scopus_high_recall_export_2026-11-26.csv",
+      "expected_sha256": "92201eb7431a1828792e2aac75a22b0b1b67e70f749a978617e70d924185dd58",
+      "actual_sha256": "92201eb7431a1828792e2aac75a22b0b1b67e70f749a978617e70d924185dd58",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/web_of_science_access_attempt_2026-11-26.json",
+      "expected_sha256": "b6c41df009ae2180ebeb470b5a07614096826044c6f07ee9cb7785a3c7ce37f0",
+      "actual_sha256": "b6c41df009ae2180ebeb470b5a07614096826044c6f07ee9cb7785a3c7ce37f0",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/web_of_science_free_view_recheck_2026-11-26.json",
+      "expected_sha256": "1b3e4f28de70892ab7cb8d632acf37eee479f603d41718f380e81b72a4a3d940",
+      "actual_sha256": "1b3e4f28de70892ab7cb8d632acf37eee479f603d41718f380e81b72a4a3d940",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_checksums.sha256",
+      "expected_sha256": "4e0ac4b4413b8a08be8b3edb60076856a9d315ff4f51f8dc7068a4f43be83fb7",
+      "actual_sha256": "4e0ac4b4413b8a08be8b3edb60076856a9d315ff4f51f8dc7068a4f43be83fb7",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_manifest.json",
+      "expected_sha256": "e80fa0bb95f6408e50cb8b760815a5f6729cdef1c3ded182a3eb2a62d227d5d6",
+      "actual_sha256": "e80fa0bb95f6408e50cb8b760815a5f6729cdef1c3ded182a3eb2a62d227d5d6",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_normalized.csv",
+      "expected_sha256": "0be3322c2adcae027834cfdca0456cc1b815cf0bbeb9fb2348d33733f7924d57",
+      "actual_sha256": "0be3322c2adcae027834cfdca0456cc1b815cf0bbeb9fb2348d33733f7924d57",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_complementary_2026-11-26_raw.json",
+      "expected_sha256": "f105674ed7fe148dcd917135bbb1362e01ce18399e57ac14438a0fa5ba6e23d1",
+      "actual_sha256": "f105674ed7fe148dcd917135bbb1362e01ce18399e57ac14438a0fa5ba6e23d1",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_checksums.sha256",
+      "expected_sha256": "2756cabde637c15d3889c2916a41d684204af21a4f149fe5a33f3138bf9a51d4",
+      "actual_sha256": "2756cabde637c15d3889c2916a41d684204af21a4f149fe5a33f3138bf9a51d4",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_manifest.json",
+      "expected_sha256": "fb00ddc38dfa0120dcba67e8318d9a305708fab527af8bb126da7c6d5bdbf0f7",
+      "actual_sha256": "fb00ddc38dfa0120dcba67e8318d9a305708fab527af8bb126da7c6d5bdbf0f7",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_normalized.csv",
+      "expected_sha256": "673d2ab06811432f24903598fa49935d085da5f89d026512e2b2f6dc04cbe8bb",
+      "actual_sha256": "673d2ab06811432f24903598fa49935d085da5f89d026512e2b2f6dc04cbe8bb",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_raw.json",
+      "expected_sha256": "850a1fc7d9bd86a5f3f91aa608aff0abd526aee2a8f1277e1610acef66f12ce0",
+      "actual_sha256": "850a1fc7d9bd86a5f3f91aa608aff0abd526aee2a8f1277e1610acef66f12ce0",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_run_summary_2026-11-26.json",
+      "expected_sha256": "051ed9aecca87de1a5855ef4a54e88e05f20c64ee08b6e98a310692cdd87a7f2",
+      "actual_sha256": "051ed9aecca87de1a5855ef4a54e88e05f20c64ee08b6e98a310692cdd87a7f2",
+      "pass_check": true,
+      "ledger": "base"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_10.json",
+      "expected_sha256": "dee93e2e302d4eda36927abe238f5563bada4cd91877d157da4d5447f4939616",
+      "actual_sha256": "dee93e2e302d4eda36927abe238f5563bada4cd91877d157da4d5447f4939616",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_11.json",
+      "expected_sha256": "7295624c44b44400540389b85ecc9d35eef447d4ee698aab8c6fa256b3dc7b31",
+      "actual_sha256": "7295624c44b44400540389b85ecc9d35eef447d4ee698aab8c6fa256b3dc7b31",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_12.json",
+      "expected_sha256": "2dc1cbebe88cafcfb090fe05f48cb847291238f2911c60b7b6c5152ca34c20ce",
+      "actual_sha256": "2dc1cbebe88cafcfb090fe05f48cb847291238f2911c60b7b6c5152ca34c20ce",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_13.json",
+      "expected_sha256": "2fc84fbfca48193a0e9344ca96ab89dc1bbf6309c08727e1e9ee989b32842b6c",
+      "actual_sha256": "2fc84fbfca48193a0e9344ca96ab89dc1bbf6309c08727e1e9ee989b32842b6c",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_14.json",
+      "expected_sha256": "2739eb1c8b3961a4e168aa997f4c8cb5d592c343a1ac351d2038531081d3d040",
+      "actual_sha256": "2739eb1c8b3961a4e168aa997f4c8cb5d592c343a1ac351d2038531081d3d040",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_15.json",
+      "expected_sha256": "52e44f61221a5ff2ab77807928ecfc623e222066b23430e7d83655e303601b2e",
+      "actual_sha256": "52e44f61221a5ff2ab77807928ecfc623e222066b23430e7d83655e303601b2e",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_16.json",
+      "expected_sha256": "0aa5f792234840a89ad491612eb46d9f0d0a22aeb93ad066a27a174aa9602b09",
+      "actual_sha256": "0aa5f792234840a89ad491612eb46d9f0d0a22aeb93ad066a27a174aa9602b09",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_7.json",
+      "expected_sha256": "ebcfd370ee33a95cd1099debf29f251d7f78abeb192b0423790b37ebb2cfd5d4",
+      "actual_sha256": "ebcfd370ee33a95cd1099debf29f251d7f78abeb192b0423790b37ebb2cfd5d4",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_8.json",
+      "expected_sha256": "0c9f85750eeae7f7096f6f1f52a4a50cef9c4324563db5b80f9e221c13874a29",
+      "actual_sha256": "0c9f85750eeae7f7096f6f1f52a4a50cef9c4324563db5b80f9e221c13874a29",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_9.json",
+      "expected_sha256": "5ef0edb674ca3e54be3c2bec0406b8f4162d99e287b47c19b1647219b0cd4581",
+      "actual_sha256": "5ef0edb674ca3e54be3c2bec0406b8f4162d99e287b47c19b1647219b0cd4581",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_high_startPage_0.json",
+      "expected_sha256": "129a4935c5008043f6dd072d4d595508a9ef4ce2a221236adc9d1b2a960c0628",
+      "actual_sha256": "129a4935c5008043f6dd072d4d595508a9ef4ce2a221236adc9d1b2a960c0628",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_high_startPage_1.json",
+      "expected_sha256": "740783aec30c922403932d61575a83c8512e2a0b47e4511dce289c99d5f46509",
+      "actual_sha256": "740783aec30c922403932d61575a83c8512e2a0b47e4511dce289c99d5f46509",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_high_startPage_2.json",
+      "expected_sha256": "cef79273db1da69bada4b8ce2c83f418af19c368e2483bbb7bae203c8f17ea9f",
+      "actual_sha256": "cef79273db1da69bada4b8ce2c83f418af19c368e2483bbb7bae203c8f17ea9f",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_high_startPage_3.json",
+      "expected_sha256": "96d5d22c312d72657b60e5058c6ab113c84c9df2e5966bc1583bb97d4bf8bccb",
+      "actual_sha256": "96d5d22c312d72657b60e5058c6ab113c84c9df2e5966bc1583bb97d4bf8bccb",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_01.json",
+      "expected_sha256": "897d64486e5fc6f95a82e9302194d0dae3918bb0d8bc35e270b6ed7a8db6a0e8",
+      "actual_sha256": "897d64486e5fc6f95a82e9302194d0dae3918bb0d8bc35e270b6ed7a8db6a0e8",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_02.json",
+      "expected_sha256": "26e634a3e4b06b51d2ac783545b81d85bf37829259d9ee7f9a5a4e73351445ed",
+      "actual_sha256": "26e634a3e4b06b51d2ac783545b81d85bf37829259d9ee7f9a5a4e73351445ed",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_03.json",
+      "expected_sha256": "042de6d7165e501ab2706175615574d00a482bae0cccffdbe61a73ca932d0022",
+      "actual_sha256": "042de6d7165e501ab2706175615574d00a482bae0cccffdbe61a73ca932d0022",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_04.json",
+      "expected_sha256": "32206a98efb22b138ef914bcd3a10bf87a00d002bef7045fc43dccab9e21e4e3",
+      "actual_sha256": "32206a98efb22b138ef914bcd3a10bf87a00d002bef7045fc43dccab9e21e4e3",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_05.json",
+      "expected_sha256": "3c8124ec2c6fd6779edc78a348ce63640b84bc2746c604588bb80dba069f49a5",
+      "actual_sha256": "3c8124ec2c6fd6779edc78a348ce63640b84bc2746c604588bb80dba069f49a5",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_06.json",
+      "expected_sha256": "65c159ef5023934c8ead365f8115426fdac27113e650a3b08c1a99e2e2de407d",
+      "actual_sha256": "65c159ef5023934c8ead365f8115426fdac27113e650a3b08c1a99e2e2de407d",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_07.json",
+      "expected_sha256": "aaef4ec0375e360ea9d620591dbf865ef341a0b2d8272b22d8ef8895d369ce22",
+      "actual_sha256": "aaef4ec0375e360ea9d620591dbf865ef341a0b2d8272b22d8ef8895d369ce22",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_complementary_records.json",
+      "expected_sha256": "76c52be608de1e00b9463947694445347a42465ad15540650a269fd6282376b6",
+      "actual_sha256": "76c52be608de1e00b9463947694445347a42465ad15540650a269fd6282376b6",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_high_recall_records.json",
+      "expected_sha256": "fbf571ae840f4c909d8ec4c7a68f4df9c029294bc4de53610c23e3bb732fc8f3",
+      "actual_sha256": "fbf571ae840f4c909d8ec4c7a68f4df9c029294bc4de53610c23e3bb732fc8f3",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_capture_qa.json",
+      "expected_sha256": "3e5bf66f709dd45b2b29e9768f497186436ac3e77f13ecba80598ebadbfbddaf",
+      "actual_sha256": "3e5bf66f709dd45b2b29e9768f497186436ac3e77f13ecba80598ebadbfbddaf",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_all_records.csv",
+      "expected_sha256": "44ddc082686f54af1f2c8199ee0db613296f84d7f5b8e3b5d510bc76fd510a06",
+      "actual_sha256": "44ddc082686f54af1f2c8199ee0db613296f84d7f5b8e3b5d510bc76fd510a06",
+      "pass_check": true,
+      "ledger": "acm"
+    },
+    {
+      "path": "sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_capture_manifest.json",
+      "expected_sha256": "7abdbd4acbac3115a8eb6c373f195d1bfae752d3aee30335a61f8163c4798fac",
+      "actual_sha256": "7abdbd4acbac3115a8eb6c373f195d1bfae752d3aee30335a61f8163c4798fac",
+      "pass_check": true,
+      "ledger": "acm"
+    }
+  ],
+  "counts": {
+    "files": 7,
+    "query_variants": 8,
+    "raw_rows": 688,
+    "source_rows": {
+      "IEEE Xplore": 63,
+      "Scopus": 110,
+      "ACM Digital Library": 404,
+      "OpenAlex": 111
+    },
+    "unique_records": null,
+    "screened_new_records": 0,
+    "included_reports": null
+  },
+  "excluded_source": {
+    "source": "Web of Science Core Collection",
+    "status": "NOT_SEARCHED_USER_EXCLUDED_NO_ACCESS",
+    "reported_total": null
+  },
+  "legacy_policy": "No old 46 decisions, extraction, appraisal, family mapping or candidate pool imported",
+  "issues": [
+    {
+      "id": "I01",
+      "locator": "sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_all_records.csv",
+      "issue": "ACM authors missing215/404; abstract_snippet missing335/404; VENUE_NOT_FOUND238; DOI_NOT_FOUND39; URL_NOT_FOUND35. Metadata gap, not an exclusion decision."
+    },
+    {
+      "id": "I02",
+      "locator": "sources/raw/core_searches/openalex_compensatory_2026-11-26/",
+      "issue": "OpenAlex normalized CSV has no abstract column; raw payload availability must be checked in step05. Two rows have missing DOI, one has missing venue."
+    },
+    {
+      "id": "I03",
+      "locator": "sources/raw/core_searches/acm_high_recall_2026-11-26.json#active_filters",
+      "issue": "ACM upper filter2026-11-30 exceeds actual search date2026-11-26; eligibility must use actual cutoff after query/protocol audit."
+    },
+    {
+      "id": "I04",
+      "locator": "corpus_expansion/search_dataset_lock_2026-11-26.json",
+      "issue": "Historical manifest contains superseded ACM count-only disposition and old46 linkage; use this inventory plus supplement for restart, not its old next_action."
+    },
+    {
+      "id": "I05",
+      "locator": "sources/raw/core_searches/ieee_xplore_high_recall_authenticated_2026-11-26.json#timestamp_basis",
+      "issue": "IEEE/Scopus stored search times derive from export mtime; preserve basis, do not describe as independently logged live search timestamps."
+    }
+  ],
+  "acceptance": [
+    {
+      "criterion": "All7 input CSVs exist and count/hash match",
+      "verdict": "PASS",
+      "evidence": "7/7;688 total rows"
+    },
+    {
+      "criterion": "All listed raw/capture evidence hashes match",
+      "verdict": "PASS",
+      "evidence": "51/51 checks:base25+ACM26; these are ledger checks, not unique-file count"
+    },
+    {
+      "criterion": "Every query variant has exact query/filter/time evidence",
+      "verdict": "PASS",
+      "evidence": "8/8; timestamp basis preserved"
+    },
+    {
+      "criterion": "Missing metadata and source shortfalls explicit",
+      "verdict": "PASS",
+      "evidence": "I01-I05; WoSnull; unique_countnull"
+    },
+    {
+      "criterion": "No scientific decisions inherited or new screening performed",
+      "verdict": "PASS",
+      "evidence": "0 old decision rows imported;0 newly screened; changes restricted to plan/inventory/state"
+    }
+  ]
+}

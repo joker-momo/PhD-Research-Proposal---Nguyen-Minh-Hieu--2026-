@@ -1,37 +1,37 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T17:47:48+07:00",
+  "updated_at": "2026-11-26T18:09:24+07:00",
   "goal": {
-    "version": "HK261-PRISMA-completion-spec-v2",
-    "status": "search_input_snapshot_extended_with_acm_records_wos_shortfall",
-    "summary": "ACM position-level capture accepted404/404 and supplements the locked284-row snapshot. The deduplication queue now contains688 raw rows from IEEE/Scopus/OpenAlex/ACM; WoS remains unavailable, RHN unexecuted, and search completeness or manuscript readiness is not claimed."
+    "version": "HK261-PRISMA-RESTART-20261126-v1",
+    "status": "step01_inventory_completed",
+    "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
-    "task_id": "capture-acm-record-level-results",
+    "task_id": "restart-01",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T16:45:00+07:00",
-    "completed_at": "2026-11-26T17:47:48+07:00",
-    "updated_at": "2026-11-26T17:47:48+07:00",
-    "decision_id": "capture-acm-record-level-results-v1"
+    "started_at": "2026-11-26T18:07:38+07:00",
+    "updated_at": "2026-11-26T18:09:24+07:00",
+    "completed_at": "2026-11-26T18:09:24+07:00",
+    "decision_id": "restart-01-inventory-v1"
   },
   "next_task": {
-    "task_id": "normalize-deduplicate-locked-search-input",
+    "task_id": "restart-02",
     "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Use the locked6 files/284 rows plus the accepted ACM supplement/404 rows to normalize and deduplicate688 rows with row-level provenance, then map to existing46 reports. Delegate semantic ambiguities through native Gemini.app Task; do not redo accepted screening.",
-    "acceptance": "688/688 raw rows accounted; deterministic duplicate mapping auditable; conflicting/missing identifiers explicit; unique count computed rather than assumed; no existing screening decision silently overwritten."
+    "action": "Finalize restart protocol under approved_plan step02, with Gemini.app consistency evidence and Codex acceptance. Then audit actual queries in step03 before locking/normalizing/deduplicating. Never reconcile against old46 as a selection input.",
+    "acceptance": "Operational RQs/eligibility/date/type/language/missingness and reviewer roles explicit; WoS notsearched; no predetermined included count; source-located Gemini review accepted or unresolved recorded."
   },
   "project": {
     "target_venue": "SN Computer Science",
     "active_template": "Springer Nature LaTeX",
     "database_access_readiness": {
-      "status": "IEEE_SCOPUS_EXPORTABLE_ACM_MANUAL_RECORD_CAPTURE_COMPLETE_WOS_NO_CORE_OPENALEX_COMPENSATORY_COMPLETE",
+      "status": "FOUR_SOURCE_FILES_INVENTORIED_WOS_EXCLUDED_USER_NO_ACCESS",
       "sources": [
         "IEEE Xplore",
-        "ACM Digital Library",
         "Scopus",
-        "Web of Science"
+        "ACM Digital Library",
+        "OpenAlex"
       ],
       "recorded_at": "2026-11-26T17:47:48+07:00",
       "live_status": {
@@ -47,130 +47,47 @@
     "canonical_bibliography": "manuscript/sn_computer_science/references.bib",
     "approved_build_profile": "manuscript/sn_computer_science/build_profile.json",
     "canonical_pdf": "manuscript/sn_computer_science/main.pdf",
-    "canonical_pdf_git_blob": "c563e5b6a8543de5631f7370057f1b1c979616cd",
-    "workspace_baseline_status": "CLEAN_AFTER_B02",
-    "effective_protocol": "protocol.md plus Amendments 001-006",
+    "workspace_baseline_status": "Two pre-existing .DS_Store modifications outside owned scopes preserved on main; task worktree initially clean",
+    "effective_protocol": "restart step02 pending; previous protocol/amendments are inputs for explicit review, not silently inherited selection",
     "query_translations": "final_query_translations.md",
     "query_translations_version": "1.4",
     "access_readiness_record": "search_access_readiness_2026-11-26.md",
     "s01_evidence_index": "MUST_READ_AI_AGENT/06_FILE_MAP.md",
-    "seed_query_matrix": "seed_query_coverage_matrix.csv",
-    "manuscript_pages": 22,
-    "cited_references": 53,
-    "release_audit": "release_46report/integrity_audit.json",
-    "release_review": "release_46report/acceptance_review.md",
     "research_route_override": {
       "backend": "Gemini.app Accessibility",
       "mode": "task",
-      "recorded_at": "2026-11-26T16:02:08+07:00",
-      "superseded_task_id": "01a21703-7809-7cb5-9880-0d502f49ccb9",
-      "app_task_id": "f37b9d7d-c382-4313-8554-ea9d8c549055",
-      "app_context_id": "023047ed-ac29-4d1a-ad03-f88a33b4cdcb",
-      "review": "corpus_expansion/reviews/search_dataset_lock_app_correction_review.md",
-      "bridge_commit": "cbbfab9"
-    }
+      "recorded_at": "2026-11-26T18:09:24+07:00",
+      "restriction": "No CLI/research-agent/model fallback; review before adoption"
+    },
+    "approved_plan": "restart_2026_11_26/approved_plan.md",
+    "progress_tracker": "restart_2026_11_26/progress.json",
+    "manuscript_status": "HISTORICAL_DRAFT_NOT_VALIDATED_FOR_RESTART"
   },
   "evidence": {
-    "retrieval_reports": 46,
-    "screened_reports": 46,
+    "retrieval_reports": 0,
+    "screened_reports": 0,
     "working_decisions": {
-      "include": 36,
-      "exclude": 2,
-      "uncertain": 8
+      "include": 0,
+      "exclude": 0,
+      "uncertain": 0
     },
-    "reconciliation_overlay": {
-      "include": 36,
-      "exclude": 2,
-      "uncertain": 8,
-      "status": "Accepted working report-level overlay adopted for this explicitly bounded manuscript; not final unique-study counts"
-    },
-    "screening_batches_accepted": 8,
-    "evidence_checksums": "92/92 PASS",
-    "search_preparation": {
-      "s01_validation": "ACCEPTED_USER_RELAYED_13_OF_13_PLUS_8_OF_8",
-      "query_set": "1.4",
-      "ieee_acm_interface_records": 2,
-      "formal_searches_executed": 6,
-      "result_counts_claimed": 6,
-      "record_level_exports_obtained": 6,
-      "record_level_export_rows_before_deduplication": 577,
-      "reported_totals": "IEEE 42/21; ACM 79/325; Scopus 77/33; Web of Science null/null",
-      "blocked_runs": 2,
-      "checkpoint_review": "corpus_expansion/reviews/b04_authenticated_resume_checkpoint_review.md",
-      "raw_evidence_checksums": "sources/raw/core_searches/checksums.sha256",
-      "openalex_compensatory": {
-        "runs_exports": "2/2",
-        "totals": [
-          85,
-          26
-        ],
-        "union_ids": 102,
-        "review": "corpus_expansion/reviews/openalex_compensatory_search_review.md"
-      },
-      "acm_manual_capture": {
-        "query_variants": "2/2",
-        "totals": [
-          79,
-          325
-        ],
-        "captured_rows": 404,
-        "duplicate_source_rows_retained": 12,
-        "review": "corpus_expansion/reviews/acm_manual_record_capture_review.md"
-      },
-      "existing_corpus_decisions_changed": 0
-    },
-    "family_audit": {
-      "reports_accounted": 46,
-      "mechanical_pairs_checked": 1035,
-      "candidate_pairs_unresolved": 37,
-      "merges": 0,
-      "final_study_count": null,
-      "provider_status": "canceled_after_user_scope_reduction",
-      "index": "screening_46/reconciliation/results/family_01_mechanical_candidates.json"
-    },
-    "manuscript_release": {
-      "screened_reports": 46,
-      "included_reports_working": 36,
-      "excluded_reports": 2,
-      "awaiting_classification_reports": 8,
-      "unique_studies": null,
-      "detailed_extraction_reports": 24,
-      "minimum_extraction_reports": 12,
-      "appraised_reports": 24,
-      "accepted_judgments": 216,
-      "withheld_domain": 9,
-      "audit_checks_passed": 23,
-      "audit_checks_total": 23,
-      "pages_visually_checked": 22,
-      "new_a2a_dispatches": 0
-    },
-    "search_input_snapshot": {
-      "snapshot_id": "HK261-SEARCH-INPUT-20261126-v1",
-      "manifest": "corpus_expansion/search_dataset_lock_2026-11-26.json",
-      "decision_note": "corpus_expansion/search_dataset_lock_2026-11-26.md",
-      "record_sources": [
-        "IEEE Xplore",
-        "Scopus",
-        "OpenAlex",
-        "ACM Digital Library"
-      ],
-      "supplement": "corpus_expansion/acm_record_capture_2026-11-26.json",
-      "importable_csv_files": 7,
-      "rows_before_deduplication": 688,
-      "cross_platform_unique_records": null,
-      "acceptance": "base10/10 PASS plus ACM11/11 PASS",
-      "raw_evidence_checksum_pass": "base25/25 plus ACM26/26",
-      "search_complete": false,
-      "manuscript_ready": false
+    "meaning_of_zeros": "No reports processed in the restart yet; NOT evidence that no eligible studies exist. Final included count remains unknown.",
+    "restart_inventory": {
+      "manifest": "restart_2026_11_26/step01_inventory.json",
+      "input_files": 7,
+      "raw_rows": 688,
+      "query_variants": 8,
+      "checksum_checks_pass": 51,
+      "unique_records": null,
+      "final_included_reports": null,
+      "dataset_locked": false,
+      "search_audit_complete": false,
+      "old_decisions_imported": 0
     }
   },
   "blockers": [
-    "Core search: 2/8 WoS runs remain unexecuted; six ACM/IEEE/Scopus query variants now have record-level files.",
-    "OpenAlex 85/26 compensates discovery but is not WoS Core.",
-    "The688 raw rows still require cross-query and cross-platform deduplication and reconciliation against the existing46 reports.",
-    "Eight reports await classification; study-family independence and final human adjudication are unresolved.",
-    "Twelve included reports have minimum extraction only and are not appraised; domain 9 is withheld for the 24-report subset.",
-    "Authorship/declarations are unconfirmed; no submission-ready claim, submission or email is authorized in the current task."
+    "No immediate blocker to step02. Missing ACM metadata is inventoried for later resolution, not an exclusion decision.",
+    "Actual query/filter fitness must pass step03 before finaldataset lock; no search-completeness claim."
   ],
   "user_confirmation_required": [
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
@@ -183,6 +100,13 @@
     "decision_log": "automation/decision_log.jsonl",
     "previous_handoff": "MUST_READ_AI_AGENT/history/CURRENT_HANDOFF.pre-state-v1.2026-11-26.md",
     "previous_queue": "corpus_expansion/history/current_tasks.pre-state-v1.2026-11-26.md",
-    "git": "Authoritative immutable change history; resolve the latest state commit with git log -1 -- MUST_READ_AI_AGENT/current_state.json."
+    "git": "Authoritative immutable change history; resolve the latest state commit with git log -1 -- MUST_READ_AI_AGENT/current_state.json.",
+    "pre_restart_state": {
+      "git_commit": "ffd488a4f2f8d7b4bc6324f8b7066bd62cb9c2cb",
+      "path": "MUST_READ_AI_AGENT/current_state.json",
+      "status": "HISTORICAL_NOT_CURRENT_EVIDENCE",
+      "restriction": "Old46 corpus, labels, extraction and appraisal are not inputs to restart; source exports alone are inventoried afresh."
+    },
+    "approved_plan": "restart_2026_11_26/approved_plan.md"
   }
 }
