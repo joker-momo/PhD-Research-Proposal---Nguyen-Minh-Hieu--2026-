@@ -1,0 +1,66 @@
+{
+  "task_id": "c960ad8f-d8c5-4e8e-8b2e-e3569a96d42f",
+  "transport": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T18:42:49.224+00:00"
+  },
+  "result_chars": 27176,
+  "completion_marker": true,
+  "parsed_rows": 56,
+  "malformed": [],
+  "unknown": [],
+  "expected": 50,
+  "returned": 50,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [
+    [
+      "R0083",
+      "invalid or missing original body excerpt"
+    ]
+  ],
+  "unexpected_access": [],
+  "summary": [
+    {
+      "returned_keys": 50,
+      "unresolved": [],
+      "tools": {
+        "used": [
+          "client:view_file",
+          "client:grep_search"
+        ],
+        "unavailable": [
+          "PyMuPDF",
+          "MinerU",
+          "Marker"
+        ],
+        "unavailable_reason": "Local shell command execution is prohibited by the task brief."
+      },
+      "workers_used": 0,
+      "worker_assignments": [
+        {
+          "worker": "parent",
+          "report_ids": [
+            "R0074",
+            "R0083",
+            "R0089",
+            "R0095",
+            "R0121"
+          ]
+        }
+      ]
+    }
+  ],
+  "locators": 111,
+  "exact_quote_locators": 91,
+  "needs_visual_cell": [],
+  "bad_domains": {
+    "R0083/D04": [
+      "quote mismatch p8: NN effectively used only a single device's resources."
+    ],
+    "R0121/D02": [
+      "quote mismatch p6: explicitly reveal two independent levers for controlling the system's characteristics:"
+    ]
+  }
+}
