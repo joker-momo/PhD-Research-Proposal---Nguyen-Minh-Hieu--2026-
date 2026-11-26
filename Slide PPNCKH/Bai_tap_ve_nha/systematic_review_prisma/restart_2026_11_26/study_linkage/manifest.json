@@ -1,0 +1,50 @@
+{
+  "step": "restart-10",
+  "started_at": "2026-11-26T21:26:29+07:00",
+  "screen": "restart_2026_11_26/fulltext_screening/fulltext_screening.csv",
+  "screen_sha256": "3a51798ba0454a47e6e5c1b168afd6f7a529ad24dc9394b3e6cb7c30921aea8a",
+  "included_ids": [
+    "R0001",
+    "R0002",
+    "R0003",
+    "R0006",
+    "R0009",
+    "R0010",
+    "R0015",
+    "R0019",
+    "R0022",
+    "R0029",
+    "R0044",
+    "R0045",
+    "R0048",
+    "R0054",
+    "R0059",
+    "R0062",
+    "R0063",
+    "R0068",
+    "R0071",
+    "R0073",
+    "R0074",
+    "R0083",
+    "R0089",
+    "R0095",
+    "R0121"
+  ],
+  "records": 25,
+  "all_pairs": 300,
+  "priority_pairs": [
+    [
+      "R0003",
+      "R0059"
+    ],
+    [
+      "R0010",
+      "R0015"
+    ],
+    [
+      "R0019",
+      "R0068"
+    ]
+  ],
+  "message_id": "hk261-restart-step10-study-linkage-batch01-v1"
+}
