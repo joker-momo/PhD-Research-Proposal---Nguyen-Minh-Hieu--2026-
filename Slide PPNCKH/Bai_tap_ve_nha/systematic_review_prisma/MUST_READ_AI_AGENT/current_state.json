@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:50:14+07:00",
+  "updated_at": "2026-11-26T18:53:29+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
@@ -11,16 +11,16 @@
     "owner": "GEMINI_RESEARCH + CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-26T18:50:01+07:00",
-    "updated_at": "2026-11-26T18:50:14+07:00",
+    "updated_at": "2026-11-26T18:53:29+07:00",
     "decision_id": "restart-07-direct-screening-batch01-v1",
     "provider_task_id": "c22d8c48-f9ff-48a1-9489-47135b78d4e6",
     "provider_context_id": "55b86c49-5420-426b-a89a-552e445c05a2"
   },
   "next_task": {
-    "task_id": "restart-07-batch01",
+    "task_id": "restart-07-batch01-correction",
     "owner": "GEMINI_RESEARCH",
-    "status": "active",
-    "action": "Collect the existing Gemini.app screening Task and check S1–S5. Do not redispatch this ID.",
+    "status": "ready",
+    "action": "Route the committed twelve-row correction via native Gemini.app Task.",
     "acceptance": "S1–S5 mandatory; 30 records."
   },
   "project": {

@@ -82,3 +82,4 @@
 {"timestamp": "2026-11-26T18:49:12+07:00", "task_id": "restart-06", "event": "deduplication_closed", "source_rows": 693, "screening_records": 465, "removed_duplicate_rows": 228, "unresolved_identity_groups": 0, "year_conflicts": 12}
 {"timestamp": "2026-11-26T18:50:01+07:00", "task_id": "restart-07", "event": "first_title_abstract_batch_brief_prepared", "count": 30, "first": "R0001", "last": "R0030"}
 {"timestamp": "2026-11-26T18:50:14+07:00", "task_id": "restart-07", "event": "direct_project_screening_batch01_submitted", "provider_task_id": "c22d8c48-f9ff-48a1-9489-47135b78d4e6", "provider_context_id": "55b86c49-5420-426b-a89a-552e445c05a2", "count": 30, "context_copies": 0}
+{"timestamp": "2026-11-26T18:53:29+07:00", "task_id": "restart-07", "event": "screening_batch01_primary_quarantined", "provider_task_id": "c22d8c48-f9ff-48a1-9489-47135b78d4e6", "received": 30, "invalid_criteria": 12, "accepted": 0}
