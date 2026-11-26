@@ -1,0 +1,98 @@
+{
+  "issues": [
+    [
+      "A2",
+      "R0074",
+      "body access not independently verified"
+    ],
+    [
+      "A3",
+      "T03",
+      "approximation missing or wrong number of numeric claims"
+    ]
+  ],
+  "rows": [
+    {
+      "key": "T01",
+      "report_id": "R0074",
+      "status": "OBSERVED",
+      "assertions": [
+        {
+          "finding": "At the 70B scale, Orion, Jupiter, and EdgeShard were the successful distributed solutions, with Orion outperforming Jupiter and EdgeShard.",
+          "page": 17,
+          "locator": "4.2. Latency on Llama-2 Models of Varying Scales",
+          "excerpt": "all successful distributed solutions, Orion remained the most efficient with an 18,665 ms latency, significantly outperforming Jupiter (27,264 ms) and EdgeShard (43,058 ms).",
+          "quantitative": null
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "key": "T02",
+      "report_id": "R0121",
+      "status": "OBSERVED",
+      "assertions": [
+        {
+          "finding": "Post-training quantization from FP32 to 0.8 bits/element reduces per-hop transmission time by approximately 40 times at an effective rate of 12 Mbit/s.",
+          "page": 6,
+          "locator": "6. Numerical Results and Their Discussion",
+          "excerpt": "the transition from FP32 to post-training compression of 0.8 bits/element [15, 16] reduces transmission time by approximately 40 times - from 4.9 s to 122.8 ms per hop at a rate of 12 Mbit/s (Fig. 2).",
+          "quantitative": {
+            "value": "approximately 40",
+            "units": "times",
+            "baseline": "FP32 (4.9 s per hop)",
+            "denominator": "per hop",
+            "workload": "256x80x80 reference activation tensor (1,638,400 elements)",
+            "conditions": "post-training compression of 0.8 bits/element at R = 12 Mbit/s under L2 encapsulation"
+          }
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "key": "T03",
+      "report_id": "R0062",
+      "status": "OBSERVED",
+      "assertions": [
+        {
+          "finding": "In Stage 2, when one UAV (UAV#3) became unavailable, the eCoEI inference process continued uninterrupted at a lower speed of 2 FPS.",
+          "page": 6,
+          "locator": "EFFECT OF UAV UNAVAILABILITY",
+          "excerpt": "The inference process was not interrupted, but at a lower speed, 2 FPS, in the experiment.",
+          "quantitative": {
+            "value": "2",
+            "units": "FPS",
+            "baseline": "Stage 1 (~3 FPS with four UAVs)",
+            "denominator": "per second",
+            "workload": "collaborative DNN inference over video stream",
+            "conditions": "Stage 2 with one UAV unavailable (UAV#3 communication program disabled)"
+          }
+        },
+        {
+          "finding": "In Stage 3, after the unavailable UAV's communication program was recovered, collaborative inference speed reverted to the previous Stage 1 level.",
+          "page": 6,
+          "locator": "EFFECT OF UAV UNAVAILABILITY",
+          "excerpt": "Third, the communication program of the UAV mentioned above was recovered. The collaborative inference speed reverted to the previous level in the first stage.",
+          "quantitative": null
+        }
+      ],
+      "reason": ""
+    }
+  ],
+  "access_verified": [
+    "R0121",
+    "R0062"
+  ],
+  "matched": {
+    "T01": 1,
+    "T02": 1,
+    "T03": 2
+  },
+  "total": {
+    "T01": 1,
+    "T02": 1,
+    "T03": 2
+  },
+  "unresolved": [],
+  "worker_status": "UNCONFIRMED"
+}
