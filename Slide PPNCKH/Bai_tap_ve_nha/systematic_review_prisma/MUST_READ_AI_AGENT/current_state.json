@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:23:30+07:00",
+  "updated_at": "2026-11-26T23:23:47+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-batch02-correction06-review",
+    "task_id": "restart-11-p08-count-errata",
     "owner": "CODEX_WRITING",
-    "status": "rejected",
-    "started_at": "2026-11-26T23:23:30+07:00",
-    "updated_at": "2026-11-26T23:23:30+07:00",
-    "completed_at": "2026-11-26T23:23:30+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_correction06_review.md",
-    "decision_id": "restart-11-batch02-correction06-review-v1"
+    "status": "completed",
+    "started_at": "2026-11-26T23:23:47+07:00",
+    "updated_at": "2026-11-26T23:23:47+07:00",
+    "completed_at": "2026-11-26T23:23:47+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_extraction_new_review.md",
+    "decision_id": "restart-11-p08-count-errata-v1"
   },
   "next_task": {
     "task_id": "restart-11-p08-targeted-resolution",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Resolve the remaining failed keys in permitted scopes before evaluating full reports.",
-    "acceptance": "Batch-level semantic audit must pass before admitting reports; 0/25 currently accepted."
+    "action": "Resolve remaining P08 verification within the authorized correction scope.",
+    "acceptance": "No reports enter P09 before the P08 gate."
   },
   "project": {
     "target_venue": "SN Computer Science",
