@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T08:07:36+07:00
+**updated_at:** 2026-11-26T08:09:31+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -163,18 +163,14 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-Scope reconciliation accepted as working evidence through the three-locator
-correction from Gemini task `01a21560-a8e6-762a-984c-99d7ba3617ed` (no fallback).
-L1–L5,A1–A6,C1–C2 PASS;3/3 corrected and20/20 combined quote locators;17 other
-quotes/all non-evidence fields unchanged. `scope_01_accepted.json` plus
-`scope_01_screening_overlay.json` are the accepted derivatives; review is
-`screening_46/reconciliation/reviews/scope_01_locators_review.md`.
-Prior primary/quota/fallback results remain rejected and immutable.
-No decision changes: C06/SNCS UNCERTAIN; C04/C11/C16 INCLUDE. Total36/2/8 reports,
-not final unique studies. After commit/merge/cleanup prepare date reconciliation
-for C05,C09,C10,C13,C14,C19, preserving cutoff2026-11-25 and not substituting
-acceptance/download/Crossref-created dates for publication. No active provider.
-Decision `reconciliation-scope-01-locators-v1`: REUSE_EXISTING.
+Date reconciliation brief ready: `screening_46/reconciliation/briefs/dates_02.md`
+for exactly C05,C09,C10,C13,C14,C19. After commit/merge/cleanup route once through
+approved Gemini-first router. D1–D5 require6 exact identities, labelled publication
+dates, bounded actual source attempts and explicit access gaps; no administrative
+or download date substitution, no cutoff change. Scope working evidence at
+`scope_01_accepted.json` remains accepted; C06/SNCS uncertain. Current report
+counts36/2/8. No active provider task. Decision `reconciliation-dates-02-brief-v1`
+is MANUAL, with heading/ID assertions and registry validation.
 
 ## Current bibliographic overlay
 
@@ -195,10 +191,10 @@ The boundary hold has been released by the coordinating handoff.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-scope-01-locators",
+  "task_id": "reconciliation-dates-02-brief",
   "status": "completed",
-  "started_at": "2026-11-26T08:03:06+07:00",
-  "updated_at": "2026-11-26T08:07:36+07:00",
-  "completed_at": "2026-11-26T08:07:36+07:00"
+  "started_at": "2026-11-26T08:09:31+07:00",
+  "updated_at": "2026-11-26T08:09:31+07:00",
+  "completed_at": "2026-11-26T08:09:31+07:00"
 }
 -->
