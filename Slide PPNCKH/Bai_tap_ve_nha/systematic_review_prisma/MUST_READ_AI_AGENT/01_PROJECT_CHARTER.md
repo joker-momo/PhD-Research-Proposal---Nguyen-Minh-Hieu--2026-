@@ -19,7 +19,7 @@ Working title:
 > Systematic Review of Partitioning, Orchestration, and Resilience
 
 The review questions and eligibility criteria are canonical in `../protocol.md`
-and its two amendments. Do not silently change them. Any change requires a dated,
+and its dated amendments. Do not silently change them. Any change requires a dated,
 justified protocol amendment with its effect on completed work.
 
 ## Official coursework obligations

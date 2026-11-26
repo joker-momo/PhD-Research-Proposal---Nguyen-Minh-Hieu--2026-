@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T13:00:52+07:00",
+  "updated_at": "2026-11-26T13:04:45+07:00",
   "goal": {
     "version": "HK261-PRISMA-completion-spec-v2",
-    "status": "execution_in_progress_b03_ready",
-    "summary": "HK261-PRISMA-COMPLETION-SPEC-v2 is approved and Batch B02 restored a clean canonical workspace with one verified manuscript PDF. Batch B03 may now freeze protocol/access rules and prepare the committed S-01 Gemini research brief; submission and email remain unauthorized.",
+    "status": "execution_in_progress_s01_brief_ready",
+    "summary": "B02 restored the canonical workspace. The Codex-owned B03 preparation is complete: Amendment 003 freezes the substantive report-completeness rule, 4/4 access entitlement is recorded without execution claims, the 20-by-8 seed matrix is restored and the five-section S-01 Gemini brief is ready for committed read-only dispatch.",
     "goal_engine_status_observed": "usageLimited"
   },
   "task": {
-    "task_id": "restore-canonical-workspace-baseline-b02",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T13:00:39+07:00",
-    "updated_at": "2026-11-26T13:00:52+07:00",
-    "completed_at": "2026-11-26T13:00:52+07:00",
-    "decision_id": "restore-canonical-workspace-baseline-b02-v1"
-  },
-  "next_task": {
     "task_id": "prepare-b03-protocol-access-and-s01-brief",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-26T13:02:22+07:00",
+    "updated_at": "2026-11-26T13:04:45+07:00",
+    "completed_at": "2026-11-26T13:04:45+07:00",
+    "decision_id": "prepare-b03-protocol-access-and-s01-brief-v1"
+  },
+  "next_task": {
+    "task_id": "dispatch-s01-query-validation",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Execute the Codex-owned preparation portion of Batch B03: freeze G-04 protocol/access/report-completeness rules and commit one five-section S-01 Gemini research brief before any A2A dispatch.",
-    "acceptance": "Protocol/access decision is explicit; short/demo rule uses substantive content rather than page count; S-01 brief contains all five mandatory sections and numeric/binary criteria; no research dispatch occurs before the brief commit."
+    "action": "After this brief-preparation commit is integrated and the repository is clean, dispatch corpus_expansion/briefs/s01_query_validation_brief.md through the approved Gemini router; quarantine the returned JSON until Codex issues a criterion-by-criterion review.",
+    "acceptance": "One provider task/context ID recorded; returned JSON covers 4 platforms, 8 queries and the 20-by-8 matrix; project files modified by Gemini equal zero; no result is adopted before every mandatory criterion passes."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -43,6 +43,10 @@
     "canonical_pdf": "manuscript/sn_computer_science/main.pdf",
     "canonical_pdf_git_blob": "c563e5b6a8543de5631f7370057f1b1c979616cd",
     "workspace_baseline_status": "CLEAN_AFTER_B02",
+    "effective_protocol": "protocol.md plus protocol_amendment_001.md, protocol_amendment_002.md and protocol_amendment_003_report_completeness.md",
+    "access_readiness_record": "search_access_readiness_2026-11-26.md",
+    "s01_brief": "corpus_expansion/briefs/s01_query_validation_brief.md",
+    "seed_query_matrix": "seed_query_coverage_matrix.csv",
     "manuscript_pages": 22,
     "cited_references": 53,
     "release_audit": "release_46report/integrity_audit.json",

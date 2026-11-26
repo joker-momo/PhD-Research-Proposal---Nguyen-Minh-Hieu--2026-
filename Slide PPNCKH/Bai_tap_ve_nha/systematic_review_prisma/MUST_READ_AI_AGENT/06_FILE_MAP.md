@@ -28,6 +28,9 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 | Purpose | Canonical path |
 |---|---|
 | Platform queries | `../final_query_translations.md` |
+| Query seed-coverage matrix | `../seed_query_coverage_matrix.csv` |
+| Four-source access readiness | `../search_access_readiness_2026-11-26.md` |
+| Current committed S-01 research brief | `../corpus_expansion/briefs/s01_query_validation_brief.md` |
 | Formal-search status | `../formal_search_log_v0.2.csv` |
 | Record screening | `../screening_log.csv` |
 | Study/report linkage | `../study_report_map.csv` |
