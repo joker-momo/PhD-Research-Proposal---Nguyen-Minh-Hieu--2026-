@@ -1,6 +1,6 @@
 # P08 Batch 02 independent PDF review
 
-**Verdict: FAIL.** The batch retains all 12 report IDs and 227 candidate entries. The row-level ledger records 56 PASS, 6 WITHHELD, and 165 NOT_YET_ASSESSED. Complete row-level reviews: R0074. Batch adoption remains 0/12 pending the gate.
+**Verdict: FAIL.** The batch retains all 12 report IDs and 227 candidate entries. The row-level ledger records 102 PASS, 6 WITHHELD, and 119 NOT_YET_ASSESSED. All rows adjudicated for R0068, R0073, R0074, R0089. Batch adoption remains 0/12 pending the gate.
 
 | Criterion | Verdict | Evidence |
 |---|---|---|
@@ -8,7 +8,7 @@
 | Preserve non-target entries | PASS | The parent candidate was compared entry by entry after the bounded repairs. Unchanged entries retain their original objects. |
 | Recheck every prior excerpt exception | PASS | 4/4 exceptions reviewed below. Exact numeric data were not inferred from graph coordinates or by combining unmatched excerpts. |
 | Account for every claim | PASS | 227/227 entries have a disposition in the ledger; unreviewed entries explicitly say NOT_YET_ASSESSED. |
-| Complete the source and conditions review | FAIL | 165 entries still require semantic adjudication. Six entries are withheld. Counts and exact keys are in the ledger. |
+| Complete the source and conditions review | FAIL | 119 entries still require semantic adjudication. Six entries are withheld. Counts and exact keys are in the ledger. |
 
 ## Prior excerpt exceptions
 
@@ -33,3 +33,16 @@ MinerU 4.2.3 ran locally at `2026-11-27T00:09:12+07:00` and `2026-11-27T00:09:14
 Marker 1.10.2 independently processed only R0074 split page 1 (zero-based `--page_range 0`, CPU, JSON, no LLM), with exit 0 at `2026-11-27T00:12:36+07:00`. It located Fig. 9 as `/page/0/Figure/5`, bounding box [159.76, 337.13, 549.15, 580.52] pt, and reproduced 8.94% in the body. Its figure block contained no chart-label text. The PyMuPDF original-page render informs the unit decision.
 
 Machine artifacts are recorded by SHA-256. The MinerU JSON hashes are `cdca65579465dfff0f82125a954c74f07afde08a4bbf09d14d47030bd4200acf` (R0059) and `9f44c7bf4f3d63b778a720b56ce64b2b575a73d9dedd2deaea54edc27e96972d` (R0074). The Marker JSON hash is `4661d5bdeab78b3016806c8cd814adc1ebde3c803bb2ea1bab6b948c66f40709` (R0074). These files are local working evidence. The audit ledger retains the physical-page locators and adjudications.
+
+## Source recheck from d16c167
+
+Recorded at `2026-11-27T00:20:24+07:00`. Prior PASS entries retained. The remaining unresolved review keys are listed as NOT_YET_ASSESSED in the [source ledger](p08_source_inventory.json).
+
+| Key | Disposition | Physical PDF evidence |
+|---|---|---|
+| R0054 `uav_architecture_role_and_topology:2` | EXCLUDE_UNVERIFIED_DETAIL | p. 4 §IV/Fig. 1 and p. 5 Table I/Fig. 3(c): retain replay count and OOD levels as separate settings. Exact matched-holdout K/M/N_tar is not identified and stays out of synthesis. |
+| R0068 `quantity:1` | EXCLUDE_EXACT_VALUE | p. 1 Abstract gives around 29%. §VI.B, Figs. 5–9 on pp. 11–13 give individual comparisons; no corresponding pooled denominator or aggregation is stated. |
+| R0068 `quantity:2` | EXCLUDE_EXACT_VALUE | p. 1 Abstract gives around 23%. §VI.B, Figs. 8–9 on p. 13 give per-configuration power bars; no corresponding pooled denominator or aggregation is stated. |
+| R0068 `quantity:3` | EXCLUDE_EXACT_VALUE | p. 1 Abstract gives 9%. §VI.B, Figs. 5, 8–9 on pp. 11–13 support closeness to LDTP in tested scenarios but do not give the matched aggregate calculation. |
+| R0073 `quantity:1` | QUALITATIVE_ONLY | pp. 10–12 §5.2/Figs. 4–6 show latency ordering. Exact coordinates are not labeled; preserve the separately verified qualitative result and the distinct failure scenario. |
+| R0089 `quantity:1` | QUALITATIVE_ONLY | pp. 9–10 rendered Figs. 4(b), 5(b), 6(b) and §§5.1–5.3 support the now scoped directional comparisons. No point values were read off the curves. |

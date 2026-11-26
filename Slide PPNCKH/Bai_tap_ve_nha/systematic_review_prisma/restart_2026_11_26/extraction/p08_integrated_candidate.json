@@ -1677,10 +1677,20 @@
           {
             "subtopic": "pipeline_uav_swarm",
             "status": "OBSERVED",
-            "finding": "N UAVs (5 evaluated) flying at constant speed along predetermined trajectory; each UAV acts as a sequential stage of a collaborative inference pipeline without ground server assistance.",
+            "finding": "The modeled swarm has N UAVs flying at constant speed on predetermined trajectories, with one UAV per pipeline stage. The training and device-comparison examples use five UAVs.",
             "page": 2,
             "locator": "III.A System Model",
-            "excerpt": "The system consists of N UAVs, and each UAV is a stage of the pipeline."
+            "excerpt": "The system consists of N UAVs, and each UAV is a stage of the pipeline.",
+            "sources": [
+              {
+                "physical_page": 2,
+                "locator": "§III.A system model"
+              },
+              {
+                "physical_page": 5,
+                "locator": "§V.B, setups accompanying Figs. 3 and 4"
+              }
+            ]
           }
         ],
         "inference_model_task_and_dataset": [
@@ -2862,10 +2872,24 @@
           {
             "subtopic": "serverless_coordinator_swarm",
             "status": "OBSERVED",
-            "finding": "Serverless swarm of N+1 UAVs (N=8 in Table I, 9 total or 8 UAVs; 1 main/group-owner UAV ur_0 coordinates computing-capable UAVs ur_i).",
+            "finding": "The system model defines coordinator ur_0 and N other UAVs. Table I gives N=8, while the single-task discussion refers to eight UAVs. The source wording does not resolve whether the simulation tally includes the coordinator.",
             "page": 2,
             "locator": "II.B Collaborative UAV Swarm Framework",
-            "excerpt": "where ur_0 is designated as the group owner, responsible for coordinating the other UAVs (ur_i)"
+            "excerpt": "where ur_0 is designated as the group owner, responsible for coordinating the other UAVs (ur_i)",
+            "sources": [
+              {
+                "physical_page": 2,
+                "locator": "§II.B defines ur_0 through ur_N"
+              },
+              {
+                "physical_page": 5,
+                "locator": "Table I settings"
+              },
+              {
+                "physical_page": 6,
+                "locator": "Fig. 6 results prose, single-task deployment"
+              }
+            ]
           }
         ],
         "inference_model_task_and_dataset": [
@@ -2952,20 +2976,48 @@
           {
             "subtopic": "static_random_spatial",
             "status": "OBSERVED",
-            "finding": "Rayleigh fading channel g0~CN(0,1) with path loss; UAV mobility, link intermittency, and failures not modeled.",
+            "finding": "The link equation uses a complex-normal channel coefficient CN(0,1) and a distance-based path-loss term. The evaluation does not report a UAV mobility process, link-loss events or node-failure scenarios.",
             "page": 5,
             "locator": "IV & Table I",
-            "excerpt": "where objects waiting to be recognized by images are randomly distributed in space."
+            "excerpt": "where objects waiting to be recognized by images are randomly distributed in space.",
+            "sources": [
+              {
+                "physical_page": 2,
+                "locator": "§II.B coordinates"
+              },
+              {
+                "physical_page": 3,
+                "locator": "§II.C Eq. (4)"
+              },
+              {
+                "physical_page": 5,
+                "locator": "§IV scenario and Table I"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§V future work"
+              }
+            ]
           }
         ],
         "evaluation_platform_simulator_hardware_and_traces": [
           {
             "subtopic": "simulation_env",
             "status": "OBSERVED",
-            "finding": "Custom simulation environment (T=100M, N=8); simulator software and host hardware not reported.",
+            "finding": "Section IV describes a constructed simulation for serverless multi-UAV inference. Table I has N=8 and prints r as 100M. The paper does not identify a simulator package or host machine in the evaluation setup.",
             "page": 5,
             "locator": "IV. PERFORMANCE EVALUATION",
-            "excerpt": "The specific simulation parameters are shown in TABLE I."
+            "excerpt": "The specific simulation parameters are shown in TABLE I.",
+            "sources": [
+              {
+                "physical_page": 5,
+                "locator": "§IV and Table I rows N and r"
+              },
+              {
+                "physical_page": 6,
+                "locator": "§V description of simulation"
+              }
+            ]
           }
         ],
         "baselines_and_workloads": [
@@ -3867,10 +3919,20 @@
           {
             "subtopic": "energy_savings_plots",
             "status": "OBSERVED",
-            "finding": "SAC+CVX achieves fastest convergence and lowest average weighted energy consumption across user counts (10-30), UAV counts (3-7), UAV compute (10-30 GHz), and splitting methods (Fig. 4-8); body text does not print exact outcome values.",
+            "finding": "SAC+CVX is reported to converge faster and attain higher reward in the Fig. 4(a) comparison. It attains the lowest plotted average weighted energy in the user-count, UAV-count and resource-cap sweeps. Fig. 6 separately compares the four partitioning methods and shows that the proposed splitting strategy reduces weighted energy for the plotted algorithms.",
             "page": 10,
             "locator": "IV.B.2 Performance Comparison",
-            "excerpt": "SAC+CVX achieves the lowest energy consumption among all algorithms."
+            "excerpt": "SAC+CVX achieves the lowest energy consumption among all algorithms.",
+            "sources": [
+              {
+                "physical_page": 9,
+                "locator": "§IV.B.1, Fig. 4(a) and comparison of convergence"
+              },
+              {
+                "physical_page": 10,
+                "locator": "§IV.B.2, Figs. 5–8 and corresponding discussion"
+              }
+            ]
           }
         ],
         "sensitivity_and_variability": [
@@ -6123,10 +6185,20 @@
           {
             "subtopic": "simulation_platform",
             "status": "OBSERVED",
-            "finding": "Simulation-based evaluation across 1,000 episodes; specific software/hardware platform is NOT_REPORTED.",
+            "finding": "Evaluation uses simulation; Fig. 3 plots training reward through episode 1000. The inspected methods and experimental setup do not identify simulation software or host hardware.",
             "page": 9,
             "locator": "Section 5.1, p. 9",
-            "excerpt": "Parameters for training the proposed DRL-RLD model are listed in Table 2."
+            "excerpt": "Parameters for training the proposed DRL-RLD model are listed in Table 2.",
+            "sources": [
+              {
+                "physical_page": 9,
+                "locator": "§5.1, simulation settings"
+              },
+              {
+                "physical_page": 10,
+                "locator": "§5.2/Fig. 3 horizontal axes"
+              }
+            ]
           }
         ],
         "baselines_and_workloads": [
@@ -6819,10 +6891,20 @@
           {
             "subtopic": "accuracy_and_upload_ratio_plots",
             "status": "OBSERVED",
-            "finding": "PLPTU achieves the highest deadline-constrained system inference accuracy across limited radio resources, varying task generation rates (25-75 packages), and varying drone compute capacity (0.6-1.0x) in Figs. 4-6; exact numeric accuracy values are plotted only.",
+            "finding": "PLPTU has the highest plotted system accuracy under limited wireless resources and in the shown task-generation sweep. The plotted system accuracy decreases for PLPTU and PLUTU as local compute declines, and their results converge at the lower tested capacity settings. No exact plot values are extracted here.",
             "page": 9,
             "locator": "Section 5.1-5.3, Figs. 4-6, pp. 9-10",
-            "excerpt": "The PLPTU policy has the best accuracy when the bandwidth is limited"
+            "excerpt": "The PLPTU policy has the best accuracy when the bandwidth is limited",
+            "sources": [
+              {
+                "physical_page": 9,
+                "locator": "§5.1 and Fig. 4(b), radio-resource results"
+              },
+              {
+                "physical_page": 10,
+                "locator": "§§5.2–5.3, Figs. 5(b)–6(b), accuracy panels"
+              }
+            ]
           }
         ],
         "sensitivity_and_variability": [
@@ -7619,6 +7701,41 @@
       "report_id": "R0015",
       "key": "compute_and_radio:1",
       "reason": "States the computing-power units and scopes the 72.2 Mbps condition to Figs. 3 and 5."
+    },
+    {
+      "report_id": "R0089",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+      "reason": "Physical pp. 9–10 figures and text distinguish limited-radio and task-rate results from the low-compute convergence."
+    },
+    {
+      "report_id": "R0045",
+      "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+      "reason": "Separates the training comparison from the energy sweeps; replaces the unsupported use of a single result across unlike designs."
+    },
+    {
+      "report_id": "R0010",
+      "key": "uav_architecture_role_and_topology:1",
+      "reason": "Five UAVs are explicitly stated for Figs. 3–4; the scope no longer implies that N is confirmed for every experiment."
+    },
+    {
+      "report_id": "R0073",
+      "key": "evaluation_platform_simulator_hardware_and_traces:1",
+      "reason": "The 1000-episode span belongs to the training plots and is not applied to the whole evaluation."
+    },
+    {
+      "report_id": "R0022",
+      "key": "uav_architecture_role_and_topology:1",
+      "reason": "Preserves the model notation and source discrepancy instead of asserting a chosen total."
+    },
+    {
+      "report_id": "R0022",
+      "key": "evaluation_platform_simulator_hardware_and_traces:1",
+      "reason": "Corrects the table symbol from T to r and preserves the source rendering of its value."
+    },
+    {
+      "report_id": "R0022",
+      "key": "mobility_channel_intermittency_failure_and_recovery:1",
+      "reason": "Records the model and evaluation scope without attributing a named fading law to the authors."
     }
   ]
 }
