@@ -1,29 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:36:26+07:00",
+  "updated_at": "2026-11-26T23:39:20+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-b01-verified-path-brief",
+    "task_id": "restart-11-b01-verified-path-review",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T23:36:26+07:00",
-    "updated_at": "2026-11-26T23:36:26+07:00",
-    "completed_at": "2026-11-26T23:36:26+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_verified_path_correction_brief.md",
-    "decision_id": "restart-11-b01-verified-path-brief-v1"
+    "started_at": "2026-11-26T23:39:20+07:00",
+    "updated_at": "2026-11-26T23:39:20+07:00",
+    "completed_at": "2026-11-26T23:39:20+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_verified_path_correction_review.md",
+    "decision_id": "restart-11-b01-verified-path-review-v1"
   },
   "next_task": {
-    "task_id": "restart-11-b01-verified-path-correction",
+    "task_id": "restart-11-b02-r0062-precision",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Verify PDFs and correct only the same 43 quarantined keys after the fresh access probe.",
-    "acceptance": "43 rows with evidence or specific unresolved reason. No previously passing fields returned.",
-    "dispatch_brief": "restart_2026_11_26/extraction/batch_01_verified_path_correction_brief.md",
-    "message_id": "hk261-p08-b01-verified-path-v1"
+    "action": "Correct only the unresolved R0062 Stage 2 precision in the outcomes field.",
+    "acceptance": "One key, exact body source, approximate typed value and conditions; preserve other fields."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -147,7 +145,9 @@
         "batch02_correction06_verified_fields": 1,
         "batch02_correction06_failed_fields": 2,
         "batch01_targeted_correction_unresolved": 43,
-        "batch01_targeted_correction_pdf_inaccessible": 13
+        "batch01_targeted_correction_pdf_inaccessible": 13,
+        "batch_01_reports_accepted": 0,
+        "batch_01_targeted_unresolved": 43
       }
     }
   },
