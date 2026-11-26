@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "source": "OpenAlex",
+  "source_role": "supplementary_compensatory_search",
+  "query_set_version": "1.4-openalex-1",
+  "observed_at": "2026-11-26T14:54:14+07:00",
+  "query_variant": "complementary",
+  "search_parameter": "search.title_and_abstract.exact",
+  "exact_query": "(\"UAV swarm\" OR \"drone swarm\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR FANET) AND ((\"deep neural network\" OR DNN OR \"deep learning\") AND inference) AND (partition* OR offload* OR placement OR schedul* OR assign* OR \"resource allocation\")",
+  "interpreted_query": "get works from 2021-01-01 through 2026-11-26 with (\"inference\" AND (\"DNN\" OR \"deep learning\" OR \"deep neural network\") AND (\"FANET\" OR \"UAV swarm\" OR \"aerial network\" OR \"drone swarm\" OR \"multiple UAVs\" OR \"multi-UAV\") AND (\"resource allocation\" OR assign* OR offload* OR partition* OR \"placement\" OR schedul*)) in the title or abstract where language is [English](en)",
+  "filters": "from_publication_date:2021-01-01,to_publication_date:2026-11-26,language:en",
+  "api_reported_total": 26,
+  "exported_total": 26,
+  "page_count": 1,
+  "duplicate_counts": {
+    "openalex_id_duplicates": 0,
+    "doi_duplicates": 0,
+    "title_duplicates": 0
+  },
+  "raw_file": "openalex_complementary_2026-11-26_raw.json",
+  "normalized_file": "openalex_complementary_2026-11-26_normalized.csv",
+  "manifest_file": "openalex_complementary_2026-11-26_manifest.json",
+  "checksum_file": "openalex_complementary_2026-11-26_checksums.sha256",
+  "sha256": {
+    "openalex_complementary_2026-11-26_raw.json": "f105674ed7fe148dcd917135bbb1362e01ce18399e57ac14438a0fa5ba6e23d1",
+    "openalex_complementary_2026-11-26_normalized.csv": "0be3322c2adcae027834cfdca0456cc1b815cf0bbeb9fb2348d33733f7924d57"
+  },
+  "limitations": [
+    "OpenAlex is not Web of Science Core Collection and has different coverage.",
+    "Publication type is exported broadly and must be enforced during screening.",
+    "Search results are supplementary/compensatory evidence until a protocol amendment adopts them."
+  ]
+}

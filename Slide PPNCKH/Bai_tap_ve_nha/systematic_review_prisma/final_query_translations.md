@@ -1,8 +1,8 @@
 # Final Planned Query Translations
 
-**Version:** 1.3
-**Adopted:** 2026-11-26 after S-01 validation and direct IEEE/ACM interface verification
-**Protocol alignment:** Amendments 001–005
+**Version:** 1.4
+**Adopted:** 2026-11-26 after S-01 validation, direct IEEE/ACM interface verification, and prospective OpenAlex compensatory-search adoption
+**Protocol alignment:** Amendments 001–006
 **Execution status:** 6/8 query variants executed on three core platforms; Web of Science Core Collection remains unavailable
 **Reported counts:** IEEE Xplore 42/21 after required content-type filtering; ACM Digital Library 79/325 broad Full-Text results; Scopus 77/33; Web of Science `COUNT_NOT_OBTAINED`
 
@@ -111,9 +111,29 @@ TS=(("UAV swarm" OR "UAV swarms" OR "drone swarm" OR "drone swarms" OR "multi-UA
 
 Apply interface refinements: document types `Article` and `Proceedings Paper`; language `English`; collection `Web of Science Core Collection`. Record every active Core Collection edition, including whether `CPCI-S` is enabled, because edition coverage affects proceedings retrieval. The provisional 2021–2026 range is embedded in each query; do not add a conflicting year refinement.
 
+## OpenAlex compensatory search
+
+This supplementary source does not replace or rename Web of Science Core
+Collection. It is a prospectively documented compensatory search under
+Amendment 006. The API searches title and abstract fields with the date range
+2021-01-01 through the execution date and `language:en`. Publication types are
+exported broadly and enforced during screening.
+
+The high-recall query is the ACM-style high-recall Boolean string above and uses
+the OpenAlex parameter `search.title_and_abstract`. The complementary query is
+the ACM-style complementary Boolean string above and uses
+`search.title_and_abstract.exact`, because OpenAlex requires exact search for
+wildcards. The complete machine-readable configuration is
+`automation/search_configs/openalex_query_set_1.4.json`.
+
+The formal run must use `scripts/prisma_openalex_search.py` and retain raw JSON,
+normalized CSV, both the submitted and API-interpreted query, cursor pagination,
+reported/exported totals, duplicate diagnostics and checksums. It must not be
+described as a Web of Science search or as coverage-equivalent to WoS Core.
+
 ## Execution rule
 
-Version 1.3 has been executed for IEEE Xplore, ACM Digital Library, and Scopus. IEEE Xplore and Scopus produced four importable CSV exports; ACM returned two visible totals but Basic Edition did not provide record-level export; Web of Science personal sign-in exposed only Free View and did not permit either Core Collection query. The append-only ledger and raw records retain exact queries, filters, timestamps, totals, export formats, checksums, and blockers. A missing facet triggers broader export plus downstream screening, not an inferred count. Do not replace an executed query silently; any change after the first formal run requires a dated protocol amendment and a rerun on every affected platform.
+Version 1.3 was executed for IEEE Xplore, ACM Digital Library, and Scopus. Version 1.4 leaves those platform strings unchanged and prospectively adds the OpenAlex compensatory source. IEEE Xplore and Scopus produced four importable CSV exports; ACM returned two visible totals but Basic Edition did not provide record-level export; Web of Science personal sign-in exposed only Free View and did not permit either Core Collection query. The append-only ledger and raw records retain exact queries, filters, timestamps, totals, export formats, checksums, and blockers. A missing facet triggers broader export plus downstream screening, not an inferred count. Do not replace an executed query silently; any change after the first formal run requires a dated protocol amendment and a rerun on every affected platform.
 
 The seed matrix in `seed_query_coverage_matrix.csv` contains expected query sensitivity only. It is not evidence that any database search has been executed or that a seed record is indexed by a platform on the final search date.
 

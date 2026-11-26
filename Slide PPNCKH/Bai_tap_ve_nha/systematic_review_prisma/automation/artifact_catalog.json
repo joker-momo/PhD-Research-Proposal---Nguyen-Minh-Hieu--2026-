@@ -170,6 +170,37 @@
         "quotes",
         "validation"
       ]
+    },
+    {
+      "artifact_id": "hk261-openalex-prisma-search",
+      "name": "OpenAlex PRISMA evidence-bundle search tool",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/prisma_openalex_search.py",
+      "purpose": "Run reproducible OpenAlex title/abstract Boolean searches and archive raw records, normalized CSV, query provenance, duplicate diagnostics and SHA-256 evidence without representing the output as Web of Science Core Collection.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/prisma_openalex_search.py\" --config <json> --output-dir <directory>",
+      "inputs": [
+        "OpenAlex search configuration JSON",
+        "optional OPENALEX_API_KEY environment variable",
+        "lawful public OpenAlex API responses"
+      ],
+      "outputs": [
+        "raw JSON evidence bundle",
+        "normalized CSV",
+        "manifest and SHA-256 checksums",
+        "run summary"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/test_prisma_openalex_search.py"
+      ],
+      "test_command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts\" -p test_prisma_openalex_search.py -v",
+      "status": "active",
+      "tags": [
+        "openalex",
+        "prisma",
+        "search",
+        "pagination",
+        "provenance",
+        "checksums"
+      ]
     }
   ]
 }

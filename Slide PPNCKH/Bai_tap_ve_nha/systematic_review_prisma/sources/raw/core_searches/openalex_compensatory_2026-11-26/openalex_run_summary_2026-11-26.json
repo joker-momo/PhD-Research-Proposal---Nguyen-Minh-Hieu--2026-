@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source": "OpenAlex",
+  "query_set_version": "1.4-openalex-1",
+  "observed_at": "2026-11-26T14:54:14+07:00",
+  "config_file": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/automation/search_configs/openalex_query_set_1.4.json",
+  "config_sha256": "340b87e8e3fd791ab1b1907f650620ec2e74374f69bcd191ced67d974666c36d",
+  "variant_count": 2,
+  "reported_total_sum_not_deduplicated": 111,
+  "manifests": [
+    "openalex_high_recall_2026-11-26_manifest.json",
+    "openalex_complementary_2026-11-26_manifest.json"
+  ],
+  "integrity_boundary": "OpenAlex evidence only; not a Web of Science Core Collection run."
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "source": "OpenAlex",
+  "source_role": "supplementary_compensatory_search",
+  "query_set_version": "1.4-openalex-1",
+  "observed_at": "2026-11-26T14:54:14+07:00",
+  "query_variant": "high_recall",
+  "search_parameter": "search.title_and_abstract",
+  "exact_query": "(\"UAV swarm\" OR \"drone swarm\" OR \"multi-UAV\" OR \"multiple UAVs\" OR \"aerial network\" OR FANET) AND (\"distributed inference\" OR \"collaborative inference\" OR \"cooperative inference\" OR \"split inference\" OR \"split computing\" OR \"edge intelligence\")",
+  "interpreted_query": "get works from 2021-01-01 through 2026-11-26 with ((FANET OR stemmed \"UAV swarm\" OR stemmed \"aerial network\" OR stemmed \"drone swarm\" OR stemmed \"multi-UAV\" OR stemmed \"multiple UAVs\") AND (stemmed \"collaborative inference\" OR stemmed \"cooperative inference\" OR stemmed \"distributed inference\" OR stemmed \"edge intelligence\" OR stemmed \"split computing\" OR stemmed \"split inference\")) in the title or abstract where language is [English](en)",
+  "filters": "from_publication_date:2021-01-01,to_publication_date:2026-11-26,language:en",
+  "api_reported_total": 85,
+  "exported_total": 85,
+  "page_count": 1,
+  "duplicate_counts": {
+    "openalex_id_duplicates": 0,
+    "doi_duplicates": 0,
+    "title_duplicates": 0
+  },
+  "raw_file": "openalex_high_recall_2026-11-26_raw.json",
+  "normalized_file": "openalex_high_recall_2026-11-26_normalized.csv",
+  "manifest_file": "openalex_high_recall_2026-11-26_manifest.json",
+  "checksum_file": "openalex_high_recall_2026-11-26_checksums.sha256",
+  "sha256": {
+    "openalex_high_recall_2026-11-26_raw.json": "850a1fc7d9bd86a5f3f91aa608aff0abd526aee2a8f1277e1610acef66f12ce0",
+    "openalex_high_recall_2026-11-26_normalized.csv": "673d2ab06811432f24903598fa49935d085da5f89d026512e2b2f6dc04cbe8bb"
+  },
+  "limitations": [
+    "OpenAlex is not Web of Science Core Collection and has different coverage.",
+    "Publication type is exported broadly and must be enforced during screening.",
+    "Search results are supplementary/compensatory evidence until a protocol amendment adopts them."
+  ]
+}
