@@ -10,7 +10,7 @@ code{background:#eef1fa;padding:1px 5px;border-radius:4px;font-size:.9em}
 blockquote{border-left:4px solid #ffd166;background:#fffbef;margin:10px 0;padding:8px 14px}
 strong{color:#101733}
 @media print{body{max-width:100%;font-size:11.5px}h1{font-size:20px}h2{font-size:15px}}
-</style><title>QA_Bank_Cau_Hoi_Lon_va_Diem_Yeu</title></head><body><h1>Q&amp;A Bank — Câu hỏi lớn &amp; Điểm yếu của Proposal</h1>
+</style><title>qa</title></head><body><h1>Q&amp;A Bank — Câu hỏi lớn &amp; Điểm yếu của Proposal</h1>
 <p><em>Cập nhật: 2026-07-13 · Nguồn: báo cáo 5-reviewer (7/7, 72.1/100 Minor Revision) + deep-read P-MDP/CDPO + đánh giá bổ sung. Lấy ra dùng khi luyện Q&amp;A hoặc sửa proposal.</em></p>
 <hr />
 <h2>A. ĐIỂM YẾU — trạng thái hiện tại</h2>
@@ -125,7 +125,7 @@ strong{color:#101733}
 </tr>
 </tbody>
 </table>
-<h3>⚠️ HÀNG XÓM SÁT NHẤT — phát hiện 16/7, ĐÃ cite vào Gap 3 + bảng + slide 16</h3>
+<h3>⚠️ HÀNG XÓM SÁT NHẤT — phát hiện 16/7, ĐÃ cite vào Gap 3 + bảng + slide 17 (backup)</h3>
 <p><strong>Kim et al. 2024 (DRL-RLD)</strong> — "End-to-End Latency Optimization for Resilient Distributed CNN Inference in Resource-Constrained UAV Swarms", <em>Applied Sciences</em> 14(23):10832, DOI 10.3390/app142310832. Swarm ad-hoc (U2U+U2G), DRL phân bổ layer, <strong>tái phân bổ khi UAV chết</strong> — sát Gap 3 hơn mọi bài trước. Đã đọc TOÀN VĂN (không chỉ abstract): (1) không có khái niệm resume/restart trong cả bài — request đang chạy dở ngầm định chạy lại; (2) reallocation = phương án mới cho request KẾ TIẾP theo time step; (3) DRL black-box, không phân tích cấu trúc/bounded-K/complexity; (4) mô phỏng 15 UAV, AlexNet/YOLO/VGG16. → Trả lời chuẩn: <em>"Kim et al. giữ cho MẠNG tiếp tục phục vụ; em cứu LƯỢT INFERENCE đang chạy — preserve activation, re-derive boundary, resume. Và em làm bằng công cụ giải tích thay vì black-box DRL."</em> Đây giờ là bài PHẢI thuộc trước khi vào phòng.</p>
 <h3>Hàng xóm khác phát hiện 15/7 — biết để phòng khi hội đồng hỏi "đã đọc bài X chưa?"</h3>
 <ol>

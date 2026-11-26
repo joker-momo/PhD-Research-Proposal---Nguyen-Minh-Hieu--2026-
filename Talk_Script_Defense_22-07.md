@@ -1,5 +1,5 @@
 # KỊCH BẢN NÓI — Bảo vệ đề cương, 13:00 thứ Tư 22/07/2026
-*Bài nói ~13 phút (khung cho phép 10–15). Ngôn ngữ: tiếng Việt, thuật ngữ giữ tiếng Anh. Nếu hội đồng yêu cầu nói tiếng Anh: báo Claude dịch trong 1 buổi.*
+*Bài nói ~14 phút (khung cho phép 10–15). Ngôn ngữ: tiếng Việt, thuật ngữ giữ tiếng Anh. Nếu hội đồng yêu cầu nói tiếng Anh: báo Claude dịch trong 1 buổi.*
 *Quy ước: **NÓI** = lời thoại; **NHẤN** = chỗ dừng 1 nhịp, nói chậm; **CHUYỂN** = câu bắc cầu sang slide sau. Mốc thời gian là thời điểm PHẢI RỜI slide đó.*
 
 ---
@@ -33,9 +33,27 @@
 
 **NHẤN:** Hướng thứ ba — Collaborative Edge Inference: cắt model thành các phần, cả bầy cùng gánh — không phụ thuộc bất kỳ hạ tầng nào bên ngoài bầy. Giống một dây chuyền lắp ráp trên không.
 
-**CHUYỂN:** Việc cắt-ghép model đã được thế giới chứng minh khả thi từ 2017. Vậy khoảng trống nằm ở đâu?
+**CHUYỂN:** Nghe hấp dẫn — nhưng trước khi đi tiếp, có ba điều cần nói rõ làm cơ sở.
 
-## Slide 4 — THE RESEARCH GAP ⭐ slide quan trọng nhất 【4:30】
+## Slide 3b — WHY IS THIS HARD? (slide dẫn dắt) 【3:45】
+*(Slide vừa hiện: im 1 nhịp cho hội đồng quét mắt qua 3 băng.)*
+
+**NÓI:** Trước khi chỉ ra khoảng trống nghiên cứu, em xin đặt **ba viên gạch nền** — chính là ba băng trên slide này.
+
+*(Tay chỉ băng 1 — hàng 3 chip, lướt trái sang phải theo mũi tên.)*
+**Thứ nhất: việc cắt model để chạy phân tán là chuyện đã được chứng minh — không phải giả thuyết của em.** Năm 2017, Neurosurgeon đo trên phần cứng thật: chọn đúng điểm cắt giữa thiết bị và cloud giúp nhanh hơn trung bình 3,1 lần và tiết kiệm gần 60% năng lượng. Năm 2018, DeepThings chạy YOLO — model phát hiện vật thể, đúng loại tác vụ của drone — trên một cụm Raspberry Pi. Và đến 2024, EdgeShard cắt cả model ngôn ngữ lớn Llama2 chạy trên 12 board Jetson — **đúng lớp chip mà đề cương này nhắm tới**. Bảy năm, từ CNN đến LLM, từ cloud xuống edge: tính khả thi đã được cộng đồng chứng minh hộ em rồi.
+
+*(Tay chỉ băng 2 — dừng ở thanh xanh dương dài, rồi chỉ thanh xanh lá ngắn; dừng 1 nhịp cho hội đồng so độ dài.)*
+**Thứ hai — và đây là chỗ bài toán bắt đầu khó:** cắt ở đâu quyết định phải truyền bao nhiêu. Hội đồng nhìn hai thanh này: cắt ở tầng nông, tensor trung gian khoảng 800 kilobyte — **còn lớn hơn chính ảnh đầu vào**; cắt ở tầng sâu chỉ còn 100 kilobyte — nhưng khi đó gần như toàn bộ khối tính toán dồn lên một UAV. Độ dài hai thanh đúng tỷ lệ tám-trên-một. Nghĩa là chi phí tính toán và chi phí truyền thông **dính chặt vào nhau qua quyết định cắt** — tối ưu riêng từng vế rồi ghép lại là thua từ trong cấu trúc.
+
+*(Tay chỉ dải đỏ, giọng chậm lại nửa nhịp.)*
+**Thứ ba:** mọi con số đẹp ở băng một đều được đo **trên mặt đất, mạng ổn định, không node nào chết**. Còn môi trường của em là bầy bay: link lên xuống theo khoảng cách, pin cạn dần theo phút, và UAV có thể rơi **giữa lúc** dây chuyền đang chạy. Một phương án tối ưu lúc cất cánh sẽ mục dần sau vài phút — và một phương án tĩnh thì chết ngay ở sự cố đầu tiên.
+
+**CHUYỂN:** *(chỉ vào thanh xanh Problem Statement)* Ba viên gạch đó đặt ra đúng hai câu hỏi trên thanh này — và dẫn thẳng đến khoảng trống nghiên cứu.
+
+> **📖 GHI CHÚ slide 3b — nguồn số liệu khi bị hỏi:** 800KB/100KB tự tính từ ResNet-18 chuẩn (56×56×64×4B ≈ 800KB; 7×7×512×4B ≈ 100KB) — nói rõ "em tính từ kích thước feature map, không trích từ bài nào". Ba mệnh đề dải đỏ = 3 loại biến động khác bản chất: link (liên tục), pin (đơn điệu co 𝒳), UAV rơi (rời rạc — kích hoạt RQ2). Cặp động từ chốt: plan *decays* (mục từ từ → re-optimize định kỳ) vs plan *dies* (chết tức thì → cơ chế phản ứng) — hai bài toán con của RQ2. Sang slide 7 có thể móc ngược: "ba regime Pareto chính là hai thanh bar này kéo dãn ra".
+
+## Slide 4 — THE RESEARCH GAP ⭐ slide quan trọng nhất 【5:45】
 **NÓI:** Khi khảo sát các công trình về độ tin cậy trong collaborative inference, em thấy toàn bộ literature rơi vào đúng hai lớp. Lớp một — *proactive robustness*: chọn sẵn một phương án cắt "bền" ngay từ đầu, bằng CVaR hay reliability constraints. Nhưng cấu hình bị đóng băng từ lúc phát lệnh — không phản ứng được giữa chừng. Lớp hai — *per-task online adaptation*: quyết định lại theo từng time slot, như bài P-MDP trên IoT Journal 2025, hay bài task migration IoT Journal tháng 7 năm 2026 — nghĩa là văn liệu mới cách đây hai tuần. Nhưng các phương pháp này chỉ giúp **tác vụ kế tiếp**, không cứu được tác vụ **đang chạy** khi một UAV rơi.
 
 **NHẤN (nói chậm):** Lớp thứ ba — cứu lượt suy luận đang chạy dở — chưa ai làm. Và nó khó vì một lý do cụ thể: khi một UAV chết giữa pipeline, không thể chỉ giao lại việc cũ. Phải suy diễn lại ranh giới cắt; ranh giới mới sinh ra tensor trung gian kích thước khác; kích thước khác nghĩa là chi phí truyền khác trên topology còn lại; và phải tiếp tục từ activation đã có thay vì chạy lại từ đầu. Bốn mắt xích đó khóa vào nhau — đó chính là điểm nghẽn kỹ thuật mà luận án này giải.
@@ -52,61 +70,75 @@
 >
 > **Nếu bị cắt ngang hỏi "CVaR là gì?" — trả lời 20 giây:** *"Dạ, thước đo rủi ro từ tài chính: thay vì tối ưu theo kỳ vọng, nó tối ưu theo thiệt hại trung bình của phần trăm tình huống xấu nhất — bài CDPO dùng nó để chọn phương án truyền vẫn thành công ngay cả khi kênh rơi vào đuôi xấu của phân bố."*
 
-## Slide 5 — RQ & Contributions 【6:00】
+## Slide 5 — RQ & Contributions 【7:00】
 **NÓI:** RQ1 — tối ưu đồng thời: cắt model tối đa K phần và gán cho UAV, tối thiểu hóa latency và energy dưới ràng buộc kép tính toán–truyền thông. Bài toán họ hàng gần nhất đã được chứng minh NP-hard năm 2024, nên em dùng bounded-K làm đòn bẩy tractability. RQ2 — thích ứng online: tái tối ưu khi topology đổi và UAV hỏng, bao gồm re-derive ranh giới cho inference đang chạy và resume từ activation cuối cùng đã giao.
 
 Bốn đóng góp kỳ vọng: formulation tối ưu đồng thời; phân tích giải tích vai trò của K; mô hình chi phí truyền thông nội sinh; và cơ chế re-derivation phản ứng — cái thứ tư là phần chưa có tiền lệ.
 
 **CHUYỂN:** Phương pháp gồm bốn phase.
 
-## Slide 6 — Methodology overview 【6:40】
+## Slide 6 — Methodology overview 【7:40】
 **NÓI:** Bốn phase nối tiếp: phân tích sơ bộ để lộ cấu trúc bài toán, formulation, giải bài toán joint cho RQ1, và cơ chế online cho RQ2. Em đi nhanh qua từng phase.
 
-## Slide 7 — Phase 1: Preliminary Analysis 【7:30】
+## Slide 7 — Phase 1: Preliminary Analysis 【8:30】
 **NÓI:** Mô phỏng đơn giản hóa cho thấy ba regime rõ rệt trên mặt phẳng latency–energy: computation-dominant, communication-dominant, và vùng cân bằng — với một Pareto front thực sự. Không có cấu hình nào thắng cả hai mục tiêu. Điều này xác nhận: không thể tối ưu hai vế độc lập rồi ghép lại — phải giải chung.
 
-## Slide 8 — Phase 2: Formulation 【8:40】
+## Slide 8 — Phase 2: Formulation 【9:40】
 **NÓI:** Bài toán: minimize L(x) cộng λE(x) trên tập khả thi định bởi ràng buộc SWaP, truyền thông FANET, và thứ tự thực thi. Biến quyết định gồm lựa chọn điểm cắt và gán UAV. K bị chặn bởi min của số UAV và số điểm cắt hợp lệ — thực tế em kỳ vọng không quá 8; xác định chính xác ngưỡng lợi–hại của K là một mục tiêu phân tích của Objective 1.
 
-## Slide 9 — Phase 3: Joint Optimization 【9:20】
+> **📖 GHI CHÚ công thức slide 8 — KHÔNG đọc trong bài, để hiểu sâu + đối đáp:**
+>
+> Đọc bằng một câu: *"trong tất cả phương án cắt-và-giao hợp lệ, chọn phương án làm tổng (thời gian trả lời + λ × năng lượng) nhỏ nhất."*
+>
+> - **x** = một "phương án tác chiến" trọn gói: cắt ở đâu (K−1 ranh giới) + khúc nào giao drone nào. Mỗi x cụ thể là MỘT điểm trong không gian tìm kiếm.
+> - **𝒳** = danh sách phương án hợp lệ, lọc bởi 3 nhóm ràng buộc: SWaP (khúc phải vừa bộ nhớ/chip/pin của drone nhận), truyền thông FANET (cặp drone giữ 2 khúc liên tiếp phải còn link, đủ băng thông), thứ tự chuỗi (khúc 2 chạy sau khi nhận output khúc 1).
+> - **L(x)** = tổng thời gian một lượt: tính khúc 1 + truyền tensor #1 + tính khúc 2 + truyền tensor #2 + … Phụ thuộc x theo HAI đường: chỗ cắt → tensor to/nhỏ, khúc nặng/nhẹ; cách gán → chip nhanh/chậm, link tốt/xấu.
+> - **E(x)** = năng lượng tính toán (chip từng con) + năng lượng radio (phát/nhận tensor). Cũng phụ thuộc kép như L.
+> - **λ ≥ 0** = núm đánh đổi, đơn vị ms/Joule: λ=0 → chỉ cần nhanh (cứu nạn); λ lớn → pin là vua (giám sát dài ngày). **Quét λ ⇒ mỗi giá trị một nghiệm ⇒ nối lại = đường Pareto ở slide 7.** (Slide 7 là bức tranh, slide 8 là cỗ máy sinh từng điểm của bức tranh.)
+>
+> **Nếu bị hỏi "coupling nằm chỗ nào trong công thức?"** → *"Ở chỗ cả L lẫn E cùng phụ thuộc đồng thời vào cả hai nửa của x: ranh giới cắt sinh tensor, tensor sinh chi phí trên link của cặp drone được gán. Nếu chi phí truyền không phụ thuộc chỗ cắt thì tách được thành hai bài giải riêng — vì nó phụ thuộc, nên không tách được. Đó chính là dấu vân tay toán học của computation–communication coupling, và là lý do sequential baseline sẽ thua."*
+>
+> **Bản nói 30 giây khi bị yêu cầu giải thích công thức:** *"x là phương án trọn gói: cắt ở đâu, ai làm gì. 𝒳 lọc phương án hợp lệ theo SWaP, kết nối, thứ tự chuỗi. L là tổng thời gian tính cộng truyền; E là tổng pin cho chip cộng radio; λ là núm đánh đổi — quét λ ra đường Pareto ở slide trước. Coupling: cả L lẫn E đều phụ thuộc đồng thời chỗ cắt và cách gán — nên không tách đôi bài toán được."*
+
+## Slide 9 — Phase 3: Joint Optimization 【10:20】
 **NÓI:** Phase 3 giải bài toán: phân tích cấu trúc phụ thuộc giữa cắt và gán, tìm substructure giải được và cơ hội xấp xỉ, đặc trưng hóa Pareto frontier theo K và điều kiện mạng.
 
-## Slide 10 — Phase 4: Online Adaptation ⭐ 【10:50】
+## Slide 10 — Phase 4: Online Adaptation ⭐ 【11:50】
 **NÓI:** Đây là phần trả lời RQ2. Control plane theo dõi telemetry — chất lượng link, pin, tải CPU. Khi một UAV rơi giữa pipeline, cơ chế của em làm ba việc: re-derive tập ranh giới cắt cho phần model chưa chạy xong; định tuyến lại tensor trên topology còn sống; và resume từ activation trung gian cuối cùng đã giao — không chạy lại từ đầu.
 
 **NHẤN:** Các self-healing controller hiện có giả định task placement cố định. Ở đây placement bị ràng buộc bởi chính lựa chọn cắt — vì vậy không thể lắp ghép hai công cụ có sẵn mà thành.
 
 **CHUYỂN:** Làm sao biết cơ chế này thực sự tốt hơn?
 
-## Slide 11 — Expected Outcomes & Validation 【11:50】
+## Slide 11 — Expected Outcomes & Validation 【12:50】
 **NÓI:** Kiểm chứng bằng co-simulation chuẩn ngành: NS-3 cho mạng, ROS/Gazebo cho chuyển động, dưới các kịch bản khắc nghiệt — node rơi, đứt link. Quan trọng nhất: so với ba baseline có tên — sequential partition-then-assign đại diện cho cách làm tách rời; static joint không có re-derivation để cô lập đóng góp của RQ2; và full-restart để cô lập giá trị của việc resume. Nếu joint không thắng sequential, luận điểm trung tâm sai — và em sẽ biết điều đó ngay từ năm nhất.
 
-## Slide 12 — Timeline 【12:30】
+## Slide 12 — Timeline 【13:30】
 **NÓI:** Ba năm, ba phase, ba bài báo — mốc là ngày nộp: bài 1 tháng 12 về joint optimization, bài 2 tháng 24 về communication-aware optimization, bài 3 tháng 30 về online re-optimization; hai bài đầu nhắm venue chu kỳ nhanh, bài ba nhắm journal. Sáu tháng cuối viết luận án.
 
-## Slide 13 — Close 【13:00】
+## Slide 13 — Close 【14:00】
 **NÓI:** Tóm lại một câu: luận án này dạy một bầy drone yếu cách cùng khiêng một bộ não AI lớn — biết khiêng kiểu nào đỡ tốn sức nhất, và biết đổi cách khiêng ngay giữa chừng khi một thành viên gục ngã, mà không phải đặt não xuống làm lại từ đầu. Em xin cảm ơn hội đồng và mong nhận được góp ý.
 
 ---
 
 ## Slide ẩn — chỉ mở khi Q&A (gõ số + Enter khi đang trình chiếu)
-- **14** = 3 gaps chi tiết + "41 verified references"
-- **15** = kiến trúc co-simulation (NS-3 / ROS / PyTorch)
-- **16** = ⭐ bảng hàng xóm gần nhất (Wang/CDPO, Gao/P-MDP, Meng 2026) + "vì sao bolt A lên B thất bại" → rút ra khi bị hỏi câu B3/B4
-- **17** = term card CVaR & reliability constraint + ẩn dụ "bảo hiểm vs đội cứu hộ" → mở khi bị hỏi "CVaR là gì / sao không chỉ cần plan robust từ đầu"
+- **15** = 3 gaps chi tiết + "42 verified references"
+- **16** = kiến trúc co-simulation (NS-3 / ROS / PyTorch)
+- **17** = ⭐ bảng hàng xóm gần nhất (Wang/CDPO, Gao/P-MDP, Meng 2026) + "vì sao bolt A lên B thất bại" → rút ra khi bị hỏi câu B3/B4
+- **18** = term card CVaR & reliability constraint + ẩn dụ "bảo hiểm vs đội cứu hộ" → mở khi bị hỏi "CVaR là gì / sao không chỉ cần plan robust từ đầu"
 
-## Nếu cháy giờ (đang ở slide 8 mà đã quá phút 9)
+## Nếu cháy giờ (đang ở slide 8 mà đã quá phút 10)
 1. Slide 9: chỉ nói 1 câu "Phase 3 giải bài toán này bằng phân tích cấu trúc và xấp xỉ" — tiết kiệm 30s.
 2. Slide 7: bỏ giải thích 3 regime, chỉ nói "Pareto front sơ bộ xác nhận phải giải chung" — tiết kiệm 30s.
 3. TUYỆT ĐỐI không cắt slide 4 và 10 — đó là toàn bộ novelty.
 
 ## Cheat sheet 1 dòng/slide (in ra cầm tay)
-1. Chào + tên đề tài → 2. lướt agenda → 3. SWaP vs model lớn; CEI = dây chuyền → 4. ⭐ 2 lớp cũ / lớp 3 chưa ai làm / 4 mắt xích khóa nhau → 5. RQ1 NP-hard bounded-K; RQ2 re-derive+resume; 4 contributions → 6. 4 phase → 7. Pareto 3 regime → 8. min L+λE; K ≤ min(N,|P|), ≤8 → 9. cấu trúc + xấp xỉ → 10. ⭐ telemetry / re-derive / reroute / resume; placement ràng buộc bởi cắt → 11. NS-3+Gazebo; 3 baselines; "sai thì biết từ năm 1" → 12. 3 năm 3 bài; mốc = ngày nộp → 13. câu chốt bầy drone khiêng não.
+1. Chào + tên đề tài → 2. lướt agenda → 3. SWaP vs model lớn; CEI = dây chuyền → 3b. đã-chứng-minh (3.1x / 59.5% / Llama2-Jetson) / cắt đâu = truyền nhiêu / bầy bay: mọi thứ hỏng → 4. ⭐ 2 lớp cũ / lớp 3 chưa ai làm / 4 mắt xích khóa nhau → 5. RQ1 NP-hard bounded-K; RQ2 re-derive+resume; 4 contributions → 6. 4 phase → 7. Pareto 3 regime → 8. min L+λE; K ≤ min(N,|P|), ≤8 → 9. cấu trúc + xấp xỉ → 10. ⭐ telemetry / re-derive / reroute / resume; placement ràng buộc bởi cắt → 11. NS-3+Gazebo; 3 baselines; "sai thì biết từ năm 1" → 12. 3 năm 3 bài; mốc = ngày nộp → 13. câu chốt bầy drone khiêng não.
 
 ## 3 câu trả lời phải thuộc lòng (từ QA Bank)
 - **"K bằng mấy?"** → quy tắc min(N,|P|), thực tế ≤8, ngưỡng chính xác là mục tiêu phân tích của Objective 1 (Contribution 2).
-- **"Bolt DADS lên Pan et al. là xong?"** → placement cố định vs placement ràng buộc bởi partition; 4 mắt xích (boundary→tensor→cost→resume) không xuất hiện khi hai bài toán tách rời. → mở slide 16.
-- **"Bài P-MDP/Meng 2026 làm rồi mà?"** → per-slot/per-epoch cho tác vụ MỚI, kiến trúc device–server; em cứu tác vụ ĐANG CHẠY trong pipeline nội bộ swarm. → mở slide 16.
+- **"Bolt DADS lên Pan et al. là xong?"** → placement cố định vs placement ràng buộc bởi partition; 4 mắt xích (boundary→tensor→cost→resume) không xuất hiện khi hai bài toán tách rời. → mở slide 17.
+- **"Bài P-MDP/Meng 2026 làm rồi mà?"** → per-slot/per-epoch cho tác vụ MỚI, kiến trúc device–server; em cứu tác vụ ĐANG CHẠY trong pipeline nội bộ swarm. → mở slide 17.
 
 ---
 
@@ -116,7 +148,7 @@ Bốn đóng góp kỳ vọng: formulation tối ưu đồng thời; phân tích
 ## A. Tính mới & định vị (dễ bị hỏi nhất)
 1. **Chia nhỏ model AI có khả thi không, ai làm chưa?** → Đã kiểm chứng từ datacenter đến cụm Raspberry Pi (Neurosurgeon 2017, DeepThings chạy YOLOv2); em không chứng minh "chia được" mà giải "chia tối ưu + sống sót trên mạng bay". *(= B1)*
 2. **Chia model trên multi-UAV CỤ THỂ như thế nào?** → DNN = chồng tầng tuần tự; giữa 2 tầng chỉ cần truyền 1 tensor → đó là chỗ cắt. Hai bước: (i) triển khai — chọn K−1 điểm cắt, xẻ weights thành K gói, nạp mỗi gói vào 1 drone (mỗi con chỉ chứa 1/K model → thắng SWaP); (ii) runtime — A chạy tầng 1–6 → tensor qua radio → B chạy 7–12 → C chạy nốt. Số minh họa (ResNet): tensor ở tầng nông ~800KB (to hơn ảnh gốc 150KB!), tầng sâu ~100KB, output 4KB → cắt sớm tốn radio, cắt sâu dồn tải lên 1 con → điểm cắt + gán là BIẾN tối ưu, không phải tham số chọn trước. Bonus: luồng ảnh liên tục → pipeline, throughput tăng ~K lần; họ thay thế: cắt theo không gian ảnh (DeepThings). → chỉ Figure 1 trong proposal khi trả lời.
-3. **Điểm mới so với các bài 2024–2026 gần nhất?** → Taxonomy 3 lớp; hai lớp đầu đã có người làm, lớp reactive mid-inference chưa. → slide 16. *(= B3, B4)*
+3. **Điểm mới so với các bài 2024–2026 gần nhất?** → Taxonomy 3 lớp; hai lớp đầu đã có người làm, lớp reactive mid-inference chưa. → slide 17. *(= B3, B4)*
 4. **Novelty là "ghép 3 mảng có sẵn" thôi?** → Không — nêu đích danh obstruction: placement ràng buộc bởi partition khiến self-healing và partitioning không lắp ghép được; 4 mắt xích khóa nhau. *(= B3)*
 5. **Đề tài này khác gì luận văn thạc sĩ "áp dụng AI cho drone"?** → 3 chữ ký tiến sĩ: formulation mới + chứng cứ NP-hard; obstruction lý thuyết chưa ai giải; chuẩn công bố quốc tế. *(= B10)*
 6. **Nếu tháng sau có bài giải đúng gap này thì sao?** → Gap đã soi đến literature 07/2026 (2 tuần trước); nếu xuất hiện, phạm vi co lại về phân tích K + formulation coupled — vẫn đủ 2 bài đầu; RQ2 chuyển thành so sánh/mở rộng cơ chế của họ.
@@ -150,7 +182,7 @@ Bốn đóng góp kỳ vọng: formulation tối ưu đồng thời; phân tích
 
 **3b. Dẫn chứng MỚI NHẤT (2024) — EdgeShard, IEEE IoT Journal 2024** (arXiv 2405.14371): chạy **Llama2 phân tán trên testbed thật 15 thiết bị, gồm 12 Jetson AGX Orin** — đúng lớp chip tham chiếu của đề cương; **giảm đến 50% latency, tăng 2× throughput**; dùng dynamic programming chọn đồng thời thiết bị + điểm cắt. Câu dùng: *"2024 người ta đã cắt cả LLM trên đúng lớp chip Jetson em nhắm — trên bàn thí nghiệm đứng yên; em đưa nó lên trời."* Kèm: Ren et al. (IEEE WCNC 2024, DOI 10.1109/WCNC57260.2024.10570535) — pipeline inference trên chính UAV swarm, DRL, mô phỏng.
 
-**3c. Hàng xóm sát nhất — Kim et al. 2024 DRL-RLD (Appl. Sci. 14(23):10832):** tái phân bổ layer khi UAV chết, swarm ad-hoc — ĐÃ cite trong Gap 3 + bảng so sánh + slide 16. Khác biệt phải nói đúng: họ phục vụ tiếp request MỚI (không resume, không phân tích cấu trúc); em cứu request ĐANG CHẠY. Chi tiết đầy đủ trong QA Bank.
+**3c. Hàng xóm sát nhất — Kim et al. 2024 DRL-RLD (Appl. Sci. 14(23):10832):** tái phân bổ layer khi UAV chết, swarm ad-hoc — ĐÃ cite trong Gap 3 + bảng so sánh + slide 17 (backup). Khác biệt phải nói đúng: họ phục vụ tiếp request MỚI (không resume, không phân tích cấu trúc); em cứu request ĐANG CHẠY. Chi tiết đầy đủ trong QA Bank.
 
 **4. Con số tensor trong giải thích câu 2** (tự tính từ kiến trúc ResNet-18 chuẩn, activation FP32 — nói rõ nguồn nếu bị hỏi): boundary nông 56×56×64×4B ≈ 800KB; boundary sâu 7×7×512×4B ≈ 100KB; ảnh vào 224×224×3 uint8 ≈ 150KB; output ~4KB. Chênh nhau ~8 lần giữa hai điểm cắt → lý do "cắt ở đâu" là biến tối ưu.
 

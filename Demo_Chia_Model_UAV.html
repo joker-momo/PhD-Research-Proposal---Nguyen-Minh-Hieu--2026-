@@ -4,67 +4,98 @@
 <meta charset="UTF-8">
 <title>Demo: Chia model AI trên bầy UAV — Collaborative Edge Inference</title>
 <style>
-  :root{
-    --navy:#1E2761; --ice:#CADCFC; --seg1:#2C8C5A; --seg2:#2563EB; --seg3:#D97706;
-    --danger:#DC2626; --ok:#16A34A;
-  }
+  :root{ --navy:#1E2761; --ice:#CADCFC; --seg1:#2C8C5A; --seg2:#2563EB; --seg3:#D97706;
+         --danger:#DC2626; --ok:#16A34A; --redo:#38BDF8; }
   *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
-  body{background:linear-gradient(180deg,#0b1035 0%,#1E2761 55%,#31407e 100%);min-height:100vh;color:#eef2ff;display:flex;flex-direction:column;align-items:center;padding:14px}
-  h1{font-size:21px;letter-spacing:.3px}
-  .sub{color:var(--ice);font-size:13px;margin:4px 0 10px;text-align:center}
+  body{background:linear-gradient(180deg,#0b1035 0%,#1E2761 55%,#31407e 100%);min-height:100vh;color:#eef2ff;display:flex;flex-direction:column;align-items:center;padding:12px}
+  h1{font-size:20px;letter-spacing:.3px}
+  .sub{color:var(--ice);font-size:12.5px;margin:4px 0 8px;text-align:center}
   #stage{background:linear-gradient(180deg,#0e1440,#233270);border:1px solid #3b4a8f;border-radius:14px;box-shadow:0 8px 40px rgba(0,0,0,.45)}
-  .bar{display:flex;gap:10px;margin:12px 0;flex-wrap:wrap;justify-content:center}
-  button{background:var(--ice);color:var(--navy);border:none;border-radius:8px;padding:10px 16px;font-size:14px;font-weight:700;cursor:pointer;transition:.15s}
+  .bar{display:flex;gap:10px;margin:10px 0;flex-wrap:wrap;justify-content:center}
+  button{background:var(--ice);color:var(--navy);border:none;border-radius:8px;padding:9px 15px;font-size:14px;font-weight:700;cursor:pointer;transition:.15s}
   button:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 4px 14px rgba(0,0,0,.35)}
   button:disabled{opacity:.35;cursor:not-allowed}
-  button.warn{background:#fecaca;color:#7f1d1d}
-  #narr{max-width:1160px;width:100%;background:rgba(255,255,255,.08);border:1px solid #3b4a8f;border-radius:10px;padding:10px 16px;font-size:15px;line-height:1.45;min-height:52px}
+  button.branch{background:#fde68a;color:#7c2d12;border:2px solid #f59e0b}
+  button.branch2{background:#bbf7d0;color:#14532d;border:2px solid #16A34A}
+  #narr{max-width:1160px;width:100%;background:rgba(255,255,255,.08);border:1px solid #3b4a8f;border-radius:10px;padding:9px 16px;font-size:15px;line-height:1.45;min-height:50px}
   #narr b{color:#ffd166}
-  .rotor{transform-origin:center;animation:spin .25s linear infinite}
-  @keyframes spin{to{transform:rotate(360deg)}}
-  .flash{animation:fl .5s ease-in-out 4}
-  @keyframes fl{50%{opacity:.15}}
 </style>
 </head>
 <body>
 <h1>Collaborative Edge Inference: chia model AI cho bầy UAV</h1>
-<div class="sub">Nguyễn Minh Hiếu — PhD Research Proposal · Demo minh họa: bounded-K partitioning (K=3) + reactive mid-inference recovery (RQ2)</div>
+<div class="sub">Nguyễn Minh Hiếu — PhD Defense Demo · bounded-K partitioning (K=3) + Reactive Mid-Inference Recovery (RQ2)</div>
 
-<svg id="stage" width="1160" height="560" viewBox="0 0 1160 560">
+<svg id="stage" width="1160" height="620" viewBox="0 0 1160 620">
   <defs>
     <radialGradient id="glow"><stop offset="0%" stop-color="#ffd166"/><stop offset="100%" stop-color="#ffd16600"/></radialGradient>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f4f7ff"/><stop offset="100%" stop-color="#bfcdf2"/></linearGradient>
     <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#9fb4ff"/></marker>
   </defs>
 
-  <!-- ====== MODEL STACK (trái) ====== -->
+  <!-- MODEL STACK (trái) -->
   <g id="modelBox">
-    <text x="88" y="52" fill="#eef2ff" font-size="15" font-weight="bold" text-anchor="middle">Model AI (DNN)</text>
-    <text x="88" y="70" fill="#9fb4ff" font-size="11" text-anchor="middle">12 tầng, ~45MB</text>
+    <text x="88" y="46" fill="#eef2ff" font-size="15" font-weight="bold" text-anchor="middle">Model AI (DNN)</text>
+    <text x="88" y="63" fill="#9fb4ff" font-size="11" text-anchor="middle">12 tầng, ~45MB</text>
     <g id="layers"></g>
     <g id="cuts"></g>
   </g>
 
-  <!-- ====== DRONES ====== -->
+  <!-- DRONES -->
   <g id="drones"></g>
 
-  <!-- ====== packet & effects ====== -->
+  <!-- FX -->
   <g id="fx"></g>
 
-  <!-- ====== OUTPUT ====== -->
+  <!-- STATS BOX -->
+  <g id="stats" opacity="0">
+    <rect x="925" y="40" width="215" height="86" rx="10" fill="rgba(255,255,255,.07)" stroke="#5a6ab5"/>
+    <text x="1032" y="62" fill="#9fb4ff" font-size="12" font-weight="bold" text-anchor="middle">TẦNG PHẢI TÍNH SAU SỰ CỐ</text>
+    <text x="1032" y="95" fill="#ffd166" font-size="26" font-weight="bold" text-anchor="middle" id="statNum">0</text>
+    <text x="1032" y="115" fill="#9fb4ff" font-size="11" text-anchor="middle" id="statSub"></text>
+  </g>
+
+  <!-- OUTPUT -->
   <g id="outBox" opacity="0">
-    <rect x="940" y="60" width="190" height="74" rx="10" fill="#0f2e1c" stroke="var(--ok)" stroke-width="2"/>
-    <text x="1035" y="88" fill="#86efac" font-size="14" font-weight="bold" text-anchor="middle">KẾT QUẢ INFERENCE</text>
-    <text x="1035" y="112" fill="#eef2ff" font-size="15" text-anchor="middle" id="outText">🧍 Người: 97%</text>
+    <rect x="925" y="140" width="215" height="64" rx="10" fill="#0f2e1c" stroke="var(--ok)" stroke-width="2"/>
+    <text x="1032" y="165" fill="#86efac" font-size="13" font-weight="bold" text-anchor="middle">KẾT QUẢ INFERENCE</text>
+    <text x="1032" y="188" fill="#eef2ff" font-size="14" text-anchor="middle" id="outText">🧍 Người: 97%</text>
+  </g>
+
+  <!-- LAYER LEDGER: bảng theo dõi 12 tầng -->
+  <g id="ledgerBox">
+    <text x="200" y="522" fill="#9fb4ff" font-size="12.5" font-weight="bold">SỔ THEO DÕI 12 TẦNG:</text>
+    <g id="ledger"></g>
+    <g id="legend" font-size="11">
+      <rect x="200" y="586" width="14" height="14" rx="3" fill="var(--seg1)"/><text x="219" y="597" fill="#cdd6f4">đã tính &amp; giữ được</text>
+      <rect x="360" y="586" width="14" height="14" rx="3" fill="var(--danger)"/><text x="379" y="597" fill="#cdd6f4">mất theo UAV rơi</text>
+      <rect x="510" y="586" width="14" height="14" rx="3" fill="var(--redo)"/><text x="529" y="597" fill="#cdd6f4">tính sau sự cố</text>
+      <rect x="650" y="586" width="14" height="14" rx="3" fill="#44518f"/><text x="669" y="597" fill="#cdd6f4">chưa tính</text>
+    </g>
+  </g>
+
+  <!-- GROUND STATION -->
+  <g id="gsBox">
+    <line x1="92" y1="560" x2="92" y2="520" stroke="#9fb4ff" stroke-width="2.5"/>
+    <line x1="80" y1="533" x2="92" y2="523" stroke="#9fb4ff" stroke-width="2"/>
+    <line x1="104" y1="533" x2="92" y2="523" stroke="#9fb4ff" stroke-width="2"/>
+    <circle cx="92" cy="518" r="3.5" fill="#ffd166"/>
+    <rect x="52" y="558" width="80" height="26" rx="5" fill="#2a3565" stroke="#5a6ab5"/>
+    <rect x="61" y="565" width="10" height="8" fill="#9fb4ff" opacity=".6"/>
+    <rect x="77" y="565" width="10" height="8" fill="#9fb4ff" opacity=".6"/>
+    <rect x="93" y="565" width="10" height="8" fill="#9fb4ff" opacity=".6"/>
+    <text x="92" y="600" fill="#9fb4ff" font-size="10.5" font-weight="bold" text-anchor="middle">GROUND STATION</text>
   </g>
 </svg>
 
 <div class="bar">
   <button id="b1" onclick="phaseDeploy()">1️⃣ Chia &amp; nạp model</button>
   <button id="b2" onclick="phaseRun()" disabled>2️⃣ Chạy inference</button>
-  <button id="b3" onclick="phaseFail()" disabled>3️⃣ 💥 UAV rơi giữa chừng → cứu (RQ2)</button>
-  <button id="b4" onclick="location.reload()">↺ Làm lại</button>
+  <button id="b3" onclick="phaseFail()" disabled>3️⃣ 💥 UAV B rơi giữa chừng</button>
+  <button id="bR" class="branch" onclick="branchRestart()" disabled style="display:none">🔁 Cách cũ: GS tính lại → RESTART</button>
+  <button id="bQ" class="branch2" onclick="branchResume()" disabled style="display:none">🛟 RQ2: UAV lead tự tính → RESUME</button>
+  <button onclick="location.reload()">↺ Làm lại</button>
 </div>
-<div id="narr">Bấm <b>1️⃣ Chia &amp; nạp model</b> để bắt đầu. Model 12 tầng sẽ được cắt thành K = 3 khúc và nạp xuống 3 UAV — mỗi con chỉ mang 1/3 model.</div>
+<div id="narr">Bấm <b>1️⃣ Chia &amp; nạp model</b>. Model 12 tầng sẽ được cắt K = 3 khúc nạp xuống 3 UAV. Sau đó chạy thử một lượt trơn tru, rồi đến màn chính: <b>UAV B rơi khi đang tính dở</b> — và bạn được chọn cứu theo cách cũ hay theo RQ2.</div>
 
 <script>
 const SVG='http://www.w3.org/2000/svg';
@@ -73,35 +104,62 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 function el(tag,attrs,parent){const e=document.createElementNS(SVG,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);(parent||$('fx')).appendChild(e);return e;}
 function narr(html){$('narr').innerHTML=html;}
 
-// ---------- model layers ----------
-const NL=12, LX=40, LY=86, LW=96, LH=30, GAP=6;
+// ---------- model stack ----------
+const NL=12, LX=40, LY=80, LW=96, LH=28, GAP=5;
+const GSX=92, GSY=516;
 const segColor=i=> i<4? 'var(--seg1)' : i<8? 'var(--seg2)' : 'var(--seg3)';
 const layers=[];
 for(let i=0;i<NL;i++){
   const g=el('g',{},$('layers'));
   const r=el('rect',{x:LX,y:LY+i*(LH+GAP),width:LW,height:LH,rx:6,fill:'#44518f',stroke:'#7c8bd0'},g);
-  el('text',{x:LX+LW/2,y:LY+i*(LH+GAP)+20,fill:'#dbe4ff','font-size':12,'text-anchor':'middle'},g).textContent='tầng '+(i+1);
+  el('text',{x:LX+LW/2,y:LY+i*(LH+GAP)+19,fill:'#dbe4ff','font-size':12,'text-anchor':'middle'},g).textContent='tầng '+(i+1);
   layers.push({g,r});
 }
 
+// ---------- ledger 12 ô ----------
+const led=[];
+for(let i=0;i<12;i++){
+  const x=200+i*62;
+  const g=el('g',{},$('ledger'));
+  const r=el('rect',{x:x,y:534,width:52,height:34,rx:6,fill:'#44518f',stroke:'#7c8bd0'},g);
+  el('text',{x:x+26,y:556,fill:'#fff','font-size':13,'font-weight':'bold','text-anchor':'middle'},g).textContent=i+1;
+  led.push(r);
+}
+function ledSet(i,color){ led[i].setAttribute('fill',color); }
+function ledStrokePulse(i,on){ led[i].setAttribute('stroke', on?'#ffd166':'#7c8bd0'); led[i].setAttribute('stroke-width', on?3:1); }
+
 // ---------- drones ----------
-const dronePos=[{x:330,y:150,name:'UAV A',cam:true},{x:610,y:110,name:'UAV B'},{x:880,y:160,name:'UAV C'}];
+const dronePos=[{x:330,y:140,name:'UAV A',cam:true},{x:610,y:100,name:'UAV B'},{x:880,y:150,name:'UAV C'}];
 const drones=[];
-function mkDrone(d,idx){
+function mkDrone(d){
   const g=el('g',{transform:`translate(${d.x},${d.y})`},$('drones'));
-  // rotors
-  [[-38,-18],[38,-18],[-38,6],[38,6]].forEach(p=>{
-    el('rect',{x:p[0]-16,y:p[1]-2,width:32,height:3,rx:2,fill:'#b9c6ff',class:'rotor'},g);
-    el('line',{x1:p[0],y1:p[1],x2:p[0]*0.55,y2:8,stroke:'#8fa2e8','stroke-width':3},g);
-  });
-  // body
-  el('ellipse',{cx:0,cy:12,rx:30,ry:16,fill:'#dfe7ff',stroke:'#8fa2e8','stroke-width':2},g);
-  if(d.cam) el('circle',{cx:0,cy:26,r:6,fill:'#1E2761',stroke:'#ffd166','stroke-width':2},g);
-  el('text',{x:0,y:-32,fill:'#fff','font-size':15,'font-weight':'bold','text-anchor':'middle'},g).textContent=d.name;
-  // khoang chứa model (memory)
+  // cang tay 2 ben
+  el('path',{d:'M -8 6 L -34 -12',stroke:'#8fa2e8','stroke-width':5,'stroke-linecap':'round',fill:'none'},g);
+  el('path',{d:'M 8 6 L 34 -12',stroke:'#8fa2e8','stroke-width':5,'stroke-linecap':'round',fill:'none'},g);
+  // motor pod
+  el('rect',{x:-40,y:-19,width:12,height:9,rx:3,fill:'#5a6ab5',stroke:'#8fa2e8'},g);
+  el('rect',{x:28,y:-19,width:12,height:9,rx:3,fill:'#5a6ab5',stroke:'#8fa2e8'},g);
+  // dia canh quat (hieu ung mo, tinh)
+  el('ellipse',{cx:-34,cy:-21,rx:21,ry:4.5,fill:'rgba(202,220,252,.22)',stroke:'#b9c6ff','stroke-width':1},g);
+  el('ellipse',{cx:34,cy:-21,rx:21,ry:4.5,fill:'rgba(202,220,252,.22)',stroke:'#b9c6ff','stroke-width':1},g);
+  // than may
+  el('ellipse',{cx:0,cy:12,rx:26,ry:14,fill:'url(#bodyGrad)',stroke:'#8fa2e8','stroke-width':2},g);
+  // nap kinh navy
+  el('ellipse',{cx:0,cy:6,rx:13,ry:5.5,fill:'#1E2761',opacity:.85},g);
+  // den bao xanh
+  el('circle',{cx:17,cy:12,r:2.6,fill:'#4ade80'},g);
+  // chan dap
+  el('path',{d:'M -13 25 L -16 33 M 13 25 L 16 33',stroke:'#8fa2e8','stroke-width':2.5,fill:'none'},g);
+  el('path',{d:'M -23 33 L -9 33 M 9 33 L 23 33',stroke:'#8fa2e8','stroke-width':2.5,fill:'none','stroke-linecap':'round'},g);
+  // gimbal camera (chi con A)
+  if(d.cam){
+    el('rect',{x:-5,y:24,width:10,height:8,rx:2,fill:'#1E2761',stroke:'#ffd166','stroke-width':1.5},g);
+    el('circle',{cx:0,cy:28,r:2.4,fill:'#ffd166'},g);
+  }
+  el('text',{x:0,y:-38,fill:'#fff','font-size':15,'font-weight':'bold','text-anchor':'middle'},g).textContent=d.name;
   const mem=el('g',{},g);
-  el('rect',{x:-52,y:44,width:104,height:56,rx:8,fill:'rgba(255,255,255,.07)',stroke:'#5a6ab5','stroke-dasharray':'4 3'},mem);
-  const memLabel=el('text',{x:0,y:118,fill:'#9fb4ff','font-size':11,'text-anchor':'middle'},mem);
+  el('rect',{x:-52,y:44,width:104,height:52,rx:8,fill:'rgba(255,255,255,.07)',stroke:'#5a6ab5','stroke-dasharray':'4 3'},mem);
+  const memLabel=el('text',{x:0,y:112,fill:'#9fb4ff','font-size':11,'text-anchor':'middle'},mem);
   memLabel.textContent='bộ nhớ trống';
   drones.push({...d,g,mem,memLabel,slots:[]});
 }
@@ -109,52 +167,103 @@ dronePos.forEach(mkDrone);
 
 function memBlk(dr,label,color,slot){
   const b=el('g',{},dr.mem);
-  el('rect',{x:-46+slot*31,y:52,width:27,height:38,rx:4,fill:color,stroke:'#fff','stroke-width':.6},b);
-  el('text',{x:-32.5+slot*31,y:75,fill:'#fff','font-size':9,'text-anchor':'middle'},b).textContent=label;
+  el('rect',{x:-46+slot*24,y:50,width:20,height:40,rx:4,fill:color,stroke:'#fff','stroke-width':.6},b);
+  el('text',{x:-36+slot*24,y:74,fill:'#fff','font-size':9,'text-anchor':'middle'},b).textContent=label;
   dr.slots.push(b);
   return b;
 }
 
-let deployed=false, ran=false;
+function clearBay(dr){ dr.slots.forEach(b=>b.remove()); dr.slots=[]; }
+function fillBay(dr, nums, color){
+  const n=nums.length, step=Math.floor(96/n), w=step-3;
+  nums.forEach((num,k)=>{
+    const b=el('g',{},dr.mem);
+    el('rect',{x:-48+k*step,y:50,width:w,height:40,rx:3,fill:color,stroke:'#fff','stroke-width':.6},b);
+    el('text',{x:-48+k*step+w/2,y:74,fill:'#fff','font-size':8.5,'text-anchor':'middle'},b).textContent=num;
+    dr.slots.push(b);
+  });
+}
+async function sendLink(x1,y1,x2,y2,label,color){
+  const g=el('g',{});
+  el('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:color,'stroke-width':1.5,'stroke-dasharray':'6 5','marker-end':'url(#arr)'},g);
+  const pk=el('circle',{r:8,fill:color,stroke:'#fff'},g);
+  const tl=el('text',{fill:color,'font-size':11,'font-weight':'bold','text-anchor':'middle'},g); tl.textContent=label;
+  for(let q=0;q<=1.001;q+=.03){
+    const X=x1+(x2-x1)*q, Y=y1+(y2-y1)*q;
+    pk.setAttribute('cx',X);pk.setAttribute('cy',Y);tl.setAttribute('x',X);tl.setAttribute('y',Y-13);
+    await sleep(14);
+  }
+  g.remove();
+}
+async function gsBusy(ms, txt){
+  const g=el('g',{});
+  el('rect',{x:30,y:478,width:280,height:30,rx:8,fill:'#3a3313',stroke:'#ffd166','stroke-width':1.5},g);
+  el('text',{x:170,y:498,fill:'#ffd166','font-size':12,'font-weight':'bold','text-anchor':'middle'},g).textContent=txt;
+  await sleep(ms); g.remove();
+}
+async function flashRing(dr){
+  const c=el('circle',{cx:dr.x,cy:dr.y+70,r:12,fill:'none',stroke:'#4ade80','stroke-width':3});
+  for(let r=12;r<=48;r+=4){ c.setAttribute('r',r); c.setAttribute('opacity',1-(r-12)/40); await sleep(28);}
+  c.remove();
+}
+async function reDeployFromGS(){
+  await sendLink(GSX+8,GSY,drones[0].x-16,drones[0].y+58,'nạp 5–6','#9fb4ff');
+  clearBay(drones[0]); fillBay(drones[0],[1,2,3,4,5,6],'var(--seg1)');
+  drones[0].memLabel.textContent='tầng 1–6 (GS nạp lại)';
+  await sendLink(GSX+8,GSY,drones[2].x-16,drones[2].y+58,'nạp 7–8','#9fb4ff');
+  clearBay(drones[2]); fillBay(drones[2],[7,8,9,10,11,12],'var(--seg3)');
+  drones[2].memLabel.textContent='tầng 7–12 (GS nạp lại)';
+}
+async function reDeployPrestage(){
+  await flashRing(drones[0]);
+  clearBay(drones[0]); fillBay(drones[0],[1,2,3,4,5,6],'var(--seg1)');
+  drones[0].memLabel.textContent='tầng 1–6 (prestage sẵn)'; drones[0].memLabel.setAttribute('fill','#4ade80');
+  await flashRing(drones[2]);
+  clearBay(drones[2]); fillBay(drones[2],[7,8,9,10,11,12],'var(--seg3)');
+  drones[2].memLabel.textContent='tầng 7–12 (prestage sẵn)'; drones[2].memLabel.setAttribute('fill','#4ade80');
+}
 
-// ---------- PHASE 1: chia & nạp ----------
+let ackChip=null;
+
+// ---------- PHASE 1 ----------
 async function phaseDeploy(){
   $('b1').disabled=true;
-  narr('🔪 <b>Bước 1 — Chọn điểm cắt.</b> Bài toán tối ưu chọn 2 ranh giới cắt (K = 3): sau tầng 4 và sau tầng 8 — dựa trên kích thước tensor tại từng ranh giới, năng lực chip và pin của từng UAV.');
-  // color segments
-  for(let i=0;i<NL;i++){ layers[i].r.setAttribute('fill',segColor(i)); await sleep(120);}
-  // cut lines
-  [[4,'cắt #1 — tensor ≈ 800KB'],[8,'cắt #2 — tensor ≈ 100KB']].forEach(c=>{
+  narr('🔪 <b>Chọn điểm cắt — tại GROUND STATION, trước khi cất cánh.</b> Trạm giải bài toán tối ưu, chọn 2 ranh giới (K = 3): sau tầng 4 và sau tầng 8 — dựa trên kích thước tensor tại từng ranh giới, sức chip và pin của từng UAV.');
+  for(let i=0;i<NL;i++){ layers[i].r.setAttribute('fill',segColor(i)); await sleep(90);}
+  [[4,'cắt #1 — tensor ~800KB'],[8,'cắt #2 — tensor ~100KB']].forEach(c=>{
     const y=LY+c[0]*(LH+GAP)-GAP/2;
     el('line',{x1:LX-12,y1:y,x2:LX+LW+12,y2:y,stroke:'#ffd166','stroke-width':2.5,'stroke-dasharray':'7 4'},$('cuts'));
     el('text',{x:LX+LW+18,y:y+4,fill:'#ffd166','font-size':11},$('cuts')).textContent=c[1];
   });
-  await sleep(1200);
-  narr('📦 <b>Bước 2 — Nạp trọng số.</b> Mỗi UAV chỉ nhận và lưu <b>khúc của mình</b> (~15MB thay vì 45MB). Không con nào chứa cả model — đây là cách vượt giới hạn SWaP.');
-  const segs=[['tầng 1–4','var(--seg1)',0],['tầng 5–8','var(--seg2)',1],['tầng 9–12','var(--seg3)',2]];
+  await sleep(900);
+  narr('📦 <b>GS nạp trọng số lên bầy</b> (gói bay từ trạm): mỗi UAV nhận khúc chính ~15MB + bản <b>prestage</b> các khúc lân cận vào flash (flash rẻ và nhẹ — khác RAM/chip). Không con nào phải CHẠY cả model — vượt SWaP.');
+  const segs=[['tầng 1–4','var(--seg1)'],['tầng 5–8','var(--seg2)'],['tầng 9–12','var(--seg3)']];
   for(let s=0;s<3;s++){
     const dr=drones[s];
-    // packet bay từ model tới drone
-    const p=el('circle',{cx:LX+LW/2,cy:LY+ (s*4+2)*(LH+GAP),r:10,fill:segs[s][1],stroke:'#fff'});
-    const tx=dr.x, ty=dr.y+70;
-    for(let t=0;t<=1.001;t+=.04){
-      p.setAttribute('cx',LX+LW/2+(tx-LX-LW/2)*t);
-      p.setAttribute('cy',LY+(s*4+2)*(LH+GAP)+(ty-LY-(s*4+2)*(LH+GAP))*t - Math.sin(t*Math.PI)*60);
-      await sleep(12);
+    const p=el('circle',{cx:GSX,cy:GSY,r:10,fill:segs[s][1],stroke:'#fff'});
+    const tx=dr.x, ty=dr.y+70, sx=GSX, sy=GSY;
+    for(let t=0;t<=1.001;t+=.05){
+      p.setAttribute('cx',sx+(tx-sx)*t);
+      p.setAttribute('cy',sy+(ty-sy)*t - Math.sin(t*Math.PI)*60);
+      await sleep(11);
     }
     p.remove();
     for(let k=0;k<4;k++) memBlk(dr,(s*4+k+1),segs[s][1],k);
     dr.memLabel.textContent=segs[s][0]+' · ~15MB';
-    await sleep(200);
+    await sleep(150);
   }
-  deployed=true; $('b2').disabled=false;
-  narr('✅ Triển khai xong. Mỗi UAV giữ đúng 1/3 model. Giờ bấm <b>2️⃣ Chạy inference</b> — dây chuyền lắp ráp trên không bắt đầu.');
+  $('b2').disabled=false;
+  narr('✅ Triển khai xong. Bấm <b>2️⃣ Chạy inference</b> — xem dây chuyền chạy trơn tru một lượt trước đã.');
 }
 
-// ---------- helpers cho run ----------
-async function processDrone(dr, colorFrom, colorTo, ms=1300){
+// ---------- helpers ----------
+async function processBlocks(dr, idxs, ledColor, msPer=420){
   const halo=el('circle',{cx:dr.x,cy:dr.y+12,r:46,fill:'url(#glow)',opacity:.9});
-  for(const b of dr.slots){ b.firstChild.setAttribute('stroke','#ffd166'); b.firstChild.setAttribute('stroke-width',2); await sleep(ms/Math.max(dr.slots.length,1)); b.firstChild.setAttribute('stroke','#fff'); b.firstChild.setAttribute('stroke-width',.6);}
+  for(const li of idxs){
+    ledStrokePulse(li,true);
+    await sleep(msPer);
+    ledSet(li,ledColor); ledStrokePulse(li,false);
+  }
   halo.remove();
 }
 async function sendTensor(x1,y1,x2,y2,label){
@@ -162,78 +271,127 @@ async function sendTensor(x1,y1,x2,y2,label){
   el('path',{d:`M${x1},${y1} Q${(x1+x2)/2},${Math.min(y1,y2)-70} ${x2},${y2}`,stroke:'#9fb4ff','stroke-width':1.5,fill:'none','stroke-dasharray':'5 5','marker-end':'url(#arr)'},g);
   const p=el('circle',{r:9,fill:'#ffd166',stroke:'#fff'},g);
   const t1=el('text',{fill:'#ffd166','font-size':11,'text-anchor':'middle'},g); t1.textContent=label;
-  for(let t=0;t<=1.001;t+=.025){
+  for(let t=0;t<=1.001;t+=.03){
     const mx=(x1+x2)/2, my=Math.min(y1,y2)-70;
     const X=(1-t)*(1-t)*x1+2*(1-t)*t*mx+t*t*x2, Y=(1-t)*(1-t)*y1+2*(1-t)*t*my+t*t*y2;
     p.setAttribute('cx',X);p.setAttribute('cy',Y);t1.setAttribute('x',X);t1.setAttribute('y',Y-14);
-    await sleep(16);
+    await sleep(14);
   }
   g.remove();
 }
+function resetLedger(){ for(let i=0;i<12;i++){ ledSet(i,'#44518f'); ledStrokePulse(i,false);} }
+function setStat(n,sub){ $('stats').setAttribute('opacity',1); $('statNum').textContent=n; $('statSub').textContent=sub||''; }
 
-// ---------- PHASE 2: run ----------
+// ---------- PHASE 2: chạy trơn tru ----------
 async function phaseRun(){
   $('b2').disabled=true;
-  narr('📸 <b>UAV A chụp ảnh</b> (150KB) và chạy tầng 1–4 trên chip của chính nó…');
-  const img=el('g',{transform:`translate(${drones[0].x-80},${drones[0].y-10})`});
-  el('rect',{x:-18,y:-14,width:36,height:28,rx:4,fill:'#dbe4ff'},img);
-  el('path',{d:'M-14,8 L-4,-6 L4,4 L9,-2 L14,8 Z',fill:'#2C8C5A'},img);
-  el('circle',{cx:8,cy:-7,r:3.5,fill:'#ffd166'},img);
-  await sleep(700); img.remove();
-  await processDrone(drones[0]);
-  narr('📡 Tensor trung gian tại <b>ranh giới cắt #1</b> (≈800KB, nén trước khi phát) bay qua FANET sang UAV B…');
+  narr('📸 <b>UAV A chụp ảnh</b> (150KB), chạy tầng 1–4 — theo dõi <b>sổ 12 tầng</b> phía dưới: ô nào xong chuyển xanh lá.');
+  await processBlocks(drones[0],[0,1,2,3],'var(--seg1)');
+  narr('📡 Tensor #1 (~800KB, nén trước khi phát) bay qua FANET sang UAV B…');
   await sendTensor(drones[0].x+40,drones[0].y+12,drones[1].x-40,drones[1].y+12,'tensor #1');
-  narr('⚙️ <b>UAV B</b> nhận tensor, chạy tiếp tầng 5–8. UAV A lúc này đã rảnh — có thể bắt đầu khung hình kế tiếp (pipeline).');
-  await processDrone(drones[1]);
-  narr('📡 Tensor tại <b>ranh giới #2</b> (≈100KB — càng sâu càng nhỏ) sang UAV C…');
+  narr('⚙️ UAV B chạy tầng 5–8. Lưu ý: A đã rảnh — với luồng ảnh liên tục, A bắt đầu khung hình kế tiếp (hiệu ứng pipeline).');
+  await processBlocks(drones[1],[4,5,6,7],'var(--seg1)');
+  narr('📡 Tensor #2 (~100KB — càng sâu càng nhỏ) sang UAV C…');
   await sendTensor(drones[1].x+40,drones[1].y+12,drones[2].x-40,drones[2].y+12,'tensor #2');
-  await processDrone(drones[2]);
+  await processBlocks(drones[2],[8,9,10,11],'var(--seg1)');
   $('outBox').setAttribute('opacity',1);
-  ran=true; $('b3').disabled=false;
-  narr('✅ <b>Hoàn tất!</b> UAV C ra kết quả cuối. Tổng cộng: 2 lần truyền radio, mỗi UAV chỉ tính 1/3 model. Giờ đến phần quan trọng nhất của luận án — bấm <b>3️⃣</b> xem chuyện gì xảy ra khi một UAV rơi <i>giữa lúc đang chạy</i>.');
+  $('b3').disabled=false;
+  narr('✅ <b>12/12 tầng xanh — hoàn tất trơn tru.</b> Giờ đến màn chính của luận án: bấm <b>3️⃣</b> để xem chuyện gì xảy ra khi UAV B rơi <i>đúng lúc đang tính dở tầng 6</i>.');
 }
 
-// ---------- PHASE 3: fail + recovery ----------
+// ---------- PHASE 3: B rơi ----------
 async function phaseFail(){
-  $('b3').disabled=true; $('outBox').setAttribute('opacity',0);
-  narr('📸 Lượt inference mới bắt đầu. UAV A chạy xong tầng 1–4, tensor #1 đã giao cho UAV B…');
-  await processDrone(drones[0],null,null,900);
+  $('b3').disabled=true; $('outBox').setAttribute('opacity',0); resetLedger();
+  narr('📸 <b>Lượt inference MỚI bắt đầu.</b> UAV A chạy tầng 1–4…');
+  await processBlocks(drones[0],[0,1,2,3],'var(--seg1)',300);
+  narr('📡 Tensor #1 giao cho UAV B. <b>Điểm mấu chốt:</b> A giữ lại activation của tầng 4 cho đến khi cả pipeline xong — xem thẻ vàng vừa xuất hiện cạnh A.');
   await sendTensor(drones[0].x+40,drones[0].y+12,drones[1].x-40,drones[1].y+12,'tensor #1');
-  await sleep(300);
-  // B fails
+  // the ACK activation chip tai A
+  ackChip=el('g',{});
+  el('rect',{x:drones[0].x-95,y:drones[0].y-8,width:52,height:40,rx:6,fill:'#3a3313',stroke:'#ffd166','stroke-width':3.5},ackChip);
+  el('text',{x:drones[0].x-69,y:drones[0].y+9,fill:'#ffd166','font-size':10,'font-weight':'bold','text-anchor':'middle'},ackChip).textContent='activation';
+  el('text',{x:drones[0].x-69,y:drones[0].y+23,fill:'#ffd166','font-size':11,'font-weight':'bold','text-anchor':'middle'},ackChip).textContent='L4 ✓ lưu ở A';
+  await sleep(1400);
+  narr('⚙️ UAV B bắt đầu: xong tầng 5… đang tính tầng 6…');
+  await processBlocks(drones[1],[4],'var(--seg1)',600);
+  ledStrokePulse(5,true); await sleep(650);
+  // === NO ===
   const B=drones[1];
-  narr('💥 <b>UAV B RƠI</b> khi mới chạy đến tầng 6! Inference đang dở — theo cách cũ (full-restart) toàn bộ công sức phải vứt đi.');
-  B.g.classList.add('flash');
-  await sleep(1800);
-  // animate fall
-  for(let t=0;t<=1.001;t+=.03){
-    B.g.setAttribute('transform',`translate(${B.x},${B.y+t*330}) rotate(${t*95})`);
-    B.g.setAttribute('opacity',1-t*.75);
-    await sleep(18);
+  const boom=el('g',{});
+  for(let a=0;a<8;a++){
+    const ang=a*Math.PI/4;
+    el('line',{x1:B.x,y1:B.y+10,x2:B.x+Math.cos(ang)*55,y2:B.y+10+Math.sin(ang)*55,stroke:'#f87171','stroke-width':5,'stroke-linecap':'round'},boom);
   }
-  narr('🧠 <b>Control plane phát hiện qua telemetry → RE-DERIVE.</b> Không thể chỉ "giao lại việc": ranh giới cắt phải được <b>suy diễn lại</b> cho phần model chưa chạy — vì đổi chỗ cắt là đổi kích thước tensor, đổi chi phí truyền trên topology còn lại.');
-  // new cut line on model: old cut #2 removed conceptually; re-split layers 5..12 between A and C
-  await sleep(2600);
-  const oldCuts=$('cuts'); oldCuts.children[2].setAttribute('stroke','#DC2626'); oldCuts.children[3].setAttribute('fill','#DC2626');
+  el('text',{x:B.x,y:B.y-45,'font-size':34,'text-anchor':'middle'},boom).textContent='💥';
+  B.g.querySelectorAll('ellipse').forEach(e=>{e.setAttribute('fill','#fecaca');e.setAttribute('stroke','#DC2626');});
+  narr('💥 <b>UAV B RƠI — đang tính DỞ tầng 6!</b> Nhìn sổ tầng: tầng 5 và 6 chuyển ĐỎ — mọi thứ B đã tính sau ranh giới cắt <b>mất theo B</b>, vì chưa kịp giao cho ai. Nhưng tầng 1–4 vẫn XANH: activation L4 còn nằm an toàn ở A.');
+  ledSet(4,'var(--danger)'); ledSet(5,'var(--danger)'); ledStrokePulse(5,false);
+  await sleep(2400); boom.remove();
+  for(let t=0;t<=1.001;t+=.03){
+    B.g.setAttribute('transform',`translate(${B.x},${B.y+t*350}) rotate(${t*100})`);
+    B.g.setAttribute('opacity',1-t*.78);
+    await sleep(16);
+  }
+  narr('⚖️ <b>Pipeline đứt giữa chừng. Giờ chọn cách cứu:</b> bấm <b>🔁 Cách cũ</b> (báo về Ground Station, trạm tính lại dưới đất, chạy lại từ tầng 1) hoặc <b>🛟 RQ2</b> (UAV lead tự re-derive TRÊN KHÔNG + resume từ activation L4). Xem một nhánh xong, bấm Làm lại để xem nhánh kia.');
+  $('bR').style.display='inline-block'; $('bQ').style.display='inline-block';
+  $('bR').disabled=false; $('bQ').disabled=false;
+}
+
+// ---------- NHÁNH A: full restart ----------
+async function branchRestart(){
+  $('bR').disabled=true; $('bQ').disabled=true;
+  narr('🔁 <b>CÁCH CŨ (hiện trạng literature) — mọi tính toán quy hoạch nằm ở MẶT ĐẤT.</b> Như CDPO 2024 với "backup reprocessing tại Base Station": bầy không tự quyết — chỉ biết báo sự cố về trạm và chờ.');
+  resetLedger(); setStat(0,'đang tính lại từ đầu…');
+  for(let i=4;i<6;i++) layers[i].r.setAttribute('fill','var(--seg1)');
+  for(let i=6;i<8;i++) layers[i].r.setAttribute('fill','var(--seg3)');
+  narr('📡 <b>Bước 1 — báo về trạm và CHỜ.</b> (Cảnh báo: ở vùng mất kết nối hạ tầng — đúng kịch bản của đề tài — link về trạm không tồn tại: bầy kẹt ngay tại bước này.)');
+  await sendLink(drones[0].x-20,drones[0].y+42,GSX+10,GSY,'báo sự cố','#f87171');
+  await gsBusy(2000,'⚙ GS tính lại phương án dưới đất…');
+  narr('📨 <b>Bước 2 — trạm gửi phương án + trọng số LÊN:</b> thêm trọn một vòng xuống-lên qua link yếu, rồi mới bắt đầu... chạy lại TỪ TẦNG 1 — kết quả 1–4 bị vứt dù đã tính đúng.');
+  await reDeployFromGS();
+  await sleep(600);
+  let n=0;
+  const bump=()=>{n++; setStat(n,'cách cũ: mọi tầng đều tính lại');};
+  narr('⏳ A tính lại 1, 2, 3, 4 — <b>công sức lặp vô ích</b> — rồi tiếp 5, 6…');
+  for(const i of [0,1,2,3,4,5]){ await processBlocks(drones[0],[i],'var(--redo)',330); bump(); }
+  await sendTensor(drones[0].x+40,drones[0].y+12,drones[2].x-40,drones[2].y+12,'tensor (mới)');
+  narr('⚙️ C gánh 7–12…');
+  for(const i of [6,7,8,9,10,11]){ await processBlocks(drones[2],[i],'var(--redo)',330); bump(); }
+  $('outBox').setAttribute('opacity',1); $('outText').textContent='🧍 Người: 96% (trễ gấp đôi)';
+  narr('🔁 <b>Xong — nhưng giá đắt: 12/12 tầng tính sau sự cố</b> (cả 4 tầng đã đúng cũng vứt đi tính lại). Latency lượt này gần <b>gấp đôi</b>. Bấm <b>↺ Làm lại</b> rồi chạy đến bước 3 để xem nhánh RQ2 — hoặc so bảng điểm ngay: cách cũ 12 tầng vs RQ2 chỉ 8.');
+}
+
+// ---------- NHÁNH B: RQ2 re-derive + resume ----------
+async function branchResume(){
+  $('bR').disabled=true; $('bQ').disabled=true;
+  narr('🛟 <b>RQ2 — KHÔNG CẦN TRẠM.</b> UAV A được bầu làm <b>LEAD</b> (pin nhiều nhất, trung tâm kết nối — xem huy hiệu). Nó <b>tự RE-DERIVE ngay trên không</b>: suy diễn lại ranh giới cắt cho phần chưa xong (5–12) → cắt mới sau tầng 6. Bounded-K chính là thứ khiến chip Jetson 15W giải nổi bài này trong thời gian thực.');
+  const crown=el('g',{});
+  el('rect',{x:drones[0].x+28,y:drones[0].y-56,width:56,height:20,rx:6,fill:'#3a3313',stroke:'#ffd166','stroke-width':2},crown);
+  el('text',{x:drones[0].x+56,y:drones[0].y-42,fill:'#ffd166','font-size':11,'font-weight':'bold','text-anchor':'middle'},crown).textContent='👑 LEAD';
+  const think=el('g',{});
+  el('rect',{x:drones[0].x-88,y:drones[0].y-88,width:176,height:26,rx:8,fill:'#0f2e1c',stroke:'#4ade80','stroke-width':1.5},think);
+  el('text',{x:drones[0].x,y:drones[0].y-70,fill:'#86efac','font-size':11.5,'font-weight':'bold','text-anchor':'middle'},think).textContent='⚙ re-derive trên không (bounded-K)';
+  await sleep(2200);
+  think.remove();
   const y=LY+6*(LH+GAP)-GAP/2;
   el('line',{x1:LX-12,y1:y,x2:LX+LW+12,y2:y,stroke:'#4ade80','stroke-width':2.5,'stroke-dasharray':'7 4'},$('cuts'));
   el('text',{x:LX+LW+18,y:y+4,fill:'#4ade80','font-size':11},$('cuts')).textContent='cắt MỚI — sau tầng 6';
-  // recolor layers 5-6 to A-green', 7-12 to C-orange
   for(let i=4;i<6;i++) layers[i].r.setAttribute('fill','var(--seg1)');
   for(let i=6;i<8;i++) layers[i].r.setAttribute('fill','var(--seg3)');
-  narr('📦 <b>Tái phân bổ:</b> tầng 5–6 chuyển về UAV A, tầng 7–12 dồn cho UAV C (2 con còn lại đủ SWaP nhờ bounded-K). Trọng số được nạp bổ sung.');
-  drones[0].memLabel.textContent='tầng 1–6 (mới) · ~22MB';
-  drones[0].memLabel.setAttribute('fill','#4ade80');
-  drones[2].memLabel.textContent='tầng 7–12 (mới) · ~23MB';
-  drones[2].memLabel.setAttribute('fill','#4ade80');
-  await sleep(2200);
-  narr('▶️ <b>RESUME — không chạy lại từ đầu.</b> UAV A vẫn giữ activation của tầng 4 (đã ACK). Nó chỉ chạy tiếp tầng 5–6 rồi gửi tensor <b>theo ranh giới MỚI</b> thẳng sang UAV C.');
-  await processDrone(drones[0],null,null,800);
-  await sendTensor(drones[0].x+40,drones[0].y+12,drones[2].x-40,drones[2].y+12,'tensor (mới)');
-  await processDrone(drones[2],null,null,1500);
-  $('outBox').setAttribute('opacity',1);
-  $('outText').textContent='🧍 Người: 96% — dịch vụ liên tục';
-  narr('✅ <b>Inference sống sót.</b> Chỉ tính lại 2 tầng thay vì 12. Đây chính là <b>Reactive Mid-Inference Recovery</b> — lớp thứ 3 chưa ai giải: <i>re-derive boundary → tensor mới → chi phí mới → resume từ activation</i>. So sánh trong luận án: baseline full-restart phải chạy lại từ tầng 1.');
+  await sleep(2600);
+  narr('📦 <b>Bước 1b: KÍCH HOẠT PRESTAGE — không một gói nào phải chạm đất.</b> Trọng số là dữ liệu TĨNH, đã prestage lên flash của bầy từ trước khi cất cánh: A và C chỉ việc MỞ khúc lân cận từ bộ nhớ của chính mình (vòng xanh lóe = kích hoạt cục bộ). Còn <b>activation là dữ liệu SỐNG</b> — không prestage được, chỉ có cách GIỮ: đó là thẻ vàng L4.');
+  await reDeployPrestage();
+  await sleep(2000);
+  narr('🛟 <b>Bước 2: RESUME — không chạy lại từ đầu.</b> Tầng 1–4 GIỮ NGUYÊN (vẫn xanh lá trong sổ!): A mở activation L4 đang lưu (thẻ vàng), chỉ tính tiếp tầng 5–6.');
+  setStat(0,'RQ2: giữ nguyên tầng 1–4');
+  let n=0; const bump=()=>{n++; setStat(n,'RQ2: chỉ tính phần chưa xong');};
+  ledSet(4,'#44518f'); ledSet(5,'#44518f');
+  for(const i of [4,5]){ await processBlocks(drones[0],[i],'var(--redo)',380); bump(); }
+  narr('📡 <b>Bước 3: REROUTE.</b> Tensor theo ranh giới MỚI bay thẳng A → C, né node đã chết…');
+  await sendTensor(drones[0].x+40,drones[0].y+12,drones[2].x-40,drones[2].y+12,'tensor (cắt mới)');
+  for(const i of [6,7,8,9,10,11]){ await processBlocks(drones[2],[i],'var(--redo)',330); bump(); }
+  $('outBox').setAttribute('opacity',1); $('outText').textContent='🧍 Người: 96% — dịch vụ liên tục';
+  narr('🛟 <b>SỐNG SÓT — chỉ 8 tầng tính sau sự cố so với 12 của cách cũ</b> (tiết kiệm 33% nhờ giữ 4 tầng xanh lá). Đây chính là 3 chữ ký của RQ2: <b>re-derive</b> ranh giới → <b>reroute</b> tensor → <b>resume</b> từ activation. Chưa công trình nào trong literature — kể cả các bài 2024–2026 — làm bước resume này.');
 }
 </script>
 </body>

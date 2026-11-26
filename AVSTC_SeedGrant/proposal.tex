@@ -1,0 +1,192 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.2cm}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue]{hyperref}
+
+\definecolor{avblue}{RGB}{30,39,97}
+
+\setstretch{1.06}
+\setlist[itemize]{leftmargin=1.4em, itemsep=2pt, topsep=3pt}
+\setlist[enumerate]{leftmargin=1.6em, itemsep=2pt, topsep=3pt}
+
+\titleformat{\section}{\large\bfseries\color{avblue}}{\thesection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{7pt}{2pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize AVSTC Seed Grant --- Sections 5, 6, 8}
+\fancyhead[R]{\footnotesize Nguyen Minh Hieu}
+\fancyfoot[C]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\headheight}{14pt}
+
+% ====== FIELDS TO EDIT ======
+\newcommand{\ProjectTitle}{Resilient Collaborative Edge Inference in UAV Swarms: Joint Computation--Communication Optimisation and a First Demonstration of Mid-Inference Recovery}
+\newcommand{\StartDate}{1 November 2026}
+\newcommand{\EndDate}{30 April 2027}
+\newcommand{\AusCollaborator}{[Australian collaborator name, institution]}
+% ============================
+
+\begin{document}
+
+\begin{center}
+  {\large\bfseries\color{avblue} Australia--Vietnam Strategic Technologies Centre}\\[2pt]
+  {\normalsize\bfseries Seed Grant Application --- Sections 5, 6 and 8}\\[8pt]
+  \rule{\textwidth}{0.8pt}
+\end{center}
+
+\vspace{4pt}
+\noindent\textbf{Project Title:} \ProjectTitle
+
+\vspace{4pt}
+\noindent\textbf{Preferred start and end dates (6 months):} \StartDate{} -- \EndDate
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.4pt}
+
+\section*{\color{avblue}SECTION 5 --- PROJECT PROPOSAL}
+\vspace{-4pt}\noindent\rule{\textwidth}{0.4pt}
+\setcounter{section}{0}
+
+\section{Background and Motivation}
+
+UAV swarms are becoming essential instruments for disaster response, search-and-rescue and infrastructure inspection --- mission profiles of direct national relevance to Vietnam, where annual storms and flooding routinely disable ground communication infrastructure. Delivering onboard AI perception in these settings faces a structural mismatch: modern deep neural networks (DNNs) exceed the Size, Weight and Power (SWaP) budget of any single small UAV, while offloading to cloud or edge servers presupposes the very connectivity that has failed. Collaborative Edge Inference (CEI) resolves this by partitioning a DNN across the swarm, so that the collective executes what no individual can~[1]--[3].
+
+Two obstacles stand in the way. First, partition boundaries determine intermediate tensor sizes, which govern transmission delay and RF energy over a volatile Flying Ad-Hoc Network (FANET)~[4],~[5]: computation and communication costs are coupled and cannot be optimised independently. Second, and less studied: reliability-aware approaches either fix a robust configuration before execution~[6],~[7] or re-decide placement for newly arriving tasks~[8]--[10]. Consequently, when a UAV fails \emph{mid-inference}, the request already in flight has no recovery path --- it is implicitly restarted from the first layer, discarding work already completed correctly.
+
+\section{Scope of this Seed Project}
+
+This project is a deliberately bounded six-month slice of a larger doctoral programme. It targets the layer on which everything else depends: a measurement-grounded evaluation capability, a working joint optimiser, and a \emph{first proof-of-concept} of mid-inference recovery.
+
+Two things are explicitly out of scope and reserved for later doctoral work: full robotics co-simulation with ROS/Gazebo (this project uses NS-3 with measured, trace-driven compute delays, which is sufficient for the questions asked here), and a fully validated online control plane. Stating these boundaries is deliberate --- the deliverables below are sized to what six months can defensibly produce.
+
+\section{Objectives}
+
+\begin{itemize}
+  \item[\textbf{O1.}] Establish a \emph{measurement-grounded evaluation harness}: per-layer compute cost and activation size profiled on a Jetson-class platform, driving an NS-3 FANET simulation with trace-based compute delays.
+  \item[\textbf{O2.}] Formulate and solve the joint optimisation of bounded-$K$ partitioning and UAV assignment under coupled SWaP--FANET constraints, and characterise empirically the regimes in which increasing $K$ ceases to pay for its communication overhead.
+  \item[\textbf{O3.}] Demonstrate \emph{mid-inference recovery} as a proof of concept: on injected node failure, re-derive partition boundaries over the surviving topology and resume from the last delivered activation, quantifying recomputation saved relative to restart.
+\end{itemize}
+
+\section{Research Program and Activities}
+
+\subsection{Months 1--2 --- Measurement and harness}
+Profile representative detection models (YOLO-class, ResNet-class) on Jetson-class hardware to obtain per-layer inference latency, energy draw and activation tensor size. Build the evaluation harness in NS-3: FANET topology with standard aerial mobility models, link-quality variation, and compute delays driven by the measured traces rather than synthetic assumptions. \emph{Milestone:} harness reproduces an end-to-end inference pipeline across simulated UAVs with measured per-layer costs.
+
+\subsection{Months 3--4 --- Joint optimiser and regime characterisation}
+Formalise the objective $L(x) + \lambda E(x)$ over partitioning and assignment variables, subject to per-node compute, memory and energy limits, link constraints and sequential execution order. Implement exact enumeration for small $K$ and a greedy heuristic for larger instances; the closely related joint partitioning--offloading problem has been shown to be NP-hard~[11], motivating the bounded-$K$ restriction. Sweep $K$, swarm size and link quality to obtain the latency--energy trade-off surface, and benchmark against a sequential partition-then-assign baseline representing current decoupled practice. \emph{Milestone:} empirical characterisation of the operating regimes of $K$, with a quantified comparison against the sequential baseline.
+
+\subsection{Months 5--6 --- Recovery proof of concept and dissemination}
+Extend the harness with failure injection, and implement a first recovery mechanism: detect the loss of a node holding an in-flight segment, re-derive partition boundaries for the unfinished portion of the model over the surviving topology, and resume execution from the last activation successfully delivered. Measure recomputation overhead, added latency and completion rate against a full-restart baseline. Prepare one conference paper with the Australian collaborator and publish the harness, profiling dataset and scenario configurations. \emph{Milestone:} quantified demonstration that recovery outperforms restart, with the boundary conditions under which it does so.
+
+\section{Anticipated Outcomes}
+
+\begin{enumerate}
+  \item \textbf{An open profiling dataset} of per-layer compute cost, energy and activation size for representative detection models on SWaP-constrained hardware.
+  \item \textbf{An open NS-3 evaluation harness} with reproducible scenario configurations --- a reusable asset for AVSTC partners studying aerial edge intelligence.
+  \item \textbf{A joint bounded-$K$ optimiser} with empirical characterisation of the role of $K$ and a quantified comparison against decoupled optimisation.
+  \item \textbf{A proof-of-concept recovery mechanism} with first measurements of recomputation saved relative to restart after mid-inference failure.
+  \item \textbf{One conference paper} co-authored with \AusCollaborator, and a technical report with demonstration material for industry partners.
+\end{enumerate}
+
+\section{Potential Impact and Risk}
+
+The project supplies groundwork for recovery semantics in distributed inference on volatile networks: checkpoint-and-resume is routine in datacentre training but absent from inference pipelines on aerial networks, where the resume point is an activation distributed across moving nodes and re-planning is itself an optimisation problem; a recent systematic review confirms that joint management of computation and networking during offloading in UAV swarms remains open~[12]. Practically, Vietnam faces recurring disasters in which ground infrastructure fails precisely when aerial situational awareness matters most; a swarm that sustains perception without external infrastructure, and survives the loss of individual aircraft, serves that need directly. The formulation also transfers to ground robot fleets and maritime platforms.
+
+Two risks carry pre-committed fallbacks. If procurement of profiling hardware is delayed, Months~1--2 proceed with vendor and published benchmarks, with measured traces substituted on arrival --- the harness design is unchanged. If the recovery mechanism does not meet real-time re-planning budgets within the period, the deliverable becomes a characterisation of the achievable re-planning latency envelope, which still establishes feasibility and directly informs the subsequent doctoral phase.
+
+\vspace{6pt}
+{\footnotesize
+\begin{thebibliography}{99}
+\itemsep0pt \parskip0pt
+\bibitem{r1} Y. Kang \emph{et al.}, ``Neurosurgeon: Collaborative intelligence between the cloud and mobile edge,'' in \emph{Proc. ASPLOS}, 2017, pp. 615--629.
+\bibitem{r2} C. Hu, W. Bao, D. Wang, and F. Liu, ``Dynamic adaptive DNN surgery for inference acceleration on the edge,'' in \emph{Proc. IEEE INFOCOM}, 2019, pp. 1423--1431.
+\bibitem{r3} Y. Qu \emph{et al.}, ``Elastic collaborative edge intelligence for UAV swarm: Architecture, challenges, and opportunities,'' \emph{IEEE Commun. Mag.}, vol. 62, no. 1, pp. 62--68, 2024.
+\bibitem{r4} G. Amponis \emph{et al.}, ``A survey on FANET routing from a cross-layer design perspective,'' \emph{J. Syst. Archit.}, vol. 120, p. 102281, 2021.
+\bibitem{r5} J. Shao, Y. Mao, and J. Zhang, ``Learning task-oriented communication for edge inference: An information bottleneck approach,'' \emph{IEEE J. Sel. Areas Commun.}, vol. 40, no. 1, pp. 197--211, 2022.
+\bibitem{r6} M. Zhao, X. Zhang, Z. Meng, and X. Hou, ``Reliable DNN partitioning for UAV swarm,'' in \emph{Proc. IWCMC}, 2022.
+\bibitem{r7} M. Dhuheir, A. Erbad, and S. Sabeeh, ``LLHR: Low latency and high reliability CNN distributed inference for resource-constrained UAV swarms,'' in \emph{Proc. IEEE WCNC}, 2023, pp. 1--6.
+\bibitem{r8} K. Gao \emph{et al.}, ``Cooperative DNN partitioning in energy-harvesting and MEC-enabled AAV networks,'' \emph{IEEE Internet Things J.}, 2025.
+\bibitem{r9} S. Meng, B. Li, Z. Yi, L. Liu, and Z. Fei, ``DNN task partitioning and migration strategies in multi-UAV-assisted mobile edge computing,'' \emph{IEEE Internet Things J.}, vol. 13, no. 13, pp. 28758--28769, 2026.
+\bibitem{r10} J. Kim \emph{et al.}, ``End-to-end latency optimization for resilient distributed CNN inference in resource-constrained UAV swarms,'' \emph{Appl. Sci.}, vol. 14, no. 23, p. 10832, 2024.
+\bibitem{r11} L. Wang, J. Wang, and C. Dai, ``DNN-based task partitioning and offloading with reliability guarantees in multi-UAV-assisted MEC system,'' in \emph{Proc. IEEE ISPCE-ASIA}, 2024.
+\bibitem{r12} A. Baktayan, A. T. Zahary, A. Sikora, and D. Welte, ``Computational offloading into UAV swarm networks: A systematic literature review,'' \emph{EURASIP J. Wireless Commun. Netw.}, vol. 2024, p. 69, 2024.
+\end{thebibliography}
+}
+
+\clearpage
+\section*{\color{avblue}SECTION 6 --- IMPACT AND COLLABORATION}
+\vspace{-4pt}\noindent\rule{\textwidth}{0.4pt}
+\setcounter{section}{0}
+
+\section{Benefit to Australia--Vietnam Strategic Technologies Collaboration \\ \normalsize\normalcolor\mdseries\itshape (max 300 words)}
+
+This project is built as a joint artefact rather than a parallel effort. Its outputs --- the profiling dataset, the evaluation harness, the optimiser and the recovery demonstration --- are each designed to be produced, used and published by both sides. The harness and dataset are the durable outcomes: a documented NS-3 environment with measured compute traces and reproducible scenario configurations, hosted publicly and maintained beyond the grant period. Once it exists, any AVSTC partner can evaluate aerial edge-intelligence proposals on common ground, which lowers the entry cost of every subsequent collaboration.
+
+The partnership draws on complementary strengths. The Australian partner contributes depth in wireless networking, edge intelligence and optimisation methodology; the Vietnamese side contributes embedded systems and UAV platform work, and --- critically --- the operational context that motivates the problem. Vietnam's annual storm and flood season provides realistic failure conditions that a laboratory in a stable-infrastructure setting cannot readily specify. This asymmetry makes the collaboration genuinely two-directional rather than a transfer of expertise in one direction.
+
+For continuity, three concrete mechanisms are built into the six months: a co-authored conference paper with the Australian collaborator; a shared code and data repository under joint governance; and a technical demonstration presented to industry partners in aerial networking. Each produces evidence of a working relationship rather than an intention to form one.
+
+The topic sits squarely within AVSTC priority areas --- AI, robotics and next-generation connectivity --- and within the resilience theme of the Centre's Phase~II agenda. The natural progression is a larger bilateral proposal extending from this simulation-based groundwork to full robotics co-simulation and field trials, for which this grant establishes the technical foundation, the publication record and the working partnership that such a proposal requires.
+
+\section{How the international research would further my career \\ \normalsize\normalcolor\mdseries\itshape (max 200 words)}
+
+I am in the first year of doctoral research at Ho Chi Minh City University of Technology, having recently defended a proposal on adaptive computation--communication orchestration for UAV swarms. This grant would shape that trajectory in three specific ways.
+
+First, it converts a single-institution thesis into internationally co-authored work. Publishing with an Australian collaborator at an international venue establishes my record in the edge-intelligence community at the stage when that record matters most.
+
+Second, it develops capabilities that thesis work alone would not require: building and releasing research software and datasets that others depend on, managing a funded project against deliverables and a disbursement schedule, and reporting to a grant committee. These are the skills that separate a researcher who executes a project from one who can lead a team.
+
+Third, it establishes a working relationship with an Australian research group in my exact area. Direct collaboration is the realistic path to future joint supervision, postdoctoral opportunities, and the standing to lead bilateral proposals of my own. My aim is to remain research-active in Vietnam while operating within an international network --- and this grant is a concrete first step toward exactly that position.
+
+\clearpage
+\section*{\color{avblue}SECTION 8 --- BUDGET (6 MONTHS)}
+\vspace{-4pt}\noindent\rule{\textwidth}{0.4pt}
+\setcounter{section}{0}
+
+\vspace{4pt}
+\noindent All items are R\&D expenditure directly required by the activities in Section~5. The budget is arranged so that the two disbursement tranches map onto distinct project phases.
+
+\vspace{6pt}
+\footnotesize
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{} l X r @{}}
+\toprule
+\textbf{Item} & \textbf{Justification (linked to Section~5 activities)} & \textbf{AUD} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Tranche 1 --- on signing (Months 1--4)}} \\[2pt]
+Edge computing hardware & 3 $\times$ Jetson-class developer kits with storage, power and wireless modules. The entire methodology is trace-driven: every compute delay in the harness comes from measurement on this hardware, so without it the evaluation rests on assumption rather than data. & 2{,}200 \\
+Power \& wireless measurement & Power measurement modules, antennas and radio accessories to obtain per-layer energy draw and to calibrate link behaviour against physical measurement rather than default simulator parameters. & 1{,}200 \\
+Simulation compute & GPU workstation upgrade / cloud compute for parameter sweeps across $K$, swarm size, mobility and link conditions (Months~3--4). Characterising the trade-off surface requires thousands of runs. & 3{,}000 \\
+Research assistant & Part-time undergraduate/master's assistant, 6 months, for harness development, scenario scripting and experiment automation, releasing doctoral effort for formulation and analysis. & 3{,}600 \\
+\addlinespace[2pt]
+\multicolumn{2}{@{}r}{\textbf{Subtotal, Tranche 1 (two thirds)}} & \textbf{10{,}000} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Tranche 2 --- on final report (Months 5--6)}} \\[2pt]
+Publication costs & Conference registration and open-access article processing charge for the co-authored paper (Outcome~5). Open access is required for the results to be usable by AVSTC partners without subscription barriers. & 2{,}200 \\
+Collaboration travel & One economy return airfare and accommodation for a two-week working visit with the Australian collaborator: joint experiment design, harness handover and paper preparation. Face-to-face work is what converts a nominal partnership into a functioning one. & 2{,}400 \\
+Dataset \& code release & Documentation, dataset hosting with persistent identifier, and demonstration materials for industry partners (Outcomes~1, 2 and~5). & 400 \\
+\addlinespace[2pt]
+\multicolumn{2}{@{}r}{\textbf{Subtotal, Tranche 2 (one third)}} & \textbf{5{,}000} \\
+\midrule
+\multicolumn{2}{@{}r}{\textbf{TOTAL REQUESTED}} & \textbf{15{,}000} \\
+\bottomrule
+\end{tabularx}
+
+\normalsize
+\vspace{8pt}
+\noindent\textbf{Notes.} (i) No item duplicates infrastructure already available at the host institution; the hardware requested is specific to SWaP-representative profiling and is retained as a laboratory asset for follow-on work. (ii) Tranche~1 covers everything needed to produce the harness, the optimiser and its evaluation, so a delay in the second disbursement cannot stall the technical programme. (iii) Should any category prove ineligible under the grant conditions, the corresponding amount will be reallocated to simulation compute, which deepens the parameter study without altering the deliverables.
+
+\end{document}

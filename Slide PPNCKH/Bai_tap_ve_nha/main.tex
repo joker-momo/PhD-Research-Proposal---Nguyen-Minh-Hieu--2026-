@@ -1,0 +1,192 @@
+\documentclass[a4paper]{article}
+
+% ==============================================================================
+% 1. ĐỘNG CƠ BIÊN DỊCH VÀ CẤU HÌNH FONT TIMES NEW ROMAN
+% ==============================================================================
+\usepackage{iftex}
+
+\ifXeTeX
+  % Biên dịch bằng XeLaTeX: Dùng font Times New Roman hệ thống
+  \usepackage{fontspec}
+  \setmainfont{Times New Roman}
+  \usepackage[vietnamese]{babel}
+\else
+  % Biên dịch bằng pdfLaTeX: Dùng chuẩn T5 và gói font Times chuẩn
+  \usepackage[utf8]{inputenc}
+  \usepackage[vietnamese]{babel}
+  \usepackage[T5]{fontenc}
+  \usepackage{times} % Font Times New Roman chuẩn
+\fi
+
+% ==============================================================================
+% 2. CỠ CHỮ 13PT & CĂN LỀ CHUẨN ĐHQG-HCM / ĐHBK
+% ==============================================================================
+% Thiết lập cỡ chữ cơ sở chính xác là 13pt
+\usepackage{scrextend}
+\changefontsizes{13pt}
+
+% Căn lề chuẩn văn bản học thuật (Nghị định 30 & Quy chuẩn Luận án/Tiểu luận ĐHBK):
+% - Trái (gáy đóng tập): 3.0 cm
+% - Phải: 2.0 cm
+% - Trên: 2.0 cm
+% - Dưới: 2.0 cm
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  top=20mm,
+  bottom=20mm,
+  left=30mm,
+  right=20mm,
+  headheight=16pt,
+  footskip=12mm
+}
+
+% ==============================================================================
+% 3. GIÃN DÒNG 1.5 LINES & THỤT ĐẦU DÒNG
+% ==============================================================================
+\usepackage{setspace}
+\setstretch{1.5} % Giãn dòng 1.5 lines chuẩn
+\setlength{\parindent}{1.0cm} % Thụt đầu dòng 1.0 cm (hoặc 1.27 cm / 0.5 inch)
+\setlength{\parskip}{6pt}      % Khoảng cách giữa các đoạn văn
+
+% ==============================================================================
+% 4. CÁC GÓI BỔ TRỢ HỌC THUẬT CẦN THIẾT
+% ==============================================================================
+\usepackage{amsmath, amssymb, amsfonts, mathtools} % Toán học nâng cao
+\usepackage{graphicx}                              % Chèn ảnh
+\usepackage{booktabs, tabularx, multirow, makecell}% Bảng biểu chuyên nghiệp
+\usepackage{cite}                                  % Trích dẫn tài liệu
+\usepackage{float}                                 % Cố định vị trí hình/bảng [H]
+\usepackage[font=small, labelfont=bf]{caption}     % Tùy biến chú thích hình/bảng
+\usepackage{subcaption}                            % Ảnh con (subfigures)
+\usepackage{enumitem}                              % Tùy biến danh sách bullet
+\setlist{nosep, leftmargin=1.5cm}                  % Danh sách gọn gàng
+
+% Khung câu hỏi / đề bài tập (Tự dựng bằng xcolor và lrbox, không phụ thuộc gói ngoài)
+\usepackage[table]{xcolor}
+\definecolor{boxbg}{RGB}{245, 248, 252}
+\definecolor{boxframe}{RGB}{30, 80, 160}
+
+\newsavebox{\hwbox}
+\newenvironment{homeworkbox}[1][Yêu cầu bài tập]{%
+  \begin{lrbox}{\hwbox}%
+    \begin{minipage}{0.92\textwidth}
+      \noindent\textbf{\color{boxframe}\large #1}\par
+      \vspace{2mm}\hrule height 0.6pt\vspace{3mm}
+      \ignorespaces
+}{%
+    \end{minipage}%
+  \end{lrbox}%
+  \begin{center}
+    \setlength{\fboxsep}{10pt}%
+    \setlength{\fboxrule}{1pt}%
+    \fcolorbox{boxframe}{boxbg}{\usebox{\hwbox}}%
+  \end{center}
+}
+
+% ==============================================================================
+% 5. HEADER & FOOTER
+% ==============================================================================
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{GK5007 -- PPNCKH Nâng cao}}
+\fancyhead[R]{\small\textit{NCS. Nguyễn Minh Hiếu}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ==============================================================================
+% 6. HYPERREF (LIÊN KẾT & BOOKMARK)
+% ==============================================================================
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,     % Giữ màu đen cho mục lục để tiện in ấn
+  citecolor=blue!80!black,
+  urlcolor=blue!80!black,
+  pdftitle={Bài tập về nhà - PPNCKH Nâng cao (GK5007)},
+  pdfauthor={Nguyễn Minh Hiếu - HCMUT}
+}
+
+% ==============================================================================
+% THÔNG TIN BÀI TẬP VÀ SINH VIÊN / NCS
+% ==============================================================================
+\newcommand{\CourseCode}{GK5007}
+\newcommand{\CourseName}{PHƯƠNG PHÁP NGHIÊN CỨU KHOA HỌC NÂNG CAO}
+\newcommand{\AssignmentTitle}{BÀI TẬP VỀ NHÀ}
+\newcommand{\AssignmentSubtitle}{Báo cáo thực hành \& Tiểu luận phương pháp luận nghiên cứu}
+\newcommand{\StudentName}{NGUYỄN MINH HIẾU}
+\newcommand{\StudentID}{2680050}
+\newcommand{\Department}{Khoa Khoa học \& Kỹ thuật Máy tính}
+\newcommand{\Instructor}{[Tên Giảng viên phụ trách]}
+\newcommand{\Semester}{Học kỳ 1 -- Năm học 2026--2027}
+\newcommand{\LocationDate}{TP. Hồ Chí Minh, \today}
+
+% ==============================================================================
+% BẮT ĐẦU TÀI LIỆU
+% ==============================================================================
+\begin{document}
+\hypersetup{pageanchor=false}
+
+% ------------------------------------------------------------------------------
+% TRANG BÌA CHUẨN BÁCH KHOA - HCMUT
+% ------------------------------------------------------------------------------
+\begin{titlepage}
+  \thispagestyle{empty}
+  \begin{center}
+    {\large \textbf{ĐẠI HỌC QUỐC GIA TP. HỒ CHÍ MINH}}\\[0.2cm]
+    {\large \textbf{TRƯỜNG ĐẠI HỌC BÁCH KHOA}}\\[0.2cm]
+    {\normalsize \textbf{\Department}}\\[0.5cm]
+
+    \vspace{0.8cm}
+    \includegraphics[width=3.2cm]{figures/HCMCUT-logo.png}\\[1.0cm]
+
+    {\large \textbf{\CourseName}}\\[0.2cm]
+    {\normalsize Mã học phần: \textbf{\CourseCode}}\\[1.2cm]
+
+    \rule{\linewidth}{1.2pt}\\[0.4cm]
+    {\Large \textbf{\AssignmentTitle}}\\[0.3cm]
+    {\large \AssignmentSubtitle}\\[0.2cm]
+    \rule{\linewidth}{1.2pt}\\[2.0cm]
+
+    \begin{minipage}[t]{0.85\linewidth}
+      \begin{tabular}{ll}
+        \textbf{Nghiên cứu sinh / Học viên:} & \textbf{\StudentName} \\
+        \textbf{Mã số NCS/HV:}               & \StudentID \\
+        \textbf{Học kỳ:}                     & \Semester \\
+      \end{tabular}
+    \end{minipage}
+
+    \vfill
+    {\normalsize \textbf{\LocationDate}}
+  \end{center}
+\end{titlepage}
+
+% ------------------------------------------------------------------------------
+% MỤC LỤC
+% ------------------------------------------------------------------------------
+\hypersetup{pageanchor=true}
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% ==============================================================================
+% NỘI DUNG CHÍNH CỦA BÀI TẬP (TÁCH THÀNH CÁC FILE RIÊNG ĐỂ DỄ CHỈNH SỬA)
+% ==============================================================================
+\input{sections/01_tong_quan}
+\input{sections/02_phuong_phap}
+\input{sections/03_thuc_nghiem}
+\input{sections/04_ket_luan}
+
+% ==============================================================================
+% TÀI LIỆU THAM KHẢO
+% ==============================================================================
+\newpage
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+\end{document}

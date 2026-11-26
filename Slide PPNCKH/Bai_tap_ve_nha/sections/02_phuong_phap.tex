@@ -1,0 +1,35 @@
+\section{Phương pháp luận và mô hình đề xuất}
+\label{sec:phuong_phap}
+
+\subsection{Mô hình toán học}
+Giả sử hệ thống được mô hình hóa dưới dạng đồ thị có hướng $G = (V, E)$, trong đó $V$ đại diện cho tập các nút tính toán và $E$ là các liên kết truyền thông. Hàm mục tiêu tối ưu hóa được phát biểu như sau:
+\begin{equation}
+  \min_{\mathbf{w}, \mathbf{p}} \quad \mathcal{L}(\mathbf{w}) + \lambda \sum_{i \in V} \mathcal{C}_i(p_i)
+  \label{eq:objective}
+\end{equation}
+Trong đó:
+\begin{itemize}
+  \item $\mathbf{w}$ biểu diễn véc-tơ tham số của mô hình học máy.
+  \item $p_i$ là mức năng lượng phân bổ cho nút thứ $i$.
+  \item $\lambda > 0$ là hệ số điều hòa giữa độ chính xác và chi phí năng lượng.
+\end{itemize}
+
+\subsection{Bảng tổng hợp tham số và ký hiệu}
+Bảng \ref{tab:notation} tóm tắt các ký hiệu toán học chính được sử dụng trong bài tập này.
+
+\begin{table}[H]
+  \centering
+  \caption{Bảng ký hiệu và thông số nghiên cứu}
+  \label{tab:notation}
+  \begin{tabularx}{\textwidth}{l c X}
+    \toprule
+    \textbf{Ký hiệu} & \textbf{Đơn vị} & \textbf{Ý nghĩa học thuật} \\
+    \midrule
+    $N$ & -- & Số lượng nút tính toán trong cụm \\
+    $B$ & MHz & Băng thông kênh truyền thông vô tuyến \\
+    $P_{\max}$ & Watt & Công suất phát tối đa của thiết bị \\
+    $T_{\text{delay}}$ & ms & Độ trễ lan truyền tối đa cho phép \\
+    $\mathcal{L}(\cdot)$ & -- & Hàm mất mát (Loss function) huấn luyện \\
+    \bottomrule
+  \end{tabularx}
+\end{table}

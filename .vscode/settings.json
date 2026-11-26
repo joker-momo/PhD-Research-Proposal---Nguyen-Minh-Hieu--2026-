@@ -59,5 +59,9 @@
         "%DOCFILE%.toc"
       ]
     }
-  ]
+  ],
+  "[latex]": {
+    "editor.formatOnSave": false
+  },
+  "latex-workshop.formatting.latex": "none"
 }
