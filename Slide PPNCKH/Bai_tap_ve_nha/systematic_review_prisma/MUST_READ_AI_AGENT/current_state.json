@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:28:26+07:00",
+  "updated_at": "2026-11-26T18:29:46+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step03_query_audit_brief_ready",
+    "status": "step03_query_audit_dispatched",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
@@ -11,14 +11,17 @@
     "owner": "GEMINI_RESEARCH",
     "status": "active",
     "started_at": "2026-11-26T18:28:26+07:00",
-    "updated_at": "2026-11-26T18:28:26+07:00",
-    "decision_id": "restart-03-direct-query-audit-v1"
+    "updated_at": "2026-11-26T18:29:46+07:00",
+    "decision_id": "restart-03-direct-query-audit-v1",
+    "provider_task_id": "468fa8b0-d511-4876-b682-812933a3b82d",
+    "provider_context_id": "b7c4f243-c3ac-42c0-883d-ac14ebc43962",
+    "failed_before_send_task_id": "f238bff7-3de5-47b9-9d59-b70a1592d63e"
   },
   "next_task": {
     "task_id": "restart-03-app-audit",
     "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Run the committed audit brief through native Gemini.app Task using --project-dir for the canonical HK261 review folder. No copied context.",
+    "status": "active",
+    "action": "Collect and independently verify the existing native Gemini.app Task via its provider ID. Do not redispatch it.",
     "acceptance": "Five criteria in step03_query_audit_brief.md."
   },
   "project": {
@@ -59,7 +62,7 @@
       "restriction": "No CLI/research-agent/model fallback; review before adoption",
       "context_kind": "direct_project",
       "context_scope": "Canonical systematic_review_prisma directory only; name relevant file paths in each brief",
-      "bridge_commit": "efd717c"
+      "bridge_commit": "445da31"
     },
     "approved_plan": "restart_2026_11_26/approved_plan.md",
     "progress_tracker": "restart_2026_11_26/progress.json",
