@@ -1,5 +1,7 @@
 # Step 07 batch 03 primary review
 
+Recorded at 2026-11-26T19:06:48+07:00.
+
 | Criterion | Verdict | Evidence |
 |---|---|---|
 | S1 | PASS | 75/75 expected IDs, duplicates 0. |
