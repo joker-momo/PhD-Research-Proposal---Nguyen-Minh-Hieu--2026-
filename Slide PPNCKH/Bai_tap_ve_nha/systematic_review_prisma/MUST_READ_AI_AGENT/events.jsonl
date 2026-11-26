@@ -161,3 +161,4 @@
 {"timestamp": "2026-11-26T23:09:49+07:00", "task_id": "restart-11-batch01-extraction-new-brief", "event": "batch01-extraction-new-brief"}
 {"timestamp": "2026-11-26T23:19:28+07:00", "task_id": "restart-11-batch01-extraction-new-review", "event": "batch01-extraction-new-review", "provider_task_id": "d9b919ae-f917-43ef-a656-9a8dbff893f6", "provider_context_id": "37102fe6-f984-4cd3-8fe0-1e06b0ac93fc", "cleanup": "DELETED", "transport": "TIMEOUT_RECOVERED", "accepted_reports": 0}
 {"timestamp": "2026-11-26T23:19:50+07:00", "task_id": "restart-11-batch02-correction06-brief", "event": "batch02-correction06-brief"}
+{"timestamp": "2026-11-26T23:23:30+07:00", "task_id": "restart-11-batch02-correction06-review", "event": "batch02-correction06-review", "provider_task_id": "432bbd73-3594-440b-a7a2-104f1804e2a3", "provider_context_id": "aedec5c1-d3fa-4e6a-8c1e-cf79afa5be61", "cleanup": "DELETED", "accepted_reports": 0}

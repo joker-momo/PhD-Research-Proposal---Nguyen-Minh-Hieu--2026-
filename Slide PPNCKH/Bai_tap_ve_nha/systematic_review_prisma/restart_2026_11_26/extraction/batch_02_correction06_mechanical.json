@@ -1,0 +1,355 @@
+{
+  "errors": [
+    [
+      "A2",
+      "K02",
+      "assertion anchor differs or not body, p17"
+    ]
+  ],
+  "checked": {
+    "K01": 8,
+    "K02": 1,
+    "K03": 9
+  },
+  "proposed": {
+    "K01": 8,
+    "K02": 2,
+    "K03": 9
+  },
+  "rows": [
+    {
+      "key": "K01",
+      "report_id": "R0068",
+      "field": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability",
+      "assertions": [
+        {
+          "status": "OBSERVED",
+          "finding": "MARL-meta converges to maximum expected rewards with higher accuracy than MARL-AC, MARL-DQN, and MARL-SAC on 5-layer LeNet and 8-layer AlexNet.",
+          "page": 10,
+          "locator": "VI-B.1, Fig. 4(a)-(b)",
+          "excerpt": "meta-RL converges to the maximum expected reward with higher accuracy than the competitive algorithms (MARL-AC, MARL-DQN, and MARL-SAC) in the two CNN networks, LeNet and AlexNet.",
+          "quantitative": null
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "Across varying channel bandwidths, MARL-meta closely matches the theoretical sub-optimal LDTP benchmark in latency and transmit power while MARL-AC, MARL-DQN, and MARL-SAC exhibit higher latency and power usage.",
+          "page": 11,
+          "locator": "VI-B.2, Fig. 5(a)-(b)",
+          "excerpt": "the LDTP approach establishes a theoretical sub-optimal benchmark due to its optimized nature, and our proposed meta-MARL method closely matches this benchmark",
+          "quantitative": null
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "MARL-meta achieves superior convergence and higher sustained volume of reliably shared data among UAVs compared to MARL-AC, MARL-DQN, and MARL-SAC.",
+          "page": 11,
+          "locator": "VI-B.3, Fig. 6(a)",
+          "excerpt": "The MARL-Meta algorithm demonstrates superior convergence and sustained reliability compared to traditional MARL approaches (MARL-AC, MARL-DQN, MARL-SAC).",
+          "quantitative": null
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "Across Raspberry Pi 3B+ memory capacities (256 MB, 512 MB, 560 MB), MARL-meta delivers average total latency closest to LDTP and outperforms MARL-AC, MARL-DQN, and MARL-SAC.",
+          "page": 12,
+          "locator": "VI-B.4, Fig. 6(b)",
+          "excerpt": "the MARL-meta solution consistently delivers latency performance closest to the optimal LDTP solution, outperforming other traditional MARL approaches.",
+          "quantitative": null
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "Under dynamic UAV count changes (5 to 8 to 6 UAVs), MARL-meta adapts more efficiently with higher rewards and lower latency than MARL-AC, MARL-DQN, and MARL-SAC.",
+          "page": 12,
+          "locator": "VI-B.5, Fig. 7(a)-(b)",
+          "excerpt": "As the number of UAVs fluctuates, MARL-meta adapts more efficiently, achieving the highest rewards by quickly reallocating resources",
+          "quantitative": null
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "Under dynamic UAV memory changes (560 MB to 256 MB to 512 MB with 5 UAVs), MARL-meta adapts faster and achieves lower latency than traditional DRL approaches.",
+          "page": 12,
+          "locator": "VI-B.5, Fig. 7(c)",
+          "excerpt": "Throughout these dynamic memory changes, the MARL-meta algorithm outperforms traditional DRL approaches, demonstrating superior adaptability",
+          "quantitative": null
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "As the number of UAVs increases (5, 7, 9 UAVs), MARL-meta stays closer to LDTP and outperforms MARL-AC, MARL-DQN, and MARL-SAC in average total latency and minimum transmit power.",
+          "page": 13,
+          "locator": "VI-B.6, Fig. 8(a)-(b)",
+          "excerpt": "our proposed MARL-meta solution provides results closer to the LDTP solution and outperforms the traditional DRL-based solutions, achieving better results across all cases of UAV numbers.",
+          "quantitative": null
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "As the covered area size increases (36, 49, 64 cells), MARL-meta stays closer to LDTP and outperforms MARL-AC, MARL-DQN, and MARL-SAC in average total latency and minimum transmit power.",
+          "page": 13,
+          "locator": "VI-B.7, Fig. 9(a)-(b)",
+          "excerpt": "our proposed MARL-meta solution provides results closer to the LDTP solution and outperforms the traditional DRL-based solutions, achieving better results across all cases of area sizes.",
+          "quantitative": null
+        }
+      ],
+      "withheld": [
+        {
+          "topic": "~29% latency improvement over competitive methods",
+          "reason": "only sourced by abstract (page 1)",
+          "checked": "physical pages 10-13, Section VI and Section VII (Conclusion)"
+        },
+        {
+          "topic": "~23% transmission power improvement over competitive methods",
+          "reason": "only sourced by abstract (page 1)",
+          "checked": "physical pages 10-13, Section VI and Section VII (Conclusion)"
+        },
+        {
+          "topic": "~9% latency comparability relative to traditional LDTP optimization solution",
+          "reason": "only sourced by abstract (page 1)",
+          "checked": "physical pages 10-13, Section VI and Section VII (Conclusion)"
+        }
+      ]
+    },
+    {
+      "key": "K02",
+      "report_id": "R0074",
+      "field": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability",
+      "assertions": [
+        {
+          "status": "OBSERVED",
+          "finding": "At the Llama-2 70B scale (64-token input, 1000 Mb/s inter-UAV, 200 Mb/s air-to-ground), Edge-Solo and cloud-edge baselines (Cloud-Edge-Even, Cloud-Edge-Opt) failed with out-of-memory (OOM) errors.",
+          "page": 16,
+          "locator": "Section 4.2, Fig. 4",
+          "excerpt": "At the massive 70B scale, cloud-edge baselines entirely failed due to memory constraints, underscoring the inherent limitations of existing offloading approaches.",
+          "quantitative": null
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "At the Llama-2 70B scale in the same scenario, distributed collaborative frameworks Orion, Jupiter, and EdgeShard all succeeded, with Orion achieving the lowest latency among the successful distributed solutions.",
+          "page": 17,
+          "locator": "Section 4.2, Fig. 4",
+          "excerpt": "Among all successful distributed solutions, Orion remained the most efficient",
+          "quantitative": null
+        }
+      ],
+      "withheld": [
+        {
+          "topic": "Exclusivity claim that Orion is the only framework capable of running the full 70B model on memory-constrained UAV nodes",
+          "reason": "contradicted by Section 4.2 (pages 16-17) and Figure 4, which show Jupiter and EdgeShard also successfully executed Llama-2 70B",
+          "checked": "physical pages 16-17, Section 4.2 and Figure 4"
+        }
+      ]
+    },
+    {
+      "key": "K03",
+      "report_id": "R0121",
+      "field": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability",
+      "assertions": [
+        {
+          "status": "OBSERVED",
+          "finding": "L2 encapsulation (SwarmNS-MAC) reduces inter-node traffic volume by approximately 3.7% compared to the L2-L7 protocol stack.",
+          "page": 6,
+          "locator": "Section 6, paragraph 2",
+          "excerpt": "traffic volume is reduced by ≈3.7%",
+          "quantitative": {
+            "value": "≈3.7",
+            "units": "% reduction",
+            "baseline": "L2-L7 protocol stack (94 B header overhead, 1448 B payload)",
+            "denominator": "L2-L7 stack traffic volume",
+            "workload": "256×80×80 intermediate activation tensor (1,638,400 elements)",
+            "conditions": "single-hop transmission at R = 12 Mbit/s"
+          }
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "L2 encapsulation (SwarmNS-MAC) reduces transmission time by approximately 7.9% compared to the L2-L7 protocol stack.",
+          "page": 6,
+          "locator": "Section 6, paragraph 2",
+          "excerpt": "transmission time by ≈7.9%",
+          "quantitative": {
+            "value": "≈7.9",
+            "units": "% reduction",
+            "baseline": "L2-L7 protocol stack (94 B header overhead, 1448 B payload)",
+            "denominator": "L2-L7 stack transmission time",
+            "workload": "256×80×80 intermediate activation tensor (1,638,400 elements)",
+            "conditions": "single-hop transmission at R = 12 Mbit/s"
+          }
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "L2 encapsulation (SwarmNS-MAC) reduces the number of transmitted frames by approximately 36.5% compared to the L2-L7 protocol stack.",
+          "page": 6,
+          "locator": "Section 6, paragraph 2",
+          "excerpt": "the number of frames is reduced by ≈36.5%",
+          "quantitative": {
+            "value": "≈36.5",
+            "units": "% reduction",
+            "baseline": "L2-L7 protocol stack (1448 B payload)",
+            "denominator": "L2-L7 stack frame count",
+            "workload": "256×80×80 intermediate activation tensor (1,638,400 elements)",
+            "conditions": "single-hop transmission at R = 12 Mbit/s"
+          }
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "Post-training quantization from FP32 to 0.8 bits/element reduces per-hop transmission time approximately 40-fold (from 4.9 s to 122.8 ms) at 12 Mbit/s.",
+          "page": 6,
+          "locator": "Section 6, paragraph 2, Fig. 2",
+          "excerpt": "reduces transmission time by approximately 40 times - from 4.9 s to 122.8 ms per hop at a rate of 12 Mbit/s",
+          "quantitative": {
+            "value": "40",
+            "units": "times reduction (4.9 s to 122.8 ms)",
+            "baseline": "FP32 (32 bits/element, 4911 ms per hop)",
+            "denominator": "FP32 per-hop transmission time",
+            "workload": "256×80×80 intermediate activation tensor",
+            "conditions": "L2 encapsulation, single hop, R = 12 Mbit/s, post-training compression at 0.8 bits/element"
+          }
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "For FP32 (32 bits), SwarmNS-MAC L2 encapsulation transmits in 4911 ms (2875 frames) versus 5332 ms (4526 frames) for L2-L7.",
+          "page": 7,
+          "locator": "Table 3, row FP32 (32 bits), columns Frames L2/L7 and T_tx L2/L7",
+          "excerpt": "FP32 (32 bits) 6553.6 2875 4526 4911 5332",
+          "quantitative": {
+            "value": "4911 vs 5332",
+            "units": "ms",
+            "baseline": "L2-L7 stack (5332 ms, 4526 frames)",
+            "denominator": "single-hop tensor transmission",
+            "workload": "256×80×80 tensor (S_a = 6553.6 kB) at FP32 (32 bits)",
+            "conditions": "single hop, R = 12 Mbit/s, L2 (2875 frames) vs L7 (4526 frames)"
+          }
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "For INT8 (8 bits), SwarmNS-MAC L2 encapsulation transmits in 1228 ms (719 frames) versus 1333 ms (1132 frames) for L2-L7.",
+          "page": 7,
+          "locator": "Table 3, row INT8 (8 bits), columns Frames L2/L7 and T_tx L2/L7",
+          "excerpt": "INT8 (8 bits) 1638.4 719 1132 1228 1333",
+          "quantitative": {
+            "value": "1228 vs 1333",
+            "units": "ms",
+            "baseline": "L2-L7 stack (1333 ms, 1132 frames)",
+            "denominator": "single-hop tensor transmission",
+            "workload": "256×80×80 tensor (S_a = 1638.4 kB) at INT8 (8 bits)",
+            "conditions": "single hop, R = 12 Mbit/s, L2 (719 frames) vs L7 (1132 frames)"
+          }
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "For ADT (0.8 bits), SwarmNS-MAC L2 encapsulation transmits in 122.8 ms (72 frames) versus 133.5 ms (114 frames) for L2-L7.",
+          "page": 7,
+          "locator": "Table 3, row ADT (0.8 bits) [16], columns Frames L2/L7 and T_tx L2/L7",
+          "excerpt": "ADT (0.8 bits) [16] 163.8 72 114 122.8 133.5",
+          "quantitative": {
+            "value": "122.8 vs 133.5",
+            "units": "ms",
+            "baseline": "L2-L7 stack (133.5 ms, 114 frames)",
+            "denominator": "single-hop tensor transmission",
+            "workload": "256×80×80 tensor (S_a = 163.8 kB) at ADT (0.8 bits)",
+            "conditions": "single hop, R = 12 Mbit/s, L2 (72 frames) vs L7 (114 frames)"
+          }
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "For an INT8 tensor at per-frame success probability p_f = 0.9995, timely intact tensor delivery probability is 0.70 for SwarmNS-MAC (719 frames) versus 0.57 for L2-L7 (1,132 frames).",
+          "page": 7,
+          "locator": "Section 6, paragraph below Fig. 2",
+          "excerpt": "the probability of timely delivery of the complete tensor is 0.70 for SwarmNS-MAC (719 frames) versus 0.57 for the L2-L7 stack (1,132 frames).",
+          "quantitative": {
+            "value": "0.70 vs 0.57",
+            "units": "probability",
+            "baseline": "L2-L7 stack (0.57 at 1,132 frames)",
+            "denominator": "complete tensor delivery attempts",
+            "workload": "INT8 256×80×80 tensor",
+            "conditions": "per-frame transmission success probability p_f = 0.9995"
+          }
+        },
+        {
+          "status": "OBSERVED",
+          "finding": "With n = 6 neighbors and timely tensor delivery probability p_d = 0.70, aggregation quorum probability is 0.93 for q = 3 versus 0.74 for q = 4.",
+          "page": 7,
+          "locator": "Section 6, paragraph below Fig. 2, Fig. 3",
+          "excerpt": "for n = 6 neighbors and q = 3, we have P_q = 0.93 versus 0.74 for q = 4 when p_d = 0.70",
+          "quantitative": {
+            "value": "0.93 vs 0.74",
+            "units": "probability",
+            "baseline": "MinQuorum q = 4 (0.74)",
+            "denominator": "n = 6 neighbors",
+            "workload": "INT8 tensor aggregation",
+            "conditions": "timely tensor delivery probability p_d = 0.70 (SwarmNS-MAC, p_f = 0.9995)"
+          }
+        }
+      ],
+      "withheld": []
+    }
+  ],
+  "access": [
+    {
+      "report_id": "R0068",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0068.pdf",
+      "status": "OBSERVED",
+      "page": 10,
+      "section": "VI. SIMULATION RESULTS AND ANALYSIS",
+      "excerpt": "Observations reveal that meta-RL converges to the maximum expected reward with higher accuracy",
+      "reason": ""
+    },
+    {
+      "report_id": "R0074",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0074.pdf",
+      "status": "OBSERVED",
+      "page": 16,
+      "section": "4.2. Latency on Llama-2 Models of Varying Scales",
+      "excerpt": "At the massive 70B scale, cloud-edge baselines entirely failed due to memory constraints",
+      "reason": ""
+    },
+    {
+      "report_id": "R0121",
+      "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0121.pdf",
+      "status": "OBSERVED",
+      "page": 6,
+      "section": "6. Numerical Results and Their Discussion",
+      "excerpt": "shifting the transmission of intermediate activations from the application layer to the channel layer",
+      "reason": ""
+    }
+  ],
+  "coordination": {
+    "subagent_status": "UNAVAILABLE",
+    "reason": "Parent opened and verified all three authorized PDFs directly without delegating to subagents.",
+    "assignments": [
+      {
+        "worker": "parent",
+        "report_ids": [
+          "R0068",
+          "R0074",
+          "R0121"
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "returned_keys": [
+      "K01",
+      "K02",
+      "K03"
+    ],
+    "unresolved_keys": []
+  },
+  "format_normalizations": [
+    "Rejoin three tag-only lines to unchanged JSON payloads; preserve raw response."
+  ],
+  "independent_review": {
+    "K01": {
+      "verdict": "PASS",
+      "evidence": "8/8 exact body anchors, 0 abstract percentages reproduced as outcomes. Interpret higher accuracy in VI-B.1 as constraint compliance, per physical p11, never as classification accuracy."
+    },
+    "K02": {
+      "verdict": "FAIL",
+      "evidence": "Cloud-edge and Edge-Solo failures verified visually at Figure 4, p16. The second citation starts in p16 and continues onto p17, so it is not contiguous on p17. Scope about successful alternatives is supported but cannot adopt the submitted anchor."
+    },
+    "K03": {
+      "verdict": "FAIL",
+      "evidence": "9/9 normalized source anchors; physical p6 denotes approximately 40, whereas the typed quantity presents 40 exactly."
+    },
+    "batch_02": {
+      "verdict": "FAIL",
+      "evidence": "The retained R0062 outcome field at p6 independently repeats exact 2 FPS although the source prints an approximation and the separate numeric keys passed correction 05. Field is outside the three authorized correction06 IDs. Full independent batch validation remains incomplete."
+    }
+  },
+  "accepted_reports": 0
+}
