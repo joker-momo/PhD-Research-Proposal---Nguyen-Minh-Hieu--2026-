@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "approved",
+  "venue": "SN Computer Science",
+  "template": "Springer Nature LaTeX",
+  "working_directory": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science",
+  "entry_source": "main.tex",
+  "command": "tectonic --keep-logs --keep-intermediates main.tex",
+  "expected_pdf": "main.pdf",
+  "approved_at": "2026-11-26T12:56:23+07:00",
+  "approval_source": "explicit user confirmation",
+  "decision_ids": [
+    "DEC-01",
+    "DEC-02"
+  ]
+}

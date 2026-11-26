@@ -43,6 +43,7 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 | LaTeX source | `../manuscript/sn_computer_science/main.tex` |
 | Bibliography | `../manuscript/sn_computer_science/references.bib` |
 | Compiled review PDF | `../manuscript/sn_computer_science/main.pdf` |
+| Approved venue/build profile | `../manuscript/sn_computer_science/build_profile.json` |
 | Template notes | `../manuscript/sn_computer_science/README.md` |
 | Release artifacts | `../output/` |
 | Submission evidence | `../submission_evidence/` |

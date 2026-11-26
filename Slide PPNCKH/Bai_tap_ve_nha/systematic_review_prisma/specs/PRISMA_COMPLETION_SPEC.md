@@ -2,11 +2,13 @@
 
 **Document ID:** `HK261-PRISMA-COMPLETION-SPEC-v2`
 
-**Status:** `DRAFT_FOR_HUMAN_APPROVAL`
+**Status:** `APPROVED`
 
 **Created:** 2026-11-26
 
 **Updated:** 2026-11-26
+
+**Approved:** 2026-11-26T12:56:23+07:00 by explicit user confirmation
 
 **Applies to:** `Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/`
 
@@ -842,7 +844,9 @@ At every task close, report:
 
 ## 17. Spec approval gate
 
-Implementation must not start until the user either:
+Approval was recorded at 2026-11-26T12:56:23+07:00. Implementation may now proceed in the Section 7 execution-batch order. The approval satisfies G-01 and confirms the venue/template decisions recorded under G-03; it does not bypass any scientific, Git, human-adjudication or external-action gate.
+
+Before this recorded approval, implementation could not start until the user either:
 
 - approves `HK261-PRISMA-COMPLETION-SPEC-v2`, or
 - requests amendments that Codex records in a superseding spec commit.
