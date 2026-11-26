@@ -1,0 +1,37 @@
+{
+  "task_id": "fd935e09-dd2b-41bc-937f-ac6b00155003",
+  "transport": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T18:22:32.017+00:00"
+  },
+  "result_chars": 1880,
+  "completion_marker": true,
+  "parsed_rows": 4,
+  "malformed": [],
+  "unknown": [],
+  "expected": 3,
+  "returned": 3,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [],
+  "unexpected_access": [],
+  "summary": [
+    {
+      "returned_keys": [
+        "R0048/D05",
+        "R0054/D04",
+        "R0059/D07"
+      ],
+      "unresolved": [],
+      "tools": [
+        "in-app original PDF viewer"
+      ],
+      "workers_used": false
+    }
+  ],
+  "locators": 10,
+  "exact_quote_locators": 10,
+  "needs_visual_cell": [],
+  "bad_domains": {}
+}

@@ -1,0 +1,47 @@
+{
+  "task_id": "local-composite",
+  "transport": {},
+  "result_chars": 50350,
+  "completion_marker": true,
+  "parsed_rows": 50,
+  "malformed": [],
+  "unknown": [],
+  "expected": 50,
+  "returned": 50,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [
+    [
+      "R0044",
+      "count",
+      0
+    ],
+    [
+      "R0045",
+      "count",
+      0
+    ],
+    [
+      "R0048",
+      "count",
+      0
+    ],
+    [
+      "R0054",
+      "count",
+      0
+    ],
+    [
+      "R0059",
+      "count",
+      0
+    ]
+  ],
+  "unexpected_access": [],
+  "summary": [],
+  "locators": 121,
+  "exact_quote_locators": 91,
+  "needs_visual_cell": [],
+  "bad_domains": {}
+}

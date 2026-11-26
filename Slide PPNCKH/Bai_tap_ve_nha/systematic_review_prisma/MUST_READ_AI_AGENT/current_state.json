@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T01:19:54+07:00",
+  "updated_at": "2026-11-27T01:23:27+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step12_active",
@@ -11,18 +11,18 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T00:36:29+07:00",
-    "updated_at": "2026-11-27T01:19:54+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/batch_03_review.md",
+    "updated_at": "2026-11-27T01:23:27+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/batch_03_correction_review.md",
     "decision_id": "restart-12-p09-v1"
   },
   "next_task": {
-    "task_id": "restart-12-p09-batch-03-correction",
+    "task_id": "restart-12-p09-batch-04",
+    "dispatch_brief": "restart_2026_11_26/appraisal/batch_04_brief.md",
+    "message_id": "44cb8eba-890f-4bbb-a863-c0d089e97e8f",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Resolve exactly three Batch 03 issues. Keep 47 source-reviewed keys for composite review.",
-    "acceptance": "Three distinct keys, zero unsupported claims, final excerpts and physical pages align with originals.",
-    "dispatch_brief": "restart_2026_11_26/appraisal/batch_03_correction_brief.md",
-    "message_id": "f56e7d24-9cc5-444e-a8b1-cdb588c23ade"
+    "action": "Check the next five frozen P08 reports across all ten P09 domains in the Gemini.app parent Task.",
+    "acceptance": "5 original PDF access passages and 50 unique domain keys with independently verified rationale and source locators."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -180,9 +180,9 @@
         "p08_lock": "restart_2026_11_26/extraction/p08_extraction_lock.json"
       },
       "appraisal": {
-        "batches_accepted": 2,
-        "reports_accepted": 10,
-        "domains_accepted": 100,
+        "batches_accepted": 3,
+        "reports_accepted": 15,
+        "domains_accepted": 150,
         "p08_commit": "4b58140",
         "last_batch_01_provider_verdict": "FAIL",
         "last_batch_01_task_uuid": "ddbb7eda-d194-4a22-bbe0-820cb63d9644",
@@ -199,9 +199,9 @@
         "last_batch_02_uuid": "031166a6-27d9-43f0-af09-bcf4daaf50dc",
         "last_batch_02_verdict": "PASS",
         "batch_02_unresolved_keys": 0,
-        "last_batch_03_uuid": "75bd8baa-78fd-40b3-8d2a-bfe7fe53bfb3",
-        "last_batch_03_verdict": "FAIL",
-        "batch_03_unresolved_keys": 3
+        "last_batch_03_uuid": "fd935e09-dd2b-41bc-937f-ac6b00155003",
+        "last_batch_03_verdict": "PASS",
+        "batch_03_unresolved_keys": 0
       }
     }
   },
