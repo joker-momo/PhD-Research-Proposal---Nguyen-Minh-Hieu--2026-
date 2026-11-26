@@ -1,0 +1,2882 @@
+{
+  "R0001": {
+    "sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+    "pages": 3,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "NOT_REPORTED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0002": {
+    "sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+    "pages": 9,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0003": {
+    "sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+    "pages": 7,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:5",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0006": {
+    "sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+    "pages": 8,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0009": {
+    "sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+    "pages": 11,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0010": {
+    "sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+    "pages": 6,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:5",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0015": {
+    "sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+    "pages": 8,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0019": {
+    "sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+    "pages": 17,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 14,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 15,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 15,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0022": {
+    "sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+    "pages": 6,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0029": {
+    "sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+    "pages": 6,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0044": {
+    "sha256": "764cc894f9711a4b0e6f74ce45c1df93d3d1b6d9ed9c6a3b9534bb68801bc029",
+    "pages": 8,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "NOT_REPORTED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "NOT_REPORTED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0045": {
+    "sha256": "9b5e95e1b30fa30510772f0d7fd0d4524b634a4d0d7fca27f49b105dbacacc52",
+    "pages": 12,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "UNVERIFIED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0048": {
+    "sha256": "27e027ecd322e4f06af79412bca5c603c304fd38e7cde7de75adefe66f843d98",
+    "pages": 14,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 12,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+      }
+    ]
+  },
+  "R0054": {
+    "sha256": "48138e33b7cec08714cea8472199fcb44117893e6fd0c24ab9fa8d308dcc87e5",
+    "pages": 5,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:2",
+        "status": "UNVERIFIED",
+        "page": 4,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:2",
+        "status": "NOT_REPORTED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:2",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "NOT_REPORTED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0059": {
+    "sha256": "9e8c96dbe6c3717efd91c23f02c3c8fcb10b8aa034ab7be150d9da74b85c0957",
+    "pages": 13,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:2",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:2",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:3",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0062": {
+    "sha256": "6d0c4eab7261f241261a3e8f3b3898f785e8658acd4a17ca1aa27184d70d349f",
+    "pages": 7,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0063": {
+    "sha256": "85df65849c3d01c7532c20c8d19d978455becf0590c1f91da79d8a4ee0c100b9",
+    "pages": 22,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 16,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 18,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 20,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 20,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 20,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 16,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 17,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0068": {
+    "sha256": "30ab2b2966529939f9d4c04eeed75689126fccfdc2b9b345e3b0d6aaffbb630a",
+    "pages": 15,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:3",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:4",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:5",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:6",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:7",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:8",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 15,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "UNVERIFIED",
+        "page": null,
+        "excerpt_check": "NO_SINGLE_LOCATOR"
+      },
+      {
+        "key": "quantity:2",
+        "status": "UNVERIFIED",
+        "page": null,
+        "excerpt_check": "NO_SINGLE_LOCATOR"
+      },
+      {
+        "key": "quantity:3",
+        "status": "UNVERIFIED",
+        "page": null,
+        "excerpt_check": "NO_SINGLE_LOCATOR"
+      }
+    ]
+  },
+  "R0071": {
+    "sha256": "75526755f4f92c411c109aadcad0e02dd870504649976b77ce7c6f6d0d68f025",
+    "pages": 6,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0073": {
+    "sha256": "597ff420ac58a13811f5f13f06faa60803529a1f149875161cd39e80cc9ca312",
+    "pages": 15,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "UNVERIFIED",
+        "page": 11,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+      }
+    ]
+  },
+  "R0074": {
+    "sha256": "f9dc09402cc09d3e426cc693458070cee2e480acab8f538da24ecbaa3c93d151",
+    "pages": 26,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 21,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 14,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 16,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
+        "status": "OBSERVED",
+        "page": 17,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 19,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 24,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 24,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 22,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 16,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 16,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 17,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 20,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0083": {
+    "sha256": "f339a0eb83ca064fb88e73360af42a22cb5bd8210534c8755bebf40c8726604e",
+    "pages": 10,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0089": {
+    "sha256": "44e2147c5d37b416a5fd19b690ec44354e1a340ef29459e77ac21e813e8248be",
+    "pages": 12,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "NOT_REPORTED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "UNVERIFIED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0095": {
+    "sha256": "a86e926de0d40dddd292784362c655a1eb3f35fb61aed98e02c817410f56adad",
+    "pages": 13,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH"
+      }
+    ]
+  },
+  "R0121": {
+    "sha256": "83b93927c7a804b04412f6aa0c7b438817c9f114dbc3d061f08840b77a361ec0",
+    "pages": 11,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:3",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:4",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:5",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:6",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:7",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:8",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:9",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 9,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "NOT_REPORTED",
+        "page": 1,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH"
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW"
+      }
+    ]
+  }
+}

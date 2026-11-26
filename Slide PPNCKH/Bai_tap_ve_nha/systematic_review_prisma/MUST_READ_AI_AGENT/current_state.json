@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:57:05+07:00",
+  "updated_at": "2026-11-27T00:01:18+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-scoped-pdf-repairs",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T23:57:05+07:00",
-    "updated_at": "2026-11-26T23:57:05+07:00",
-    "completed_at": "2026-11-26T23:57:05+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/scoped_pdf_repairs_review.md",
-    "decision_id": "restart-11-scoped-pdf-repairs-v1"
-  },
-  "next_task": {
     "task_id": "restart-11-p08-reconcile",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-27T00:01:18+07:00",
+    "updated_at": "2026-11-27T00:01:18+07:00",
+    "completed_at": "2026-11-27T00:01:18+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/p08_reconciliation_review.md",
+    "decision_id": "restart-11-p08-reconcile-v1"
+  },
+  "next_task": {
+    "task_id": "restart-11-p08-source-adjudication",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Apply the verified repairs to the two draft extraction batches and verify all adopted assertions before locking P08.",
-    "acceptance": "25/25 reports independently verified with complete extraction and zero unsupported claims; P09 waits for the P08 commit."
+    "action": "Resolve source discrepancies and verify the remaining assertions in the 25-report quarantined candidate.",
+    "acceptance": "25 reports independently verified, all retained assertions source-located, quantities include units and conditions, and P08 must pass before Step 12."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -161,7 +161,12 @@
         "batch02_r0062_local_exact_source": "PASS",
         "batch02_r0059_local_source_groups": 3,
         "p08_targeted_repairs_verified": 47,
-        "p08_full_gate": "FAIL_PENDING_INTEGRATION"
+        "p08_full_gate": "FAIL_SEMANTIC_REVIEW_OPEN",
+        "p08_quarantined_reports": 25,
+        "p08_scoped_repairs_integrated": 47,
+        "p08_semantic_initial_report_checks": 25,
+        "p08_mechanically_inventoried_entries": 455,
+        "p08_normalized_excerpt_matches": 444
       }
     }
   },
