@@ -1,6 +1,5 @@
 """Exercise actual hook subprocesses in disposable Git worktrees; no network."""
 import json
-import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import shutil
@@ -10,6 +9,7 @@ import unittest
 
 SOURCE = Path(__file__).with_name("task_gate.py")
 REGISTRY_SOURCE = Path(__file__).with_name("automation_registry.py")
+STATE_SOURCE = Path(__file__).with_name("project_state.py")
 
 
 class TaskGateTests(unittest.TestCase):
@@ -20,6 +20,7 @@ class TaskGateTests(unittest.TestCase):
         self.script.parent.mkdir(parents=True)
         shutil.copyfile(SOURCE, self.script)
         shutil.copyfile(REGISTRY_SOURCE, self.script.with_name("automation_registry.py"))
+        shutil.copyfile(STATE_SOURCE, self.script.with_name("project_state.py"))
         self.codex_file = self.root / ".codex/owned.txt"
         self.codex_file.write_text("baseline\n")
         self.agents_file = self.root / "AGENTS.md"
@@ -41,6 +42,7 @@ class TaskGateTests(unittest.TestCase):
         self.tasks.parent.mkdir(parents=True)
         self.handoff.write_text("# Current Handoff\n\nCurrent fixture state.\n")
         self.tasks.write_text("# Current research tasks\n\nNo active task.\n")
+        self.state = self.handoff.parent / "current_state.json"
         self.write_timestamps()
         self.git("add", ".")
         self.git("commit", "-qm", "fixture")
@@ -49,12 +51,26 @@ class TaskGateTests(unittest.TestCase):
     def write_timestamps(self):
         timestamp = (datetime.now(timezone.utc) - timedelta(minutes=1)).isoformat(timespec="seconds")
         record = dict(task_id="fixture", status="completed", started_at=timestamp,
-                      updated_at=timestamp, completed_at=timestamp)
-        for path in (self.handoff, self.tasks):
-            path.write_text(path.read_text() + "\n<!-- HK261_TASK_STATE\n" +
-                            json.dumps(record) + "\n-->\n")
-        manifest = self.handoff.parent / "context_manifest.yaml"
-        manifest.write_text('updated_at: "' + timestamp + '"\n')
+                      updated_at=timestamp, completed_at=timestamp,
+                      owner="CODEX_WRITING", decision_id="fixture-v1")
+        self.state.write_text(json.dumps({
+            "schema_version": 1,
+            "updated_at": timestamp,
+            "goal": {"version": "fixture-v1", "status": "active",
+                     "summary": "Exercise the task gate."},
+            "task": record,
+            "next_task": {"task_id": "next", "owner": "GEMINI_RESEARCH",
+                          "status": "ready", "action": "Dispatch once.",
+                          "acceptance": "One complete result."},
+            "project": {"target_venue": "Fixture", "submission_status": "NOT_READY",
+                        "canonical_manuscript": "fixture.tex"},
+            "evidence": {"retrieval_reports": 1, "screened_reports": 1,
+                         "working_decisions": {"include": 1, "exclude": 0,
+                                               "uncertain": 0}},
+            "blockers": [],
+            "user_confirmation_required": [],
+            "history": {"event_log": "events.jsonl"},
+        }) + "\n")
         self.events = self.handoff.parent / "events.jsonl"
         self.events.write_text(json.dumps(dict(task_id="fixture", event="completed",
                                               timestamp=timestamp)) + "\n")
@@ -90,12 +106,9 @@ class TaskGateTests(unittest.TestCase):
         }) + "\n")
 
     def commit_timestamp_change(self, mutate):
-        for path in (self.handoff, self.tasks):
-            text = path.read_text()
-            prefix, block = text.split("<!-- HK261_TASK_STATE\n")
-            record = json.loads(block.split("\n-->")[0])
-            mutate(record)
-            path.write_text(prefix + "<!-- HK261_TASK_STATE\n" + json.dumps(record) + "\n-->\n")
+        state = json.loads(self.state.read_text())
+        mutate(state["task"])
+        self.state.write_text(json.dumps(state) + "\n")
         self.git("add", str(self.project.relative_to(self.root)))
         self.git("commit", "-qm", "timestamp fixture")
 
@@ -123,7 +136,7 @@ class TaskGateTests(unittest.TestCase):
                     "rtk proxy a2a send -a http://127.0.0.1:1 brief"]:
             self.assertEqual(0, self.call(cmd).returncode)
 
-    def test_clean_a2a_blocked_when_status_documents_are_stale(self):
+    def test_clean_a2a_blocked_when_current_state_is_stale(self):
         artifact = self.project / "screening_46/results/batch_99.json"
         artifact.parent.mkdir(parents=True)
         artifact.write_text('{"status":"accepted"}\n')
@@ -133,17 +146,18 @@ class TaskGateTests(unittest.TestCase):
         result = self.call("rtk proxy scripts/a2a-route --brief next.md")
 
         self.assertEqual(2, result.returncode)
-        self.assertIn("status documents are stale", result.stderr)
+        self.assertIn("current state is stale", result.stderr)
 
-    def test_clean_a2a_allowed_after_status_documents_are_refreshed(self):
+    def test_clean_a2a_allowed_after_current_state_is_refreshed(self):
         artifact = self.project / "screening_46/results/batch_99.json"
         artifact.parent.mkdir(parents=True)
         artifact.write_text('{"status":"accepted"}\n')
         self.git("add", str(artifact.relative_to(self.root)))
         self.git("commit", "-qm", "accepted result without status update")
-        self.handoff.write_text("# Current Handoff\n\nBatch 99 accepted.\n")
-        self.tasks.write_text("# Current research tasks\n\nBatch 100 is next.\n")
         self.write_timestamps()
+        state = json.loads(self.state.read_text())
+        state["goal"]["summary"] = "Batch 99 accepted; next task recorded."
+        self.state.write_text(json.dumps(state) + "\n")
         self.git("add", str(self.project.relative_to(self.root)))
         self.git("commit", "-qm", "refresh current status")
 
@@ -162,8 +176,9 @@ class TaskGateTests(unittest.TestCase):
             "artifact_ids": [],
             "verification": ["Historical evidence"],
         }) + "\n")
-        for path in (self.handoff, self.tasks):
-            path.write_text(path.read_text() + "\n")
+        state = json.loads(self.state.read_text())
+        state["goal"]["summary"] = "Fixture without a matching decision."
+        self.state.write_text(json.dumps(state) + "\n")
         self.git("add", str(self.project.relative_to(self.root)))
         self.git("commit", "-qm", "remove current code decision")
 
@@ -172,7 +187,7 @@ class TaskGateTests(unittest.TestCase):
         self.assertEqual(2, result.returncode)
         self.assertIn("active code-first decision", result.stderr)
 
-    def test_clean_a2a_blocked_when_only_one_status_document_is_refreshed(self):
+    def test_compatibility_markdown_does_not_refresh_current_state(self):
         artifact = self.project / "screening_46/results/batch_99.json"
         artifact.parent.mkdir(parents=True)
         artifact.write_text('{"status":"accepted"}\n')
@@ -185,7 +200,7 @@ class TaskGateTests(unittest.TestCase):
         result = self.call("rtk proxy scripts/a2a-route --brief next.md")
 
         self.assertEqual(2, result.returncode)
-        self.assertIn("status documents are stale", result.stderr)
+        self.assertIn("current state is stale", result.stderr)
 
     def test_dirty_a2a_blocked_for_each_residue_type(self):
         for state in ["untracked", "modified", "staged"]:
@@ -236,13 +251,12 @@ class TaskGateTests(unittest.TestCase):
         for event in ["UserPromptSubmit", "SessionStart"]:
             r = self.call(event=event)
             self.assertEqual(0, r.returncode)
-            for field in ["TASK:", "OWNER:", "OWNED_PATHS:", "BINARY_ACCEPTANCE:",
-                          "PRE_TASK_GIT_STATUS:"]:
-                self.assertIn(field, r.stdout)
+            self.assertLessEqual(len(r.stdout), 160)
+            self.assertIn("AGENTS.md", r.stdout)
+            self.assertIn("pre-task gate", r.stdout)
 
     def test_missing_timestamp_fields_block(self):
-        original = json.loads(re.search(r"<!-- HK261_TASK_STATE\n(.*?)\n-->",
-                                        self.handoff.read_text(), re.DOTALL).group(1))
+        original = json.loads(self.state.read_text())["task"]
         for field in ("started_at", "updated_at", "completed_at"):
             def remove_one(record):
                 record.clear()
@@ -276,7 +290,7 @@ class TaskGateTests(unittest.TestCase):
         event = json.loads(self.events.read_text())
         event["timestamp"] = "2026-01-01"
         self.events.write_text(json.dumps(event) + "\n")
-        self.commit_timestamp_change(lambda r: None)
+        self.commit_timestamp_change(lambda r: r.update(status="completed"))
         self.assertEqual(2, self.call("a2a-route --brief next.md").returncode)
 
     def test_invalid_timestamps_allow_finishing_commands(self):

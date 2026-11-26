@@ -4,6 +4,7 @@ from pathlib import Path
 import subprocess
 import tempfile
 import unittest
+from unittest import mock
 
 import skill_router
 
@@ -229,17 +230,11 @@ class SkillRouterTests(unittest.TestCase):
                     r"(REUSE_EXISTING|WRITE_SCRIPT|MANUAL) — .+$",
                 )
 
-    def test_every_route_points_to_reuse_lookup_and_decision_evidence(self):
+    def test_every_route_avoids_repeating_registry_governance(self):
         rendered = skill_router.render_route(self.route("Kiểm tra hàng loạt DOI."))
 
-        self.assertIn(
-            "CODE_REUSE_LOOKUP: python3 .codex/hooks/automation_registry.py search",
-            rendered,
-        )
-        self.assertIn(
-            "CODE_DECISION_EVIDENCE: append automation/decision_log.jsonl",
-            rendered,
-        )
+        self.assertNotIn("CODE_REUSE_LOOKUP", rendered)
+        self.assertNotIn("CODE_DECISION_EVIDENCE", rendered)
 
     def test_existing_project_tool_is_reused(self):
         route = self.route("Chạy test hiện có và báo kết quả.")
@@ -304,6 +299,46 @@ class SkillRouterTests(unittest.TestCase):
         catalog = skill_router.discover_catalog((root,))
 
         self.assertEqual(direct.resolve(), catalog["deep-research"])
+
+    def test_catalog_cache_avoids_repeat_tree_scan(self):
+        root = self.root / "cache-root"
+        skill = root / "example/SKILL.md"
+        skill.parent.mkdir(parents=True)
+        skill.write_text("---\nname: example\n---\n# Example\n")
+        cache = self.root / "catalog-cache.json"
+
+        first = skill_router.discover_catalog((root,), cache_path=cache)
+        with mock.patch.object(
+            skill_router, "_scan_catalog", side_effect=AssertionError("rescanned")
+        ):
+            second = skill_router.discover_catalog((root,), cache_path=cache)
+
+        self.assertEqual(first, second)
+        self.assertEqual(skill.resolve(), second["example"])
+
+    def test_expired_catalog_cache_is_refreshed(self):
+        root = self.root / "expired-root"
+        skill = root / "example/SKILL.md"
+        skill.parent.mkdir(parents=True)
+        skill.write_text("---\nname: example\n---\n# Example\n")
+        cache = self.root / "expired-cache.json"
+        skill_router.discover_catalog((root,), cache_path=cache, now=1000)
+
+        with mock.patch.object(
+            skill_router,
+            "_scan_catalog",
+            wraps=skill_router._scan_catalog,
+        ) as scan:
+            skill_router.discover_catalog((root,), cache_path=cache, now=2000)
+
+        scan.assert_called_once()
+
+    def test_compact_route_omits_repeated_governance_prose(self):
+        rendered = skill_router.render_route(self.route("Chạy test hiện có."))
+
+        self.assertNotIn("CODE_REUSE_LOOKUP", rendered)
+        self.assertNotIn("CODE_DECISION_EVIDENCE", rendered)
+        self.assertLessEqual(len(rendered), 420)
 
 
 class HookConfigurationTests(unittest.TestCase):

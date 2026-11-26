@@ -36,16 +36,17 @@
       "artifact_id": "hk261-skill-router",
       "name": "HK261 advisory skill and code-mode router",
       "path": ".codex/hooks/skill_router.py",
-      "purpose": "Recommend task ownership, focused skills and a code-first execution mode for every prompt.",
+      "purpose": "Recommend task ownership, focused skills and a code-first execution mode with compact output and a short-lived skill catalog cache.",
       "entrypoint": "python3 .codex/hooks/skill_router.py < hook-payload.json",
       "inputs": [
         "Codex hook JSON on stdin",
-        "installed SKILL.md catalog"
+        "installed SKILL.md catalog",
+        "optional CODEX_SKILL_CACHE path"
       ],
       "outputs": [
-        "owner and skill recommendation",
+        "compact owner and skill recommendation",
         "CODE_FIRST_DECISION recommendation",
-        "registry lookup and evidence reminders"
+        "cached catalog outside the repository"
       ],
       "tests": [
         ".codex/hooks/test_skill_router.py"
@@ -63,12 +64,12 @@
       "artifact_id": "hk261-task-gate",
       "name": "HK261 task and A2A dispatch gate",
       "path": ".codex/hooks/task_gate.py",
-      "purpose": "Block recognized A2A dispatch when owned scopes, status timestamps or automation evidence are invalid.",
+      "purpose": "Block recognized A2A dispatch when owned scopes, canonical current state or automation evidence are invalid; emit only a compact prompt reminder.",
       "entrypoint": "python3 .codex/hooks/task_gate.py < hook-payload.json",
       "inputs": [
         "Codex hook JSON on stdin",
         "Git owned-scope state",
-        "current task state and event log",
+        "current_state.json and append-only event log",
         "automation registry"
       ],
       "outputs": [
@@ -85,6 +86,34 @@
         "automation-evidence",
         "git-gate",
         "timestamps"
+      ]
+    },
+    {
+      "artifact_id": "hk261-project-state",
+      "name": "HK261 canonical current-state validator",
+      "path": ".codex/hooks/project_state.py",
+      "purpose": "Validate the single canonical current-state JSON, its latest append-only event and render a compact human-readable handoff on demand.",
+      "entrypoint": "python3 .codex/hooks/project_state.py validate|show",
+      "inputs": [
+        "MUST_READ_AI_AGENT/current_state.json",
+        "MUST_READ_AI_AGENT/events.jsonl"
+      ],
+      "outputs": [
+        "JSON validation summary or compact Markdown state",
+        "exit 2 with a specific schema, timestamp or event mismatch"
+      ],
+      "tests": [
+        ".codex/hooks/test_project_state.py",
+        ".codex/hooks/test_task_gate.py"
+      ],
+      "test_command": "PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_project_state.py && PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_task_gate.py",
+      "status": "active",
+      "tags": [
+        "current-state",
+        "handoff",
+        "context",
+        "timestamps",
+        "validation"
       ]
     },
     {

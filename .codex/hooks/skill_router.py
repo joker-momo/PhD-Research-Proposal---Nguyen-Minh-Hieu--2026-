@@ -10,6 +10,7 @@ import os
 from pathlib import Path
 import re
 import sys
+import time
 from typing import Dict, Iterable, List, Mapping, Optional, Sequence, Tuple
 
 
@@ -19,6 +20,8 @@ DEFAULT_SKILL_ROOTS = (
     Path.home() / ".agents/skills",
     Path.home() / ".codex/plugins/cache",
 )
+CACHE_TTL_SECONDS = 600
+DEFAULT_CACHE_PATH = Path.home() / ".cache/codex/skill_router/catalog-v1.json"
 PIPELINE_EQUIVALENTS = {
     "academic-pipeline",
     "academic-research-skills:academic-pipeline",
@@ -91,14 +94,10 @@ def _frontmatter_name(path: Path) -> Optional[str]:
     return None
 
 
-def discover_catalog(roots: Optional[Sequence[Path]] = None) -> Dict[str, Path]:
-    """Discover installed skills, preserving root priority for duplicate names."""
-    configured = os.environ.get("CODEX_SKILL_ROOTS")
-    if roots is None and configured:
-        roots = tuple(Path(value).expanduser() for value in configured.split(os.pathsep))
-    search_roots = tuple(roots or DEFAULT_SKILL_ROOTS)
+def _scan_catalog(roots: Sequence[Path]) -> Dict[str, Path]:
+    """Scan installed skills, preserving root priority for duplicate names."""
     catalog: Dict[str, Path] = {}
-    for root in search_roots:
+    for root in roots:
         if not root.is_dir():
             continue
         try:
@@ -112,6 +111,70 @@ def discover_catalog(roots: Optional[Sequence[Path]] = None) -> Dict[str, Path]:
             name = _frontmatter_name(path)
             if name and name not in catalog:
                 catalog[name] = path.resolve()
+    return catalog
+
+
+def _read_cache(cache_path: Path, roots: Sequence[Path], now: float):
+    try:
+        payload = json.loads(cache_path.read_text(encoding="utf-8"))
+        expected_roots = [str(root.resolve()) for root in roots]
+        if payload.get("schema_version") != 1 or payload.get("roots") != expected_roots:
+            return None
+        if not isinstance(payload.get("expires_at"), (int, float)) or payload["expires_at"] <= now:
+            return None
+        entries = payload.get("entries")
+        if not isinstance(entries, dict):
+            return None
+        catalog = {name: Path(path) for name, path in entries.items()}
+        if not all(isinstance(name, str) and path.is_file() for name, path in catalog.items()):
+            return None
+        return catalog
+    except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        return None
+
+
+def _write_cache(cache_path: Path, roots: Sequence[Path], catalog, now, ttl_seconds):
+    payload = {
+        "schema_version": 1,
+        "roots": [str(root.resolve()) for root in roots],
+        "created_at": now,
+        "expires_at": now + ttl_seconds,
+        "entries": {name: str(path) for name, path in sorted(catalog.items())},
+    }
+    temporary = cache_path.with_name(f"{cache_path.name}.tmp-{os.getpid()}")
+    try:
+        cache_path.parent.mkdir(parents=True, exist_ok=True)
+        temporary.write_text(json.dumps(payload, sort_keys=True), encoding="utf-8")
+        temporary.replace(cache_path)
+    except OSError:
+        try:
+            temporary.unlink(missing_ok=True)
+        except OSError:
+            pass
+
+
+def discover_catalog(
+    roots: Optional[Sequence[Path]] = None,
+    cache_path: Optional[Path] = None,
+    now: Optional[float] = None,
+    ttl_seconds: int = CACHE_TTL_SECONDS,
+) -> Dict[str, Path]:
+    """Discover skills, using a short-lived persistent cache for hook calls."""
+    configured = os.environ.get("CODEX_SKILL_ROOTS")
+    if roots is None and configured:
+        roots = tuple(Path(value).expanduser() for value in configured.split(os.pathsep))
+    explicit_roots = roots is not None
+    search_roots = tuple(Path(root).expanduser() for root in (roots or DEFAULT_SKILL_ROOTS))
+    if cache_path is None and not explicit_roots:
+        cache_path = Path(os.environ.get("CODEX_SKILL_CACHE", DEFAULT_CACHE_PATH)).expanduser()
+    current_time = time.time() if now is None else now
+    if cache_path is not None:
+        cached = _read_cache(Path(cache_path), search_roots, current_time)
+        if cached is not None:
+            return cached
+    catalog = _scan_catalog(search_roots)
+    if cache_path is not None:
+        _write_cache(Path(cache_path), search_roots, catalog, current_time, ttl_seconds)
     return catalog
 
 
@@ -353,8 +416,6 @@ def render_route(route: Route) -> str:
         "ADVISORY_ONLY: true",
         f"OWNER: {route.owner}",
         f"CODE_FIRST_DECISION: {route.code_first_mode} — {route.code_first_reason}",
-        "CODE_REUSE_LOOKUP: python3 .codex/hooks/automation_registry.py search <query>",
-        "CODE_DECISION_EVIDENCE: append automation/decision_log.jsonl and register code in automation/artifact_catalog.json",
     ]
     if route.unknown_explicit:
         lines.append("UNKNOWN_EXPLICIT_SKILLS: " + ", ".join(route.unknown_explicit))
@@ -367,12 +428,16 @@ def render_route(route: Route) -> str:
         selected = [route.primary, *route.supporting]
         lines.append("SKILLS: " + ", ".join(skill.name for skill in selected))
         for skill in selected:
-            lines.append(f"READ_FULL_SKILL_MD: {skill.path} before action")
+            display_path = str(skill.path)
+            try:
+                display_path = "~/" + str(skill.path.relative_to(Path.home()))
+            except ValueError:
+                pass
+            lines.append(f"READ_FULL_SKILL_MD: {display_path}")
     if route.skipped_overlap:
         lines.append("SKIPPED_OVERLAP: " + ", ".join(route.skipped_overlap))
     if route.skipped_cap:
         lines.append("SKIPPED_CAP: " + ", ".join(route.skipped_cap))
-    lines.append("NOTE: suggestion only; classification uncertainty never blocks the task")
     return "\n".join(lines)
 
 

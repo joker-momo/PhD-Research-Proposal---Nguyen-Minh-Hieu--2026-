@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-26T08:02:54+07:00",
+  "goal": {
+    "version": "HK261-PRISMA-SNCS-v2",
+    "status": "active",
+    "summary": "Complete the evidence-bounded PRISMA 2020 review, Springer Nature LaTeX manuscript, integrity checks and submission package; submission and course email remain user-authorized actions."
+  },
+  "task": {
+    "task_id": "hk261-context-optimization",
+    "owner": "CODEX_WRITING",
+    "status": "active",
+    "started_at": "2026-11-26T07:58:00+07:00",
+    "updated_at": "2026-11-26T08:02:54+07:00",
+    "decision_id": "hk261-context-optimization-v1"
+  },
+  "next_task": {
+    "task_id": "reconciliation-scope-01-correction",
+    "owner": "GEMINI_RESEARCH",
+    "status": "ready",
+    "action": "After this optimization is committed, merged and cleaned up, dispatch screening_46/reconciliation/briefs/scope_01_correction.md exactly once through the approved A2A router.",
+    "acceptance": "A complete five-record replacement with exactly twenty supported quotes and all A1-A6 and C1-C2 criteria PASS.",
+    "parent_provider_task_id": "01a21542-51c7-70a0-a294-86819046d794",
+    "parent_provider_context_id": "01a21542-51c8-78dd-9cb8-369993e83bea",
+    "parent_state": "TASK_STATE_COMPLETED_REJECTED_A2_A4"
+  },
+  "project": {
+    "target_venue": "SN Computer Science",
+    "submission_status": "NOT_READY_NOT_SUBMITTED",
+    "canonical_manuscript": "manuscript/sn_computer_science/main.tex",
+    "canonical_bibliography": "manuscript/sn_computer_science/references.bib",
+    "manuscript_pages": 17,
+    "cited_references": 34
+  },
+  "evidence": {
+    "retrieval_reports": 46,
+    "screened_reports": 46,
+    "working_decisions": {
+      "include": 32,
+      "exclude": 2,
+      "uncertain": 12
+    },
+    "reconciliation_overlay": {
+      "include": 36,
+      "exclude": 2,
+      "uncertain": 8,
+      "status": "working report-level overlay; not final study or PRISMA counts"
+    },
+    "screening_batches_accepted": 8,
+    "evidence_checksums": "92/92 PASS"
+  },
+  "blockers": [
+    "Formal IEEE Xplore, ACM Digital Library, Scopus and Web of Science searches and exports are incomplete.",
+    "Report-version, study-family, extraction, appraisal and final PRISMA reconciliation are incomplete.",
+    "The manuscript must not absorb the 46-report working overlay before accepted reconciliation and synthesis gates.",
+    "Automatic Codex hook activation remains unverified; manual governance checks remain mandatory."
+  ],
+  "user_confirmation_required": [
+    "Verified author order, consent, HCMUT email, affiliations and identifiers.",
+    "Contributions, funding, conflicts, data availability and AI disclosure.",
+    "Exact examination date for calculating the course deadline.",
+    "Explicit authorization before journal submission or forwarding course evidence."
+  ],
+  "history": {
+    "event_log": "MUST_READ_AI_AGENT/events.jsonl",
+    "decision_log": "automation/decision_log.jsonl",
+    "previous_handoff": "MUST_READ_AI_AGENT/history/CURRENT_HANDOFF.pre-state-v1.2026-11-26.md",
+    "previous_queue": "corpus_expansion/history/current_tasks.pre-state-v1.2026-11-26.md",
+    "git": "Authoritative immutable change history; resolve the latest state commit with git log -1 -- MUST_READ_AI_AGENT/current_state.json."
+  }
+}
