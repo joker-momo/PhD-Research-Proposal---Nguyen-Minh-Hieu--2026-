@@ -1,0 +1,19 @@
+{
+  "A1": true,
+  "A2": true,
+  "A3": true,
+  "physical_page_formats": [
+    "-raw",
+    "-layout"
+  ],
+  "record": {
+    "report_id": "R0001",
+    "status": "OBSERVED",
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+    "page": 2,
+    "section": "D. Problem Formulation",
+    "excerpt": "The objective of this paper is to obtain model partition and ES selection",
+    "reason": ""
+  },
+  "transport": "TASK_STATE_COMPLETED"
+}
