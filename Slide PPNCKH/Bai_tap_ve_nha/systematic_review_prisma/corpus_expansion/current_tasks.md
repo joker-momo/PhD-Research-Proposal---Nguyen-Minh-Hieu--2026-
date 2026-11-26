@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T07:49:10+07:00
+Updated_at: 2026-11-26T07:51:03+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -32,16 +32,15 @@ without blocking dispatch.
 
 ## Reconciliation next task
 
-Scope_01 primary is REJECTED_A2_A4 and quarantined. Existing task
-`01a21542-51c7-70a0-a294-86819046d794` completed at
-2026-11-26T07:41:33.227+07:00; no redispatch occurred. Mechanical checks pass
-20/20 locators; A1/A3/A5/A6 PASS, A2/A4 FAIL because of C16 unsupported wording
-and incomplete C06/SNCS context. Review: `screening_46/reconciliation/reviews/scope_01_review.md`.
-After this review commit is merged and cleaned, prepare a corrective brief with
-full five-record replacement; preserve all primary artifacts. No provider task
-is active. Working overlay remains 36 INCLUDE / 2 EXCLUDE / 8 UNCERTAIN.
-No manuscript or accepted scientific evidence changed. CODE_FIRST_DECISION is
-REUSE_EXISTING, decision `reconciliation-scope-01-review-v1`.
+Corrective brief ready: `screening_46/reconciliation/briefs/scope_01_correction.md`.
+After commit/merge/cleanup, route this correction once through approved A2A router.
+Parent task `01a21542-51c7-70a0-a294-86819046d794` remains rejected A2/A4;
+primary must not be redispatched or overwritten. Require full five-record/20-quote
+replacement, all A1–A6 and C1–C2 PASS. Correct C06 baseline context, SNCS offline
+hierarchy assessment, and C16 unsupported optimization wording. No forced decisions.
+No active provider task. Working overlay remains 36/2/8, not final study counts.
+CODE_FIRST_DECISION: MANUAL; decision `reconciliation-scope-01-correction-brief-v1`.
+Brief-writing checkpoint timestamps below denote this recorded preparation pass.
 
 ## Measured progress
 
@@ -90,10 +89,10 @@ Correction brief is ready; route only after this task closes.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-scope-01-review",
-  "status": "rejected",
-  "started_at": "2026-11-26T07:47:28+07:00",
-  "updated_at": "2026-11-26T07:49:10+07:00",
-  "completed_at": "2026-11-26T07:49:10+07:00"
+  "task_id": "reconciliation-scope-01-correction-brief",
+  "status": "completed",
+  "started_at": "2026-11-26T07:51:03+07:00",
+  "updated_at": "2026-11-26T07:51:03+07:00",
+  "completed_at": "2026-11-26T07:51:03+07:00"
 }
 -->
