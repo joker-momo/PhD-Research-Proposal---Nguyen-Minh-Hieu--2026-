@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-26T19:13:45+07:00",
+  "updated_at": "2026-11-26T19:14:08+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -321,7 +321,7 @@
       "owner": "GEMINI_RESEARCH + CODEX_WRITING",
       "status": "active",
       "started_at": "2026-11-26T18:50:01+07:00",
-      "updated_at": "2026-11-26T19:13:45+07:00",
+      "updated_at": "2026-11-26T19:14:08+07:00",
       "completed_at": null,
       "artifacts": [
         "restart_2026_11_26/step07_batch01_brief.md",
@@ -345,7 +345,8 @@
         "restart_2026_11_26/step07_batch04_brief.md",
         "restart_2026_11_26/step07_batch04_read_shortfall_review.md",
         "restart_2026_11_26/step07_batch04_read_shortfall_raw.json",
-        "restart_2026_11_26/screening_evidence/manifest.json"
+        "restart_2026_11_26/screening_evidence/manifest.json",
+        "restart_2026_11_26/step07_batch04_retry_brief.md"
       ],
       "acceptance": [
         {
@@ -415,12 +416,11 @@
         "exclude": 89
       },
       "active_batch": {
-        "task_id": "c4e62a8f-c350-4b05-bdbf-1cba0725d5ec",
-        "context_id": "9f1453e3-bbe6-42d7-988a-cc877d9ca6ca",
+        "task_id": "43bc4809-38f1-4742-bd48-ab0f3afd20a3",
+        "context_id": "bd5ebec6-7401-4f95-bb94-1d058db5c18b",
         "first": "R0166",
         "last": "R0240",
-        "count": 75,
-        "read_shortfall": true
+        "count": 75
       },
       "evidence_index": "restart_2026_11_26/screening_evidence/manifest.json"
     },
