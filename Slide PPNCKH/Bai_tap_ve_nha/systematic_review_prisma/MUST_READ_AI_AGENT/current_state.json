@@ -1,26 +1,25 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:42:41+07:00",
+  "updated_at": "2026-11-26T18:44:17+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
-    "task_id": "restart-04",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T18:42:41+07:00",
-    "updated_at": "2026-11-26T18:42:41+07:00",
-    "completed_at": "2026-11-26T18:42:41+07:00",
-    "decision_id": "restart-04-lock-v1"
-  },
-  "next_task": {
     "task_id": "restart-05",
     "owner": "CODEX_WRITING + GEMINI_RESEARCH",
+    "status": "active",
+    "started_at": "2026-11-26T18:44:17+07:00",
+    "updated_at": "2026-11-26T18:44:17+07:00",
+    "decision_id": "restart-05-metadata-normalize-v1"
+  },
+  "next_task": {
+    "task_id": "restart-05-identification-check",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Normalize every locked row, preserve provenance and catalog missing fields without screening.",
-    "acceptance": "693/693 raw rows accounted, one provenance trail each; missing evidence explicit."
+    "action": "Verify OpenAlex identification gaps via the existing direct project attachment.",
+    "acceptance": "3 distinct expected IDs, matching provenance and official sources or explicit missing markers."
   },
   "project": {
     "target_venue": "SN Computer Science",

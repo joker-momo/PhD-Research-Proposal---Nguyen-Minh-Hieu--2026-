@@ -229,6 +229,32 @@
         "provenance",
         "checksums"
       ]
+    },
+    {
+      "artifact_id": "hk261-restart-metadata-normalization",
+      "name": "HK261 restart locked CSV normalizer",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/normalize_restart_records.py",
+      "purpose": "Import all locked source rows with stable record numbers, provenance and explicit metadata gaps, without deduplication or screening.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/normalize_restart_records.py\" --project <project-dir> --dataset <locked-manifest> --output <csv> --issues <json>",
+      "inputs": [
+        "locked search dataset manifest",
+        "locked CSV files"
+      ],
+      "outputs": [
+        "normalized rows with provenance",
+        "metadata issue log"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/test_normalize_restart_records.py"
+      ],
+      "test_command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts\" -p test_normalize_restart_records.py",
+      "status": "active",
+      "tags": [
+        "prisma",
+        "metadata",
+        "normalization",
+        "provenance"
+      ]
     }
   ]
 }
