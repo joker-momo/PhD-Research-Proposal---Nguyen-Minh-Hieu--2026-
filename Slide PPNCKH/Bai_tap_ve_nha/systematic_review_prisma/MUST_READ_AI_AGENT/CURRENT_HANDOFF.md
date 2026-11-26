@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T07:10:25+07:00
+**updated_at:** 2026-11-26T07:14:16+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -163,31 +163,27 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-**USER-REQUESTED HOLD:** Finish merge/cleanup of identity_dates_01, then stop
-before preparing or dispatching its correction. The coordinating chat will
-commit the 51 authorized external baseline entries on a separate branch and
-merge/clean it. Resume only after that handoff confirms the new canonical state.
-This thread must not stage or modify the external baseline.
+After brief commit/merge/cleanup, route the committed
+`screening_46/reconciliation/briefs/identity_dates_01_correction.md`.
+It requests exactly seven excerpt corrections and C03/C08 version-linkage
+repairs. Preserve parent task 01a21521-896b-7bdf-8bcb-1b0cfda69f2f and its
+quarantined artifacts. Accept only after C1–C6 and original A1–A6 PASS.
+No provider task is active; screening remains 32 INCLUDE / 2 EXCLUDE / 12 UNCERTAIN.
 
+## Current Git baseline
 
-After rejection commit/merge/cleanup, prepare a targeted correction brief for
-`screening_46/reconciliation/results/identity_dates_01.json`, parent task
-01a21521-896b-7bdf-8bcb-1b0cfda69f2f. Review A3 failed: seven noncontiguous
-local excerpts, C03 unsupported content equivalence and C08 title word count.
-Ten Crossref metadata subsets matched independent checks, but no result is
-adopted. Ledger remains 32 INCLUDE / 2 EXCLUDE / 12 UNCERTAIN. No provider task
-is active. Correct exactly the named fields; keep prior result quarantined.
-
-## Authorized concurrent baseline update
-
-User confirmed preservation of the concurrent root .gitignore addition (*.json); it is outside this task. Original 50 entries remain unchanged. Current authorized external status: 51 entries, SHA-256 18f05fa66cb8057d1db255731324438c0519d98b9f09d55991c1b538787105f3.
+The 51 external entries were committed separately at `643f8ed`; no HK261 path
+changed in that cleanup. Canonical status was empty before this task. Historical
+50/51-entry descriptions above describe the former baseline only; the current
+baseline is zero entries, SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.
+The boundary hold has been released by the coordinating handoff.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-identity-date-01",
-  "status": "rejected",
-  "started_at": "2026-11-26T06:54:09+07:00",
-  "updated_at": "2026-11-26T07:10:25+07:00",
-  "completed_at": "2026-11-26T07:09:59+07:00"
+  "task_id": "reconciliation-identity-date-correction-brief",
+  "status": "completed",
+  "started_at": "2026-11-26T07:14:16+07:00",
+  "updated_at": "2026-11-26T07:14:16+07:00",
+  "completed_at": "2026-11-26T07:14:16+07:00"
 }
 -->

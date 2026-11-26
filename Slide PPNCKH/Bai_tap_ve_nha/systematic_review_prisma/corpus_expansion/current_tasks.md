@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T07:10:25+07:00
+Updated_at: 2026-11-26T07:14:16+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -32,11 +32,8 @@ without blocking dispatch.
 
 ## Reconciliation next task
 
-**USER-REQUESTED HOLD:** Finish merge/cleanup of identity_dates_01, then stop
-before preparing or dispatching its correction. The coordinating chat will
-commit the 51 authorized external baseline entries on a separate branch and
-merge/clean it. Resume only after that handoff confirms the new canonical state.
-This thread must not stage or modify the external baseline.
+**Hold released:** External baseline committed at `643f8ed`; canonical main
+was verified fully clean before this task. Continue with the correction.
 
 
 Identity/date primary completed but rejected A3: 7 noncontiguous excerpts,
@@ -79,16 +76,22 @@ repository `AGENTS.md`; those scopes must be clean before dispatch. The external
 baseline is not permission to create new residue outside the owned scopes.
 
 
-## Authorized concurrent baseline update
+## Historical concurrent baseline update
 
 User confirmed preservation of the concurrent root .gitignore addition (*.json); it is outside this task. Original 50 entries remain unchanged. Current authorized external status: 51 entries, SHA-256 18f05fa66cb8057d1db255731324438c0519d98b9f09d55991c1b538787105f3.
 
+## Current Git baseline
+
+External baseline committed at `643f8ed`; canonical repository verified fully
+clean (zero status entries). The previous 51-entry baseline is historical.
+Correction brief is ready; route only after this task closes.
+
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-identity-date-01",
-  "status": "rejected",
-  "started_at": "2026-11-26T06:54:09+07:00",
-  "updated_at": "2026-11-26T07:10:25+07:00",
-  "completed_at": "2026-11-26T07:09:59+07:00"
+  "task_id": "reconciliation-identity-date-correction-brief",
+  "status": "completed",
+  "started_at": "2026-11-26T07:14:16+07:00",
+  "updated_at": "2026-11-26T07:14:16+07:00",
+  "completed_at": "2026-11-26T07:14:16+07:00"
 }
 -->
