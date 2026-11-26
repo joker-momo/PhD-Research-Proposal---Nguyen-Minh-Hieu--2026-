@@ -1,0 +1,45 @@
+{
+  "id": "ae2aeba0-8e4e-40e6-bc97-a7120eac4a0e",
+  "contextId": "f650b18a-c5fd-4dba-a5bc-af2ec2f97548",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T13:27:53.315+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T13:24:58.706+00:00",
+    "updated_at": "2026-11-26T13:27:53.315+00:00",
+    "started_at": "2026-11-26T13:24:58.709+00:00",
+    "completed_at": "2026-11-26T13:27:53.315+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — HK261 Evidence Correction Task",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "6a320310-14cd-4df1-91d7-b7aa4baa3c9d",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"id\":\"R0001\",\"decision\":\"AWAITING_CLASSIFICATION\",\"primary\":\"E5\",\"reason\":\"E4 and E7 pass, but Date Added to IEEE Xplore could not be verified because IEEE Xplore URLs were blocked.\",\"e\":{\"E4\":[\"T\",3,\"III. EXPERIMENT EVALUATION - A. Simulation Setup\",\"This experiment considers 10 UAVs, 4 ESs and one cloud server. This paper adopts the public drone delivery dataset [3].\",\"Fig. 2 and Fig. 3 have visible plots and captions comparing CAPRI/CAPRIC against baselines.\",\"R0001.pdf\"],\"E5\":[\"U\",0,\"Date Added to IEEE Xplore\",\"\",\"Checked https://xplorestaging.ieee.org/document/11670054/ via browse (blocked/inaccessible) and searched DOI 10.1109/ICWS72778.2026.00154 via web search (no Date Added to IEEE Xplore field returned); PDF p. 1 shows local download timestamp only.\",\"https://xplorestaging.ieee.org/document/11670054/\"],\"E7\":[\"T\",0,\"Information for Authors - Peer Review\",\"All submitted manuscripts will be peer-reviewed by at least three members of the program committee.\",\"R0001 is listed as CWS_WIP_222 in CWS-WIP-S3 at https://services.conferences.computer.org/2026/icws-program/ (double-blind peer-reviewed 3-page WIP track); R0001.pdf pp. 1-3 define the CAPRI PPO+convex optimization method (Section II) and report evaluation conditions/results with 7 baselines and Fig. 2-3 plots (Section III.A, p. 3).\",\"https://services.conferences.computer.org/2026/info-for-authors/\"]}}\n{\"id\":\"R0002\",\"decision\":\"AWAITING_CLASSIFICATION\",\"primary\":\"E5\",\"reason\":\"Date Added to IEEE Xplore could not be verified because the IEEE Xplore URL was blocked.\",\"e\":{\"E5\":[\"U\",0,\"Date Added to IEEE Xplore\",\"\",\"Checked https://ieeexplore.ieee.org/abstract/document/11670091/ via browse (blocked/inaccessible) and searched DOI 10.1109/ICWS72778.2026.00067 via web search (no Date Added to IEEE Xplore field returned); PDF p. 1 shows local download timestamp only.\",\"https://ieeexplore.ieee.org/abstract/document/11670091/\"]}}\n{\"id\":\"R0019\",\"decision\":\"INCLUDE\",\"primary\":\"\",\"reason\":\"Peer-reviewed journal article meeting all eligibility criteria with full simulation results.\",\"e\":{\"E4\":[\"T\",12,\"IV. SIMULATION RESULTS AND ANALYSIS\",\"The simulated results were conducted in three different CNN networks, 5-layers LeNet, 8-layers Alexnet, and 16-layers VGG. The accuracy percentage of LeNet is 96.45%, AlexNet is 91.23%, and VGG16 is 82.50%.\",\"Continuous simulation results prose on physical page 12.\",\"R0019.pdf\"]}}\n{\"id\":\"R0022\",\"decision\":\"INCLUDE\",\"primary\":\"\",\"reason\":\"Peer-reviewed conference paper meeting all eligibility criteria with multi-UAV evaluation.\",\"e\":{\"E2\":[\"T\",6,\"IV. PERFORMANCE EVALUATION\",\"In single-task scenarios, even with 20 MHz bandwidth, fewer than three of eight UAVs are utilized, leaving resources idle.\",\"Continuous prose around Fig. 6 on physical page 6 establishing an eight-UAV swarm evaluation.\",\"R0022.pdf\"]}}"
+        }
+      ]
+    }
+  ]
+}
