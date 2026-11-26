@@ -15,12 +15,18 @@
     "decision_id": "restart-08-pdf-verification-v2",
     "records_total": 137,
     "records_reviewed": 120,
-    "updated_at": "2026-11-26T20:09:06+07:00"
+    "updated_at": "2026-11-26T20:09:06+07:00",
+    "active_batch": {
+      "batch": 7,
+      "task_id": "03034b30-72aa-4914-bff5-a2708a545c47",
+      "context_id": "d914325a-b3e1-4cd3-81d3-06fb0b80b7b4",
+      "submitted_at": "2026-11-26T20:09:06+07:00"
+    }
   },
   "next_task": {
     "task_id": "restart-08-batch07",
     "owner": "GEMINI_RESEARCH",
-    "status": "ready",
+    "status": "active",
     "action": "Process the next committed direct project queue.",
     "acceptance": "Exact IDs and one verified full-text result or exact access shortfall per queued row."
   },
