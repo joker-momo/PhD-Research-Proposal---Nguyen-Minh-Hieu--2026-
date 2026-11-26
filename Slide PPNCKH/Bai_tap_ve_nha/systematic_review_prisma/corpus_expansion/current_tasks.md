@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T07:36:59+07:00
+Updated_at: 2026-11-26T07:45:52+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -32,19 +32,22 @@ without blocking dispatch.
 
 ## Reconciliation next task
 
-Identity/date correction accepted: C1–C6 and A1–A6 PASS; 7/7 corrected quotes,
-10/10 combined local excerpts. Overlay resolves S19,S20,C03,C08, yielding
-36 INCLUDE / 2 EXCLUDE / 8 UNCERTAIN at report level. Base ledger remains 32/2/12.
-Scope brief ready for C06,SNCS,C04,C11,C16; dispatch after commit/merge/cleanup; six IEEE dates
-remain uncertain. Primary result remains quarantined; no provider task active.
-The automation/code-first rule is complete: reuse verified existing automation
-first, write a focused reusable script for deterministic/repeated work second,
-and use manual execution only with a recorded reason. Router tests pass 29/29;
-task-gate tests pass 17/17. Its durable evidence registry is also complete:
-append-only decisions, a searchable reusable-code catalog and task-gate
-validation. Current tests pass 16/16 registry, 30/30 router and 18/18 task gate.
-Dispatch the committed scope brief from clean main only after searching the
-registry and recording the task's own decision.
+The scope reconciliation mechanical checker is complete and registered in
+`automation/artifact_catalog.json`; decision `scope-reconciliation-checker-v1`
+is appended to `automation/decision_log.jsonl`. Focused validation: 15/15 checker
+tests and 64/64 hook tests PASS. It does not accept scientific semantics.
+
+Correction to the prior navigation summary: scope_01 WAS dispatched before the
+pause. Task ID `01a21542-51c7-70a0-a294-86819046d794`, context ID
+`01a21542-51c8-78dd-9cb8-369993e83bea`; dispatched_at
+2026-11-26T07:29:58+07:00, from preserved A2A task metadata. Live terminal state
+has not yet been re-queried; do not infer completion or dispatch a duplicate.
+After this code task is committed, merged and its worktree removed, collect and
+review that existing task in a dedicated task worktree. Require A1–A6 PASS,
+including 20 quote locators and ten scope verdicts, before adoption. No manuscript
+or accepted evidence changed. Current working overlay remains 36/2/8 reports.
+The code implementation began before the pause; its exact start time was not
+captured. The task-state timestamp below records this observed closing checkpoint.
 
 ## Measured progress
 
@@ -52,7 +55,7 @@ registry and recording the task's own decision.
 - Accepted working full-text screening: 46/46 reports.
 - Working decisions: 32 INCLUDE, 2 EXCLUDE, 12 UNCERTAIN in batches 01-08.
 - Remaining in this campaign: 0 reports.
-- Active A2A research task: none.
+- Existing scope_01 provider task: dispatched; current terminal state unqueried; IDs above.
 - Batch 08 correction accepted; all C1–C6 PASS; 5 combined working decisions.
 - Batch 04 dispatch count: 1 primary and 2 corrections; accepted-result count 1.
 - Latest Batch 04 mandatory failures: 0; all C1–C6 PASS.
@@ -93,10 +96,10 @@ Correction brief is ready; route only after this task closes.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "automation-evidence-registry",
+  "task_id": "scope-reconciliation-checker",
   "status": "completed",
-  "started_at": "2026-11-26T07:34:52+07:00",
-  "updated_at": "2026-11-26T07:36:59+07:00",
-  "completed_at": "2026-11-26T07:36:59+07:00"
+  "started_at": "2026-11-26T07:45:52+07:00",
+  "updated_at": "2026-11-26T07:45:52+07:00",
+  "completed_at": "2026-11-26T07:45:52+07:00"
 }
 -->

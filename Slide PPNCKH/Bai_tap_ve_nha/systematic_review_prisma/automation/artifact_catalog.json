@@ -86,6 +86,60 @@
         "git-gate",
         "timestamps"
       ]
+    },
+    {
+      "artifact_id": "hk261-scope-reconciliation-checker",
+      "name": "Scope reconciliation mechanical checker",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/check_scope_reconciliation.py",
+      "purpose": "Validate exact identities, scope-gate truth tables, evidence references, architecture fields and quote/page/line matches; semantic acceptance remains Codex-owned.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/check_scope_reconciliation.py\" --help",
+      "inputs": [
+        "provider JSON",
+        "accepted ledger",
+        "canonical full-text evidence root",
+        "expected report IDs"
+      ],
+      "outputs": [
+        "JSON mechanical report",
+        "nonzero exit on validation or input error"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/test_check_scope_reconciliation.py"
+      ],
+      "test_command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts\" -p test_check_scope_reconciliation.py -v",
+      "status": "active",
+      "tags": [
+        "scope",
+        "reconciliation",
+        "screening",
+        "quotes",
+        "validation"
+      ]
+    },
+    {
+      "artifact_id": "hk261-screening-normalization",
+      "name": "Existing screening checker and quote normalization",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/check_46screening.py",
+      "purpose": "Reuse the existing normalized(text) helper from the batch checker; the registered tests exercise this helper via scope validation, not the entire legacy batch CLI.",
+      "entrypoint": "from check_46screening import normalized (with project scripts directory on sys.path)",
+      "inputs": [
+        "Unicode quote or source text"
+      ],
+      "outputs": [
+        "Normalized string used for quote matching"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/test_check_scope_reconciliation.py"
+      ],
+      "test_command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts\" -p test_check_scope_reconciliation.py -v",
+      "status": "active",
+      "tags": [
+        "scope",
+        "reconciliation",
+        "screening",
+        "quotes",
+        "validation"
+      ]
     }
   ]
 }

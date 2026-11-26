@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T07:36:59+07:00
+**updated_at:** 2026-11-26T07:45:52+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -163,21 +163,22 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-The automation-first/code-mode rule is installed in the repository entry point,
-MUST READ workflow, handoff template, and advisory router. Every prompt now
-receives one `REUSE_EXISTING`, `WRITE_SCRIPT`, or `MANUAL` recommendation with
-a reason. Decisions are durably retained in append-only
-`automation/decision_log.jsonl`; reusable code is indexed in
-`automation/artifact_catalog.json` with paths, entrypoints and tests. The
-read-only registry CLI validates and searches these artifacts. Tests pass:
-16/16 registry, 30/30 router and 18/18 task gate. No scope research has been
-dispatched.
+The scope reconciliation mechanical checker is complete and registered in
+`automation/artifact_catalog.json`; decision `scope-reconciliation-checker-v1`
+is appended to `automation/decision_log.jsonl`. Focused validation: 15/15 checker
+tests and 64/64 hook tests PASS. It does not accept scientific semantics.
 
-From clean `main`, route
-`screening_46/reconciliation/briefs/scope_01.md` for C06,SNCS,C04,C11,C16.
-Require 20 exact quote/page/line matches, ten scope-gate verdicts and all A1–A6.
-Preserve fixed Amendment001 and human adjudication. No provider task is active.
-Current working report total remains 36 INCLUDE / 2 EXCLUDE / 8 UNCERTAIN.
+Correction to the prior navigation summary: scope_01 WAS dispatched before the
+pause. Task ID `01a21542-51c7-70a0-a294-86819046d794`, context ID
+`01a21542-51c8-78dd-9cb8-369993e83bea`; dispatched_at
+2026-11-26T07:29:58+07:00, from preserved A2A task metadata. Live terminal state
+has not yet been re-queried; do not infer completion or dispatch a duplicate.
+After this code task is committed, merged and its worktree removed, collect and
+review that existing task in a dedicated task worktree. Require A1–A6 PASS,
+including 20 quote locators and ten scope verdicts, before adoption. No manuscript
+or accepted evidence changed. Current working overlay remains 36/2/8 reports.
+The code implementation began before the pause; its exact start time was not
+captured. The task-state timestamp below records this observed closing checkpoint.
 
 ## Current bibliographic overlay
 
@@ -186,7 +187,7 @@ Current working report total remains 36 INCLUDE / 2 EXCLUDE / 8 UNCERTAIN.
 gate. C1–C6 and A1–A6 PASS; primary result stays quarantined. Current report-level
 working total: 36 INCLUDE / 2 EXCLUDE / 8 UNCERTAIN; base ledger remains immutable
 at 32/2/12. Six IEEE dates remain uncertain; C06/SNCS scope remains uncertain.
-No provider task is active. These are not final independent-study or PRISMA counts.
+Provider scope_01 state awaits targeted retrieval. These are not final independent-study or PRISMA counts.
 
 ## Current Git baseline
 
@@ -198,10 +199,10 @@ The boundary hold has been released by the coordinating handoff.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "automation-evidence-registry",
+  "task_id": "scope-reconciliation-checker",
   "status": "completed",
-  "started_at": "2026-11-26T07:34:52+07:00",
-  "updated_at": "2026-11-26T07:36:59+07:00",
-  "completed_at": "2026-11-26T07:36:59+07:00"
+  "started_at": "2026-11-26T07:45:52+07:00",
+  "updated_at": "2026-11-26T07:45:52+07:00",
+  "completed_at": "2026-11-26T07:45:52+07:00"
 }
 -->
