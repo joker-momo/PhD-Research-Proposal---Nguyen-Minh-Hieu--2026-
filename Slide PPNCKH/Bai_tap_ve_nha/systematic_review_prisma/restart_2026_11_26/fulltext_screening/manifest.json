@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-11-26T20:18:29+07:00",
+  "records": 44,
+  "index": "restart_2026_11_26/fulltext_retrieval/fulltext_identity_index.csv",
+  "index_sha256": "fd6967eb7f9280352ec292a6c882c4f023c056148decae20f20168e55d7c1233",
+  "protocol_sha256": "8de60a831a87a0b4bc79c77b78d82565afc985fddb44fd9cf130efa999288d51",
+  "batches": [
+    {
+      "batch": 1,
+      "ids": [
+        "R0001",
+        "R0002",
+        "R0003",
+        "R0006",
+        "R0009",
+        "R0010",
+        "R0015",
+        "R0019",
+        "R0022",
+        "R0029",
+        "R0044"
+      ],
+      "brief": "restart_2026_11_26/fulltext_screening/batch_01_brief.md",
+      "message_id": "hk261-restart-step09-batch01-v1"
+    },
+    {
+      "batch": 2,
+      "ids": [
+        "R0045",
+        "R0047",
+        "R0048",
+        "R0054",
+        "R0059",
+        "R0061",
+        "R0062",
+        "R0063",
+        "R0068",
+        "R0071",
+        "R0073"
+      ],
+      "brief": "restart_2026_11_26/fulltext_screening/batch_02_brief.md",
+      "message_id": "hk261-restart-step09-batch02-v1"
+    },
+    {
+      "batch": 3,
+      "ids": [
+        "R0074",
+        "R0075",
+        "R0081",
+        "R0083",
+        "R0089",
+        "R0092",
+        "R0095",
+        "R0108",
+        "R0110",
+        "R0111",
+        "R0117"
+      ],
+      "brief": "restart_2026_11_26/fulltext_screening/batch_03_brief.md",
+      "message_id": "hk261-restart-step09-batch03-v1"
+    },
+    {
+      "batch": 4,
+      "ids": [
+        "R0118",
+        "R0121",
+        "R0137",
+        "R0138",
+        "R0139",
+        "R0218",
+        "R0233",
+        "R0241",
+        "R0262",
+        "R0288",
+        "R0445"
+      ],
+      "brief": "restart_2026_11_26/fulltext_screening/batch_04_brief.md",
+      "message_id": "hk261-restart-step09-batch04-v1"
+    }
+  ]
+}

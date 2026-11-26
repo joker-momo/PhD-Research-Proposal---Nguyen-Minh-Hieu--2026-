@@ -1,29 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T20:13:09+07:00",
+  "updated_at": "2026-11-26T20:18:29+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
-    "task_id": "restart-08",
+    "task_id": "restart-09-setup",
     "owner": "CODEX_WRITING",
-    "research_owner": "GEMINI_RESEARCH",
     "status": "completed",
-    "started_at": "2026-11-26T19:30:11+07:00",
-    "decision_id": "restart-08-pdf-verification-v2",
-    "records_total": 137,
-    "records_reviewed": 137,
-    "updated_at": "2026-11-26T20:13:09+07:00",
-    "completed_at": "2026-11-26T20:13:09+07:00"
+    "started_at": "2026-11-26T20:18:29+07:00",
+    "updated_at": "2026-11-26T20:18:29+07:00",
+    "completed_at": "2026-11-26T20:18:29+07:00",
+    "decision_id": "restart-09-screening-v1",
+    "checkpoint_path": "restart_2026_11_26/fulltext_screening/manifest.json"
   },
   "next_task": {
-    "task_id": "restart-09",
+    "task_id": "restart-09-batch01",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Screen 44 independently verified full reports using protocol P06.",
-    "acceptance": "Every retrieved report has a decision and page/section evidence. No previously inherited decision."
+    "action": "Screen the first 11 verified PDFs against P03/P06.",
+    "acceptance": "11 exact IDs; independently verified page/section evidence and P06 dispositions.",
+    "dispatch_brief": "restart_2026_11_26/fulltext_screening/batch_01_brief.md",
+    "message_id": "hk261-restart-step09-batch01-v1"
   },
   "project": {
     "target_venue": "SN Computer Science",

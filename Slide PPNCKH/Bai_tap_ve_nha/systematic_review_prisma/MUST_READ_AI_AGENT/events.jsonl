@@ -130,3 +130,4 @@
 {"timestamp": "2026-11-26T20:09:06+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_dispatched", "batch": 7, "provider_task_id": "03034b30-72aa-4914-bff5-a2708a545c47", "provider_context_id": "d914325a-b3e1-4cd3-81d3-06fb0b80b7b4"}
 {"timestamp": "2026-11-26T20:13:03+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_batch_accepted", "batch": 7, "provider_task_id": "03034b30-72aa-4914-bff5-a2708a545c47", "local_reused": 0, "sought": 137, "reviewed": 137, "retrieved_pdf": 44, "retrieved_html": 0, "not_retrieved": 93}
 {"timestamp": "2026-11-26T20:13:09+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_complete", "sought": 137, "reviewed": 137, "retrieved_pdf": 44, "retrieved_html": 0, "not_retrieved": 93, "reused_pdf": 31, "downloaded_pdf": 13}
+{"timestamp": "2026-11-26T20:18:29+07:00", "task_id": "restart-09-setup", "event": "fulltext_screening_setup", "records": 44, "batches": 4}
