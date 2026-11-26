@@ -1,0 +1,104 @@
+{
+  "merge": {
+    "issues": [
+      "Unresolved entries do not match required schema",
+      "Missing R0121 array confirmation"
+    ],
+    "missing": [],
+    "extra": [],
+    "duplicates": 0,
+    "applied": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10"
+    ],
+    "returned_keys": 11
+  },
+  "diagnostic": {
+    "state": "TASK_STATE_FAILED",
+    "characters": 116705,
+    "errors": [
+      [
+        "A2",
+        "R0054",
+        "mobility_channel_intermittency_failure_and_recovery/mobility_channel_intermittency_failure_and_recovery/mobility_channel_intermittency_failure_and_recovery/failure_and_recovery: locator/excerpt mismatch pNone"
+      ],
+      [
+        "A3",
+        "R0054",
+        "Normalized cost (holdout): missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A3",
+        "R0054",
+        "Active-queue admission: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A3",
+        "R0054",
+        "User data rate: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A3",
+        "R0062",
+        "Collaborative inference frame rate (4 UAVs, Stage 1): missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A3",
+        "R0095",
+        "Average single decision time: missing quantitative components or quote/page mismatch"
+      ],
+      [
+        "A2",
+        "R0121",
+        "code_and_data/code_and_data: locator/excerpt mismatch pNone"
+      ],
+      [
+        "A2",
+        "R0121",
+        "funding_and_conflicts/funding_and_conflicts: locator/excerpt mismatch pNone"
+      ]
+    ],
+    "observed_ids": [
+      "R0054",
+      "R0059",
+      "R0062",
+      "R0063",
+      "R0068",
+      "R0071",
+      "R0073",
+      "R0074",
+      "R0083",
+      "R0089",
+      "R0095",
+      "R0121"
+    ],
+    "missing_ids": [],
+    "unexpected_ids": [],
+    "duplicate_ids": 0,
+    "duplicate_doi": 0,
+    "duplicate_title": 0,
+    "counts": {
+      "fields": 168,
+      "status_OBSERVED": 162,
+      "locator_checks": 173,
+      "locator_matches": 170,
+      "status_UNVERIFIED": 1,
+      "status_NOT_REPORTED": 11,
+      "quantitative_claims": 35,
+      "observed_quantitative": 33
+    }
+  },
+  "matching_snapshot_sha256": [
+    "2a735e2e25c3b0ea67b209a2c98ec7a9e28240807c97bf69716e1c480ee60e8b",
+    "2a735e2e25c3b0ea67b209a2c98ec7a9e28240807c97bf69716e1c480ee60e8b"
+  ],
+  "admitted": false
+}

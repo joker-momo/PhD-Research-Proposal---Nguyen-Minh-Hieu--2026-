@@ -1,0 +1,34 @@
+{
+  "id": "009b3595-4bfd-4683-96af-6d2f3136fa7f",
+  "contextId": "47934fe6-fa32-485a-902b-a4c507a2049b",
+  "status": {
+    "state": "TASK_STATE_FAILED",
+    "timestamp": "2026-11-26T15:43:13.984+00:00",
+    "message": {
+      "messageId": "e6785c14-3745-44f6-a092-42cec18fcb2c",
+      "role": "ROLE_AGENT",
+      "parts": [
+        {
+          "text": "Accessibility snapshot failed: Gemini snapshot failed: Missing AXSplitGroup[0]"
+        }
+      ],
+      "taskId": "009b3595-4bfd-4683-96af-6d2f3136fa7f",
+      "contextId": "47934fe6-fa32-485a-902b-a4c507a2049b"
+    }
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T15:43:03.242+00:00",
+    "updated_at": "2026-11-26T15:43:13.984+00:00",
+    "started_at": "2026-11-26T15:43:03.248+00:00",
+    "completed_at": "2026-11-26T15:43:13.984+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    }
+  }
+}
