@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-26T21:23:51+07:00",
+  "updated_at": "2026-11-26T21:24:09+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -540,10 +540,10 @@
       "task_id": "restart-09",
       "title": "Sàng lọc toàn văn mới",
       "owner": "GEMINI_RESEARCH + CODEX_WRITING",
-      "status": "active",
+      "status": "completed",
       "started_at": "2026-11-26T20:18:29+07:00",
-      "updated_at": "2026-11-26T21:23:51+07:00",
-      "completed_at": null,
+      "updated_at": "2026-11-26T21:24:09+07:00",
+      "completed_at": "2026-11-26T21:24:09+07:00",
       "artifacts": [
         "restart_2026_11_26/fulltext_screening/manifest.json",
         "restart_2026_11_26/fulltext_retrieval/fulltext_identity_index.csv",
@@ -586,9 +586,34 @@
         "restart_2026_11_26/fulltext_screening/batch_04_correction01_raw.json",
         "restart_2026_11_26/fulltext_screening/batch_04_accepted.csv",
         "restart_2026_11_26/fulltext_screening/batch_04_correction02_raw.json",
-        "restart_2026_11_26/fulltext_screening/batch_04_primary_review.md"
+        "restart_2026_11_26/fulltext_screening/batch_04_primary_review.md",
+        "restart_2026_11_26/fulltext_screening/fulltext_screening.csv",
+        "restart_2026_11_26/fulltext_screening/exclusions.csv",
+        "restart_2026_11_26/fulltext_screening/awaiting_classification.csv",
+        "restart_2026_11_26/fulltext_screening/step09_screening_summary.md"
       ],
-      "acceptance": []
+      "acceptance": [
+        {
+          "criterion": "LOCKED_PDF_IDENTITY",
+          "verdict": "PASS",
+          "evidence": "44/44 report IDs and PDF SHA-256 values reconcile exactly against Step 08."
+        },
+        {
+          "criterion": "BATCH_ACCEPTANCE",
+          "verdict": "PASS",
+          "evidence": "4/4 batch reviews with all five acceptance criteria PASS."
+        },
+        {
+          "criterion": "EXCLUSION_PROVENANCE",
+          "verdict": "PASS",
+          "evidence": "Every exclusion has exactly one primary P06 reason and all open criteria are explicit."
+        },
+        {
+          "criterion": "REPORT_ACCOUNTING",
+          "verdict": "PASS",
+          "evidence": "44 = 25 INCLUDE + 13 EXCLUDE + 6 AWAITING_CLASSIFICATION."
+        }
+      ]
     },
     {
       "task_id": "restart-10",

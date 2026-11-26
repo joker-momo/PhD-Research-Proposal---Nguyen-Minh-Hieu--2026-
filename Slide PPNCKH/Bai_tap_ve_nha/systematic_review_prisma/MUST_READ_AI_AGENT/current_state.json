@@ -1,28 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T21:23:51+07:00",
+  "updated_at": "2026-11-26T21:24:09+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step03_delimited_correction_ready",
-    "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
+    "status": "step09_completed",
+    "summary": "Continue the approved 16-step HK261 PRISMA restart. Step 09 screened 44 verified full texts from the new retrieval inventory. Step 10 links reports to studies."
   },
   "task": {
-    "task_id": "restart-09-batch04",
+    "task_id": "restart-09",
     "status": "completed",
     "owner": "CODEX_WRITING",
-    "started_at": "2026-11-26T14:03:25.046+00:00",
-    "updated_at": "2026-11-26T21:23:51+07:00",
-    "completed_at": "2026-11-26T21:23:51+07:00",
-    "checkpoint_path": "restart_2026_11_26/fulltext_screening/batch_04_review.md",
-    "decision_id": "restart-09-batch04-v1",
-    "research_owner": "GEMINI_RESEARCH"
+    "started_at": "2026-11-26T20:18:29+07:00",
+    "updated_at": "2026-11-26T21:24:09+07:00",
+    "completed_at": "2026-11-26T21:24:09+07:00",
+    "checkpoint_path": "restart_2026_11_26/fulltext_screening/step09_screening_summary.md",
+    "decision_id": "restart-09-v1"
   },
   "next_task": {
-    "task_id": "restart-09-close",
+    "task_id": "restart-10",
     "status": "ready",
-    "owner": "CODEX_WRITING",
-    "action": "Reconcile the four accepted batches, verify 44 IDs and close Step 09.",
-    "acceptance": "Four accepted batches; 44 unique reports; zero arithmetic, hash and reason discrepancies."
+    "owner": "GEMINI_RESEARCH",
+    "action": "Check report-version and study-family evidence under approved Step 10.",
+    "acceptance": "All reports have a mapping or status; no merges without evidence from both reports."
   },
   "project": {
     "target_venue": "SN Computer Science",
