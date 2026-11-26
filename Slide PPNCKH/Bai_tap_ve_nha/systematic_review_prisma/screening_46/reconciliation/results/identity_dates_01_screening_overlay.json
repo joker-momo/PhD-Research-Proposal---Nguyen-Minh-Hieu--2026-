@@ -1,0 +1,87 @@
+{
+  "task_id": "reconciliation-identity-date-correction",
+  "started_at": "2026-11-26T07:15:12+07:00",
+  "updated_at": "2026-11-26T07:18:56+07:00",
+  "completed_at": "2026-11-26T07:18:56+07:00",
+  "unit": "report",
+  "base_ledger": "screening_46/consolidated/decision_ledger.json",
+  "rows": [
+    {
+      "report_id": "S19",
+      "prior_working_decision": "UNCERTAIN",
+      "reconciled_working_decision": "INCLUDE",
+      "evidence_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#/records/0",
+      "final_human_adjudication": "PENDING"
+    },
+    {
+      "report_id": "S20",
+      "prior_working_decision": "UNCERTAIN",
+      "reconciled_working_decision": "INCLUDE",
+      "evidence_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#/records/1",
+      "final_human_adjudication": "PENDING"
+    },
+    {
+      "report_id": "C03",
+      "prior_working_decision": "UNCERTAIN",
+      "reconciled_working_decision": "INCLUDE",
+      "evidence_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#/records/2",
+      "final_human_adjudication": "PENDING"
+    },
+    {
+      "report_id": "C05",
+      "prior_working_decision": "UNCERTAIN",
+      "reconciled_working_decision": "UNCERTAIN",
+      "evidence_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#/records/3",
+      "final_human_adjudication": "PENDING"
+    },
+    {
+      "report_id": "C09",
+      "prior_working_decision": "UNCERTAIN",
+      "reconciled_working_decision": "UNCERTAIN",
+      "evidence_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#/records/4",
+      "final_human_adjudication": "PENDING"
+    },
+    {
+      "report_id": "C10",
+      "prior_working_decision": "UNCERTAIN",
+      "reconciled_working_decision": "UNCERTAIN",
+      "evidence_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#/records/5",
+      "final_human_adjudication": "PENDING"
+    },
+    {
+      "report_id": "C13",
+      "prior_working_decision": "UNCERTAIN",
+      "reconciled_working_decision": "UNCERTAIN",
+      "evidence_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#/records/6",
+      "final_human_adjudication": "PENDING"
+    },
+    {
+      "report_id": "C14",
+      "prior_working_decision": "UNCERTAIN",
+      "reconciled_working_decision": "UNCERTAIN",
+      "evidence_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#/records/7",
+      "final_human_adjudication": "PENDING"
+    },
+    {
+      "report_id": "C19",
+      "prior_working_decision": "UNCERTAIN",
+      "reconciled_working_decision": "UNCERTAIN",
+      "evidence_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#/records/8",
+      "final_human_adjudication": "PENDING"
+    },
+    {
+      "report_id": "C08",
+      "prior_working_decision": "UNCERTAIN",
+      "reconciled_working_decision": "INCLUDE",
+      "evidence_locator": "screening_46/reconciliation/results/identity_dates_01_accepted.json#/records/9",
+      "final_human_adjudication": "PENDING"
+    }
+  ],
+  "coverage": 46,
+  "resulting_working_counts": {
+    "INCLUDE": 36,
+    "EXCLUDE": 2,
+    "UNCERTAIN": 8
+  },
+  "final_study_count": null
+}

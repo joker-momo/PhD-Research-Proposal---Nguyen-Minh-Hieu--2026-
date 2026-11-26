@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-26T07:18:56+07:00",
+  "source_corrections": 7,
+  "record_corrections": 2,
+  "corrected_quote_matches": 7,
+  "combined_local_quote_matches": 10,
+  "unchanged_date_decision_identity_unresolved": true,
+  "combined_record_count": 10,
+  "combined_source_count": 25,
+  "working_counts": {
+    "INCLUDE": 36,
+    "EXCLUDE": 2,
+    "UNCERTAIN": 8
+  },
+  "mandatory_failures": 0
+}

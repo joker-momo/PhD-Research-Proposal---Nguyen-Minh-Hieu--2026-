@@ -1,0 +1,3002 @@
+{
+  "task": "identity_dates_01",
+  "window": {
+    "from": "2021-01-01",
+    "through": "2026-11-25"
+  },
+  "records": [
+    {
+      "id": "S19",
+      "title": "Adaptive Partition and Resource Allocation for Collaborative Inference Services in UAV Swarm",
+      "authors": [
+        "Ying Dong",
+        "Jiebei Shi",
+        "Songwei Li",
+        "Yuzhou Gao",
+        "Yeping Zhu",
+        "Jianbing Zhang",
+        "Jiwei Huang"
+      ],
+      "year": 2026,
+      "venue": "2026 IEEE International Conference on Web Services (ICWS)",
+      "doi": "10.1109/icws72778.2026.00154",
+      "source_version": "publisher_pdf",
+      "publication_type": "proceedings-article (Crossref type; ICWS track and peer-review status not explicitly printed in local PDF)",
+      "identity_sources": [
+        "S19_LOCAL_TXT",
+        "S19_CROSSREF"
+      ],
+      "discrepancies": [
+        "Local PDF prints year-only copyright (©2026 IEEE) without month/day, whereas Crossref deposits published/published-print/issued [2026, 7] and event dates 2026-07-13..2026-07-18.",
+        "Local PDF body refers to the proposed method as CAPRI (pp. 1-2) and CAPRIC (p. 3); text extraction inserts a space in 'UA V' due to PDF font kerning."
+      ],
+      "attempts": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/ICWS72778.2026.00154",
+          "accessed_at": "2026-11-26T06:55:31+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "Crossref JSON returned type=proceedings-article, published=[[2026, 7]], created=2026-09-07T19:10:15Z."
+        },
+        {
+          "url": "https://doi.org/10.1109/ICWS72778.2026.00154",
+          "accessed_at": "2026-11-26T06:55:32+07:00",
+          "outcome": "HTTP 202 (inaccessible: AWS WAF JavaScript challenge)",
+          "observed_detail": "Resolved to https://ieeexplore.ieee.org/document/11670054/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read."
+        }
+      ],
+      "date_evidence": [
+        {
+          "date_value": "2026-07",
+          "date_precision": "month",
+          "date_kind": "published",
+          "source_id": "S19_CROSSREF",
+          "field_or_locator": "message.published.date-parts"
+        },
+        {
+          "date_value": "2026-07",
+          "date_precision": "month",
+          "date_kind": "published_print",
+          "source_id": "S19_CROSSREF",
+          "field_or_locator": "message.published-print.date-parts"
+        },
+        {
+          "date_value": "2026-07",
+          "date_precision": "month",
+          "date_kind": "issued",
+          "source_id": "S19_CROSSREF",
+          "field_or_locator": "message.issued.date-parts"
+        },
+        {
+          "date_value": "2026-07-13",
+          "date_precision": "day",
+          "date_kind": "conference_event_start",
+          "source_id": "S19_CROSSREF",
+          "field_or_locator": "message.event.start.date-parts"
+        },
+        {
+          "date_value": "2026-07-18",
+          "date_precision": "day",
+          "date_kind": "conference_event_end",
+          "source_id": "S19_CROSSREF",
+          "field_or_locator": "message.event.end.date-parts"
+        },
+        {
+          "date_value": "2026-09-07T19:10:15Z",
+          "date_precision": "day",
+          "date_kind": "crossref_created",
+          "source_id": "S19_CROSSREF",
+          "field_or_locator": "message.created.date-time"
+        },
+        {
+          "date_value": "2026-09-08T04:52:23Z",
+          "date_precision": "day",
+          "date_kind": "crossref_deposited",
+          "source_id": "S19_CROSSREF",
+          "field_or_locator": "message.deposited.date-time"
+        },
+        {
+          "date_value": "2026-09-08T05:11:48Z",
+          "date_precision": "day",
+          "date_kind": "crossref_indexed",
+          "source_id": "S19_CROSSREF",
+          "field_or_locator": "message.indexed.date-time"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "copyright_year",
+          "source_id": "S19_LOCAL_TXT",
+          "field_or_locator": "line 98 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-11-24T17:56:25Z",
+          "date_precision": "day",
+          "date_kind": "file_download",
+          "source_id": "S19_LOCAL_TXT",
+          "field_or_locator": "line 99 (PDF page 1)"
+        }
+      ],
+      "date_window": {
+        "status": "YES",
+        "rationale": "Crossref publisher-deposited metadata records published/published-print/issued as 2026-07 (July 2026, corroborated by 2026-07-13..2026-07-18 conference dates), which falls entirely within 2021-01-01 through 2026-11-25.",
+        "evidence_source_ids": [
+          "S19_CROSSREF"
+        ]
+      },
+      "version_linkage": {
+        "status": "not_applicable",
+        "published_doi": "10.1109/icws72778.2026.00154",
+        "source_ids": [
+          "S19_LOCAL_TXT",
+          "S19_CROSSREF"
+        ],
+        "content_equivalence": "not_assumed",
+        "limitation": "Local file is already an IEEE Xplore publisher_pdf matching Crossref bibliographic metadata; IEEE Xplore HTML webpage returned HTTP 202 (AWS WAF challenge) so online HTML landing page metadata could not be inspected."
+      },
+      "proposed_working_decision": "INCLUDE",
+      "decision_basis": {
+        "source_ids": [
+          "S19_CROSSREF",
+          "S19_LOCAL_TXT"
+        ],
+        "changed_gate": {
+          "date_window": "UNCERTAIN -> YES"
+        },
+        "existing_gates_preserved": {
+          "primary_full_report": "YES",
+          "multi_uav_evaluated": "YES",
+          "collaborative_inference": "YES",
+          "evaluative_evidence": "YES",
+          "english": "YES"
+        },
+        "note": "All six eligibility gates under Protocol Section 4.1 are YES; formal peer-review status of the 3-page ICWS paper remains flagged in unresolved because neither PDF nor accessible publisher HTML explicitly states it."
+      },
+      "unresolved": [
+        "IEEE Xplore landing page (https://ieeexplore.ieee.org/document/11670054/) returned HTTP 202 AWS WAF challenge; IEEE Xplore online posting day remains unverified.",
+        "3-page short conference paper (pp. 1222-1224) lacks an explicit ICWS track/peer-review statement in the PDF and omits DNN model architecture, input dimensions, and simulation parameter tables; method is named CAPRI (pp. 1-2) and CAPRIC (p. 3).",
+        "Vertical 10-UAV, 4-edge-server, 1-cloud simulation only; no inter-UAV feature exchange or physical flight/failure evaluation."
+      ]
+    },
+    {
+      "id": "S20",
+      "title": "Promise: Predictive and Cost-Optimal Migrations for Service-Continuous Edge Intelligence in Multi-UAV Networks",
+      "authors": [
+        "Jian Zhang",
+        "Ming Tao",
+        "Renping Xie",
+        "Yin Zhang"
+      ],
+      "year": 2026,
+      "venue": "2026 IEEE International Conference on Web Services (ICWS)",
+      "doi": "10.1109/icws72778.2026.00067",
+      "source_version": "publisher_pdf",
+      "publication_type": "proceedings-article (Crossref type; ICWS peer-review statement not explicitly printed in local PDF)",
+      "identity_sources": [
+        "S20_LOCAL_TXT",
+        "S20_CROSSREF"
+      ],
+      "discrepancies": [
+        "Local PDF prints year-only copyright (©2026 IEEE) without month/day, whereas Crossref deposits published/published-print/issued [2026, 7] and event dates 2026-07-13..2026-07-18."
+      ],
+      "attempts": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/ICWS72778.2026.00067",
+          "accessed_at": "2026-11-26T06:55:32+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "Crossref JSON returned type=proceedings-article, published=[[2026, 7]], created=2026-09-07T19:19:22Z."
+        },
+        {
+          "url": "https://doi.org/10.1109/ICWS72778.2026.00067",
+          "accessed_at": "2026-11-26T06:55:33+07:00",
+          "outcome": "HTTP 202 (inaccessible: AWS WAF JavaScript challenge)",
+          "observed_detail": "Resolved to https://ieeexplore.ieee.org/document/11670091/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read."
+        }
+      ],
+      "date_evidence": [
+        {
+          "date_value": "2026-07",
+          "date_precision": "month",
+          "date_kind": "published",
+          "source_id": "S20_CROSSREF",
+          "field_or_locator": "message.published.date-parts"
+        },
+        {
+          "date_value": "2026-07",
+          "date_precision": "month",
+          "date_kind": "published_print",
+          "source_id": "S20_CROSSREF",
+          "field_or_locator": "message.published-print.date-parts"
+        },
+        {
+          "date_value": "2026-07",
+          "date_precision": "month",
+          "date_kind": "issued",
+          "source_id": "S20_CROSSREF",
+          "field_or_locator": "message.issued.date-parts"
+        },
+        {
+          "date_value": "2026-07-13",
+          "date_precision": "day",
+          "date_kind": "conference_event_start",
+          "source_id": "S20_CROSSREF",
+          "field_or_locator": "message.event.start.date-parts"
+        },
+        {
+          "date_value": "2026-07-18",
+          "date_precision": "day",
+          "date_kind": "conference_event_end",
+          "source_id": "S20_CROSSREF",
+          "field_or_locator": "message.event.end.date-parts"
+        },
+        {
+          "date_value": "2026-09-07T19:19:22Z",
+          "date_precision": "day",
+          "date_kind": "crossref_created",
+          "source_id": "S20_CROSSREF",
+          "field_or_locator": "message.created.date-time"
+        },
+        {
+          "date_value": "2026-09-08T04:53:00Z",
+          "date_precision": "day",
+          "date_kind": "crossref_deposited",
+          "source_id": "S20_CROSSREF",
+          "field_or_locator": "message.deposited.date-time"
+        },
+        {
+          "date_value": "2026-09-08T05:11:51Z",
+          "date_precision": "day",
+          "date_kind": "crossref_indexed",
+          "source_id": "S20_CROSSREF",
+          "field_or_locator": "message.indexed.date-time"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "copyright_year",
+          "source_id": "S20_LOCAL_TXT",
+          "field_or_locator": "line 100 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-11-25T01:42:27Z",
+          "date_precision": "day",
+          "date_kind": "file_download",
+          "source_id": "S20_LOCAL_TXT",
+          "field_or_locator": "line 101 (PDF page 1)"
+        }
+      ],
+      "date_window": {
+        "status": "YES",
+        "rationale": "Crossref publisher-deposited metadata records published/published-print/issued as 2026-07 (July 2026, corroborated by 2026-07-13..2026-07-18 conference dates), strictly before the 2026-11-25 cutoff.",
+        "evidence_source_ids": [
+          "S20_CROSSREF"
+        ]
+      },
+      "version_linkage": {
+        "status": "not_applicable",
+        "published_doi": "10.1109/icws72778.2026.00067",
+        "source_ids": [
+          "S20_LOCAL_TXT",
+          "S20_CROSSREF"
+        ],
+        "content_equivalence": "not_assumed",
+        "limitation": "Local file is an IEEE Xplore publisher_pdf matching Crossref bibliographic metadata; IEEE Xplore HTML webpage returned HTTP 202 (AWS WAF challenge) so online HTML landing page metadata could not be inspected."
+      },
+      "proposed_working_decision": "INCLUDE",
+      "decision_basis": {
+        "source_ids": [
+          "S20_CROSSREF",
+          "S20_LOCAL_TXT"
+        ],
+        "changed_gate": {
+          "date_window": "UNCERTAIN -> YES"
+        },
+        "existing_gates_preserved": {
+          "primary_full_report": "YES",
+          "multi_uav_evaluated": "YES",
+          "collaborative_inference": "YES",
+          "evaluative_evidence": "YES",
+          "english": "YES"
+        },
+        "note": "All six eligibility gates under Protocol Section 4.1 are YES; distinct author team and system from S19 despite sharing 2026 IEEE ICWS venue."
+      },
+      "unresolved": [
+        "IEEE Xplore landing page (https://ieeexplore.ieee.org/document/11670091/) returned HTTP 202 AWS WAF challenge; IEEE Xplore online posting day remains unverified.",
+        "Server-based simulation evaluation parameterized by Fig. 2(b) UAV hardware specs without physical flight or HIL testing.",
+        "Same conference venue (2026 IEEE ICWS) as S19, but distinct author teams, institutions, and systems."
+      ]
+    },
+    {
+      "id": "C03",
+      "title": "A LINK-LAYER MODEL OF A UAV SWARM MESH NETWORK WITH ENCAPSULATION OF INTERMEDIATE DEEP NEURAL NETWORK ACTIVATIONS: ANALYTICAL EVALUATION OF LATENCY AND TRAFFIC VOLUME",
+      "authors": [
+        "Artem Kasianchuk",
+        "Halyna Lastivka"
+      ],
+      "year": 2026,
+      "venue": "Infocommunication technologies and electronic engineering",
+      "doi": "10.23939/ictee2026.02.144",
+      "source_version": "publisher_pdf",
+      "publication_type": "peer-reviewed journal-article (Crossref type journal-article; Lviv Polytechnic National University journal homepage explicitly documents mandatory peer review)",
+      "identity_sources": [
+        "C03_LOCAL_TXT",
+        "C03_CROSSREF",
+        "C03_PUBLISHER",
+        "C03_JOURNAL_HOME"
+      ],
+      "discrepancies": [
+        "Author naming: local PDF p. 1 prints initials only ('A. Kasianchuk', 'H. Lastivka') and p. 11 prints Ukrainian names ('Артем Касьянчук', 'Галина Ластівка'), whereas Crossref and publisher HTML list full transliterated names ('Artem Kasianchuk', 'Halyna Lastivka').",
+        "Venue title: local PDF p. 2 running header reads 'Information and communication technologies, electronic engineering' (Ukrainian on p. 3: 'Інфокомунікаційні технології та електронна інженерія'), whereas Crossref container-title and publisher citation_journal_title read 'Infocommunication technologies and electronic engineering'.",
+        "DOI homoglyph: local PDF p. 1 text layer contains a Cyrillic 'с' inside 'https://doi.org/10.23939/iсtee2026.02.144' versus ASCII '10.23939/ictee2026.02.144' in Crossref and publisher HTML.",
+        "Publication date precision discrepancy across official metadata: publisher HTML meta citation_publication_date is 2026-10-22 (Crossref published/published-online/issued is 2026-10), while publisher visible article header shows 'Published: November 04, 2026' (Crossref published-print is 2026-11). All dates precede 2026-11-25.",
+        "manifest.json title_hint uses shortened title 'Link Layer Model of UAV Swarm Mesh Network with Encapsulation of DNN Activations'."
+      ],
+      "attempts": [
+        {
+          "url": "https://api.crossref.org/works/10.23939/ictee2026.02.144",
+          "accessed_at": "2026-11-26T06:55:34+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "Crossref JSON returned type=journal-article, container-title='Infocommunication technologies and electronic engineering', published/published-online=[2026,10], published-print=[2026,11]."
+        },
+        {
+          "url": "https://doi.org/10.23939/ictee2026.02.144",
+          "accessed_at": "2026-11-26T06:55:34+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "Resolved to https://science.lpnu.ua/ictee/all-volumes-and-issues/volume-6-number-2-2026/link-layer-model-uav-swarm-mesh-network with citation_publication_date='Thu, 10/22/2026 - 14:04' and visible 'Received: September 01, 2026 Published: November 04, 2026'."
+        },
+        {
+          "url": "https://science.lpnu.ua/ictee",
+          "accessed_at": "2026-11-26T06:57:09+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "Journal homepage explicitly states 'peer-reviewed academic journal' with 'mandatory peer review'."
+        }
+      ],
+      "date_evidence": [
+        {
+          "date_value": "2026-10-22",
+          "date_precision": "day",
+          "date_kind": "published_online",
+          "source_id": "C03_PUBLISHER",
+          "field_or_locator": "meta[name=citation_publication_date]"
+        },
+        {
+          "date_value": "2026-10",
+          "date_precision": "month",
+          "date_kind": "published_online",
+          "source_id": "C03_CROSSREF",
+          "field_or_locator": "message.published-online.date-parts"
+        },
+        {
+          "date_value": "2026-10",
+          "date_precision": "month",
+          "date_kind": "issued",
+          "source_id": "C03_CROSSREF",
+          "field_or_locator": "message.issued.date-parts"
+        },
+        {
+          "date_value": "2026-11-04",
+          "date_precision": "day",
+          "date_kind": "published",
+          "source_id": "C03_PUBLISHER",
+          "field_or_locator": "article header 'Published: November 04, 2026'"
+        },
+        {
+          "date_value": "2026-11",
+          "date_precision": "month",
+          "date_kind": "published_print",
+          "source_id": "C03_CROSSREF",
+          "field_or_locator": "message.published-print.date-parts"
+        },
+        {
+          "date_value": "2026-09-01",
+          "date_precision": "day",
+          "date_kind": "received",
+          "source_id": "C03_PUBLISHER",
+          "field_or_locator": "article header 'Received: September 01, 2026'"
+        },
+        {
+          "date_value": "2026-09-01",
+          "date_precision": "day",
+          "date_kind": "received",
+          "source_id": "C03_LOCAL_TXT",
+          "field_or_locator": "line 13 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-11-03T09:05:52Z",
+          "date_precision": "day",
+          "date_kind": "crossref_created",
+          "source_id": "C03_CROSSREF",
+          "field_or_locator": "message.created.date-time"
+        },
+        {
+          "date_value": "2026-11-05T06:51:53Z",
+          "date_precision": "day",
+          "date_kind": "crossref_deposited",
+          "source_id": "C03_CROSSREF",
+          "field_or_locator": "message.deposited.date-time"
+        },
+        {
+          "date_value": "2026-11-05T07:30:48Z",
+          "date_precision": "day",
+          "date_kind": "crossref_indexed",
+          "source_id": "C03_CROSSREF",
+          "field_or_locator": "message.indexed.date-time"
+        }
+      ],
+      "date_window": {
+        "status": "YES",
+        "rationale": "Official publisher article page records citation_publication_date 2026-10-22 (Crossref published-online 2026-10) and visible 'Published: November 04, 2026' (2026-11-04); both precede the 2026-11-25 cutoff.",
+        "evidence_source_ids": [
+          "C03_PUBLISHER",
+          "C03_CROSSREF"
+        ]
+      },
+      "version_linkage": {
+        "status": "not_applicable",
+        "published_doi": "10.23939/ictee2026.02.144",
+        "source_ids": [
+          "C03_LOCAL_TXT",
+          "C03_CROSSREF",
+          "C03_PUBLISHER"
+        ],
+        "content_equivalence": "not_assumed",
+        "limitation": "Supplied file is a publisher_pdf (Vol. 6, No. 2, pp. 144-154) matching Crossref and the Lviv Polytechnic publisher landing page on bibliographic metadata (title, ordered authors, ORCIDs in C03_LOCAL_TXT/C03_CROSSREF, pagination, and DOI); full-text and numerical parity with any portal PDF was not compared, so content_equivalence is not_assumed."
+      },
+      "proposed_working_decision": "INCLUDE",
+      "decision_basis": {
+        "source_ids": [
+          "C03_PUBLISHER",
+          "C03_CROSSREF",
+          "C03_JOURNAL_HOME",
+          "C03_LOCAL_TXT"
+        ],
+        "changed_gate": {
+          "date_window": "UNCERTAIN -> YES"
+        },
+        "existing_gates_preserved": {
+          "primary_full_report": "YES",
+          "multi_uav_evaluated": "YES",
+          "collaborative_inference": "YES",
+          "evaluative_evidence": "YES",
+          "english": "YES"
+        },
+        "note": "All six eligibility gates under Protocol Section 4.1 are YES; analytical/single-hop model assumptions retained as quality-appraisal and synthesis limitations."
+      },
+      "unresolved": [
+        "Analytical and single-hop evaluation limitations (not a multi_uav_evaluated barrier): numerical results cover single-hop link transmission and n = 6 independent binomial aggregator neighbors without NS-3/OMNeT++ simulation, MAC collision, frame aggregation, or empirical DNN accuracy under degraded quorum.",
+        "Minor metadata discrepancy between publisher HTML meta citation_publication_date (2026-10-22 / Crossref published-online 2026-10) and visible publisher date (2026-11-04 / Crossref published-print 2026-11), though both precede 2026-11-25."
+      ]
+    },
+    {
+      "id": "C05",
+      "title": "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems",
+      "authors": [
+        "Hao Hao",
+        "Changqiao Xu",
+        "Wei Zhang",
+        "Shujie Yang",
+        "Xiaolong Wang",
+        "Huiling Shi",
+        "Gabriel-Miro Muntean"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "doi": "10.1109/tcsvt.2026.3745821",
+      "source_version": "author_manuscript",
+      "publication_type": "journal-article (Crossref type; local PDF is unedited IEEE Early Access accepted author manuscript)",
+      "identity_sources": [
+        "C05_LOCAL_TXT",
+        "C05_CROSSREF"
+      ],
+      "discrepancies": [
+        "manifest.json title_hint omits trailing 'Systems'.",
+        "Local PDF is an unedited accepted author manuscript ('content may change prior to final publication') with year-only copyright 2026 and no publication month/day; Crossref also reports year-only [2026]."
+      ],
+      "attempts": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/TCSVT.2026.3745821",
+          "accessed_at": "2026-11-26T06:55:38+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "Crossref JSON returned type=journal-article, published=[[2026]], created=2026-10-23T19:14:19Z."
+        },
+        {
+          "url": "https://doi.org/10.1109/TCSVT.2026.3745821",
+          "accessed_at": "2026-11-26T06:55:39+07:00",
+          "outcome": "HTTP 202 (inaccessible: AWS WAF JavaScript challenge)",
+          "observed_detail": "Resolved to https://ieeexplore.ieee.org/document/11745919/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read."
+        }
+      ],
+      "date_evidence": [
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "published",
+          "source_id": "C05_CROSSREF",
+          "field_or_locator": "message.published.date-parts"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "published_print",
+          "source_id": "C05_CROSSREF",
+          "field_or_locator": "message.published-print.date-parts"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "issued",
+          "source_id": "C05_CROSSREF",
+          "field_or_locator": "message.issued.date-parts"
+        },
+        {
+          "date_value": "2026-10-23T19:14:19Z",
+          "date_precision": "day",
+          "date_kind": "crossref_created",
+          "source_id": "C05_CROSSREF",
+          "field_or_locator": "message.created.date-time"
+        },
+        {
+          "date_value": "2026-10-23T19:14:19Z",
+          "date_precision": "day",
+          "date_kind": "crossref_deposited",
+          "source_id": "C05_CROSSREF",
+          "field_or_locator": "message.deposited.date-time"
+        },
+        {
+          "date_value": "2026-10-23T19:47:37Z",
+          "date_precision": "day",
+          "date_kind": "crossref_indexed",
+          "source_id": "C05_CROSSREF",
+          "field_or_locator": "message.indexed.date-time"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "copyright_year",
+          "source_id": "C05_LOCAL_TXT",
+          "field_or_locator": "line 101 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-10-19T14:08:06+07:00",
+          "date_precision": "day",
+          "date_kind": "pdf_creation",
+          "source_id": "C05_LOCAL_TXT",
+          "field_or_locator": "pdfinfo CreationDate"
+        }
+      ],
+      "date_window": {
+        "status": "UNCERTAIN",
+        "rationale": "Both local PDF and Crossref provide only year-level publication metadata (2026), which straddles the 2026-11-25 cutoff; IEEE Xplore returned HTTP 202 AWS WAF challenge; Crossref created/deposited/indexed (2026-10-23) and PDF CreationDate (2026-10-19) are administrative dates, not publication dates.",
+        "evidence_source_ids": [
+          "C05_CROSSREF",
+          "C05_LOCAL_TXT"
+        ]
+      },
+      "version_linkage": {
+        "status": "confirmed",
+        "published_doi": "10.1109/tcsvt.2026.3745821",
+        "source_ids": [
+          "C05_LOCAL_TXT",
+          "C05_CROSSREF"
+        ],
+        "content_equivalence": "not_assumed",
+        "limitation": "DOI, title, all 7 ordered authors, and journal match Crossref, but local PDF is an unedited accepted author manuscript and IEEE Xplore VoR page was inaccessible (HTTP 202 AWS WAF)."
+      },
+      "proposed_working_decision": "UNCERTAIN",
+      "decision_basis": {
+        "source_ids": [
+          "C05_CROSSREF",
+          "C05_LOCAL_TXT"
+        ],
+        "changed_gate": {
+          "date_window": "UNCERTAIN (unchanged)"
+        },
+        "existing_gates_preserved": {
+          "primary_full_report": "YES",
+          "multi_uav_evaluated": "YES",
+          "collaborative_inference": "YES",
+          "evaluative_evidence": "YES",
+          "english": "YES"
+        },
+        "note": "Date-window remains UNCERTAIN pending verified publisher online/issue publication date within 2021-01-01..2026-11-25."
+      },
+      "unresolved": [
+        "Exact publication date within 2026 remains unresolved: Crossref deposits year-only [2026] and IEEE Xplore (https://ieeexplore.ieee.org/document/11745919/) returned HTTP 202 AWS WAF challenge.",
+        "Supplied file is an unedited accepted author_manuscript; textual and numerical equivalence to final copy-edited Version of Record is not verified.",
+        "Physical DJI/Manifold and EC hardware measurements (Tables II-IV) parameterize offline 20,000-episode simulation without flight trials or fault-injection experiments."
+      ]
+    },
+    {
+      "id": "C09",
+      "title": "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms",
+      "authors": [
+        "HyungBin Park",
+        "SuKyoung Lee"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3755315",
+      "source_version": "author_manuscript",
+      "publication_type": "journal-article (Crossref type; local PDF is unedited IEEE Early Access accepted author manuscript)",
+      "identity_sources": [
+        "C09_LOCAL_TXT",
+        "C09_CROSSREF"
+      ],
+      "discrepancies": [
+        "manifest.json title_hint shortens 'Mixture-of-Experts Inference for UAV Swarms' to 'MoE Inference for UAVs'.",
+        "Local PDF is an unedited accepted author manuscript with year-only copyright 2026 and download stamp 2026-11-25T12:22:29Z; Crossref reports year-only [2026]."
+      ],
+      "attempts": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/JIOT.2026.3755315",
+          "accessed_at": "2026-11-26T06:55:39+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "Crossref JSON returned type=journal-article, published=[[2026]], created=2026-11-18T20:05:10Z."
+        },
+        {
+          "url": "https://doi.org/10.1109/JIOT.2026.3755315",
+          "accessed_at": "2026-11-26T06:55:40+07:00",
+          "outcome": "HTTP 202 (inaccessible: AWS WAF JavaScript challenge)",
+          "observed_detail": "Resolved to https://ieeexplore.ieee.org/document/11804345/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read."
+        }
+      ],
+      "date_evidence": [
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "published",
+          "source_id": "C09_CROSSREF",
+          "field_or_locator": "message.published.date-parts"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "published_print",
+          "source_id": "C09_CROSSREF",
+          "field_or_locator": "message.published-print.date-parts"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "issued",
+          "source_id": "C09_CROSSREF",
+          "field_or_locator": "message.issued.date-parts"
+        },
+        {
+          "date_value": "2026-11-18T20:05:10Z",
+          "date_precision": "day",
+          "date_kind": "crossref_created",
+          "source_id": "C09_CROSSREF",
+          "field_or_locator": "message.created.date-time"
+        },
+        {
+          "date_value": "2026-11-19T20:12:22Z",
+          "date_precision": "day",
+          "date_kind": "crossref_deposited",
+          "source_id": "C09_CROSSREF",
+          "field_or_locator": "message.deposited.date-time"
+        },
+        {
+          "date_value": "2026-11-19T20:23:12Z",
+          "date_precision": "day",
+          "date_kind": "crossref_indexed",
+          "source_id": "C09_CROSSREF",
+          "field_or_locator": "message.indexed.date-time"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "copyright_year",
+          "source_id": "C09_LOCAL_TXT",
+          "field_or_locator": "line 57 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-11-25T12:22:29Z",
+          "date_precision": "day",
+          "date_kind": "file_download",
+          "source_id": "C09_LOCAL_TXT",
+          "field_or_locator": "line 114 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-11-16T14:09:56+07:00",
+          "date_precision": "day",
+          "date_kind": "pdf_creation",
+          "source_id": "C09_LOCAL_TXT",
+          "field_or_locator": "pdfinfo CreationDate"
+        }
+      ],
+      "date_window": {
+        "status": "UNCERTAIN",
+        "rationale": "Both local PDF and Crossref provide only year-level publication metadata (2026), straddling the 2026-11-25 cutoff; IEEE Xplore returned HTTP 202 AWS WAF challenge; download stamp (2026-11-25T12:22:29Z), PDF CreationDate (2026-11-16), and Crossref created/deposited/indexed (2026-11-18..19) are not publication dates.",
+        "evidence_source_ids": [
+          "C09_CROSSREF",
+          "C09_LOCAL_TXT"
+        ]
+      },
+      "version_linkage": {
+        "status": "confirmed",
+        "published_doi": "10.1109/jiot.2026.3755315",
+        "source_ids": [
+          "C09_LOCAL_TXT",
+          "C09_CROSSREF"
+        ],
+        "content_equivalence": "not_assumed",
+        "limitation": "DOI, title, both ordered authors, and journal match Crossref, but local PDF is an unedited accepted author manuscript and IEEE Xplore VoR page was inaccessible (HTTP 202 AWS WAF)."
+      },
+      "proposed_working_decision": "UNCERTAIN",
+      "decision_basis": {
+        "source_ids": [
+          "C09_CROSSREF",
+          "C09_LOCAL_TXT"
+        ],
+        "changed_gate": {
+          "date_window": "UNCERTAIN (unchanged)"
+        },
+        "existing_gates_preserved": {
+          "primary_full_report": "YES",
+          "multi_uav_evaluated": "YES",
+          "collaborative_inference": "YES",
+          "evaluative_evidence": "YES",
+          "english": "YES"
+        },
+        "note": "Date-window remains UNCERTAIN pending verified publisher online/issue publication date within 2021-01-01..2026-11-25."
+      },
+      "unresolved": [
+        "Exact publication date within 2026 remains unresolved: Crossref deposits year-only [2026] and IEEE Xplore (https://ieeexplore.ieee.org/document/11804345/) returned HTTP 202 AWS WAF challenge.",
+        "Supplied file is an unedited accepted author_manuscript; textual and numerical equivalence to final copy-edited Version of Record is not verified.",
+        "Evaluation relies on discrete grid/FANET simulation and CIFAR-100 representative expert instantiation rather than physical multi-UAV flight hardware."
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference",
+      "authors": [
+        "Songwei Li",
+        "Zhihan Wang",
+        "Jiebei Shi",
+        "Jiwei Huang"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3740035",
+      "source_version": "author_manuscript",
+      "publication_type": "journal-article (Crossref type; local PDF is unedited IEEE Early Access accepted author manuscript)",
+      "identity_sources": [
+        "C10_LOCAL_TXT",
+        "C10_CROSSREF"
+      ],
+      "discrepancies": [
+        "manifest.json title_hint omits leading article 'A ' present in local PDF p. 1 and Crossref title.",
+        "Local PDF is an unedited accepted author manuscript with year-only copyright 2026 and download stamp 2026-11-25T12:22:56Z; Crossref reports year-only [2026]."
+      ],
+      "attempts": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/JIOT.2026.3740035",
+          "accessed_at": "2026-11-26T06:55:40+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "Crossref JSON returned type=journal-article, published=[[2026]], created=2026-10-06T19:10:19Z."
+        },
+        {
+          "url": "https://doi.org/10.1109/JIOT.2026.3740035",
+          "accessed_at": "2026-11-26T06:55:41+07:00",
+          "outcome": "HTTP 202 (inaccessible: AWS WAF JavaScript challenge)",
+          "observed_detail": "Resolved to https://ieeexplore.ieee.org/document/11719586/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read."
+        }
+      ],
+      "date_evidence": [
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "published",
+          "source_id": "C10_CROSSREF",
+          "field_or_locator": "message.published.date-parts"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "published_print",
+          "source_id": "C10_CROSSREF",
+          "field_or_locator": "message.published-print.date-parts"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "issued",
+          "source_id": "C10_CROSSREF",
+          "field_or_locator": "message.issued.date-parts"
+        },
+        {
+          "date_value": "2026-10-06T19:10:19Z",
+          "date_precision": "day",
+          "date_kind": "crossref_created",
+          "source_id": "C10_CROSSREF",
+          "field_or_locator": "message.created.date-time"
+        },
+        {
+          "date_value": "2026-10-06T19:10:19Z",
+          "date_precision": "day",
+          "date_kind": "crossref_deposited",
+          "source_id": "C10_CROSSREF",
+          "field_or_locator": "message.deposited.date-time"
+        },
+        {
+          "date_value": "2026-10-23T20:15:42Z",
+          "date_precision": "day",
+          "date_kind": "crossref_indexed",
+          "source_id": "C10_CROSSREF",
+          "field_or_locator": "message.indexed.date-time"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "copyright_year",
+          "source_id": "C10_LOCAL_TXT",
+          "field_or_locator": "line 111 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-11-25T12:22:56Z",
+          "date_precision": "day",
+          "date_kind": "file_download",
+          "source_id": "C10_LOCAL_TXT",
+          "field_or_locator": "line 113 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-09-28T21:15:17+07:00",
+          "date_precision": "day",
+          "date_kind": "pdf_creation",
+          "source_id": "C10_LOCAL_TXT",
+          "field_or_locator": "pdfinfo CreationDate"
+        }
+      ],
+      "date_window": {
+        "status": "UNCERTAIN",
+        "rationale": "Both local PDF and Crossref provide only year-level publication metadata (2026), straddling the 2026-11-25 cutoff; IEEE Xplore returned HTTP 202 AWS WAF challenge; download stamp (2026-11-25T12:22:56Z), PDF CreationDate (2026-09-28), and Crossref created/deposited/indexed (2026-10-06/23) are not publication dates.",
+        "evidence_source_ids": [
+          "C10_CROSSREF",
+          "C10_LOCAL_TXT"
+        ]
+      },
+      "version_linkage": {
+        "status": "confirmed",
+        "published_doi": "10.1109/jiot.2026.3740035",
+        "source_ids": [
+          "C10_LOCAL_TXT",
+          "C10_CROSSREF"
+        ],
+        "content_equivalence": "not_assumed",
+        "limitation": "DOI, title, all 4 ordered authors, and journal match Crossref, but local PDF is an unedited accepted author manuscript and IEEE Xplore VoR page was inaccessible (HTTP 202 AWS WAF)."
+      },
+      "proposed_working_decision": "UNCERTAIN",
+      "decision_basis": {
+        "source_ids": [
+          "C10_CROSSREF",
+          "C10_LOCAL_TXT"
+        ],
+        "changed_gate": {
+          "date_window": "UNCERTAIN (unchanged)"
+        },
+        "existing_gates_preserved": {
+          "primary_full_report": "YES",
+          "multi_uav_evaluated": "YES",
+          "collaborative_inference": "YES",
+          "evaluative_evidence": "YES",
+          "english": "YES"
+        },
+        "note": "Date-window remains UNCERTAIN pending verified publisher online/issue publication date within 2021-01-01..2026-11-25."
+      },
+      "unresolved": [
+        "Exact publication date within 2026 remains unresolved: Crossref deposits year-only [2026] and IEEE Xplore (https://ieeexplore.ieee.org/document/11719586/) returned HTTP 202 AWS WAF challenge.",
+        "Supplied file is an unedited accepted author_manuscript; textual and numerical equivalence to final copy-edited Version of Record is not verified."
+      ]
+    },
+    {
+      "id": "C13",
+      "title": "RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV Swarm",
+      "authors": [
+        "Shengjie Zhong",
+        "Zhongliang Zhao",
+        "Jingxuan Chen",
+        "Xianbin Cao",
+        "Zhiyi Liu",
+        "Dapeng O. Wu",
+        "Tony Q. S. Quek"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Vehicular Technology",
+      "doi": "10.1109/tvt.2026.3755123",
+      "source_version": "author_manuscript",
+      "publication_type": "journal-article (Crossref type; local PDF is unedited IEEE Early Access accepted author manuscript)",
+      "identity_sources": [
+        "C13_LOCAL_TXT",
+        "C13_CROSSREF"
+      ],
+      "discrepancies": [
+        "Title singular/plural discrepancy: local PDF p. 1 title ends in 'UAV Swarm' (singular), whereas Crossref title and local PDF embedded metadata Title end in 'UAV Swarms' (plural); manifest.json title_hint uses 'RDI-LLM: Resilient Distributed Inference Framework for LLMs in UAV Swarms'.",
+        "Local PDF header shows 'VOL. XX, NO. XX, MONTH 2026', 'Manuscript received February 11, 2026', and download stamp 2026-11-25T12:24:07Z without a publication date; Crossref reports year-only [2026]."
+      ],
+      "attempts": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/TVT.2026.3755123",
+          "accessed_at": "2026-11-26T06:55:41+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "Crossref JSON returned type=journal-article, published=[[2026]], created=2026-11-18T20:08:05Z."
+        },
+        {
+          "url": "https://doi.org/10.1109/TVT.2026.3755123",
+          "accessed_at": "2026-11-26T06:55:42+07:00",
+          "outcome": "HTTP 202 (inaccessible: AWS WAF JavaScript challenge)",
+          "observed_detail": "Resolved to https://ieeexplore.ieee.org/document/11804735/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read."
+        }
+      ],
+      "date_evidence": [
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "published",
+          "source_id": "C13_CROSSREF",
+          "field_or_locator": "message.published.date-parts"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "published_print",
+          "source_id": "C13_CROSSREF",
+          "field_or_locator": "message.published-print.date-parts"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "issued",
+          "source_id": "C13_CROSSREF",
+          "field_or_locator": "message.issued.date-parts"
+        },
+        {
+          "date_value": "2026-11-18T20:08:05Z",
+          "date_precision": "day",
+          "date_kind": "crossref_created",
+          "source_id": "C13_CROSSREF",
+          "field_or_locator": "message.created.date-time"
+        },
+        {
+          "date_value": "2026-11-18T20:16:53Z",
+          "date_precision": "day",
+          "date_kind": "crossref_deposited",
+          "source_id": "C13_CROSSREF",
+          "field_or_locator": "message.deposited.date-time"
+        },
+        {
+          "date_value": "2026-11-18T21:15:51Z",
+          "date_precision": "day",
+          "date_kind": "crossref_indexed",
+          "source_id": "C13_CROSSREF",
+          "field_or_locator": "message.indexed.date-time"
+        },
+        {
+          "date_value": "2026-02-11",
+          "date_precision": "day",
+          "date_kind": "received",
+          "source_id": "C13_LOCAL_TXT",
+          "field_or_locator": "line 35 (PDF page 1)"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "copyright_year",
+          "source_id": "C13_LOCAL_TXT",
+          "field_or_locator": "line 110 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-11-25T12:24:07Z",
+          "date_precision": "day",
+          "date_kind": "file_download",
+          "source_id": "C13_LOCAL_TXT",
+          "field_or_locator": "line 112 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-10-16T14:27:20+07:00",
+          "date_precision": "day",
+          "date_kind": "pdf_creation",
+          "source_id": "C13_LOCAL_TXT",
+          "field_or_locator": "pdfinfo CreationDate"
+        }
+      ],
+      "date_window": {
+        "status": "UNCERTAIN",
+        "rationale": "Both local PDF and Crossref provide only year-level publication metadata (2026), straddling the 2026-11-25 cutoff; IEEE Xplore returned HTTP 202 AWS WAF challenge; received date (2026-02-11), download stamp (2026-11-25T12:24:07Z), PDF CreationDate (2026-10-16), and Crossref created/deposited/indexed (2026-11-18) do not establish a publication date.",
+        "evidence_source_ids": [
+          "C13_CROSSREF",
+          "C13_LOCAL_TXT"
+        ]
+      },
+      "version_linkage": {
+        "status": "confirmed",
+        "published_doi": "10.1109/tvt.2026.3755123",
+        "source_ids": [
+          "C13_LOCAL_TXT",
+          "C13_CROSSREF"
+        ],
+        "content_equivalence": "not_assumed",
+        "limitation": "DOI, all 7 ordered authors, journal, and PDF metadata title match Crossref (local p. 1 uses singular 'Swarm' vs Crossref 'Swarms'), but local PDF is an unedited accepted author manuscript and IEEE Xplore VoR page was inaccessible (HTTP 202 AWS WAF)."
+      },
+      "proposed_working_decision": "UNCERTAIN",
+      "decision_basis": {
+        "source_ids": [
+          "C13_CROSSREF",
+          "C13_LOCAL_TXT"
+        ],
+        "changed_gate": {
+          "date_window": "UNCERTAIN (unchanged)"
+        },
+        "existing_gates_preserved": {
+          "primary_full_report": "YES",
+          "multi_uav_evaluated": "YES",
+          "collaborative_inference": "YES",
+          "evaluative_evidence": "YES",
+          "english": "YES"
+        },
+        "note": "Date-window remains UNCERTAIN pending verified publisher online/issue publication date within 2021-01-01..2026-11-25."
+      },
+      "unresolved": [
+        "Exact publication date within 2026 remains unresolved: Crossref deposits year-only [2026] and IEEE Xplore (https://ieeexplore.ieee.org/document/11804735/) returned HTTP 202 AWS WAF challenge.",
+        "Title singular/plural discrepancy between local PDF p. 1 ('UAV Swarm') and Crossref/PDF metadata ('UAV Swarms').",
+        "Supplied file is an unedited accepted author_manuscript; textual and numerical equivalence to final copy-edited Version of Record is not verified.",
+        "Evaluated in discrete-event simulation only; real-hardware solver and failure-recovery latencies remain unmeasured."
+      ]
+    },
+    {
+      "id": "C14",
+      "title": "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks",
+      "authors": [
+        "Lianming Xu",
+        "Yixue Liang",
+        "Lei Jin",
+        "Li Wang",
+        "Ying-Jun Angela Zhang",
+        "Xiaoyu Zhao",
+        "Aiguo Fei"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3746980",
+      "source_version": "author_manuscript",
+      "publication_type": "journal-article (Crossref type; local PDF is unedited IEEE Early Access accepted author manuscript)",
+      "identity_sources": [
+        "C14_LOCAL_TXT",
+        "C14_CROSSREF"
+      ],
+      "discrepancies": [
+        "manifest.json title_hint omits trailing 'Edge Networks'.",
+        "screening_46/text/C14.txt contains one NUL byte (0x00), causing binary-file rejection in plain-text readers unless NUL-stripped; C14.pdf and NUL-stripped C14.txt are readable.",
+        "Local PDF contains year-only copyright 2026 and download stamp 2026-11-25T12:24:25Z without received/accepted/publication dates; Crossref reports year-only [2026]."
+      ],
+      "attempts": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/JIOT.2026.3746980",
+          "accessed_at": "2026-11-26T06:55:42+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "Crossref JSON returned type=journal-article, published=[[2026]], created=2026-10-26T19:34:17Z."
+        },
+        {
+          "url": "https://doi.org/10.1109/JIOT.2026.3746980",
+          "accessed_at": "2026-11-26T06:55:43+07:00",
+          "outcome": "HTTP 202 (inaccessible: AWS WAF JavaScript challenge)",
+          "observed_detail": "Resolved to https://ieeexplore.ieee.org/document/11753908/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read."
+        }
+      ],
+      "date_evidence": [
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "published",
+          "source_id": "C14_CROSSREF",
+          "field_or_locator": "message.published.date-parts"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "published_print",
+          "source_id": "C14_CROSSREF",
+          "field_or_locator": "message.published-print.date-parts"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "issued",
+          "source_id": "C14_CROSSREF",
+          "field_or_locator": "message.issued.date-parts"
+        },
+        {
+          "date_value": "2026-10-26T19:34:17Z",
+          "date_precision": "day",
+          "date_kind": "crossref_created",
+          "source_id": "C14_CROSSREF",
+          "field_or_locator": "message.created.date-time"
+        },
+        {
+          "date_value": "2026-10-27T19:14:18Z",
+          "date_precision": "day",
+          "date_kind": "crossref_deposited",
+          "source_id": "C14_CROSSREF",
+          "field_or_locator": "message.deposited.date-time"
+        },
+        {
+          "date_value": "2026-10-27T19:37:35Z",
+          "date_precision": "day",
+          "date_kind": "crossref_indexed",
+          "source_id": "C14_CROSSREF",
+          "field_or_locator": "message.indexed.date-time"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "copyright_year",
+          "source_id": "C14_LOCAL_TXT",
+          "field_or_locator": "line 108 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-11-25T12:24:25Z",
+          "date_precision": "day",
+          "date_kind": "file_download",
+          "source_id": "C14_LOCAL_TXT",
+          "field_or_locator": "line 110 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-09-16T16:33:10+07:00",
+          "date_precision": "day",
+          "date_kind": "pdf_creation",
+          "source_id": "C14_LOCAL_TXT",
+          "field_or_locator": "pdfinfo CreationDate"
+        }
+      ],
+      "date_window": {
+        "status": "UNCERTAIN",
+        "rationale": "Both local PDF and Crossref provide only year-level publication metadata (2026), straddling the 2026-11-25 cutoff; IEEE Xplore returned HTTP 202 AWS WAF challenge; download stamp (2026-11-25T12:24:25Z), PDF CreationDate (2026-09-16), and Crossref created/deposited/indexed (2026-10-26/27) are not publication dates.",
+        "evidence_source_ids": [
+          "C14_CROSSREF",
+          "C14_LOCAL_TXT"
+        ]
+      },
+      "version_linkage": {
+        "status": "confirmed",
+        "published_doi": "10.1109/jiot.2026.3746980",
+        "source_ids": [
+          "C14_LOCAL_TXT",
+          "C14_CROSSREF"
+        ],
+        "content_equivalence": "not_assumed",
+        "limitation": "DOI, title, all 7 ordered authors, and journal match Crossref, but local PDF is an unedited accepted author manuscript and IEEE Xplore VoR page was inaccessible (HTTP 202 AWS WAF)."
+      },
+      "proposed_working_decision": "UNCERTAIN",
+      "decision_basis": {
+        "source_ids": [
+          "C14_CROSSREF",
+          "C14_LOCAL_TXT"
+        ],
+        "changed_gate": {
+          "date_window": "UNCERTAIN (unchanged)"
+        },
+        "existing_gates_preserved": {
+          "primary_full_report": "YES",
+          "multi_uav_evaluated": "YES",
+          "collaborative_inference": "YES",
+          "evaluative_evidence": "YES",
+          "english": "YES"
+        },
+        "note": "Date-window remains UNCERTAIN pending verified publisher online/issue publication date within 2021-01-01..2026-11-25."
+      },
+      "unresolved": [
+        "Exact publication date within 2026 remains unresolved: Crossref deposits year-only [2026] and IEEE Xplore (https://ieeexplore.ieee.org/document/11753908/) returned HTTP 202 AWS WAF challenge.",
+        "Supplied file is an unedited accepted author_manuscript; textual and numerical equivalence to final copy-edited Version of Record is not verified.",
+        "Evaluation combines single-board Jetson TX2 compute profiling with simulated Rician-fading links rather than multi-UAV flight testing, and reported latency excludes input delivery, fusion, and routing-control overheads."
+      ]
+    },
+    {
+      "id": "C19",
+      "title": "PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference in UAV-Assisted Internet of Vehicles Environments",
+      "authors": [
+        "DeokKyu Kwon",
+        "Ashok Kumar Das",
+        "Youngho Park"
+      ],
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3755176",
+      "source_version": "author_manuscript",
+      "publication_type": "journal-article (Crossref type; local PDF is unedited IEEE Early Access accepted author manuscript)",
+      "identity_sources": [
+        "C19_LOCAL_TXT",
+        "C19_CROSSREF"
+      ],
+      "discrepancies": [
+        "Author capitalization discrepancy: PDF p. 1 byline and Crossref use 'Youngho Park', whereas p. 15 author biography uses 'YoungHo Park'.",
+        "manifest.json title_hint abbreviates 'Cooperative Inference in UAV-Assisted Internet of Vehicles Environments' to 'Inference in UAV-IoV'.",
+        "Local PDF contains year-only copyright 2026 and download stamp 2026-11-25T12:26:42Z without a formal publication date; Crossref reports year-only [2026]."
+      ],
+      "attempts": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/JIOT.2026.3755176",
+          "accessed_at": "2026-11-26T06:55:43+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "Crossref JSON returned type=journal-article, published=[[2026]], created=2026-11-17T20:17:25Z."
+        },
+        {
+          "url": "https://doi.org/10.1109/JIOT.2026.3755176",
+          "accessed_at": "2026-11-26T06:55:44+07:00",
+          "outcome": "HTTP 202 (inaccessible: AWS WAF JavaScript challenge)",
+          "observed_detail": "Resolved to https://ieeexplore.ieee.org/document/11803260/ with AwsWafIntegration bot verification page; IEEE Xplore article metadata and online publication day could not be read."
+        }
+      ],
+      "date_evidence": [
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "published",
+          "source_id": "C19_CROSSREF",
+          "field_or_locator": "message.published.date-parts"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "published_print",
+          "source_id": "C19_CROSSREF",
+          "field_or_locator": "message.published-print.date-parts"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "issued",
+          "source_id": "C19_CROSSREF",
+          "field_or_locator": "message.issued.date-parts"
+        },
+        {
+          "date_value": "2026-11-17T20:17:25Z",
+          "date_precision": "day",
+          "date_kind": "crossref_created",
+          "source_id": "C19_CROSSREF",
+          "field_or_locator": "message.created.date-time"
+        },
+        {
+          "date_value": "2026-11-19T20:11:42Z",
+          "date_precision": "day",
+          "date_kind": "crossref_deposited",
+          "source_id": "C19_CROSSREF",
+          "field_or_locator": "message.deposited.date-time"
+        },
+        {
+          "date_value": "2026-11-19T20:23:06Z",
+          "date_precision": "day",
+          "date_kind": "crossref_indexed",
+          "source_id": "C19_CROSSREF",
+          "field_or_locator": "message.indexed.date-time"
+        },
+        {
+          "date_value": "2026",
+          "date_precision": "year",
+          "date_kind": "copyright_year",
+          "source_id": "C19_LOCAL_TXT",
+          "field_or_locator": "line 104 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-11-25T12:26:42Z",
+          "date_precision": "day",
+          "date_kind": "file_download",
+          "source_id": "C19_LOCAL_TXT",
+          "field_or_locator": "line 106 (PDF page 1)"
+        },
+        {
+          "date_value": "2026-10-26T12:47:07+07:00",
+          "date_precision": "day",
+          "date_kind": "pdf_creation",
+          "source_id": "C19_LOCAL_TXT",
+          "field_or_locator": "pdfinfo CreationDate"
+        }
+      ],
+      "date_window": {
+        "status": "UNCERTAIN",
+        "rationale": "Both local PDF and Crossref provide only year-level publication metadata (2026), straddling the 2026-11-25 cutoff; IEEE Xplore returned HTTP 202 AWS WAF challenge; download stamp (2026-11-25T12:26:42Z), PDF CreationDate (2026-10-26), and Crossref created/deposited/indexed (2026-11-17/19) are not publication dates.",
+        "evidence_source_ids": [
+          "C19_CROSSREF",
+          "C19_LOCAL_TXT"
+        ]
+      },
+      "version_linkage": {
+        "status": "confirmed",
+        "published_doi": "10.1109/jiot.2026.3755176",
+        "source_ids": [
+          "C19_LOCAL_TXT",
+          "C19_CROSSREF"
+        ],
+        "content_equivalence": "not_assumed",
+        "limitation": "DOI, title, all 3 ordered authors, and journal match Crossref, but local PDF is an unedited accepted author manuscript and IEEE Xplore VoR page was inaccessible (HTTP 202 AWS WAF)."
+      },
+      "proposed_working_decision": "UNCERTAIN",
+      "decision_basis": {
+        "source_ids": [
+          "C19_CROSSREF",
+          "C19_LOCAL_TXT"
+        ],
+        "changed_gate": {
+          "date_window": "UNCERTAIN (unchanged)"
+        },
+        "existing_gates_preserved": {
+          "primary_full_report": "YES",
+          "multi_uav_evaluated": "YES",
+          "collaborative_inference": "YES",
+          "evaluative_evidence": "YES",
+          "english": "YES"
+        },
+        "note": "Date-window remains UNCERTAIN pending verified publisher online/issue publication date within 2021-01-01..2026-11-25."
+      },
+      "unresolved": [
+        "Exact publication date within 2026 remains unresolved: Crossref deposits year-only [2026] and IEEE Xplore (https://ieeexplore.ieee.org/document/11803260/) returned HTTP 202 AWS WAF challenge.",
+        "Supplied file is an unedited accepted author_manuscript; textual and numerical equivalence to final copy-edited Version of Record is not verified.",
+        "NS-3 and PX4-Autopilot evaluate authentication only; split-DNN inference is evaluated separately on a two-Raspberry-Pi-4 bench testbed with no real UAV flight experiments."
+      ]
+    },
+    {
+      "id": "C08",
+      "title": "Adaptive Heuristics for Scheduling DNN Inferencing on Edge and Cloud for Personalized UAV Fleets",
+      "authors": [
+        "Suman Raj",
+        "Radhika Mittal",
+        "Harshil Gupta",
+        "Yogesh Simmhan"
+      ],
+      "year": 2025,
+      "venue": "Future Generation Computer Systems (supplied preprint: arXiv:2412.20860v2)",
+      "doi": "10.1016/j.future.2025.107874",
+      "source_version": "preprint",
+      "publication_type": "preprint (arXiv:2412.20860v2; non-peer-reviewed author manuscript) linked by bibliographic identity to peer-reviewed journal-article (Crossref type, Elsevier Future Generation Computer Systems, Vol. 173, Art. 107874)",
+      "identity_sources": [
+        "C08_LOCAL_TXT",
+        "C08_ARXIV_ABS",
+        "C08_ARXIV_API",
+        "C08_CROSSREF",
+        "C08_LINKINGHUB"
+      ],
+      "discrepancies": [
+        "Title casing and hint discrepancy: C08.pdf and arXiv use title case ('Adaptive Heuristics for Scheduling DNN Inferencing on Edge and Cloud for Personalized UAV Fleets'), Crossref and Elsevier LinkingHub use sentence case ('Adaptive heuristics for scheduling DNN inferencing on edge and cloud for personalized UAV fleets'), and manifest.json title_hint ends in 'for UAVs'.",
+        "Venue/DOI discrepancy between supplied file and published record: C08.pdf is arXiv:2412.20860v2 (24 Apr 2025) with no printed journal DOI (arXiv assigns DataCite DOI 10.48550/arXiv.2412.20860 and states 'Accepted at Elsevier Future Generation Computer Systems (FGCS)' in comments only, without Journal-ref or publisher DOI), whereas Crossref 10.1016/j.future.2025.107874 records Future Generation Computer Systems Vol. 173, Art. 107874 (Dec 2025) with empty relation {}."
+      ],
+      "attempts": [
+        {
+          "url": "https://api.crossref.org/works/10.1016/j.future.2025.107874",
+          "accessed_at": "2026-11-26T06:55:44+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "Crossref JSON returned type=journal-article, container-title='Future Generation Computer Systems', volume=173, article-number=107874, published/published-print/issued=[2025,12], 4 matching authors, relation={}."
+        },
+        {
+          "url": "https://doi.org/10.1016/j.future.2025.107874",
+          "accessed_at": "2026-11-26T06:55:45+07:00",
+          "outcome": "HTTP 200 OK (redirect interstitial only)",
+          "observed_detail": "Resolved to https://linkinghub.elsevier.com/retrieve/pii/S0167739X25001694 confirming PII S0167739X25001694 and articleName; redirects to ScienceDirect."
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0167739X25001694?via%3Dihub",
+          "accessed_at": "2026-11-26T06:56:46+07:00",
+          "outcome": "HTTP 403 Forbidden (inaccessible)",
+          "observed_detail": "ScienceDirect target returned HTTP 403; Version of Record full text, exact online publication day, and numerical equivalence could not be inspected."
+        },
+        {
+          "url": "https://arxiv.org/abs/2412.20860",
+          "accessed_at": "2026-11-26T06:55:46+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "arXiv abstract page shows v1 (2024-12-30), v2 (2025-04-24), comment '50 pages, Accepted at Elsevier Future Generation Computer Systems (FGCS)', and no Journal-ref or publisher DOI."
+        },
+        {
+          "url": "https://export.arxiv.org/api/query?id_list=2412.20860",
+          "accessed_at": "2026-11-26T06:55:47+07:00",
+          "outcome": "HTTP 200 OK",
+          "observed_detail": "arXiv Atom API confirms v1 published 2024-12-30T10:58:48Z, v2 updated 2025-04-24T23:50:38Z, 4 authors, and FGCS acceptance comment without arxiv:doi or journal_ref."
+        }
+      ],
+      "date_evidence": [
+        {
+          "date_value": "2024-12-30",
+          "date_precision": "day",
+          "date_kind": "preprint_v1_submitted",
+          "source_id": "C08_ARXIV_ABS",
+          "field_or_locator": "submission history and meta[name=citation_date]"
+        },
+        {
+          "date_value": "2025-04-24",
+          "date_precision": "day",
+          "date_kind": "preprint_v2_revised",
+          "source_id": "C08_LOCAL_TXT",
+          "field_or_locator": "line 42 (PDF page 1)"
+        },
+        {
+          "date_value": "2025-04-24",
+          "date_precision": "day",
+          "date_kind": "preprint_v2_revised",
+          "source_id": "C08_ARXIV_ABS",
+          "field_or_locator": "submission history and meta[name=citation_online_date]"
+        },
+        {
+          "date_value": "2025-12",
+          "date_precision": "month",
+          "date_kind": "published",
+          "source_id": "C08_CROSSREF",
+          "field_or_locator": "message.published.date-parts"
+        },
+        {
+          "date_value": "2025-12",
+          "date_precision": "month",
+          "date_kind": "published_print",
+          "source_id": "C08_CROSSREF",
+          "field_or_locator": "message.published-print.date-parts"
+        },
+        {
+          "date_value": "2025-12",
+          "date_precision": "month",
+          "date_kind": "issued",
+          "source_id": "C08_CROSSREF",
+          "field_or_locator": "message.issued.date-parts"
+        },
+        {
+          "date_value": "2025-05-14T19:31:22Z",
+          "date_precision": "day",
+          "date_kind": "crossref_created",
+          "source_id": "C08_CROSSREF",
+          "field_or_locator": "message.created.date-time"
+        },
+        {
+          "date_value": "2026-04-16T22:12:21Z",
+          "date_precision": "day",
+          "date_kind": "crossref_deposited",
+          "source_id": "C08_CROSSREF",
+          "field_or_locator": "message.deposited.date-time"
+        },
+        {
+          "date_value": "2026-10-01T17:57:37Z",
+          "date_precision": "day",
+          "date_kind": "crossref_indexed",
+          "source_id": "C08_CROSSREF",
+          "field_or_locator": "message.indexed.date-time"
+        },
+        {
+          "date_value": "2025-04-28T07:13:20+07:00",
+          "date_precision": "day",
+          "date_kind": "pdf_creation",
+          "source_id": "C08_LOCAL_TXT",
+          "field_or_locator": "pdfinfo CreationDate"
+        }
+      ],
+      "date_window": {
+        "status": "YES",
+        "rationale": "Both the supplied preprint release dates (v1 2024-12-30, v2 2025-04-24) and the linked Crossref journal publication date (2025-12, Future Generation Computer Systems Vol. 173) fall inside 2021-01-01 through 2026-11-25.",
+        "evidence_source_ids": [
+          "C08_LOCAL_TXT",
+          "C08_ARXIV_ABS",
+          "C08_CROSSREF"
+        ]
+      },
+      "version_linkage": {
+        "status": "confirmed",
+        "published_doi": "10.1016/j.future.2025.107874",
+        "source_ids": [
+          "C08_LOCAL_TXT",
+          "C08_ARXIV_ABS",
+          "C08_ARXIV_API",
+          "C08_CROSSREF",
+          "C08_LINKINGHUB"
+        ],
+        "content_equivalence": "not_assumed",
+        "limitation": "Bibliographic identity linkage is confirmed by exact case-insensitive title match, exact 4-author ordered match (Raj, Mittal, Gupta, Simmhan), arXiv v2 comment ('Accepted at Elsevier Future Generation Computer Systems (FGCS)'), and matching Crossref FGCS Vol. 173 (Dec 2025) / LinkingHub PII S0167739X25001694 records. However, arXiv lacks an explicit Journal-ref or publisher DOI field, Crossref relation is {}, and ScienceDirect returned HTTP 403, so full-text and numerical equivalence between C08.pdf (arXiv v2) and the FGCS Version of Record is not assumed."
+      },
+      "proposed_working_decision": "INCLUDE",
+      "decision_basis": {
+        "source_ids": [
+          "C08_CROSSREF",
+          "C08_LINKINGHUB",
+          "C08_ARXIV_ABS",
+          "C08_ARXIV_API",
+          "C08_LOCAL_TXT"
+        ],
+        "changed_gate": {
+          "primary_full_report": "UNCERTAIN -> YES (resolved via verified published FGCS bibliographic identity 10.1016/j.future.2025.107874, mirroring S16 precedent, not an assumed unique-recent-preprint exception)"
+        },
+        "existing_gates_preserved": {
+          "multi_uav_evaluated": "YES",
+          "collaborative_inference": "YES",
+          "evaluative_evidence": "YES",
+          "date_window": "YES",
+          "english": "YES"
+        },
+        "note": "Under Protocol Section 4.1(7), unique_recent_evidence for the preprint alone is not_established; inclusion rests on verified bibliographic linkage to peer-reviewed FGCS article 10.1016/j.future.2025.107874 while keeping technical extraction anchored to C08.pdf (arXiv v2) until ScienceDirect VoR is verified."
+      },
+      "unresolved": [
+        "Version of Record full text and exact online publication day on ScienceDirect (https://www.sciencedirect.com/science/article/pii/S0167739X25001694?via%3Dihub) returned HTTP 403; textual and numerical equivalence between C08.pdf (arXiv:2412.20860v2) and 10.1016/j.future.2025.107874 remains unverified.",
+        "Missing explicit bidirectional metadata link: arXiv:2412.20860 omits Journal-ref and publisher DOI fields (naming FGCS only in comments) and Crossref relation is empty {}.",
+        "Unique-recent-preprint exception under Protocol 4.1(7) is not_established: a published journal version exists in Crossref and formal core-database searches/VoR verification are incomplete.",
+        "Study-family linkage: extends prior IEEE/ACM CCGrid 2023 conference paper [22] on DEMS and CHI 2023 Extended Abstracts [2] on Ocularone, and cites companion preprints [55] (arXiv:2504.03709) and [56] (arXiv:2504.01988).",
+        "Evaluation realism boundary: multi-drone runs up to 84 drones use VIoLET container emulation with Jetson Nano benchmarks, AWS Lambda, and SUMO/NS3 traces; Sec. 8.7 uses sleep timers; Sec. 8.8 field test uses one DJI Tello drone."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S19_LOCAL_TXT",
+      "url_or_file": "screening_46/text/S19.txt",
+      "source_class": "supplied_full_text",
+      "accessed_at": "2026-11-26T06:54:36+07:00",
+      "locator": "lines 2-8, 94-99 (PDF page 1); pdfinfo",
+      "excerpt": "2026 IEEE International Conference on Web Services (ICWS) | 979-8-3195-3769-0/26/$31.00 ©2026 IEEE | DOI: 10.1109/ICWS72778.2026.00154",
+      "metadata_fields": {
+        "title": "Adaptive Partition and Resource Allocation for Collaborative Inference Services in UAV Swarm",
+        "authors": [
+          "Ying Dong",
+          "Jiebei Shi",
+          "Songwei Li",
+          "Yuzhou Gao",
+          "Yeping Zhu",
+          "Jianbing Zhang",
+          "Jiwei Huang"
+        ],
+        "venue": "2026 IEEE International Conference on Web Services (ICWS)",
+        "pages": "1222-1224",
+        "copyright_year": 2026,
+        "download_timestamp_utc": "2026-11-24T17:56:25Z",
+        "pdfinfo_creation_date": "2026-07-15T22:56:59+07:00",
+        "pdfinfo_mod_date": "2026-09-01T21:28:18+07:00"
+      }
+    },
+    {
+      "source_id": "S19_CROSSREF",
+      "url_or_file": "https://api.crossref.org/works/10.1109/ICWS72778.2026.00154",
+      "source_class": "crossref",
+      "accessed_at": "2026-11-26T06:55:31+07:00",
+      "locator": "message",
+      "excerpt": "Crossref works metadata for 10.1109/icws72778.2026.00154.",
+      "metadata_fields": {
+        "DOI": "10.1109/icws72778.2026.00154",
+        "type": "proceedings-article",
+        "title": [
+          "Adaptive Partition and Resource Allocation for Collaborative Inference Services in UAV Swarm"
+        ],
+        "container-title": [
+          "2026 IEEE International Conference on Web Services (ICWS)"
+        ],
+        "short-container-title": [],
+        "publisher": "IEEE",
+        "page": "1222-1224",
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              7
+            ]
+          ],
+          "date-time": "2026-09-07T19:10:15Z"
+        },
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              8
+            ]
+          ],
+          "date-time": "2026-09-08T04:52:23Z"
+        },
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              8
+            ]
+          ],
+          "date-time": "2026-09-08T05:11:48Z"
+        },
+        "event": {
+          "name": "2026 IEEE International Conference on Web Services (ICWS)",
+          "location": "Sydney, Australia",
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                13
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                18
+              ]
+            ]
+          }
+        },
+        "URL": "https://doi.org/10.1109/icws72778.2026.00154",
+        "relation": {},
+        "author": [
+          {
+            "given": "Ying",
+            "family": "Dong",
+            "sequence": "first"
+          },
+          {
+            "given": "Jiebei",
+            "family": "Shi",
+            "sequence": "additional"
+          },
+          {
+            "given": "Songwei",
+            "family": "Li",
+            "sequence": "additional"
+          },
+          {
+            "given": "Yuzhou",
+            "family": "Gao",
+            "sequence": "additional"
+          },
+          {
+            "given": "Yeping",
+            "family": "Zhu",
+            "sequence": "additional"
+          },
+          {
+            "given": "Jianbing",
+            "family": "Zhang",
+            "sequence": "additional"
+          },
+          {
+            "given": "Jiwei",
+            "family": "Huang",
+            "sequence": "additional"
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "S20_LOCAL_TXT",
+      "url_or_file": "screening_46/text/S20.txt",
+      "source_class": "supplied_full_text",
+      "accessed_at": "2026-11-26T06:54:36+07:00",
+      "locator": "lines 2-24, 96-101 (PDF page 1); pdfinfo",
+      "excerpt": "2026 IEEE International Conference on Web Services (ICWS) | 979-8-3195-3769-0/26/$31.00 ©2026 IEEE | DOI: 10.1109/ICWS72778.2026.00067",
+      "metadata_fields": {
+        "title": "Promise: Predictive and Cost-Optimal Migrations for Service-Continuous Edge Intelligence in Multi-UAV Networks",
+        "authors": [
+          "Jian Zhang",
+          "Ming Tao",
+          "Renping Xie",
+          "Yin Zhang"
+        ],
+        "venue": "2026 IEEE International Conference on Web Services (ICWS)",
+        "pages": "488-496",
+        "copyright_year": 2026,
+        "download_timestamp_utc": "2026-11-25T01:42:27Z",
+        "pdfinfo_creation_date": "2026-07-15T22:57:04+07:00",
+        "pdfinfo_mod_date": "2026-09-01T21:25:19+07:00"
+      }
+    },
+    {
+      "source_id": "S20_CROSSREF",
+      "url_or_file": "https://api.crossref.org/works/10.1109/ICWS72778.2026.00067",
+      "source_class": "crossref",
+      "accessed_at": "2026-11-26T06:55:32+07:00",
+      "locator": "message",
+      "excerpt": "Crossref works metadata for 10.1109/icws72778.2026.00067.",
+      "metadata_fields": {
+        "DOI": "10.1109/icws72778.2026.00067",
+        "type": "proceedings-article",
+        "title": [
+          "Promise: Predictive and Cost-Optimal Migrations for Service-Continuous Edge Intelligence in Multi-UAV Networks"
+        ],
+        "container-title": [
+          "2026 IEEE International Conference on Web Services (ICWS)"
+        ],
+        "short-container-title": [],
+        "publisher": "IEEE",
+        "page": "488-496",
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              7
+            ]
+          ],
+          "date-time": "2026-09-07T19:19:22Z"
+        },
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              8
+            ]
+          ],
+          "date-time": "2026-09-08T04:53:00Z"
+        },
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              8
+            ]
+          ],
+          "date-time": "2026-09-08T05:11:51Z"
+        },
+        "event": {
+          "name": "2026 IEEE International Conference on Web Services (ICWS)",
+          "location": "Sydney, Australia",
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                13
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                18
+              ]
+            ]
+          }
+        },
+        "URL": "https://doi.org/10.1109/icws72778.2026.00067",
+        "relation": {},
+        "author": [
+          {
+            "given": "Jian",
+            "family": "Zhang",
+            "sequence": "first"
+          },
+          {
+            "given": "Ming",
+            "family": "Tao",
+            "sequence": "additional"
+          },
+          {
+            "given": "Renping",
+            "family": "Xie",
+            "sequence": "additional"
+          },
+          {
+            "given": "Yin",
+            "family": "Zhang",
+            "sequence": "additional"
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "C03_LOCAL_TXT",
+      "url_or_file": "screening_46/text/C03.txt",
+      "source_class": "supplied_full_text",
+      "accessed_at": "2026-11-26T06:54:36+07:00",
+      "locator": "PDF page 2; text line 47",
+      "excerpt": "Information and communication technologies, electronic engineering, Vol. 6, No. 2, pp. 144–154 (2026)",
+      "metadata_fields": {
+        "title": "A LINK-LAYER MODEL OF A UAV SWARM MESH NETWORK WITH ENCAPSULATION OF INTERMEDIATE DEEP NEURAL NETWORK ACTIVATIONS: ANALYTICAL EVALUATION OF LATENCY AND TRAFFIC VOLUME",
+        "authors_p1_initials": [
+          "A. Kasianchuk",
+          "H. Lastivka"
+        ],
+        "authors_p11_ukrainian": [
+          "Артем Касьянчук",
+          "Галина Ластівка"
+        ],
+        "venue_p2": "Information and communication technologies, electronic engineering",
+        "venue_p3_ukrainian": "Інфокомунікаційні технології та електронна інженерія",
+        "doi_text_layer_p1": "https://doi.org/10.23939/iсtee2026.02.144",
+        "received_date": "2026-09-01",
+        "copyright_year": 2026,
+        "pdfinfo_creation_date": "2026-11-05T14:01:38+07:00"
+      },
+      "correction_checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C03_CROSSREF",
+      "url_or_file": "https://api.crossref.org/works/10.23939/ictee2026.02.144",
+      "source_class": "crossref",
+      "accessed_at": "2026-11-26T06:55:34+07:00",
+      "locator": "message",
+      "excerpt": "Crossref works metadata for 10.23939/ictee2026.02.144.",
+      "metadata_fields": {
+        "DOI": "10.23939/ictee2026.02.144",
+        "type": "journal-article",
+        "title": [
+          "A LINK-LAYER MODEL OF A UAV SWARM MESH NETWORK WITH ENCAPSULATION OF INTERMEDIATE DEEP NEURAL NETWORK ACTIVATIONS: ANALYTICAL EVALUATION OF LATENCY AND TRAFFIC VOLUME"
+        ],
+        "container-title": [
+          "Infocommunication technologies and electronic engineering"
+        ],
+        "short-container-title": [
+          "ICTEE"
+        ],
+        "publisher": "Lviv Polytechnic National University",
+        "volume": "6",
+        "issue": "2",
+        "page": "144-154",
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              11
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              3
+            ]
+          ],
+          "date-time": "2026-11-03T09:05:52Z"
+        },
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ],
+          "date-time": "2026-11-05T06:51:53Z"
+        },
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ],
+          "date-time": "2026-11-05T07:30:48Z"
+        },
+        "URL": "https://doi.org/10.23939/ictee2026.02.144",
+        "relation": {},
+        "author": [
+          {
+            "given": "Artem",
+            "family": "Kasianchuk",
+            "sequence": "first",
+            "ORCID": "https://orcid.org/0009-0007-3428-7731"
+          },
+          {
+            "given": "Halyna",
+            "family": "Lastivka",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0003-3639-3507"
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "C03_PUBLISHER",
+      "url_or_file": "https://science.lpnu.ua/ictee/all-volumes-and-issues/volume-6-number-2-2026/link-layer-model-uav-swarm-mesh-network",
+      "source_class": "publisher",
+      "accessed_at": "2026-11-26T06:56:44+07:00",
+      "locator": "article header and HTML meta tags",
+      "excerpt": "ICTEE. 2026; Volume 6, Number 2 : 144-154 Received: September 01, 2026 Published: November 04, 2026",
+      "metadata_fields": {
+        "html_title": "A LINK-LAYER MODEL OF A UAV SWARM MESH NETWORK WITH ENCAPSULATION OF INTERMEDIATE DEEP NEURAL NETWORK ACTIVATIONS: ANALYTICAL EVALUATION OF LATENCY AND TRAFFIC VOLUME | Academic Journals and Conferences",
+        "citation_title": "A LINK-LAYER MODEL OF A UAV SWARM MESH NETWORK WITH ENCAPSULATION OF INTERMEDIATE DEEP NEURAL NETWORK ACTIVATIONS: ANALYTICAL EVALUATION OF LATENCY AND TRAFFIC VOLUME",
+        "citation_author": [
+          "Artem Kasianchuk",
+          "Halyna Lastivka"
+        ],
+        "citation_journal_title": "Infocommunication technologies and electronic engineering",
+        "citation_issn": "2786-4553",
+        "citation_volume": "6",
+        "issue": "2",
+        "citation_firstpage": "144-154",
+        "citation_publication_date_meta": "Thu, 10/22/2026 - 14:04",
+        "visible_received": "2026-09-01",
+        "visible_published": "2026-11-04",
+        "doi": "10.23939/ictee2026.02.144"
+      }
+    },
+    {
+      "source_id": "C03_JOURNAL_HOME",
+      "url_or_file": "https://science.lpnu.ua/ictee",
+      "source_class": "publisher",
+      "accessed_at": "2026-11-26T06:57:09+07:00",
+      "locator": "journal about section",
+      "excerpt": "\"Infocommunication Technologies and Electronic Engineering\" is a peer-reviewed academic journal... mandatory peer review, collegial decision-making regarding publication",
+      "metadata_fields": {
+        "journal_title": "Infocommunication technologies and electronic engineering",
+        "issn": "2786-4553",
+        "doi_prefix": "10.23939/ictee",
+        "publisher": "Lviv Polytechnic National University",
+        "peer_review_stated": true
+      }
+    },
+    {
+      "source_id": "C05_LOCAL_TXT",
+      "url_or_file": "screening_46/text/C05.txt",
+      "source_class": "supplied_full_text",
+      "accessed_at": "2026-11-26T06:54:36+07:00",
+      "locator": "PDF page 1; text lines 103-104",
+      "excerpt": "This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/TCSVT.2026.3745821",
+      "metadata_fields": {
+        "title": "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems",
+        "authors": [
+          "Hao Hao",
+          "Changqiao Xu",
+          "Wei Zhang",
+          "Shujie Yang",
+          "Xiaolong Wang",
+          "Huiling Shi",
+          "Gabriel-Miro Muntean"
+        ],
+        "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+        "doi": "10.1109/TCSVT.2026.3745821",
+        "copyright_year": 2026,
+        "pdfinfo_subject": "IEEE Transactions on Circuits and Systems for Video Technology; ;PP;99;10.1109/TCSVT.2026.3745821",
+        "pdfinfo_creation_date": "2026-10-19T14:08:06+07:00"
+      },
+      "correction_checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C05_CROSSREF",
+      "url_or_file": "https://api.crossref.org/works/10.1109/TCSVT.2026.3745821",
+      "source_class": "crossref",
+      "accessed_at": "2026-11-26T06:55:38+07:00",
+      "locator": "message",
+      "excerpt": "Crossref works metadata for 10.1109/tcsvt.2026.3745821.",
+      "metadata_fields": {
+        "DOI": "10.1109/tcsvt.2026.3745821",
+        "type": "journal-article",
+        "title": [
+          "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems"
+        ],
+        "container-title": [
+          "IEEE Transactions on Circuits and Systems for Video Technology"
+        ],
+        "short-container-title": [
+          "IEEE Trans. Circuits Syst. Video Technol."
+        ],
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "page": "1-1",
+        "published": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              23
+            ]
+          ],
+          "date-time": "2026-10-23T19:14:19Z"
+        },
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              23
+            ]
+          ],
+          "date-time": "2026-10-23T19:14:19Z"
+        },
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              23
+            ]
+          ],
+          "date-time": "2026-10-23T19:47:37Z"
+        },
+        "URL": "https://doi.org/10.1109/tcsvt.2026.3745821",
+        "relation": {},
+        "author": [
+          {
+            "given": "Hao",
+            "family": "Hao",
+            "sequence": "first",
+            "ORCID": "https://orcid.org/0000-0003-2765-3303"
+          },
+          {
+            "given": "Changqiao",
+            "family": "Xu",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0003-1467-1086"
+          },
+          {
+            "given": "Wei",
+            "family": "Zhang",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0002-8947-9067"
+          },
+          {
+            "given": "Shujie",
+            "family": "Yang",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0002-9597-2659"
+          },
+          {
+            "given": "Xiaolong",
+            "family": "Wang",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0003-3695-305X"
+          },
+          {
+            "given": "Huiling",
+            "family": "Shi",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0002-6545-8958"
+          },
+          {
+            "given": "Gabriel-Miro",
+            "family": "Muntean",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0002-9332-4770"
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "C09_LOCAL_TXT",
+      "url_or_file": "screening_46/text/C09.txt",
+      "source_class": "supplied_full_text",
+      "accessed_at": "2026-11-26T06:54:36+07:00",
+      "locator": "PDF page 1; text lines 110-111",
+      "excerpt": "This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/JIOT.2026.3755315",
+      "metadata_fields": {
+        "title": "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms",
+        "authors": [
+          "HyungBin Park",
+          "SuKyoung Lee"
+        ],
+        "venue": "IEEE Internet of Things Journal",
+        "doi": "10.1109/JIOT.2026.3755315",
+        "copyright_year": 2026,
+        "download_timestamp_utc": "2026-11-25T12:22:29Z",
+        "pdfinfo_creation_date": "2026-11-16T14:09:56+07:00"
+      },
+      "correction_checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C09_CROSSREF",
+      "url_or_file": "https://api.crossref.org/works/10.1109/JIOT.2026.3755315",
+      "source_class": "crossref",
+      "accessed_at": "2026-11-26T06:55:39+07:00",
+      "locator": "message",
+      "excerpt": "Crossref works metadata for 10.1109/jiot.2026.3755315.",
+      "metadata_fields": {
+        "DOI": "10.1109/jiot.2026.3755315",
+        "type": "journal-article",
+        "title": [
+          "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms"
+        ],
+        "container-title": [
+          "IEEE Internet of Things Journal"
+        ],
+        "short-container-title": [
+          "IEEE Internet Things J."
+        ],
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "page": "1-1",
+        "published": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              18
+            ]
+          ],
+          "date-time": "2026-11-18T20:05:10Z"
+        },
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              19
+            ]
+          ],
+          "date-time": "2026-11-19T20:12:22Z"
+        },
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              19
+            ]
+          ],
+          "date-time": "2026-11-19T20:23:12Z"
+        },
+        "URL": "https://doi.org/10.1109/jiot.2026.3755315",
+        "relation": {},
+        "author": [
+          {
+            "given": "HyungBin",
+            "family": "Park",
+            "sequence": "first",
+            "ORCID": "https://orcid.org/0000-0002-0705-9676"
+          },
+          {
+            "given": "SuKyoung",
+            "family": "Lee",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0002-3497-3295"
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "C10_LOCAL_TXT",
+      "url_or_file": "screening_46/text/C10.txt",
+      "source_class": "supplied_full_text",
+      "accessed_at": "2026-11-26T06:54:36+07:00",
+      "locator": "PDF page 1; text lines 109-110",
+      "excerpt": "This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/JIOT.2026.3740035",
+      "metadata_fields": {
+        "title": "A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference",
+        "authors": [
+          "Songwei Li",
+          "Zhihan Wang",
+          "Jiebei Shi",
+          "Jiwei Huang"
+        ],
+        "venue": "IEEE Internet of Things Journal",
+        "doi": "10.1109/JIOT.2026.3740035",
+        "copyright_year": 2026,
+        "download_timestamp_utc": "2026-11-25T12:22:56Z",
+        "pdfinfo_creation_date": "2026-09-28T21:15:17+07:00"
+      },
+      "correction_checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C10_CROSSREF",
+      "url_or_file": "https://api.crossref.org/works/10.1109/JIOT.2026.3740035",
+      "source_class": "crossref",
+      "accessed_at": "2026-11-26T06:55:40+07:00",
+      "locator": "message",
+      "excerpt": "Crossref works metadata for 10.1109/jiot.2026.3740035.",
+      "metadata_fields": {
+        "DOI": "10.1109/jiot.2026.3740035",
+        "type": "journal-article",
+        "title": [
+          "A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference"
+        ],
+        "container-title": [
+          "IEEE Internet of Things Journal"
+        ],
+        "short-container-title": [
+          "IEEE Internet Things J."
+        ],
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "page": "1-1",
+        "published": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              6
+            ]
+          ],
+          "date-time": "2026-10-06T19:10:19Z"
+        },
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              6
+            ]
+          ],
+          "date-time": "2026-10-06T19:10:19Z"
+        },
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              23
+            ]
+          ],
+          "date-time": "2026-10-23T20:15:42Z"
+        },
+        "URL": "https://doi.org/10.1109/jiot.2026.3740035",
+        "relation": {},
+        "author": [
+          {
+            "given": "Songwei",
+            "family": "Li",
+            "sequence": "first",
+            "ORCID": "https://orcid.org/0000-0002-1882-9357"
+          },
+          {
+            "given": "Zhihan",
+            "family": "Wang",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0009-0001-1663-103X"
+          },
+          {
+            "given": "Jiebei",
+            "family": "Shi",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0009-0009-1955-0487"
+          },
+          {
+            "given": "Jiwei",
+            "family": "Huang",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0001-5220-6703"
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "C13_LOCAL_TXT",
+      "url_or_file": "screening_46/text/C13.txt",
+      "source_class": "supplied_full_text",
+      "accessed_at": "2026-11-26T06:54:36+07:00",
+      "locator": "PDF page 1; text line 2",
+      "excerpt": "IEEE TRANSACTIONS ON VEHICULAR TECHNOLOGY , VOL. XX, NO. XX, MONTH 2026",
+      "metadata_fields": {
+        "title_p1": "RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV Swarm",
+        "title_pdfinfo": "RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV Swarms",
+        "authors": [
+          "Shengjie Zhong",
+          "Zhongliang Zhao",
+          "Jingxuan Chen",
+          "Xianbin Cao",
+          "Zhiyi Liu",
+          "Dapeng O. Wu",
+          "Tony Q. S. Quek"
+        ],
+        "venue": "IEEE Transactions on Vehicular Technology",
+        "doi": "10.1109/TVT.2026.3755123",
+        "received_date": "2026-02-11",
+        "copyright_year": 2026,
+        "download_timestamp_utc": "2026-11-25T12:24:07Z",
+        "pdfinfo_creation_date": "2026-10-16T14:27:20+07:00"
+      },
+      "correction_checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C13_CROSSREF",
+      "url_or_file": "https://api.crossref.org/works/10.1109/TVT.2026.3755123",
+      "source_class": "crossref",
+      "accessed_at": "2026-11-26T06:55:41+07:00",
+      "locator": "message",
+      "excerpt": "Crossref works metadata for 10.1109/tvt.2026.3755123.",
+      "metadata_fields": {
+        "DOI": "10.1109/tvt.2026.3755123",
+        "type": "journal-article",
+        "title": [
+          "RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV Swarms"
+        ],
+        "container-title": [
+          "IEEE Transactions on Vehicular Technology"
+        ],
+        "short-container-title": [
+          "IEEE Trans. Veh. Technol."
+        ],
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "page": "1-16",
+        "published": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              18
+            ]
+          ],
+          "date-time": "2026-11-18T20:08:05Z"
+        },
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              18
+            ]
+          ],
+          "date-time": "2026-11-18T20:16:53Z"
+        },
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              18
+            ]
+          ],
+          "date-time": "2026-11-18T21:15:51Z"
+        },
+        "URL": "https://doi.org/10.1109/tvt.2026.3755123",
+        "relation": {},
+        "author": [
+          {
+            "given": "Shengjie",
+            "family": "Zhong",
+            "sequence": "first"
+          },
+          {
+            "given": "Zhongliang",
+            "family": "Zhao",
+            "sequence": "additional"
+          },
+          {
+            "given": "Jingxuan",
+            "family": "Chen",
+            "sequence": "additional"
+          },
+          {
+            "given": "Xianbin",
+            "family": "Cao",
+            "sequence": "additional"
+          },
+          {
+            "given": "Zhiyi",
+            "family": "Liu",
+            "sequence": "additional"
+          },
+          {
+            "given": "Dapeng O.",
+            "family": "Wu",
+            "sequence": "additional"
+          },
+          {
+            "given": "Tony Q. S.",
+            "family": "Quek",
+            "sequence": "additional"
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "C14_LOCAL_TXT",
+      "url_or_file": "screening_46/text/C14.txt",
+      "source_class": "supplied_full_text",
+      "accessed_at": "2026-11-26T06:55:15+07:00",
+      "locator": "PDF page 1; text lines 106-107",
+      "excerpt": "This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/JIOT.2026.3746980",
+      "metadata_fields": {
+        "title": "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks",
+        "authors": [
+          "Lianming Xu",
+          "Yixue Liang",
+          "Lei Jin",
+          "Li Wang",
+          "Ying-Jun Angela Zhang",
+          "Xiaoyu Zhao",
+          "Aiguo Fei"
+        ],
+        "venue": "IEEE Internet of Things Journal",
+        "doi": "10.1109/JIOT.2026.3746980",
+        "copyright_year": 2026,
+        "download_timestamp_utc": "2026-11-25T12:24:25Z",
+        "pdfinfo_creation_date": "2026-09-16T16:33:10+07:00",
+        "nul_byte_count": 1
+      },
+      "correction_checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C14_CROSSREF",
+      "url_or_file": "https://api.crossref.org/works/10.1109/JIOT.2026.3746980",
+      "source_class": "crossref",
+      "accessed_at": "2026-11-26T06:55:42+07:00",
+      "locator": "message",
+      "excerpt": "Crossref works metadata for 10.1109/jiot.2026.3746980.",
+      "metadata_fields": {
+        "DOI": "10.1109/jiot.2026.3746980",
+        "type": "journal-article",
+        "title": [
+          "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks"
+        ],
+        "container-title": [
+          "IEEE Internet of Things Journal"
+        ],
+        "short-container-title": [
+          "IEEE Internet Things J."
+        ],
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "page": "1-1",
+        "published": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              26
+            ]
+          ],
+          "date-time": "2026-10-26T19:34:17Z"
+        },
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              27
+            ]
+          ],
+          "date-time": "2026-10-27T19:14:18Z"
+        },
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              27
+            ]
+          ],
+          "date-time": "2026-10-27T19:37:35Z"
+        },
+        "URL": "https://doi.org/10.1109/jiot.2026.3746980",
+        "relation": {},
+        "author": [
+          {
+            "given": "Lianming",
+            "family": "Xu",
+            "sequence": "first",
+            "ORCID": "https://orcid.org/0009-0006-9142-8863"
+          },
+          {
+            "given": "Yixue",
+            "family": "Liang",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0009-0001-5307-7402"
+          },
+          {
+            "given": "Lei",
+            "family": "Jin",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0003-4855-2464"
+          },
+          {
+            "given": "Li",
+            "family": "Wang",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0002-0973-1614"
+          },
+          {
+            "given": "Ying-Jun Angela",
+            "family": "Zhang",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0002-7304-6849"
+          },
+          {
+            "given": "Xiaoyu",
+            "family": "Zhao",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0001-6911-6683"
+          },
+          {
+            "given": "Aiguo",
+            "family": "Fei",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0002-7053-9832"
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "C19_LOCAL_TXT",
+      "url_or_file": "screening_46/text/C19.txt",
+      "source_class": "supplied_full_text",
+      "accessed_at": "2026-11-26T06:54:36+07:00",
+      "locator": "PDF page 1; text lines 102-103",
+      "excerpt": "This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/JIOT.2026.3755176",
+      "metadata_fields": {
+        "title": "PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference in UAV-Assisted Internet of Vehicles Environments",
+        "authors_p1": [
+          "DeokKyu Kwon",
+          "Ashok Kumar Das",
+          "Youngho Park"
+        ],
+        "author3_bio_p15": "YoungHo Park",
+        "venue": "IEEE Internet of Things Journal",
+        "doi": "10.1109/JIOT.2026.3755176",
+        "copyright_year": 2026,
+        "download_timestamp_utc": "2026-11-25T12:26:42Z",
+        "pdfinfo_creation_date": "2026-10-26T12:47:07+07:00"
+      },
+      "correction_checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C19_CROSSREF",
+      "url_or_file": "https://api.crossref.org/works/10.1109/JIOT.2026.3755176",
+      "source_class": "crossref",
+      "accessed_at": "2026-11-26T06:55:43+07:00",
+      "locator": "message",
+      "excerpt": "Crossref works metadata for 10.1109/jiot.2026.3755176.",
+      "metadata_fields": {
+        "DOI": "10.1109/jiot.2026.3755176",
+        "type": "journal-article",
+        "title": [
+          "PUF-enabled Self-Certified Authentication Protocol for Secure Cooperative Inference in UAV-Assisted Internet of Vehicles Environments"
+        ],
+        "container-title": [
+          "IEEE Internet of Things Journal"
+        ],
+        "short-container-title": [
+          "IEEE Internet Things J."
+        ],
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "page": "1-1",
+        "published": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "created": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              17
+            ]
+          ],
+          "date-time": "2026-11-17T20:17:25Z"
+        },
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              19
+            ]
+          ],
+          "date-time": "2026-11-19T20:11:42Z"
+        },
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              19
+            ]
+          ],
+          "date-time": "2026-11-19T20:23:06Z"
+        },
+        "URL": "https://doi.org/10.1109/jiot.2026.3755176",
+        "relation": {},
+        "author": [
+          {
+            "given": "DeokKyu",
+            "family": "Kwon",
+            "sequence": "first",
+            "ORCID": "https://orcid.org/0000-0003-0014-1965"
+          },
+          {
+            "given": "Ashok Kumar",
+            "family": "Das",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0002-5196-9589"
+          },
+          {
+            "given": "Youngho",
+            "family": "Park",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0002-0406-6547"
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "C08_LOCAL_TXT",
+      "url_or_file": "screening_46/text/C08.txt",
+      "source_class": "supplied_full_text",
+      "accessed_at": "2026-11-26T06:54:36+07:00",
+      "locator": "lines 2-8, 42 (p. 1), 2134-2135 (p. 41), 2224-2230 (p. 43); pdfinfo",
+      "excerpt": "arXiv:2412.20860v2 [cs.DC] 24 Apr 2025",
+      "metadata_fields": {
+        "title": "Adaptive Heuristics for Scheduling DNN Inferencing on Edge and Cloud for Personalized UAV Fleets",
+        "authors": [
+          "Suman Raj",
+          "Radhika Mittal",
+          "Harshil Gupta",
+          "Yogesh Simmhan"
+        ],
+        "arxiv_id": "2412.20860v2",
+        "arxiv_date": "2025-04-24",
+        "pages": 50,
+        "pdfinfo_creation_date": "2025-04-28T07:13:20+07:00",
+        "cited_prior_dems_ref22": "IEEE/ACM 23rd CCGrid, 2023",
+        "cited_preprints": [
+          "arXiv:2504.03709",
+          "arXiv:2504.01988"
+        ]
+      }
+    },
+    {
+      "source_id": "C08_ARXIV_ABS",
+      "url_or_file": "https://arxiv.org/abs/2412.20860",
+      "source_class": "arxiv",
+      "accessed_at": "2026-11-26T06:55:46+07:00",
+      "locator": "submission history, comments, and citation meta tags",
+      "excerpt": "Comments: 50 pages, Accepted at Elsevier Future Generation Computer Systems (FGCS)",
+      "metadata_fields": {
+        "arxiv_id": "2412.20860",
+        "v1_submitted": "2024-12-30",
+        "v2_revised": "2025-04-24",
+        "citation_title": "Adaptive Heuristics for Scheduling DNN Inferencing on Edge and Cloud for Personalized UAV Fleets",
+        "citation_date": "2024/12/30",
+        "citation_online_date": "2025/04/24",
+        "arxiv_doi": "10.48550/arXiv.2412.20860",
+        "journal_ref_present": false,
+        "publisher_doi_present": false
+      }
+    },
+    {
+      "source_id": "C08_ARXIV_API",
+      "url_or_file": "https://export.arxiv.org/api/query?id_list=2412.20860",
+      "source_class": "arxiv",
+      "accessed_at": "2026-11-26T06:55:47+07:00",
+      "locator": "Atom entry",
+      "excerpt": "50 pages, Accepted at Elsevier Future Generation Computer Systems (FGCS)",
+      "metadata_fields": {
+        "id": "http://arxiv.org/abs/2412.20860v2",
+        "published": "2024-12-30T10:58:48Z",
+        "updated": "2025-04-24T23:50:38Z",
+        "title": "Adaptive Heuristics for Scheduling DNN Inferencing on Edge and Cloud for Personalized UAV Fleets",
+        "authors": [
+          "Suman Raj",
+          "Radhika Mittal",
+          "Harshil Gupta",
+          "Yogesh Simmhan"
+        ],
+        "journal_ref_present": false,
+        "arxiv_doi_present": false
+      }
+    },
+    {
+      "source_id": "C08_CROSSREF",
+      "url_or_file": "https://api.crossref.org/works/10.1016/j.future.2025.107874",
+      "source_class": "crossref",
+      "accessed_at": "2026-11-26T06:55:44+07:00",
+      "locator": "message",
+      "excerpt": "Crossref works metadata for 10.1016/j.future.2025.107874.",
+      "metadata_fields": {
+        "DOI": "10.1016/j.future.2025.107874",
+        "type": "journal-article",
+        "title": [
+          "Adaptive heuristics for scheduling DNN inferencing on edge and cloud for personalized UAV fleets"
+        ],
+        "container-title": [
+          "Future Generation Computer Systems"
+        ],
+        "short-container-title": [
+          "Future Generation Computer Systems"
+        ],
+        "publisher": "Elsevier BV",
+        "volume": "173",
+        "page": "107874",
+        "article-number": "107874",
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              12
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              12
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12
+            ]
+          ]
+        },
+        "created": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              14
+            ]
+          ],
+          "date-time": "2025-05-14T19:31:22Z"
+        },
+        "deposited": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              16
+            ]
+          ],
+          "date-time": "2026-04-16T22:12:21Z"
+        },
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2026-10-01T17:57:37Z"
+        },
+        "URL": "https://doi.org/10.1016/j.future.2025.107874",
+        "alternative-id": [
+          "S0167739X25001694"
+        ],
+        "relation": {},
+        "author": [
+          {
+            "given": "Suman",
+            "family": "Raj",
+            "sequence": "first",
+            "ORCID": "https://orcid.org/0000-0002-2707-8479"
+          },
+          {
+            "given": "Radhika",
+            "family": "Mittal",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0009-0004-9604-6640"
+          },
+          {
+            "given": "Harshil",
+            "family": "Gupta",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0009-0003-7698-0041"
+          },
+          {
+            "given": "Yogesh",
+            "family": "Simmhan",
+            "sequence": "additional",
+            "ORCID": "https://orcid.org/0000-0003-4140-7774"
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "C08_LINKINGHUB",
+      "url_or_file": "https://linkinghub.elsevier.com/retrieve/pii/S0167739X25001694",
+      "source_class": "publisher",
+      "accessed_at": "2026-11-26T06:55:45+07:00",
+      "locator": "redirect form and siteCatalyst payload",
+      "excerpt": "Elsevier LinkingHub auto-redirect page for PII S0167739X25001694.",
+      "metadata_fields": {
+        "identifierType": "PII",
+        "identifierValue": "S0167739X25001694",
+        "articleName": "Adaptive heuristics for scheduling DNN inferencing on edge and cloud for personalized UAV fleets",
+        "redirectTarget": "https://www.sciencedirect.com/science/article/pii/S0167739X25001694?via%3Dihub"
+      }
+    }
+  ],
+  "c08_preprint_assessment": {
+    "published_identity_linkage": "confirmed_bibliographic_identity_unverified_content_equivalence",
+    "unique_recent_evidence": "not_established",
+    "source_ids": [
+      "C08_LOCAL_TXT",
+      "C08_ARXIV_ABS",
+      "C08_ARXIV_API",
+      "C08_CROSSREF",
+      "C08_LINKINGHUB"
+    ],
+    "reason": "Exact word-for-word title (case-insensitive), exact 4-author ordered list (Suman Raj, Radhika Mittal, Harshil Gupta, Yogesh Simmhan), and arXiv:2412.20860v2 comment ('Accepted at Elsevier Future Generation Computer Systems (FGCS)') match Crossref journal-article 10.1016/j.future.2025.107874 (Future Generation Computer Systems, Vol. 173, Art. 107874, Dec 2025) and Elsevier LinkingHub PII S0167739X25001694. However, arXiv lacks Journal-ref/publisher-DOI fields, Crossref relation is {}, and ScienceDirect returned HTTP 403, so VoR full-text/numerical equivalence is not_assumed. Unique-recent-preprint eligibility is not_established because a published journal version exists in Crossref and formal database searches are incomplete.",
+    "unresolved": [
+      "Obtain and inspect the Elsevier Future Generation Computer Systems Version of Record (10.1016/j.future.2025.107874 / PII S0167739X25001694) via lawful institutional access to verify textual/numerical equivalence with arXiv:2412.20860v2 and retrieve the exact Available online date.",
+      "Resolve study-family linkage between C08 (DEMS-A/GEMS, FGCS 2025) and cited precursor [22] (DEMS, IEEE/ACM CCGrid 2023) in study_report_map.csv."
+    ]
+  },
+  "shortfall": [],
+  "project_files_changed": 0,
+  "final_prose_written": false,
+  "acceptance": {
+    "status": "ACCEPTED_WORKING_BIBLIOGRAPHIC_RECONCILIATION",
+    "review": "screening_46/reconciliation/reviews/identity_dates_01_correction_review.md",
+    "parent_result": "identity_dates_01.json",
+    "correction": "identity_dates_01_correction.json",
+    "started_at": "2026-11-26T07:15:12+07:00",
+    "updated_at": "2026-11-26T07:18:56+07:00",
+    "completed_at": "2026-11-26T07:18:56+07:00",
+    "final_human_adjudication": "PENDING"
+  }
+}

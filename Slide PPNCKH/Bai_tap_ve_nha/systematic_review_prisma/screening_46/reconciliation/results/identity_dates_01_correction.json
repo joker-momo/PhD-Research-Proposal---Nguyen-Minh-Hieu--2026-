@@ -1,0 +1,99 @@
+{
+  "task": "identity_dates_01_correction",
+  "parent_task_id": "01a21521-896b-7bdf-8bcb-1b0cfda69f2f",
+  "source_corrections": [
+    {
+      "source_id": "C03_LOCAL_TXT",
+      "excerpt": "Information and communication technologies, electronic engineering, Vol. 6, No. 2, pp. 144–154 (2026)",
+      "locator": "PDF page 2; text line 47",
+      "checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C05_LOCAL_TXT",
+      "excerpt": "This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/TCSVT.2026.3745821",
+      "locator": "PDF page 1; text lines 103-104",
+      "checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C09_LOCAL_TXT",
+      "excerpt": "This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/JIOT.2026.3755315",
+      "locator": "PDF page 1; text lines 110-111",
+      "checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C10_LOCAL_TXT",
+      "excerpt": "This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/JIOT.2026.3740035",
+      "locator": "PDF page 1; text lines 109-110",
+      "checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C13_LOCAL_TXT",
+      "excerpt": "IEEE TRANSACTIONS ON VEHICULAR TECHNOLOGY , VOL. XX, NO. XX, MONTH 2026",
+      "locator": "PDF page 1; text line 2",
+      "checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C14_LOCAL_TXT",
+      "excerpt": "This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/JIOT.2026.3746980",
+      "locator": "PDF page 1; text lines 106-107",
+      "checked_at": "2026-11-26T07:16:42+07:00"
+    },
+    {
+      "source_id": "C19_LOCAL_TXT",
+      "excerpt": "This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/JIOT.2026.3755176",
+      "locator": "PDF page 1; text lines 102-103",
+      "checked_at": "2026-11-26T07:16:42+07:00"
+    }
+  ],
+  "record_corrections": [
+    {
+      "id": "C03",
+      "version_linkage": {
+        "status": "not_applicable",
+        "published_doi": "10.23939/ictee2026.02.144",
+        "source_ids": [
+          "C03_LOCAL_TXT",
+          "C03_CROSSREF",
+          "C03_PUBLISHER"
+        ],
+        "content_equivalence": "not_assumed",
+        "limitation": "Supplied file is a publisher_pdf (Vol. 6, No. 2, pp. 144-154) matching Crossref and the Lviv Polytechnic publisher landing page on bibliographic metadata (title, ordered authors, ORCIDs in C03_LOCAL_TXT/C03_CROSSREF, pagination, and DOI); full-text and numerical parity with any portal PDF was not compared, so content_equivalence is not_assumed."
+      },
+      "reason": "In screening_46/reconciliation/results/identity_dates_01.json (records[2].version_linkage, lines 433-443) and screening_46/reconciliation/reviews/identity_dates_01_review.md (lines 15, 33-37), C03_LOCAL_TXT (screening_46/text/C03.txt lines 4-13, 47), C03_CROSSREF, and C03_PUBLISHER establish bibliographic match only; no full-text or numerical comparison was supplied, so content_equivalence is corrected from verified to not_assumed."
+    },
+    {
+      "id": "C08",
+      "version_linkage": {
+        "status": "confirmed",
+        "published_doi": "10.1016/j.future.2025.107874",
+        "source_ids": [
+          "C08_LOCAL_TXT",
+          "C08_ARXIV_ABS",
+          "C08_ARXIV_API",
+          "C08_CROSSREF",
+          "C08_LINKINGHUB"
+        ],
+        "content_equivalence": "not_assumed",
+        "limitation": "Bibliographic identity linkage is confirmed by exact case-insensitive title match, exact 4-author ordered match (Raj, Mittal, Gupta, Simmhan), arXiv v2 comment ('Accepted at Elsevier Future Generation Computer Systems (FGCS)'), and matching Crossref FGCS Vol. 173 (Dec 2025) / LinkingHub PII S0167739X25001694 records. However, arXiv lacks an explicit Journal-ref or publisher DOI field, Crossref relation is {}, and ScienceDirect returned HTTP 403, so full-text and numerical equivalence between C08.pdf (arXiv v2) and the FGCS Version of Record is not assumed."
+      },
+      "reason": "In screening_46/reconciliation/results/identity_dates_01.json (records[9].title line 1337; records[9].version_linkage.limitation line 1484) and screening_46/reconciliation/reviews/identity_dates_01_review.md (lines 15, 38-40), the supplied title ('Adaptive Heuristics for Scheduling DNN Inferencing on Edge and Cloud for Personalized UAV Fleets', screening_46/text/C08.txt lines 2-4) has 14 whitespace-separated words rather than 13; the inaccurate '13-word' count is removed while preserving identity evidence, missing explicit DOI relation, and unverified content equivalence."
+    }
+  ],
+  "preservation": {
+    "requested_source_count": 7,
+    "requested_record_count": 2,
+    "decisions_changed": 0,
+    "dates_changed": 0,
+    "other_fields_changed": 0
+  },
+  "unresolved": [
+    "All original unresolved arrays across all ten records (S19, S20, C03, C05, C09, C10, C13, C14, C19, C08) and c08_preprint_assessment in screening_46/reconciliation/results/identity_dates_01.json remain unchanged.",
+    "IEEE Xplore landing pages for S19, S20, C05, C09, C10, C13, C14, and C19 returned HTTP 202 AWS WAF challenge; the six IEEE Early Access author_manuscript records (C05, C09, C10, C13, C14, C19) retain year-only 2026 publication metadata and remain proposed UNCERTAIN under the fixed 2021-01-01..2026-11-25 window.",
+    "C03 retains its minor Crossref/publisher date discrepancy (2026-10-22 / 2026-10 online vs 2026-11-04 / 2026-11 print, both before 2026-11-25), analytical/single-hop limitations, and uncompared full-text/numerical parity (content_equivalence=not_assumed).",
+    "C08 ScienceDirect Version of Record (10.1016/j.future.2025.107874 / PII S0167739X25001694) returned HTTP 403; explicit bidirectional arXiv Journal-ref/publisher-DOI and Crossref relation remain absent, VoR full-text/numerical equivalence remains not_assumed, unique_recent_evidence remains not_established, and study-family linkage to [22] remains open.",
+    "All four proposed INCLUDE decisions (S19, S20, C03, C08) and six proposed UNCERTAIN decisions remain proposed working evidence only pending Codex acceptance and final human adjudication; the 2026-11-25 search cutoff is unchanged."
+  ],
+  "shortfall": [],
+  "project_files_changed": 0,
+  "final_prose_written": false
+}

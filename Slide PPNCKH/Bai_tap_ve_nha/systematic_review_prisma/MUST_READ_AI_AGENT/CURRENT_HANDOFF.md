@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T07:14:16+07:00
+**updated_at:** 2026-11-26T07:18:56+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -163,12 +163,20 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-After brief commit/merge/cleanup, route the committed
-`screening_46/reconciliation/briefs/identity_dates_01_correction.md`.
-It requests exactly seven excerpt corrections and C03/C08 version-linkage
-repairs. Preserve parent task 01a21521-896b-7bdf-8bcb-1b0cfda69f2f and its
-quarantined artifacts. Accept only after C1–C6 and original A1–A6 PASS.
-No provider task is active; screening remains 32 INCLUDE / 2 EXCLUDE / 12 UNCERTAIN.
+After correction acceptance commit/merge/cleanup, prepare scope reconciliation
+for C06 and SNCS plus the already flagged boundary cases C04,C11,C16. Use fixed
+Amendment 001, require supporting and contrary full-text evidence, and keep
+human adjudication explicit. Then reconcile study families and the historical
+27-report dataset; formal database searches remain incomplete.
+
+## Current bibliographic overlay
+
+`screening_46/reconciliation/results/identity_dates_01_accepted.json` and
+`identity_dates_01_screening_overlay.json` resolve S19,S20,C03,C08 at the working
+gate. C1–C6 and A1–A6 PASS; primary result stays quarantined. Current report-level
+working total: 36 INCLUDE / 2 EXCLUDE / 8 UNCERTAIN; base ledger remains immutable
+at 32/2/12. Six IEEE dates remain uncertain; C06/SNCS scope remains uncertain.
+No provider task is active. These are not final independent-study or PRISMA counts.
 
 ## Current Git baseline
 
@@ -180,10 +188,10 @@ The boundary hold has been released by the coordinating handoff.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-identity-date-correction-brief",
+  "task_id": "reconciliation-identity-date-correction",
   "status": "completed",
-  "started_at": "2026-11-26T07:14:16+07:00",
-  "updated_at": "2026-11-26T07:14:16+07:00",
-  "completed_at": "2026-11-26T07:14:16+07:00"
+  "started_at": "2026-11-26T07:15:12+07:00",
+  "updated_at": "2026-11-26T07:18:56+07:00",
+  "completed_at": "2026-11-26T07:18:56+07:00"
 }
 -->
