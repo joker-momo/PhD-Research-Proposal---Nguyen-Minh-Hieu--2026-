@@ -1,29 +1,30 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T21:26:29+07:00",
+  "updated_at": "2026-11-26T21:39:30+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step09_completed",
     "summary": "Continue the approved 16-step HK261 PRISMA restart. Step 09 screened 44 verified full texts from the new retrieval inventory. Step 10 links reports to studies."
   },
   "task": {
-    "task_id": "restart-10-setup",
-    "status": "completed",
+    "task_id": "restart-10-batch-01-review",
     "owner": "CODEX_WRITING",
+    "research_owner": "GEMINI_RESEARCH",
+    "status": "rejected",
     "started_at": "2026-11-26T21:26:29+07:00",
-    "updated_at": "2026-11-26T21:26:29+07:00",
-    "completed_at": "2026-11-26T21:26:29+07:00",
-    "checkpoint_path": "restart_2026_11_26/study_linkage/manifest.json",
-    "decision_id": "restart-10-setup-v1"
+    "updated_at": "2026-11-26T21:39:30+07:00",
+    "completed_at": "2026-11-26T21:39:30+07:00",
+    "checkpoint_path": "restart_2026_11_26/study_linkage/batch_01_review.md",
+    "decision_id": "restart-10-batch-01-review-v1"
   },
   "next_task": {
-    "task_id": "restart-10-batch01",
+    "task_id": "restart-10-batch-01-correction01",
     "status": "ready",
     "owner": "GEMINI_RESEARCH",
-    "dispatch_brief": "restart_2026_11_26/study_linkage/batch_01_brief.md",
-    "message_id": "hk261-restart-step10-study-linkage-batch01-v1",
-    "action": "Compare exactly 25 included reports for version and study linkage under P07.",
-    "acceptance": "25 validated identities; zero merges without checked anchors on both sides."
+    "action": "Correct only failed items under P07.",
+    "dispatch_brief": "restart_2026_11_26/study_linkage/batch_01_correction01_brief.md",
+    "message_id": "hk261-restart-step10-study-linkage-correction01-v1",
+    "acceptance": "All failed mandatory criteria corrected."
   },
   "project": {
     "target_venue": "SN Computer Science",

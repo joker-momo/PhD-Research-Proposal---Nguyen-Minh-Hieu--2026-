@@ -1,0 +1,34 @@
+{
+  "id": "3aa69dac-912e-434b-9299-081e633a2d05",
+  "contextId": "3cca8a7e-0e00-46bf-846e-89be1826076c",
+  "status": {
+    "state": "TASK_STATE_FAILED",
+    "timestamp": "2026-11-26T14:31:36.981+00:00",
+    "message": {
+      "messageId": "0d8d5dff-aa19-4799-868f-600ffc6bf543",
+      "role": "ROLE_AGENT",
+      "parts": [
+        {
+          "text": "Task deadline exceeded; generation may continue in Gemini; not resent"
+        }
+      ],
+      "taskId": "3aa69dac-912e-434b-9299-081e633a2d05",
+      "contextId": "3cca8a7e-0e00-46bf-846e-89be1826076c"
+    }
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T14:26:35.662+00:00",
+    "updated_at": "2026-11-26T14:31:36.981+00:00",
+    "started_at": "2026-11-26T14:26:35.667+00:00",
+    "completed_at": "2026-11-26T14:31:36.981+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    }
+  }
+}

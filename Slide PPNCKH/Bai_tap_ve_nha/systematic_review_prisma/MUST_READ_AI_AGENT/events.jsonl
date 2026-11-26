@@ -144,3 +144,4 @@
 {"timestamp": "2026-11-26T21:23:51+07:00", "task_id": "restart-09-batch04", "event": "fulltext_screening_batch_accepted", "batch": 4, "provider_task_id": "a3f86d9f-853d-4ab8-bbbb-9fcd39eed2d9", "provider_context_id": "73dbad7d-a642-41be-8f7e-69a85f673a69", "total": 44, "reviewed": 44, "included": 25, "excluded": 13, "awaiting_classification": 6}
 {"timestamp": "2026-11-26T21:24:09+07:00", "task_id": "restart-09", "event": "fulltext_screening_step_completed", "total": 44, "reviewed": 44, "included": 25, "excluded": 13, "awaiting_classification": 6}
 {"timestamp": "2026-11-26T21:26:29+07:00", "task_id": "restart-10-setup", "event": "study_linkage_setup", "reports": 25}
+{"timestamp": "2026-11-26T21:39:30+07:00", "task_id": "restart-10-batch-01-review", "event": "study_linkage_rejected", "provider_task_id": "3aa69dac-912e-434b-9299-081e633a2d05", "provider_context_id": "3cca8a7e-0e00-46bf-846e-89be1826076c", "criteria_failed": ["A2"]}
