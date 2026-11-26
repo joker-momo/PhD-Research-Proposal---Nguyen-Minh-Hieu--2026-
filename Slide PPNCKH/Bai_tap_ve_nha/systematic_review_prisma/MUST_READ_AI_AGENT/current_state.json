@@ -1,29 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:07:38+07:00",
+  "updated_at": "2026-11-26T23:09:30+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-batch01-preflight-brief",
+    "task_id": "restart-11-batch01-preflight-review",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T23:07:38+07:00",
-    "updated_at": "2026-11-26T23:07:38+07:00",
-    "completed_at": "2026-11-26T23:07:38+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_preflight_brief.md",
-    "decision_id": "restart-11-batch01-preflight-brief-v1"
+    "started_at": "2026-11-26T23:09:30+07:00",
+    "updated_at": "2026-11-26T23:09:30+07:00",
+    "completed_at": "2026-11-26T23:09:30+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_preflight_review.md",
+    "decision_id": "restart-11-batch01-preflight-review-v1"
   },
   "next_task": {
-    "task_id": "restart-11-batch01-preflight",
+    "task_id": "restart-11-batch01-extraction-new",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Probe Gemini.app access to R0001 body PDF.",
-    "acceptance": "One exact source-grounded body excerpt on physical page >=2.",
-    "dispatch_brief": "restart_2026_11_26/extraction/batch_01_preflight_brief.md",
-    "message_id": "hk261-p08-b01-preflight-20261126-v1"
+    "action": "Prepare one new task for the 13 authorized IDs after preflight PASS.",
+    "acceptance": "13 per-file access checks; all P08 source and numeric gates."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -137,16 +135,15 @@
         "accepted": 0,
         "not_accessible_to_gemini": 13,
         "quarantined_batch02": 12,
-        "cleanup_deleted": 4,
+        "cleanup_deleted": 5,
         "cleanup_blocked": 3,
         "confirmed_batch02_semantic_failures": 3,
-        "correction05_accepted_metric_keys": 2
+        "correction05_accepted_metric_keys": 2,
+        "batch01_preflight": "PASS"
       }
     }
   },
-  "blockers": [
-    "P08 completion: Gemini.app did not access 13 Batch 01 reports in the original task; user locked those IDs against redispatch. No authorized alternative extraction route."
-  ],
+  "blockers": [],
   "user_confirmation_required": [
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
     "Contributions, funding, conflicts, data availability and AI disclosure.",

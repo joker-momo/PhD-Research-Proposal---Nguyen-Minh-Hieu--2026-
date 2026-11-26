@@ -157,3 +157,4 @@
 {"timestamp": "2026-11-26T23:03:20+07:00", "task_id": "restart-11-batch02-correction05-brief", "event": "p08_targeted_correction_brief_ready", "target_keys": 2, "report_count": 1}
 {"timestamp": "2026-11-26T23:05:56+07:00", "task_id": "restart-11-batch02-correction05-review", "event": "p08_targeted_correction_pass_batch_remains_quarantined", "provider_task_id": "e6c139ad-e556-47be-a24a-da94c4de1a9f", "provider_context_id": "9e30b765-df07-4030-a091-e98e998fb022", "accepted_keys": 2, "accepted_reports": 0, "remaining_identified_fields": 3, "chat_cleanup": "DELETED"}
 {"timestamp": "2026-11-26T23:07:38+07:00", "task_id": "restart-11-batch01-preflight-brief", "event": "batch01-preflight-brief"}
+{"timestamp": "2026-11-26T23:09:30+07:00", "task_id": "restart-11-batch01-preflight-review", "event": "batch01-preflight-review", "provider_task_id": "2e3d6de5-0d6f-4fb2-afff-bf00929c1f00", "provider_context_id": "53e79794-b3e6-49da-abc2-61e7f40e745e", "cleanup": "DELETED"}
