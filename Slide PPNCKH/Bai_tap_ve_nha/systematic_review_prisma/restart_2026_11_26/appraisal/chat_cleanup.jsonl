@@ -1,0 +1,2 @@
+{"timestamp": "2026-11-27T00:41:30+07:00", "uuid": "ddbb7eda-d194-4a22-bbe0-820cb63d9644", "event": "CONFIRM_ONCE", "detail": "Exact UUID and matching saved result verified before confirm", "label": "batch01", "result_sha256": "2243c59dbafe41a7326ae8d7f5604a1bea38971baa1794de1321f3ee9dc6be10"}
+{"timestamp": "2026-11-27T00:41:33+07:00", "uuid": "ddbb7eda-d194-4a22-bbe0-820cb63d9644", "event": "DELETED", "detail": "Native confirmation followed by verified empty new chat", "label": "batch01"}

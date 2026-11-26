@@ -1,0 +1,304 @@
+{
+  "task_id": "ddbb7eda-d194-4a22-bbe0-820cb63d9644",
+  "transport": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T17:41:01.719+00:00"
+  },
+  "result_chars": 15678,
+  "completion_marker": true,
+  "parsed_rows": 56,
+  "malformed": [],
+  "unknown": [],
+  "expected": 50,
+  "returned": 50,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [
+    [
+      "R0001",
+      "invalid or missing original body excerpt"
+    ],
+    [
+      "R0002",
+      "invalid or missing original body excerpt"
+    ],
+    [
+      "R0003",
+      "invalid or missing original body excerpt"
+    ],
+    [
+      "R0006",
+      "invalid or missing original body excerpt"
+    ],
+    [
+      "R0009",
+      "invalid or missing original body excerpt"
+    ]
+  ],
+  "unexpected_access": [],
+  "summary": [
+    {
+      "returned_keys": 50,
+      "unresolved": [
+        {
+          "report_id": "R0001",
+          "domains": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07",
+            "D08",
+            "D09",
+            "D10"
+          ],
+          "reason": "Original PDF inaccessible after delegating to internal workers (cloud sandbox lacks Mac connected-folder bridge)."
+        },
+        {
+          "report_id": "R0002",
+          "domains": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07",
+            "D08",
+            "D09",
+            "D10"
+          ],
+          "reason": "Original PDF inaccessible after delegating to internal workers (cloud sandbox lacks Mac connected-folder bridge)."
+        },
+        {
+          "report_id": "R0003",
+          "domains": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07",
+            "D08",
+            "D09",
+            "D10"
+          ],
+          "reason": "Original PDF inaccessible after delegating to internal workers (cloud sandbox lacks Mac connected-folder bridge)."
+        },
+        {
+          "report_id": "R0006",
+          "domains": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07",
+            "D08",
+            "D09",
+            "D10"
+          ],
+          "reason": "Original PDF inaccessible after delegating to internal workers (cloud sandbox lacks Mac connected-folder bridge)."
+        },
+        {
+          "report_id": "R0009",
+          "domains": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07",
+            "D08",
+            "D09",
+            "D10"
+          ],
+          "reason": "Original PDF inaccessible after delegating to internal workers (cloud sandbox lacks Mac connected-folder bridge)."
+        }
+      ],
+      "tools": {
+        "available_turn1": [
+          "local Mac client file reader and grep (read protocol_restart.md and p08_extraction_table.json)"
+        ],
+        "available_post_worker": [
+          "cloud sandbox view_file only (cannot access Mac connected folder /Volumes/JokerData/...)"
+        ],
+        "unavailable": [
+          "PyMuPDF (shell commands forbidden by brief)",
+          "MinerU (shell commands forbidden by brief)",
+          "Marker (shell commands forbidden by brief)",
+          "Mac client file bridge in subagents and post-subagent wakeup turn"
+        ]
+      },
+      "workers_used": true,
+      "worker_assignments": {
+        "R0001": "R0001 P09 Appraiser (failed: PDF inaccessible in cloud sandbox)",
+        "R0002": "R0002 P09 Appraiser (failed: PDF inaccessible in cloud sandbox)",
+        "R0003": "R0003 P09 Appraiser (failed: PDF inaccessible in cloud sandbox)",
+        "R0006": "R0006 P09 Appraiser (failed: PDF inaccessible in cloud sandbox)",
+        "R0009": "R0009 P09 Appraiser (failed: PDF inaccessible in cloud sandbox)"
+      }
+    }
+  ],
+  "locators": 0,
+  "exact_quote_locators": 0,
+  "needs_visual_cell": [],
+  "bad_domains": {
+    "R0001/D01": [
+      "missing locators"
+    ],
+    "R0001/D02": [
+      "missing locators"
+    ],
+    "R0001/D03": [
+      "missing locators"
+    ],
+    "R0001/D04": [
+      "missing locators"
+    ],
+    "R0001/D05": [
+      "missing locators"
+    ],
+    "R0001/D06": [
+      "missing locators"
+    ],
+    "R0001/D07": [
+      "missing locators"
+    ],
+    "R0001/D08": [
+      "missing locators"
+    ],
+    "R0001/D09": [
+      "missing locators"
+    ],
+    "R0001/D10": [
+      "missing locators"
+    ],
+    "R0002/D01": [
+      "missing locators"
+    ],
+    "R0002/D02": [
+      "missing locators"
+    ],
+    "R0002/D03": [
+      "missing locators"
+    ],
+    "R0002/D04": [
+      "missing locators"
+    ],
+    "R0002/D05": [
+      "missing locators"
+    ],
+    "R0002/D06": [
+      "missing locators"
+    ],
+    "R0002/D07": [
+      "missing locators"
+    ],
+    "R0002/D08": [
+      "missing locators"
+    ],
+    "R0002/D09": [
+      "missing locators"
+    ],
+    "R0002/D10": [
+      "missing locators"
+    ],
+    "R0003/D01": [
+      "missing locators"
+    ],
+    "R0003/D02": [
+      "missing locators"
+    ],
+    "R0003/D03": [
+      "missing locators"
+    ],
+    "R0003/D04": [
+      "missing locators"
+    ],
+    "R0003/D05": [
+      "missing locators"
+    ],
+    "R0003/D06": [
+      "missing locators"
+    ],
+    "R0003/D07": [
+      "missing locators"
+    ],
+    "R0003/D08": [
+      "missing locators"
+    ],
+    "R0003/D09": [
+      "missing locators"
+    ],
+    "R0003/D10": [
+      "missing locators"
+    ],
+    "R0006/D01": [
+      "missing locators"
+    ],
+    "R0006/D02": [
+      "missing locators"
+    ],
+    "R0006/D03": [
+      "missing locators"
+    ],
+    "R0006/D04": [
+      "missing locators"
+    ],
+    "R0006/D05": [
+      "missing locators"
+    ],
+    "R0006/D06": [
+      "missing locators"
+    ],
+    "R0006/D07": [
+      "missing locators"
+    ],
+    "R0006/D08": [
+      "missing locators"
+    ],
+    "R0006/D09": [
+      "missing locators"
+    ],
+    "R0006/D10": [
+      "missing locators"
+    ],
+    "R0009/D01": [
+      "missing locators"
+    ],
+    "R0009/D02": [
+      "missing locators"
+    ],
+    "R0009/D03": [
+      "missing locators"
+    ],
+    "R0009/D04": [
+      "missing locators"
+    ],
+    "R0009/D05": [
+      "missing locators"
+    ],
+    "R0009/D06": [
+      "missing locators"
+    ],
+    "R0009/D07": [
+      "missing locators"
+    ],
+    "R0009/D08": [
+      "missing locators"
+    ],
+    "R0009/D09": [
+      "missing locators"
+    ],
+    "R0009/D10": [
+      "missing locators"
+    ]
+  }
+}

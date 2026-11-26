@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T00:36:29+07:00",
+  "updated_at": "2026-11-27T00:42:02+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -876,7 +876,7 @@
       "owner": "GEMINI_RESEARCH + CODEX_WRITING",
       "status": "active",
       "started_at": "2026-11-27T00:36:29+07:00",
-      "updated_at": "2026-11-27T00:36:29+07:00",
+      "updated_at": "2026-11-27T00:42:02+07:00",
       "completed_at": null,
       "artifacts": [
         "restart_2026_11_26/appraisal/manifest.json",
@@ -884,9 +884,21 @@
         "restart_2026_11_26/appraisal/batch_02_brief.md",
         "restart_2026_11_26/appraisal/batch_03_brief.md",
         "restart_2026_11_26/appraisal/batch_04_brief.md",
-        "restart_2026_11_26/appraisal/batch_05_brief.md"
+        "restart_2026_11_26/appraisal/batch_05_brief.md",
+        "restart_2026_11_26/appraisal/batch_01_dispatch.json",
+        "restart_2026_11_26/appraisal/batch_01_raw.json",
+        "restart_2026_11_26/appraisal/batch_01_mechanical.json",
+        "restart_2026_11_26/appraisal/batch_01_research_review.md",
+        "restart_2026_11_26/appraisal/chat_cleanup.jsonl",
+        "restart_2026_11_26/appraisal/batch_01_access_preflight_brief.md"
       ],
-      "acceptance": []
+      "acceptance": [
+        {
+          "criterion": "P09 Batch 01 primary source review",
+          "verdict": "FAIL",
+          "evidence": "50/50 keys, 0/5 original PDF access probes, 0/50 judgment locators; 0 accepted."
+        }
+      ]
     },
     {
       "task_id": "restart-13",
