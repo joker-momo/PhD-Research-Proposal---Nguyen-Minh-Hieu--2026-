@@ -8,7 +8,11 @@
 4. State one concrete task and measurable completion criteria.
 5. Identify whether the task is writing/editing (Codex) or research/synthesis
    (eligible for routed delegation).
-6. Report current evidence boundary and any missing user decision.
+6. Publish `CODE_FIRST_DECISION: REUSE_EXISTING | WRITE_SCRIPT | MANUAL -- reason`
+   after the five governance fields. Verify existing automation before writing
+   new code; write code before repetitive manual work; keep judgment-heavy or
+   uneconomical one-off work manual.
+7. Report current evidence boundary and any missing user decision.
 
 ## Project workflow
 
@@ -105,6 +109,14 @@ Durable entry points: repository-root `AGENTS.md`, this onboarding manifest,
 and repository-root `.codex/hooks.json`. See `.codex/hooks/README.md` for tested
 behavior and runtime limits. The hook is a guardrail, not verified complete
 runtime enforcement. Manual clean-tree/ownership checks remain mandatory.
+
+The code-first line is separate from the five governance fields; it does not
+change their count or the clean-tree gate. For `REUSE_EXISTING`, record the tool
+and verification performed. For `WRITE_SCRIPT`, define inputs/outputs and focused
+tests, then commit the reusable artifact. For `MANUAL`, record why automation is
+unsafe, unavailable, judgment-heavy, or uneconomical, and still automate any
+safe deterministic substeps. Never create a framework solely to satisfy the
+rule.
 
 ## Timestamp rule (user request: 2026-11-25T23:02:44+07:00)
 

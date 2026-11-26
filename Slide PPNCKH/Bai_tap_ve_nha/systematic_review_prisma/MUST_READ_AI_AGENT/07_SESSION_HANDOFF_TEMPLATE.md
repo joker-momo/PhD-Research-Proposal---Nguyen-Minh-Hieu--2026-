@@ -12,6 +12,7 @@ updated_at: [actual RFC 3339 time with timezone]
 completed_at: [actual RFC 3339 time when finished; omit while active]
 Agent/model:
 Task:
+Code-first decision: [REUSE_EXISTING | WRITE_SCRIPT | MANUAL -- reason]
 Branch/worktree:
 
 ## Completed
@@ -29,6 +30,8 @@ Branch/worktree:
 
 ## Verification performed
 - [Command/check and observed result]
+- [For REUSE_EXISTING: tool verification; for WRITE_SCRIPT: focused tests; for
+  MANUAL: why automation was unsuitable and any automated substeps]
 
 ## Intentionally not changed
 - [Out-of-scope path or decision]

@@ -72,3 +72,19 @@
   whole repository was clean when it was not.
 - Do not initialize a nested repository or bulk-add the currently untracked
   research tree without explicit user approval.
+
+## Automation-first / code mode
+
+- Before acting on every task, record one of `REUSE_EXISTING`, `WRITE_SCRIPT`,
+  or `MANUAL` with a one-sentence reason.
+- Prefer, in order: a verified existing script/tool/API/CLI; a small tested and
+  reusable script for deterministic or repeated work; manual execution only
+  when automation is unsafe, unavailable, judgment-heavy, or more expensive
+  than the one-off work.
+- Even for a manual task, automate safe deterministic substeps when this reduces
+  repetition and error risk.
+- Do not overengineer. New automation must have explicit inputs/outputs,
+  structured failure behavior, no embedded secrets, focused tests, practical
+  idempotency, and a committed reusable home in the project.
+- Code does not replace scientific judgment, source verification, authorship
+  approval, or any user-only external action.

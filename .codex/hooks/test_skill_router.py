@@ -192,12 +192,94 @@ class SkillRouterTests(unittest.TestCase):
         self.assertEqual(0, result.returncode)
         self.assertIn("ADVISORY_ONLY: true", result.stdout)
         self.assertIn("SKILLS: none —", result.stdout)
+        self.assertEqual(1, result.stdout.count("CODE_FIRST_DECISION: "))
 
     def test_payload_prompt_extraction(self):
         payload = {"hook_event_name": "UserPromptSubmit", "prompt": "Xin chào"}
 
         self.assertEqual("Xin chào", skill_router.extract_prompt(payload))
         self.assertEqual("", skill_router.extract_prompt({"prompt": 42}))
+
+    def test_every_route_renders_one_code_first_decision(self):
+        prompts = (
+            "Xin chào",
+            "Giải thích systematic review là gì.",
+            "Chạy test hiện có và báo kết quả.",
+            "Viết script kiểm tra hàng loạt DOI bị trùng.",
+            "Tìm nguồn cho systematic review.",
+            "Viết lại một đoạn kết luận ngắn.",
+            "Dùng API hiện có để tra cứu metadata.",
+            "Tạo hook tái sử dụng để kiểm tra timestamp.",
+            "Xác nhận thủ công thông tin tác giả với tôi.",
+            "Biên dịch bản LaTeX bằng build script của dự án.",
+        )
+
+        for prompt in prompts:
+            with self.subTest(prompt=prompt):
+                rendered = skill_router.render_route(self.route(prompt))
+                decision_lines = [
+                    line
+                    for line in rendered.splitlines()
+                    if line.startswith("CODE_FIRST_DECISION: ")
+                ]
+                self.assertEqual(1, len(decision_lines))
+                self.assertRegex(
+                    decision_lines[0],
+                    r"^CODE_FIRST_DECISION: "
+                    r"(REUSE_EXISTING|WRITE_SCRIPT|MANUAL) — .+$",
+                )
+
+    def test_existing_project_tool_is_reused(self):
+        route = self.route("Chạy test hiện có và báo kết quả.")
+
+        self.assertEqual("REUSE_EXISTING", route.code_first_mode)
+
+    def test_existing_api_is_reused(self):
+        route = self.route("Dùng API hiện có để tra cứu metadata DOI.")
+
+        self.assertEqual("REUSE_EXISTING", route.code_first_mode)
+
+    def test_existing_build_script_is_reused(self):
+        route = self.route("Biên dịch LaTeX bằng build script của dự án.")
+
+        self.assertEqual("REUSE_EXISTING", route.code_first_mode)
+
+    def test_repeated_batch_validation_prefers_script(self):
+        route = self.route("Kiểm tra hàng loạt 200 DOI và loại bản ghi trùng.")
+
+        self.assertEqual("WRITE_SCRIPT", route.code_first_mode)
+
+    def test_reusable_hook_request_prefers_script(self):
+        route = self.route("Tạo hook tái sử dụng để kiểm tra timestamp.")
+
+        self.assertEqual("WRITE_SCRIPT", route.code_first_mode)
+
+    def test_structured_file_transformation_prefers_script(self):
+        route = self.route("Parse các file CSV rồi chuẩn hóa và xuất JSON.")
+
+        self.assertEqual("WRITE_SCRIPT", route.code_first_mode)
+
+    def test_explanation_stays_manual(self):
+        route = self.route("Giải thích systematic review là gì.")
+
+        self.assertEqual("MANUAL", route.code_first_mode)
+
+    def test_short_prose_edit_stays_manual(self):
+        route = self.route("Viết lại một đoạn kết luận ngắn.")
+
+        self.assertEqual("MANUAL", route.code_first_mode)
+
+    def test_human_confirmation_stays_manual(self):
+        route = self.route("Xác nhận thủ công thông tin tác giả với tôi.")
+
+        self.assertEqual("MANUAL", route.code_first_mode)
+
+    def test_script_substep_wins_over_manual_review_wording(self):
+        route = self.route(
+            "Rà soát rồi viết script kiểm tra tự động các DOI bị trùng."
+        )
+
+        self.assertEqual("WRITE_SCRIPT", route.code_first_mode)
 
     def test_catalog_prefers_direct_skill_over_nested_bundle_duplicate(self):
         root = self.root / "catalog"

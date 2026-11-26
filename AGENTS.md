@@ -14,6 +14,23 @@ OWNED_PATHS: explicit paths
 BINARY_ACCEPTANCE: countable or binary checks
 PRE_TASK_GIT_STATUS: branch, staged/modified/untracked counts, preceding commit
 
+Immediately after those five governance fields, publish exactly one separate
+decision line:
+
+`CODE_FIRST_DECISION: REUSE_EXISTING | WRITE_SCRIPT | MANUAL -- one-sentence reason`
+
+For every task, evaluate execution in this order: (1) verify and reuse an
+existing script/tool/API/CLI, (2) write or extend a small deterministic,
+testable and reusable script, then (3) perform the work manually only when code
+is unsafe, unavailable, dominated by human judgment/communication, or costs
+more than the one-off task. Automate deterministic subtasks even when the
+overall task remains manual. Do not write code merely to satisfy this rule or
+build a framework for a one-off action. New automation must define inputs and
+outputs, avoid secrets, handle errors explicitly, be idempotent where practical,
+have focused tests, and be committed as a reusable project artifact. The
+router's recommendation is advisory; the acting agent owns and records the
+final decision.
+
 Run Git status immediately before starting. Any staged, modified, or untracked
 residue in `systematic_review_prisma/`, `.codex/`, or this `AGENTS.md` BLOCKS the
 next task and any A2A dispatch. The exact pre-existing user-owned residue outside

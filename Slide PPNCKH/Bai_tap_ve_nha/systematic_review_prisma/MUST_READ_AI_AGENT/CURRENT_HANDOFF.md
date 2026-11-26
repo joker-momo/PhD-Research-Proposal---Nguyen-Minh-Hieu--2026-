@@ -1,6 +1,6 @@
 # Current Handoff
 
-**updated_at:** 2026-11-26T07:21:10+07:00
+**updated_at:** 2026-11-26T07:25:51+07:00
 
 **Goal version:** HK261-PRISMA-SNCS-v2; adopted_at: 2026-11-25T23:03:52+07:00.
 The active goal is PRISMA 2020, SN Computer Science and official Springer Nature
@@ -163,13 +163,13 @@ does not satisfy research, author-approval, portal, or course-evidence gates.
 
 ## Next exact action
 
-**USER-REQUESTED HOLD:** Complete scope-brief commit/merge/cleanup, then stop
-before dispatch or any next task. The coordinating chat will add the requested
-automation/code-first rule in a separate task on clean main and provide a new
-handoff. No scope research has been dispatched.
+The automation-first/code-mode rule is installed in the repository entry point,
+MUST READ workflow, handoff template, and advisory router. Every prompt now
+receives one `REUSE_EXISTING`, `WRITE_SCRIPT`, or `MANUAL` recommendation with
+a reason; 29/29 router tests and 17/17 task-gate tests pass. No scope research
+has been dispatched.
 
-
-After scope brief commit/merge/cleanup, route
+From clean `main`, route
 `screening_46/reconciliation/briefs/scope_01.md` for C06,SNCS,C04,C11,C16.
 Require 20 exact quote/page/line matches, ten scope-gate verdicts and all A1–A6.
 Preserve fixed Amendment001 and human adjudication. No provider task is active.
@@ -194,10 +194,10 @@ The boundary hold has been released by the coordinating handoff.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-scope-brief",
+  "task_id": "automation-code-first-rule",
   "status": "completed",
-  "started_at": "2026-11-26T07:20:46+07:00",
-  "updated_at": "2026-11-26T07:21:10+07:00",
-  "completed_at": "2026-11-26T07:21:10+07:00"
+  "started_at": "2026-11-26T07:25:24+07:00",
+  "updated_at": "2026-11-26T07:25:51+07:00",
+  "completed_at": "2026-11-26T07:25:51+07:00"
 }
 -->

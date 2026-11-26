@@ -57,6 +57,8 @@ class Skill:
 @dataclass
 class Route:
     owner: str
+    code_first_mode: str = "MANUAL"
+    code_first_reason: str = "no safe reusable automation was identified"
     primary: Optional[Skill] = None
     supporting: List[Skill] = field(default_factory=list)
     unknown_explicit: List[str] = field(default_factory=list)
@@ -242,6 +244,56 @@ def _owner_for(prompt: str) -> str:
     return "CODEX_WRITING"
 
 
+def _code_first_decision(prompt: str) -> Tuple[str, str]:
+    """Recommend the cheapest safe reusable execution mode for a prompt."""
+    if not prompt.strip():
+        return "MANUAL", "empty or unreadable prompt cannot justify automation"
+
+    create_automation = _contains(prompt, (
+        r"\b(write|create|implement)\b.{0,24}\b(script|hook|tool|cli)\b",
+        r"\b(viết|tạo|xây dựng|cài đặt)\b.{0,24}\b(script|hook|tool|cli|công cụ)\b",
+        r"tái sử dụng.{0,24}(script|hook|tool|công cụ)",
+        r"reus(?:e|able).{0,24}(script|hook|tool|cli)",
+    ))
+    repeatable_data_work = _contains(prompt, (
+        r"\b(batch|bulk)\b",
+        r"hàng loạt|lặp lại|nhiều lần",
+        r"\b(parse|transform|normalize|deduplicat|validate|reconcile)\w*\b.{0,40}"
+        r"\b(csv|json|xml|yaml|doi|record|file|data)\w*\b",
+        r"\b(csv|json|xml|yaml|doi|record|file|data)\w*\b.{0,40}"
+        r"\b(parse|transform|normalize|deduplicat|validate|reconcile)\w*\b",
+        r"(kiểm tra|xác thực|đối soát|chuẩn hóa|loại).{0,35}"
+        r"(hàng loạt|nhiều|toàn bộ|doi|bản ghi|file|dữ liệu|trùng)",
+    ))
+    if create_automation or repeatable_data_work:
+        return (
+            "WRITE_SCRIPT",
+            "task has deterministic reusable steps that should be scripted and tested",
+        )
+
+    existing_automation = _contains(prompt, (
+        r"\b(existing|available|project)\b.{0,24}\b(script|tool|api|cli|test|build)\b",
+        r"\b(script|tool|api|cli|test|build)\b.{0,24}\b(existing|available|project)\b",
+        r"(hiện có|có sẵn|của dự án).{0,24}(script|tool|api|cli|test|build|công cụ)",
+        r"(script|tool|api|cli|test|build|công cụ).{0,24}(hiện có|có sẵn|của dự án)",
+        r"\b(run|execute|compile|build|lint|format|test)\b",
+        r"\b(chạy|thực thi|biên dịch)\b.{0,24}(test|script|tool|build|latex|công cụ)",
+        r"\b(api|cli)\b",
+        r"\b(research|lookup|download|search)\b",
+        r"tìm.{0,20}(nguồn|tài liệu|bài báo)|tra cứu|tải.{0,20}(pdf|bài báo)",
+    ))
+    if existing_automation:
+        return (
+            "REUSE_EXISTING",
+            "an existing tool, script, API, or command should be verified and reused first",
+        )
+
+    return (
+        "MANUAL",
+        "task primarily requires human judgment, communication, or one-off prose work",
+    )
+
+
 def route_prompt(prompt: str, catalog: Mapping[str, Path]) -> Route:
     """Select an advisory route with one primary and at most two supports."""
     explicit, unknown = _explicit_mentions(prompt, catalog)
@@ -282,8 +334,11 @@ def route_prompt(prompt: str, catalog: Mapping[str, Path]) -> Route:
             reason = "named skill is not installed and no matching task skill was found"
         else:
             reason = "task does not require a specialized installed skill"
+    code_first_mode, code_first_reason = _code_first_decision(prompt)
     return Route(
         owner=_owner_for(prompt),
+        code_first_mode=code_first_mode,
+        code_first_reason=code_first_reason,
         primary=selected[0] if selected else None,
         supporting=selected[1:],
         unknown_explicit=unknown,
@@ -294,7 +349,11 @@ def route_prompt(prompt: str, catalog: Mapping[str, Path]) -> Route:
 
 
 def render_route(route: Route) -> str:
-    lines = ["ADVISORY_ONLY: true", f"OWNER: {route.owner}"]
+    lines = [
+        "ADVISORY_ONLY: true",
+        f"OWNER: {route.owner}",
+        f"CODE_FIRST_DECISION: {route.code_first_mode} — {route.code_first_reason}",
+    ]
     if route.unknown_explicit:
         lines.append("UNKNOWN_EXPLICIT_SKILLS: " + ", ".join(route.unknown_explicit))
     if route.primary is None:

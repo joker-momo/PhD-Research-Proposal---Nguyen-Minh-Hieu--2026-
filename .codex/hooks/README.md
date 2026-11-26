@@ -49,6 +49,20 @@ No manuscript or scientific extraction changes are part of this task.
 - `ADVISORY_ONLY: true` is unconditional. Empty, malformed, unknown, or
   unclassified input prints `SKILLS: none — <reason>` and exits zero.
 
+### Automation-first / code mode
+
+- Every routed prompt prints exactly one `CODE_FIRST_DECISION` with one of
+  `REUSE_EXISTING`, `WRITE_SCRIPT`, or `MANUAL`, plus a concrete reason.
+- Decision order is reuse an existing verified tool first, create a small
+  tested reusable script for deterministic/repeated work second, and use manual
+  execution only for human judgment, communication, unsafe automation, or a
+  one-off task where code would cost more than it saves.
+- A manual overall decision does not excuse repetitive manual substeps; automate
+  deterministic substeps when doing so is safe and cheaper.
+- The recommendation is advisory and never executes code. The acting agent must
+  reject overengineering, verify any reused tool, and test newly written
+  automation before relying on it.
+
 ## Verification
 
 Command: `rtk proxy env PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_task_gate.py`.
@@ -62,13 +76,15 @@ exit 0. Each owned scope: 3/3 modified fixtures exit 2. Prompt/session reminders
 index bytes, and tracked content.
 
 Command: `rtk proxy env PYTHONDONTWRITEBYTECODE=1 python3 .codex/hooks/test_skill_router.py`.
-Observed: 18 tests PASS across explicit installed skill priority, unknown skill,
+Observed: 29 tests PASS across explicit installed skill priority, unknown skill,
 academic orchestrator exclusivity, Gemini research ownership, Codex writing
 ownership, lawful paper retrieval order, debugging/TDD, image generation,
 no-skill prompt, multi-goal ownership, research/debug overlap suppression, direct-skill
 preference over nested bundle duplicates, readable skill paths/full-read
 reminders, three-skill cap, malformed JSON exit-zero behavior, payload
-extraction, and hook registration. Tests use temporary skill catalogs; the
+extraction, hook registration, one decision on each of 10 prompt groups, three
+reuse cases, three script cases, three manual cases, and mixed-task precedence.
+Tests use temporary skill catalogs; the
 integration check below uses the installed catalog.
 
 | Criterion | Verdict | Objective evidence |
@@ -114,7 +130,7 @@ timezone-free/date-only/malformed/future values, unknown `-00:00` offsets,
 inverted task times and inconsistent current metadata. No dependency was added.
 Historical raw evidence remains unchanged; the event log begins at adoption.
 
-Validation: 17 task-gate tests and 18 skill-router tests PASS. The task-gate suite
+Validation: 17 task-gate tests and 29 skill-router tests PASS. The task-gate suite
 includes the previous 9 tests and 8 timestamp tests; its valid clean fixture
 covers valid timestamps. Missing-field, timezone, format and future tests invoke
 the real hook subprocess. Every invocation checks unchanged Git status, index

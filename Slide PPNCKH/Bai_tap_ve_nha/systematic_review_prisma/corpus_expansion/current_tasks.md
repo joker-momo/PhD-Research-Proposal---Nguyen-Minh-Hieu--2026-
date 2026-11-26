@@ -1,6 +1,6 @@
 # Current research tasks
 
-Updated_at: 2026-11-26T07:21:10+07:00
+Updated_at: 2026-11-26T07:25:51+07:00
 
 This queue records accepted work boundaries, not
 provider transport alone. Codex owns writing, acceptance, project edits, and Git.
@@ -32,17 +32,15 @@ without blocking dispatch.
 
 ## Reconciliation next task
 
-**USER-REQUESTED HOLD:** Complete scope-brief commit/merge/cleanup, then stop
-before dispatch or any next task. The coordinating chat will add the requested
-automation/code-first rule in a separate task on clean main and provide a new
-handoff. No scope research has been dispatched.
-
-
 Identity/date correction accepted: C1–C6 and A1–A6 PASS; 7/7 corrected quotes,
 10/10 combined local excerpts. Overlay resolves S19,S20,C03,C08, yielding
 36 INCLUDE / 2 EXCLUDE / 8 UNCERTAIN at report level. Base ledger remains 32/2/12.
 Scope brief ready for C06,SNCS,C04,C11,C16; dispatch after commit/merge/cleanup; six IEEE dates
 remain uncertain. Primary result remains quarantined; no provider task active.
+The automation/code-first rule is complete: reuse verified existing automation
+first, write a focused reusable script for deterministic/repeated work second,
+and use manual execution only with a recorded reason. Router tests pass 29/29;
+task-gate tests pass 17/17. Dispatch the committed scope brief from clean main.
 
 ## Measured progress
 
@@ -91,10 +89,10 @@ Correction brief is ready; route only after this task closes.
 
 <!-- HK261_TASK_STATE
 {
-  "task_id": "reconciliation-scope-brief",
+  "task_id": "automation-code-first-rule",
   "status": "completed",
-  "started_at": "2026-11-26T07:20:46+07:00",
-  "updated_at": "2026-11-26T07:21:10+07:00",
-  "completed_at": "2026-11-26T07:21:10+07:00"
+  "started_at": "2026-11-26T07:25:24+07:00",
+  "updated_at": "2026-11-26T07:25:51+07:00",
+  "completed_at": "2026-11-26T07:25:51+07:00"
 }
 -->
