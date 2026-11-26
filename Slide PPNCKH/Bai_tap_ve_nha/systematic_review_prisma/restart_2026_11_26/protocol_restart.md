@@ -1,8 +1,8 @@
 # Restart protocol — HK261 systematic review
 
-Version: restart-1.1-draft
+Version: restart-1.1
 Recorded at: 2026-11-26T18:21:14+07:00
-Status: DRAFT_FOR_CONSISTENCY_REVIEW; not yet a completed search or eligibility assessment.
+Status: ACCEPTED_FOR_RESTART; eligibility rules fixed before new screening. Acceptance and timestamp are recorded in step02_protocol_acceptance.md.
 Authority: approved_plan.md, steps 02–16. This protocol is recorded after the existing source searches and before the new screening; it is not a prospectively registered protocol for the earlier searches. No external registration is claimed.
 
 ## P01 — Objective and unit

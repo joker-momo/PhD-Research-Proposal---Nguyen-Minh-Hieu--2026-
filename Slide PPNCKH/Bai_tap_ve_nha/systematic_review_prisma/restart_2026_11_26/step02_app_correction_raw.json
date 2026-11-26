@@ -1,0 +1,123 @@
+{
+  "recorded_at": "2026-11-26T18:26:39+07:00",
+  "pre_send_failure": {
+    "id": "a87fdabe-4ba0-4664-861e-79a21a767abd",
+    "contextId": "e749625e-39b6-48d7-a646-717a16a7311a",
+    "status": {
+      "state": "TASK_STATE_FAILED",
+      "timestamp": "2026-11-26T11:21:45.460+00:00",
+      "message": {
+        "messageId": "b89251fb-969a-49af-bf95-128c8864f97c",
+        "role": "ROLE_AGENT",
+        "parts": [
+          {
+            "text": "Draft, attachment or generation in progress; no new chat opened"
+          }
+        ],
+        "taskId": "a87fdabe-4ba0-4664-861e-79a21a767abd",
+        "contextId": "e749625e-39b6-48d7-a646-717a16a7311a"
+      }
+    },
+    "metadata": {
+      "backend": "Gemini.app Accessibility",
+      "created_at": "2026-11-26T11:21:45.337+00:00",
+      "updated_at": "2026-11-26T11:21:45.460+00:00",
+      "started_at": "2026-11-26T11:21:45.345+00:00",
+      "completed_at": "2026-11-26T11:21:45.460+00:00",
+      "acceptance": "unreviewed",
+      "app_bundle_id": "com.google.GeminiMacOS",
+      "geminiApp": {
+        "mode": "task",
+        "source_dir": "/Users/joker/Projects/hk261-restart-step02-correction-context-20261126",
+        "files": {
+          "approved_plan.md": {
+            "sha256": "bcb85b6d37e553c3fb505fe2b4b1589d6e5b421a87c8e4b05f806b35bb72031a",
+            "bytes": 15940
+          },
+          "protocol_restart.md": {
+            "sha256": "32a8ecfeaee5a1274217a1d2d640f4227f4fd052e7e0cd7575a0d860c172b491",
+            "bytes": 15339
+          },
+          "step01_inventory.md": {
+            "sha256": "3d22c527ea1e4866794ac104e22b66884437393ab0fb250e37b78cf6e5017a89",
+            "bytes": 2456
+          },
+          "step02_app_result_quarantined.json": {
+            "sha256": "680f64bd38e122977dfee00492d2a2d81eea84de4a3e6f5fd3ad5876e394b388",
+            "bytes": 17977
+          },
+          "step02_user_decision.md": {
+            "sha256": "8af7faacce78ed220f7910ad0422af4fe102582cbce88242d922d8ff7576e76e",
+            "bytes": 667
+          }
+        },
+        "folder": "/Users/joker/Projects/gemini-app-a2a-bridge/.runtime/tasks/a87fdabe-4ba0-4664-861e-79a21a767abd/context-a87fdabe-4ba0-4664-861e-79a21a767abd"
+      }
+    }
+  },
+  "completed_correction": {
+    "id": "cfe6791b-4fe0-4e35-804b-9616584802cb",
+    "contextId": "cb5d389f-e127-4919-8178-3059cb6ee042",
+    "status": {
+      "state": "TASK_STATE_COMPLETED",
+      "timestamp": "2026-11-26T11:24:34.946+00:00"
+    },
+    "metadata": {
+      "backend": "Gemini.app Accessibility",
+      "created_at": "2026-11-26T11:23:12.056+00:00",
+      "updated_at": "2026-11-26T11:24:34.946+00:00",
+      "started_at": "2026-11-26T11:23:12.062+00:00",
+      "completed_at": "2026-11-26T11:24:34.946+00:00",
+      "acceptance": "unreviewed",
+      "app_bundle_id": "com.google.GeminiMacOS",
+      "geminiApp": {
+        "mode": "task",
+        "source_dir": "/Users/joker/Projects/hk261-restart-step02-correction-context-20261126",
+        "files": {
+          "approved_plan.md": {
+            "sha256": "bcb85b6d37e553c3fb505fe2b4b1589d6e5b421a87c8e4b05f806b35bb72031a",
+            "bytes": 15940
+          },
+          "protocol_restart.md": {
+            "sha256": "32a8ecfeaee5a1274217a1d2d640f4227f4fd052e7e0cd7575a0d860c172b491",
+            "bytes": 15339
+          },
+          "step01_inventory.md": {
+            "sha256": "3d22c527ea1e4866794ac104e22b66884437393ab0fb250e37b78cf6e5017a89",
+            "bytes": 2456
+          },
+          "step02_app_result_quarantined.json": {
+            "sha256": "680f64bd38e122977dfee00492d2a2d81eea84de4a3e6f5fd3ad5876e394b388",
+            "bytes": 17977
+          },
+          "step02_user_decision.md": {
+            "sha256": "8af7faacce78ed220f7910ad0422af4fe102582cbce88242d922d8ff7576e76e",
+            "bytes": 667
+          }
+        },
+        "folder": "/Users/joker/Projects/gemini-app-a2a-bridge/.runtime/tasks/cfe6791b-4fe0-4e35-804b-9616584802cb/context-cfe6791b-4fe0-4e35-804b-9616584802cb"
+      },
+      "window_title": "Gemini — Protocol Audit Correction",
+      "chat_cleanup": {
+        "state": "deleted",
+        "verified_new_chat": true,
+        "mode_restored": "chat"
+      },
+      "context_audit": {
+        "unchanged": true,
+        "file_count": 5
+      }
+    },
+    "artifacts": [
+      {
+        "artifactId": "e9c0f231-132c-46ea-8c7c-cb6e1b83c96d",
+        "name": "gemini-app-response",
+        "parts": [
+          {
+            "text": "{\n\"parent_task_id\": \"fb0bd54c-1cbe-4c73-87f7-9e4703a07478\",\n\"replacement_checks\": [\n{\n\"id\": \"T02\",\n\"status\": \"CONSISTENT\",\n\"locators\": [\n{\n\"file\": \"step02_user_decision.md\",\n\"section\": \"User decision — publication type\",\n\"quote\": \"Selected: “Chỉ bài tạp chí/hội nghị đã phản biện, có toàn văn và phương pháp/kết quả đánh giá (khuyến nghị)”.\"\n},\n{\n\"file\": \"step02_user_decision.md\",\n\"section\": \"User decision — publication type\",\n\"quote\": \"Effect: peer-reviewed journal/conference full reports only. Preprints do not enter the primary corpus. A short report still needs substantive method and evaluated results; page count alone is not a criterion. This resolves a policy left open for step02; the16-step sequence and four-source scope are unchanged.\"\n},\n{\n\"file\": \"approved_plan.md\",\n\"section\": \"Phân biệt nguồn yêu cầu\",\n\"quote\": \"khoảng 20 bài journal/conference liên quan hướng NCS\"\n},\n{\n\"file\": \"protocol_restart.md\",\n\"section\": \"P03 — Eligibility (all E1–E7 must be established for INCLUDE)\",\n\"quote\": \"E7 Report type/completeness: only peer-reviewed journal/conference research reports with full text, substantive method and evaluation results are eligible. Preprints, theses, patents, book chapters and abstracts-only items cannot enter the primary corpus. Record peer-review/type evidence from the publisher/proceedings, not merely a database label or guessed venue.\"\n},\n{\n\"file\": \"protocol_restart.md\",\n\"section\": \"P03 — Eligibility (all E1–E7 must be established for INCLUDE)\",\n\"quote\": \"A short conference report is not excluded by page count alone: it must establish (a) a defined inference method/system with inputs, decisions or procedure and (b) reported evaluation results with identifiable conditions and metrics. A demo/poster/work-in-progress label does not prove full-paper or peer-review status; if these required facts cannot be established, keep awaiting classification rather than assume eligibility. Link versions at step10; a preprint may supply identity/version linkage but not primary synthesis evidence.\"\n},\n{\n\"file\": \"protocol_restart.md\",\n\"section\": \"P03 — Eligibility (all E1–E7 must be established for INCLUDE)\",\n\"quote\": \"This E7 policy was selected directly by the user during step02 and recorded in step02_user_decision.md. It supersedes the historical protocol's optional preprint inclusion; it does not change the four-source discovery set or the order of the approved plan.\"\n},\n{\n\"file\": \"protocol_restart.md\",\n\"section\": \"P10 — Reconciliation and synthesis (steps13–14)\",\n\"quote\": \"Non-peer-reviewed preprints are not primary evidence under E7; version-linkage records must not contribute synthesis results.\"\n}\n],\n\"finding\": \"Updated E7 implements the user's step02 decision in step02_user_decision.md by restricting primary eligibility to peer-reviewed journal/conference full reports with substantive method and evaluation results, excluding preprints, theses, patents, book chapters, and abstracts-only items from the primary corpus and synthesis (allowing preprints only for step10 version linkage), and defining explicit short-report operational thresholds without altering the four-source scope or 16-step sequence.\",\n\"required_correction\": null,\n\"requires_user_approval\": false\n},\n{\n\"id\": \"T03\",\n\"status\": \"CONSISTENT\",\n\"locators\": [\n{\n\"file\": \"approved_plan.md\",\n\"section\": \"Bước 02 — Chốt protocol cho quy trình mới\",\n\"quote\": \"Ghi thời gian từ 2021 đến ngày tìm kiếm cuối thật\"\n},\n{\n\"file\": \"step01_inventory.md\",\n\"section\": \"Khoảng thiếu phải xử lý đúng bước\",\n\"quote\": \"I03: ACM upper filter2026-11-30 exceeds actual search date2026-11-26; eligibility must use actual cutoff after query/protocol audit.\"\n},\n{\n\"file\": \"step01_inventory.md\",\n\"section\": \"Khoảng thiếu phải xử lý đúng bước\",\n\"quote\": \"I05: IEEE/Scopus stored search times derive from export mtime; preserve basis, do not describe as independently logged live search timestamps.\"\n},\n{\n\"file\": \"step02_user_decision.md\",\n\"section\": \"User decision — publication type\",\n\"quote\": \"Preprints do not enter the primary corpus.\"\n},\n{\n\"file\": \"protocol_restart.md\",\n\"section\": \"P03 — Eligibility (all E1–E7 must be established for INCLUDE)\",\n\"quote\": \"publication from 2021-01-01 through the actual final accepted search date. The current source runs were recorded on 2026-11-26; the final cutoff is finalized at step04 if step03 requires reruns.\"\n},\n{\n\"file\": \"protocol_restart.md\",\n\"section\": \"P03 — Eligibility (all E1–E7 must be established for INCLUDE)\",\n\"quote\": \"Contradictory dates at a boundary remain awaiting classification pending source verification; do not guess. Do not import old date adjudications. Treat imprecise dates as intervals: a known year wholly within the eligible window can establish date eligibility; a cutoff-year date without verifiable month/day cannot establish eligibility if its possible interval crosses the cutoff. Keep such cases AWAITING_CLASSIFICATION pending authoritative date verification. Record the date of the assessed report version, not an assumed date from another version.\"\n}\n],\n\"finding\": \"Updated P03 E5 aligns with approved_plan.md and step01_inventory.md by enforcing the 2021-01-01 start, deferring the final upper cutoff to step04, treating imprecise dates as intervals (keeping cutoff-year dates without verifiable month/day and contradictory boundary dates as AWAITING_CLASSIFICATION rather than guessing), and requiring the authoritative date of the assessed report version rather than assuming a date from another version while preprints are no longer eligible primary reports.\",\n\"required_correction\": null,\n\"requires_user_approval\": false\n},\n{\n\"id\": \"T12\",\n\"status\": \"CONSISTENT\",\n\"locators\": [\n{\n\"file\": \"approved_plan.md\",\n\"section\": \"Bước 15 — Viết manuscript LaTeX SN Computer Science\",\n\"quote\": \"Viết Methods → Results → Discussion → Introduction rồi Title/Abstract/Conclusion; đồng bộ bảng/hình/references/supplements; công khai giới hạn và vai trò AI/người.\"\n},\n{\n\"file\": \"approved_plan.md\",\n\"section\": \"Phạm vi và điều kiện không được thay đổi ngầm\",\n\"quote\": \"Phạm vi hiện tại không submit/email.\"\n},\n{\n\"file\": \"protocol_restart.md\",\n\"section\": \"P10 — Reconciliation and synthesis (steps13–14)\",\n\"quote\": \"There is no authorized new meta-analysis in this restart plan; any such scope expansion requires approval.\"\n},\n{\n\"file\": \"protocol_restart.md\",\n\"section\": \"P11 — Writing, integrity and dissemination (steps15–16)\",\n\"quote\": \"Codex writes in Springer Nature LaTeX for SN Computer Science: Methods, Results, Discussion, Introduction, then Title/Abstract/Conclusion.\"\n},\n{\n\"file\": \"protocol_restart.md\",\n\"section\": \"P11 — Writing, integrity and dissemination (steps15–16)\",\n\"quote\": \"The course's eventual submission/evidence requirement is distinct from current authorization: no submission/email in this run.\"\n},\n{\n\"file\": \"protocol_restart.md\",\n\"section\": \"P12 — Audit and change control\",\n\"quote\": \"Keep the approved16-step plan unchanged as baseline, with progress, source evidence, provider IDs, raw results and criterion-by-criterion PASS/FAIL.\"\n},\n{\n\"file\": \"protocol_restart.md\",\n\"section\": \"P12 — Audit and change control\",\n\"quote\": \"Changes within a draft are logged, and any change to approved scope/sequence requires user approval before execution. Record timestamps with timezone and commit each phase before moving to the next. This document does not retroactively validate the old manuscript or old46 decisions.\"\n}\n],\n\"finding\": \"P10–P12 preserve the approved 16-step baseline, narrative synthesis bounds without unauthorized meta-analysis, SN Computer Science LaTeX writing sequence, no-submit/no-email boundary, phase-by-phase commit/timestamp audit controls, user-approval requirement for any scope or sequence change, and explicit non-validation of the old manuscript or old46 decisions.\",\n\"required_correction\": null,\n\"requires_user_approval\": false\n}\n],\n\"unresolved_items\": [],\n\"scholarly_records\": [],\n\"scholarly_records_not_applicable\": \"Protocol consistency audit only\",\n\"actions_taken\": {\n\"external_searches\": 0,\n\"records_screened\": 0,\n\"project_files_changed\": 0,\n\"final_prose_written\": false\n}\n}"
+          }
+        ]
+      }
+    ]
+  }
+}

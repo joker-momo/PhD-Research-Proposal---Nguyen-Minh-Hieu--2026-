@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-26T18:21:14+07:00",
+  "updated_at": "2026-11-26T18:26:39+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -49,59 +49,91 @@
       "task_id": "restart-02",
       "title": "Chốt protocol cho quy trình mới",
       "owner": "CODEX_WRITING + GEMINI_RESEARCH",
-      "status": "active",
+      "status": "completed",
       "started_at": "2026-11-26T18:13:36+07:00",
-      "updated_at": "2026-11-26T18:21:14+07:00",
-      "completed_at": null,
+      "updated_at": "2026-11-26T18:26:39+07:00",
+      "completed_at": "2026-11-26T18:26:39+07:00",
       "artifacts": [
         "restart_2026_11_26/protocol_restart.md",
-        "restart_2026_11_26/step02_protocol_audit_brief.md"
+        "restart_2026_11_26/step02_protocol_acceptance.md",
+        "restart_2026_11_26/step02_user_decision.md",
+        "restart_2026_11_26/step02_app_correction_raw.json"
       ],
       "acceptance": [
         {
+          "criterion": "K1",
+          "verdict": "PASS",
+          "evidence": "3/3 replacements T02, T03, T12 with matching parent ID"
+        },
+        {
+          "criterion": "K2",
+          "verdict": "PASS",
+          "evidence": "20/20 replacement quotes in their claimed sections"
+        },
+        {
+          "criterion": "K3",
+          "verdict": "PASS",
+          "evidence": "3/3 subjects checked against user decision, P03, P10–P12 and approved plan"
+        },
+        {
+          "criterion": "K4",
+          "verdict": "PASS",
+          "evidence": "0 unsupported findings, searches, screened records, project edits, prose or scholarly records reported"
+        },
+        {
+          "criterion": "K5",
+          "verdict": "PASS",
+          "evidence": "3 CONSISTENT with null corrections, 0 unresolved, context 5/5 unchanged"
+        },
+        {
+          "criterion": "K6",
+          "verdict": "PASS",
+          "evidence": "Combined audit contains 12 distinct checks, 45/45 section quotes and all C criteria"
+        },
+        {
           "criterion": "C1",
           "verdict": "PASS",
-          "evidence": "12/12 distinct T01–T12; JSON parsed."
+          "evidence": "12/12 valid unique IDs"
         },
         {
           "criterion": "C2",
-          "verdict": "FAIL",
-          "evidence": "36/37 quotes verbatim; T12/P12 locator contains an invented ellipsis joining non-contiguous text."
+          "verdict": "PASS",
+          "evidence": "45/45 quotes match their sections, including corrected T12"
         },
         {
           "criterion": "C3",
           "verdict": "PASS",
-          "evidence": "1 ISSUE T03 has correction;1 UNRESOLVED T02 appears in unresolved_items;10 CONSISTENT have null correction."
+          "evidence": "12 CONSISTENT checks have null correction, 0 remaining issues"
         },
         {
           "criterion": "C4",
           "verdict": "PASS",
-          "evidence": "12 findings inspected against supplied files; no invented external methodological rule; T02 explicitly reports missing policy confirmation. The abbreviated locator itself fails C2."
+          "evidence": "12/12 findings reviewed against the protocol and plan, 0 unsupported factual or quantitative claims identified"
         },
         {
           "criterion": "C5",
           "verdict": "PASS",
-          "evidence": "0 legacy scientific rows imported;4 source boundary and WoSnull preserved; no fixedincludedtarget."
+          "evidence": "4 approved discovery sources, WoS null, 0 legacy decisions or fixed target"
         },
         {
           "criterion": "C6",
           "verdict": "PASS",
-          "evidence": "Returned actions_taken:0 searches,0 records screened,0 project edits,false final prose; local context3/3 hashes unchanged."
+          "evidence": "Reported actions are zero or false and underlying source files were unchanged"
         },
         {
           "criterion": "C7",
           "verdict": "PASS",
-          "evidence": "T02 flagged requires_user_approval=true and in unresolved_items; no scope change adopted."
+          "evidence": "Publication-type issue resolved by direct user decision, 0 outstanding conflicts in this audit"
         },
         {
           "criterion": "C8",
           "verdict": "PASS",
-          "evidence": "0 scholarly records, explicitN/A;0 duplicate check IDs."
+          "evidence": "0 scholarly records with explicit N/A, 0 duplicate IDs"
         },
         {
           "criterion": "C9",
           "verdict": "PASS",
-          "evidence": "Structured audit only;3/3 context hashes match. Original UUID response recovered with2identical readouts. Transport remainsFAILED; chat preserved and cleanup not claimed."
+          "evidence": "Structured response only, original context 3/3 and correction context 5/5 unchanged, correction chat cleanup verified"
         }
       ]
     },

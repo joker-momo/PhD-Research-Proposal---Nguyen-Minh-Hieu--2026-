@@ -1,27 +1,30 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:21:14+07:00",
+  "updated_at": "2026-11-26T18:26:39+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step02_primary_audit_rejected_c2_correction_ready",
+    "status": "step02_protocol_accepted",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
     "task_id": "restart-02",
     "owner": "CODEX_WRITING",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-26T18:13:36+07:00",
-    "updated_at": "2026-11-26T18:21:14+07:00",
-    "decision_id": "restart-02-protocol-correction-v2",
+    "updated_at": "2026-11-26T18:26:39+07:00",
+    "decision_id": "restart-02-protocol-accepted-v3",
     "provider_task_id": "fb0bd54c-1cbe-4c73-87f7-9e4703a07478",
-    "provider_context_id": "936b6a79-101a-4763-a4a8-89666aa9fe39"
+    "provider_context_id": "936b6a79-101a-4763-a4a8-89666aa9fe39",
+    "completed_at": "2026-11-26T18:26:39+07:00",
+    "correction_task_id": "cfe6791b-4fe0-4e35-804b-9616584802cb",
+    "correction_context_id": "cb5d389f-e127-4919-8178-3059cb6ee042"
   },
   "next_task": {
-    "task_id": "restart-02-app-correction",
+    "task_id": "restart-03",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Send committed3check corrective brief via Gemini.app. Parent response quarantined; user peerreview policy recorded. Do not proceed to step03 until protocol gate passes.",
-    "acceptance": "K1–K6 and reconciled C1–C9 PASS; exact locators;3/3 replacement IDs; userpublication policy verified."
+    "action": "Audit actual query syntax, filters and coverage on all four approved sources against restart protocol.",
+    "acceptance": "4/4 platforms and 8/8 query variants assessed with source locators; any change/rerun versioned."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -49,7 +52,7 @@
     "approved_build_profile": "manuscript/sn_computer_science/build_profile.json",
     "canonical_pdf": "manuscript/sn_computer_science/main.pdf",
     "workspace_baseline_status": "Two pre-existing .DS_Store modifications outside owned scopes preserved on main; task worktree initially clean",
-    "effective_protocol": "restart step02 pending; previous protocol/amendments are inputs for explicit review, not silently inherited selection",
+    "effective_protocol": "restart_2026_11_26/protocol_restart.md (restart-1.1)",
     "query_translations": "final_query_translations.md",
     "query_translations_version": "1.4",
     "access_readiness_record": "search_access_readiness_2026-11-26.md",
@@ -87,8 +90,7 @@
     }
   },
   "blockers": [
-    "No immediate blocker to step02. Missing ACM metadata is inventoried for later resolution, not an exclusion decision.",
-    "Actual query/filter fitness must pass step03 before finaldataset lock; no search-completeness claim."
+    "Query and filter fitness must pass step 03 before the final dataset lock."
   ],
   "user_confirmation_required": [
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
