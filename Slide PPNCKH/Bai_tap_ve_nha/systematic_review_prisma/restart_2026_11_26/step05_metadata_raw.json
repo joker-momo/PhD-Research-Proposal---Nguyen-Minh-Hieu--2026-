@@ -1,0 +1,45 @@
+{
+  "id": "2f1423a8-3a09-41f8-8c86-c76a7f7c5e67",
+  "contextId": "925af9d5-77c5-4dd9-b1a4-8e2880019223",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T11:46:10.139+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T11:44:25.137+00:00",
+    "updated_at": "2026-11-26T11:46:10.139+00:00",
+    "started_at": "2026-11-26T11:44:25.138+00:00",
+    "completed_at": "2026-11-26T11:46:10.139+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — OpenAlex Metadata Verification",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "45859161-b52c-4d57-a2ad-7561e68495c8",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "ROW | W7217862547 | A Neuromorphic Spiking Neural Network-Based Continual Learning Framework for Energy-Efficient Edge Intelligence in Autonomous UAV Swarm Navigation | Singareddy Hemasri; K.S. Raghavendra Reddy (CSV: K.S. Raghavendra Reddy Singareddy Hemasri) | 2026 | American Journal of AI Cyber Computing Management | DOI_NOT_FOUND | DOI | UNRESOLVED | sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_normalized.csv#record=26 | https://ajaccm.com/journal/index.php/ajaccm/article/view/771 | Publisher page lists incomplete prefix-only DOI https://doi.org/10.64751/ and journal DOI 10.64751/ajaccm with no article-level suffix; Crossref search found no article DOI; author order differs from CSV.\nROW | W4415181609 | AI in Autonomous Drone Swarms: Coordinating Complex Missions | Murali Krishna Pasupuleti | 2024 | VENUE_NOT_FOUND | 10.62311/nesx/rb978-81-981662-2-7 | venue | UNRESOLVED | sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_normalized.csv#record=33 | NONE | Official DOI https://doi.org/10.62311/nesx/rb978-81-981662-2-7 was inaccessible to browse and unindexed on nationaleducationservices.org; non-official ResearchGate attributes the book to National Education Services with Zenodo DOI 10.5281/zenodo.14500805 (source disagreement with CSV DOI).\nROW | W7200232308 | Decentralized mission planning for multiple unmanned aerial vehicles | Ruifan Liu | 2023 | CERES (Cranfield University) | DOI_NOT_FOUND | DOI | UNRESOLVED | sources/raw/core_searches/openalex_complementary_revision_2026-11-26/openalex_complementary_2026-11-26_normalized.csv#record=31 | NONE | Institutional repository URL https://dspace.lib.cranfield.ac.uk/handle/1826/23982 was inaccessible to browse and unindexed in search; no DOI found in public official sources or DOI registry (2023 PhD thesis confirmed on KAIST-AIS alumni page)."
+        }
+      ]
+    }
+  ]
+}

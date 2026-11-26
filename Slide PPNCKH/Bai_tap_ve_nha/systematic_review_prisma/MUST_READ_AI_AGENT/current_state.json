@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:45:29+07:00",
+  "updated_at": "2026-11-26T18:47:38+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
@@ -9,19 +9,20 @@
   "task": {
     "task_id": "restart-05",
     "owner": "CODEX_WRITING + GEMINI_RESEARCH",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-26T18:44:17+07:00",
-    "updated_at": "2026-11-26T18:45:29+07:00",
+    "updated_at": "2026-11-26T18:47:38+07:00",
     "decision_id": "restart-05-metadata-normalize-v1",
     "provider_task_id": "2f1423a8-3a09-41f8-8c86-c76a7f7c5e67",
-    "provider_context_id": "925af9d5-77c5-4dd9-b1a4-8e2880019223"
+    "provider_context_id": "925af9d5-77c5-4dd9-b1a4-8e2880019223",
+    "completed_at": "2026-11-26T18:47:38+07:00"
   },
   "next_task": {
-    "task_id": "restart-05-identification-check",
-    "owner": "GEMINI_RESEARCH",
-    "status": "active",
-    "action": "Collect existing Gemini.app Task; do not redispatch the submitted message.",
-    "acceptance": "3 distinct expected IDs, matching provenance and official sources or explicit missing markers."
+    "task_id": "restart-06",
+    "owner": "CODEX_WRITING + GEMINI_RESEARCH",
+    "status": "ready",
+    "action": "Deduplicate normalized records with complete provenance and verify only genuinely ambiguous pairs.",
+    "acceptance": "693/693 input IDs accounted for; every merge evidence based; unclear pairs explicitly retained."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -90,7 +91,9 @@
       "step03_acceptance": "restart_2026_11_26/step03_query_audit_acceptance.md",
       "expected_revised_input_rows": 693,
       "locked_dataset_manifest": "restart_2026_11_26/search_dataset_manifest.json",
-      "locked_input_rows": 693
+      "locked_input_rows": 693,
+      "normalized_rows": 693,
+      "metadata_issue_log": "restart_2026_11_26/metadata_issue_log.json"
     }
   },
   "blockers": [],
