@@ -1,26 +1,25 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:49:12+07:00",
+  "updated_at": "2026-11-26T18:50:01+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
-    "task_id": "restart-06",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T18:47:38+07:00",
-    "updated_at": "2026-11-26T18:49:12+07:00",
-    "completed_at": "2026-11-26T18:49:12+07:00",
-    "decision_id": "restart-06-dedup-v1"
-  },
-  "next_task": {
     "task_id": "restart-07",
     "owner": "GEMINI_RESEARCH + CODEX_WRITING",
+    "status": "active",
+    "started_at": "2026-11-26T18:50:01+07:00",
+    "updated_at": "2026-11-26T18:50:01+07:00",
+    "decision_id": "restart-07-direct-screening-batch01-v1"
+  },
+  "next_task": {
+    "task_id": "restart-07-batch01",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Screen all 465 queue records by title/abstract under restart-1.1 via Gemini.app Task. Each input gets one reason and locator.",
-    "acceptance": "465/465 decisions or explicit unresolved states; zero use of old 46 decisions."
+    "action": "Submit the committed brief for R0001–R0030 in native Gemini.app Task with direct canonical folder access.",
+    "acceptance": "S1–S5 mandatory; 30 records."
   },
   "project": {
     "target_venue": "SN Computer Science",
