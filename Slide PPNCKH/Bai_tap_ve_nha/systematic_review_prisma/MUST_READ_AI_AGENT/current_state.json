@@ -1,27 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:34:25+07:00",
+  "updated_at": "2026-11-26T23:34:40+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-b02-three-field-review",
+    "task_id": "restart-11-b01-direct-probe-brief",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T23:34:25+07:00",
-    "updated_at": "2026-11-26T23:34:25+07:00",
-    "completed_at": "2026-11-26T23:34:25+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_02_three_field_correction_review.md",
-    "decision_id": "restart-11-b02-three-field-review-v1"
+    "started_at": "2026-11-26T23:34:40+07:00",
+    "updated_at": "2026-11-26T23:34:40+07:00",
+    "completed_at": "2026-11-26T23:34:40+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_direct_pdf_probe_brief.md",
+    "decision_id": "restart-11-b01-direct-probe-brief-v1"
   },
   "next_task": {
     "task_id": "restart-11-b01-pdf-access",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Verify direct Batch 01 PDF access with one physical body page.",
-    "acceptance": "1/1 exact PDF excerpt plus page and section before further Batch 01 extraction."
+    "action": "Run exact one-PDF direct folder access probe via Gemini.app.",
+    "acceptance": "One exact physical body-page anchor or precise access failure.",
+    "dispatch_brief": "restart_2026_11_26/extraction/batch_01_direct_pdf_probe_brief.md",
+    "message_id": "hk261-p08-b01-direct-probe-v2"
   },
   "project": {
     "target_venue": "SN Computer Science",

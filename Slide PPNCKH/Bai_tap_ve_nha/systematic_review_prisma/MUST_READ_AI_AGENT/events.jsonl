@@ -167,3 +167,4 @@
 {"timestamp": "2026-11-26T23:31:08+07:00", "task_id": "restart-11-batch01-43-review", "event": "batch01-43-review", "provider_task_id": "9739168f-ebd1-4da7-a576-38b39481648b", "provider_context_id": "c12d5401-b5b8-46a8-a415-3e520e1f79d3", "cleanup": "DELETED", "accepted_reports": 0}
 {"timestamp": "2026-11-26T23:31:31+07:00", "task_id": "restart-11-batch02-three-field-brief", "event": "batch02-three-field-brief"}
 {"timestamp": "2026-11-26T23:34:25+07:00", "task_id": "restart-11-b02-three-field-review", "event": "b02-three-field-review", "uuid": "0ab84741-8608-4189-844b-026fcdc3cd22", "context_id": "a2008409-31ac-4680-8ff0-623042dd1a93", "cleanup": "DELETED", "batch_verdict": "FAIL"}
+{"timestamp": "2026-11-26T23:34:40+07:00", "task_id": "restart-11-b01-direct-probe-brief", "event": "b01-direct-probe-brief"}
