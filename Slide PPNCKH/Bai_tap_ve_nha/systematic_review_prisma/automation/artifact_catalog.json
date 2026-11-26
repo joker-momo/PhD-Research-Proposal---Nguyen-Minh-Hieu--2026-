@@ -281,6 +281,33 @@
         "doi",
         "title matching"
       ]
+    },
+    {
+      "artifact_id": "hk261-restart-fulltext-verification",
+      "name": "HK261 restart retrieval verifier",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/verify_restart_retrieval.py",
+      "purpose": "Verify public and existing full text against the locked title and DOI, store file identities and log failed routes.",
+      "entrypoint": "python3 verify_restart_retrieval.py --canonical PROJECT --batch JSONL --leads JSONL --output CSV",
+      "inputs": [
+        "locked per-batch records",
+        "reviewed research leads",
+        "lawfully supplied PDF paths"
+      ],
+      "outputs": [
+        "per-batch retrieval log",
+        "PDF or text with checksum and version label"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/test_verify_restart_retrieval.py"
+      ],
+      "test_command": "python3 -m unittest discover -s scripts -p test_verify_restart_retrieval.py",
+      "status": "active",
+      "tags": [
+        "fulltext",
+        "retrieval",
+        "DOI",
+        "PDF"
+      ]
     }
   ]
 }
