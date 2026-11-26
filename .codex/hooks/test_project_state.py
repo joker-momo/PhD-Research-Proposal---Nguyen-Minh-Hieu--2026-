@@ -94,6 +94,13 @@ class ProjectStateTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "future"):
             project_state.validate_files(self.state_path, self.events_path, now=self.now)
 
+    def test_unfinished_status_rejects_completed_at(self):
+        self.state["task"]["status"] = "active"
+        self.write_fixture()
+
+        with self.assertRaisesRegex(ValueError, "completed_at is only valid"):
+            project_state.validate_files(self.state_path, self.events_path, now=self.now)
+
     def test_summary_is_compact_and_contains_next_action(self):
         rendered = project_state.render_summary(self.state)
 

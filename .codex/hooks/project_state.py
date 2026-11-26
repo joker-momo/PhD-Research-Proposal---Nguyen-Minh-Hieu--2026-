@@ -77,7 +77,9 @@ def _validate_task(task, updated_at, now):
         raise ValueError("task updated_at must equal state updated_at")
     if started > updated:
         raise ValueError("task started_at must not be after updated_at")
-    if task["status"] in {"completed", "rejected"} or "completed_at" in task:
+    if task["status"] not in {"completed", "rejected"} and "completed_at" in task:
+        raise ValueError("completed_at is only valid for completed or rejected tasks")
+    if task["status"] in {"completed", "rejected"}:
         completed = parse_timestamp(task.get("completed_at"), now)
         if not started <= completed <= updated:
             raise ValueError("task completed_at must lie between started_at and updated_at")

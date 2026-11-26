@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T08:02:54+07:00",
+  "updated_at": "2026-11-26T08:10:38+07:00",
   "goal": {
     "version": "HK261-PRISMA-SNCS-v2",
     "status": "active",
@@ -9,20 +9,19 @@
   "task": {
     "task_id": "hk261-context-optimization",
     "owner": "CODEX_WRITING",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-26T07:58:00+07:00",
-    "updated_at": "2026-11-26T08:02:54+07:00",
-    "decision_id": "hk261-context-optimization-v1"
+    "updated_at": "2026-11-26T08:10:38+07:00",
+    "completed_at": "2026-11-26T08:10:38+07:00",
+    "decision_id": "hk261-context-optimization-v2"
   },
   "next_task": {
-    "task_id": "reconciliation-scope-01-correction",
+    "task_id": "reconciliation-dates-02",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "After this optimization is committed, merged and cleaned up, dispatch screening_46/reconciliation/briefs/scope_01_correction.md exactly once through the approved A2A router.",
-    "acceptance": "A complete five-record replacement with exactly twenty supported quotes and all A1-A6 and C1-C2 criteria PASS.",
-    "parent_provider_task_id": "01a21542-51c7-70a0-a294-86819046d794",
-    "parent_provider_context_id": "01a21542-51c8-78dd-9cb8-369993e83bea",
-    "parent_state": "TASK_STATE_COMPLETED_REJECTED_A2_A4"
+    "action": "After this optimization is merged and cleaned up, dispatch screening_46/reconciliation/briefs/dates_02.md exactly once through the approved Gemini-first A2A router.",
+    "acceptance": "Exactly C05, C09, C10, C13, C14 and C19; all D1-D5 PASS with labelled publication dates, bounded source attempts, explicit access gaps and no administrative/download-date substitution.",
+    "prior_scope_state": "scope_01 accepted working evidence; C06 and SNCS remain uncertain"
   },
   "project": {
     "target_venue": "SN Computer Science",

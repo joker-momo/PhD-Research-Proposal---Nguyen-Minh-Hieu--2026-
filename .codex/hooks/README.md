@@ -72,7 +72,7 @@ hook package valid:
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s .codex/hooks -p 'test_*.py' -q
 ```
 
-Current expected total: 77 tests = 4 context + 6 state + 33 router + 16 registry
+Current expected total: 78 tests = 4 context + 7 state + 33 router + 16 registry
 + 18 gate.
 The gate suite uses disposable Git repositories and is intentionally slower than
 the pure unit tier.
