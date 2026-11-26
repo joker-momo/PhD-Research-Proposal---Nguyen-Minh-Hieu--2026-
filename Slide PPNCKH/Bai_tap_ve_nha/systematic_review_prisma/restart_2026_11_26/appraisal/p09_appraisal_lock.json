@@ -1,0 +1,65 @@
+{
+  "gate": "PASS",
+  "step": 12,
+  "started_at": "2026-11-27T00:36:29+07:00",
+  "updated_at": "2026-11-27T01:50:07+07:00",
+  "completed_at": "2026-11-27T01:50:07+07:00",
+  "p08_commit": "4b581401344ad7d6cc240c71da4755622795ba30",
+  "source_pdf_count": 25,
+  "locked_input_sha256": {
+    "restart_2026_11_26/extraction/p08_extraction_table.json": "455af97503534a0c494429677ffed67d3492d29f0af0ba6ab360f8a2f9b5af9e",
+    "restart_2026_11_26/extraction/p08_quantitative_claim_source_matrix.csv": "103fe97ce7c89d5b35d106d5092db67cb2a93547765ac1e290fe298303676af0",
+    "restart_2026_11_26/extraction/p08_integrated_candidate.json": "08b7c91c8eb566afd66766a322bb361ab7bcd6db34f9e04fa8b10fbcbe5b4ff9",
+    "restart_2026_11_26/extraction/p08_source_inventory.json": "791c0ce21becf674a96fdc11ef365d6ba87826c122ed95ea78edfcdac238b10b",
+    "restart_2026_11_26/extraction/manifest.json": "a7e48262ed75f8ceaa343d7adbb59652bfb47da854bede7241419b70a3da2474",
+    "restart_2026_11_26/extraction/p08_extraction_lock.json": "ab54de5cf60ea77d590e58adeeb7ac57b9fdfa66eb9750a53feda680e9a3f8d3"
+  },
+  "reports": 25,
+  "domains_per_report": 10,
+  "judgments": 250,
+  "pending_judgments": 0,
+  "source_locators": 615,
+  "accepted_batches": 5,
+  "judgment_counts_by_batch": {
+    "01": {
+      "YES": 13,
+      "PARTIAL": 32,
+      "NOT_REPORTED": 5
+    },
+    "02": {
+      "YES": 12,
+      "PARTIAL": 33,
+      "NOT_REPORTED": 5
+    },
+    "03": {
+      "YES": 19,
+      "PARTIAL": 25,
+      "NOT_REPORTED": 6
+    },
+    "04": {
+      "YES": 17,
+      "PARTIAL": 29,
+      "NOT_REPORTED": 4
+    },
+    "05": {
+      "YES": 18,
+      "PARTIAL": 27,
+      "NO": 2,
+      "NOT_REPORTED": 3
+    }
+  },
+  "cleanup_completed": 13,
+  "cleanup_total": 13,
+  "artifact_sha256": {
+    "restart_2026_11_26/appraisal/appraisal_table.csv": "ff6b070804dd6fbf0c2a60e06e8ef71986d2ac6c8b40b2ea7228b1eca1a101ba",
+    "restart_2026_11_26/appraisal/rationale_source_matrix.csv": "5ba64551af74ec852c8e81be2ec82c1a2eca49fc92282c92eb5fae95226bb165",
+    "restart_2026_11_26/appraisal/manifest.json": "0554e9bdbcda26830ac2fd676d821685841b62983e0807502a7f6274b05a9909",
+    "restart_2026_11_26/appraisal/chat_cleanup.jsonl": "e2e5c2a88d0f238b75c9448de34900569e6dece5046332bd2e82bfe9f236f28d",
+    "restart_2026_11_26/appraisal/batch_01_accepted.json": "a4b8466fe3795f6820963e2677ca82dce2ff32e965e9c87fee5df7b2642b60b4",
+    "restart_2026_11_26/appraisal/batch_02_accepted.json": "b66757e76c9406330009d6f97b8cafa79eb28a674a2e9e9fa0c9090fec19b54d",
+    "restart_2026_11_26/appraisal/batch_03_accepted.json": "0d51bf3a04a1baeec1c1a68bd5c3e6ddc36ca69831d5242d34bcdf177ec43d18",
+    "restart_2026_11_26/appraisal/batch_04_accepted.json": "13d6e7bd0edb6c4b37c8cae94f6397006e514f1e04b7ed6ac8e7bcd6740a09f6",
+    "restart_2026_11_26/appraisal/batch_05_accepted.json": "af71ce3fdebaf4c4ccf5a359014d9099bb8b8f23ccf6f18de6a2a73601352af2"
+  },
+  "next_step": 13
+}
