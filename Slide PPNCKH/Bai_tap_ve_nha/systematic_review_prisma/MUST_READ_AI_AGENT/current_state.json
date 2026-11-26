@@ -1,29 +1,30 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T20:18:29+07:00",
+  "updated_at": "2026-11-26T20:24:39+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step03_delimited_correction_ready",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
-    "task_id": "restart-09-setup",
+    "task_id": "restart-09-batch01-primary",
+    "status": "rejected",
     "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T20:18:29+07:00",
-    "updated_at": "2026-11-26T20:18:29+07:00",
-    "completed_at": "2026-11-26T20:18:29+07:00",
-    "decision_id": "restart-09-screening-v1",
-    "checkpoint_path": "restart_2026_11_26/fulltext_screening/manifest.json"
+    "research_owner": "GEMINI_RESEARCH",
+    "started_at": "2026-11-26T13:18:43+00:00",
+    "updated_at": "2026-11-26T20:24:39+07:00",
+    "completed_at": "2026-11-26T20:24:39+07:00",
+    "checkpoint_path": "restart_2026_11_26/fulltext_screening/batch_01_primary_review.md",
+    "decision_id": "restart-09-batch01-primary-v1"
   },
   "next_task": {
-    "task_id": "restart-09-batch01",
+    "task_id": "restart-09-batch01-correction01",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Screen the first 11 verified PDFs against P03/P06.",
-    "acceptance": "11 exact IDs; independently verified page/section evidence and P06 dispositions.",
-    "dispatch_brief": "restart_2026_11_26/fulltext_screening/batch_01_brief.md",
-    "message_id": "hk261-restart-step09-batch01-v1"
+    "action": "Correct six evidence fields for four IDs.",
+    "acceptance": "4 exact IDs and 6 exact patch fields independently verified.",
+    "dispatch_brief": "restart_2026_11_26/fulltext_screening/batch_01_correction01_brief.md",
+    "message_id": "hk261-restart-step09-batch01-correction01-v1"
   },
   "project": {
     "target_venue": "SN Computer Science",
