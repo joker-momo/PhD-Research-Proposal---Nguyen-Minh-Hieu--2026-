@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-26T18:09:24+07:00",
+  "updated_at": "2026-11-26T18:13:36+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -49,11 +49,14 @@
       "task_id": "restart-02",
       "title": "Chốt protocol cho quy trình mới",
       "owner": "CODEX_WRITING + GEMINI_RESEARCH",
-      "status": "pending",
-      "started_at": null,
-      "updated_at": "2026-11-26T18:07:38+07:00",
+      "status": "active",
+      "started_at": "2026-11-26T18:13:36+07:00",
+      "updated_at": "2026-11-26T18:13:36+07:00",
       "completed_at": null,
-      "artifacts": [],
+      "artifacts": [
+        "restart_2026_11_26/protocol_restart.md",
+        "restart_2026_11_26/step02_protocol_audit_brief.md"
+      ],
       "acceptance": []
     },
     {

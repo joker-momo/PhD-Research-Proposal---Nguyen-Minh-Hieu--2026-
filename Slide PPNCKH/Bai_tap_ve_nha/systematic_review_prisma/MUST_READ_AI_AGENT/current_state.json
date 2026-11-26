@@ -1,26 +1,25 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T18:09:24+07:00",
+  "updated_at": "2026-11-26T18:13:36+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step01_inventory_completed",
+    "status": "step02_protocol_draft_ready_for_app_audit",
     "summary": "Execute the approved16-step restart in order from four search sources. Old46 selection/extraction not inherited. Step01 verifies7 CSVs688 raw rows and51/51 evidence hashes; no new screening or unique count yet. No submission/email."
   },
   "task": {
-    "task_id": "restart-01",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-26T18:07:38+07:00",
-    "updated_at": "2026-11-26T18:09:24+07:00",
-    "completed_at": "2026-11-26T18:09:24+07:00",
-    "decision_id": "restart-01-inventory-v1"
-  },
-  "next_task": {
     "task_id": "restart-02",
     "owner": "CODEX_WRITING",
+    "status": "active",
+    "started_at": "2026-11-26T18:13:36+07:00",
+    "updated_at": "2026-11-26T18:13:36+07:00",
+    "decision_id": "restart-02-protocol-v1"
+  },
+  "next_task": {
+    "task_id": "restart-02-app-audit",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Finalize restart protocol under approved_plan step02, with Gemini.app consistency evidence and Codex acceptance. Then audit actual queries in step03 before locking/normalizing/deduplicating. Never reconcile against old46 as a selection input.",
-    "acceptance": "Operational RQs/eligibility/date/type/language/missingness and reviewer roles explicit; WoS notsearched; no predetermined included count; source-located Gemini review accepted or unresolved recorded."
+    "action": "Dispatch committed step02 protocol consistency brief to native Gemini.app Task, then validate9criteria before adopting evidence. No step03 work yet.",
+    "acceptance": "12/12 topic checks; validJSON; all claims source-located; zero unauthorized changes; contextunchanged;9/9mandatorycriteriaPASS."
   },
   "project": {
     "target_venue": "SN Computer Science",
