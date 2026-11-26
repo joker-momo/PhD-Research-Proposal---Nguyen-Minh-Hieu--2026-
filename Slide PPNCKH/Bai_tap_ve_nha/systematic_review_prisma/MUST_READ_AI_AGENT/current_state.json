@@ -1,42 +1,42 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T16:02:08+07:00",
+  "updated_at": "2026-11-26T17:47:48+07:00",
   "goal": {
     "version": "HK261-PRISMA-completion-spec-v2",
-    "status": "search_input_snapshot_locked_with_shortfalls",
-    "summary": "Native Gemini.app Task correction accepted10/10. Snapshot locks284 pre-dedup rows from IEEE/Scopus/OpenAlex; ACM counts-only, WoS unavailable and RHN unexecuted remain disclosed. Search completeness and manuscript readiness are not claimed."
+    "status": "search_input_snapshot_extended_with_acm_records_wos_shortfall",
+    "summary": "ACM position-level capture accepted404/404 and supplements the locked284-row snapshot. The deduplication queue now contains688 raw rows from IEEE/Scopus/OpenAlex/ACM; WoS remains unavailable, RHN unexecuted, and search completeness or manuscript readiness is not claimed."
   },
   "task": {
-    "task_id": "research-search-dataset-lock-app-correction",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "capture-acm-record-level-results",
+    "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T15:56:14+07:00",
-    "completed_at": "2026-11-26T16:02:08+07:00",
-    "updated_at": "2026-11-26T16:02:08+07:00",
-    "decision_id": "research-search-dataset-lock-app-correction-v1"
+    "started_at": "2026-11-26T16:45:00+07:00",
+    "completed_at": "2026-11-26T17:47:48+07:00",
+    "updated_at": "2026-11-26T17:47:48+07:00",
+    "decision_id": "capture-acm-record-level-results-v1"
   },
   "next_task": {
     "task_id": "normalize-deduplicate-locked-search-input",
     "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Use the locked6 CSVs/284 rows to normalize and deduplicate with row-level provenance, then map to existing46 reports. Delegate semantic ambiguities through native Gemini.app Task; do not redo accepted screening.",
-    "acceptance": "284/284 raw rows accounted; deterministic duplicate mapping auditable; conflicting/missing identifiers explicit; unique count computed rather than assumed; no existing screening decision silently overwritten."
+    "action": "Use the locked6 files/284 rows plus the accepted ACM supplement/404 rows to normalize and deduplicate688 rows with row-level provenance, then map to existing46 reports. Delegate semantic ambiguities through native Gemini.app Task; do not redo accepted screening.",
+    "acceptance": "688/688 raw rows accounted; deterministic duplicate mapping auditable; conflicting/missing identifiers explicit; unique count computed rather than assumed; no existing screening decision silently overwritten."
   },
   "project": {
     "target_venue": "SN Computer Science",
     "active_template": "Springer Nature LaTeX",
     "database_access_readiness": {
-      "status": "IEEE_SCOPUS_EXPORTABLE_ACM_NO_EXPORT_WOS_NO_CORE_OPENALEX_COMPENSATORY_COMPLETE",
+      "status": "IEEE_SCOPUS_EXPORTABLE_ACM_MANUAL_RECORD_CAPTURE_COMPLETE_WOS_NO_CORE_OPENALEX_COMPENSATORY_COMPLETE",
       "sources": [
         "IEEE Xplore",
         "ACM Digital Library",
         "Scopus",
         "Web of Science"
       ],
-      "recorded_at": "2026-11-26T15:12:17+07:00",
+      "recorded_at": "2026-11-26T17:47:48+07:00",
       "live_status": {
         "IEEE Xplore": "institutional; 2 CSV exports",
-        "ACM Digital Library": "Basic Edition; counts only",
+        "ACM Digital Library": "Basic Edition; manual position-level capture79/79 and325/325",
         "Scopus": "institutional; 2 CSV exports",
         "Web of Science": "Free View; Core unavailable",
         "OpenAlex": "compensatory 85/26 exports; not WoS Core"
@@ -92,8 +92,8 @@
       "ieee_acm_interface_records": 2,
       "formal_searches_executed": 6,
       "result_counts_claimed": 6,
-      "record_level_exports_obtained": 4,
-      "record_level_export_rows_before_deduplication": 173,
+      "record_level_exports_obtained": 6,
+      "record_level_export_rows_before_deduplication": 577,
       "reported_totals": "IEEE 42/21; ACM 79/325; Scopus 77/33; Web of Science null/null",
       "blocked_runs": 2,
       "checkpoint_review": "corpus_expansion/reviews/b04_authenticated_resume_checkpoint_review.md",
@@ -106,6 +106,16 @@
         ],
         "union_ids": 102,
         "review": "corpus_expansion/reviews/openalex_compensatory_search_review.md"
+      },
+      "acm_manual_capture": {
+        "query_variants": "2/2",
+        "totals": [
+          79,
+          325
+        ],
+        "captured_rows": 404,
+        "duplicate_source_rows_retained": 12,
+        "review": "corpus_expansion/reviews/acm_manual_record_capture_review.md"
       },
       "existing_corpus_decisions_changed": 0
     },
@@ -141,27 +151,28 @@
       "record_sources": [
         "IEEE Xplore",
         "Scopus",
-        "OpenAlex"
+        "OpenAlex",
+        "ACM Digital Library"
       ],
-      "importable_csv_files": 6,
-      "rows_before_deduplication": 284,
+      "supplement": "corpus_expansion/acm_record_capture_2026-11-26.json",
+      "importable_csv_files": 7,
+      "rows_before_deduplication": 688,
       "cross_platform_unique_records": null,
-      "acceptance": "10/10 PASS",
-      "raw_evidence_checksum_pass": "25/25",
+      "acceptance": "base10/10 PASS plus ACM11/11 PASS",
+      "raw_evidence_checksum_pass": "base25/25 plus ACM26/26",
       "search_complete": false,
       "manuscript_ready": false
     }
   },
   "blockers": [
-    "Core search: 2/8 WoS runs unexecuted and 4/8 exports obtained.",
+    "Core search: 2/8 WoS runs remain unexecuted; six ACM/IEEE/Scopus query variants now have record-level files.",
     "OpenAlex 85/26 compensates discovery but is not WoS Core.",
-    "ACM Basic Edition lacks record exports for 79/325 totals.",
+    "The688 raw rows still require cross-query and cross-platform deduplication and reconciliation against the existing46 reports.",
     "Eight reports await classification; study-family independence and final human adjudication are unresolved.",
     "Twelve included reports have minimum extraction only and are not appraised; domain 9 is withheld for the 24-report subset.",
     "Authorship/declarations are unconfirmed; no submission-ready claim, submission or email is authorized in the current task."
   ],
   "user_confirmation_required": [
-    "Provide or authorize a lawful ACM record-capture route; never send credentials.",
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
     "Contributions, funding, conflicts, data availability and AI disclosure.",
     "Exact examination date for calculating the course deadline.",

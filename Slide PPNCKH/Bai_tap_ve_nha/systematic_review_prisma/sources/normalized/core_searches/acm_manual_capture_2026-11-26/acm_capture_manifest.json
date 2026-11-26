@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "database": "ACM Digital Library",
+  "collection": "The ACM Full-Text Collection",
+  "capture_method": "authenticated browser page capture; Basic Edition",
+  "query_results": {
+    "high_recall": 79,
+    "complementary": 325
+  },
+  "raw_files": [
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_10.json",
+      "sha256": "dee93e2e302d4eda36927abe238f5563bada4cd91877d157da4d5447f4939616"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_11.json",
+      "sha256": "7295624c44b44400540389b85ecc9d35eef447d4ee698aab8c6fa256b3dc7b31"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_12.json",
+      "sha256": "2dc1cbebe88cafcfb090fe05f48cb847291238f2911c60b7b6c5152ca34c20ce"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_13.json",
+      "sha256": "2fc84fbfca48193a0e9344ca96ab89dc1bbf6309c08727e1e9ee989b32842b6c"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_14.json",
+      "sha256": "2739eb1c8b3961a4e168aa997f4c8cb5d592c343a1ac351d2038531081d3d040"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_15.json",
+      "sha256": "52e44f61221a5ff2ab77807928ecfc623e222066b23430e7d83655e303601b2e"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_16.json",
+      "sha256": "0aa5f792234840a89ad491612eb46d9f0d0a22aeb93ad066a27a174aa9602b09"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_7.json",
+      "sha256": "ebcfd370ee33a95cd1099debf29f251d7f78abeb192b0423790b37ebb2cfd5d4"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_8.json",
+      "sha256": "0c9f85750eeae7f7096f6f1f52a4a50cef9c4324563db5b80f9e221c13874a29"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_comp_startPage_9.json",
+      "sha256": "5ef0edb674ca3e54be3c2bec0406b8f4162d99e287b47c19b1647219b0cd4581"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_high_startPage_0.json",
+      "sha256": "129a4935c5008043f6dd072d4d595508a9ef4ce2a221236adc9d1b2a960c0628"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_high_startPage_1.json",
+      "sha256": "740783aec30c922403932d61575a83c8512e2a0b47e4511dce289c99d5f46509"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_high_startPage_2.json",
+      "sha256": "cef79273db1da69bada4b8ce2c83f418af19c368e2483bbb7bae203c8f17ea9f"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/browser_high_startPage_3.json",
+      "sha256": "96d5d22c312d72657b60e5058c6ab113c84c9df2e5966bc1583bb97d4bf8bccb"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_01.json",
+      "sha256": "897d64486e5fc6f95a82e9302194d0dae3918bb0d8bc35e270b6ed7a8db6a0e8"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_02.json",
+      "sha256": "26e634a3e4b06b51d2ac783545b81d85bf37829259d9ee7f9a5a4e73351445ed"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_03.json",
+      "sha256": "042de6d7165e501ab2706175615574d00a482bae0cccffdbe61a73ca932d0022"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_04.json",
+      "sha256": "32206a98efb22b138ef914bcd3a10bf87a00d002bef7045fc43dccab9e21e4e3"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_05.json",
+      "sha256": "3c8124ec2c6fd6779edc78a348ce63640b84bc2746c604588bb80dba069f49a5"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_06.json",
+      "sha256": "65c159ef5023934c8ead365f8115426fdac27113e650a3b08c1a99e2e2de407d"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/raw/core_searches/acm_manual_capture_2026-11-26/complementary_page_07.json",
+      "sha256": "aaef4ec0375e360ea9d620591dbf865ef341a0b2d8272b22d8ef8895d369ce22"
+    }
+  ],
+  "normalized_files": [
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_complementary_records.json",
+      "sha256": "76c52be608de1e00b9463947694445347a42465ad15540650a269fd6282376b6"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_high_recall_records.json",
+      "sha256": "fbf571ae840f4c909d8ec4c7a68f4df9c029294bc4de53610c23e3bb732fc8f3"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_capture_qa.json",
+      "sha256": "3e5bf66f709dd45b2b29e9768f497186436ac3e77f13ecba80598ebadbfbddaf"
+    },
+    {
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_all_records.csv",
+      "sha256": "44ddc082686f54af1f2c8199ee0db613296f84d7f5b8e3b5d510bc76fd510a06"
+    }
+  ],
+  "qa": {
+    "schema_version": 1,
+    "high_recall": {
+      "expected_records": 79,
+      "observed_records": 79,
+      "contiguous_ranks": true,
+      "duplicate_ranks": 0,
+      "missing_titles": 0,
+      "invalid_or_missing_years": 0,
+      "missing_doi_marker": 0,
+      "missing_url_marker": 0,
+      "doi_not_found": 0,
+      "url_not_found": 0,
+      "missing_source_page": 0,
+      "normalized_duplicates": 1
+    },
+    "complementary": {
+      "expected_records": 325,
+      "observed_records": 325,
+      "contiguous_ranks": true,
+      "duplicate_ranks": 0,
+      "missing_titles": 0,
+      "invalid_or_missing_years": 0,
+      "missing_doi_marker": 0,
+      "missing_url_marker": 0,
+      "doi_not_found": 39,
+      "url_not_found": 35,
+      "missing_source_page": 0,
+      "normalized_duplicates": 11
+    },
+    "acceptance_pass": true,
+    "duplicate_interpretation": "normalized_duplicates are repeated source-result rows preserved at distinct ranks; they are reported for the next deduplication task and do not invalidate capture completeness"
+  }
+}

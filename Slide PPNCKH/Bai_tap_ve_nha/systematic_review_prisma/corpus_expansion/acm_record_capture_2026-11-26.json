@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "supplement_id": "HK261-ACM-RECORD-CAPTURE-20261126-v1",
+  "base_snapshot": "HK261-SEARCH-INPUT-20261126-v1",
+  "completed_at": "2026-11-26T17:47:48+07:00",
+  "status": "ACCEPTED_COMPLETE_POSITION_LEVEL_CAPTURE",
+  "database": "ACM Digital Library",
+  "collection": "The ACM Full-Text Collection",
+  "query_variants": {
+    "high_recall": {
+      "reported_total": 79,
+      "captured_rows": 79,
+      "normalized_duplicates_retained": 1
+    },
+    "complementary": {
+      "reported_total": 325,
+      "captured_rows": 325,
+      "normalized_duplicates_retained": 11
+    }
+  },
+  "importable_file": {
+    "path": "sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_all_records.csv",
+    "rows": 404,
+    "sha256": "44ddc082686f54af1f2c8199ee0db613296f84d7f5b8e3b5d510bc76fd510a06"
+  },
+  "combined_rows_before_deduplication": 688,
+  "qa": "sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_capture_qa.json",
+  "manifest": "sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_capture_manifest.json",
+  "checksums": "sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_capture_checksums.sha256",
+  "acceptance_review": "corpus_expansion/reviews/acm_manual_record_capture_review.md",
+  "search_complete": false,
+  "unresolved_items": [
+    "Web of Science Core Collection searches remain unexecuted and reported totals remain null.",
+    "The 688 rows have not yet been deduplicated across queries or platforms.",
+    "The captured records have not yet been reconciled against the existing 46 report-level screening records."
+  ]
+}

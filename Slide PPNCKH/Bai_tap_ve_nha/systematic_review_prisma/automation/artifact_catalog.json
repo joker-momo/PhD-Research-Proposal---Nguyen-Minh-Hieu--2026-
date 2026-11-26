@@ -201,6 +201,34 @@
         "provenance",
         "checksums"
       ]
+    },
+    {
+      "artifact_id": "hk261-acm-capture-normalizer",
+      "name": "ACM browser-capture normalizer and integrity packager",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/parse_acm_capture.py",
+      "purpose": "Normalize position-level ACM Digital Library browser captures into auditable JSON/CSV records with explicit missing-data markers, duplicate diagnostics, manifests and SHA-256 evidence.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/parse_acm_capture.py\" --input-dir <raw-pages> --output-dir <normalized-output>",
+      "inputs": [
+        "Page-level ACM result HTML fragments",
+        "Existing structured manual page captures"
+      ],
+      "outputs": [
+        "Variant JSON records and combined CSV",
+        "QA report, manifest and checksum ledger"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/test_parse_acm_capture.py"
+      ],
+      "test_command": "PYTHONDONTWRITEBYTECODE=1 python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/scripts/test_parse_acm_capture.py\"",
+      "status": "active",
+      "tags": [
+        "acm",
+        "prisma",
+        "browser-capture",
+        "normalization",
+        "provenance",
+        "checksums"
+      ]
     }
   ]
 }

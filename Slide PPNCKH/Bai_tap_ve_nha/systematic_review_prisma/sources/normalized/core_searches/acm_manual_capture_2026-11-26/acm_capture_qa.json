@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "high_recall": {
+    "expected_records": 79,
+    "observed_records": 79,
+    "contiguous_ranks": true,
+    "duplicate_ranks": 0,
+    "missing_titles": 0,
+    "invalid_or_missing_years": 0,
+    "missing_doi_marker": 0,
+    "missing_url_marker": 0,
+    "doi_not_found": 0,
+    "url_not_found": 0,
+    "missing_source_page": 0,
+    "normalized_duplicates": 1
+  },
+  "complementary": {
+    "expected_records": 325,
+    "observed_records": 325,
+    "contiguous_ranks": true,
+    "duplicate_ranks": 0,
+    "missing_titles": 0,
+    "invalid_or_missing_years": 0,
+    "missing_doi_marker": 0,
+    "missing_url_marker": 0,
+    "doi_not_found": 39,
+    "url_not_found": 35,
+    "missing_source_page": 0,
+    "normalized_duplicates": 11
+  },
+  "acceptance_pass": true,
+  "duplicate_interpretation": "normalized_duplicates are repeated source-result rows preserved at distinct ranks; they are reported for the next deduplication task and do not invalidate capture completeness"
+}

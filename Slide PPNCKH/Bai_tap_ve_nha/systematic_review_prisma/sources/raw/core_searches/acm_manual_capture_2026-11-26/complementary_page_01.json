@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-11-26T16:45:00+07:00",
+  "query_variant": "complementary",
+  "reported_total": 325,
+  "page": 1,
+  "records": [
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 1,
+      "record_type": "SURVEY",
+      "display_date": "June 2026",
+      "title": "Large-Scale UAV Swarm Coordination for Sensing and Communication: A Spatiotemporal Perspective",
+      "authors": [
+        "Jirong Zha",
+        "Jiyuan Ren",
+        "Yuhan Cheng",
+        "Shiquan Yu",
+        "Geng Chen",
+        "Zuxin Li"
+      ],
+      "venue": "ACM Computing Surveys (CSUR)",
+      "doi": "10.1145/3817444",
+      "url": "https://doi.org/10.1145/3817444"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 2,
+      "record_type": "SURVEY",
+      "display_date": "November 2024",
+      "title": "A Survey on Security of UAV Swarm Networks: Attacks and Countermeasures",
+      "authors": [
+        "Xiaojie Wang",
+        "Zhonghui Zhao",
+        "Ling Yi",
+        "Zhaolong Ning",
+        "Lei Guo"
+      ],
+      "venue": "ACM Computing Surveys (CSUR)",
+      "doi": "10.1145/3703625",
+      "url": "https://doi.org/10.1145/3703625"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 3,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "May 2025",
+      "title": "Screening Method of Distributed Cooperative Navigation Factors for Uav Swarm",
+      "authors": [
+        "Zhang Can",
+        "Li Qun",
+        "Lun WeiCheng",
+        "Guo Dong"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3727993.3728075",
+      "url": "https://doi.org/10.1145/3727993.3728075"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 4,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "July 2026",
+      "title": "MACE: A Physics-Informed Multi-modal Large Language Model for Strategic UAV Swarm Confrontation",
+      "authors": [
+        "Yudong Yang",
+        "Heng Shi",
+        "Jihong Zhu"
+      ],
+      "venue": "RobCE '26: Proceedings of the 6th International Conference on Robotics and Control Engineering",
+      "doi": "10.1145/3820709.3820744",
+      "url": "https://doi.org/10.1145/3820709.3820744"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 5,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "September 2026",
+      "title": "Research Review on the Application of Deep Reinforcement Learning in Fixed-Wing UAV Swarm Control",
+      "authors": [
+        "Juntang Xu"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3828836.3828907",
+      "url": "https://doi.org/10.1145/3828836.3828907"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 6,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "September 2025",
+      "title": "Outdoor Multi-UAV Collaborative Task Planning System Based on Multi-Agent and Improved PPO Algorithm",
+      "authors": [
+        "Runmin Wang",
+        "Zhongliang Deng"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3760269.3760299",
+      "url": "https://doi.org/10.1145/3760269.3760299"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 7,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "December 2025",
+      "title": "ARIES: Autonomous Reconnaissance, Inspection and Exploration System for Hybrid Single and Multi-UAV Building Inspection Approach after Disaster",
+      "authors": [
+        "Karen T. Torres",
+        "Daniela E. Sánchez",
+        "Carlos E. Cedeño",
+        "Christopher J. Vaccaro"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3714394.3756181",
+      "url": "https://doi.org/10.1145/3714394.3756181"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 8,
+      "record_type": "SURVEY",
+      "display_date": "November 2024",
+      "title": "Deep Learning Aided Intelligent Reflective Surfaces for 6G: A Survey",
+      "authors": [
+        "Muhammad Tariq",
+        "Sohail Ahmad",
+        "Mian Ahmad Jan",
+        "Houbing Song"
+      ],
+      "venue": "ACM Computing Surveys (CSUR)",
+      "doi": "10.1145/3696414",
+      "url": "https://doi.org/10.1145/3696414"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 9,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "September 2026",
+      "title": "SwarmUpdate: Hierarchical Software Updates and Deep Learning Model Patching for Heterogeneous UAV Swarms",
+      "authors": [
+        "Lin Geng",
+        "Hao Li",
+        "Sidney Givigi",
+        "Bram Adams"
+      ],
+      "venue": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+      "doi": "10.1145/3846184",
+      "url": "https://doi.org/10.1145/3846184"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 10,
+      "record_type": "SURVEY",
+      "display_date": "February 2026",
+      "title": "DNN Partitioning for Cooperative Inference in Edge Intelligence: Modeling, Solutions, Toolchains",
+      "authors": [
+        "Yuntao Hao",
+        "Nan Ding",
+        "Weiguo Xia",
+        "Hongwei Ge",
+        "Li Xu"
+      ],
+      "venue": "ACM Computing Surveys (CSUR)",
+      "doi": "10.1145/3786145",
+      "url": "https://doi.org/10.1145/3786145"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 11,
+      "record_type": "PROCEEDING",
+      "display_date": "March 2026",
+      "title": "HNNDL '26: Proceedings of the 2026 International Conference on Human-Computer Interaction, Neural Networks and Deep Learning",
+      "authors": [],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "DOI_NOT_FOUND",
+      "url": "URL_NOT_PARSED"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 12,
+      "record_type": "PROCEEDING",
+      "display_date": "June 2024",
+      "title": "CVDL '24: Proceedings of the International Conference on Computer Vision and Deep Learning",
+      "authors": [],
+      "venue": "CVDL '24: Proceedings of the International Conference on Computer Vision and Deep Learning",
+      "doi": "DOI_NOT_FOUND",
+      "url": "URL_NOT_PARSED"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 13,
+      "record_type": "DEMONSTRATION",
+      "display_date": "June 2022",
+      "title": "IDEA: intelligent divine eye on air through multi-UAV collaborative inference",
+      "authors": [
+        "Hao Sun",
+        "Chao Dong",
+        "Yuben Qu",
+        "Feiyu Wu",
+        "Lei Zhang",
+        "Qihui Wu"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3498361.3538674",
+      "url": "https://doi.org/10.1145/3498361.3538674"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 14,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "September 2025",
+      "title": "GazeboNS3: A Digital Twin System for UAV Swarms",
+      "authors": [
+        "Dorian Cauwe",
+        "Chenyang Wang",
+        "Qi Han"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3711875.3737659",
+      "url": "https://doi.org/10.1145/3711875.3737659"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 15,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "November 2025",
+      "title": "LLM-based UAV Path Planning for Autonomous and Adaptive Industry Systems",
+      "authors": [
+        "Wenjing Xiao",
+        "Chenglong Shi",
+        "Miaojiang Chen",
+        "Athanasios V. Vasilakos"
+      ],
+      "venue": "ACM Transactions on Autonomous and Adaptive Systems (TAAS)",
+      "doi": "10.1145/3774655",
+      "url": "https://doi.org/10.1145/3774655"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 16,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "September 2026",
+      "title": "Federated Learning-Based Trajectory Optimization for UAV Swarms with Wind Impact Analysis",
+      "authors": [
+        "Jingrui Xu"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3838457.3838477",
+      "url": "https://doi.org/10.1145/3838457.3838477"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 17,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "January 2025",
+      "title": "Federated Learning-enabled Network Incident Anomaly Detection Optimization for Drone Swarms",
+      "authors": [
+        "Kevin Kostage",
+        "Rohan Adepu",
+        "Jenaya Monroe",
+        "Trevontae Haughton"
+      ],
+      "venue": "ICDCN '25: Proceedings of the 26th International Conference on Distributed Computing and Networking",
+      "doi": "10.1145/3700838.3700857",
+      "url": "https://doi.org/10.1145/3700838.3700857"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 18,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "August 2026",
+      "title": "c2mec: Cooperative Multi-split and Multi-hop Edge Computing Based on Deep Reinforcement Learning",
+      "authors": [
+        "Xiaojie Zhang",
+        "Peng Wang",
+        "Shima Yousefi",
+        "Saptarshi Debroy",
+        "Keqin Li"
+      ],
+      "venue": "ACM Transactions on Embedded Computing Systems (TECS)",
+      "doi": "10.1145/3772281",
+      "url": "https://doi.org/10.1145/3772281"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 19,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "June 2023",
+      "title": "Object Recognition Offloading in Augmented Reality Assisted UAV-UGV Systems",
+      "authors": [
+        "Chenyang Wang",
+        "Benjamin Carlson",
+        "Qi Han"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3597060.3597240",
+      "url": "https://doi.org/10.1145/3597060.3597240"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 1,
+      "rank": 20,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "April 2026",
+      "title": "Neuro-C: Neural Inference Shaped by Hardware Limits",
+      "authors": [
+        "Diletta Romano",
+        "Luca Mottola",
+        "Thiemo Voigt"
+      ],
+      "venue": "EUROSYS '26: Proceedings of the 21st European Conference on Computer Systems",
+      "doi": "10.1145/3767295.3769380",
+      "url": "https://doi.org/10.1145/3767295.3769380"
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-11-26T16:45:00+07:00",
+  "query_variant": "complementary",
+  "reported_total": 325,
+  "page": 2,
+  "records": [
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 21,
+      "record_type": "SURVEY",
+      "display_date": "May 2026",
+      "title": "Energy-Efficient Resource Management in Microservices-Based Fog and Edge Computing: State-of-the-Art and Future Directions",
+      "authors": [
+        "Ali Akbar Vali",
+        "Sadoon Azizi",
+        "Mohammad Shojafar",
+        "Rajkumar Buyya"
+      ],
+      "venue": "ACM Computing Surveys (CSUR)",
+      "doi": "10.1145/3797911",
+      "url": "https://doi.org/10.1145/3797911"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 22,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "September 2026",
+      "title": "Task Offloading with Temporal Awareness in Heterogeneous Cloud-Edge-Ground Systems",
+      "authors": [
+        "Chenyang Wang",
+        "Qi Han"
+      ],
+      "venue": "ACM Transactions on Internet Technology (TOIT)",
+      "doi": "10.1145/3844610",
+      "url": "https://doi.org/10.1145/3844610"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 23,
+      "record_type": "SURVEY",
+      "display_date": "February 2023",
+      "title": "Five Facets of 6G: Research Challenges and Opportunities",
+      "authors": [
+        "Li-Hsiang Shen",
+        "Kai-Ten Feng",
+        "Lajos Hanzo"
+      ],
+      "venue": "ACM Computing Surveys (CSUR)",
+      "doi": "10.1145/3571072",
+      "url": "https://doi.org/10.1145/3571072"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 24,
+      "record_type": "SURVEY",
+      "display_date": "August 2023",
+      "title": "Mobile Edge Computing and Machine Learning in the Internet of Unmanned Aerial Vehicles: A Survey",
+      "authors": [
+        "Zhaolong Ning",
+        "Hao Hu",
+        "Xiaojie Wang",
+        "Lei Guo",
+        "Song Guo",
+        "Guoyin Wang"
+      ],
+      "venue": "ACM Computing Surveys (CSUR)",
+      "doi": "10.1145/3604933",
+      "url": "https://doi.org/10.1145/3604933"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 25,
+      "record_type": "SURVEY",
+      "display_date": "March 2023",
+      "title": "Machine Learning Applications in Internet-of-Drones: Systematic Review, Recent Deployments, and Open Issues",
+      "authors": [
+        "Arash Heidari",
+        "Nima Jafari Navimipour",
+        "Mehmet Unal",
+        "Guodao Zhang"
+      ],
+      "venue": "ACM Computing Surveys (CSUR)",
+      "doi": "10.1145/3571728",
+      "url": "https://doi.org/10.1145/3571728"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 26,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "September 2026",
+      "title": "A Method for Dynamic Knowledge Graph and Two-Stage Subgraph Matching for Pattern Recognition and Risk Assessment in Situation Awareness",
+      "authors": [
+        "Te Wang",
+        "Na Wu",
+        "Sibing Liu"
+      ],
+      "venue": "MLNN '26: Proceedings of the 2026 International Conference on Machine Learning and Neural Networks",
+      "doi": "10.1145/3821725.3821803",
+      "url": "https://doi.org/10.1145/3821725.3821803"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 27,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "April 2024",
+      "title": "MulBERRY: Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems",
+      "authors": [
+        "Zishen Wan",
+        "Nandhini Chandramoorthy",
+        "Karthik Swaminathan",
+        "Pin-Yu Chen"
+      ],
+      "venue": "ASPLOS '24: Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems",
+      "doi": "10.1145/3620665.3640420",
+      "url": "https://doi.org/10.1145/3620665.3640420"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 28,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "October 2026",
+      "title": "Poster: CMA-FL: Cognitive Multi-Agent Federated Learning for Resource-Aware Drone Communication Attack Detection",
+      "authors": [
+        "Pronaya Bhattacharya",
+        "Anwesha Mukherjee",
+        "Somnath Bera",
+        "Debashis De"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3842435.3843959",
+      "url": "https://doi.org/10.1145/3842435.3843959"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 29,
+      "record_type": "SURVEY",
+      "display_date": "September 2025",
+      "title": "Future UAV/Drone Systems for Intelligent Active Surveillance and Monitoring",
+      "authors": [
+        "Tazeem Ahmad",
+        "Alicia Morel",
+        "Nuo Cheng",
+        "Kannappan Palaniappan"
+      ],
+      "venue": "ACM Computing Surveys (CSUR)",
+      "doi": "10.1145/3760389",
+      "url": "https://doi.org/10.1145/3760389"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 30,
+      "record_type": "SURVEY",
+      "display_date": "August 2026",
+      "title": "Recent Advances in Transformer and Large Language Models for UAV Applications",
+      "authors": [
+        "Hamza Kheddar",
+        "Yassine Habchi",
+        "Mohamed Chahine Ghanem",
+        "Mustapha Hemis"
+      ],
+      "venue": "ACM Computing Surveys (CSUR)",
+      "doi": "10.1145/3828658",
+      "url": "https://doi.org/10.1145/3828658"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 31,
+      "record_type": "ARTICLE",
+      "display_date": "May 2026",
+      "title": "Real-Time Drone-Car Collaboration for Future Mobility: Vision and Challenge",
+      "authors": [
+        "Sayma Tamboli",
+        "Kiran Davuluri",
+        "Khairul Mottakin",
+        "Zheng Song"
+      ],
+      "venue": "ACM SIGAPP Applied Computing Review (SIGAPP)",
+      "doi": "10.1145/3807408.3807409",
+      "url": "https://doi.org/10.1145/3807408.3807409"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 32,
+      "record_type": "PROCEEDING",
+      "display_date": "August 2026",
+      "title": "BDIM '26: Proceedings of the 2026 International Conference on Big Data and Intelligent Manufacturing",
+      "authors": [],
+      "venue": "BDIM '26: Proceedings of the 2026 International Conference on Big Data and Intelligent Manufacturing",
+      "doi": "DOI_NOT_FOUND",
+      "url": "URL_NOT_PARSED"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 33,
+      "record_type": "PROCEEDING",
+      "display_date": "October 2024",
+      "title": "UAVM '24: Proceedings of the 2nd Workshop on UAVs in Multimedia: Capturing the World from a New Perspective",
+      "authors": [
+        "Zhedong Zheng",
+        "Yujiao Shi",
+        "Tingyu Wang",
+        "Chen Chen"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "DOI_NOT_FOUND",
+      "url": "URL_NOT_PARSED"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 34,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "October 2026",
+      "title": "Attention-Guided UAV Intrusion Detection with BSO-Based Feature Selection",
+      "authors": [
+        "Akshat Gaurav",
+        "Varsha Arya",
+        "Ching-Hsien Hsu",
+        "Kwok Tai Chui",
+        "Brij B. Gupta"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3842435.3843954",
+      "url": "https://doi.org/10.1145/3842435.3843954"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 35,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "April 2024",
+      "title": "Multi-height Visual Drone Positioning Based on LSTM and Convolutional Neural Networks",
+      "authors": [
+        "Qibin He",
+        "Yapeng Wang",
+        "Xu Yang",
+        "Sio-Kei Im"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3638884.3638938",
+      "url": "https://doi.org/10.1145/3638884.3638938"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 36,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "October 2024",
+      "title": "SkySCALE: A Radio Tomographic Approach Towards Scaling UAV Network Deployments",
+      "authors": [
+        "Subrata Das",
+        "Ayon Chakraborty"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3641512.3686384",
+      "url": "https://doi.org/10.1145/3641512.3686384"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 37,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "January 2023",
+      "title": "A Comparative Study of YOLOv5 models on American Sign Language Dataset",
+      "authors": [
+        "Michael Stephen Lui",
+        "Fitri Utaminingrum"
+      ],
+      "venue": "VENUE_NOT_PARSED",
+      "doi": "10.1145/3568231.3568233",
+      "url": "https://doi.org/10.1145/3568231.3568233"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 38,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "July 2023",
+      "title": "Ensuring Threshold AoI for UAV-Assisted Mobile Crowdsensing by Multi-Agent Deep Reinforcement Learning With Transformer",
+      "authors": [
+        "Hao Wang",
+        "Chi Harold Liu",
+        "Haoming Yang",
+        "Guoren Wang",
+        "Kin K. Leung"
+      ],
+      "venue": "IEEE/ACM Transactions on Networking (TON)",
+      "doi": "10.1109/TNET.2023.3289172",
+      "url": "https://doi.org/10.1109/TNET.2023.3289172"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 39,
+      "record_type": "RESEARCH-ARTICLE",
+      "display_date": "August 2024",
+      "title": "Physics-informed Neural ODE for Post-disaster Mobility Recovery",
+      "authors": [
+        "Jiahao Li",
+        "Huandong Wang",
+        "Xinlei Chen"
+      ],
+      "venue": "KDD '24: Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "doi": "10.1145/3637528.3672027",
+      "url": "https://doi.org/10.1145/3637528.3672027"
+    },
+    {
+      "source": "ACM Digital Library",
+      "collection": "The ACM Full-Text Collection",
+      "query_variant": "complementary",
+      "page": 2,
+      "rank": 40,
+      "record_type": "SURVEY",
+      "display_date": "February 2026",
+      "title": "Digital Twins Paradigm: A Systematic Review from the Reinforcement Learning Perspective",
+      "authors": [
+        "Shahmir Khan Mohammed",
+        "Shakti Singh",
+        "Rabeb Mizouni",
+        "Hadi Otrok"
+      ],
+      "venue": "ACM Computing Surveys (CSUR)",
+      "doi": "10.1145/3777367",
+      "url": "https://doi.org/10.1145/3777367"
+    }
+  ]
+}
