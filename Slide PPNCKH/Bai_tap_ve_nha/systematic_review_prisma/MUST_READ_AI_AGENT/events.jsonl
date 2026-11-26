@@ -106,3 +106,4 @@
 {"timestamp": "2026-11-26T19:28:23+07:00", "task_id": "restart-07", "event": "screening_batch_accepted", "batch": 7, "provider_task_id": "bdabd231-31f8-4d04-ac17-8498c87789b7", "accepted_records": 465, "pending": 0, "retrieve_full_text": 44, "unclear": 93, "exclude": 328}
 {"timestamp": "2026-11-26T19:28:28+07:00", "task_id": "restart-07", "event": "title_abstract_screening_complete", "accepted_records": 465, "pending": 0, "retrieve_full_text": 44, "unclear": 93, "exclude": 328, "forward_to_full_text": 137}
 {"timestamp": "2026-11-26T19:30:11+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_queue_prepared", "records": 137, "batches": 7}
+{"timestamp": "2026-11-26T19:30:39+07:00", "task_id": "restart-08", "event": "fulltext_retrieval_brief_prepared", "batch": 1, "records": 20}
