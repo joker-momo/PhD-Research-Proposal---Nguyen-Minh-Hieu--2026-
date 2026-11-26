@@ -1,2 +1,3 @@
 {"timestamp": "2026-11-27T00:41:30+07:00", "uuid": "ddbb7eda-d194-4a22-bbe0-820cb63d9644", "event": "CONFIRM_ONCE", "detail": "Exact UUID and matching saved result verified before confirm", "label": "batch01", "result_sha256": "2243c59dbafe41a7326ae8d7f5604a1bea38971baa1794de1321f3ee9dc6be10"}
 {"timestamp": "2026-11-27T00:41:33+07:00", "uuid": "ddbb7eda-d194-4a22-bbe0-820cb63d9644", "event": "DELETED", "detail": "Native confirmation followed by verified empty new chat", "label": "batch01"}
+{"timestamp": "2026-11-26T17:44:37.271+00:00", "uuid": "33227d72-c81a-415f-8580-224bda4b6635", "event": "DELETED", "detail": "Native bridge reported verified empty New chat and restored Chat mode after durable result save.", "label": "batch01-access-preflight"}
