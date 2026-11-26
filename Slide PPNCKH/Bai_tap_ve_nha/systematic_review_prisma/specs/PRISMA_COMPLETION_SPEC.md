@@ -1,15 +1,21 @@
 # Specification: Complete the HK261 PRISMA Systematic Review
 
-**Document ID:** `HK261-PRISMA-COMPLETION-SPEC-v1`
+**Document ID:** `HK261-PRISMA-COMPLETION-SPEC-v2`
 
 **Status:** `DRAFT_FOR_HUMAN_APPROVAL`
 
 **Created:** 2026-11-26
 
+**Updated:** 2026-11-26
+
 **Applies to:** `Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/`
 
 **Current scientific baseline:** 46 reports; 36 working includes, 2 excludes, 8 uncertain; 24 detailed extractions, 12 minimum extractions; 24 partial appraisals; final study count unknown.
 **Current manuscript baseline:** 22-page Springer Nature review copy, 53 cited references, explicitly interim and not submitted.
+
+**v2 decision record:** The user confirmed SN Computer Science with the Springer Nature LaTeX template as the sole active venue/template and confirmed access to IEEE Xplore, ACM Digital Library, Scopus and Web of Science. Access confirmation establishes readiness only; a database counts as searched only after its official export and reproducibility log pass the search gate.
+
+**v2 review disposition:** Four external-review findings were accepted directly, two were accepted with a methodological/workflow constraint, and one additional usability improvement was accepted. Citation searching now forms an auditable delta-screening loop; the existing 46 reports are not mechanically re-screened; database access has an explicit gate; bibliography audit covers 100% of `references.bib`; build instructions come from the approved venue profile; logical execution batches reduce Git overhead without weakening criterion-level gates; and human adjudication uses one consolidated packet. The short-paper finding was corrected: page count alone is not an eligibility rule.
 
 ## 1. Objective
 
@@ -36,6 +42,18 @@ Apply requirements in this order:
 
 Reviewer comments are inputs, not authority. A requested change enters implementation only after it is verified against the manuscript and sources.
 
+### 2.1 v2 review disposition
+
+| Finding | Verdict | Implemented change |
+|---|---|---|
+| S-06 ran before eligibility selection | `ACCEPT` | S-06 now begins from provisional included reports plus six background reviews, and every discovered record loops through D-04/E-01–E-03 until the stopping rule passes. |
+| S03/S19 prove a page-length inconsistency | `ACCEPT_WITH_CORRECTION` | G-04/E-04 use publication type and substantive content; page count alone cannot include or exclude a report. |
+| Existing 46 reports could be screened again | `ACCEPT` | D-03 supplies inherited decisions; E-01–E-03 operate on uncovered delta records unless an amendment affects an old decision. |
+| Four databases need an access gate | `ACCEPT` | DEC-08 records 4/4 user-confirmed access; G-04/S-01 verify the official routes before final searches. |
+| Per-component Git overhead is excessive | `ACCEPT_WITH_CONSTRAINT` | Fifteen logical execution batches are Git tasks; every component criterion retains separate PASS/FAIL evidence. |
+| X-05/build instructions are too narrow | `ACCEPT` | X-05 covers 100% of `references.bib`; Q-02 follows the G-03-approved build profile. |
+| Human decisions would be fragmented | `ACCEPT` | E-05 produces one consolidated CSV/Markdown adjudication packet. |
+
 ## 3. Confirmed requirements
 
 - Review type: systematic review reported using PRISMA 2020.
@@ -46,13 +64,15 @@ Reviewer comments are inputs, not authority. A requested change enters implement
 - Records, reports and studies are distinct accounting units.
 - Reviews may support positioning and citation chaining but are not primary included studies.
 - Canonical manuscript is LaTeX compiled to PDF.
+- The sole active venue/template is SN Computer Science using the official Springer Nature LaTeX template; the earlier IEEE-template request is superseded for this project version.
+- The user has confirmed access readiness for all four core databases: IEEE Xplore, ACM Digital Library, Scopus and Web of Science. Search completion still requires actual official-interface execution and archived exports.
 - Codex owns writing, project edits, acceptance, Git and final user-facing text.
 - Gemini or the approved low-cost fallback may return read-only research evidence; neither writes final prose nor accepts its own output.
 - Every task uses one branch/worktree, one task-owned diff, explicit validation, an atomic commit, fast-forward integration and cleanup.
 - Every task updates current state and appends matching timestamped event/decision evidence.
 - Submission and course email are prohibited until the user explicitly authorizes those external actions.
 
-## 4. Assumptions and open decisions
+## 4. Assumptions and decisions
 
 ### 4.1 Assumptions used by this specification
 
@@ -62,20 +82,22 @@ Reviewer comments are inputs, not authority. A requested change enters implement
 4. Narrative synthesis is the default. Meta-analysis is permitted only if a homogeneous subset has compatible outcomes and variance information.
 5. A single human author may perform final adjudication under the fixed protocol. Independent dual-human screening and Cohen's kappa are optional robustness enhancements, not universal PRISMA requirements.
 6. A unified mathematical formulation is optional and target-dependent. It must not be introduced merely to imitate a survey journal.
+7. Report completeness is determined by publication type and substantive content, not a minimum page count. A short paper remains eligible only when it provides enough primary-research methods, system/model description, evaluation and results for the frozen extraction and appraisal rules. Demo abstracts, poster abstracts and work-in-progress notices without that content are excluded.
 
-### 4.2 Human decisions required
+### 4.2 Decision register
 
-| Decision ID | Decision | Current default | Blocks |
+| Decision ID | Decision | Status/value | Blocks |
 |---|---|---|---|
-| DEC-01 | Final venue and template | SN Computer Science/Springer Nature is canonical | Final formatting and submission package |
-| DEC-02 | Whether the earlier IEEE-template request supersedes SN Computer Science | Not resolved; do not maintain two active manuscripts | Final template conversion |
+| DEC-01 | Final venue and template | **RESOLVED:** SN Computer Science/Springer Nature LaTeX | Nothing in Level 1 |
+| DEC-02 | Whether IEEE supersedes SN Computer Science | **RESOLVED:** no; IEEE copy is not active | Nothing in Level 1 |
 | DEC-03 | Author order, corresponding author and supervisor | Unknown | Submission-ready status |
 | DEC-04 | Verified HCMUT email, affiliations, ORCID and doctoral student ID | Unknown | Author block and submission |
 | DEC-05 | Contributions, funding, conflicts, data availability and final AI declaration | Unknown | Declarations and submission |
 | DEC-06 | Examination date | Unknown; never guess | Course deadline calculation |
 | DEC-07 | Authorization to submit and later send course email | Not granted | External actions |
+| DEC-08 | Access to four core databases | **RESOLVED:** user confirms 4/4; official search/export evidence pending | Search execution, not protocol design |
 
-Scientific work that does not depend on DEC-01 through DEC-07 should continue after this specification is approved.
+Scientific work that does not depend on unresolved DEC-03 through DEC-07 should continue after this specification is approved.
 
 ## 5. Definitions
 
@@ -103,9 +125,10 @@ Scientific work that does not depend on DEC-01 through DEC-07 should continue af
 | Final extraction/appraisal | New dated/versioned release directory; do not overwrite accepted releases |
 | Claim-source matrix | New final release directory |
 | PRISMA checklist | `prisma_2020_checklist_working.md`, promoted only after final audit |
-| Manuscript source | `manuscript/sn_computer_science/main.tex` unless DEC-01/DEC-02 changes it |
+| Manuscript source | `manuscript/sn_computer_science/main.tex` |
 | Bibliography | `manuscript/sn_computer_science/references.bib` |
 | Compiled PDF | Canonical `main.pdf`; user-friendly copies belong under `output/` |
+| Approved build profile | `manuscript/sn_computer_science/build_profile.json`, created/verified under G-03 before Q-02 |
 | Current state/history | `MUST_READ_AI_AGENT/current_state.json`, `events.jsonl`, Git |
 | Automation evidence | `automation/decision_log.jsonl`, `artifact_catalog.json` |
 | Submission proof | `submission_evidence/` |
@@ -125,7 +148,27 @@ CODE_FIRST_DECISION: REUSE_EXISTING | WRITE_SCRIPT | MANUAL -- <reason>
 
 For a Gemini task, Codex must commit the structured brief before dispatch. The brief must contain `TASK`, `REQUIRED WORK`, `REQUIRED OUTPUT`, `ACCEPTANCE CRITERIA` and `BOUNDARIES`. Codex then produces a criterion-by-criterion PASS/FAIL review. A result with any mandatory FAIL remains quarantined.
 
-One task must be committed and integrated before the next task starts. Do not group unrelated phases into one commit.
+One execution batch is one Git task: it uses one branch/worktree, one task-owned diff, one closing state/event/decision update and one atomic commit. Every component criterion inside the batch still receives its own PASS/FAIL evidence. Do not group unrelated phases, skip a component gate or start the next batch before integration and cleanup.
+
+### 7.1 Approved execution batches
+
+| Batch | Component tasks | Git-task boundary |
+|---|---|---|
+| B01 | G-01, G-03 | Approve v2 and record the already supplied venue/template decision |
+| B02 | G-02 | Restore the canonical workspace/PDF baseline without altering unrelated user files |
+| B03 | G-04, S-01 | Freeze protocol, verify 4/4 access routes and validate queries |
+| B04 | S-02–S-05 | Execute and archive the four core searches |
+| B05 | D-01–D-03 | Import core exports, deduplicate and map the existing 46 reports |
+| B06 | E-01–E-03 | Screen only the core delta not already represented by the controlled 46-report set |
+| B07 | S-06, D-04, E-01–E-03 repeat | Run citation searching and delta intake/screening until the stopping rule passes |
+| B08 | E-04–E-06 | Resolve edge cases, obtain one consolidated human adjudication and reconcile study families |
+| B09 | X-01–X-05 | Complete extraction, appraisal and the full-bibliography source audit |
+| B10 | Y-01–Y-06 | Build claim matrix, taxonomy, figures and evidence-bounded synthesis |
+| B11 | M-01–M-06 | Iterate Methods–Results–Discussion–Introduction and finalize front matter |
+| B12 | M-07–M-09 | Normalize references, add verified metadata and apply the approved Springer template |
+| B13 | P-01–P-04 | Reconcile PRISMA, generate flow/checklist and package reproducibility artifacts |
+| B14 | Q-01–Q-05 | Run integrity/build/visual/independent review and obtain final author approval |
+| B15 | U-01–U-05 | External submission and course evidence; blocked until explicit authorization |
 
 ## 8. Definitions of done
 
@@ -133,7 +176,7 @@ One task must be committed and integrated before the next task starts. Do not gr
 
 All of the following must pass:
 
-- [ ] Four planned core sources have completed searches or a documented protocol amendment changes the source set before the final search.
+- [ ] Access readiness for IEEE Xplore, ACM Digital Library, Scopus and Web of Science is recorded as 4/4 before final searches; all four sources then have completed official-interface searches, or a prospective protocol amendment documents any source-set change before that source is replaced or omitted.
 - [ ] Every executed search has platform, exact query, filters, actual date, reported total, exported total, immutable raw file and checksum.
 - [ ] All raw records are imported; import count equals the sum of exports after documented platform/export limitations.
 - [ ] Duplicate normalized DOI count is zero.
@@ -141,6 +184,7 @@ All of the following must pass:
 - [ ] Every record has a title/abstract decision.
 - [ ] Every potentially eligible report has a retrieval status.
 - [ ] Every retrieved full-text report has a final include/exclude decision and one primary reason when excluded.
+- [ ] Citation searching has completed at least one full backward/forward pass over the provisional included reports and six background reviews; all unique supplementary records have passed the same delta deduplication and eligibility process, and the documented stopping rule has been met.
 - [ ] The current eight uncertain reports are reduced to zero unresolved final eligibility decisions.
 - [ ] Nguyễn Minh Hiếu has adjudicated every final full-text eligibility decision.
 - [ ] Every included report is linked to a final study family or explicitly justified as a standalone study.
@@ -184,11 +228,16 @@ Level 2 passes, plus:
 
 ```mermaid
 flowchart TD
-  G0[Governance and protocol freeze] --> S0[Four-source search]
-  S0 --> D0[Import and deduplicate]
-  D0 --> E0[Title/abstract and full-text selection]
-  E0 --> F0[Study-family reconciliation]
-  E0 --> X0[Complete extraction]
+  G0[Governance, access and protocol freeze] --> S0[Four-source core search]
+  S0 --> D0[Core import and deduplicate]
+  D0 --> E0[Core delta title/abstract and full-text selection]
+  E0 --> C0[Citation searching on provisional includes and six reviews]
+  C0 --> DS[Supplementary import and deduplicate]
+  DS --> ES[Supplementary delta selection]
+  ES --> C0
+  C0 -->|stopping rule met| H0[Consolidated human adjudication]
+  H0 --> F0[Study-family reconciliation]
+  H0 --> X0[Complete extraction]
   F0 --> P0[Final PRISMA arithmetic]
   X0 --> Q0[Ten-domain appraisal]
   Q0 --> Y0[Claim-source matrix and synthesis]
@@ -197,7 +246,7 @@ flowchart TD
   M0 --> V0[Integrity, build and peer review]
   V0 --> A0[Author approval]
   A0 --> U0[Explicitly authorized submission]
-  U0 --> C0[Course evidence]
+  U0 --> CE[Course evidence]
 ```
 
 Search, screening, extraction and manuscript writing may use parallel read-only research tasks only when their inputs are frozen and their owned records do not overlap. Acceptance and project writes remain sequential under Codex.
@@ -226,21 +275,21 @@ Search, screening, extraction and manuscript writing may use parallel read-only 
 
 #### G-03 — Confirm review scope and venue/template policy
 
-- **Owner:** `USER_ACTION` for DEC-01/DEC-02; `CODEX_WRITING` records the choice.
+- **Owner:** `CODEX_WRITING` records the user-supplied DEC-01/DEC-02 choice.
 - **Dependencies:** G-01.
-- **Required work:** Confirm SN Computer Science/Springer or explicitly replace it with an IEEE journal/template. Verify current venue scope and current official template if the decision changes.
-- **Output:** One dated venue decision; one canonical manuscript path.
-- **Acceptance:** Active venue count = 1; active manuscript source count = 1; historical versions clearly labelled; no silent template conversion.
-- **Verify:** Project charter, file map and current state agree.
+- **Required work:** Record SN Computer Science as the sole active venue, preserve the official Springer Nature LaTeX template, mark the earlier IEEE request superseded and create a machine-readable build profile containing the canonical working directory, entry source, build command and expected PDF.
+- **Output:** One dated venue decision, one canonical manuscript path and `manuscript/sn_computer_science/build_profile.json`.
+- **Acceptance:** Active venue count = 1; active manuscript source count = 1; profile fields `venue`, `working_directory`, `entry_source`, `command` and `expected_pdf` are non-empty; historical versions clearly labelled; no silent template conversion.
+- **Verify:** Project charter, file map, current state and build-profile path agree; profile command is executed in Q-02.
 
-#### G-04 — Freeze final protocol before the final search
+#### G-04 — Freeze final protocol and verify access readiness
 
 - **Owner:** `CODEX_WRITING`.
 - **Dependencies:** G-01; G-03 only if venue imposes relevant review requirements.
-- **Required work:** Recheck RQs, eligibility, date boundary, source set, query concepts, selection, extraction, appraisal and synthesis. Create a dated amendment only for an actual change and state its impact on completed work.
-- **Output:** Frozen protocol plus amendments and version identifier.
-- **Acceptance:** Every method element has one canonical definition; undisclosed retrospective changes = 0; RQs and extraction fields map one-to-one.
-- **Verify:** Protocol diff audit and amendment table.
+- **Required work:** Recheck RQs, eligibility, date boundary, source set, query concepts, selection, extraction, appraisal and synthesis. Record the user's 4/4 access confirmation and verify an official-interface login/export route for each core database before its final search. Define report completeness by publication type and substantive methods/system/evaluation/results content; do not impose an arbitrary page threshold. Create a dated amendment only for an actual protocol change and state its impact on completed work.
+- **Output:** Frozen protocol plus amendments/version identifier, four-source access-readiness matrix and explicit short/full/demo/WIP decision rule.
+- **Acceptance:** Every method element has one canonical definition; access routes verified = 4/4 or a blocked route is recorded before search execution; arbitrary minimum-page rules = 0; short primary reports are eligible only when extraction/appraisal content is sufficient; demo/poster/WIP abstracts without sufficient methods/results are excluded; undisclosed retrospective changes = 0; RQs and extraction fields map one-to-one.
+- **Verify:** Protocol diff audit, amendment table, four-source access evidence and explicit recheck instructions for S03/S19 plus all delta reports.
 
 ### Phase S — reproducible identification search
 
@@ -248,9 +297,9 @@ Search, screening, extraction and manuscript writing may use parallel read-only 
 
 - **Owner:** `GEMINI_RESEARCH` for verification notes; `CODEX_WRITING` accepts and writes.
 - **Dependencies:** G-04.
-- **Required work:** Verify the eight translated queries against the frozen concepts and known seeds. Identify syntax unsupported by each platform. Do not execute or claim searches.
+- **Required work:** Verify the eight translated queries against the frozen concepts and known seeds. Identify syntax unsupported by each platform and confirm that the G-04 official-interface/export route remains usable. Do not claim a database search from access testing alone.
 - **Output:** Query validation matrix for IEEE, ACM, Scopus and Web of Science.
-- **Acceptance:** 8/8 queries present; all mandatory concepts represented; 20 seed × 8 query cells evaluated or documented shortfall; unsupported syntax count and corrections explicit; fabricated result counts = 0.
+- **Acceptance:** 8/8 queries present; all mandatory concepts represented; 20 seed × 8 query cells evaluated or documented shortfall; usable access/export routes = 4/4 before S-02–S-05; unsupported syntax count and corrections explicit; fabricated result counts = 0.
 - **Verify:** Deterministic matrix checker or CSV assertions; Codex PASS/FAIL table.
 
 #### S-02 — Execute and archive IEEE Xplore search
@@ -286,18 +335,18 @@ Search, screening, extraction and manuscript writing may use parallel read-only 
 #### S-06 — Supplementary citation searching
 
 - **Owner:** `GEMINI_RESEARCH`; Codex accepts.
-- **Dependencies:** S-02 through S-05.
-- **Required work:** Perform backward and forward citation searching for included primary studies and directly relevant reviews using official/publisher/citation-index locators. Supplementary records undergo the same eligibility process.
-- **Output:** Supplementary-discovery ledger with parent source and discovery method.
-- **Acceptance:** Every supplementary record has parent locator and discovery date; duplicate DOI/title after comparison with core exports is labelled, not silently dropped; unresolved items explicit; unsupported claims = 0.
-- **Verify:** Codex criterion table and normalized identity checker.
+- **Dependencies:** E-03 has produced provisional included reports from at least one core/delta pass; the six background reviews are identified and source-verified.
+- **Required work:** Perform backward and forward citation searching for every provisional included primary report and all six background reviews using official/publisher/citation-index locators. Pass every unique supplementary record to D-04 and the E-01–E-03 delta process. Repeat after newly included supplementary reports until one complete citation-search iteration yields zero new unique records requiring eligibility screening, or a prospectively documented stopping rule is satisfied.
+- **Output:** Versioned supplementary-discovery ledger with parent source, discovery direction, locator, date, iteration and downstream delta-record ID.
+- **Acceptance:** Provisional included parent coverage = 100%; background-review parent coverage = 6/6; every supplementary record has parent locator and discovery date; duplicate DOI/title after comparison with the master ledger is labelled, not silently dropped; every unique record has a D-04/E-stage status; final iteration adds zero new unique records requiring screening or the approved stopping rule is documented; unsupported claims = 0.
+- **Verify:** Codex criterion table, normalized identity checker and iteration arithmetic.
 
 ### Phase D — import, normalization and deduplication
 
 #### D-01 — Import all raw exports into a normalized record ledger
 
 - **Owner:** `CODEX_WRITING`; code-first preference `REUSE_EXISTING`, then a small tested parser if formats require it.
-- **Dependencies:** S-02 through S-06.
+- **Dependencies:** S-02 through S-05.
 - **Required work:** Preserve raw files unchanged; parse every export; normalize field names, DOI and titles; retain source and raw-row provenance.
 - **Output:** Versioned normalized record ledger and import audit.
 - **Acceptance:** Every parsed raw row maps to exactly one normalized input row before deduplication; missing mandatory identity fields explicitly marked; import exceptions = 0 or documented per row; raw-file hash changes = 0.
@@ -321,52 +370,61 @@ Search, screening, extraction and manuscript writing may use parallel read-only 
 - **Acceptance:** Existing report IDs accounted = 46/46; mapped-to-core, supplementary and user-supplied counts sum to 46; unmapped reports have explicit provenance limitation; four prior arXiv records reconciled.
 - **Verify:** ID set equality and count arithmetic.
 
+#### D-04 — Import and deduplicate supplementary citation-search records
+
+- **Owner:** `CODEX_WRITING`; Gemini may investigate ambiguous identities without writing project files.
+- **Dependencies:** Each completed S-06 iteration; D-02 master identity rules.
+- **Required work:** Import only records discovered by that S-06 iteration, preserve parent/discovery provenance, deduplicate them against the complete master ledger and assign stable delta IDs. Never append a duplicate as a new screening record.
+- **Output:** Per-iteration supplementary delta ledger, duplicate links and updated master-record audit.
+- **Acceptance:** Imported supplementary rows equal the iteration ledger; duplicate normalized DOI count in retained master records = 0; duplicate title/year/first-author identities are linked or resolved; every unique new record has exactly one stable delta ID; arithmetic difference = 0; existing 46 report identities unchanged unless an evidence-backed version link is added.
+- **Verify:** Reproducible import/deduplication checks, set equality and Codex review of ambiguous pairs.
+
 ### Phase E — screening and final eligibility
 
-#### E-01 — Title/abstract screening of all deduplicated records
+#### E-01 — Title/abstract screening of delta records
 
 - **Owner:** `GEMINI_RESEARCH` first pass; `CODEX_WRITING` acceptance; human author final gate occurs in E-05.
-- **Dependencies:** D-02.
-- **Required work:** Apply frozen eligibility criteria to every deduplicated record. Preserve include/exclude/uncertain and one reason.
-- **Output:** Complete title/abstract screening ledger.
-- **Acceptance:** Decision coverage = 100%; duplicate IDs = 0; every exclude has one controlled-vocabulary reason; every factual decision has source URL/export locator; silent omissions = 0.
+- **Dependencies:** D-02/D-03 for the core pass; D-04 for each supplementary pass.
+- **Required work:** Apply frozen eligibility criteria only to records that are not already represented by one of the controlled 46 reports and have no accepted prior screening decision. Reuse the accepted 46-report decisions through D-03 provenance links. Re-screen an old report only when a dated protocol amendment changes a criterion that could alter its decision.
+- **Output:** Complete delta title/abstract screening ledger plus inherited-decision links for the existing 46 reports.
+- **Acceptance:** New/uncovered delta decision coverage = 100%; inherited controlled reports accounted = 46/46; unnecessary re-screenings of the controlled 46 = 0; duplicate IDs = 0; every exclude has one controlled-vocabulary reason; every factual decision has source URL/export locator; silent omissions = 0.
 - **Verify:** Schema/count checker and Codex PASS/FAIL review.
 
-#### E-02 — Retrieve lawful full texts for potentially eligible new records
+#### E-02 — Retrieve lawful full texts for potentially eligible delta records
 
 - **Owner:** `CODEX_WRITING` manages files; lawful retrieval priority is `paper-lookup` → `lawful-paper-pdf-retriever` → `nature-downloader`; user may supply inaccessible PDFs.
 - **Dependencies:** E-01.
-- **Required work:** Record lawful URL, version, retrieval date, readability and checksum. Do not use unauthorized retrieval routes.
+- **Required work:** For delta records only, record lawful URL, version, retrieval date, readability and checksum. Do not redownload a controlled report unless the accepted file is unreadable or a distinct version must be linked. Do not use unauthorized retrieval routes.
 - **Output:** Full-text intake ledger and lawful PDFs/text derivatives.
 - **Acceptance:** Every potentially eligible record has status `retrieved`, `not retrieved after documented attempts`, or `awaiting user access`; every retrieved file opens and has identity/version evidence; corrupt files = 0.
 - **Verify:** PDF open/text check, checksum and title-page identity audit.
 
-#### E-03 — Full-text screening of new reports
+#### E-03 — Full-text screening of delta reports
 
 - **Owner:** `GEMINI_RESEARCH` structured evidence; `CODEX_WRITING` accepts.
 - **Dependencies:** E-02.
-- **Required work:** Apply all inclusion/exclusion criteria to readable full texts with page/section evidence. Assign one primary reason to each exclusion.
+- **Required work:** Apply all inclusion/exclusion criteria to readable delta full texts with page/section evidence. Assign one primary reason to each exclusion and apply the G-04 substantive report-completeness rule without using page count alone.
 - **Output:** Accepted full-text screening records and review tables.
 - **Acceptance:** 100% retrieved reports decided or explicitly uncertain; every decision has exact locator; quantitative unsupported claims = 0; rejected A2A findings adopted = 0.
 - **Verify:** Quote/page matcher plus Codex criterion table.
 
-#### E-04 — Resolve the eight existing uncertain reports
+#### E-04 — Resolve the eight uncertain reports and short-report edge cases
 
 - **Owner:** `GEMINI_RESEARCH` may verify official dates/scope; `CODEX_WRITING` accepts; author adjudicates in E-05.
 - **Dependencies:** G-04 and available official evidence.
-- **Required work:** Resolve C05, C09, C10, C13, C14, C19 publication timing and C06/SNCS scope using official publisher/DOI/full-text evidence. If public evidence remains unavailable, prepare one consolidated human decision packet without inventing dates.
-- **Output:** Eight-row decision packet and accepted evidence review.
-- **Acceptance:** Exactly 8 IDs; each row has binary question, evidence, locator, protocol rule, recommended decision and impact; unsupported date = 0; final `UNCERTAIN` after human adjudication = 0.
+- **Required work:** Resolve C05, C09, C10, C13, C14, C19 publication timing and C06/SNCS scope using official publisher/DOI/full-text evidence. Re-audit S03 and S19 under the G-04 content/type rule: S03 must not be excluded merely for having two pages, and S19 must not be included merely for having three pages. If public evidence remains unavailable, preserve uncertainty for E-05 without inventing dates or content.
+- **Output:** Ten-row edge-case decision evidence incorporated into the consolidated E-05 packet.
+- **Acceptance:** Exactly 10 IDs (8 uncertain plus S03 and S19); each row has binary question, evidence, locator, protocol rule, recommended decision and impact; page-count-only decisions = 0; unsupported date/content claims = 0; final `UNCERTAIN` after human adjudication = 0.
 - **Verify:** Exact-ID and source-locator assertions.
 
 #### E-05 — Human full-text eligibility adjudication
 
 - **Owner:** `USER_ACTION` — Nguyễn Minh Hiếu; Codex records decisions.
-- **Dependencies:** E-03 and E-04.
-- **Required work:** Review every final full-text include/exclude decision, not only the eight prior uncertain reports. Record confirmation or correction with date.
-- **Output:** Author-approved eligibility ledger.
-- **Acceptance:** Human adjudication coverage = 100%; uncertain final decisions = 0; every correction retains prior decision history and reason.
-- **Verify:** Adjudication field non-empty for every full-text report; count arithmetic.
+- **Dependencies:** E-03 and E-04; S-06/D-04/E-01–E-03 loop has met its stopping rule.
+- **Required work:** Codex generates one consolidated CSV plus human-readable Markdown packet covering every final full-text include/exclude decision. Each row contains report ID, title, proposed decision, primary reason, applicable protocol rule, page/section locator, prior decision, change flag and a blank author-decision field. Nguyễn Minh Hiếu reviews the packet once, records confirmation/correction and date, and returns any corrected rows for validation.
+- **Output:** Consolidated adjudication CSV/Markdown pair and author-approved eligibility ledger.
+- **Acceptance:** Packet report-ID set equals the complete final full-text report set; required fields populated = 100% except pre-review author-decision fields; human adjudication coverage after return = 100%; uncertain final decisions = 0; every correction retains prior decision history and reason; separate ad-hoc approval requests = 0 unless the returned packet contains an explicit unresolved conflict.
+- **Verify:** CSV/Markdown ID-set equality, required-field schema check, adjudication coverage and count arithmetic.
 
 #### E-06 — Reconcile study families and report versions
 
@@ -418,9 +476,9 @@ Search, screening, extraction and manuscript writing may use parallel read-only 
 
 - **Owner:** `GEMINI_RESEARCH` verification notes; `CODEX_WRITING` accepts and updates bibliography.
 - **Dependencies:** E-06, X-01/X-02.
-- **Required work:** Open every included original source and verify title, authors, year, venue, DOI, version, correction/retraction status and peer-review/publication type.
+- **Required work:** Open every original source represented in the final `references.bib`, including included primary reports, the six background reviews and methodological/reporting sources. Verify title, authors, year, venue, DOI or explicit `DOI_NOT_FOUND`, version, correction/retraction status and peer-review/publication type. Also verify that every included report used in synthesis is represented by an audited source record.
 - **Output:** Source audit ledger and corrected bibliography evidence.
-- **Acceptance:** Included sources checked = 100%; unresolved DOI/identity/version/retraction cases = 0 or source removed; duplicate DOI = 0; source URL/locator present for every check.
+- **Acceptance:** `references.bib` entries checked = 100%; included synthesis sources checked = 100%; six background reviews checked = 6/6; unresolved DOI/identity/version/retraction cases = 0 or source removed; duplicate DOI = 0; source URL/locator present for every check; unsupported bibliographic claims = 0.
 - **Verify:** DOI resolver/publisher metadata comparison plus Codex review. Line wrapping in a PDF is not a DOI error.
 
 ### Phase Y — synthesis and scientific contribution
@@ -536,7 +594,7 @@ Use the drafting loop Methods → Results → Discussion → Introduction, then 
 - **Owner:** `CODEX_WRITING`.
 - **Dependencies:** X-05 and all prose stable.
 - **Output:** Final `references.bib` and bibliography.
-- **Acceptance:** cited-key set equals bibliography-key set; undefined/uncited keys = 0; DOI duplicates = 0; all originals opened; venue style consistent. Do not “fix” valid DOI line wrapping. Normalize author capitalization only when identity is preserved.
+- **Acceptance:** cited-key set equals bibliography-key set; undefined/uncited keys = 0; DOI duplicates = 0; X-05 audit coverage equals 100% of final bibliography keys; all originals opened; venue style consistent. Do not “fix” valid DOI line wrapping. Normalize author capitalization only when identity is preserved.
 - **Verify:** BibTeX parser, DOI normalization and LaTeX build.
 
 #### M-08 — Add verified authorship and declarations
@@ -560,7 +618,7 @@ Use the drafting loop Methods → Results → Discussion → Introduction, then 
 #### P-01 — Reconcile final PRISMA arithmetic
 
 - **Owner:** `CODEX_WRITING`; code-first automated arithmetic required.
-- **Dependencies:** D-02, E-05, E-06.
+- **Dependencies:** D-02, final D-04 iteration, E-05, E-06.
 - **Output:** Record/report/study count ledger.
 - **Acceptance:** Every transition equation has difference 0; source-specific identification totals match exports; duplicates, exclusions, unavailable reports and includes use correct units.
 - **Verify:** Tested arithmetic script and hand-check of definitions.
@@ -603,9 +661,9 @@ Use the drafting loop Methods → Results → Discussion → Introduction, then 
 
 - **Owner:** `CODEX_WRITING`.
 - **Dependencies:** M-09.
-- **Commands:** In the canonical manuscript directory run `tectonic --keep-logs --keep-intermediates main.tex`.
-- **Acceptance:** Exit 0; fatal errors = 0; undefined citations/references = 0; overfull boxes = 0; nonfatal warnings classified and justified.
-- **Verify:** Build log parser and PDF existence/hash.
+- **Commands:** Load the `working_directory`, `entry_source`, `command` and `expected_pdf` fields from the G-03-approved build profile and execute that exact command in that exact directory. For the confirmed SN Computer Science profile, the expected command is `tectonic --keep-logs --keep-intermediates main.tex` in `manuscript/sn_computer_science/`.
+- **Acceptance:** Build-profile fields complete = 5/5; profile venue = SN Computer Science; exit 0; fatal errors = 0; undefined citations/references = 0; overfull boxes = 0; nonfatal warnings classified and justified; built PDF path equals the profile.
+- **Verify:** Build-profile schema check, build log parser and PDF existence/hash.
 
 #### Q-03 — Visual PDF inspection
 
@@ -683,6 +741,7 @@ The following claims from an external AI review were independently checked and a
 - Table 1 currently contains `AlexNet; VGG16; YOLO`, a clean S13 objective, `Llama-2 7B/13B/70B`, and a valid C04 citation.
 - Table 2 uses explicit dashes for withheld Domain 9; adding a local footnote is an editorial improvement, not recovery of blank data.
 - `31th` and uppercase family names originate in deposited metadata; normalize presentation only after checking identity, and never treat them as proof of fabricated references.
+- The S03/S19 page-count contrast is not by itself an eligibility inconsistency. S03 is described as a demo abstract, while S19 is a short conference report; both must be re-audited under the same substantive content/type rule in G-04/E-04. No automatic two-page exclusion or three-page inclusion is permitted.
 
 ## 12. Optional publication-upgrade tasks
 
@@ -713,8 +772,12 @@ git diff --check
 Manuscript build:
 
 ```bash
-cd "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science"
-tectonic --keep-logs --keep-intermediates main.tex
+# Q-02 reads the approved profile rather than selecting a template ad hoc.
+python3 -m json.tool \
+  "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_profile.json"
+# Then execute the profile's command in its working_directory.
+# Confirmed v2 values: working_directory=manuscript/sn_computer_science,
+# command="tectonic --keep-logs --keep-intermediates main.tex".
 ```
 
 Task-specific scripts/tests must be added to the automation catalog before reuse. A passing script does not replace semantic acceptance by Codex or final scientific responsibility by the authors.
@@ -753,7 +816,7 @@ Task-specific scripts/tests must be added to the automation catalog before reuse
 
 | Risk | Detection | Mitigation |
 |---|---|---|
-| Institutional database access unavailable | Missing official export/log | User performs manual export; document limitation; do not invent counts |
+| Confirmed database access later fails during execution | Missing official export/log despite 4/4 readiness | Record the failure, use user-controlled institutional export when available, and create `protocol_amendment_003` before changing the source set; never invent counts |
 | Large delta corpus | New-record count after D-02 | Batch only non-overlapping records; freeze IDs; no arbitrary 30–35 cap |
 | Conference/journal double counting | Family candidates/extension statements | E-06 evidence-based family reconciliation before final frequencies |
 | AI research hallucination | Missing locator/invalid DOI/unsupported number | Mandatory brief schema, deterministic checks and Codex PASS/FAIL review |
@@ -781,7 +844,7 @@ At every task close, report:
 
 Implementation must not start until the user either:
 
-- approves `HK261-PRISMA-COMPLETION-SPEC-v1`, or
+- approves `HK261-PRISMA-COMPLETION-SPEC-v2`, or
 - requests amendments that Codex records in a superseding spec commit.
 
 Approval of this specification does **not** authorize journal submission, email, public upload, author declarations or protocol changes.
