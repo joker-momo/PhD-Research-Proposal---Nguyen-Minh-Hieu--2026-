@@ -1,27 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:09:30+07:00",
+  "updated_at": "2026-11-26T23:09:49+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step10_completed",
     "summary": "Approved HK261 restart: Step 10 reconciles 25 P06-included reports under P07; unresolved independence, if any, stays explicit. Step 11 extracts new evidence."
   },
   "task": {
-    "task_id": "restart-11-batch01-preflight-review",
+    "task_id": "restart-11-batch01-extraction-new-brief",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-26T23:09:30+07:00",
-    "updated_at": "2026-11-26T23:09:30+07:00",
-    "completed_at": "2026-11-26T23:09:30+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_preflight_review.md",
-    "decision_id": "restart-11-batch01-preflight-review-v1"
+    "started_at": "2026-11-26T23:09:49+07:00",
+    "updated_at": "2026-11-26T23:09:49+07:00",
+    "completed_at": "2026-11-26T23:09:49+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/batch_01_extraction_new_brief.md",
+    "decision_id": "restart-11-batch01-extraction-new-brief-v1"
   },
   "next_task": {
     "task_id": "restart-11-batch01-extraction-new",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Prepare one new task for the 13 authorized IDs after preflight PASS.",
-    "acceptance": "13 per-file access checks; all P08 source and numeric gates."
+    "action": "Extract from 13 authorized IDs after PASS on native PDF preflight.",
+    "acceptance": "13/13 access dispositions and 14 P08 fields per report. No unsupported claims.",
+    "dispatch_brief": "restart_2026_11_26/extraction/batch_01_extraction_new_brief.md",
+    "message_id": "hk261-p08-b01-extraction-20261126-v2"
   },
   "project": {
     "target_venue": "SN Computer Science",
