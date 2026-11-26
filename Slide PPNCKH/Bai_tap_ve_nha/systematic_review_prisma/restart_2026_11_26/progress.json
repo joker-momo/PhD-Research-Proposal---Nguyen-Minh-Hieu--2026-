@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T01:43:51+07:00",
+  "updated_at": "2026-11-27T01:49:52+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -876,7 +876,7 @@
       "owner": "GEMINI_RESEARCH + CODEX_WRITING",
       "status": "active",
       "started_at": "2026-11-27T00:36:29+07:00",
-      "updated_at": "2026-11-27T01:43:51+07:00",
+      "updated_at": "2026-11-27T01:49:52+07:00",
       "completed_at": null,
       "artifacts": [
         "restart_2026_11_26/appraisal/manifest.json",
@@ -955,7 +955,13 @@
         "restart_2026_11_26/appraisal/batch_05_transport_failure.json",
         "restart_2026_11_26/appraisal/batch_05_recovery.json",
         "restart_2026_11_26/appraisal/batch_05_review.md",
-        "restart_2026_11_26/appraisal/batch_05_correction_brief.md"
+        "restart_2026_11_26/appraisal/batch_05_correction_brief.md",
+        "restart_2026_11_26/appraisal/batch_05_correction_raw.json",
+        "restart_2026_11_26/appraisal/batch_05_correction_dispatch.json",
+        "restart_2026_11_26/appraisal/batch_05_correction_mechanical.json",
+        "restart_2026_11_26/appraisal/batch_05_correction_review.md",
+        "restart_2026_11_26/appraisal/batch_05_accepted.json",
+        "restart_2026_11_26/appraisal/batch_05_final_mechanical.json"
       ],
       "acceptance": [
         {
@@ -1017,6 +1023,11 @@
           "criterion": "P09 Batch 05 original-PDF appraisal",
           "verdict": "FAIL",
           "evidence": "50/50 keys returned. 4/5 access probes tested exact; 2 locator and 7 reporting/scope issues remain; one access probe also needs original wording. No batch adoption."
+        },
+        {
+          "criterion": "P09 Batch 05 original-PDF appraisal",
+          "verdict": "PASS",
+          "evidence": "5/5 original PDF access passages, 50/50 source-located judgments. Correction supplied 9/9 keys and 1/1 access proof. Composite 121 locators, 102 exact quotations. Prior 41 keys preserved."
         }
       ]
     },

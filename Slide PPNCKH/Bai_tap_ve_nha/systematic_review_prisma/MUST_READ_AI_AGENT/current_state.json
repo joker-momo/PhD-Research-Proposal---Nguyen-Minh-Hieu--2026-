@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T01:43:51+07:00",
+  "updated_at": "2026-11-27T01:49:52+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step12_active",
@@ -11,18 +11,16 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T00:36:29+07:00",
-    "updated_at": "2026-11-27T01:43:51+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/batch_05_review.md",
+    "updated_at": "2026-11-27T01:49:52+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/batch_05_correction_review.md",
     "decision_id": "restart-12-p09-v1"
   },
   "next_task": {
-    "task_id": "restart-12-p09-batch-05-correction",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "restart-12-p09-final-lock",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "dispatch_brief": "restart_2026_11_26/appraisal/batch_05_correction_brief.md",
-    "message_id": "74b312ae-589b-4c07-8482-c8df306983fe",
-    "action": "Correct nine Batch 05 keys and the R0083 original PDF access quotation.",
-    "acceptance": "Nine exact domain keys and one corrected body excerpt. Fifty judgments and five original access passages after review."
+    "action": "Consolidate and lock five accepted appraisal batches, and validate both derived outputs against the original P08 inputs.",
+    "acceptance": "25 reports, 250 unique source-located judgments, and derived outputs reproduce accepted data. Zero unresolved keys."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -180,9 +178,9 @@
         "p08_lock": "restart_2026_11_26/extraction/p08_extraction_lock.json"
       },
       "appraisal": {
-        "batches_accepted": 4,
-        "reports_accepted": 20,
-        "domains_accepted": 200,
+        "batches_accepted": 5,
+        "reports_accepted": 25,
+        "domains_accepted": 250,
         "p08_commit": "4b58140",
         "last_batch_01_provider_verdict": "FAIL",
         "last_batch_01_task_uuid": "ddbb7eda-d194-4a22-bbe0-820cb63d9644",
@@ -205,9 +203,9 @@
         "last_batch_04_uuid": "cfae1b3e-aa5a-4ddf-b543-5968066d1bf1",
         "last_batch_04_verdict": "PASS",
         "batch_04_unresolved_keys": 0,
-        "last_batch_05_uuid": "c960ad8f-d8c5-4e8e-8b2e-e3569a96d42f",
-        "last_batch_05_verdict": "FAIL",
-        "batch_05_unresolved_keys": 9
+        "last_batch_05_uuid": "6d0c1e3f-35a4-4e42-bd55-5454dd053ab5",
+        "last_batch_05_verdict": "PASS",
+        "batch_05_unresolved_keys": 0
       }
     }
   },

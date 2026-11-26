@@ -1,0 +1,56 @@
+{
+  "task_id": "6d0c1e3f-35a4-4e42-bd55-5454dd053ab5",
+  "transport": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T18:48:24.112+00:00"
+  },
+  "result_chars": 11088,
+  "completion_marker": true,
+  "parsed_rows": 11,
+  "malformed": [],
+  "unknown": [],
+  "expected": 9,
+  "returned": 9,
+  "missing": [],
+  "unexpected": [],
+  "duplicate": 0,
+  "bad_access": [],
+  "unexpected_access": [],
+  "summary": [
+    {
+      "returned_keys": [
+        "R0074/D06",
+        "R0074/D08",
+        "R0083/D04",
+        "R0089/D03",
+        "R0095/D05",
+        "R0121/D02",
+        "R0121/D03",
+        "R0121/D05",
+        "R0121/D07"
+      ],
+      "unresolved": [],
+      "tools": {
+        "available_used": [
+          "client:view_file",
+          "client:list_dir",
+          "client:find_by_name"
+        ],
+        "not_used_due_to_no_command_boundary": [
+          "PyMuPDF",
+          "MinerU",
+          "Marker"
+        ]
+      },
+      "workers_used": false
+    }
+  ],
+  "locators": 30,
+  "exact_quote_locators": 26,
+  "needs_visual_cell": [],
+  "bad_domains": {
+    "R0074/D08": [
+      "quote mismatch p17: Among all successful distributed solutions, Orion remained the most efficient"
+    ]
+  }
+}
