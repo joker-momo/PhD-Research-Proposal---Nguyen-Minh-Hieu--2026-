@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T08:49:57+07:00",
+  "updated_at": "2026-11-27T08:55:22+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -9,20 +9,19 @@
   "task": {
     "task_id": "restart-retrieval-acm-followup",
     "owner": "GEMINI_RESEARCH",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-27T08:49:57+07:00",
-    "updated_at": "2026-11-27T08:49:57+07:00",
-    "checkpoint_path": "restart_2026_11_26/retrieval_round_01/acm_followup/manifest.json",
-    "decision_id": "restart-retrieval-acm-followup-v1"
+    "updated_at": "2026-11-27T08:55:22+07:00",
+    "checkpoint_path": "restart_2026_11_26/retrieval_round_01/acm_followup/review.md",
+    "decision_id": "restart-retrieval-acm-followup-v1",
+    "completed_at": "2026-11-27T08:55:22+07:00"
   },
   "next_task": {
-    "task_id": "restart-retrieval-acm-followup-batch-01",
-    "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Check public lawful PDF access for exactly the three specified ACM IDs.",
-    "acceptance": "Three DOI-matched rows, page and version evidence or traceable access gaps; no PRISMA updates.",
-    "dispatch_brief": "restart_2026_11_26/retrieval_round_01/acm_followup/brief.md",
-    "message_id": "4492bcc8-c6f6-4c40-88fb-3430da470133"
+    "task_id": "none",
+    "owner": "CODEX_WRITING",
+    "status": "none",
+    "action": "End the requested three-ID ACM follow-up.",
+    "acceptance": "No PRISMA update, manuscript change or further research authorized."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -285,6 +284,16 @@
       "new_publisher_fulltext": 1,
       "unverified_arxiv_candidates": 2,
       "cutoff": "2026-11-26"
+    },
+    "acm_pdf_followup": {
+      "task_id": "restart-retrieval-acm-followup",
+      "review": "restart_2026_11_26/retrieval_round_01/acm_followup/review.md",
+      "bridge_result": "restart_2026_11_26/retrieval_round_01/acm_followup/bridge_result.json",
+      "requested": 3,
+      "verified_pdf": 0,
+      "unresolved": 3,
+      "chat_cleanup": "not_verified",
+      "prisma_updated": false
     }
   },
   "blockers": [],

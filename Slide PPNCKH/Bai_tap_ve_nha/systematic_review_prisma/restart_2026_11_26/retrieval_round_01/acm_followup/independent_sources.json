@@ -1,0 +1,175 @@
+[
+  {
+    "id": "R0096",
+    "route": "acm",
+    "url": "https://dl.acm.org/doi/pdf/10.1145/3714394.3756181",
+    "error": "HTTP Error 403: Forbidden",
+    "http": 403
+  },
+  {
+    "id": "R0096",
+    "route": "crossref",
+    "url": "https://api.crossref.org/works/10.1145/3714394.3756181",
+    "http": 200,
+    "data": {
+      "title": [
+        "ARIES: Autonomous Reconnaissance, Inspection and Exploration System for Hybrid Single and Multi-UAV Building Inspection Approach after Disaster"
+      ],
+      "DOI": "10.1145/3714394.3756181",
+      "author": [
+        "Karen T. Torres",
+        "Daniela E. Sánchez",
+        "Carlos E. Cedeño",
+        "Christopher J. Vaccaro",
+        "María I. Mera"
+      ],
+      "container-title": [
+        "Companion of the 2025 ACM International Joint Conference on Pervasive and Ubiquitous Computing"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            12
+          ]
+        ]
+      },
+      "page": "787-792"
+    }
+  },
+  {
+    "id": "R0096",
+    "route": "openalex",
+    "url": "https://api.openalex.org/works/https://doi.org/10.1145/3714394.3756181",
+    "http": 200,
+    "data": {
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://doi.org/10.1145/3714394.3756181",
+        "any_repository_has_fulltext": false
+      },
+      "best_oa_location": {
+        "pdf_url": null,
+        "landing_page_url": "https://doi.org/10.1145/3714394.3756181",
+        "version": "publishedVersion",
+        "license": "cc-by"
+      }
+    }
+  },
+  {
+    "id": "R0221",
+    "route": "acm",
+    "url": "https://dl.acm.org/doi/pdf/10.1145/3820709.3820744",
+    "error": "HTTP Error 403: Forbidden",
+    "http": 403
+  },
+  {
+    "id": "R0221",
+    "route": "crossref",
+    "url": "https://api.crossref.org/works/10.1145/3820709.3820744",
+    "http": 200,
+    "data": {
+      "title": [
+        "MACE: A Physics-Informed Multi-modal Large Language Model for Strategic UAV Swarm Confrontation"
+      ],
+      "DOI": "10.1145/3820709.3820744",
+      "author": [
+        "Yudong Yang",
+        "Heng Shi",
+        "Jihong Zhu"
+      ],
+      "container-title": [
+        "Proceedings of the 6th International Conference on Robotics and Control Engineering"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      },
+      "page": "86-94"
+    }
+  },
+  {
+    "id": "R0221",
+    "route": "openalex",
+    "url": "https://api.openalex.org/works/https://doi.org/10.1145/3820709.3820744",
+    "http": 200,
+    "data": {
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://doi.org/10.1145/3820709.3820744",
+        "any_repository_has_fulltext": false
+      },
+      "best_oa_location": {
+        "pdf_url": null,
+        "landing_page_url": "https://doi.org/10.1145/3820709.3820744",
+        "version": "publishedVersion",
+        "license": "cc-by"
+      }
+    }
+  },
+  {
+    "id": "R0402",
+    "route": "acm",
+    "url": "https://dl.acm.org/doi/pdf/10.1145/3842435.3843964",
+    "error": "HTTP Error 403: Forbidden",
+    "http": 403
+  },
+  {
+    "id": "R0402",
+    "route": "crossref",
+    "url": "https://api.crossref.org/works/10.1145/3842435.3843964",
+    "http": 200,
+    "data": {
+      "title": [
+        "PDT-TCN: Prefix-Drop Temporal Convolutional Networks for Early Attack Detection in UAV-GCS Communications"
+      ],
+      "DOI": "10.1145/3842435.3843964",
+      "author": [
+        "Jakub Siłka",
+        "Michał Wieczorek",
+        "Marcin Woźniak"
+      ],
+      "container-title": [
+        "Proceedings of the 7th International Workshop on Drone-Assisted Wireless Communications for 5G and Beyond"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ]
+      },
+      "page": "55-60"
+    }
+  },
+  {
+    "id": "R0402",
+    "route": "openalex",
+    "url": "https://api.openalex.org/works/https://doi.org/10.1145/3842435.3843964",
+    "http": 200,
+    "data": {
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://doi.org/10.1145/3842435.3843964",
+        "any_repository_has_fulltext": false
+      },
+      "best_oa_location": {
+        "pdf_url": null,
+        "landing_page_url": "https://doi.org/10.1145/3842435.3843964",
+        "version": "publishedVersion",
+        "license": "cc-by"
+      }
+    }
+  }
+]
