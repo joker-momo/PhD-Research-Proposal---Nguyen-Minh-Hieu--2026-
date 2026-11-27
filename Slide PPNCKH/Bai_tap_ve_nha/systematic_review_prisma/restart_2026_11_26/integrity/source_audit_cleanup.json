@@ -4,5 +4,9 @@
   "saved_payload_sha256": "9b7f937addeca3259405161967babce110fc04afa5e170315bb462f7384f127a",
   "confirm_attempted": false,
   "detail": "Accessibility detach-folder failed: Gemini snapshot failed: Refusing deletion: chat identity/draft/generation mismatch",
-  "verdict": "BLOCKED"
+  "verdict": "BLOCKED",
+  "reopen_verified_at": "2026-11-27T08:20:58+07:00",
+  "reopen_verified_exact_uuid": true,
+  "reopen_terminal_payload_match": true,
+  "reopen_user_rows": 2
 }

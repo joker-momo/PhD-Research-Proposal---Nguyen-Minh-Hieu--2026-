@@ -1,0 +1,42 @@
+{
+  "exact_id_doi_title_cardinality": true,
+  "rows": 21,
+  "missing_ids": [],
+  "extra_ids": [],
+  "row_errors": {},
+  "parse_errors": [],
+  "footer_ok": true,
+  "complete_marker": true,
+  "verified_crossref_search_wrappers": 40,
+  "footer": [
+    {
+      "returned_ids": [
+        "R0001",
+        "R0002",
+        "R0003",
+        "R0006",
+        "R0009",
+        "R0010",
+        "R0015",
+        "R0019",
+        "R0022",
+        "R0029",
+        "R0044",
+        "R0045",
+        "R0048",
+        "R0054",
+        "R0062",
+        "R0068",
+        "R0071",
+        "R0083",
+        "R0089",
+        "R0095",
+        "R0121"
+      ],
+      "unresolved_ids": [],
+      "workers_used": 0,
+      "source_scope": "Locally captured first-party registry snapshots supplied with the task: (1) Crossref works API deposits ([invalid URL], HTTP 200, zero publisher/registry update relationships of correction, expression of concern, or retraction) and (2) Crossref Retraction Watch CSV (https://gitlab.com/crossref/retraction-watch-data/-/raw/main/retraction_watch.csv, zero exact matches on original or notice DOI fields). Publisher and registry web pages were not independently browsed live."
+    }
+  ],
+  "checked_at": "2026-11-27T08:21:49+07:00"
+}

@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T08:05:39+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T08:21:37+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -596,6 +596,25 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
 <a id="buoc-16"></a>
 ## Bước 16 · Kiểm định và bàn giao
 
-**Chưa bắt đầu** · `2026-11-26T18:07:38+07:00`
+**Đã chốt theo sổ tiến độ** · `2026-11-27T08:21:37+07:00`
 
-Chưa có tệp minh chứng được đăng ký cho bước này.
+Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
+
+- [HK261-PRISMA-restart-LaTeX-PDF-data.zip](../restart_2026_11_26/integrity/HK261-PRISMA-restart-LaTeX-PDF-data.zip)
+- [final_integrity_audit.md](../restart_2026_11_26/integrity/final_integrity_audit.md)
+- [independent_registry_evidence.json](../restart_2026_11_26/integrity/independent_registry_evidence.json)
+- [limitations.md](../restart_2026_11_26/integrity/limitations.md)
+- [source_audit_brief.md](../restart_2026_11_26/integrity/source_audit_brief.md)
+- [source_audit_cleanup.json](../restart_2026_11_26/integrity/source_audit_cleanup.json)
+- [source_audit_correction_brief.md](../restart_2026_11_26/integrity/source_audit_correction_brief.md)
+- [source_audit_correction_checks.json](../restart_2026_11_26/integrity/source_audit_correction_checks.json)
+- [source_audit_correction_dispatch.json](../restart_2026_11_26/integrity/source_audit_correction_dispatch.json)
+- [source_audit_correction_raw.json](../restart_2026_11_26/integrity/source_audit_correction_raw.json)
+- [source_audit_dispatch.json](../restart_2026_11_26/integrity/source_audit_dispatch.json)
+- [source_audit_native_payload.json](../restart_2026_11_26/integrity/source_audit_native_payload.json)
+- [source_audit_primary_review.md](../restart_2026_11_26/integrity/source_audit_primary_review.md)
+- [source_audit_raw.json](../restart_2026_11_26/integrity/source_audit_raw.json)
+- [source_audit_recovery.json](../restart_2026_11_26/integrity/source_audit_recovery.json)
+- [source_audit_transport_failure.json](../restart_2026_11_26/integrity/source_audit_transport_failure.json)
+- [main.tex](../manuscript/sn_computer_science/main.tex)
+- [main.pdf](../manuscript/sn_computer_science/main.pdf)

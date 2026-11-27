@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T08:05:39+07:00",
+  "updated_at": "2026-11-27T08:21:37+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step15_complete_step16_ready",
-    "summary": "Restart-based Springer Nature LaTeX and PDF verified. Final source integrity and coursework handoff ready."
+    "status": "step16_complete_coursework_handoff",
+    "summary": "The 25-study restart review is compiled, independently audited and packaged for local coursework handoff. Author confirmations and journal submission are outside this delivery."
   },
   "task": {
-    "task_id": "restart-15",
+    "task_id": "restart-16",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T08:00:27+07:00",
-    "updated_at": "2026-11-27T08:05:39+07:00",
-    "completed_at": "2026-11-27T08:05:39+07:00",
-    "checkpoint_path": "manuscript/sn_computer_science/step15_build_review.md",
-    "decision_id": "restart-15-sncs-v1"
+    "started_at": "2026-11-27T08:06:16+07:00",
+    "updated_at": "2026-11-27T08:21:37+07:00",
+    "checkpoint_path": "restart_2026_11_26/integrity/final_integrity_audit.md",
+    "decision_id": "restart-16-integrity-v1",
+    "completed_at": "2026-11-27T08:21:37+07:00"
   },
   "next_task": {
-    "task_id": "restart-16",
-    "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Verify source identity and publication notices in Gemini.app, then finish independent manuscript integrity and handoff.",
-    "acceptance": "Build PASS, 0 unresolved citations, 0 unsupported values, all PDF pages inspected, gates and limitations documented."
+    "task_id": "none",
+    "owner": "CODEX_WRITING",
+    "status": "none",
+    "action": "Approved restart plan ends with the local coursework handoff.",
+    "acceptance": "No external delivery was authorized."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -65,7 +65,7 @@
     },
     "approved_plan": "restart_2026_11_26/approved_plan.md",
     "progress_tracker": "restart_2026_11_26/progress.json",
-    "manuscript_status": "RESTART_MANUSCRIPT_STEP15_PASS_STEP16_PENDING"
+    "manuscript_status": "RESTART_COURSEWORK_HANDOFF_PASS"
   },
   "evidence": {
     "retrieval_reports": 44,
@@ -252,6 +252,18 @@
       "distinct_doi_links": 26,
       "checklist_items": 27,
       "completed_at": "2026-11-27T08:05:39+07:00"
+    },
+    "final_integrity": {
+      "gate": "PASS",
+      "source_audit_provider": "PASS 26/26 composite, correction chat deleted, primary chat cleanup BLOCKED without confirm",
+      "independent_registry_verified": 26,
+      "pdf_pages_inspected": 10,
+      "unresolved_citations": 0,
+      "checklist_items": 27,
+      "reports": 25,
+      "studies": 25,
+      "recorded_at": "2026-11-27T08:21:37+07:00",
+      "bundle": "restart_2026_11_26/integrity/HK261-PRISMA-restart-LaTeX-PDF-data.zip"
     }
   },
   "blockers": [],
