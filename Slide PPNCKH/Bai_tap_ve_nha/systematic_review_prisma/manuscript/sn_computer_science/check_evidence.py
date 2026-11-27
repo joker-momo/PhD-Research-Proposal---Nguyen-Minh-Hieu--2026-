@@ -20,6 +20,7 @@ INDEX = HERE / "supplement_evidence_index.md"
 SNAPSHOT = HERE / "evidence_sha256.txt"
 CLAIM_AUDIT = HERE / "s4_claim_audit.md"
 STUDY_ROW_MAP = HERE / "s4_study_row_sources.csv"
+AUTHOR_APPLICATION = FINAL / "author_decision_application.json"
 
 FIELD_GROUPS = {
     "t2_topology": ("uav_architecture_role_and_topology", "architecture"),
@@ -151,7 +152,10 @@ def make_study_row_map(included):
     writer.writerow(("report_id", "study_id", "original_pdf", "original_pdf_sha256",
                      "accepted_extraction", *FIELD_GROUPS, "t3_d09", "t3_d09_locator",
                      "t3_d09_rationale"))
-    sources = {appraisal_path}
+    sources = {appraisal_path, AUTHOR_APPLICATION}
+    author_cells = {(report, key): entry["applied"] + (" " + entry["open"] if entry["open"] else "")
+                    for entry in json.loads(AUTHOR_APPLICATION.read_text())["decisions"]
+                    for report, key, kind in [entry["key"]] if kind == "technical"}
     for row in included:
         report_id = row["report_id"]
         extraction_path = PROJECT / row["extraction_source"]
@@ -162,7 +166,8 @@ def make_study_row_map(included):
         section = judgment["section"] or "section unspecified"
         writer.writerow((
             report_id, row["study_id"], row["original_pdf"], row["original_pdf_sha256"],
-            row["extraction_source"], *(field_locators(fields, keys) for keys in FIELD_GROUPS.values()),
+            row["extraction_source"], *(author_cells.get((report_id, column)) or field_locators(fields, keys)
+                                        for column, keys in FIELD_GROUPS.items()),
             judgment["judgment"], f"p. {page}, {section}" if page else f"page unavailable, {section}",
             judgment["rationale"],
         ))

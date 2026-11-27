@@ -40,12 +40,12 @@ files. It does not adjudicate a claim.
 The comparison PDF uses the Springer Nature class and bibliography style with
 a 216 mm text height and compact reference spacing to fit the full-corpus
 tables into the requested single-column length. For this branch, see
-[the initial technical survey review](technical_survey_review.md) and [the current evidence record](supplement_evidence_index.md). See [the editorial integration checks](editorial_verification.md) for this release. The original
+[the initial technical survey review](technical_survey_review.md) and [the current evidence record](supplement_evidence_index.md). See [the editorial integration checks](editorial_verification.md) for the earlier editorial checkpoint. The 12 priority decisions are documented in [S3](supplement_s3.md#twelve-priority-decisions). The original
 13-page coursework checkpoint remains available at commit `7a6675d`.
 
 The review includes 46 reports representing 46 studies. The
-[PRISMA ledger](../../restart_2026_11_26/prisma/prisma_counts.json) records 89
-full-text exclusions, one report awaiting classification and one unretrieved
+[PRISMA ledger](../../restart_2026_11_26/prisma/prisma_counts.json) records 90
+full-text exclusions, zero reports awaiting classification and one unretrieved
 report. The [PRISMA 2020 checklist](../../restart_2026_11_26/prisma/active_prisma_checklist.md)
 tracks reporting and its limits.
 

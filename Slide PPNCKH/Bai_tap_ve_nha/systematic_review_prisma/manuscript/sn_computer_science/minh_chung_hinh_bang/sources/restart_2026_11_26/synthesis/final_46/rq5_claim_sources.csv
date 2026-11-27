@@ -1,7 +1,7 @@
 claim_id,claim,source_file_or_outcome_key,derivation_or_locator
 RQ5-U01,46 reports / 46 studies read under the shared rule,outcome_manifest.json; report_coverage.csv,46 unique report IDs and 46 unique study IDs
-RQ5-U02,"36 verified numerical, 10 plot-only, 0 printed unresolved",report_coverage.csv,Count by exact_outcome_status across all 46 reports
-RQ5-U03,98 retained rows: 51 matched and 47 descriptive; matched rows from 23 studies,outcomes.csv,"Count by comparison_status, then count distinct matched study_id"
+RQ5-U02,"35 verified numerical, 11 plot-only, 0 printed unresolved",report_coverage.csv,Count by exact_outcome_status across all 46 reports
+RQ5-U03,97 retained rows: 51 matched and 46 descriptive. Matched rows from 23 studies.,outcomes.csv,"Count by comparison_status, then count distinct matched study_id"
 RQ5-U04,Mechanism coverage and entry counts in Table 5,report_coverage.csv; mechanisms.csv; outcomes.csv,"Join by report_id, count statuses and sum retained_numeric_rows by mechanism"
 RQ5-U05,ResNet-18/101 simulated accuracy and latency against GSUP,R0080-Q01; R0080-Q02,"R0080 physical p. 5 Table I, §IV.A for CI, p. 6 §IV.B for bandwidth"
 RQ5-U06,VGG-16 deadline satisfaction against Comm-Min,R0092-Q06,"R0092 physical p. 13 Table V, all arrived tasks"
@@ -9,3 +9,10 @@ RQ5-U07,RDI-LLM and Orion-DP latency on completed missions and all-seed completi
 RQ5-U08,One-hop analytical transmission time has a separate measurement boundary,R0121-Q02,R0121 physical p. 7 Table 3
 RQ5-U09,Artifact availability unreported for 40/46; configuration reproducibility partial for 42/46,appraisal_table.csv; appraisal_summary.csv,Existing engineering appraisal of 46 studies
 RQ5-U10,R0082 contributes plot-only outcomes,R0082 in report_coverage.csv; r0082_evidence.json,"IEEE WCNC and arXiv v1 physical pp. 5–6, §IV, Figs. 2–5; zero inferred values"
+RQ5-AUTHOR-02,SAC² reports 22% higher accumulated surveillance coverage than Random-to-upload (RU) at 20 Mbps.,R0036-Q01,"PDF p. 12, §VI, Hình 8(a) và đoạn thảo luận."
+RQ5-AUTHOR-03,"At 20 UAVs and 100 MHz, the prose reports 0.9% above GSUP and 1.5% above Raw-Only.",R0080-Q03,"PDF p. 5–6, §IV.C, Hình 3; Bảng I để phân biệt thiết lập. The relative-percent versus percentage-point calculation and GSUP in the prose versus GDUP in the figure legend remain unresolved. No plot-derived values enter the retained count. Table I is a separate 100 Mbps comparison."
+RQ5-AUTHOR-04,Figure 5 labels 91% task completion for AeroAgriNet at 20 UAVs.,R0090-Q05,"PDF p. 5, Hình 5; Performance Parameters; mục H. Scalability under Load. The prose describes throughput above 90%. The definitions table measures throughput as data processed per unit time, so the throughput percentage and modality attribution remain unresolved."
+RQ5-AUTHOR-05,VGG-16 system-total energy was 1.477 ± 0.054 Wh for DDCI and 1.502 ± 0.048 Wh for Comm-Min.,R0092-Q02,"PDF p. 13, Bảng V, nhóm VGG-16, cột Energy (Wh) và đoạn Energy overhead."
+RQ5-AUTHOR-09,The study reports 12.8 FPS with two workers at four threads each versus 6.9 FPS with one four-thread worker (1.85× as reported). The same two-worker point is counted once in Q02.,R0125-Q01,"PDF p. 3, §IV.A và Bảng I; §IV.B và Hình 1."
+RQ5-AUTHOR-11,Figure 4 gives reference TTFT of 0.68 s (17/25 s) and 0.19 s (19/100 s) for DeepSeek-R1-Distill-Llama-8B and LLaMA-3.2-3B respectively.,R0145-Q01,"PDF p. 8, 15, §3.4 (trang 8), Hình 4 cột TTFT màu xanh (trang 15). Attribution to local measurements remains unresolved."
+RQ5-AUTHOR-12,"Figure 4 gives reference TPOT of 1/53 s and 1/246 s for the same models, in that order.",R0145-Q02,"PDF p. 8, 15, §3.4 (trang 8), Hình 4 cột TPOT màu cam (trang 15). Attribution to local measurements remains unresolved."

@@ -536,12 +536,13 @@
       "artifact_id": "hk261-final-46-synthesis-reconciliation",
       "name": "HK261 final 46-study synthesis",
       "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/reconcile_inputs.py",
-      "purpose": "Recompute included-study, appraisal and outcome data by final eligibility ID with a source-checked R0082 delta.",
+      "purpose": "Recompute included-study, appraisal and outcome data by final eligibility ID, applying the source-checked R0082 delta and the 12 author-confirmed scope and coding decisions.",
       "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/reconcile_inputs.py\" [--check]",
       "inputs": [
         "Verified PRISMA ledger",
         "locked comparison extraction and appraisal",
-        "R0082 evidence and PDF SHA-256"
+        "R0082 evidence and PDF SHA-256",
+        "Author decision ledger and application data with original PDF hashes"
       ],
       "outputs": [
         "13 final 46-study inputs, claim indexes, manifest and census"

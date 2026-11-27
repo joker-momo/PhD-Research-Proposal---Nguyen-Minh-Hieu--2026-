@@ -19,7 +19,8 @@ FILES = [
         "technical_appraisal.tex", "technical_appraisal_bars.tex",
         "technical_appraisal_figure.tex", "technical_architecture.tex",
         "technical_architecture_figure.tex", "technical_evaluation.tex",
-        "s4_study_row_sources.csv", "technical_macros.tex", "technical_overview_figure.tex", "technical_taxonomy_figure.tex",
+        "s4_study_row_sources.csv", "supplement_s3.md", "s4_claim_audit.md", "supplement_evidence_index.md",
+        "technical_macros.tex", "technical_overview_figure.tex", "technical_taxonomy_figure.tex",
     )),
     *(RESTART / name for name in (
         "prisma/reconcile.py", "fulltext_screening/fulltext_screening.csv",
@@ -34,6 +35,8 @@ FILES = [
         "synthesis/final_46/mechanisms.csv", "synthesis/final_46/recomputed_counts.json",
         "synthesis/final_46/claim_source_matrix.csv", "synthesis/final_46/rq5_claim_sources.csv", "synthesis/final_46/r0082_evidence.json",
         "synthesis/final_46/r0082_review.md", "synthesis/final_46/reconcile_inputs.py",
+        "synthesis/final_46/author_decision_application.json",
+        "integrity/source_review_887/r1_r2_reconciliation/author_decisions.csv",
         "synthesis/final_46/scope_sensitivity.json", "synthesis/final_46/r0082_publisher_crosscheck.json",
         "synthesis/final_46/verify_llhr_publisher.py", "synthesis/final_46/pdfkit_pages.swift",
         "synthesis/final_46/r0082_primary_review.md", "synthesis/final_46/gemini_primary_receipt.json",

@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T23:43:38+07:00",
+  "updated_at": "2026-11-27T23:52:39+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The verified 30-page revision remains frozen on the 46/90/0 corpus. Two AI-assisted source-review endorsements are recorded. Independent human assessment and declarations remain pending."
   },
   "task": {
-    "task_id": "hk261-r0145-q02-author-decision",
+    "task_id": "hk261-apply-12-priority-author-decisions",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T23:43:38+07:00",
-    "updated_at": "2026-11-27T23:43:38+07:00",
-    "decision_id": "hk261-r0145-q02-author-decision-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/author_decisions.csv",
-    "completed_at": "2026-11-27T23:43:38+07:00"
+    "started_at": "2026-11-27T23:47:00+07:00",
+    "updated_at": "2026-11-27T23:52:39+07:00",
+    "decision_id": "hk261-apply-12-priority-author-decisions-v1",
+    "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
+    "completed_at": "2026-11-27T23:52:39+07:00"
   },
   "next_task": {
-    "task_id": "hk261-post-priority-author-instruction",
+    "task_id": "hk261-priority-draft-author-comparison",
     "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "All 12 priority author decisions are recorded. Await further author instruction.",
-    "acceptance": "Retain the frozen screening and manuscript artifacts pending separate authorization."
+    "action": "Await author comparison of the 30-page manuscript and S3/S4 evidence.",
+    "acceptance": "The author reviews the comparison draft and specifies any further revisions."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -868,7 +868,8 @@
       "package_independent_rebuild": "30/30 rendered pages matched; 16 figures, tables and equations indexed",
       "completed_at": "2026-11-27T19:08:53+07:00",
       "human_review_pdf_checksums_verified": 136,
-      "human_review_pdf_local_directory": "restart_2026_11_26/fulltext_retrieval/pdf/human_review_full_136"
+      "human_review_pdf_local_directory": "restart_2026_11_26/fulltext_retrieval/pdf/human_review_full_136",
+      "superseded_by": "evidence.priority_author_revision"
     },
     "dual_ai_full_136": {
       "report": "restart_2026_11_26/integrity/dual_ai_full_136/report.pdf",
@@ -937,8 +938,40 @@
         "priority_cases": 12,
         "scope_limited": 38,
         "author_decisions": 12,
-        "author_decision_ledger": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/author_decisions.csv"
+        "author_decision_ledger": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/author_decisions.csv",
+        "application": "restart_2026_11_26/synthesis/final_46/author_decision_application.json"
       }
+    },
+    "priority_author_revision": {
+      "completed_at": "2026-11-27T23:52:39+07:00",
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "cf5c3ff2b8ec561fd5f8776ff8b097ddba80b8b003bfc522955578c3585ab5e8",
+      "pages": 30,
+      "previous_pdf_commit": "6ea64b4",
+      "previous_pdf_sha256": "c7ab7d765829263d3ccff1368224dd7fb78d3e9b619f097bb505d89b2722deb4",
+      "priority_decisions_applied": 12,
+      "s3": "manuscript/sn_computer_science/supplement_s3.md",
+      "s4": "manuscript/sn_computer_science/supplement_evidence_index.md",
+      "claim_audit": "manuscript/sn_computer_science/s4_claim_audit.md",
+      "source_matrix": "restart_2026_11_26/synthesis/final_46/claim_source_matrix.csv",
+      "application_data": "restart_2026_11_26/synthesis/final_46/author_decision_application.json",
+      "recomputed_counts": "restart_2026_11_26/synthesis/final_46/recomputed_counts.json",
+      "retained_numeric_outcomes": 97,
+      "studies_with_retained_numeric_outcomes": 35,
+      "reference_benchmark_entries": 2,
+      "appraisal_d06": {
+        "YES": 5,
+        "PARTIAL": 41,
+        "NOT_REPORTED": 0
+      },
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "screening_unchanged": true,
+      "package": "manuscript/sn_computer_science/minh_chung_hinh_bang/README.md",
+      "package_independent_rebuild": "30/30 rendered pages match. All 16 numbered item pages verified."
     }
   },
   "blockers": [],

@@ -1,0 +1,219 @@
+{
+  "ledger_sha256": "e5682364a940fc8085a96f87588c7a242ce87936600d8e33f5cf06e2536b1c09",
+  "decisions": [
+    {
+      "key": [
+        "R0003",
+        "D06",
+        "appraisal"
+      ],
+      "status": "PARTIAL",
+      "applied": "The number of requests and UAVs was varied. The sensitivity evidence supports Partial.",
+      "open": "Independent repetitions and within-setting dispersion are unreported."
+    },
+    {
+      "key": [
+        "R0036",
+        "Q01",
+        "outcome"
+      ],
+      "status": "MATCHED",
+      "applied": "SAC² reports 22% higher accumulated surveillance coverage than Random-to-upload (RU) at 20 Mbps.",
+      "open": "",
+      "outcome_fields": {
+        "metric": "relative accumulated surveillance coverage improvement",
+        "comparator": "Random-to-upload (RU)",
+        "workload_conditions_and_denominator": "20 Mbps communication rate under the simulation conditions of Fig. 8(a); RU mean over 20 trials per setting"
+      }
+    },
+    {
+      "key": [
+        "R0080",
+        "Q03",
+        "outcome"
+      ],
+      "status": "PARTIAL",
+      "applied": "At 20 UAVs and 100 MHz, the prose reports 0.9% above GSUP and 1.5% above Raw-Only.",
+      "open": "The relative-percent versus percentage-point calculation and GSUP in the prose versus GDUP in the figure legend remain unresolved. No plot-derived values enter the retained count. Table I is a separate 100 Mbps comparison.",
+      "outcome_fields": {
+        "metric": "accuracy differences as stated in prose at 20 UAVs",
+        "comparator": "GSUP in prose (GDUP in legend) / Raw-Only",
+        "workload_conditions_and_denominator": "ResNet-18/101 at 100 MHz. Difference scale and GSUP/GDUP correspondence unresolved. Table I uses 100 Mbps."
+      }
+    },
+    {
+      "key": [
+        "R0090",
+        "Q05",
+        "outcome"
+      ],
+      "status": "DESCRIPTIVE",
+      "applied": "Figure 5 labels 91% task completion for AeroAgriNet at 20 UAVs.",
+      "open": "The prose describes throughput above 90%. The definitions table measures throughput as data processed per unit time, so the throughput percentage and modality attribution remain unresolved.",
+      "outcome_fields": {
+        "domain": "scalability",
+        "metric": "task completion rate",
+        "reported_value": "91",
+        "unit": "%",
+        "comparator": "Cloud-Based and Traditional are labeled separately in Fig. 5",
+        "workload_conditions_and_denominator": "20 UAVs in the fleet-size sweep. Rate denotes the share of tasks completed within a mission. Figure-specific evaluation modality is unassigned.",
+        "comparison_status": "descriptive",
+        "locator": "Fig. 5, 20-UAV column; Performance Parameters; V.H",
+        "source_excerpt_or_transcription": "AeroAgriNet row: 100, 98, 94, 91 for 5, 10, 15, 20 UAVs. Fig. 5 labels task completion rate.",
+        "verification_method": "Rendered original PDF with selectable-text cross-check (PyMuPDF 1.26.7)"
+      },
+      "report_fields": {
+        "report_coverage.csv": {
+          "limits": "Fig. 5 reports 91% task completion at 20 UAVs. Prose throughput above 90% and figure-specific modality attribution remain unresolved. Energy attribution also remains unresolved."
+        },
+        "mechanisms.csv": {
+          "accepted_outcome_description": "Figure 5 labels 91% task completion at 20 UAVs. Prose throughput above 90% and figure-specific evaluation modality remain unresolved. [p. 5, Fig. 5, Performance Parameters and §V.H]"
+        }
+      }
+    },
+    {
+      "key": [
+        "R0092",
+        "Q02",
+        "outcome"
+      ],
+      "status": "MATCHED",
+      "applied": "VGG-16 system-total energy was 1.477 ± 0.054 Wh for DDCI and 1.502 ± 0.048 Wh for Comm-Min.",
+      "open": "",
+      "outcome_fields": {
+        "metric": "system-total compute and communication energy",
+        "locator": "Table V, VGG-16, Energy (Wh); Energy overhead",
+        "workload_conditions_and_denominator": "VGG-16, shared two-UAV substrate, system-total compute plus communication energy. Mean ± SD over 30 common-seed simulation episodes. No per-task energy is implied.",
+        "source_excerpt_or_transcription": "DDCI 1.477 ± 0.054 Wh; Comm-Min 1.502 ± 0.048 Wh (VGG-16, Energy column)",
+        "verification_method": "Rendered original PDF with selectable-text cross-check (PyMuPDF 1.26.7)"
+      }
+    },
+    {
+      "key": [
+        "R0118",
+        "t2_workload",
+        "technical"
+      ],
+      "status": "BOUNDED",
+      "applied": "CIFAR-100 image classification is the representative instantiation in §VI.B, with MobileNetV3-Small expert models and a ResNet-50 comparator. The label is restricted to this configuration. [physical p. 9, §VI.B]",
+      "open": "",
+      "report_fields": {
+        "study_characteristics.csv": {
+          "inference_model_task_and_dataset": "CIFAR-100 image classification is the representative instantiation in §VI.B, with MobileNetV3-Small expert models and a ResNet-50 comparator. The label is restricted to this configuration. [physical p. 9, §VI.B]"
+        },
+        "mechanisms.csv": {
+          "workload_evidence": "CIFAR-100 image classification is the representative instantiation in §VI.B, with MobileNetV3-Small expert models and a ResNet-50 comparator. The label is restricted to this configuration. [physical p. 9, §VI.B]"
+        }
+      }
+    },
+    {
+      "key": [
+        "R0121",
+        "t3_network_event_response",
+        "technical"
+      ],
+      "status": "ANALYTICAL",
+      "applied": "Analytical model and preliminary specification. No simulation or empirical validation is reported. [physical pp. 7–8, Fig. 3 and Table 4]",
+      "open": "The attribution of the probability input remains unresolved. Modeled results do not establish observed recovery.",
+      "report_fields": {
+        "study_characteristics.csv": {
+          "mobility_channel_intermittency_failure_and_recovery": "Analytical model and preliminary specification. No simulation or empirical validation is reported. [physical pp. 7–8, Fig. 3 and Table 4] Probability-input attribution remains unresolved."
+        },
+        "mechanisms.csv": {
+          "mobility_evidence": "Analytical model and preliminary specification. No simulation or empirical validation is reported. [physical pp. 7–8, Fig. 3 and Table 4] Probability-input attribution remains unresolved.",
+          "accepted_outcome_description": "The retained numerical outcomes are analytical calculations. Probability values are treated as modeled, with no corroborating simulation or empirical validation. The attribution of the Fig. 3 probability input remains unresolved. [physical pp. 6–8, §6, Figs. 1–3, Tables 3–4]"
+        }
+      }
+    },
+    {
+      "key": [
+        "R0125",
+        "D09",
+        "appraisal"
+      ],
+      "status": "NOT_REPORTED",
+      "applied": "The original five-page PDF describes software tools and the test setup. Access to study implementation code, test video, or study-specific reproducibility artifacts is unreported within that PDF.",
+      "open": ""
+    },
+    {
+      "key": [
+        "R0125",
+        "Q01",
+        "outcome"
+      ],
+      "status": "CROSS_REFERENCE",
+      "applied": "The study reports 12.8 FPS with two workers at four threads each versus 6.9 FPS with one four-thread worker (1.85× as reported). The same two-worker point is counted once in Q02.",
+      "open": "",
+      "outcome_fields": {
+        "locator": "IV.A, Table I (4-thread baseline), and IV.B, Fig. 1",
+        "comparator": "6.9 FPS, one four-thread worker (Table I); 1.85× as reported",
+        "workload_conditions_and_denominator": "YOLO11m, 1080p video, two workstation-emulated workers at four threads each versus one at four threads. Cross-reference R0125-Q02. Table I separately reports 12.8 FPS for one worker at 16 threads.",
+        "verification_method": "Rendered original PDF with selectable-text cross-check (PyMuPDF 1.26.7)"
+      }
+    },
+    {
+      "key": [
+        "R0145",
+        "D06",
+        "appraisal"
+      ],
+      "status": "PARTIAL",
+      "applied": "Section 6.3 and Figure 12 compare 20 randomly generated edge–cloud scenarios. This supports scenario sensitivity.",
+      "open": "Independent repetitions or dispersion within the same fixed setting are unreported."
+    },
+    {
+      "key": [
+        "R0145",
+        "Q01",
+        "outcome"
+      ],
+      "status": "REFERENCE",
+      "applied": "Figure 4 gives reference TTFT of 0.68 s (17/25 s) and 0.19 s (19/100 s) for DeepSeek-R1-Distill-Llama-8B and LLaMA-3.2-3B respectively.",
+      "open": "Attribution to local measurements remains unresolved.",
+      "exact_seconds": [
+        "17/25",
+        "19/100"
+      ],
+      "outcome_fields": {
+        "locator": "§3.4 (p. 8) and §6.2, Fig. 4 (p. 15)",
+        "metric": "reference time to first token",
+        "reported_value": "0.68 / 0.19",
+        "comparator": "No matched runtime comparison between deployment roles",
+        "workload_conditions_and_denominator": "Reference benchmark data for the selected models, per Fig. 4 and the external platform cited as [3] in §3.4. Local hardware, attribution to local measurement, and repeated trials are unverified.",
+        "modality": "reference_benchmark",
+        "comparison_status": "reference",
+        "source_excerpt_or_transcription": "Fig. 4 TTFT labels (same model order): 17/25 s and 19/100 s.",
+        "verification_method": "Rendered original PDF with selectable-text cross-check (PyMuPDF 1.26.7)"
+      },
+      "report_fields": {
+        "report_coverage.csv": {
+          "outcome_pages_checked": "8, 14–20",
+          "section_table_figure_index": "§3.4 and §§6.1–6.4; Figs. 4–13",
+          "exact_outcome_status": "PLOT_ONLY",
+          "limits": "Fig. 4 provides two labeled reference benchmark entries. They are archived outside retained study outcomes. Eligible task-level comparisons are plot-only under the extraction rule. Attribution of reference values to local measurement remains unresolved."
+        }
+      }
+    },
+    {
+      "key": [
+        "R0145",
+        "Q02",
+        "outcome"
+      ],
+      "status": "REFERENCE",
+      "applied": "Figure 4 gives reference TPOT of 1/53 s and 1/246 s for the same models, in that order.",
+      "open": "Attribution to local measurements remains unresolved.",
+      "outcome_fields": {
+        "locator": "§3.4 (p. 8) and §6.2, Fig. 4 (p. 15)",
+        "metric": "reference time per output token",
+        "reported_value": "1/53 / 1/246",
+        "comparator": "No matched runtime comparison between deployment roles",
+        "workload_conditions_and_denominator": "Reference benchmark data for the selected models, per Fig. 4 and the external platform cited as [3] in §3.4. Local hardware, attribution to local measurement, and repeated trials are unverified.",
+        "modality": "reference_benchmark",
+        "comparison_status": "reference",
+        "source_excerpt_or_transcription": "Fig. 4 TPOT labels (same model order): 1/53 s and 1/246 s.",
+        "verification_method": "Rendered original PDF with selectable-text cross-check (PyMuPDF 1.26.7)"
+      }
+    }
+  ]
+}

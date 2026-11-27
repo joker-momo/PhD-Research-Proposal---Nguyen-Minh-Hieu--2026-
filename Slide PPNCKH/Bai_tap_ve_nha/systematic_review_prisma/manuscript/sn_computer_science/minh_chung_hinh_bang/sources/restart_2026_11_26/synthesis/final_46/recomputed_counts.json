@@ -43,9 +43,9 @@
     "D06": {
       "NO": 0,
       "NOT_APPLICABLE": 0,
-      "NOT_REPORTED": 1,
+      "NOT_REPORTED": 0,
       "NOT_YET_ASSESSED": 0,
-      "PARTIAL": 40,
+      "PARTIAL": 41,
       "YES": 5
     },
     "D07": {
@@ -82,8 +82,8 @@
     }
   },
   "coverage": {
-    "PLOT_ONLY": 10,
-    "VERIFIED_EXACT": 36
+    "PLOT_ONLY": 11,
+    "VERIFIED_EXACT": 35
   },
   "layers_outdoor": 0,
   "layers_software": 15,
@@ -92,9 +92,10 @@
   "outcome_ledger_rows": 105,
   "outcome_rows": {
     "cross_reference": 3,
-    "descriptive": 47,
-    "held": 4,
-    "matched": 51
+    "descriptive": 46,
+    "held": 3,
+    "matched": 51,
+    "reference": 2
   },
   "studies": 46
 }

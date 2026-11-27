@@ -29,7 +29,7 @@ DIMENSIONS = {
     },
     "family": {
         "cnn": "CNN classifiers", "detector": "Detection models",
-        "language": "Language models or MoE", "mixed": "Mixed model families",
+        "language": "Language models", "mixed": "Mixed model families",
         "other": "Other named models", "generic": "Generic or reference workload",
     },
     "evaluation": {
