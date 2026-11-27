@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T23:42:32+07:00",
+  "updated_at": "2026-11-27T23:43:38+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The verified 30-page revision remains frozen on the 46/90/0 corpus. Two AI-assisted source-review endorsements are recorded. Independent human assessment and declarations remain pending."
   },
   "task": {
-    "task_id": "hk261-r0145-q01-author-decision",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T23:42:32+07:00",
-    "updated_at": "2026-11-27T23:42:32+07:00",
-    "decision_id": "hk261-r0145-q01-author-decision-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/author_decisions.csv",
-    "completed_at": "2026-11-27T23:42:32+07:00"
-  },
-  "next_task": {
     "task_id": "hk261-r0145-q02-author-decision",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-27T23:43:38+07:00",
+    "updated_at": "2026-11-27T23:43:38+07:00",
+    "decision_id": "hk261-r0145-q02-author-decision-v1",
+    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/author_decisions.csv",
+    "completed_at": "2026-11-27T23:43:38+07:00"
+  },
+  "next_task": {
+    "task_id": "hk261-post-priority-author-instruction",
+    "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "Wait for the author to confirm the Figure 4 TPOT values and the limits of their benchmark provenance.",
-    "acceptance": "Record R0145 Q02 only after explicit confirmation. Preserve R1/R2, S2, PRISMA and the manuscript."
+    "action": "All 12 priority author decisions are recorded. Await further author instruction.",
+    "acceptance": "Retain the frozen screening and manuscript artifacts pending separate authorization."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -936,7 +936,7 @@
         "rows_flagged": 608,
         "priority_cases": 12,
         "scope_limited": 38,
-        "author_decisions": 11,
+        "author_decisions": 12,
         "author_decision_ledger": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/author_decisions.csv"
       }
     }
