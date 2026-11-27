@@ -1,0 +1,452 @@
+[
+  {
+    "id": "R0007",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0007.pdf",
+    "sha256": "8533787468c58b1a15b712b4922139f1c8a9ee94a1448c7a2c091b4edd954063",
+    "doi": "10.1109/MASS56207.2022.00043",
+    "title": "CIOFL: Collaborative Inference-Based Online Federated Learning for UAV Object Detection",
+    "authors": "F. Wu; C. Dong; Y. Qu; H. Sun; L. Zhang; Q. Wu",
+    "year": "2022",
+    "venue": "2022 IEEE 19th International Conference on Mobile Ad Hoc and Smart Systems (MASS)",
+    "publication_date": "19 Dec 2022",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9973622",
+    "pages": 2,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "pdf_page1_date_lines": [],
+    "crossref": {
+      "id": "R0007",
+      "url": "https://api.crossref.org/works/10.1109/MASS56207.2022.00043",
+      "type": "proceedings-article",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10
+          ]
+        ]
+      },
+      "published-online": null,
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            10
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            10
+          ]
+        ]
+      },
+      "container-title": [
+        "2022 IEEE 19th International Conference on Mobile Ad Hoc and Smart Systems (MASS)"
+      ]
+    }
+  },
+  {
+    "id": "R0023",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0023.pdf",
+    "sha256": "274974d9000ef71eada5bc79a6cc7d33b9481c09bb98f920577c61ff61cbd3d8",
+    "doi": "10.1109/ACDSA67686.2026.11467610",
+    "title": "Edge Agentic Systems Architecture (EASA): Design Patterns for Decentralized and Collaborative Edge Intelligence",
+    "authors": "V. Ragupathy",
+    "year": "2026",
+    "venue": "2026 International Conference on Artificial Intelligence, Computer, Data Sciences and Applications (ACDSA)",
+    "publication_date": "16 Apr 2026",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11467610",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "pdf_page1_date_lines": [],
+    "crossref": {
+      "id": "R0023",
+      "url": "https://api.crossref.org/works/10.1109/ACDSA67686.2026.11467610",
+      "type": "proceedings-article",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            5
+          ]
+        ]
+      },
+      "published-online": null,
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            5
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            5
+          ]
+        ]
+      },
+      "container-title": [
+        "2026 International Conference on Artificial Intelligence, Computer, Data Sciences and Applications (ACDSA)"
+      ]
+    }
+  },
+  {
+    "id": "R0027",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0027.pdf",
+    "sha256": "115155621931ceeaf9852a7052ec37ca4eaff28d8b9a95fcc72f7eada11f4a1c",
+    "doi": "10.1109/ICASS69550.2026.11547499",
+    "title": "EASA: Distributed Agentic Framework for Scalable Federated Edge Intelligence",
+    "authors": "J. Rani; M. Rana; S. Kumar; P. Prasad",
+    "year": "2026",
+    "venue": "2026 International Conference on Intelligent Computing and Automation for Sustainable Solutions (ICASS)",
+    "publication_date": "8 Jun 2026",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11547499",
+    "pages": 7,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "pdf_page1_date_lines": [],
+    "crossref": {
+      "id": "R0027",
+      "error": "HTTP Error 429: Too Many Requests"
+    }
+  },
+  {
+    "id": "R0028",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0028.pdf",
+    "sha256": "1c686a57c08edf9aa24c1c472c8e944b98e8e57b022d2d4b0de272b7b3eb673b",
+    "doi": "10.1109/NetSoft70012.2026.11603504",
+    "title": "Closing the Loop: Link-Aware Dataset Generation and Edge Learning in UAV-Based Inference Aerial Platforms",
+    "authors": "A. Caruso; C. Grasso; G. Schembra",
+    "year": "2026",
+    "venue": "2026 IEEE 12th International Conference on Network Softwarization (NetSoft)",
+    "publication_date": "16 Jul 2026",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11603504",
+    "pages": 7,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "pdf_page1_date_lines": [],
+    "crossref": {
+      "id": "R0028",
+      "url": "https://api.crossref.org/works/10.1109/NetSoft70012.2026.11603504",
+      "type": "proceedings-article",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            29
+          ]
+        ]
+      },
+      "published-online": null,
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            29
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            29
+          ]
+        ]
+      },
+      "container-title": [
+        "2026 IEEE 12th International Conference on Network Softwarization (NetSoft)"
+      ]
+    }
+  },
+  {
+    "id": "R0043",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0043.pdf",
+    "sha256": "a0f21d4599dc515f501dc5c81a30e6c082448068819609151165f2a31a79e19f",
+    "doi": "10.1109/Ucom59132.2023.10257649",
+    "title": "Multi-UAV Maritime Search and Rescue with DNN Inference Acceleration",
+    "authors": "T. Yang; H. He; L. Kong",
+    "year": "2023",
+    "venue": "2023 International Conference on Ubiquitous Communication (Ucom)",
+    "publication_date": "27 Sep 2023",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10257649",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "pdf_page1_date_lines": [],
+    "crossref": {
+      "id": "R0043",
+      "url": "https://api.crossref.org/works/10.1109/Ucom59132.2023.10257649",
+      "type": "proceedings-article",
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            7
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            7
+          ]
+        ]
+      },
+      "container-title": [
+        "2023 International Conference on Ubiquitous Communication (Ucom)"
+      ]
+    }
+  },
+  {
+    "id": "R0058",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0058.pdf",
+    "sha256": "a995e55cc24eda515eb4066996a648d5777065084f7babbe6760e2691d46dbd3",
+    "doi": "10.1142/S0218126626440020",
+    "title": "Efficient AI Inference Offloading for UAVs via Distributed Auctions in Dynamic Edge Environments",
+    "authors": "Yang, Yi (58607851300); Liu, Hao (60228406800); Wang, Peng (58603849900); Li, Xiuping (60228406900); Sun, Wen (55548183900)",
+    "year": "2025",
+    "venue": "Journal of Circuits, Systems and Computers",
+    "publication_date": "",
+    "url": "https://www.scopus.com/pages/publications/105024093950?origin=resultslist",
+    "pages": 25,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "pdf_page1_date_lines": [
+      "Published 6 December 2025 Unmanned aerial vehicles (UAVs) ar"
+    ],
+    "crossref": {
+      "id": "R0058",
+      "error": "HTTP Error 429: Too Many Requests"
+    }
+  },
+  {
+    "id": "R0064",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0064.pdf",
+    "sha256": "6cfc6cd0d7d4d924833f9add0b3d56334dcacebe8941705729178bdaf765d52f",
+    "doi": "10.1016/j.comnet.2025.111540",
+    "title": "Joint optimization of data sensing and computing in the air–ground collaborative inference framework: A multi-agent hybrid-action DRL approach",
+    "authors": "Fan, Xiaokun (57879882800); Chen, Yali (57201677644); Liu, Min (56263481200); Zhu, Yuchen (57211216203); Li, Zhongcheng (55617676600)",
+    "year": "2025",
+    "venue": "Computer Networks",
+    "publication_date": "",
+    "url": "https://www.scopus.com/pages/publications/105011040057?origin=resultslist",
+    "pages": 13,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "pdf_page1_date_lines": [
+      "Available online 18 July 2025 1389-1286/© 2025 Published by Elsevie"
+    ],
+    "crossref": {
+      "id": "R0064",
+      "url": "https://api.crossref.org/works/10.1016/j.comnet.2025.111540",
+      "type": "journal-article",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10
+          ]
+        ]
+      },
+      "published-online": null,
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            10
+          ]
+        ]
+      },
+      "container-title": [
+        "Computer Networks"
+      ]
+    }
+  },
+  {
+    "id": "R0090",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+    "sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+    "doi": "10.1109/ICoEIT63558.2025.11457712",
+    "title": "Aeroagrinet: Swarm-Enabled Flying Edge Framework for Real-Time Agricultural Intelligence",
+    "authors": "Shaikh, Mohammad Shahnawaz (59010486000); Patil, Sumersing D. (60588688500); Parashar, Prabhat (60581512900); Biswal, Aparajita (58110599400); Ali, Syed Ibad (58592877600)",
+    "year": "2025",
+    "venue": "2025 International Conference on Engineering Innovations and Technologies, ICoEIT 2025",
+    "publication_date": "",
+    "url": "https://www.scopus.com/pages/publications/105036150983?origin=resultslist",
+    "pages": 7,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "pdf_page1_date_lines": [],
+    "crossref": {
+      "id": "R0090",
+      "url": "https://api.crossref.org/works/10.1109/ICoEIT63558.2025.11457712",
+      "type": "proceedings-article",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            4
+          ]
+        ]
+      },
+      "published-online": null,
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            4
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            4
+          ]
+        ]
+      },
+      "container-title": [
+        "2025 International Conference on Engineering Innovations and Technologies (ICoEIT)"
+      ]
+    }
+  },
+  {
+    "id": "R0125",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+    "sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+    "doi": "10.1109/sm69703.2026.11614110",
+    "title": "UAV Extreme Edge Computing for Real Time AI Inference: A Distributed Processing Approach",
+    "authors": "Mhd Saria Allahham; Hossam S. Hassanein",
+    "year": "2026",
+    "venue": "IEEE International Conference on Smart Mobility (SM)",
+    "publication_date": "2026-05-01",
+    "url": "https://doi.org/10.1109/sm69703.2026.11614110",
+    "pages": 5,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "pdf_page1_date_lines": [],
+    "crossref": {
+      "id": "R0125",
+      "url": "https://api.crossref.org/works/10.1109/sm69703.2026.11614110",
+      "type": "proceedings-article",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5
+          ]
+        ]
+      },
+      "published-online": null,
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            5
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            5
+          ]
+        ]
+      },
+      "container-title": [
+        "2026 International Conference on Smart Mobility (SM)"
+      ]
+    }
+  },
+  {
+    "id": "R0130",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0130.pdf",
+    "sha256": "4b4cbd64872f3dbdc9ad082dec3f29cece696ac1d1a8d9e829245e59bae36c10",
+    "doi": "10.1007/978-3-032-39125-4_4",
+    "title": "Digital Twin-Assisted Offloading and Resource Allocation Optimisation for a Multi-agent Low-Altitude Economy Networks",
+    "authors": "Bintao Hu; Zhiran Wang; Jikang Zhao; Jianbo Du; Yueyue Dai; Haotong Cao",
+    "year": "2026",
+    "venue": "Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
+    "publication_date": "2026-09-20",
+    "url": "https://doi.org/10.1007/978-3-032-39125-4_4",
+    "pages": 14,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "pdf_page1_date_lines": [
+      "Published by Springer Nature Switzerland AG 2027. All Rights"
+    ],
+    "crossref": {
+      "id": "R0130",
+      "url": "https://api.crossref.org/works/10.1007/978-3-032-39125-4_4",
+      "type": "book-chapter",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            20
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            20
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2027
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            20
+          ]
+        ]
+      },
+      "container-title": [
+        "Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
+        "Mobile Networks and Management"
+      ]
+    }
+  }
+]

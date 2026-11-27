@@ -1,0 +1,44 @@
+{
+  "id": "686eeaff-1339-40ae-bd4f-4a0d6c7f70a6",
+  "contextId": "1d477037-0367-4474-8036-c103c4d1fe15",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-27T03:44:17.130+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-27T03:37:47.913+00:00",
+    "updated_at": "2026-11-27T03:44:17.130+00:00",
+    "started_at": "2026-11-27T03:37:47.918+00:00",
+    "completed_at": "2026-11-27T03:44:17.130+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — HK261 Eligibility Key Repair",
+    "chat_cleanup": {
+      "state": "not_verified",
+      "detail": "Accessibility prepare-delete failed: Gemini snapshot failed: Gemini window did not become active"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "62452687-d802-4c37-8e3b-025606576ef0",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"id\":\"R0091\",\"e\":{\"E2\":[\"T\",\"PDF\",3,\"3. Model description and problem formulation\",\"the task owners and energy sources\",\"Models M rotary-wing UAVs (M={1,2,...,M}) as task owners and energy sources; Section 5 (p. 8 Table 2, p. 9 Fig. 5) evaluates M in [3, 6] UAVs.\"],\"E4\":[\"F\",\"PDF\",8,\"5.1. Simulation settings\",\"input data size is set to 500 kb\",\"Evaluates MADRL/MASAC joint task-and-energy offloading on generic bit-wise tasks (p. 3 fn. 2; p. 8 Section 5/5.1, 500 kb, 1000 cycles/bit) rather than a proposed neural inference method under P03.\"]}}\n{\"id\":\"R0099\",\"e\":{\"E2\":[\"T\",\"PDF\",8,\"IV.B. Multithreaded Processing Performance\",\"independent UAV feed. As illustrated in Fig. 2\",\"Evaluates single- and three-stream configurations where each stream corresponds to an independent UAV feed (pp. 8-9, Figs. 2-6, Table I; p. 10 Figs. 8-9 UAV1/UAV2).\"],\"E7\":[\"U\",\"https://journal.umy.ac.id/index.php/jrc/PE\",0,\"Peer Review Policy\",\"INACCESSIBLE\",\"Both https://journal.umy.ac.id/index.php/jrc/article/view/28366 and https://journal.umy.ac.id/index.php/jrc/PE were blocked/inaccessible via web browse; PDF (pp. 1-14) has substantive method (Section III) and results (Section IV) but contains no peer-review dates or policy text.\"]}}\n{\"id\":\"R0122\",\"e\":{\"E4\":[\"F\",\"PDF\",5,\"4 Performance Evaluation and Discussion\",\"multi-criteria optimization algorithms by showing the utility\",\"Simulates PGO/SQP, BR, Greedy, and branch-and-bound on generic bit tasks (10-20 Mb, cycles/bit; p. 2 Section 2, p. 5 Section 4) for utility, trust, connectivity, and robustness; no neural inference method is proposed or evaluated.\"],\"E5\":[\"T\",\"https://api.crossref.org/works/10.1145/3842721.3850224\",0,\"message.published-online.date-parts\",\"Codex-supplied: published-online.date-parts [[2026,11,22]]\",\"Crossref API URL was inaccessible via web browse; relying on Codex-supplied publisher deposit published-online 2026-11-22, within 2021-01-01 through 2026-11-26 (PDF p. 1 lists MobiHoc '26, Nov 23-26, 2026).\"],\"E7\":[\"T\",\"https://cybernet2026.github.io/cybernet2026/\",0,\"Submission Instructions / Session 4 Program\",\"For single-blind review, submissions must include\",\"Official CyberNet 2026 (ACM MobiHoc 2026 workshop) organizer page ties this exact paper and authors (Butt, Naeem, Ejaz) to Session 4 full paper presentation under single-blind review (max 6 pages), paired with substantive method and evaluation in PDF pp. 1-6.\"]}}\n{\"id\":\"R0128\",\"e\":{\"E5\":[\"U\",\"https://ieeexplore.ieee.org/abstract/document/11626652\",0,\"Date of Publication\",\"INACCESSIBLE\",\"IEEE Xplore record https://ieeexplore.ieee.org/abstract/document/11626652 was inaccessible via web browse; Early Access PDF (p. 1) gives only DOI 10.1109/MIOT.2026.3711893, copyright 2026 IEEE, and Nov 27, 2026 download stamp, which cannot establish a verified publication date before 2026-11-26.\"]}}\n{\"id\":\"R0148\",\"e\":{\"E4\":[\"F\",\"PDF\",6,\"4 Experimental results and analysis\",\"compare the total system energy consumption under different schemes\",\"Evaluates timeout rate and energy cost of a DNN-plus-DE offloading/deployment optimizer on indivisible generic tasks {C_i, D_i, T_i} (pp. 2, 4 Sections 2.1/2.5/3; pp. 6-7 Section 4); no neural inference method is evaluated.\"],\"E5\":[\"T\",\"https://api.crossref.org/works/10.1145/3801359.3801406\",0,\"message.published-online.date-parts\",\"Codex-supplied: published-online.date-parts [[2026,5,4]]\",\"Crossref API URL was inaccessible via web browse; relying on Codex-supplied publisher deposit published-online 2026-05-04, within 2021-01-01 through 2026-11-26 (PDF p. 1 lists BDCTA 2026, Feb 06-08, 2026).\"],\"E7\":[\"U\",\"https://www.bdcta.org/2026\",0,\"BDCTA 2026 History / Editorial Policy\",\"UNVERIFIED\",\"Official site https://www.bdcta.org/2026 reports conference conclusion without peer-review policy or listing this paper; https://www.bdcta.org/EditorialPolicy and https://www.bdcta.org/Publication state peer-review policy for BDCTA 2027 (SPIE), not BDCTA 2026 (ACM); PDF pp. 1-8 has substantive method/results but no peer-review statement.\"]}}\n{\"returned_ids\":[\"R0091\",\"R0099\",\"R0122\",\"R0128\",\"R0148\"],\"unresolved_keys\":[\"R0099:E7\",\"R0128:E5\",\"R0148:E7\"],\"workers_used\":false,\"complete\":true}"
+        }
+      ]
+    }
+  ]
+}

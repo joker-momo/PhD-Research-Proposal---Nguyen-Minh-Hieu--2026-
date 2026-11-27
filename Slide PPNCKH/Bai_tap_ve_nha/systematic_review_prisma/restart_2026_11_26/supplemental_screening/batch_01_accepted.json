@@ -73,14 +73,16 @@
       "E1": "T",
       "E2": "T",
       "E3": "F",
-      "E4": "T",
+      "E4": "F",
       "E5": "T",
       "E6": "T",
       "E7": "T"
     },
     "primary": "E3",
-    "secondary": [],
-    "reason": "E3 fails. The system aggregates raw sensor data pools. Reported methods and evaluation do not establish a collaborative neural inference workload.",
+    "secondary": [
+      "E4"
+    ],
+    "reason": "E3 fails. The system aggregates raw sensor data pools. Reported methods and evaluation do not establish a collaborative neural inference workload. The reported evaluation also fails E4 because it evaluates a generic workload.",
     "evidence": [
       [
         "E1",
@@ -383,14 +385,16 @@
       "E1": "T",
       "E2": "T",
       "E3": "F",
-      "E4": "T",
+      "E4": "F",
       "E5": "T",
       "E6": "T",
       "E7": "T"
     },
     "primary": "E3",
-    "secondary": [],
-    "reason": "E3 fails. PPO produces scheduling decisions for generic bit-level workloads. It does not establish a collaborative neural inference workload.",
+    "secondary": [
+      "E4"
+    ],
+    "reason": "E3 fails. PPO produces scheduling decisions for generic bit-level workloads. It does not establish a collaborative neural inference workload. The reported evaluation also fails E4 because it evaluates a generic workload.",
     "evidence": [
       [
         "E1",

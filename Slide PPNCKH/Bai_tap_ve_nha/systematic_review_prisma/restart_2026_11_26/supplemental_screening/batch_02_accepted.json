@@ -1,0 +1,630 @@
+[
+  {
+    "id": "R0091",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [
+      "E4"
+    ],
+    "reason": "E3 and E4 fail. The report models bit-wise workloads and evaluates task and energy offloading. The learned optimizer does not provide an evaluated neural inference workload.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1. Introduction",
+        "we first propose a multi-agent DRL (MADRL) approach"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "3. Model description and problem formulation (fn. 2)",
+        "the task mentioned in this paper is bit-wise"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "3.2. Task partitioning model",
+        "represents the data size of the computation task"
+      ],
+      [
+        "E3",
+        "PDF",
+        6,
+        "4.2. MADDPG-based framework",
+        "used for the mapping from the current state"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Article info",
+        "Accepted 13 June 2022 Available online 17 June 2022"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "a joint task and energy offloading problem is"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Article info",
+        "Received 24 November 2021; Received in revised form"
+      ],
+      [
+        "E7",
+        "https://shop.elsevier.com/journals/computer-communications/0140-3664",
+        0,
+        "Journal description",
+        "Computer Communications is a peer-reviewed international journal that"
+      ],
+      [
+        "E2",
+        "PDF",
+        3,
+        "3. Model description and problem formulation",
+        "the task owners and energy sources"
+      ],
+      [
+        "E4",
+        "PDF",
+        8,
+        "5. Simulation results",
+        "comprehensive simulations are conducted to verify the performance"
+      ]
+    ]
+  },
+  {
+    "id": "R0099",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "E3 fails. UAV video is transferred to one ground-station workstation and each stream is processed independently. The journal policy verifies E7 for the matched research article.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "I. Introduction",
+        "we propose a centralized UAV control architecture designed"
+      ],
+      [
+        "E3",
+        "PDF",
+        6,
+        "III.A. System Arcgitecture",
+        "Each UAV RTSP stream is independently managed by"
+      ],
+      [
+        "E3",
+        "PDF",
+        8,
+        "IV.A. Experimental Setup",
+        "UAVs transmitted video streams to the ground station"
+      ],
+      [
+        "E4",
+        "PDF",
+        8,
+        "IV.A. Experimental Setup",
+        "The system was validated on a MSI laptop"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "Managing concurrent high-resolution video from multiple UAVs is"
+      ],
+      [
+        "E2",
+        "PDF",
+        8,
+        "IV.B. Multithreaded Processing Performance",
+        "independent UAV feed. As illustrated in Fig. 2"
+      ],
+      [
+        "E7",
+        "https://journal.umy.ac.id/index.php/jrc/PE",
+        0,
+        "Section A.1, linked to the exact paper DOI on https://journal.umy.ac.id/index.php/jrc/article/view/28366",
+        "strict peer-review process by at least two international reviewers"
+      ],
+      [
+        "E5",
+        "https://journal.umy.ac.id/index.php/jrc/article/view/28366",
+        0,
+        "Published",
+        "2025-11-23"
+      ]
+    ]
+  },
+  {
+    "id": "R0122",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [
+      "E4"
+    ],
+    "reason": "E3 and E4 fail. The multi-UAV evaluation concerns generic computation tasks, trust and utility. The exact paper and authors are listed in the reviewed CyberNet workshop.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "We propose a confidence-calibrated hybrid trust framework that"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "4 Performance Evaluation and Discussion",
+        "with N=50 IoT devices and M=5 UAVs"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "2 System Model and Problem Formulation",
+        "They can offload computation-intensive tasks to their serving"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "3 Proposed Optimization Framework",
+        "solved using sequential quadratic programming (SQP) [14], which"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "Aerial edge computing brings Internet of things (IoT)"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "4 Performance Evaluation and Discussion",
+        "multi-criteria optimization algorithms by showing the utility"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3842721.3850224",
+        0,
+        "message.published-online.date-parts",
+        "[[2026,11,22]]"
+      ],
+      [
+        "E7",
+        "https://cybernet2026.github.io/cybernet2026/",
+        0,
+        "Submission Instructions and Session 4 (organizer program)",
+        "For single-blind review, submissions must include"
+      ]
+    ]
+  },
+  {
+    "id": "R0126",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "F",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "F"
+    },
+    "primary": "E1",
+    "secondary": [
+      "E7",
+      "E3"
+    ],
+    "reason": "E1 and E7 fail because this report is an edited-volume chapter. Its multi-UAV evaluation concerns federated training, so E3 also fails. A separate application in the chapter evaluates one-shot inference and establishes E4.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "This chapter presents a unified framework for decentralized"
+      ],
+      [
+        "E2",
+        "PDF",
+        14,
+        "3.4.3 UAVs knowledge sharing methodology",
+        "where a total of 10 UAVs cooperated under"
+      ],
+      [
+        "E3",
+        "PDF",
+        11,
+        "3.4 DECKS architecture",
+        "enables UAV swarms to collaboratively train, fuse, and"
+      ],
+      [
+        "E3",
+        "PDF",
+        13,
+        "3.4.3 UAVs knowledge sharing methodology",
+        "each UAV updates its model locally and shares"
+      ],
+      [
+        "E5",
+        "https://www.intechopen.com/chapters/1224598",
+        0,
+        "Chapter publication metadata",
+        "Reviewed: 04 July 2025 Published: 19 March 2026"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "Autonomous systems deployed across robotics, transportation, and aerial"
+      ],
+      [
+        "E4",
+        "PDF",
+        7,
+        "3.2.3 K-DUMBs results, Figure 2 discussion",
+        "the average one-shot inference accuracy across communication rounds"
+      ],
+      [
+        "E7",
+        "https://www.intechopen.com/chapters/1224598",
+        0,
+        "Report type, From the Edited Volume",
+        "Open access peer-reviewed chapter"
+      ]
+    ]
+  },
+  {
+    "id": "R0128",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "F",
+      "E2": "F",
+      "E3": "F",
+      "E4": "F",
+      "E5": "U",
+      "E6": "T",
+      "E7": "F"
+    },
+    "primary": "E1",
+    "secondary": [
+      "E7",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "reason": "E1 fails. The assessed IEEE Early Access article is a review. The report lacks an evaluated multi-UAV setting and a proposed evaluated collaborative inference method. The exact publication date remains unconfirmed.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "This paper reviews the role of semantic segmentation"
+      ],
+      [
+        "E2",
+        "PDF",
+        3,
+        "III.A. Key Techniques (Table I note)",
+        "Quantitative metrics were empirically evaluated on the Cityscapes"
+      ],
+      [
+        "E3",
+        "PDF",
+        1,
+        "I. Introduction",
+        "reviews relevant technological advancements, and discusses key aspects"
+      ],
+      [
+        "E4",
+        "PDF",
+        3,
+        "III.A. Key Techniques",
+        "Table I presents a systematic comparison."
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "Semantic communication (SemCom) transcends traditional Shannon theory by"
+      ],
+      [
+        "E5",
+        "https://ieeexplore.ieee.org/abstract/document/11626652",
+        0,
+        "Date of Publication",
+        "UNVERIFIED: record blocked; Crossref publisher deposit only gives the cutoff year"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Abstract and I. Introduction",
+        "This paper reviews the role of semantic segmentation"
+      ]
+    ]
+  },
+  {
+    "id": "R0142",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "F",
+      "E2": "F",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "F"
+    },
+    "primary": "E1",
+    "secondary": [
+      "E7",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "reason": "E1 fails. The report surveys UAV swarm intelligence and has no original evaluated setting or proposed inference method. The publisher deposit gives an online publication date.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "This paper combs the origin and development trend"
+      ],
+      [
+        "E2",
+        "PDF",
+        4,
+        "4.2.1 OFFSET Program",
+        "DARPA released the field test results of the"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "3.3 Emerging Convergence Technologies",
+        "will allow near real-time distributed inference and cross-domain"
+      ],
+      [
+        "E4",
+        "PDF",
+        8,
+        "9 Conclusion",
+        "UAV swarm intelligence represents a transformative technological paradigm"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "UAV swarm operation has become a research hotspot"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Abstract",
+        "systematically summarizes the latest research and development progress"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3817395.3817421",
+        0,
+        "message.published-online.date-parts",
+        "[[2026,8,25]]"
+      ]
+    ]
+  },
+  {
+    "id": "R0144",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "E2 and E3 fail. The evaluated inference system uses one UAV, and the paper lists swarm deployment under future work.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        3,
+        "Abstract",
+        "This paper introduces a modular UAV system for"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "3.2 Hardware Architecture",
+        "A custom UAV was built using readily available"
+      ],
+      [
+        "E2",
+        "PDF",
+        9,
+        "5 Conclusion and Future Work",
+        "Deploying a UAV swarm could enhance coverage and"
+      ],
+      [
+        "E3",
+        "PDF",
+        6,
+        "3.3 Video Summarisation Pipeline",
+        "The UAV runs a software pipeline that combines"
+      ],
+      [
+        "E3",
+        "PDF",
+        7,
+        "3.3.2 Proposed Flow",
+        "Transmission was simulated (copy-to-folder plus log) rather than"
+      ],
+      [
+        "E4",
+        "PDF",
+        6,
+        "3.3 Video Summarisation Pipeline",
+        "Testing was carried out on both a Raspberry"
+      ],
+      [
+        "E5",
+        "PDF",
+        3,
+        "ACM Reference Format",
+        "the Internet of Things (IOT 2025), November 18-21, 2025,"
+      ],
+      [
+        "E6",
+        "PDF",
+        3,
+        "Abstract",
+        "Rapid detection of individuals in search and rescue"
+      ],
+      [
+        "E7",
+        "https://iot-conference.org/iot2025/call-for-papers/",
+        0,
+        "Important dates",
+        "Papers will be peer-reviewed by at least three"
+      ]
+    ]
+  },
+  {
+    "id": "R0148",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E3",
+    "secondary": [
+      "E4"
+    ],
+    "reason": "E3 and E4 fail. The network controls offloading and deployment of generic indivisible tasks. The 2026 proceedings review policy for the exact track remains unverified.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "We propose an energy-aware optimization framework, called Offloading-Deployment"
+      ],
+      [
+        "E2",
+        "PDF",
+        6,
+        "4 Experimental results and analysis",
+        "The number of UAVs is fixed at 5,"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "2.5 Problem Formulation",
+        "each task is indivisible and must be processed"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "3 The ODE Framework",
+        "a deep neural network (DNN) generates the offloading"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "With the explosive growth of Internet of Things"
+      ],
+      [
+        "E4",
+        "PDF",
+        6,
+        "4 Experimental results and analysis",
+        "compare the total system energy consumption under different schemes"
+      ],
+      [
+        "E7",
+        "https://www.bdcta.org/2026",
+        0,
+        "BDCTA 2026 History / Editorial Policy",
+        "UNVERIFIED"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3801359.3801406",
+        0,
+        "message.published-online.date-parts",
+        "[[2026,5,4]]"
+      ]
+    ]
+  }
+]
