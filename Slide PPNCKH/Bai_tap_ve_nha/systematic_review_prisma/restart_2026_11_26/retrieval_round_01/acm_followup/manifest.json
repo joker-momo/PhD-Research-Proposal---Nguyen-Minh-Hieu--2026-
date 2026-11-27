@@ -1,0 +1,12 @@
+{
+  "task_id": "restart-retrieval-acm-followup",
+  "message_id": "4492bcc8-c6f6-4c40-88fb-3430da470133",
+  "records": {
+    "R0096": "10.1145/3714394.3756181",
+    "R0221": "10.1145/3820709.3820744",
+    "R0402": "10.1145/3842435.3843964"
+  },
+  "dispatch_brief": "restart_2026_11_26/retrieval_round_01/acm_followup/brief.md",
+  "source_commit": "6fdbc16",
+  "prisma_update_authorized": false
+}
