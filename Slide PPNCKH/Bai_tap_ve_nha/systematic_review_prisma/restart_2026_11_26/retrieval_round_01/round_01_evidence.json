@@ -1,0 +1,1412 @@
+{
+  "task_id": "restart-retrieval-round-01",
+  "recorded_at": "2026-11-27T08:46:20+07:00",
+  "cutoff": "2026-11-26",
+  "rules": {
+    "candidate_exclusion": "Protocol P03 E7 and scripts/verify_restart_retrieval.py. For files marked PREPRINT or supplied as submittedVersion, the existing target-identity check requires exact title and DOI in the PDF first-page text. An externally linked DOI alone does not pass this gate.",
+    "page_numbering": "physical PDF, 1-based",
+    "pdf_engine": "2.0",
+    "institutional_access": "No active library entitlement was demonstrated in this round. IEEE PDF controls showed no access in the tested session.",
+    "baseline": "Locked PRISMA and manuscript unchanged until reconciliation and linkage are authorized."
+  },
+  "retrieval": [
+    {
+      "id": "R0096",
+      "title": "ARIES: Autonomous Reconnaissance, Inspection and Exploration System for Hybrid Single and Multi-UAV Building Inspection Approach after Disaster",
+      "doi": "10.1145/3714394.3756181",
+      "status": "NOT_RETRIEVED",
+      "version": "UNVERIFIED",
+      "sources": [
+        "https://dl.acm.org/doi/10.1145/3714394.3756181",
+        "https://api.openalex.org/works/https://doi.org/10.1145/3714394.3756181"
+      ],
+      "finding": "Phiên truy cập ACM dừng ở xác minh Cloudflare. OpenAlex ghi truy cập mở CC BY nhưng chỉ trỏ về DOI của ACM và chưa liệt kê bản lưu toàn văn.",
+      "publisher_access_observation": "Cloudflare Ray ID a60d6c5aea6babcb; web fetch 403",
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:07+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1145/3714394.3756181",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1145/3714394.3756181",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "proceedings-article",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                12
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:08+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1145/3714394.3756181",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1145/3714394.3756181",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "hybrid",
+            "oa_url": "https://doi.org/10.1145/3714394.3756181",
+            "any_repository_has_fulltext": false
+          },
+          "best_version": "publishedVersion",
+          "license": "cc-by",
+          "pdf_url": null
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:09+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3714394.3756181?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3714394.3756181?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "https://doi.org/10.1145/3714394.3756181",
+            "status": "HYBRID",
+            "license": "CCBY"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0221",
+      "title": "MACE: A Physics-Informed Multi-modal Large Language Model for Strategic UAV Swarm Confrontation",
+      "doi": "10.1145/3820709.3820744",
+      "status": "NOT_RETRIEVED",
+      "version": "UNVERIFIED",
+      "sources": [
+        "https://dl.acm.org/doi/10.1145/3820709.3820744",
+        "https://api.openalex.org/works/https://doi.org/10.1145/3820709.3820744"
+      ],
+      "finding": "Phiên truy cập ACM dừng ở xác minh Cloudflare. OpenAlex ghi truy cập mở CC BY nhưng chỉ trỏ về DOI của ACM và chưa liệt kê bản lưu toàn văn.",
+      "publisher_access_observation": "Cloudflare Ray ID a60d6c611cf00703; web fetch 403",
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:07+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1145/3820709.3820744",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1145/3820709.3820744",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "proceedings-article",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                21
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:08+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1145/3820709.3820744",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1145/3820709.3820744",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "hybrid",
+            "oa_url": "https://doi.org/10.1145/3820709.3820744",
+            "any_repository_has_fulltext": false
+          },
+          "best_version": "publishedVersion",
+          "license": "cc-by",
+          "pdf_url": null
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:09+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3820709.3820744?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3820709.3820744?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "https://doi.org/10.1145/3820709.3820744",
+            "status": "HYBRID",
+            "license": "CCBY"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0402",
+      "title": "PDT-TCN: Prefix-Drop Temporal Convolutional Networks for Early Attack Detection in UAV-GCS Communications",
+      "doi": "10.1145/3842435.3843964",
+      "status": "NOT_RETRIEVED",
+      "version": "UNVERIFIED",
+      "sources": [
+        "https://dl.acm.org/doi/10.1145/3842435.3843964",
+        "https://api.openalex.org/works/https://doi.org/10.1145/3842435.3843964"
+      ],
+      "finding": "Phiên truy cập ACM dừng ở xác minh Cloudflare. OpenAlex ghi truy cập mở CC BY nhưng chỉ trỏ về DOI của ACM và chưa liệt kê bản lưu toàn văn.",
+      "publisher_access_observation": "Cloudflare Ray ID a60d6c652e420703; web fetch 403",
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:07+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1145/3842435.3843964",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1145/3842435.3843964",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "proceedings-article",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                10,
+                26
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:08+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1145/3842435.3843964",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1145/3842435.3843964",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "gold",
+            "oa_url": "https://doi.org/10.1145/3842435.3843964",
+            "any_repository_has_fulltext": false
+          },
+          "best_version": "publishedVersion",
+          "license": "cc-by",
+          "pdf_url": null
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:09+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3842435.3843964?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3842435.3843964?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "https://doi.org/10.1145/3842435.3843964",
+            "status": "GOLD",
+            "license": "CCBY"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0014",
+      "title": "All-Sky Autonomous Computing in UAV Swarm",
+      "doi": "10.1109/TMC.2024.3427420",
+      "status": "NOT_RETRIEVED",
+      "version": "UNVERIFIED",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/10598223/",
+        "https://www.hkpeilab.com/publications",
+        "https://researchportal.hkust.edu.hk/en/publications/all-sky-autonomous-computing-in-uav-swarm-2/"
+      ],
+      "publisher_access_observation": "You do not have access to this PDF",
+      "finding": "HKUST xác nhận bài. Nút PDF của PEI-Lab dẫn về chính IEEE Xplore, nơi PDF yêu cầu quyền truy cập.",
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:10+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1109/tmc.2024.3427420",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1109/tmc.2024.3427420",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                12
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:11+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1109/tmc.2024.3427420",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1109/tmc.2024.3427420",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          },
+          "best_version": null,
+          "license": null,
+          "pdf_url": null
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:11+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/tmc.2024.3427420?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/tmc.2024.3427420?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null
+          }
+        }
+      }
+    },
+    {
+      "id": "R0038",
+      "title": "On Convolutional Neural Networks for Mini UAV Swarms",
+      "doi": "10.1109/WINCOM65874.2025.11313424",
+      "status": "NOT_RETRIEVED",
+      "version": "UNVERIFIED",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11313424/",
+        "https://www.arabou.edu.sa/media/Lists/Publications/Attachments/22/Wincom25%20conference%20Booklet.pdf"
+      ],
+      "publisher_access_observation": "You do not have access to this PDF",
+      "finding": "IEEE Xplore báo phiên hiện tại thiếu quyền đọc PDF. Sổ hội nghị WINCOM chỉ xác nhận bài và tóm tắt.",
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:10+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1109/wincom65874.2025.11313424",
+            "outcome": "http_error",
+            "http": 429,
+            "final_url": "https://api.crossref.org/works/10.1109/wincom65874.2025.11313424"
+          },
+          "type": null,
+          "published": null
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:11+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1109/wincom65874.2025.11313424",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1109/wincom65874.2025.11313424",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          },
+          "best_version": null,
+          "license": null,
+          "pdf_url": null
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:11+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/wincom65874.2025.11313424?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/wincom65874.2025.11313424?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null
+          }
+        }
+      }
+    },
+    {
+      "id": "R0043",
+      "title": "Multi-UAV Maritime Search and Rescue with DNN Inference Acceleration",
+      "doi": "10.1109/Ucom59132.2023.10257649",
+      "status": "NOT_RETRIEVED",
+      "version": "UNVERIFIED",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/10257649/",
+        "https://www.proceedings.com/content/070/070698webtoc.pdf"
+      ],
+      "publisher_access_observation": "You do not have access to this PDF",
+      "finding": "IEEE Xplore báo phiên hiện tại thiếu quyền đọc PDF. Bản mục lục kỷ yếu chỉ xác nhận mục bài.",
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:10+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1109/ucom59132.2023.10257649",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1109/ucom59132.2023.10257649",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "proceedings-article",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                7
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:11+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1109/ucom59132.2023.10257649",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1109/ucom59132.2023.10257649",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          },
+          "best_version": null,
+          "license": null,
+          "pdf_url": null
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:11+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/ucom59132.2023.10257649?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/ucom59132.2023.10257649?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null
+          }
+        }
+      }
+    },
+    {
+      "id": "R0058",
+      "title": "Efficient AI Inference Offloading for UAVs via Distributed Auctions in Dynamic Edge Environments",
+      "doi": "10.1142/S0218126626440020",
+      "status": "NOT_RETRIEVED",
+      "version": "UNVERIFIED",
+      "sources": [
+        "https://doi.org/10.1142/S0218126626440020",
+        "https://www.worldscientific.com/doi/10.1142/S0218126626440020"
+      ],
+      "finding": "World Scientific trả HTTP 403 trong lần kiểm tra. Bản xem trước quan sát được chỉ có lựa chọn yêu cầu toàn văn.",
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:10+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1142/s0218126626440020",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1142/s0218126626440020",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                6
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:11+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1142/s0218126626440020",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1142/s0218126626440020",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          },
+          "best_version": null,
+          "license": null,
+          "pdf_url": null
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:12+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1142/s0218126626440020?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1142/s0218126626440020?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null
+          }
+        }
+      }
+    },
+    {
+      "id": "R0064",
+      "title": "Joint optimization of data sensing and computing in the air–ground collaborative inference framework: A multi-agent hybrid-action DRL approach",
+      "doi": "10.1016/j.comnet.2025.111540",
+      "status": "NOT_RETRIEVED",
+      "version": "UNVERIFIED",
+      "sources": [
+        "https://doi.org/10.1016/j.comnet.2025.111540",
+        "https://www.sciencedirect.com/science/article/pii/S1389128625005079"
+      ],
+      "finding": "ScienceDirect hiện lựa chọn truy cập qua tổ chức hoặc mua PDF. Phần xem trước chưa đủ làm báo cáo toàn văn.",
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:10+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1016/j.comnet.2025.111540",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1016/j.comnet.2025.111540",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                10
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:11+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.comnet.2025.111540",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.comnet.2025.111540",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          },
+          "best_version": null,
+          "license": null,
+          "pdf_url": null
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:12+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.comnet.2025.111540?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.comnet.2025.111540?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "",
+            "status": null,
+            "license": null
+          }
+        }
+      }
+    },
+    {
+      "id": "R0070",
+      "title": "Joint UAV deployment, SF placement, and collaborative task scheduling in heterogeneous multi-UAV-empowered edge intelligence",
+      "doi": "10.1049/cmu2.12570",
+      "status": "RETRIEVED_PUBLISHER_FULLTEXT",
+      "version": "PUBLISHER_VERSION",
+      "sources": [
+        "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/cmu2.12570",
+        "https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/cmu2.12570",
+        "https://ietresearch.onlinelibrary.wiley.com/hub/journal/17518636/homepage/referees"
+      ],
+      "finding": "Đã đọc toàn văn HTML và PDF gốc 17 trang của Wiley/IET. Tải PDF trực tiếp xuống máy trả HTTP 403. Kết luận sàng lọc của lượt 1 là loại theo E3.",
+      "retrieved_artifact": {
+        "format": "publisher HTML and publisher PDF read online",
+        "local_pdf": null,
+        "pages": 17,
+        "license": "CC BY",
+        "first_published": "2023-01-25"
+      },
+      "eligibility": {
+        "decision": "EXCLUDE",
+        "primary_reason": "E3",
+        "secondary": [
+          "E4"
+        ],
+        "criteria": {
+          "E1": [
+            "T",
+            "PDF p. 1, Original Research and Abstract; §§3–4, model and optimization"
+          ],
+          "E2": [
+            "T",
+            "PDF pp. 12–13, §5.1, simulated multi-UAV setting"
+          ],
+          "E3": [
+            "F",
+            "PDF pp. 6–7, §3.5, generic task tuple; pp. 12–13, §5.1 and Table 3, generic periodic workload. DNN example in §1 does not identify a DNN inference workload in the evaluated method."
+          ],
+          "E4": [
+            "F",
+            "PDF pp. 12–15, §5 and Table 3, evaluation of generic assignment/offloading; no evaluation of a defined inference workload"
+          ],
+          "E5": [
+            "T",
+            "Publisher HTML First published: 25 January 2023"
+          ],
+          "E6": [
+            "T",
+            "English throughout the publisher full text"
+          ],
+          "E7": [
+            "T",
+            "PDF p. 1, Original Research; IET Communications referee policy; full method and simulation results"
+          ]
+        }
+      },
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:12+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1049/cmu2.12570",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1049/cmu2.12570",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                1,
+                25
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:13+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1049/cmu2.12570",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1049/cmu2.12570",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "gold",
+            "oa_url": "https://doi.org/10.1049/cmu2.12570",
+            "any_repository_has_fulltext": false
+          },
+          "best_version": "publishedVersion",
+          "license": "cc-by",
+          "pdf_url": null
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:14+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1049/cmu2.12570?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1049/cmu2.12570?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "https://doi.org/10.1049/cmu2.12570",
+            "status": "GOLD",
+            "license": "CCBY"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0077",
+      "title": "Distributed split computing using diffusive metrics for UAV swarms",
+      "doi": "10.1016/j.sysarc.2026.103804",
+      "status": "CANDIDATE_ONLY",
+      "version": "AUTHOR_ACCEPTANCE_STATED_TARGET_VERSION_UNVERIFIED",
+      "sources": [
+        "https://doi.org/10.1016/j.sysarc.2026.103804",
+        "https://arxiv.org/abs/2503.16146v3",
+        "https://research.itu.edu.tr/en/publications/distributed-split-computing-using-diffusive-metrics-for-uav-swarm/"
+      ],
+      "finding": "Bản v3 ghi đã được tạp chí chấp nhận ở trang 1. arXiv liên kết DOI tạp chí nhưng DOI đích thiếu trên trang 1, OpenAlex đánh dấu submittedVersion và chưa có bản Elsevier hay kho trường xác nhận đây là bản cuối đã duyệt.",
+      "candidate": {
+        "repository_record": "https://arxiv.org/abs/2503.16146v3",
+        "pdf_url": "https://arxiv.org/pdf/2503.16146v3",
+        "pages": 13,
+        "sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+        "identical_preexisting_file": "screening_46/pdf/S16.pdf",
+        "target_doi_on_page_1": false,
+        "body_locations": [
+          "p. 4 §3; p. 8 §5 and p. 11 §6"
+        ]
+      },
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:12+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1016/j.sysarc.2026.103804",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1016/j.sysarc.2026.103804",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                7
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:13+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.sysarc.2026.103804",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.sysarc.2026.103804",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/2503.16146",
+            "any_repository_has_fulltext": true
+          },
+          "best_version": "submittedVersion",
+          "license": "cc-by-nc-nd",
+          "pdf_url": "https://arxiv.org/pdf/2503.16146"
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:14+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.sysarc.2026.103804?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.sysarc.2026.103804?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "https://arxiv.org/pdf/2503.16146",
+            "status": "GREEN",
+            "license": "CCBYNCND"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0080",
+      "title": "Edge-Cloud Collaborative Model Inference for Aerial Networks with Distributionally Diverse Data",
+      "doi": "10.1109/VTC2025-Fall65116.2025.11310097",
+      "status": "NOT_RETRIEVED",
+      "version": "UNVERIFIED",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11310097/"
+      ],
+      "publisher_access_observation": "You do not have access to this PDF",
+      "finding": "IEEE Xplore xác nhận bài và DOI. Nút PDF báo phiên hiện tại thiếu quyền truy cập.",
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:12+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1109/vtc2025-fall65116.2025.11310097",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1109/vtc2025-fall65116.2025.11310097",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "proceedings-article",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                19
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:13+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1109/vtc2025-fall65116.2025.11310097",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1109/vtc2025-fall65116.2025.11310097",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          },
+          "best_version": null,
+          "license": null,
+          "pdf_url": null
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:14+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/vtc2025-fall65116.2025.11310097?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/vtc2025-fall65116.2025.11310097?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null
+          }
+        }
+      }
+    },
+    {
+      "id": "R0082",
+      "title": "LLHR: Low Latency and High Reliability CNN Distributed Inference for Resource-Constrained UAV Swarms",
+      "doi": "10.1109/WCNC55385.2023.10118908",
+      "status": "CANDIDATE_ONLY",
+      "version": "ARXIV_VERSION_TARGET_VERSION_UNVERIFIED",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/10118908/",
+        "https://arxiv.org/abs/2305.15858v1"
+      ],
+      "publisher_access_observation": "You do not have access to this PDF",
+      "finding": "arXiv v1 ghi trích dẫn WCNC và DOI đích ở trang metadata nhưng PDF không ghi DOI đích hoặc tuyên bố là bản đã chấp nhận. IEEE Xplore yêu cầu quyền truy cập.",
+      "candidate": {
+        "repository_record": "https://arxiv.org/abs/2305.15858v1",
+        "pdf_url": "https://arxiv.org/pdf/2305.15858v1",
+        "pages": 6,
+        "sha256": "f3e0dd1ffad3178604921574f7b9ef2fdad34167cbbb792f7e9531ca28f8a775",
+        "identical_preexisting_file": "screening_46/pdf/S06.pdf",
+        "target_doi_on_page_1": false,
+        "body_locations": [
+          "p. 2 §II; p. 5 §IV; p. 6 §V and References"
+        ]
+      },
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:12+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1109/wcnc55385.2023.10118908",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1109/wcnc55385.2023.10118908",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "proceedings-article",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                3
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:13+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1109/wcnc55385.2023.10118908",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1109/wcnc55385.2023.10118908",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/2305.15858",
+            "any_repository_has_fulltext": true
+          },
+          "best_version": "submittedVersion",
+          "license": "public-domain",
+          "pdf_url": "https://arxiv.org/pdf/2305.15858"
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:14+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/wcnc55385.2023.10118908?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/wcnc55385.2023.10118908?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "https://arxiv.org/pdf/2305.15858",
+            "status": "GREEN",
+            "license": "public-domain"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0106",
+      "title": "Robust Group Target Awareness Inference in Multi-UAV-Enabled ISCC Networks Based on Split Deep Reinforcement Learning",
+      "doi": "10.1109/TWC.2025.3573654",
+      "status": "NOT_RETRIEVED",
+      "version": "UNVERIFIED",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11023099/",
+        "https://www.comsoc.org/system/files/2025-12/publications_contents_digest_2025_nov.pdf"
+      ],
+      "publisher_access_observation": "You do not have access to this PDF",
+      "finding": "IEEE Xplore báo phiên hiện tại thiếu quyền đọc PDF. IEEE ComSoc Digest chỉ xác nhận mục bài, trang in 9478–9492.",
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:12+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1109/twc.2025.3573654",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1109/twc.2025.3573654",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                11
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:13+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1109/twc.2025.3573654",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1109/twc.2025.3573654",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          },
+          "best_version": null,
+          "license": null,
+          "pdf_url": null
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:14+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/twc.2025.3573654?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/twc.2025.3573654?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "",
+            "status": null,
+            "license": null
+          }
+        }
+      }
+    },
+    {
+      "id": "R0107",
+      "title": "Joint Semantic Compression and Resource Allocation for Multi-UAV Networks: A Knowledge-Guided Reinforcement Learning Approach",
+      "doi": "10.1109/TVT.2026.3733130",
+      "status": "NOT_RETRIEVED",
+      "version": "UNVERIFIED",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11686198/"
+      ],
+      "publisher_access_observation": "You do not have access to this PDF",
+      "finding": "IEEE Xplore xác nhận bài và DOI. Nút PDF báo phiên hiện tại thiếu quyền truy cập.",
+      "discovery": {
+        "crossref": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:14+07:00",
+            "route": "crossref",
+            "url": "https://api.crossref.org/works/10.1109/tvt.2026.3733130",
+            "http": 200,
+            "final_url": "https://api.crossref.org/works/10.1109/tvt.2026.3733130",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2026
+              ]
+            ]
+          }
+        },
+        "openalex": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:15+07:00",
+            "route": "openalex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1109/tvt.2026.3733130",
+            "http": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1109/tvt.2026.3733130",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          },
+          "best_version": null,
+          "license": null,
+          "pdf_url": null
+        },
+        "semantic_scholar": {
+          "attempt": {
+            "timestamp": "2026-11-27T08:41:15+07:00",
+            "route": "semantic_scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/tvt.2026.3733130?fields=title,openAccessPdf,publicationDate,externalIds",
+            "http": 200,
+            "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/tvt.2026.3733130?fields=title,openAccessPdf,publicationDate,externalIds",
+            "media_type": "application/json",
+            "outcome": "response"
+          },
+          "open_access_pdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null
+          }
+        }
+      }
+    }
+  ],
+  "awaiting_recheck": [
+    {
+      "id": "R0075",
+      "title": "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks",
+      "doi": "10.1109/JIOT.2026.3746980",
+      "baseline": "AWAITING_CLASSIFICATION",
+      "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0075.pdf",
+      "sha256": "18d44887a60aadc52dfdea791615ef8ee43952ae3df0cf92687cb80fef54707f",
+      "pages": 15,
+      "rechecked_pdf_locators": {
+        "E1": {
+          "page": 1,
+          "section": "Abstract"
+        },
+        "E2": {
+          "page": 11,
+          "section": "IV-C. Parameter Analysis"
+        },
+        "E3": {
+          "page": 4,
+          "section": "III-A. Task Definition"
+        },
+        "E4": {
+          "page": 10,
+          "section": "IV-B. Results Analysis"
+        },
+        "E6": {
+          "page": 1,
+          "section": "I. Introduction"
+        },
+        "E7": {
+          "page": 1,
+          "section": "Header"
+        }
+      },
+      "criteria": {
+        "E1": "T",
+        "E2": "T",
+        "E3": "T",
+        "E4": "T",
+        "E5": "T",
+        "E6": "T",
+        "E7": "T"
+      },
+      "decision": "INCLUDE",
+      "version": "IEEE_EARLY_ACCESS",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11753908/"
+      ],
+      "publisher_evidence": {
+        "source": "https://ieeexplore.ieee.org/document/11753908/",
+        "field": "Date of Publication",
+        "display_value": "26 October 2026",
+        "date_iso": "2026-10-26",
+        "publisher_version_label": "Early Access",
+        "matching_doi": "10.1109/JIOT.2026.3746980"
+      }
+    },
+    {
+      "id": "R0081",
+      "title": "IDEA: Intelligent Divine Eye on Air through Multi-UAV Collaborative Inference",
+      "doi": "10.1145/3498361.3538674",
+      "baseline": "AWAITING_CLASSIFICATION",
+      "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0081.pdf",
+      "sha256": "a0a5c323273e076a36e965e9e3c840b753a79a95d38d3ae567ab608d203f7ffe",
+      "pages": 2,
+      "rechecked_pdf_locators": {
+        "E1": {
+          "page": 1,
+          "section": "Abstract"
+        },
+        "E2": {
+          "page": 2,
+          "section": "3 DEMONSTRATION & RESULTS"
+        },
+        "E3": {
+          "page": 1,
+          "section": "1 INTRODUCTION"
+        },
+        "E4": {
+          "page": 2,
+          "section": "3 DEMONSTRATION & RESULTS"
+        },
+        "E6": {
+          "page": 1,
+          "section": "1 INTRODUCTION"
+        }
+      },
+      "criteria": {
+        "E1": "T",
+        "E2": "T",
+        "E3": "T",
+        "E4": "T",
+        "E5": "T",
+        "E6": "T",
+        "E7": "U"
+      },
+      "decision": "AWAITING_CLASSIFICATION",
+      "unresolved": [
+        "E7"
+      ],
+      "version": "ACM_DEMO_EXTENDED_ABSTRACT",
+      "sources": [
+        "https://www.sigmobile.org/mobisys/2022/accepted-demos.html",
+        "https://www.sigmobile.org/mobisys/2022/demos.html",
+        "https://api.crossref.org/works/10.1145/3498361.3538674"
+      ],
+      "publisher_evidence": {
+        "date_iso": "2022-06-27",
+        "type_source_locator": "Accepted Demos, IDEA; Call for Demos §§Selection and Demo/Video Submission Guidelines",
+        "finding": "Hai trang có thiết kế và kết quả nguyên mẫu theo §§2–3. ACM xác nhận track demo và extended abstract, chưa xác nhận quy trình phản biện của báo cáo này theo E7."
+      }
+    },
+    {
+      "id": "R0092",
+      "title": "A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference",
+      "doi": "10.1109/JIOT.2026.3740035",
+      "baseline": "AWAITING_CLASSIFICATION",
+      "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "pages": 16,
+      "rechecked_pdf_locators": {
+        "E1": {
+          "page": 1,
+          "section": "Abstract"
+        },
+        "E2": {
+          "page": 10,
+          "section": "V-A. Simulation Setup"
+        },
+        "E3": {
+          "page": 5,
+          "section": "III-E.1. DNN Model Partitioning"
+        },
+        "E4": {
+          "page": 10,
+          "section": "V-D. Multi-Network Performance Comparison"
+        },
+        "E6": {
+          "page": 1,
+          "section": "I. Introduction"
+        },
+        "E7": {
+          "page": 1,
+          "section": "Header"
+        }
+      },
+      "criteria": {
+        "E1": "T",
+        "E2": "T",
+        "E3": "T",
+        "E4": "T",
+        "E5": "T",
+        "E6": "T",
+        "E7": "T"
+      },
+      "decision": "INCLUDE",
+      "version": "IEEE_EARLY_ACCESS",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11719586/"
+      ],
+      "publisher_evidence": {
+        "source": "https://ieeexplore.ieee.org/document/11719586/",
+        "field": "Date of Publication",
+        "display_value": "06 October 2026",
+        "date_iso": "2026-10-06",
+        "publisher_version_label": "Early Access",
+        "matching_doi": "10.1109/JIOT.2026.3740035"
+      }
+    },
+    {
+      "id": "R0110",
+      "title": "RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV Swarms",
+      "doi": "10.1109/tvt.2026.3755123",
+      "baseline": "AWAITING_CLASSIFICATION",
+      "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "pages": 16,
+      "rechecked_pdf_locators": {
+        "E1": {
+          "page": 1,
+          "section": "Abstract"
+        },
+        "E2": {
+          "page": 10,
+          "section": "TABLE III"
+        },
+        "E3": {
+          "page": 3,
+          "section": "III-A. Operational Semantics"
+        },
+        "E4": {
+          "page": 12,
+          "section": "V-D. Ablation Study"
+        },
+        "E6": {
+          "page": 1,
+          "section": "I. INTRODUCTION"
+        },
+        "E7": {
+          "page": 1,
+          "section": "Header"
+        }
+      },
+      "criteria": {
+        "E1": "T",
+        "E2": "T",
+        "E3": "T",
+        "E4": "T",
+        "E5": "T",
+        "E6": "T",
+        "E7": "T"
+      },
+      "decision": "INCLUDE",
+      "version": "IEEE_EARLY_ACCESS",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11804735/"
+      ],
+      "publisher_evidence": {
+        "source": "https://ieeexplore.ieee.org/document/11804735/",
+        "field": "Date of Publication",
+        "display_value": "18 November 2026",
+        "date_iso": "2026-11-18",
+        "publisher_version_label": "Early Access",
+        "matching_doi": "10.1109/tvt.2026.3755123"
+      }
+    },
+    {
+      "id": "R0118",
+      "title": "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms",
+      "doi": "10.1109/jiot.2026.3755315",
+      "baseline": "AWAITING_CLASSIFICATION",
+      "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "pages": 18,
+      "rechecked_pdf_locators": {
+        "E1": {
+          "page": 1,
+          "section": "Abstract"
+        },
+        "E2": {
+          "page": 15,
+          "section": "VI-H. Planner Overhead and Scalability"
+        },
+        "E3": {
+          "page": 8,
+          "section": "V.D.2) Task Assignment and Multi-Hop Routing"
+        },
+        "E4": {
+          "page": 9,
+          "section": "VI.B. Evaluation Results"
+        },
+        "E6": {
+          "page": 1,
+          "section": "I. INTRODUCTION"
+        }
+      },
+      "criteria": {
+        "E1": "T",
+        "E2": "T",
+        "E3": "T",
+        "E4": "T",
+        "E5": "T",
+        "E6": "T",
+        "E7": "T"
+      },
+      "decision": "INCLUDE",
+      "version": "IEEE_EARLY_ACCESS",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11804345/"
+      ],
+      "publisher_evidence": {
+        "source": "https://ieeexplore.ieee.org/document/11804345/",
+        "field": "Date of Publication",
+        "display_value": "18 November 2026",
+        "date_iso": "2026-11-18",
+        "publisher_version_label": "Early Access",
+        "matching_doi": "10.1109/jiot.2026.3755315"
+      }
+    },
+    {
+      "id": "R0137",
+      "title": "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems",
+      "doi": "10.1109/tcsvt.2026.3745821",
+      "baseline": "AWAITING_CLASSIFICATION",
+      "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "pages": 14,
+      "rechecked_pdf_locators": {
+        "E1": {
+          "page": 1,
+          "section": "Abstract"
+        },
+        "E2": {
+          "page": 10,
+          "section": "VI.A. Experimental Setup"
+        },
+        "E3": {
+          "page": 6,
+          "section": "IV.A. Problem Formulation"
+        },
+        "E4": {
+          "page": 10,
+          "section": "VI.A. Experimental Setup"
+        },
+        "E6": {
+          "page": 2,
+          "section": "I. INTRODUCTION"
+        }
+      },
+      "criteria": {
+        "E1": "T",
+        "E2": "T",
+        "E3": "T",
+        "E4": "T",
+        "E5": "T",
+        "E6": "T",
+        "E7": "T"
+      },
+      "decision": "INCLUDE",
+      "version": "IEEE_EARLY_ACCESS",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11745919/"
+      ],
+      "publisher_evidence": {
+        "source": "https://ieeexplore.ieee.org/document/11745919/",
+        "field": "Date of Publication",
+        "display_value": "23 October 2026",
+        "date_iso": "2026-10-23",
+        "publisher_version_label": "Early Access",
+        "matching_doi": "10.1109/tcsvt.2026.3745821"
+      }
+    }
+  ],
+  "operational_counts": {
+    "reports_sought": 137,
+    "reports_not_retrieved": 92,
+    "reports_assessed": 45,
+    "eligible_reports_pending_prisma_reconciliation": 30,
+    "excluded_reports_pending_prisma_reconciliation": 14,
+    "reports_awaiting_classification": 1,
+    "included_studies_after_reconciliation": null
+  }
+}

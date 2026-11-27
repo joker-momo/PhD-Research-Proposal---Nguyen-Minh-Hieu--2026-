@@ -617,3 +617,10 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
 - [source_audit_transport_failure.json](../restart_2026_11_26/integrity/source_audit_transport_failure.json)
 - [main.tex](../manuscript/sn_computer_science/main.tex)
 - [main.pdf](../manuscript/sn_computer_science/main.pdf)
+
+## Retrieval follow-up, round 1
+
+The round 1 evidence records 14 retrieval attempts and six classification rechecks. The operational counts are pending reconciliation with the locked coursework baseline.
+
+- [Round 1 review](../restart_2026_11_26/retrieval_round_01/review.md)
+- [Round 1 evidence by ID](../restart_2026_11_26/retrieval_round_01/round_01_evidence.json)

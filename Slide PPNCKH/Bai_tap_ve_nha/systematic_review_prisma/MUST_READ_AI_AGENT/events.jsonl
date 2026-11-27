@@ -203,3 +203,4 @@
 {"timestamp": "2026-11-27T08:22:28+07:00", "event": "restart-final-index-link-repaired", "task_id": "restart-16", "verdict": "PASS", "preserved_receipt": "restart_2026_11_26/integrity/source_audit_transport_failure.json"}
 {"timestamp": "2026-11-27T08:31:47+07:00", "event": "restart-prisma-reporting-followup", "task_id": "restart-prisma-reporting-followup", "verdict": "PASS", "started_at": "2026-11-27T08:30:06+07:00", "artifact": "restart_2026_11_26/integrity/final_integrity_audit.md"}
 {"timestamp": "2026-11-27T08:40:51+07:00", "event": "retrieval-round-01-started", "task_id": "restart-retrieval-round-01", "artifact": "restart_2026_11_26/retrieval_round_01/scope.json"}
+{"timestamp": "2026-11-27T08:46:47+07:00", "event": "retrieval-round-01-completed", "task_id": "restart-retrieval-round-01", "verdict": "PASS", "started_at": "2026-11-27T08:40:35+07:00", "artifact": "restart_2026_11_26/retrieval_round_01/review.md", "decision_id": "restart-retrieval-round-01-v1"}

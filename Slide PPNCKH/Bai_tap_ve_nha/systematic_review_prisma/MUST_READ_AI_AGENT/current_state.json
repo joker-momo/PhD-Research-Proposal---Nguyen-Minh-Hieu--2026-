@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T08:40:51+07:00",
+  "updated_at": "2026-11-27T08:46:47+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -9,18 +9,19 @@
   "task": {
     "task_id": "restart-retrieval-round-01",
     "owner": "CODEX_WRITING",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-27T08:40:35+07:00",
-    "updated_at": "2026-11-27T08:40:51+07:00",
-    "checkpoint_path": "restart_2026_11_26/retrieval_round_01/scope.json",
-    "decision_id": "restart-retrieval-round-01-v1"
+    "updated_at": "2026-11-27T08:46:47+07:00",
+    "checkpoint_path": "restart_2026_11_26/retrieval_round_01/review.md",
+    "decision_id": "restart-retrieval-round-01-v1",
+    "completed_at": "2026-11-27T08:46:47+07:00"
   },
   "next_task": {
     "task_id": "none",
     "owner": "CODEX_WRITING",
     "status": "none",
-    "action": "Approved restart plan ends with the local coursework handoff.",
-    "acceptance": "No external delivery was authorized."
+    "action": "Stop after the user-approved retrieval round 1.",
+    "acceptance": "No retrieval round 2, manuscript edit, dispatch or external delivery authorized."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -263,6 +264,26 @@
       "studies": 25,
       "recorded_at": "2026-11-27T08:21:37+07:00",
       "bundle": "restart_2026_11_26/integrity/HK261-PRISMA-restart-LaTeX-PDF-data.zip"
+    },
+    "retrieval_round_01": {
+      "status": "COMPLETED_PENDING_PRISMA_RECONCILIATION",
+      "scope": "restart_2026_11_26/retrieval_round_01/scope.json",
+      "review": "restart_2026_11_26/retrieval_round_01/review.md",
+      "ledger": "restart_2026_11_26/retrieval_round_01/round_01_evidence.json",
+      "counts": {
+        "reports_sought": 137,
+        "reports_not_retrieved": 92,
+        "reports_assessed": 45,
+        "eligible_reports_pending_prisma_reconciliation": 30,
+        "excluded_reports_pending_prisma_reconciliation": 14,
+        "reports_awaiting_classification": 1,
+        "included_studies_after_reconciliation": null
+      },
+      "retrieval_ids_checked": 14,
+      "awaiting_ids_checked": 6,
+      "new_publisher_fulltext": 1,
+      "unverified_arxiv_candidates": 2,
+      "cutoff": "2026-11-26"
     }
   },
   "blockers": [],
