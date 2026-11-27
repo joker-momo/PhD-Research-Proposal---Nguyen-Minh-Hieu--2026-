@@ -341,6 +341,7 @@
       "inputs": [
         "search_dataset_manifest.json",
         "restart selection and linkage CSV ledgers",
+        "S2 human_adjudication_log.csv",
         "P08/P09 lock manifests"
       ],
       "outputs": [

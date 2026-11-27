@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T16:36:36+07:00",
+  "updated_at": "2026-11-27T16:42:50+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "alternative_editorial_pdf_ready_for_comparison",
-    "summary": "The 29-page combined technical survey incorporates the verified 46-study outcome reread. Human decisions and author declarations remain pending."
+    "summary": "The 29-page HK261 comparison PDF reflects one author-confirmed E7 exclusion. R0082 and R0132 remain pending."
   },
   "task": {
-    "task_id": "hk261-alternative-editorial-revision",
+    "task_id": "hk261-author-adjudication-r0081",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T16:22:17+07:00",
-    "updated_at": "2026-11-27T16:36:36+07:00",
-    "checkpoint_path": "manuscript/sn_computer_science/editorial_verification.md",
-    "decision_id": "hk261-alternative-editorial-revision-v1",
-    "completed_at": "2026-11-27T16:36:36+07:00"
+    "started_at": "2026-11-27T16:40:47+07:00",
+    "updated_at": "2026-11-27T16:42:50+07:00",
+    "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+    "decision_id": "hk261-author-adjudication-r0081-v1",
+    "completed_at": "2026-11-27T16:42:50+07:00"
   },
   "next_task": {
-    "task_id": "hk261-author-fulltext-adjudication",
+    "task_id": "hk261-author-adjudication-r0082",
     "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "Await authentic human reviewer decisions and authorized proceedings access for the remaining version check before applying author-approved eligibility changes.",
-    "acceptance": "Signed dispositions and source locators for all author-reviewed records, with an explicit final outcome for the three pending reports before rerunning PRISMA."
+    "action": "Await author disposition for R0082 after inspection of arXiv v1 and available publication-version evidence.",
+    "acceptance": "Record explicit author confirmation before updating S2 and PRISMA for R0082."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -72,8 +72,8 @@
     "screened_reports": 136,
     "working_decisions": {
       "include": 46,
-      "exclude": 87,
-      "uncertain": 3
+      "exclude": 88,
+      "uncertain": 2
     },
     "restart_inventory": {
       "manifest": "restart_2026_11_26/step01_inventory.json",
@@ -568,24 +568,23 @@
         "records_excluded": 328,
         "records_screened": 465,
         "reports_assessed": 136,
-        "reports_awaiting_classification": 3,
-        "reports_excluded": 87,
+        "reports_awaiting_classification": 2,
+        "reports_excluded": 88,
         "reports_not_retrieved": 1,
         "reports_sought": 137
       },
       "awaiting_classification": {
-        "R0081": "E7",
         "R0082": "E7",
         "R0132": "E2|E3"
       },
       "not_retrieved": [
         "R0116"
       ],
-      "ledger_sha256": "fb3735667bceea491daacdd22db88b0e9e56a036f3f6b53120897203f530ff12",
-      "flow_sha256": "770e7d8418c14ee36eb583079b41aa6eb9832ff69519bfc28d5f0a8101ad473e",
+      "ledger_sha256": "a7fd419a5aa43ef63a978bd8511e6840d9513644f99644a6f06c6adf0ecaaec8",
+      "flow_sha256": "030a6cf31a4cacd22fffa118624b17f7d893b42cd0eaf80a41569b35184815a2",
       "unexplained_arithmetic_differences": 0,
       "checklist": "restart_2026_11_26/prisma/active_prisma_checklist.md",
-      "checklist_sha256": "f2968755b437b598c7c5149c86c8b43c75e287e9d0e2c438791fad631a3a43fd",
+      "checklist_sha256": "142c0beaf2289086e6d34dd27dd77f7075eacbec38a137b81f17822a93a2df97",
       "checklist_items_verified": 27,
       "checklist_locators_verified": 45,
       "checklist_status_counts": {
@@ -692,14 +691,9 @@
       "appraisal_domains": 10,
       "recorded_references": 55,
       "verified_dois": 54,
-      "three_reports_awaiting_classification": [
-        "R0081",
-        "R0082",
-        "R0132"
-      ],
-      "independent_human_adjudication": "NOT_DOCUMENTED_LOG_SEEDED",
-      "review": "manuscript/sn_computer_science/editorial_verification.md",
-      "pdf_sha256": "bfddec027e69597ae15d9d573e520fe44cfda854fa860fa9d8768089563182ca",
+      "independent_human_adjudication": "INDEPENDENT_SCREENING_UNDOCUMENTED_ONE_AUTHOR_DECISION_RECORDED",
+      "review": "restart_2026_11_26/prisma/active_reconciliation_review.md",
+      "pdf_sha256": "064af5ee45c81260066a0162c7d42edfd689d9b396042bd1a9fc5077a1cb03ce",
       "evidence_reproduction": {
         "index": "manuscript/sn_computer_science/supplement_evidence_index.md",
         "snapshot": "manuscript/sn_computer_science/evidence_sha256.txt",
@@ -708,16 +702,16 @@
         "indexed_outcomes": 9,
         "hashed_evidence_files": 72,
         "verified_original_pdfs": 49,
-        "reproduction": "Standalone PRISMA and all 29 PDF pages match independently rebuilt renders.",
+        "reproduction": "PRISMA count ledger and TikZ source reproduced. Standalone flow and manuscript page 6 were inspected.",
         "portable_package": {
           "readme": "manuscript/sn_computer_science/minh_chung_hinh_bang/README.md",
           "index": "manuscript/sn_computer_science/minh_chung_hinh_bang/ITEM_INDEX.md",
           "manifest": "manuscript/sn_computer_science/minh_chung_hinh_bang/SHA256SUMS",
-          "archived_source_files": 36,
+          "archived_source_files": 37,
           "figures": 5,
           "tables": 7,
           "equations": 3,
-          "independent_build": "Standalone PRISMA and all 29 PDF pages match independently rebuilt renders pixel for pixel."
+          "independent_build": "Portable source copies and checksums verified for the current PDF."
         }
       },
       "claim_audit": {
@@ -727,7 +721,7 @@
         "prose_lines": 90,
         "mapped_studies": 46,
         "narrowed_entries": 19,
-        "open_entries": 14,
+        "open_entries": 13,
         "verified_contrasts": 9,
         "original_pdf_hashes": 49,
         "verified_pdf_item_pages": 15,
@@ -743,13 +737,17 @@
         "plot_only_reports": 9,
         "unresolved_outcome_reports": 1,
         "human_log_rows": 136,
-        "human_reviews_recorded": 0,
+        "human_reviews_recorded": 1,
         "human_log": "manuscript/sn_computer_science/human_adjudication_log.csv",
         "supplement_s3": "manuscript/sn_computer_science/supplement_s3.md",
         "source_lookup_task_id": "01a21c52-100e-7a50-afbd-184b571116b8",
         "source_lookup_context_id": "01a21c52-1014-7952-8ad4-044ca498543a",
         "source_lookup_verdict": "FAIL_NOT_ADOPTED"
-      }
+      },
+      "reports_awaiting_classification": [
+        "R0082",
+        "R0132"
+      ]
     }
   },
   "blockers": [],

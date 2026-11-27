@@ -284,10 +284,27 @@ def audit_supplemental(project, baseline):
         eq((row["pdf"], row["sha256"]), (catalog_relative, pdfs[key]["sha256"]), f"{key}: catalog identity")
         eq(sha256((project / row["pdf"]).read_bytes()).hexdigest(), row["sha256"], f"{key}: original PDF checksum")
 
+    original_pending = {key: row["pending"] for key, row in partition.items()
+                        if row["status"] == "AWAITING_CLASSIFICATION"}
+    eq(original_pending, {"R0081": "E7", "R0082": "E7", "R0132": "E2|E3"}, "pre-adjudication pending statuses")
+    adjudication_path = project / "manuscript/sn_computer_science/human_adjudication_log.csv"
+    adjudications = read_csv(adjudication_path, "Record_ID")
+    eq(set(adjudications), set(partition), "S2 adjudication coverage")
+    for key, row in adjudications.items():
+        decision = row["Final_Human_Decision"]
+        if not decision:
+            continue
+        eq((row["Source_PDF"], row["PDF_SHA256"]),
+           (partition[key]["pdf"], partition[key]["sha256"]), f"{key}: S2 report identity")
+        reason = row["Primary_Reason_Code"]
+        require(key in original_pending and decision == "EXCLUDE" and reason in original_pending[key].split("|"),
+                f"{key}: author decision requires separate corpus reconciliation")
+        require(row["PDF_Page_Evidence"] and row["Adjudicated_Date"], f"{key}: missing author decision provenance")
+        partition[key].update(status=decision, reason=reason, pending="")
+
     groups = split(partition, "status", {"INCLUDE", "EXCLUDE", "AWAITING_CLASSIFICATION"})
     reasons = split({key: partition[key] for key in groups["EXCLUDE"]}, "reason", {f"E{i}" for i in range(1, 8)})
     pending = {key: partition[key]["pending"] for key in groups["AWAITING_CLASSIFICATION"]}
-    eq(pending, {"R0081": "E7", "R0082": "E7", "R0132": "E2|E3"}, "pending statuses")
     study_map = read_csv(linkage_map, "report_id")
     eq(set(study_map), set(groups["INCLUDE"]), "active study-linkage coverage")
     studies = split(study_map, "study_id")

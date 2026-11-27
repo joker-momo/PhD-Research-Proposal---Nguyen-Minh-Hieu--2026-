@@ -13,10 +13,10 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 
 | Claim ID | LaTeX line | Status | Claim or issue | Source, locator, or derivation |
 | --- | --- | --- | --- | --- |
-| L15.1 | [15](main.tex#L15) | RECORD | Scope and data sources; 46/46; five RQs | Protocol §§ Eligibility and Information sources; 693 identified, 136/137 assessed, 46 unique included studies, three pending; active PRISMA counts and study map |
+| L15.1 | [15](main.tex#L15) | RECORD | Scope and data sources; 46/46; five RQs | Protocol §§ Eligibility and Information sources; 693 identified, 136/137 assessed, 46 unique included studies, two pending; active PRISMA counts and study map |
 | L15.2 | [15](main.tex#L15) | DERIVED | Coding categories, formulation and study-specific comparisons | Group technical codes by study; Eqs. 1–2; contrasts table pairs share source and maintain conditions |
 | L15.3 | [15](main.tex#L15) | DERIVED | Appraisal counts and different continuity boundaries | appraisal table D03/D04/D07; controlled, planned and modeled boundaries in evaluation table |
-| L15.4 | [15](main.tex#L15) | OPEN | Independent human screening and adjudication undocumented | Workflow and L87 |
+| L15.4 | [15](main.tex#L15) | OPEN | One author adjudication recorded; independent human screening undocumented | Workflow and L87 |
 | L15.5 | [15](main.tex#L15) | PROPOSAL | Benchmark contribution | L315–339 and Eq. 3 |
 | L15.6 | [15](main.tex#L15) | DERIVED | Uniform RQ5 retained 98 results from 36 studies, including 51 matched entries | S3 outcomes.csv; filter comparison_status to matched or descriptive; count distinct report_id |
 | L15.7 | [15](main.tex#L15) | RECORD | Protocol documented without public registration | Restart protocol and L71; project registration record |
@@ -60,9 +60,9 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L85.3 | [85](main.tex#L85) | SOURCE | Li et al. studied single-stream model selection and later competing CNN streams | R0003 pp. 4–6, §§IV–V; R0059 pp. 3–5 and 6–9, system and evaluation |
 | L85.4 | [85](main.tex#L85) | SOURCE | Ren et al. studied intra-layer parallelism and separately a sequential pipeline | R0015 pp. 3, 5–6, model and evaluation; R0010 pp. 2–5, model, scheduling and evaluation |
 | L87.1 | [87](main.tex#L87) | RECORD | AI and Codex contributions; checkpoint population | Retained phase/batch acceptance reviews, source indexes, and Git provenance |
-| L87.2 | [87](main.tex#L87) | OPEN | Duplicate human checking, substantive author adjudication and agreement statistic undocumented | Retained workflow records; author confirmation absent |
-| L87.3 | [87](main.tex#L87) | RECORD | Three unresolved outside 46-study denominators | Active PRISMA awaiting-classification rows and study map |
-| L87.4 | [87](main.tex#L87) | OPEN | Adjudication log links every assessed report; human fields await entry | S2 human_adjudication_log.csv; 136 unique IDs, equality to reconciled disposition and blank reviewer columns |
+| L87.2 | [87](main.tex#L87) | OPEN | Independent human screening and extraction verification undocumented | Retained workflow records and S2 author adjudication log |
+| L87.3 | [87](main.tex#L87) | RECORD | Two unresolved outside 46-study denominators | Active PRISMA awaiting-classification rows and study map |
+| L87.4 | [87](main.tex#L87) | RECORD | Adjudication log links every assessed report and records one author exclusion | S2 human_adjudication_log.csv; 136 unique IDs and one confirmed final decision |
 | L90.1 | [90](main.tex#L90) | RECORD | Extraction fields, units and locators | Accepted extraction instruments/index; outcome ledger columns |
 | L90.2 | [90](main.tex#L90) | RECORD | 46 reports underwent uniform post-protocol outcome reread | S3 rule.md, report_coverage.csv and review.md; match the 46 study IDs and PDF checksums to active_synthesis_input_index.csv |
 | L90.3 | [90](main.tex#L90) | RECORD | Matching, descriptive and omitted outcome rules | S3 rule.md; matched requires shared workload, operating conditions and denominator; omit plot-only, held and cross-references |
@@ -77,8 +77,8 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L101.2 | [101](main.tex#L101) | OPEN | Formal missing-results bias assessment, sensitivity and certainty grading unavailable | Review scope and PRISMA checklist |
 | L105.1 | [105](main.tex#L105) | DERIVED | Search yields, deduplication, screening and retrieval | PRISMA locked counts: 63 + 110 + 404 + 116 = 693; 693 − 228 = 465; 465 − 328 = 137; 44 + 92 = 136 |
 | L105.2 | [105](main.tex#L105) | OPEN | R0116 remains unretrieved | Accepted reconciliation and missing/retrieval records for R0116; repository candidate was code |
-| L107.1 | [107](main.tex#L107) | DERIVED | Full-text disposition, unique included studies and S2 | 46 + 87 + 3 = 136; count unique study IDs in accepted map; exclusions list each primary reason |
-| L107.2 | [107](main.tex#L107) | OPEN | Three unresolved eligibility decisions | R0081 E7 peer-review status, R0082 E7 publication-version linkage, R0132 E2/E3 eligible setting/execution; original and supplemental screening statuses |
+| L107.1 | [107](main.tex#L107) | DERIVED | Full-text disposition, unique included studies and S2 | 46 + 88 + 2 = 136; active PRISMA ledger, accepted study map and S2 author confirmation |
+| L107.2 | [107](main.tex#L107) | OPEN | Two unresolved eligibility decisions | R0082 E7 publication-version linkage and R0132 E2/E3 eligible setting/execution; active PRISMA ledger |
 | L116.1 | [116](main.tex#L116) | RECORD | Year/venue/control/modality panels and citation-year convention | Figure 2 inputs and generator; bibliography and eligibility date cutoff |
 | L116.2 | [116](main.tex#L116) | DERIVED | 2026 is an incomplete calendar year for this corpus | Eligibility ends 26 November; December is out of window |
 | L116.3 | [116](main.tex#L116) | DERIVED | Zero 2021 studies in locked set; backward check identified a separate candidate | Figure 2 and citation-year coding; R0068 physical p. 14, printed p. 103058, references item 27 and candidate HKUST publication record; exact DOI and normalized title absent in all 693 rows of records_normalized.csv |
@@ -166,7 +166,7 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L336.1 | [336](main.tex#L336) | DERIVED | Eventually recovered throughput can coexist with missed original deadlines | Construct any output finishing after its deadline while subsequent completions restore rate |
 | L336.2 | [336](main.tex#L336) | PROPOSAL | Admission, state availability, tail and quality reporting | Proposed recovery-metric fields |
 | L339.1 | [339](main.tex#L339) | PROPOSAL | Model/result provenance checks and measurement | Proposed benign test and metric boundaries |
-| L342.1 | [342](main.tex#L342) | OPEN | Potential search incompleteness and unresolved records | S1 scope and PRISMA flow (one sought not retrieved, three awaiting classification); no measured recall |
+| L342.1 | [342](main.tex#L342) | OPEN | Potential search incompleteness and unresolved records | S1 scope and PRISMA flow (one sought not retrieved, two awaiting classification); no measured recall |
 | L342.2 | [342](main.tex#L342) | RECORD | Alternate primary labels possible for composite studies | One-label rule; technical coding ledger and S4 changes |
 | L344.1 | [344](main.tex#L344) | OPEN | Human verification, comprehensive within-domain extraction, formal bias/certainty and novelty generalization | S2 blank human fields; S3 rule and report coverage; no formal missing-results bias assessment in protocol or methods; related survey matrix uses inspected sources |
 | L347.1 | [347](main.tex#L347) | RECORD | Topologies, partition, optimization scope and modalities | Tables 2–3 and Figures 2–4; match primary groups |

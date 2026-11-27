@@ -43,8 +43,8 @@ tables into the requested single-column length. For this branch, see
 13-page coursework checkpoint remains available at commit `7a6675d`.
 
 The review includes 46 reports representing 46 studies. The
-[PRISMA ledger](../../restart_2026_11_26/prisma/prisma_counts.json) records 87
-full-text exclusions, three reports awaiting classification and one unretrieved
+[PRISMA ledger](../../restart_2026_11_26/prisma/prisma_counts.json) records 88
+full-text exclusions, two reports awaiting classification and one unretrieved
 report. The [PRISMA 2020 checklist](../../restart_2026_11_26/prisma/active_prisma_checklist.md)
 tracks reporting and its limits.
 

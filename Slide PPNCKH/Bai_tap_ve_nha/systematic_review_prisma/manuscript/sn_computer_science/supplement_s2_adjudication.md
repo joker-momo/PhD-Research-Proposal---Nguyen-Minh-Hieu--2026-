@@ -6,8 +6,12 @@ It has separate blanks for each human finding and the final adjudication.
 The original decisions reconcile to 46 inclusions, 87 exclusions and three
 awaiting classification. R0116 was not retrieved and therefore has no
 full-text review row. The [exclusions ledger](supplement_fulltext_exclusions.csv)
-preserves original primary reasons. The author checks below are proposals.
-Human review coverage is currently undocumented.
+preserves the 87 baseline exclusions and their primary reasons. The author
+confirmed one additional exclusion, R0081 (E7), on 27 November 2026. The
+[active PRISMA ledger](../../restart_2026_11_26/prisma/prisma_counts.json)
+combines both sources: 46 inclusions, 88 exclusions and two awaiting
+classification (R0082 and R0132). One author adjudication is documented.
+Independent duplicate human screening remains undocumented.
 
 ## Priority records for the author
 
@@ -15,9 +19,9 @@ PDF pages are physical, one-based. Look up the local original and checksum
 by report ID in the review log. Use the frozen eligibility requirements
 and record the original page and criterion behind each decision.
 
-| Report | Source and finding | Proposed author disposition |
+| Report | Source and finding | Author disposition or proposed check |
 | --- | --- | --- |
-| R0081, Sun et al., IDEA | Original pp. 1–2, §§1–3 describes model splitting and prototype results. The [MobiSys accepted demos](https://www.sigmobile.org/mobisys/2022/accepted-demos.html) list the report. The [Call for Demos](https://www.sigmobile.org/mobisys/2022/demos.html) specifies a demo extended abstract and selection for audience interest. | Exclude as ineligible report type under E7 if the original proceedings category is confirmed and no qualifying linked research report is found. Page count alone is insufficient. |
+| R0081, Sun et al., IDEA | Original pp. 1–2, §§1–3 describes model splitting and prototype results. The [MobiSys accepted demos](https://www.sigmobile.org/mobisys/2022/accepted-demos.html) list the report. The [Call for Demos](https://www.sigmobile.org/mobisys/2022/demos.html) specifies a demo extended abstract and selection for audience interest. | **Author confirmed EXCLUDE (E7), 27 November 2026.** The official ACM demo category and its extended-abstract format establish the publication type. |
 | R0082, LLHR | The [conference DOI](https://doi.org/10.1109/WCNC55385.2023.10118908) identifies the publication. The retained file is [arXiv:2305.15858v1](https://arxiv.org/abs/2305.15858), as shown on p. 1. The arXiv page links the conference DOI. This verifies the bibliographic linkage. Its §§I and IV (pp. 2 and 5) support a scope candidate. The IEEE version of record was unavailable in the current public-access check. | Obtain an authorized proceedings copy and compare author list, method, evaluation, numerical results and report version. If inaccessible, record the retrieval attempt and disposition under the frozen version rule, distinguishing the accessible preprint from the unretrieved proceedings text. |
 | R0132 | Original p. 10, §§8.1–8.2, and pp. 17–20, including Table 12, describe system-level simulation, HIL replay and component metrics. They do not tie a specific evaluated multi-UAV workload to shared neural inference across those UAVs. The [DataCite deposit record](https://api.datacite.org/dois/10.5281/zenodo.20445205) links a separate version DOI ending 20445206 and journal ISSN 3051-3820. This establishes publication metadata, while E7 remains to be confirmed. | Ask the author reviewer to locate one evaluated configuration showing both at least two UAVs or explicit swarm operation (E2) and jointly executed neural inference (E3). If neither the report nor qualifying supplemental evidence resolves the inference mapping, E3 is the proposed primary exclusion. Verify E7 separately. |
 | R0223, Wang and Deng | Original pp. 2–4 §§2–3 describes task-graph and perception feedback. Pp. 5–7 §4 and Table 2 measure scenario response and coordination. Those measures do not isolate assignment, transfer or fusion of a neural inference workload. | Proposed exclusion under E3 if author review confirms that coordinated planning is the evaluated unit. |

@@ -43,18 +43,19 @@ class TestReconciliation(unittest.TestCase):
         })
         self.assertEqual(result["report_ids_by_retrieval_decision"]["NOT_RETRIEVED"], ["R0116"])
         self.assertEqual(result["awaiting_classification_codes"], {
-            "R0081": "E7", "R0082": "E7", "R0132": "E2|E3"
+            "R0082": "E7", "R0132": "E2|E3"
         })
         counts = result["counts"]
         self.assertEqual(
             tuple(counts[key] for key in ("reports_assessed", "reports_excluded", "included_reports", "included_studies")),
-            (136, 87, 46, 46)
+            (136, 88, 46, 46)
         )
         decision_sets = [set(ids) for ids in result["report_ids_by_fulltext_decision"].values()]
         assessed = set(result["report_ids_by_retrieval_decision"]["RETRIEVED_PDF"])
         self.assertEqual(set.union(*decision_sets), assessed)
         self.assertEqual(sum(map(len, decision_sets)), len(assessed))
-        self.assertEqual(sum(map(len, result["fulltext_exclusions_by_primary_reason"].values())), 87)
+        self.assertEqual(sum(map(len, result["fulltext_exclusions_by_primary_reason"].values())), 88)
+        self.assertIn("R0081", result["fulltext_exclusions_by_primary_reason"]["E7"])
 
 
 if __name__ == "__main__":
