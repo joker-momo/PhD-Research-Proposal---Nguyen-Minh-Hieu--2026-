@@ -1,0 +1,36 @@
+{
+  "provider_state": "TASK_STATE_COMPLETED",
+  "expected_pairs": 5,
+  "received_pairs": 5,
+  "valid_anchors": 8,
+  "state_counts": {
+    "PARTIAL": 4,
+    "NOT_REPORTED": 1
+  },
+  "missing": [],
+  "bad_pairs": [
+    [
+      "R0058",
+      "D03"
+    ]
+  ],
+  "errors": [
+    [
+      1,
+      "R0058",
+      "D03",
+      "excerpt mismatch on physical page 19; other pages []"
+    ]
+  ],
+  "summary": {
+    "id": "SUMMARY",
+    "report_count": 2,
+    "key_count": 5,
+    "no_workers_used": true,
+    "tools_used": [
+      "client:grep_search",
+      "client:view_file"
+    ],
+    "unresolved": []
+  }
+}

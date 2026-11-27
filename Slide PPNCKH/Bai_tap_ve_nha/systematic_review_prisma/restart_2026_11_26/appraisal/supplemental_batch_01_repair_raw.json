@@ -1,0 +1,45 @@
+{
+  "id": "d0b30c90-0398-4339-9bb0-0ff4340902a5",
+  "contextId": "87925d8f-2511-4907-8aa0-eeb75aeae2ae",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-27T06:50:36.921+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-27T06:48:49.725+00:00",
+    "updated_at": "2026-11-27T06:50:36.921+00:00",
+    "started_at": "2026-11-27T06:48:49.737+00:00",
+    "completed_at": "2026-11-27T06:50:36.921+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — P09 Key Validation Analysis",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "30276e20-eec3-4740-aa5f-c07a599b02e7",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"id\":\"R0058\",\"key\":\"D03\",\"s\":\"PARTIAL\",\"f\":\"Simulation parameters are detailed, but the printed default server count lies outside the stated range and no simulator or seed is given.\",\"l\":[[19,\"6.1. Simulation settings\",\"integrates ground edge servers with aerial UAV nodes\"],[19,\"6.1. Simulation settings\",\"5-10 fixed edge servers (default value: 3)\"]],\"g\":\"Printed default server count (3) falls outside the 5-10 range; simulator software and random seeds are unreported.\"}\n{\"id\":\"R0058\",\"key\":\"D07\",\"s\":\"PARTIAL\",\"f\":\"Mobility speeds and connection updates are simulated, but fixed channel gain and circular coverage simplify dynamic 5G wireless realism.\",\"l\":[[19,\"6.1. Simulation settings\",\"adopts the 5G NR sub-6 GHz model\"],[21,\"6.3. Performance evaluation in dynamic environments\",\"illustrates the distribution of task success rates\"]],\"g\":\"Constant channel gain and fixed 200 m coverage radii omit multipath fading, obstacles, and link-layer packet loss.\"}\n{\"id\":\"R0058\",\"key\":\"D09\",\"s\":\"PARTIAL\",\"f\":\"Uses the public CIFAR-10 dataset for tasks, but provides no link or statement for simulation code or study artifacts.\",\"l\":[[19,\"6.1. Simulation settings\",\"inference tasks are based on the CIFAR-10\"],[19,\"6.1. Simulation settings\",null],[23,\"7. Conclusion\",null]],\"g\":\"Simulation code, scripts, and generated trace artifacts are not released or linked anywhere in setup or end matter.\"}\n{\"id\":\"R0064\",\"key\":\"D05\",\"s\":\"PARTIAL\",\"f\":\"Evaluates average inference delay matching the objective, but models accuracy via a parametric curve without empirical video verification.\",\"l\":[[8,\"5.1. Simulation setup\",\"Based on the accuracy function\"],[9,\"5.2.2. Impact of communication bandwidth\",\"Fig. 7 shows the average inference delay\"],[12,\"6. Discussion\",\"real UAV surveillance video data can be utilized\"]],\"g\":\"Inference accuracy is modeled via a borrowed parametric function rather than measured on real or simulated video frames.\"}\n{\"id\":\"R0064\",\"key\":\"D09\",\"s\":\"NOT_REPORTED\",\"f\":\"Data availability states no data was used, and no repository or link is reported for the MAPPO-HA code.\",\"l\":[[12,\"Data availability\",\"No data was used for the research\"],[8,\"5.1. Simulation setup\",null]],\"g\":\"Author simulation code, trained MAPPO-HA models, and environment implementation are not publicly linked or provided.\"}\n{\"id\":\"SUMMARY\",\"report_count\":2,\"key_count\":5,\"no_workers_used\":true,\"tools_used\":[\"client:grep_search\",\"client:view_file\"],\"unresolved\":[]}\nP09_SUPPLEMENT_BATCH_01_LOCATORS_COMPLETE"
+        }
+      ]
+    }
+  ]
+}
