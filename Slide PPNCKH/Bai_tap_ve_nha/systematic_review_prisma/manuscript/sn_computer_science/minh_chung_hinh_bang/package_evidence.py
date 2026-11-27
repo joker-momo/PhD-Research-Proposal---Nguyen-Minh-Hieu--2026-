@@ -27,6 +27,7 @@ FILES = [
         "prisma/reconcile.py", "fulltext_screening/fulltext_screening.csv",
         "supplemental_screening/screening_decisions.csv", "synthesis/active_synthesis_input_index.csv",
         "prisma/flow_template.tex", "prisma/prisma_counts.json", "prisma/prisma_flow.tex",
+        "prisma/active_prisma_checklist.md",
         "synthesis/final_46/study_characteristics.csv",
         "synthesis/final_46/appraisal_summary.csv", "synthesis/final_46/contrast_evidence.csv",
         "synthesis/active_rq_p08_erratum_R0092.json", "synthesis/final_46/synthesis_input_index.csv",

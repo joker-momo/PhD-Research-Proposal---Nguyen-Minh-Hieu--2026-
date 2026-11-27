@@ -1,24 +1,18 @@
 # HK261 PRISMA Systematic Review
 
-Current manuscript title: **Collaborative Neural Network Inference in Drone Swarms: A Systematic Review of Partitioning, Orchestration, and Resilience**
+This directory contains the HK261 systematic review protocol, screening records, synthesis and manuscripts. The dissertation roadmap is maintained separately.
 
-This directory contains the reproducible review protocol, search records, screening decisions, extraction tables, manuscript, and submission evidence for the HK261 assignment. It is separate from the PhD dissertation roadmap.
+## Current manuscripts
 
-## Status
+- **IEEE journal draft** · [PDF](manuscript/ieee_journal/main.pdf), [LaTeX source](manuscript/ieee_journal/main.tex), [S4 evidence index](manuscript/ieee_journal/supplement_s4.md) and [companion archive S1–S4](manuscript/ieee_journal/HK261_IEEE_S1-S4.zip).
+- **Springer Nature comparison draft** · [PDF](manuscript/sn_computer_science/main.pdf), [LaTeX source](manuscript/sn_computer_science/main.tex) and [evidence index](manuscript/sn_computer_science/supplement_evidence_index.md).
+- **Earlier RQ5 manuscript** · [preserved checkpoint](restart_2026_11_26/extraction/rq5_uniform/main_5910b6b_snapshot/README.md).
 
-- Canonical format: LaTeX compiled to PDF for SN Computer Science using official Springer files. Word is historical.
-- Current dataset: interim_27report/, with27 assessed reports =24 included +1 excluded +2 uncertain. Full-text formats:25PDFs and2HTML reports. This is an interim managed corpus, not final database identification.
-- C01 Orion was added from publisher HTML after source and criterion checks. No C01 PDF is claimed and no comparative expansion effects are synthesized.
-- Evaluation flags overlap:21 simulation,1 emulation,1 analytical model,3 prototype components;20 latency-related outcomes,7 separately inference-energy outcomes,3 direct node-unavailability evaluations,6 migration/reassignment/fallback mechanisms and9 repeated-run/uncertainty reports. One public repository was located,not replayed;physical fleet validation was not established.
-- Protocol domain9 includes sufficient implementation details as well as artifacts. Earlier23 ratings require consistent reassessment. Its manuscript aggregate is withheld;the other9 domains have216 judgments:100yes,110partial,6no.
-- Current manuscript has17 pages,34 references,173 abstract words and6 keywords. Build and visual evidence are under interim_27report. These checks do not prove final research completeness or author approval.
-- Need6–11 further eligible studies to reach30–35. Formal IEEE/ACM/Scopus/WoS exports,reconciliation,S19/C06 decisions,version/family/retraction/numerical audit and human author adjudication remain pending. The311-row SNCS ledger remains unaccepted.
-- Gemini-first a2a-route is mandatory. Only explicit provider quota permits gpt-5.6-luna/low read-only fallback. Codex owns writing,edits and criterion verdicts. Failed/rejected tasks add no studies.
-- No journal submission has occurred. Author metadata/consent and declarations are incomplete. Examination date is unknown.
+The [PRISMA restart ledger](restart_2026_11_26/prisma/prisma_counts.json) records **46 included, 90 excluded and zero awaiting classification**. The [author-reviewed S2 record](manuscript/sn_computer_science/supplement_s2_adjudication.md) gives the eligibility and adjudication basis. See [canonical project state](MUST_READ_AI_AGENT/current_state.json) for the current checkpoint and next task.
+
+The IEEE manuscript still awaits confirmation of authorship, contributions, funding and competing interests. Submission is pending.
 
 ## Directory map
-
-Current release manifest: `output/SNCS_INTERIM_RELEASE_24studies_2026-11-25.md` (PDF,editable source and evidence archive).
 
 - `protocol.md`: review question, eligibility criteria, and planned methods.
 - `protocol_amendment_001.md`: dated scope amendment and its effect on prior work.
@@ -52,8 +46,8 @@ Current release manifest: `output/SNCS_INTERIM_RELEASE_24studies_2026-11-25.md` 
 - `reporting_guidelines/`: official PRISMA 2020 checklist and flow-diagram templates.
 - `sources/raw/`: unmodified provider exports.
 - `sources/normalized/`: normalized and deduplicated records.
-- `manuscript/sn_computer_science/`: active Springer working source/PDF. `manuscript/ieee_access/` is historical.
-- `interim_27report/`: current27-report eligibility log,24-study extraction/evidence/appraisal and bounded audits. Older interim directories,including interim_26report,and root-level tables are historical snapshots.
+- `manuscript/sn_computer_science/`: Springer comparison source and PDF. `manuscript/ieee_access/` is historical.
+- `interim_27report/`: historical 27-report eligibility log, 24-study extraction, appraisal and audits. Older interim directories,including interim_26report,and root-level tables are historical snapshots.
 - `output/`: dated delivery PDF and clean LaTeX source package generated from the audited manuscript.
 - `submission_readiness_2026-11-25.md`: exact completed checks and unresolved submission blockers.
 - `submission_evidence/`: journal-generated submitted manuscript, manuscript ID, acknowledgement, and forwarded-email evidence.

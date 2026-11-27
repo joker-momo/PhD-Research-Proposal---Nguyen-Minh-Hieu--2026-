@@ -1,0 +1,17 @@
+\begin{table*}[!tp]
+\caption{Primary inference mechanism by primary evaluation modality.}\label{tab:settings}
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{.31\linewidth}rrrrrr@{}}
+\toprule
+Partition or dispatch unit & Analyt. & Sim. & Trace & Bench & Outdoor & Total \\
+\midrule
+Sequential stages & 0 & 11 & 4 & 2 & 0 & 17 \\
+Tiles, shards or tensor transport & 1 & 5 & 0 & 1 & 1 & 8 \\
+Graph or early exit & 0 & 3 & 3 & 0 & 0 & 6 \\
+Model or representation adaptation & 0 & 3 & 2 & 1 & 0 & 6 \\
+Expert, request or state dispatch & 0 & 5 & 1 & 3 & 0 & 9 \\
+Total & 1 & 27 & 10 & 7 & 1 & 46 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\raggedright Sim. denotes software evaluation. Trace denotes trace- or profile-backed evaluation. Bench includes component measurement, host emulation, and hardware-in-the-loop. Outdoor requires a multi-UAV inference evaluation.
+\end{table*}

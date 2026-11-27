@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T01:07:05+07:00",
+  "updated_at": "2026-11-28T02:43:31+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
-    "summary": "The 30-page comparison draft omits tool references from the manuscript. S2 and the audit archive retain their original provenance and the decisions are unchanged at 46/90/0."
+    "summary": "Main contains the corrected Springer comparison manuscript and the verified 17-page IEEE journal draft with Supplements S1–S4. The earlier RQ5 manuscript snapshot remains indexed. S2 and reconciled PRISMA counts remain 46 included, 90 excluded and zero awaiting classification."
   },
   "task": {
-    "task_id": "hk261-branch-integration",
+    "task_id": "hk261-integrate-ieee-main",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T01:04:32+07:00",
-    "updated_at": "2026-11-28T01:07:05+07:00",
-    "completed_at": "2026-11-28T01:07:05+07:00",
-    "decision_id": "hk261-branch-integration-v1",
-    "checkpoint_path": "manuscript/sn_computer_science/main.pdf"
+    "started_at": "2026-11-28T02:42:41+07:00",
+    "updated_at": "2026-11-28T02:43:31+07:00",
+    "completed_at": "2026-11-28T02:43:31+07:00",
+    "decision_id": "hk261-integrate-ieee-main-v1",
+    "checkpoint_path": "manuscript/ieee_journal/HK261_IEEE_S1-S4.zip"
   },
   "next_task": {
     "task_id": "hk261-collect-new-independent-screening-round",
@@ -1415,6 +1415,39 @@
         "uncertain": 0
       },
       "rebuild_pages": 30
+    },
+    "peer_review_priority_corrections": {
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pages": 30,
+      "pdf_sha256": "3447f24771a9efca3415910331e8ad3fd965fd2122aa276ceddbab9a97baa0b9",
+      "corrected_report": "R0019",
+      "source_locator": "physical p. 15, Fig. 19, printed p. 8199",
+      "continuity_category": "modeled reliability or stress",
+      "affected_pdf_pages": {
+        "reviewer_roles": [
+          4,
+          5
+        ],
+        "figure_4": 10,
+        "r0019_table_4": 18
+      },
+      "prisma_checklist": "restart_2026_11_26/prisma/active_prisma_checklist.md",
+      "prisma_checklist_items": 27,
+      "paired_independent_human_decisions_documented": 0
+    },
+    "integrated_ieee_journal": {
+      "source_commit": "6c9999e",
+      "merge_base": "d9fadfc",
+      "manuscript": "manuscript/ieee_journal/main.tex",
+      "pdf": "manuscript/ieee_journal/main.pdf",
+      "supplement": "manuscript/ieee_journal/HK261_IEEE_S1-S4.zip",
+      "s4": "manuscript/ieee_journal/supplement_s4.md",
+      "pdf_pages": 17,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      }
     }
   },
   "blockers": [],

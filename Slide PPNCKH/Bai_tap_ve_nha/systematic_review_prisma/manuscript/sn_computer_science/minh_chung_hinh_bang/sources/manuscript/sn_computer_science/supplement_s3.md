@@ -37,11 +37,38 @@ The author resolved the 12 listed items after reviewing the AI-assisted comparis
 
 ## S2 audit of author decisions
 
-The author endorsed the full set of **46 inclusions and 90 exclusions**. The [S2 final eligibility register](supplement_s2_eligibility.csv) gives the supporting reason and source locator for all 136 decisions. **Ten** reports have separately documented final author decisions. The other **126** reports have the set-level endorsement. Four changed status relative to the frozen AI ledger, so the two change fractions are **4/10**. The S2 log has zero paired independent human decisions. Observed agreement and Cohen's kappa are undefined. PRISMA reconciles 46 included, 90 excluded and zero awaiting classification. [S2](supplement_s2_adjudication.md) and [S4 derivations](supplement_evidence_index.md#s2-audit-derivations) record the case-level evidence and calculation.
+The author endorsed the full set of **46 inclusions and 90 exclusions**. The [S2 final eligibility register](supplement_s2_eligibility.csv) gives the supporting reason and source locator for all 136 decisions. **Ten** reports have separately documented final author decisions. The other **126** reports have the set-level endorsement. Four changed status relative to the frozen AI ledger, so the two change fractions are **4/10**. The S2 log has zero paired independent human decisions. Observed agreement is unavailable. PRISMA reconciles 46 included, 90 excluded and zero awaiting classification. [S2](supplement_s2_adjudication.md) and [S4 derivations](supplement_evidence_index.md#s2-audit-derivations) record the case-level evidence and calculation.
+
+### Review responsibilities and evidence limits
+
+| Stage | Documented role and evidence | Coverage limit |
+| --- | --- | --- |
+| Title and abstract | The author reported participation by the lead reviewer and a colleague. The screening ledger records one disposition per deduplicated record. | Item-level assignments and whether reviews were independent are undocumented. |
+| Full text | The lead reviewer read and summarized the reports, endorsed all 136 final dispositions and recorded ten decisions separately. The colleague contributed judgments, as reported by the lead reviewer. | The register contains zero paired full-text decisions locked before reconciliation. The reported colleague contribution cannot be allocated by report from the archived records. |
+| Extraction and checks | R1 and R2 record two endorsements, each covering 887 checks on the 46 included studies. R1 is the lead reviewer's endorsement. The lead reviewer relayed the colleague's R2 endorsement. S2 identifies the earlier checks and classifications and how the endorsements were recorded. | Independent duplicate extraction and the number of extractors per report are undocumented. The checks add zero eligibility decisions. |
+| Engineering appraisal and priorities | The author attributes appraisal judgments to the lead reviewer and colleague. Appraisal rationales and locators are retained. The lead reviewer decided 12 priority extraction, coding and appraisal items against the source PDFs. | Per-report allocation and independent duplicate appraisal are undocumented. The adjudicated items concern evidence interpretation. |
+
+See the [S2 author statement](supplement_s2_adjudication.md#author-statement-on-reviewer-responsibilities), the [two source-verification appendices](supplement_s2_adjudication.md#s2-appendix-r1-source-verification-record) and the [12 priority decisions](#twelve-priority-decisions).
 
 ## Unified coding and scope sensitivity
 
 [Primary technical coding](technical_coding.psv) gives one unit and one modality per included report. The [reconciliation script](../../restart_2026_11_26/synthesis/final_46/reconcile_inputs.py) projects these two columns into [mechanisms.csv](../../restart_2026_11_26/synthesis/final_46/mechanisms.csv). The active mechanism table uses the same retained-outcome counts as report coverage. The updated model-family figure codes NetMoE as a CNN classifier for the representative configuration in Sect. VI.B and retains its expert-dispatch code. Tables 2 and 5 aggregate these same codes; Table 4 and Figures 2 and 4 use the primary ledger directly.
+
+### Continuity correction for R0019
+
+The [publisher-version PDF](../../restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf) (SHA-256 `cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1`), physical p. 15 (printed p. 8199), Fig. 19 and its discussion, varies membership in simulation from three to four and then two UAVs. The plot gives average cumulative rewards by learning episode for a five-layer LeNet configuration and shows reconvergence after changes. The original does not establish a planned handoff of inference work or state already in progress, or the time to a correct resumed inference output. Code R0019 as **modeled reliability or stress** (`analytic`), with membership-change sensitivity as the subtype. Keep simulation as its evaluation modality.
+
+| Figure 4 continuity category | Before | After |
+| --- | ---: | ---: |
+| Modeled reliability or stress | 4 | 5 |
+| Planned reassignment | 4 | 3 |
+| Link disruption or fallback | 5 | 5 |
+| Controlled disconnection | 3 | 3 |
+| Node unavailability | 5 | 5 |
+| No qualifying evidence | 25 | 25 |
+| Total | 46 | 46 |
+
+The [generator](build_technical_survey.py) counts distinct report IDs by `resilience` in [primary coding](technical_coding.psv) and fills the [Figure 4 macros](technical_macros.tex). It draws the corresponding event and response cells in [Table 4](technical_evaluation.tex) from the same row. Only the continuity coding and descriptions of R0019 were changed. The included reports, outcomes, S2 eligibility and PRISMA accounting remain fixed.
 
 | Scenario | Reports | Dispatch studies | Studies with retained entries | Retained entries | Matched entries |
 | --- | ---: | ---: | ---: | ---: | ---: |
