@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:48:21+07:00",
+  "updated_at": "2026-11-28T00:50:48+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
-    "summary": "The verified 30-page manuscript records the author's account of personal full-text reading, summaries, screening and engineering appraisal judgments, and their colleague's screening judgments. Separate Codex and Gemini records are retained. Zero paired independent full-text human decisions are documented. S2 and PRISMA retain the 46/90/0 dispositions."
+    "summary": "The 30-page HK261 comparison draft implements option A, records the lead reviewer's own reading and judgments, and discloses preliminary AI use. Table 8 records zero independent human pairs and four changes among ten separate final entries. S2 and PRISMA remain 46/90/0. Formal contributions, authorship, funding and interests are pending."
   },
   "task": {
-    "task_id": "hk261-apply-approved-first-person-methods",
+    "task_id": "hk261-apply-option-a-first-person-disclosure",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:46:37+07:00",
-    "updated_at": "2026-11-28T00:48:21+07:00",
-    "decision_id": "hk261-apply-approved-first-person-methods-v1",
+    "started_at": "2026-11-28T00:49:16+07:00",
+    "updated_at": "2026-11-28T00:50:48+07:00",
+    "decision_id": "hk261-apply-option-a-first-person-disclosure-v1",
     "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
-    "completed_at": "2026-11-28T00:48:21+07:00"
+    "completed_at": "2026-11-28T00:50:48+07:00"
   },
   "next_task": {
     "task_id": "hk261-collect-new-independent-screening-round",
@@ -1283,6 +1283,21 @@
       },
       "s2_and_prisma_files_unchanged": true,
       "portable_reproduction": "30 of 30 rendered pages matched. The S2 audit JSON and LaTeX table also matched."
+    },
+    "option_a_first_person_disclosure": {
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pages": 30,
+      "sha256": "d698cf80e4669448b6a4438b5917c3f488a7dee1a60bc5e0898e334636c03da0",
+      "prisma_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "table_8_page": 25,
+      "paired_independent_human_decisions": 0,
+      "separate_final_status_changes": "4/10",
+      "formal_declarations_pending": true,
+      "s2_prisma_and_audit_json_unchanged": true
     }
   },
   "blockers": [],

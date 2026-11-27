@@ -106,7 +106,7 @@ def check_claim_audit():
     for number, line in enumerate(main_lines, 1):
         if line.startswith(r"\begin{equation}"):
             in_equation = True
-        if not in_equation and re.match(r"(?:[A-Z][^&]*$|where |\\abstract\{|\\item)", line):
+        if not in_equation and re.match(r"(?:[A-Z][^&]*$|where |\\abstract\{|\\item|\\textbf\{[^}]+\} [A-Z])", line):
             prose.add(number)
         if line.startswith(r"\end{equation}"):
             in_equation = False

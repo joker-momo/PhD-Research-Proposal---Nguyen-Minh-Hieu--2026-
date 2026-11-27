@@ -155,30 +155,38 @@ def render_latex(report):
                         for key, reason in report["prisma"]["awaiting_classification_codes"].items())
     final = ", ".join(f"{key} ({row['reason']})" for key, row in s2["final_human_decisions"].items()
                       if row["decision"] == "EXCLUDE")
-    rows = (
-        ("Reports in the S2 log", s2["reports_in_log"]),
-        ("Author-endorsed set (include / exclude)",
-         f"{endorsement['included_reports']} / {endorsement['excluded_reports']}"),
-        ("Final decisions with separate author entries", len(s2["final_human_decisions"])),
-        ("Exclusions with separate author entries", final or "None"),
-        ("Separately documented author deferrals", len(s2["author_confirmed_deferrals"])),
-        ("Reports without a separate final author entry", s2["reports_without_separate_final_author_entry"]),
-        ("Independent reviewer decisions (R1 / R2)", f"{s2['reviewer1_decisions']} / {s2['reviewer2_decisions']}"),
-        ("Paired independent decisions", paired["paired_reports"]),
-        ("Observed agreement on pairs", "N/A" if agreement is None else rf"{agreement:.1f}\%"),
-        (r"Cohen's kappa ($\kappa$) on pairs", "N/A" if kappa is None else f"{kappa:.3f}"),
-        ("Changes among separately documented reports", f"{processed['changed']} / {processed['total']}"
-         if processed["total"] else "N/A"),
-        ("Changes among separate final decisions", f"{comparison['changed_reports']} / {comparison['compared_reports']}"
-         if comparison["compared_reports"] else "N/A"),
-        ("PRISMA included / excluded / awaiting",
+    included = endorsement["included_reports"]
+    excluded = endorsement["excluded_reports"]
+    final_count = len(s2["final_human_decisions"])
+    exclusion_count = sum(row["decision"] == "EXCLUDE" for row in s2["final_human_decisions"].values())
+    deferral_count = len(s2["author_confirmed_deferrals"])
+    final_change = (f"{comparison['changed_reports']} / {comparison['compared_reports']}"
+                    if comparison["compared_reports"] else "N/A")
+    agreement_label = "N/A" if agreement is None else rf"{agreement:.1f}\%"
+    kappa_label = "N/A" if kappa is None else f"{kappa:.3f}"
+    rows = [
+        ("Full-text reports in the S2 register", s2["reports_in_log"]),
+        ("Final PRISMA disposition (included / excluded / awaiting)",
          f"{prisma['included_reports']} / {prisma['reports_excluded']} / {prisma['reports_awaiting_classification']}"),
+        ("Decisions endorsed by the lead reviewer (include / exclude)",
+         f"{included + excluded} ({included} / {excluded})"),
+        ("Separate adjudication entries (include / exclude / defer)",
+         f"{final_count + deferral_count} ({final_count - exclusion_count} / {exclusion_count} / {deferral_count})"),
+        ("Exclusions with separate entries", final or "None"),
+        ("Reports without a separate final entry", s2["reports_without_separate_final_author_entry"]),
+        ("Status changes from preliminary AI dispositions (separate final entries)", final_change),
+        ("Independent human decisions recorded (R1 / R2)", f"{s2['reviewer1_decisions']} / {s2['reviewer2_decisions']}"),
+        ("Paired independent human decisions", paired["paired_reports"]),
+        (r"Observed agreement / Cohen's $\kappa$ on independent pairs", f"{agreement_label} / {kappa_label}"),
         ("PRISMA awaiting classification", pending or "None"),
-    )
+    ]
+    if deferral_count:
+        rows.insert(7, ("Status changes among separate entries including deferrals",
+                        f"{processed['changed']} / {processed['total']}" if processed["total"] else "N/A"))
     return "\n".join([
         r"\begin{table}[htbp]", r"\centering",
         r"\caption{Documented S2 adjudication and current PRISMA dispositions.}",
-        r"\label{tab:adjudication_audit}", r"\begin{tabular}{ll}", r"\hline",
+        r"\label{tab:adjudication_audit}", r"\begin{tabular}{@{}p{0.61\linewidth}p{0.33\linewidth}@{}}", r"\hline",
         r"\textbf{Measure} & \textbf{Value} \\", r"\hline",
         *(f"{label} & {value} " + r"\\" for label, value in rows),
         r"\hline", r"\end{tabular}", r"\end{table}", "",
