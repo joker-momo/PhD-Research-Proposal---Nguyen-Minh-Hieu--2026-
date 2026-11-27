@@ -1,4 +1,6 @@
-# Combined technical survey verification
+# Historical comparison verification
+
+This page documents the preceding comparison release. The [current synthesis review](../../restart_2026_11_26/synthesis/final_46/release_review.md) records the updated corpus, checks and PDF.
 
 This release uses `9d63711` for the technical survey and `5910b6b` for
 the verified uniform RQ5 release. The corpus and PRISMA dispositions are the

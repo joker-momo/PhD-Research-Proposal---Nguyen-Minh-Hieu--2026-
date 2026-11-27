@@ -15,6 +15,7 @@ from build_editorial_evidence import review_log, outcome_tables
 HERE = Path(__file__).resolve().parent
 PROJECT = HERE.parent.parent
 RESTART = PROJECT / "restart_2026_11_26"
+FINAL = RESTART / "synthesis/final_46"
 INDEX = HERE / "supplement_evidence_index.md"
 SNAPSHOT = HERE / "evidence_sha256.txt"
 CLAIM_AUDIT = HERE / "s4_claim_audit.md"
@@ -77,7 +78,7 @@ def check_outcome_rows():
     manuscript = (HERE / "main.tex").read_text()
     table = manuscript.split(r"\label{tab:outcomes}", 1)[1].split(r"\end{longtable}", 1)[0]
     report_ids = re.findall(r"^\\cite\{(R\d{4})\} &", table, re.M)
-    ledger = rows(RESTART / "synthesis/active_outcome_evidence.csv")
+    ledger = rows(FINAL / "contrast_evidence.csv")
     keys = {(row["report_id"], row["key"]) for row in ledger}
     map_text = INDEX.read_text().split("## Numerical contrast row map", 1)[1].split("## Manuscript prose crosswalk", 1)[0]
     mapped = re.findall(r"^\| (R\d{4}) [^|]+\|([^|]+)\|", map_text, re.M)
@@ -142,7 +143,7 @@ def field_locators(fields, keys):
 
 
 def make_study_row_map(included):
-    appraisal_path = RESTART / "appraisal/active_appraisal_rationale_matrix.csv"
+    appraisal_path = FINAL / "appraisal_rationale.csv"
     judgments = {row["report_id"]: row for row in rows(appraisal_path) if row["domain"] == "D09"}
     require(judgments.keys() == {row["report_id"] for row in included}, "D09 study IDs differ")
     output = io.StringIO(newline="")
@@ -169,22 +170,24 @@ def make_study_row_map(included):
 
 
 def check_originals():
-    included = rows(RESTART / "synthesis/active_synthesis_input_index.csv")
+    included = rows(FINAL / "synthesis_input_index.csv")
     ids = {row["report_id"] for row in included}
     require(len(ids) == len(included) == 46, "Expected 46 distinct included reports")
     sources = [(row["report_id"], row["original_pdf"], row["original_pdf_sha256"]) for row in included]
-    pending = {"R0081", "R0082", "R0132"}
+    ledger = json.loads((RESTART / "prisma/prisma_counts.json").read_text())
+    require(ids == set(ledger["report_ids_by_fulltext_decision"]["INCLUDE"]), "Study rows differ from the PRISMA inclusion set")
+    s2_priority_originals = {"R0081", "R0113", "R0132"}
     retrieval = RESTART / "fulltext_retrieval"
     pending_paths = {
         row["screening_id"]: (retrieval.relative_to(PROJECT) / row["local_path"], row["sha256"])
         for row in rows(retrieval / "retrieval_log.csv")
-        if row["screening_id"] in pending and row["status"] == "RETRIEVED_PDF"
+        if row["screening_id"] in s2_priority_originals and row["status"] == "RETRIEVED_PDF"
     }
     supplemental = RESTART / "supplemental_screening" / "screening_decisions.csv"
     pending_paths.update({row["id"]: (row["pdf"], row["sha256"]) for row in rows(supplemental)
-                          if row["id"] in pending and row["decision"] == "AWAITING_CLASSIFICATION"})
-    require(pending_paths.keys() == pending, "Missing PDF identity for a pending report")
-    sources.extend((report_id, *pending_paths[report_id]) for report_id in sorted(pending))
+                          if row["id"] in s2_priority_originals})
+    require(pending_paths.keys() == s2_priority_originals, "Missing PDF identity for a priority S2 exclusion")
+    sources.extend((report_id, *pending_paths[report_id]) for report_id in sorted(s2_priority_originals))
     for report_id, relative, expected in sources:
         path = PROJECT / relative
         require(path.is_file(), f"{report_id}: original PDF missing at {relative}")
@@ -203,6 +206,8 @@ def main():
         for filename, expected in outcome_tables().items():
             require((HERE / filename).read_text() == expected, f"Stale generated table: {filename}")
         subprocess.run([sys.executable, "-B", str(HERE / "audit_adjudication.py"), "--check"],
+                       check=True, stdout=subprocess.DEVNULL)
+        subprocess.run([sys.executable, "-B", str(FINAL / "reconcile_inputs.py"), "--check"],
                        check=True, stdout=subprocess.DEVNULL)
         baseline = list(csv.reader(io.StringIO(review_log())))
         with (HERE / "human_adjudication_log.csv").open(newline="") as stream:
