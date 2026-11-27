@@ -11,6 +11,11 @@
 \node[anchor=west,font=\fontfamily{lmss}\selectfont\bfseries] at (6.9,4.15) {(b) Evaluated model families};
 \node[anchor=west,font=\fontfamily{lmss}\selectfont\bfseries] at (0,-.42) {(c) Optimization approaches};
 \node[anchor=west,font=\fontfamily{lmss}\selectfont\bfseries] at (6.9,-.42) {(d) Evaluation modalities};
+\foreach \level in {0,5,10,15,20}{
+  \pgfmathsetmacro{\tickheight}{.7+.16*\level}
+  \draw[black!16] (.60,\tickheight)--(6.39,\tickheight);
+  \node[anchor=east,inner sep=2pt] at (.57,\tickheight) {\level};
+}
 \foreach \yr [count=\xx] in {2021,...,2026}{
   \edef\jcount{\csname yearJournal\yr\endcsname}
   \edef\ccount{\csname yearConference\yr\endcsname}
@@ -19,7 +24,7 @@
   \fill[panelteal!55] (\xx-.26,.7) rectangle (\xx+.26,.7+\conferenceheight);
   \fill[panelblue] (\xx-.26,.7+\conferenceheight) rectangle (\xx+.26,.7+\allheight);
   \pgfmathtruncatemacro{\total}{\jcount+\ccount}
-  \node[anchor=south,inner sep=2pt] at (\xx,.7+\allheight) {\total};
+  \node[anchor=south,inner sep=2pt,fill=white] at (\xx,.7+\allheight) {\total};
   \node[anchor=north] at (\xx,.69) {\yr};
 }
 \draw[gray] (.60,.7)--(6.39,.7);
@@ -27,6 +32,8 @@
 \node[anchor=west] at (1.16,.10) {Journal};
 \fill[panelteal!55] (2.65,-.005) rectangle (2.94,.20);
 \node[anchor=west] at (2.96,.10) {Conference};
+\draw[black!40] (10.37,.65)--(10.37,3.79)
+  (3.45,-3.39)--(3.45,-.79) (10.37,-3.39)--(10.37,-.79);
 \overviewbar{10.3}{3.57}{CNN classifiers}{\groupn{family}{cnn}}{panelblue}
 \overviewbar{10.3}{3.03}{Detection}{\groupn{family}{detector}}{panelblue}
 \overviewbar{10.3}{2.49}{Language models}{\groupn{family}{language}}{panelblue}

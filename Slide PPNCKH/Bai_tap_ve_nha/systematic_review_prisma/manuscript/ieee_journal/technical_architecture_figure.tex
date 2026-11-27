@@ -17,10 +17,10 @@
 
 \node[heading] at (0,3.27) {(b) Clustered or head--worker swarm};
 \node[system] (sensor2) at (1.15,2.43) {Sensor input};
-\node[system] (head) at (4.5,2.43) {UAV head\\split / merge};
+\node[system] (head) at (4.5,2.43) {UAV head\\split tasks};
 \node[system] (worker1) at (8.05,2.91) {Worker UAV 1};
 \node[system] (worker2) at (8.05,1.95) {Worker UAV 2};
-\node[system] (output2) at (11.25,2.43) {Merged result};
+\node[system] (output2) at (11.25,2.43) {UAV head\\merge results};
 \draw[data] (sensor2)--(head);
 \draw[data] (head.east) -- node[above,sloped]{Tile} (worker1.west);
 \draw[data] (head.east) -- (worker2.west);
@@ -28,11 +28,11 @@
 \draw[data] (worker2.east) -- (output2.west);
 \draw[control] (worker2.south) to[bend left=16] node[below]{Worker status} (head.south);
 
-\node[heading] at (0,.98) {(c) Hierarchical air--edge--cloud};
+\node[heading] at (0,.98) {(c) Hierarchical execution with cloud};
 \node[system] (sensor3) at (1.15,.15) {Sensor input};
 \node[system] (uav) at (4.5,.15) {UAV\\prefix};
 \node[system] (edge) at (8.05,.15) {Edge server\\next stage};
-\node[system] (cloud) at (11.25,.15) {Optional cloud\\final stage};
+\node[system] (cloud) at (11.25,.15) {Cloud\\final stage};
 \draw[data] (sensor3)--(uav);
 \draw[data] (uav)--node[above]{Feature}(edge);
 \draw[data] (edge)--node[above]{Feature}(cloud);

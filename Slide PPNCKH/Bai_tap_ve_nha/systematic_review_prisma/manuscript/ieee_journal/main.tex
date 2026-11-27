@@ -2,7 +2,7 @@
 \usepackage{cite}
 \usepackage{amsmath,amssymb,graphicx,booktabs,array,tikz}
 \usepackage[hidelinks]{hyperref}
-\usetikzlibrary{arrows.meta}\newcommand{\surveycheck}{\tikz[x=.8ex,y=.8ex]{\draw[line width=.44pt] (0,.49)--(.35,.13)--(1.13,.99);}}\newcommand{\surveyadj}{\tikz[x=.8ex,y=.8ex]{\draw[line width=.44pt] (0,0)--(1.1,0)--(.55,.99)--cycle;}}
+\usetikzlibrary{arrows.meta,patterns}\newcommand{\surveycheck}{\tikz[x=.8ex,y=.8ex]{\draw[line width=.44pt] (0,.49)--(.35,.13)--(1.13,.99);}}\newcommand{\surveyadj}{\tikz[x=.8ex,y=.8ex]{\draw[line width=.44pt] (0,0)--(1.1,0)--(.55,.99)--cycle;}}
 \newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcommand{\groupcite}[2]{\csname grp#1#2\endcsname}
 \newcommand{\groupn}[2]{\csname num#1#2\endcsname}
@@ -114,7 +114,7 @@ The 136 assessed reports yielded 46 inclusions, 90 exclusions, and zero awaiting
 
 \begin{figure*}[!tp]
 \centering
-\includegraphics[width=.63\linewidth]{prisma_flow.pdf}
+\includegraphics[width=.75\linewidth]{prisma_flow.pdf}
 \caption{PRISMA 2020 selection flow. Counts distinguish records, reports, and studies.}\label{fig:flow}
 \end{figure*}
 
@@ -128,7 +128,7 @@ The modality panel separates conventional simulation from software evaluations i
 \begin{figure*}[!tp]
 \centering
 \input{technical_overview_figure}
-\caption{Corpus overview. The four panels assign one primary bin per study. Year conventions and coding rules are described in Sections~\ref{sec:methods} and~\ref{sec:selection}.}\label{fig:macro}
+\caption{Corpus overview. The four panels assign one primary bin per study. The search cutoff was 26 November 2026. Year conventions and coding rules are described in Sections~\ref{sec:methods} and~\ref{sec:selection}.}\label{fig:macro}
 \end{figure*}
 
 
@@ -146,7 +146,7 @@ These studies use an infrastructure tier or coordinate aerial edge servers with 
 \begin{figure*}[!tp]
 \centering
 \input{technical_architecture_figure}
-\caption{Illustrative execution topologies. Solid arrows show input, activation, or task data. Dashed arrows denote coordination or recovery signaling. The three patterns summarize functional roles across the corpus.}\label{fig:topologies}
+\caption{Illustrative execution topologies. Solid arrows show input, activation, or task data. Dashed arrows denote coordination or recovery signaling. Panel (b) shows the same head at dispatch and merge. Panel (c) illustrates a route that uses the cloud.}\label{fig:topologies}
 \end{figure*}
 
 \subsection{Partition and dispatch granularity}
@@ -168,7 +168,7 @@ A dispatcher can allocate an inference request or expert, or transfer tracker st
 \begin{figure*}[!tp]
 \centering
 \input{technical_taxonomy_figure}
-\caption{Technical taxonomy used in this review. Leaf counts represent primary assignments among the 46 studies in each branch. Branches describe different dimensions and each sums independently to 46.}\label{fig:taxonomy}
+\caption{Technical taxonomy used in this review. The four panels group primary assignments by different dimensions. Counts in each panel sum to 46.}\label{fig:taxonomy}
 \end{figure*}
 
 \subsection{A common optimization formulation}

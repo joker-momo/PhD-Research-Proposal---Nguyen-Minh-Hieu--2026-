@@ -11,7 +11,14 @@
   \pgfmathsetmacro{\nrend}{(#3+#4+#5)*100/46}
   \fill[appYes] (0,-#1-.29) rectangle (\yesend,-#1+.29);
   \fill[appPartial] (\yesend,-#1-.29) rectangle (\partialend,-#1+.29);
-  \fill[appNR] (\partialend,-#1-.29) rectangle (\nrend,-#1+.29);
+  \ifnum#5>0\relax
+    \fill[appNR] (\partialend,-#1-.29) rectangle (\nrend,-#1+.29);
+    \fill[pattern=north east lines,pattern color=black!36]
+      (\partialend,-#1-.29) rectangle (\nrend,-#1+.29);
+  \fi
+  \ifnum#1=9\relax
+    \node[fill=white,inner sep=1.4pt] at (55,-#1) {#5/46 not reported};
+  \fi
   \ifnum#6>0\relax\fill[appNo] (\nrend,-#1-.29) rectangle (100,-#1+.29);\fi
 }
 \input{technical_appraisal_bars}
@@ -22,6 +29,10 @@
 \draw[black!45] (0,-10.42)--(100,-10.42);
 \foreach \x/\shade/\labeltext in {0/appYes/Yes,20/appPartial/Partial,46/appNR/Not reported,82/appNo/No}{
   \fill[\shade] (\x,-12.03) rectangle (\x+4,-11.70);
+  \ifnum\x=46\relax
+    \fill[pattern=north east lines,pattern color=black!36]
+      (\x,-12.03) rectangle (\x+4,-11.70);
+  \fi
   \node[anchor=west,inner sep=2pt] at (\x+4,-11.865) {\labeltext};
 }
 \end{tikzpicture}}

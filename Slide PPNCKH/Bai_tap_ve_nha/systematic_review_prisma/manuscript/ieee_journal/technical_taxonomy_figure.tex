@@ -1,40 +1,37 @@
 \resizebox{\linewidth}{!}{%
-\begin{tikzpicture}[font=\fontfamily{lmss}\selectfont\footnotesize,
- header/.style={draw=black!60,fill=cyan!11,rounded corners=2pt,
-     align=center,minimum width=3.38cm,minimum height=.61cm},
- leaf/.style={anchor=west,inner sep=1pt},
- edge/.style={semithick,black!65}]
-\node[header] (root) at (7.2,0) {Collaborative inference in multi-UAV systems};
-\node[header] (a) at (1.7,-1.10) {Execution topology};
-\node[header] (b) at (5.35,-1.10) {Partition / dispatch};
-\node[header] (c) at (9.00,-1.10) {Optimization};
-\node[header] (d) at (12.65,-1.10) {Continuity evidence};
-\draw[edge] (root.south) -- (7.2,-.55) -- (1.7,-.55) -- (a.north);
-\draw[edge] (7.2,-.55)-- (12.65,-.55) -- (d.north);
-\draw[edge] (5.35,-.55)--(b.north) (9,-.55)--(c.north);
-\newcommand{\branchleaf}[4]{%
-  \node[leaf] at (#1+.25,-1.39-#2*.43) {#3 \textbf{(#4)}};
-  \draw[edge] (#1,-1.39-#2*.43)--(#1+.19,-1.39-#2*.43);
+\begin{tikzpicture}[font=\fontfamily{lmss}\selectfont\small, x=1cm, y=.80cm]
+\definecolor{taxheading}{HTML}{E4EDF1}
+\newcommand{\taxpanel}[4]{%
+  \fill[taxheading] (#1,#2) rectangle (#1+8,#2-.52);
+  \draw[black!46] (#1,#2) rectangle (#1+8,#2-#3);
+  \node[anchor=west,inner sep=0pt,font=\bfseries] at (#1+.21,#2-.26) {#4};
+  \node[anchor=east,inner sep=0pt,font=\bfseries] at (#1+7.79,#2-.26) {Studies};
 }
-\draw[edge] (.22,-1.4)--(.22,-2.68) (3.87,-1.4)--(3.87,-3.54)
- (7.52,-1.4)--(7.52,-3.54) (11.17,-1.4)--(11.17,-3.97);
-\branchleaf{.22}{1}{Intra-swarm peers}{\groupn{topology}{peer}}
-\branchleaf{.22}{2}{Head--worker}{\groupn{topology}{cluster}}
-\branchleaf{.22}{3}{Air--edge--cloud}{\groupn{topology}{tier}}
-\branchleaf{3.87}{1}{Sequential}{\groupn{unit}{layer}}
-\branchleaf{3.87}{2}{Tiles / shards}{\groupn{unit}{spatial}}
-\branchleaf{3.87}{3}{Graph / early exit}{\groupn{unit}{branch}}
-\branchleaf{3.87}{4}{Model / representation}{\groupn{unit}{adaptive}}
-\branchleaf{3.87}{5}{Expert / request / state}{\groupn{unit}{request}}
-\branchleaf{7.52}{1}{Mathematical}{\groupn{optimizer}{math}}
-\branchleaf{7.52}{2}{Heuristic / auction}{\groupn{optimizer}{heuristic}}
-\branchleaf{7.52}{3}{Learning-led}{\groupn{optimizer}{rl}}
-\branchleaf{7.52}{4}{Hybrid}{\groupn{optimizer}{hybrid}}
-\branchleaf{7.52}{5}{Rule / descriptive}{\groupn{optimizer}{rule}}
-\branchleaf{11.17}{1}{Modeled reliability / stress}{\groupn{resilience}{analytic}}
-\branchleaf{11.17}{2}{Planned reassignment}{\groupn{resilience}{proactive}}
-\branchleaf{11.17}{3}{Link disruption}{\groupn{resilience}{link}}
-\branchleaf{11.17}{4}{Controlled disconnect}{\groupn{resilience}{bench}}
-\branchleaf{11.17}{5}{Node unavailable}{\groupn{resilience}{node}}
-\branchleaf{11.17}{6}{No qualifying evidence}{\groupn{resilience}{none}}
+\newcommand{\taxrow}[5]{%
+  \node[anchor=west,inner sep=0pt] at (#1+.21,#2-.45-#3*.40) {#4};
+  \node[anchor=east,inner sep=0pt] at (#1+7.79,#2-.45-#3*.40) {#5};
+}
+\taxpanel{0}{0}{2.69}{(a) Execution topology}
+\taxpanel{8.3}{0}{2.69}{(b) Partition / dispatch}
+\taxpanel{0}{-2.95}{3.09}{(c) Optimization}
+\taxpanel{8.3}{-2.95}{3.09}{(d) Continuity evidence}
+\taxrow{0}{0}{1}{Intra-swarm peers}{\groupn{topology}{peer}}
+\taxrow{0}{0}{2}{Head--worker}{\groupn{topology}{cluster}}
+\taxrow{0}{0}{3}{Air--edge--cloud}{\groupn{topology}{tier}}
+\taxrow{8.3}{0}{1}{Sequential}{\groupn{unit}{layer}}
+\taxrow{8.3}{0}{2}{Tiles / shards}{\groupn{unit}{spatial}}
+\taxrow{8.3}{0}{3}{Graph / early exit}{\groupn{unit}{branch}}
+\taxrow{8.3}{0}{4}{Model / representation}{\groupn{unit}{adaptive}}
+\taxrow{8.3}{0}{5}{Expert / request / state}{\groupn{unit}{request}}
+\taxrow{0}{-2.95}{1}{Mathematical}{\groupn{optimizer}{math}}
+\taxrow{0}{-2.95}{2}{Heuristic / auction}{\groupn{optimizer}{heuristic}}
+\taxrow{0}{-2.95}{3}{Learning-led}{\groupn{optimizer}{rl}}
+\taxrow{0}{-2.95}{4}{Hybrid}{\groupn{optimizer}{hybrid}}
+\taxrow{0}{-2.95}{5}{Rule / descriptive}{\groupn{optimizer}{rule}}
+\taxrow{8.3}{-2.95}{1}{Modeled reliability / stress}{\groupn{resilience}{analytic}}
+\taxrow{8.3}{-2.95}{2}{Planned reassignment}{\groupn{resilience}{proactive}}
+\taxrow{8.3}{-2.95}{3}{Link disruption}{\groupn{resilience}{link}}
+\taxrow{8.3}{-2.95}{4}{Controlled disconnect}{\groupn{resilience}{bench}}
+\taxrow{8.3}{-2.95}{5}{Node unavailable}{\groupn{resilience}{node}}
+\taxrow{8.3}{-2.95}{6}{No qualifying evidence}{\groupn{resilience}{none}}
 \end{tikzpicture}}
