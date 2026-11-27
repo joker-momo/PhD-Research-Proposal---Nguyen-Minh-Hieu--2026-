@@ -514,7 +514,7 @@
   {
     "id": "R0090",
     "access": "READ",
-    "decision": "AWAITING_CLASSIFICATION",
+    "decision": "INCLUDE",
     "criteria": {
       "E1": "T",
       "E2": "T",
@@ -522,11 +522,11 @@
       "E4": "T",
       "E5": "T",
       "E6": "T",
-      "E7": "U"
+      "E7": "T"
     },
     "primary": "",
     "secondary": [],
-    "reason": "The full PDF describes multi-UAV execution and evaluates onboard CNN inference. An applicable peer-review policy for the ICoEIT 2025 proceedings remains unconfirmed.",
+    "reason": "AeroAgriNet assigns inference tasks to multiple UAVs and evaluates onboard CNN inference. Physical p1 and the IEEE publisher deposit verify the exact proceedings publication. IEEE PSPB section 8.2.2.B.1 applies to these IEEE Xplore proceedings.",
     "evidence": [
       [
         "E1",
@@ -557,13 +557,6 @@
         "Edge AI inference was benchmarked using lightweight CNNs"
       ],
       [
-        "E5",
-        "PDF",
-        1,
-        "Header",
-        "2025 International Conference on Engineering Innovations and Technologies"
-      ],
-      [
         "E6",
         "PDF",
         1,
@@ -571,11 +564,25 @@
         "Existing agricultural practices encounter several challenges, including worker"
       ],
       [
-        "E7",
-        "https://www.icoeit.org.lnctrishiraj.ac.in/Submission.html",
+        "E5",
+        "https://api.crossref.org/works/10.1109/icoeit63558.2025.11457712",
         0,
-        "Submission Guidelines",
-        "Publication at IEEE Xplore is subject to IEEE's"
+        "message.published-print.date-parts",
+        "[[2025,7,4]]"
+      ],
+      [
+        "E7",
+        "https://pspb.ieee.org/images/files/PSPB/opsmanual.pdf",
+        0,
+        "§8.2.2.B.1 Conference Submissions Review Process",
+        "shall have a peer review policy"
+      ],
+      [
+        "E7",
+        "https://api.crossref.org/works/10.1109/icoeit63558.2025.11457712",
+        0,
+        "message.link content-version, exact DOI",
+        "vor"
       ]
     ]
   },

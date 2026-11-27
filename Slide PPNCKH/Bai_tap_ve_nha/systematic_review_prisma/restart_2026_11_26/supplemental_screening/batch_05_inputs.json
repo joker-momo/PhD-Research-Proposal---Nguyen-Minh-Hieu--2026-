@@ -1,0 +1,269 @@
+[
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0038.pdf",
+    "sha256": "1b94aec23aab27479644c382566260bfe504d11c65c04076f6e980064a571c59",
+    "id": "R0038",
+    "doi": "10.1109/wincom65874.2025.11313424",
+    "title": "On Convolutional Neural Networks for Mini UAV Swarms",
+    "authors": "R. McCarthy; N. Ahmed",
+    "year": "2025",
+    "venue": "2025 12th International Conference on Wireless Networks and Mobile Communications (WINCOM)",
+    "source": "IEEE",
+    "publication_date": "31 Dec 2025",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "LAWFUL_SOURCE_NOT_VERIFIED",
+    "publisher_date": {
+      "date": "2025-12-31",
+      "type": "IEEE Xplore effective posting",
+      "url": "https://www.wincom-conf.org/WINCOM_2025/?page=submission",
+      "review": "Same organizer page establishes peer review for all submitted papers. Physical p1 DOI, unpublished provenance is separate."
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0052.pdf",
+    "sha256": "fa59f5c74987e3e1c6c9742280bda47dc501ab8c7b80126793425d267f219d93",
+    "id": "R0052",
+    "doi": "10.1109/icces67310.2025.11337136",
+    "title": "Energy-Efficient Decentralized AI-RFDE Drone Swarm Defense Using Transformer Perception, DRL Coordination, and Bayesian Risk Modeling",
+    "authors": "E. K. Mounika; S. A. Bhavani; N. Mrinalini; P. Nagababu; H. R. Ravikumar; M. Bhavsingh",
+    "year": "2025",
+    "venue": "2025 10th International Conference on Communication and Electronics Systems (ICCES)",
+    "source": "IEEE",
+    "publication_date": "21 Jan 2026",
+    "pages": 8,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "LAWFUL_SOURCE_NOT_VERIFIED",
+    "publisher_date": {
+      "date": "2026-01-21",
+      "type": "publisher export Online Date, CSV physical row 18",
+      "url": "sources/raw/core_searches/ieee_xplore_complementary_export_2026-11-26.csv",
+      "review": "IEEE PSPB Operations Manual §8.2.2.B.1 plus exact current DOI and proceedings placement; bibliographic and high-level eligibility only. Local acquisition provenance unverified and separate.",
+      "peer_source": "https://api.crossref.org/works/10.1109/icces67310.2025.11337136"
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+    "sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+    "id": "R0106",
+    "doi": "10.1109/twc.2025.3573654",
+    "title": "Robust Group Target Awareness Inference in Multi-UAV-Enabled ISCC Networks Based on Split Deep Reinforcement Learning",
+    "authors": "Yin, Baolin; Fang, Xuming; Wang, Xianbin",
+    "year": "2025",
+    "venue": "IEEE Transactions on Wireless Communications",
+    "source": "SCOPUS",
+    "publication_date": "",
+    "pages": 15,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "publisher_date": {
+      "date": "2025-06-03",
+      "type": "first publication (physical p1 IEEE article date statement)",
+      "url": "https://api.crossref.org/works/10.1109/twc.2025.3573654",
+      "review": "Physical p1 editor and date of acceptance, conference policy inapplicable; high-level eligibility only."
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+    "sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+    "id": "R0145",
+    "doi": "10.1145/3774655",
+    "title": "LLM-based UAV Path Planning for Autonomous and Adaptive Industry Systems",
+    "authors": "Wenjing Xiao; Chenglong Shi; Miaojiang Chen; Athanasios V. Vasilakos",
+    "year": "2025",
+    "venue": "ACM Transactions on Autonomous and Adaptive Systems (TAAS)",
+    "source": "ACM",
+    "publication_date": "November 2025",
+    "pages": 22,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "publisher_date": {
+      "date": "2025-11-03",
+      "type": "publisher-deposited published-online",
+      "url": "https://api.crossref.org/works/10.1145/3774655"
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0220.pdf",
+    "sha256": "64b5819c3266925f939dfa97f9fd534f2010b5efb8d7b886806a9a488589929e",
+    "id": "R0220",
+    "doi": "10.1145/3727993.3728075",
+    "title": "Screening Method of Distributed Cooperative Navigation Factors for Uav Swarm",
+    "authors": "Zhang Can; Li Qun; Lun WeiCheng; Guo Dong",
+    "year": "2025",
+    "venue": "Proceedings of the 2024 4th International Conference on Computational Modeling, Simulation and Data Analysis",
+    "source": "ACM",
+    "publication_date": "May 2025",
+    "pages": 8,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "publisher_date": {
+      "date": "2025-05-26",
+      "type": "publisher-deposited published-online",
+      "url": "https://api.crossref.org/works/10.1145/3727993.3728075"
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+    "sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+    "id": "R0223",
+    "doi": "10.1145/3760269.3760299",
+    "title": "Outdoor Multi-UAV Collaborative Task Planning System Based on Multi-Agent and Improved PPO Algorithm",
+    "authors": "Runmin Wang; Zhongliang Deng",
+    "year": "2025",
+    "venue": "Proceedings of the 2025 5th International Conference on Automation Control, Algorithm and Intelligent Bionics",
+    "source": "ACM",
+    "publication_date": "September 2025",
+    "pages": 8,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "publisher_date": {
+      "date": "2025-09-17",
+      "type": "publisher-deposited published-online",
+      "url": "https://api.crossref.org/works/10.1145/3760269.3760299"
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0228.pdf",
+    "sha256": "dabd9e6f23acbc2b9d5aad2ddb4bb059f9c81176092346259d8914b3d7f49dbe",
+    "id": "R0228",
+    "doi": "10.1145/3711875.3737659",
+    "title": "GazeboNS3: A Digital Twin System for UAV Swarms",
+    "authors": "Dorian Cauwe; Chenyang Wang; Qi Han",
+    "year": "2025",
+    "venue": "The 11th Workshop on Micro Aerial Vehicle Networks, Systems, and Applications (DroNet 2025), in ACM MobiSys 2025 proceedings",
+    "source": "ACM",
+    "publication_date": "September 2025",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "publisher_date": {
+      "date": "2025-09-25",
+      "type": "publisher-deposited published-online",
+      "url": "https://api.crossref.org/works/10.1145/3711875.3737659",
+      "review": "Physical p1 ACM reference format identifies DroNet 2025 workshop despite parent container. Check exact workshop policy separately; official organizer site https://sites.google.com/view/dronet2025/ does not state explicit review method. Primary source authors' lab https://pecs.mines.edu/publications/ confirms track."
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0229.pdf",
+    "sha256": "68b3f09aa9957de03b737fe05ad69a20869f305ab7154efd453b15bd37f83153",
+    "id": "R0229",
+    "doi": "10.1145/3838457.3838477",
+    "title": "Federated Learning-Based Trajectory Optimization for UAV Swarms with Wind Impact Analysis",
+    "authors": "Jingrui Xu",
+    "year": "2026",
+    "venue": "Proceedings of the 2026 6th International Conference on Internet of Things and Machine Learning",
+    "source": "ACM",
+    "publication_date": "September 2026",
+    "pages": 7,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "publisher_date": {
+      "date": "2026-09-14",
+      "type": "publisher-deposited published-online",
+      "url": "https://api.crossref.org/works/10.1145/3838457.3838477"
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0230.pdf",
+    "sha256": "3f8862a8ea6d5289df051c61cbc9751e91b8733a0cb759a654a7488902bcf2ac",
+    "id": "R0230",
+    "doi": "10.1145/3700838.3700857",
+    "title": "Federated Learning-enabled Network Incident Anomaly Detection Optimization for Drone Swarms",
+    "authors": "Kevin Kostage; Rohan Adepu; Jenaya Monroe; Trevontae Haughton",
+    "year": "2025",
+    "venue": "ICDCN '25: Proceedings of the 26th International Conference on Distributed Computing and Networking",
+    "source": "ACM",
+    "publication_date": "January 2025",
+    "pages": 11,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "publisher_date": {
+      "date": "2025-01-04",
+      "type": "publisher-deposited published-online",
+      "url": "https://api.crossref.org/works/10.1145/3700838.3700857",
+      "review": "Defensive, non-operational scope only. Do not report vulnerabilities or exploit paths."
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0231.pdf",
+    "sha256": "9a860e75ddba2e5aed59857768c12439026235c7807b18ea875f6f206840915f",
+    "id": "R0231",
+    "doi": "10.1145/3772281",
+    "title": "c2mec: Cooperative Multi-split and Multi-hop Edge Computing Based on Deep Reinforcement Learning",
+    "authors": "Xiaojie Zhang; Peng Wang; Shima Yousefi; Saptarshi Debroy; Keqin Li",
+    "year": "2026",
+    "venue": "ACM Transactions on Embedded Computing Systems (TECS)",
+    "source": "ACM",
+    "publication_date": "August 2026",
+    "pages": 28,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "publisher_date": {
+      "date": "2026-08-24",
+      "type": "publisher-deposited published-online",
+      "url": "https://api.crossref.org/works/10.1145/3772281"
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0232.pdf",
+    "sha256": "c9d8473156a665730f0a9b5fb1a4507bc5ee1ffdb5ecf7b69febb6b5a6e9f0da",
+    "id": "R0232",
+    "doi": "10.1145/3597060.3597240",
+    "title": "Object Recognition Offloading in Augmented Reality Assisted UAV-UGV Systems",
+    "authors": "Chenyang Wang; Benjamin Carlson; Qi Han",
+    "year": "2023",
+    "venue": "The Ninth Workshop on Micro Aerial Vehicle Networks, Systems, and Applications (DroNet 2023)",
+    "source": "ACM",
+    "publication_date": "June 2023",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "publisher_date": {
+      "date": "2023-06-19",
+      "type": "publisher-deposited published-online",
+      "url": "https://api.crossref.org/works/10.1145/3597060.3597240",
+      "review": "Official https://dronet2023.github.io/ Submission Instructions establishes single-blinded review and program lists exact report as Article #6."
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0234.pdf",
+    "sha256": "64f1f2fe150b7c67a3de01cde91cbc210e057f9d6bff64cdad65b9ee3b42d0a1",
+    "id": "R0234",
+    "doi": "10.1145/3844610",
+    "title": "Task Offloading with Temporal Awareness in Heterogeneous Cloud-Edge-Ground Systems",
+    "authors": "Chenyang Wang; Qi Han",
+    "year": "2026",
+    "venue": "ACM Transactions on Internet Technology (TOIT)",
+    "source": "ACM",
+    "publication_date": "September 2026",
+    "pages": 23,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "publisher_date": {
+      "date": "2026-09-23",
+      "type": "publisher-deposited published-online",
+      "url": "https://api.crossref.org/works/10.1145/3844610"
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0238.pdf",
+    "sha256": "d49e6382bfa1a1b8f40da587c2ecf70cb6df3fcf791cc1b0fe6b47502afce8cc",
+    "id": "R0238",
+    "doi": "10.1145/3821725.3821803",
+    "title": "A Method for Dynamic Knowledge Graph and Two-Stage Subgraph Matching for Pattern Recognition and Risk Assessment in Situation Awareness",
+    "authors": "Te Wang; Na Wu; Sibing Liu",
+    "year": "2026",
+    "venue": "MLNN '26: Proceedings of the 2026 International Conference on Machine Learning and Neural Networks",
+    "source": "ACM",
+    "publication_date": "September 2026",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "publisher_date": {
+      "date": "2026-09-16",
+      "type": "publisher-deposited published-online",
+      "url": "https://api.crossref.org/works/10.1145/3821725.3821803"
+    }
+  }
+]

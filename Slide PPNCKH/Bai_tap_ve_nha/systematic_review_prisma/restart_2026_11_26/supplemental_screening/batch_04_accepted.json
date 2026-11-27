@@ -1,0 +1,923 @@
+[
+  {
+    "id": "R0221",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "The original does not establish distributed or jointly orchestrated multi-UAV neural inference. The exact 2026 track peer-review policy remains unconfirmed.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "we propose MACE (Multi-modal Adversarial Command Entity)"
+      ],
+      [
+        "E2",
+        "PDF",
+        6,
+        "Section 4.1",
+        "The primary mission involves a Blue UAV swarm"
+      ],
+      [
+        "E3",
+        "PDF",
+        7,
+        "Section 4.5",
+        "tested on a single NVIDIA H800 GPU"
+      ],
+      [
+        "E4",
+        "PDF",
+        6,
+        "Section 4.1",
+        "we execute 1,000 randomized scenarios with varying terrain"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3820709.3820744",
+        0,
+        "message.published-online.date-parts",
+        "[[2026,7,23]]"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "ACM Reference Format",
+        "6th International Conference on Robotics and Control Engineering"
+      ],
+      [
+        "E6",
+        "PDF",
+        6,
+        "Section 4.1",
+        "we execute 1,000 randomized scenarios with varying terrain"
+      ]
+    ]
+  },
+  {
+    "id": "R0402",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "The evaluated unit is a flow record. The original does not establish an evaluated multi-UAV setting or collaborative DNN execution. The exact workshop policy remains unconfirmed.",
+    "evidence": [
+      [
+        "E2",
+        "PDF",
+        4,
+        "Section 4",
+        "The experiments use UAV-GCS-IDS [4]"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "Section 3",
+        "PDT-TCN uses a residual TCN classifier over feature-block sequences"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "Section 4",
+        "All models use the same TCN backbone"
+      ],
+      [
+        "E1",
+        "PDF",
+        3,
+        "3",
+        "PDT-TCN uses a residual TCN classifier"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3842435.3843964",
+        0,
+        "message.published-online.date-parts",
+        "[[2026,10,26]]"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "ACM Reference Format",
+        "Workshop on Drone-Assisted Wireless Communications for 5G"
+      ],
+      [
+        "E6",
+        "PDF",
+        3,
+        "3",
+        "PDT-TCN uses a residual TCN classifier"
+      ]
+    ]
+  },
+  {
+    "id": "R0056",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "F",
+      "E5": "U",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E3",
+    "secondary": [
+      "E4"
+    ],
+    "reason": "The deployment tool sizes generic containers in a multi-UAV workload whose DNN inference location is fixed centrally. It evaluates the sizing tool. The exact local manuscript version and its date and peer-review status remain unconfirmed.",
+    "version_note": "First page carries no venue, date, DOI, or arXiv stamp, and p.7 states 'will be made open source upon publication', identifying an undated pre-publication manuscript distinct from the independently indexed ACM/IEEE SEC 2024 proceedings paper (DOI 10.1109/SEC62691.2024.00010).",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "We present Righteous, an automatic deployment right-sizing tool"
+      ],
+      [
+        "E2",
+        "PDF",
+        9,
+        "Section V.A",
+        "using single UAV and swarms of size 2-5"
+      ],
+      [
+        "E3",
+        "PDF",
+        7,
+        "Section IV.B.1",
+        "transmitting the images to a central server for inference"
+      ],
+      [
+        "E4",
+        "PDF",
+        9,
+        "Section V.A",
+        "To evaluate the performance of iPSA, we implemented"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Title/Header",
+        "Righteous: Automatic Right-sizing for Complex Edge Deployments"
+      ],
+      [
+        "E7",
+        "PDF",
+        7,
+        "IV.A",
+        "will be made open source upon publication"
+      ],
+      [
+        "E6",
+        "PDF",
+        9,
+        "Section V.A",
+        "To evaluate the performance of iPSA, we implemented"
+      ]
+    ]
+  },
+  {
+    "id": "R0077",
+    "access": "READ",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "The distributed UAV-swarm split-inference method is evaluated in simulation. Physical p1 and author-managed arXiv v3 confirm the accepted manuscript, and that exact revision is linked to the journal DOI.",
+    "version_note": "First page carries arXiv:2503.16146v3 [cs.NI] 8 Apr 2026 and footer 'Accepted for publication in Journal of Systems Architecture' (April 9, 2026). Distinguished cautiously as an author-accepted manuscript on arXiv rather than the publisher Version of Record; direct browsing of https://arxiv.org/abs/2503.16146v3 was blocked so the author-managed related DOI field was not directly opened, while external indexing separately links Journal of Systems Architecture DOI 10.1016/j.sysarc.2026.103804.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "we propose a fully distributed, diffusive metric-based approach"
+      ],
+      [
+        "E2",
+        "PDF",
+        1,
+        "Abstract",
+        "diffusive metric-based approach for split computing in UAV swarms"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "Section 1",
+        "offloads part of the split model execution"
+      ],
+      [
+        "E4",
+        "PDF",
+        8,
+        "5. Performance Evaluation",
+        "we evaluate five distinct task offloading strategies"
+      ],
+      [
+        "E5",
+        "https://arxiv.org/abs/2503.16146v3",
+        0,
+        "Submission history",
+        "8 Apr 2026"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Footer",
+        "Accepted for publication in Journal of Systems Architecture"
+      ],
+      [
+        "E6",
+        "PDF",
+        8,
+        "5. Performance Evaluation",
+        "we evaluate five distinct task offloading strategies"
+      ]
+    ]
+  },
+  {
+    "id": "R0082",
+    "access": "READ",
+    "decision": "AWAITING_CLASSIFICATION",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "This copy supports evaluated multi-UAV distributed CNN inference. Its link to the IEEE proceedings is verified, but the arXiv v1 copy has no version-specific peer-review or acceptance evidence.",
+    "version_note": "First page carries arXiv:2305.15858v1 [cs.DC] 25 May 2023 with no publisher or proceedings header. Independently indexed IEEE WCNC 2023 publication does not establish that this arXiv v1 preprint passed peer review.",
+    "evidence": [
+      [
+        "E2",
+        "PDF",
+        2,
+        "Section I",
+        "distributing CNN layers across multiple UAVs"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "Section I",
+        "distributing CNN layers across multiple UAVs"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "Section IV",
+        "we used two different CNNs, a small CNN"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Left margin arXiv stamp",
+        "arXiv:2305.15858v1 [cs.DC] 25 May 2023"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Margin/Header",
+        "arXiv:2305.15858v1 [cs.DC] 25 May 2023"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "Section I",
+        "distributing CNN layers across multiple UAVs"
+      ],
+      [
+        "E1",
+        "PDF",
+        2,
+        "I. Introduction",
+        "distributing CNN layers across multiple UAVs"
+      ]
+    ]
+  },
+  {
+    "id": "R0113",
+    "access": "READ",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "The evaluated swarm exchanges navigation embeddings. The learned fusion expression incorporating graph coordination and the ablation of the coordination component make the neural inference role explicit. The exact journal record links the paper to the publisher. The site exposes an incomplete DOI prefix only.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "This paper proposes a Neuromorphic Spiking Neural Network-Based"
+      ],
+      [
+        "E2",
+        "PDF",
+        9,
+        "Implementation and Results",
+        "simulated autonomous UAV swarm consisting of 40 cooperative UAVs"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Footer",
+        "Received: 02-01-2026 | Accepted: 05-02-2026 | Published: 12-02-2026"
+      ],
+      [
+        "E3",
+        "PDF",
+        7,
+        "METHODOLOGY",
+        "Each UAV periodically exchanges compact navigation embeddings"
+      ],
+      [
+        "E4",
+        "PDF",
+        12,
+        "IMPLEMENTATION AND RESULTS",
+        "An ablation study was performed to quantify the contribution"
+      ],
+      [
+        "E6",
+        "PDF",
+        12,
+        "IMPLEMENTATION AND RESULTS",
+        "An ablation study was performed to quantify the contribution"
+      ],
+      [
+        "E7",
+        "https://ajaccm.com/journal/index.php/ajaccm/about",
+        0,
+        "About the Journal",
+        "is a peer-reviewed, open-access scholarly journal"
+      ],
+      [
+        "E7",
+        "https://ajaccm.com/journal/index.php/ajaccm/article/view/771",
+        0,
+        "Journal article identity and issue",
+        "448-464"
+      ]
+    ]
+  },
+  {
+    "id": "R0115",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "F",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "F"
+    },
+    "primary": "E1",
+    "secondary": [
+      "E7"
+    ],
+    "reason": "The source is a university dissertation. Its chapters report prior distinct studies and are relevant as linkage evidence only.",
+    "version_note": "Cover/title page (p.1) confirms a Doctor of Philosophy dissertation at Hamad Bin Khalifa University (March 2024; defended March 14, 2024 per p.2), not a peer-reviewed journal or conference paper.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Title page",
+        "A Dissertation Submitted to the Faculty of College"
+      ],
+      [
+        "E2",
+        "PDF",
+        125,
+        "4.5.2",
+        "The simulation started with a swarm of three UAVs"
+      ],
+      [
+        "E3",
+        "PDF",
+        64,
+        "3.1",
+        "distributes the computation of different CNN layers"
+      ],
+      [
+        "E6",
+        "PDF",
+        20,
+        "1.1",
+        "In the past decade, UAVs have shown impressive performance"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Cover",
+        "A Dissertation Submitted to the Faculty of"
+      ],
+      [
+        "E4",
+        "PDF",
+        88,
+        "3.5.2",
+        "in three different CNN networks"
+      ],
+      [
+        "E5",
+        "https://api.datacite.org/dois/10.57945/manara.hbku.31989888",
+        0,
+        "data.attributes.dates: Issued",
+        "2024-07-22"
+      ]
+    ]
+  },
+  {
+    "id": "R0132",
+    "access": "READ",
+    "decision": "AWAITING_CLASSIFICATION",
+    "criteria": {
+      "E1": "T",
+      "E2": "U",
+      "E3": "U",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "Available scope-level evidence confirms a journal report with validation. The evaluated multi-UAV topology and joint neural inference across that topology remain unestablished.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "This paper presents a human-centred and Explainable Artificial Intelligence"
+      ],
+      [
+        "E2",
+        "PDF",
+        10,
+        "8.1",
+        "simulation environment incorporated heterogeneous distributed sensing nodes"
+      ],
+      [
+        "E5",
+        "https://api.datacite.org/dois/10.5281/zenodo.20445205",
+        0,
+        "Issued",
+        "2026-05-29"
+      ],
+      [
+        "E7",
+        "https://iconpublishers.com/icon-j-eng-app-ai/",
+        0,
+        "About Journal",
+        "online version cum open-access and peer reviewed international journal"
+      ],
+      [
+        "E3",
+        "PDF",
+        10,
+        "§§8.1–8.2 simulation and evaluation",
+        "Performance Evaluation Metrics"
+      ],
+      [
+        "E4",
+        "PDF",
+        20,
+        "Table 12",
+        "Semi-Physical HIL and Edge-Inference Validation Results"
+      ],
+      [
+        "E6",
+        "PDF",
+        20,
+        "Table 12, verified English body and caption",
+        "Semi-Physical HIL and Edge-Inference Validation Results"
+      ]
+    ]
+  },
+  {
+    "id": "R0170",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E3",
+    "secondary": [
+      "E4"
+    ],
+    "reason": "The CNN is an optimizer component in a data-sharing system. The locally assessed arXiv v1 copy has no independently verified peer-review/acceptance status.",
+    "version_note": "First page carries arXiv:2211.12988v1 [cs.MA] 23 Nov 2022 with no publisher header. Later IEEE/ACM Transactions on Networking publication (DOI 10.1109/TNET.2022.3226458) does not establish that this arXiv v1 preprint passed peer review.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "we develop RescueChain, a secure and efficient information sharing"
+      ],
+      [
+        "E2",
+        "PDF",
+        12,
+        "Section VI.A",
+        "we consider a simulation scenario with 10 UAVs"
+      ],
+      [
+        "E4",
+        "PDF",
+        12,
+        "Section VI.A",
+        "The performance of our proposal is evaluated by comparing"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Left margin arXiv stamp",
+        "arXiv:2211.12988v1 [cs.MA] 23 Nov 2022"
+      ],
+      [
+        "E3",
+        "PDF",
+        10,
+        "V.C",
+        "state space compression and Q-value estimation"
+      ],
+      [
+        "E6",
+        "PDF",
+        10,
+        "V.C",
+        "state space compression and Q-value estimation"
+      ],
+      [
+        "E7",
+        "https://arxiv.org/abs/2211.12988v1",
+        0,
+        "v1 deposit, no acceptance marker on physical p1",
+        "23 Nov 2022"
+      ]
+    ]
+  },
+  {
+    "id": "R0225",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "F"
+    },
+    "primary": "E7",
+    "secondary": [
+      "E3",
+      "E4"
+    ],
+    "reason": "The assessed arXiv v1 file has anonymous submission artifacts for a venue different from the linked journal. The evaluated work studies software synchronization and model maintenance rather than collaborative inference.",
+    "version_note": "First page carries arXiv:2503.13784v1 [cs.SE] 18 Mar 2025 with no ACM copyright/DOI block; pp.2-12 carry running header 'ICSE'26, April 12-18, 2026, Rio de Janeiro, Brazil' and p.2 lists an anonymous review URL, confirming a preprint/submission copy rather than a verified publisher VoR.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "we introduce the SwarmUpdate framework for software updates"
+      ],
+      [
+        "E2",
+        "PDF",
+        7,
+        "Section 4.2.2",
+        "we simulate a swarm consisting of three types"
+      ],
+      [
+        "E3",
+        "PDF",
+        1,
+        "Abstract",
+        "SwarmModelPatch is a deep learning model patching method"
+      ],
+      [
+        "E4",
+        "PDF",
+        1,
+        "Abstract",
+        "evaluate the performance of SwarmSync through large-scale simulations"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Left margin arXiv stamp",
+        "arXiv:2503.13784v1 [cs.SE] 18 Mar 2025"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Left margin arXiv stamp",
+        "arXiv:2503.13784v1 [cs.SE] 18 Mar 2025"
+      ],
+      [
+        "E6",
+        "PDF",
+        7,
+        "Section 4.2.2",
+        "we simulate a swarm consisting of three types"
+      ]
+    ]
+  },
+  {
+    "id": "R0235",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "F",
+      "E2": "F",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E1",
+    "secondary": [
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "reason": "This is a broad secondary survey. Peer-review linkage for the assessed arXiv copy remains uncertain even though an exact publisher report exists.",
+    "version_note": "First page carries arXiv:2212.07902v1 [cs.NI] 7 Nov 2022 with no publisher header. Independently indexed ACM Computing Surveys publication (DOI 10.1145/3571072) does not establish peer-review status of this arXiv v1 preprint.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "we survey five main research facets of this field"
+      ],
+      [
+        "E3",
+        "PDF",
+        1,
+        "Abstract",
+        "we survey five main research facets of this field"
+      ],
+      [
+        "E4",
+        "PDF",
+        1,
+        "Abstract",
+        "we survey five main research facets of this field"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Top-left arXiv stamp",
+        "arXiv:2212.07902v1 [cs.NI] 7 Nov 2022"
+      ],
+      [
+        "E2",
+        "PDF",
+        1,
+        "Abstract",
+        "we survey five main research facets of this field"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "I. Introduction",
+        "INTRODUCTION"
+      ],
+      [
+        "E7",
+        "https://arxiv.org/abs/2212.07902v1",
+        0,
+        "v1 release; status not independently established for the archived file",
+        "7 Nov 2022"
+      ]
+    ]
+  },
+  {
+    "id": "R0242",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "F",
+      "E2": "F",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "F"
+    },
+    "primary": "E1",
+    "secondary": [
+      "E7",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "reason": "The paper surveys the topic and presents a research vision with no eligible evaluated inference method.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "Section 1",
+        "We conduct a comprehensive survey of existing literature"
+      ],
+      [
+        "E2",
+        "PDF",
+        1,
+        "Abstract",
+        "we introduce our vision of how the real-time collaboration"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "Section 1",
+        "We conduct a comprehensive survey of existing literature"
+      ],
+      [
+        "E4",
+        "PDF",
+        1,
+        "Abstract",
+        "we introduce our vision of how the real-time collaboration"
+      ],
+      [
+        "E7",
+        "PDF",
+        2,
+        "Section 1",
+        "We conduct a comprehensive survey of existing literature"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3807408.3807409",
+        0,
+        "published-online",
+        "2026-05-01"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "Introduction",
+        "We conduct a comprehensive survey of existing literature"
+      ]
+    ]
+  },
+  {
+    "id": "R0308",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "F"
+    },
+    "primary": "E7",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "This arXiv v1 contains placeholder publication identifiers and no verified acceptance linkage for the copy. Tracking is evaluated at one base station without workload distribution across UAVs or their hierarchy.",
+    "version_note": "First page carries arXiv:2603.29187v1 [cs.NI] 31 Mar 2026 and an ACM MobiSys '26 reference block with placeholder ISBN 978-1-4503-XXXX-X/2018/06 and placeholder DOI https://doi.org/XXXXXXX.XXXXXXX, identifying an arXiv v1 preprint/author manuscript rather than a verified publisher VoR.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "we develop BSense, the first system that tracks UAVs"
+      ],
+      [
+        "E2",
+        "PDF",
+        7,
+        "Section 4.1",
+        "multi-UAV scenario, where two UAVs fly simultaneously"
+      ],
+      [
+        "E3",
+        "PDF",
+        10,
+        "Section 4.2",
+        "implementing our system on an Intel Core i5-11500 CPU"
+      ],
+      [
+        "E4",
+        "PDF",
+        1,
+        "Abstract",
+        "We evaluated BSense on a commercial 5G-A base station"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Left margin arXiv stamp",
+        "arXiv:2603.29187v1 [cs.NI] 31 Mar 2026"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Left margin arXiv stamp",
+        "arXiv:2603.29187v1 [cs.NI] 31 Mar 2026"
+      ],
+      [
+        "E6",
+        "PDF",
+        7,
+        "Section 4.1",
+        "multi-UAV scenario, where two UAVs fly simultaneously"
+      ]
+    ]
+  }
+]
