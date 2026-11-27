@@ -126,10 +126,11 @@ def receipt_review(path, batch, expected, sources):
         and isinstance(preflight.get("section"), str) and bool(preflight["section"].strip())
         and any(contains(src, "HKF-118", preflight) for src in sources)
     )
-    identities = re.findall(
-        r"(?m)^\W*(HKF-\d{3})\s*\|\s*Title:\s*([^\n|]+)\|\s*Authors:\s*([^\n|]+)\|"
+    identity_ids = set(batch["reports"]) - LIMITED
+    identities = [row for row in re.findall(
+        r"(?m)^\W*(HKF-\d{3})[ \t]*[|:][ \t]*Title:[ \t]*([^\n|]+)\|\s*Authors:\s*([^\n|]+)\|"
         r"\s*Year:\s*([^\n|]+)\|\s*Venue:\s*([^\n|]+)\|\s*DOI:\s*([^\n|]+)", text,
-    )
+    ) if row[0] in identity_ids and all(field.strip() for field in row[1:])]
     normalized_dois = [m[-1].strip().lower() for m in identities if m[-1].strip().lower().startswith("10.")]
     normalized_titles = [norm(m[1]) for m in identities if norm(m[1]) != "unknown"]
     stats = {
@@ -141,8 +142,9 @@ def receipt_review(path, batch, expected, sources):
         "context_unchanged": meta.get("context_audit", {}).get("unchanged") is True,
         "preflight_anchor_match": direct_source_access,
         "identity_count": len(identities),
-        "identity_expected": len(set(batch["reports"]) - LIMITED),
+        "identity_expected": len(identity_ids),
         "identity_records": sorted({line[0] for line in identities}),
+        "identity_missing": sorted(identity_ids - {line[0] for line in identities}),
         "identity_duplicate_dois": len(normalized_dois) - len(set(normalized_dois)),
         "identity_duplicate_titles": len(normalized_titles) - len(set(normalized_titles)),
         "end_marker": "END_HK261_SOURCE_BATCH" in text,
@@ -201,7 +203,8 @@ def baseline_values():
     appraisal = {(r["report_id"], "appraisal", r["domain"]): r["judgment"]
                  for r in rows(FINAL / "appraisal_rationale.csv")}
     outcome = {(r["report_id"], "outcome", r["outcome_id"].rsplit("-", 1)[1]):
-               " | ".join(r[c] for c in ("metric", "reported_value", "unit", "method", "comparison_status"))
+               " | ".join(r[c] for c in ("metric", "reported_value", "unit", "method", "comparator",
+                                          "workload_conditions_and_denominator", "comparison_status"))
                for r in rows(FINAL / "outcomes.csv")}
     coverage = {(r["report_id"], "report_coverage", "coverage"): r["exact_outcome_status"]
                 for r in rows(FINAL / "report_coverage.csv")}
@@ -264,6 +267,16 @@ def csv_row(target, info, codex, gemini, prior, gate, supplemental):
         f"PDF p. {a.get('page', '')}, {a.get('section', '')}: {a.get('quote', '')}"
         for a in corrected if isinstance(a, dict)
     ) if isinstance(corrected, list) else str(corrected)
+    if record["codex_status"] == "DISCREPANCY":
+        record["author_attention"] = "BASELINE_DISCREPANCY"
+    elif ident in LIMITED:
+        record["author_attention"] = "RESTRICTED_SOURCE"
+    elif (record["gemini_semantic"] != "PASS"
+          or record["codex_status"] != "VERIFIED"
+          or record["comparison"] == "DIFFERENT_LABEL"):
+        record["author_attention"] = "CHECK_EVIDENCE"
+    else:
+        record["author_attention"] = "EVIDENCE_AVAILABLE"
     return record
 
 
@@ -287,6 +300,7 @@ def report_tex(path, summary, report):
     lines = [
         r"\section*{Phạm vi và tiến độ}",
         f"Đối chiếu {summary['expected']} mục trong {summary['reports']} bài. Codex trả {summary['codex_returned']} mục và Gemini trả {summary['gemini_returned']} mục.",
+        "Gemini đọc văn bản tách theo trang từ PDF đã khóa hash. Mỗi lô có bài kiểm tra đọc trực tiếp PDF mẫu. Codex đối chiếu theo trang và mở ảnh PDF ở các vị trí cần kiểm tra bố cục.",
         r"\begin{center}\begin{tabular}{lrr}\toprule Trạng thái do lượt rà ghi & Codex & Gemini \\ \midrule",
     ]
     lines.extend(f"{tex(status)} & {codex.get(status, 0)} & {gemini.get(status, 0)} \\\\"
@@ -394,6 +408,7 @@ def main():
         "codex_status": dict(Counter(r["codex_status"] for r in report)),
         "gemini_status": dict(Counter(r["gemini_status"] for r in report)),
         "gemini_semantic": dict(Counter(r["gemini_semantic"] for r in report)),
+        "author_attention": dict(Counter(r["author_attention"] for r in report)),
         "labels": dict(Counter(r["comparison"] for r in report)),
         "batches": reviews,
     }

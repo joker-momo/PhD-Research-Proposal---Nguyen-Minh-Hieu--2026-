@@ -37,7 +37,7 @@ def write_review(stats, path):
         gate_row("Neo kiểm tra đọc PDF", stats.get("preflight_anchor_match", False), "HKF-118, PDF tr. 2."),
         gate_row("Khóa chính xác và dấu kết thúc", not missing and not stats.get("errors") and stats.get("end_marker", False),
                  f"{stats['seen']}/{stats['expected']} dòng. {len(stats.get('errors', []))} lỗi cấu trúc hoặc khóa."),
-        gate_row("Danh mục thư mục", identity == identity_expected
+        gate_row("Nhận diện thư mục học thuật", identity == identity_expected and not stats.get("identity_missing")
                  and not stats.get("identity_duplicate_dois") and not stats.get("identity_duplicate_titles"),
                  f"{identity}/{identity_expected} dòng nhận diện, {stats.get('identity_duplicate_dois', 0)} DOI trùng,"
                  f" {stats.get('identity_duplicate_titles', 0)} tiêu đề trùng."),

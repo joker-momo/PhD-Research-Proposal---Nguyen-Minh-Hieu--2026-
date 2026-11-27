@@ -8,7 +8,7 @@ Gói này kiểm tra các mục của phiếu nguồn bằng hai lượt hỗ tr
 - `report.tex` và `report.pdf` tóm tắt các khác biệt đã phát hiện và cách đọc CSV.
 - `phase_manifest.json` lưu chuỗi SHA-256 của từng PDF và từng file đầu vào thực tế. Bản PDF đã cung cấp riêng cho R0082 được nhận diện theo biên bản đối chiếu IEEE của gói tổng hợp.
 
-Các đoạn ngắn trong bảng dùng để kiểm chứng. `ANCHORS_MATCH` chỉ xác nhận nguyên văn trên trang, còn đối chiếu số liệu cần xác nhận đúng hàng, cột và điều kiện. `gemini_semantic` và cột giải thích đi kèm ghi kết quả kiểm tra nội dung riêng. Cột `comparison` giúp tìm các mục thiếu hoặc bất đồng nhãn. Khi hai lượt dùng cùng nhãn, cần đọc bằng chứng của từng lượt để xác định hai lập luận có tương đương hay không.
+Các đoạn ngắn trong bảng dùng để kiểm chứng. `ANCHORS_MATCH` chỉ xác nhận nguyên văn trên trang, còn đối chiếu số liệu cần xác nhận đúng hàng, cột và điều kiện. `gemini_semantic` và cột giải thích đi kèm ghi kết quả kiểm tra nội dung riêng. Dùng `author_attention` để lọc các sai khác với dữ liệu hiện hành, các mục cần kiểm tra tiếp và các mục có phạm vi nguồn giới hạn. Khi hai lượt dùng cùng nhãn, đọc bằng chứng của từng lượt để xác định hai lập luận có tương đương hay không.
 
 ## Tái tạo
 

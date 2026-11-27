@@ -15,6 +15,10 @@
 Bảng \texttt{source\_review\_887.csv} chứa mã hồ sơ, loại kiểm tra, khóa, tên và SHA-256
 của PDF. Mỗi lượt có các cột trạng thái, kết luận, trang vật lý, trích đoạn và ghi chú.
 Vị trí gợi ý trong phiếu chỉ dùng để tìm kiếm. Ưu tiên vị trí ở cột của lượt đã đối chiếu.
+Lọc cột \texttt{author\_attention} theo \texttt{BASELINE\_DISCREPANCY} để xem các điểm
+khác dữ liệu hiện hành. \texttt{CHECK\_EVIDENCE} đánh dấu các mục còn căn cứ một phần,
+có bất đồng hoặc chưa đủ kết quả từ hai lượt. \texttt{RESTRICTED\_SOURCE} đánh dấu phạm
+vi đối chiếu giới hạn. Mọi mục đều chờ xác nhận của người thẩm định.
 \begin{description}
 \item[VERIFIED] Lượt rà cho rằng căn cứ PDF hỗ trợ kết luận đã ghi.
 \item[PARTIAL] Căn cứ chỉ hỗ trợ một phần của nhận định hoặc chưa đủ chi tiết.

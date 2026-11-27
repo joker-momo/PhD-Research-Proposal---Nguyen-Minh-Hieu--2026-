@@ -18,3 +18,5 @@ HKF-043,R0048,outcome,Q02,12,Table III Inference latency column,"0.515, 0.511 an
 HKF-043,R0048,outcome,Q03,12,Table III Throughput column,"116.6, 117.4 and 117.1 IPS at energy efficiency 0.6, 0.7 and 0.8, respectively.",PyMuPDF 1.26.7 rendered original
 HKF-043,R0048,report_coverage,coverage,12,Table III and adjacent text,"Exact energy, latency and throughput rows for 60 UAVs. The other plotted series are distinct evidence.",PyMuPDF 1.26.7 rendered original
 HKF-079,R0095,outcome,Q03,10,Fig. 9(c) printed bar annotations,"PPO-DMCP 31.9287 ms, Layer-PPO 117.1472 ms and Prop 1.78 µs, as printed on bars.",PyMuPDF 1.26.7 rendered original
+HKF-121,R0036,outcome,Q01,12,Fig. 8(a) x-axis and accompanying paragraph,"The physical PDF uses Mbps. The 22% comparison is reported at 20 Mbps. The extraction inventory recorded MHz.",PyMuPDF 1.26.7 rendered original
+HKF-128,R0014,outcome,Q01,12,VIII.B.1 and Table III,"Relative 43.1% appears in p. 11 prose. Absolute inputs 2.32 s and 1.32 s are in Table III on physical p. 12.",PyMuPDF 1.26.7 rendered original
