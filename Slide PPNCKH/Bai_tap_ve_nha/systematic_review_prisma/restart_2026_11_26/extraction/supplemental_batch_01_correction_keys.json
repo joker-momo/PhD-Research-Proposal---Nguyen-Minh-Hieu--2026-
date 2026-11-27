@@ -1,0 +1,63 @@
+{
+  "R0014": [
+    "compute_radio",
+    "evaluation",
+    "mobility_continuity",
+    "optimization",
+    "outcomes"
+  ],
+  "R0036": [
+    "architecture",
+    "code_data",
+    "compute_radio",
+    "limitations",
+    "mobility_continuity",
+    "outcomes",
+    "variability",
+    "workload"
+  ],
+  "R0038": [
+    "baselines",
+    "limitations",
+    "mobility_continuity",
+    "outcomes",
+    "variability"
+  ],
+  "R0043": [
+    "compute_radio",
+    "evaluation",
+    "optimization",
+    "outcomes",
+    "partition_assignment",
+    "workload"
+  ],
+  "R0058": [
+    "access",
+    "architecture",
+    "baselines",
+    "code_data",
+    "compute_radio",
+    "mobility_continuity",
+    "optimization",
+    "outcomes",
+    "partition_assignment",
+    "variability"
+  ],
+  "R0064": [
+    "architecture",
+    "compute_radio",
+    "mobility_continuity",
+    "optimization",
+    "outcomes",
+    "variability",
+    "workload"
+  ],
+  "R0075": [
+    "architecture",
+    "optimization",
+    "outcomes",
+    "partition_assignment",
+    "variability",
+    "workload"
+  ]
+}

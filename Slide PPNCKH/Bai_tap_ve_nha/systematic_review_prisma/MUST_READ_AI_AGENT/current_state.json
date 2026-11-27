@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T12:51:23+07:00",
+  "updated_at": "2026-11-27T12:59:01+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_extraction_in_progress",
@@ -11,21 +11,19 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T12:51:10+07:00",
-    "updated_at": "2026-11-27T12:51:23+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/supplemental_extraction_manifest.json",
+    "updated_at": "2026-11-27T12:59:01+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_01_review.md",
     "decision_id": "restart-supplemental-extraction-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-extraction-batch01",
+    "task_id": "restart-supplemental-extraction-batch01-correction",
     "owner": "GEMINI_RESEARCH",
-    "status": "active",
-    "action": "Collect the original P08 batch 01 UUID. Verify 7 access and 91 field keys before advancing.",
-    "acceptance": "Seven PDF access checks, 91 scoped field keys, exact locators, and zero unsupported outcomes.",
-    "dispatch_brief": "restart_2026_11_26/extraction/supplemental_batch_01_brief.md",
-    "message_id": "e5cbf5cb-1178-4b76-b0f4-c73b65b7756d",
-    "bridge_task_id": "15cbc890-5eb8-41d6-ad0a-52686af3dd74",
-    "bridge_context_id": "cc97d880-e042-49ec-839d-42eb955b3f6f",
-    "dispatch_receipt": "restart_2026_11_26/extraction/supplemental_batch_01_dispatch.json"
+    "status": "ready",
+    "action": "Repair 47 failed or uncertain keys from the original P08 source extraction; no optional quantity rows.",
+    "acceptance": "47 exact unique keys with original physical-page locators or explicit gaps, no numerical result claims.",
+    "dispatch_brief": "restart_2026_11_26/extraction/supplemental_batch_01_correction_brief.md",
+    "message_id": "fa06b32e-dee4-48f9-8f82-81711702b425",
+    "parent_bridge_task_id": "15cbc890-5eb8-41d6-ad0a-52686af3dd74"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -445,7 +443,11 @@
       "accepted_prior_reports": 25,
       "new_reports_required": 21,
       "new_reports_accepted": 0,
-      "manifest": "restart_2026_11_26/extraction/supplemental_extraction_manifest.json"
+      "manifest": "restart_2026_11_26/extraction/supplemental_extraction_manifest.json",
+      "batch_01_verdict": "FAIL_EXACT_LOCATORS_AND_JSONL",
+      "batch_01_review": "restart_2026_11_26/extraction/supplemental_batch_01_review.md",
+      "batch_01_original_uuid": "15cbc890-5eb8-41d6-ad0a-52686af3dd74",
+      "batch_01_correction_keys": "restart_2026_11_26/extraction/supplemental_batch_01_correction_keys.json"
     }
   },
   "blockers": [],

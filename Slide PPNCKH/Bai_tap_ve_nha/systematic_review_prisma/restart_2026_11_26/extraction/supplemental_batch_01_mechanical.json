@@ -1,0 +1,308 @@
+{
+  "native_state": "TASK_STATE_COMPLETED",
+  "physical_pdf_sha_match": true,
+  "access_rows": 7,
+  "field_rows": 89,
+  "field_state_counts": {
+    "OBSERVED": 63,
+    "PARTIAL": 18,
+    "NOT_REPORTED": 8
+  },
+  "quantity_rows": 5,
+  "missing_access_rows": [],
+  "missing_field_rows": [
+    [
+      "R0036",
+      "code_data"
+    ],
+    [
+      "R0036",
+      "workload"
+    ]
+  ],
+  "errors": [
+    {
+      "line": 5,
+      "error": "missing or noncontiguous excerpt",
+      "id": "R0058",
+      "key": "access"
+    },
+    {
+      "line": 11,
+      "error": "missing or noncontiguous excerpt",
+      "id": "R0014",
+      "key": "optimization"
+    },
+    {
+      "line": 11,
+      "error": "excerpt mismatch on physical page 8; other pages []",
+      "id": "R0014",
+      "key": "optimization"
+    },
+    {
+      "line": 12,
+      "error": "excerpt mismatch on physical page 10; other pages []",
+      "id": "R0014",
+      "key": "compute_radio"
+    },
+    {
+      "line": 16,
+      "error": "excerpt mismatch on physical page 12; other pages [11]",
+      "id": "R0014",
+      "key": "outcomes"
+    },
+    {
+      "line": 21,
+      "error": "excerpt mismatch on physical page 12; other pages []",
+      "id": "R0014",
+      "key": "outcomes"
+    },
+    {
+      "line": 22,
+      "error": "missing or noncontiguous excerpt",
+      "id": "R0036",
+      "key": "architecture"
+    },
+    {
+      "line": 23,
+      "error": "Expecting ',' delimiter: line 1 column 515 (char 514)"
+    },
+    {
+      "line": 26,
+      "error": "excerpt mismatch on physical page 5; other pages []",
+      "id": "R0036",
+      "key": "compute_radio"
+    },
+    {
+      "line": 26,
+      "error": "excerpt mismatch on physical page 12; other pages []",
+      "id": "R0036",
+      "key": "compute_radio"
+    },
+    {
+      "line": 27,
+      "error": "excerpt mismatch on physical page 4; other pages []",
+      "id": "R0036",
+      "key": "mobility_continuity"
+    },
+    {
+      "line": 30,
+      "error": "excerpt mismatch on physical page 12; other pages []",
+      "id": "R0036",
+      "key": "outcomes"
+    },
+    {
+      "line": 32,
+      "error": "Expecting ',' delimiter: line 1 column 351 (char 350)"
+    },
+    {
+      "line": 52,
+      "error": "missing or noncontiguous excerpt",
+      "id": "R0043",
+      "key": "partition_assignment"
+    },
+    {
+      "line": 53,
+      "error": "excerpt mismatch on physical page 3; other pages []",
+      "id": "R0043",
+      "key": "optimization"
+    },
+    {
+      "line": 54,
+      "error": "excerpt mismatch on physical page 5; other pages []",
+      "id": "R0043",
+      "key": "compute_radio"
+    },
+    {
+      "line": 56,
+      "error": "excerpt mismatch on physical page 5; other pages []",
+      "id": "R0043",
+      "key": "evaluation"
+    },
+    {
+      "line": 58,
+      "error": "excerpt mismatch on physical page 1; other pages []",
+      "id": "R0043",
+      "key": "outcomes"
+    },
+    {
+      "line": 58,
+      "error": "excerpt mismatch on physical page 6; other pages [5]",
+      "id": "R0043",
+      "key": "outcomes"
+    },
+    {
+      "line": 63,
+      "error": "missing or noncontiguous excerpt",
+      "id": "R0058",
+      "key": "architecture"
+    },
+    {
+      "line": 63,
+      "error": "excerpt mismatch on physical page 13; other pages []",
+      "id": "R0058",
+      "key": "architecture"
+    },
+    {
+      "line": 65,
+      "error": "excerpt mismatch on physical page 5; other pages []",
+      "id": "R0058",
+      "key": "partition_assignment"
+    },
+    {
+      "line": 65,
+      "error": "excerpt mismatch on physical page 7; other pages []",
+      "id": "R0058",
+      "key": "partition_assignment"
+    },
+    {
+      "line": 66,
+      "error": "excerpt mismatch on physical page 8; other pages []",
+      "id": "R0058",
+      "key": "optimization"
+    },
+    {
+      "line": 66,
+      "error": "excerpt mismatch on physical page 15; other pages []",
+      "id": "R0058",
+      "key": "optimization"
+    },
+    {
+      "line": 68,
+      "error": "excerpt mismatch on physical page 7; other pages []",
+      "id": "R0058",
+      "key": "mobility_continuity"
+    },
+    {
+      "line": 68,
+      "error": "excerpt mismatch on physical page 10; other pages []",
+      "id": "R0058",
+      "key": "mobility_continuity"
+    },
+    {
+      "line": 70,
+      "error": "excerpt mismatch on physical page 19; other pages []",
+      "id": "R0058",
+      "key": "baselines"
+    },
+    {
+      "line": 72,
+      "error": "excerpt mismatch on physical page 21; other pages []",
+      "id": "R0058",
+      "key": "variability"
+    },
+    {
+      "line": 73,
+      "error": "excerpt mismatch on physical page 19; other pages []",
+      "id": "R0058",
+      "key": "code_data"
+    },
+    {
+      "line": 76,
+      "error": "Expecting ',' delimiter: line 1 column 637 (char 636)"
+    },
+    {
+      "line": 77,
+      "error": "excerpt mismatch on physical page 3; other pages []",
+      "id": "R0064",
+      "key": "architecture"
+    },
+    {
+      "line": 78,
+      "error": "excerpt mismatch on physical page 8; other pages []",
+      "id": "R0064",
+      "key": "workload"
+    },
+    {
+      "line": 80,
+      "error": "excerpt mismatch on physical page 6; other pages []",
+      "id": "R0064",
+      "key": "optimization"
+    },
+    {
+      "line": 81,
+      "error": "excerpt mismatch on physical page 9; other pages []",
+      "id": "R0064",
+      "key": "compute_radio"
+    },
+    {
+      "line": 81,
+      "error": "excerpt mismatch on physical page 9; other pages []",
+      "id": "R0064",
+      "key": "compute_radio"
+    },
+    {
+      "line": 82,
+      "error": "excerpt mismatch on physical page 4; other pages []",
+      "id": "R0064",
+      "key": "mobility_continuity"
+    },
+    {
+      "line": 91,
+      "error": "excerpt mismatch on physical page 4; other pages []",
+      "id": "R0075",
+      "key": "architecture"
+    },
+    {
+      "line": 92,
+      "error": "excerpt mismatch on physical page 8; other pages []",
+      "id": "R0075",
+      "key": "workload"
+    },
+    {
+      "line": 93,
+      "error": "excerpt mismatch on physical page 4; other pages []",
+      "id": "R0075",
+      "key": "partition_assignment"
+    },
+    {
+      "line": 93,
+      "error": "excerpt mismatch on physical page 4; other pages []",
+      "id": "R0075",
+      "key": "partition_assignment"
+    },
+    {
+      "line": 94,
+      "error": "excerpt mismatch on physical page 7; other pages []",
+      "id": "R0075",
+      "key": "optimization"
+    },
+    {
+      "line": 104,
+      "error": "excerpt mismatch on physical page 10; other pages []",
+      "id": "R0075",
+      "key": "outcomes"
+    }
+  ],
+  "summary_count": 1,
+  "end_marker_seen": true,
+  "summary": {
+    "kind": "summary",
+    "returned_ids": [
+      "R0014",
+      "R0036",
+      "R0038",
+      "R0043",
+      "R0058",
+      "R0064",
+      "R0075"
+    ],
+    "returned_keys_count": 91,
+    "unresolved_keys": [],
+    "unresolved_reasons": {},
+    "withheld_quantities": [
+      "R0043: exact per-model/comparator values only plotted in Fig. 3; Abstract 1.2x-2.9x range lacks per-comparator binding"
+    ],
+    "tools_used": [
+      "client:view_file",
+      "client:list_dir",
+      "client:find_by_name",
+      "client:grep_search"
+    ],
+    "unavailable_tools": [
+      "client:run_command (prohibited by read-only no-command instruction)"
+    ],
+    "workers_used": false,
+    "worker_status": "parent_only_complete"
+  }
+}

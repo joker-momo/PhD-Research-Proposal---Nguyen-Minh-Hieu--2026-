@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T12:50:37+07:00",
+  "updated_at": "2026-11-27T12:59:01+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -824,7 +824,15 @@
         "restart_2026_11_26/extraction/p08_extraction_table.json",
         "restart_2026_11_26/extraction/p08_quantitative_claim_source_matrix.csv",
         "restart_2026_11_26/extraction/p08_extraction_lock.json",
-        "restart_2026_11_26/extraction/p08_source_assist_batch_01_brief.md"
+        "restart_2026_11_26/extraction/p08_source_assist_batch_01_brief.md",
+        "restart_2026_11_26/extraction/supplemental_batch_01_brief.md",
+        "restart_2026_11_26/extraction/supplemental_batch_01_correction_brief.md",
+        "restart_2026_11_26/extraction/supplemental_batch_01_correction_keys.json",
+        "restart_2026_11_26/extraction/supplemental_batch_01_dispatch.json",
+        "restart_2026_11_26/extraction/supplemental_batch_01_mechanical.json",
+        "restart_2026_11_26/extraction/supplemental_batch_01_raw.json",
+        "restart_2026_11_26/extraction/supplemental_batch_01_review.md",
+        "restart_2026_11_26/extraction/supplemental_extraction_manifest.json"
       ],
       "acceptance": [
         {
@@ -947,7 +955,15 @@
           "verdict": "PASS",
           "evidence": "208/208 targeted keys assessed against the originals; 238 baseline PASS and 9 baseline withheld unchanged. 444 PASS, 11 excluded and 0 pending, 25/25 reports and 350/350 required accepted field groups."
         }
-      ]
+      ],
+      "supplemental": {
+        "task_id": "restart-supplemental-extraction",
+        "status": "active",
+        "updated_at": "2026-11-27T12:59:01+07:00",
+        "batch_01_original_gate": "FAIL",
+        "review": "restart_2026_11_26/extraction/supplemental_batch_01_review.md",
+        "accepted_new_reports": 0
+      }
     },
     {
       "task_id": "restart-12",
