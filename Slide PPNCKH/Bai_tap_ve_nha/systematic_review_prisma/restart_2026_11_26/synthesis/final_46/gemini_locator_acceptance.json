@@ -1,0 +1,17 @@
+{
+  "verdict": "PASS",
+  "source": "restart_2026_11_26/fulltext_retrieval/pdf/R0082.pdf",
+  "chat_cleanup": "deleted",
+  "worker_count": 0,
+  "verified_anchors": {
+    "EVALUATION": {
+      "physical_page": 5,
+      "excerpt": "in which we have 144 equal size cells with 40m width and 40m length with radius R of 20m."
+    },
+    "FAMILY": {
+      "physical_page": 5,
+      "excerpt": "in which we have 144 equal size cells with 40m width and 40m length with radius R of 20m."
+    }
+  },
+  "scope": "Exact p. 5 geometry anchors only. Earlier raw broad outputs remain withheld."
+}

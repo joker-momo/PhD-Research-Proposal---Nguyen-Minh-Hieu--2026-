@@ -1,6 +1,7 @@
 """Refresh or verify the portable HK261 figure and table evidence folder."""
 import argparse
 import hashlib
+import json
 import re
 from pathlib import Path
 
@@ -10,7 +11,6 @@ PROJECT = MANUSCRIPT.parents[1]
 RESTART = Path("restart_2026_11_26")
 MANUSCRIPT_PATH = MANUSCRIPT.relative_to(PROJECT)
 FILES = [
-    Path("MUST_READ_AI_AGENT/current_state.json"),
     *(MANUSCRIPT_PATH / name for name in (
         "build_technical_survey.py", "build_editorial_evidence.py", "main.tex",
         "editorial_mechanism_setting.tex", "editorial_outcome_coverage.tex", "main.pdf", "references.bib",
@@ -34,6 +34,10 @@ FILES = [
         "synthesis/final_46/mechanisms.csv", "synthesis/final_46/recomputed_counts.json",
         "synthesis/final_46/claim_source_matrix.csv", "synthesis/final_46/rq5_claim_sources.csv", "synthesis/final_46/r0082_evidence.json",
         "synthesis/final_46/r0082_review.md", "synthesis/final_46/reconcile_inputs.py",
+        "synthesis/final_46/r0082_primary_review.md", "synthesis/final_46/gemini_primary_receipt.json",
+        "synthesis/final_46/r0082_correction_review.md", "synthesis/final_46/gemini_correction_receipt.json",
+        "synthesis/final_46/r0082_locator_review.md", "synthesis/final_46/gemini_locator_receipt.json",
+        "synthesis/final_46/gemini_locator_acceptance.json",
         "synthesis/final_46/appraisal_table.csv", "synthesis/final_46/appraisal_rationale.csv",
     )),
 ]
@@ -72,6 +76,11 @@ def build_index():
 
 def snapshot():
     items = {Path("sources") / path: (PROJECT / path).read_bytes() for path in FILES}
+    state = json.loads((PROJECT / "MUST_READ_AI_AGENT/current_state.json").read_text())
+    deferrals = state["evidence"]["alternative_technical_survey"]["editorial_integration"][
+        "author_confirmed_deferrals"]
+    deferrals_path = Path("sources") / MANUSCRIPT_PATH / "s2_author_confirmed_deferrals.json"
+    items[deferrals_path] = (json.dumps(deferrals, indent=2, sort_keys=True) + "\n").encode()
     items[Path("ITEM_INDEX.md")] = build_index()
     manifest = "".join(f"{hashlib.sha256(data).hexdigest()}  {path.as_posix()}\n"
                        for path, data in sorted(items.items()))
@@ -95,7 +104,7 @@ def main():
                 raise ValueError(f"Snapshot differs from the canonical source: {relative}")
     except (OSError, ValueError) as error:
         parser.exit(1, f"Package check failed: {error}\n")
-    print(f"PASS: {len(FILES)} archived files and 16 indexed figures, tables and equations.")
+    print(f"PASS: {len(files) - 2} archived files and 16 indexed figures, tables and equations.")
 
 
 if __name__ == "__main__":

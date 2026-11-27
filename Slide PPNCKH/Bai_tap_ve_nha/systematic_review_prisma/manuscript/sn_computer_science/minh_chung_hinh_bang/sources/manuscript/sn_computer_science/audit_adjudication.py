@@ -180,9 +180,12 @@ def main():
             subprocess.run([sys.executable, "-B", str(PRISMA / "reconcile.py"), "--check"],
                            check=True, stdout=subprocess.DEVNULL)
         ledger = json.loads((PRISMA / "prisma_counts.json").read_text())
-        state = json.loads((PROJECT / "MUST_READ_AI_AGENT/current_state.json").read_text())
-        deferrals = state["evidence"]["alternative_technical_survey"]["editorial_integration"][
-            "author_confirmed_deferrals"]
+        if args.frozen_prisma:
+            deferrals = json.loads((HERE / "s2_author_confirmed_deferrals.json").read_text())
+        else:
+            state = json.loads((PROJECT / "MUST_READ_AI_AGENT/current_state.json").read_text())
+            deferrals = state["evidence"]["alternative_technical_survey"]["editorial_integration"][
+                "author_confirmed_deferrals"]
         assessed_ids = ledger["report_ids_by_retrieval_decision"]["RETRIEVED_PDF"]
         source = (HERE / "human_adjudication_log.csv").read_text(encoding="utf-8-sig")
         report = build_report(load_rows(source, review_log(), set(assessed_ids)), ledger, deferrals)

@@ -1,8 +1,4 @@
 {
-  "baseline_commit": "ff1cf4b",
-  "protocol": "restart_2026_11_26/extraction/rq5_uniform/rule.md",
-  "source_index_brief": "restart_2026_11_26/extraction/rq5_uniform/source_index_brief.md",
-  "message_id": "hk261-editorial-rq5-source-map-ff1cf4b",
   "inputs": [
     {
       "report_id": "R0001",
@@ -185,6 +181,12 @@
       "sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5"
     },
     {
+      "report_id": "R0082",
+      "study_id": "S047",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0082.pdf",
+      "sha256": "f3e0dd1ffad3178604921574f7b9ef2fdad34167cbbb792f7e9531ca28f8a775"
+    },
+    {
       "report_id": "R0083",
       "study_id": "S022",
       "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0083.pdf",
@@ -233,12 +235,6 @@
       "sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38"
     },
     {
-      "report_id": "R0113",
-      "study_id": "S040",
-      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
-      "sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132"
-    },
-    {
       "report_id": "R0118",
       "study_id": "S041",
       "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
@@ -281,11 +277,7 @@
       "sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee"
     }
   ],
-  "fixed_pending": [
-    "R0081",
-    "R0082",
-    "R0132"
-  ],
+  "fixed_pending": {},
   "fixed_unretrieved": [
     "R0116"
   ]

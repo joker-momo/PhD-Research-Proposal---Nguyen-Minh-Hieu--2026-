@@ -531,6 +531,32 @@
         "prisma",
         "reproduction"
       ]
+    },
+    {
+      "artifact_id": "hk261-final-46-synthesis-reconciliation",
+      "name": "HK261 final 46-study synthesis",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/reconcile_inputs.py",
+      "purpose": "Recompute included-study, appraisal and outcome data by final eligibility ID with a source-checked R0082 delta.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/reconcile_inputs.py\" [--check]",
+      "inputs": [
+        "Verified PRISMA ledger",
+        "locked comparison extraction and appraisal",
+        "R0082 evidence and PDF SHA-256"
+      ],
+      "outputs": [
+        "13 final 46-study inputs, claim indexes, manifest and census"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py"
+      ],
+      "test_command": "python3 -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py\"",
+      "status": "active",
+      "tags": [
+        "HK261",
+        "PRISMA",
+        "synthesis",
+        "evidence"
+      ]
     }
   ]
 }

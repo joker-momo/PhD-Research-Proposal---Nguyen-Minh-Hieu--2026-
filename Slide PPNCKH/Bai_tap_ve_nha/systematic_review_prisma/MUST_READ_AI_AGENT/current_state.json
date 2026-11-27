@@ -1,28 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T18:46:09+07:00",
+  "updated_at": "2026-11-27T18:49:15+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "author_eligibility_reconciled_synthesis_update_pending",
-    "summary": "Current eligibility: 46 included, 90 excluded, none awaiting classification. The previous 46-study comparison PDF and synthesis freeze have R0113 in place of R0082."
+    "status": "author_eligibility_and_final_46_comparison_reconciled",
+    "summary": "The final 46-study LaTeX/PDF comparison is built and audited. PRISMA: 46 included, 90 excluded, zero awaiting classification. R0082 replaces R0113 relative to the previous 46-study comparison; R0292 remains included."
   },
   "task": {
     "task_id": "hk261-synthesis-reconciliation-final-46",
     "owner": "CODEX_WRITING",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-27T18:35:09+07:00",
-    "updated_at": "2026-11-27T18:46:09+07:00",
-    "decision_id": "hk261-synthesis-reconciliation-final-46-v1",
-    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/r0082_correction_review.md"
+    "updated_at": "2026-11-27T18:49:15+07:00",
+    "decision_id": "hk261-synthesis-reconciliation-final-46-v2",
+    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/release_review.md",
+    "completed_at": "2026-11-27T18:49:15+07:00"
   },
   "next_task": {
-    "task_id": "hk261-r0082-arxiv-exact-geometry",
-    "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Correct the two repeated geometry anchors on R0082 physical p. 5.",
-    "acceptance": "Two keyed exact locators or explicit shortfalls.",
-    "dispatch_brief": "restart_2026_11_26/synthesis/final_46/r0082_locator_brief.md",
-    "message_id": "hk261-final46-r0082-geometry-20261127"
+    "task_id": "hk261-author-comparison",
+    "owner": "CODEX_WRITING",
+    "status": "none",
+    "action": "The author can compare the preserved PDFs on the task branch.",
+    "acceptance": "No release action is authorized by this completed comparison task."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -66,7 +65,7 @@
     },
     "approved_plan": "restart_2026_11_26/approved_plan.md",
     "progress_tracker": "restart_2026_11_26/progress.json",
-    "manuscript_status": "PREVIOUS_46_STUDY_COMPARISON_PDF_SYNTHESIS_RECONCILIATION_PENDING"
+    "manuscript_status": "FINAL_46_COMPARISON_PDF_BUILT_AND_VERIFIED"
   },
   "evidence": {
     "retrieval_reports": 136,
@@ -760,7 +759,9 @@
           "comparison_pdf_snapshot": "46-study selection and earlier S2 audit"
         }
       },
-      "reports_awaiting_classification": []
+      "reports_awaiting_classification": [],
+      "scope": "previous_46_study_comparison_with_current_s2_checkpoint",
+      "superseded_by": "evidence.final_46_comparison"
     },
     "borderline_author_review": {
       "report": "restart_2026_11_26/integrity/borderline_author_review/report.md",
@@ -788,6 +789,56 @@
         "R0145": "INCLUDE",
         "R0223": "INCLUDE",
         "R0292": "INCLUDE"
+      }
+    },
+    "final_46_comparison": {
+      "review": "restart_2026_11_26/synthesis/final_46/release_review.md",
+      "completed_at": "2026-11-27T18:49:15+07:00",
+      "manuscript": "manuscript/sn_computer_science/main.tex",
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "50f4bfcb0be9b173c9babf5e3c921a2a14afcfaa57ea008f72b7964d3c330376",
+      "previous_pdf": "manuscript/sn_computer_science/comparison_previous_46.pdf",
+      "previous_pdf_sha256": "93e136dfacda0b383eb58007292c1a70872b3bd66972ebc78c86418984b1aa4f",
+      "previous_pdf_commit": "92edf84",
+      "pages": 29,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "corpus_delta": {
+        "added": [
+          "R0082"
+        ],
+        "removed": [
+          "R0113"
+        ],
+        "retained_priority": [
+          "R0292"
+        ]
+      },
+      "recomputed_counts": "restart_2026_11_26/synthesis/final_46/recomputed_counts.json",
+      "r0082_review": "restart_2026_11_26/synthesis/final_46/r0082_review.md",
+      "r0082_publisher_pdf_verified": false,
+      "paired_independent_human_decisions": 0,
+      "author_final_decisions": 8,
+      "reports_without_author_confirmation": 128,
+      "changed_among_author_processed": "4/8",
+      "changed_among_final_decisions": "4/8",
+      "supplements": {
+        "s2": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+        "s3": "manuscript/sn_computer_science/supplement_s3.md",
+        "s4": "manuscript/sn_computer_science/supplement_evidence_index.md",
+        "s4_claims": "manuscript/sn_computer_science/s4_claim_audit.md"
+      },
+      "package": "manuscript/sn_computer_science/minh_chung_hinh_bang/README.md",
+      "package_independent_rebuild": "29/29 rendered pages matched; 5 figures, 8 tables and 3 equations indexed",
+      "r0082_provider": {
+        "primary": "b62a3afe-8942-49e3-acf6-2197062d963e",
+        "correction": "f6696609-30c3-41a0-8d7e-808373512953",
+        "locator": "37716cab-71cd-4f3a-8434-2b9ac76f1f15",
+        "final_locator_gate": "PASS",
+        "locator_chat_cleanup": "deleted"
       }
     }
   },

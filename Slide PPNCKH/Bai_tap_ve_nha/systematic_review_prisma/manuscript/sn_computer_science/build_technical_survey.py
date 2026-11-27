@@ -194,7 +194,7 @@ def main():
                 parser.exit(1, "Stale generated input: " + name + "\n")
         else:
             path.write_text(content)
-    print("PASS: 46/46 studies in Table 2, Table 3, and sections 4--5. Ten appraisal domains.")
+    print("PASS: 46/46 studies in Tables 3 and 4 and sections 4--5. Ten appraisal domains.")
 
 
 if __name__ == "__main__":
