@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:37:04+07:00",
+  "updated_at": "2026-11-27T13:37:41+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_appraisal_in_progress",
@@ -11,18 +11,19 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T13:37:04+07:00",
-    "updated_at": "2026-11-27T13:37:04+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
+    "updated_at": "2026-11-27T13:37:41+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_01_dispatch.json",
     "decision_id": "restart-supplemental-appraisal-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-appraisal-batch-01",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "restart-supplemental-appraisal-batch-01-collect",
+    "owner": "CODEX_WRITING",
     "status": "ready",
     "dispatch_brief": "restart_2026_11_26/appraisal/supplemental_batch_01_brief.md",
     "message_id": "d9a68200-7898-41c0-92e8-036b60ccf4c6",
     "acceptance": "77 unique ID/key pairs, physical page and source rationale for all 70 domains, independent acceptance and verified Task cleanup.",
-    "action": "Dispatch native P09 appraisal batch 01 exactly once, then verify against original PDFs."
+    "action": "Retrieve the already dispatched Task by UUID and independently inspect the originals. Do not resend.",
+    "task_uuid": "c00d2a32-b348-45ea-b0b4-204f0aed5fef"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -490,12 +491,14 @@
       "studies_verified": 46
     },
     "supplemental_appraisal": {
-      "status": "BATCH_01_READY",
+      "status": "BATCH_01_SUBMITTED",
       "manifest": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
       "baseline_reports": 25,
       "supplemental_reports_required": 21,
       "supplemental_reports_accepted": 0,
-      "required_domain_judgments": 210
+      "required_domain_judgments": 210,
+      "batch_01_uuid": "c00d2a32-b348-45ea-b0b4-204f0aed5fef",
+      "batch_01_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_01_dispatch.json"
     }
   },
   "blockers": [],
