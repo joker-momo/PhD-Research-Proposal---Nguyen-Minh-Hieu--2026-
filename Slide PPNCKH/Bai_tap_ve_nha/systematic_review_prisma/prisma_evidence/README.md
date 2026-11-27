@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T08:21:37+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T08:22:28+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -596,7 +596,7 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
 <a id="buoc-16"></a>
 ## Bước 16 · Kiểm định và bàn giao
 
-**Đã chốt theo sổ tiến độ** · `2026-11-27T08:21:37+07:00`
+**Đã chốt theo sổ tiến độ** · `2026-11-27T08:22:28+07:00`
 
 Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
 
@@ -613,7 +613,6 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
 - [source_audit_dispatch.json](../restart_2026_11_26/integrity/source_audit_dispatch.json)
 - [source_audit_native_payload.json](../restart_2026_11_26/integrity/source_audit_native_payload.json)
 - [source_audit_primary_review.md](../restart_2026_11_26/integrity/source_audit_primary_review.md)
-- [source_audit_raw.json](../restart_2026_11_26/integrity/source_audit_raw.json)
 - [source_audit_recovery.json](../restart_2026_11_26/integrity/source_audit_recovery.json)
 - [source_audit_transport_failure.json](../restart_2026_11_26/integrity/source_audit_transport_failure.json)
 - [main.tex](../manuscript/sn_computer_science/main.tex)

@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T08:21:37+07:00",
+  "updated_at": "2026-11-27T08:22:28+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -1156,7 +1156,7 @@
       "owner": "CODEX_WRITING + GEMINI_RESEARCH",
       "status": "completed",
       "started_at": "2026-11-27T08:06:16+07:00",
-      "updated_at": "2026-11-27T08:21:37+07:00",
+      "updated_at": "2026-11-27T08:22:28+07:00",
       "completed_at": "2026-11-27T08:21:37+07:00",
       "artifacts": [
         "restart_2026_11_26/integrity/HK261-PRISMA-restart-LaTeX-PDF-data.zip",
@@ -1172,7 +1172,6 @@
         "restart_2026_11_26/integrity/source_audit_dispatch.json",
         "restart_2026_11_26/integrity/source_audit_native_payload.json",
         "restart_2026_11_26/integrity/source_audit_primary_review.md",
-        "restart_2026_11_26/integrity/source_audit_raw.json",
         "restart_2026_11_26/integrity/source_audit_recovery.json",
         "restart_2026_11_26/integrity/source_audit_transport_failure.json",
         "manuscript/sn_computer_science/main.tex",

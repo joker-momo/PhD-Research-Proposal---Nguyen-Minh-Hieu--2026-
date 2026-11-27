@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T08:21:37+07:00",
+  "updated_at": "2026-11-27T08:22:28+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -11,7 +11,7 @@
     "owner": "CODEX_WRITING",
     "status": "completed",
     "started_at": "2026-11-27T08:06:16+07:00",
-    "updated_at": "2026-11-27T08:21:37+07:00",
+    "updated_at": "2026-11-27T08:22:28+07:00",
     "checkpoint_path": "restart_2026_11_26/integrity/final_integrity_audit.md",
     "decision_id": "restart-16-integrity-v1",
     "completed_at": "2026-11-27T08:21:37+07:00"
