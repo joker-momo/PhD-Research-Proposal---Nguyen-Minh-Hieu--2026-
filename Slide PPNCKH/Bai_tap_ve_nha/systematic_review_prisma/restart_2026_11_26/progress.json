@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T14:36:55+07:00",
+  "updated_at": "2026-11-27T14:39:56+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -1329,7 +1329,8 @@
         "restart_2026_11_26/prisma/reconcile.py",
         "restart_2026_11_26/prisma/reconciliation_review.md",
         "restart_2026_11_26/prisma/test_reconcile.py",
-        "restart_2026_11_26/prisma/active_reconciliation_review.md"
+        "restart_2026_11_26/prisma/active_reconciliation_review.md",
+        "restart_2026_11_26/prisma/active_prisma_checklist.md"
       ],
       "acceptance": [
         {
@@ -1384,7 +1385,22 @@
         ],
         "ledger_sha256": "fb3735667bceea491daacdd22db88b0e9e56a036f3f6b53120897203f530ff12",
         "flow_sha256": "770e7d8418c14ee36eb583079b41aa6eb9832ff69519bfc28d5f0a8101ad473e",
-        "unexplained_arithmetic_differences": 0
+        "unexplained_arithmetic_differences": 0,
+        "checklist": "restart_2026_11_26/prisma/active_prisma_checklist.md",
+        "checklist_sha256": "6106c6f3907a4b997b4b612199a3e21760b1eabb2036092a819627c2fdee1a6b",
+        "checklist_items_verified": 27,
+        "checklist_locators_verified": 46,
+        "checklist_status_counts": {
+          "Evidence available": 8,
+          "Pending manuscript revision": 1,
+          "Partial evidence": 9,
+          "Not performed": 4,
+          "Pending synthesis": 2,
+          "Pending synthesis and revision": 1,
+          "Awaiting author confirmation": 2
+        },
+        "final_pdf_page_locators": "PENDING_STEP_16",
+        "checklist_completed_at": "2026-11-27T14:39:56+07:00"
       }
     },
     {

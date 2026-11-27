@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T14:36:55+07:00",
+  "updated_at": "2026-11-27T14:39:56+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "supplemental_prisma_reconciled",
-    "summary": "Active PRISMA reconciles 46 studies. Expanded synthesis and the SN Computer Science LaTeX/PDF are pending."
+    "status": "supplemental_prisma_step13_complete",
+    "summary": "Active PRISMA reconciles 46 studies and the working checklist verifies all 27 items. Final PDF page locators are pending step 16."
   },
   "task": {
-    "task_id": "restart-supplemental-prisma",
+    "task_id": "restart-supplemental-prisma-checklist",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T14:35:33+07:00",
-    "updated_at": "2026-11-27T14:36:55+07:00",
-    "completed_at": "2026-11-27T14:36:55+07:00",
-    "checkpoint_path": "restart_2026_11_26/prisma/active_reconciliation_review.md",
-    "decision_id": "restart-supplemental-prisma-v1"
+    "started_at": "2026-11-27T14:38:19+07:00",
+    "updated_at": "2026-11-27T14:39:56+07:00",
+    "completed_at": "2026-11-27T14:39:56+07:00",
+    "checkpoint_path": "restart_2026_11_26/prisma/active_prisma_checklist.md",
+    "decision_id": "restart-supplemental-prisma-checklist-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-synthesis-setup",
+    "task_id": "restart-supplemental-synthesis-inputs",
     "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Prepare the expanded RQ1–RQ5 synthesis with active P08/P09 and the reconciled PRISMA ledger, then revise the SN Computer Science manuscript.",
-    "acceptance": "Every adopted claim has included-study source evidence and conditions. Keep author approvals and unresolved full texts explicit."
+    "action": "Verify the accepted PRISMA/P07/P08/P09 hashes and 46 report-study identities. Prepare a mechanical source index for step 14.",
+    "acceptance": "Exact 46 report-study crosswalk, file checksums, and no new claim or provider dispatch."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -583,7 +583,22 @@
       ],
       "ledger_sha256": "fb3735667bceea491daacdd22db88b0e9e56a036f3f6b53120897203f530ff12",
       "flow_sha256": "770e7d8418c14ee36eb583079b41aa6eb9832ff69519bfc28d5f0a8101ad473e",
-      "unexplained_arithmetic_differences": 0
+      "unexplained_arithmetic_differences": 0,
+      "checklist": "restart_2026_11_26/prisma/active_prisma_checklist.md",
+      "checklist_sha256": "6106c6f3907a4b997b4b612199a3e21760b1eabb2036092a819627c2fdee1a6b",
+      "checklist_items_verified": 27,
+      "checklist_locators_verified": 46,
+      "checklist_status_counts": {
+        "Evidence available": 8,
+        "Pending manuscript revision": 1,
+        "Partial evidence": 9,
+        "Not performed": 4,
+        "Pending synthesis": 2,
+        "Pending synthesis and revision": 1,
+        "Awaiting author confirmation": 2
+      },
+      "final_pdf_page_locators": "PENDING_STEP_16",
+      "checklist_completed_at": "2026-11-27T14:39:56+07:00"
     }
   },
   "blockers": [],

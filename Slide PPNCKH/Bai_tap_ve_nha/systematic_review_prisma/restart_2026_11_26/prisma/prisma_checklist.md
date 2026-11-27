@@ -1,6 +1,6 @@
 # PRISMA 2020 reporting checklist — HK261 restart
 
-This checklist applies to the 25-study manuscript revision. Page locators for the expanded corpus are pending its final PDF. See the [active PRISMA reconciliation](active_reconciliation_review.md) for the current study selection.
+This checklist applies to the 25-study manuscript revision. Page locators for the expanded corpus are pending its final PDF. See the [46-study working checklist](active_prisma_checklist.md) for the active reporting checkpoint.
 
 Reporting references follow [Page et al., BMJ 2021;372:n71](https://doi.org/10.1136/bmj.n71) and the [official detailed checklist](https://www.prisma-statement.org/prisma-2020-checklist). Each row accounts for one numbered item and its lettered subitems. Page numbers refer to the [coursework PDF](../../manuscript/sn_computer_science/main.pdf).
 
