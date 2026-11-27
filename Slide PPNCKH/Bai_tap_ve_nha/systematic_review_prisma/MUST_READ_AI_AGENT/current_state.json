@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:37:41+07:00",
+  "updated_at": "2026-11-27T13:43:15+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_appraisal_in_progress",
@@ -11,19 +11,18 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T13:37:04+07:00",
-    "updated_at": "2026-11-27T13:37:41+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_01_dispatch.json",
+    "updated_at": "2026-11-27T13:43:15+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_01_review.md",
     "decision_id": "restart-supplemental-appraisal-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-appraisal-batch-01-collect",
-    "owner": "CODEX_WRITING",
+    "task_id": "restart-supplemental-appraisal-batch-01-correction",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "dispatch_brief": "restart_2026_11_26/appraisal/supplemental_batch_01_brief.md",
-    "message_id": "d9a68200-7898-41c0-92e8-036b60ccf4c6",
-    "acceptance": "77 unique ID/key pairs, physical page and source rationale for all 70 domains, independent acceptance and verified Task cleanup.",
-    "action": "Retrieve the already dispatched Task by UUID and independently inspect the originals. Do not resend.",
-    "task_uuid": "c00d2a32-b348-45ea-b0b4-204f0aed5fef"
+    "action": "Dispatch one focused correction for the failed or unbounded keys of P09 batch 01.",
+    "acceptance": "30 unique source-grounded corrected domain judgments, precise physical pages, valid JSONL, independent acceptance and verified cleanup.",
+    "dispatch_brief": "restart_2026_11_26/appraisal/supplemental_batch_01_correction_brief.md",
+    "message_id": "e275aed5-c798-42a0-9104-d1dff677252c"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -491,14 +490,17 @@
       "studies_verified": 46
     },
     "supplemental_appraisal": {
-      "status": "BATCH_01_SUBMITTED",
+      "status": "BATCH_01_CORRECTION_READY",
       "manifest": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
       "baseline_reports": 25,
       "supplemental_reports_required": 21,
       "supplemental_reports_accepted": 0,
       "required_domain_judgments": 210,
       "batch_01_uuid": "c00d2a32-b348-45ea-b0b4-204f0aed5fef",
-      "batch_01_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_01_dispatch.json"
+      "batch_01_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_01_dispatch.json",
+      "batch_01_provider_gate": "FAIL",
+      "batch_01_correction_key_count": 30,
+      "batch_01_review": "restart_2026_11_26/appraisal/supplemental_batch_01_review.md"
     }
   },
   "blockers": [],

@@ -1,0 +1,172 @@
+{
+  "provider_state": "TASK_STATE_COMPLETED",
+  "expected_pairs": 77,
+  "received_pairs": 76,
+  "valid_anchors": 116,
+  "state_counts": {
+    "READ": 7,
+    "YES": 24,
+    "PARTIAL": 39,
+    "NOT_REPORTED": 5,
+    "NO": 1
+  },
+  "missing": [
+    [
+      "R0036",
+      "D05"
+    ]
+  ],
+  "bad_pairs": [
+    [
+      "R0036",
+      "D06"
+    ],
+    [
+      "R0038",
+      "D09"
+    ],
+    [
+      "R0043",
+      "D03"
+    ],
+    [
+      "R0043",
+      "D09"
+    ],
+    [
+      "R0058",
+      "D02"
+    ],
+    [
+      "R0058",
+      "D04"
+    ],
+    [
+      "R0058",
+      "D05"
+    ],
+    [
+      "R0058",
+      "D06"
+    ],
+    [
+      "R0058",
+      "D07"
+    ],
+    [
+      "R0058",
+      "D08"
+    ],
+    [
+      "R0064",
+      "D05"
+    ],
+    [
+      "R0075",
+      "D01"
+    ]
+  ],
+  "errors": [
+    [
+      17,
+      null,
+      null,
+      "invalid JSONL: Expecting ',' delimiter: line 1 column 189 (char 188)"
+    ],
+    [
+      18,
+      "R0036",
+      "D06",
+      "excerpt mismatch on physical page 12; other pages []"
+    ],
+    [
+      32,
+      "R0038",
+      "D09",
+      "excerpt mismatch on physical page 4; other pages [3]"
+    ],
+    [
+      37,
+      "R0043",
+      "D03",
+      "excerpt mismatch on physical page 5; other pages []"
+    ],
+    [
+      43,
+      "R0043",
+      "D09",
+      "excerpt mismatch on physical page 5; other pages []"
+    ],
+    [
+      43,
+      "R0043",
+      "D09",
+      "missing positive or adverse original anchor"
+    ],
+    [
+      47,
+      "R0058",
+      "D02",
+      "excerpt mismatch on physical page 8; other pages []"
+    ],
+    [
+      49,
+      "R0058",
+      "D04",
+      "excerpt mismatch on physical page 20; other pages []"
+    ],
+    [
+      50,
+      "R0058",
+      "D05",
+      "excerpt mismatch on physical page 3; other pages []"
+    ],
+    [
+      50,
+      "R0058",
+      "D05",
+      "missing positive or adverse original anchor"
+    ],
+    [
+      51,
+      "R0058",
+      "D06",
+      "excerpt mismatch on physical page 22; other pages []"
+    ],
+    [
+      52,
+      "R0058",
+      "D07",
+      "excerpt mismatch on physical page 21; other pages []"
+    ],
+    [
+      53,
+      "R0058",
+      "D08",
+      "missing or noncontiguous excerpt"
+    ],
+    [
+      61,
+      "R0064",
+      "D05",
+      "excerpt mismatch on physical page 11; other pages []"
+    ],
+    [
+      68,
+      "R0075",
+      "D01",
+      "excerpt mismatch on physical page 4; other pages [2]"
+    ]
+  ],
+  "summary": {
+    "id": "SUMMARY",
+    "report_count": 7,
+    "key_count": 77,
+    "tools_used": [
+      "client:view_file"
+    ],
+    "no_workers_used": true,
+    "unresolved": [],
+    "metadata_needed": []
+  }
+}
