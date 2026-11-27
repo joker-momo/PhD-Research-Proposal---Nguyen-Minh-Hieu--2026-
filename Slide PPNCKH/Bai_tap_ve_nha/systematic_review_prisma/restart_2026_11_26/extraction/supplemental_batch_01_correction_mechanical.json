@@ -1,0 +1,476 @@
+{
+  "id": "f80b8621-d974-443f-9f92-5e29c0dd7895",
+  "context_id": "87ef76d8-ba6d-4ae1-b2ef-966d122ed36c",
+  "native_state": "TASK_STATE_COMPLETED",
+  "expected_keys": 47,
+  "unique_keys": 47,
+  "missing_keys": [],
+  "duplicates": [],
+  "marker_final": true,
+  "summaries": 1,
+  "summary": {
+    "keys_returned": 47,
+    "unresolved": [],
+    "tools": [
+      "client:list_dir",
+      "client:view_file"
+    ],
+    "workers_used": 0
+  },
+  "pdf_sha256_match": {
+    "R0014": true,
+    "R0036": true,
+    "R0038": true,
+    "R0043": true,
+    "R0058": true,
+    "R0064": true,
+    "R0075": true
+  },
+  "locators": {
+    "EXACT_MATCH": 45,
+    "FAIL": 3,
+    "INSPECTED_ABSENCE_LOCATOR": 2
+  },
+  "failure_keys": [
+    [
+      "R0014",
+      "evaluation"
+    ],
+    [
+      "R0058",
+      "architecture"
+    ],
+    [
+      "R0058",
+      "mobility_continuity"
+    ]
+  ],
+  "errors": [
+    {
+      "line": 2,
+      "id": "R0014",
+      "key": "evaluation",
+      "issue": "excerpt mismatch on physical page 11; other pages [10]",
+      "page": 11,
+      "section": "VIII.A Evaluation Setup"
+    },
+    {
+      "line": 26,
+      "id": "R0058",
+      "key": "architecture",
+      "issue": "excerpt mismatch on physical page 5; other pages []",
+      "page": 5,
+      "section": "3.1. Inference offloading model"
+    },
+    {
+      "line": 30,
+      "id": "R0058",
+      "key": "mobility_continuity",
+      "issue": "excerpt mismatch on physical page 10; other pages []",
+      "page": 10,
+      "section": "4.1. Overview of UAV inference offloading process"
+    }
+  ],
+  "checks": [
+    {
+      "line": 1,
+      "id": "R0014",
+      "key": "compute_radio",
+      "page": 10,
+      "section": "VIII.A Evaluation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 1,
+      "id": "R0014",
+      "key": "compute_radio",
+      "page": 11,
+      "section": "VIII.A Evaluation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 2,
+      "id": "R0014",
+      "key": "evaluation",
+      "page": 10,
+      "section": "VIII.A Evaluation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 2,
+      "id": "R0014",
+      "key": "evaluation",
+      "page": 11,
+      "section": "VIII.A Evaluation Setup",
+      "result": "FAIL"
+    },
+    {
+      "line": 3,
+      "id": "R0014",
+      "key": "mobility_continuity",
+      "page": 13,
+      "section": "VIII.C Performance of Elastic Efficient Scheduler",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 4,
+      "id": "R0014",
+      "key": "optimization",
+      "page": 6,
+      "section": "IV.A Inter-Cluster Load Balancing",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 5,
+      "id": "R0014",
+      "key": "outcomes",
+      "page": 12,
+      "section": "VIII.B Overall Performance",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 6,
+      "id": "R0036",
+      "key": "architecture",
+      "page": 5,
+      "section": "III.A System Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 7,
+      "id": "R0036",
+      "key": "code_data",
+      "page": 10,
+      "section": "VI. PERFORMANCE EVALUATION",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 8,
+      "id": "R0036",
+      "key": "compute_radio",
+      "page": 12,
+      "section": "VI. PERFORMANCE EVALUATION",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 9,
+      "id": "R0036",
+      "key": "limitations",
+      "page": 13,
+      "section": "VII. CONCLUSION AND FUTURE WORK",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 10,
+      "id": "R0036",
+      "key": "mobility_continuity",
+      "page": 11,
+      "section": "VI. PERFORMANCE EVALUATION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 11,
+      "id": "R0036",
+      "key": "outcomes",
+      "page": 11,
+      "section": "VI. PERFORMANCE EVALUATION",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 12,
+      "id": "R0036",
+      "key": "variability",
+      "page": 12,
+      "section": "VI. PERFORMANCE EVALUATION",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 13,
+      "id": "R0036",
+      "key": "workload",
+      "page": 10,
+      "section": "VI. PERFORMANCE EVALUATION",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 14,
+      "id": "R0038",
+      "key": "baselines",
+      "page": 5,
+      "section": "V.B Experimental Results",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 15,
+      "id": "R0038",
+      "key": "limitations",
+      "page": 5,
+      "section": "V.B Experimental Results",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 16,
+      "id": "R0038",
+      "key": "mobility_continuity",
+      "page": 5,
+      "section": "V.B Experimental Results",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 17,
+      "id": "R0038",
+      "key": "outcomes",
+      "page": 5,
+      "section": "V.B Experimental Results",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 18,
+      "id": "R0038",
+      "key": "variability",
+      "page": 5,
+      "section": "V.B Experimental Results",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 19,
+      "id": "R0043",
+      "key": "compute_radio",
+      "page": 5,
+      "section": "IV.A Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 20,
+      "id": "R0043",
+      "key": "evaluation",
+      "page": 5,
+      "section": "IV.A Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 21,
+      "id": "R0043",
+      "key": "optimization",
+      "page": 4,
+      "section": "III.B Offloading Strategy Based on DIA-O",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 22,
+      "id": "R0043",
+      "key": "outcomes",
+      "page": 5,
+      "section": "IV.B Experiment Result",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 23,
+      "id": "R0043",
+      "key": "partition_assignment",
+      "page": 4,
+      "section": "III.A Partitioning Strategy Based on DIA-FP",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 24,
+      "id": "R0043",
+      "key": "workload",
+      "page": 5,
+      "section": "IV.A Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 25,
+      "id": "R0058",
+      "key": "access",
+      "page": 19,
+      "section": "6.1. Simulation settings",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 26,
+      "id": "R0058",
+      "key": "architecture",
+      "page": 5,
+      "section": "3.1. Inference offloading model",
+      "result": "FAIL"
+    },
+    {
+      "line": 27,
+      "id": "R0058",
+      "key": "baselines",
+      "page": 19,
+      "section": "6.1. Simulation settings",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 28,
+      "id": "R0058",
+      "key": "code_data",
+      "page": 19,
+      "section": "6.1. Simulation settings",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 29,
+      "id": "R0058",
+      "key": "compute_radio",
+      "page": 19,
+      "section": "6.1. Simulation settings",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 30,
+      "id": "R0058",
+      "key": "mobility_continuity",
+      "page": 10,
+      "section": "4.1. Overview of UAV inference offloading process",
+      "result": "FAIL"
+    },
+    {
+      "line": 31,
+      "id": "R0058",
+      "key": "optimization",
+      "page": 11,
+      "section": "4.2. Offloading problem modeling and bidding objectives",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 32,
+      "id": "R0058",
+      "key": "outcomes",
+      "page": 20,
+      "section": "6.2. Comparison of inference latency and accuracy",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 33,
+      "id": "R0058",
+      "key": "partition_assignment",
+      "page": 9,
+      "section": "3.4. Problem formulation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 34,
+      "id": "R0058",
+      "key": "variability",
+      "page": 21,
+      "section": "6.3. Performance evaluation in dynamic environments",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 35,
+      "id": "R0064",
+      "key": "architecture",
+      "page": 4,
+      "section": "3. System model and problem formulation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 36,
+      "id": "R0064",
+      "key": "compute_radio",
+      "page": 5,
+      "section": "3.3.2. Edge offloading",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 37,
+      "id": "R0064",
+      "key": "mobility_continuity",
+      "page": 4,
+      "section": "3.1.1. UAV mobility model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 38,
+      "id": "R0064",
+      "key": "optimization",
+      "page": 7,
+      "section": "4.2. MAPPO-HA algorithm",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 39,
+      "id": "R0064",
+      "key": "outcomes",
+      "page": 9,
+      "section": "5.2.2. Impact of communication bandwidth",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 40,
+      "id": "R0064",
+      "key": "variability",
+      "page": 9,
+      "section": "5.1. Simulation setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 40,
+      "id": "R0064",
+      "key": "variability",
+      "page": 9,
+      "section": "5.2.2. Impact of communication bandwidth",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 41,
+      "id": "R0064",
+      "key": "workload",
+      "page": 8,
+      "section": "5.1. Simulation setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 42,
+      "id": "R0075",
+      "key": "architecture",
+      "page": 4,
+      "section": "III.A Task Definition",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 43,
+      "id": "R0075",
+      "key": "optimization",
+      "page": 7,
+      "section": "III.D Online Inference: Master-Sequential LinUCB Routing",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 44,
+      "id": "R0075",
+      "key": "outcomes",
+      "page": 10,
+      "section": "IV.B Results Analysis",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 45,
+      "id": "R0075",
+      "key": "partition_assignment",
+      "page": 4,
+      "section": "III.C Offline Training: Multi-Exit Feature Alignment",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 46,
+      "id": "R0075",
+      "key": "variability",
+      "page": 13,
+      "section": "IV.D Additional Validation and Ablation Studies",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 47,
+      "id": "R0075",
+      "key": "workload",
+      "page": 9,
+      "section": "IV.A Experimental Setup",
+      "result": "EXACT_MATCH"
+    }
+  ]
+}

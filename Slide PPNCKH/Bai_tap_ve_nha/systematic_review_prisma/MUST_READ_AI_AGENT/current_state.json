@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T12:59:38+07:00",
+  "updated_at": "2026-11-27T13:03:53+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_extraction_in_progress",
@@ -11,22 +11,16 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T12:51:10+07:00",
-    "updated_at": "2026-11-27T12:59:38+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_01_review.md",
+    "updated_at": "2026-11-27T13:03:53+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_01_correction_review.md",
     "decision_id": "restart-supplemental-extraction-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-extraction-batch01-correction",
-    "owner": "GEMINI_RESEARCH",
-    "status": "active",
-    "action": "Collect the original correction UUID and review 47 requested keys.",
-    "acceptance": "47 exact unique keys with original physical-page locators or explicit gaps, no numerical result claims.",
-    "dispatch_brief": "restart_2026_11_26/extraction/supplemental_batch_01_correction_brief.md",
-    "message_id": "fa06b32e-dee4-48f9-8f82-81711702b425",
-    "parent_bridge_task_id": "15cbc890-5eb8-41d6-ad0a-52686af3dd74",
-    "bridge_task_id": "f80b8621-d974-443f-9f92-5e29c0dd7895",
-    "bridge_context_id": "87ef76d8-ba6d-4ae1-b2ef-966d122ed36c",
-    "dispatch_receipt": "restart_2026_11_26/extraction/supplemental_batch_01_correction_dispatch.json"
+    "task_id": "restart-supplemental-extraction-batch01-semantic-review",
+    "owner": "CODEX_WRITING",
+    "status": "ready",
+    "action": "Verify the corrected and retained original batch 01 claims against their original PDF pages in bounded report groups. Then authorize only the unresolved keys for targeted repair.",
+    "acceptance": "All 7 reports have exact, relevant source support or documented absence for all 91 required fields before batch 02."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -450,7 +444,24 @@
       "batch_01_verdict": "FAIL_EXACT_LOCATORS_AND_JSONL",
       "batch_01_review": "restart_2026_11_26/extraction/supplemental_batch_01_review.md",
       "batch_01_original_uuid": "15cbc890-5eb8-41d6-ad0a-52686af3dd74",
-      "batch_01_correction_keys": "restart_2026_11_26/extraction/supplemental_batch_01_correction_keys.json"
+      "batch_01_correction_keys": "restart_2026_11_26/extraction/supplemental_batch_01_correction_keys.json",
+      "batch_01_correction_verdict": "FAIL_THREE_LOCATORS_SEMANTIC_REVIEW_OPEN",
+      "batch_01_correction_uuid": "f80b8621-d974-443f-9f92-5e29c0dd7895",
+      "batch_01_correction_review": "restart_2026_11_26/extraction/supplemental_batch_01_correction_review.md",
+      "batch_01_correction_unresolved_locator_keys": [
+        [
+          "R0014",
+          "evaluation"
+        ],
+        [
+          "R0058",
+          "architecture"
+        ],
+        [
+          "R0058",
+          "mobility_continuity"
+        ]
+      ]
     }
   },
   "blockers": [],
