@@ -1,0 +1,36 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=21mm]{geometry}
+\usepackage{fontspec,booktabs,longtable,xcolor,hyperref}
+\setmainfont{Times New Roman}
+\hypersetup{colorlinks=true,urlcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries HK261 — Đối chiếu dữ liệu với PDF gốc}\\[4pt]
+{Báo cáo hỗ trợ tác giả xác nhận}
+\end{center}
+\input{report_data.tex}
+\section*{Cách đọc bảng từng mục}
+Bảng \texttt{source\_review\_887.csv} chứa mã hồ sơ, loại kiểm tra, khóa, tên và SHA-256
+của PDF. Mỗi lượt có các cột trạng thái, kết luận, trang vật lý, trích đoạn và ghi chú.
+Vị trí gợi ý trong phiếu chỉ dùng để tìm kiếm. Ưu tiên vị trí ở cột của lượt đã đối chiếu.
+\begin{description}
+\item[VERIFIED] Lượt rà cho rằng căn cứ PDF hỗ trợ kết luận đã ghi.
+\item[PARTIAL] Căn cứ chỉ hỗ trợ một phần của nhận định hoặc chưa đủ chi tiết.
+\item[DISCREPANCY] Lượt đối chiếu phát hiện khác biệt với dữ liệu đã trích.
+\item[NOT\_REPORTED] Lượt rà chưa tìm được thông tin trong phần nguồn đã kiểm tra.
+\item[UNRESOLVED] Lượt rà ghi lý do chưa thể xác minh.
+\item[MISSING\_PASS] Chưa có mục trả về trong lượt tương ứng.
+\end{description}
+Neo khớp văn bản chỉ xác nhận chuỗi chữ có trên trang. Một kết luận về số liệu còn
+cần đúng hàng/cột, đơn vị, mẫu số và điều kiện đo. Một kết luận về thẩm định
+còn cần áp dụng đúng tiêu chí. Trang vật lý bắt đầu từ 1.
+
+Với R0082, SHA-256 trong bảng nhận diện bản PDF đóng băng trong phiếu. Khi lượt rà
+có đối chiếu thêm bản IEEE do tác giả cung cấp, ghi chú của mục nêu rõ điều đó
+và biên bản kiểm tra ấn bản nằm trong \texttt{r0082\_publisher\_crosscheck.json}.
+
+Bảng này lưu kết quả rà hỗ trợ bằng AI để tác giả xem lại. Phiếu R1/R2, S2
+và số đếm PRISMA (46 đưa vào, 90 loại, 0 chờ) giữ nguyên.
+\end{document}

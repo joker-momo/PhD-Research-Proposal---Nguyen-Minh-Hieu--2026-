@@ -18,7 +18,7 @@ FINAL = RESTART / "synthesis/final_46"
 PACKET = FINAL / "human_review_packet"
 MASKED = RESTART / "fulltext_retrieval/pdf/human_review_full_136"
 PREFLIGHT = "HKF-118.pdf"
-LIMITED = {"HKF-130"}
+LIMITED = {"HKF-031", "HKF-130"}
 
 
 def rows(path):

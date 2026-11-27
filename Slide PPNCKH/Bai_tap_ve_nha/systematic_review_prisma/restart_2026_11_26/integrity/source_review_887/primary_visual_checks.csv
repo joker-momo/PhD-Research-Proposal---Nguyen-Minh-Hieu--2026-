@@ -1,0 +1,20 @@
+packet_id,record_id,kind,key,physical_page,locator,reading,parser
+HKF-001,R0092,outcome,Q02,13,Table V VGG-16 Energy column and Energy overhead paragraph,"DDCI 1.477 ± 0.054 Wh and Comm-Min 1.502 ± 0.048 Wh. Mean ± SD over 30 common-seed episodes. The discussion identifies system-total energy.",PyMuPDF 1.26.7 rendered original
+HKF-110,R0090,outcome,Q05,5,Figure 5 and Performance Parameters table,"At 20 UAVs, Fig. 5 shows task completion 91% AeroAgriNet, 60% cloud and 40% traditional. Throughput is explicitly defined as data per unit time.",PyMuPDF 1.26.7 rendered original
+HKF-110,R0090,outcome,Q01,5,Figure 6 and Energy Efficiency paragraph,"27.9 Wh/mission AeroAgriNet and 38.2 Wh/mission cloud imply (38.2 - 27.9)/38.2 = 27.0% lower. The chart does not locate the 22% endpoint of the discussion's 22–27% range.",PyMuPDF 1.26.7 rendered original
+HKF-028,R0145,appraisal,D06,18,Paragraph below Figure 11 in section 6.3,"The evaluation reports 20 randomly generated EC scenarios. The passage supports scenario variation, with independent repeats and uncertainty unresolved.",PyMuPDF 1.26.7 rendered original
+HKF-060,R0118,technical,t2_workload,9,VI.B Evaluation Results,"The representative instantiation uses MobileNetV3-Small experts versus a ResNet-50 monolith fine-tuned on CIFAR-100. This passage does not substantiate the current workload code language.",PyMuPDF 1.26.7 rendered original
+HKF-019,R0054,outcome,Q02,5,Table I Comp./serv. column,"GAT-HSMAO 98.8 ± 0.4%, No-GAT 99.1 ± 0.8%. Mean ± Student-t 95% CI half-width for five seeds.",PyMuPDF 1.26.7 rendered original
+HKF-019,R0054,outcome,Q03,5,Table I Active adm. column,"GAT-HSMAO 85.2 ± 3.6%, No-GAT 83.1 ± 8.2%. Mean ± Student-t 95% CI half-width for five seeds.",PyMuPDF 1.26.7 rendered original
+HKF-019,R0054,outcome,Q04,5,Table I Target adm. column,"GAT-HSMAO 72.0 ± 2.8%, No-GAT 70.2 ± 4.5%. Mean ± Student-t 95% CI half-width for five seeds.",PyMuPDF 1.26.7 rendered original
+HKF-019,R0054,report_coverage,coverage,5,Table I and Fig. 3(f) discussion,"Exact table values and 30.92/50.56 ms P50/P95 in prose, alongside plots.",PyMuPDF 1.26.7 rendered original
+HKF-028,R0145,outcome,Q01,15,Fig. 4 blue TTFT bars,"DeepSeek-R1-Distill-Llama-8B 17/25 s and LLaMA-3.2-3B 19/100 s.",PyMuPDF 1.26.7 rendered original
+HKF-028,R0145,outcome,Q02,15,Fig. 4 orange bars,"DeepSeek-R1-Distill-Llama-8B 1/53 s and LLaMA-3.2-3B 1/246 s. Legend says TPOT and the caption says TPOP.",PyMuPDF 1.26.7 rendered original
+HKF-028,R0145,report_coverage,coverage,15,Fig. 4 two marked series,"Separate blue and orange series have explicitly printed fractional labels.",PyMuPDF 1.26.7 rendered original
+HKF-035,R0125,outcome,Q03,4,Table III F1 Score column,"Single worker 0.829, two workers 0.827, four workers 0.824.",PyMuPDF 1.26.7 rendered original
+HKF-035,R0125,outcome,Q04,5,Table IV Network Transfer row,"Network Transfer 4.1 ms and 9.3%, with 44.0 ms total in four-worker breakdown.",PyMuPDF 1.26.7 rendered original
+HKF-043,R0048,outcome,Q01,12,Table III Energy consumption column,"778.7, 670.8 and 596.1 J at energy efficiency 0.6, 0.7 and 0.8, respectively.",PyMuPDF 1.26.7 rendered original
+HKF-043,R0048,outcome,Q02,12,Table III Inference latency column,"0.515, 0.511 and 0.513 s at energy efficiency 0.6, 0.7 and 0.8, respectively.",PyMuPDF 1.26.7 rendered original
+HKF-043,R0048,outcome,Q03,12,Table III Throughput column,"116.6, 117.4 and 117.1 IPS at energy efficiency 0.6, 0.7 and 0.8, respectively.",PyMuPDF 1.26.7 rendered original
+HKF-043,R0048,report_coverage,coverage,12,Table III and adjacent text,"Exact energy, latency and throughput rows for 60 UAVs. The other plotted series are distinct evidence.",PyMuPDF 1.26.7 rendered original
+HKF-079,R0095,outcome,Q03,10,Fig. 9(c) printed bar annotations,"PPO-DMCP 31.9287 ms, Layer-PPO 117.1472 ms and Prop 1.78 µs, as printed on bars.",PyMuPDF 1.26.7 rendered original

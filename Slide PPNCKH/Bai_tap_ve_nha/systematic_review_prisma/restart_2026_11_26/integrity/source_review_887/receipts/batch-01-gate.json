@@ -1,0 +1,30 @@
+{
+  "batch": 1,
+  "expected": 112,
+  "seen": 112,
+  "task_id": "db43ad3b-792b-474b-bd86-9d76d622a841",
+  "context_id": "ee5454a2-44ed-4393-920f-1f9dad697d40",
+  "transport": "TASK_STATE_COMPLETED",
+  "provider_started_at": "2026-11-27T13:27:52.931+00:00",
+  "provider_completed_at": "2026-11-27T13:34:07.503+00:00",
+  "hash_inventory_match": true,
+  "context_unchanged": true,
+  "preflight_anchor_match": true,
+  "end_marker": true,
+  "cleanup": {
+    "state": "deleted",
+    "verified_new_chat": true,
+    "mode_restored": "chat"
+  },
+  "locator_checks": {
+    "ANCHORS_MATCH": 95,
+    "PARTIAL_ANCHOR_MATCH": 17
+  },
+  "status_counts": {
+    "VERIFIED": 104,
+    "NOT_REPORTED": 6,
+    "PARTIAL": 2
+  },
+  "errors": [],
+  "missing_keys": []
+}

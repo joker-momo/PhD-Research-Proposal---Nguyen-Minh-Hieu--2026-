@@ -95,13 +95,12 @@
       "message_id": "a3ac139a-4077-5ae9-8886-f8872bfcd07c",
       "assets": {
         "HKF-011-01.txt": "e478e4185dbe4520c1b969179c199a794611db81c6e5b921924d36dc14c5ab35",
-        "HKF-031-01.txt": "9ce4ea644544ee775c5e93d04b7122722a98a410e6e99e954cb15ffb1e8fed65",
         "HKF-088-01.txt": "056eff5d2533a24d17422447cb678e808249afbe9b4c5653c4b0ccccfdbd5173",
         "HKF-108-01.txt": "ad5104790dbbc43369dc7b65b56bb639959eddb067cf2c2048c9949890205429",
         "HKF-108-02.txt": "bf5d132a4e7acb47dea8a27f475de81ebcd296c7f9c7c49fe87209772dd365b2",
         "HKF-118.pdf": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
         "HKF-127-01.txt": "93f5465a69c11c2c446296e6c17aa9d27bedd7abf3f7d7608bdd3a84a11f4ba7",
-        "targets.json": "c840fa61c0c62c92ad93e9765eae6a69957473145906c1e096ef22bdd2d96cc0"
+        "targets.json": "c02779a140bde1f5d14cb795835ba918eb7f3e9fd78f2932fc5a1e227ba4d646"
       }
     },
     {
@@ -203,6 +202,7 @@
     }
   ],
   "restrictions": {
+    "HKF-031": "Original omitted from Gemini context. Report inaccessible to Gemini.",
     "HKF-130": "Original omitted from Gemini context. Report inaccessible to Gemini."
   },
   "pdfs": {
