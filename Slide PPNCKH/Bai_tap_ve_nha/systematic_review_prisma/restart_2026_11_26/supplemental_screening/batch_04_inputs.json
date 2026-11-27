@@ -1,0 +1,389 @@
+[
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0221.pdf",
+    "sha256": "a90f77c4c4a1d67fa84eb050b3cf67f522ae01c4729f6ba9d9fea05acbbb72ad",
+    "id": "R0221",
+    "doi": "10.1145/3820709.3820744",
+    "title": "MACE: A Physics-Informed Multi-modal Large Language Model for Strategic UAV Swarm Confrontation",
+    "authors": "Yudong Yang; Heng Shi; Jihong Zhu",
+    "year": "2026",
+    "venue": "RobCE '26: Proceedings of the 6th International Conference on Robotics and Control Engineering",
+    "source": "ACM",
+    "publication_date": "July 2026",
+    "pages": 9,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "crossref": {
+      "id": "R0221",
+      "url": "https://api.crossref.org/works/10.1145/3820709.3820744",
+      "type": "proceedings-article",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            23
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      },
+      "container-title": [
+        "Proceedings of the 6th International Conference on Robotics and Control Engineering"
+      ]
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0402.pdf",
+    "sha256": "3eafcc9ca62c4e061eff915bd2c3793e8e0fdad6dfe8aff37fa99827f44592de",
+    "id": "R0402",
+    "doi": "10.1145/3842435.3843964",
+    "title": "PDT-TCN: Prefix-Drop Temporal Convolutional Networks for Early Attack Detection in UAV-GCS Communications",
+    "authors": "Jakub Siłka; Michał Wieczorek; Marcin Woźniak",
+    "year": "2026",
+    "venue": "",
+    "source": "ACM",
+    "publication_date": "October 2026",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "DOI_OBSERVED",
+    "crossref": {
+      "id": "R0402",
+      "url": "https://api.crossref.org/works/10.1145/3842435.3843964",
+      "type": "proceedings-article",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ]
+      },
+      "container-title": [
+        "Proceedings of the 7th International Workshop on Drone-Assisted Wireless Communications for 5G and Beyond"
+      ]
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0056.pdf",
+    "sha256": "ecdc86bfc78b63d308a1829557ab4bdc9d77eaaf43a4735cc91f78e2da1c77a6",
+    "id": "R0056",
+    "doi": "10.1109/sec62691.2024.00010",
+    "title": "Righteous: Automatic Right-Sizing for Complex Edge Deployments",
+    "authors": "A. Rakshit; S. Reddy; R. Ramnath; A. Arora; J. Boubin",
+    "year": "2024",
+    "venue": "2024 IEEE/ACM Symposium on Edge Computing (SEC)",
+    "source": "IEEE",
+    "publication_date": "1 Jan 2025",
+    "pages": 14,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "VERSION_CHECK_REQUIRED"
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+    "sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+    "id": "R0077",
+    "doi": "10.1016/j.sysarc.2026.103804",
+    "title": "Distributed split computing using diffusive metrics for UAV swarms",
+    "authors": "Sarı, Talip Tolga; Seçinti, Gökhan; Trotta, Angelo",
+    "year": "2026",
+    "venue": "Journal of Systems Architecture",
+    "source": "SCOPUS",
+    "publication_date": "",
+    "pages": 13,
+    "version": "ARXIV_ACCEPTED_MANUSCRIPT_CANDIDATE",
+    "status": "VERSION_CHECK_REQUIRED",
+    "crossref": {
+      "id": "R0077",
+      "url": "https://api.crossref.org/works/10.1016/j.sysarc.2026.103804",
+      "type": "journal-article",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "container-title": [
+        "Journal of Systems Architecture"
+      ]
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0082.pdf",
+    "sha256": "f3e0dd1ffad3178604921574f7b9ef2fdad34167cbbb792f7e9531ca28f8a775",
+    "id": "R0082",
+    "doi": "10.1109/wcnc55385.2023.10118908",
+    "title": "LLHR: Low Latency and High Reliability CNN Distributed Inference for Resource-Constrained UAV Swarms",
+    "authors": "Dhuheir, Marwan; Erbad, Aiman; Sabeeh, Sinan",
+    "year": "2023",
+    "venue": "IEEE Wireless Communications and Networking Conference, WCNC",
+    "source": "SCOPUS",
+    "publication_date": "",
+    "pages": 6,
+    "version": "ARXIV_DEPOSIT",
+    "status": "VERSION_CHECK_REQUIRED"
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+    "sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+    "id": "R0113",
+    "doi": "DOI_NOT_FOUND",
+    "title": "A Neuromorphic Spiking Neural Network-Based Continual Learning Framework for Energy-Efficient Edge Intelligence in Autonomous UAV Swarm Navigation",
+    "authors": "K.S. Raghavendra Reddy Singareddy Hemasri",
+    "year": "2026",
+    "venue": "American Journal of AI Cyber Computing Management",
+    "source": "OPENALEX",
+    "publication_date": "2026-02-12",
+    "pages": 17,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "VERSION_CHECK_REQUIRED"
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0115.pdf",
+    "sha256": "4347a8422ebe243f14a361529dd45bcb304a4a533100363493c5748f230fc648",
+    "id": "R0115",
+    "doi": "10.57945/manara.hbku.31989888",
+    "title": "Efficient Management of Resource-Constrained UAV Swarms in Critical Applications",
+    "authors": "Marwan Dhuheir",
+    "year": "2024",
+    "venue": "Qatar National Library",
+    "source": "OPENALEX",
+    "publication_date": "2024-07-22",
+    "pages": 239,
+    "version": "DISSERTATION",
+    "status": "VERSION_CHECK_REQUIRED"
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0132.pdf",
+    "sha256": "8f66da09c9a39e3738e2f887115aa332c978cfeada82a97fcf8a5fca92b5cbfd",
+    "id": "R0132",
+    "doi": "10.5281/zenodo.20445205",
+    "title": "Human-Centred and Explainable AI Framework for Operational Deployment of Transformer-MARL Distributed Air-Defence Systems in Contested Electromagnetic Environments",
+    "authors": "A. S. Imam; A. Musa; A. A. Umar; Muhammad Ahmad Baballe",
+    "year": "2026",
+    "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+    "source": "OPENALEX",
+    "publication_date": "2026-05-29",
+    "pages": 26,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "VERSION_CHECK_REQUIRED"
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0170.pdf",
+    "sha256": "5ec57d6bec582bad0bc0fe81c4ac33dc80202b38ab921d9f114f6bf6dc110ced",
+    "id": "R0170",
+    "doi": "10.1109/tnet.2022.3226458",
+    "title": "A Secure and Intelligent Data Sharing Scheme for UAV-Assisted Disaster Rescue",
+    "authors": "Yuntao Wang; Zhou Su; Qichao Xu; Ruidong Li; Tom H. Luan; Pinghui Wang",
+    "year": "2023",
+    "venue": "IEEE/ACM Transactions on Networking (TON)",
+    "source": "ACM",
+    "publication_date": "April 2023",
+    "pages": 17,
+    "version": "ARXIV_DEPOSIT",
+    "status": "VERSION_CHECK_REQUIRED"
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0225.pdf",
+    "sha256": "7b4ec6f092f897ad532e8eca0927e444911d25abfc22b75cda9955c22dd3ce49",
+    "id": "R0225",
+    "doi": "10.1145/3846184",
+    "title": "SwarmUpdate: Hierarchical Software Updates and Deep Learning Model Patching for Heterogeneous UAV Swarms",
+    "authors": "Lin Geng; Hao Li; Sidney Givigi; Bram Adams",
+    "year": "2026",
+    "venue": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+    "source": "ACM",
+    "publication_date": "September 2026",
+    "pages": 12,
+    "version": "ARXIV_DEPOSIT",
+    "status": "VERSION_CHECK_REQUIRED",
+    "crossref": {
+      "id": "R0225",
+      "url": "https://api.crossref.org/works/10.1145/3846184",
+      "type": "journal-article",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            10
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            10
+          ]
+        ]
+      },
+      "published-print": null,
+      "container-title": [
+        "ACM Transactions on Software Engineering and Methodology"
+      ]
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0235.pdf",
+    "sha256": "029a955ef26d320d1c16618176d0d6c87d561a19db789d08e219d50f81d754bf",
+    "id": "R0235",
+    "doi": "10.1145/3571072",
+    "title": "Five Facets of 6G: Research Challenges and Opportunities",
+    "authors": "Li-Hsiang Shen; Kai-Ten Feng; Lajos Hanzo",
+    "year": "2023",
+    "venue": "ACM Computing Surveys (CSUR)",
+    "source": "ACM",
+    "publication_date": "February 2023",
+    "pages": 52,
+    "version": "ARXIV_DEPOSIT",
+    "status": "VERSION_CHECK_REQUIRED"
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0242.pdf",
+    "sha256": "16b8ccd6e7806d78f5b45493776fa4644807c6fe905956f1bbe10b35753a4af1",
+    "id": "R0242",
+    "doi": "10.1145/3807408.3807409",
+    "title": "Real-Time Drone-Car Collaboration for Future Mobility: Vision and Challenge",
+    "authors": "Sayma Tamboli; Kiran Davuluri; Khairul Mottakin; Zheng Song",
+    "year": "2026",
+    "venue": "ACM SIGAPP Applied Computing Review (SIGAPP)",
+    "source": "ACM",
+    "publication_date": "May 2026",
+    "pages": 15,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "status": "VERSION_CHECK_REQUIRED",
+    "crossref": {
+      "id": "R0242",
+      "url": "https://api.crossref.org/works/10.1145/3807408.3807409",
+      "type": "journal-article",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            1
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            1
+          ]
+        ]
+      },
+      "container-title": [
+        "ACM SIGAPP Applied Computing Review"
+      ]
+    }
+  },
+  {
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0308.pdf",
+    "sha256": "bac26eae80af07587aff0fd01d2a15efdd415c7b76945ce9c9802e08110b90f6",
+    "id": "R0308",
+    "doi": "10.1145/3745756.3809186",
+    "title": "Needle in a Haystack: Tracking UAVs from Massive Noise in Real-World 5G-A Base Station Data",
+    "authors": "Chengzhen Meng; Chenming He; Yidong Jiang; Xiaoran Fan; Dequan Wang",
+    "year": "2026",
+    "venue": "MobiSys '26: Proceedings of the 24th Annual International Conference on Mobile Systems, Applications and Services",
+    "source": "ACM",
+    "publication_date": "June 2026",
+    "pages": 14,
+    "version": "ARXIV_DEPOSIT",
+    "status": "VERSION_CHECK_REQUIRED",
+    "crossref": {
+      "id": "R0308",
+      "url": "https://api.crossref.org/works/10.1145/3745756.3809186",
+      "type": "proceedings-article",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            20
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            20
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            21
+          ]
+        ]
+      },
+      "container-title": [
+        "Proceedings of the 24th Annual International Conference on Mobile Systems, Applications and Services"
+      ]
+    }
+  }
+]

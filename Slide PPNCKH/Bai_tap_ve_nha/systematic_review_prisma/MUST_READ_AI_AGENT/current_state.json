@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T10:57:46+07:00",
+  "updated_at": "2026-11-27T11:04:17+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -9,21 +9,21 @@
   "task": {
     "task_id": "restart-supplemental-screening",
     "owner": "CODEX_WRITING",
-    "status": "rejected",
+    "status": "completed",
     "started_at": "2026-11-27T10:02:39+07:00",
-    "updated_at": "2026-11-27T10:57:46+07:00",
-    "completed_at": "2026-11-27T10:57:46+07:00",
-    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_03_review.md",
+    "updated_at": "2026-11-27T11:04:17+07:00",
+    "completed_at": "2026-11-27T11:04:17+07:00",
+    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_03_correction_review.md",
     "decision_id": "restart-supplemental-screening-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-screening-batch-03-correction",
+    "task_id": "restart-supplemental-screening-batch-04",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Repair 15 named evidence keys for eight batch-03 reports.",
-    "acceptance": "8 exact IDs and 15 exact requested eligibility keys with checked source or documented uncertainty.",
-    "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_03_correction_brief.md",
-    "message_id": "04b69a42-ab48-44cd-b3b5-f75c4da7da1c"
+    "action": "Screen the remaining two requested ACM PDFs and eleven version-sensitive reports.",
+    "acceptance": "13/13 distinct targeted PDFs and seven checked eligibility criteria per report.",
+    "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_04_brief.md",
+    "message_id": "9f48cff0-72fd-4e05-a1ec-4d7ec377ae72"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -304,7 +304,7 @@
       "access_probe_task_uuid": "899b1fa0-0c83-41fa-ae84-effe69d7d663",
       "access_probe_chat_cleanup": "not_verified",
       "prior_awaiting_recheck": "restart_2026_11_26/supplemental_screening/prior_awaiting_recheck.json",
-      "screened_supplemental_count": 16,
+      "screened_supplemental_count": 26,
       "batch_01_inputs": "restart_2026_11_26/supplemental_screening/batch_01_inputs.json",
       "batch_01_verdict": "PASS_COMPOSITE",
       "batch_01_task_uuid": "c3ab44ab-75fa-4f7b-a4d4-230860a6bcc5",
@@ -333,16 +333,23 @@
         "clean_checkout_check": "PASS",
         "rules": "prisma_evidence/MAINTENANCE.md",
         "provenance_git_commit": "d301cff",
-        "provenance_clean_checkout_check": "PASS"
+        "provenance_clean_checkout_check": "PASS",
+        "file_map_entry_git_commit": "18a32a0",
+        "file_map_checkout_check": "PASS"
       },
       "batch_02_provider_verdict": "FAIL",
       "batch_02_correction_task_uuid": "686eeaff-1339-40ae-bd4f-4a0d6c7f70a6",
       "batch_02_correction_review": "restart_2026_11_26/supplemental_screening/batch_02_correction_review.md",
       "batch_02_accepted": "restart_2026_11_26/supplemental_screening/batch_02_accepted.json",
       "batch_03_inputs": "restart_2026_11_26/supplemental_screening/batch_03_inputs.json",
-      "batch_03_verdict": "FAIL",
+      "batch_03_verdict": "PASS_COMPOSITE",
       "batch_03_task_uuid": "4b4ddef0-144a-46b8-8fb1-e60f99152dee",
-      "batch_03_review": "restart_2026_11_26/supplemental_screening/batch_03_review.md"
+      "batch_03_review": "restart_2026_11_26/supplemental_screening/batch_03_review.md",
+      "batch_03_provider_verdict": "FAIL",
+      "batch_03_correction_task_uuid": "25b14c65-9cec-40fd-bcc0-b3744f03e9eb",
+      "batch_03_correction_review": "restart_2026_11_26/supplemental_screening/batch_03_correction_review.md",
+      "batch_03_accepted": "restart_2026_11_26/supplemental_screening/batch_03_accepted.json",
+      "batch_04_inputs": "restart_2026_11_26/supplemental_screening/batch_04_inputs.json"
     }
   },
   "blockers": [],

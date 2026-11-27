@@ -1,0 +1,734 @@
+[
+  {
+    "id": "R0007",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E4",
+    "secondary": [],
+    "reason": "E4 fails. The collaborative inference module generates labels. Sections III.A–B compare federated training schemes through convergence and detection quality of the downstream model. They do not evaluate the proposed distributed inference module itself. Review policy for the demo track remains unconfirmed.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "present a working prototype of CIOFL on embedded"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "II.A Collaborative inference module",
+        "divide the large-scale model into multiple submodels and"
+      ],
+      [
+        "E4",
+        "PDF",
+        2,
+        "III.B Results",
+        "recorded the global loss and mAP for 20"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Header",
+        "2022 IEEE 19th International Conference on Mobile Ad"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "Federated learning (FL) has great potential in visual"
+      ],
+      [
+        "E2",
+        "PDF",
+        2,
+        "III.A Demo design",
+        "CIOFL on four devices: two Jetson TX2"
+      ],
+      [
+        "E7",
+        "https://sites.google.com/view/ieee-mass-2022/authors/call-for-posters-and-demos",
+        0,
+        "Call for Demos, Submission Instructions",
+        "The accepted demo abstracts will be published"
+      ]
+    ]
+  },
+  {
+    "id": "R0023",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [
+      "E4"
+    ],
+    "reason": "E3 and E4 fail. The general edge testbed combines local TinyML with agent coordination. The reported UAV case does not establish a neural inference workload orchestrated between evaluated UAVs or evaluate such a method.",
+    "study_link_note": "Distinct DOI and authors. The same three-layer architecture and matching use-case results appear at PDF p6, V.E. Retain IDs and verify study-family linkage separately.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "III.A An architectural overview",
+        "Edge Agentic Systems Architecture (EASA) is a layered"
+      ],
+      [
+        "E2",
+        "PDF",
+        6,
+        "V.E Useful Case Studies",
+        "Drone Swarm Coordination enhanced formation consistency by 12%"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "EASA provides a decentralised and modular framework for"
+      ],
+      [
+        "E7",
+        "https://www.acdsa.org/2026/",
+        0,
+        "Welcome To ACDSA 2026",
+        "All paper submissions will be peer reviewed and"
+      ],
+      [
+        "E3",
+        "PDF",
+        6,
+        "V.E Useful Case Studies",
+        "decentralised decision logic and cooperative job sharing"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "V.A Performance Summary",
+        "average normalised workload results for all architectures"
+      ],
+      [
+        "E5",
+        "sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv",
+        0,
+        "Online Date, CSV row 24",
+        "16 Apr 2026"
+      ]
+    ]
+  },
+  {
+    "id": "R0027",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [
+      "E4"
+    ],
+    "reason": "E3 and E4 fail. The general edge testbed combines local TinyML with agent coordination. The reported UAV case does not establish a neural inference workload orchestrated between evaluated UAVs or evaluate such a method.",
+    "study_link_note": "Distinct DOI and authors. The same three-layer architecture and matching use-case results appear at PDF p6, V.E. Retain IDs and verify study-family linkage separately.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        3,
+        "III.A An architectural overview",
+        "Edge Agentic Systems Architecture (EASA) is a layered"
+      ],
+      [
+        "E2",
+        "PDF",
+        6,
+        "V.E Useful Case Studies",
+        "Drone Swarm Coordination enhanced formation consistency by 12%"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "offers decentralised and modular structure of heterogeneous edge"
+      ],
+      [
+        "E7",
+        "https://www.icass-2026.in/callforpapers/guidelines",
+        0,
+        "General Instructions",
+        "Accepted papers must address reviewers' comments and meet"
+      ],
+      [
+        "E3",
+        "PDF",
+        6,
+        "V.E Useful Case Studies",
+        "decentralised decision logic and cooperative job sharing"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "V.A Performance Summary",
+        "average normalised workload results for all architectures"
+      ],
+      [
+        "E5",
+        "sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv",
+        0,
+        "Online Date, CSV row 28",
+        "8 Jun 2026"
+      ]
+    ]
+  },
+  {
+    "id": "R0028",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E3",
+    "secondary": [
+      "E4"
+    ],
+    "reason": "E3 and E4 fail. The edge annotation and training pipeline generates a detector that runs onboard. The reported evaluation measures annotation/training and single-device inference. The ENS 2026 track-specific review policy remains unconfirmed.",
+    "evidence": [
+      [
+        "E2",
+        "PDF",
+        4,
+        "V. Experiment Setup",
+        "three DJI Matrice 350 RTK UAVs, each equipped"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "II.B Model Training and real-time inference",
+        "fine-tune a lightweight detector, specifically a YOLO11 Small"
+      ],
+      [
+        "E3",
+        "PDF",
+        6,
+        "VI. Numerical Results",
+        "deployed in an operational FANET for Aerial Inference"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "VI. Numerical Results",
+        "reports the evolution of the main training losses"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "V. Experiment Setup",
+        "Controlled bandwidth-stress experiments were not performed in this"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "creation of high-quality labeled datasets for training machine"
+      ],
+      [
+        "E7",
+        "https://sites.google.com/view/ens2026/",
+        0,
+        "Paper Submission",
+        "included in the IEEE NetSoft 2026 Proceedings and"
+      ],
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "architecture for automated dataset generation and edge"
+      ],
+      [
+        "E5",
+        "sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv",
+        0,
+        "Online Date, CSV row 29",
+        "16 Jul 2026"
+      ]
+    ]
+  },
+  {
+    "id": "R0043",
+    "access": "READ",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "The full IEEE proceedings report evaluates partitioning and offloading a DNN inference workload across multiple UAVs. The Ucom 2023 organizer CFP and the matching proceedings establish E7.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "proposed DNN inference acceleration (DIA), an approach based"
+      ],
+      [
+        "E2",
+        "PDF",
+        2,
+        "II. System Model",
+        "dedicated computing UAVs equipped with server are regarded"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "III.B Offloading Strategy Based on DIA-O",
+        "offload fine-grained partitioned DNN tasks to multiple server"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "IV.A Simulation Setup",
+        "Four well-known DNN models are employed as benchmarks"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Header",
+        "2023 International Conference on Ubiquitous Communication (Ucom)"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "bring great advantages to maritime search and rescue"
+      ],
+      [
+        "E7",
+        "https://www.ucom.org.cn/Ucom2023/Ucom-CFP.pdf",
+        0,
+        "CFP publication statement",
+        "The accepted papers passed through the peer-reviewed process"
+      ]
+    ]
+  },
+  {
+    "id": "R0058",
+    "access": "READ",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "The full World Scientific article evaluates assignment of explicit DNN inference workloads from multiple UAVs to edge servers. The publisher's received and accepted dates and the journal instructions reproduced by Wuhan University support the report type and peer review.",
+    "evidence": [
+      [
+        "E3",
+        "PDF",
+        19,
+        "6.1 Simulation settings",
+        "Each UAV generates one DNN inference task per"
+      ],
+      [
+        "E4",
+        "PDF",
+        19,
+        "6.1 Simulation settings",
+        "adopt ResNet-18 as the deep neural network (DNN)"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Publication dates",
+        "Accepted 21 October 2025 Published 6 December 2025"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "Unmanned aerial vehicles (UAVs) are increasingly utilized in"
+      ],
+      [
+        "E1",
+        "PDF",
+        23,
+        "7. Conclusion",
+        "we proposed a UAV inference task"
+      ],
+      [
+        "E2",
+        "PDF",
+        19,
+        "6.1. Simulation settings",
+        "autonomous UAVs (default value: 25) to perform"
+      ],
+      [
+        "E7",
+        "https://apps.lib.whu.edu.cn/ensci/show_tg.asp?id=15210",
+        0,
+        "Wuhan University Library, author instructions reproduced for World Scientific JCSC",
+        "All submitted papers will be acknowledged and refereed"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Publisher article history",
+        "Received 25 September 2025 Accepted 21 October 2025"
+      ]
+    ]
+  },
+  {
+    "id": "R0064",
+    "access": "READ",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "The full Elsevier journal report evaluates explicit DNN inference placement across multiple UAVs and edge servers. Its original first page gives the date of availability and editorial dates.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "studies joint optimization for data sensing and computing"
+      ],
+      [
+        "E2",
+        "PDF",
+        11,
+        "5.2.5 Performance analysis versus number of UAVs",
+        "in case of 2 and 3 UAVs, which"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "1. Introduction",
+        "compressed DNN model is deployed at UAVs while"
+      ],
+      [
+        "E4",
+        "PDF",
+        9,
+        "5.2.2 Impact of communication bandwidth",
+        "average inference delay and 95% confidence interval of"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "Unmanned aerial vehicles (UAVs) are increasingly used for"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Article history",
+        "Received 22 March 2025; Received in revised form"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Article history",
+        "Available online 18 July 2025"
+      ],
+      [
+        "E7",
+        "https://editorialmanager.sciencedirectelsevier.com/submit-paper/Computer-Networks",
+        0,
+        "Reviewers section",
+        "download manuscripts assigned to you for review"
+      ]
+    ]
+  },
+  {
+    "id": "R0090",
+    "access": "READ",
+    "decision": "AWAITING_CLASSIFICATION",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "The full PDF describes multi-UAV execution and evaluates onboard CNN inference. An applicable peer-review policy for the ICoEIT 2025 proceedings remains unconfirmed.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "conceptualizes AeroAgriNet as a swarm-enabled flying edge architecture"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "V.H Scalability under Load",
+        "increasing the number of UAVs from 1 to"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "III.B Redundant Task Assignment and Fault Tolerance",
+        "local AI inference tasks are allocated to several"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "V.J Model Inference Time",
+        "Edge AI inference was benchmarked using lightweight CNNs"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Header",
+        "2025 International Conference on Engineering Innovations and Technologies"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "Existing agricultural practices encounter several challenges, including worker"
+      ],
+      [
+        "E7",
+        "https://www.icoeit.org.lnctrishiraj.ac.in/Submission.html",
+        0,
+        "Submission Guidelines",
+        "Publication at IEEE Xplore is subject to IEEE's"
+      ]
+    ]
+  },
+  {
+    "id": "R0125",
+    "access": "READ",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "The full IEEE report describes and evaluates inference across multiple UAV workers. The IEEE deposit gives a May 2026 print date, an interval wholly before the cutoff. The IEEE Xplore online date remains unconfirmed.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "presents an UAV Extreme Edge Computing (UXEC) framework"
+      ],
+      [
+        "E2",
+        "PDF",
+        1,
+        "Abstract",
+        "distributes AI inference tasks across resource constrained UAVs"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "II.B Spatial Frame Decomposition",
+        "employs spatial frame decomposition to enable parallel processing"
+      ],
+      [
+        "E4",
+        "PDF",
+        3,
+        "IV.B Distributed Inference Scalability",
+        "presents throughput scaling with increasing worker count, where"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "proliferation of Unmanned Aerial Vehicle (UAV) swarms for"
+      ],
+      [
+        "E7",
+        "https://ieeesm.org/call-for-papers/",
+        0,
+        "Call for Papers",
+        "maintains a rigorous peer-review process, with an acceptance"
+      ],
+      [
+        "E7",
+        "https://ieeesm.org/program/",
+        0,
+        "TS5: Technical Session #5",
+        "UAV Extreme Edge Computing for Real Time AI"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1109/SM69703.2026.11614110",
+        0,
+        "message.published-print.date-parts",
+        "[[2026,5]]"
+      ]
+    ]
+  },
+  {
+    "id": "R0130",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [
+      "E4"
+    ],
+    "reason": "The report is a primary paper in refereed MONAMI proceedings. E3 and E4 fail because the proposed method and simulations concern generic task offloading and resource allocation without an evaluated neural inference workload.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "introduces a multi-agent-based offloading decision and resource allocation"
+      ],
+      [
+        "E2",
+        "PDF",
+        1,
+        "Abstract",
+        "multiple UAV-assisted mobile edge computing servers (U-ESs), and"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "3.1 Edge Intelligent Digital Twin-Assisted Low-altitude Network",
+        "generate a single computation-sensitive task, which cannot be"
+      ],
+      [
+        "E4",
+        "PDF",
+        11,
+        "5 Simulation Results and Analysis",
+        "total service delay increases with the number of"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "With the rapid expansion of smart services in"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1007/978-3-032-39125-4_4",
+        0,
+        "message.published-online.date-parts",
+        "[[2026,9,20]]"
+      ],
+      [
+        "E7",
+        "https://link.springer.com/book/10.1007/978-3-032-39125-4",
+        0,
+        "About this book and table of contents",
+        "This book constitutes the refereed proceedings"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Proceedings footer",
+        "K. Yu et al. (Eds.): MONAMI 2025, LNICST"
+      ]
+    ]
+  }
+]

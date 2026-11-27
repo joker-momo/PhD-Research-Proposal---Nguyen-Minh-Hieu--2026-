@@ -1,0 +1,45 @@
+{
+  "id": "25b14c65-9cec-40fd-bcc0-b3744f03e9eb",
+  "contextId": "b58463ca-b4cb-4aed-ab1a-8dc99056c217",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-27T04:02:27.472+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-27T03:57:58.792+00:00",
+    "updated_at": "2026-11-27T04:02:27.472+00:00",
+    "started_at": "2026-11-27T03:57:58.798+00:00",
+    "completed_at": "2026-11-27T04:02:27.472+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — HK261 Eligibility Key Repair",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "bc02ecb9-d93f-4eb4-9c6d-6e73672f5da2",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"id\":\"R0007\",\"e\":{\"E2\":[\"T\",\"PDF\",2,\"III.A Demo design\",\"CIOFL on four devices: two Jetson TX2\",\"Four Jetson nodes (3 training/inference, 1 aggregator) with UAV-captured images and VisDrone2021 prototype a multi-UAV swarm (p1 Abstract/Sec I), satisfying E2 via explicit swarm architecture.\"]}}\n{\"id\":\"R0023\",\"e\":{\"E3\":[\"F\",\"PDF\",6,\"V.E Useful Case Studies\",\"decentralised decision logic and cooperative job sharing\",\"Uses local TinyML/TFLite Micro reflex models (p4 Sec IV.A/IV.D) plus MQTT/CRDT agent coordination (p3 Alg. 1); despite prose mention of neighbor-assisted reasoning (p5 Sec V.C), no DNN model, split, or inference routing is defined, and the drone swarm case study reports only formation (+12%) and energy (+28%), not collaborative DNN inference.\"],\"E4\":[\"F\",\"PDF\",4,\"V.A Performance Summary\",\"average normalised workload results for all architectures\",\"Reports 50-run generic testbed benchmarks (20 RPi 4B, 10 Jetson Nano; Table II: 67 ms, 147 mJ, 2.8 KB/s, 94.1% accuracy, 2.9 s recovery) and drone swarm formation/energy gains (p6 Sec V.E), without specifying a DNN model, dataset, or collaborative inference method; evaluates a generic architecture rather than a proposed collaborative inference method.\"],\"E5\":[\"T\",\"sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv\",0,\"Online Date, CSV row 24\",\"16 Apr 2026\",\"Codex-supplied independently verified IEEE Xplore Online Date (2026-04-16), separate from ACDSA 2026 event date (5-7 Feb 2026); within 2021-01-01 to 2026-11-26.\"]}}\n{\"id\":\"R0027\",\"e\":{\"E3\":[\"F\",\"PDF\",6,\"V.E Useful Case Studies\",\"decentralised decision logic and cooperative job sharing\",\"Assessed independently from R0027 PDF: deploys local TFLite Micro TinyML reflex models (p4-5 Sec IV.A/IV.D) with MQTT/CRDT agent coordination (p4 Alg. 1); no DNN model, partitioning, or inference routing is specified (p6 Sec V.C mentions neighbor-assisted reasoning only in prose), and drone swarm results cover formation (+12%) and energy (+28%), not collaborative DNN inference.\"],\"E4\":[\"F\",\"PDF\",5,\"V.A Performance Summary\",\"average normalised workload results for all architectures\",\"Assessed independently from R0027 PDF: reports 50-run generic testbed metrics (20 RPi 4B, 10 Jetson Nano; Table I: 67 ms, 147 mJ, 2.8 KB/s, 94.1% accuracy, 2.9 s recovery) and drone swarm formation (+12%) and energy (+28%) (p6 Sec V.E), without defining a DNN model, dataset, or collaborative inference method; evaluates a generic architecture rather than a proposed collaborative inference method.\"],\"E5\":[\"T\",\"sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv\",0,\"Online Date, CSV row 28\",\"8 Jun 2026\",\"Codex-supplied independently verified IEEE Xplore Online Date (2026-06-08), separate from ICASS 2026 event date; within 2021-01-01 to 2026-11-26.\"]}}\n{\"id\":\"R0028\",\"e\":{\"E1\":[\"T\",\"PDF\",1,\"Abstract\",\"architecture for automated dataset generation and edge\",\"Primary research contribution corroborated across full-text Sections I-VI (pp. 1-6): link-aware FANET dataset generation, edge YOLOE segmentation, YOLO11s training, and onboard Raspberry Pi 5 inference deployment.\"],\"E5\":[\"T\",\"sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv\",0,\"Online Date, CSV row 29\",\"16 Jul 2026\",\"Codex-supplied independently verified IEEE Xplore Online Date (2026-07-16), separate from IEEE NetSoft 2026 event date; within 2021-01-01 to 2026-11-26.\"]}}\n{\"id\":\"R0058\",\"e\":{\"E1\":[\"T\",\"PDF\",23,\"7. Conclusion\",\"we proposed a UAV inference task\",\"Primary research paper proposing the DADAO distributed auction-based UAV inference offloading framework with theoretical analysis (Sec 5) and simulation evaluation (Sec 6).\"],\"E2\":[\"T\",\"PDF\",19,\"6.1. Simulation settings\",\"autonomous UAVs (default value: 25) to perform\",\"Evaluates 20-50 autonomous UAVs (default 25; also scaled [20,5] to [40,13] in Fig. 3), explicitly establishing a multi-UAV setting.\"]}}\n{\"id\":\"R0064\",\"e\":{\"E5\":[\"T\",\"PDF\",1,\"Article history\",\"Available online 18 July 2025\",\"Publisher online-publication date (2025-07-18, day precision) printed on PDF p1; within 2021-01-01 to 2026-11-26.\"]}}\n{\"id\":\"R0125\",\"e\":{\"E5\":[\"U\",\"https://api.crossref.org/works/10.1109/SM69703.2026.11614110\",0,\"message.published-print.date-parts\",\"[[2026,5]]\",\"Codex-supplied Crossref published-print date (month precision: May 2026); direct Crossref API browse failed and IEEE Xplore Online Date was unavailable via public search, so cutoff-year (2026-11-26) authoritative IEEE online date remains unconfirmed.\"]}}\n{\"id\":\"R0130\",\"e\":{\"E5\":[\"T\",\"https://api.crossref.org/works/10.1007/978-3-032-39125-4_4\",0,\"message.published-online.date-parts\",\"[[2026,9,20]]\",\"Codex-supplied independently verified Crossref published-online date (2026-09-20, day precision; direct Crossref API browse failed); within 2021-01-01 to 2026-11-26 despite 2027 copyright/print year on PDF p1.\"],\"E7\":[\"T\",\"https://link.springer.com/book/10.1007/978-3-032-39125-4\",0,\"Book overview / Table of contents\",\"refereed full papers\",\"Codex-supplied independently verified Springer LNICST 715 book page confirms refereed full papers and lists this exact report in TOC (direct Springer browse was blocked); PDF pp. 1-14 confirms full text with MRJOA method and simulation results.\"]}}\n{\"returned_ids\":[\"R0007\",\"R0023\",\"R0027\",\"R0028\",\"R0058\",\"R0064\",\"R0125\",\"R0130\"],\"unresolved_keys\":[\"R0125:E5\"],\"workers_used\":false,\"complete\":true}"
+        }
+      ]
+    }
+  ]
+}
