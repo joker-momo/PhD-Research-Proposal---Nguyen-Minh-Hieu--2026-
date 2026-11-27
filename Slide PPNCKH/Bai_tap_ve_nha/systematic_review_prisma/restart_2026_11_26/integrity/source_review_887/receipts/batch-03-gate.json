@@ -1,0 +1,46 @@
+{
+  "batch": 3,
+  "expected": 112,
+  "seen": 112,
+  "task_id": "75ad9323-c83b-4789-811c-db233aa69cf2",
+  "context_id": "351798a4-24ea-4531-acbc-33be8e1e9f54",
+  "transport": "TASK_STATE_FAILED",
+  "provider_started_at": "2026-11-27T13:44:05.084+00:00",
+  "provider_completed_at": "2026-11-27T13:59:07.173+00:00",
+  "hash_inventory_match": true,
+  "context_unchanged": true,
+  "preflight_anchor_match": true,
+  "identity_count": 6,
+  "identity_expected": 6,
+  "identity_records": [
+    "HKF-019",
+    "HKF-043",
+    "HKF-067",
+    "HKF-080",
+    "HKF-112",
+    "HKF-134"
+  ],
+  "identity_duplicate_dois": 0,
+  "identity_duplicate_titles": 0,
+  "end_marker": true,
+  "cleanup": {
+    "state": "deleted",
+    "verified_new_chat": true,
+    "method": "owned native helper"
+  },
+  "locator_checks": {
+    "ANCHORS_MATCH": 92,
+    "PARTIAL_ANCHOR_MATCH": 18,
+    "ANCHOR_NEEDS_VISUAL_OR_CORRECTION": 2
+  },
+  "status_counts": {
+    "VERIFIED": 90,
+    "NOT_REPORTED": 7,
+    "PARTIAL": 11,
+    "UNRESOLVED": 4
+  },
+  "errors": [],
+  "missing_keys": [],
+  "semantic": {},
+  "semantic_unreviewed": 112
+}

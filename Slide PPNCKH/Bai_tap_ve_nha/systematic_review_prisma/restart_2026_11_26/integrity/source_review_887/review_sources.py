@@ -276,15 +276,21 @@ def tex(value):
 
 
 def report_tex(path, summary, report):
-    codex = summary["codex_status"]
-    gemini = summary["gemini_status"]
+    labels = STATUSES | {"MISSING_PASS"}
+    counts = []
+    for provider in ("codex", "gemini"):
+        provider_counts = summary[f"{provider}_status"]
+        counts.append({**provider_counts, "INVALID_STATUS": sum(
+            value for label, value in provider_counts.items() if label not in labels
+        )})
+    codex, gemini = counts
     lines = [
         r"\section*{Phạm vi và tiến độ}",
         f"Đối chiếu {summary['expected']} mục trong {summary['reports']} bài. Codex trả {summary['codex_returned']} mục và Gemini trả {summary['gemini_returned']} mục.",
         r"\begin{center}\begin{tabular}{lrr}\toprule Trạng thái do lượt rà ghi & Codex & Gemini \\ \midrule",
     ]
     lines.extend(f"{tex(status)} & {codex.get(status, 0)} & {gemini.get(status, 0)} \\\\"
-                 for status in sorted(STATUSES | {"MISSING_PASS"}))
+                 for status in sorted(labels | {"INVALID_STATUS"}))
     lines.extend([
         r"\bottomrule\end{tabular}\end{center}",
         r"\section*{Các mục Codex đề nghị kiểm tra hoặc sửa}",
