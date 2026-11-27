@@ -1,0 +1,59 @@
+{
+  "id": "90dc92ff-69a4-4987-bc57-3c5dfe0bc9b5",
+  "contextId": "b526a20c-1597-4088-802b-4434a1a5b488",
+  "status": {
+    "state": "LOCAL_RECOVERY_COMPLETE",
+    "timestamp": "2026-11-27T13:54:22+07:00"
+  },
+  "original_transport": {
+    "state": "TASK_STATE_FAILED",
+    "timestamp": "2026-11-27T06:52:06.616+00:00",
+    "message": {
+      "messageId": "15548cce-c8b9-4156-9cad-9027d2688186",
+      "role": "ROLE_AGENT",
+      "parts": [
+        {
+          "text": "Task mode or expected context changed"
+        }
+      ],
+      "taskId": "90dc92ff-69a4-4987-bc57-3c5dfe0bc9b5",
+      "contextId": "b526a20c-1597-4088-802b-4434a1a5b488"
+    }
+  },
+  "artifacts": [
+    {
+      "parts": [
+        {
+          "text": "{\"id\":\"R0058\",\"key\":\"D03\",\"s\":\"PARTIAL\",\"f\":\"Simulation setup integrates ground edge servers with aerial UAV nodes, but exhibits a default/range contradiction in server configuration and omits simulator software and random seed reporting.\",\"l\":[[19,\"6.1. Simulation settings\",\"integrates ground edge servers with aerial UAV nodes\"],[19,\"6.1. Simulation settings\",null]],\"g\":\"Default/range contradiction in server configuration; simulator platform and random seeds are unreported.\"}\n{\"id\":\"R0058\",\"key\":\"D09\",\"s\":\"NOT_REPORTED\",\"f\":\"Author code, data, trace, and implementation release is unreported in the inspected sections; referencing an external benchmark dataset provides no evidence of author artifact availability.\",\"l\":[[19,\"6.1. Simulation settings\",null],[23,\"7. Conclusion\",null],[23,\"ORCID\",null]],\"g\":\"Artifact release is unreported in the inspected sections.\"}\n{\"id\":\"SUMMARY\",\"report_count\":1,\"key_count\":2,\"no_workers_used\":true,\"tools_used\":[\"client:grep_search\",\"client:view_file\"],\"tool_limitations\":\"Shell execution prohibited by read-only boundaries, so PyMuPDF, Poppler, MinerU, and Marker were not used; original PDF inspected directly via client:view_file.\",\"unresolved\":[]}\nP09_SUPPLEMENT_BATCH_01_FINAL_TWO_COMPLETE"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-27T06:51:52.814+00:00",
+    "updated_at": "2026-11-27T06:52:06.616+00:00",
+    "started_at": "2026-11-27T06:51:52.826+00:00",
+    "completed_at": "2026-11-27T06:52:06.616+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    }
+  },
+  "local_recovery": {
+    "checked_at": "2026-11-27T13:54:22+07:00",
+    "stable_matching_snapshots": 2,
+    "context": "systematic_review_prisma",
+    "sha256": "6b26398e411c1905a2d28166cf93120e40c0d0cc882ffc09a21383e1c9bc01f5",
+    "bridge_recovery_refusal": "Bridge error: {\"code\": -32002, \"message\": \"Only a task that timed out after Send can be recovered\"}"
+  }
+}

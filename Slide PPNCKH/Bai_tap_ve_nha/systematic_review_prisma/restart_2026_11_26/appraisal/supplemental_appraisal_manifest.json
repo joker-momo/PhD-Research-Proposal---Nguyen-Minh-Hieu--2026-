@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "created_at": "2026-11-27T13:37:04+07:00",
-  "status": "BATCH_01_FINALREPAIR_SUBMITTED",
+  "status": "BATCH_02_READY",
   "baseline": {
     "reports": 25,
     "judgments": 250,
@@ -17,7 +17,7 @@
   "batches": [
     {
       "batch": 1,
-      "status": "FINALREPAIR_SUBMITTED",
+      "status": "PASS_COMPOSITE",
       "brief": "restart_2026_11_26/appraisal/supplemental_batch_01_brief.md",
       "message_id": "d9a68200-7898-41c0-92e8-036b60ccf4c6",
       "report_ids": [
@@ -48,11 +48,13 @@
       "finalrepair_brief": "restart_2026_11_26/appraisal/supplemental_batch_01_finalrepair_brief.md",
       "finalrepair_message_id": "d74cb89c-1b4a-44a7-92e1-af751512a89a",
       "finalrepair_uuid": "90dc92ff-69a4-4987-bc57-3c5dfe0bc9b5",
-      "finalrepair_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_01_finalrepair_dispatch.json"
+      "finalrepair_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_01_finalrepair_dispatch.json",
+      "acceptance": "restart_2026_11_26/appraisal/supplemental_batch_01_accepted.json",
+      "composite_review": "restart_2026_11_26/appraisal/supplemental_batch_01_composite_review.md"
     },
     {
       "batch": 2,
-      "status": "QUEUED",
+      "status": "READY",
       "brief": "restart_2026_11_26/appraisal/supplemental_batch_02_brief.md",
       "message_id": "d7e86bde-9fdb-4844-9558-4a9d32b33dd6",
       "report_ids": [

@@ -1,0 +1,25 @@
+{
+  "provider_state": "LOCAL_RECOVERY_COMPLETE",
+  "expected_pairs": 2,
+  "received_pairs": 2,
+  "valid_anchors": 1,
+  "state_counts": {
+    "PARTIAL": 1,
+    "NOT_REPORTED": 1
+  },
+  "missing": [],
+  "bad_pairs": [],
+  "errors": [],
+  "summary": {
+    "id": "SUMMARY",
+    "report_count": 1,
+    "key_count": 2,
+    "no_workers_used": true,
+    "tools_used": [
+      "client:grep_search",
+      "client:view_file"
+    ],
+    "tool_limitations": "Shell execution prohibited by read-only boundaries, so PyMuPDF, Poppler, MinerU, and Marker were not used; original PDF inspected directly via client:view_file.",
+    "unresolved": []
+  }
+}

@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T13:34:41+07:00",
+  "updated_at": "2026-11-27T13:54:36+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -1215,7 +1215,19 @@
           "verdict": "PASS",
           "evidence": "25/25 reports, 250/250 original-source judgments, 615 locators, zero pending. Frozen hashes and all batch gates verified."
         }
-      ]
+      ],
+      "supplemental": {
+        "status": "active",
+        "started_at": "2026-11-27T13:37:04+07:00",
+        "updated_at": "2026-11-27T13:54:36+07:00",
+        "required_reports": 21,
+        "accepted_reports": 7,
+        "baseline_reports": 25,
+        "required_new_judgments": 210,
+        "new_judgments": 70,
+        "manifest": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
+        "latest_review": "restart_2026_11_26/appraisal/supplemental_batch_01_composite_review.md"
+      }
     },
     {
       "task_id": "restart-13",
