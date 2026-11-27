@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T12:46:19+07:00",
+  "updated_at": "2026-11-27T12:46:34+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -11,19 +11,22 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T12:23:54+07:00",
-    "updated_at": "2026-11-27T12:46:19+07:00",
+    "updated_at": "2026-11-27T12:46:34+07:00",
     "checkpoint_path": "restart_2026_11_26/study_linkage/supplemental_linkage_correction_review.md",
     "decision_id": "restart-supplemental-linkage-v1"
   },
   "next_task": {
     "task_id": "restart-supplemental-linkage-locator-repair",
     "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Repair five named entries with seven checked locators in parseable JSON.",
+    "status": "active",
+    "action": "Collect the original locator-only repair UUID. Do not resend.",
     "acceptance": "Five keys and seven exact locators without extra outcome claims.",
     "dispatch_brief": "restart_2026_11_26/study_linkage/supplemental_linkage_locator_repair_brief.md",
     "message_id": "15dad087-7833-467a-91e8-d859996899ab",
-    "prior_bridge_task_id": "7229c607-4779-42d7-b684-b6eb19173445"
+    "prior_bridge_task_id": "7229c607-4779-42d7-b684-b6eb19173445",
+    "bridge_task_id": "491e8b9a-861c-4575-84d1-ce6bfdf60e37",
+    "bridge_context_id": "42688fa7-f942-430b-9e7f-8c85cf9b747d",
+    "dispatch_receipt": "restart_2026_11_26/study_linkage/supplemental_linkage_locator_repair_dispatch.json"
   },
   "project": {
     "target_venue": "SN Computer Science",
