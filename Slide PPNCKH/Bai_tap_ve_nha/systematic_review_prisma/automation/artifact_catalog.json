@@ -692,6 +692,32 @@
         "evidence",
         "HK261"
       ]
+    },
+    {
+      "artifact_id": "hk261-dual-ai-resegment-gemini",
+      "name": "Resegment failed Gemini screening targets",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_gemini_correction.py",
+      "purpose": "Reuse original page text for the 101 failed keys with each file under the Gemini text reader limit.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_gemini_correction.py' /tmp/hk261-dual-repro-context 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/gemini_initial_review_summary.json' /tmp/hk261-dual-repro-correction /tmp/hk261-dual-repro-correction-manifest.json",
+      "inputs": [
+        "Page-marked original Gemini context",
+        "gemini_initial_review_summary.json"
+      ],
+      "outputs": [
+        "Corrective Gemini input folder",
+        "gemini_correction_context_manifest.json"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_gemini_correction.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_gemini_correction.py' /tmp/hk261-dual-repro-context 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/gemini_initial_review_summary.json' /tmp/hk261-dual-repro-correction /tmp/hk261-dual-repro-correction-manifest.json",
+      "status": "active",
+      "tags": [
+        "screening",
+        "evidence",
+        "Gemini",
+        "HK261"
+      ]
     }
   ]
 }

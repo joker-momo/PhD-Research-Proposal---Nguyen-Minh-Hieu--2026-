@@ -1,0 +1,96 @@
+{
+  "record_ids": [
+    "HKF-004",
+    "HKF-005",
+    "HKF-006",
+    "HKF-011",
+    "HKF-027",
+    "HKF-032",
+    "HKF-050",
+    "HKF-083",
+    "HKF-096",
+    "HKF-109",
+    "HKF-113",
+    "HKF-115",
+    "HKF-119",
+    "HKF-130"
+  ],
+  "file_index": {
+    "HKF-004": [
+      "correction-01.txt"
+    ],
+    "HKF-005": [
+      "correction-01.txt"
+    ],
+    "HKF-006": [
+      "correction-01.txt"
+    ],
+    "HKF-011": [
+      "correction-02.txt"
+    ],
+    "HKF-027": [
+      "correction-02.txt"
+    ],
+    "HKF-032": [
+      "correction-02.txt"
+    ],
+    "HKF-050": [
+      "correction-03.txt"
+    ],
+    "HKF-083": [
+      "correction-03.txt"
+    ],
+    "HKF-096": [
+      "correction-03.txt"
+    ],
+    "HKF-109": [
+      "correction-03.txt"
+    ],
+    "HKF-113": [
+      "correction-04.txt"
+    ],
+    "HKF-115": [
+      "correction-04.txt"
+    ],
+    "HKF-119": [
+      "correction-04.txt"
+    ],
+    "HKF-130": [
+      "correction-05.txt"
+    ]
+  },
+  "files": {
+    "HKF-093.pdf": {
+      "sha256": "a43032f0224778112719ca5d350ce2415799095c34bfbf4652616f64b62010e4",
+      "bytes": 173474
+    },
+    "correction-01.txt": {
+      "sha256": "049dfad2ebcdec5a8228430e0d210db8c5e16e470329f897366ed716f8d5fab9",
+      "bytes": 160017
+    },
+    "correction-02.txt": {
+      "sha256": "2719a1ef1a3f7261cde0494a0985642798f4e37497efe47657c5da50f9e81e70",
+      "bytes": 171736
+    },
+    "correction-03.txt": {
+      "sha256": "8f6a111b5dfc1cbf2202dc0152fd4daa546ccc63917f59f14aade3fb667b1805",
+      "bytes": 195614
+    },
+    "correction-04.txt": {
+      "sha256": "f6222f2c8012d45d891a388ef095ff1cdd006ba2d8e0238a0f6d4fc56973dba2",
+      "bytes": 131474
+    },
+    "correction-05.txt": {
+      "sha256": "57ac6074f5733f4c2761dd09a6f62d228657e2238dc836ab77a766cfcd4dd9bd",
+      "bytes": 91043
+    },
+    "criteria.txt": {
+      "sha256": "62186168e901e14eb811168b529ab4310281e8e7354f16183d7663f102d1f055",
+      "bytes": 4091
+    },
+    "index.json": {
+      "sha256": "9df7a54b11fc919d8cc11c48618278fd650725f8850ba48deebbce746e087f21",
+      "bytes": 619
+    }
+  }
+}

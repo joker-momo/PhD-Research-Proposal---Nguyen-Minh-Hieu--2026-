@@ -13,3 +13,17 @@ Task ID `edf9686b-8e4a-4193-ba44-52b689d10013`, context `77e60691-8190-4c76-a7be
 | Hồ sơ bỏ ngỏ và worker | PASS | Phản hồi liệt kê 95 mã chưa quyết; 8 worker không thừa hưởng quyền đọc, nên tác vụ chính thực hiện phần đã đọc. |
 | Quy trách nhiệm | PASS | Kết quả ghi rõ cả hai lượt là nhận định AI. |
 | Toàn lượt | FAIL | Lượt đầu chưa đủ dùng để tính độ đồng thuận. Cần xử lý 90 mã không đọc, 8 mã có neo sai, 2 mã bị cắt phần thân và HKF-086 về E5, tổng 101 mã khác nhau. |
+
+## Lượt sửa 101 hồ sơ
+
+Task 7bbe72f1-590c-4449-801c-c0ea4ec885a3, context d516a192-69e2-47a9-801c-5b9b5d4051da. Giữ [trạng thái hết thời gian](gemini_correction_timeout.json) lúc 19:53:19 và [phản hồi thu hồi](gemini_correction_receipt.json) lúc 20:00:10. Cùng UUID và ngữ cảnh. Bridge lấy hai ảnh chụp ổn định, lưu phản hồi trước khi xác minh đã xóa chat. Hash 38 tệp giữ nguyên.
+
+| Tiêu chí | Kết quả | Minh chứng |
+| --- | --- | --- |
+| Đọc tài liệu gốc | PASS | HKF-093 tr. 4, §6. Cụm “no quantitative conclusions beyond the document are introduced” khớp PDF. |
+| Mã, cấu trúc, truy cập | PASS | 101/101 mã duy nhất, 0 dòng JSON sai, không có mã khai không đọc được. |
+| Neo căn cứ | FAIL | Sau khi ghép với 35 dòng lượt đầu, 126/136 qua kiểm tra. 10 mã lệch nguyên văn hoặc trang được liệt kê trong JSON của lần kiểm tra này. |
+| Nguồn và độ mạnh của lập luận | FAIL | HKF-050 chưa phân biệt mô tả phối hợp với bằng chứng đánh giá đường suy luận hợp tác. HKF-109 cần xét chuyển giao nhiệm vụ suy luận theo giao thức. HKF-115 kết luận quá phạm vi bản preprint. HKF-130 chứa chi tiết vượt mức cần cho quyết định và cần rút gọn. |
+| Căn cứ ngày xuất bản | PASS | HKF-001, HKF-057 và HKF-086 đã đánh dấu thiếu ngày xuất bản xác minh, tách dấu tải xuống. |
+| Danh mục, mã bỏ ngỏ và worker | PASS | Đủ trường bắt buộc và có khai báo mã thiếu, liên kết ấn bản và 0 worker. Phản hồi liệt kê 10 hồ sơ chờ trong 101 mã. |
+| Toàn lượt | FAIL | 14 mã cần rà bổ sung. Dừng tính đồng thuận đến khi kiểm tra xong. |

@@ -24,6 +24,39 @@ def unpack(path, kind):
     return "\n".join(item["text"] for item in objects(result.get("artifacts", [])))
 
 
+def context_verified(receipt, manifest):
+    metadata = receipt.get("metadata", {})
+    expected = json.loads((HERE / manifest).read_text())["files"]
+    return (metadata.get("context_audit", {}).get("unchanged") is True
+            and metadata.get("geminiApp", {}).get("files") == expected)
+
+
+def merge_gemini(first, second, keys):
+    expected = set(keys)
+    retained = []
+    observed = []
+    for source_index, text in enumerate((first, second)):
+        for line in text.splitlines():
+            if not line.lstrip().startswith("{"):
+                continue
+            try:
+                key = json.loads(line).get("id")
+                if not isinstance(key, str):
+                    raise ValueError("ID must be a string")
+            except (ValueError, AttributeError):
+                retained.append(line)
+                continue
+            if source_index == 0 and key not in expected:
+                retained.append(line)
+            elif source_index == 1:
+                retained.append(line)
+                observed.append(key)
+    exact = len(observed) == len(expected) and set(observed) == expected
+    footer = "\n".join(line for line in (first + "\n" + second).splitlines()
+                       if not line.lstrip().startswith("{"))
+    return "\n".join(retained) + "\n" + footer, exact
+
+
 def parse(text, source, pages):
     rows = {}
     rejected = {}
@@ -37,7 +70,7 @@ def parse(text, source, pages):
         try:
             item = json.loads(line)
             key = item.get("record_id") if source == "codex" else item.get("id")
-            if key not in pages:
+            if not isinstance(key, str) or key not in pages:
                 raise ValueError("Unexpected ID")
             if key in seen:
                 rows.pop(key, None)
@@ -110,7 +143,7 @@ def parse(text, source, pages):
                              evidence=" | ".join(a["quote"] for a in anchors),
                              reason=reason)
         except (ValueError, TypeError, AttributeError) as error:
-            if key in pages:
+            if isinstance(key, str) and key in pages:
                 rejected[key] = str(error)
             else:
                 malformed += 1
@@ -150,23 +183,33 @@ def main():
     parser.add_argument("pages", type=Path)
     parser.add_argument("codex", type=Path)
     parser.add_argument("gemini", type=Path)
+    parser.add_argument("--gemini-correction", type=Path)
     parser.add_argument("--gemini-gate", type=Path)
     args = parser.parse_args()
     key = csv_rows(SYNTHESIS / "human_review_packet/coordinator/key.csv")
     pages = {row["packet_id"]: json.loads((args.pages / (row["packet_id"] + ".json")).read_text()) for row in key}
     source_text = {name: unpack(getattr(args, name), name) for name in ("codex", "gemini")}
+    original = json.loads(args.gemini.read_text())
+    raw = original
+    context_ok = context_verified(original, "isolated_context_manifest.json")
+    exact_correction = None
+    correction_task = None
+    if args.gemini_correction:
+        raw = json.loads(args.gemini_correction.read_text())
+        correction_task = raw.get("id")
+        manifest = "gemini_correction_context_manifest.json"
+        context_ok = context_ok and context_verified(raw, manifest)
+        target = json.loads((HERE / manifest).read_text())["record_ids"]
+        correction_text = unpack(args.gemini_correction, "gemini")
+        source_text["gemini"], exact_correction = merge_gemini(source_text["gemini"], correction_text, target)
+        exact_correction = exact_correction and "END_HK261_CORRECTION_101" in correction_text
     c, g = [parse(source_text[name], name, pages) for name in ("codex", "gemini")]
-    raw = json.loads(args.gemini.read_text())
     review = json.loads(args.gemini_gate.read_text()) if args.gemini_gate else {}
-    expected = json.loads((HERE / "isolated_context_manifest.json").read_text())["files"]
     metadata = raw.get("metadata", {})
-    context_ok = (
-        metadata.get("context_audit", {}).get("unchanged") is True
-        and metadata.get("geminiApp", {}).get("files") == expected
-    )
     required = {"original_pdf", "provenance", "method_and_evaluation", "quantitative_claims",
                 "unresolved_ids", "worker_statement"}
-    gate = (context_ok and len(g[0]) == len(key) and not g[1] and not g[2]
+    gate = (context_ok and exact_correction is not False
+            and len(g[0]) == len(key) and not g[1] and not g[2]
             and raw["status"]["state"] == "TASK_STATE_COMPLETED"
             and "END_HK261_136" in source_text["gemini"]
             and review.get("task_id") == raw.get("id")
@@ -180,6 +223,8 @@ def main():
         records=len(key), codex_valid=len(c[0]), codex_rejected=c[1], codex_malformed=c[2],
         gemini_valid=len(g[0]), gemini_rejected=g[1], gemini_malformed=g[2],
         gemini_transport=raw["status"]["state"], gemini_context_verified=context_ok,
+        gemini_initial_task=original.get("id"), gemini_correction_task=correction_task,
+        gemini_exact_correction=exact_correction,
         gemini_cleanup=metadata.get("chat_cleanup", {}).get("state", "not_reported"),
         gemini_gate="PASS" if gate else "FAIL",
         codex_decisions=dict(Counter(row["decision"] for row in c[0].values())),
@@ -213,7 +258,7 @@ def main():
                                for decision, label in LABELS.items())
     status = [
         r"\section*{Tiến độ và giới hạn}",
-        tex(f"Codex: {summary['codex_valid']}/136 đề xuất qua kiểm tra mã tiêu chí và neo nguyên văn, "
+        tex(f"Codex có {summary['codex_valid']}/136 đề xuất qua kiểm tra mã tiêu chí và neo nguyên văn, "
             f"gồm {codex_overview}. Có {summary['codex_differs_from_frozen']} đề xuất khác quyết định trong sổ."),
     ]
     shifted = Counter((row["frozen_disposition"], row["codex_decision"]) for row in report)
@@ -225,11 +270,12 @@ def main():
             f"đề xuất đưa vào {shifted['EXCLUDE', 'INCLUDE']} và chờ {shifted['EXCLUDE', 'AWAITING_CLASSIFICATION']}."
         ))
     if gate:
-        status.append(tex(f"Gemini: {summary['gemini_valid']}/136 hồ sơ qua cửa kiểm tra. Hai AI trùng quyết định "
-                          f"{summary['agreement']}/{total} cặp. Cohen’s kappa giữa hai AI: {summary['kappa_ai']}."))
+        kappa = f"{summary['kappa_ai']:.3f}" if summary["kappa_ai"] is not None else "không xác định"
+        status.append(tex(f"Gemini có {summary['gemini_valid']}/136 hồ sơ qua kiểm tra. Hai AI trùng quyết định "
+                          f"{summary['agreement']}/{total} cặp. Cohen’s kappa giữa hai AI là {kappa}."))
     else:
-        status.append(tex(f"Gemini.app: {raw['status']['state']}. Có {summary['gemini_valid']}/136 dòng qua kiểm tra "
-                          "cấu trúc và neo. Lượt này chưa đạt cửa kiểm tra toàn bộ; chưa có số đồng thuận giữa hai AI."))
+        status.append(tex(f"Gemini có {summary['gemini_valid']}/136 dòng qua kiểm tra cấu trúc và neo sau khi đối chiếu phản hồi. "
+                          "Lượt Gemini chưa đủ điều kiện để tính số đồng thuận giữa hai AI."))
     (HERE / "report_status.tex").write_text("\n\n".join(status) + "\n")
     tex_rows = []
     priority_rows = sorted(report, key=lambda row: (

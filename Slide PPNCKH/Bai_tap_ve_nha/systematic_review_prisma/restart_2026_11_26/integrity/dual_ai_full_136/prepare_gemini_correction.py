@@ -47,11 +47,13 @@ def main():
     parser.add_argument("summary", type=Path)
     parser.add_argument("target", type=Path)
     parser.add_argument("manifest", type=Path)
+    parser.add_argument("--keys", nargs="+")
     args = parser.parse_args()
     rejected = json.loads(args.summary.read_text())["gemini_rejected"]
-    keys = sorted(set(rejected) | {"HKF-058", "HKF-073", "HKF-086"})
-    if len(keys) != 101:
-        raise ValueError("Correction expects 101 named targets.")
+    followup = {"HKF-058", "HKF-073", "HKF-086"} if args.keys is None else set(args.keys)
+    keys = sorted(set(rejected) | followup)
+    if args.keys is None and len(keys) != 101:
+        raise ValueError("Initial correction expects 101 named targets.")
     args.target.mkdir(exist_ok=True)
     index = {}
     for seq, group in enumerate(group_sections(args.source, keys), 1):
