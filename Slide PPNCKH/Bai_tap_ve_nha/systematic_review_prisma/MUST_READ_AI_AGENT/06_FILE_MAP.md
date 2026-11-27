@@ -26,6 +26,12 @@ All paths are relative to `systematic_review_prisma/` unless absolute.
 | Reusable code catalog | `../automation/artifact_catalog.json` |
 | Automation registry instructions | `../automation/README.md` |
 
+## HK261 evidence intake
+
+- [Report evidence catalog by ID](../prisma_evidence/evidence_by_id.csv)
+- [How to add and verify new evidence](../prisma_evidence/MAINTENANCE.md)
+- [Evidence index by project step](../prisma_evidence/README.md)
+
 ## Active research artifacts
 
 | Purpose | Canonical path |
