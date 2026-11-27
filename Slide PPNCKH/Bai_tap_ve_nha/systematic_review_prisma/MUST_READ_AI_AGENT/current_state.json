@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T20:35:22+07:00",
+  "updated_at": "2026-11-27T20:42:41+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
@@ -11,7 +11,7 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T20:21:38+07:00",
-    "updated_at": "2026-11-27T20:35:22+07:00",
+    "updated_at": "2026-11-27T20:42:41+07:00",
     "decision_id": "hk261-dual-ai-source-review-887-v1",
     "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/receipts/batch-01-review.md"
   },
@@ -901,6 +901,22 @@
       "crossref": 5,
       "ieee_xplore": 6,
       "screening_or_prisma_changed": false
+    },
+    "dual_ai_source_review_887": {
+      "status": "active",
+      "manifest": "restart_2026_11_26/integrity/source_review_887/phase_manifest.json",
+      "codex_pass": "restart_2026_11_26/integrity/source_review_887/codex_pass.jsonl",
+      "expected": 887,
+      "codex_returned": 887,
+      "codex_status": {
+        "VERIFIED": 479,
+        "PARTIAL": 332,
+        "NOT_REPORTED": 40,
+        "UNRESOLVED": 32,
+        "DISCREPANCY": 4
+      },
+      "gemini_returned": 112,
+      "human_forms_changed": false
     }
   },
   "blockers": [],

@@ -19,6 +19,7 @@ PACKET = FINAL / "human_review_packet"
 MASKED = RESTART / "fulltext_retrieval/pdf/human_review_full_136"
 PREFLIGHT = "HKF-118.pdf"
 LIMITED = {"HKF-031", "HKF-130"}
+IEEE_R0082 = RESTART / "fulltext_retrieval/pdf/R0082_ieee_wcnc_2023.pdf"
 
 
 def rows(path):
@@ -78,10 +79,14 @@ def main():
         if digest(original) != r["sha256"] or digest(masked) != r["sha256"]:
             raise ValueError(f"PDF version mismatch for {packet_id}")
         files[packet_id] = original
-    pages = physical_text(files, workspace)
+    ieee_hash = json.loads((FINAL / "r0082_publisher_crosscheck.json").read_text())["ieee_pdf_sha256"]
+    if digest(IEEE_R0082) != ieee_hash:
+        raise ValueError("The publisher PDF for R0082 changed")
+    pages = physical_text(files | {"HKF-115-IEEE": IEEE_R0082}, workspace)
     sorted_ids = sorted(key, key=lambda packet_id: key[packet_id]["record_id"])
     counts = Counter(r["check_type"] for r in targets)
-    manifest = {"version": 1, "keys": 887, "reports": 46, "counts": dict(counts), "batches": []}
+    manifest = {"version": 1, "keys": 887, "reports": 46, "counts": dict(counts), "batches": [],
+                "supplemental_pdf": {"packet_id": "HKF-115", "pdf": str(IEEE_R0082.relative_to(PROJECT)), "sha256": ieee_hash}}
     for offset in range(0, len(sorted_ids), 6):
         number = 1 + offset // 6
         group = sorted_ids[offset:offset + 6]
@@ -106,6 +111,11 @@ def main():
                     part += 1
                 chunk += page + "\n"
             (batch / f"{packet_id}-{part:02}.txt").write_text(chunk, encoding="utf-8")
+        if "HKF-115" in group:
+            ieee_pages = json.loads((pages / "HKF-115-IEEE.json").read_text())
+            text = "\n".join(f"===== HKF-115 publisher PDF physical page {i}/{len(ieee_pages)} =====\n{p}"
+                             for i, p in enumerate(ieee_pages, 1))
+            (batch / "HKF-115-IEEE.txt").write_text(text, encoding="utf-8")
         shutil.copyfile(MASKED / PREFLIGHT, batch / PREFLIGHT)
         dump(batch / "targets.json", target_map)
         assets = {p.name: digest(p) for p in sorted(batch.iterdir()) if p.is_file()}

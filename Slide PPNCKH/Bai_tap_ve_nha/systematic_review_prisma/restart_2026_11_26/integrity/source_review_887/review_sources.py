@@ -93,12 +93,13 @@ def assess(item, sources):
         if not isinstance(anchor, dict) or not isinstance(anchor.get("section"), str) or not anchor["section"].strip():
             return "LOCATOR_MISSING"
         page = anchor.get("page")
-        if type(page) is not int or not any(1 <= page <= len(src.get(ident, [])) for src in sources):
+        edition = "HKF-115-IEEE" if ident == "HKF-115" and "ieee publisher pdf" in norm(anchor["section"]) else ident
+        if type(page) is not int or not any(1 <= page <= len(src.get(edition, [])) for src in sources):
             return "PAGE_INVALID"
         if not anchor.get("quote") and item["status"] == "NOT_REPORTED" and item["note"].strip():
             checks.append(None)
         else:
-            checks.append(any(contains(src, ident, anchor) for src in sources))
+            checks.append(any(contains(src, edition, anchor) for src in sources))
     if checks and all(value is None for value in checks):
         return "ABSENCE_SCOPE_DOCUMENTED"
     if all(checks):
@@ -125,6 +126,12 @@ def receipt_review(path, batch, expected, sources):
         and isinstance(preflight.get("section"), str) and bool(preflight["section"].strip())
         and any(contains(src, "HKF-118", preflight) for src in sources)
     )
+    identities = re.findall(
+        r"(?m)^\W*(HKF-\d{3})\s*\|\s*Title:\s*([^\n|]+)\|\s*Authors:\s*([^\n|]+)\|"
+        r"\s*Year:\s*([^\n|]+)\|\s*Venue:\s*([^\n|]+)\|\s*DOI:\s*([^\n|]+)", text,
+    )
+    normalized_dois = [m[-1].strip().lower() for m in identities if m[-1].strip().lower().startswith("10.")]
+    normalized_titles = [norm(m[1]) for m in identities if norm(m[1]) != "unknown"]
     stats = {
         "batch": batch["number"], "expected": len(expected), "seen": len(data),
         "task_id": receipt.get("id"), "context_id": receipt.get("contextId"),
@@ -133,6 +140,11 @@ def receipt_review(path, batch, expected, sources):
         "hash_inventory_match": given_hashes == batch["assets"],
         "context_unchanged": meta.get("context_audit", {}).get("unchanged") is True,
         "preflight_anchor_match": direct_source_access,
+        "identity_count": len(identities),
+        "identity_expected": len(set(batch["reports"]) - LIMITED),
+        "identity_records": sorted({line[0] for line in identities}),
+        "identity_duplicate_dois": len(normalized_dois) - len(set(normalized_dois)),
+        "identity_duplicate_titles": len(normalized_titles) - len(set(normalized_titles)),
         "end_marker": "END_HK261_SOURCE_BATCH" in text,
         "cleanup": meta.get("chat_cleanup", {}),
         "locator_checks": dict(Counter(item["locator_check"] for item in data.values())),
@@ -141,6 +153,24 @@ def receipt_review(path, batch, expected, sources):
         "missing_keys": sorted(expected - data.keys()),
     }
     return data, stats
+
+
+def load_semantic_checks(workspace, batch, keys):
+    checks = {}
+    files = sorted(workspace.glob(f"gate-{batch:02}-*.jsonl"))
+    if not files:
+        files = sorted((HERE / "receipts").glob(f"gate-{batch:02}-*.jsonl"))
+    for path in files:
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            item = json.loads(line)
+            key = key_of(item)
+            status = item.get("semantic", item.get("status"))
+            if key not in keys or key in checks or status not in {"PASS", "PARTIAL", "FAIL"}:
+                raise ValueError(f"Unexpected semantic review row {key} / {status} in {path.name}")
+            checks[key] = item | {"semantic": status}
+    return checks
 
 
 def suggested(target):
@@ -208,10 +238,12 @@ def codex_scope(codex):
                            evidence=[], note="The quantitative details are outside the scope of this review.")
 
 
-def csv_row(target, info, codex, gemini, prior):
+def csv_row(target, info, codex, gemini, prior, gate, supplemental):
     ident, kind, key = input_key(target)
     record = {"record_id": info["record_id"], "packet_id": ident, "kind": kind, "key": key,
               "pdf_path": info["source_pdf"], "pdf_sha256": info["sha256"],
+              "supplemental_pdf_path": supplemental.get("pdf", ""),
+              "supplemental_pdf_sha256": supplemental.get("sha256", ""),
               "suggested_locator": suggested(target), "baseline": prior,
               "comparison": conclusion(codex, gemini, kind)}
     for name, item in (("codex", codex), ("gemini", gemini)):
@@ -225,6 +257,13 @@ def csv_row(target, info, codex, gemini, prior):
                                               and "page" in a and "section" in a)
         record[f"{name}_excerpt"] = " | ".join(a.get("quote", "") for a in anchors
                                                if isinstance(a, dict) and isinstance(a.get("quote"), str))
+    record["gemini_semantic"] = gate.get("semantic", "PENDING") if gemini else "NO_RESULT"
+    record["gemini_semantic_reason"] = gate.get("reason", "")
+    corrected = gate.get("corrected_evidence", [])
+    record["gemini_semantic_recheck"] = gate.get("suggested_fix", "") or " | ".join(
+        f"PDF p. {a.get('page', '')}, {a.get('section', '')}: {a.get('quote', '')}"
+        for a in corrected if isinstance(a, dict)
+    ) if isinstance(corrected, list) else str(corrected)
     return record
 
 
@@ -261,11 +300,12 @@ def report_tex(path, summary, report):
     lines.extend([
         r"\bottomrule\end{longtable}",
         r"\section*{Kiểm tra phản hồi Gemini}",
-        r"\begin{center}\begin{tabular}{rrrr}\toprule Lô & Số mục dự kiến & Trả về & Neo khớp \\ \midrule",
+        r"\begin{center}\begin{tabular}{rrrrr}\toprule Lô & Số mục dự kiến & Trả về & Neo khớp & Nội dung qua kiểm tra \\ \midrule",
     ])
     for row in summary["batches"]:
         matches = row.get("locator_checks", {}).get("ANCHORS_MATCH", 0)
-        lines.append(f"{row['batch']} & {row['expected']} & {row['seen']} & {matches} \\\\")
+        verified = row["semantic"].get("PASS", 0)
+        lines.append(f"{row['batch']} & {row['expected']} & {row['seen']} & {matches} & {verified} \\\\")
     lines.extend([
         r"\bottomrule\end{tabular}\end{center}",
         "Bảng CSV giữ riêng kết quả Gemini trả về và trạng thái kiểm tra vị trí nguồn. Những dòng thiếu",
@@ -278,20 +318,21 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("workspace", type=Path)
     parser.add_argument("--output", type=Path, default=HERE)
+    parser.add_argument("--archive-codex", action="store_true", help="Save a replayable, scope-checked Codex pass.")
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     packet = rows(PACKET / "R1/source_verification.csv")
     expected = {input_key(t) for t in packet}
     manifest = load(HERE / "phase_manifest.json")
     sources = [read_pages(args.workspace / p) for p in ("pages", "pymupdf", "appraisal-pymupdf")]
-    if set(sources[0]) != set(manifest["pdfs"]):
+    if {i for i in sources[0] if i in manifest["pdfs"]} != set(manifest["pdfs"]):
         raise ValueError("The hash-checked source page inventory is incomplete")
     codex = {}
     codex_errors = []
-    for name in ("appraisal", "technical", "outcomes"):
-        path = args.workspace / f"codex-{name}.jsonl"
-        if not path.is_file():
-            continue
+    codex_paths = sorted(args.workspace.glob("codex-*.jsonl"))
+    if not codex_paths and (HERE / "codex_pass.jsonl").is_file():
+        codex_paths = [HERE / "codex_pass.jsonl"]
+    for path in codex_paths:
         data, errors, _ = extract(path.read_text(encoding="utf-8"), expected)
         duplicates = data.keys() & codex.keys()
         if duplicates:
@@ -299,14 +340,30 @@ def main():
         codex.update(data)
         codex_errors.extend(errors)
     codex_scope(codex)
+    if args.archive_codex:
+        if len(codex) != len(expected) or codex_errors:
+            raise ValueError("Refusing to archive an incomplete Codex pass")
+        (args.output / "codex_pass.jsonl").write_text(
+            "".join(json.dumps(codex[key], ensure_ascii=False) + "\n" for key in sorted(codex)),
+            encoding="utf-8",
+        )
     visual = {(r["packet_id"], r["kind"], r["key"]) for r in rows(HERE / "primary_visual_checks.csv")}
     for key, item in codex.items():
         item["locator_check"] = "RENDERED_SOURCE_CHECKED" if key in visual else assess(item, sources)
     gemini = {}
+    semantic = {}
     reviews = []
     for batch in manifest["batches"]:
         members = {k for k in expected if k[0] in batch["reports"]}
-        data, stats = receipt_review(args.workspace / f"gemini-{batch['number']:02}.json", batch, members, sources)
+        number = batch["number"]
+        receipt = args.workspace / f"gemini-{number:02}.json"
+        if not receipt.is_file():
+            receipt = HERE / "receipts" / f"batch-{number:02}-receipt.json"
+        data, stats = receipt_review(receipt, batch, members, sources)
+        checked = load_semantic_checks(args.workspace, batch["number"], data.keys())
+        semantic.update(checked)
+        stats["semantic"] = dict(Counter(r["semantic"] for r in checked.values()))
+        stats["semantic_unreviewed"] = len(data) - len(checked)
         gemini.update(data)
         reviews.append(stats)
     baseline = baseline_values()
@@ -317,7 +374,9 @@ def main():
         prior = baseline.get((info["record_id"], kind, item), "")
         if ident in LIMITED:
             prior = "Restricted to non-operational scholarly assessment."
-        report.append(csv_row(target, info, codex.get(k), gemini.get(k), prior))
+        supplemental = manifest.get("supplemental_pdf", {})
+        report.append(csv_row(target, info, codex.get(k), gemini.get(k), prior, semantic.get(k, {}),
+                              supplemental if supplemental.get("packet_id") == ident else {}))
     with (args.output / "source_review_887.csv").open("w", newline="", encoding="utf-8-sig") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(report[0]), lineterminator="\n")
         writer.writeheader()
@@ -328,6 +387,7 @@ def main():
         "codex_parse_errors": codex_errors,
         "codex_status": dict(Counter(r["codex_status"] for r in report)),
         "gemini_status": dict(Counter(r["gemini_status"] for r in report)),
+        "gemini_semantic": dict(Counter(r["gemini_semantic"] for r in report)),
         "labels": dict(Counter(r["comparison"] for r in report)),
         "batches": reviews,
     }

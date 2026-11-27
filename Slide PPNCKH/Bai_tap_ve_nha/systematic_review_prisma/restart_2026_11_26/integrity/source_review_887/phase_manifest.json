@@ -148,6 +148,7 @@
         "HKF-079-01.txt": "f2163c2554413620fe43b2959f61188146ffd2fdee32e399245ef007f693e64c",
         "HKF-110-01.txt": "77f0cb413a2762e68471fab3d1f320db11d1c67aa41ecf2e4e56d67c34f7ec7a",
         "HKF-115-01.txt": "cc2ba82cf66267d77fad672513f4ca985994cdf2d49e6efc5de00915d204893c",
+        "HKF-115-IEEE.txt": "51ce3641bec0ece6db33316e7f55b63a1af72450279fd326e48f81d9016763fb",
         "HKF-118.pdf": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
         "targets.json": "923c616967341ab02fa050c587d671b6443491ddf14e73fdcc93c36c3fdf712b"
       }
@@ -201,6 +202,11 @@
       }
     }
   ],
+  "supplemental_pdf": {
+    "packet_id": "HKF-115",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0082_ieee_wcnc_2023.pdf",
+    "sha256": "7a9a00413539e420d7cf412c2cb71e522311744151dc3a4008c08f2b1415a5ad"
+  },
   "restrictions": {
     "HKF-031": "Original omitted from Gemini context. Report inaccessible to Gemini.",
     "HKF-130": "Original omitted from Gemini context. Report inaccessible to Gemini."

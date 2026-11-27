@@ -20,6 +20,9 @@ def write_review(stats, path):
     locators = stats.get("locator_checks", {})
     missing = stats["expected"] - stats["seen"]
     bad_anchors = stats["seen"] - locators.get("ANCHORS_MATCH", 0) - locators.get("GAP_DOCUMENTED", 0)
+    identity = stats.get("identity_count", 0)
+    identity_expected = stats.get("identity_expected", 0)
+    semantic = stats.get("semantic", {})
     lines = [
         f"# Gemini · Kiểm tra lô {stats['batch']:02}",
         "",
@@ -34,9 +37,15 @@ def write_review(stats, path):
         gate_row("Neo kiểm tra đọc PDF", stats.get("preflight_anchor_match", False), "HKF-118, PDF tr. 2."),
         gate_row("Khóa chính xác và dấu kết thúc", not missing and not stats.get("errors") and stats.get("end_marker", False),
                  f"{stats['seen']}/{stats['expected']} dòng. {len(stats.get('errors', []))} lỗi cấu trúc hoặc khóa."),
+        gate_row("Danh mục thư mục", identity == identity_expected
+                 and not stats.get("identity_duplicate_dois") and not stats.get("identity_duplicate_titles"),
+                 f"{identity}/{identity_expected} dòng nhận diện, {stats.get('identity_duplicate_dois', 0)} DOI trùng,"
+                 f" {stats.get('identity_duplicate_titles', 0)} tiêu đề trùng."),
         gate_row("Neo nguồn hoặc khoảng trống rõ", not bad_anchors and not missing,
                  f"{locators.get('ANCHORS_MATCH', 0)} neo khớp đủ; {locators.get('GAP_DOCUMENTED', 0)} ghi khoảng trống; {bad_anchors} cần chỉnh."),
-        gate_row("Đủ căn cứ cho toàn bộ kết luận", False, "Cần rà nội dung, đơn vị và điều kiện từng nhận định."),
+        gate_row("Đủ căn cứ cho toàn bộ kết luận", semantic.get("PASS", 0) == stats["expected"],
+                 f"Qua {semantic.get('PASS', 0)}, một phần {semantic.get('PARTIAL', 0)},"
+                 f" không qua {semantic.get('FAIL', 0)}, chưa kiểm {stats.get('semantic_unreviewed', 0)}."),
         "",
         "Kết quả lô giữ ở trạng thái tham khảo. Việc khớp neo chưa xác nhận nội dung của phán định.",
     ]
