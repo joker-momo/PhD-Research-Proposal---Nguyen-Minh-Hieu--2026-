@@ -1,0 +1,48 @@
+{
+  "status": "VERIFIED_SOURCE_ERRATUM",
+  "verified_at": "2026-11-27T14:48:59+07:00",
+  "scope": "HK261 P08 single-cell supersession, effective for step 14 onward",
+  "report_id": "R0092",
+  "study_id": "S036",
+  "previous_artifact": "restart_2026_11_26/extraction/supplemental_batch_02_accepted.json",
+  "previous_sha256": "bbae32c680ba43fc2be230e9b79d549b7903ade8dbf3a66eb3fabf4a756d1a73",
+  "previous_key": "reports[R0092].quantitative_rows[0].baseline",
+  "original_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+  "original_pdf_sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+  "locator": {
+    "physical_page": 13,
+    "table": "V",
+    "block": "VGG-16 (15.5 GFLOPs)",
+    "row": "Comm-Min [3]",
+    "column": "Deadline Sat. (%)",
+    "cell": "64.4 ± 4.3",
+    "unit": "%"
+  },
+  "verification": [
+    "Original page render, matching table block, method row and metric column",
+    "Independent PyMuPDF page text agrees with the rendered cell",
+    "Caption specifies mean ± SD over 30 common-seed episodes and strict all-arrived-task denominator"
+  ],
+  "before": {
+    "metric": "deadline satisfaction",
+    "value": "71.6 ± 3.4",
+    "units": "%",
+    "baseline": "Comm-Min: 64.4 ± 3.6%",
+    "denominator": "strict all-arrived-tasks; mean ± SD over 30 common-seed episodes",
+    "workload": "VGG-16 in the custom Gymnasium simulator",
+    "conditions": "shared two-UAV mini-batch substrate, different decision policies; result applies to this workload and comparator",
+    "page": 13,
+    "locator": "Table V, VGG-16, DDCI (Ours) and Comm-Min rows, Deadline Sat. (%)"
+  },
+  "after": {
+    "metric": "deadline satisfaction",
+    "value": "71.6 ± 3.4",
+    "units": "%",
+    "baseline": "Comm-Min: 64.4 ± 4.3%",
+    "denominator": "strict all-arrived-tasks; mean ± SD over 30 common-seed episodes",
+    "workload": "VGG-16 in the custom Gymnasium simulator",
+    "conditions": "shared two-UAV mini-batch substrate, different decision policies; result applies to this workload and comparator",
+    "page": 13,
+    "locator": "Table V, VGG-16, DDCI (Ours) and Comm-Min rows, Deadline Sat. (%)"
+  }
+}

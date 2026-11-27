@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T14:44:48+07:00",
+  "updated_at": "2026-11-27T14:48:59+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_rq_synthesis_active",
@@ -11,7 +11,7 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T14:44:14+07:00",
-    "updated_at": "2026-11-27T14:44:48+07:00",
+    "updated_at": "2026-11-27T14:48:59+07:00",
     "checkpoint_path": "restart_2026_11_26/synthesis/active_rq_dispatch.json",
     "decision_id": "restart-supplemental-rq-synthesis-v1"
   },
@@ -613,7 +613,9 @@
       "index_sha256": "db54a085476f68383209054ccdeb5b27975804375895d8bbb785e054b94ed7fc",
       "report_count": 46,
       "study_count": 46,
-      "claim_status": "PENDING_RQ_SYNTHESIS"
+      "claim_status": "PENDING_RQ_SYNTHESIS",
+      "source_erratum": "restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json",
+      "source_erratum_sha256": "b8a955c26e4e5adf9e0cc15f0039ea44f661135ff1b2e2bebfbedd3fc4477522"
     }
   },
   "blockers": [],
