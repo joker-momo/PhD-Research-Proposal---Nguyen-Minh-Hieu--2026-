@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:37:24+07:00",
+  "updated_at": "2026-11-28T00:39:34+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The verified 30-page manuscript and S2 record the author’s account that the author and a colleague conducted screening and assigned appraisal ratings. Preliminary AI records are retained. The author endorsed 46 inclusions and 90 exclusions. Ten decisions have separate author entries. Zero paired independent full-text decisions are documented. PRISMA is unchanged."
   },
   "task": {
-    "task_id": "hk261-audit-independent-pair-evidence",
+    "task_id": "hk261-record-endorsements-of-full-screening-passes",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:37:24+07:00",
-    "updated_at": "2026-11-28T00:37:24+07:00",
-    "decision_id": "hk261-audit-independent-pair-evidence-v1",
-    "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
-    "completed_at": "2026-11-28T00:37:24+07:00"
+    "started_at": "2026-11-28T00:39:34+07:00",
+    "updated_at": "2026-11-28T00:39:34+07:00",
+    "decision_id": "hk261-record-endorsements-of-full-screening-passes-v1",
+    "checkpoint_path": "restart_2026_11_26/integrity/dual_ai_full_136/review_136.csv",
+    "completed_at": "2026-11-28T00:39:34+07:00"
   },
   "next_task": {
     "task_id": "hk261-collect-new-independent-screening-round",
@@ -1203,6 +1203,40 @@
       "independent_pairs": 0,
       "disagreements": null,
       "r1_separately_documented_final_confirmations": 10,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      }
+    },
+    "full_screening_pass_endorsements": {
+      "confirmation_date": "2026-11-28",
+      "confirmation_source": "Author statement in the HK261 project conversation.",
+      "attribution": "Author endorses Codex screening judgments. The author confirms the colleague endorses Gemini screening judgments.",
+      "source": "restart_2026_11_26/integrity/dual_ai_full_136/review_136.csv",
+      "screening_pairs_endorsed": 136,
+      "same_disposition": 126,
+      "different_disposition": 10,
+      "same_exclusion_different_code": 15,
+      "new_independent_human_pairs": 0,
+      "delivery": "Local Downloads/HK261-sang-loc-doc-lap-2026-11-28/Phieu-xac-nhan-Codex-Gemini",
+      "files": {
+        "R1": {
+          "filename": "HK261_R1_XAC_NHAN_CODEX_136.csv",
+          "rows": 136,
+          "sha256": "7a7eae2509dea51521cb005b514d5e50a1df8dfb13eff5b3121943d2be6c3eca"
+        },
+        "R2": {
+          "filename": "HK261_R2_XAC_NHAN_GEMINI_136.csv",
+          "rows": 136,
+          "sha256": "f29f673a3000f864d2a6a87de3dd30255715b7f501c5e0b2323e89c5b88c8689"
+        },
+        "disagreements": {
+          "filename": "HK261_BAT_DONG_CAC_LUOT_DA_XAC_NHAN.csv",
+          "rows": 25,
+          "sha256": "c8626c73573d60ed51f2963f050a5e736a0e89914b8af8232734ec6211985aeb"
+        }
+      },
       "working_counts": {
         "include": 46,
         "exclude": 90,
