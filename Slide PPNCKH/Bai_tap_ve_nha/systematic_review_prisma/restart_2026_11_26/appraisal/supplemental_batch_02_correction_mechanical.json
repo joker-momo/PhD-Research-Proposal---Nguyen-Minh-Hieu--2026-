@@ -1,0 +1,28 @@
+{
+  "provider_state": "TASK_STATE_COMPLETED",
+  "expected_pairs": 20,
+  "received_pairs": 20,
+  "valid_anchors": 51,
+  "state_counts": {
+    "PARTIAL": 15,
+    "YES": 4,
+    "NOT_REPORTED": 1
+  },
+  "missing": [],
+  "bad_pairs": [],
+  "errors": [
+    [
+      21,
+      null,
+      null,
+      "extra or duplicate key"
+    ],
+    [
+      null,
+      null,
+      null,
+      "invalid or incomplete SUMMARY"
+    ]
+  ],
+  "summary": null
+}

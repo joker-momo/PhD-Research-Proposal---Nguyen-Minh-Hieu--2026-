@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T14:00:09+07:00",
+  "updated_at": "2026-11-27T14:04:40+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_appraisal_in_progress",
@@ -11,19 +11,18 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T13:37:04+07:00",
-    "updated_at": "2026-11-27T14:00:09+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_02_correction_dispatch.json",
+    "updated_at": "2026-11-27T14:04:40+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_02_correction_review.md",
     "decision_id": "restart-supplemental-appraisal-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-appraisal-batch-02-correction-collect",
-    "owner": "CODEX_WRITING",
+    "task_id": "restart-supplemental-appraisal-batch-02-repair",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Retrieve the existing Task by UUID and independently check original-page evidence; do not resend.",
-    "acceptance": "20 verifiable domain/access results and traceable cleanup.",
-    "dispatch_brief": "restart_2026_11_26/appraisal/supplemental_batch_02_correction_brief.md",
-    "message_id": "141bddba-59c9-4e8e-8803-aa592a9c0735",
-    "task_uuid": "c395ea32-3c1c-4183-9d7e-a173ae86061d"
+    "action": "Dispatch only the 1 unresolved keys once.",
+    "acceptance": "1 verifiable domain/access results and traceable cleanup.",
+    "dispatch_brief": "restart_2026_11_26/appraisal/supplemental_batch_02_repair_brief.md",
+    "message_id": "da0e9bb0-9961-49aa-8dad-ebb7fbfa8b24"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -491,7 +490,7 @@
       "studies_verified": 46
     },
     "supplemental_appraisal": {
-      "status": "BATCH_02_CORRECTION_SUBMITTED",
+      "status": "BATCH_02_REPAIR_READY",
       "manifest": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
       "baseline_reports": 25,
       "supplemental_reports_required": 21,
@@ -521,7 +520,8 @@
       "batch_02_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_02_dispatch.json",
       "batch_02_correction_key_count": 20,
       "batch_02_correction_uuid": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
-      "batch_02_correction_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_02_correction_dispatch.json"
+      "batch_02_correction_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_02_correction_dispatch.json",
+      "batch_02_repair_key_count": 1
     }
   },
   "blockers": [],
