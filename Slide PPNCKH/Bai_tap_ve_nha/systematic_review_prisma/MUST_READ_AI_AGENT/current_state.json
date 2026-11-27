@@ -1,27 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T19:14:02+07:00",
+  "updated_at": "2026-11-27T19:24:08+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The local 30-page HK261 revision, unified coding and IEEE R0082 cross-check are verified on the 46/90/0 corpus. Independent screening, human extraction verification and declarations remain pending."
   },
   "task": {
-    "task_id": "hk261-independent-review-packet-full-136",
+    "task_id": "hk261-dual-ai-136-setup",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T19:13:07+07:00",
-    "updated_at": "2026-11-27T19:14:02+07:00",
-    "completed_at": "2026-11-27T19:14:02+07:00",
-    "decision_id": "hk261-independent-review-packet-full-136-v1",
-    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md"
+    "started_at": "2026-11-27T19:24:08+07:00",
+    "updated_at": "2026-11-27T19:24:08+07:00",
+    "completed_at": "2026-11-27T19:24:08+07:00",
+    "decision_id": "hk261-dual-ai-136-setup-v1",
+    "checkpoint_path": "restart_2026_11_26/integrity/dual_ai_full_136/phase_manifest.json"
   },
   "next_task": {
-    "task_id": "hk261-independent-human-review",
-    "owner": "CODEX_WRITING",
-    "status": "blocked",
-    "action": "Two human reviewers independently complete the masked screening forms and source-verification forms; the author confirms reconciled outcomes and declarations.",
-    "acceptance": "Two dated independent screening forms and a documented reconciliation for all 136 reports, with original-page evidence and a human check of the 46 retained-study extractions."
+    "task_id": "hk261-dual-ai-136-gemini",
+    "owner": "GEMINI_RESEARCH",
+    "status": "ready",
+    "action": "Screen 136 masked PDFs independently in one Gemini.app Task.",
+    "acceptance": "136 traceable decisions or explicitly reported shortfalls; archived evidence and independent gate.",
+    "dispatch_brief": "restart_2026_11_26/integrity/dual_ai_full_136/gemini_brief.md",
+    "message_id": "b08929e0-6593-4aa3-9bb6-a9ee0f06c9de"
   },
   "project": {
     "target_venue": "SN Computer Science",
