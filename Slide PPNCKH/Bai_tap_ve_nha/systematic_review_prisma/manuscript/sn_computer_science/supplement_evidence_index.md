@@ -186,7 +186,7 @@ assumptions for future work without reporting a newly measured result.
 | Ten separate final decisions, zero deferrals | S2 rows have seven inclusions (R0001, R0082, R0121, R0125, R0145, R0223, R0292) and three exclusions (R0081, R0113, R0132). Case details are in [S2](supplement_s2_adjudication.md). |
 | 126 without a separate final author entry | 136 assessed − 10 separately documented final decisions = 126. The full set has the author's endorsement. |
 | 4/10 processed and 4/10 final changed | R0081 and R0132 awaiting→exclude, R0113 include→exclude, R0082 awaiting→include. Four changed statuses divided by ten separately documented reports, all of which have a final decision. |
-| 0 / 0 reviewer decisions, 0 pairs, N/A observed agreement and kappa | Both reviewer decision columns have zero nonempty entries. The audit requires two independent decisions on the same report; the observed-agreement denominator is zero and both metrics are null in JSON. |
+| 0 / 0 reviewer decisions, 0 pairs, N/A observed agreement | Both reviewer decision columns have zero nonempty entries. The audit requires two independent decisions on the same report; the observed-agreement denominator is zero. |
 | 46 included, 90 excluded, 0 awaiting | Read the verified PRISMA counts and pending map from the ledger. 46 + 90 + 0 = 136. |
 
 ## Rebuild and check

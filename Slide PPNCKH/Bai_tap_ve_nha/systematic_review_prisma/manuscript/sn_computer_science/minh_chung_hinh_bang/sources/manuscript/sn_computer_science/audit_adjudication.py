@@ -150,7 +150,6 @@ def render_latex(report):
     prisma = report["prisma"]["counts"]
     endorsement = s2["corpus_author_endorsement"]
     agreement = paired["percent_agreement"]
-    kappa = paired["cohens_kappa"]
     pending = ", ".join(f"{key} ({reason})"
                         for key, reason in report["prisma"]["awaiting_classification_codes"].items())
     final = ", ".join(f"{key} ({row['reason']})" for key, row in s2["final_human_decisions"].items()
@@ -163,7 +162,6 @@ def render_latex(report):
     final_change = (f"{comparison['changed_reports']} / {comparison['compared_reports']}"
                     if comparison["compared_reports"] else "N/A")
     agreement_label = "N/A" if agreement is None else rf"{agreement:.1f}\%"
-    kappa_label = "N/A" if kappa is None else f"{kappa:.3f}"
     rows = [
         ("Full-text reports in the S2 register", s2["reports_in_log"]),
         ("Final PRISMA disposition (included / excluded / awaiting)",
@@ -177,7 +175,7 @@ def render_latex(report):
         ("Status changes from preliminary AI dispositions (separate final entries)", final_change),
         ("Independent human decisions recorded (R1 / R2)", f"{s2['reviewer1_decisions']} / {s2['reviewer2_decisions']}"),
         ("Paired independent human decisions", paired["paired_reports"]),
-        (r"Observed agreement / Cohen's $\kappa$ on independent pairs", f"{agreement_label} / {kappa_label}"),
+        ("Observed agreement on independent pairs", agreement_label),
         ("PRISMA awaiting classification", pending or "None"),
     ]
     if deferral_count:

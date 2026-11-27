@@ -50,7 +50,8 @@ class TestAdjudicationAudit(unittest.TestCase):
         self.assertIn("Reports without a separate final entry & 126", table)
         self.assertIn("Status changes from preliminary AI dispositions (separate final entries) & 4 / 10", table)
         self.assertEqual(table.count(" & 4 / 10 "), 1)
-        self.assertIn(r"Cohen's $\kappa$ on independent pairs & N/A / N/A", table)
+        self.assertIn("Observed agreement on independent pairs & N/A", table)
+        self.assertNotIn("Cohen", table)
         self.assertIn("46 / 90 / 0", table)
         self.assertIn("PRISMA awaiting classification & None", table)
 

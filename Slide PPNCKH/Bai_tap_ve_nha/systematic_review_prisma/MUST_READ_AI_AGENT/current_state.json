@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:50:48+07:00",
+  "updated_at": "2026-11-28T00:55:33+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
-    "summary": "The 30-page HK261 comparison draft implements option A, records the lead reviewer's own reading and judgments, and discloses preliminary AI use. Table 8 records zero independent human pairs and four changes among ten separate final entries. S2 and PRISMA remain 46/90/0. Formal contributions, authorship, funding and interests are pending."
+    "summary": "The 30-page comparison draft reports zero documented independent human pairs and omits Cohen's kappa from the manuscript and Table 8. S2 and PRISMA remain 46/90/0."
   },
   "task": {
-    "task_id": "hk261-apply-option-a-first-person-disclosure",
+    "task_id": "hk261-omit-cohens-kappa-from-manuscript",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:49:16+07:00",
-    "updated_at": "2026-11-28T00:50:48+07:00",
-    "decision_id": "hk261-apply-option-a-first-person-disclosure-v1",
+    "started_at": "2026-11-28T00:54:59+07:00",
+    "updated_at": "2026-11-28T00:55:33+07:00",
+    "decision_id": "hk261-omit-cohens-kappa-from-manuscript-v1",
     "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
-    "completed_at": "2026-11-28T00:50:48+07:00"
+    "completed_at": "2026-11-28T00:55:33+07:00"
   },
   "next_task": {
     "task_id": "hk261-collect-new-independent-screening-round",
@@ -1298,6 +1298,19 @@
       "separate_final_status_changes": "4/10",
       "formal_declarations_pending": true,
       "s2_prisma_and_audit_json_unchanged": true
+    },
+    "kappa_omitted_from_manuscript": {
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "sha256": "7b289bac6460001e297f68bd0f42801a15486a06773ad9b5a60ce348588477fb",
+      "pages": 30,
+      "table_8_page": 25,
+      "independent_pairs": 0,
+      "prisma_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "s2_and_audit_json_unchanged": true
     }
   },
   "blockers": [],
