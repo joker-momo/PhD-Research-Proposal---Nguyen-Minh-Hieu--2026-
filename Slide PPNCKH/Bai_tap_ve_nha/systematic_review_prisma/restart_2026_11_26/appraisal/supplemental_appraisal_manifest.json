@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-27T13:37:04+07:00",
+  "status": "BATCH_01_READY",
+  "baseline": {
+    "reports": 25,
+    "judgments": 250,
+    "path": "restart_2026_11_26/appraisal/p09_appraisal_lock.json",
+    "sha256": "a8edf143498f244bcd45472700b7ee4e7a7673c909fbfe4afb96e5197b53e1e9"
+  },
+  "active_p08": {
+    "path": "restart_2026_11_26/extraction/active_p08_extraction_lock.json",
+    "sha256": "1cef72e2eed42751458485988f6503dba7801f6b6b095f2f5914b9a9d0996d82"
+  },
+  "required_supplemental_reports": 21,
+  "required_judgments": 210,
+  "batches": [
+    {
+      "batch": 1,
+      "status": "READY",
+      "brief": "restart_2026_11_26/appraisal/supplemental_batch_01_brief.md",
+      "message_id": "d9a68200-7898-41c0-92e8-036b60ccf4c6",
+      "report_ids": [
+        "R0014",
+        "R0036",
+        "R0038",
+        "R0043",
+        "R0058",
+        "R0064",
+        "R0075"
+      ],
+      "required_keys": 77
+    },
+    {
+      "batch": 2,
+      "status": "QUEUED",
+      "brief": "restart_2026_11_26/appraisal/supplemental_batch_02_brief.md",
+      "message_id": "d7e86bde-9fdb-4844-9558-4a9d32b33dd6",
+      "report_ids": [
+        "R0077",
+        "R0080",
+        "R0090",
+        "R0092",
+        "R0106",
+        "R0107",
+        "R0110"
+      ],
+      "required_keys": 77
+    },
+    {
+      "batch": 3,
+      "status": "QUEUED",
+      "brief": "restart_2026_11_26/appraisal/supplemental_batch_03_brief.md",
+      "message_id": "aebba6e8-134d-4ae4-8957-ec8396496540",
+      "report_ids": [
+        "R0113",
+        "R0118",
+        "R0125",
+        "R0137",
+        "R0145",
+        "R0223",
+        "R0292"
+      ],
+      "required_keys": 77
+    }
+  ]
+}

@@ -1,27 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:34:41+07:00",
+  "updated_at": "2026-11-27T13:37:04+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "supplemental_extraction_in_progress",
-    "summary": "The 46-study linkage checkpoint is accepted. Supplemental original-PDF extraction is underway."
+    "status": "supplemental_appraisal_in_progress",
+    "summary": "Active P08 is locked for 46 reports. P09 appraises 21 supplemental reports and inherits 25 previously locked appraisals."
   },
   "task": {
-    "task_id": "restart-supplemental-extraction",
+    "task_id": "restart-supplemental-appraisal",
     "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T12:51:10+07:00",
-    "updated_at": "2026-11-27T13:34:41+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/active_p08_extraction_lock.json",
-    "decision_id": "restart-supplemental-extraction-v2",
-    "completed_at": "2026-11-27T13:34:41+07:00"
+    "status": "active",
+    "started_at": "2026-11-27T13:37:04+07:00",
+    "updated_at": "2026-11-27T13:37:04+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
+    "decision_id": "restart-supplemental-appraisal-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-appraisal-setup",
-    "owner": "CODEX_WRITING",
+    "task_id": "restart-supplemental-appraisal-batch-01",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Open supplemental step 12 on a dedicated P09 worktree. Reuse the 25 locked baseline appraisals and apply D01–D10 to 21 supplemental reports with original evidence.",
-    "acceptance": "Each report and study ID matches active P08. Exact 210 supplemental quality-domain judgments and independent source support, 460 total after validation."
+    "dispatch_brief": "restart_2026_11_26/appraisal/supplemental_batch_01_brief.md",
+    "message_id": "d9a68200-7898-41c0-92e8-036b60ccf4c6",
+    "acceptance": "77 unique ID/key pairs, physical page and source rationale for all 70 domains, independent acceptance and verified Task cleanup.",
+    "action": "Dispatch native P09 appraisal batch 01 exactly once, then verify against original PDFs."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -487,6 +488,14 @@
       "active_lock_sha256": "1cef72e2eed42751458485988f6503dba7801f6b6b095f2f5914b9a9d0996d82",
       "reports_verified": 46,
       "studies_verified": 46
+    },
+    "supplemental_appraisal": {
+      "status": "BATCH_01_READY",
+      "manifest": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
+      "baseline_reports": 25,
+      "supplemental_reports_required": 21,
+      "supplemental_reports_accepted": 0,
+      "required_domain_judgments": 210
     }
   },
   "blockers": [],
