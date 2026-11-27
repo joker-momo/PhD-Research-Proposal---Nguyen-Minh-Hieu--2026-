@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T17:55:48+07:00",
+  "updated_at": "2026-11-27T18:02:48+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "author_eligibility_reconciled_synthesis_update_pending",
@@ -11,9 +11,9 @@
     "owner": "GEMINI_RESEARCH",
     "status": "active",
     "started_at": "2026-11-27T17:48:01+07:00",
-    "updated_at": "2026-11-27T17:55:48+07:00",
+    "updated_at": "2026-11-27T18:02:48+07:00",
     "decision_id": "hk261-pending-three-evidence-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/pending_three_followup/initial_review.md"
+    "checkpoint_path": "restart_2026_11_26/integrity/pending_three_followup/correction_review.md"
   },
   "next_task": {
     "task_id": "hk261-pending-three-evidence",
@@ -21,8 +21,8 @@
     "status": "ready",
     "action": "Run the native parent task and independently verify returned evidence for the three pending records.",
     "acceptance": "Exactly three distinct records and accepted locators or explicit shortfalls; no eligibility mutations.",
-    "dispatch_brief": "restart_2026_11_26/integrity/pending_three_followup/correction_brief.md",
-    "message_id": "hk261-pending-three-evidence-20261127-correction"
+    "dispatch_brief": "restart_2026_11_26/integrity/pending_three_followup/source_correction_brief.md",
+    "message_id": "hk261-pending-three-evidence-20261127-source-correction"
   },
   "project": {
     "target_venue": "SN Computer Science",
