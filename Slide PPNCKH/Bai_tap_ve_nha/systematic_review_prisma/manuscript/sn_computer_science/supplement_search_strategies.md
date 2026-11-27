@@ -105,3 +105,11 @@ Filters: `{"search_within": "Anywhere", "e_publication_date": "2021-01-01 throug
 ```
 
 Run evidence: `sources/raw/core_searches/acm_complementary_2026-11-26.json`.
+
+
+## Restart changes before screening
+
+| Stage | Change and reason | Evidence in the project |
+|---|---|---|
+| Step 02, protocol definition | The publication-type decision resolved an open criterion. The restart admits peer-reviewed journal or conference reports with full text, substantive methods and evaluated results. This excludes preprints from the primary synthesis. Short papers are judged by their methods and results. | `restart_2026_11_26/protocol_restart.md`, P03/E7 and `restart_2026_11_26/step02_user_decision.md` |
+| Step 03, query audit | Seven selected runs were retained. The supplementary OpenAlex complementary run was revised to preserve the intended terms, wildcards, OR tail and filters. The revised export replaced the earlier snapshot before dataset lock. | `restart_2026_11_26/step03_query_audit_acceptance.md` and `restart_2026_11_26/search_log.md` |

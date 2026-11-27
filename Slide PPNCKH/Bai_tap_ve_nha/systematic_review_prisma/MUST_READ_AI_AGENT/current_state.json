@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T08:22:28+07:00",
+  "updated_at": "2026-11-27T08:31:47+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
-    "summary": "The 25-study restart review is compiled, independently audited and packaged for local coursework handoff. Author confirmations and journal submission are outside this delivery."
+    "summary": "The 25-study coursework handoff includes the revised PRISMA reporting checklist and rebuilt LaTeX/PDF. Remaining reporting gaps and pending author confirmations are recorded."
   },
   "task": {
-    "task_id": "restart-16",
+    "task_id": "restart-prisma-reporting-followup",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T08:06:16+07:00",
-    "updated_at": "2026-11-27T08:22:28+07:00",
+    "started_at": "2026-11-27T08:30:06+07:00",
+    "updated_at": "2026-11-27T08:31:47+07:00",
     "checkpoint_path": "restart_2026_11_26/integrity/final_integrity_audit.md",
-    "decision_id": "restart-16-integrity-v1",
-    "completed_at": "2026-11-27T08:21:37+07:00"
+    "decision_id": "restart-prisma-reporting-followup-v1",
+    "completed_at": "2026-11-27T08:31:47+07:00"
   },
   "next_task": {
     "task_id": "none",

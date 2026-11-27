@@ -56,3 +56,18 @@ source was built independently from an empty temporary directory using the
 bundled class, bibliography style, figure and sources. Original article
 PDFs, search exports and the full Gemini bridge receipts remain in the
 local evidence workspace. Some detailed locators refer to that workspace.
+
+
+## Follow-up PRISMA reporting review
+
+Checked at 2026-11-27T08:31:47+07:00. The earlier audit above records the original ten-page
+build. The revised coursework PDF has eleven pages.
+
+| Criterion | Verdict | Verified evidence |
+|---|---|---|
+| Checklist dispositions and locators | PASS | 27/27 entries checked against the revised PDF and bundled supplements. 12 reported, 9 partially reported, 4 not performed, 2 awaiting author confirmation. Items 10 and 18 are partial. |
+| Evidence boundary | PASS | Six outcome groups, source units and conditions, narrative synthesis methods, report-ID joins, and documented restart changes were drawn from the locked protocol and derived tables. No screening decision, extracted measurement, study appraisal or citation was changed. |
+| PDF and citations | PASS | Tectonic build passed, 11/11 pages visually inspected and 26 distinct DOI links verified. Figure 1 is on p. 5. No unresolved citation or cross-reference warnings, overfull boxes or missing characters. Vertical underfull-box and embedded PDF-version warnings remain. |
+| Reporting gaps | OPEN | No formal reporting-bias or certainty assessment was performed. Engineering appraisal is distinct from study-level risk-of-bias assessment. Funding and other support, sponsor roles, competing interests, and any public sharing arrangements await author confirmation. The checklist records the remaining partial items. |
+
+See the [revised PRISMA checklist](../prisma/prisma_checklist.md).
