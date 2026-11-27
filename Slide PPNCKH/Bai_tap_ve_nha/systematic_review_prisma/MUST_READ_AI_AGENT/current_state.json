@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T11:04:17+07:00",
+  "updated_at": "2026-11-27T11:18:00+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -9,21 +9,21 @@
   "task": {
     "task_id": "restart-supplemental-screening",
     "owner": "CODEX_WRITING",
-    "status": "completed",
+    "status": "rejected",
     "started_at": "2026-11-27T10:02:39+07:00",
-    "updated_at": "2026-11-27T11:04:17+07:00",
-    "completed_at": "2026-11-27T11:04:17+07:00",
-    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_03_correction_review.md",
+    "updated_at": "2026-11-27T11:18:00+07:00",
+    "completed_at": "2026-11-27T11:18:00+07:00",
+    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_04_review.md",
     "decision_id": "restart-supplemental-screening-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-screening-batch-04",
+    "task_id": "restart-supplemental-screening-batch-04-correction",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Screen the remaining two requested ACM PDFs and eleven version-sensitive reports.",
-    "acceptance": "13/13 distinct targeted PDFs and seven checked eligibility criteria per report.",
-    "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_04_brief.md",
-    "message_id": "9f48cff0-72fd-4e05-a1ec-4d7ec377ae72"
+    "action": "Repair 26 named eligibility keys from ten batch-04 reports.",
+    "acceptance": "10 exact IDs and 26 requested eligibility keys with checked source or documented uncertainty.",
+    "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_04_correction_brief.md",
+    "message_id": "d04acf35-db29-4bc8-8beb-cd41ef6de77b"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -349,7 +349,10 @@
       "batch_03_correction_task_uuid": "25b14c65-9cec-40fd-bcc0-b3744f03e9eb",
       "batch_03_correction_review": "restart_2026_11_26/supplemental_screening/batch_03_correction_review.md",
       "batch_03_accepted": "restart_2026_11_26/supplemental_screening/batch_03_accepted.json",
-      "batch_04_inputs": "restart_2026_11_26/supplemental_screening/batch_04_inputs.json"
+      "batch_04_inputs": "restart_2026_11_26/supplemental_screening/batch_04_inputs.json",
+      "batch_04_verdict": "FAIL",
+      "batch_04_task_uuid": "39903411-4588-45a2-a77b-d2c4ff55386e",
+      "batch_04_review": "restart_2026_11_26/supplemental_screening/batch_04_review.md"
     }
   },
   "blockers": [],
