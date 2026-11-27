@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T11:29:04+07:00",
+  "updated_at": "2026-11-27T11:35:31+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -11,19 +11,22 @@
     "owner": "CODEX_WRITING",
     "status": "completed",
     "started_at": "2026-11-27T10:02:39+07:00",
-    "updated_at": "2026-11-27T11:29:04+07:00",
-    "completed_at": "2026-11-27T11:29:04+07:00",
-    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_04_correction_review.md",
+    "updated_at": "2026-11-27T11:35:31+07:00",
+    "completed_at": "2026-11-27T11:35:31+07:00",
+    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_05_pause_handoff.md",
     "decision_id": "restart-supplemental-screening-v1"
   },
   "next_task": {
     "task_id": "restart-supplemental-screening-batch-05",
     "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Assess the next 13 deduplicated original supplemental PDFs under P03/P06.",
+    "status": "active",
+    "action": "Account-switch pause. Recover the already dispatched batch 05 by its original UUID. Review and commit verified evidence before any further dispatch.",
     "acceptance": "13/13 distinct targeted PDFs and seven checked eligibility criteria per report.",
     "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_05_brief.md",
-    "message_id": "1d28580e-861a-4590-af60-c6dd24aa28d9"
+    "message_id": "1d28580e-861a-4590-af60-c6dd24aa28d9",
+    "task_uuid": "9ab10f4e-fc8a-4143-913a-3fe61d516bbf",
+    "context_id": "208a5404-7ff5-483d-81f2-c4636a6ec6f4",
+    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_05_pause_handoff.md"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -357,7 +360,13 @@
       "batch_04_correction_task_uuid": "a6fae60b-9f3d-4ffd-ac5e-6035eddf05c3",
       "batch_04_correction_review": "restart_2026_11_26/supplemental_screening/batch_04_correction_review.md",
       "batch_04_accepted": "restart_2026_11_26/supplemental_screening/batch_04_accepted.json",
-      "batch_05_inputs": "restart_2026_11_26/supplemental_screening/batch_05_inputs.json"
+      "batch_05_inputs": "restart_2026_11_26/supplemental_screening/batch_05_inputs.json",
+      "batch_05_pause_handoff": "restart_2026_11_26/supplemental_screening/batch_05_pause_handoff.md",
+      "batch_05_task_uuid": "9ab10f4e-fc8a-4143-913a-3fe61d516bbf",
+      "batch_05_status": "WORKING_NO_ARTIFACT_AT_PAUSE",
+      "batch_05_pending_reports": 13,
+      "supplemental_decisions_accounted": 40,
+      "remaining_supplemental_reports": 52
     }
   },
   "blockers": [],
