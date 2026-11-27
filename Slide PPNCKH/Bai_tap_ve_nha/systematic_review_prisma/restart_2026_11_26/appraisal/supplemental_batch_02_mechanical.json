@@ -1,0 +1,61 @@
+{
+  "provider_state": "TASK_STATE_COMPLETED",
+  "expected_pairs": 77,
+  "received_pairs": 77,
+  "valid_anchors": 68,
+  "state_counts": {
+    "READ": 7,
+    "YES": 31,
+    "PARTIAL": 29,
+    "NOT_REPORTED": 9,
+    "NO": 1
+  },
+  "missing": [],
+  "bad_pairs": [
+    [
+      "R0107",
+      "D01"
+    ],
+    [
+      "R0110",
+      "D05"
+    ]
+  ],
+  "errors": [
+    [
+      57,
+      "R0107",
+      "D01",
+      "excerpt mismatch on physical page 4; other pages [3]"
+    ],
+    [
+      57,
+      "R0107",
+      "D01",
+      "missing positive or adverse original anchor"
+    ],
+    [
+      72,
+      "R0110",
+      "D05",
+      "excerpt mismatch on physical page 12; other pages [11]"
+    ],
+    [
+      72,
+      "R0110",
+      "D05",
+      "missing positive or adverse original anchor"
+    ]
+  ],
+  "summary": {
+    "id": "SUMMARY",
+    "report_count": 7,
+    "key_count": 77,
+    "tools_used": [
+      "client:view_file (native PDF viewer; shell/command execution disallowed by brief, so PyMuPDF/Poppler/MinerU/Marker were not run)"
+    ],
+    "no_workers_used": true,
+    "unresolved": [],
+    "metadata_needed": []
+  }
+}

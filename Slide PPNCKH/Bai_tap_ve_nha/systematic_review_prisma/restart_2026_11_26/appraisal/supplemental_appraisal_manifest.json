@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "created_at": "2026-11-27T13:37:04+07:00",
-  "status": "BATCH_02_SUBMITTED",
+  "status": "BATCH_02_CORRECTION_READY",
   "baseline": {
     "reports": 25,
     "judgments": 250,
@@ -54,7 +54,7 @@
     },
     {
       "batch": 2,
-      "status": "SUBMITTED",
+      "status": "CORRECTION_READY",
       "brief": "restart_2026_11_26/appraisal/supplemental_batch_02_brief.md",
       "message_id": "d7e86bde-9fdb-4844-9558-4a9d32b33dd6",
       "report_ids": [
@@ -68,7 +68,11 @@
       ],
       "required_keys": 77,
       "task_uuid": "fa578019-cecc-4edf-b6de-e5185597ebd0",
-      "dispatch": "restart_2026_11_26/appraisal/supplemental_batch_02_dispatch.json"
+      "dispatch": "restart_2026_11_26/appraisal/supplemental_batch_02_dispatch.json",
+      "correction_brief": "restart_2026_11_26/appraisal/supplemental_batch_02_correction_brief.md",
+      "correction_message_id": "141bddba-59c9-4e8e-8803-aa592a9c0735",
+      "correction_keys": 20,
+      "review": "restart_2026_11_26/appraisal/supplemental_batch_02_review.md"
     },
     {
       "batch": 3,
