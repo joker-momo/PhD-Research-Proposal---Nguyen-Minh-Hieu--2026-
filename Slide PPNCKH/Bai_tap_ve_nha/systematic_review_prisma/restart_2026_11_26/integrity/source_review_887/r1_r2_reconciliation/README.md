@@ -2,6 +2,7 @@
 
 - [Báo cáo PDF](report.pdf) nêu quy mô và 12 mục nên đọc trước. Đây là bảy mục lệch dữ liệu đã lưu và năm mục R2 chưa qua đối chiếu nội dung.
 - [Bảng cần chốt](muc_can_chot.csv) ghi mã bài, tên, DOI, tên tệp PDF, SHA-256, trang, nhận định, lý do và đề xuất trên mỗi dòng. Cột `tac_gia_chot` để trống.
+- [Sổ quyết định của tác giả](author_decisions.csv) ghi từng xác nhận theo thứ tự. Các bảng sinh từ hai phiếu tiếp tục là ảnh chụp trước khi chốt.
 - [Bảng toàn bộ 887 khóa](doi_chieu_887.csv) cho phép tìm lại mọi cặp R1/R2. [Tổng kiểm](summary.json) ghi các mẫu số và cờ.
 
 ## Cách đọc bảng
@@ -15,7 +16,7 @@ Số trang vật lý đếm từ 1. Đường dẫn PDF tính từ thư mục `s
 - `RA_LAI_GIA_TRI_HAI_BEN` đánh dấu số thập phân hoặc phần trăm cần đọc lại khi so chuỗi đã chuẩn hóa. Đây là cờ sàng lọc. Viết khác đơn vị, thêm làm tròn hoặc biểu diễn khác có thể kích hoạt cờ.
 - `GIOI_HAN_MINH_CHUNG` bao gồm xác minh một phần, nguồn chưa báo cáo, số chỉ hiện ở đồ thị, hoặc số in chưa giải quyết. `CHUA_GIAI_QUYET` giữ phần đang treo. `NGUON_GIOI_HAN` chỉ ghi giới hạn về phạm vi đối chiếu. Các dòng hoàn toàn không có cờ vẫn nằm trong bảng 887; quy tắc ghép không chứng nhận hai đoạn tường thuật có cùng ý nghĩa.
 
-Tất cả mục cần chốt có đề xuất theo loại chứng cứ. Với 12 mục ưu tiên, đề xuất nêu cụ thể chỉ số hoặc phán định, phiên bản PDF và trang. Các mục còn lại dựa trên hai phiếu đã khóa, kiểm tra máy theo trang và biên bản đối chiếu gốc, với phạm vi được ghi theo từng hàng. Chưa điền quyết định tác giả. S2, PRISMA, bản thảo và hai bộ phiếu giữ nguyên.
+Tất cả mục cần chốt có đề xuất theo loại chứng cứ. Với 12 mục ưu tiên, đề xuất nêu cụ thể chỉ số hoặc phán định, phiên bản PDF và trang. Các mục còn lại dựa trên hai phiếu đã khóa, kiểm tra máy theo trang và biên bản đối chiếu gốc, với phạm vi được ghi theo từng hàng. Quyết định cập nhật trong sổ quyết định của tác giả. S2, PRISMA, bản thảo và hai bộ phiếu giữ nguyên.
 
 ## Tái tạo
 
