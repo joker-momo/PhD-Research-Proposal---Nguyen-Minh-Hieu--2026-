@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:26:56+07:00",
+  "updated_at": "2026-11-28T00:32:09+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The verified 30-page manuscript and S2 record the author’s account that the author and a colleague conducted screening and assigned appraisal ratings. Preliminary AI records are retained. The author endorsed 46 inclusions and 90 exclusions. Ten decisions have separate author entries. Zero paired independent full-text decisions are documented. PRISMA is unchanged."
   },
   "task": {
-    "task_id": "hk261-manuscript-author-reviewer-roles",
+    "task_id": "hk261-prepare-new-independent-screening-round",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:25:20+07:00",
-    "updated_at": "2026-11-28T00:26:56+07:00",
-    "decision_id": "hk261-manuscript-author-reviewer-roles-v1",
-    "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
-    "completed_at": "2026-11-28T00:26:56+07:00"
+    "started_at": "2026-11-28T00:31:33+07:00",
+    "updated_at": "2026-11-28T00:32:09+07:00",
+    "decision_id": "hk261-prepare-new-independent-screening-round-v1",
+    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md",
+    "completed_at": "2026-11-28T00:32:09+07:00"
   },
   "next_task": {
-    "task_id": "hk261-priority-draft-author-comparison",
+    "task_id": "hk261-collect-new-independent-screening-round",
     "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "Await author comparison of the 30-page manuscript and S3/S4 evidence.",
-    "acceptance": "The author reviews the comparison draft and specifies any further revisions."
+    "action": "Await the two reviewer-authored screening exports locked separately before reconciliation.",
+    "acceptance": "Two original CSV exports supplied by the reviewers, with provenance and dates, before any change to S2 or PRISMA."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -1107,6 +1107,39 @@
         "awaiting": 0
       },
       "independent_rebuild_matched_rendered_pages": 30
+    },
+    "new_independent_screening_round_packages": {
+      "purpose": "New full-text screening by the author and a colleague. Packaged blank copies only.",
+      "delivery": "Local Downloads/HK261-sang-loc-doc-lap-2026-11-28, outside Git.",
+      "roster_and_aliases": "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md",
+      "pdfs_per_reviewer": 136,
+      "blank_rows_per_reviewer": 136,
+      "pairs_recorded": 0,
+      "reviewer_packages": {
+        "R1": {
+          "name": "HK261_R1_136_PDF.zip",
+          "bytes": 529378597,
+          "sha256": "f02bb991ce2f868b9a72116bae27ea403ef903100360bb72a436e38e05b36e36",
+          "form_sha256": "5b62f5a172aa09b804f25647899627553c4ea1223203087acbbc058c0423ecc5"
+        },
+        "R2": {
+          "name": "HK261_R2_136_PDF.zip",
+          "bytes": 529378597,
+          "sha256": "80c6cbce71d7612a00acdfa57667d20d945b1e7baacd494c100a1f8d296c1a86",
+          "form_sha256": "415a901c996808dae5230c1e6e8d0c970253e6ad64ef47ed717202d477b05443"
+        }
+      },
+      "source_manifest_sha256": "c5b9c0d7709342faa5ddabccf9007fe88943f7698f37864503319bf9658a3177",
+      "guide_sha256": "0d3316833f568698503cdc4722de8014686c70157a4038c95cc1d878d73f0d19",
+      "version_hashes": {
+        "R0292": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+        "R0082": "7a9a00413539e420d7cf412c2cb71e522311744151dc3a4008c08f2b1415a5ad"
+      },
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      }
     }
   },
   "blockers": [],
