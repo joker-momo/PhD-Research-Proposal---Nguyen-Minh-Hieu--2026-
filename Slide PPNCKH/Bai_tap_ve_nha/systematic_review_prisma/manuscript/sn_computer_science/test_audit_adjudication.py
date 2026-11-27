@@ -29,12 +29,12 @@ class TestAdjudicationAudit(unittest.TestCase):
         rows = load_rows(self.source, self.baseline, self.ids)
         report = build_report(rows, self.ledger, self.deferrals)
         self.assertEqual(report["s2"]["reports_in_log"], 136)
-        self.assertEqual(report["s2"]["author_processed_reports"], 8)
-        self.assertEqual(report["s2"]["reports_without_author_confirmation"], 128)
+        self.assertEqual(report["s2"]["author_processed_reports"], 10)
+        self.assertEqual(report["s2"]["reports_without_author_confirmation"], 126)
         self.assertEqual(report["s2"]["author_confirmed_deferrals"], {})
         comparison = report["ai_to_final_human_decisions"]
-        self.assertEqual((comparison["changed_reports"], comparison["compared_reports"]), (4, 8))
-        self.assertEqual(comparison["changed_among_author_processed"], {"changed": 4, "total": 8})
+        self.assertEqual((comparison["changed_reports"], comparison["compared_reports"]), (4, 10))
+        self.assertEqual(comparison["changed_among_author_processed"], {"changed": 4, "total": 10})
         self.assertEqual(comparison["transitions"],
                          {"AWAITING_CLASSIFICATION -> EXCLUDE": ["R0081", "R0132"],
                           "INCLUDE -> EXCLUDE": ["R0113"],
@@ -42,9 +42,9 @@ class TestAdjudicationAudit(unittest.TestCase):
         self.assertEqual(report["paired_human_agreement"]["paired_reports"], 0)
         self.assertIsNone(report["paired_human_agreement"]["cohens_kappa"])
         table = render_latex(report)
-        self.assertIn("Reports without author confirmation & 128", table)
-        self.assertIn("Changes among author-processed reports & 4 / 8", table)
-        self.assertIn("Changes among final human decisions & 4 / 8", table)
+        self.assertIn("Reports without author confirmation & 126", table)
+        self.assertIn("Changes among author-processed reports & 4 / 10", table)
+        self.assertIn("Changes among final human decisions & 4 / 10", table)
         self.assertIn("46 / 90 / 0", table)
         self.assertIn("PRISMA awaiting classification & None", table)
 

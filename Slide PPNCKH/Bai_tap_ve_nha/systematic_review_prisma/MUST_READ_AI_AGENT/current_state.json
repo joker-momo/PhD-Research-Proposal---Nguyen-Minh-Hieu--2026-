@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:02:16+07:00",
+  "updated_at": "2026-11-28T00:10:10+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
-    "summary": "The verified 30-page revision identifies both AI-assisted source-review endorsements in Supplement S2 and remains frozen on the 46/90/0 corpus. Independent human assessment and declarations remain pending."
+    "summary": "Supplement S2 records ten author-confirmed eligibility decisions, including R0121 and R0125 with explicit evidence limits. The verified 30-page manuscript reflects the updated S2 audit. The 46/90/0 corpus, source-review endorsements, and zero independent screening pairs are unchanged."
   },
   "task": {
-    "task_id": "hk261-manuscript-s2-source-forms",
+    "task_id": "hk261-s2-confirm-r0121-r0125",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T23:59:34+07:00",
-    "updated_at": "2026-11-28T00:02:16+07:00",
-    "decision_id": "hk261-manuscript-s2-source-forms-v1",
-    "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
-    "completed_at": "2026-11-28T00:02:16+07:00"
+    "started_at": "2026-11-28T00:08:08+07:00",
+    "updated_at": "2026-11-28T00:10:10+07:00",
+    "decision_id": "hk261-s2-confirm-r0121-r0125-v1",
+    "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+    "completed_at": "2026-11-28T00:10:10+07:00"
   },
   "next_task": {
     "task_id": "hk261-priority-draft-author-comparison",
@@ -1015,6 +1015,33 @@
         25,
         26
       ],
+      "package_independent_rebuild": "30/30 rendered pages match. All 16 numbered item pages verified.",
+      "superseded_by": "evidence.s2_r0121_r0125_author_confirmation"
+    },
+    "s2_r0121_r0125_author_confirmation": {
+      "completed_at": "2026-11-28T00:10:10+07:00",
+      "s2": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+      "decision_log": "manuscript/sn_computer_science/human_adjudication_log.csv",
+      "audit": "manuscript/sn_computer_science/audit_summary.json",
+      "confirmed": {
+        "R0121": "INCLUDE, mathematical analysis without simulation or empirical validation",
+        "R0125": "INCLUDE, software prototype evaluated on one workstation"
+      },
+      "author_confirmed_reports": 10,
+      "assessed_reports": 136,
+      "reports_without_author_confirmation": 126,
+      "independent_pairs": 0,
+      "changed_from_ai": 4,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "prisma_change": "Updated S2 input SHA-256 only. Counts, IDs, and diagram are unchanged.",
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "d9dafa5baad6124b4be706ef7658df0f88100a8eddb4bead30ed60ac955c0fa8",
+      "pages": 30,
+      "previous_pdf_commit": "d507122",
       "package_independent_rebuild": "30/30 rendered pages match. All 16 numbered item pages verified."
     }
   },

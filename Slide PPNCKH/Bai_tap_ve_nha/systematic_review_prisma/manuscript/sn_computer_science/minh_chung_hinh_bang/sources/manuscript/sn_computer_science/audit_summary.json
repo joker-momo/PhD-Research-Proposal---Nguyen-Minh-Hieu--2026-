@@ -2,10 +2,10 @@
   "ai_to_final_human_decisions": {
     "changed_among_author_processed": {
       "changed": 4,
-      "total": 8
+      "total": 10
     },
     "changed_reports": 4,
-    "compared_reports": 8,
+    "compared_reports": 10,
     "scope": "Compared reports have documented final decisions. Author-processed reports include final decisions and confirmed deferrals. Both counts describe the documented subset.",
     "transitions": {
       "AWAITING_CLASSIFICATION -> EXCLUDE": [
@@ -70,7 +70,7 @@
   },
   "s2": {
     "author_confirmed_deferrals": {},
-    "author_processed_reports": 8,
+    "author_processed_reports": 10,
     "final_human_decisions": {
       "R0001": {
         "decision": "INCLUDE",
@@ -87,6 +87,14 @@
       "R0113": {
         "decision": "EXCLUDE",
         "reason": "E3"
+      },
+      "R0121": {
+        "decision": "INCLUDE",
+        "reason": ""
+      },
+      "R0125": {
+        "decision": "INCLUDE",
+        "reason": ""
       },
       "R0132": {
         "decision": "EXCLUDE",
@@ -106,7 +114,7 @@
       }
     },
     "reports_in_log": 136,
-    "reports_without_author_confirmation": 128,
+    "reports_without_author_confirmation": 126,
     "reviewer1_decisions": 0,
     "reviewer2_decisions": 0
   }

@@ -12,8 +12,9 @@ confirmed three additional exclusions, R0081 (E7), R0113 (E3) and R0132 (E3), on
 [active PRISMA ledger](../../restart_2026_11_26/prisma/prisma_counts.json)
 combines the screening and author decisions. The current eligibility set
 contains 46 included, 90 excluded and none awaiting classification.
-S2 records eight final decisions (five inclusions and three exclusions) and
-zero open author-confirmed deferrals. Eight of 136 reports have author confirmation.
+S2 records ten final author decisions (seven inclusions and three exclusions) and
+zero open author-confirmed deferrals. Ten of 136 reports have author confirmation.
+The two confirmations for R0121 and R0125 retain their existing inclusions.
 The current selection includes R0082 in place of R0113 relative to the prior
 46-study comparison PDF. [S3](supplement_s3.md) records the reconciled
 extraction, appraisal, and synthesis.
@@ -73,7 +74,7 @@ PDF pages are physical, one-based. Look up the local original and checksum
 by report ID in the review log. Use the frozen eligibility requirements
 and record the original page and criterion behind each decision.
 
-| Report | Source and finding | Author disposition or proposed check |
+| Report | Source and finding | Author disposition |
 | --- | --- | --- |
 | R0081, Sun et al., IDEA | Original pp. 1–2, §§1–3 describes model splitting and prototype results. The [MobiSys accepted demos](https://www.sigmobile.org/mobisys/2022/accepted-demos.html) list the report. The [Call for Demos](https://www.sigmobile.org/mobisys/2022/demos.html) specifies a demo extended abstract and selection for audience interest. | **Author confirmed EXCLUDE (E7), 27 November 2026.** The official ACM demo category and its extended-abstract format establish the publication type. |
 | R0082, LLHR | [IEEE WCNC DOI](https://doi.org/10.1109/WCNC55385.2023.10118908). In the author-supplied IEEE copy, physical p. 1 gives the DOI and proceedings identity. Physical p. 2 (§II, Fig. 1) and pp. 5–6 (§IV, Figs. 2–5) identify the collaboration and the evaluation. The [version cross-check](../../restart_2026_11_26/synthesis/final_46/r0082_publisher_crosscheck.json) matches the archived arXiv locators against the IEEE copy. | **Author confirmed INCLUDE, 27 November 2026.** It is counted once as the IEEE proceedings paper. The original S2 row preserves the document and basis available when the author made the decision. |
@@ -83,7 +84,8 @@ and record the original page and criterion behind each decision.
 | R0145, Xiao et al. | Physical pp. 6 and 17–18, §§3.1 and 6.2, Figs. 2 and 7–10. | **Author confirmed INCLUDE.** Whole LLM requests are assigned locally or to cloud according to connectivity. The study evaluates three assignment schemes. |
 | R0292, Kim et al. | Physical p. 1 ([ACM DOI](https://doi.org/10.1145/3711875.3737661)), p. 4 (§4.1 and Fig. 3), and p. 5 (§5.2, Table 3 and Fig. 5). [DroNet 2025 Submissions](https://sites.google.com/view/dronet2025/submissions) describes single-blind review. The [official programme](https://sites.google.com/view/dronet2025/program) lists the article in Session 3. | **Author confirmed INCLUDE, 27 November 2026.** The second UAV takes over neural tracking and the paper reports hardware-in-the-loop evaluation. The workshop policy and programme establish the peer-review route and article identity. |
 | R0001, Dong et al. | Physical pp. 2–3, §§II.A–B and III.A, Figs. 2–3, and the official ICWS WIP programme and author policy. | **Author confirmed INCLUDE.** Evaluated DNN partitioning and a substantive peer-reviewed WIP report. |
-| R0121 and R0125 | Transport analysis at R0121 pp. 4–8 §§3–4 relies on a reference payload, and the detector in R0125 pp. 2–3 §§II–IV was measured on workstations. | Check whether the explicit multi-UAV inference workload and evaluation claims jointly satisfy E2–E4. Preserve analytical and workstation boundaries if retained. |
+| R0121, Kasianchuk and Lastivka | [Original PDF](../../restart_2026_11_26/fulltext_retrieval/pdf/R0121.pdf), physical pp. 4–5 (printed pp. 147–148), system model and three-phase inference; pp. 5–8 (printed pp. 148–151), Eqs. (5)–(7), Tables 2–4, Fig. 3 and §7. | **Author confirmed INCLUDE, 28 November 2026.** Six modeled neighbors produce intermediate activations that a node aggregates before running the remaining layers. Evaluation is mathematical: single-hop transport of a reference YOLO-family tensor and the probability of reaching the aggregation quorum. The full-cycle latency is formulated without a numerical full-cycle result. No simulation or empirical validation is reported. The provenance of the probability input remains unresolved. |
+| R0125, Allahham and Hassanein | [Original PDF](../../restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf), physical pp. 2–3, §§II.A–D and III.B–D; p. 3, §§IV.A–B, Table I and Fig. 1; p. 4, §IV.F and Table III. | **Author confirmed INCLUDE, 28 November 2026.** Separate processes on one workstation represent UAV workers. The orchestrator assigns frame tiles to YOLO11m workers and merges their detections. Throughput and detection metrics apply to the software prototype. These tests do not validate a physical UAV swarm or wireless link. The two-worker throughput contrast also increases the total allocated threads. |
 
 The [five-record author review report](../../restart_2026_11_26/integrity/borderline_author_review/report.md)
 contains the original sources and the evidence used for these decisions.

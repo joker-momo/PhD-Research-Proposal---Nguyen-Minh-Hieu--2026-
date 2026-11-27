@@ -35,7 +35,7 @@ The author resolved the 12 listed items after reviewing the AI-assisted comparis
 
 ## S2 audit of author decisions
 
-Of 136 assessed reports, **128** lack documented author confirmation (136 − 8). Eight reports were author-processed, all with final decisions. Four changed status relative to the frozen AI ledger, so the two change fractions are **4/8**. The S2 log has zero paired independent human decisions. Observed agreement and Cohen's kappa are undefined. PRISMA reconciles 46 included, 90 excluded and zero awaiting classification. [S2](supplement_s2_adjudication.md) and [S4 derivations](supplement_evidence_index.md#s2-audit-derivations) record the case-level evidence and calculation.
+Of 136 assessed reports, **126** lack documented author confirmation (136 − 10). Ten reports were author-processed, all with final decisions. Four changed status relative to the frozen AI ledger, so the two change fractions are **4/10**. The S2 log has zero paired independent human decisions. Observed agreement and Cohen's kappa are undefined. PRISMA reconciles 46 included, 90 excluded and zero awaiting classification. [S2](supplement_s2_adjudication.md) and [S4 derivations](supplement_evidence_index.md#s2-audit-derivations) record the case-level evidence and calculation.
 
 ## Unified coding and scope sensitivity
 

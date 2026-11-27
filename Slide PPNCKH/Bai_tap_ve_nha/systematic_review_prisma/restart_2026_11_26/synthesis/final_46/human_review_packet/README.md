@@ -1,6 +1,6 @@
 # Phiếu thẩm định HK261
 
-Tại lần xuất bản thảo gần nhất, tác giả đã xác nhận 8/136 quyết định toàn văn. Hai phiếu `screening.csv` vẫn để trống. Sổ S2 và PRISMA vẫn theo quyết định đã lưu (46 đưa vào, 90 loại, 0 chờ).
+Tại lần xuất bản thảo gần nhất, tác giả đã xác nhận 10/136 quyết định toàn văn. Hai phiếu `screening.csv` vẫn để trống. Sổ S2 và PRISMA vẫn theo quyết định đã lưu (46 đưa vào, 90 loại, 0 chờ).
 
 ## Xác nhận hai phiếu đối chiếu nguồn
 
