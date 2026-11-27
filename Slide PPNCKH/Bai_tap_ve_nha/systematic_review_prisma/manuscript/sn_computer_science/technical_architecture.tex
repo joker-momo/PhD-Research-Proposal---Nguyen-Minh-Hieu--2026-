@@ -1,0 +1,62 @@
+\begingroup\fontsize{8}{10}\selectfont\setlength{\tabcolsep}{2.5pt}\renewcommand{\arraystretch}{1.17}
+\begin{longtable}{@{}Y{0.075\linewidth}Y{0.111\linewidth}Y{0.169\linewidth}Y{0.145\linewidth}Y{0.151\linewidth}Y{0.125\linewidth}Y{0.139\linewidth}@{}}
+\caption{Architecture, workload, partitioning, and optimization across all 46 included studies. Rows follow primary topology and year. DP means dynamic programming.}\label{tab:architecture} \\
+\toprule
+Ref. & Topology & DNN / task & Partition / dispatch & Decisions & Objective & Solver \\
+\midrule
+\endfirsthead
+\toprule
+Ref. & Topology & DNN / task & Partition / dispatch & Decisions & Objective & Solver \\
+\midrule
+\endhead
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+\cite{R0003} (2023) & Intra-swarm peers & VGG-16, AlexNet, SqueezeNet & Model choice with layer placement & Model and layer assignment & Accuracy-latency utility & Genetic search \\
+\cite{R0015} (2023) & Intra-swarm peers & AlexNet, VGG-16, ResNet-152 & Intra-layer subtasks & UAV assignments per layer & Capture-to-result latency & EECIA heuristic \\
+\cite{R0010} (2024) & Intra-swarm peers & AlexNet, GoogLeNet, VGG-16 & Per-request pipeline cuts & Layer counts on successive stages & Inference latency & Hierarchical DQN \\
+\cite{R0062} (2024) & Intra-swarm peers & Faster R-CNN video detection & Pipelined submodels & Partition and remaining-node assignment & Inference rate and continuity & Adaptive OODA scheduler \\
+\cite{R0073} (2024) & Intra-swarm peers & AlexNet, VGG-16, YOLO & CNN layers & Layer allocation and UAV operability & End-to-end latency & ILP formulation; PPO policy \\
+\cite{R0006} (2025) & Intra-swarm peers & Synthetic layered detection DNN & Layer assignment & Hover positions and layer placement & Pipeline completion time & Alternating DP and continuous placement \\
+\cite{R0059} (2025) & Intra-swarm peers & AlexNet and VGG-16 streams & Model switching and layer cuts & Models and layer assignments & Aggregate delay at accuracy target & Horizon switching plus MADDPG \\
+\cite{R0068} (2025) & Intra-swarm peers & LeNet and AlexNet classification & Layer-wise split & Layer placement and power & Latency and transmit power & Offline allocation plus multi-agent meta-RL \\
+\cite{R0292} (2025) & Intra-swarm peers & OSTrack marine video tracking & Tracking-state handoff & Tracker and matching configuration & Persistent monitoring through handoff & Protocol and component tuning \\
+\cite{R0074} (2026) & Intra-swarm peers & Llama-2 multisensor logs & Layer and sequence partitions & Stage mapping and token splits & Bottleneck prefill latency & State-compressed and min-max DP \\
+\cite{R0077} (2026) & Intra-swarm peers & Modeled layered inference graph & Distributed graph with early exits & Offload threshold and exit & Congestion and completion & Capacity diffusion and threshold rules \\
+\cite{R0092} (2026) & Intra-swarm peers & VGG and other vision models & Two-UAV mini-batch pipeline & Peer and cut selection & Deadline and energy trade-offs & Pareto shortlist and DQN \\
+\cite{R0113} (2026) & Intra-swarm peers & Event-camera spiking navigation & Peer representation exchange & Local adaptation and coordination & Energy-aware cooperative perception & Continual learning and RL coordination \\
+\cite{R0121} (2026) & Intra-swarm peers & Reference detector-like activation tensor & Activation transport and fragmentation & Encoding and protocol representation & Analytical latency and traffic & Link-layer analytical model \\
+\cite{R0029} (2022) & Cluster or head--worker & AlexNet, VGG-19, GoogLeNet, ResNet-101 & DAG layer replicas & Layer-to-UAV replica mapping & Energy at deadline and reliability limits & DQN with penalties \\
+\cite{R0019} (2023) & Cluster or head--worker & LeNet, AlexNet, VGG-16 & CNN layers & Grid position and layer allocation & Image decision delay & PPO \\
+\cite{R0043} (2023) & Cluster or head--worker & NiN, VGG-16, AlexNet, ResNet-18 & Overlapping spatial sub-blocks & Fusion depth and UAV coalition & Total inference time & Fine partition plus genetic matching \\
+\cite{R0014} (2024) & Cluster or head--worker & Six CNNs; video & Spatial shards within layer pipelines & Cluster and worker assignment & Latency and load balance & ASAP scheduling and profiling \\
+\cite{R0022} (2025) & Cluster or head--worker & Branchy AlexNet recognition & Early exit plus layer cuts & Exit choice and model allocation & Accuracy, delay and energy utility & Option-Critic hierarchical RL \\
+\cite{R0083} (2025) & Cluster or head--worker & AlexNet and VGG-19 & Containerized partitions & Container placement and resources & Normalized delay and energy & MILP with constructive approximation \\
+\cite{R0106} (2025) & Cluster or head--worker & Layered target-awareness model & Sequential inference portions & Partition and multi-agent coordination & Continuity and inference quality & Split DRL with decentralized execution \\
+\cite{R0223} (2025) & Cluster or head--worker & LLM coordination and multimodal feedback & Task-graph assignment & Task ordering and collaborative policy & Response and completion & Task-graph rules plus PPO variant \\
+\cite{R0002} (2026) & Cluster or head--worker & ResNet-18 classification & Two dependent modules & Cross-swarm and service migration & Weighted migration time and energy & Predictive migration heuristic \\
+\cite{R0048} (2026) & Cluster or head--worker & YOLOv3-tiny video analytics & Classifier-level DAG & Position and graph scheduling & Inference latency & GA/\allowbreak{}DP or MAPPO/\allowbreak{}DAG scheduling \\
+\cite{R0075} (2026) & Cluster or head--worker & Early-exit CNN classification & Feature exchange and branch assignment & Confidence- and cost-aware exit routing & Accuracy and inference cost & Frozen LinUCB exit router \\
+\cite{R0095} (2026) & Cluster or head--worker & ResNet-50, MobileNetV3 and BERT & Macro-block pipeline and cache & Cuts, displacement and cache policy & Delay and completion & PPO plus cache heuristic \\
+\cite{R0110} (2026) & Cluster or head--worker & Llama-2 transformer inference & Redundant feed-forward shards & Replica deployment and selective activation & Latency and continuity under resource limits & Offline placement and online scheduling \\
+\cite{R0118} (2026) & Cluster or head--worker & Modeled mixture-of-experts inference & Expert dispatch & Expert placement, selection and motion & Latency and communication constraints & Learned orchestration and control \\
+\cite{R0125} (2026) & Cluster or head--worker & YOLO11m ONNX video detection & Overlapping frame tiles & Frame regions and worker threads & Throughput and latency & Worker allocation and tile adaptation \\
+\cite{R0089} (2023) & Air--edge or air--edge--cloud & Branchy ResNet; CIFAR-10 & Early exit and feature offload & Upload priority and queue balancing & Delay and load & Priority queues and load balancing \\
+\cite{R0044} (2024) & Air--edge or air--edge--cloud & AlexNet and TinyYOLOv2 among tested models & Row-wise activation tiles & Partition, power and offloading & Reliable latency/\allowbreak{}energy trade-off & Subgradient and KKT updates \\
+\cite{R0038} (2025) & Air--edge or air--edge--cloud & TensorFlow CNN classification & Containerized CNN stages & Container placement constraints & Pipeline continuity & Docker Swarm placement \\
+\cite{R0064} (2025) & Air--edge or air--edge--cloud & Frame-oriented sensing and inference & Frame sampling and binary offload & 3D motion, sampling, offload & Delay at sensing and accuracy constraints & Hybrid-action MAPPO \\
+\cite{R0071} (2025) & Air--edge or air--edge--cloud & ResNet-18 recognition & Single cut at macro-block & Split, radio, CPU and offload & Weighted delay and energy & LSTM-enhanced multi-agent policy \\
+\cite{R0080} (2025) & Air--edge or air--edge--cloud & ResNet-18/\allowbreak{}101; CIFAR-10 & Feature-first and optional quantized raw input & Thresholds and input quantization & Accuracy under shared bandwidth & Alternating optimization \\
+\cite{R0090} (2025) & Air--edge or air--edge--cloud & Agricultural CNN inference & Local inference task assignment & Coverage and energy-aware allocation & Coverage and task continuity & Redundancy and consensus design \\
+\cite{R0145} (2025) & Air--edge or air--edge--cloud & Language-model industrial planning requests & Small-edge and large-cloud requests & Model roles and selective replay & Completion, runtime and cost & System rules and model selection \\
+\cite{R0001} (2026) & Air--edge or air--edge--cloud & Generic CNN inference & Two cuts across three tiers & Cuts, edge selection, compute and radio & Latency and resources & PPO plus convex allocation \\
+\cite{R0009} (2026) & Air--edge or air--edge--cloud & ResNet-34, VGG-16, AlexNet & Ground-to-UAV layer cut & Cut, matching, motion, radio and compute & Latency and energy & Partition search, matching and DRL \\
+\cite{R0036} (2026) & Air--edge or air--edge--cloud & YOLOv5 pedestrian video & Configured stream or chunk & Stream, resolution and frame rate & Weighted coverage at accuracy and capacity limits & Profile plus greedy local search \\
+\cite{R0045} (2026) & Air--edge or air--edge--cloud & AlexNet, VGG-16, VGG-13 & Binary layer split, with migration & Matching, split, motion, compute & Delay and energy under service constraints & SAC plus convex allocation \\
+\cite{R0054} (2026) & Air--edge or air--edge--cloud & Profiled semantic inference & Tier cuts and feature quantization & Heading, resource and feature bit width & Composite sensing, inference and resource cost & Graph-assisted policy and deterministic allocation \\
+\cite{R0058} (2026) & Air--edge or air--edge--cloud & AI inference requests & Indivisible requests & Bids, server matching, local execution & Aggregate auction utility & Distributed auction \\
+\cite{R0063} (2026) & Air--edge or air--edge--cloud & Distributed language-model inference & Tiered draft and verification & Model roles and execution policy & Inference and coordination performance & Role-decoupled multi-agent RL \\
+\cite{R0107} (2026) & Air--edge or air--edge--cloud & Semantic fusion for visual question answering & Distributed representations and semantic granularity & Fusion weights and granularity & Task quality under communication limit & Two-stage reinforcement learner \\
+\cite{R0137} (2026) & Air--edge or air--edge--cloud & Traffic video detection CNNs & Local or edge inference per task & Placement, input and model settings & Accuracy and modeled reliability & Multi-agent policy \\
+\end{longtable}\endgroup

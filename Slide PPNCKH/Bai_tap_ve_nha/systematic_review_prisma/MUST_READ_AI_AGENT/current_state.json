@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T15:27:31+07:00",
+  "updated_at": "2026-11-27T15:52:02+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "supplemental_coursework_handoff_complete",
-    "summary": "Steps 14–16 passed for the active 46-study review. The audited coursework LaTeX, PDF, derived data and limitations are ready for internal handoff."
+    "status": "alternative_coursework_pdf_ready_for_comparison",
+    "summary": "The 29-page technical survey based on the accepted 46-study corpus is ready for the author to compare with the separate manuscript version."
   },
   "task": {
-    "task_id": "restart-supplemental-integrity",
+    "task_id": "hk261-alternative-technical-survey",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T15:10:06+07:00",
-    "updated_at": "2026-11-27T15:27:31+07:00",
-    "checkpoint_path": "restart_2026_11_26/integrity/active_final_integrity_audit.md",
-    "decision_id": "restart-supplemental-integrity-v1",
-    "completed_at": "2026-11-27T15:27:31+07:00"
+    "started_at": "2026-11-27T15:42:36+07:00",
+    "updated_at": "2026-11-27T15:52:02+07:00",
+    "completed_at": "2026-11-27T15:52:02+07:00",
+    "checkpoint_path": "manuscript/sn_computer_science/technical_survey_review.md",
+    "decision_id": "hk261-alternative-technical-survey-v1"
   },
   "next_task": {
-    "task_id": "hk261-author-confirmations",
+    "task_id": "hk261-alternative-author-comparison",
     "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "Await author-confirmed contributors and declarations before a journal-directed revision can be considered.",
-    "acceptance": "Author information, authorship consent, affiliations, disclosures and data permissions confirmed explicitly. Journal submission and external email require separate authorization."
+    "action": "Await the author’s comparison and selection before any integration or dissemination.",
+    "acceptance": "The author selects a manuscript version and explicitly authorizes any follow-on scope."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -65,7 +65,7 @@
     },
     "approved_plan": "restart_2026_11_26/approved_plan.md",
     "progress_tracker": "restart_2026_11_26/progress.json",
-    "manuscript_status": "ACTIVE_46_STUDY_COURSEWORK_HANDOFF_COMPLETE"
+    "manuscript_status": "ALTERNATIVE_TECHNICAL_SURVEY_READY_FOR_COMPARISON"
   },
   "evidence": {
     "retrieval_reports": 136,
@@ -680,6 +680,26 @@
         "chat_cleanup": "VERIFIED_BOTH"
       },
       "open_items": "restart_2026_11_26/integrity/active_limitations.md"
+    },
+    "alternative_technical_survey": {
+      "baseline_commit": "7a6675d",
+      "pages": 29,
+      "numbered_sections": 7,
+      "figures": 5,
+      "tables": 5,
+      "studies_in_both_tables_and_analysis": 46,
+      "within_study_comparisons": 9,
+      "appraisal_domains": 10,
+      "recorded_references": 54,
+      "verified_dois": 53,
+      "three_reports_awaiting_classification": [
+        "R0081",
+        "R0082",
+        "R0132"
+      ],
+      "independent_human_adjudication": "NOT_DOCUMENTED",
+      "review": "manuscript/sn_computer_science/technical_survey_review.md",
+      "pdf_sha256": "e5395576ec40ca29f3658b80453d3d2786c2c1907c3a6767d54c713bbb0dddfd"
     }
   },
   "blockers": [],

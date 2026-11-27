@@ -1,14 +1,27 @@
-# SN Computer Science coursework manuscript
+# HK261 systematic technical survey
 
 `main.tex` is the editable source, `references.bib` is the bibliography, and
 `main.pdf` is the compiled HK261 review. The build uses the Springer Nature
 `sn-jnl.cls` and `sn-vancouver-num.bst` files from the December 2024 template.
 
-Build from this directory with the approved command:
+Build the comparison draft from this directory:
 
 ```sh
+python3 build_technical_survey.py
 tectonic --keep-logs --keep-intermediates main.tex
+python3 build_technical_survey.py --check
 ```
+
+The generator derives both technical tables, the appraisal rows, and the figure
+counts from the accepted corpus, the appraisal summary, and [the primary coding
+ledger](technical_coding.psv). Its check fails if a generated input is stale or
+an included study is missing from either study table or the analytical text.
+
+The comparison PDF uses the Springer Nature class and bibliography style with
+a 216 mm text height and compact reference spacing to fit the full-corpus
+tables into the requested single-column length. For this branch, see
+[the technical survey review](technical_survey_review.md). The original
+13-page coursework checkpoint remains available at commit `7a6675d`.
 
 The review includes 46 reports representing 46 studies. The
 [PRISMA ledger](../../restart_2026_11_26/prisma/prisma_counts.json) records 87
@@ -24,4 +37,4 @@ tracks reporting and its limits.
   [claim sources](../../restart_2026_11_26/synthesis/active_claim_source_matrix.csv) and
   [R0092 source erratum](../../restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json).
 
-The [final integrity audit](../../restart_2026_11_26/integrity/active_final_integrity_audit.md) and [limitations](../../restart_2026_11_26/integrity/active_limitations.md) accompany the coursework handoff. Author details and declarations await confirmation. Journal submission is outside the current HK261 scope.
+The baseline [final integrity audit](../../restart_2026_11_26/integrity/active_final_integrity_audit.md) and [limitations](../../restart_2026_11_26/integrity/active_limitations.md) accompany the coursework handoff. Author details and declarations await confirmation. Journal submission is outside the current HK261 scope.

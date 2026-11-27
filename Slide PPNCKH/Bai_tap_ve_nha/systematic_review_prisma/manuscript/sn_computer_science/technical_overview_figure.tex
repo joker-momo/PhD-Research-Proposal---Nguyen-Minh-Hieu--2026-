@@ -1,0 +1,46 @@
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[font=\sffamily\footnotesize, x=1cm, y=1cm]
+\definecolor{panelblue}{HTML}{236183}
+\definecolor{panelteal}{HTML}{27786D}
+\newcommand{\overviewbar}[5]{%
+  \node[anchor=east,inner sep=1pt] at (#1,#2) {#3};
+  \fill[#5] (#1+.07,#2-.12) rectangle (#1+.07+#4*.115,#2+.12);
+  \node[anchor=west,inner sep=1pt] at (#1+.14+#4*.115,#2) {#4};
+}
+\node[anchor=west,font=\sffamily\bfseries] at (0,4.15) {(a) Publication year and venue};
+\node[anchor=west,font=\sffamily\bfseries] at (6.9,4.15) {(b) Evaluated model families};
+\node[anchor=west,font=\sffamily\bfseries] at (0,-.42) {(c) Optimization approaches};
+\node[anchor=west,font=\sffamily\bfseries] at (6.9,-.42) {(d) Evaluation modalities};
+\foreach \yr [count=\xx] in {2021,...,2026}{
+  \edef\jcount{\csname yearJournal\yr\endcsname}
+  \edef\ccount{\csname yearConference\yr\endcsname}
+  \pgfmathsetmacro{\conferenceheight}{.16*\ccount}
+  \pgfmathsetmacro{\allheight}{.16*(\jcount+\ccount)}
+  \fill[panelteal!55] (\xx-.26,.7) rectangle (\xx+.26,.7+\conferenceheight);
+  \fill[panelblue] (\xx-.26,.7+\conferenceheight) rectangle (\xx+.26,.7+\allheight);
+  \pgfmathtruncatemacro{\total}{\jcount+\ccount}
+  \node[anchor=south,inner sep=2pt] at (\xx,.7+\allheight) {\total};
+  \node[anchor=north] at (\xx,.69) {\yr};
+}
+\draw[gray] (.60,.7)--(6.39,.7);
+\fill[panelblue] (.85,-.005) rectangle (1.14,.20);
+\node[anchor=west] at (1.16,.10) {Journal};
+\fill[panelteal!55] (2.65,-.005) rectangle (2.94,.20);
+\node[anchor=west] at (2.96,.10) {Conference};
+\overviewbar{10.3}{3.57}{CNN classifiers}{\groupn{family}{cnn}}{panelblue}
+\overviewbar{10.3}{3.03}{Detection}{\groupn{family}{detector}}{panelblue}
+\overviewbar{10.3}{2.49}{Language models / MoE}{\groupn{family}{language}}{panelblue}
+\overviewbar{10.3}{1.95}{Mixed families}{\groupn{family}{mixed}}{panelblue}
+\overviewbar{10.3}{1.41}{Other named models}{\groupn{family}{other}}{panelblue}
+\overviewbar{10.3}{.87}{Generic / reference}{\groupn{family}{generic}}{panelblue}
+\overviewbar{3.38}{-1.01}{Mathematical}{\groupn{optimizer}{math}}{panelteal}
+\overviewbar{3.38}{-1.55}{Heuristic / auction}{\groupn{optimizer}{heuristic}}{panelteal}
+\overviewbar{3.38}{-2.09}{Learning-led}{\groupn{optimizer}{rl}}{panelteal}
+\overviewbar{3.38}{-2.63}{Hybrid}{\groupn{optimizer}{hybrid}}{panelteal}
+\overviewbar{3.38}{-3.17}{Rule / descriptive}{\groupn{optimizer}{rule}}{panelteal}
+\overviewbar{10.30}{-1.01}{Analytical}{\groupn{evaluation}{analytical}}{panelteal}
+\overviewbar{10.30}{-1.55}{Simulation / software}{\groupn{evaluation}{sim}}{panelteal}
+\overviewbar{10.30}{-2.09}{Trace / profile simulation}{\groupn{evaluation}{trace}}{panelteal}
+\overviewbar{10.30}{-2.63}{Bench / emulation / HIL}{\groupn{evaluation}{bench}}{panelteal}
+\overviewbar{10.30}{-3.17}{Outdoor multi-UAV}{\groupn{evaluation}{flight}}{panelteal}
+\end{tikzpicture}}

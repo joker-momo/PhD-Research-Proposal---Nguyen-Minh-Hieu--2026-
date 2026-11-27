@@ -1,0 +1,40 @@
+\resizebox{.98\linewidth}{!}{%
+\begin{tikzpicture}[
+ font=\sffamily\footnotesize, >=Stealth,
+ system/.style={draw=black!65, rounded corners=2pt, fill=cyan!5, align=center,
+  minimum width=1.96cm, minimum height=.76cm},
+ data/.style={->,thick,black!85}, control/.style={->,semithick,dashed,black!75},
+ heading/.style={anchor=west,font=\sffamily\bfseries}]
+\node[heading] at (0,5.40) {(a) Intra-swarm peer execution};
+\node[system] (sensor1) at (1.15,4.64) {Sensor input};
+\node[system] (peer1) at (4.5,4.64) {Source UAV\\stage A};
+\node[system] (peer2) at (8.05,4.64) {Peer UAV\\stage B};
+\node[system] (output1) at (11.25,4.64) {Output};
+\draw[data] (sensor1)--(peer1);
+\draw[data] (peer1)--node[above]{Activation}(peer2);
+\draw[data] (peer2)--(output1);
+\draw[control] (peer2.south) to[bend left=16] node[below]{Availability} (peer1.south);
+
+\node[heading] at (0,3.27) {(b) Clustered or head--worker swarm};
+\node[system] (sensor2) at (1.15,2.43) {Sensor input};
+\node[system] (head) at (4.5,2.43) {UAV head\\split / merge};
+\node[system] (worker1) at (8.05,2.91) {Worker UAV 1};
+\node[system] (worker2) at (8.05,1.95) {Worker UAV 2};
+\node[system] (output2) at (11.25,2.43) {Merged result};
+\draw[data] (sensor2)--(head);
+\draw[data] (head.east) -- node[above,sloped]{Tile} (worker1.west);
+\draw[data] (head.east) -- (worker2.west);
+\draw[data] (worker1.east) -- (output2.west);
+\draw[data] (worker2.east) -- (output2.west);
+\draw[control] (worker2.south) to[bend left=16] node[below]{Worker status} (head.south);
+
+\node[heading] at (0,.98) {(c) Hierarchical air--edge--cloud};
+\node[system] (sensor3) at (1.15,.15) {Sensor input};
+\node[system] (uav) at (4.5,.15) {UAV\\prefix};
+\node[system] (edge) at (8.05,.15) {Edge server\\next stage};
+\node[system] (cloud) at (11.25,.15) {Optional cloud\\final stage};
+\draw[data] (sensor3)--(uav);
+\draw[data] (uav)--node[above]{Feature}(edge);
+\draw[data] (edge)--node[above]{Feature}(cloud);
+\draw[control] (cloud.south) to[bend left=18] node[below]{Placement / fallback} (edge.south);
+\end{tikzpicture}}

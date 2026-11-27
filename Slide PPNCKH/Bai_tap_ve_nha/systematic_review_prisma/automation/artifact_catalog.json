@@ -389,6 +389,35 @@
         "sha256",
         "clean-checkout"
       ]
+    },
+    {
+      "artifact_id": "hk261-alternative-technical-survey-generator",
+      "name": "HK261 technical survey table and coverage generator",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_technical_survey.py",
+      "purpose": "Derive full-corpus technical tables, appraisal and figure counts, and enforce coverage in the analytical text.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_technical_survey.py\"",
+      "inputs": [
+        "Accepted 46-study corpus",
+        "Accepted ten-domain appraisal summary",
+        "Technical coding ledger",
+        "LaTeX manuscript and BibTeX bibliography"
+      ],
+      "outputs": [
+        "Two full-corpus technical tables",
+        "Appraisal rows and figure inputs",
+        "Primary-category counts and coverage report"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_technical_survey.py"
+      ],
+      "test_command": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_technical_survey.py\" --check",
+      "status": "active",
+      "tags": [
+        "manuscript",
+        "synthesis",
+        "coverage",
+        "latex"
+      ]
     }
   ]
 }

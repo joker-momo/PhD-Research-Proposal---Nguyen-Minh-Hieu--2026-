@@ -1,0 +1,62 @@
+\begingroup\fontsize{8}{10}\selectfont\setlength{\tabcolsep}{2.5pt}\renewcommand{\arraystretch}{1.17}
+\begin{longtable}{@{}Y{0.075\linewidth}Y{0.116\linewidth}Y{0.17\linewidth}Y{0.163\linewidth}Y{0.156\linewidth}Y{0.153\linewidth}Y{0.077\linewidth}@{}}
+\caption{Evaluation modality, network and mobility, resilience, and artifact reporting for all 46 studies. Artifact status records the D09 judgment. NR denotes not reported in the accepted evidence.}\label{tab:evaluation} \\
+\toprule
+Ref. & Modality & Hardware / simulator & Network / mobility & Disruption / failure & Continuity action & Code / data \\
+\midrule
+\endfirsthead
+\toprule
+Ref. & Modality & Hardware / simulator & Network / mobility & Disruption / failure & Continuity action & Code / data \\
+\midrule
+\endhead
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+\cite{R0003} (2023) & Trace/\allowbreak{}profile sim. & Mid-Air-driven simulation & Trace-derived rate variation & NR & NR & NR \\
+\cite{R0015} (2023) & Simulation & Simulated embedded devices & Fixed per-request rate; full reachability & NR & NR & NR \\
+\cite{R0010} (2024) & Trace/\allowbreak{}profile sim. & Mid-Air-driven simulation & Trace-derived inter-UAV rates & NR & NR & NR \\
+\cite{R0062} (2024) & Bench/\allowbreak{}emulation & Four heterogeneous Jetson-equipped units & Airborne modules; flight fault test unestablished & Radio software disabled on one UAV & Reallocate unfinished stages & NR \\
+\cite{R0073} (2024) & Simulation & Numerical simulation & Operability state; cell-based placement & Up to two modeled inoperable UAVs & Reassign layers & NR \\
+\cite{R0006} (2025) & Simulation & Synthetic layer profiles; numerical simulation & Planar hover; distance-based rate & NR & NR & NR \\
+\cite{R0059} (2025) & Trace/\allowbreak{}profile sim. & Mid-Air traces and embedded specs & Predetermined swarm trajectory & NR & NR & NR \\
+\cite{R0068} (2025) & Simulation & Python and TensorFlow simulation & Changing membership and return on depletion & Energy depletion and joins/\allowbreak{}leaves & Delegate work to another UAV & NR \\
+\cite{R0292} (2025) & Bench/\allowbreak{}emulation & Recorded marine video and hardware-in-loop & Wi-Fi transfer; logged footage & Planned operational handoff & Transfer tracking state & NR \\
+\cite{R0074} (2026) & Simulation & Python profile-based LLM simulator & Modeled bandwidth jitter and compute variation & Rate and compute perturbations & Sensitivity, not fault recovery & Partial \\
+\cite{R0077} (2026) & Simulation & Layered-graph simulator & Circular paths and modeled LoS neighbors & Physical node failure NR & NR & NR \\
+\cite{R0092} (2026) & Trace/\allowbreak{}profile sim. & Profile-grounded Gymnasium simulation & Modeled Wi-Fi and changing links & Peer leaves communication range & Reassign or recompute locally & Yes \\
+\cite{R0113} (2026) & Bench/\allowbreak{}emulation & Reported simulation and hardware-in-loop claims & Communication variation; detailed settings unclear & Isolated outage test NR & NR & NR \\
+\cite{R0121} (2026) & Analytical & Numerical protocol calculations & 802.11 link-layer and frame-loss abstraction & Intact-delivery probability model & Quorum analyzed & NR \\
+\cite{R0029} (2022) & Trace/\allowbreak{}profile sim. & Numerical simulation with layer profiles & Poisson transient node/\allowbreak{}link fault model & Probabilistic transient failure & Active replication & NR \\
+\cite{R0019} (2023) & Simulation & Grid and arrival simulation & Grid motion; no Doppler evaluation & Active UAV count changes & Reallocate within available group & NR \\
+\cite{R0043} (2023) & Simulation & SeaShip simulation & Fixed system bandwidth & NR & NR & NR \\
+\cite{R0014} (2024) & Outdoor flight & Indoor embedded test plus five-UAV outdoor run & Indoor Wi-Fi; outdoor ad hoc radios & Deliberate head disconnection; outdoor status unestablished & Reschedule surviving devices & Partial \\
+\cite{R0022} (2025) & Simulation & Serverless swarm simulation & Distance loss and complex-normal coefficient & NR & NR & NR \\
+\cite{R0083} (2025) & Simulation & Python network/\allowbreak{}energy simulation & 802.11s drop model; reference-point group mobility & Battery heterogeneity & Fault recovery NR & NR \\
+\cite{R0106} (2025) & Simulation & Python/\allowbreak{}PyTorch simulation & Modeled network; variable participation & Simulated loss of participating nodes & Continue on available nodes & NR \\
+\cite{R0223} (2025) & Simulation & AirSim and MATLAB software & Simulated obstacles and coordination & Airborne outage NR & NR & NR \\
+\cite{R0002} (2026) & Simulation & PC simulation with embedded parameters & Cross-swarm movement; battery return & Random node unavailability in simulation & Predictive and recovery migration & NR \\
+\cite{R0048} (2026) & Trace/\allowbreak{}profile sim. & Server simulation with measured embedded profiles & Fixed hover; LoS attenuation & NR & NR & NR \\
+\cite{R0075} (2026) & Simulation & Software workload and communication model & Rate sweeps and waiting & NR & NR & NR \\
+\cite{R0095} (2026) & Simulation & RTX 4060 workstation simulation & Planar motion with minimum separation & Backup proposed; test NR & Backup controller described & NR \\
+\cite{R0110} (2026) & Simulation & Discrete-event simulator & 3GPP-informed channel; mobility stress & Modeled worker and leader disruptions & Replica activation and leader recovery & NR \\
+\cite{R0118} (2026) & Simulation & Software swarm simulation & Modeled mobility and connectivity stress & Connectivity stress sensitivity & Expert-routing response; recovery phases NR & Yes \\
+\cite{R0125} (2026) & Bench/\allowbreak{}emulation & AMD workstation with emulated workers & HTTP/\allowbreak{}JPEG; no measured airborne channel & Thread-budget changes; link failure test NR & Stateless replacement described & NR \\
+\cite{R0089} (2023) & Simulation & PyTorch and software simulation & Modeled network; motion NR & NR & NR & No \\
+\cite{R0044} (2024) & Simulation & Numerical MEC simulation & Unreliable links; circular UAV motion & Failed return data modeled & Reprocess whole task at ground BS & NR \\
+\cite{R0038} (2025) & Bench/\allowbreak{}emulation & Two computers and two Raspberry Pi 5 devices & Bench network; UAV motion absent & Deliberate device disconnection & Redeploy and resume from Redis & NR \\
+\cite{R0064} (2025) & Simulation & Air-ground numerical simulation & 3D trajectory; congestion loss omitted & NR & NR & NR \\
+\cite{R0071} (2025) & Simulation & Custom simulation & Generated mobility and energy harvesting & Depletion represented in model & Recovery NR & NR \\
+\cite{R0080} (2025) & Simulation & Synthesized data splits; modeled uplink & Spectral efficiency; trajectories NR & NR & NR & NR \\
+\cite{R0090} (2025) & Bench/\allowbreak{}emulation & Software stack and author-reported hardware prototype & Modeled loss; LoRaWAN ground sensing & Reported dropout; test modality unclear per outcome & Redundant reassignment described & NR \\
+\cite{R0145} (2025) & Simulation & Lab server; generated scenarios & Modeled motion and communication & Inference errors; outage NR & Replay revises earlier decisions & NR \\
+\cite{R0001} (2026) & Trace/\allowbreak{}profile sim. & Delivery and base-station data; simulation & Distance-dependent air-ground links & NR & NR & NR \\
+\cite{R0009} (2026) & Trace/\allowbreak{}profile sim. & Profile-driven simulation & Moving aerial MEC; LoS path loss & NR & NR & NR \\
+\cite{R0036} (2026) & Trace/\allowbreak{}profile sim. & Ground-view ETH video; simulation & Shared bandwidth; synthetic surveillance positions & NR & NR & NR \\
+\cite{R0045} (2026) & Simulation & Python, PyTorch and CVX & 3D motion; link and compute model & Energy or load threshold & Migrate inference service & NR \\
+\cite{R0054} (2026) & Simulation & Multi-UAV ISCC simulation & Heading-sensitive STAR-RIS model & NR & NR & NR \\
+\cite{R0058} (2026) & Simulation & Dynamic-edge simulation & Speed alters contact time & Short contacts; fallback described & Retry, buffer or simplified local inference & NR \\
+\cite{R0063} (2026) & Bench/\allowbreak{}emulation & Component profile plus software evaluation & Modeled intermittent links and delay & Simulated connectivity degradation & Tier fallback described & Partial \\
+\cite{R0107} (2026) & Simulation & RTX workstation; modeled edge nodes & Variable channel; route NR & NR & NR & NR \\
+\cite{R0137} (2026) & Bench/\allowbreak{}emulation & Physical profiling/\allowbreak{}deployment plus modeled links & Probabilistic path loss and disturbance model & Modeled compute/\allowbreak{}link unreliability & Reliability-aware configuration & NR \\
+\end{longtable}\endgroup
