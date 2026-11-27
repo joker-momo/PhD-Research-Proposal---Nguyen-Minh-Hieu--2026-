@@ -1,0 +1,25 @@
+{
+  "status": "BRIEF_READY",
+  "baseline_commit": "539f298",
+  "input_manifest": "restart_2026_11_26/synthesis/active_synthesis_input_manifest.json",
+  "input_manifest_sha256": "ba90dbb8d67054b2adf52a3a39fc5fee9c3022ca17e47508cf38ebda6191b24f",
+  "batches": [
+    {
+      "batch": 1,
+      "brief": "restart_2026_11_26/synthesis/active_rq_brief.md",
+      "message_id": "fdb24fbe-525c-4913-9cdf-f47619cb4eda",
+      "expected_claim_ids": [
+        "RQ1-A",
+        "RQ1-B",
+        "RQ2-A",
+        "RQ2-B",
+        "RQ3-A",
+        "RQ3-B",
+        "RQ4-A",
+        "RQ4-B",
+        "RQ5-A",
+        "RQ5-B"
+      ]
+    }
+  ]
+}

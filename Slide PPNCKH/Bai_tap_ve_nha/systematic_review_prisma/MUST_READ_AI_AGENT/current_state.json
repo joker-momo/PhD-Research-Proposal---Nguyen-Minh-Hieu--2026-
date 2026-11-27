@@ -1,27 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T14:41:25+07:00",
+  "updated_at": "2026-11-27T14:44:14+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "supplemental_synthesis_inputs_verified",
-    "summary": "Step 13 is complete. Step 14 input identity is verified across 46 linked report and study IDs. RQ1–RQ5 synthesis is pending."
+    "status": "supplemental_rq_synthesis_active",
+    "summary": "Step 14 structured synthesis ready. Manuscript revision follows acceptance."
   },
   "task": {
-    "task_id": "restart-supplemental-synthesis-inputs",
+    "task_id": "restart-supplemental-rq-synthesis",
     "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T14:40:19+07:00",
-    "updated_at": "2026-11-27T14:41:25+07:00",
-    "completed_at": "2026-11-27T14:41:25+07:00",
-    "checkpoint_path": "restart_2026_11_26/synthesis/active_synthesis_input_manifest.json",
-    "decision_id": "restart-supplemental-synthesis-inputs-v1"
+    "status": "active",
+    "started_at": "2026-11-27T14:44:14+07:00",
+    "updated_at": "2026-11-27T14:44:14+07:00",
+    "checkpoint_path": "restart_2026_11_26/synthesis/active_rq_phase_manifest.json",
+    "decision_id": "restart-supplemental-rq-synthesis-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-rq-synthesis-setup",
-    "owner": "CODEX_WRITING",
+    "task_id": "restart-supplemental-rq-synthesis-batch-01",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "After confirmation of High reasoning, prepare the step 14 Gemini.app brief from the verified source index and establish the RQ1–RQ5 claim/source matrix.",
-    "acceptance": "Included source, exact locators and evaluation conditions for every adopted claim. Both numerator and denominator for each descriptive count."
+    "action": "Return ten structured RQ findings from the named sources.",
+    "acceptance": "Ten exact keys, five limitations, original evidence and three locked quantitative rows.",
+    "dispatch_brief": "restart_2026_11_26/synthesis/active_rq_brief.md",
+    "message_id": "fdb24fbe-525c-4913-9cdf-f47619cb4eda"
   },
   "project": {
     "target_venue": "SN Computer Science",
