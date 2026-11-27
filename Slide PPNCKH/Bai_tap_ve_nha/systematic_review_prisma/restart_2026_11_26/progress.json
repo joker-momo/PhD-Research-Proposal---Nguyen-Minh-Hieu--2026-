@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T13:17:22+07:00",
+  "updated_at": "2026-11-27T13:22:11+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -855,7 +855,13 @@
         "restart_2026_11_26/extraction/supplemental_batch_02_mechanical.json",
         "restart_2026_11_26/extraction/supplemental_batch_02_review.md",
         "restart_2026_11_26/extraction/supplemental_batch_02_correction_keys.json",
-        "restart_2026_11_26/extraction/supplemental_batch_02_correction_brief.md"
+        "restart_2026_11_26/extraction/supplemental_batch_02_correction_brief.md",
+        "restart_2026_11_26/extraction/supplemental_batch_02_correction_dispatch.json",
+        "restart_2026_11_26/extraction/supplemental_batch_02_correction_raw.json",
+        "restart_2026_11_26/extraction/supplemental_batch_02_correction_mechanical.json",
+        "restart_2026_11_26/extraction/supplemental_batch_02_correction_review.md",
+        "restart_2026_11_26/extraction/supplemental_batch_02_repair_keys.json",
+        "restart_2026_11_26/extraction/supplemental_batch_02_repair_brief.md"
       ],
       "acceptance": [
         {
@@ -982,7 +988,7 @@
       "supplemental": {
         "task_id": "restart-supplemental-extraction",
         "status": "active",
-        "updated_at": "2026-11-27T13:17:22+07:00",
+        "updated_at": "2026-11-27T13:22:11+07:00",
         "batch_01_original_gate": "FAIL",
         "review": "restart_2026_11_26/extraction/supplemental_batch_01_composite_review.md",
         "accepted_new_reports": 7,
@@ -995,7 +1001,9 @@
         ],
         "batch_01_gate": "PASS_COMPOSITE",
         "batch_02_gate": "FAIL_24_KEYS",
-        "batch_02_review": "restart_2026_11_26/extraction/supplemental_batch_02_review.md"
+        "batch_02_review": "restart_2026_11_26/extraction/supplemental_batch_02_review.md",
+        "batch_02_correction_gate": "FAIL_3_KEYS_AND_SUMMARY",
+        "batch_02_correction_review": "restart_2026_11_26/extraction/supplemental_batch_02_correction_review.md"
       }
     },
     {
