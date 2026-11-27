@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:22:11+07:00",
+  "updated_at": "2026-11-27T13:22:27+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_extraction_in_progress",
@@ -11,19 +11,22 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T12:51:10+07:00",
-    "updated_at": "2026-11-27T13:22:11+07:00",
+    "updated_at": "2026-11-27T13:22:27+07:00",
     "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_02_correction_review.md",
     "decision_id": "restart-supplemental-extraction-v1"
   },
   "next_task": {
     "task_id": "restart-supplemental-extraction-batch02-repair",
     "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Send one native correction for three residual keys and a valid JSON summary, then verify before batch 03.",
+    "status": "active",
+    "action": "Collect the original three-key repair UUID without resending, and verify all three keys against the original PDFs.",
     "acceptance": "3/3 exact keys, original physical pages, all bounded finding locators, one JSON summary and final marker.",
     "dispatch_brief": "restart_2026_11_26/extraction/supplemental_batch_02_repair_brief.md",
     "message_id": "5d9487e7-9f1e-4f1b-8986-1656dbcc135a",
-    "parent_bridge_task_id": "3dabd88f-f3bc-41e2-a833-9127a9933c0d"
+    "parent_bridge_task_id": "3dabd88f-f3bc-41e2-a833-9127a9933c0d",
+    "bridge_task_id": "d82c0a71-388c-42d3-bc40-79b16e305c75",
+    "bridge_context_id": "3e0f0f98-9563-492e-bf58-09853c38b299",
+    "dispatch_receipt": "restart_2026_11_26/extraction/supplemental_batch_02_repair_dispatch.json"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -469,7 +472,8 @@
       "batch_02_correction_uuid": "3dabd88f-f3bc-41e2-a833-9127a9933c0d",
       "batch_02_correction_gate": "FAIL_3_KEYS_AND_SUMMARY",
       "batch_02_correction_review": "restart_2026_11_26/extraction/supplemental_batch_02_correction_review.md",
-      "batch_02_repair_keys": "restart_2026_11_26/extraction/supplemental_batch_02_repair_keys.json"
+      "batch_02_repair_keys": "restart_2026_11_26/extraction/supplemental_batch_02_repair_keys.json",
+      "batch_02_repair_uuid": "d82c0a71-388c-42d3-bc40-79b16e305c75"
     }
   },
   "blockers": [],
