@@ -46,6 +46,27 @@ has zero recorded screening decisions. The R1 source-verification sheet
 adds supporting evidence for included reports only. It adds zero decisions to
 the S2 eligibility audit and zero independent screening pairs.
 
+## S2 appendix. R2 source-verification record
+
+The [R2 source-verification sheet](../../restart_2026_11_26/synthesis/final_46/human_review_packet/R2/source_verification.csv)
+contains all 887 checks for the 46 included reports. It records the
+colleague's agreement with the Gemini-assisted source review, as confirmed
+by the author on 27 November 2026. The sheet records 276 technical fields,
+105 outcome entries, 46 report-coverage judgments, and 460 appraisal
+judgments, with available PDF locators and evidence limits. The
+[confirmation record](../../restart_2026_11_26/synthesis/final_46/human_review_packet/README.md#xác-nhận-hai-phiếu-đối-chiếu-nguồn)
+documents the attribution.
+
+Find the S2 report ID in the `record_id` column of the
+[report-to-packet key](../../restart_2026_11_26/synthesis/final_46/human_review_packet/coordinator/key.csv).
+Use its `packet_id` to find the R2 checks. The
+[author decisions in S3](supplement_s3.md#twelve-priority-decisions)
+record the final treatment of the 12 priority items.
+The [R2 full-text screening sheet](../../restart_2026_11_26/synthesis/final_46/human_review_packet/R2/screening.csv)
+has zero recorded screening decisions. The R2 source-verification sheet
+adds supporting evidence for included reports only. It adds zero decisions to
+the S2 eligibility audit and zero independent screening pairs.
+
 ## Priority records for the author
 
 PDF pages are physical, one-based. Look up the local original and checksum
