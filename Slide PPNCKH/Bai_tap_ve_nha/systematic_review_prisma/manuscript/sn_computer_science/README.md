@@ -19,9 +19,11 @@ tracks reporting and its limits.
 - S1. [Search strategies](supplement_search_strategies.md)
 - S2. [Excluded full-text reports and decision locators](supplement_fulltext_exclusions.csv)
 - S3. [Study characteristics](../../restart_2026_11_26/synthesis/active_study_characteristics.csv),
+  [46-study revision evidence map](../../restart_2026_11_26/synthesis/desk_reject_evidence_map.csv),
+  [revision evidence and eligibility checks](../../restart_2026_11_26/synthesis/desk_reject_revision_review.md),
   [report-level appraisal](../../restart_2026_11_26/appraisal/active_appraisal_table.csv),
   [outcome evidence](../../restart_2026_11_26/synthesis/active_outcome_evidence.csv),
   [claim sources](../../restart_2026_11_26/synthesis/active_claim_source_matrix.csv) and
   [R0092 source erratum](../../restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json).
 
-The [final integrity audit](../../restart_2026_11_26/integrity/active_final_integrity_audit.md) and [limitations](../../restart_2026_11_26/integrity/active_limitations.md) accompany the coursework handoff. Author details and declarations await confirmation. Journal submission is outside the current HK261 scope.
+The [integrity audit](../../restart_2026_11_26/integrity/active_final_integrity_audit.md) and [limitations](../../restart_2026_11_26/integrity/active_limitations.md) describe the baseline coursework handoff at commit `7a6675d`. The revision evidence records the checks for this branch. Author details and declarations await confirmation. Journal submission is outside the current HK261 scope.

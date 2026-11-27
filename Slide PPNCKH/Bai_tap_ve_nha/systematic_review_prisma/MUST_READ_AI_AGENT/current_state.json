@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T15:27:31+07:00",
+  "updated_at": "2026-11-27T15:50:22+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "supplemental_coursework_handoff_complete",
-    "summary": "Steps 14–16 passed for the active 46-study review. The audited coursework LaTeX, PDF, derived data and limitations are ready for internal handoff."
+    "status": "desk_reject_initial_revision_verified",
+    "summary": "The first editorial-response revision has been verified for internal use. Uniform numerical outcome extraction and human author confirmations remain open."
   },
   "task": {
-    "task_id": "restart-supplemental-integrity",
+    "task_id": "hk261-desk-reject-first-revision",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T15:10:06+07:00",
-    "updated_at": "2026-11-27T15:27:31+07:00",
-    "checkpoint_path": "restart_2026_11_26/integrity/active_final_integrity_audit.md",
-    "decision_id": "restart-supplemental-integrity-v1",
-    "completed_at": "2026-11-27T15:27:31+07:00"
+    "started_at": "2026-11-27T15:42:55+07:00",
+    "updated_at": "2026-11-27T15:50:22+07:00",
+    "checkpoint_path": "restart_2026_11_26/synthesis/desk_reject_revision_review.md",
+    "decision_id": "hk261-desk-reject-first-revision-v1",
+    "completed_at": "2026-11-27T15:50:22+07:00"
   },
   "next_task": {
-    "task_id": "hk261-author-confirmations",
+    "task_id": "hk261-editorial-uniform-outcome-inventory",
     "owner": "CODEX_WRITING",
-    "status": "blocked",
-    "action": "Await author-confirmed contributors and declarations before a journal-directed revision can be considered.",
-    "acceptance": "Author information, authorship consent, affiliations, disclosures and data permissions confirmed explicitly. Journal submission and external email require separate authorization."
+    "status": "ready",
+    "action": "Define the common outcome inventory rule, then verify eligible reported outcomes and explicit exceptions against the 46 included PDFs.",
+    "acceptance": "All 46 reports have an inventory status. Every retained value has units, comparator status, measurement conditions and an original PDF locator. Unresolved and non-comparable outcomes remain explicit."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -65,7 +65,7 @@
     },
     "approved_plan": "restart_2026_11_26/approved_plan.md",
     "progress_tracker": "restart_2026_11_26/progress.json",
-    "manuscript_status": "ACTIVE_46_STUDY_COURSEWORK_HANDOFF_COMPLETE"
+    "manuscript_status": "DESK_REJECT_REVISION_CHECKPOINT_VERIFIED"
   },
   "evidence": {
     "retrieval_reports": 136,
@@ -680,6 +680,38 @@
         "chat_cleanup": "VERIFIED_BOTH"
       },
       "open_items": "restart_2026_11_26/integrity/active_limitations.md"
+    },
+    "desk_reject_revision": {
+      "baseline_commit": "7a6675d",
+      "recorded_at": "2026-11-27T15:50:22+07:00",
+      "revision_review": "restart_2026_11_26/synthesis/desk_reject_revision_review.md",
+      "evidence_map": "restart_2026_11_26/synthesis/desk_reject_evidence_map.csv",
+      "artifacts_sha256": {
+        "manuscript/sn_computer_science/main.tex": "e6bc3cfd34fcfa728aec61822aea212238250f91db6319055ddba689f26f65a4",
+        "manuscript/sn_computer_science/references.bib": "9416007526223e757c479fbc14852b73b9e9935aacc73e1e52687c141bf38774",
+        "manuscript/sn_computer_science/main.pdf": "e04e0cf7f7e5145af41a4b2088fa1aeb12cdc65d030a1f9459bffaee281a5193",
+        "restart_2026_11_26/prisma/active_prisma_checklist.md": "37e7f2053d9a6e03ee32641c4a4a0e518b9f87861199de6684148d34737582ba",
+        "restart_2026_11_26/synthesis/desk_reject_evidence_map.csv": "c3cef9ed2c69ccf9eb2640f148525f8bf3a13256223c704edc132dfc8c67f707",
+        "restart_2026_11_26/synthesis/desk_reject_revision_review.md": "8ce43b2b9ca9669834e7e3451bd950928ab59b9aa977935c07d89e4c0897391e"
+      },
+      "physical_pdf_pages": 16,
+      "included_reports": 46,
+      "included_studies": 46,
+      "awaiting_classification": [
+        "R0081",
+        "R0082",
+        "R0132"
+      ],
+      "not_retrieved": [
+        "R0116"
+      ],
+      "retained_numeric_rows": 67,
+      "reports_with_retained_numeric_rows": 25,
+      "open_checks": [
+        "Uniform numerical extraction across all included reports",
+        "Search extensions and R0116 full text",
+        "Independent human adjudication and author declarations"
+      ]
     }
   },
   "blockers": [],
@@ -687,7 +719,8 @@
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
     "Contributions, funding, conflicts, data availability and AI disclosure.",
     "Exact examination date for calculating the course deadline.",
-    "Explicit authorization before journal submission or forwarding course evidence."
+    "Explicit authorization before journal submission or forwarding course evidence.",
+    "Independent human screening and adjudication documentation, including R0081, R0082, R0132 and the R0223 eligibility boundary."
   ],
   "history": {
     "event_log": "MUST_READ_AI_AGENT/events.jsonl",

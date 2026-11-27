@@ -802,6 +802,8 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=2.
 - [active_rq_claims.json](../restart_2026_11_26/synthesis/active_rq_claims.json)
 - [active_rq_outcome_table.csv](../restart_2026_11_26/synthesis/active_rq_outcome_table.csv)
 - [active_study_characteristics.csv](../restart_2026_11_26/synthesis/active_study_characteristics.csv)
+- [Bản đồ tổng hợp 46 nghiên cứu của nhánh Desk Reject](../restart_2026_11_26/synthesis/desk_reject_evidence_map.csv)
+- [Đối chiếu hồ sơ sát ranh giới và kiểm chứng bản sửa](../restart_2026_11_26/synthesis/desk_reject_revision_review.md)
 - [active_rq_correction_raw.json](../restart_2026_11_26/synthesis/active_rq_correction_raw.json)
 - [active_rq_correction_mechanical.json](../restart_2026_11_26/synthesis/active_rq_correction_mechanical.json)
 - [active_rq_semantic_verification.json](../restart_2026_11_26/synthesis/active_rq_semantic_verification.json)
