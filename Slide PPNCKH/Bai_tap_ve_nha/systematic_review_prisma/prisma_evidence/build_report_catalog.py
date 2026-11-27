@@ -127,12 +127,15 @@ def build_catalog(repo, parser):
                 locator=decision["decision_locators"])
         elif record_id in intake:
             pdf = intake[record_id]
-            origin = f'{pdf["source_collection"]}/{pdf["source_file"]}'
+            origin = pdf.get("source_rel_downloads") or f'{pdf["source_collection"]}/{pdf["source_file"]}'
+            origin = "Downloads/" + origin
             identity_link = report.get("identity_url") or report.get("landing_url", "")
             if identity_link:
                 origin += f" | bibliographic identity: {identity_link}"
             locator = f'DOI physical PDF pages {pdf["doi_pages"] or "unverified"}'
             locator += f' | exact title pages {pdf["exact_title_pages"] or "unverified"}'
+            if version_locator := pdf.get("version_locator"):
+                locator += f" | {version_locator}"
             add(record_id, "SUPPLEMENTAL_PDF", pdf["status"],
                 identity_path.parent / f"pdf/{record_id}.pdf", source=origin,
                 version=pdf.get("version") or "PENDING_VERSION_ADJUDICATION",
