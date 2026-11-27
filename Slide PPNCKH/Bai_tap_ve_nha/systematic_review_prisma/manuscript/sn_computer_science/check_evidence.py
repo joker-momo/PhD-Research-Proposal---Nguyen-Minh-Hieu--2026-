@@ -2,7 +2,10 @@
 import argparse
 import csv
 import hashlib
+import io
+import json
 import re
+from functools import cache
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -10,6 +13,17 @@ PROJECT = HERE.parent.parent
 RESTART = PROJECT / "restart_2026_11_26"
 INDEX = HERE / "supplement_evidence_index.md"
 SNAPSHOT = HERE / "evidence_sha256.txt"
+CLAIM_AUDIT = HERE / "s4_claim_audit.md"
+STUDY_ROW_MAP = HERE / "s4_study_row_sources.csv"
+
+FIELD_GROUPS = {
+    "t2_topology": ("uav_architecture_role_and_topology", "architecture"),
+    "t2_workload": ("inference_model_task_and_dataset", "baselines_and_workloads", "workload", "baselines"),
+    "t2_partition": ("partition_and_assignment", "partition_assignment"),
+    "t2_decisions_objective_solver": ("decision_variables_objectives_constraints_and_solver", "optimization", "compute_and_radio", "compute_radio"),
+    "t3_platform_modality": ("evaluation_platform_simulator_hardware_and_traces", "evaluation"),
+    "t3_network_event_response": ("mobility_channel_intermittency_failure_and_recovery", "mobility_continuity", "compute_and_radio", "compute_radio"),
+}
 
 
 def sha256(path):
@@ -71,6 +85,85 @@ def check_outcome_rows():
     return len(mapped)
 
 
+def check_claim_audit():
+    entries = re.findall(
+        r"^\| (L(\d+)\.\d+) \| \[(\d+)\]\(main\.tex#L(\d+)\) \| "
+        r"(SOURCE|RECORD|DERIVED|PROPOSAL|NARROWED|OPEN) \| [^|]+ \| [^|]+ \|$",
+        CLAIM_AUDIT.read_text(), re.M,
+    )
+    require(len({entry[0] for entry in entries}) == len(entries), "Duplicate claim IDs")
+    require(all(int(line) == int(text) == int(anchor) for _, line, text, anchor, _ in entries),
+            "Claim line and link differ")
+    main_lines = (HERE / "main.tex").read_text().splitlines()
+    prose = set()
+    in_equation = False
+    for number, line in enumerate(main_lines, 1):
+        if line.startswith(r"\begin{equation}"):
+            in_equation = True
+        if not in_equation and re.match(r"(?:[A-Z][^&]*$|where |\\abstract\{|\\item)", line):
+            prose.add(number)
+        if line.startswith(r"\end{equation}"):
+            in_equation = False
+    audited = {int(entry[1]) for entry in entries}
+    require(prose == audited, f"Claim audit prose coverage differs: {sorted(prose ^ audited)}")
+    return len(entries), len(audited)
+
+
+@cache
+def extraction_fields(path):
+    return {report["report_id"]: report["fields"]
+            for report in json.loads(path.read_text())["reports"]}
+
+
+def field_locators(fields, keys):
+    entries = []
+    for key in keys:
+        if key not in fields:
+            continue
+        observations = fields[key]
+        for item in observations if isinstance(observations, list) else [observations]:
+            locator = item.get("original_locator")
+            if not locator:
+                page = item.get("page")
+                location = item.get("locator") or "section or table unspecified"
+                locator = f"p. {page}, {location}" if page else f"page unavailable, {location}"
+            additional = sorted({f"p. {source['physical_page']}, {source['locator']}"
+                                 for source in item.get("sources", [])
+                                 if source.get("physical_page") and source.get("locator")})
+            if additional:
+                locator += " [additional: " + "; ".join(additional) + "]"
+            entries.append(f"{item.get('key', key)} [{item['status']}] {locator}")
+    require(entries, f"No retained observation for {keys}")
+    return "; ".join(entries)
+
+
+def make_study_row_map(included):
+    appraisal_path = RESTART / "appraisal/active_appraisal_rationale_matrix.csv"
+    judgments = {row["report_id"]: row for row in rows(appraisal_path) if row["domain"] == "D09"}
+    require(judgments.keys() == {row["report_id"] for row in included}, "D09 study IDs differ")
+    output = io.StringIO(newline="")
+    writer = csv.writer(output, lineterminator="\n")
+    writer.writerow(("report_id", "study_id", "original_pdf", "original_pdf_sha256",
+                     "accepted_extraction", *FIELD_GROUPS, "t3_d09", "t3_d09_locator",
+                     "t3_d09_rationale"))
+    sources = {appraisal_path}
+    for row in included:
+        report_id = row["report_id"]
+        extraction_path = PROJECT / row["extraction_source"]
+        sources.add(extraction_path)
+        fields = extraction_fields(extraction_path)[report_id]
+        judgment = judgments[report_id]
+        page = judgment["physical_page"]
+        section = judgment["section"] or "section unspecified"
+        writer.writerow((
+            report_id, row["study_id"], row["original_pdf"], row["original_pdf_sha256"],
+            row["extraction_source"], *(field_locators(fields, keys) for keys in FIELD_GROUPS.values()),
+            judgment["judgment"], f"p. {page}, {section}" if page else f"page unavailable, {section}",
+            judgment["rationale"],
+        ))
+    return output.getvalue(), sources
+
+
 def check_originals():
     included = rows(RESTART / "synthesis/active_synthesis_input_index.csv")
     ids = {row["report_id"] for row in included}
@@ -92,7 +185,7 @@ def check_originals():
         path = PROJECT / relative
         require(path.is_file(), f"{report_id}: original PDF missing at {relative}")
         require(sha256(path) == expected, f"{report_id}: original PDF checksum differs")
-    return len(sources)
+    return len(sources), included
 
 
 def main():
@@ -101,8 +194,15 @@ def main():
     args = parser.parse_args()
     try:
         paths, label_count = check_index()
-        original_count = check_originals()
+        original_count, included = check_originals()
         contrast_count = check_outcome_rows()
+        claim_count, prose_lines = check_claim_audit()
+        row_map, sources = make_study_row_map(included)
+        if args.record:
+            STUDY_ROW_MAP.write_text(row_map)
+        else:
+            require(STUDY_ROW_MAP.read_text() == row_map, "Study row map differs from accepted source locators")
+        paths.update(sources | {CLAIM_AUDIT, STUDY_ROW_MAP})
         snapshot = "".join(f"{sha256(path)}  {path.relative_to(PROJECT)}\n" for path in sorted(paths))
         if args.record:
             SNAPSHOT.write_text(snapshot)
@@ -111,8 +211,9 @@ def main():
                     "Evidence snapshot differs. Review changed sources and the crosswalk before recording.")
     except (OSError, ValueError) as error:
         parser.exit(1, f"Evidence check failed: {error}\n")
-    print(f"PASS: {label_count} figures/tables/equations, {len(paths)} saved files, "
-          f"{contrast_count} outcome rows, {original_count} original PDF checksums and complete LaTeX crosswalk.")
+    print(f"PASS: {claim_count} audit entries across {prose_lines} prose lines, "
+          f"{len(included)} study rows, {label_count} figures/tables/equations, {len(paths)} saved files, "
+          f"{contrast_count} outcome rows and {original_count} original PDF checksums.")
 
 
 if __name__ == "__main__":

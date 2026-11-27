@@ -3,9 +3,11 @@
 Mở [chỉ mục theo từng mục trong PDF](ITEM_INDEX.md) để tra công thức, mã
 LaTeX/TikZ, dữ liệu và vị trí nguồn gốc. Thư mục [sources](sources) giữ bản
 sao thực của các đầu vào và mã cần thiết để tái tạo. Mở
-[PDF đối chiếu 29 trang](sources/manuscript/sn_computer_science/main.pdf)
+[PDF đối chiếu 28 trang](sources/manuscript/sn_computer_science/main.pdf)
 để xem kết quả đã lưu. Các bản sao được đối chiếu với nguồn trên nhánh
 HK261 bằng [package_evidence.py](package_evidence.py) và [SHA256SUMS](SHA256SUMS).
+
+Tra các nhận định và các chỗ thiếu minh chứng trong [S4](../supplement_evidence_index.md).
 
 ## Đầu vào và cách tái tạo từng mục
 
@@ -15,13 +17,13 @@ HK261 bằng [package_evidence.py](package_evidence.py) và [SHA256SUMS](SHA256S
 | Hình 2 · Tổng quan tập nghiên cứu | [Mã hóa 46 nghiên cứu](sources/manuscript/sn_computer_science/technical_coding.psv), [đặc trưng](sources/restart_2026_11_26/synthesis/active_study_characteristics.csv), [BibTeX](sources/manuscript/sn_computer_science/references.bib) và [TikZ](sources/manuscript/sn_computer_science/technical_overview_figure.tex). Số đếm theo nhóm được đổi thành chiều cao hoặc chiều dài thanh. | Bước 2 sinh số đếm. Bước 3 vẽ bốn ô ở trang 7. |
 | Hình 3 · Sơ đồ kiến trúc | Ba nhóm topology trong bảng mã hóa và [TikZ](sources/manuscript/sn_computer_science/technical_architecture_figure.tex). Mũi tên biểu diễn quan hệ logic. | Bước 3 vẽ sơ đồ ở trang 8. |
 | Hình 4 · Cây phân loại | Bốn chiều phân loại trong bảng mã hóa và [TikZ](sources/manuscript/sn_computer_science/technical_taxonomy_figure.tex). Mỗi lá đếm các ID thuộc nhóm tương ứng. | Bước 2 sinh số đếm. Bước 3 vẽ cây ở trang 9. |
-| Hình 5 · Biểu đồ thẩm định | [Tổng hợp 10 tiêu chí](sources/restart_2026_11_26/synthesis/active_appraisal_summary.csv) và [TikZ](sources/manuscript/sn_computer_science/technical_appraisal_figure.tex). Độ rộng mỗi đoạn là 100 × số nghiên cứu ở mức tương ứng / 46. | Bước 2 sinh đầu vào cho biểu đồ. Bước 3 vẽ thanh ở trang 22. |
+| Hình 5 · Biểu đồ thẩm định | [Tổng hợp 10 tiêu chí](sources/restart_2026_11_26/synthesis/active_appraisal_summary.csv) và [TikZ](sources/manuscript/sn_computer_science/technical_appraisal_figure.tex). Độ rộng mỗi đoạn là 100 × số nghiên cứu ở mức tương ứng / 46. | Bước 2 sinh đầu vào cho biểu đồ. Bước 3 vẽ thanh ở trang 21. |
 | Bảng 1 · Khảo sát liên quan | [Các hàng LaTeX](sources/manuscript/sn_computer_science/main.tex#L33), BibTeX và [nguồn từng hàng](ITEM_INDEX.md#table-1-source-locators). Mỗi mô tả được chép vào bản thảo từ ghi chú đối chiếu nguồn. | Bước 3 dàn bảng ở trang 2. |
-| Bảng 2 · Kiến trúc | Bảng mã hóa, đặc trưng và [vị trí nguồn theo ID](sources/restart_2026_11_26/extraction/p08_source_inventory.json). Sắp theo topology, năm và ID. | Bước 2 sinh [LaTeX bảng](sources/manuscript/sn_computer_science/technical_architecture.tex). Bước 3 dàn bảng từ trang 11. |
-| Bảng 3 · Đánh giá và khả năng phục hồi | Bảng mã hóa, đặc trưng, D09 trong tổng hợp 10 tiêu chí và vị trí nguồn theo ID. Có thể đối chiếu D09 với [mức thẩm định từng nghiên cứu](sources/restart_2026_11_26/appraisal/active_appraisal_table.csv). | Bước 2 sinh [LaTeX bảng](sources/manuscript/sn_computer_science/technical_evaluation.tex). Bước 3 dàn bảng từ trang 17. |
-| Bảng 4 · Đối chiếu định lượng | [Sổ kết quả](sources/restart_2026_11_26/synthesis/active_outcome_evidence.csv), [đính chính R0092](sources/restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json), [bản đồ 9 hàng](ITEM_INDEX.md#table-4-row-map) và [hàng LaTeX](sources/manuscript/sn_computer_science/main.tex#L260). Giữ số liệu, đơn vị, comparator và độ bất định như đã kiểm chứng. | Bước 3 dàn bảng ở trang 21. |
-| Bảng 5 · Kết quả thẩm định | Tổng hợp 10 tiêu chí và [lý do theo nghiên cứu](sources/restart_2026_11_26/appraisal/active_appraisal_rationale_matrix.csv). Tỷ lệ Yes là 100 × số Yes / 46, làm tròn một chữ số thập phân. | Bước 2 sinh [hàng LaTeX](sources/manuscript/sn_computer_science/technical_appraisal.tex). Bước 3 dàn bảng ở trang 22. |
-| Công thức 1–3 | [LaTeX và phép suy ra](ITEM_INDEX.md#figures-tables-and-equations) cho hàm mục tiêu, độ trễ liên kết và thời gian phục hồi. | Bước 3 dàn công thức ở trang 10 và 23. |
+| Bảng 2 · Kiến trúc | Bảng mã hóa, đặc trưng và [vị trí nguồn theo ID](sources/restart_2026_11_26/extraction/p08_source_inventory.json). Sắp theo topology, năm và ID. | Bước 2 sinh [LaTeX bảng](sources/manuscript/sn_computer_science/technical_architecture.tex). Bước 3 dàn bảng từ trang 10. |
+| Bảng 3 · Đánh giá và khả năng phục hồi | Bảng mã hóa, đặc trưng, D09 trong tổng hợp 10 tiêu chí và vị trí nguồn theo ID. Có thể đối chiếu D09 với [mức thẩm định từng nghiên cứu](sources/restart_2026_11_26/appraisal/active_appraisal_table.csv). | Bước 2 sinh [LaTeX bảng](sources/manuscript/sn_computer_science/technical_evaluation.tex). Bước 3 dàn bảng từ trang 15. |
+| Bảng 4 · Đối chiếu định lượng | [Sổ kết quả](sources/restart_2026_11_26/synthesis/active_outcome_evidence.csv), [đính chính R0092](sources/restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json), [bản đồ 9 hàng](ITEM_INDEX.md#table-4-row-map) và [hàng LaTeX](sources/manuscript/sn_computer_science/main.tex#L260). Giữ số liệu, đơn vị, comparator và độ bất định như đã kiểm chứng. | Bước 3 dàn bảng ở trang 19. |
+| Bảng 5 · Kết quả thẩm định | Tổng hợp 10 tiêu chí và [lý do theo nghiên cứu](sources/restart_2026_11_26/appraisal/active_appraisal_rationale_matrix.csv). Tỷ lệ Yes là 100 × số Yes / 46, làm tròn một chữ số thập phân. | Bước 2 sinh [hàng LaTeX](sources/manuscript/sn_computer_science/technical_appraisal.tex). Bước 3 dàn bảng ở trang 20. |
+| Công thức 1–3 | [LaTeX và phép suy ra](ITEM_INDEX.md#figures-tables-and-equations) cho hàm mục tiêu, độ trễ liên kết và thời gian phục hồi. | Bước 3 dàn công thức ở trang 9 và 22. |
 
 ## Các lệnh tái tạo
 

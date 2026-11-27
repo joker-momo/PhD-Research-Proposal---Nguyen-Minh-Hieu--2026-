@@ -20,6 +20,34 @@ project directory.
 | Appraisal | [Data and rationales](../../restart_2026_11_26/appraisal/active_appraisal_rationale_matrix.csv) keyed by report and D01–D10, [full ratings](../../restart_2026_11_26/appraisal/active_appraisal_table.csv), [summary](../../restart_2026_11_26/synthesis/active_appraisal_summary.csv). |
 | Verification and unresolved items | [Technical survey review](technical_survey_review.md), [accepted integrity audit](../../restart_2026_11_26/integrity/active_final_integrity_audit.md), [limitations](../../restart_2026_11_26/integrity/active_limitations.md). |
 
+## Claim audit and missing evidence
+
+- [Claim-level audit](s4_claim_audit.md) records the source, physical page or section,
+  review record, or derivation for each prose claim group. `NARROWED` marks
+  claims rewritten to follow the available evidence. `OPEN` marks unresolved
+  source coverage, methods, or author confirmations.
+- [Study row source map](s4_study_row_sources.csv) locates the original,
+  accepted extraction fields and D09 appraisal behind each of the 46 rows of
+  Tables 2 and 3. Filter by report ID. Each field retains its extraction status,
+  including `PARTIAL` and `NOT_REPORTED`. Page or section unavailability is explicit.
+- The artifact folder [reproduction guide](minh_chung_hinh_bang/README.md)
+  links the frozen inputs and commands for every figure, table and equation.
+
+### Revisions with consequences for interpretation
+
+| Issue | Verified support and manuscript change |
+| --- | --- |
+| R0001 family (Table 2 and Figure 2) | Physical pp. 1–3, §II and §III.A describe convolutional and fully connected layer types and use real-world auxiliary data, without specifying a concrete evaluated DNN family. Code as a generic layered DNN proxy. |
+| R0058 workload (Table 2 and Figure 2) | Physical p. 19, §6.1 identifies ResNet-18 and CIFAR-10. Code as a concrete CNN workload. Physical pp. 9–10 and 21–22 describe fallback and a speed sensitivity experiment. Individual recovery phases remain open. |
+| R0075 modality (Table 3 and Figure 2) | Physical pp. 8–10, §§IV.A–B distinguish Jetson TX2 profiling from modeled links and record a routing boundary in Table III. Code as profile-backed, with communication modeled. |
+| R0019 continuity (Table 3) | Physical p. 15, Fig. 19 varies active UAV count from 3 to 4 to 2 in simulation. Layer allocation is evaluated, while measured handoff time remains open. |
+| R0014 event setting (main.tex L225, L242) | Physical p. 10 reports five UAVs outdoors. Physical p. 13 §VIII.C and Table IV report deliberate head disconnection and rescheduling latency. The table measures the scheduler stage. The event's relation to the outdoor run remains open. |
+| R0090 dropout evidence (Table 3) | Physical p. 4 §V.E reports implementation, and physical pp. 3, 5–6 §§II.D, III.B, V.F and V.K describe dropout response and loss. The test modality of the dropout outcome remains open. |
+| R0113 setup (Table 3) | Physical pp. 9–13, Implementation and Results and Tables 1–4 report simulation and hardware-in-the-loop. The accepted evaluation field is partial. |
+| R0118 and R0125 comparability (main.tex L229, L281) | R0118 physical p. 12, Table V supports the common planner. R0125 physical p. 3, Table I and §IV.B support four nominal threads per worker on a workstation. The allocations are 16 versus 4; matched aggregate compute was not established. |
+| R0062 fault outcome (main.tex L258) | Physical p. 6, Effect of UAV Unavailability, reports about 2 versus 3 fps. The exact failure-to-resumption time and deadline count remain open. |
+| Search and human verification (main.tex L87, L105–107, L342–350) | One unretrieved report, three awaiting classification, independent duplicate human verification and author declarations remain open in the retained workflow. |
+
 ## Figures, tables, and equations
 
 | Item | Source, inputs and reproduction rule |
@@ -28,22 +56,23 @@ project directory.
 | Figure 2 `fig:macro` (PDF p. 7) | [TikZ](technical_overview_figure.tex) uses [generated counts](technical_macros.tex). The [generator](build_technical_survey.py) counts each report once per panel, using the citation year and BibTeX venue type in panel A and the family, optimizer, and evaluation columns of [primary coding](technical_coding.psv) in the remaining panels. Unscaled TikZ segment height in panel A is 0.16 cm × count, with conference at the bottom and journal stacked above. Horizontal bar length in panels B–D is 0.115 cm × count. The enclosing LaTeX resize applies one scale to the figure. Each panel totals 46. |
 | Figure 3 `fig:topologies` (PDF p. 8) | [TikZ](technical_architecture_figure.tex) illustrates the three analyst-defined topology categories from the coding ledger and Table 2. Representative mappings are peer transport R0010/R0121, a head–worker hierarchy R0014/R0118, and tiered processing R0001/R0080. Arrows represent logical relationships. They carry no measured distance, time, or scale. |
 | Figure 4 `fig:taxonomy` (PDF p. 9) | [TikZ](technical_taxonomy_figure.tex) uses [generated counts](technical_macros.tex) for topology, unit, optimizer and resilience. A leaf count is the number of distinct reports assigned its label. Each dimension has its own denominator of 46. |
-| Figure 5 `fig:appraisalbar` (PDF p. 22) | [TikZ](technical_appraisal_figure.tex) draws [generated bar inputs](technical_appraisal_bars.tex) from the accepted summary. Segment width in percentage points is 100 × status count / 46. The endpoints are cumulative percentages for Yes, Partial, and Not reported, followed by 100% for any No votes. The corresponding Table 5 percentage is 100 × Yes count / 46 rounded to one decimal. |
+| Figure 5 `fig:appraisalbar` (PDF p. 21) | [TikZ](technical_appraisal_figure.tex) draws [generated bar inputs](technical_appraisal_bars.tex) from the accepted summary. Segment width in percentage points is 100 × status count / 46. The endpoints are cumulative percentages for Yes, Partial, and Not reported, followed by 100% for any No votes. The corresponding Table 5 percentage is 100 × Yes count / 46 rounded to one decimal. |
 | Table 1 `tab:related` (PDF p. 2) | [LaTeX](main.tex#L33) and [bibliography](references.bib). Row-level sources are listed below. |
-| Table 2 `tab:architecture` (PDF p. 11) | [Generated LaTeX](technical_architecture.tex) uses the 46-study characteristics and coding ledgers. The report citation joins each cell back to architecture, model and partition fields in the accepted extraction and locator inventory. |
-| Table 3 `tab:evaluation` (PDF p. 17) | [Generated LaTeX](technical_evaluation.tex) uses the same 46 IDs and joins evaluation settings, connectivity, mobility, faults and continuity cells to the original report through the extraction and locator inventory. |
-| Table 4 `tab:outcomes` (PDF p. 21) | [LaTeX](main.tex#L260) transcribes checked values in their reported units and conditions. The row map below identifies the accepted ledger record and the original page/table. |
-| Table 5 `tab:appraisal` (PDF p. 22) | [Generated rows](technical_appraisal.tex) use the accepted summary. Domain counts and percentages share the same source as Figure 5. Use the rationale matrix for individual ratings or missing reporting evidence. |
-| Eq. 1 `eq:objective` (PDF p. 10) | [LaTeX](main.tex#L169). This review's synthesized objective defines a feasible decision tuple and weights latency, energy, quality and recovery cost across scenarios. The negative quality sign suits minimization. Weights carry unit conversions and recovery cost must have a distinct boundary from end-to-end delay unless deliberate weighting is explained. See R0001/R0006/R0058/R0080 and RQ2 for examples of subproblems. The review did not fit weights or compute a pooled objective. |
-| Eq. 2 `eq:link` (PDF p. 10) | [LaTeX](main.tex#L179). The serialization duration follows from bits divided by effective bits per second. Queueing and protocol time are additive for the stated non-overlapping accounting boundary. R0121 and R0092 provide context for link accounting, with exact assumptions in their extraction. This equation is a schematic decomposition. |
-| Eq. 3 `eq:recovery` (PDF p. 23) | [LaTeX](main.tex#L319). Let t0 be event onset, t1 detection, t2 the valid plan, t3 transfer complete and t4 the first correct resumed output. The sum of consecutive differences telescopes to t4 − t0. With overlapping phases, record wall time and individual intervals. R0038/R0062/R0014 are motivating examples. This is a proposed measurement definition. No recovery values were computed with it. |
+| Table 2 `tab:architecture` (PDF p. 10) | [Generated LaTeX](technical_architecture.tex) uses the 46-study characteristics and coding ledgers. The report citation joins each cell back to architecture, model and partition fields in the accepted extraction and locator inventory. |
+| Table 3 `tab:evaluation` (PDF p. 15) | [Generated LaTeX](technical_evaluation.tex) uses the same 46 IDs and joins evaluation settings, connectivity, mobility, faults and continuity cells to the original report through the extraction and locator inventory. |
+| Table 4 `tab:outcomes` (PDF p. 19) | [LaTeX](main.tex#L260) transcribes checked values in their reported units and conditions. The row map below identifies the accepted ledger record and the original page/table. |
+| Table 5 `tab:appraisal` (PDF p. 20) | [Generated rows](technical_appraisal.tex) use the accepted summary. Domain counts and percentages share the same source as Figure 5. Use the rationale matrix for individual ratings or missing reporting evidence. |
+| Eq. 1 `eq:objective` (PDF p. 9) | [LaTeX](main.tex#L169). This review's synthesized objective defines a feasible decision tuple and weights latency, energy, quality and recovery cost across scenarios. The negative quality sign suits minimization. Weights carry unit conversions and recovery cost must have a distinct boundary from end-to-end delay unless deliberate weighting is explained. See R0001/R0006/R0058/R0080 and RQ2 for examples of subproblems. The review did not fit weights or compute a pooled objective. |
+| Eq. 2 `eq:link` (PDF p. 9) | [LaTeX](main.tex#L179). The serialization duration follows from bits divided by effective bits per second. Queueing and protocol time are additive for the stated non-overlapping accounting boundary. R0121 and R0092 provide context for link accounting, with exact assumptions in their extraction. This equation is a schematic decomposition. |
+| Eq. 3 `eq:recovery` (PDF p. 22) | [LaTeX](main.tex#L319). Let t0 be event onset, t1 detection, t2 the valid plan, t3 transfer complete and t4 the first correct resumed output. The sum of consecutive differences telescopes to t4 − t0. With overlapping phases, record wall time and individual intervals. R0038/R0062/R0014 are motivating examples. This is a proposed measurement definition. No recovery values were computed with it. |
 
 ### Finding an individual Table 2 or Table 3 cell
 
 In the included input index, take the row's report ID to the matching
-record in the accepted extraction. The following are the field keys under
-`fields`. Each observation has a physical `page` and `locator` with its
-approved support or an explicit missing-evidence status.
+record in the accepted extraction. The keys below describe the baseline
+extraction under `fields`. Supplemental records use compact keys such as
+`architecture`, `workload`, `evaluation`, and `mobility_continuity`. Both
+schemas are resolved in the S4 row map above.
 
 | Cells | Extraction keys and analyst input |
 | --- | --- |
@@ -85,7 +114,7 @@ Inspect the original locator for the comparator, condition and uncertainty.
 | R0075 computation and communication | `quantity:1` | p. 10, Table III, CIDER and Full Final Exit, combined column. |
 | R0074 Orion vs Cloud-Edge-Opt | `quantity:1` | p. 16, Section 4.2 and Fig. 4, Llama-2 7B prefill. |
 | R0074 Orion vs Edge-Solo | `quantity:1` | p. 16, same setting, second comparator. |
-| R0014 20 vs four devices | `quantity:1` | p. 12, Table III, ResNet152, ASAP columns for 20 and four nodes. |
+| R0014 20 vs four devices | `quantity:1` | p. 11, §VIII.B, first-to-100th task timing definition and high-resolution input; p. 12, Table III, ResNet152, ASAP columns for 20 and four nodes. |
 | R0062 three vs four UAVs | `quantity:2`, `quantity:1` | p. 6, Effect of UAV Unavailability, first paragraph. |
 | R0125 four vs one worker | `quantity:1` | p. 3, Table I (four threads) and Section IV.B. |
 
@@ -112,7 +141,7 @@ assumptions for future work without reporting a newly measured result.
 | 146–167 | Partition/dispatch taxonomy and Figure 4. Connect the five unit bins to Table 2 rows and extraction. Representative checks include R0014 for halo/spatial work, R0075 for exits, R0110 for redundancy, R0080 for representation, R0118 for experts, and R0292 for tracker state. |
 | 168–189 | Definitions, common optimization model and link equation. See Eq. 1–2 above, the RQ2 claim matrix, and report locators for R0006/R0058/R0080. |
 | 190–209 | Five solver classes and overhead interpretation. Use the optimizer bins, Table 2 and the RQ2 evidence. Conditions on online cost are criteria for reading a study, with evaluation boundary drawn from Table 3. |
-| 210–230 | Evaluation modalities, channel assumptions and resource comparison. Use the evaluation bins, Table 3 and RQ3. Key checks are R0121 transport, R0038 bench recovery, R0125 thread count, R0292 handoff, R0014 indoor/outdoor boundary and R0118 memory/comparator design. |
+| 210–230 | Evaluation modalities, channel assumptions and resource comparison. Use the evaluation bins, Table 3 and RQ3. Key checks are R0121 transport, R0038 bench recovery, R0125 thread count, R0292 handoff, R0014 indoor/outdoor boundary and R0118 planner/comparator design. |
 | 231–250 | Disruption and response classes. See resilience coding, Table 3 and RQ4. Distinguish modeled, planned and observed action using each report's extracted event fields and originals. |
 | 251–283 | Quantitative comparisons and bounded interpretation. See the nine Table 4 locators and outcome conditions. Comparative prose follows the displayed differences and stated measurement boundaries. |
 | 284–307 | Appraisal and reporting implications. See Table 5/Figure 5, appraisal summary and D03, D04, D07 and D09 source rationales. |
@@ -124,7 +153,7 @@ assumptions for future work without reporting a newly measured result.
 
 ## Rebuild and check
 
-From this directory, with Python 3 and Tectonic available:
+From this directory, with Python 3.11 or newer and Tectonic available:
 
 ```sh
 python3 ../../restart_2026_11_26/prisma/reconcile.py --check
@@ -149,9 +178,8 @@ For the full paper, regenerate the five LaTeX inputs with
 The verified toolchain used pdfTeX 1.40.27 (TeX Live 2025) for the standalone
 flow, Tectonic 0.16.9 for the manuscript, and Python 3.14.5 for the data. Omit
 `--only-cached` for an initial Tectonic build if its TeX bundle is unavailable
-locally. On this revision the independently rebuilt flow and all 29
-manuscript pages matched their saved renders pixel for pixel. Binary PDFs
-can carry different metadata. Update the evidence crosswalk and confirm sources before recording
+locally. Binary PDFs can carry different metadata. Compare extracted page content or
+rendered pages when verifying a reproduction. Update the evidence crosswalk and confirm sources before recording
 a new local file snapshot with `python3 check_evidence.py --record`.
 
 ## Boundaries

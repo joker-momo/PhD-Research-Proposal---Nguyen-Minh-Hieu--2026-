@@ -25,10 +25,10 @@ Ref. & Modality & Hardware / simulator & Network / mobility & Disruption / failu
 \cite{R0074} (2026) & Simulation & Python profile-based LLM simulator & Modeled bandwidth jitter and compute variation & Rate and compute perturbations & Sensitivity, not fault recovery & Partial \\
 \cite{R0077} (2026) & Simulation & Layered-graph simulator & Circular paths and modeled LoS neighbors & Physical node failure NR & NR & NR \\
 \cite{R0092} (2026) & Trace/\allowbreak{}profile sim. & Profile-grounded Gymnasium simulation & Modeled Wi-Fi and changing links & Peer leaves communication range & Reassign or recompute locally & Yes \\
-\cite{R0113} (2026) & Bench/\allowbreak{}emulation & Reported simulation and hardware-in-loop claims & Communication variation; detailed settings unclear & Isolated outage test NR & NR & NR \\
+\cite{R0113} (2026) & Bench/\allowbreak{}emulation & Reported simulation and HIL; setup partial & Communication variation; detailed settings unclear & Isolated outage test NR & NR & NR \\
 \cite{R0121} (2026) & Analytical & Numerical protocol calculations & 802.11 link-layer and frame-loss abstraction & Intact-delivery probability model & Quorum analyzed & NR \\
 \cite{R0029} (2022) & Trace/\allowbreak{}profile sim. & Numerical simulation with layer profiles & Poisson transient node/\allowbreak{}link fault model & Probabilistic transient failure & Active replication & NR \\
-\cite{R0019} (2023) & Simulation & Grid and arrival simulation & Grid motion; no Doppler evaluation & Active UAV count changes & Reallocate within available group & NR \\
+\cite{R0019} (2023) & Simulation & Grid and arrival simulation & Grid motion; no Doppler evaluation & Active count changes in simulation & Layer allocation evaluated; no timed handoff & NR \\
 \cite{R0043} (2023) & Simulation & SeaShip simulation & Fixed system bandwidth & NR & NR & NR \\
 \cite{R0014} (2024) & Outdoor flight & Indoor embedded test plus five-UAV outdoor run & Indoor Wi-Fi; outdoor ad hoc radios & Deliberate head disconnection; outdoor status unestablished & Reschedule surviving devices & Partial \\
 \cite{R0022} (2025) & Simulation & Serverless swarm simulation & Distance loss and complex-normal coefficient & NR & NR & NR \\
@@ -37,7 +37,7 @@ Ref. & Modality & Hardware / simulator & Network / mobility & Disruption / failu
 \cite{R0223} (2025) & Simulation & AirSim and MATLAB software & Simulated obstacles and coordination & Airborne outage NR & NR & NR \\
 \cite{R0002} (2026) & Simulation & PC simulation with embedded parameters & Cross-swarm movement; battery return & Random node unavailability in simulation & Predictive and recovery migration & NR \\
 \cite{R0048} (2026) & Trace/\allowbreak{}profile sim. & Server simulation with measured embedded profiles & Fixed hover; LoS attenuation & NR & NR & NR \\
-\cite{R0075} (2026) & Simulation & Software workload and communication model & Rate sweeps and waiting & NR & NR & NR \\
+\cite{R0075} (2026) & Trace/\allowbreak{}profile sim. & Jetson TX2 profiles; modeled links & Rate sweeps and waiting & NR & NR & NR \\
 \cite{R0095} (2026) & Simulation & RTX 4060 workstation simulation & Planar motion with minimum separation & Backup proposed; test NR & Backup controller described & NR \\
 \cite{R0110} (2026) & Simulation & Discrete-event simulator & 3GPP-informed channel; mobility stress & Modeled worker and leader disruptions & Replica activation and leader recovery & NR \\
 \cite{R0118} (2026) & Simulation & Software swarm simulation & Modeled mobility and connectivity stress & Connectivity stress sensitivity & Expert-routing response; recovery phases NR & Yes \\

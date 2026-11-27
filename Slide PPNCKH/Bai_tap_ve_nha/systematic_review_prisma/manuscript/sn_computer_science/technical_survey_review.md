@@ -5,6 +5,20 @@ comparison PDF retains the accepted PRISMA census and uses the Springer Nature
 class with a 216 mm text block and compact bibliography spacing. It is an
 HK261 coursework comparison draft.
 
+## 27 November 2026 claim audit
+
+| Criterion | Verdict | Evidence |
+| --- | --- | --- |
+| Prose and source coverage | PASS | S4 links 146 entries across 90 prose lines. The checker compares audited line identities with the LaTeX source. Figures, tables, headings that introduce coded groups, and equations use the S4 item crosswalk. |
+| Table 2 and 3 source map | PASS | All 46 studies have an original PDF and checksum, accepted extraction file, grouped locators with status, and D09 judgment and rationale. Original-file hashes match for 46 included and three pending PDFs. |
+| Nine quantitative contrasts | PASS | Rechecked the report tables and interpretation boundaries. Original page renders reviewed for R0014 pp. 12–13, R0074 p. 16, R0075 p. 10 and R0125 p. 3. Text-layer checks used pypdf 6.21.4 or PDFium via pypdfium2 5.13.0. Render R0014 physical p. 12, Table III for the 20- and four-node values and read p. 11 for the metric definition. Rescheduling latency on p. 13, Table IV uses a different boundary. |
+| Revised PDF layout | PASS | 28 pages rendered. Matched all 13 S4 item pages with the final LaTeX auxiliary labels. No unresolved citation or cross-reference warnings and no overfull boxes. |
+| Evidence gaps | OPEN | The claim map marks 13 OPEN entries and 16 NARROWED entries. Pending eligibility, incomplete recovery conditions, and undocumented human verification and author declarations are identified explicitly. Whole-corpus row locators come from the accepted extraction and appraisal, with targeted direct checks for claims at risk of overstatement. |
+
+## Initial comparison checkpoint
+
+The table below describes the earlier 29-page comparison build and its source checks.
+
 | Criterion | Verdict | Evidence |
 | --- | --- | --- |
 | Structure and length | PASS | Seven numbered sections, five numbered figures and five numbered tables in a 29-page A4 PDF. |

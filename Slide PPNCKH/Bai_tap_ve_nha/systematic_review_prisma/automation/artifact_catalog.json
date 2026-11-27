@@ -423,7 +423,7 @@
       "artifact_id": "hk261-alternative-evidence-snapshot",
       "name": "HK261 alternative manuscript evidence snapshot",
       "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py",
-      "purpose": "Guard the claim crosswalk, figure, table and equation evidence, outcome keys, and original PDF identities.",
+      "purpose": "Verify claim coverage, derive the study-row source map, and guard figures, tables, equations, outcome keys, and original PDF identities.",
       "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py\"",
       "inputs": [
         "S4 evidence index",
@@ -431,7 +431,7 @@
         "Manuscript, generated inputs and PDF"
       ],
       "outputs": [
-        "Evidence snapshot or verification report"
+        "Study-row source map, evidence snapshot or verification report"
       ],
       "tests": [
         "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py"

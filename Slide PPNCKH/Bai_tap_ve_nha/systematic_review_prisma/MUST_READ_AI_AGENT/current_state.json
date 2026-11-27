@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T16:09:33+07:00",
+  "updated_at": "2026-11-27T16:20:16+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "alternative_coursework_pdf_ready_for_comparison",
     "summary": "The 29-page technical survey has a versioned evidence and reproduction appendix for author comparison."
   },
   "task": {
-    "task_id": "hk261-alternative-portable-figure-table-evidence",
+    "task_id": "hk261-alternative-claim-audit",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T16:06:35+07:00",
-    "updated_at": "2026-11-27T16:09:33+07:00",
-    "completed_at": "2026-11-27T16:09:33+07:00",
-    "checkpoint_path": "manuscript/sn_computer_science/minh_chung_hinh_bang/README.md",
-    "decision_id": "hk261-alternative-portable-figure-table-evidence-v1"
+    "started_at": "2026-11-27T16:11:06+07:00",
+    "updated_at": "2026-11-27T16:20:16+07:00",
+    "completed_at": "2026-11-27T16:20:16+07:00",
+    "checkpoint_path": "manuscript/sn_computer_science/supplement_evidence_index.md",
+    "decision_id": "hk261-alternative-claim-audit-v1"
   },
   "next_task": {
     "task_id": "hk261-alternative-author-comparison",
@@ -683,7 +683,7 @@
     },
     "alternative_technical_survey": {
       "baseline_commit": "7a6675d",
-      "pages": 29,
+      "pages": 28,
       "numbered_sections": 7,
       "figures": 5,
       "tables": 5,
@@ -699,16 +699,16 @@
       ],
       "independent_human_adjudication": "NOT_DOCUMENTED",
       "review": "manuscript/sn_computer_science/technical_survey_review.md",
-      "pdf_sha256": "5f0140cd740b0855f529decd5080bb66fb34d76448269d58098cb06cd62b0c36",
+      "pdf_sha256": "e47c16af3ae08e896396fcebab53f3812e3743d653fe685e319875bab271d417",
       "evidence_reproduction": {
         "index": "manuscript/sn_computer_science/supplement_evidence_index.md",
         "snapshot": "manuscript/sn_computer_science/evidence_sha256.txt",
         "previous_comparison_commit": "8fba1a2",
         "equations": 3,
         "indexed_outcomes": 9,
-        "hashed_evidence_files": 51,
+        "hashed_evidence_files": 57,
         "verified_original_pdfs": 49,
-        "reproduction": "PRISMA and 29 manuscript pages match independently rebuilt renders",
+        "reproduction": "PRISMA and all 28 manuscript pages match independently rebuilt text and renders",
         "portable_package": {
           "readme": "manuscript/sn_computer_science/minh_chung_hinh_bang/README.md",
           "index": "manuscript/sn_computer_science/minh_chung_hinh_bang/ITEM_INDEX.md",
@@ -717,8 +717,21 @@
           "figures": 5,
           "tables": 5,
           "equations": 3,
-          "independent_build": "Standalone flow and 29 manuscript pages match archived renders pixel for pixel."
+          "independent_build": "Standalone flow and all 28 manuscript pages match archived text and renders pixel for pixel."
         }
+      },
+      "claim_audit": {
+        "prose_map": "manuscript/sn_computer_science/s4_claim_audit.md",
+        "study_row_map": "manuscript/sn_computer_science/s4_study_row_sources.csv",
+        "claim_entries": 146,
+        "prose_lines": 90,
+        "mapped_studies": 46,
+        "narrowed_entries": 16,
+        "open_entries": 13,
+        "verified_contrasts": 9,
+        "original_pdf_hashes": 49,
+        "verified_pdf_item_pages": 13,
+        "scope": "Accepted source locators for 46 studies with targeted direct checks on claims and the nine displayed contrasts."
       }
     }
   },
