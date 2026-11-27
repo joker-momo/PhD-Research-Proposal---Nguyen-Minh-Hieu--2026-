@@ -1,0 +1,10 @@
+claim_id,claim,source_file_or_outcome_key,derivation_or_locator
+RQ5-U01,46 reports / 46 studies read under the shared rule,manifest.json; report_coverage.csv,46 unique report IDs and 46 unique study IDs
+RQ5-U02,"35 verified numerical, 10 plot-only, 1 printed unresolved",report_coverage.csv,Count by exact_outcome_status across all 46 reports
+RQ5-U03,97 retained rows: 51 matched and 46 descriptive; matched rows from 23 studies,outcomes.csv,"Count by comparison_status, then count distinct matched study_id"
+RQ5-U04,Mechanism coverage and entry counts in Table 4,report_coverage.csv; ../../synthesis/desk_reject_evidence_map.csv,"Join by report_id, count statuses and sum retained_numeric_rows by mechanism"
+RQ5-U05,ResNet-18/101 simulated accuracy and latency against GSUP,R0080-Q01; R0080-Q02,"R0080 physical p. 5 Table I, §IV.A for CI, p. 6 §IV.B for bandwidth"
+RQ5-U06,VGG-16 deadline satisfaction against Comm-Min,R0092-Q06,"R0092 physical p. 13 Table V, all arrived tasks"
+RQ5-U07,RDI-LLM and Orion-DP latency on completed missions and all-seed completion,R0110-Q02; R0110-Q03,"R0110 physical p. 13 Table IV, same seeded evaluation, method-specific latency denominators"
+RQ5-U08,One-hop analytical transmission time has a separate measurement boundary,R0121-Q02,R0121 physical p. 7 Table 3
+RQ5-U09,Artifact availability unreported for 40/46; configuration reproducibility partial for 42/46,../../appraisal/active_appraisal_table.csv,Existing engineering appraisal of 46 studies

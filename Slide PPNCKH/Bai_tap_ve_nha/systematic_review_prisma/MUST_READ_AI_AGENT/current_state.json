@@ -1,28 +1,30 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T15:54:06+07:00",
+  "updated_at": "2026-11-27T16:05:51+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "desk_reject_initial_revision_verified",
-    "summary": "The first editorial-response revision has been verified for internal use. Uniform numerical outcome extraction and human author confirmations remain open."
+    "status": "rq5_uniform_sources_verified",
+    "summary": "All 46 included HK261 reports reached the uniform RQ5 source gate; the manuscript revision is ready."
   },
   "task": {
     "task_id": "hk261-editorial-uniform-outcome-inventory",
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T15:54:06+07:00",
-    "updated_at": "2026-11-27T15:54:06+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/rq5_uniform/manifest.json",
+    "updated_at": "2026-11-27T16:05:51+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/rq5_uniform/review.md",
     "decision_id": "hk261-editorial-uniform-outcome-inventory-v1"
   },
   "next_task": {
     "task_id": "hk261-editorial-uniform-outcome-inventory-source-index",
     "owner": "GEMINI_RESEARCH",
-    "status": "ready",
+    "status": "active",
     "action": "Locate full-text evaluation blocks for all 46 fixed reports.",
     "acceptance": "46 exact IDs or an explicit shortfall; every adopted result locator is independently verified.",
     "dispatch_brief": "restart_2026_11_26/extraction/rq5_uniform/source_index_brief.md",
-    "message_id": "hk261-editorial-rq5-source-map-ff1cf4b"
+    "message_id": "hk261-editorial-rq5-source-map-ff1cf4b",
+    "task_uuid": "5b989d57-74a6-45e0-ba85-f393c60e5cf4",
+    "context_id": "1cb472ce-c5d0-4b18-93d7-b88c75e62106"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -715,10 +717,33 @@
       ]
     },
     "rq5_uniform_outcome_inventory": {
-      "protocol": "restart_2026_11_26/extraction/rq5_uniform/rule.md",
       "manifest": "restart_2026_11_26/extraction/rq5_uniform/manifest.json",
-      "baseline_commit": "ff1cf4b",
-      "status": "RULE_LOCKED"
+      "report_coverage": "restart_2026_11_26/extraction/rq5_uniform/report_coverage.csv",
+      "outcomes": "restart_2026_11_26/extraction/rq5_uniform/outcomes.csv",
+      "claim_source": "restart_2026_11_26/extraction/rq5_uniform/claim_source.csv",
+      "review": "restart_2026_11_26/extraction/rq5_uniform/review.md",
+      "source_gate_completed_at": "2026-11-27T16:05:51+07:00",
+      "included_reports": 46,
+      "included_studies": 46,
+      "verified_numeric_reports": 35,
+      "plot_only_reports": 10,
+      "printed_unresolved_reports": [
+        "R0113"
+      ],
+      "retained_rows": 97,
+      "matched_rows": 51,
+      "matched_studies": 23,
+      "descriptive_rows": 46,
+      "held_rows": 7,
+      "cross_reference_rows": 2,
+      "fixed_pending": [
+        "R0081",
+        "R0082",
+        "R0132"
+      ],
+      "fixed_unretrieved": [
+        "R0116"
+      ]
     }
   },
   "blockers": [],
