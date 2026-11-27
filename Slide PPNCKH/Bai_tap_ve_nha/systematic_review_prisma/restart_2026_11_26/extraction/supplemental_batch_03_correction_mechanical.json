@@ -1,0 +1,342 @@
+{
+  "id": "1f40d2c8-f036-4e41-afe0-0d86d1da0ca1",
+  "context_id": "29278cb0-897c-4bd6-984e-4e88fb7ae8f2",
+  "native_state": "TASK_STATE_COMPLETED",
+  "expected_keys": 16,
+  "unique_keys": 16,
+  "missing_keys": [],
+  "duplicates": [],
+  "marker_final": true,
+  "summaries": 1,
+  "summary": {
+    "id": "SUMMARY",
+    "key_count": 16,
+    "tools_used": [
+      "client:find_by_name",
+      "client:grep_search",
+      "client:view_file"
+    ],
+    "no_workers_used": true,
+    "unresolved": []
+  },
+  "pdf_sha256_match": {
+    "R0113": true,
+    "R0118": true,
+    "R0125": true,
+    "R0137": true,
+    "R0145": true,
+    "R0223": true,
+    "R0292": true
+  },
+  "locators": {
+    "EXACT_MATCH": 38
+  },
+  "failure_keys": [],
+  "errors": [],
+  "checks": [
+    {
+      "line": 1,
+      "id": "R0113",
+      "key": "architecture",
+      "page": 7,
+      "section": "METHODOLOGY",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 1,
+      "id": "R0113",
+      "key": "architecture",
+      "page": 7,
+      "section": "METHODOLOGY",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 2,
+      "id": "R0113",
+      "key": "evaluation",
+      "page": 9,
+      "section": "IMPLEMENTATION AND RESULTS",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 2,
+      "id": "R0113",
+      "key": "evaluation",
+      "page": 9,
+      "section": "IMPLEMENTATION AND RESULTS",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 3,
+      "id": "R0113",
+      "key": "variability",
+      "page": 11,
+      "section": "IMPLEMENTATION AND RESULTS",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 3,
+      "id": "R0113",
+      "key": "variability",
+      "page": 12,
+      "section": "IMPLEMENTATION AND RESULTS",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 4,
+      "id": "R0118",
+      "key": "architecture",
+      "page": 3,
+      "section": "III. SYSTEM MODEL",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 4,
+      "id": "R0118",
+      "key": "architecture",
+      "page": 4,
+      "section": "III.A UAV Swarm Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 5,
+      "id": "R0118",
+      "key": "workload",
+      "page": 3,
+      "section": "III. SYSTEM MODEL",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 5,
+      "id": "R0118",
+      "key": "workload",
+      "page": 9,
+      "section": "VI.B Evaluation Results",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 5,
+      "id": "R0118",
+      "key": "workload",
+      "page": 16,
+      "section": "VI.I.1 Measured-Gate Instantiation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 6,
+      "id": "R0118",
+      "key": "optimization",
+      "page": 6,
+      "section": "V.A Computational Complexity",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 6,
+      "id": "R0118",
+      "key": "optimization",
+      "page": 8,
+      "section": "V.D.3 Router PPO Update",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 7,
+      "id": "R0118",
+      "key": "compute_radio",
+      "page": 4,
+      "section": "III.B.1 Channel Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 7,
+      "id": "R0118",
+      "key": "compute_radio",
+      "page": 4,
+      "section": "III.B.2 SNR and Link Capacity",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 7,
+      "id": "R0118",
+      "key": "compute_radio",
+      "page": 15,
+      "section": "VI.H Planner Overhead and Scalability",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 8,
+      "id": "R0118",
+      "key": "mobility_continuity",
+      "page": 3,
+      "section": "III. SYSTEM MODEL",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 8,
+      "id": "R0118",
+      "key": "mobility_continuity",
+      "page": 4,
+      "section": "III.B.3 Network Topology and Connectivity",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 8,
+      "id": "R0118",
+      "key": "mobility_continuity",
+      "page": 7,
+      "section": "V.C Centralized Online Trajectory Planner",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 9,
+      "id": "R0118",
+      "key": "code_data",
+      "page": 9,
+      "section": "VI. PERFORMANCE EVALUATION (Footnote 1)",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 10,
+      "id": "R0125",
+      "key": "outcomes",
+      "page": 3,
+      "section": "IV.B Distributed Inference Scalability",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 10,
+      "id": "R0125",
+      "key": "outcomes",
+      "page": 4,
+      "section": "IV.C Latency Distribution Analysis",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 10,
+      "id": "R0125",
+      "key": "outcomes",
+      "page": 4,
+      "section": "IV.F Detection Quality Preservation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 10,
+      "id": "R0125",
+      "key": "outcomes",
+      "page": 5,
+      "section": "IV.G Communication Overhead Analysis",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 11,
+      "id": "R0137",
+      "key": "partition_assignment",
+      "page": 6,
+      "section": "III.D Remote Computing",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 11,
+      "id": "R0137",
+      "key": "partition_assignment",
+      "page": 7,
+      "section": "IV.B.2 Action Space",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 12,
+      "id": "R0145",
+      "key": "mobility_continuity",
+      "page": 14,
+      "section": "6.1 Experiment settings",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 12,
+      "id": "R0145",
+      "key": "mobility_continuity",
+      "page": 17,
+      "section": "6.2 Performance Comparison of Different LLMs",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 12,
+      "id": "R0145",
+      "key": "mobility_continuity",
+      "page": 18,
+      "section": "6.3 Performance Comparison of Different Methods",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 13,
+      "id": "R0145",
+      "key": "outcomes",
+      "page": 15,
+      "section": "6.2 Performance Comparison of Different LLMs",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 13,
+      "id": "R0145",
+      "key": "outcomes",
+      "page": 17,
+      "section": "6.2 Performance Comparison of Different LLMs",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 13,
+      "id": "R0145",
+      "key": "outcomes",
+      "page": 17,
+      "section": "6.2 Performance Comparison of Different LLMs",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 14,
+      "id": "R0223",
+      "key": "partition_assignment",
+      "page": 3,
+      "section": "3.2 Multi-Agent Collaborative Task Planning",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 14,
+      "id": "R0223",
+      "key": "partition_assignment",
+      "page": 3,
+      "section": "3.2 Multi-Agent Collaborative Task Planning",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 15,
+      "id": "R0223",
+      "key": "outcomes",
+      "page": 5,
+      "section": "4.1 Reinforcement Learning-Based Path Planning Experiments",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 15,
+      "id": "R0223",
+      "key": "outcomes",
+      "page": 5,
+      "section": "4.2 Multi-Agent Cooperative Task Planning Experiments",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 16,
+      "id": "R0292",
+      "key": "baselines",
+      "page": 4,
+      "section": "5.1 Tracking Performance",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 16,
+      "id": "R0292",
+      "key": "baselines",
+      "page": 5,
+      "section": "5.2 UAV Data Handover",
+      "result": "EXACT_MATCH"
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "step": 11,
+  "scope": "HK261 supplemental P08 batch 03",
+  "status": "PASS_COMPOSITE",
+  "checked_at": "2026-11-27T13:34:27+07:00",
+  "parent_task_id": "815814f5-5097-4e23-98a8-ceb3e7680d8a",
+  "correction_task_ids": [
+    "1f40d2c8-f036-4e41-afe0-0d86d1da0ca1"
+  ],
+  "reports": [
+    {
+      "report_id": "R0113",
+      "study_id": "S040",
+      "title": "A Neuromorphic Spiking Neural Network-Based Continual Learning Framework for Energy-Efficient Edge Intelligence in Autonomous UAV Swarm Navigation",
+      "doi": "DOI_NOT_FOUND",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_03_semantic_R0113.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "A Neuromorphic Spiking Neural Network-Based Continual Learning Framework for Energy-Efficient Edge Intelligence in Autonomous UAV Swarm Navigation",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "The framework combines onboard event-driven processing, continual adaptation and a graph of UAV peers that share processed representations for local cooperative decisions.",
+          "original_locator": "pp. 5–8, Methodology"
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "finding": "The sensing workload uses event-camera spike streams and a spiking neural network for navigation decisions. The paper evaluates sequential learning tasks in varied scenario types.",
+          "original_locator": "pp. 5–6 and 9–11, Methodology, Implementation and Results, Table 2"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "The design exchanges compact semantic or graph representations among neighbors; it does not present collaborative execution by splitting contiguous neural layers.",
+          "original_locator": "pp. 7–8 and 12, Methodology and Scalability Analysis"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "The paper describes continual learning with replay and weight consolidation, graph-based coordination and a reinforcement-learning objective for navigation.",
+          "original_locator": "pp. 6–9, Methodology and Implementation and Results"
+        },
+        "compute_radio": {
+          "status": "PARTIAL",
+          "finding": "The study describes low-power edge compute and names software components and simulators. The reporting does not fully specify the onboard compute and radio configuration of each comparative result.",
+          "original_locator": "pp. 5–9, Methodology and Implementation and Results"
+        },
+        "mobility_continuity": {
+          "status": "PARTIAL",
+          "finding": "Environmental and communication changes are considered in the design and scenario descriptions. Fully specified link interruption and recovery measurement conditions are not provided for the reported comparisons.",
+          "original_locator": "pp. 8–10 and 12, Methodology and Implementation and Results"
+        },
+        "evaluation": {
+          "status": "PARTIAL",
+          "finding": "The authors report simulated swarm experiments and describe hardware-in-the-loop activity on embedded platforms. The text does not identify how every tabulated outcome maps to the two evaluation modes.",
+          "original_locator": "pp. 9–13, Implementation and Results, Tables 1–4"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "Table 1 presents CNN, vision-transformer and conventional SNN alternatives. Table 4 compares components of the proposed stack in an ablation.",
+          "original_locator": "pp. 10 and 13, Tables 1 and 4"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "The tables report navigation, continual retention, scalability and component outcomes. This review retains qualitative categories because correspondence between reported measures, implementation modality and matched conditions is incomplete.",
+          "original_locator": "pp. 10–13, Tables 1–4"
+        },
+        "variability": {
+          "status": "PARTIAL",
+          "finding": "The report varies scenario, learning task, swarm scale and ablative configuration. The inspected Methods and comparative results do not state independent repeated-run counts or uncertainty intervals.",
+          "original_locator": "pp. 9–13, Implementation and Results"
+        },
+        "code_data": {
+          "status": "NOT_REPORTED",
+          "finding": "No exact study code or data release is identified in the implementation sections, conclusion and end matter. Named third-party frameworks do not establish release of this study.",
+          "original_locator": "pp. 9 and 14–17, Implementation and Results, Conclusion and References"
+        },
+        "funding_conflicts": {
+          "status": "NOT_REPORTED",
+          "finding": "The inspected first page, conclusion and end matter contain no explicit study funding or competing-interest statement.",
+          "original_locator": "pp. 1 and 14–17, first page and end matter"
+        },
+        "limitations": {
+          "status": "PARTIAL",
+          "finding": "The authors identify further dynamic edge and multimodal extensions. A dedicated discussion tracing limitations of the reported evaluations is not given in the inspected conclusion.",
+          "original_locator": "pp. 14–16, Conclusion and future research paragraph"
+        }
+      },
+      "quantitative_rows": []
+    },
+    {
+      "report_id": "R0118",
+      "study_id": "S041",
+      "title": "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms",
+      "doi": "10.1109/jiot.2026.3755315",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_03_semantic_R0118.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "An airborne swarm hosts distributed expert components. A hierarchical design coordinates software control and expert assignment. The study also evaluates a decentralized control alternative.",
+          "original_locator": "pp. 3–4 and 6–9, §§III and V"
+        },
+        "workload": {
+          "status": "PARTIAL",
+          "finding": "The study models a mixture-of-experts inference workload with task and expert compatibility. The nominal simulator abstracts inference into inputs. The measured-gate subexperiment uses a CIFAR-100 classifier instantiation; this is not an airborne deployment.",
+          "original_locator": "pp. 4–5, 9–11 and 17, §§III.C–D, VI.A–B, measured-gate experiment and VII"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "Different UAV nodes host different expert components, and inference is assigned to suitable experts. An evaluation contrasts the expert assignment unit with layer-wise inference.",
+          "original_locator": "pp. 4, 6–8 and 12, §§III.C, V.B–D and Table V"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "The method combines control and expert assignment under latency and communication constraints. A learned decision component is compared with alternative decision rules.",
+          "original_locator": "pp. 5–9, §§IV–V"
+        },
+        "compute_radio": {
+          "status": "OBSERVED",
+          "finding": "The study parameterizes node compute and models wireless communication, interference and deployment resource accounting. The modeled assumptions are not physical radio or compute measurements.",
+          "original_locator": "pp. 3–5 and 11–12, §§III.B–D and VI.C"
+        },
+        "mobility_continuity": {
+          "status": "OBSERVED",
+          "finding": "Software evaluations vary network and mobility conditions, including disrupted connectivity. Some alternative conditions are sensitivity tests under the trained design rather than airborne recovery tests.",
+          "original_locator": "pp. 9 and 13–17, §§VI and VII"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "The study uses a software evaluation with multiple seeds and episodes. Physical validation is deferred by the authors.",
+          "original_locator": "pp. 9–10 and 17, §VI.A–B and §VII"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "The evaluation compares layer-wise execution, candidate routing and control rules, and ablated configurations. Conditions are separately fixed for different comparison tables.",
+          "original_locator": "pp. 9 and 11–15, §VI.B–F and comparison tables"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "Completion, latency and resource use are reported in simulation. Interpret results by comparison table and operating condition; the review does not extend them to real flight.",
+          "original_locator": "pp. 9–16, §VI and Tables III–XII"
+        },
+        "variability": {
+          "status": "OBSERVED",
+          "finding": "The paper reports three-seed evaluation and many episodes, uncertainty intervals, component ablations and sensitivity to modeled conditions.",
+          "original_locator": "pp. 9–17, §VI, Tables V–XII and §VII"
+        },
+        "code_data": {
+          "status": "OBSERVED",
+          "finding": "The authors provide the code and simulation environment route github.com/traumasv/NetMoE-IoTJ in a source footnote. Review verification establishes the printed route.",
+          "original_locator": "p. 9, §VI.A footnote"
+        },
+        "funding_conflicts": {
+          "status": "PARTIAL",
+          "finding": "The Acknowledgment discloses grant support. The inspected first page and end matter do not give a separate competing-interest statement.",
+          "original_locator": "pp. 1 and 17–18, first page and Acknowledgment"
+        },
+        "limitations": {
+          "status": "OBSERVED",
+          "finding": "The authors bound the evidence to simulation, discrete motion, abstracted expert accuracy and future real-testbed validation.",
+          "original_locator": "p. 17, §VII, Limitations and future work"
+        }
+      },
+      "quantitative_rows": []
+    },
+    {
+      "report_id": "R0125",
+      "study_id": "S042",
+      "title": "UAV Extreme Edge Computing for Real Time AI Inference: A Distributed Processing Approach",
+      "doi": "10.1109/sm69703.2026.11614110",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_03_semantic_R0125.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "UAV Extreme Edge Computing for Real Time AI Inference: A Distributed Processing Approach",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "An orchestrator divides video frames among parallel inference workers and recombines their detections. Worker roles are implemented as workstation processes standing in for UAV devices.",
+          "original_locator": "pp. 2–3, §§II and III.D"
+        },
+        "workload": {
+          "status": "PARTIAL",
+          "finding": "YOLO11m exported to ONNX evaluates urban surveillance video. The video content and resolution are described; the original video source is not identified in the inspected setup.",
+          "original_locator": "p. 3, §§III.B and III.D"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "The system divides input frames spatially with controlled overlap, performs worker-local inference and merges globally mapped detections.",
+          "original_locator": "p. 2, §§II.B–D"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "The implementation assigns worker threads and frame regions and evaluates adaptive thread reallocation and heterogeneous allocation. The system is evaluated as a parallel implementation on a workstation.",
+          "original_locator": "pp. 2–4, §§II, III.D and IV.D–E"
+        },
+        "compute_radio": {
+          "status": "PARTIAL",
+          "finding": "The implementation documents an AMD workstation and HTTP/JPEG data transfer. The evaluation lacks measured airborne wireless links; the authors identify sensitivity to the link bandwidth.",
+          "original_locator": "pp. 3 and 5, §§III.C–D and IV.G"
+        },
+        "mobility_continuity": {
+          "status": "PARTIAL",
+          "finding": "The paper describes replacement of stateless workers and tests changing thread allocations on a workstation. It does not demonstrate interference, flight motion or real link-disconnection recovery.",
+          "original_locator": "pp. 3–5, §§III.C, IV.E and IV.G"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "Inference measurements use workstation processes with varying computational allocations to emulate UAV workers. The platform and video workload are stated in §III.D.",
+          "original_locator": "p. 3, §III.D"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "Evaluation reports single-worker baselines, parallel worker counts, ideal throughput scaling and comparisons among different resource allocations.",
+          "original_locator": "pp. 3–4, §§IV.A–E and Figs. 1–3"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "Measured workstation outcomes include frame latency, throughput, detection quality and communication overhead; the evidence is specific to the emulated resource setup.",
+          "original_locator": "pp. 3–5, §§IV.B–G"
+        },
+        "variability": {
+          "status": "PARTIAL",
+          "finding": "The authors show per-frame latency distribution, scaling and heterogeneity sweeps. The inspected setup/results do not establish independent run counts or outcome confidence intervals.",
+          "original_locator": "pp. 3–5, §§III.D and IV"
+        },
+        "code_data": {
+          "status": "NOT_REPORTED",
+          "finding": "The report identifies implementation components and describes workload footage. A release for study source code, raw video or traces is not stated in the inspected sections.",
+          "original_locator": "pp. 2–5, §§III–V and end matter"
+        },
+        "funding_conflicts": {
+          "status": "PARTIAL",
+          "finding": "The Acknowledgment names Canadian natural sciences and engineering research council support. No competing-interest statement is identified in inspected end matter.",
+          "original_locator": "p. 5, Acknowledgment and end matter"
+        },
+        "limitations": {
+          "status": "OBSERVED",
+          "finding": "The authors state that transfer latency depends on inter-node bandwidth and would increase under constrained wireless conditions, limiting how workstation timing generalizes.",
+          "original_locator": "p. 5, §IV.G"
+        }
+      },
+      "quantitative_rows": [
+        {
+          "metric": "measured inference throughput",
+          "value": "22.4",
+          "units": "frames/s",
+          "baseline": "single four-thread worker: 6.9 frames/s",
+          "denominator": "throughput units; independent repeat count not stated",
+          "workload": "video frame object detection with YOLO11m on the workload in §III.D",
+          "conditions": "four worker processes, four threads each, versus one four-thread process on the same workstation; aggregate processing resources increase",
+          "page": 3,
+          "locator": "Table I, Threads=4; §IV.B paragraph reporting 22.4 FPS and Fig. 1 caption"
+        }
+      ]
+    },
+    {
+      "report_id": "R0137",
+      "study_id": "S043",
+      "title": "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems",
+      "doi": "10.1109/tcsvt.2026.3745821",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_03_semantic_R0137.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "UAVs analyze video locally or collaborate with edge computing resources. The reliability-aware method coordinates choices among UAVs and the edge.",
+          "original_locator": "pp. 4–6, §III and system figure"
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "finding": "Evaluation uses urban traffic video and object-detection CNN configurations at multiple resolutions. Request patterns are derived separately from an external usage distribution.",
+          "original_locator": "p. 10, §VI.A and Tables II–IV"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "Per-task decisions select local or remote execution and model/input configurations. This is task-level allocation, with no consecutive-layer split.",
+          "original_locator": "pp. 5–7, §§III.C–D and IV"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "A multi-agent learner jointly addresses inference configuration and offloading and incorporates computation or transmission failures in the reliability model.",
+          "original_locator": "pp. 5–9, §§III.B, IV and V"
+        },
+        "compute_radio": {
+          "status": "OBSERVED",
+          "finding": "Physical UAV and edge hardware are profiled. The training model uses probabilistic path loss and communication effects. Profile measurements and modeled links have different provenance.",
+          "original_locator": "pp. 10–11, §VI.A and Tables II–IV"
+        },
+        "mobility_continuity": {
+          "status": "OBSERVED",
+          "finding": "Evaluation accounts for compute and link reliability using modeled disturbances. The source distinguishes profiling and physical policy deployment from a simulated link; it does not establish an airborne outage experiment.",
+          "original_locator": "pp. 5 and 10–12, §III.B and §VI"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "The authors describe actual inference profile measurements and physical multi-UAV policy deployment, as well as offline training and modeled evaluation conditions. Modality depends on the reported result.",
+          "original_locator": "pp. 10–11, §VI.A and Tables II–IV"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "Comparisons include MARL-based analytics, single-node optimization and alternative policies. Ablations serve distinct comparisons.",
+          "original_locator": "pp. 11–12, §§VI.B–C"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "The paper reports analytics accuracy and reliability-related outcomes. Measured model profiles in Tables II–IV are distinct from modeled system-level comparisons.",
+          "original_locator": "pp. 10–12, Tables II–IV and §§VI.B–C"
+        },
+        "variability": {
+          "status": "PARTIAL",
+          "finding": "Training episodes, operating-factor changes and ablations are reported. Independent repeats and run-level uncertainty are not established by the inspected evaluation.",
+          "original_locator": "pp. 10–12, §VI"
+        },
+        "code_data": {
+          "status": "PARTIAL",
+          "finding": "The article cites video material and a request-pattern proxy. A study code or experiment trace release is not identified in the inspected text.",
+          "original_locator": "pp. 10 and 13, §VI.A and References"
+        },
+        "funding_conflicts": {
+          "status": "PARTIAL",
+          "finding": "The study discloses grant support. The inspected first page and end matter lack a competing-interest declaration.",
+          "original_locator": "pp. 1 and 13, first page and end matter"
+        },
+        "limitations": {
+          "status": "OBSERVED",
+          "finding": "The authors identify incomplete modeling of scheduling jitter and battery voltage, and defer dedicated fault-injection validation.",
+          "original_locator": "pp. 10–13, §VI.A–B and §VII"
+        }
+      },
+      "quantitative_rows": []
+    },
+    {
+      "report_id": "R0145",
+      "study_id": "S044",
+      "title": "LLM-based UAV Path Planning for Autonomous and Adaptive Industry Systems",
+      "doi": "10.1145/3774655",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_03_semantic_R0145.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "LLM-based UAV Path Planning for Autonomous and Adaptive Industry Systems",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "Small models serve edge roles and a larger model serves the cloud role. The architecture can revisit selected local inference cases.",
+          "original_locator": "pp. 4–6 and 12–14, system model and §§5–6"
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "finding": "Fine-tuned language models process generated multi-UAV decision tasks. The evaluation uses separate training and test samples.",
+          "original_locator": "pp. 14–16, §§6.1–6.2"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "Work is distributed between edge and cloud models at task level. Replay can revise prior inferences.",
+          "original_locator": "pp. 4–6 and 11–14, system model and §5"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "The study describes generated fine-tuning samples, model selection and a scene memory/replay component for simulated edge–cloud coordination and model evaluation.",
+          "original_locator": "pp. 6–14, §§4–6.1"
+        },
+        "compute_radio": {
+          "status": "OBSERVED",
+          "finding": "A lab server and software versions are given, alongside modeled system and communication conditions. Device-side roles are represented in software.",
+          "original_locator": "pp. 4–6 and 14, system model and §6.1"
+        },
+        "mobility_continuity": {
+          "status": "PARTIAL",
+          "finding": "Motion and decisions are simulated. Replay addresses inference errors; no actual network outage recovery validation is identified.",
+          "original_locator": "pp. 11–19, §§5 and 6"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "Experiments use a lab server and generated gridded simulation settings. Local and cloud labels are experimental roles.",
+          "original_locator": "pp. 14–15, §6.1"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "Comparisons distinguish language models, edge-only or cloud-only and coordinated inference, and heuristic and DRL task-planning baselines.",
+          "original_locator": "pp. 15–18, §§6.1–6.3"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "The software results report task completion, processing time and system cost. Each comparison applies to its own workload and baseline group.",
+          "original_locator": "pp. 15–20, §§6.2–6.4 and §7"
+        },
+        "variability": {
+          "status": "PARTIAL",
+          "finding": "Scenario variants and comparative conditions are reported. Outcome uncertainty intervals and independent seed replication are not specified for the inspected comparisons.",
+          "original_locator": "pp. 14–20, §6"
+        },
+        "code_data": {
+          "status": "PARTIAL",
+          "finding": "The authors describe internal data generation and software dependencies. No release of the study dataset or implementation is identified in the inspected text.",
+          "original_locator": "pp. 14–15 and 20, §6.1, §7 and end matter"
+        },
+        "funding_conflicts": {
+          "status": "PARTIAL",
+          "finding": "A first-page footnote declares grants. The inspected first page and final pre-reference text lack a competing-interest statement.",
+          "original_locator": "pp. 1 and 20, first-page note and §7"
+        },
+        "limitations": {
+          "status": "OBSERVED",
+          "finding": "The discussion and conclusion identify inference resource costs and the need for improved resilience and broader collaboration.",
+          "original_locator": "pp. 18–20, §§6.3–7"
+        }
+      },
+      "quantitative_rows": []
+    },
+    {
+      "report_id": "R0223",
+      "study_id": "S045",
+      "title": "Outdoor Multi-UAV Collaborative Task Planning System Based on Multi-Agent and Improved PPO Algorithm",
+      "doi": "10.1145/3760269.3760299",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_03_semantic_R0223.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "Outdoor Multi-UAV Collaborative Task Planning System Based on Multi-Agent and Improved PPO Algorithm",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "A shared language model decomposes tasks across simulated UAV agents. Perception feedback informs the common task graph.",
+          "original_locator": "pp. 2–4, method and Figs. 1–3"
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "finding": "The evaluation includes multi-agent planning and perception-plus-planning scenarios in Microsoft AirSim.",
+          "original_locator": "pp. 3–5, method and §4"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "A controller decomposes and updates shared tasks, using feedback from the agents. This is task-level sequencing and assignment rather than layer partition.",
+          "original_locator": "pp. 2–4, method and Fig. 3"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "The paper presents a multi-agent policy variant and task-graph rules. It compares the planning component separately from scenario demonstrations.",
+          "original_locator": "pp. 2–5, method and §4"
+        },
+        "compute_radio": {
+          "status": "PARTIAL",
+          "finding": "The study names workstation and software components. No physical compute or radio measurements across UAV devices are reported in the experimental setup.",
+          "original_locator": "p. 4, §4 Experience"
+        },
+        "mobility_continuity": {
+          "status": "PARTIAL",
+          "finding": "Simulated scenes vary obstacles and coordination. The inspected results do not describe a measured airborne outage or recovery test.",
+          "original_locator": "pp. 4–5, §4 and Fig. 4"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "The authors identify workstation software experiments using Microsoft AirSim and comparisons implemented in MATLAB. Scene descriptions do not establish field flight.",
+          "original_locator": "pp. 4–5, §4 Experience and Fig. 4"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "Table 1 contrasts planning policies under agent and obstacle settings. Table 2 instead contrasts coordination architectures. Neither measures standalone neural inference latency.",
+          "original_locator": "pp. 5 and 7, §4 and Tables 1–2"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "The evaluation reports path length, planning-step time and success, plus separate plan-response time, task completion time and success for coordination experiments.",
+          "original_locator": "pp. 4–5 and 7, §4 and Tables 1–2"
+        },
+        "variability": {
+          "status": "PARTIAL",
+          "finding": "Scenarios and group size vary. The coordination tasks were each run at least 30 times as reported. Independent seeding and uncertainty intervals are not specified.",
+          "original_locator": "pp. 4–5 and 7, §4 and Tables 1–2"
+        },
+        "code_data": {
+          "status": "PARTIAL",
+          "finding": "AirSim scenes and software tools are named. No study implementation or task-prompt release is identified. The authors explicitly note the prompts are omitted.",
+          "original_locator": "pp. 4–5, §4 and Conclusion"
+        },
+        "funding_conflicts": {
+          "status": "NOT_REPORTED",
+          "finding": "No study funding or competing-interest declaration is identified in the inspected first page and end sections.",
+          "original_locator": "pp. 1 and 5–6, first page and end matter"
+        },
+        "limitations": {
+          "status": "OBSERVED",
+          "finding": "The authors note omitted scenario prompts and identify future work in the conclusion.",
+          "original_locator": "p. 5, Conclusion"
+        }
+      },
+      "quantitative_rows": []
+    },
+    {
+      "report_id": "R0292",
+      "study_id": "S046",
+      "title": "Continuous Marine Monitoring via Autonomous UAV Handoff",
+      "doi": "10.1145/3711875.3737661",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_03_semantic_R0292.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "Continuous Marine Tracking via Autonomous UAV Handoff",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "The design coordinates two UAV tracking roles and transfers tracking information so a receiving UAV can continue monitoring.",
+          "original_locator": "pp. 3–4, system setup and §4.1"
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "finding": "The tracker comparison uses a custom set of aerial marine footage, with changing views, partial occlusion and background noise.",
+          "original_locator": "pp. 3–4, dataset description and §5.1"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "Handoff exchanges tracking state at task level. Matching and onboard tracking are separate from neural-layer partition.",
+          "original_locator": "pp. 4–5, §4.1 and §5"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "The study describes tracker selection, feature matching, template padding and onboard implementation optimization. It tests configuration alternatives rather than an offloading optimizer.",
+          "original_locator": "pp. 3–6, method, §5 and Table 3"
+        },
+        "compute_radio": {
+          "status": "OBSERVED",
+          "finding": "The design names onboard Jetson and ROS/flight-stack integration and Wi-Fi transfer. Power and compute measures refer to the reported HIL operation.",
+          "original_locator": "pp. 3–6, setup, §4.1, Fig. 5 and discussion"
+        },
+        "mobility_continuity": {
+          "status": "OBSERVED",
+          "finding": "The design addresses planned handoff of monitoring. Validation tests tracking and feature matching, and explicitly identifies the onboard system test as hardware-in-the-loop.",
+          "original_locator": "pp. 4–6, §4.1, §5 and §6"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "The study compares trackers on recorded footage and reports hardware-in-the-loop operation including tracking, matching, coordination and navigation logic.",
+          "original_locator": "pp. 4–6, §5.1, Fig. 5 and §6"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "Tracker alternatives are compared on marine footage. The handoff experiment varies template padding to assess matching separately.",
+          "original_locator": "pp. 4–5, §5.1 and Tables 2–3"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "Results cover tracking accuracy, matching coverage and persistence, and onboard rate, power and compute behavior. Footage and HIL results support different claims.",
+          "original_locator": "pp. 4–6, §5 and Tables 2–3"
+        },
+        "variability": {
+          "status": "PARTIAL",
+          "finding": "The evaluation varies tracker and matching settings. It does not specify independent mission repetitions or uncertainty for the handoff outcomes.",
+          "original_locator": "pp. 4–6, §5 and Tables 2–3"
+        },
+        "code_data": {
+          "status": "PARTIAL",
+          "finding": "The authors describe a custom footage dataset and named trackers. The inspected text does not identify a release for study data, coordination code or HIL configuration.",
+          "original_locator": "pp. 3–6, Methods, §5 and §6"
+        },
+        "funding_conflicts": {
+          "status": "NOT_REPORTED",
+          "finding": "No study funding or competing-interest declaration is identified in the inspected first page and end matter.",
+          "original_locator": "pp. 1 and 6, first page, conclusion and References"
+        },
+        "limitations": {
+          "status": "PARTIAL",
+          "finding": "The authors note differing viewpoints and incomplete bounding-box alignment in the matching results. There is no dedicated limitations discussion in the conclusion.",
+          "original_locator": "pp. 5–6, §5 and §6"
+        }
+      },
+      "quantitative_rows": [
+        {
+          "metric": "target coverage in handoff template matching",
+          "value": "82.98",
+          "units": "%",
+          "baseline": "30-pixel template padding: 68.37%",
+          "denominator": "author-reported Target Cover percentage; underlying independent run count is not specified in Table 3",
+          "workload": "same report’s handoff matching evaluation on marine imagery",
+          "conditions": "70-pixel versus 30-pixel template padding; matching coverage rather than end-to-end flight handoff success",
+          "page": 5,
+          "locator": "§5.2, Table 3, 70 and 30 padding rows, Target Cover column"
+        }
+      ]
+    }
+  ]
+}
