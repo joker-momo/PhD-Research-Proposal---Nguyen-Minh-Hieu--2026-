@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T14:39:56+07:00",
+  "updated_at": "2026-11-27T14:41:25+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "supplemental_prisma_step13_complete",
-    "summary": "Active PRISMA reconciles 46 studies and the working checklist verifies all 27 items. Final PDF page locators are pending step 16."
+    "status": "supplemental_synthesis_inputs_verified",
+    "summary": "Step 13 is complete. Step 14 input identity is verified across 46 linked report and study IDs. RQ1–RQ5 synthesis is pending."
   },
   "task": {
-    "task_id": "restart-supplemental-prisma-checklist",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T14:38:19+07:00",
-    "updated_at": "2026-11-27T14:39:56+07:00",
-    "completed_at": "2026-11-27T14:39:56+07:00",
-    "checkpoint_path": "restart_2026_11_26/prisma/active_prisma_checklist.md",
-    "decision_id": "restart-supplemental-prisma-checklist-v1"
-  },
-  "next_task": {
     "task_id": "restart-supplemental-synthesis-inputs",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-27T14:40:19+07:00",
+    "updated_at": "2026-11-27T14:41:25+07:00",
+    "completed_at": "2026-11-27T14:41:25+07:00",
+    "checkpoint_path": "restart_2026_11_26/synthesis/active_synthesis_input_manifest.json",
+    "decision_id": "restart-supplemental-synthesis-inputs-v1"
+  },
+  "next_task": {
+    "task_id": "restart-supplemental-rq-synthesis-setup",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Verify the accepted PRISMA/P07/P08/P09 hashes and 46 report-study identities. Prepare a mechanical source index for step 14.",
-    "acceptance": "Exact 46 report-study crosswalk, file checksums, and no new claim or provider dispatch."
+    "action": "After confirmation of High reasoning, prepare the step 14 Gemini.app brief from the verified source index and establish the RQ1–RQ5 claim/source matrix.",
+    "acceptance": "Included source, exact locators and evaluation conditions for every adopted claim. Both numerator and denominator for each descriptive count."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -599,6 +599,19 @@
       },
       "final_pdf_page_locators": "PENDING_STEP_16",
       "checklist_completed_at": "2026-11-27T14:39:56+07:00"
+    },
+    "supplemental_synthesis_inputs": {
+      "status": "MECHANICAL_INPUTS_VERIFIED",
+      "started_at": "2026-11-27T14:40:19+07:00",
+      "updated_at": "2026-11-27T14:41:25+07:00",
+      "completed_at": "2026-11-27T14:41:25+07:00",
+      "manifest": "restart_2026_11_26/synthesis/active_synthesis_input_manifest.json",
+      "manifest_sha256": "ba90dbb8d67054b2adf52a3a39fc5fee9c3022ca17e47508cf38ebda6191b24f",
+      "index": "restart_2026_11_26/synthesis/active_synthesis_input_index.csv",
+      "index_sha256": "db54a085476f68383209054ccdeb5b27975804375895d8bbb785e054b94ed7fc",
+      "report_count": 46,
+      "study_count": 46,
+      "claim_status": "PENDING_RQ_SYNTHESIS"
     }
   },
   "blockers": [],
