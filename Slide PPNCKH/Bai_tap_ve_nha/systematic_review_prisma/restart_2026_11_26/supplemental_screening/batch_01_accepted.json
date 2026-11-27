@@ -1,0 +1,601 @@
+[
+  {
+    "id": "R0014",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "Eligible IEEE TMC journal article on multi-UAV collaborative DNN inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "build up an all-sky autonomous computing (ASAP) system to autonomously conduct"
+      ],
+      [
+        "E2",
+        "PDF",
+        10,
+        "VIII.A Evaluation Setup",
+        "ASAP has also been deployed on 5 real-world UAVs"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "I. INTRODUCTION",
+        "partitions DL model and data among UAV clusters and within each cluster"
+      ],
+      [
+        "E4",
+        "PDF",
+        11,
+        "VIII.B Overall Performance",
+        "Table III compares the average inference latency of ASAP"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "First-page footnote",
+        "Date of publication 15 July 2024; date of current version"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "Unmanned aerial vehicles (UAVs) play an essential role in emergency cases"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "First-page footnote",
+        "revised 14 May 2024; accepted 7 July 2024."
+      ]
+    ]
+  },
+  {
+    "id": "R0024",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "E3 fails. The system aggregates raw sensor data pools. Reported methods and evaluation do not establish a collaborative neural inference workload.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "I. INTRODUCTION",
+        "We propose data pool aggregation scheme, QADA, for FEI-SEM systems"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "II. QUALITY AWARE DATA AGGREGATOR (QADA)",
+        "makes each edge node decide whether to wait for new data"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "II.C Data Aggregation Protocol",
+        "waiting for data pool to fill or, forwarding current pool to neighbors"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "III. PERFORMANCE EVALUATION",
+        "Our evaluation methodology consist of creating detailed OMNET++ simulations with INET framework."
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "III. PERFORMANCE EVALUATION",
+        "In FANET, UAVs circle random centers throughout the mission"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "I. INTRODUCTION",
+        "In the existing SEM systems, the gateways are deployed"
+      ],
+      [
+        "E5",
+        "https://doi.org/10.1109/GLOBECOM54140.2023.10436927",
+        0,
+        "Crossref publisher deposit published-print",
+        "2023-12-04"
+      ],
+      [
+        "E7",
+        "https://re.public.polimi.it/retrieve/37e0c78a-702e-441f-8257-5577d7ae4de7/Global_Communications_Newsletter.pdf",
+        2,
+        "Technical programme chair report",
+        "The review process involved thousands of volunteers"
+      ]
+    ]
+  },
+  {
+    "id": "R0036",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "Eligible IEEE TCCN journal article jointly orchestrating multi-UAV YOLOv5 edge video inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "we propose the scene-adaptive configuration control"
+      ],
+      [
+        "E2",
+        "PDF",
+        11,
+        "VI. PERFORMANCE EVALUATION",
+        "We set 100 UAVs randomly distributed in the targeted surveillance area"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "III. SYSTEM DESCRIPTION AND PROBLEM FORMULATION",
+        "decides for each UAV whether the following video chunk is necessary"
+      ],
+      [
+        "E3",
+        "PDF",
+        10,
+        "VI. PERFORMANCE EVALUATION",
+        "The edge server runs a YOLOv5 object detection model to generate"
+      ],
+      [
+        "E4",
+        "PDF",
+        11,
+        "VI. PERFORMANCE EVALUATION",
+        "evaluate scenario generalization by testing the method across diverse surveillance environments"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "First-page footnote",
+        "Date of publication 8 December 2025; date of current version"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "Low-altitude uncrewed aerial vehicles (UAVs) are increasingly deployed for urban surveillance"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "First-page footnote",
+        "Received 29 June 2025; revised 16 October 2025; accepted 30 November"
+      ]
+    ]
+  },
+  {
+    "id": "R0080",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "Eligible IEEE VTC2025-Fall conference paper on multi-UAV edge-cloud collaborative DNN inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "This paper presents a novel edge-cloud collaborative inference framework for aerial networks"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "IV.A Experimental Setup",
+        "20 UAVs with non-identical data distributions are synthesized"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "II.A System Model",
+        "Each UAV independently conducts onboard feature extraction to lightweight raw data samples"
+      ],
+      [
+        "E3",
+        "PDF",
+        5,
+        "IV.A Experimental Setup",
+        "Edge-side employed ResNet-18 and ResNet-34 as lightweight backbones."
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "Unmanned aerial vehicles (UAVs) are increasingly deployed for real-time intelligent tasks"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "IV.B Experiment Results",
+        "The results presented in Table I provide the accuracy"
+      ],
+      [
+        "E5",
+        "https://events.vtsociety.org/vtc2025-fall/wp-content/uploads/sites/46/2025/10/Program.pdf",
+        1,
+        "Final Program Cover / W6: AI RAN",
+        "19 – 22 October 2025"
+      ],
+      [
+        "E5",
+        "https://doi.org/10.1109/VTC2025-Fall62442.2025.11345339",
+        0,
+        "Proceedings event date separately shown in IEEE final program",
+        "2025"
+      ],
+      [
+        "E7",
+        "https://events.vtsociety.org/vtc2025-fall/wp-content/uploads/sites/46/2025/10/Program.pdf",
+        4,
+        "TPC Co-Chairs welcome (report listed under W6, physical p28)",
+        "managing the review process with care and efficiency"
+      ]
+    ]
+  },
+  {
+    "id": "R0096",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "E3 fails. The evaluated multi-UAV experiment concerns path planning. The standalone detection evaluations do not show collaborative inference; see physical pp3–6.",
+    "evidence": [
+      [
+        "E2",
+        "PDF",
+        5,
+        "4.2.2 Human Detection from Infrared Images with YOLO",
+        "we simulated swarms with 2 to 8 UAVs each."
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "3.1.3 Cracks and Spalls Detection with YOLO",
+        "captures RGB images which are processed onboard by an object detection"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "3.3.2 Human Detection from Infrared Images with YOLO",
+        "These images will be shared to the Ground Control Station for processing"
+      ],
+      [
+        "E3",
+        "PDF",
+        6,
+        "5 Conclusion",
+        "swarm UAV path generation are offloaded to the Ground Control Station"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "4.1.2 Crack and Spall Detection with YOLO",
+        "The 15 models were trained for up to 300 epochs."
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "We present ARIES a multi-agent single and multi-Unmanned Aerial Vehicles (UAV) approach"
+      ],
+      [
+        "E1",
+        "PDF",
+        1,
+        "1 Introduction",
+        "We evaluate 15 YOLO architectures for crack/spall detection"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Footer / ACM Reference Format",
+        "UbiComp Companion '25, October 12-16, 2025, Espoo, Finland"
+      ],
+      [
+        "E7",
+        "https://www.mail-archive.com/pvs%40csl.sri.com/msg00192.html",
+        0,
+        "Cloud2Things 2025 organizer CFP archived copy",
+        "The review process is single blind."
+      ]
+    ]
+  },
+  {
+    "id": "R0105",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "E3 fails. PPO produces scheduling decisions for generic bit-level workloads. It does not establish a collaborative neural inference workload.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "We formulate the problem as a centralized Markov decision process (MDP)"
+      ],
+      [
+        "E2",
+        "PDF",
+        2,
+        "II.B Network Model",
+        "We consider one MEC server and N UAVs"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "II.B Network Model",
+        "amounts of workload processed locally, offloaded to neighboring UAVs via D2D cooperation"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "III.B Adaptive Resource Allocation Algorithm for Highly Dynamic Scenarios",
+        "Policy parameters are refined through proximal policy optimization using accumulated experience trajectories"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "III.A Markov Decision Process",
+        "We formulate the joint offloading and resource allocation problem"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "IV. SIMULATION RESULTS AND DISCUSSIONS",
+        "We report the average end-to-end delay per task and"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "I. INTRODUCTION",
+        "The convergence of the internet of things and artificial"
+      ],
+      [
+        "E7",
+        "https://www.academicenter.com/conferences/details/IEEE_CCPQT2025.html",
+        0,
+        "出版信息 (Publication Information)",
+        "论文经过严格同行评议，正式录用的文章将由IEEE出版"
+      ],
+      [
+        "E5",
+        "https://ccpqt.org/ccpqt-2025",
+        0,
+        "2025 IEEE CCPQT proceedings event",
+        "2025"
+      ]
+    ]
+  },
+  {
+    "id": "R0107",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "IEEE Early Access date verified before cutoff. Eligible multi-UAV collaborative semantic inference evaluated in a VQA setting.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "this paper proposes UAV-SFGC, a collaborative framework that jointly optimizes multi-UAV semantic"
+      ],
+      [
+        "E2",
+        "PDF",
+        9,
+        "VI.A Experimental Setup",
+        "each UAV is equipped with an NVIDIA Jetson NX module"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "III.B Collaborative Semantic Representation and Fusion Model",
+        "each UAV independently performs semantic inference based on its local multimodal observations"
+      ],
+      [
+        "E4",
+        "PDF",
+        9,
+        "VI.A Experimental Setup",
+        "The experiments are conducted on the COCO-based Visual Question Answering (VQA) dataset"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "Semantic communication is transforming wireless networks by shifting the focus from bit-level"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Top banner",
+        "This article has been accepted for publication in IEEE Transactions on Vehicular"
+      ],
+      [
+        "E5",
+        "https://ieeexplore.ieee.org/abstract/document/11686198",
+        0,
+        "Date of Publication, DOI 10.1109/TVT.2026.3733130",
+        "10 September 2026"
+      ]
+    ]
+  },
+  {
+    "id": "R0157",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "E3 fails. The benchmark evaluates standalone onboard inference and the two-UAV demo lacks distributed or jointly orchestrated inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "we propose an Energy-Efficient Framework for Video Streaming and Augmented Reality called"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "4.1 Experimental Setup",
+        "To evaluate the proposed approach, we used two tiny UAVs, called Crazyflie"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "3.2 Energy-Efficient Augmented Reality (E2AR)",
+        "processes them through the deployed E2 model, and selectively streams video frames"
+      ],
+      [
+        "E3",
+        "PDF",
+        6,
+        "4.2 Experimental Results",
+        "sending captured images to a server, where the YOLOv5 model performs human"
+      ],
+      [
+        "E5",
+        "https://acm-ieee-sec.org/2025/dronesys.php",
+        0,
+        "Important Dates",
+        "Workshops Date: December 6, 2025"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "Abstract",
+        "The safety, energy efficiency, and small size of smart drones have led"
+      ],
+      [
+        "E7",
+        "https://acm-ieee-sec.org/2025/dronesys.php",
+        0,
+        "Submission Guidelines and Program",
+        "Submissions should omit identifying information to support blind review."
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "4.2 Experimental Results / Figure 6",
+        "E2AR achieves up to a 56% reduction in energy consumption"
+      ]
+    ]
+  }
+]

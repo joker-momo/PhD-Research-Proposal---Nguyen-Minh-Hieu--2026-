@@ -1,0 +1,44 @@
+{
+  "id": "43a286ea-2e06-49cd-b30d-7e4c3671aab0",
+  "contextId": "a5b35e6a-1521-455b-a135-9da12527c3fc",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-27T03:21:36.688+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-27T03:15:08.539+00:00",
+    "updated_at": "2026-11-27T03:21:36.688+00:00",
+    "started_at": "2026-11-27T03:15:08.542+00:00",
+    "completed_at": "2026-11-27T03:21:36.688+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — Supplemental HK261 Report Repairs",
+    "chat_cleanup": {
+      "state": "not_verified",
+      "detail": "Accessibility prepare-delete failed: Gemini snapshot failed: Gemini window did not become active"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "0c6599fb-3d37-4ace-9223-0ffa4fd369c7",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"id\":\"R0024\",\"replacements\":[[\"E2\",\"T\",\"R0024.pdf\",5,\"III. PERFORMANCE EVALUATION\",\"In FANET, UAVs circle random centers throughout the mission\",\"Evaluates 10-30 mobile UAV gateways in FANET and QADA-FANET (Table II, Fig. 2), establishing a multi-UAV setting.\"],[\"E5\",\"T\",\"https://globecom2023.ieee-globecom.org/\",0,\"Conference Dates / WELCOME TO IEEE GLOBECOM 2023\",\"4 to 8 December 2023\",\"Official IEEE GLOBECOM 2023 conference site confirms the 2023 proceedings event dates (4-8 December 2023), wholly within 2021-01-01 through 2026-11-26 rather than the 2024 download stamp.\"],[\"E6\",\"T\",\"R0024.pdf\",1,\"I. INTRODUCTION\",\"In the existing SEM systems, the gateways are deployed\",\"Full-text body on p1-p6 is written in English.\"],[\"E7\",\"T\",\"https://globecom2023.ieee-globecom.org/\",0,\"WELCOME TO IEEE GLOBECOM 2023\",\"After extensive peer review, the best of the proposals are selected for the conference program, which includes technical papers\",\"Official IEEE GLOBECOM 2023 site confirms technical symposium papers (including IoT and Sensor Networks) undergo extensive peer review for conference proceedings publication.\"]]}\n{\"id\":\"R0080\",\"replacements\":[[\"E4\",\"T\",\"R0080.pdf\",5,\"IV.B Experiment Results\",\"The results presented in Table I provide the accuracy\",\"Reports simulated CIFAR-10 experiments across four schemes measuring Top-1 accuracy and end-to-end latency in Table I and Figs. 2-3.\"],[\"E5\",\"T\",\"https://events.vtsociety.org/vtc2025-fall/wp-content/uploads/sites/46/2025/10/Program.pdf\",0,\"Final Program Cover / W6: AI RAN\",\"19 – 22 October 2025\",\"Official VTC2025-Fall Final Program confirms the 2025 conference dates (19-22 October 2025) and lists R0080 in W6: AI RAN on 19 October 2025, wholly within 2021-01-01 through 2026-11-26 rather than the 2026 download stamp.\"],[\"E7\",\"T\",\"https://events.vtsociety.org/vtc2025-fall/wp-content/uploads/sites/46/2025/10/Program.pdf\",0,\"Welcome from the TPC Co-Chairs / W6: AI RAN\",\"managing the review process with care and efficiency\",\"Official VTC2025-Fall Final Program lists R0080 in Workshop W6: AI RAN (p26) and confirms TPC members, reviewers, and workshop organizers managed the review process for the technical and workshop program.\"]]}\n{\"id\":\"R0096\",\"replacements\":[[\"E1\",\"T\",\"R0096.pdf\",1,\"1 Introduction\",\"We evaluate 15 YOLO architectures for crack/spall detection\",\"Primary research report presenting the ARIES multi-UAV inspection system, a 13,008-image dataset, 15 evaluated YOLO architectures, and compute offloading benchmarks.\"],[\"E5\",\"T\",\"R0096.pdf\",1,\"Footer / ACM Reference Format\",\"UbiComp Companion '25, October 12-16, 2025, Espoo, Finland\",\"Exact ACM proceedings event line on p1 dates this proceedings version to October 12-16, 2025, wholly within 2021-01-01 through 2026-11-26.\"]]}\n{\"id\":\"R0105\",\"replacements\":[[\"E3\",\"F\",\"R0105.pdf\",4,\"III.A Markov Decision Process\",\"We formulate the joint offloading and resource allocation problem\",\"DRL/PPO is used solely as a centralized resource-allocation and generic bit-workload offloading optimizer across local/D2D/MEC execution with no DNN/CNN/VLM/LLM inference workload distributed or orchestrated across UAVs, failing P03 E3.\"],[\"E4\",\"T\",\"R0105.pdf\",4,\"IV. SIMULATION RESULTS AND DISCUSSIONS\",\"We report the average end-to-end delay per task and\",\"Provides multi-run simulations comparing Random, Static (20/20/60), and Proposed Adaptive PPO strategies on average end-to-end delay and total energy (p4-p5, Figs. 2-4).\"],[\"E5\",\"T\",\"https://www.academicenter.com/conferences/details/IEEE_CCPQT2025.html\",0,\"会议时间 (Conference Dates)\",\"2025年10月24日-10月26日\",\"Official IEEE CCPQT 2025 co-organizer/submission portal confirms the conference took place October 24-26, 2025 (matching the 2025 IEEE CCPQT proceedings banner on p1, not the July 2026 download stamp), wholly within 2021-01-01 through 2026-11-26.\"],[\"E6\",\"T\",\"R0105.pdf\",1,\"I. INTRODUCTION\",\"The convergence of the internet of things and artificial\",\"Full-text body on p1-p5 is written in English.\"],[\"E7\",\"T\",\"https://www.academicenter.com/conferences/details/IEEE_CCPQT2025.html\",0,\"出版信息 (Publication Information)\",\"论文经过严格同行评议，正式录用的文章将由IEEE出版\",\"Official IEEE CCPQT 2025 co-organizer/submission portal (hosting Workshop 11 chaired by R0105 authors) states submitted papers undergo strict peer review for IEEE proceedings publication.\"]]}\n{\"id\":\"R0107\",\"replacements\":[[\"E5\",\"U\",\"https://ieeexplore.ieee.org/abstract/document/11686198\",0,\"Date of Publication / DOI\",\"INACCESSIBLE\",\"Target IEEE Xplore URL and Crossref API were inaccessible via web browsing and no indexed public source returned the exact online publication date for DOI 10.1109/TVT.2026.3733130; R0107.pdf only shows copyright year 2026 and a 2026-11-27 download stamp, which cannot verify eligibility against the 2026-11-26 cutoff under P03 E5.\"]]}\n{\"id\":\"R0157\",\"replacements\":[[\"E4\",\"T\",\"R0157.pdf\",5,\"4.2 Experimental Results / Figure 6\",\"E2AR achieves up to a 56% reduction in energy consumption\",\"Reports on-device Crazyflie/GAP8 hardware experiments and multi-drone HoloLens validation showing up to 56% energy reduction and nearly 6x throughput improvement (p5-p6, Fig. 6).\"]]}\n{\"returned_ids\":[\"R0024\",\"R0080\",\"R0096\",\"R0105\",\"R0107\",\"R0157\"],\"unresolved_keys\":[\"R0107:E5\"],\"workers_used\":false,\"complete\":true}"
+        }
+      ]
+    }
+  ]
+}
