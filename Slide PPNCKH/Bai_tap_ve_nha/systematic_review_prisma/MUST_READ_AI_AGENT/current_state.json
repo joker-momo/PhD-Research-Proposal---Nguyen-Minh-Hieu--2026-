@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:51:46+07:00",
+  "updated_at": "2026-11-27T13:51:57+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_appraisal_in_progress",
@@ -11,18 +11,19 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T13:37:04+07:00",
-    "updated_at": "2026-11-27T13:51:46+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_01_repair_review.md",
+    "updated_at": "2026-11-27T13:51:57+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_01_finalrepair_dispatch.json",
     "decision_id": "restart-supplemental-appraisal-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-appraisal-batch-01-finalrepair",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "restart-supplemental-appraisal-batch-01-finalrepair-collect",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Dispatch only the final two R0058 keys once.",
+    "action": "Retrieve the existing Task by UUID and independently check original-page evidence; do not resend.",
     "acceptance": "Two matching source-located keys and one verified new chat.",
     "dispatch_brief": "restart_2026_11_26/appraisal/supplemental_batch_01_finalrepair_brief.md",
-    "message_id": "d74cb89c-1b4a-44a7-92e1-af751512a89a"
+    "message_id": "d74cb89c-1b4a-44a7-92e1-af751512a89a",
+    "task_uuid": "90dc92ff-69a4-4987-bc57-3c5dfe0bc9b5"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -490,7 +491,7 @@
       "studies_verified": 46
     },
     "supplemental_appraisal": {
-      "status": "BATCH_01_FINALREPAIR_READY",
+      "status": "BATCH_01_FINALREPAIR_SUBMITTED",
       "manifest": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
       "baseline_reports": 25,
       "supplemental_reports_required": 21,
@@ -509,7 +510,9 @@
       "batch_01_repair_uuid": "d0b30c90-0398-4339-9bb0-0ff4340902a5",
       "batch_01_repair_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_01_repair_dispatch.json",
       "batch_01_repair_gate": "FAIL_TWO_KEYS",
-      "batch_01_repair_review": "restart_2026_11_26/appraisal/supplemental_batch_01_repair_review.md"
+      "batch_01_repair_review": "restart_2026_11_26/appraisal/supplemental_batch_01_repair_review.md",
+      "batch_01_finalrepair_uuid": "90dc92ff-69a4-4987-bc57-3c5dfe0bc9b5",
+      "batch_01_finalrepair_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_01_finalrepair_dispatch.json"
     }
   },
   "blockers": [],
