@@ -14,36 +14,40 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | Claim ID | LaTeX line | Status | Claim or issue | Source, locator, or derivation |
 | --- | --- | --- | --- | --- |
 | L15.1 | [15](main.tex#L15) | RECORD | Scope and data sources; 46/46; five RQs | Protocol §§ Eligibility and Information sources; 693 identified, 136/137 assessed, 46 unique included studies, three pending; active PRISMA counts and study map |
-| L15.2 | [15](main.tex#L15) | DERIVED | Coding categories, formulation and study-specific comparisons | Group technical codes by study; Eqs. 1–2; Table 4 pairs share source and maintain conditions |
-| L15.3 | [15](main.tex#L15) | DERIVED | Appraisal counts and different continuity boundaries | Table 5 D03/D04/D07; controlled, planned and modeled boundaries in Table 3 |
+| L15.2 | [15](main.tex#L15) | DERIVED | Coding categories, formulation and study-specific comparisons | Group technical codes by study; Eqs. 1–2; contrasts table pairs share source and maintain conditions |
+| L15.3 | [15](main.tex#L15) | DERIVED | Appraisal counts and different continuity boundaries | appraisal table D03/D04/D07; controlled, planned and modeled boundaries in evaluation table |
 | L15.4 | [15](main.tex#L15) | OPEN | Independent human screening and adjudication undocumented | Workflow and L87 |
 | L15.5 | [15](main.tex#L15) | PROPOSAL | Benchmark contribution | L315–339 and Eq. 3 |
+| L15.6 | [15](main.tex#L15) | DERIVED | Uniform RQ5 retained 98 results from 36 studies, including 51 matched entries | S3 outcomes.csv; filter comparison_status to matched or descriptive; count distinct report_id |
+| L15.7 | [15](main.tex#L15) | RECORD | Protocol documented without public registration | Restart protocol and L71; project registration record |
 | L22.1 | [22](main.tex#L22) | SOURCE | Assignment and crossed activation dependencies | R0001 pp. 1–3 system model; R0010 pp. 2–4 system model; R0092 pp. 4–7 system/task model |
 | L22.2 | [22](main.tex#L22) | NARROWED | Smaller payload is conditional on fixed encoding; latency depends on both computation and rates | For dense fixed-precision tensors, payload bits = element count × bits per element before overhead. Compare service path terms using Eq. 2; R0121 pp. 4–7 fragmentation and serialization |
 | L24.1 | [24](main.tex#L24) | NARROWED | Worker-loss impact requires dependency or state with no reachable substitute; a feasible placement can still miss deadline | Graph dependency and critical-path time derivation; R0038 pp. 4–6 recovery experiment; R0118 pp. 5–7 expert placement |
 | L24.2 | [24](main.tex#L24) | SOURCE | Planned, link-related and abrupt events are distinct | R0292 pp. 3–6 tracker handoff; R0002 migration model and failure test per row map; R0062 p. 6 disabled communication; R0110 pp. 9, 13–15 modeled stress |
 | L26.1 | [26](main.tex#L26) | SOURCE | Civil UAV examples | McEnroe et al., [author copy](https://oulurepo.oulu.fi/bitstream/handle/10024/32545/nbnfi-fe2021101150651.pdf?sequence=1), physical p. 1, Abstract |
 | L26.2 | [26](main.tex#L26) | DERIVED | Stream gap and batch delay exemplify distinct metrics | Illustrative definitions. Throughput counts completed outputs per time, delay measures elapsed time per request, deadline fraction counts correct on-time arrivals, and continuity describes gaps. |
-| L29.1 | [29](main.tex#L29) | SOURCE | Four survey topics used to position review | Table 1 published scope locators for McEnroe, Xia, Ning and Cao |
-| L31.1 | [31](main.tex#L31) | SOURCE | Three additional survey topics | Table 1 published scope locators for Ren, Wang and Hao |
+| L29.1 | [29](main.tex#L29) | SOURCE | Four survey topics used to position review | related-survey matrix published scope locators for McEnroe, Xia, Ning and Cao |
+| L31.1 | [31](main.tex#L31) | SOURCE | Three additional survey topics | related-survey matrix published scope locators for Ren, Wang and Hao |
 | L31.2 | [31](main.tex#L31) | RECORD | Scope of this review relative to the seven examples | Protocol inclusion criteria; this manuscript Tables 2–3. Contextual positioning only. |
 | L53.1 | [53](main.tex#L53) | RECORD | Five research questions follow | L55–59; restart protocol and retained RQ1–RQ5 synthesis |
-| L55.1 | [55](main.tex#L55) | RECORD | RQ1 scope | Study row map Table 2; topology, family and unit |
-| L56.1 | [56](main.tex#L56) | RECORD | RQ2 scope | Study row map Table 2; decision and optimizer fields |
-| L57.1 | [57](main.tex#L57) | RECORD | RQ3 scope | Study row map Table 3; evaluation fields and Table 4 comparators |
-| L58.1 | [58](main.tex#L58) | RECORD | RQ4 scope | Study row map Table 3; mobility, event and action |
-| L59.1 | [59](main.tex#L59) | RECORD | RQ5 scope | Accepted outcome ledger and Table 4 locator map |
+| L55.1 | [55](main.tex#L55) | RECORD | RQ1 scope | Study row map architecture table; topology, family and unit |
+| L56.1 | [56](main.tex#L56) | RECORD | RQ2 scope | Study row map architecture table; decision and optimizer fields |
+| L57.1 | [57](main.tex#L57) | RECORD | RQ3 scope | Study row map evaluation table; evaluation fields and contrasts table comparators |
+| L58.1 | [58](main.tex#L58) | RECORD | RQ4 scope | Study row map evaluation table; mobility, event and action |
+| L59.1 | [59](main.tex#L59) | RECORD | RQ5 scope | Accepted outcome ledger and contrasts table locator map |
 | L61.1 | [61](main.tex#L61) | RECORD | Paper organization and four outputs | Section labels and manuscript lines L63–66 |
 | L63.1 | [63](main.tex#L63) | RECORD | PRISMA evidence map | Figure 1 and active PRISMA counts |
-| L64.1 | [64](main.tex#L64) | RECORD | Full-corpus taxonomy and schematic formulation | Figure 4, Table 2 and Eqs. 1–2 |
-| L65.1 | [65](main.tex#L65) | RECORD | Recovery classification and conditions | Table 3 event/action columns and L231–248 |
+| L64.1 | [64](main.tex#L64) | RECORD | Full-corpus taxonomy and schematic formulation | Figure 4, architecture table and Eqs. 1–2 |
+| L65.1 | [65](main.tex#L65) | RECORD | Recovery classification and conditions | evaluation table event/action columns and L231–248 |
 | L66.1 | [66](main.tex#L66) | RECORD | Ten-domain appraisal and within-study contrasts | Tables 4–5 and Figure 5 |
 | L71.1 | [71](main.tex#L71) | RECORD | Restart protocol 1.1; original search then protocol then new screening | Restart protocol and Supplement S1 chronology; PRISMA 2020 main guidance, checklist and flow templates |
 | L71.2 | [71](main.tex#L71) | OPEN | No public registration documented | Restart protocol and S1; this is a documentation status |
 | L73.1 | [73](main.tex#L73) | RECORD | Date, language and publication-type rules | Restart protocol eligibility and screening rulebook |
-| L73.2 | [73](main.tex#L73) | RECORD | Multi-UAV and substantive neural inference eligibility including whole-request dispatch | Restart protocol eligibility definitions; Table 2 request classes and source-coded boundaries |
-| L73.3 | [73](main.tex#L73) | DERIVED | Splitting and recovery coverage differ | Table 2 unit and Table 3 resilience columns contain different categories |
-| L75.1 | [75](main.tex#L75) | RECORD | Exclusions, mixed-purpose studies, version linkage and short reports | Restart protocol eligibility and report-linkage method; S2 exclusions; Table 1 contextual sources |
+| L73.2 | [73](main.tex#L73) | RECORD | Multi-UAV and substantive neural inference eligibility including whole-request dispatch | Restart protocol eligibility definitions; architecture table request classes and source-coded boundaries |
+| L73.3 | [73](main.tex#L73) | DERIVED | Splitting and recovery coverage differ | architecture table unit and evaluation table resilience columns contain different categories |
+| L73.4 | [73](main.tex#L73) | NARROWED | Whole-request and tracker-state eligibility requires an evaluated neural workload or state assignment | Frozen E2–E4; R0058 pp. 9–10, R0292 pp. 3–6; scope proposals in S2 |
+| L75.1 | [75](main.tex#L75) | RECORD | Exclusions, mixed-purpose studies, version linkage and short reports | Restart protocol eligibility and report-linkage method; S2 exclusions; related-survey matrix contextual sources |
+| L75.2 | [75](main.tex#L75) | NARROWED | Short research and demo assessed by substance and publication evidence | R0001 pp. 2–3 and IEEE peer-review policy; R0081 pp. 1–2 and ACM Call for Demos; supplement_s2_adjudication.md |
 | L78.1 | [78](main.tex#L78) | RECORD | Databases, complementary designs and dates | S1 selected-run manifest; two runs per source, eight total |
 | L78.2 | [78](main.tex#L78) | RECORD | IEEE/Scopus timestamp proxy, ACM month filter and exact screening date | S1 export and capture metadata plus protocol cutoff |
 | L78.3 | [78](main.tex#L78) | RECORD | OpenAlex supersession, WoS unavailable and no chaining records | S1 search audit and active PRISMA source counts |
@@ -53,17 +57,23 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L83.3 | [83](main.tex#L83) | DERIVED | 136 of 137 retrieved, 99.3% | Active PRISMA counts; (137 − 1) / 137 × 100, rounded to one decimal |
 | L85.1 | [85](main.tex#L85) | RECORD | Report/study definitions and linkage decision criteria | PRISMA 2020 definitions; restart linkage protocol and dual-report adjudication ledger |
 | L85.2 | [85](main.tex#L85) | RECORD | 28 candidate pairs retain separate study IDs | Count reviewed distinct pairs in study-linkage adjudication ledger |
+| L85.3 | [85](main.tex#L85) | SOURCE | Li et al. studied single-stream model selection and later competing CNN streams | R0003 pp. 4–6, §§IV–V; R0059 pp. 3–5 and 6–9, system and evaluation |
+| L85.4 | [85](main.tex#L85) | SOURCE | Ren et al. studied intra-layer parallelism and separately a sequential pipeline | R0015 pp. 3, 5–6, model and evaluation; R0010 pp. 2–5, model, scheduling and evaluation |
 | L87.1 | [87](main.tex#L87) | RECORD | AI and Codex contributions; checkpoint population | Retained phase/batch acceptance reviews, source indexes, and Git provenance |
 | L87.2 | [87](main.tex#L87) | OPEN | Duplicate human checking, substantive author adjudication and agreement statistic undocumented | Retained workflow records; author confirmation absent |
 | L87.3 | [87](main.tex#L87) | RECORD | Three unresolved outside 46-study denominators | Active PRISMA awaiting-classification rows and study map |
+| L87.4 | [87](main.tex#L87) | OPEN | Adjudication log links every assessed report; human fields await entry | S2 human_adjudication_log.csv; 136 unique IDs, equality to reconciled disposition and blank reviewer columns |
 | L90.1 | [90](main.tex#L90) | RECORD | Extraction fields, units and locators | Accepted extraction instruments/index; outcome ledger columns |
-| L90.2 | [90](main.tex#L90) | DERIVED | 67 numerical entries from 25 of 46 studies | Count retained records and distinct report IDs in active outcome ledger; count study rows |
+| L90.2 | [90](main.tex#L90) | RECORD | 46 reports underwent uniform post-protocol outcome reread | S3 rule.md, report_coverage.csv and review.md; match the 46 study IDs and PDF checksums to active_synthesis_input_index.csv |
+| L90.3 | [90](main.tex#L90) | RECORD | Matching, descriptive and omitted outcome rules | S3 rule.md; matched requires shared workload, operating conditions and denominator; omit plot-only, held and cross-references |
 | L92.1 | [92](main.tex#L92) | RECORD | Ten D01–D10 definitions and rating scale | Engineering appraisal rubric; all judgment locators in active appraisal rationale matrix |
 | L92.2 | [92](main.tex#L92) | RECORD | Appraisal was interpretive, with no exclusion threshold | Restart protocol appraisal and synthesis rules |
 | L95.1 | [95](main.tex#L95) | RECORD | Structured narrative, same 46 IDs, one primary code and component rules | technical_coding.psv, generator and active study map; compare sets by ID |
+| L95.2 | [95](main.tex#L95) | RECORD | RQ5 mechanism and workload precedence for composite designs | Coded map mechanism_evidence and model_family_source_note; report IDs match the active input index; this summary coding is distinct from the technical taxonomy |
 | L97.1 | [97](main.tex#L97) | NARROWED | Primary modality and evidence classes; each contrast keeps its setting | Study row map and coding rules; R0075 pp. 8–10 supports profile-backed placement; R0014 pp. 10–13 shows mixed boundaries |
-| L99.1 | [99](main.tex#L99) | NARROWED | Continuity is an evidence class; NR applies to accepted extraction | Group labels and Table 3 event/actions; no inferred ranking or claim of actual system absence |
-| L101.1 | [101](main.tex#L101) | RECORD | Display criteria, selected numerical contrasts and no pooling | Active numerical ledger; nine Table 4 rows; displayed metric boundaries and units |
+| L97.2 | [97](main.tex#L97) | RECORD | Summary level combines simulation and traces and includes physical multi-UAV reports under a broader code than outdoor only | S3 coded map evaluation_setting and evaluation_evidence; R0014 pp. 10–13 contrast reported deployment and component tests |
+| L99.1 | [99](main.tex#L99) | NARROWED | Continuity is an evidence class; NR applies to accepted extraction | Group labels and evaluation table event/actions; no inferred ranking or claim of actual system absence |
+| L101.1 | [101](main.tex#L101) | RECORD | Display criteria, selected numerical contrasts and no pooling | Active numerical ledger; nine contrasts table rows; displayed metric boundaries and units |
 | L101.2 | [101](main.tex#L101) | OPEN | Formal missing-results bias assessment, sensitivity and certainty grading unavailable | Review scope and PRISMA checklist |
 | L105.1 | [105](main.tex#L105) | DERIVED | Search yields, deduplication, screening and retrieval | PRISMA locked counts: 63 + 110 + 404 + 116 = 693; 693 − 228 = 465; 465 − 328 = 137; 44 + 92 = 136 |
 | L105.2 | [105](main.tex#L105) | OPEN | R0116 remains unretrieved | Accepted reconciliation and missing/retrieval records for R0116; repository candidate was code |
@@ -71,14 +81,15 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L107.2 | [107](main.tex#L107) | OPEN | Three unresolved eligibility decisions | R0081 E7 peer-review status, R0082 E7 publication-version linkage, R0132 E2/E3 eligible setting/execution; original and supplemental screening statuses |
 | L116.1 | [116](main.tex#L116) | RECORD | Year/venue/control/modality panels and citation-year convention | Figure 2 inputs and generator; bibliography and eligibility date cutoff |
 | L116.2 | [116](main.tex#L116) | DERIVED | 2026 is an incomplete calendar year for this corpus | Eligibility ends 26 November; December is out of window |
+| L116.3 | [116](main.tex#L116) | DERIVED | Zero 2021 studies in locked set; backward check identified a separate candidate | Figure 2 and citation-year coding; R0068 physical p. 14, printed p. 103058, references item 27 and candidate HKUST publication record; exact DOI and normalized title absent in all 693 rows of records_normalized.csv |
 | L118.1 | [118](main.tex#L118) | SOURCE | Detector, dense LLM, expert-dispatch, spiking and tracking examples | R0014 pp. 10–12; R0074 pp. 7–13; R0118 pp. 5–7 and 12; R0113 and R0292 exact field locators in study row map |
 | L118.2 | [118](main.tex#L118) | RECORD | Classifier, mixed, other and generic coding definitions | technical_coding.psv plus study row map; R0001 pp. 1–3 generic layered workload; R0058 p. 19 §6.1 concrete classifier |
-| L120.1 | [120](main.tex#L120) | RECORD | Modalities and mixed hardware/wireless boundaries | Figure 2 and Table 3; R0075 pp. 8–10 profiling versus modeled links; R0014 pp. 10–13 outdoor, indoor and disconnection passages |
+| L120.1 | [120](main.tex#L120) | RECORD | Modalities and mixed hardware/wireless boundaries | Figure 2 and evaluation table; R0075 pp. 8–10 profiling versus modeled links; R0014 pp. 10–13 outdoor, indoor and disconnection passages |
 | L132.1 | [132](main.tex#L132) | SOURCE | Peer cases and analytical link complement | R0010 and R0092 topology/partition source locators in study row map; R0121 pp. 4–8 transport analysis |
 | L132.2 | [132](main.tex#L132) | DERIVED | Assigned stage needs its input and compute | Graph edge readiness in L169 plus link and compute terms |
 | L135.1 | [135](main.tex#L135) | SOURCE | ASAP cluster/stage layout, expert/replica metadata and controlled replan | R0014 architecture and p. 13 disconnection; R0110 pp. 4–9 redundant transformer design; R0118 pp. 5–7 expert placement |
 | L135.2 | [135](main.tex#L135) | NARROWED | Membership and coordinator loss are separate design questions | Conditional allocation dependencies; tested example R0014 p. 13 only |
-| L138.1 | [138](main.tex#L138) | SOURCE | Tier roles, two cuts and conditional payload | R0001 pp. 1–3; R0080 profile/policy locators in study row map; Table 2 tier rows |
+| L138.1 | [138](main.tex#L138) | SOURCE | Tier roles, two cuts and conditional payload | R0001 pp. 1–3; R0080 profile/policy locators in study row map; architecture table tier rows |
 | L138.2 | [138](main.tex#L138) | DERIVED | An actually crossed tier adds a link term | Add Eq. 2 along the executed path; no queue observed from topology alone |
 | L148.1 | [148](main.tex#L148) | SOURCE | Sequential and multi-cut execution | R0010 and R0092 partition locators in study row map; R0001 two-cut system |
 | L148.2 | [148](main.tex#L148) | NARROWED | Slowest-stage bound under stated pipeline assumptions | Under a steady backlog, a stage with service time t can process at most 1/t items per time unit; interval ≥ max stage time. First item follows the full serial dependency path. |
@@ -90,6 +101,7 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L157.2 | [157](main.tex#L157) | NARROWED | Two tested settings show a descriptive trade-off | R0080 p. 5 Table I; both mean accuracy and mean latency increase for the proposed policy |
 | L160.1 | [160](main.tex#L160) | SOURCE | Request, expert and tracker dispatch | R0058 pp. 9–10 and 19; R0118 pp. 5–7 and 12; R0292 pp. 3–6 |
 | L160.2 | [160](main.tex#L160) | DERIVED | Hosted-expert feasibility and distinct tracker boundary | Selected operation needs execution access to chosen expert; tracker transfers state and reports tracking rather than request allocation |
+| L160.3 | [160](main.tex#L160) | NARROWED | Two planning studies require author scope decisions; component timings are descriptive | R0223 pp. 2–7, §§2–4 and Table 2; R0145 pp. 4–6 and 11–16, system roles, Fig. 4 and model descriptions; S2 priority dossier |
 | L169.1 | [169](main.tex#L169) | DERIVED | Graph, decision and resource names | Author-defined abstraction; lookup Eq. 1 and RQ2 exemplars in S4 |
 | L177.1 | [177](main.tex#L177) | DERIVED | Units, weights, random conditions and recovery accounting | Eq. 1 terms need commensurate coefficients; the same elapsed interval contributes twice if weighted independently without distinct definition |
 | L179.1 | [179](main.tex#L179) | DERIVED | Serialization decomposition | Payload bits / effective bits per second = seconds; add uncovered queue/protocol terms under Eq. 2 assumptions |
@@ -127,12 +139,16 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L242.2 | [242](main.tex#L242) | NARROWED | Rescheduling time and time to first correct resumed output are separate | R0014 physical p. 13, Table IV labels rescheduling latency; Eq. 3 defines a later output-completion boundary |
 | L245.1 | [245](main.tex#L245) | SOURCE | Modeled failure, available nodes and replicas | R0002, R0073, R0106 mobility/continuity locators in study row map; R0110 pp. 9, 13–15 |
 | L245.2 | [245](main.tex#L245) | OPEN | Phase-resolved or airborne validation requires separate evidence | Current recovery class does not supply either boundary automatically; R0090 evaluation modality for dropout response stays unresolved in the row map |
-| L248.1 | [248](main.tex#L248) | RECORD | Residual evidence class | Negative lookup in accepted extraction per study; Table 3 retains partial descriptions |
-| L252.1 | [252](main.tex#L252) | RECORD | Display of nine with original boundaries | Table 4 locator map and active outcome ledger; count nine displayed rows |
+| L248.1 | [248](main.tex#L248) | RECORD | Residual evidence class | Negative lookup in accepted extraction per study; evaluation table retains partial descriptions |
+| L248.3 | [248](main.tex#L248) | DERIVED | Continuity classes of 4, 4, 5, 3, 5 and 25 | Count distinct report IDs per resilience code in technical_coding.psv; generated macros drive Figure 4 |
+| L252.1 | [252](main.tex#L252) | RECORD | Display of nine with original boundaries | contrasts table locator map and active outcome ledger; count nine displayed rows |
+| L252.2 | [252](main.tex#L252) | DERIVED | RQ5 retention and missing-result categories | Count matched = 51 over 23 reports; descriptive = 47; 36 distinct contributing reports; report coverage gives 9 plot-only and 1 printed unresolved; R0113 pp. 10–13 |
+| L252.3 | [252](main.tex#L252) | DERIVED | 23 of 26 stage/layer reports in software or trace; 0 physical multi-UAV | Group desk_reject_evidence_map.csv by mechanism and strongest evaluation setting; tab:settings |
 | L254.1 | [254](main.tex#L254) | SOURCE | Accuracy, latency, three seeds and 95% Student-t intervals | R0080 physical p. 5, eval protocol and Table I, proposed versus GSUP; compare means 90.4>89.5 and 120>117 |
 | L254.2 | [254](main.tex#L254) | SOURCE | Deadline ranking and common-seed runs | R0092 physical pp. 11, 13, training/eval protocol and Table V; 71.6>64.4 across 30 common-seed episodes |
 | L256.1 | [256](main.tex#L256) | SOURCE | Orion ranking at stated workload and boundary | R0074 physical pp. 14–16, §4.2 and Fig. 4; 8,047 < 8,864 < 46,522 ms in the specified prefill setting |
 | L256.2 | [256](main.tex#L256) | NARROWED | CIDER comparison has profiled compute and modeled communication, at routing boundary | R0075 physical pp. 8–10, §IV and Table III; 26.85 vs 38.81 ms |
+| L256.3 | [256](main.tex#L256) | SOURCE | RDI-LLM per-token averages condition on unequal completed-mission subsets | R0110 p. 13 §V.C Table IV; R0110-Q02 and R0110-Q03; 0.8 vs 0.3 s/token and 30/30 vs 22/30 missions |
 | L258.1 | [258](main.tex#L258) | SOURCE | Indoor scale, nominal workstation threads, controlled prototype continuing at lower fps | R0014 pp. 11–12 Table III; R0125 p. 3 Table I; R0062 p. 6 unavailability test |
 | L258.2 | [258](main.tex#L258) | OPEN | No fault-to-resumption time or deadline count can be inferred from fps | R0062 p. 6 reports rate under configurations; a rate lacks event times and per-arrival deadlines |
 | L285.1 | [285](main.tex#L285) | DERIVED | Exact appraisal counts and meaning | Active summary rows D01 Yes 46, D03 Partial 42, D04 Partial 40, D07 Partial 43, D09 NR 40; rubric defines Partial and NR |
@@ -141,7 +157,7 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L312.1 | [312](main.tex#L312) | SOURCE | Vision boundaries, prefill/decode cache, replicas and experts | R0010 partition locator; R0014 spatial partition; R0075 pp. 8–10; R0074 pp. 7–13; R0110 pp. 4, 7–9; R0118 pp. 5–7 and 12 |
 | L312.2 | [312](main.tex#L312) | NARROWED | Replacement requiring prior state must read or reconstruct it | State prerequisite, not a measured recovery or flight result; R0074 and R0110 design scopes |
 | L315.1 | [315](main.tex#L315) | PROPOSAL | Benchmark venues, workloads, common trace and platform documentation | Proposed workload matrix and fields; Tables 2–4 motivate the ranges |
-| L317.1 | [317](main.tex#L317) | PROPOSAL | Baseline set, matched budgets, infeasible cases, separate operating points and logs | Proposed comparator and instrumentation rules, motivated by D03/D04 and Table 4 conditions |
+| L317.1 | [317](main.tex#L317) | PROPOSAL | Baseline set, matched budgets, infeasible cases, separate operating points and logs | Proposed comparator and instrumentation rules, motivated by D03/D04 and contrasts table conditions |
 | L319.1 | [319](main.tex#L319) | PROPOSAL | Three event types and required timestamps | Proposed event trace; sequential derivation Eq. 3 |
 | L324.1 | [324](main.tex#L324) | DERIVED | Overlap uses wall clock; deadline denominator counts all eligible arrivals | Observed end minus event start includes overlap once. Count unique correct on-time results divided by all eligible arrivals; dropped arrivals have zero numerator contribution. |
 | L326.1 | [326](main.tex#L326) | PROPOSAL | Checkpoint versus restart and overhead measurements | Controlled comparison with shared event schedule, resources and workload; no benchmark measurement yet |
@@ -152,10 +168,10 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L339.1 | [339](main.tex#L339) | PROPOSAL | Model/result provenance checks and measurement | Proposed benign test and metric boundaries |
 | L342.1 | [342](main.tex#L342) | OPEN | Potential search incompleteness and unresolved records | S1 scope and PRISMA flow (one sought not retrieved, three awaiting classification); no measured recall |
 | L342.2 | [342](main.tex#L342) | RECORD | Alternate primary labels possible for composite studies | One-label rule; technical coding ledger and S4 changes |
-| L344.1 | [344](main.tex#L344) | OPEN | Human verification, exhaustive outcome extraction, formal bias/certainty and novelty generalization | Workflow/checkpoint records, 67 ledger records, S4 Table 1 scope, heterogeneous Table 4 setups |
+| L344.1 | [344](main.tex#L344) | OPEN | Human verification, comprehensive within-domain extraction, formal bias/certainty and novelty generalization | S2 blank human fields; S3 rule and report coverage; no formal missing-results bias assessment in protocol or methods; related survey matrix uses inspected sources |
 | L347.1 | [347](main.tex#L347) | RECORD | Topologies, partition, optimization scope and modalities | Tables 2–3 and Figures 2–4; match primary groups |
 | L347.2 | [347](main.tex#L347) | NARROWED | Continuity and quantitative results scoped to tests | Tables 3–4 and exact conditions; no pooled or flight-wide generalization |
-| L347.3 | [347](main.tex#L347) | DERIVED | Incomplete reporting of configurations, comparators and artifacts | Table 5 D03/D04/D09 counts; S4 tally formulas |
+| L347.3 | [347](main.tex#L347) | DERIVED | Incomplete reporting of configurations, comparators and artifacts | appraisal table D03/D04/D09 counts; S4 tally formulas |
 | L347.4 | [347](main.tex#L347) | PROPOSAL | Benchmark with workloads, budgets and recovery timeline | L315–339 |
 | L350.1 | [350](main.tex#L350) | OPEN | Authorship, affiliations, funding, conflicts and redistribution decisions await confirmation | Manuscript declarations and retained workflow; no values inferred |
 | L353.1 | [353](main.tex#L353) | RECORD | Supplement content and original-file access boundaries | S1–S4 destinations and local source index; S4 crosswalk, item archive and claim maps |

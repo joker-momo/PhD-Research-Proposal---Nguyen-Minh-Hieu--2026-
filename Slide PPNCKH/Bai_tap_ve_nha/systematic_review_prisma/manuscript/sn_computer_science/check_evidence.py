@@ -8,6 +8,8 @@ import re
 from functools import cache
 from pathlib import Path
 
+from build_editorial_evidence import review_log, outcome_tables
+
 HERE = Path(__file__).resolve().parent
 PROJECT = HERE.parent.parent
 RESTART = PROJECT / "restart_2026_11_26"
@@ -62,7 +64,7 @@ def check_index():
     tex = "\n".join(path.read_text() for path in sorted(paths) if path.suffix == ".tex")
     labels = set(re.findall(r"\\label\{((?:fig|tab|eq):[^}]+)\}", tex))
     indexed = set(re.findall(r"`((?:fig|tab|eq):[^ `]+)`", index))
-    require(labels == indexed and len(labels) == 13, f"Figure/table/equation coverage mismatch: {labels ^ indexed}")
+    require(labels == indexed and len(labels) == 15, f"Figure/table/equation coverage mismatch: {labels ^ indexed}")
     require((HERE / "prisma_flow.pdf").read_bytes() ==
             (RESTART / "prisma/prisma_flow.pdf").read_bytes(), "Embedded PRISMA PDF differs from accepted PDF")
     paths.add(RESTART / "prisma/prisma_flow.pdf")
@@ -75,13 +77,13 @@ def check_outcome_rows():
     report_ids = re.findall(r"^\\cite\{(R\d{4})\} &", table, re.M)
     ledger = rows(RESTART / "synthesis/active_outcome_evidence.csv")
     keys = {(row["report_id"], row["key"]) for row in ledger}
-    map_text = INDEX.read_text().split("## Table 4 row map", 1)[1].split("## Manuscript prose crosswalk", 1)[0]
+    map_text = INDEX.read_text().split("## Numerical contrast row map", 1)[1].split("## Manuscript prose crosswalk", 1)[0]
     mapped = re.findall(r"^\| (R\d{4}) [^|]+\|([^|]+)\|", map_text, re.M)
-    require(report_ids == [report for report, _ in mapped] and len(mapped) == 9, "Table 4 row index differs")
+    require(report_ids == [report for report, _ in mapped] and len(mapped) == 9, "Numerical contrast index differs")
     for report, cell in mapped:
         evidence = re.findall(r"`(quantity:\d+)`", cell)
         require(evidence and all((report, key) in keys for key in evidence),
-                f"{report}: Table 4 evidence key missing from accepted ledger")
+                f"{report}: Numerical contrast evidence key missing from accepted ledger")
     return len(mapped)
 
 
@@ -196,6 +198,14 @@ def main():
         paths, label_count = check_index()
         original_count, included = check_originals()
         contrast_count = check_outcome_rows()
+        for filename, expected in outcome_tables().items():
+            require((HERE / filename).read_text() == expected, f"Stale generated table: {filename}")
+        baseline = list(csv.reader(io.StringIO(review_log())))
+        with (HERE / "human_adjudication_log.csv").open(newline="") as stream:
+            adjudication = list(csv.reader(stream))
+        require(adjudication[0] == baseline[0] and
+                [row[:6] for row in adjudication[1:]] == [row[:6] for row in baseline[1:]],
+                "Human review log must preserve the 136 original evidence rows")
         claim_count, prose_lines = check_claim_audit()
         row_map, sources = make_study_row_map(included)
         if args.record:

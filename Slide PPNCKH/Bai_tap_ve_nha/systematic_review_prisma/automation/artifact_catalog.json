@@ -473,6 +473,36 @@
         "reproduction",
         "latex"
       ]
+    },
+    {
+      "artifact_id": "hk261-editorial-evidence-tables",
+      "name": "HK261 editorial cross-tabulation and review log generator",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_editorial_evidence.py",
+      "purpose": "Derive the mechanism and outcome coverage tables from the verified inventory and seed the author adjudication log from the frozen selection.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_editorial_evidence.py\" tables",
+      "inputs": [
+        "Frozen 46-report manifest and original PDF identities",
+        "Verified RQ5 outcomes and report coverage",
+        "Primary mechanism and evaluation coding",
+        "Assessment dispositions and full-text exclusions"
+      ],
+      "outputs": [
+        "Mechanism by strongest evaluation LaTeX table",
+        "Numerical outcome coverage LaTeX table",
+        "136-report blank human adjudication log"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_editorial_evidence.py",
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py"
+      ],
+      "test_command": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_editorial_evidence.py\" check --verify-pdfs",
+      "status": "active",
+      "tags": [
+        "manuscript",
+        "reproduction",
+        "outcomes",
+        "adjudication"
+      ]
     }
   ]
 }

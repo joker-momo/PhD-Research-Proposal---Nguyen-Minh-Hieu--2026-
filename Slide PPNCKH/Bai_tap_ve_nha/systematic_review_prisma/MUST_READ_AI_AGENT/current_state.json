@@ -1,28 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T16:23:15+07:00",
+  "updated_at": "2026-11-27T16:36:36+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "alternative_coursework_pdf_ready_for_comparison",
-    "summary": "The 29-page technical survey has a versioned evidence and reproduction appendix for author comparison."
+    "status": "alternative_editorial_pdf_ready_for_comparison",
+    "summary": "The 29-page combined technical survey incorporates the verified 46-study outcome reread. Human decisions and author declarations remain pending."
   },
   "task": {
     "task_id": "hk261-alternative-editorial-revision",
     "owner": "CODEX_WRITING",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-27T16:22:17+07:00",
-    "updated_at": "2026-11-27T16:23:15+07:00",
-    "checkpoint_path": "manuscript/sn_computer_science/editorial_source_lookup_brief.md",
-    "decision_id": "hk261-alternative-editorial-revision-v1"
+    "updated_at": "2026-11-27T16:36:36+07:00",
+    "checkpoint_path": "manuscript/sn_computer_science/editorial_verification.md",
+    "decision_id": "hk261-alternative-editorial-revision-v1",
+    "completed_at": "2026-11-27T16:36:36+07:00"
   },
   "next_task": {
-    "task_id": "hk261-editorial-public-source-lookup",
-    "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Public source lookup for seven editorial leads.",
-    "acceptance": "Seven dispositions or documented shortfalls.",
-    "dispatch_brief": "manuscript/sn_computer_science/editorial_source_lookup_brief.md",
-    "message_id": "hk261-editorial-public-source-lookup-v1"
+    "task_id": "hk261-author-fulltext-adjudication",
+    "owner": "CODEX_WRITING",
+    "status": "blocked",
+    "action": "Await authentic human reviewer decisions and authorized proceedings access for the remaining version check before applying author-approved eligibility changes.",
+    "acceptance": "Signed dispositions and source locators for all author-reviewed records, with an explicit final outcome for the three pending reports before rerunning PRISMA."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -66,7 +65,7 @@
     },
     "approved_plan": "restart_2026_11_26/approved_plan.md",
     "progress_tracker": "restart_2026_11_26/progress.json",
-    "manuscript_status": "ALTERNATIVE_TECHNICAL_SURVEY_READY_FOR_COMPARISON"
+    "manuscript_status": "ALTERNATIVE_EDITORIAL_PDF_READY_FOR_COMPARISON"
   },
   "evidence": {
     "retrieval_reports": 136,
@@ -684,55 +683,72 @@
     },
     "alternative_technical_survey": {
       "baseline_commit": "7a6675d",
-      "pages": 28,
+      "pages": 29,
       "numbered_sections": 7,
       "figures": 5,
-      "tables": 5,
+      "tables": 7,
       "studies_in_both_tables_and_analysis": 46,
       "within_study_comparisons": 9,
       "appraisal_domains": 10,
-      "recorded_references": 54,
-      "verified_dois": 53,
+      "recorded_references": 55,
+      "verified_dois": 54,
       "three_reports_awaiting_classification": [
         "R0081",
         "R0082",
         "R0132"
       ],
-      "independent_human_adjudication": "NOT_DOCUMENTED",
-      "review": "manuscript/sn_computer_science/technical_survey_review.md",
-      "pdf_sha256": "e47c16af3ae08e896396fcebab53f3812e3743d653fe685e319875bab271d417",
+      "independent_human_adjudication": "NOT_DOCUMENTED_LOG_SEEDED",
+      "review": "manuscript/sn_computer_science/editorial_verification.md",
+      "pdf_sha256": "bfddec027e69597ae15d9d573e520fe44cfda854fa860fa9d8768089563182ca",
       "evidence_reproduction": {
         "index": "manuscript/sn_computer_science/supplement_evidence_index.md",
         "snapshot": "manuscript/sn_computer_science/evidence_sha256.txt",
-        "previous_comparison_commit": "8fba1a2",
+        "previous_comparison_commit": "9d63711",
         "equations": 3,
         "indexed_outcomes": 9,
-        "hashed_evidence_files": 57,
+        "hashed_evidence_files": 72,
         "verified_original_pdfs": 49,
-        "reproduction": "PRISMA and all 28 manuscript pages match independently rebuilt text and renders",
+        "reproduction": "Standalone PRISMA and all 29 PDF pages match independently rebuilt renders.",
         "portable_package": {
           "readme": "manuscript/sn_computer_science/minh_chung_hinh_bang/README.md",
           "index": "manuscript/sn_computer_science/minh_chung_hinh_bang/ITEM_INDEX.md",
           "manifest": "manuscript/sn_computer_science/minh_chung_hinh_bang/SHA256SUMS",
-          "archived_source_files": 28,
+          "archived_source_files": 36,
           "figures": 5,
-          "tables": 5,
+          "tables": 7,
           "equations": 3,
-          "independent_build": "Standalone flow and all 28 manuscript pages match archived text and renders pixel for pixel."
+          "independent_build": "Standalone PRISMA and all 29 PDF pages match independently rebuilt renders pixel for pixel."
         }
       },
       "claim_audit": {
         "prose_map": "manuscript/sn_computer_science/s4_claim_audit.md",
         "study_row_map": "manuscript/sn_computer_science/s4_study_row_sources.csv",
-        "claim_entries": 146,
+        "claim_entries": 162,
         "prose_lines": 90,
         "mapped_studies": 46,
-        "narrowed_entries": 16,
-        "open_entries": 13,
+        "narrowed_entries": 19,
+        "open_entries": 14,
         "verified_contrasts": 9,
         "original_pdf_hashes": 49,
-        "verified_pdf_item_pages": 13,
+        "verified_pdf_item_pages": 15,
         "scope": "Accepted source locators for 46 studies with targeted direct checks on claims and the nine displayed contrasts."
+      },
+      "editorial_integration": {
+        "rq5_source_commit": "5910b6b",
+        "reports_read": 46,
+        "numerical_reports": 36,
+        "retained_outcomes": 98,
+        "matched_outcomes": 51,
+        "descriptive_outcomes": 47,
+        "plot_only_reports": 9,
+        "unresolved_outcome_reports": 1,
+        "human_log_rows": 136,
+        "human_reviews_recorded": 0,
+        "human_log": "manuscript/sn_computer_science/human_adjudication_log.csv",
+        "supplement_s3": "manuscript/sn_computer_science/supplement_s3.md",
+        "source_lookup_task_id": "01a21c52-100e-7a50-afbd-184b571116b8",
+        "source_lookup_context_id": "01a21c52-1014-7952-8ad4-044ca498543a",
+        "source_lookup_verdict": "FAIL_NOT_ADOPTED"
       }
     }
   },

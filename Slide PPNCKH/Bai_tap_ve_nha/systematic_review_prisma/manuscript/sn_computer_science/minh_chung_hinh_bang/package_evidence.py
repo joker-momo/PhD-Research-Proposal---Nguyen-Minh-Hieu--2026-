@@ -11,7 +11,8 @@ RESTART = Path("restart_2026_11_26")
 MANUSCRIPT_PATH = MANUSCRIPT.relative_to(PROJECT)
 FILES = [
     *(MANUSCRIPT_PATH / name for name in (
-        "build_technical_survey.py", "main.tex", "main.pdf", "references.bib",
+        "build_technical_survey.py", "build_editorial_evidence.py", "main.tex",
+        "editorial_mechanism_setting.tex", "editorial_outcome_coverage.tex", "main.pdf", "references.bib",
         "sn-jnl.cls", "sn-vancouver-num.bst", "technical_coding.psv", "prisma_flow.pdf",
         "technical_appraisal.tex", "technical_appraisal_bars.tex",
         "technical_appraisal_figure.tex", "technical_architecture.tex",
@@ -24,6 +25,9 @@ FILES = [
         "synthesis/active_appraisal_summary.csv", "synthesis/active_outcome_evidence.csv",
         "synthesis/active_rq_p08_erratum_R0092.json", "synthesis/active_synthesis_input_index.csv",
         "extraction/p08_source_inventory.json",
+        "extraction/rq5_uniform/manifest.json", "extraction/rq5_uniform/rule.md",
+        "extraction/rq5_uniform/outcomes.csv", "extraction/rq5_uniform/report_coverage.csv",
+        "synthesis/desk_reject_evidence_map.csv",
         "appraisal/active_appraisal_table.csv", "appraisal/active_appraisal_rationale_matrix.csv",
     )),
 ]
@@ -35,9 +39,9 @@ def build_index():
     stop = s4.index("## Manuscript prose crosswalk")
     excerpt = s4[start:stop].rstrip()
     labels = re.findall(r"\| (?:Figure|Table|Eq\.) \d+ `((?:fig|tab|eq):[^`]+)`", excerpt)
-    expected = sorted(["fig"] * 5 + ["tab"] * 5 + ["eq"] * 3)
-    if len(set(labels)) != 13 or sorted(label.split(":")[0] for label in labels) != expected:
-        raise ValueError("Expected five figures, five tables and three equations in S4")
+    expected = sorted(["fig"] * 5 + ["tab"] * 7 + ["eq"] * 3)
+    if len(set(labels)) != 15 or sorted(label.split(":")[0] for label in labels) != expected:
+        raise ValueError("Expected five figures, seven tables and three equations in S4")
 
     def relink(match):
         link = match[1]
@@ -87,7 +91,7 @@ def main():
                 raise ValueError(f"Snapshot differs from the canonical source: {relative}")
     except (OSError, ValueError) as error:
         parser.exit(1, f"Package check failed: {error}\n")
-    print(f"PASS: {len(FILES)} archived files and 13 indexed figures, tables and equations.")
+    print(f"PASS: {len(FILES)} archived files and 15 indexed figures, tables and equations.")
 
 
 if __name__ == "__main__":

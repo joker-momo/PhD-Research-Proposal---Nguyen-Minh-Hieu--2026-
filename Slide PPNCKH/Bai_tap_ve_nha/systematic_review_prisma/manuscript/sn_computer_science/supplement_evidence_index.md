@@ -1,6 +1,6 @@
 # S4. Evidence and reproduction record
 
-This appendix indexes the HK261 alternative coursework manuscript. Locations in
+This appendix indexes the HK261 combined technical survey. Locations in
 the prose table refer to lines in [main.tex](main.tex). Where a source is a
 paper, a page is the physical PDF page counted from one. The source records
 below retain the version, file path, checksum, and available locators. Start
@@ -16,8 +16,12 @@ project directory.
 | Counts, exclusions, and retrieval | [Reconciled counts](../../restart_2026_11_26/prisma/prisma_counts.json), [reconciliation review](../../restart_2026_11_26/prisma/active_reconciliation_review.md), [PRISMA checklist](../../restart_2026_11_26/prisma/active_prisma_checklist.md), [retrieval log](../../restart_2026_11_26/fulltext_retrieval/retrieval_log.csv), [S2 exclusions and locators](supplement_fulltext_exclusions.csv), [initial pending reports](../../restart_2026_11_26/fulltext_screening/awaiting_classification.csv), [supplemental decisions](../../restart_2026_11_26/supplemental_screening/screening_decisions.csv), [report–study map](../../restart_2026_11_26/study_linkage/active_report_study_map.csv), [candidate linkage pairs](../../restart_2026_11_26/study_linkage/active_pair_evidence.csv). |
 | Report identity and original PDF | [Included input index](../../restart_2026_11_26/synthesis/active_synthesis_input_index.csv) has the study and report IDs, original local PDF, SHA-256, and accepted evidence paths. [Citation metadata](references.bib) records DOI or publisher identifier. |
 | Architecture, model, optimization, evaluation, and continuity | [Accepted extraction](../../restart_2026_11_26/extraction/p08_extraction_table.json), [source-locator inventory](../../restart_2026_11_26/extraction/p08_source_inventory.json), [study characteristics](../../restart_2026_11_26/synthesis/active_study_characteristics.csv), [RQ claim–source matrix](../../restart_2026_11_26/synthesis/active_claim_source_matrix.csv), [claim synthesis](../../restart_2026_11_26/synthesis/active_rq_claims.json), [technical coding ledger](technical_coding.psv). For an expanded claim or primary coding decision, use the cited report ID to look up the matching extraction field and original locator. |
-| Numerical statements and outcomes | [Retained outcome ledger](../../restart_2026_11_26/synthesis/active_outcome_evidence.csv), [quantitative source matrix](../../restart_2026_11_26/extraction/p08_quantitative_claim_source_matrix.csv), [R0092 correction](../../restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json), and the Table 4 row map below. |
+| Numerical statements and outcomes | [Retained outcome ledger](../../restart_2026_11_26/synthesis/active_outcome_evidence.csv), [quantitative source matrix](../../restart_2026_11_26/extraction/p08_quantitative_claim_source_matrix.csv), [R0092 correction](../../restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json), and the numerical contrast row map below. |
+| Human adjudication and scope | [S2 audit and priority cases](supplement_s2_adjudication.md), [136-report log](human_adjudication_log.csv). Empty human fields document that sign-off is pending. |
+| Uniform RQ5 reread | [S3 and evidence provenance](supplement_s3.md), [claim–source matrix](../../restart_2026_11_26/extraction/rq5_uniform/claim_source.csv), and [input index](../../restart_2026_11_26/synthesis/active_synthesis_input_index.csv). |
+| Reference validation | [DOI and landing checks](editorial_doi_audit.csv). Landing responses and independent registry identity checks have separate columns. |
 | Appraisal | [Data and rationales](../../restart_2026_11_26/appraisal/active_appraisal_rationale_matrix.csv) keyed by report and D01–D10, [full ratings](../../restart_2026_11_26/appraisal/active_appraisal_table.csv), [summary](../../restart_2026_11_26/synthesis/active_appraisal_summary.csv). |
+| Comparison release | [Editorial integration and verification](editorial_verification.md), [public source lookup review](editorial_source_lookup_review.md), and [targeted correction brief](editorial_source_lookup_correction.md). |
 | Verification and unresolved items | [Technical survey review](technical_survey_review.md), [accepted integrity audit](../../restart_2026_11_26/integrity/active_final_integrity_audit.md), [limitations](../../restart_2026_11_26/integrity/active_limitations.md). |
 
 ## Claim audit and missing evidence
@@ -28,7 +32,7 @@ project directory.
   source coverage, methods, or author confirmations.
 - [Study row source map](s4_study_row_sources.csv) locates the original,
   accepted extraction fields and D09 appraisal behind each of the 46 rows of
-  Tables 2 and 3. Filter by report ID. Each field retains its extraction status,
+  the architecture and evaluation tables. Filter by report ID. Each field retains its extraction status,
   including `PARTIAL` and `NOT_REPORTED`. Page or section unavailability is explicit.
 - The artifact folder [reproduction guide](minh_chung_hinh_bang/README.md)
   links the frozen inputs and commands for every figure, table and equation.
@@ -37,13 +41,13 @@ project directory.
 
 | Issue | Verified support and manuscript change |
 | --- | --- |
-| R0001 family (Table 2 and Figure 2) | Physical pp. 1–3, §II and §III.A describe convolutional and fully connected layer types and use real-world auxiliary data, without specifying a concrete evaluated DNN family. Code as a generic layered DNN proxy. |
-| R0058 workload (Table 2 and Figure 2) | Physical p. 19, §6.1 identifies ResNet-18 and CIFAR-10. Code as a concrete CNN workload. Physical pp. 9–10 and 21–22 describe fallback and a speed sensitivity experiment. Individual recovery phases remain open. |
-| R0075 modality (Table 3 and Figure 2) | Physical pp. 8–10, §§IV.A–B distinguish Jetson TX2 profiling from modeled links and record a routing boundary in Table III. Code as profile-backed, with communication modeled. |
-| R0019 continuity (Table 3) | Physical p. 15, Fig. 19 varies active UAV count from 3 to 4 to 2 in simulation. Layer allocation is evaluated, while measured handoff time remains open. |
+| R0001 family (architecture table and Figure 2) | Physical pp. 1–3, §II and §III.A describe convolutional and fully connected layer types and use real-world auxiliary data, without specifying a concrete evaluated DNN family. Code as a generic layered DNN proxy. |
+| R0058 workload (architecture table and Figure 2) | Physical p. 19, §6.1 identifies ResNet-18 and CIFAR-10. Code as a concrete CNN workload. Physical pp. 9–10 and 21–22 describe fallback and a speed sensitivity experiment. Individual recovery phases remain open. |
+| R0075 modality (evaluation table and Figure 2) | Physical pp. 8–10, §§IV.A–B distinguish Jetson TX2 profiling from modeled links and record a routing boundary in Table III. Code as profile-backed, with communication modeled. |
+| R0019 continuity (evaluation table) | Physical p. 15, Fig. 19 varies active UAV count from 3 to 4 to 2 in simulation. Layer allocation is evaluated, while measured handoff time remains open. |
 | R0014 event setting (main.tex L225, L242) | Physical p. 10 reports five UAVs outdoors. Physical p. 13 §VIII.C and Table IV report deliberate head disconnection and rescheduling latency. The table measures the scheduler stage. The event's relation to the outdoor run remains open. |
-| R0090 dropout evidence (Table 3) | Physical p. 4 §V.E reports implementation, and physical pp. 3, 5–6 §§II.D, III.B, V.F and V.K describe dropout response and loss. The test modality of the dropout outcome remains open. |
-| R0113 setup (Table 3) | Physical pp. 9–13, Implementation and Results and Tables 1–4 report simulation and hardware-in-the-loop. The accepted evaluation field is partial. |
+| R0090 dropout evidence (evaluation table) | Physical p. 4 §V.E reports implementation, and physical pp. 3, 5–6 §§II.D, III.B, V.F and V.K describe dropout response and loss. The test modality of the dropout outcome remains open. |
+| R0113 setup (evaluation table) | Physical pp. 9–13, Implementation and Results and Tables 1–4 report simulation and hardware-in-the-loop. The accepted evaluation field is partial. |
 | R0118 and R0125 comparability (main.tex L229, L281) | R0118 physical p. 12, Table V supports the common planner. R0125 physical p. 3, Table I and §IV.B support four nominal threads per worker on a workstation. The allocations are 16 versus 4; matched aggregate compute was not established. |
 | R0062 fault outcome (main.tex L258) | Physical p. 6, Effect of UAV Unavailability, reports about 2 versus 3 fps. The exact failure-to-resumption time and deadline count remain open. |
 | Search and human verification (main.tex L87, L105–107, L342–350) | One unretrieved report, three awaiting classification, independent duplicate human verification and author declarations remain open in the retained workflow. |
@@ -53,20 +57,22 @@ project directory.
 | Item | Source, inputs and reproduction rule |
 | --- | --- |
 | Figure 1 `fig:flow` (PDF p. 6) | [PRISMA reconciler](../../restart_2026_11_26/prisma/reconcile.py) takes the locked records and decisions, fills [the TikZ template](../../restart_2026_11_26/prisma/flow_template.tex) and writes [counts](../../restart_2026_11_26/prisma/prisma_counts.json) and [standalone source](../../restart_2026_11_26/prisma/prisma_flow.tex). Compile the latter to rebuild the embedded [figure PDF](prisma_flow.pdf). Arithmetic is raw − duplicates = screened, screened − title/abstract exclusions = sought, sought − unretrieved = assessed, assessed = full-text exclusions + pending + included reports. |
-| Figure 2 `fig:macro` (PDF p. 7) | [TikZ](technical_overview_figure.tex) uses [generated counts](technical_macros.tex). The [generator](build_technical_survey.py) counts each report once per panel, using the citation year and BibTeX venue type in panel A and the family, optimizer, and evaluation columns of [primary coding](technical_coding.psv) in the remaining panels. Unscaled TikZ segment height in panel A is 0.16 cm × count, with conference at the bottom and journal stacked above. Horizontal bar length in panels B–D is 0.115 cm × count. The enclosing LaTeX resize applies one scale to the figure. Each panel totals 46. |
-| Figure 3 `fig:topologies` (PDF p. 8) | [TikZ](technical_architecture_figure.tex) illustrates the three analyst-defined topology categories from the coding ledger and Table 2. Representative mappings are peer transport R0010/R0121, a head–worker hierarchy R0014/R0118, and tiered processing R0001/R0080. Arrows represent logical relationships. They carry no measured distance, time, or scale. |
-| Figure 4 `fig:taxonomy` (PDF p. 9) | [TikZ](technical_taxonomy_figure.tex) uses [generated counts](technical_macros.tex) for topology, unit, optimizer and resilience. A leaf count is the number of distinct reports assigned its label. Each dimension has its own denominator of 46. |
-| Figure 5 `fig:appraisalbar` (PDF p. 21) | [TikZ](technical_appraisal_figure.tex) draws [generated bar inputs](technical_appraisal_bars.tex) from the accepted summary. Segment width in percentage points is 100 × status count / 46. The endpoints are cumulative percentages for Yes, Partial, and Not reported, followed by 100% for any No votes. The corresponding Table 5 percentage is 100 × Yes count / 46 rounded to one decimal. |
+| Figure 2 `fig:macro` (PDF p. 8) | [TikZ](technical_overview_figure.tex) uses [generated counts](technical_macros.tex). The [generator](build_technical_survey.py) counts each report once per panel, using the citation year and BibTeX venue type in panel A and the family, optimizer, and evaluation columns of [primary coding](technical_coding.psv) in the remaining panels. Unscaled TikZ segment height in panel A is 0.16 cm × count, with conference at the bottom and journal stacked above. Horizontal bar length in panels B–D is 0.115 cm × count. The enclosing LaTeX resize applies one scale to the figure. Each panel totals 46. |
+| Figure 3 `fig:topologies` (PDF p. 9) | [TikZ](technical_architecture_figure.tex) illustrates the three analyst-defined topology categories from the coding ledger and Table 2. Representative mappings are peer transport R0010/R0121, a head–worker hierarchy R0014/R0118, and tiered processing R0001/R0080. Arrows represent logical relationships. They carry no measured distance, time, or scale. |
+| Figure 4 `fig:taxonomy` (PDF p. 10) | [TikZ](technical_taxonomy_figure.tex) uses [generated counts](technical_macros.tex) for topology, unit, optimizer and resilience. A leaf count is the number of distinct reports assigned its label. Each dimension has its own denominator of 46. |
+| Figure 5 `fig:appraisalbar` (PDF p. 22) | [TikZ](technical_appraisal_figure.tex) draws [generated bar inputs](technical_appraisal_bars.tex) from the accepted summary. Segment width in percentage points is 100 × status count / 46. The endpoints are cumulative percentages for Yes, Partial, and Not reported, followed by 100% for any No votes. The corresponding Table 5 percentage is 100 × Yes count / 46 rounded to one decimal. |
 | Table 1 `tab:related` (PDF p. 2) | [LaTeX](main.tex#L33) and [bibliography](references.bib). Row-level sources are listed below. |
-| Table 2 `tab:architecture` (PDF p. 10) | [Generated LaTeX](technical_architecture.tex) uses the 46-study characteristics and coding ledgers. The report citation joins each cell back to architecture, model and partition fields in the accepted extraction and locator inventory. |
-| Table 3 `tab:evaluation` (PDF p. 15) | [Generated LaTeX](technical_evaluation.tex) uses the same 46 IDs and joins evaluation settings, connectivity, mobility, faults and continuity cells to the original report through the extraction and locator inventory. |
-| Table 4 `tab:outcomes` (PDF p. 19) | [LaTeX](main.tex#L260) transcribes checked values in their reported units and conditions. The row map below identifies the accepted ledger record and the original page/table. |
-| Table 5 `tab:appraisal` (PDF p. 20) | [Generated rows](technical_appraisal.tex) use the accepted summary. Domain counts and percentages share the same source as Figure 5. Use the rationale matrix for individual ratings or missing reporting evidence. |
-| Eq. 1 `eq:objective` (PDF p. 9) | [LaTeX](main.tex#L169). This review's synthesized objective defines a feasible decision tuple and weights latency, energy, quality and recovery cost across scenarios. The negative quality sign suits minimization. Weights carry unit conversions and recovery cost must have a distinct boundary from end-to-end delay unless deliberate weighting is explained. See R0001/R0006/R0058/R0080 and RQ2 for examples of subproblems. The review did not fit weights or compute a pooled objective. |
-| Eq. 2 `eq:link` (PDF p. 9) | [LaTeX](main.tex#L179). The serialization duration follows from bits divided by effective bits per second. Queueing and protocol time are additive for the stated non-overlapping accounting boundary. R0121 and R0092 provide context for link accounting, with exact assumptions in their extraction. This equation is a schematic decomposition. |
-| Eq. 3 `eq:recovery` (PDF p. 22) | [LaTeX](main.tex#L319). Let t0 be event onset, t1 detection, t2 the valid plan, t3 transfer complete and t4 the first correct resumed output. The sum of consecutive differences telescopes to t4 − t0. With overlapping phases, record wall time and individual intervals. R0038/R0062/R0014 are motivating examples. This is a proposed measurement definition. No recovery values were computed with it. |
+| Table 3 `tab:architecture` (PDF p. 11) | [Generated LaTeX](technical_architecture.tex) uses the 46-study characteristics and coding ledgers. The report citation joins each cell back to architecture, model and partition fields in the accepted extraction and locator inventory. |
+| Table 4 `tab:evaluation` (PDF p. 17) | [Generated LaTeX](technical_evaluation.tex) uses the same 46 IDs and joins evaluation settings, connectivity, mobility, faults and continuity cells to the original report through the extraction and locator inventory. |
+| Table 6 `tab:outcomes` (PDF p. 21) | [LaTeX](main.tex#L260) transcribes checked values in their reported units and conditions. The row map below identifies the accepted ledger record and the original page/table. |
+| Table 2 `tab:settings` (PDF p. 7) | [Generated LaTeX](editorial_mechanism_setting.tex) and [generator](build_editorial_evidence.py) count report IDs grouped by primary mechanism and strongest evaluation setting in the [coded input](../../restart_2026_11_26/synthesis/desk_reject_evidence_map.csv). Each report contributes to exactly one cell. Definitions and locators are in the coded input. |
+| Table 5 `tab:coverage` (PDF p. 20) | [Generated LaTeX](editorial_outcome_coverage.tex) and [generator](build_editorial_evidence.py) join the [primary coding](../../restart_2026_11_26/synthesis/desk_reject_evidence_map.csv) and [report coverage](../../restart_2026_11_26/extraction/rq5_uniform/report_coverage.csv) by report ID. Study counts group by status and entries sum matched and descriptive rows in the [outcome ledger](../../restart_2026_11_26/extraction/rq5_uniform/outcomes.csv). [Rule and gap definitions](../../restart_2026_11_26/extraction/rq5_uniform/rule.md). |
+| Table 7 `tab:appraisal` (PDF p. 22) | [Generated rows](technical_appraisal.tex) use the accepted summary. Domain counts and percentages share the same source as Figure 5. Use the rationale matrix for individual ratings or missing reporting evidence. |
+| Eq. 1 `eq:objective` (PDF p. 10) | [LaTeX](main.tex#L169). This review's synthesized objective defines a feasible decision tuple and weights latency, energy, quality and recovery cost across scenarios. The negative quality sign suits minimization. Weights carry unit conversions and recovery cost must have a distinct boundary from end-to-end delay unless deliberate weighting is explained. See R0001/R0006/R0058/R0080 and RQ2 for examples of subproblems. The review did not fit weights or compute a pooled objective. |
+| Eq. 2 `eq:link` (PDF p. 10) | [LaTeX](main.tex#L179). The serialization duration follows from bits divided by effective bits per second. Queueing and protocol time are additive for the stated non-overlapping accounting boundary. R0121 and R0092 provide context for link accounting, with exact assumptions in their extraction. This equation is a schematic decomposition. |
+| Eq. 3 `eq:recovery` (PDF p. 23) | [LaTeX](main.tex#L319). Let t0 be event onset, t1 detection, t2 the valid plan, t3 transfer complete and t4 the first correct resumed output. The sum of consecutive differences telescopes to t4 − t0. With overlapping phases, record wall time and individual intervals. R0038/R0062/R0014 are motivating examples. This is a proposed measurement definition. No recovery values were computed with it. |
 
-### Finding an individual Table 2 or Table 3 cell
+### Finding an individual cell in the architecture and evaluation tables
 
 In the included input index, take the row's report ID to the matching
 record in the accepted extraction. The keys below describe the baseline
@@ -76,14 +82,14 @@ schemas are resolved in the S4 row map above.
 
 | Cells | Extraction keys and analyst input |
 | --- | --- |
-| Table 2 topology | `uav_architecture_role_and_topology` and `topology` in primary coding. |
-| Table 2 workload | `inference_model_task_and_dataset` and `baselines_and_workloads`. |
-| Table 2 partition / dispatch | `partition_and_assignment` and `unit` in primary coding. |
-| Table 2 decisions, objective and solver | `decision_variables_objectives_constraints_and_solver`, supplemented by `partition_and_assignment` and `compute_and_radio`. |
-| Table 3 modality and platform | `evaluation_platform_simulator_hardware_and_traces` and `evaluation` in primary coding. |
-| Table 3 channel, mobility, disruption, action and evidence class | `mobility_channel_intermittency_failure_and_recovery`, supplemented by `compute_and_radio` and `evaluation_platform_simulator_hardware_and_traces`. `resilience` in primary coding supplies the analyst's evidence class. |
+| architecture table topology | `uav_architecture_role_and_topology` and `topology` in primary coding. |
+| architecture table workload | `inference_model_task_and_dataset` and `baselines_and_workloads`. |
+| architecture table partition / dispatch | `partition_and_assignment` and `unit` in primary coding. |
+| architecture table decisions, objective and solver | `decision_variables_objectives_constraints_and_solver`, supplemented by `partition_and_assignment` and `compute_and_radio`. |
+| evaluation table modality and platform | `evaluation_platform_simulator_hardware_and_traces` and `evaluation` in primary coding. |
+| evaluation table channel, mobility, disruption, action and evidence class | `mobility_channel_intermittency_failure_and_recovery`, supplemented by `compute_and_radio` and `evaluation_platform_simulator_hardware_and_traces`. `resilience` in primary coding supplies the analyst's evidence class. |
 
-## Table 1 source locators
+## Related-survey matrix source locators
 
 | Row | Source location and recorded basis |
 | --- | --- |
@@ -96,12 +102,26 @@ schemas are resolved in the S4 row map above.
 | Hao et al. | [Publisher-deposited abstract](https://api.crossref.org/works/10.1145/3786145), JSON field `message.abstract`. Gives mathematical modeling, optimization, granularity and toolchains. [Publication history](https://crossmark.crossref.org/dialog?cm_version=v2.0&doi=10.1145%2F3786145&domain=dl.acm.org) records the 2026 issue. |
 | This review | Sections 2–5, accepted protocol, PRISMA counts, and coded primary studies. |
 
-The table records positive scope statements. The initial comparison draft also
-coded topics as central, partial, or not established. Those cells were removed
-because a title or abstract cannot verify a negative coverage claim across
-a full review.
+Matrix codes apply to the cited scope passages. Unestablished coverage is
+marked with a question mark. A check denotes explicit, substantive coverage
+and a triangle denotes adjacent or limited documented coverage. The positive
+and partial marks are traced by row below. S = systematic search, selection
+and synthesis, U = multi-UAV architectures, P = inference partitioning and
+assignment, J = joint mobility/radio decisions, L = LLM/MoE, F = failure and
+recovery of inference, and A = engineering appraisal.
 
-## Table 4 row map
+| Survey | Basis for marked coverage |
+| --- | --- |
+| McEnroe | U is adjacent. The abstract describes edge AI for UAV functions and applications. |
+| Ren | P is direct. The publisher abstract centers on collaborative inference and partition-oriented execution paradigms. F is direct in §5.2.3 and Table 5 of the [author full text](https://arxiv.org/html/2207.07812v1), which classify failure-resilient distributed inference. |
+| Xia | U and J are adjacent. The abstract describes UAV roles and device collaboration, resource management and wireless models. The author text organizes communication models and resource allocation, providing context for the joint decision axis. |
+| Ning | U and J are adjacent. The abstract is about the Internet of UAVs and covers resource allocation and trajectory design as related topics. |
+| Cao | U is direct. The survey centers on swarm networking and collaboration. J is adjacent given §III–V coverage of network constraints and task assignment. |
+| Wang | P is direct. The abstract and §I describe model partitioning among enabling methods for inference across computing tiers. |
+| Hao | P is direct. The [ACM article](https://doi.org/10.1145/3786145), Abstract and §3, center on DNN partitioning and its solution space. |
+| This review | S follows the archived protocol and PRISMA flow. U and P follow eligibility and the two detailed study tables. J is limited to documented co-design examples (R0006 p. 4, R0118 pp. 5–8); L is limited to selected settings (R0074, R0110 and R0118). F and A are direct across the continuity coding and ten-domain engineering appraisal. |
+
+## Numerical contrast row map
 
 The report ID plus extraction key identifies a row of the outcome ledger.
 Inspect the original locator for the comparator, condition and uncertainty.
@@ -126,29 +146,29 @@ assumptions for future work without reporting a newly measured result.
 
 | LaTeX lines | What to retrieve and how to interpret it |
 | --- | --- |
-| 1–19 | Title, abstract and keywords. Check scope and dates against the protocol, counts against Figure 1 and Table 5, and interpretations against Sections 4–6 and Table 4. |
+| 1–19 | Title, abstract and keywords. Check scope and dates against the protocol, counts against Figure 1 and appraisal table, and interpretations against Sections 4–6 and contrasts table. |
 | 20–27 | Inference placement and continuity use the cited report IDs in the extraction and claim matrix. Civil use cases use McEnroe's abstract. Tracking versus batch timing is an illustrative contrast, with R0292 as corpus context. |
-| 28–51 | Contextual positioning and Table 1. See the eight row locators above. The scope statement for this review follows from its protocol and outputs. |
+| 28–51 | Contextual positioning and related-survey matrix. See the eight row locators above. The scope statement for this review follows from its protocol and outputs. |
 | 52–68 | Review questions and contributions. Use the protocol, Sections 2–6, both technical tables, ten-domain ratings and indexed figures. |
 | 69–76 | Eligibility and protocol timing. Use the restart protocol, acceptance and S1. PRISMA standard is the cited [reporting guideline](https://doi.org/10.1136/bmj.n71). Registration status concerns the documented project record. |
 | 77–81 | Sources, exact cutoff and selection of exports. See the search manifest, search log, recorded timestamps and S1. |
 | 82–88 | Screening, retrieval, linkage and reviewer roles. See reconciliation, retrieval log, candidate linkage pairs, report–study map, the PRISMA checklist and limitations. Retrieval percentage = 100 × 136 / 137, rounded to one decimal. |
-| 89–93 | Extracted fields, 67-entry ledger, and ten-domain engineering appraisal. Use the accepted extraction, outcome ledger and appraisal rationales. The outcome denominator is distinct accepted report IDs in that ledger. |
-| 94–102 | Additional coding and synthesis rules. See primary coding, table generator and Table 4 row map. Selective display, absence of pooling and appraisal boundaries describe the review methods. |
+| 89–93 | Extracted fields, uniform numerical inventory, and ten-domain engineering appraisal. Use the accepted extraction, outcome ledger and appraisal rationales. S3 report coverage has one row per included report. The RQ5 ledger retains 98 entries when filtered to matched or descriptive. |
+| 94–102 | Additional coding and synthesis rules. See primary coding, table generator and contrasts table row map. Selective display, absence of pooling and appraisal boundaries describe the review methods. |
 | 103–114 | Counts and classification. See Figure 1 and its inputs, S2, the missing item R0116 in the retrieval log, and the three pending records. |
-| 115–128 | Corpus/year and evaluation framing. See Figure 2 and Table 3. Examples of model and workload categories come from coding columns and extracted test settings. |
+| 115–128 | Corpus/year and evaluation framing. See Figure 2 and evaluation table. Examples of model and workload categories come from coding columns and extracted test settings. |
 | 129–145 | Topologies and Figure 3. Use the three topology bins and the cited examples in the report extraction. Interpret overhead and coordination statements as consequences of the depicted dependencies. |
-| 146–167 | Partition/dispatch taxonomy and Figure 4. Connect the five unit bins to Table 2 rows and extraction. Representative checks include R0014 for halo/spatial work, R0075 for exits, R0110 for redundancy, R0080 for representation, R0118 for experts, and R0292 for tracker state. |
+| 146–167 | Partition/dispatch taxonomy and Figure 4. Connect the five unit bins to architecture table rows and extraction. Representative checks include R0014 for halo/spatial work, R0075 for exits, R0110 for redundancy, R0080 for representation, R0118 for experts, and R0292 for tracker state. |
 | 168–189 | Definitions, common optimization model and link equation. See Eq. 1–2 above, the RQ2 claim matrix, and report locators for R0006/R0058/R0080. |
-| 190–209 | Five solver classes and overhead interpretation. Use the optimizer bins, Table 2 and the RQ2 evidence. Conditions on online cost are criteria for reading a study, with evaluation boundary drawn from Table 3. |
-| 210–230 | Evaluation modalities, channel assumptions and resource comparison. Use the evaluation bins, Table 3 and RQ3. Key checks are R0121 transport, R0038 bench recovery, R0125 thread count, R0292 handoff, R0014 indoor/outdoor boundary and R0118 planner/comparator design. |
-| 231–250 | Disruption and response classes. See resilience coding, Table 3 and RQ4. Distinguish modeled, planned and observed action using each report's extracted event fields and originals. |
-| 251–283 | Quantitative comparisons and bounded interpretation. See the nine Table 4 locators and outcome conditions. Comparative prose follows the displayed differences and stated measurement boundaries. |
-| 284–307 | Appraisal and reporting implications. See Table 5/Figure 5, appraisal summary and D03, D04, D07 and D09 source rationales. |
-| 308–313 | Model regimes and state. Check R0074, R0110 and R0118 and the corresponding Table 2–4 entries. Changes in bottlenecks and memory costs are synthesis conditional on the execution design. |
-| 314–327 | Benchmark proposal and Eq. 3. The motivations are workload differences and comparator gaps (Tables 2–5), controlled versus planned continuity (Table 3), and consistent arrival denominators (R0092/Table 4). The proposal specifies comparators, accounting and timestamp requirements. |
-| 328–340 | Open research questions motivated by appraisal D03/D04/D07/D09 and the evaluation/continuity gaps in Tables 2–5. Thermal profiling and authenticated provenance are proposed tests. |
-| 341–345 | Validity limits. See project limitations, accepted reconciliation, extraction scope, PRISMA checklist, and the source class of the Table 1 sample. |
+| 190–209 | Five solver classes and overhead interpretation. Use the optimizer bins, architecture table and the RQ2 evidence. Conditions on online cost are criteria for reading a study, with evaluation boundary drawn from evaluation table. |
+| 210–230 | Evaluation modalities, channel assumptions and resource comparison. Use the evaluation bins, evaluation table and RQ3. Key checks are R0121 transport, R0038 bench recovery, R0125 thread count, R0292 handoff, R0014 indoor/outdoor boundary and R0118 planner/comparator design. |
+| 231–250 | Disruption and response classes. See resilience coding, evaluation table and RQ4. Distinguish modeled, planned and observed action using each report's extracted event fields and originals. |
+| 251–283 | Quantitative comparisons and bounded interpretation. See the nine original contrast locators and outcome conditions. Comparative prose follows the displayed differences and stated measurement boundaries. |
+| 284–307 | Appraisal and reporting implications. See appraisal table/Figure 5, appraisal summary and D03, D04, D07 and D09 source rationales. |
+| 308–313 | Model regimes and state. Check R0074, R0110 and R0118 and the corresponding architecture table–4 entries. Changes in bottlenecks and memory costs are synthesis conditional on the execution design. |
+| 314–327 | Benchmark proposal and Eq. 3. The motivations are workload differences and comparator gaps (the architecture, evaluation, contrasts and appraisal tables), controlled versus planned continuity (evaluation table), and consistent arrival denominators (R0092/contrasts table). The proposal specifies comparators, accounting and timestamp requirements. |
+| 328–340 | Open research questions motivated by appraisal D03/D04/D07/D09 and the evaluation/continuity gaps in the architecture, evaluation, contrasts and appraisal tables. Thermal profiling and authenticated provenance are proposed tests. |
+| 341–345 | Validity limits. See project limitations, accepted reconciliation, extraction scope, PRISMA checklist, and the source class of the related-survey matrix sample. |
 | 346–356 | Conclusion, declarations, supplements and bibliography. Map RQ1–RQ5 to Sections 4–5 and the RQ claim matrix. Benchmark implications refer to Section 6. Author confirmations remain open. |
 
 ## Rebuild and check

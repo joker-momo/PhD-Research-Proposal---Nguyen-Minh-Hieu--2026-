@@ -1,6 +1,6 @@
 \documentclass[pdflatex,sn-vancouver-num]{sn-jnl}
 \usepackage{amsmath,amssymb,graphicx,booktabs,array,longtable,tikz,placeins}
-\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows.meta}\newcommand{\surveycheck}{\tikz[x=.8ex,y=.8ex]{\draw[line width=.44pt] (0,.49)--(.35,.13)--(1.13,.99);}}\newcommand{\surveyadj}{\tikz[x=.8ex,y=.8ex]{\draw[line width=.44pt] (0,0)--(1.1,0)--(.55,.99)--cycle;}}
 \geometry{textheight=216mm}
 \setlength{\bibsep}{4pt}
 \newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
@@ -9,13 +9,13 @@
 \input{technical_macros}
 \input{technical_appraisal}
 \raggedbottom
-
+\raggedbottom\providecommand{\doi}[1]{}\renewcommand{\doi}[1]{\mbox{\href{https://doi.org/#1}{DOI: \nolinkurl{#1}}}}
 \begin{document}
 \title[Collaborative Inference in UAV Swarms]{Collaborative Neural Inference in Multi-Drone Systems: A Systematic Technical Survey}
-\abstract{Splitting neural inference across unmanned aerial vehicles changes where computation runs, which intermediate data cross wireless links, and how much work can be recovered when a device leaves. This survey examines these dependencies across IEEE Xplore, Scopus, ACM Digital Library, and OpenAlex for peer-reviewed publications from January 2021 to 26 November 2026. The PRISMA 2020 flow identified 693 records and assessed 136 of 137 sought reports. The analysis covers 46 included studies, with three reports awaiting classification. We classify each study by execution topology, partition or dispatch unit, optimization method, evaluation modality, and disruption evidence. A shared formulation relates those choices to latency, energy, inference accuracy, and recovery. The displayed comparisons preserve their original metrics and test conditions. Controlled disconnection, modeled node unavailability, and planned handoff represent different kinds of continuity evidence. Across ten engineering appraisal domains, 42 of 46 studies were rated partial for configuration reproducibility, 40 for baseline comparability, and 43 for wireless and mobility realism. These results motivate an evaluation protocol that separates wireless conditions, compute budgets, and fault-recovery phases. Independent human screening and adjudication remain undocumented.}
+\abstract{Splitting neural inference across unmanned aerial vehicles changes where computation runs, which intermediate data cross wireless links, and how much work can be recovered when a device leaves. This survey examines these dependencies across IEEE Xplore, Scopus, ACM Digital Library, and OpenAlex for peer-reviewed publications from January 2021 to 26 November 2026. The PRISMA 2020 flow identified 693 records and assessed 136 of 137 sought reports. The analysis covers 46 included studies, with three reports awaiting classification. We classify each study by execution topology, partition or dispatch unit, optimization method, evaluation modality, and disruption evidence. A shared formulation relates those choices to latency, energy, inference accuracy, and recovery. A uniform post-protocol reread retained 98 numerical entries from 36 studies, including 51 within-study entries matched on reported conditions and outcome denominators. Controlled disconnection, modeled node unavailability, and planned handoff represent different kinds of continuity evidence. Across ten engineering appraisal domains, 42 of 46 studies were rated partial for configuration reproducibility, 40 for baseline comparability, and 43 for wireless and mobility realism. These results motivate an evaluation protocol that separates wireless conditions, compute budgets, and fault-recovery phases. Human screening and final adjudication remain unverified. The protocol was documented locally without public registration.}
 \keywords{Collaborative inference, unmanned aerial vehicle swarms, edge computing, model partitioning, service continuity, systematic review}
 \maketitle
-\begin{center}\small HK261 coursework comparison draft\end{center}
+\relax
 
 \section{Introduction}\label{sec:intro}
 \subsection{Motivation and technical coupling}
@@ -31,23 +31,23 @@ Table~\ref{tab:related} contrasts seven relevant secondary sources. McEnroe et a
 Ren et al. review collaborative DNN inference at the edge, and Wang et al. survey collaboration across end devices, edge infrastructure, and cloud services over the deep-learning lifecycle~\cite{survey_collab_dnn,survey_end_edge_cloud}. Hao et al. classify DNN partitioning strategies and survey modeling and experimental tools~\cite{survey_hao2026}. The selected works establish the neighboring topics. This review adds a study-level map relating multi-UAV partition and dispatch, flight and communication decisions, and evidence of continuity when the execution path changes.
 
 \begin{table}[htbp]
-\caption{Stated focus of selected related surveys. Descriptions are based on the authors\textquotesingle{} published titles, abstracts, or scope sections. The sample positions the present review.}\label{tab:related}
-\centering\fontsize{8}{10}\selectfont\setlength{\tabcolsep}{2.3pt}\renewcommand{\arraystretch}{1.28}
-\begin{tabular}{@{}Y{.23\linewidth}Y{.10\linewidth}Y{.635\linewidth}@{}}
+\caption{Documented coverage of selected related surveys across seven dimensions.}\label{tab:related}
+\centering\small\setlength{\tabcolsep}{3.5pt}\renewcommand{\arraystretch}{1.18}
+\begin{tabular}{@{}lccccccc@{}}
 \toprule
-Survey & Year & Stated focus \\
+Survey & S & U & P & J & L & F & A \\
 \midrule
-McEnroe et al.~\cite{survey_uav_edge_ai} & 2022 & Edge AI for UAV functions and civilian applications \\
-Ren et al.~\cite{survey_collab_dnn} & 2023 & Collaborative DNN inference paradigms among end, edge and cloud devices \\
-Xia et al.~\cite{survey_uav_resource} & 2024 & Resource management, collaboration and wireless models in UAV-enabled edge computing \\
-Ning et al.~\cite{survey_iouav_mec_ml} & 2023 & Integration of mobile edge computing and machine learning in the Internet of UAVs \\
-Cao et al.~\cite{survey_uav_swarm_ci} & 2024 & Computational intelligence for UAV swarm networking and collaboration \\
-Wang et al.~\cite{survey_end_edge_cloud} & 2024 & End--edge--cloud training, inference and model updates, including model partitioning \\
-Hao et al.~\cite{survey_hao2026} & 2026 & DNN partitioning models, granularity, optimization and experimental tools \\
-This review & 2026 & PRISMA review of inference architecture, evaluation and continuity in multi-UAV systems \\
+McEnroe et al.~\cite{survey_uav_edge_ai} & ? & \surveyadj & ? & ? & ? & ? & ? \\
+Ren et al.~\cite{survey_collab_dnn} & ? & ? & \surveycheck & ? & ? & \surveycheck & ? \\
+Xia et al.~\cite{survey_uav_resource} & ? & \surveyadj & ? & \surveyadj & ? & ? & ? \\
+Ning et al.~\cite{survey_iouav_mec_ml} & ? & \surveyadj & ? & \surveyadj & ? & ? & ? \\
+Cao et al.~\cite{survey_uav_swarm_ci} & ? & \surveycheck & ? & \surveyadj & ? & ? & ? \\
+Wang et al.~\cite{survey_end_edge_cloud} & ? & ? & \surveycheck & ? & ? & ? & ? \\
+Hao et al.~\cite{survey_hao2026} & ? & ? & \surveycheck & ? & ? & ? & ? \\
+This review & \surveycheck & \surveycheck & \surveycheck & \surveyadj & \surveyadj & \surveycheck & \surveycheck \\
 \bottomrule
 \end{tabular}
-\end{table}
+\par\smallskip\raggedright S, systematic review methods; U, multi-UAV or swarm systems; P, neural inference partitioning; J, joint trajectory and radio decisions; L, language models or mixture of experts; F, inference recovery; A, engineering appraisal. A check marks direct coverage, a triangle marks related or limited coverage, and ? marks coverage unestablished in the inspected material.\end{table}
 
 \subsection{Research questions and contributions}
 The review asks the following questions.
@@ -70,9 +70,9 @@ Sections~\ref{sec:methods} and~\ref{sec:selection} describe protocol and corpus,
 \subsection{Protocol and eligibility}
 We followed restart protocol version 1.1 and used PRISMA 2020 for reporting~\cite{prisma2020}. The protocol was documented after the original search runs and before fresh screening. The protocol, search translations, and differences between initial and accepted runs are retained with Supplement~S1. No public registration is documented.
 
-Eligible primary contributions were English-language, peer-reviewed journal or conference reports dated 1 January 2021 through 26 November 2026. They needed substantive methods and performance evidence for a setting with at least two UAVs or an explicitly evaluated multi-UAV, swarm, or flying ad hoc network. At least one identifiable neural inference workload had to be distributed, partitioned, assigned, migrated, fused, or jointly orchestrated across the participating system. We accepted a complete inference request as a dispatch unit when the report identified the neural workload and evaluated its orchestration. Thus, coverage of model splitting and failure recovery varies within the corpus.
+Eligible primary contributions were English-language, peer-reviewed journal or conference reports dated 1 January 2021 through 26 November 2026. They needed substantive methods and performance evidence for a setting with at least two UAVs or an explicitly evaluated multi-UAV, swarm, or flying ad hoc network. At least one identifiable neural inference workload had to be distributed, partitioned, assigned, migrated, fused, or jointly orchestrated across the participating system. At request or tracker-state granularity, eligibility requires evaluated assignment or transfer of an identifiable inference workload or its state across eligible nodes. Thus, coverage of model splitting and failure recovery varies within the corpus.
 
-Generic task offloading, standalone inference without collaboration, pure path planning, communications-only systems, and training-only work did not qualify. An evaluated inference component could still qualify in a larger planning or training system when it met the same collaboration requirement. Secondary sources were used for positioning. Preprints could inform version linkage, while eligibility required an established peer-reviewed report. Short reports were assessed against the same substantive method and evaluation criteria and the same publication requirement.
+Generic task offloading, standalone inference without collaboration, pure path planning, communications-only systems, and training-only work did not qualify. An evaluated inference component could still qualify in a larger planning or training system when it met the same collaboration requirement. Secondary sources were used for positioning. Preprints could inform version linkage, while eligibility required an established peer-reviewed report. Short research papers were assessed under the same methods, results, and peer-review criteria. A demo or extended abstract cannot establish eligibility as a peer-reviewed research report without supporting publication evidence.
 
 \subsection{Information sources and search strategy}
 IEEE Xplore, Scopus, and ACM Digital Library provided the core searches. OpenAlex added supplementary discovery. Each source contributed a high-recall search oriented around UAV and collaborative inference terms and a complementary search emphasizing neural models and decision variables. The eight selected runs were dated 26 November 2026. The IEEE and Scopus audit uses export-file modification time where that was the recorded timestamp basis. ACM results were captured manually from two lists under a month-level upper date filter. Screening enforced the exact day cutoff downstream. The revised OpenAlex complementary export superseded the earlier export. Web of Science Core Collection was unavailable, and citation chaining contributed no records to the restart.
@@ -82,19 +82,19 @@ Supplement~S1 archives search translations, selected inputs, and source-row iden
 \subsection{Screening, retrieval, and adjudication}
 Each record was assigned a stable identifier and linked to the original export row or ACM capture position. Deduplication used normalized DOI and bibliographic metadata with conflict checks. At title and abstract screening we excluded clear failures and advanced likely eligible and unclear records to full-text assessment. Retrieval logged the file, version, access route, and checksum. At full text, an exclusion required one primary criterion and a supporting locator. An unresolved criterion kept the report in awaiting classification. Retrieval succeeded for 136 of 137 sought reports (99.3\%).
 
-A report is a document. A study is the investigation behind one or more reports. Matching authors or similar titles were insufficient evidence of a common investigation. Linkage decisions considered explicit version links and substantive overlap in evaluated workloads, systems, and experimental designs using evidence from both reports. The accepted ledger retained the 28 examined candidate pairs as distinct.
+A report is a document. A study is the investigation behind one or more reports. Matching authors or similar titles were insufficient evidence of a common investigation. Linkage decisions considered explicit version links and substantive overlap in evaluated workloads, systems, and experimental designs using evidence from both reports. The accepted ledger retained all 28 examined pairs as distinct. Li et al. evaluated model-size selection for one stream in the conference study and competing CNN streams in the journal study~\cite{R0003,R0059}. Ren et al. evaluated parallel computation within layers in one study and sequential pipeline scheduling in another~\cite{R0015,R0010}.
 
-Gemini.app supplied structured screening, extraction, and appraisal evidence in the parent review. Codex checked the accepted evidence and drafted this manuscript. Independent duplicate human screening, extraction, and substantive author adjudication are undocumented. No human reviewer agreement statistic is available. The technical presentation uses the accepted included set at the coursework checkpoint. The three unresolved reports remain visible in the PRISMA flow and outside the 46-study denominators.
+Gemini.app assisted screening, extraction, and appraisal. Codex checked source evidence and prepared the manuscript. Human screening, extraction verification, and final author adjudication remain unverified. Supplement~S2 provides a 136-report adjudication log with reviewer fields awaiting completion. The synthesis uses the existing 46-study selection, with three reports awaiting classification.
 
 \subsection{Extraction and engineering appraisal}
-We extracted study and report identity, node roles, model and workload, partition and assignment choices, decision variables and constraints, hardware and radio conditions, mobility, evaluation platform, comparators, uncertainty, and availability of artifacts. We recorded latency and recovery time, energy, communication, accuracy, reliability, and scalability with source-defined boundaries. A quantitative extraction retains its original units, evaluated workload, comparator where applicable, and physical page plus a section, table, or figure locator. The accepted numerical ledger has 67 retained entries from 25 of 46 studies. Extraction was selective and this ledger provides the candidate frame for Table~\ref{tab:outcomes}.
+We extracted study identity, node roles, workload, assignments, decision variables, hardware, mobility, evaluation platform, comparator, uncertainty, and artifacts. A uniform post-protocol reread of all 46 results sections retained explicit numerical results with an identified workload, units, measurement boundary, and original physical page. A result was matched when the workload, operating conditions, and outcome denominator were shared. Results with sufficient context and separate denominators or without a matched comparator were kept as descriptive. Plot-only, unresolved, and duplicate entries were excluded from the retained count. Supplement~S3 records these decisions.
 
 We scored ten engineering domains. D01 checks whether the question and system model are stated. D02 checks constraints and assumptions. D03 asks whether the configuration can be reconstructed. D04 checks whether comparators share the conditions needed to isolate the claimed effect. D05 examines metric alignment with the objective. D06 assesses repetitions, variability, or sensitivity where applicable. D07 checks network and mobility realism relative to the claim. D08 asks whether conclusions respect evaluation scope. D09 examines availability of relevant code, data, traces, or artifacts. D10 checks limitations and declarations. Yes requires affirmative evidence, partial denotes incomplete support, no requires observed contrary or inadequate evidence, not reported denotes missing documentation, and not applicable requires a reason. Judgments retain a rationale and locator. The appraisal informs interpretation without supplying a study-level exclusion threshold.
 
 \subsection{Synthesis and additional coding}
-We used a structured narrative synthesis with study counts and explicit denominators. The technical tables use the same 46 report IDs as the accepted study map. The taxonomy assigns one primary label per dimension. Topology follows the primary execution path. A head--worker arrangement requires an explicit coordinator or worker hierarchy. Partition identifies a distinguishing data, model, or dispatch boundary. Table~\ref{tab:architecture} can describe additional boundaries in a hybrid design. Optimization labels distinguish mathematical methods, heuristics, learning-led methods, hybrids, and system rules or descriptive models.
+We used a structured narrative synthesis with study counts and explicit denominators. The technical tables use the same 46 report IDs as the accepted study map. The taxonomy assigns one primary label per dimension. Topology follows the primary execution path. A head--worker arrangement requires an explicit coordinator or worker hierarchy. Partition identifies a distinguishing data, model, or dispatch boundary. Table~\ref{tab:architecture} can describe additional boundaries in a hybrid design. Optimization labels distinguish mathematical methods, heuristics, learning-led methods, hybrids, and system rules or descriptive models. The RQ5 cross-tables use a separate summary code: evaluated specialized components, spatial or within-layer splitting, and representation or state transfer take precedence over generic stage or request labels. A reported Transformer workload takes precedence over a CNN in the corresponding summary evidence map, and a generic reference workload remains unclassified by family.
 
-Evaluation modality records a primary evidence setting under a five-category rule. Analytical calculation and conventional software simulation are distinct. Trace- or profile-backed studies use identifiable measured or trace inputs in a simulator or modeled workload. Bench evidence includes component measurements, emulated workers, and hardware-in-the-loop tests. The outdoor class requires a reported outdoor multi-UAV inference evaluation. Each quantitative contrast keeps its own test setting.
+Evaluation modality records a primary evidence setting under a five-category rule. Analytical calculation and conventional software simulation are distinct. Trace- or profile-backed studies use identifiable measured or trace inputs in a simulator or modeled workload. Bench evidence includes component measurements, emulated workers, and hardware-in-the-loop tests. The outdoor class requires a reported outdoor multi-UAV inference evaluation. For Table~\ref{tab:settings}, conventional and trace-driven software evaluations are combined. Its physical category includes reported multi-UAV systems and field prototypes, whereas the detailed modality distinguishes outdoor evaluations. A device profile alone does not establish that the collaborative system ran on hardware. Each quantitative contrast keeps its own test setting.
 
 For continuity we assign a primary evidence class from the documented event and response. A residual class records that the accepted extraction contains no qualifying mechanism or test. Simulated loss and physical disconnection remain distinguishable in Table~\ref{tab:evaluation}. The table distinguishes proposed actions, modeled responses, and observed outcomes where the sources document them.
 
@@ -102,23 +102,23 @@ Table~\ref{tab:outcomes} requires a named method, an identifiable within-study c
 
 \section{Study Selection and Corpus Overview}\label{sec:selection}
 \subsection{PRISMA selection}
-IEEE Xplore contributed 63 records, Scopus 110, ACM Digital Library 404, and OpenAlex 116. Removing 228 duplicates from 693 records left 465 screened records. Of these, 328 were excluded at title and abstract, and 137 reports were sought. The initial retrieval supplied 44 full texts. Supplemental retrieval supplied 92 of the 93 initially missing reports, giving 136 assessed full texts. R0116 is the sole unretrieved report. Its repository candidate contained code and did not supply the article.
+IEEE Xplore contributed 63 records, Scopus 110, ACM Digital Library 404, and OpenAlex 116. Removing 228 duplicates from 693 records left 465 screened records. Of these, 328 were excluded at title and abstract, and 137 reports were sought. The initial retrieval supplied 44 full texts. Supplemental retrieval supplied 92 of the 93 initially missing reports, giving 136 assessed full texts. The remaining repository candidate contained code and did not supply the report.
 
-The assessed reports reconcile as 46 inclusions, 87 exclusions, and three awaiting classification. The included reports represent 46 distinct studies. R0081 is an ACM demo with a prototype and unresolved peer-review status under E7. R0082 has a published bibliographic identity and the retained assessment copy is an arXiv version. Its accepted publication-version linkage is unresolved. R0132 awaits explicit evidence about eligible collaborative execution in the evaluated system (E2/E3). Figure~\ref{fig:flow} preserves these states. Supplement~S2 records the full-text exclusions and their primary reasons.
+The assessed reports reconcile as 46 inclusions, 87 exclusions, and three awaiting classification. The included reports represent 46 distinct studies. The pending cases concern an ACM demo with a documented prototype, a published conference report for which the retained assessment version is an arXiv preprint, and a report for which the evaluated multi-UAV inference boundary is unclear. Figure~\ref{fig:flow} preserves these states. Supplement~S2 records the original dispositions, evidence, and proposed author checks.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.98\linewidth]{prisma_flow.pdf}
-\caption{PRISMA 2020 selection flow at the HK261 comparison checkpoint. Counts distinguish records, reports, and studies.}\label{fig:flow}
+\caption{PRISMA 2020 selection flow. Counts distinguish records, reports, and studies.}\label{fig:flow}
 \end{figure}
 
 \subsection{Corpus composition}
-Figure~\ref{fig:macro} summarizes year and venue, neural workloads, optimization, and evaluation. Publication year is the bibliography's citation year, which can differ from an online-first date used to decide eligibility. The 2026 column is bounded by the November cutoff and cannot establish a full-calendar-year trend.
+Figure~\ref{fig:macro} summarizes year and venue, neural workloads, optimization, and evaluation. Publication year is the bibliography's citation year, which can differ from an online-first date used to decide eligibility. The 2026 column is bounded by the November cutoff and cannot establish a full-calendar-year trend. The locked corpus contains no 2021 study. A targeted backward check identified the 2021 DistInference report cited by Dhuheir et al.~\cite{R0068,dhuheir_iwcmc2021}. The candidate was absent as a record from the locked exports and was retained for a future screening update.
 
 The workload coding includes classifiers and detectors. ASAP distributes parts of a detector workload and Orion models partitioned dense language-model inference~\cite{R0014,R0074}. The expert-dispatch case has its own model and execution setting~\cite{R0118}. Mixed-family rows represent multiple evaluated families or heterogeneous learned components. The other-model class includes spiking navigation and transformer tracking~\cite{R0113,R0292}. Generic rows retain model proxies or reference workloads when the evaluated setting lacks a concrete model family.
 
 The modality panel separates conventional simulation from software evaluations informed by traces or device measurements. It also distinguishes software studies from bench and outdoor evaluations. See Table~\ref{tab:evaluation} for the setting of each study. In mixed evaluations, device execution and modeled wireless performance can describe different parts of one system.
-
+\input{editorial_mechanism_setting}
 \begin{figure}[htbp]
 \centering
 \input{technical_overview_figure}
@@ -157,7 +157,7 @@ A directed acyclic graph expresses which operations must finish before a depende
 Adaptive designs vary a model, precision, or transmitted representation along with placement. An edge--cloud policy can send more data based on prediction confidence~\cite{R0080}. The reported comparison pairs accuracy with latency at specified conditions. The two policy points describe a trade-off in that setting.
 
 \textbf{Expert, whole-request, and state dispatch (\groupcite{unit}{request}).}
-A dispatcher can allocate an inference request or expert, or transfer tracker state~\cite{R0058,R0118,R0292}. For whole-request dispatch the collaboration is in orchestration across nodes. For expert dispatch the chosen destination must host the expert or provide access to it. For tracker handoff the transferred state and tracking performance define a different workload and outcome.
+A dispatcher can allocate an inference request or expert, or transfer tracker state~\cite{R0058,R0118,R0292}. For whole-request dispatch the collaboration is in orchestration across nodes. For expert dispatch the chosen destination must host the expert or provide access to it. For tracker handoff the transferred state and tracking performance define the continuity boundary. Two included planning systems warrant scope review. Wang and Deng evaluate coordinated planning and perception without isolating an inference assignment, while Xiao et al. report distinct edge and cloud model roles and timings whose standalone measurement does not establish a matched estimate for orchestration~\cite{R0223,R0145}.
 
 \begin{figure}[htbp]
 \centering
@@ -245,18 +245,18 @@ In the Docker Swarm prototype, input continued while a dependent stage waited, a
 Predictive migration includes modeled random UAV failures, and other studies vary available nodes or model selectively activated replicas~\cite{R0002,R0073,R0106,R0110}. The observed quantities are specific to the stress and available outputs. Phase-resolved recovery and validation during flight require separate evidence.
 
 \textbf{No qualifying continuity evidence (\groupcite{resilience}{none}).}
-These studies inform architecture, optimization or evaluation, with no qualifying disruption-and-response evidence in the accepted extraction. Variable channels, normal queue dynamics, and a backup described without evaluation should not be read as measured fault recovery. Table~\ref{tab:evaluation} preserves relevant partial descriptions even where the aggregate class records no recovery evidence.
+These studies inform architecture, optimization or evaluation, with no qualifying disruption-and-response evidence in the accepted extraction. Variable channels, normal queue dynamics, and a backup described without evaluation should not be read as measured fault recovery. Table~\ref{tab:evaluation} preserves relevant partial descriptions even where the aggregate class records no recovery evidence. Figure~\ref{fig:taxonomy} counts four studies with modeled reliability or stress, four with planned or predictive transfer, five with link fallback, three with controlled disconnection, and five with node-unavailability evidence. The remaining 25 had no qualifying continuity evidence.
 \input{technical_evaluation}
 
 \subsection{Condition-specific quantitative comparisons}
-Table~\ref{tab:outcomes} presents nine contrasts from the retained ledger. Each comparison reports the workload, declared setup, measurement boundary, units, and original physical source position. The setup notes identify relevant changes between compared configurations.
+The uniform reread retained 98 entries from 36 of 46 studies, including 51 matched entries from 23 studies and 47 descriptive entries. Nine studies had plot-only outcomes under the extraction rule, and one had printed results with unresolved conditions~\cite{R0113}. Table~\ref{tab:coverage} shows coverage by mechanism. For layers or stages, Table~\ref{tab:settings} records 23 of 26 software or trace studies and zero coded physical multi-UAV evaluations. Table~\ref{tab:outcomes} illustrates nine previously verified contrasts using their original workloads, units, and measurement boundaries.
 
 In the edge--cloud test, the policies share the ResNet-18/101 pairing and bandwidth. Both mean top-1 accuracy and mean latency were higher for the proposed policy. The reported intervals are 95\% Student-$t$ confidence intervals across three seeds~\cite{R0080}. In the two-UAV VGG-16 simulation, DDCI had higher mean deadline satisfaction than Comm-Min across 30 common-seed episodes~\cite{R0092}.
 
-In Orion's parameterized simulation for Llama-2 7B at a 64-token input, distributed prefill is faster than the cloud-assisted configuration and slower than the single-device configuration, where the model fits~\cite{R0074}. These are prefill times for that setup. CIDER's comparison covers a routing boundary with profiled computation and modeled communication~\cite{R0075}.
+In Orion's parameterized simulation for Llama-2 7B at a 64-token input, distributed prefill is faster than the cloud-assisted configuration and slower than the single-device configuration, where the model fits~\cite{R0074}. These are prefill times for that setup. For Llama-2 70B, RDI-LLM and Orion-DP report approximately 0.8 and 0.3~s per token over the 30 and 22 missions they completed, respectively, from 30 seeded missions per method~\cite{R0110}. The per-token averages condition on different completed sets. CIDER's comparison covers a routing boundary with profiled computation and modeled communication~\cite{R0075}.
 
 ASAP reports seconds per task over a sequence in its indoor scale test~\cite{R0014}. The workstation study reports throughput while also changing total nominal worker thread allocation~\cite{R0125}. A controlled prototype continued processing at a lower frame rate after one device became unavailable~\cite{R0062}. These rate comparisons do not supply a fault-to-resumption time or a deadline-success count.
-
+\input{editorial_outcome_coverage}
 \begingroup\fontsize{8}{10}\selectfont\setlength{\tabcolsep}{2.5pt}\renewcommand{\arraystretch}{1.22}
 \begin{longtable}{@{}Y{.064\linewidth}Y{.158\linewidth}Y{.103\linewidth}Y{.103\linewidth}Y{.094\linewidth}Y{.122\linewidth}Y{.269\linewidth}@{}}
 \caption{Verified within-study contrasts. Values are proposed/configuration A versus comparator/configuration B. CI denotes 95\% Student-$t$ confidence interval half-width. A plain value preserves a reported point estimate or summary. Approximate values retain the approximation mark.}\label{tab:outcomes}\\
@@ -272,12 +272,12 @@ Study & Workload / setup & Method A & Baseline B & Metric & Values A / B & Condi
 \endlastfoot
 \cite{R0080} & CIFAR-10, edge and cloud & Proposed policy & GSUP & Top-1 (\%) & $90.4\pm0.5$ / $89.5\pm0.5$ & ResNet-18/101, 100 Mb/s, three seeds, mean $\pm$ CI, p. 5, Table I \\
 \cite{R0080} & Same model and data pair & Proposed policy & GSUP & Latency (ms) & $120\pm3$ / $117\pm3$ & Same condition and uncertainty; edge, transfer and cloud, p. 5, Table I \\
-\cite{R0092} & VGG-16, two UAVs in simulation & DDCI & Comm-Min & Deadline success (\%) & $71.6\pm3.4$ / $64.4\pm4.3$ & Mean $\pm$ SD over 30 common-seed episodes; all arrivals, p. 13, Table V \\
+\cite{R0092} & VGG-16, two UAVs in simulation & DDCI & Comm-Min & Deadline success (\%) & $71.6\pm3.4$ / $64.4\pm4.3$ & \mbox{Mean $\pm$ SD} over 30 common-seed episodes; all arrivals, p. 13, Table V \\
 \cite{R0075} & CIFAR-10, profiled and modeled links & CIDER & Full Final Exit & Compute + radio (ms) & 26.85 / 38.81 & Routing boundary only; frozen test router, p. 10, Table III \\
 \cite{R0074} & Llama-2 7B FP16, 64 tokens & Orion & Cloud-Edge-Opt & Prefill (ms) & 8,864 / 46,522 & Simulated four-node case, 1,000 Mb/s inter-UAV, 200 Mb/s air--ground, p. 16, Sect. 4.2 and Fig. 4 \\
 \cite{R0074} & Same parameterized simulation & Orion & Edge-Solo & Prefill (ms) & 8,864 / 8,047 & Same workload; single-device fit in this setting, p. 16, Sect. 4.2 and Fig. 4 \\
 \cite{R0014} & ResNet-152, 720 by 1280 video & ASAP, 20 devices & ASAP, four devices & Task sequence (s/task) & 1.32 / 2.32 & Indoor devices; span of 100 tasks divided by 100, p. 12, Table III \\
-\cite{R0062} & Faster R-CNN stream, embedded prototype & Three participating UAVs & Four participating UAVs & Rate (fps) & $\sim$2 / $\sim$3 & One communication program disabled and stages reallocated, p. 6, UAV unavailability test \\
+\cite{R0062} & Faster R-CNN stream, embedded prototype & Three participating UAVs & Four participating UAVs & Rate (fps) & $\sim$2 / $\sim$3 & Stages reallocated after disabling device communication, p. 6, UAV unavailability test \\
 \cite{R0125} & YOLO11m frame detection & Four workers & One worker & Rate (fps) & 22.4 / 6.9 & Four threads per worker; total worker thread allocations are 16 and 4, p. 3, Table I and Sect. IV.B \\
 \end{longtable}\endgroup
 
@@ -341,16 +341,16 @@ A benchmark can test whether outputs carry evidence of the expected model and in
 \subsection{Threats to validity and review limitations}
 Database coverage, manual ACM result capture, English-language eligibility, and the absence of Web of Science can affect recall. One sought report was not retrieved and three assessed reports await classification. The survey retains their status and does not assume their eventual inclusion or exclusion. The scope of the technical coding reflects the accepted evidence set, and alternate primary labels can be reasonable for composite studies. The supplementary coding ledger retains the decisions behind counts in the figures.
 
-AI-assisted selection, extraction, appraisal, and drafting used retained evidence and source checks. Independent duplicate human screening and extraction and author adjudication remain undocumented. The 67-entry outcome ledger is selective. The verification required for Table~\ref{tab:outcomes} does not remove variation in test conditions or support a pooled effect. Engineering appraisal describes reported design and evaluation. No formal risk-of-bias or certainty assessment was conducted. The comparison with related surveys is a contextual sample and supports a bounded positioning claim.
+AI-assisted selection, extraction, appraisal, and drafting used retained evidence and source checks. Human screening, extraction verification, and author adjudication remain unverified. Automation bias can influence decisions and extracted values at this stage. The uniform extraction rule samples explicit outcomes within domains. Differences in result availability can affect which studies and outcomes contribute numerical evidence. The verification required for Table~\ref{tab:outcomes} does not remove variation in test conditions or support a pooled effect. Engineering appraisal describes reported design and evaluation. No formal risk-of-bias or certainty assessment was conducted. The comparison with related surveys is a contextual sample and supports a bounded positioning claim.
 
 \section{Conclusion}\label{sec:conclusion}
 The 46-study taxonomy identifies peer, head--worker, and tiered execution, with different boundaries for layer, spatial, graph, representation, and request decisions. The evaluated methods vary in the placement, partitioning, resource, and mobility variables they control. Evidence ranges from analytical estimates to software, bench, and outdoor evaluations. Modeled reliability, planned handoff, and tested unavailability support claims at different continuity boundaries. The nine numerical comparisons are specific to their configurations, and appraisal identifies incomplete reporting of settings, comparators, and artifacts. We propose a benchmark with shared workloads, explicit resource accounting, and a timed recovery sequence.
 
 \section*{Statements and Declarations}
-This coursework draft uses the documented search inputs and the accepted study, extraction, and appraisal records. Author names and order, affiliations, correspondence, contributions, funding, competing interests, and public redistribution permissions await author confirmation. The AI-assisted workflow and human verification boundary appear in Section~\ref{sec:methods}.
+The AI-assisted workflow and outstanding human verification are described in Section~\ref{sec:methods}. Author details, contributions, funding, competing interests, and redistribution permissions await author confirmation.
 
 \section*{Supplementary material}
-Supplement S1 contains search strategies and filters. S2 lists exclusions and decision locators. S3 contains study characteristics, appraisal, outcomes, and the claim--source matrix. S4 maps manuscript claims to sources or derivations and indexes the code, data inputs, formulas, and reproduction commands for figures and tables. Original PDFs and database exports are retained under their access conditions.
+Supplement S1 contains search strategies and filters. S2 contains exclusions, decision locators, and the human adjudication log. S3 contains characteristics, appraisal, the RQ5 extraction rule, report coverage, and outcome evidence. S4 maps manuscript claims to primary sources or derivations and indexes the inputs, formulas, and code for figures and tables. Original reports are retained under their access conditions.
 
 \bibliography{references}
 \end{document}
