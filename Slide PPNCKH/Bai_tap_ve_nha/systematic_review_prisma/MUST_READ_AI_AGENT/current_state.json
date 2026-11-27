@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T18:02:48+07:00",
+  "updated_at": "2026-11-27T18:06:29+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "author_eligibility_reconciled_synthesis_update_pending",
@@ -8,21 +8,20 @@
   },
   "task": {
     "task_id": "hk261-pending-three-evidence",
-    "owner": "GEMINI_RESEARCH",
-    "status": "active",
+    "owner": "CODEX_WRITING",
+    "status": "completed",
     "started_at": "2026-11-27T17:48:01+07:00",
-    "updated_at": "2026-11-27T18:02:48+07:00",
+    "updated_at": "2026-11-27T18:06:29+07:00",
     "decision_id": "hk261-pending-three-evidence-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/pending_three_followup/correction_review.md"
+    "checkpoint_path": "restart_2026_11_26/integrity/pending_three_followup/review.md",
+    "completed_at": "2026-11-27T18:06:29+07:00"
   },
   "next_task": {
-    "task_id": "hk261-pending-three-evidence",
-    "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Run the native parent task and independently verify returned evidence for the three pending records.",
-    "acceptance": "Exactly three distinct records and accepted locators or explicit shortfalls; no eligibility mutations.",
-    "dispatch_brief": "restart_2026_11_26/integrity/pending_three_followup/source_correction_brief.md",
-    "message_id": "hk261-pending-three-evidence-20261127-source-correction"
+    "task_id": "hk261-pending-three-author-decisions",
+    "owner": "CODEX_WRITING",
+    "status": "blocked",
+    "action": "Wait for author confirmation on each pending report before any S2 or PRISMA changes. Then reconcile the active corpus before any comparison manuscript rebuild.",
+    "acceptance": "Change only explicitly authorized dispositions and reconcile any changed counts before synthesis."
   },
   "project": {
     "target_venue": "SN Computer Science",
