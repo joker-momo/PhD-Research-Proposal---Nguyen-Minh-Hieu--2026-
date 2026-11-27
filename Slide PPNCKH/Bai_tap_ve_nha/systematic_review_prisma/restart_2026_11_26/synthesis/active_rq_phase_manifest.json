@@ -1,5 +1,5 @@
 {
-  "status": "CORRECTION_READY",
+  "status": "CORRECTION_SUBMITTED",
   "baseline_commit": "539f298",
   "input_manifest": "restart_2026_11_26/synthesis/active_synthesis_input_manifest.json",
   "input_manifest_sha256": "ba90dbb8d67054b2adf52a3a39fc5fee9c3022ca17e47508cf38ebda6191b24f",
@@ -38,7 +38,10 @@
         "RQ4-B",
         "RQ5-A",
         "RQ5-B"
-      ]
+      ],
+      "correction_task_uuid": "09126d68-5532-4691-a683-33eff3fa3ff6",
+      "correction_context_id": "95abc80f-b221-4619-9794-9db0b39669df",
+      "correction_dispatch": "restart_2026_11_26/synthesis/active_rq_correction_dispatch.json"
     }
   ]
 }
