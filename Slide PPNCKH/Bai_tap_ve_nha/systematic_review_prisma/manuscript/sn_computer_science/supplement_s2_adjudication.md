@@ -15,8 +15,8 @@ contains 46 included, 90 excluded and none awaiting classification.
 S2 records eight final decisions (five inclusions and three exclusions) and
 zero open author-confirmed deferrals. Eight of 136 reports have author confirmation.
 The current selection includes R0082 in place of R0113 relative to the prior
-46-study comparison PDF. Extraction, appraisal and synthesis still require
-reconciliation to the current set.
+46-study comparison PDF. [S3](supplement_s3.md) records the reconciled
+extraction, appraisal, and synthesis.
 Independent duplicate human screening remains undocumented.
 
 The [audit report](audit_summary.json) and [LaTeX summary](adjudication_audit_table.tex)
@@ -25,6 +25,26 @@ report the current S2 coverage and reconciled PRISMA counts. Run
 Add `--check` to verify the saved outputs. The count of changed decisions uses
 only documented final decisions. Agreement statistics require paired reviewer
 entries. Confidence intervals require a documented sampling design.
+
+## S2 appendix. R1 source-verification record
+
+The [R1 source-verification sheet](../../restart_2026_11_26/synthesis/final_46/human_review_packet/R1/source_verification.csv)
+contains all 887 checks for the 46 included reports. On 27 November 2026,
+the author endorsed the Codex-assisted source review. The sheet records
+276 technical fields, 105 outcome entries, 46 report-coverage judgments,
+and 460 appraisal judgments, with available PDF locators and evidence limits.
+The [confirmation record](../../restart_2026_11_26/synthesis/final_46/human_review_packet/README.md#xác-nhận-hai-phiếu-đối-chiếu-nguồn)
+documents how the endorsement was recorded.
+
+To start from an S2 report ID, find it in the `record_id` column of the
+[report-to-packet key](../../restart_2026_11_26/synthesis/final_46/human_review_packet/coordinator/key.csv).
+Use its `packet_id` to find the corresponding checks in the R1 sheet.
+For the final treatment of the 12 priority items, see the
+[author decisions in S3](supplement_s3.md#twelve-priority-decisions).
+The [R1 full-text screening sheet](../../restart_2026_11_26/synthesis/final_46/human_review_packet/R1/screening.csv)
+has zero recorded screening decisions. The R1 source-verification sheet
+adds supporting evidence for included reports only. It adds zero decisions to
+the S2 eligibility audit and zero independent screening pairs.
 
 ## Priority records for the author
 
