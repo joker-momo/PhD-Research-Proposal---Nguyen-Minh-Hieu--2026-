@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T10:45:50+07:00",
+  "updated_at": "2026-11-27T10:57:46+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -9,21 +9,21 @@
   "task": {
     "task_id": "restart-supplemental-screening",
     "owner": "CODEX_WRITING",
-    "status": "completed",
+    "status": "rejected",
     "started_at": "2026-11-27T10:02:39+07:00",
-    "updated_at": "2026-11-27T10:45:50+07:00",
-    "completed_at": "2026-11-27T10:45:50+07:00",
-    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_02_correction_review.md",
+    "updated_at": "2026-11-27T10:57:46+07:00",
+    "completed_at": "2026-11-27T10:57:46+07:00",
+    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_03_review.md",
     "decision_id": "restart-supplemental-screening-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-screening-batch-03",
+    "task_id": "restart-supplemental-screening-batch-03-correction",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Screen the ten additional, deduplicated PDFs for HK261 eligibility.",
-    "acceptance": "10/10 distinct targeted PDFs and seven independently checked eligibility criteria per report.",
-    "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_03_brief.md",
-    "message_id": "ca787dcf-c163-4df7-820a-0bfce1c067e2"
+    "action": "Repair 15 named evidence keys for eight batch-03 reports.",
+    "acceptance": "8 exact IDs and 15 exact requested eligibility keys with checked source or documented uncertainty.",
+    "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_03_correction_brief.md",
+    "message_id": "04b69a42-ab48-44cd-b3b5-f75c4da7da1c"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -339,7 +339,10 @@
       "batch_02_correction_task_uuid": "686eeaff-1339-40ae-bd4f-4a0d6c7f70a6",
       "batch_02_correction_review": "restart_2026_11_26/supplemental_screening/batch_02_correction_review.md",
       "batch_02_accepted": "restart_2026_11_26/supplemental_screening/batch_02_accepted.json",
-      "batch_03_inputs": "restart_2026_11_26/supplemental_screening/batch_03_inputs.json"
+      "batch_03_inputs": "restart_2026_11_26/supplemental_screening/batch_03_inputs.json",
+      "batch_03_verdict": "FAIL",
+      "batch_03_task_uuid": "4b4ddef0-144a-46b8-8fb1-e60f99152dee",
+      "batch_03_review": "restart_2026_11_26/supplemental_screening/batch_03_review.md"
     }
   },
   "blockers": [],
