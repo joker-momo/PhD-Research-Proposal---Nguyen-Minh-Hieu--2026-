@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T14:07:13+07:00",
+  "updated_at": "2026-11-27T14:07:24+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_appraisal_in_progress",
@@ -11,18 +11,19 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T13:37:04+07:00",
-    "updated_at": "2026-11-27T14:07:13+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_02_composite_review.md",
+    "updated_at": "2026-11-27T14:07:24+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_03_dispatch.json",
     "decision_id": "restart-supplemental-appraisal-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-appraisal-batch-03",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "restart-supplemental-appraisal-batch-03-collect",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Dispatch P09 batch 03 once and verify the original PDFs.",
+    "action": "Retrieve the existing Task by UUID and independently check original-page evidence; do not resend.",
     "acceptance": "7 body-access locators, 70 distinct original-backed domains and verified chat cleanup.",
     "dispatch_brief": "restart_2026_11_26/appraisal/supplemental_batch_03_brief.md",
-    "message_id": "aebba6e8-134d-4ae4-8957-ec8396496540"
+    "message_id": "aebba6e8-134d-4ae4-8957-ec8396496540",
+    "task_uuid": "720b8516-3478-416c-95ab-61044918105e"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -490,7 +491,7 @@
       "studies_verified": 46
     },
     "supplemental_appraisal": {
-      "status": "BATCH_03_READY",
+      "status": "BATCH_03_SUBMITTED",
       "manifest": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
       "baseline_reports": 25,
       "supplemental_reports_required": 21,
@@ -526,7 +527,9 @@
       "batch_02_repair_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_02_repair_dispatch.json",
       "batch_02_composite_gate": "PASS_COMPOSITE",
       "batch_02_composite_review": "restart_2026_11_26/appraisal/supplemental_batch_02_composite_review.md",
-      "batch_02_accepted": "restart_2026_11_26/appraisal/supplemental_batch_02_accepted.json"
+      "batch_02_accepted": "restart_2026_11_26/appraisal/supplemental_batch_02_accepted.json",
+      "batch_03_uuid": "720b8516-3478-416c-95ab-61044918105e",
+      "batch_03_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_03_dispatch.json"
     }
   },
   "blockers": [],
