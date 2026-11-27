@@ -31,21 +31,22 @@ class TestAdjudicationAudit(unittest.TestCase):
         self.assertEqual(report["s2"]["reports_in_log"], 136)
         self.assertEqual(report["s2"]["author_processed_reports"], 8)
         self.assertEqual(report["s2"]["reports_without_author_confirmation"], 128)
-        self.assertEqual(report["s2"]["author_confirmed_deferrals"], {"R0082": "E7", "R0292": "E7"})
+        self.assertEqual(report["s2"]["author_confirmed_deferrals"], {})
         comparison = report["ai_to_final_human_decisions"]
-        self.assertEqual((comparison["changed_reports"], comparison["compared_reports"]), (3, 6))
-        self.assertEqual(comparison["changed_among_author_processed"], {"changed": 3, "total": 8})
+        self.assertEqual((comparison["changed_reports"], comparison["compared_reports"]), (4, 8))
+        self.assertEqual(comparison["changed_among_author_processed"], {"changed": 4, "total": 8})
         self.assertEqual(comparison["transitions"],
                          {"AWAITING_CLASSIFICATION -> EXCLUDE": ["R0081", "R0132"],
-                          "INCLUDE -> EXCLUDE": ["R0113"]})
+                          "INCLUDE -> EXCLUDE": ["R0113"],
+                          "AWAITING_CLASSIFICATION -> INCLUDE": ["R0082"]})
         self.assertEqual(report["paired_human_agreement"]["paired_reports"], 0)
         self.assertIsNone(report["paired_human_agreement"]["cohens_kappa"])
         table = render_latex(report)
         self.assertIn("Reports without author confirmation & 128", table)
-        self.assertIn("Changes among author-processed reports & 3 / 8", table)
-        self.assertIn("Changes among final human decisions & 3 / 6", table)
-        self.assertIn("44 / 90 / 2", table)
-        self.assertIn("PRISMA awaiting classification & R0082 (E7), R0292 (E7)", table)
+        self.assertIn("Changes among author-processed reports & 4 / 8", table)
+        self.assertIn("Changes among final human decisions & 4 / 8", table)
+        self.assertIn("46 / 90 / 0", table)
+        self.assertIn("PRISMA awaiting classification & None", table)
 
     def test_csv_rejects_duplicate_foreign_id_and_invalid_reason(self):
         with self.assertRaisesRegex(ValueError, "duplicate"):

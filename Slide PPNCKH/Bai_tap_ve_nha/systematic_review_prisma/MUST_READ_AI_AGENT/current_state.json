@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T18:18:47+07:00",
+  "updated_at": "2026-11-27T18:33:08+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "author_eligibility_reconciled_synthesis_update_pending",
-    "summary": "Current eligibility: 44 included, 90 excluded, 2 awaiting classification. The 29-page comparison PDF and synthesis freeze describe the previous 46-study snapshot."
+    "summary": "Current eligibility: 46 included, 90 excluded, none awaiting classification. The previous 46-study comparison PDF and synthesis freeze have R0113 in place of R0082."
   },
   "task": {
-    "task_id": "hk261-r0113-author-exclusion",
+    "task_id": "hk261-r0082-r0292-author-inclusions",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T18:17:39+07:00",
-    "updated_at": "2026-11-27T18:18:47+07:00",
-    "decision_id": "hk261-r0113-author-exclusion-v1",
+    "started_at": "2026-11-27T18:31:26+07:00",
+    "updated_at": "2026-11-27T18:33:08+07:00",
+    "decision_id": "hk261-r0082-r0292-author-inclusions-v1",
     "checkpoint_path": "manuscript/sn_computer_science/human_adjudication_log.csv",
-    "completed_at": "2026-11-27T18:18:47+07:00"
+    "completed_at": "2026-11-27T18:33:08+07:00"
   },
   "next_task": {
-    "task_id": "hk261-r0292-author-decision",
+    "task_id": "hk261-synthesis-reconciliation-final-46",
     "owner": "CODEX_WRITING",
-    "status": "blocked",
-    "action": "Await author ruling on R0292 after reviewing the original report and official workshop policy.",
-    "acceptance": "Record only the confirmed disposition and reconcile any eligibility change."
+    "status": "ready",
+    "action": "Reconcile R0082 extraction and appraisal, remove R0113 from synthesis, then rebuild and verify the comparison manuscript.",
+    "acceptance": "Every downstream denominator and record set matches the approved 46-study eligibility ledger. Preserve distinct IEEE and arXiv provenance for R0082."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -71,9 +71,9 @@
     "retrieval_reports": 136,
     "screened_reports": 136,
     "working_decisions": {
-      "include": 44,
+      "include": 46,
       "exclude": 90,
-      "uncertain": 2
+      "uncertain": 0
     },
     "restart_inventory": {
       "manifest": "restart_2026_11_26/step01_inventory.json",
@@ -555,36 +555,33 @@
     "supplemental_prisma": {
       "status": "ACTIVE_ELIGIBILITY_RECONCILIATION_PASS",
       "started_at": "2026-11-27T14:35:33+07:00",
-      "updated_at": "2026-11-27T18:18:47+07:00",
-      "completed_at": "2026-11-27T18:18:47+07:00",
+      "updated_at": "2026-11-27T18:33:08+07:00",
+      "completed_at": "2026-11-27T18:33:08+07:00",
       "counts_path": "restart_2026_11_26/prisma/prisma_counts.json",
       "flow": "restart_2026_11_26/prisma/prisma_flow.pdf",
       "review": "restart_2026_11_26/prisma/active_reconciliation_review.md",
       "counts": {
         "duplicate_records_removed": 228,
-        "included_reports": 44,
-        "included_studies": 44,
+        "included_reports": 46,
+        "included_studies": 46,
         "raw_records": 693,
         "records_excluded": 328,
         "records_screened": 465,
         "reports_assessed": 136,
-        "reports_awaiting_classification": 2,
+        "reports_awaiting_classification": 0,
         "reports_excluded": 90,
         "reports_not_retrieved": 1,
         "reports_sought": 137
       },
-      "awaiting_classification": {
-        "R0082": "E7",
-        "R0292": "E7"
-      },
+      "awaiting_classification": {},
       "not_retrieved": [
         "R0116"
       ],
-      "ledger_sha256": "0c20622bbe1a296239a09ac706ae51f09cdb50d8c73390dd22ac95f52dbc8971",
-      "flow_sha256": "82fd7f0e01cea1d6b5ba333135e4b3857e4f9461707fbfe7194d8b2177df41f7",
+      "ledger_sha256": "c5090d808b13dac072c7181c3f6528d9ad8b6b9385e204260cbaa907f583c42e",
+      "flow_sha256": "0f4e29ff3ba719c3a56e8a41e601521973594353fbb2667f01a4370f380e7790",
       "unexplained_arithmetic_differences": 0,
       "checklist": "restart_2026_11_26/prisma/active_prisma_checklist.md",
-      "checklist_sha256": "c57c335f385fcb66b2ff3398e6e6b527807c9c320e356d64fb208971fea5119b",
+      "checklist_sha256": "12b7cdf6d5966ad2ae6766a51bc8834e915b8d94a18c5ca5cbfdd00ded24dc29",
       "checklist_items_verified": 27,
       "checklist_locators_verified": 45,
       "checklist_status_counts": {
@@ -595,7 +592,10 @@
       },
       "final_pdf_page_locators": "PREVIOUS_46_STUDY_PDF",
       "checklist_completed_at": "2026-11-27T14:39:56+07:00",
-      "final_pdf_pages_verified_at": "2026-11-27T15:27:31+07:00"
+      "final_pdf_pages_verified_at": "2026-11-27T15:27:31+07:00",
+      "post_lock_study_ids": {
+        "R0082": "S047"
+      }
     },
     "supplemental_synthesis_inputs": {
       "status": "MECHANICAL_INPUTS_VERIFIED",
@@ -743,29 +743,23 @@
         "source_lookup_task_id": "01a21c52-100e-7a50-afbd-184b571116b8",
         "source_lookup_context_id": "01a21c52-1014-7952-8ad4-044ca498543a",
         "source_lookup_verdict": "FAIL_NOT_ADOPTED",
-        "author_confirmed_deferrals": {
-          "R0082": "E7",
-          "R0292": "E7"
-        },
+        "author_confirmed_deferrals": {},
         "adjudication_audit": {
           "json": "manuscript/sn_computer_science/audit_summary.json",
           "latex": "manuscript/sn_computer_science/adjudication_audit_table.tex",
           "paired_human_decisions": 0,
-          "final_human_decisions": 6,
-          "author_confirmed_deferrals": 2,
+          "final_human_decisions": 8,
+          "author_confirmed_deferrals": 0,
           "author_processed_reports": 8,
           "reports_without_author_confirmation": 128,
           "manuscript_table": 8,
           "physical_pdf_page": 24,
-          "changed_among_author_processed": "3/8",
-          "changed_among_final_decisions": "3/6",
+          "changed_among_author_processed": "4/8",
+          "changed_among_final_decisions": "4/8",
           "comparison_pdf_snapshot": "46-study selection and earlier S2 audit"
         }
       },
-      "reports_awaiting_classification": [
-        "R0082",
-        "R0292"
-      ]
+      "reports_awaiting_classification": []
     },
     "borderline_author_review": {
       "report": "restart_2026_11_26/integrity/borderline_author_review/report.md",
@@ -783,19 +777,16 @@
       "gemini_final_receipt": "restart_2026_11_26/integrity/borderline_author_review/gemini-parent-correction-receipt.json",
       "author_confirmations_added": 5,
       "working_prisma": {
-        "include": 44,
+        "include": 46,
         "exclude": 90,
-        "pending": {
-          "R0082": "E7",
-          "R0292": "E7"
-        }
+        "pending": {}
       },
       "author_confirmed": {
         "R0001": "INCLUDE",
         "R0113": "EXCLUDE (E3)",
         "R0145": "INCLUDE",
         "R0223": "INCLUDE",
-        "R0292": "AWAITING_CLASSIFICATION (E7)"
+        "R0292": "INCLUDE"
       }
     }
   },

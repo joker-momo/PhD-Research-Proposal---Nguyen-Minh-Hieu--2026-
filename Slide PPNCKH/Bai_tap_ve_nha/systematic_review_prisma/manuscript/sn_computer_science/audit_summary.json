@@ -1,16 +1,19 @@
 {
   "ai_to_final_human_decisions": {
     "changed_among_author_processed": {
-      "changed": 3,
+      "changed": 4,
       "total": 8
     },
-    "changed_reports": 3,
-    "compared_reports": 6,
+    "changed_reports": 4,
+    "compared_reports": 8,
     "scope": "Compared reports have documented final decisions. Author-processed reports include final decisions and confirmed deferrals. Both counts describe the documented subset.",
     "transitions": {
       "AWAITING_CLASSIFICATION -> EXCLUDE": [
         "R0081",
         "R0132"
+      ],
+      "AWAITING_CLASSIFICATION -> INCLUDE": [
+        "R0082"
       ],
       "INCLUDE -> EXCLUDE": [
         "R0113"
@@ -50,29 +53,23 @@
       "screened_minus_excluded_and_sought": 0,
       "sought_minus_unretrieved_and_assessed": 0
     },
-    "awaiting_classification_codes": {
-      "R0082": "E7",
-      "R0292": "E7"
-    },
+    "awaiting_classification_codes": {},
     "counts": {
       "duplicate_records_removed": 228,
-      "included_reports": 44,
-      "included_studies": 44,
+      "included_reports": 46,
+      "included_studies": 46,
       "raw_records": 693,
       "records_excluded": 328,
       "records_screened": 465,
       "reports_assessed": 136,
-      "reports_awaiting_classification": 2,
+      "reports_awaiting_classification": 0,
       "reports_excluded": 90,
       "reports_not_retrieved": 1,
       "reports_sought": 137
     }
   },
   "s2": {
-    "author_confirmed_deferrals": {
-      "R0082": "E7",
-      "R0292": "E7"
-    },
+    "author_confirmed_deferrals": {},
     "author_processed_reports": 8,
     "final_human_decisions": {
       "R0001": {
@@ -82,6 +79,10 @@
       "R0081": {
         "decision": "EXCLUDE",
         "reason": "E7"
+      },
+      "R0082": {
+        "decision": "INCLUDE",
+        "reason": ""
       },
       "R0113": {
         "decision": "EXCLUDE",
@@ -96,6 +97,10 @@
         "reason": ""
       },
       "R0223": {
+        "decision": "INCLUDE",
+        "reason": ""
+      },
+      "R0292": {
         "decision": "INCLUDE",
         "reason": ""
       }

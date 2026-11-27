@@ -26,8 +26,8 @@ IEEE Xplore: 63, Scopus: 110\\ ACM Digital Library: 404, OpenAlex: 116};
 \node[detail,right=of assessed] (fulltextex) {\textbf{Reports excluded ($n=90$)}\\
 Secondary or non-primary report: 12\\ No evaluated multi-UAV system: 29\\ No collaborative inference: 41\\ No evaluative evidence: 1\\ Language ineligible: 1\\ Incomplete or ineligible report type: 6};
 \node[main,below=13mm of assessed] (included) {\textbf{Included in the review}\\
-Reports of included studies ($n=44$)\\ Studies ($n=44$)};
-\node[detail,right=of included] (pending) {Reports awaiting classification ($n=2$)};
+Reports of included studies ($n=46$)\\ Studies ($n=46$)};
+\node[detail,right=of included] (pending) {Reports awaiting classification ($n=0$)};
 \foreach \from/\to in {raw/screen,screen/sought,sought/assessed,assessed/included,raw/dup,screen/screenex,sought/missing,assessed/fulltextex}
   \draw[fork] (\from) -- (\to);
 \draw[fork] ([yshift=-2.5mm]assessed.east) -- ++(2mm,0) |- (pending.west);

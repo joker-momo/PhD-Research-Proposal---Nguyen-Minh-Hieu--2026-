@@ -291,6 +291,7 @@ def audit_supplemental(project, baseline):
     adjudications = read_csv(adjudication_path, "Record_ID")
     eq(set(adjudications), set(partition), "S2 adjudication coverage")
     author_exclusions = {}
+    author_inclusions = set()
     for key, row in adjudications.items():
         decision = row["Final_Human_Decision"]
         if not decision:
@@ -299,7 +300,12 @@ def audit_supplemental(project, baseline):
            (partition[key]["pdf"], partition[key]["sha256"]), f"{key}: S2 report identity")
         reason = row["Primary_Reason_Code"]
         require(row["PDF_Page_Evidence"] and row["Adjudicated_Date"], f"{key}: missing author decision provenance")
-        if decision == partition[key]["status"] == "INCLUDE" and not reason:
+        if decision == "INCLUDE" and not reason:
+            if partition[key]["status"] == "INCLUDE":
+                continue
+            require(key in original_pending and row["Adjudication_Notes"],
+                    f"{key}: author inclusion requires a pending report and documented rationale")
+            author_inclusions.add(key)
             continue
         require(decision == "EXCLUDE" and row["Adjudication_Notes"]
                 and reason in {f"E{i}" for i in range(1, 8)},
@@ -347,6 +353,12 @@ def audit_supplemental(project, baseline):
             eq(study_map[report]["group_member_reports"], "|".join(members), f"{report}: study membership")
 
     state = json.loads((project / "MUST_READ_AI_AGENT/current_state.json").read_text())
+    added_study_ids = state["evidence"]["supplemental_prisma"].get("post_lock_study_ids", {})
+    eq(set(added_study_ids), author_inclusions, "post-lock inclusion linkage coverage")
+    new_ids = set(added_study_ids.values())
+    require(all(new_ids) and len(new_ids) == len(added_study_ids) and not new_ids.intersection(studies),
+            "new study IDs must be distinct and outside the locked study map")
+
     deferrals = state["evidence"]["alternative_technical_survey"]["editorial_integration"][
         "author_confirmed_deferrals"]
     for key, reason in deferrals.items():
@@ -366,11 +378,14 @@ def audit_supplemental(project, baseline):
     # Validate the locked synthesis corpus above before projecting the current eligibility set.
     for key, reason in author_exclusions.items():
         partition[key].update(status="EXCLUDE", reason=reason, pending="")
+    for key in author_inclusions:
+        partition[key].update(status="INCLUDE", reason="", pending="")
     groups = split(partition, "status", {"INCLUDE", "EXCLUDE", "AWAITING_CLASSIFICATION"})
     reasons = split({key: partition[key] for key in groups["EXCLUDE"]}, "reason", {f"E{i}" for i in range(1, 8)})
-    pending = {key: partition[key]["pending"] for key in groups["AWAITING_CLASSIFICATION"]}
+    pending = {key: partition[key]["pending"] for key in groups.setdefault("AWAITING_CLASSIFICATION", [])}
     included = set(groups["INCLUDE"])
-    studies = split({key: study_map[key] for key in included}, "study_id")
+    studies = split({key: study_map[key] for key in included - author_inclusions}, "study_id")
+    studies.update({study_id: [key] for key, study_id in added_study_ids.items()})
     pairs = {key: row for key, row in pairs.items() if {row["report_a"], row["report_b"]} <= included}
 
     retrieval_groups = {"NOT_RETRIEVED": ["R0116"], "RETRIEVED_PDF": sorted(partition)}

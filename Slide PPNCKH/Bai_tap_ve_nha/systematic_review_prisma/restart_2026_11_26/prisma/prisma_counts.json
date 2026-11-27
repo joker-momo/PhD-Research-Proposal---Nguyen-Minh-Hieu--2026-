@@ -5,19 +5,16 @@
     "screened_minus_excluded_and_sought": 0,
     "sought_minus_unretrieved_and_assessed": 0
   },
-  "awaiting_classification_codes": {
-    "R0082": "E7",
-    "R0292": "E7"
-  },
+  "awaiting_classification_codes": {},
   "counts": {
     "duplicate_records_removed": 228,
-    "included_reports": 44,
-    "included_studies": 44,
+    "included_reports": 46,
+    "included_studies": 46,
     "raw_records": 693,
     "records_excluded": 328,
     "records_screened": 465,
     "reports_assessed": 136,
-    "reports_awaiting_classification": 2,
+    "reports_awaiting_classification": 0,
     "reports_excluded": 90,
     "reports_not_retrieved": 1,
     "reports_sought": 137
@@ -3926,10 +3923,7 @@
     ]
   },
   "report_ids_by_fulltext_decision": {
-    "AWAITING_CLASSIFICATION": [
-      "R0082",
-      "R0292"
-    ],
+    "AWAITING_CLASSIFICATION": [],
     "EXCLUDE": [
       "R0007",
       "R0023",
@@ -4053,6 +4047,7 @@
       "R0075",
       "R0077",
       "R0080",
+      "R0082",
       "R0083",
       "R0089",
       "R0090",
@@ -4066,7 +4061,8 @@
       "R0125",
       "R0137",
       "R0145",
-      "R0223"
+      "R0223",
+      "R0292"
     ]
   },
   "report_ids_by_retrieval_decision": {
@@ -4826,10 +4822,16 @@
     ],
     "S045": [
       "R0223"
+    ],
+    "S046": [
+      "R0292"
+    ],
+    "S047": [
+      "R0082"
     ]
   },
   "supplemental_input_sha256_relative_to_project": {
-    "manuscript/sn_computer_science/human_adjudication_log.csv": "cdee0ebcd31d8815b43dd8449855bf2e0c912263d589d68c7951e6fd6f31a000",
+    "manuscript/sn_computer_science/human_adjudication_log.csv": "6b4b4ced328d5858a2ab5430280868340f97fba11d7e447f0292dc016f2b6b5d",
     "prisma_evidence/evidence_by_id.csv": "375c3b8d6d4a1d2465bfbd53359da2a68d3d0d17dd5a19b8f93c1a63bbb82aa9",
     "restart_2026_11_26/appraisal/active_appraisal_table.csv": "e3bec6ad43ca4b89b2812ea6ab1f74f70b07c5538e00e8d9b25cacc98dcff795",
     "restart_2026_11_26/appraisal/active_p09_appraisal_lock.json": "3f1c458ec32a0565914abba011114b3a97b14db95f8541af1d929560c9f2312f",
