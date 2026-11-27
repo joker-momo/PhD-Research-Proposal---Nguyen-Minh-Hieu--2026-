@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T16:12:27+07:00",
+  "updated_at": "2026-11-27T16:14:34+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "rq5_uniform_sources_verified",
@@ -11,19 +11,21 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T15:54:06+07:00",
-    "updated_at": "2026-11-27T16:12:27+07:00",
+    "updated_at": "2026-11-27T16:14:34+07:00",
     "checkpoint_path": "restart_2026_11_26/extraction/rq5_uniform/source_index_review.md",
     "decision_id": "hk261-editorial-uniform-outcome-inventory-v1"
   },
   "next_task": {
     "task_id": "hk261-editorial-uniform-outcome-inventory-source-index-correction",
     "owner": "GEMINI_RESEARCH",
-    "status": "ready",
+    "status": "active",
     "action": "Confirm the two experimental settings from the original PDFs.",
     "acceptance": "Two unique verified settings with exact excerpts, no extra IDs.",
     "dispatch_brief": "restart_2026_11_26/extraction/rq5_uniform/source_index_correction_brief.md",
     "message_id": "hk261-editorial-rq5-source-map-ff1cf4b-correction-1",
-    "parent_task_uuid": "5b989d57-74a6-45e0-ba85-f393c60e5cf4"
+    "parent_task_uuid": "5b989d57-74a6-45e0-ba85-f393c60e5cf4",
+    "task_uuid": "c8f34ada-2ed3-4a57-a23e-243a30c761ff",
+    "context_id": "81eb84f8-c35a-4a8d-abeb-f2af25d6bb5f"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -745,7 +747,10 @@
       ],
       "source_index_receipt": "restart_2026_11_26/extraction/rq5_uniform/source_index_receipt.json",
       "source_index_review": "restart_2026_11_26/extraction/rq5_uniform/source_index_review.md",
-      "source_index_first_outcome": "rejected_for_two_setting_labels"
+      "source_index_first_outcome": "rejected_for_two_setting_labels",
+      "manuscript_commit": "6869e63",
+      "source_index_correction_dispatch": "restart_2026_11_26/extraction/rq5_uniform/source_index_correction_dispatch.json",
+      "source_index_correction_uuid": "c8f34ada-2ed3-4a57-a23e-243a30c761ff"
     }
   },
   "blockers": [],
