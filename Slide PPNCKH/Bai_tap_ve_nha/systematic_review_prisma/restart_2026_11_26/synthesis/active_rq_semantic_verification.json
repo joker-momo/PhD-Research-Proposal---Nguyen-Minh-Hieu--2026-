@@ -1,0 +1,22 @@
+{
+  "verdict": "PASS",
+  "all_claims_source_checked": 10,
+  "unsupported_adopted_claims": 0,
+  "evidence_by_claim": {
+    "RQ1-A": "R0001 physical p. 2, II.A shows five UAV/edge/cloud cases and two partition positions. R0014 p. 4, Fig. 3 and III place model segments between clusters and data inside clusters. Keep these units distinct.",
+    "RQ1-B": "R0092 p. 6, III.E/IV system description selects one partner and one layer cut. R0118 p. 4, III.A places dedicated model experts on individual UAVs with the target-to-expert routing described in III and IV. Do not generalize to all mixture-of-experts systems.",
+    "RQ2-A": "R0006 pp. 3–4 shows fixed altitude, 2D hovering position, layer allocation, completion time and resource constraints. R0064 pp. 6–7 bounds continuous 3D motion, discrete frame count and binary offload under delay, sensing, accuracy and energy targets. The paired settings illustrate different decision horizons.",
+    "RQ2-B": "R0058 p. 11 explicitly states a task can be offloaded to one server at most and gives aggregate utility. R0080 pp. 2 and 5 gives conditional raw upload based on feature confidence and accuracy optimization with bandwidth. Reviewed the original R0058 glyph; the page visibly prints offloaded where extraction substituted o®loaded.",
+    "RQ3-A": "R0014 physical p. 10, Fig. 12 differentiates indoor hardware from five outdoor UAVs. The accepted D07 is PARTIAL. R0137 pp. 10–11 distinguish hardware profiling and deployment from modeled path loss. D07 PARTIAL includes modeled failure rates and the bounds of a fault test.",
+    "RQ3-B": "R0118 p. 9, VI.B and Table IV states common planner and approximately matched per-UAV memory with different expert and comparator scales. R0125 p. 3, IV.A–B allocates four threads per worker, so total available worker threads grow. Both P09 D04 judgments are PARTIAL.",
+    "RQ4-A": "R0002 p. 7, VII.A gives simulated service migration and random failures at 0.0001 per time slot. R0092 p. 4, III.C gives an interrupted link/partner departure state machine with reassignment or local recompute; the setting is simulation.",
+    "RQ4-B": "R0038 p. 5, V.B.2 removes a bench device and resumes from stored Redis state. R0292 p. 3, 3.2 gives recorded footage; p. 5, 5.2 reports hardware-in-the-loop. Keep matching/continuity observations within their reported conditions.",
+    "RQ5-A": "Visually checked original R0080 p. 5, Table I, ResNet-18 edge and ResNet-101 cloud. Ours vs GSUP values and mean ± 95% Student-t CI from three independently seeded runs are correct. Physical p. 6 states the 100 Mbps condition. No statistical separation inference.",
+    "RQ5-B": "Visually checked original R0092 p. 13, Table V. VGG-16 DDCI 71.6 ± 3.4 versus Comm-Min 64.4 ± 4.3, percent, mean ± SD and strict all-arrived-task denominator for 30 common-seed episodes. The P09 D04 YES source describes shared collaborative substrate and separately identifies unmatched comparisons."
+  },
+  "source_text_normalization": {
+    "discretionary_line_wraps": "R0006 p. 4 formulation; R0064 p. 7 computation; R0292 p. 3 waters; R0292 p. 5 hardware-in-the-loop; R0080 p. 5 experimental.",
+    "glyph_normalization": "NFKC for standard ligatures; verified printed offloaded with a PyMuPDF clip on R0058 p. 11.",
+    "short_original_excerpt": "R0080 p. 5 Threshold update is the exact Algorithm 1 label. The two-word match is sufficient in that named algorithm."
+  }
+}

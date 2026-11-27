@@ -1,0 +1,146 @@
+{
+  "claims": [
+    {
+      "claim_id": "RQ1-A",
+      "finding": "R0001 uses two candidate layer cuts to distribute inference across a source UAV, a selected edge server and an optional cloud tier. R0014 partitions the model across airborne clusters and distributes spatial portions of input or feature data among UAVs within a cluster.",
+      "reports": [
+        "R0001",
+        "R0014"
+      ],
+      "limitation": "Architecture labels alone do not specify the partition or dispatch unit. The four reports illustrate configurations."
+    },
+    {
+      "claim_id": "RQ1-B",
+      "finding": "R0092 uses a selected neighboring UAV and a DNN layer cut on a two-UAV mini-batch pipeline. R0118 places specialized expert models on UAVs and dispatches classification to a UAV hosting the corresponding expert.",
+      "reports": [
+        "R0092",
+        "R0118"
+      ],
+      "limitation": "Architecture labels alone do not specify the partition or dispatch unit. The four reports illustrate configurations."
+    },
+    {
+      "claim_id": "RQ2-A",
+      "finding": "R0006 minimizes pipeline completion time by jointly optimizing horizontal hovering positions at fixed altitude and layer placement under memory, energy and coverage constraints. R0064 minimizes delay subject to sensing, accuracy and energy constraints by coupling continuous three-dimensional motion, discrete frame selection and binary offloading. The formulations operate at different time and decision granularities.",
+      "reports": [
+        "R0006",
+        "R0064"
+      ],
+      "limitation": "Decision horizons, workloads and constraints differ. The examples do not establish comparative optimization performance."
+    },
+    {
+      "claim_id": "RQ2-B",
+      "finding": "R0058 models whole requests assigned to at most one server and maximizes aggregate utility. R0080 always transmits features and conditionally adds quantized raw data when confidence is low, tuning confidence thresholds and quantization to maximize accuracy under bandwidth constraints.",
+      "reports": [
+        "R0058",
+        "R0080"
+      ],
+      "limitation": "Decision horizons, workloads and constraints differ. The examples do not establish comparative optimization performance."
+    },
+    {
+      "claim_id": "RQ3-A",
+      "finding": "R0014 reports indoor electronics experiments and outdoor experiments with five UAVs. R0137 reports physical hardware profiling and policy deployment, with probabilistic radio and modeled failures used in the evaluation setup. The D07 judgments for both are PARTIAL, with limited evidence on field mobility or communication conditions.",
+      "reports": [
+        "R0014",
+        "R0137"
+      ],
+      "limitation": "Physical profiling, physical deployment and radio modeling are separate evidence types. Comparator resource and model differences constrain attribution."
+    },
+    {
+      "claim_id": "RQ3-B",
+      "finding": "R0118 compares systems under a common trajectory planner and per-UAV memory budget with different model complexities. R0125 increases aggregate compute as it adds workstation workers at four threads each. Both D04 judgments are PARTIAL, and the contrasts support claims about the evaluated configurations.",
+      "reports": [
+        "R0118",
+        "R0125"
+      ],
+      "limitation": "Physical profiling, physical deployment and radio modeling are separate evidence types. Comparator resource and model differences constrain attribution."
+    },
+    {
+      "claim_id": "RQ4-A",
+      "finding": "R0002 simulates service migration during UAV movements and injects random UAV failures at probability 0.0001 per time slot in its reported scenario. R0092 evaluates partner mobility and link loss in simulation and implements reassignment or source-local handling for interrupted work.",
+      "reports": [
+        "R0002",
+        "R0092"
+      ],
+      "limitation": "Simulated loss, deliberate node disconnection and planned handover answer distinct continuity questions. Field recovery rates cannot be inferred from them."
+    },
+    {
+      "claim_id": "RQ4-B",
+      "finding": "R0038 deliberately removes a node and resumes processing from the last Redis checkpoint. R0292 uses recorded marine footage and hardware-in-the-loop onboard tests in its study of planned handoff. The two designs probe different continuity mechanisms and test conditions.",
+      "reports": [
+        "R0038",
+        "R0292"
+      ],
+      "limitation": "Simulated loss, deliberate node disconnection and planned handover answer distinct continuity questions. Field recovery rates cannot be inferred from them."
+    },
+    {
+      "claim_id": "RQ5-A",
+      "finding": "In R0080, this ResNet-18/ResNet-101 comparison at 100 Mbps reports a higher mean top-1 accuracy and a higher mean latency for the proposed scheme than for GSUP. The three-seed confidence intervals describe the settings as reported, and the review infers no statistical separation.",
+      "reports": [
+        "R0080"
+      ],
+      "limitation": "The numerical contrasts are within study. Seeds, episodes, outcome definitions and uncertainty summaries differ across studies.",
+      "quantitative": [
+        {
+          "metric": "top-1 accuracy",
+          "value": "90.4 ± 0.5",
+          "units": "%",
+          "baseline": "GSUP: 89.5 ± 0.5%",
+          "denominator": "mean with 95% Student-t confidence intervals across three independent seeds for each setting",
+          "workload": "synthesized non-identical CIFAR-10 test inputs, ResNet-18 edge and ResNet-101 cloud",
+          "conditions": "simulated edge–cloud setup; 100 Mbps Table I comparison; descriptive estimates without statistical separation claim",
+          "page": 5,
+          "locator": "Table I, ResNet-18/ResNet-101 block, Ours and GSUP, Acc. (%)"
+        },
+        {
+          "metric": "simulated end-to-end inference time per sample",
+          "value": "120 ± 3",
+          "units": "ms",
+          "baseline": "GSUP: 117 ± 3 ms",
+          "denominator": "mean with 95% Student-t confidence intervals across three independent seeds for each setting",
+          "workload": "synthesized non-identical CIFAR-10 test inputs, ResNet-18 edge and ResNet-101 cloud",
+          "conditions": "same configuration as paired top-1 result, with edge, transfer and cloud time included; no latency improvement claimed against GSUP",
+          "page": 5,
+          "locator": "Table I, ResNet-18/ResNet-101 block, Ours and GSUP, L (ms)"
+        }
+      ]
+    },
+    {
+      "claim_id": "RQ5-B",
+      "finding": "In R0092's VGG-16 two-UAV simulator comparison, DDCI and Comm-Min share the collaborative substrate. Deadline satisfaction uses all arrived tasks and uncertainty represents variation across 30 common-seed episodes. The D04 appraisal supports this within-study comparison.",
+      "reports": [
+        "R0092"
+      ],
+      "limitation": "The numerical contrasts are within study. Seeds, episodes, outcome definitions and uncertainty summaries differ across studies.",
+      "quantitative": [
+        {
+          "metric": "deadline satisfaction",
+          "value": "71.6 ± 3.4",
+          "units": "%",
+          "baseline": "Comm-Min: 64.4 ± 4.3%",
+          "denominator": "strict all-arrived-tasks; mean ± SD over 30 common-seed episodes",
+          "workload": "VGG-16 in the custom Gymnasium simulator",
+          "conditions": "shared two-UAV mini-batch substrate, different decision policies; result applies to this workload and comparator",
+          "page": 13,
+          "locator": "Table V, VGG-16, DDCI (Ours) and Comm-Min rows, Deadline Sat. (%)"
+        }
+      ]
+    }
+  ],
+  "limitations": {
+    "RQ1": "Architecture labels alone do not specify the partition or dispatch unit. The four reports illustrate configurations.",
+    "RQ2": "Decision horizons, workloads and constraints differ. The examples do not establish comparative optimization performance.",
+    "RQ3": "Physical profiling, physical deployment and radio modeling are separate evidence types. Comparator resource and model differences constrain attribution.",
+    "RQ4": "Simulated loss, deliberate node disconnection and planned handover answer distinct continuity questions. Field recovery rates cannot be inferred from them.",
+    "RQ5": "The numerical contrasts are within study. Seeds, episodes, outcome definitions and uncertainty summaries differ across studies."
+  },
+  "erratum": "restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json",
+  "report_count": 46,
+  "study_count": 46,
+  "pooled_effects": 0,
+  "status": "PASS",
+  "verified_at": "2026-11-27T15:02:30+07:00",
+  "research_provider": "Gemini.app",
+  "parent_task_uuid": "92e9eeb1-b7e8-4651-8956-0054b3a93f3a",
+  "correction_task_uuid": "09126d68-5532-4691-a683-33eff3fa3ff6",
+  "matrix": "restart_2026_11_26/synthesis/active_claim_source_matrix.csv"
+}

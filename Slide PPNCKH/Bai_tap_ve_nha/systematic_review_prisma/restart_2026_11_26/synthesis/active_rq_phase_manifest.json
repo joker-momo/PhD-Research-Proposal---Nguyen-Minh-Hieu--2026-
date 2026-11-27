@@ -1,5 +1,5 @@
 {
-  "status": "CORRECTION_SUBMITTED",
+  "status": "ACTIVE_RQ_SYNTHESIS_PASS",
   "baseline_commit": "539f298",
   "input_manifest": "restart_2026_11_26/synthesis/active_synthesis_input_manifest.json",
   "input_manifest_sha256": "ba90dbb8d67054b2adf52a3a39fc5fee9c3022ca17e47508cf38ebda6191b24f",
@@ -41,7 +41,24 @@
       ],
       "correction_task_uuid": "09126d68-5532-4691-a683-33eff3fa3ff6",
       "correction_context_id": "95abc80f-b221-4619-9794-9db0b39669df",
-      "correction_dispatch": "restart_2026_11_26/synthesis/active_rq_correction_dispatch.json"
+      "correction_dispatch": "restart_2026_11_26/synthesis/active_rq_correction_dispatch.json",
+      "correction_gate": "PASS",
+      "correction_result": "restart_2026_11_26/synthesis/active_rq_correction_raw.json",
+      "review": "restart_2026_11_26/synthesis/active_rq_review.md",
+      "cleanup_verified": true
     }
-  ]
+  ],
+  "completed_at": "2026-11-27T15:02:30+07:00",
+  "accepted_outputs": {
+    "restart_2026_11_26/synthesis/active_appraisal_summary.csv": "fc79a5890fc9f4db90404a02c8349d7994b7da9f567496cadba456c6c3ed260c",
+    "restart_2026_11_26/synthesis/active_claim_source_matrix.csv": "380055f6115967b090ae6f19613898e7f5515fa823854e7b04cd66d15753b6b4",
+    "restart_2026_11_26/synthesis/active_outcome_evidence.csv": "c4b3351e6c3426d74eca05719d8792f57c43a168505b46db8c35e2486225393c",
+    "restart_2026_11_26/synthesis/active_rq_claims.json": "7a8d12573e90b064438222ee1428b794ce1dff8ecf735bc15a18a5c591a4ec2f",
+    "restart_2026_11_26/synthesis/active_rq_outcome_table.csv": "10df1b4c5cfe68ea9113d13242c53612bb3a5054c9330e5a41407eeb403fd4f6",
+    "restart_2026_11_26/synthesis/active_study_characteristics.csv": "8148c7f0655ac8713d4fbb0b144b69bede00d973540acfd1d917b37b6da64145",
+    "restart_2026_11_26/synthesis/active_rq_correction_raw.json": "0e5deae1bf8d3420ae830b3c264d15642c6d92f36e6fa1fc2ce94b3b5f050d3b",
+    "restart_2026_11_26/synthesis/active_rq_correction_mechanical.json": "8c332938a3c482368b4866472efd8099f9d60649709c0ca1e41b597c3b6de666",
+    "restart_2026_11_26/synthesis/active_rq_semantic_verification.json": "bfff59060a87f7223ccd38c4fecdcd0be6cb04a0dbbe4bdfbb199913a9143719",
+    "restart_2026_11_26/synthesis/active_rq_review.md": "fe8c39abbfd8fa4cfbf8d1af5f70e68233530d5746547426cdea00bbb0699bb9"
+  }
 }

@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T14:41:25+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T15:02:30+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -775,9 +775,9 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=4.
 <a id="buoc-14"></a>
 ## Bước 14 · Tổng hợp theo câu hỏi nghiên cứu
 
-**Đã chốt theo sổ tiến độ** · `2026-11-27T08:00:27+07:00`
+**Đã chốt theo sổ tiến độ** · `2026-11-27T15:02:30+07:00`
 
-Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
+Nghiệm thu cấp bước đã ghi trong sổ: PASS=2.
 
 - [accepted_claims.json](../restart_2026_11_26/synthesis/accepted_claims.json)
 - [appraisal_summary.md](../restart_2026_11_26/synthesis/appraisal_summary.md)
@@ -795,6 +795,19 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
 - [study_characteristics.csv](../restart_2026_11_26/synthesis/study_characteristics.csv)
 - [active_synthesis_input_index.csv](../restart_2026_11_26/synthesis/active_synthesis_input_index.csv)
 - [active_synthesis_input_manifest.json](../restart_2026_11_26/synthesis/active_synthesis_input_manifest.json)
+- [active_rq_phase_manifest.json](../restart_2026_11_26/synthesis/active_rq_phase_manifest.json)
+- [active_appraisal_summary.csv](../restart_2026_11_26/synthesis/active_appraisal_summary.csv)
+- [active_claim_source_matrix.csv](../restart_2026_11_26/synthesis/active_claim_source_matrix.csv)
+- [active_outcome_evidence.csv](../restart_2026_11_26/synthesis/active_outcome_evidence.csv)
+- [active_rq_claims.json](../restart_2026_11_26/synthesis/active_rq_claims.json)
+- [active_rq_outcome_table.csv](../restart_2026_11_26/synthesis/active_rq_outcome_table.csv)
+- [active_study_characteristics.csv](../restart_2026_11_26/synthesis/active_study_characteristics.csv)
+- [active_rq_correction_raw.json](../restart_2026_11_26/synthesis/active_rq_correction_raw.json)
+- [active_rq_correction_mechanical.json](../restart_2026_11_26/synthesis/active_rq_correction_mechanical.json)
+- [active_rq_semantic_verification.json](../restart_2026_11_26/synthesis/active_rq_semantic_verification.json)
+- [active_rq_review.md](../restart_2026_11_26/synthesis/active_rq_review.md)
+- [active_rq_p08_erratum_R0092.json](../restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json)
+- [active_rq_primary_review.md](../restart_2026_11_26/synthesis/active_rq_primary_review.md)
 
 <a id="buoc-15"></a>
 ## Bước 15 · Viết manuscript LaTeX SN Computer Science

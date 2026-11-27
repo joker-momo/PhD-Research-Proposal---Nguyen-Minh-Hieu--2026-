@@ -1,0 +1,11 @@
+{
+  "task_uuid": "09126d68-5532-4691-a683-33eff3fa3ff6",
+  "transport": "TASK_STATE_COMPLETED",
+  "coverage": 10,
+  "expected_claims": 10,
+  "appraisals": 5,
+  "numeric_rows": 3,
+  "verified_exact_original_quotes": 26,
+  "errors": [],
+  "source_text_normalization": "Whitespace, case and NFKC; six specific verified line wraps or glyph repairs listed in the semantic review."
+}

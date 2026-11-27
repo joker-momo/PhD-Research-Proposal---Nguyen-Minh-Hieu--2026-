@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T14:41:25+07:00",
+  "updated_at": "2026-11-27T15:02:30+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -1409,7 +1409,7 @@
       "owner": "GEMINI_RESEARCH + CODEX_WRITING",
       "status": "completed",
       "started_at": "2026-11-27T02:16:26+07:00",
-      "updated_at": "2026-11-27T08:00:27+07:00",
+      "updated_at": "2026-11-27T15:02:30+07:00",
       "completed_at": "2026-11-27T08:00:27+07:00",
       "artifacts": [
         "restart_2026_11_26/synthesis/accepted_claims.json",
@@ -1427,27 +1427,65 @@
         "restart_2026_11_26/synthesis/rq_synthesis_transport_failure.json",
         "restart_2026_11_26/synthesis/study_characteristics.csv",
         "restart_2026_11_26/synthesis/active_synthesis_input_index.csv",
-        "restart_2026_11_26/synthesis/active_synthesis_input_manifest.json"
+        "restart_2026_11_26/synthesis/active_synthesis_input_manifest.json",
+        "restart_2026_11_26/synthesis/active_rq_phase_manifest.json",
+        "restart_2026_11_26/synthesis/active_appraisal_summary.csv",
+        "restart_2026_11_26/synthesis/active_claim_source_matrix.csv",
+        "restart_2026_11_26/synthesis/active_outcome_evidence.csv",
+        "restart_2026_11_26/synthesis/active_rq_claims.json",
+        "restart_2026_11_26/synthesis/active_rq_outcome_table.csv",
+        "restart_2026_11_26/synthesis/active_study_characteristics.csv",
+        "restart_2026_11_26/synthesis/active_rq_correction_raw.json",
+        "restart_2026_11_26/synthesis/active_rq_correction_mechanical.json",
+        "restart_2026_11_26/synthesis/active_rq_semantic_verification.json",
+        "restart_2026_11_26/synthesis/active_rq_review.md",
+        "restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json",
+        "restart_2026_11_26/synthesis/active_rq_primary_review.md"
       ],
       "acceptance": [
         {
           "criterion": "Gemini.app composite synthesis",
           "verdict": "PASS",
           "evidence": "10/10 findings, 26/26 locators, 2/2 frequency ID sets and quantitative rows, 25 characteristic entries and 250 domain judgments."
+        },
+        {
+          "criterion": "Active RQ synthesis",
+          "verdict": "PASS",
+          "evidence": "10/10 findings, 40 source traces, five RQ limitations, 46 characteristics, 460 appraisal judgments and three bounded outcome contrasts."
         }
       ],
       "supplemental": {
-        "status": "MECHANICAL_INPUTS_VERIFIED",
+        "status": "ACTIVE_RQ_SYNTHESIS_PASS",
         "started_at": "2026-11-27T14:40:19+07:00",
-        "updated_at": "2026-11-27T14:41:25+07:00",
-        "completed_at": "2026-11-27T14:41:25+07:00",
+        "updated_at": "2026-11-27T15:02:30+07:00",
+        "completed_at": "2026-11-27T15:02:30+07:00",
         "manifest": "restart_2026_11_26/synthesis/active_synthesis_input_manifest.json",
         "manifest_sha256": "ba90dbb8d67054b2adf52a3a39fc5fee9c3022ca17e47508cf38ebda6191b24f",
         "index": "restart_2026_11_26/synthesis/active_synthesis_input_index.csv",
         "index_sha256": "db54a085476f68383209054ccdeb5b27975804375895d8bbb785e054b94ed7fc",
         "report_count": 46,
         "study_count": 46,
-        "claim_status": "PENDING_RQ_SYNTHESIS"
+        "claim_status": "PASS",
+        "artifacts": [
+          "restart_2026_11_26/synthesis/active_rq_phase_manifest.json",
+          "restart_2026_11_26/synthesis/active_appraisal_summary.csv",
+          "restart_2026_11_26/synthesis/active_claim_source_matrix.csv",
+          "restart_2026_11_26/synthesis/active_outcome_evidence.csv",
+          "restart_2026_11_26/synthesis/active_rq_claims.json",
+          "restart_2026_11_26/synthesis/active_rq_outcome_table.csv",
+          "restart_2026_11_26/synthesis/active_study_characteristics.csv",
+          "restart_2026_11_26/synthesis/active_rq_correction_raw.json",
+          "restart_2026_11_26/synthesis/active_rq_correction_mechanical.json",
+          "restart_2026_11_26/synthesis/active_rq_semantic_verification.json",
+          "restart_2026_11_26/synthesis/active_rq_review.md"
+        ],
+        "acceptance": [
+          {
+            "criterion": "Active RQ synthesis",
+            "verdict": "PASS",
+            "evidence": "10/10 findings, 40 source traces, five RQ limitations, 46 characteristics, 460 appraisal judgments and three bounded outcome contrasts."
+          }
+        ]
       }
     },
     {
