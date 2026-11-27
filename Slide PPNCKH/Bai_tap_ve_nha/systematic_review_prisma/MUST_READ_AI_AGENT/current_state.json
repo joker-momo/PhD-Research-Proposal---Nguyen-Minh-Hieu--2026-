@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:41:31+07:00",
+  "updated_at": "2026-11-28T00:48:21+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
-    "summary": "The verified 30-page manuscript and S2 record the author’s account that the author and a colleague conducted screening and assigned appraisal ratings. Preliminary AI records are retained. The author endorsed 46 inclusions and 90 exclusions. Ten decisions have separate author entries. Zero paired independent full-text decisions are documented. PRISMA is unchanged."
+    "summary": "The verified 30-page manuscript records the author's account of personal full-text reading, summaries, screening and engineering appraisal judgments, and their colleague's screening judgments. Separate Codex and Gemini records are retained. Zero paired independent full-text human decisions are documented. S2 and PRISMA retain the 46/90/0 dispositions."
   },
   "task": {
-    "task_id": "hk261-label-confirmed-screening-forms",
+    "task_id": "hk261-apply-approved-first-person-methods",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:41:31+07:00",
-    "updated_at": "2026-11-28T00:41:31+07:00",
-    "decision_id": "hk261-label-confirmed-screening-forms-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/dual_ai_full_136/review_136.csv",
-    "completed_at": "2026-11-28T00:41:31+07:00"
+    "started_at": "2026-11-28T00:46:37+07:00",
+    "updated_at": "2026-11-28T00:48:21+07:00",
+    "decision_id": "hk261-apply-approved-first-person-methods-v1",
+    "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
+    "completed_at": "2026-11-28T00:48:21+07:00"
   },
   "next_task": {
     "task_id": "hk261-collect-new-independent-screening-round",
@@ -1258,6 +1258,31 @@
           }
         }
       }
+    },
+    "approved_reviewer_wording_pdf": {
+      "source": "Author clarification and approval in the HK261 chat on 28 November 2026.",
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pages": 30,
+      "sha256": "552da06d87cedaab543f8c42353c9b9103108b7448a4fc52eb57c61e9482763e",
+      "updated_pdf_pages": {
+        "abstract": [
+          1
+        ],
+        "section_2_3": [
+          4
+        ],
+        "section_6_4": [
+          24,
+          25
+        ]
+      },
+      "prisma_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "s2_and_prisma_files_unchanged": true,
+      "portable_reproduction": "30 of 30 rendered pages matched. The S2 audit JSON and LaTeX table also matched."
     }
   },
   "blockers": [],
