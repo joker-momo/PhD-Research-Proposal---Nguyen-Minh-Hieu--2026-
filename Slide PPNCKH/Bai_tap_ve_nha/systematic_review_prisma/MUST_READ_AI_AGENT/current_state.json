@@ -1,27 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T16:20:16+07:00",
+  "updated_at": "2026-11-27T16:22:17+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "alternative_coursework_pdf_ready_for_comparison",
     "summary": "The 29-page technical survey has a versioned evidence and reproduction appendix for author comparison."
   },
   "task": {
-    "task_id": "hk261-alternative-claim-audit",
+    "task_id": "hk261-alternative-editorial-revision",
     "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T16:11:06+07:00",
-    "updated_at": "2026-11-27T16:20:16+07:00",
-    "completed_at": "2026-11-27T16:20:16+07:00",
-    "checkpoint_path": "manuscript/sn_computer_science/supplement_evidence_index.md",
-    "decision_id": "hk261-alternative-claim-audit-v1"
+    "status": "active",
+    "started_at": "2026-11-27T16:22:17+07:00",
+    "updated_at": "2026-11-27T16:22:17+07:00",
+    "checkpoint_path": "manuscript/sn_computer_science/editorial_source_lookup_brief.md",
+    "decision_id": "hk261-alternative-editorial-revision-v1"
   },
   "next_task": {
-    "task_id": "hk261-alternative-author-comparison",
-    "owner": "CODEX_WRITING",
-    "status": "blocked",
-    "action": "Await the author’s comparison and selection before any integration or dissemination.",
-    "acceptance": "The author selects a manuscript version and explicitly authorizes any follow-on scope."
+    "task_id": "hk261-editorial-public-source-lookup",
+    "owner": "GEMINI_RESEARCH",
+    "status": "ready",
+    "action": "Public source lookup for seven editorial leads.",
+    "acceptance": "Seven dispositions or documented shortfalls.",
+    "dispatch_brief": "manuscript/sn_computer_science/editorial_source_lookup_brief.md",
+    "message_id": "hk261-editorial-public-source-lookup-v1"
   },
   "project": {
     "target_venue": "SN Computer Science",
