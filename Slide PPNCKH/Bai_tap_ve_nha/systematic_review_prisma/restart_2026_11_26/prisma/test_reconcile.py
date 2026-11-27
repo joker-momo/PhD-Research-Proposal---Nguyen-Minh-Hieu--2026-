@@ -1,9 +1,11 @@
 """Focused checks for ID partition validation and the locked restart fixture."""
+import json
 import re
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
-from reconcile import audit, index, split
+from reconcile import audit, audit_supplemental, index, split, supplemental_study_groups
 
 
 class TestReconciliation(unittest.TestCase):
@@ -14,6 +16,43 @@ class TestReconciliation(unittest.TestCase):
     def test_undocumented_category_is_rejected(self):
         with self.assertRaisesRegex(ValueError, "bad decision"):
             split({"A": {"decision": "unknown"}}, "decision", {"INCLUDE", "EXCLUDE"})
+
+    def test_supplemental_reconciles_current_checkout_without_changing_baseline(self):
+        project = Path(__file__).resolve().parents[2]
+        result = audit_supplemental(project)
+        self.assertEqual(len(result["intake_ids"]), 92)
+        self.assertEqual(result["not_retrieved_ids"], ["R0116"])
+        self.assertEqual(len(result["prior_awaiting_ids"]), 6)
+        self.assertEqual(set(result["assessed_by_source"]["round_01"]), {"R0070"})
+        covered = [set(result["pending_screening_ids"]), *(set(ids) for ids in result["assessed_by_source"].values())]
+        self.assertEqual(set.union(*covered), set(result["intake_ids"]))
+        self.assertEqual(sum(map(len, covered)), 92)
+        self.assertIsNone(result["study_ids_to_report_ids"])
+
+    def test_supplemental_rejects_duplicate_records_before_counting_batch(self):
+        project = Path(__file__).resolve().parents[2]
+        read_text = Path.read_text
+
+        def duplicate_first_record(path, *args, **kwargs):
+            raw = read_text(path, *args, **kwargs)
+            if path.name == "batch_01_accepted.json":
+                records = json.loads(raw)
+                return json.dumps(records + records[:1])
+            return raw
+
+        with patch.object(Path, "read_text", duplicate_first_record):
+            with self.assertRaisesRegex(ValueError, "batch_01_accepted.json:.*duplicate"):
+                audit_supplemental(project)
+
+    def test_linkage_counts_reports_independently_from_studies(self):
+        rows = [{"report_id": "R0001", "study_id": "S1"},
+                {"report_id": "R0002", "study_id": "S1"}]
+        self.assertEqual(supplemental_study_groups(rows, {"R0001", "R0002"}),
+                         {"S1": ["R0001", "R0002"]})
+        with self.assertRaisesRegex(ValueError, "mapping"):
+            supplemental_study_groups(rows, {"R0001"})
+        with self.assertRaisesRegex(ValueError, "duplicate"):
+            supplemental_study_groups(rows + rows[:1], {"R0001", "R0002"})
 
     def test_restart_ledger_and_checklist(self):
         folder = Path(__file__).resolve().parent

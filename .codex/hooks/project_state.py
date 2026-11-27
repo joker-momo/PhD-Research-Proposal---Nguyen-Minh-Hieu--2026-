@@ -112,6 +112,29 @@ def _validate_evidence(evidence):
     if sum(values) != evidence["screened_reports"]:
         raise ValueError("working decision total must equal screened_reports")
 
+    if "supplemental_screening" in evidence:
+        _validate_supplemental(_require_mapping(evidence, "supplemental_screening"))
+
+
+def _validate_supplemental(supplemental):
+    def count(key, default=None):
+        value = supplemental.get(key, default)
+        if type(value) is not int or value < 0:
+            raise ValueError(f"supplemental {key} must be a non-negative integer")
+        return value
+
+    intake = count("intake_pdf_count")
+    screened = count("screened_supplemental_count", 0)
+    accounted = count("supplemental_decisions_accounted", screened)
+    remaining = count("remaining_supplemental_reports", intake - accounted)
+    if not screened <= accounted <= intake or accounted + remaining != intake:
+        raise ValueError("supplemental screened, accounted and remaining totals do not reconcile")
+    pending = supplemental.get("pending_retrieval_ids", [])
+    if (not isinstance(pending, list)
+            or any(not isinstance(key, str) or not key.strip() for key in pending)
+            or len(pending) != len(set(pending))):
+        raise ValueError("supplemental pending_retrieval_ids must be a list of distinct IDs")
+
 
 def validate_state(state, events, now=None):
     now = now or datetime.now(timezone.utc)
@@ -172,6 +195,14 @@ def render_summary(state):
     project = state["project"]
     evidence = state["evidence"]
     decisions = evidence["working_decisions"]
+    supplemental_progress = ""
+    if supplemental := evidence.get("supplemental_screening"):
+        intake = supplemental["intake_pdf_count"]
+        accounted = supplemental.get("supplemental_decisions_accounted",
+                                     supplemental.get("screened_supplemental_count", 0))
+        not_retrieved = len(supplemental.get("pending_retrieval_ids", []))
+        supplemental_progress = f"\n- Supplemental reports: {accounted}/{intake} accounted"
+        supplemental_progress += f" / {not_retrieved} not retrieved"
     blockers = "\n".join(f"- {item}" for item in state["blockers"]) or "- None recorded."
     confirmations = "\n".join(
         f"- {item}" for item in state["user_confirmation_required"]
@@ -191,7 +222,7 @@ Manuscript: `{project['canonical_manuscript']}`
 ## Evidence snapshot
 
 - Reports: {evidence['screened_reports']}/{evidence['retrieval_reports']} screened
-- Working decisions: {decisions['include']} INCLUDE / {decisions['exclude']} EXCLUDE / {decisions['uncertain']} UNCERTAIN
+- Working decisions: {decisions['include']} INCLUDE / {decisions['exclude']} EXCLUDE / {decisions['uncertain']} UNCERTAIN{supplemental_progress}
 
 ## Next task
 

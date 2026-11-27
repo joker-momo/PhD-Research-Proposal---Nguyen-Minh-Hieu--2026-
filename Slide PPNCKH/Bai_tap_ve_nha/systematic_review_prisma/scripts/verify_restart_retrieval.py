@@ -4,8 +4,8 @@ import csv
 import hashlib
 import ipaddress
 import json
+import os
 import re
-import shutil
 import socket
 import subprocess
 import tempfile
@@ -206,6 +206,25 @@ def source_class(url, publisher):
     return "PUBLISHER" if a == b else "PUBLIC_REPOSITORY_OR_AUTHOR"
 
 
+def publish_pdf(destination, body):
+    """Atomically publish a verified PDF without replacing an existing report."""
+    digest = hashlib.sha256(body).hexdigest()
+    if not destination.exists() and not destination.is_symlink():
+        with tempfile.NamedTemporaryFile(dir=destination.parent, prefix=".pdf-") as pending:
+            pending.write(body)
+            pending.flush()
+            os.fsync(pending.fileno())
+            try:
+                os.link(pending.name, destination)
+                return digest
+            except FileExistsError:
+                pass  # Another writer published the ID before this link.
+    if (destination.is_symlink() or not destination.is_file()
+            or hashlib.sha256(destination.read_bytes()).hexdigest() != digest):
+        raise FileExistsError(f"Existing evidence conflicts with verified PDF: {destination}")
+    return digest
+
+
 def verify_one(record, lead, local, out):
     rec = record.copy()
     sid = rec["screening_id"]
@@ -242,17 +261,22 @@ def verify_one(record, lead, local, out):
             doi = ""
         if doi:
             rec["landing_url"] = doi_url(doi)
-    for path in local:
-        result = pdf_identity(Path(path), rec)
-        attempts.append({"timestamp":now(),"route":"local_exact_title","locator":path,
+    dst = out / f"{sid}.pdf"
+    if dst.is_symlink() or (dst.exists() and not dst.is_file()):
+        raise FileExistsError(f"Unsafe evidence destination: {dst}")
+    local_paths = [dst, *map(Path, local)] if dst.is_file() else list(map(Path, local))
+    for path in local_paths:
+        result = pdf_identity(path, rec)
+        attempts.append({"timestamp":now(),"route":"local_exact_title","locator":str(path),
                          "outcome":"matched_readable_pdf" if result else "version_identity_or_pdf_check_failed"})
         if result and result["version"] in {"PUBLISHER_VERSION", "ACCEPTED_MANUSCRIPT"}:
-            dst = out / f"{sid}.pdf"
-            shutil.copyfile(path, dst)
+            digest = publish_pdf(dst, path.read_bytes())
             rec.update(result,status="RETRIEVED_PDF",source_class="USER_OR_PROJECT_LOCAL",
                        source_url=rec["landing_url"],identity_url=rec["identity_url"] or rec["landing_url"],local_path=f"pdf/{dst.name}",
-                       sha256=hashlib.sha256(dst.read_bytes()).hexdigest())
+                       sha256=digest)
             return finish()
+        if path == dst:
+            raise FileExistsError(f"Existing PDF could not be reverified: {dst}")
     if doi:
         landing_event, landing_body = attempt(rec["landing_url"],"publisher_landing")
         publisher = landing_event.get("final_url", "")
@@ -343,12 +367,11 @@ def verify_one(record, lead, local, out):
         if result["version"] not in {"PUBLISHER_VERSION", "ACCEPTED_MANUSCRIPT"}:
             event["outcome"]="pdf_report_version_unverified"
             continue
-        dst=out/f"{sid}.pdf"
-        dst.write_bytes(body)
+        digest = publish_pdf(dst, body)
         event["outcome"]="verified_pdf"
         final=event["final_url"]
         rec.update(result,status="RETRIEVED_PDF",source_url=final,source_class=source_class(final,publisher),
-                   local_path=f"pdf/{dst.name}",sha256=hashlib.sha256(body).hexdigest())
+                   local_path=f"pdf/{dst.name}",sha256=digest)
         return finish()
     if any(x["outcome"]=="exact_doi_title_mismatch" for x in attempts) and not rec["verified_doi"]:
         rec["reason_if_no_pdf"]="DOI_TITLE_CONFLICT"
@@ -393,17 +416,28 @@ def main():
     rows=[json.loads(line) for line in args.batch.read_text().splitlines()]
     raw_leads=list(map(json.loads,args.leads.read_text().splitlines()))
     leads={item["id"]:item for item in raw_leads}
-    if len(raw_leads) != len(leads) or set(leads)!={row["screening_id"] for row in rows}:
+    ids = [row["screening_id"] for row in rows]
+    if not ids or any(not re.fullmatch(r"R[0-9]{4,}", key) for key in ids) or len(ids) != len(set(ids)):
+        parser.error("Batch must contain valid, unique screening IDs")
+    if len(raw_leads) != len(leads) or set(leads) != set(ids):
         parser.error("Lead IDs must match the exact batch")
     pdf=args.canonical/"restart_2026_11_26/fulltext_retrieval/pdf"
     pdf.mkdir(parents=True,exist_ok=True)
     local=local_candidates(args.canonical, rows)
-    with ThreadPoolExecutor(max_workers=10) as pool:
-        results=list(pool.map(lambda row:verify_one(row,leads[row["screening_id"]],local[row["screening_id"]],pdf),rows))
-    with args.output.open("w",newline="") as handle:
-        writer=csv.DictWriter(handle,fieldnames=list(results[0]),lineterminator="\n")
-        writer.writeheader()
-        writer.writerows(results)
+    try:
+        with ThreadPoolExecutor(max_workers=10) as pool:
+            results = list(pool.map(
+                lambda row: verify_one(row, leads[row["screening_id"]], local[row["screening_id"]], pdf), rows
+            ))
+    except FileExistsError as error:
+        parser.error(str(error))
+    with tempfile.TemporaryDirectory(dir=args.output.parent, prefix=".retrieval-") as temporary:
+        ledger = Path(temporary) / args.output.name
+        with ledger.open("w", newline="", encoding="utf-8") as handle:
+            writer = csv.DictWriter(handle, fieldnames=list(results[0]), lineterminator="\n")
+            writer.writeheader()
+            writer.writerows(results)
+        ledger.replace(args.output)
 
 
 if __name__ == "__main__":
