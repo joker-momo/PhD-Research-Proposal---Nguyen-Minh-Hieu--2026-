@@ -1,0 +1,10 @@
+item,physical_pages,figure_or_table,result,scope_note
+R0048-Q01,12,Table III,MATCH,Energy column and efficiency rows checked at the stated 60-UAV simulation setting.
+R0048-Q02,12,Table III,MATCH,Latency column is seconds in the simulation.
+R0048-Q03,12,Table III,MATCH,Throughput column is IPS at fixed 60-UAV scale.
+R0054-Q02,5,Table I,MATCH,Completion-to-serviceable column and both selected rows; 95% CI half-width and five seeds in table note.
+R0054-Q03,5,Table I,MATCH,Active admission column and both selected rows; 95% CI half-width and five seeds in table note.
+R0054-Q04,5,Table I,MATCH,Target admission column and both selected rows; 95% CI half-width and five seeds in table note.
+R0095-Q03,10,Fig. 9(c),MATCH,All three bar annotations checked; the figure axis is seconds but printed method annotations use ms and microseconds.
+R0145-Q01,15–16,Fig. 4 and §6.2,MATCH,Exact annotations and the model selection paragraph checked; timing is component profiling.
+R0145-Q02,15–16,Fig. 4 and §6.2,MATCH,Exact annotations checked; preserve the figure legend TPOT and note caption TPPO/prose TPFT variants.

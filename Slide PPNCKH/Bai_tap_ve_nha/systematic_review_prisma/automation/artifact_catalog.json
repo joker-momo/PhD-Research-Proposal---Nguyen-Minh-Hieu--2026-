@@ -612,6 +612,86 @@
         "evidence",
         "R0082"
       ]
+    },
+    {
+      "artifact_id": "hk261-dual-ai-prepare-masked-inputs",
+      "name": "prepare_review_pages.py",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_review_pages.py",
+      "purpose": "Verify 136 source PDF hashes, extract text by physical page and reproduce the isolated Gemini context hashes.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_review_pages.py' /tmp/hk261-dual-repro-pages --gemini-context /tmp/hk261-dual-repro-context",
+      "inputs": [
+        "phase_manifest.json",
+        "isolated_context_manifest.json",
+        "Local 136 masked PDFs"
+      ],
+      "outputs": [
+        "Page JSON directory",
+        "Optional isolated context directory"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_review_pages.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_review_pages.py' /tmp/hk261-dual-repro-pages --gemini-context /tmp/hk261-dual-repro-context",
+      "status": "active",
+      "tags": [
+        "screening",
+        "evidence",
+        "HK261"
+      ]
+    },
+    {
+      "artifact_id": "hk261-dual-ai-audit-extraction",
+      "name": "audit_review_inputs.py",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/audit_review_inputs.py",
+      "purpose": "Rebuild 887 source-locator checks and reconcile manual visual checks for nine rows.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/audit_review_inputs.py' /tmp/hk261-dual-repro-pages",
+      "inputs": [
+        "Local PDFKit physical-page JSON",
+        "S4 and final 46 source matrices",
+        "visual_outcome_review.csv"
+      ],
+      "outputs": [
+        "restart_2026_11_26/integrity/dual_ai_full_136/extraction_locator_audit.csv"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/audit_review_inputs.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/audit_review_inputs.py' /tmp/hk261-dual-repro-pages",
+      "status": "active",
+      "tags": [
+        "screening",
+        "evidence",
+        "HK261"
+      ]
+    },
+    {
+      "artifact_id": "hk261-dual-ai-assemble-review",
+      "name": "assemble_review.py",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/assemble_review.py",
+      "purpose": "Validate and compare masked AI screening evidence and generate the CSV, LaTeX inputs and statistics.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/assemble_review.py' /tmp/hk261-dual-repro-pages 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/codex_pass.jsonl' 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/gemini_receipt.json'",
+      "inputs": [
+        "Local PDFKit physical-page JSON",
+        "codex_pass.jsonl",
+        "Gemini Task receipt",
+        "Coordinator key"
+      ],
+      "outputs": [
+        "restart_2026_11_26/integrity/dual_ai_full_136/review_136.csv",
+        "restart_2026_11_26/integrity/dual_ai_full_136/review_rows.tex",
+        "restart_2026_11_26/integrity/dual_ai_full_136/report_status.tex",
+        "restart_2026_11_26/integrity/dual_ai_full_136/review_summary.json"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/assemble_review.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/assemble_review.py' /tmp/hk261-dual-repro-pages 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/codex_pass.jsonl' 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/gemini_receipt.json'",
+      "status": "active",
+      "tags": [
+        "screening",
+        "evidence",
+        "HK261"
+      ]
     }
   ]
 }

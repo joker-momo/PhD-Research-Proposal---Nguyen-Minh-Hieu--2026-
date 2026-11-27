@@ -1,29 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T19:25:03+07:00",
+  "updated_at": "2026-11-27T19:38:12+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The local 30-page HK261 revision, unified coding and IEEE R0082 cross-check are verified on the 46/90/0 corpus. Independent screening, human extraction verification and declarations remain pending."
   },
   "task": {
-    "task_id": "hk261-dual-ai-136-setup",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T19:24:08+07:00",
-    "updated_at": "2026-11-27T19:25:03+07:00",
-    "completed_at": "2026-11-27T19:25:03+07:00",
-    "decision_id": "hk261-dual-ai-136-setup-v2",
-    "checkpoint_path": "restart_2026_11_26/integrity/dual_ai_full_136/isolated_context_manifest.json"
-  },
-  "next_task": {
     "task_id": "hk261-dual-ai-136-gemini",
     "owner": "GEMINI_RESEARCH",
+    "status": "rejected",
+    "started_at": "2026-11-27T19:25:09+07:00",
+    "updated_at": "2026-11-27T19:38:12+07:00",
+    "completed_at": "2026-11-27T19:38:12+07:00",
+    "decision_id": "hk261-dual-ai-136-gemini-v1",
+    "checkpoint_path": "restart_2026_11_26/integrity/dual_ai_full_136/gemini_review.md"
+  },
+  "next_task": {
+    "task_id": "hk261-dual-ai-136-gemini-correction",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Screen 136 masked page-labeled extracts in a native Gemini.app Task, with an original-PDF access preflight.",
-    "acceptance": "136 traceable decisions or explicitly reported shortfalls; archived evidence and independent gate.",
-    "dispatch_brief": "restart_2026_11_26/integrity/dual_ai_full_136/gemini_isolated_brief.md",
-    "message_id": "53e7b88e-b04f-445b-a41e-a333bc32b762"
+    "action": "Correct 101 named items with split text input below the Gemini read limit.",
+    "acceptance": "101 distinct correction IDs or a documented shortfall; exact source review.",
+    "dispatch_brief": "restart_2026_11_26/integrity/dual_ai_full_136/gemini_correction_brief.md",
+    "message_id": "399c2464-e445-4368-b484-049a6d450725"
   },
   "project": {
     "target_venue": "SN Computer Science",

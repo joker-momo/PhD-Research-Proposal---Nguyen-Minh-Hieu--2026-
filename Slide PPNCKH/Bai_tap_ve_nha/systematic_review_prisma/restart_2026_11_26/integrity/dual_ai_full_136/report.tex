@@ -1,0 +1,44 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=18mm]{geometry}
+\usepackage{fontspec,array,booktabs,longtable}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+{\LARGE\bfseries Báo cáo rà soát HK261}\par
+{\large Phụ lục 136 hồ sơ để tác giả và người chấm đối chiếu}\par
+\input{report_status.tex}
+
+\section*{Cách ghi nhận quyết định}
+Báo cáo này cung cấp nhận định tham khảo của Codex và Gemini. Quyết định của từng người chỉ được ghi sau khi người đó tự đọc nguồn và xác nhận lựa chọn, tiêu chí, trang và căn cứ. Để đo độ đồng thuận giữa hai người, hãy dùng hai phiếu trống và khóa các quyết định ban đầu trước khi trao đổi hoặc xem lựa chọn của nhau. Ghi riêng các quyết định đã tham khảo AI. Sau đó lưu quyết định giải quyết bất đồng cùng người xác nhận và ngày. Các tỷ lệ đồng thuận giữa AI chỉ mô tả hai lượt AI. Sổ đang lưu 8 xác nhận cuối của tác giả và 0 cặp đánh giá độc lập của hai người. Nếu hai người đọc nhận định AI trước khi điền phiếu, hãy ghi rõ việc tham khảo AI khi báo cáo quy trình.\par
+S2 và PRISMA đang ghi 46 đưa vào, 90 loại, 0 chờ. Đề xuất “Chờ” trong báo cáo cho biết lượt rà soát này còn thiếu căn cứ. Hồ sơ gốc và lý do đã chốt có thể giữ bằng chứng mà bản sao dùng cho lượt kiểm tra chưa thể hiện, chẳng hạn ngày xuất bản và loại hình phản biện.
+
+\textbf{R0082 (HKF-115).} Lượt rà soát dùng bản arXiv trong gói mã hóa. Đây là căn cứ cho đề xuất E7 của Codex đối với bản sao đó. Khi đọc để chốt hồ sơ, đối chiếu PDF IEEE WCNC, DOI 10.1109/WCNC55385.2023.10118908, trang vật lý 1 để xác nhận ấn bản, trang 2 cho phần phương pháp và trang 5 cho phần đánh giá. Quyết định đã lưu đối với bản IEEE là “Đưa vào”.
+
+\textbf{R0077 (HKF-100).} Codex chấm E7 theo bản arXiv. Trang nhà xuất bản có bài nghiên cứu tương ứng trong \emph{Journal of Systems Architecture} tháng 7/2026, DOI 10.1016/j.sysarc.2026.103804. Đối chiếu bản xuất bản trước khi dùng kết quả trích từ bản arXiv.
+
+\textbf{R0090 (HKF-110).} Sổ hiện mô tả phân công ở cấp tác vụ, còn Codex thấy suy luận riêng trên từng UAV. Đọc §§II.B và III.B ở trang 2–3 cùng phần đánh giá V.E–L ở trang 4–6 để đối chiếu xem tác vụ được giao lại có phải là tác vụ suy luận trong cấu hình đã đánh giá hay không.
+
+\textbf{R0292 (HKF-109).} Codex đánh dấu chờ E7 vì PDF dùng trong lượt rà soát chưa thể hiện quy trình phản biện của workshop. S2 ghi tác giả xác nhận đưa vào dựa trên chính sách phản biện của DroNet 2025, chương trình Session 3 và bản ACM. Đối chiếu trang 1 cho danh tính, trang 4–5 cho phương pháp và đánh giá.
+
+
+
+\section*{Kiểm tra trích xuất}
+Tệp CSV kiểm tra 887 mục thuộc 46 bài đưa vào. Rà tự động kiểm tra trang vật lý, khả năng khớp nguyên văn và chỗ cần mở ảnh gốc. Kết quả gồm 333 neo văn bản khớp, 169 neo khớp một phần, 322 khoảng trang hợp lệ, 54 mục cần đọc lại và 9 hàng đã đối chiếu ảnh gốc. Một neo khớp xác nhận vị trí đọc. Việc chấp nhận kết luận hoặc phép so sánh vẫn cần kiểm tra phương pháp, điều kiện, đơn vị và mẫu số. Chín hàng có giá trị in trong bảng hoặc đồ thị được Codex kiểm tra trực tiếp trên ảnh trang gốc. Tệp bảng kiểm và biên bản ảnh nguồn cung cấp kết quả theo từng hàng.
+
+\clearpage
+\section*{Bảng hồ sơ}
+Trang là trang vật lý, tính từ 1. CSV kèm theo lưu đường dẫn nguồn, nguyên văn ngắn và các mã E1–E7 do mỗi lượt trả về. Các hồ sơ có đề xuất khác với quyết định trong sổ đứng đầu bảng. Dùng tệp CSV để lọc hoặc truy tìm cụm từ trước khi đọc vùng chứa trong PDF gốc. Các dòng “Chưa có” cần thêm bằng chứng hoặc kết quả từ lượt tương ứng.
+\small
+\begin{longtable}{@{}P{.12\linewidth}P{.09\linewidth}P{.10\linewidth}P{.10\linewidth}P{.46\linewidth}@{}}
+\toprule
+\textbf{Mã hồ sơ} & \textbf{Sổ} & \textbf{Codex} & \textbf{Gemini} & \textbf{Trang, mục và căn cứ} \\ \midrule
+\endfirsthead
+\toprule
+\textbf{Mã hồ sơ} & \textbf{Sổ} & \textbf{Codex} & \textbf{Gemini} & \textbf{Trang, mục và căn cứ} \\ \midrule
+\endhead
+\input{review_rows.tex}
+\end{longtable}
+\end{document}
