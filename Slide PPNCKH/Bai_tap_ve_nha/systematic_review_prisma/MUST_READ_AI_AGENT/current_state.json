@@ -1,30 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T17:28:55+07:00",
+  "updated_at": "2026-11-27T17:38:28+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "alternative_editorial_pdf_ready_for_comparison",
     "summary": "The 29-page HK261 comparison PDF includes the S2 audit as Table 8 on page 24. PRISMA retains 46 included, 89 excluded, and R0082 pending E7."
   },
   "task": {
-    "task_id": "hk261-borderline-parent-access-verified",
+    "task_id": "hk261-borderline-author-report",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T17:26:00+07:00",
-    "updated_at": "2026-11-27T17:28:55+07:00",
-    "completed_at": "2026-11-27T17:28:55+07:00",
-    "decision_id": "hk261-borderline-parent-access-verified-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/borderline_author_review/access-review.md"
+    "started_at": "2026-11-27T17:29:00+07:00",
+    "updated_at": "2026-11-27T17:38:28+07:00",
+    "completed_at": "2026-11-27T17:38:28+07:00",
+    "decision_id": "hk261-borderline-author-report-v1",
+    "checkpoint_path": "restart_2026_11_26/integrity/borderline_author_review/report.md"
   },
   "next_task": {
-    "task_id": "hk261-borderline-author-review-parent-correction",
-    "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Return only the 15 requested evidence corrections from one parent conversation with no workers.",
-    "acceptance": "Five IDs, 15 keys, direct source access, zero workers, and verified page or URL for all claims.",
-    "dispatch_brief": "restart_2026_11_26/integrity/borderline_author_review/parent-correction-brief.md",
-    "message_id": "eb7c09be-7895-4f1a-bc36-c60e9232c220",
-    "parent_gemini_task_id": "ac203ee7-54ea-4c3e-b2ca-c23c92dda581"
+    "task_id": "hk261-borderline-author-confirmation",
+    "owner": "CODEX_WRITING",
+    "status": "blocked",
+    "action": "Record explicit author confirmation for each reviewed ID only after it is supplied. R0082 remains a separate pending E7 decision.",
+    "acceptance": "Author provided an explicit keep, exclude with code, or defer with code for each confirmed record.",
+    "blocker": "Awaiting the author’s review of the five-record report."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -765,6 +763,29 @@
       "reports_awaiting_classification": [
         "R0082"
       ]
+    },
+    "borderline_author_review": {
+      "report": "restart_2026_11_26/integrity/borderline_author_review/report.md",
+      "manifest": "restart_2026_11_26/integrity/borderline_author_review/manifest.json",
+      "ids": [
+        "R0001",
+        "R0113",
+        "R0145",
+        "R0223",
+        "R0292"
+      ],
+      "acceptance": "RAW_GEMINI_NOT_ADOPTED_REPORT_INDEPENDENTLY_VERIFIED",
+      "gemini_initial_task": "d3d31bbf-3b92-4b9c-9e87-9e6ed802857b",
+      "gemini_final_task": "a55ea74a-a12f-45e5-bff3-f75c6501ea65",
+      "gemini_final_receipt": "restart_2026_11_26/integrity/borderline_author_review/gemini-parent-correction-receipt.json",
+      "author_confirmations_added": 0,
+      "working_prisma": {
+        "include": 46,
+        "exclude": 89,
+        "pending": {
+          "R0082": "E7"
+        }
+      }
     }
   },
   "blockers": [],
