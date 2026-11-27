@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T02:43:31+07:00",
+  "updated_at": "2026-11-28T03:08:32+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "Main contains the corrected Springer comparison manuscript and the verified 17-page IEEE journal draft with Supplements S1–S4. The earlier RQ5 manuscript snapshot remains indexed. S2 and reconciled PRISMA counts remain 46 included, 90 excluded and zero awaiting classification."
   },
   "task": {
-    "task_id": "hk261-integrate-ieee-main",
+    "task_id": "hk261-ieee-style-revision-main",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T02:42:41+07:00",
-    "updated_at": "2026-11-28T02:43:31+07:00",
-    "completed_at": "2026-11-28T02:43:31+07:00",
-    "decision_id": "hk261-integrate-ieee-main-v1",
+    "started_at": "2026-11-28T03:04:39+07:00",
+    "updated_at": "2026-11-28T03:08:32+07:00",
+    "completed_at": "2026-11-28T03:08:32+07:00",
+    "decision_id": "hk261-ieee-style-revision-main-v1",
     "checkpoint_path": "manuscript/ieee_journal/HK261_IEEE_S1-S4.zip"
   },
   "next_task": {
