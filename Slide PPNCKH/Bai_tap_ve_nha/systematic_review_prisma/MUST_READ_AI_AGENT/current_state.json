@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T18:06:29+07:00",
+  "updated_at": "2026-11-27T18:13:12+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "author_eligibility_reconciled_synthesis_update_pending",
     "summary": "Current eligibility: 44 included, 89 excluded, 3 awaiting classification. The 29-page comparison PDF and synthesis freeze describe the previous 46-study snapshot."
   },
   "task": {
-    "task_id": "hk261-pending-three-evidence",
+    "task_id": "hk261-r0082-reaffirm-e7",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T17:48:01+07:00",
-    "updated_at": "2026-11-27T18:06:29+07:00",
-    "decision_id": "hk261-pending-three-evidence-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/pending_three_followup/review.md",
-    "completed_at": "2026-11-27T18:06:29+07:00"
+    "started_at": "2026-11-27T18:12:34+07:00",
+    "updated_at": "2026-11-27T18:13:12+07:00",
+    "decision_id": "hk261-r0082-reaffirm-e7-v1",
+    "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+    "completed_at": "2026-11-27T18:13:12+07:00"
   },
   "next_task": {
-    "task_id": "hk261-pending-three-author-decisions",
+    "task_id": "hk261-r0113-author-decision",
     "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "Wait for author confirmation on each pending report before any S2 or PRISMA changes. Then reconcile the active corpus before any comparison manuscript rebuild.",
-    "acceptance": "Change only explicitly authorized dispositions and reconcile any changed counts before synthesis."
+    "action": "Wait for the author to rule on R0113 after original-PDF review, then present R0292.",
+    "acceptance": "Record only the explicitly confirmed disposition and reconcile counts if it changes eligibility."
   },
   "project": {
     "target_venue": "SN Computer Science",
