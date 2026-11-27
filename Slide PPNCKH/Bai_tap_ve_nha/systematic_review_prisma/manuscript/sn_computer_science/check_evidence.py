@@ -5,6 +5,8 @@ import hashlib
 import io
 import json
 import re
+import subprocess
+import sys
 from functools import cache
 from pathlib import Path
 
@@ -64,7 +66,7 @@ def check_index():
     tex = "\n".join(path.read_text() for path in sorted(paths) if path.suffix == ".tex")
     labels = set(re.findall(r"\\label\{((?:fig|tab|eq):[^}]+)\}", tex))
     indexed = set(re.findall(r"`((?:fig|tab|eq):[^ `]+)`", index))
-    require(labels == indexed and len(labels) == 15, f"Figure/table/equation coverage mismatch: {labels ^ indexed}")
+    require(labels == indexed and len(labels) == 16, f"Figure/table/equation coverage mismatch: {labels ^ indexed}")
     require((HERE / "prisma_flow.pdf").read_bytes() ==
             (RESTART / "prisma/prisma_flow.pdf").read_bytes(), "Embedded PRISMA PDF differs from accepted PDF")
     paths.add(RESTART / "prisma/prisma_flow.pdf")
@@ -200,6 +202,8 @@ def main():
         contrast_count = check_outcome_rows()
         for filename, expected in outcome_tables().items():
             require((HERE / filename).read_text() == expected, f"Stale generated table: {filename}")
+        subprocess.run([sys.executable, "-B", str(HERE / "audit_adjudication.py"), "--check"],
+                       check=True, stdout=subprocess.DEVNULL)
         baseline = list(csv.reader(io.StringIO(review_log())))
         with (HERE / "human_adjudication_log.csv").open(newline="") as stream:
             adjudication = list(csv.reader(stream))
@@ -219,7 +223,7 @@ def main():
         else:
             require(SNAPSHOT.is_file() and SNAPSHOT.read_text() == snapshot,
                     "Evidence snapshot differs. Review changed sources and the crosswalk before recording.")
-    except (OSError, ValueError) as error:
+    except (OSError, ValueError, subprocess.CalledProcessError) as error:
         parser.exit(1, f"Evidence check failed: {error}\n")
     print(f"PASS: {claim_count} audit entries across {prose_lines} prose lines, "
           f"{len(included)} study rows, {label_count} figures/tables/equations, {len(paths)} saved files, "

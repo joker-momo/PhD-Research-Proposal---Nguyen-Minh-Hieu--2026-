@@ -9,6 +9,7 @@ Build the comparison draft from this directory:
 ```sh
 python3 build_technical_survey.py
 python3 build_editorial_evidence.py tables
+python3 audit_adjudication.py
 tectonic --keep-logs --keep-intermediates main.tex
 tectonic --only-cached --keep-logs --keep-intermediates main.tex
 python3 build_technical_survey.py --check
@@ -23,9 +24,9 @@ an included study is missing from either study table or the analytical text.
 
 [Minh chứng hình, bảng và công thức](minh_chung_hinh_bang/README.md)
 contains the archived inputs and code, item index, and independent rebuild
-commands for the 5 figures, 7 tables, and 3 equations.
+commands for the 5 figures, 8 tables, and 3 equations.
 
-[Supplement S4](supplement_evidence_index.md) maps the text and 15 numbered
+[Supplement S4](supplement_evidence_index.md) maps the text and 16 numbered
 figures, tables, and equations to their sources. It gives the calculation,
 input data and generation code for each chart, commands to rebuild the PRISMA
 diagram and manuscript, and original-page locators for the quantitative
@@ -50,7 +51,7 @@ tracks reporting and its limits.
 
 - S1. [Search strategies](supplement_search_strategies.md)
 - S2. [Eligibility evidence and author review](supplement_s2_adjudication.md), [136-report adjudication log](human_adjudication_log.csv)
-- S3. [Characteristics, appraisal, and 46-report numerical inventory](supplement_s3.md)
+- S3. [Characteristics, appraisal, numerical inventory, and S2 audit](supplement_s3.md)
 - S4. [Claim sources and reproduction](supplement_evidence_index.md)
 
 The baseline [final integrity audit](../../restart_2026_11_26/integrity/active_final_integrity_audit.md) and [limitations](../../restart_2026_11_26/integrity/active_limitations.md) accompany the coursework handoff. Author details and declarations await confirmation. Journal submission is outside the current HK261 scope.

@@ -2,8 +2,8 @@
 
 Mở [chỉ mục theo từng mục trong PDF](ITEM_INDEX.md) để tra công thức, mã
 LaTeX/TikZ, dữ liệu và vị trí nguồn gốc. Thư mục [sources](sources) giữ bản
-sao thực của các đầu vào và mã cần thiết để tái tạo. Mở
-[PDF đối chiếu 29 trang](sources/manuscript/sn_computer_science/main.pdf)
+sao đầu vào, mã và LaTeX đã sinh để biên dịch. Mở
+[PDF đối chiếu](sources/manuscript/sn_computer_science/main.pdf)
 để xem kết quả đã lưu. Các bản sao được đối chiếu với nguồn trên nhánh
 HK261 bằng [package_evidence.py](package_evidence.py) và [SHA256SUMS](SHA256SUMS).
 
@@ -25,6 +25,7 @@ Tra các nhận định và các chỗ thiếu minh chứng trong [S4](../supple
 | Bảng 7 · Kết quả thẩm định | Tổng hợp 10 tiêu chí và [lý do theo nghiên cứu](sources/restart_2026_11_26/appraisal/active_appraisal_rationale_matrix.csv). Tỷ lệ Yes là 100 × số Yes / 46, làm tròn một chữ số thập phân. | Bước 2 sinh [hàng LaTeX](sources/manuscript/sn_computer_science/technical_appraisal.tex). Bước 3 dàn bảng ở trang 22. |
 | Bảng 2 · Cơ chế × mức thực nghiệm | Đếm mỗi ID đúng một lần theo hai cột mã hóa trong [dữ liệu phân loại](sources/restart_2026_11_26/synthesis/desk_reject_evidence_map.csv). | Bước 2 sinh bảng, bước 3 dàn ở trang 7. |
 | Bảng 5 · Độ phủ định lượng | Nối [dữ liệu theo nghiên cứu](sources/restart_2026_11_26/extraction/rq5_uniform/report_coverage.csv) và [sổ kết quả](sources/restart_2026_11_26/extraction/rq5_uniform/outcomes.csv) bằng report ID. Đếm số nghiên cứu theo trạng thái và cộng số mục matched và descriptive theo cơ chế. | Bước 2 sinh bảng, bước 3 dàn ở trang 20. |
+| Bảng 8 · Kiểm toán S2 | [Sổ S2](sources/manuscript/sn_computer_science/human_adjudication_log.csv), [JSON](sources/manuscript/sn_computer_science/audit_summary.json), mã kiểm toán và [phép suy ra trong S4](../supplement_evidence_index.md#s2-audit-derivations). | Bước 3 dùng [LaTeX đã sinh](sources/manuscript/sn_computer_science/adjudication_audit_table.tex) để dàn trang 24. Chạy lại mã kiểm toán trong worktree để tái tạo LaTeX và JSON từ dữ liệu gốc. |
 | Công thức 1–3 | [LaTeX và phép suy ra](ITEM_INDEX.md#figures-tables-and-equations) cho hàm mục tiêu, độ trễ liên kết và thời gian phục hồi. | Bước 3 dàn công thức ở trang 10 và 23. |
 
 ## Các lệnh tái tạo
@@ -65,7 +66,11 @@ này trong worktree. Lệnh kiểm tra lại cả số đếm lẫn nguồn TikZ
 
 ```sh
 python3 ../../../restart_2026_11_26/prisma/reconcile.py --check
+python3 ../audit_adjudication.py --check
 ```
+
+Bỏ `--check` ở lệnh thứ hai để tái tạo Bảng 8 và JSON. Lệnh này dùng hồ sơ
+sàng lọc gốc trong worktree và xác nhận E7 trong trạng thái dự án.
 
 ## Tra nguồn gốc và cập nhật
 

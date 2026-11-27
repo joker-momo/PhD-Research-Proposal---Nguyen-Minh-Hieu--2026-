@@ -16,7 +16,7 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L15.1 | [15](main.tex#L15) | RECORD | Scope and data sources; 46/46; five RQs | Protocol §§ Eligibility and Information sources; 693 identified, 136/137 assessed, 46 unique included studies, one pending; active PRISMA counts and study map |
 | L15.2 | [15](main.tex#L15) | DERIVED | Coding categories, formulation and study-specific comparisons | Group technical codes by study; Eqs. 1–2; contrasts table pairs share source and maintain conditions |
 | L15.3 | [15](main.tex#L15) | DERIVED | Appraisal counts and different continuity boundaries | appraisal table D03/D04/D07; controlled, planned and modeled boundaries in evaluation table |
-| L15.4 | [15](main.tex#L15) | OPEN | Two author-confirmed exclusions and one deferral; independent human screening undocumented | Workflow and L87 |
+| L15.4 | [15](main.tex#L15) | OPEN | Two author-confirmed exclusions and one deferral; independent human screening undocumented | Table 8 and S2 audit JSON; final exclusions R0081/R0132, deferral R0082, both independent reviewer counts zero |
 | L15.5 | [15](main.tex#L15) | PROPOSAL | Benchmark contribution | L315–339 and Eq. 3 |
 | L15.6 | [15](main.tex#L15) | DERIVED | Uniform RQ5 retained 98 results from 36 studies, including 51 matched entries | S3 outcomes.csv; filter comparison_status to matched or descriptive; count distinct report_id |
 | L15.7 | [15](main.tex#L15) | RECORD | Protocol documented without public registration | Restart protocol and L71; project registration record |
@@ -60,9 +60,9 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L85.3 | [85](main.tex#L85) | SOURCE | Li et al. studied single-stream model selection and later competing CNN streams | R0003 pp. 4–6, §§IV–V; R0059 pp. 3–5 and 6–9, system and evaluation |
 | L85.4 | [85](main.tex#L85) | SOURCE | Ren et al. studied intra-layer parallelism and separately a sequential pipeline | R0015 pp. 3, 5–6, model and evaluation; R0010 pp. 2–5, model, scheduling and evaluation |
 | L87.1 | [87](main.tex#L87) | RECORD | AI and Codex contributions; checkpoint population | Retained phase/batch acceptance reviews, source indexes, and Git provenance |
-| L87.2 | [87](main.tex#L87) | OPEN | Independent human screening and extraction verification undocumented | Retained workflow records and S2 author adjudication log |
+| L87.2 | [87](main.tex#L87) | OPEN | Human verification of extraction undocumented | Retained workflow records and S2 author adjudication log |
 | L87.3 | [87](main.tex#L87) | RECORD | One unresolved outside 46-study denominators | Active PRISMA awaiting-classification rows and study map |
-| L87.4 | [87](main.tex#L87) | RECORD | Adjudication log links every assessed report and records two author exclusions and one deferral | S2 human_adjudication_log.csv; 136 unique IDs, R0081 (E7), R0132 (E3) and R0082 (E7 deferral) |
+| L87.4 | [87](main.tex#L87) | RECORD | Audit comparison and the definitions of author processing and paired decisions | audit_adjudication.py, load_rows and build_report; S4 S2 audit derivations |
 | L90.1 | [90](main.tex#L90) | RECORD | Extraction fields, units and locators | Accepted extraction instruments/index; outcome ledger columns |
 | L90.2 | [90](main.tex#L90) | RECORD | 46 reports underwent uniform post-protocol outcome reread | S3 rule.md, report_coverage.csv and review.md; match the 46 study IDs and PDF checksums to active_synthesis_input_index.csv |
 | L90.3 | [90](main.tex#L90) | RECORD | Matching, descriptive and omitted outcome rules | S3 rule.md; matched requires shared workload, operating conditions and denominator; omit plot-only, held and cross-references |
@@ -79,6 +79,7 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L105.2 | [105](main.tex#L105) | OPEN | R0116 remains unretrieved | Accepted reconciliation and missing/retrieval records for R0116; repository candidate was code |
 | L107.1 | [107](main.tex#L107) | DERIVED | Full-text disposition, unique included studies and S2 | 46 + 89 + 1 = 136; active PRISMA ledger, accepted study map and S2 author confirmations for R0081 and R0132 |
 | L107.2 | [107](main.tex#L107) | OPEN | One unresolved eligibility decision | R0082 E7 publication-version verification; active PRISMA ledger and S2 |
+| L107.3 | [107](main.tex#L107) | DERIVED | 133 without author confirmation, 2/3 author-processed and 2/2 final decisions changed | S2 rows R0081, R0132, R0082; audit_summary.json s2 and ai_to_final_human_decisions; 136 − 2 − 1 = 133; two changed divided by three processed or two final; Table 8 |
 | L116.1 | [116](main.tex#L116) | RECORD | Year/venue/control/modality panels and citation-year convention | Figure 2 inputs and generator; bibliography and eligibility date cutoff |
 | L116.2 | [116](main.tex#L116) | DERIVED | 2026 is an incomplete calendar year for this corpus | Eligibility ends 26 November; December is out of window |
 | L116.3 | [116](main.tex#L116) | DERIVED | Zero 2021 studies in locked set; backward check identified a separate candidate | Figure 2 and citation-year coding; R0068 physical p. 14, printed p. 103058, references item 27 and candidate HKUST publication record; exact DOI and normalized title absent in all 693 rows of records_normalized.csv |
@@ -169,6 +170,7 @@ Use a LaTeX source line to find the claim. The suffix distinguishes assertions a
 | L342.1 | [342](main.tex#L342) | OPEN | Potential search incompleteness and unresolved records | S1 scope and PRISMA flow (one sought not retrieved, one awaiting classification); no measured recall |
 | L342.2 | [342](main.tex#L342) | RECORD | Alternate primary labels possible for composite studies | One-label rule; technical coding ledger and S4 changes |
 | L344.1 | [344](main.tex#L344) | OPEN | Human verification, comprehensive within-domain extraction, formal bias/certainty and novelty generalization | S2 records two author-confirmed exclusions and one deferral; independent reviewer fields are blank. S3 rule and report coverage; no formal missing-results bias assessment in protocol or methods; related survey matrix uses inspected sources |
+| L344.2 | [344](main.tex#L344) | DERIVED | Zero paired human decisions, undefined agreement and bounded status-change fractions | audit_summary.json paired_human_agreement and ai_to_final_human_decisions; count dual nonblank reviewer decisions in S2 = 0; both change denominators describe only documented author processing |
 | L347.1 | [347](main.tex#L347) | RECORD | Topologies, partition, optimization scope and modalities | Tables 2–3 and Figures 2–4; match primary groups |
 | L347.2 | [347](main.tex#L347) | NARROWED | Continuity and quantitative results scoped to tests | Tables 3–4 and exact conditions; no pooled or flight-wide generalization |
 | L347.3 | [347](main.tex#L347) | DERIVED | Incomplete reporting of configurations, comparators and artifacts | appraisal table D03/D04/D09 counts; S4 tally formulas |

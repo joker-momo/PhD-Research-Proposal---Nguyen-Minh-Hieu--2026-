@@ -13,7 +13,7 @@ FILES = [
     *(MANUSCRIPT_PATH / name for name in (
         "build_technical_survey.py", "build_editorial_evidence.py", "main.tex",
         "editorial_mechanism_setting.tex", "editorial_outcome_coverage.tex", "main.pdf", "references.bib",
-        "human_adjudication_log.csv",
+        "human_adjudication_log.csv", "audit_adjudication.py", "audit_summary.json", "adjudication_audit_table.tex",
         "sn-jnl.cls", "sn-vancouver-num.bst", "technical_coding.psv", "prisma_flow.pdf",
         "technical_appraisal.tex", "technical_appraisal_bars.tex",
         "technical_appraisal_figure.tex", "technical_architecture.tex",
@@ -40,9 +40,9 @@ def build_index():
     stop = s4.index("## Manuscript prose crosswalk")
     excerpt = s4[start:stop].rstrip()
     labels = re.findall(r"\| (?:Figure|Table|Eq\.) \d+ `((?:fig|tab|eq):[^`]+)`", excerpt)
-    expected = sorted(["fig"] * 5 + ["tab"] * 7 + ["eq"] * 3)
-    if len(set(labels)) != 15 or sorted(label.split(":")[0] for label in labels) != expected:
-        raise ValueError("Expected five figures, seven tables and three equations in S4")
+    expected = sorted(["fig"] * 5 + ["tab"] * 8 + ["eq"] * 3)
+    if len(set(labels)) != len(expected) or sorted(label.split(":")[0] for label in labels) != expected:
+        raise ValueError("Expected five figures, eight tables and three equations in S4")
 
     def relink(match):
         link = match[1]
@@ -92,7 +92,7 @@ def main():
                 raise ValueError(f"Snapshot differs from the canonical source: {relative}")
     except (OSError, ValueError) as error:
         parser.exit(1, f"Package check failed: {error}\n")
-    print(f"PASS: {len(FILES)} archived files and 15 indexed figures, tables and equations.")
+    print(f"PASS: {len(FILES)} archived files and 16 indexed figures, tables and equations.")
 
 
 if __name__ == "__main__":

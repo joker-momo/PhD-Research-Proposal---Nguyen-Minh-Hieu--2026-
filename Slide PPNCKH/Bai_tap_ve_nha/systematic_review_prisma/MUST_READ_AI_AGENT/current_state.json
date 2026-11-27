@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T16:59:04+07:00",
+  "updated_at": "2026-11-27T17:03:13+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "alternative_editorial_pdf_ready_for_comparison",
-    "summary": "The 29-page HK261 comparison PDF and S2 reflect the author-confirmed exclusions of R0081 (E7) and R0132 (E3). R0082 remains pending under E7."
+    "summary": "The 29-page HK261 comparison PDF includes the S2 audit as Table 8 on page 24. PRISMA retains 46 included, 89 excluded, and R0082 pending E7."
   },
   "task": {
-    "task_id": "hk261-s2-adjudication-coverage",
+    "task_id": "hk261-s2-audit-manuscript-integration",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T16:57:35+07:00",
-    "updated_at": "2026-11-27T16:59:04+07:00",
-    "checkpoint_path": "manuscript/sn_computer_science/audit_summary.json",
-    "decision_id": "hk261-s2-adjudication-coverage-v1",
-    "completed_at": "2026-11-27T16:59:04+07:00"
+    "started_at": "2026-11-27T16:59:38+07:00",
+    "updated_at": "2026-11-27T17:03:13+07:00",
+    "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
+    "decision_id": "hk261-s2-audit-manuscript-integration-v1",
+    "completed_at": "2026-11-27T17:03:13+07:00"
   },
   "next_task": {
     "task_id": "hk261-r0082-proceedings-version-check",
@@ -684,7 +684,7 @@
       "pages": 29,
       "numbered_sections": 7,
       "figures": 5,
-      "tables": 7,
+      "tables": 8,
       "studies_in_both_tables_and_analysis": 46,
       "within_study_comparisons": 9,
       "appraisal_domains": 10,
@@ -692,38 +692,38 @@
       "verified_dois": 54,
       "independent_human_adjudication": "INDEPENDENT_SCREENING_UNDOCUMENTED_TWO_AUTHOR_EXCLUSIONS_AND_ONE_DEFERRAL_RECORDED",
       "review": "restart_2026_11_26/prisma/active_reconciliation_review.md",
-      "pdf_sha256": "cf9174992af2f3ec13cad68cce2f3a184a6c0381fc660f3bbcaf682fe98dda22",
+      "pdf_sha256": "93e136dfacda0b383eb58007292c1a70872b3bd66972ebc78c86418984b1aa4f",
       "evidence_reproduction": {
         "index": "manuscript/sn_computer_science/supplement_evidence_index.md",
         "snapshot": "manuscript/sn_computer_science/evidence_sha256.txt",
-        "previous_comparison_commit": "9d63711",
+        "previous_comparison_commit": "c921e90",
         "equations": 3,
         "indexed_outcomes": 9,
-        "hashed_evidence_files": 72,
+        "hashed_evidence_files": 75,
         "verified_original_pdfs": 49,
-        "reproduction": "Count ledger and TikZ source reproduced. Compared all 29 PDF pages with the preceding revision; visually checked the four changed pages and standalone flow.",
+        "reproduction": "Compared all 29 rendered pages with the prior comparison PDF and verified the nine changed pages. An isolated rebuild from the portable evidence reproduced all 29 rendered pages.",
         "portable_package": {
           "readme": "manuscript/sn_computer_science/minh_chung_hinh_bang/README.md",
           "index": "manuscript/sn_computer_science/minh_chung_hinh_bang/ITEM_INDEX.md",
           "manifest": "manuscript/sn_computer_science/minh_chung_hinh_bang/SHA256SUMS",
-          "archived_source_files": 37,
+          "archived_source_files": 40,
           "figures": 5,
-          "tables": 7,
+          "tables": 8,
           "equations": 3,
-          "independent_build": "Portable source copies and checksums verified for the current PDF."
+          "independent_build": "All 29 pages matched the archived PDF after rebuilding from copied evidence sources in isolation."
         }
       },
       "claim_audit": {
         "prose_map": "manuscript/sn_computer_science/s4_claim_audit.md",
         "study_row_map": "manuscript/sn_computer_science/s4_study_row_sources.csv",
-        "claim_entries": 162,
+        "claim_entries": 164,
         "prose_lines": 90,
         "mapped_studies": 46,
         "narrowed_entries": 19,
         "open_entries": 13,
         "verified_contrasts": 9,
         "original_pdf_hashes": 49,
-        "verified_pdf_item_pages": 15,
+        "verified_pdf_item_pages": 16,
         "scope": "Accepted source locators for 46 studies with targeted direct checks on claims and the nine displayed contrasts."
       },
       "editorial_integration": {
@@ -752,7 +752,11 @@
           "final_human_decisions": 2,
           "author_confirmed_deferrals": 1,
           "author_processed_reports": 3,
-          "reports_without_author_confirmation": 133
+          "reports_without_author_confirmation": 133,
+          "manuscript_table": 8,
+          "physical_pdf_page": 24,
+          "changed_among_author_processed": "2/3",
+          "changed_among_final_decisions": "2/2"
         }
       },
       "reports_awaiting_classification": [

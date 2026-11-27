@@ -58,9 +58,9 @@ project directory.
 | --- | --- |
 | Figure 1 `fig:flow` (PDF p. 6) | [PRISMA reconciler](../../restart_2026_11_26/prisma/reconcile.py) takes the locked records and decisions plus [the S2 author adjudication log](human_adjudication_log.csv), fills [the TikZ template](../../restart_2026_11_26/prisma/flow_template.tex) and writes [counts](../../restart_2026_11_26/prisma/prisma_counts.json) and [standalone source](../../restart_2026_11_26/prisma/prisma_flow.tex). Compile the latter to rebuild the embedded [figure PDF](prisma_flow.pdf). Arithmetic is raw − duplicates = screened, screened − title/abstract exclusions = sought, sought − unretrieved = assessed, assessed = full-text exclusions + pending + included reports. |
 | Figure 2 `fig:macro` (PDF p. 8) | [TikZ](technical_overview_figure.tex) uses [generated counts](technical_macros.tex). The [generator](build_technical_survey.py) counts each report once per panel, using the citation year and BibTeX venue type in panel A and the family, optimizer, and evaluation columns of [primary coding](technical_coding.psv) in the remaining panels. Unscaled TikZ segment height in panel A is 0.16 cm × count, with conference at the bottom and journal stacked above. Horizontal bar length in panels B–D is 0.115 cm × count. The enclosing LaTeX resize applies one scale to the figure. Each panel totals 46. |
-| Figure 3 `fig:topologies` (PDF p. 9) | [TikZ](technical_architecture_figure.tex) illustrates the three analyst-defined topology categories from the coding ledger and Table 2. Representative mappings are peer transport R0010/R0121, a head–worker hierarchy R0014/R0118, and tiered processing R0001/R0080. Arrows represent logical relationships. They carry no measured distance, time, or scale. |
+| Figure 3 `fig:topologies` (PDF p. 9) | [TikZ](technical_architecture_figure.tex) illustrates the three analyst-defined topology categories from the coding ledger and Table 3. Representative mappings are peer transport R0010/R0121, a head–worker hierarchy R0014/R0118, and tiered processing R0001/R0080. Arrows represent logical relationships. They carry no measured distance, time, or scale. |
 | Figure 4 `fig:taxonomy` (PDF p. 10) | [TikZ](technical_taxonomy_figure.tex) uses [generated counts](technical_macros.tex) for topology, unit, optimizer and resilience. A leaf count is the number of distinct reports assigned its label. Each dimension has its own denominator of 46. |
-| Figure 5 `fig:appraisalbar` (PDF p. 22) | [TikZ](technical_appraisal_figure.tex) draws [generated bar inputs](technical_appraisal_bars.tex) from the accepted summary. Segment width in percentage points is 100 × status count / 46. The endpoints are cumulative percentages for Yes, Partial, and Not reported, followed by 100% for any No votes. The corresponding Table 5 percentage is 100 × Yes count / 46 rounded to one decimal. |
+| Figure 5 `fig:appraisalbar` (PDF p. 22) | [TikZ](technical_appraisal_figure.tex) draws [generated bar inputs](technical_appraisal_bars.tex) from the accepted summary. Segment width in percentage points is 100 × status count / 46. The endpoints are cumulative percentages for Yes, Partial, and Not reported, followed by 100% for any No votes. The corresponding Table 7 percentage is 100 × Yes count / 46 rounded to one decimal. |
 | Table 1 `tab:related` (PDF p. 2) | [LaTeX](main.tex#L33) and [bibliography](references.bib). Row-level sources are listed below. |
 | Table 3 `tab:architecture` (PDF p. 11) | [Generated LaTeX](technical_architecture.tex) uses the 46-study characteristics and coding ledgers. The report citation joins each cell back to architecture, model and partition fields in the accepted extraction and locator inventory. |
 | Table 4 `tab:evaluation` (PDF p. 17) | [Generated LaTeX](technical_evaluation.tex) uses the same 46 IDs and joins evaluation settings, connectivity, mobility, faults and continuity cells to the original report through the extraction and locator inventory. |
@@ -68,6 +68,7 @@ project directory.
 | Table 2 `tab:settings` (PDF p. 7) | [Generated LaTeX](editorial_mechanism_setting.tex) and [generator](build_editorial_evidence.py) count report IDs grouped by primary mechanism and strongest evaluation setting in the [coded input](../../restart_2026_11_26/synthesis/desk_reject_evidence_map.csv). Each report contributes to exactly one cell. Definitions and locators are in the coded input. |
 | Table 5 `tab:coverage` (PDF p. 20) | [Generated LaTeX](editorial_outcome_coverage.tex) and [generator](build_editorial_evidence.py) join the [primary coding](../../restart_2026_11_26/synthesis/desk_reject_evidence_map.csv) and [report coverage](../../restart_2026_11_26/extraction/rq5_uniform/report_coverage.csv) by report ID. Study counts group by status and entries sum matched and descriptive rows in the [outcome ledger](../../restart_2026_11_26/extraction/rq5_uniform/outcomes.csv). [Rule and gap definitions](../../restart_2026_11_26/extraction/rq5_uniform/rule.md). |
 | Table 7 `tab:appraisal` (PDF p. 22) | [Generated rows](technical_appraisal.tex) use the accepted summary. Domain counts and percentages share the same source as Figure 5. Use the rationale matrix for individual ratings or missing reporting evidence. |
+| Table 8 `tab:adjudication_audit` (PDF p. 24) | [Generated LaTeX](adjudication_audit_table.tex) and [JSON](audit_summary.json) come from the [S2 audit script](audit_adjudication.py), the [136-row S2 log](human_adjudication_log.csv), the author-confirmed R0082 deferral, and the [PRISMA ledger](../../restart_2026_11_26/prisma/prisma_counts.json). Count final decisions and confirmed deferrals together for author coverage. The change numerator counts only final decisions that differ from the frozen AI disposition. |
 | Eq. 1 `eq:objective` (PDF p. 10) | [LaTeX](main.tex#L169). This review's synthesized objective defines a feasible decision tuple and weights latency, energy, quality and recovery cost across scenarios. The negative quality sign suits minimization. Weights carry unit conversions and recovery cost must have a distinct boundary from end-to-end delay unless deliberate weighting is explained. See R0001/R0006/R0058/R0080 and RQ2 for examples of subproblems. The review did not fit weights or compute a pooled objective. |
 | Eq. 2 `eq:link` (PDF p. 10) | [LaTeX](main.tex#L179). The serialization duration follows from bits divided by effective bits per second. Queueing and protocol time are additive for the stated non-overlapping accounting boundary. R0121 and R0092 provide context for link accounting, with exact assumptions in their extraction. This equation is a schematic decomposition. |
 | Eq. 3 `eq:recovery` (PDF p. 23) | [LaTeX](main.tex#L319). Let t0 be event onset, t1 detection, t2 the valid plan, t3 transfer complete and t4 the first correct resumed output. The sum of consecutive differences telescopes to t4 − t0. With overlapping phases, record wall time and individual intervals. R0038/R0062/R0014 are motivating examples. This is a proposed measurement definition. No recovery values were computed with it. |
@@ -155,7 +156,7 @@ assumptions for future work without reporting a newly measured result.
 | 82–88 | Screening, retrieval, linkage and reviewer roles. See reconciliation, retrieval log, candidate linkage pairs, report–study map, the PRISMA checklist and limitations. Retrieval percentage = 100 × 136 / 137, rounded to one decimal. |
 | 89–93 | Extracted fields, uniform numerical inventory, and ten-domain engineering appraisal. Use the accepted extraction, outcome ledger and appraisal rationales. S3 report coverage has one row per included report. The RQ5 ledger retains 98 entries when filtered to matched or descriptive. |
 | 94–102 | Additional coding and synthesis rules. See primary coding, table generator and contrasts table row map. Selective display, absence of pooling and appraisal boundaries describe the review methods. |
-| 103–114 | Counts and classification. See Figure 1 and its inputs, S2, the missing item R0116 in the retrieval log, and the sole pending report R0082. |
+| 103–114 | Counts and classification. See Figure 1 and its inputs, S2, the missing item R0116 in the retrieval log, and the sole pending report R0082. See Table 8 and the S2 audit derivations for 133, 2/3 and 2/2. |
 | 115–128 | Corpus/year and evaluation framing. See Figure 2 and evaluation table. Examples of model and workload categories come from coding columns and extracted test settings. |
 | 129–145 | Topologies and Figure 3. Use the three topology bins and the cited examples in the report extraction. Interpret overhead and coordination statements as consequences of the depicted dependencies. |
 | 146–167 | Partition/dispatch taxonomy and Figure 4. Connect the five unit bins to architecture table rows and extraction. Representative checks include R0014 for halo/spatial work, R0075 for exits, R0110 for redundancy, R0080 for representation, R0118 for experts, and R0292 for tracker state. |
@@ -168,8 +169,19 @@ assumptions for future work without reporting a newly measured result.
 | 308–313 | Model regimes and state. Check R0074, R0110 and R0118 and the corresponding architecture table–4 entries. Changes in bottlenecks and memory costs are synthesis conditional on the execution design. |
 | 314–327 | Benchmark proposal and Eq. 3. The motivations are workload differences and comparator gaps (the architecture, evaluation, contrasts and appraisal tables), controlled versus planned continuity (evaluation table), and consistent arrival denominators (R0092/contrasts table). The proposal specifies comparators, accounting and timestamp requirements. |
 | 328–340 | Open research questions motivated by appraisal D03/D04/D07/D09 and the evaluation/continuity gaps in the architecture, evaluation, contrasts and appraisal tables. Thermal profiling and authenticated provenance are proposed tests. |
-| 341–345 | Validity limits. See project limitations, accepted reconciliation, extraction scope, PRISMA checklist, and the source class of the related-survey matrix sample. |
+| 341–345 | Validity limits. See S2 audit and Table 8 for the absence of paired decisions, and project limitations, accepted reconciliation, extraction scope, PRISMA checklist, and the source class of the related-survey matrix sample for the other limitations. |
 | 346–356 | Conclusion, declarations, supplements and bibliography. Map RQ1–RQ5 to Sections 4–5 and the RQ claim matrix. Benchmark implications refer to Section 6. Author confirmations remain open. |
+
+## S2 audit derivations
+
+| Table 8 result | Input and calculation |
+| --- | --- |
+| 136 assessed reports | Count unique `Record_ID` values in the S2 CSV and match the PRISMA retrieved ID set. |
+| Two final exclusions and one deferral | S2 CSV rows R0081 (E7, original physical pp. 1–2) and R0132 (E3, physical p. 10 and pp. 17–20) have `Final_Human_Decision=EXCLUDE`. R0082 has a blank final decision, author confirmation in `Adjudication_Notes`, and E7 in `MUST_READ_AI_AGENT/current_state.json` under `evidence.alternative_technical_survey.editorial_integration.author_confirmed_deferrals` and in the PRISMA pending map. Its available arXiv v1 is located at physical pp. 1, 2 and 5. See [S2 case records](supplement_s2_adjudication.md) for the applicability of each locator. |
+| 133 without author confirmation | 136 − (2 recorded final decisions + 1 confirmed deferral) = 133. |
+| 2/3 processed and 2/2 final changed | R0081 and R0132 both have `AI_Decision=AWAITING_CLASSIFICATION`, `Final_Human_Decision=EXCLUDE` and `Changed_From_AI=YES`. Divide the two changes by three processed reports or two final decisions respectively. |
+| 0 / 0 reviewer decisions, 0 pairs, N/A observed agreement and kappa | Both reviewer decision columns have zero nonempty entries. The audit requires two independent decisions on the same report; the observed-agreement denominator is zero and both metrics are null in JSON. |
+| 46 included, 89 excluded, 1 awaiting | Read the verified PRISMA counts and pending map from the ledger. 46 + 89 + 1 = 136. R0082 (E7) is the sole pending report. |
 
 ## Rebuild and check
 
@@ -178,6 +190,7 @@ From this directory, with Python 3.11 or newer and Tectonic available:
 ```sh
 python3 ../../restart_2026_11_26/prisma/reconcile.py --check
 python3 build_technical_survey.py --check
+python3 audit_adjudication.py --check
 python3 check_evidence.py
 ```
 
@@ -192,8 +205,11 @@ flow_build_dir="$(mktemp -d)"
 )
 ```
 
-For the full paper, regenerate the five LaTeX inputs with
-`python3 build_technical_survey.py` and compile with
+For the full paper, regenerate the technical and editorial inputs with
+`python3 build_technical_survey.py` and `python3 build_editorial_evidence.py tables`.
+Run `python3 audit_adjudication.py` in the worktree to regenerate Table 8
+and the JSON from S2, the frozen baseline, canonical deferrals and PRISMA.
+Then compile with
 `tectonic --only-cached --keep-logs --keep-intermediates main.tex`.
 The verified toolchain used pdfTeX 1.40.27 (TeX Live 2025) for the standalone
 flow, Tectonic 0.16.9 for the manuscript, and Python 3.14.5 for the data. Omit

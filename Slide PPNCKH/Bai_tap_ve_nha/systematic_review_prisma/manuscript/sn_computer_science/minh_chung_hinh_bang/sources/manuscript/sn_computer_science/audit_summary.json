@@ -1,0 +1,87 @@
+{
+  "ai_to_final_human_decisions": {
+    "changed_among_author_processed": {
+      "changed": 2,
+      "total": 3
+    },
+    "changed_reports": 2,
+    "compared_reports": 2,
+    "scope": "Compared reports have documented final decisions. Author-processed reports include final decisions and confirmed deferrals. Both counts describe the documented subset.",
+    "transitions": {
+      "AWAITING_CLASSIFICATION -> EXCLUDE": [
+        "R0081",
+        "R0132"
+      ]
+    }
+  },
+  "paired_human_agreement": {
+    "cohens_kappa": null,
+    "confidence_interval_95": null,
+    "expected_agreement": null,
+    "matched": null,
+    "matrix": {
+      "AWAITING_CLASSIFICATION": {
+        "AWAITING_CLASSIFICATION": 0,
+        "EXCLUDE": 0,
+        "INCLUDE": 0
+      },
+      "EXCLUDE": {
+        "AWAITING_CLASSIFICATION": 0,
+        "EXCLUDE": 0,
+        "INCLUDE": 0
+      },
+      "INCLUDE": {
+        "AWAITING_CLASSIFICATION": 0,
+        "EXCLUDE": 0,
+        "INCLUDE": 0
+      }
+    },
+    "paired_reports": 0,
+    "percent_agreement": null,
+    "status": "NO_PAIRED_DECISIONS"
+  },
+  "prisma": {
+    "arithmetic_differences": {
+      "assessed_minus_excluded_pending_and_included": 0,
+      "identified_minus_duplicates_and_screened": 0,
+      "screened_minus_excluded_and_sought": 0,
+      "sought_minus_unretrieved_and_assessed": 0
+    },
+    "awaiting_classification_codes": {
+      "R0082": "E7"
+    },
+    "counts": {
+      "duplicate_records_removed": 228,
+      "included_reports": 46,
+      "included_studies": 46,
+      "raw_records": 693,
+      "records_excluded": 328,
+      "records_screened": 465,
+      "reports_assessed": 136,
+      "reports_awaiting_classification": 1,
+      "reports_excluded": 89,
+      "reports_not_retrieved": 1,
+      "reports_sought": 137
+    }
+  },
+  "s2": {
+    "author_confirmed_deferrals": {
+      "R0082": "E7"
+    },
+    "author_processed_reports": 3,
+    "final_human_decisions": {
+      "R0081": {
+        "decision": "EXCLUDE",
+        "reason": "E7"
+      },
+      "R0132": {
+        "decision": "EXCLUDE",
+        "reason": "E3"
+      }
+    },
+    "reports_in_log": 136,
+    "reports_without_author_confirmation": 133,
+    "reviewer1_decisions": 0,
+    "reviewer2_decisions": 0
+  }
+}
