@@ -2,10 +2,10 @@
   "ai_to_final_human_decisions": {
     "changed_among_author_processed": {
       "changed": 2,
-      "total": 3
+      "total": 8
     },
     "changed_reports": 2,
-    "compared_reports": 2,
+    "compared_reports": 5,
     "scope": "Compared reports have documented final decisions. Author-processed reports include final decisions and confirmed deferrals. Both counts describe the documented subset.",
     "transitions": {
       "AWAITING_CLASSIFICATION -> EXCLUDE": [
@@ -48,17 +48,19 @@
       "sought_minus_unretrieved_and_assessed": 0
     },
     "awaiting_classification_codes": {
-      "R0082": "E7"
+      "R0082": "E7",
+      "R0113": "E3",
+      "R0292": "E7"
     },
     "counts": {
       "duplicate_records_removed": 228,
-      "included_reports": 46,
-      "included_studies": 46,
+      "included_reports": 44,
+      "included_studies": 44,
       "raw_records": 693,
       "records_excluded": 328,
       "records_screened": 465,
       "reports_assessed": 136,
-      "reports_awaiting_classification": 1,
+      "reports_awaiting_classification": 3,
       "reports_excluded": 89,
       "reports_not_retrieved": 1,
       "reports_sought": 137
@@ -66,10 +68,16 @@
   },
   "s2": {
     "author_confirmed_deferrals": {
-      "R0082": "E7"
+      "R0082": "E7",
+      "R0113": "E3",
+      "R0292": "E7"
     },
-    "author_processed_reports": 3,
+    "author_processed_reports": 8,
     "final_human_decisions": {
+      "R0001": {
+        "decision": "INCLUDE",
+        "reason": ""
+      },
       "R0081": {
         "decision": "EXCLUDE",
         "reason": "E7"
@@ -77,10 +85,18 @@
       "R0132": {
         "decision": "EXCLUDE",
         "reason": "E3"
+      },
+      "R0145": {
+        "decision": "INCLUDE",
+        "reason": ""
+      },
+      "R0223": {
+        "decision": "INCLUDE",
+        "reason": ""
       }
     },
     "reports_in_log": 136,
-    "reports_without_author_confirmation": 133,
+    "reports_without_author_confirmation": 128,
     "reviewer1_decisions": 0,
     "reviewer2_decisions": 0
   }

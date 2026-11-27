@@ -297,16 +297,16 @@ def audit_supplemental(project, baseline):
         eq((row["Source_PDF"], row["PDF_SHA256"]),
            (partition[key]["pdf"], partition[key]["sha256"]), f"{key}: S2 report identity")
         reason = row["Primary_Reason_Code"]
+        require(row["PDF_Page_Evidence"] and row["Adjudicated_Date"], f"{key}: missing author decision provenance")
+        if decision == partition[key]["status"] == "INCLUDE" and not reason:
+            continue
         require(key in original_pending and decision == "EXCLUDE" and reason in original_pending[key].split("|"),
                 f"{key}: author decision requires separate corpus reconciliation")
-        require(row["PDF_Page_Evidence"] and row["Adjudicated_Date"], f"{key}: missing author decision provenance")
         partition[key].update(status=decision, reason=reason, pending="")
 
-    groups = split(partition, "status", {"INCLUDE", "EXCLUDE", "AWAITING_CLASSIFICATION"})
-    reasons = split({key: partition[key] for key in groups["EXCLUDE"]}, "reason", {f"E{i}" for i in range(1, 8)})
-    pending = {key: partition[key]["pending"] for key in groups["AWAITING_CLASSIFICATION"]}
     study_map = read_csv(linkage_map, "report_id")
-    eq(set(study_map), set(groups["INCLUDE"]), "active study-linkage coverage")
+    eq(set(study_map), {key for key, row in partition.items() if row["status"] == "INCLUDE"},
+       "locked study-linkage coverage")
     studies = split(study_map, "study_id")
     eq((active_p08["reports_verified"], active_p08["studies_verified"]),
        (len(study_map), len(studies)), "P08 active totals")
@@ -339,6 +339,31 @@ def audit_supplemental(project, baseline):
         for report in members:
             eq(study_map[report]["group_member_reports"], "|".join(members), f"{report}: study membership")
 
+    state = json.loads((project / "MUST_READ_AI_AGENT/current_state.json").read_text())
+    deferrals = state["evidence"]["alternative_technical_survey"]["editorial_integration"][
+        "author_confirmed_deferrals"]
+    for key, reason in deferrals.items():
+        require(key in adjudications and reason in {f"E{i}" for i in range(1, 8)}, f"{key}: invalid author deferral")
+        row = adjudications[key]
+        eq((row["Source_PDF"], row["PDF_SHA256"]),
+           (partition[key]["pdf"], partition[key]["sha256"]), f"{key}: S2 deferral identity")
+        require(not row["Final_Human_Decision"] and row["PDF_Page_Evidence"]
+                and f"AWAITING_CLASSIFICATION ({reason})" in row["Adjudication_Notes"],
+                f"{key}: missing author deferral evidence")
+        if partition[key]["status"] == "AWAITING_CLASSIFICATION":
+            eq(partition[key]["pending"], reason, f"{key}: prior deferral criterion")
+            continue
+        require(key in study_map and row["Adjudicated_Date"], f"{key}: deferral requires a dated inclusion")
+        partition[key].update(status="AWAITING_CLASSIFICATION", reason="", pending=reason)
+
+    # Validate the locked synthesis corpus above before projecting the current eligibility set.
+    groups = split(partition, "status", {"INCLUDE", "EXCLUDE", "AWAITING_CLASSIFICATION"})
+    reasons = split({key: partition[key] for key in groups["EXCLUDE"]}, "reason", {f"E{i}" for i in range(1, 8)})
+    pending = {key: partition[key]["pending"] for key in groups["AWAITING_CLASSIFICATION"]}
+    included = set(groups["INCLUDE"])
+    studies = split({key: study_map[key] for key in included}, "study_id")
+    pairs = {key: row for key, row in pairs.items() if {row["report_a"], row["report_b"]} <= included}
+
     retrieval_groups = {"NOT_RETRIEVED": ["R0116"], "RETRIEVED_PDF": sorted(partition)}
     sought = set().union(*map(set, baseline["report_ids_by_retrieval_decision"].values()))
     eq(set(partition) | {"R0116"}, sought, "sought/assessed set identity")
@@ -352,12 +377,12 @@ def audit_supplemental(project, baseline):
         "reports_assessed": len(partition),
         "reports_excluded": len(groups["EXCLUDE"]),
         "reports_awaiting_classification": len(pending),
-        "included_reports": len(study_map),
+        "included_reports": len(included),
         "included_studies": len(studies),
     }
     differences = baseline["arithmetic_differences"] | {
         "sought_minus_unretrieved_and_assessed": len(sought) - 1 - len(partition),
-        "assessed_minus_excluded_pending_and_included": len(partition) - counts["reports_excluded"] - len(pending) - len(study_map),
+        "assessed_minus_excluded_pending_and_included": len(partition) - counts["reports_excluded"] - len(pending) - len(included),
     }
     require(not any(differences.values()), "unexplained PRISMA count differences")
     return baseline | {

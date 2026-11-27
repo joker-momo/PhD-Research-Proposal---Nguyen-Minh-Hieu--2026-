@@ -43,18 +43,22 @@ class TestReconciliation(unittest.TestCase):
         })
         self.assertEqual(result["report_ids_by_retrieval_decision"]["NOT_RETRIEVED"], ["R0116"])
         self.assertEqual(result["awaiting_classification_codes"], {
-            "R0082": "E7"
+            "R0082": "E7", "R0113": "E3", "R0292": "E7"
         })
         counts = result["counts"]
         self.assertEqual(
             tuple(counts[key] for key in ("reports_assessed", "reports_excluded", "included_reports", "included_studies")),
-            (136, 89, 46, 46)
+            (136, 89, 44, 44)
         )
         decision_sets = [set(ids) for ids in result["report_ids_by_fulltext_decision"].values()]
         assessed = set(result["report_ids_by_retrieval_decision"]["RETRIEVED_PDF"])
         self.assertEqual(set.union(*decision_sets), assessed)
         self.assertEqual(sum(map(len, decision_sets)), len(assessed))
         self.assertEqual(sum(map(len, result["fulltext_exclusions_by_primary_reason"].values())), 89)
+        included = set(result["report_ids_by_fulltext_decision"]["INCLUDE"])
+        self.assertTrue({"R0001", "R0145", "R0223"} <= included)
+        self.assertTrue({"R0113", "R0292"}.isdisjoint(included))
+        self.assertEqual(included, {report for group in result["study_ids_to_report_ids"].values() for report in group})
         self.assertIn("R0081", result["fulltext_exclusions_by_primary_reason"]["E7"])
         self.assertIn("R0132", result["fulltext_exclusions_by_primary_reason"]["E3"])
 

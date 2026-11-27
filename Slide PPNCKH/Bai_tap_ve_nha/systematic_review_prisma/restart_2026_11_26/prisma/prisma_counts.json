@@ -6,17 +6,19 @@
     "sought_minus_unretrieved_and_assessed": 0
   },
   "awaiting_classification_codes": {
-    "R0082": "E7"
+    "R0082": "E7",
+    "R0113": "E3",
+    "R0292": "E7"
   },
   "counts": {
     "duplicate_records_removed": 228,
-    "included_reports": 46,
-    "included_studies": 46,
+    "included_reports": 44,
+    "included_studies": 44,
     "raw_records": 693,
     "records_excluded": 328,
     "records_screened": 465,
     "reports_assessed": 136,
-    "reports_awaiting_classification": 1,
+    "reports_awaiting_classification": 3,
     "reports_excluded": 89,
     "reports_not_retrieved": 1,
     "reports_sought": 137
@@ -3925,7 +3927,9 @@
   },
   "report_ids_by_fulltext_decision": {
     "AWAITING_CLASSIFICATION": [
-      "R0082"
+      "R0082",
+      "R0113",
+      "R0292"
     ],
     "EXCLUDE": [
       "R0007",
@@ -4057,14 +4061,12 @@
       "R0106",
       "R0107",
       "R0110",
-      "R0113",
       "R0118",
       "R0121",
       "R0125",
       "R0137",
       "R0145",
-      "R0223",
-      "R0292"
+      "R0223"
     ]
   },
   "report_ids_by_retrieval_decision": {
@@ -4810,9 +4812,6 @@
     "S039": [
       "R0110"
     ],
-    "S040": [
-      "R0113"
-    ],
     "S041": [
       "R0118"
     ],
@@ -4827,13 +4826,10 @@
     ],
     "S045": [
       "R0223"
-    ],
-    "S046": [
-      "R0292"
     ]
   },
   "supplemental_input_sha256_relative_to_project": {
-    "manuscript/sn_computer_science/human_adjudication_log.csv": "9bc2b47489f3a7b8544a5f3e5300e046226eaa2a06fbec0ddb0ad43f001dceb5",
+    "manuscript/sn_computer_science/human_adjudication_log.csv": "2b206efba296fdc769496d8b59b6d58568bf15d51055ba8c78bfc03c425883d9",
     "prisma_evidence/evidence_by_id.csv": "375c3b8d6d4a1d2465bfbd53359da2a68d3d0d17dd5a19b8f93c1a63bbb82aa9",
     "restart_2026_11_26/appraisal/active_appraisal_table.csv": "e3bec6ad43ca4b89b2812ea6ab1f74f70b07c5538e00e8d9b25cacc98dcff795",
     "restart_2026_11_26/appraisal/active_p09_appraisal_lock.json": "3f1c458ec32a0565914abba011114b3a97b14db95f8541af1d929560c9f2312f",
