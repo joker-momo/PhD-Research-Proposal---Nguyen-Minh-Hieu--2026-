@@ -3,7 +3,6 @@ import argparse
 import csv
 import hashlib
 import json
-import math
 import shutil
 from pathlib import Path
 
@@ -11,7 +10,7 @@ HERE = Path(__file__).resolve().parent
 PROJECT = HERE.parents[2]
 MANUSCRIPT = PROJECT / "manuscript/sn_computer_science"
 PACKET = HERE / "human_review_packet"
-SEED = "hk261-final-46-review-v1"
+SEED = "hk261-full-136-review-v2"
 
 
 def read(path):
@@ -23,11 +22,18 @@ def rank(purpose, report):
     return hashlib.sha256(f"{SEED}:{purpose}:{report}".encode()).hexdigest()
 
 
+def require_blank_forms():
+    fixed_fields = {"packet_id", "check_type", "check_key", "suggested_physical_page", "suggested_section"}
+    for reviewer in ("R1", "R2"):
+        for name in ("screening.csv", "source_verification.csv"):
+            path = PACKET / reviewer / name
+            if path.is_file() and any(
+                value for row in read(path) for key, value in row.items() if key not in fixed_fields
+            ):
+                raise ValueError(f"Preserve the in-progress form: {path}")
+
+
 def write(path, fields, rows):
-    if path.is_file() and path.name in {"screening.csv", "source_verification.csv"}:
-        fixed_fields = {"packet_id", "check_type", "check_key", "suggested_physical_page", "suggested_section"}
-        if any(value for row in read(path) for key, value in row.items() if key not in fixed_fields):
-            raise ValueError(f"Preserve the in-progress form: {path}")
     with path.open("w", encoding="utf-8", newline="") as stream:
         writer = csv.writer(stream, lineterminator="\n")
         writer.writerow(fields)
@@ -45,18 +51,14 @@ def build():
     ):
         raise ValueError("Review frame differs from the reconciled 136 assessed reports")
     stratum_by_id = {report: reason for reason, reports in strata.items() for report in reports}
-    selected = included.copy()
-    for reason, reports in strata.items():
-        n = min(len(reports), max(2, math.ceil(len(reports) / 5)))
-        selected.update(sorted(reports, key=lambda key: rank(reason, key))[:n])
-    sorted_ids = sorted(selected, key=lambda key: rank("alias", key))
-    aliases = {report: f"HK-{i:03}" for i, report in enumerate(sorted_ids, 1)}
+    sorted_ids = sorted(source, key=lambda key: rank("alias", key))
+    aliases = {report: f"HKF-{i:03}" for i, report in enumerate(sorted_ids, 1)}
 
+    require_blank_forms()
     coordinator = PACKET / "coordinator"
     coordinator.mkdir(parents=True, exist_ok=True)
-    write(coordinator / "sampling.csv", ("primary_exclusion_code", "frame", "sample"),
-          [(reason, len(reports), sum(report in selected for report in reports))
-           for reason, reports in sorted(strata.items())])
+    write(coordinator / "exclusion_coverage.csv", ("primary_exclusion_code", "frame", "in_packet"),
+          [(reason, len(reports), len(reports)) for reason, reports in sorted(strata.items())])
     write(coordinator / "key.csv", ("packet_id", "record_id", "frozen_disposition",
                                    "primary_exclusion_code", "source_pdf", "sha256"),
           [(aliases[report], report, "INCLUDE" if report in included else "EXCLUDE",
@@ -92,7 +94,7 @@ def build():
         write(folder / "screening.csv", ("packet_id", "decision", "primary_reason", "physical_pdf_page",
                                         "section", "rationale", "reviewer_id", "date"),
               [(aliases[key], "", "", "", "", "", "", "")
-               for key in sorted(selected, key=lambda key: rank(reviewer, key))])
+               for key in sorted(sorted_ids, key=lambda key: rank(reviewer, key))])
         write(folder / "source_verification.csv", ("packet_id", "check_type", "check_key",
               "suggested_physical_page", "suggested_section", "verified_value_or_judgment",
               "unit", "workload_conditions_and_denominator", "original_page_and_locator",

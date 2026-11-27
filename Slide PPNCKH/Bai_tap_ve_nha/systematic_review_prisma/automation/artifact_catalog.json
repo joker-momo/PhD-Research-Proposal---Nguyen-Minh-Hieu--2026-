@@ -562,7 +562,7 @@
       "artifact_id": "hk261-independent-human-review-packet",
       "name": "HK261 independent full-text and extraction review packet",
       "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/build_human_review_packet.py",
-      "purpose": "Generate masked separate blank reviewer forms from final eligibility and source records.",
+      "purpose": "Generate masked blank forms for two independent reviewers of all 136 assessed full texts and source verification for the 46 retained studies.",
       "entrypoint": "python3.11 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/build_human_review_packet.py'",
       "inputs": [
         "manuscript/sn_computer_science/human_adjudication_log.csv",
@@ -583,7 +583,7 @@
       "tags": [
         "human-review",
         "masking",
-        "stratified-sampling",
+        "full-corpus",
         "source-locators"
       ]
     },

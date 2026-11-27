@@ -77,4 +77,4 @@ appraisal, coding, and outcome denominators from the signed decisions.
 
 ## Independent review packet
 
-The [two blank reviewer forms and coordinator instructions](../../restart_2026_11_26/synthesis/final_46/human_review_packet/README.md) cover all 46 included reports plus 22 exclusions sampled across all six populated exclusion strata. The packet adds no adjudication to S2. Agreement and Cohen's kappa remain undefined until independent pairs are available.
+The [two blank reviewer forms and coordinator instructions](../../restart_2026_11_26/synthesis/final_46/human_review_packet/README.md) cover all 136 assessed full texts, including all 46 included and all 90 excluded reports. The packet adds no adjudication to S2. Agreement and Cohen's kappa remain undefined until independent pairs are available.
