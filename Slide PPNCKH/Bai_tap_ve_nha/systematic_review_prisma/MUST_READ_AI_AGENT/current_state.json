@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T23:58:40+07:00",
+  "updated_at": "2026-11-28T00:02:16+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
-    "summary": "The verified 30-page revision remains frozen on the 46/90/0 corpus. Two AI-assisted source-review endorsements are recorded. Independent human assessment and declarations remain pending."
+    "summary": "The verified 30-page revision identifies both AI-assisted source-review endorsements in Supplement S2 and remains frozen on the 46/90/0 corpus. Independent human assessment and declarations remain pending."
   },
   "task": {
-    "task_id": "hk261-s2-link-r2-source-verification",
+    "task_id": "hk261-manuscript-s2-source-forms",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T23:58:04+07:00",
-    "updated_at": "2026-11-27T23:58:40+07:00",
-    "decision_id": "hk261-s2-link-r2-source-verification-v1",
-    "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
-    "completed_at": "2026-11-27T23:58:40+07:00"
+    "started_at": "2026-11-27T23:59:34+07:00",
+    "updated_at": "2026-11-28T00:02:16+07:00",
+    "decision_id": "hk261-manuscript-s2-source-forms-v1",
+    "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
+    "completed_at": "2026-11-28T00:02:16+07:00"
   },
   "next_task": {
     "task_id": "hk261-priority-draft-author-comparison",
@@ -983,6 +983,38 @@
       },
       "screening_unchanged": true,
       "package": "manuscript/sn_computer_science/minh_chung_hinh_bang/README.md",
+      "package_independent_rebuild": "30/30 rendered pages match. All 16 numbered item pages verified.",
+      "superseded_by": "evidence.s2_source_forms_manuscript_revision"
+    },
+    "s2_source_forms_manuscript_revision": {
+      "completed_at": "2026-11-28T00:02:16+07:00",
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "6ea902ce6d5177fb7317d5f2a17c5c1131dc995707290926216b7815670eb93c",
+      "pages": 30,
+      "previous_pdf_commit": "d2fc563",
+      "previous_pdf_sha256": "cf5c3ff2b8ec561fd5f8776ff8b097ddba80b8b003bfc522955578c3585ab5e8",
+      "s2": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+      "s4": "manuscript/sn_computer_science/supplement_evidence_index.md",
+      "claim_audit": "manuscript/sn_computer_science/s4_claim_audit.md",
+      "s2_source_form_entries": {
+        "R1": 887,
+        "R2": 887
+      },
+      "attribution": {
+        "R1": "author_endorsed_codex",
+        "R2": "colleague_endorsed_gemini_as_confirmed_by_author"
+      },
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "screening_unchanged": true,
+      "pdf_verified_pages": [
+        4,
+        25,
+        26
+      ],
       "package_independent_rebuild": "30/30 rendered pages match. All 16 numbered item pages verified."
     }
   },
