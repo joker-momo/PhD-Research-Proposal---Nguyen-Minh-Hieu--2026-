@@ -904,6 +904,32 @@
         "author-confirmation",
         "pdf"
       ]
+    },
+    {
+      "artifact_id": "hk261-s2-final-eligibility-register",
+      "name": "S2 final eligibility register generator",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_s2_eligibility.py",
+      "purpose": "Build or verify the 136-row final S2 full-text decision register from accepted inputs.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_s2_eligibility.py'",
+      "inputs": [
+        "PRISMA final disposition IDs and exclusion codes",
+        "S2 review and exclusion ledgers",
+        "Accepted screening, date recheck and S3 study evidence"
+      ],
+      "outputs": [
+        "manuscript/sn_computer_science/supplement_s2_eligibility.csv"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_s2_eligibility.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_s2_eligibility.py' --check",
+      "status": "active",
+      "tags": [
+        "S2",
+        "eligibility",
+        "screening",
+        "PRISMA"
+      ]
     }
   ]
 }

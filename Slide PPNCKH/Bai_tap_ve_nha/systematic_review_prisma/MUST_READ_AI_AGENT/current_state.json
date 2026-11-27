@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:14:08+07:00",
+  "updated_at": "2026-11-28T00:16:17+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
-    "summary": "Supplement S2 records ten author-confirmed eligibility decisions, including R0121 and R0125 with explicit evidence limits. The verified 30-page manuscript reflects the updated S2 audit. The 46/90/0 corpus, source-review endorsements, and zero independent screening pairs are unchanged."
+    "summary": "The author endorsed the full 46-included, 90-excluded, zero-awaiting eligibility set. S2 now links a final register with reasons and source locators for all 136 assessed reports. Ten decisions have separately documented report-specific author entries and there are zero independent screening pairs. The manuscript PDF and PRISMA ledger are unchanged."
   },
   "task": {
-    "task_id": "hk261-r0292-publisher-crosscheck",
+    "task_id": "hk261-s2-final-eligibility-register",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:11:34+07:00",
-    "updated_at": "2026-11-28T00:14:08+07:00",
-    "decision_id": "hk261-r0292-publisher-crosscheck-v1",
-    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/r0292_publisher_crosscheck.md",
-    "completed_at": "2026-11-28T00:14:08+07:00"
+    "started_at": "2026-11-28T00:15:27+07:00",
+    "updated_at": "2026-11-28T00:16:17+07:00",
+    "decision_id": "hk261-s2-final-eligibility-register-v1",
+    "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+    "completed_at": "2026-11-28T00:16:17+07:00"
   },
   "next_task": {
     "task_id": "hk261-priority-draft-author-comparison",
@@ -1053,6 +1053,18 @@
         "exclude": 90,
         "awaiting": 0
       }
+    },
+    "s2_final_eligibility_register": {
+      "path": "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
+      "author_endorsement_scope": "entire final full-text eligibility set",
+      "author_endorsement_date": "2026-11-28",
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "documented_item_level_author_decisions": 10,
+      "independent_human_screening_pairs": 0
     }
   },
   "blockers": [],

@@ -1,5 +1,28 @@
 # S2. Full-text eligibility and human adjudication
 
+## Final decisions and author endorsement
+
+The [S2 final eligibility register](supplement_s2_eligibility.csv) lists all
+136 assessed full-text reports by report ID. Each row gives the final
+disposition, the decision basis, the source locator, and the original PDF
+and checksum. Exclusions also give the single primary criterion under the
+[frozen eligibility protocol](../../restart_2026_11_26/protocol_restart.md#p03--eligibility-all-e1e7-must-be-established-for-include).
+The register lists 46 inclusions, 90 exclusions and zero awaiting
+classification. The 90 primary exclusion reasons are E1 (12), E2 (29),
+E3 (41), E4 (1), E6 (1) and E7 (6).
+
+On 28 November 2026, the author confirmed the full set of 46 inclusions and
+90 exclusions as the author's final eligibility judgment, based on the
+documented screening evidence. This endorsement applies to the set as a
+whole. The register's last column gives the dates of the ten previously
+documented report-specific author decisions. The two independent screening
+forms contain zero paired eligibility decisions.
+
+Run `python3 -B build_s2_eligibility.py --check` from this directory to
+verify the register against the accepted inputs.
+
+## Screening and adjudication history
+
 The [136-report review log](human_adjudication_log.csv) carries the existing
 AI-assisted decision, initial evidence, the original PDF path and SHA-256.
 It separates the initial assessment, author notes and final adjudication.
@@ -12,8 +35,9 @@ confirmed three additional exclusions, R0081 (E7), R0113 (E3) and R0132 (E3), on
 [active PRISMA ledger](../../restart_2026_11_26/prisma/prisma_counts.json)
 combines the screening and author decisions. The current eligibility set
 contains 46 included, 90 excluded and none awaiting classification.
-S2 records ten final author decisions (seven inclusions and three exclusions) and
-zero open author-confirmed deferrals. Ten of 136 reports have author confirmation.
+S2 records ten report-specific author decisions (seven inclusions and three
+exclusions) and zero open author-confirmed deferrals. The item-level audit
+counts these ten documented decisions.
 The two confirmations for R0121 and R0125 retain their existing inclusions.
 The current selection includes R0082 in place of R0113 relative to the prior
 46-study comparison PDF. [S3](supplement_s3.md) records the reconciled
