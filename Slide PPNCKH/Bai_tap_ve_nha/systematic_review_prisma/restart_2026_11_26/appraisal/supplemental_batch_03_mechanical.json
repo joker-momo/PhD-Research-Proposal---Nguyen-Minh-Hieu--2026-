@@ -1,0 +1,127 @@
+{
+  "provider_state": "TASK_STATE_COMPLETED",
+  "expected_pairs": 77,
+  "received_pairs": 77,
+  "valid_anchors": 125,
+  "state_counts": {
+    "READ": 7,
+    "YES": 21,
+    "PARTIAL": 36,
+    "NO": 5,
+    "NOT_REPORTED": 8
+  },
+  "missing": [],
+  "bad_pairs": [
+    [
+      "R0113",
+      "D06"
+    ],
+    [
+      "R0118",
+      "D04"
+    ],
+    [
+      "R0118",
+      "D05"
+    ],
+    [
+      "R0137",
+      "D01"
+    ],
+    [
+      "R0137",
+      "D07"
+    ],
+    [
+      "R0137",
+      "access"
+    ],
+    [
+      "R0145",
+      "D01"
+    ],
+    [
+      "R0145",
+      "D04"
+    ]
+  ],
+  "errors": [
+    [
+      7,
+      "R0113",
+      "D06",
+      "excerpt mismatch on physical page 12; other pages [11]"
+    ],
+    [
+      7,
+      "R0113",
+      "D06",
+      "excerpt mismatch on physical page 13; other pages [12]"
+    ],
+    [
+      7,
+      "R0113",
+      "D06",
+      "missing positive or adverse original anchor"
+    ],
+    [
+      16,
+      "R0118",
+      "D04",
+      "excerpt mismatch on physical page 14; other pages [13]"
+    ],
+    [
+      17,
+      "R0118",
+      "D05",
+      "excerpt mismatch on physical page 12; other pages [9]"
+    ],
+    [
+      34,
+      "R0137",
+      "access",
+      "excerpt mismatch on physical page 2; other pages []"
+    ],
+    [
+      34,
+      "R0137",
+      "access",
+      "missing positive or adverse original anchor"
+    ],
+    [
+      35,
+      "R0137",
+      "D01",
+      "excerpt mismatch on physical page 7; other pages []"
+    ],
+    [
+      41,
+      "R0137",
+      "D07",
+      "excerpt mismatch on physical page 11; other pages []"
+    ],
+    [
+      46,
+      "R0145",
+      "D01",
+      "excerpt mismatch on physical page 12; other pages []"
+    ],
+    [
+      49,
+      "R0145",
+      "D04",
+      "excerpt mismatch on physical page 18; other pages [17]"
+    ]
+  ],
+  "summary": {
+    "id": "SUMMARY",
+    "report_count": 7,
+    "key_count": 77,
+    "tools_used": [
+      "client:view_file"
+    ],
+    "no_workers_used": true,
+    "unresolved": [],
+    "metadata_needed": []
+  }
+}
