@@ -1,0 +1,61 @@
+{
+  "batch": 5,
+  "expected": 116,
+  "seen": 115,
+  "task_id": "0a0fb23d-2ab5-4d24-900a-ecd914c34a78",
+  "context_id": "e8020f6f-aa4a-4e49-b15a-09db253bd269",
+  "transport": "TASK_STATE_COMPLETED",
+  "provider_started_at": "2026-11-27T14:17:50.280+00:00",
+  "provider_completed_at": "2026-11-27T14:24:07.187+00:00",
+  "hash_inventory_match": true,
+  "context_unchanged": true,
+  "preflight_anchor_match": true,
+  "identity_count": 6,
+  "identity_expected": 6,
+  "identity_records": [
+    "HKF-022",
+    "HKF-038",
+    "HKF-064",
+    "HKF-086",
+    "HKF-100",
+    "HKF-104"
+  ],
+  "identity_missing": [],
+  "identity_duplicate_dois": 0,
+  "identity_duplicate_titles": 0,
+  "end_marker": true,
+  "cleanup": {
+    "state": "deleted",
+    "verified_new_chat": true,
+    "mode_restored": "chat"
+  },
+  "locator_checks": {
+    "ANCHORS_MATCH": 90,
+    "ANCHOR_NEEDS_VISUAL_OR_CORRECTION": 7,
+    "PARTIAL_ANCHOR_MATCH": 16,
+    "SCHEMA_INVALID": 2
+  },
+  "status_counts": {
+    "VERIFIED": 70,
+    "PARTIAL": 36,
+    "NOT_REPORTED": 7,
+    "NO": 2
+  },
+  "errors": [
+    "malformed JSONL 1: Expecting ',' delimiter: line 1 column 121 (char 120)"
+  ],
+  "missing_keys": [
+    [
+      "HKF-100",
+      "appraisal",
+      "D08"
+    ]
+  ],
+  "semantic": {
+    "PASS": 59,
+    "PARTIAL": 34,
+    "FAIL": 2
+  },
+  "semantic_unreviewed": 20,
+  "semantic_missing_row_reviews": 1
+}

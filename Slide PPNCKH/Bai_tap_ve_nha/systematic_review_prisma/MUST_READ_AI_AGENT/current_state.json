@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T21:17:38+07:00",
+  "updated_at": "2026-11-27T21:28:43+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
@@ -11,18 +11,18 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T20:21:38+07:00",
-    "updated_at": "2026-11-27T21:17:38+07:00",
+    "updated_at": "2026-11-27T21:28:43+07:00",
     "decision_id": "hk261-dual-ai-source-review-887-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/receipts/batch-04-review.md"
+    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/receipts/batch-05-review.md"
   },
   "next_task": {
-    "task_id": "hk261-dual-ai-source-review-887-batch-05",
+    "task_id": "hk261-dual-ai-source-review-887-batch-06",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Assess batch 05 using only the attached source materials.",
-    "acceptance": "Direct source access check and 116 distinct keys or transparent gaps.",
+    "action": "Assess batch 06 using only the attached source materials.",
+    "acceptance": "Direct source access check and 123 distinct keys or transparent gaps.",
     "dispatch_brief": "restart_2026_11_26/integrity/source_review_887/gemini_brief.md",
-    "message_id": "c7bf3d45-b0e5-5f12-9557-56325decc8dd"
+    "message_id": "2f8618cc-6c74-5e6a-b11d-4ef4489e0acd"
   },
   "project": {
     "target_venue": "SN Computer Science",

@@ -380,10 +380,11 @@ def main():
         if not receipt.is_file():
             receipt = HERE / "receipts" / f"batch-{number:02}-receipt.json"
         data, stats = receipt_review(receipt, batch, members, sources)
-        checked = load_semantic_checks(args.workspace, batch["number"], data.keys())
+        checked = load_semantic_checks(args.workspace, batch["number"], members)
         semantic.update(checked)
-        stats["semantic"] = dict(Counter(r["semantic"] for r in checked.values()))
-        stats["semantic_unreviewed"] = len(data) - len(checked)
+        stats["semantic"] = dict(Counter(checked[k]["semantic"] for k in data.keys() & checked.keys()))
+        stats["semantic_unreviewed"] = len(data.keys() - checked.keys())
+        stats["semantic_missing_row_reviews"] = len(checked.keys() - data.keys())
         gemini.update(data)
         reviews.append(stats)
     baseline = baseline_values()
