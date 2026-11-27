@@ -1,0 +1,958 @@
+[
+  {
+    "id": "R0318",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "The neural detector runs on each aircraft. Inter-platform fusion combines conventional tracks, which are estimated after neural detection.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "1 Introduction",
+        "we propose a two-part framework for trust-based assured"
+      ],
+      [
+        "E2",
+        "PDF",
+        3,
+        "§3.1, Collaborative Mission Statement",
+        "multiple aerial agents are equipped"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "§3.2.1 and Figure 2, Ego Agent Pipeline",
+        "runs inference to detect objects from camera images"
+      ],
+      [
+        "E4",
+        "PDF",
+        8,
+        "§7.1, Case Study",
+        "a densely populated network of aerial agents"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3716550.3722038",
+        0,
+        "Publisher-deposited published-online date",
+        "2025-05-07"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Introduction",
+        "we propose a two-part framework for trust-based assured"
+      ],
+      [
+        "E7",
+        "https://iccps.acm.org/2025/call-for-papers/index.html",
+        0,
+        "Submission Instructions",
+        "light-weight double-blind review"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "§3.3.2, Fusion",
+        "conservative fusion of any matched tracks"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0321",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Evaluated on six non-UAV benchmark datasets on a single GPU; no multi-UAV setting or collaborative DNN inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        5,
+        "3 Problem Description",
+        "the MP-FTD detection framework is proposed"
+      ],
+      [
+        "E2",
+        "PDF",
+        12,
+        "5.1 Dataset",
+        "use six publicly available real-world datasets"
+      ],
+      [
+        "E3",
+        "PDF",
+        14,
+        "5.3 Experimental Setup",
+        "implemented using Pytorch 1.9 with a single NVIDIA"
+      ],
+      [
+        "E4",
+        "PDF",
+        12,
+        "§5.1, Dataset",
+        "use six publicly available real-world datasets"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3696419",
+        0,
+        "Publisher-deposited published-online date",
+        "2024-10-04"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "§1, Introduction",
+        "Mobile crowdsensing has become a new sensing and computing architecture"
+      ],
+      [
+        "E7",
+        "PDF",
+        19,
+        "Publication History",
+        "Received 30 November 2023; revised 23 July 2024"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0324",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "The experiments evaluate LLM-generated SysML diagrams. The examples use modeled domains and establish no evaluated multi-UAV computing system.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "conducted an empirical study of LLMs performance and"
+      ],
+      [
+        "E2",
+        "PDF",
+        4,
+        "§4, Study Design",
+        "We used PlantUML [56] with SysML v1.6"
+      ],
+      [
+        "E3",
+        "PDF",
+        6,
+        "4.5 LLMs Selection",
+        "Closed-source models were accessed via official APIs"
+      ],
+      [
+        "E4",
+        "PDF",
+        2,
+        "§1, Introduction",
+        "conducted an empirical study of LLMs performance"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3755881.3755926",
+        0,
+        "Publisher-deposited published-online date",
+        "2025-10-27"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "§1, Introduction",
+        "conducted an empirical study of LLMs performance"
+      ],
+      [
+        "E7",
+        "https://conf.researchr.org/track/internetware-2025/internetware-2025-research-track",
+        0,
+        "Review and Evaluation Criteria",
+        "will employ a double-anonymous review process"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0351",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "The authors evaluate standalone inspection and deicing on one aircraft platform. The CSAIDE 2025 peer-review policy and archived full-paper publication are verified.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "2.1 Hardware System",
+        "The UAV inspection platform designed in this paper"
+      ],
+      [
+        "E2",
+        "PDF",
+        6,
+        "§3.2, Experimental Discussion",
+        "the UAV platform demonstrated high levels of adaptability"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "§2, platform implementation",
+        "adopted the improved YOLOv5 algorithm over YOLOv5"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "§3.1, Experimental Analysis",
+        "we evaluated their accuracy, recall"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3729706.3729731",
+        0,
+        "Publisher-deposited published-online date",
+        "2025-07"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "2.1 Hardware System",
+        "The UAV inspection platform designed in this paper"
+      ],
+      [
+        "E7",
+        "https://2025.csaide.net/contact",
+        0,
+        "CSAIDE 2025, Contact and Review",
+        "review process will be completed by Program Committee Member and invited experts"
+      ],
+      [
+        "E7",
+        "https://2025.csaide.net/Publication",
+        0,
+        "CSAIDE 2025, Publication",
+        "All accepted full papers will be published in ACM ICPS"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0367",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Simulated generic cloud and edge devices for distributed neural network training; no evaluated multi-UAV system or collaborative inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "propose a mechanism, called Digital Twin-Enabled Edge AI"
+      ],
+      [
+        "E2",
+        "PDF",
+        6,
+        "§3.2.1, The Proposed Model",
+        "clients, edge devices, and cloud servers"
+      ],
+      [
+        "E3",
+        "PDF",
+        6,
+        "§3.2.1, The Proposed Model",
+        "large-scale neural network models to a series of smaller sub-tasks"
+      ],
+      [
+        "E4",
+        "PDF",
+        14,
+        "§5.1, Experiment Configuration",
+        "All the experiments"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3526195",
+        0,
+        "Publisher-deposited published-online date",
+        "2022-09-15"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "propose a mechanism, called Digital Twin-Enabled Edge AI"
+      ],
+      [
+        "E7",
+        "PDF",
+        20,
+        "Publication History",
+        "Received October 2021; revised January 2022; accepted February"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0373",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "The deployed service includes multiple UAVs. The evaluated neural trajectory planner runs at the central platform and the separate inspection-image module has no explicit evaluated collaborative neural inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "propose Auto-UIT, an automated system for UAV power"
+      ],
+      [
+        "E2",
+        "PDF",
+        12,
+        "§8.2, Inspection Performance",
+        "deployed across four UAV nests"
+      ],
+      [
+        "E3",
+        "PDF",
+        11,
+        "§8.1, Service Implementation",
+        "Auto- UIT is integrated into the system’s remote control platform"
+      ],
+      [
+        "E4",
+        "PDF",
+        9,
+        "7 Performance Evaluation",
+        "conducting experiments on an NVIDIA Tesla A100 GPU"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3680207.3765244",
+        0,
+        "Publisher-deposited published-online date",
+        "2025-11-21"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "propose Auto-UIT, an automated system for UAV power"
+      ],
+      [
+        "E7",
+        "https://www.sigmobile.org/mobicom/2025/cfp.html",
+        0,
+        "Double-blind Submissions",
+        "All submissions will be evaluated through double-blind reviewing"
+      ],
+      [
+        "E3",
+        "PDF",
+        12,
+        "§8.1, Service Implementation",
+        "a defect detection module analyzes the images"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0384",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "The neutral evaluation setup contains no aircraft architecture and no multi-UAV collaborative inference. Peer-review status for the exact 2026 repository revision is unresolved.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        7,
+        "§5, Evaluation",
+        "This section first introduces the evaluation setup"
+      ],
+      [
+        "E2",
+        "PDF",
+        7,
+        "5.1 Setup",
+        "adopt two-dimensional environments, Predator-prey and World Communication"
+      ],
+      [
+        "E3",
+        "PDF",
+        7,
+        "5.1 Setup",
+        "adopt two-dimensional environments, Predator-prey and World Communication"
+      ],
+      [
+        "E4",
+        "PDF",
+        7,
+        "5 Evaluation",
+        "adopt two-dimensional environments, Predator-prey and World Communication"
+      ],
+      [
+        "E5",
+        "https://arxiv.org/abs/2402.03741v4",
+        0,
+        "Submission history, v4",
+        "Mon, 31 Aug 2026"
+      ],
+      [
+        "E6",
+        "PDF",
+        7,
+        "§5, Evaluation",
+        "This section first introduces the evaluation setup"
+      ],
+      [
+        "E7",
+        "https://arxiv.org/abs/2402.03741v4",
+        0,
+        "Submission history and Comments",
+        "last revised 31 Aug 2026"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "The exact retrieved arXiv v4 postdates the linked conference. No record identified that exact revision as peer-reviewed or accepted."
+    }
+  },
+  {
+    "id": "R0400",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Single-UAV AirSim evaluation of runtime sensor-switching middleware; no multi-UAV setting or collaborative DNN inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "propose a capability-based sensors abstraction model"
+      ],
+      [
+        "E2",
+        "PDF",
+        7,
+        "§4.2, Experimental Setup",
+        "AirSim simulates the UAV with sensors"
+      ],
+      [
+        "E3",
+        "PDF",
+        7,
+        "§4.1, Experimental Scenario",
+        "select the imaging sensor in this scenario"
+      ],
+      [
+        "E4",
+        "PDF",
+        7,
+        "4 Experimental Verification",
+        "AirSim simulates the UAV with sensors"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3609437.3609448",
+        0,
+        "Publisher-deposited published-online date",
+        "2023-10-05"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "propose a capability-based sensors abstraction model"
+      ],
+      [
+        "E7",
+        "https://conf.researchr.org/track/internetware-2023/internetware-2023-papers",
+        0,
+        "Main Track, Review and Evaluation Criteria",
+        "will employ a double-anonymous review process"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0409",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Evaluated on simulated FPGA sensor nodes offloading generic jobs via RL policies; no evaluated multi-UAV system or collaborative DNN inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "compares two different methods—Q-learning and shallow neural"
+      ],
+      [
+        "E2",
+        "PDF",
+        14,
+        "5 Evaluation",
+        "characterized from an Elastic Node v4"
+      ],
+      [
+        "E3",
+        "PDF",
+        14,
+        "5 Evaluation",
+        "characterized from an Elastic Node v4"
+      ],
+      [
+        "E4",
+        "PDF",
+        14,
+        "5 Evaluation",
+        "characterized from an Elastic Node v4"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3487920",
+        0,
+        "Publisher-deposited published-online date",
+        "2021-12-20"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "compares two different methods—Q-learning and shallow neural"
+      ],
+      [
+        "E7",
+        "PDF",
+        25,
+        "Publication History",
+        "Received January 2021; revised August 2021; accepted September"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0432",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Evaluated on point-cloud benchmarks and a single ground robot (TurtleBot3) with one Jetson; no multi-UAV setting or collaborative inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "proposes VPRNet - a sequential decision-making voxel-based lightweight"
+      ],
+      [
+        "E2",
+        "PDF",
+        10,
+        "5.1 Experimental Setup",
+        "TurtleBot3 Burger equipped with one heterogeneous embedded platform"
+      ],
+      [
+        "E3",
+        "PDF",
+        10,
+        "5.1 Experimental Setup",
+        "TurtleBot3 Burger equipped with one heterogeneous embedded platform"
+      ],
+      [
+        "E4",
+        "PDF",
+        10,
+        "5 Experiment and Evaluation",
+        "TurtleBot3 Burger equipped with one heterogeneous embedded platform"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3604280",
+        0,
+        "Publisher-deposited published-online date",
+        "2023-09-13"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "proposes VPRNet - a sequential decision-making voxel-based lightweight"
+      ],
+      [
+        "E7",
+        "https://mobilehci.acm.org/2023/callforpapers.php",
+        0,
+        "Full Papers, Selection Process",
+        "an editorial board and a set of external reviewers"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0438",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "The author-accepted manuscript and official workshop program establish peer review. The field study evaluates collaborative software adaptation rather than collaborative neural inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "Abstract",
+        "propose a publish-subscribe architecture that enables the exchange"
+      ],
+      [
+        "E2",
+        "PDF",
+        7,
+        "5.1 Test and Validation Platform",
+        "multi-sUAS DroneResponse platform [25, 26, 2, 8]"
+      ],
+      [
+        "E3",
+        "PDF",
+        8,
+        "§5, Preliminary Evaluation in the Field",
+        "use of the publish-subscribe architectural pattern"
+      ],
+      [
+        "E4",
+        "PDF",
+        7,
+        "5 Preliminary Evaluation in the Field",
+        "multi-sUAS DroneResponse platform [25, 26, 2, 8]"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "HAL v1 title sheet",
+        "Submitted on 19 Mar 2024"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "propose a publish-subscribe architecture that enables the exchange"
+      ],
+      [
+        "E7",
+        "PDF",
+        2,
+        "Title-page acceptance notice",
+        "accepted for publication at the 12th International Workshop"
+      ],
+      [
+        "E7",
+        "https://conf.researchr.org/home/icse-2024/sesos-2024",
+        0,
+        "Paper Submission and Publication",
+        "will be judged by at least three reviewers"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0453",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Evaluated on street-view road segmentation datasets (Cityscapes, Camvid) on a single GPU; no UAVs or collaborative inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "presents a novel model, the Multi-Attention Class Feature"
+      ],
+      [
+        "E2",
+        "PDF",
+        9,
+        "§4.1, Datasets",
+        "Cityscapes [ 41 ] is a mainstream semantic scene parsing dataset"
+      ],
+      [
+        "E3",
+        "PDF",
+        10,
+        "4.2 Implementation Details",
+        "use 1 GPU (Tesla V100) to run all"
+      ],
+      [
+        "E4",
+        "PDF",
+        9,
+        "§4, Experiments and Analysis",
+        "mainstream semantic scene parsing dataset"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3639053",
+        0,
+        "Publisher-deposited published-online date",
+        "2024-03-08"
+      ],
+      [
+        "E6",
+        "PDF",
+        3,
+        "§1, Introduction",
+        "a better balance of speed (computational cost) and accuracy"
+      ],
+      [
+        "E7",
+        "PDF",
+        18,
+        "Publication History",
+        "Received 22 February 2023; revised 11 October 2023"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0465",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "F"
+    },
+    "primary": "E7",
+    "secondary": [
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "reason": "The workshop article leaves implementation and empirical evaluation to future work. P03 report completeness is the primary exclusion under P06.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "introduces a framework to prevent TDoS"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "§5, conceptual example",
+        "an Unmanned Aerial Vehicle (UAV)"
+      ],
+      [
+        "E3",
+        "PDF",
+        8,
+        "§6, Conclusions",
+        "instantiate the proposal for empirical evaluation"
+      ],
+      [
+        "E4",
+        "PDF",
+        8,
+        "§6, Conclusions",
+        "instantiate the proposal for empirical evaluation"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3465481.3470084",
+        0,
+        "Publisher-deposited published-online date",
+        "2021-08-17"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Introduction",
+        "introduces a framework to prevent TDoS"
+      ],
+      [
+        "E7",
+        "PDF",
+        8,
+        "§6, Conclusions",
+        "instantiate the proposal for empirical evaluation"
+      ],
+      [
+        "E7",
+        "https://2021.ares-conference.eu/workshops/csa-2021/index.html",
+        0,
+        "CSA 2021, Submission Guidelines",
+        "same as for the ARES conference"
+      ]
+    ],
+    "criterion_notes": {}
+  }
+]
