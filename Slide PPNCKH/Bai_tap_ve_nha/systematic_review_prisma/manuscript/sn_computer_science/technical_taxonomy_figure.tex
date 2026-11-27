@@ -8,7 +8,7 @@
 \node[header] (a) at (1.7,-1.10) {Execution topology};
 \node[header] (b) at (5.35,-1.10) {Partition / dispatch};
 \node[header] (c) at (9.00,-1.10) {Optimization};
-\node[header] (d) at (12.65,-1.10) {Resilience evidence};
+\node[header] (d) at (12.65,-1.10) {Continuity evidence};
 \draw[edge] (root.south) -- (7.2,-.55) -- (1.7,-.55) -- (a.north);
 \draw[edge] (7.2,-.55)-- (12.65,-.55) -- (d.north);
 \draw[edge] (5.35,-.55)--(b.north) (9,-.55)--(c.north);
@@ -31,7 +31,7 @@
 \branchleaf{7.52}{3}{Learning-led}{\groupn{optimizer}{rl}}
 \branchleaf{7.52}{4}{Hybrid}{\groupn{optimizer}{hybrid}}
 \branchleaf{7.52}{5}{Rule / descriptive}{\groupn{optimizer}{rule}}
-\branchleaf{11.17}{1}{Modeled reliability}{\groupn{resilience}{analytic}}
+\branchleaf{11.17}{1}{Modeled reliability / stress}{\groupn{resilience}{analytic}}
 \branchleaf{11.17}{2}{Planned reassignment}{\groupn{resilience}{proactive}}
 \branchleaf{11.17}{3}{Link disruption}{\groupn{resilience}{link}}
 \branchleaf{11.17}{4}{Controlled disconnect}{\groupn{resilience}{bench}}
