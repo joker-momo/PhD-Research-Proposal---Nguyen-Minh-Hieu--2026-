@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T10:30:31+07:00",
+  "updated_at": "2026-11-27T10:37:29+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -9,21 +9,21 @@
   "task": {
     "task_id": "restart-supplemental-screening",
     "owner": "CODEX_WRITING",
-    "status": "completed",
+    "status": "rejected",
     "started_at": "2026-11-27T10:02:39+07:00",
-    "updated_at": "2026-11-27T10:30:31+07:00",
-    "completed_at": "2026-11-27T10:25:28+07:00",
-    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_01_correction_review.md",
+    "updated_at": "2026-11-27T10:37:29+07:00",
+    "completed_at": "2026-11-27T10:37:29+07:00",
+    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_02_review.md",
     "decision_id": "restart-supplemental-screening-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-screening-batch-02",
+    "task_id": "restart-supplemental-screening-batch-02-correction",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Screen eight new DOI-matched HK261 reports under P03/P06.",
-    "acceptance": "8/8 report IDs with verified locators, exact bibliographic joins and valid decision precedence.",
-    "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_02_brief.md",
-    "message_id": "e9c38831-13f7-4adf-9b99-378e63c001d8"
+    "action": "Correct five reports and eleven specific evidence keys.",
+    "acceptance": "5 exact IDs and 11 exact keys with confirmed locators or explicit uncertainty.",
+    "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_02_correction_brief.md",
+    "message_id": "c674a960-aec7-4274-b2df-270a8328f80d"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -318,7 +318,21 @@
         "R0116"
       ],
       "intake_manifest": "restart_2026_11_26/supplemental_screening/manifest.json",
-      "deliverable_scope": "FULLTEXT_SCREENING_ONLY"
+      "deliverable_scope": "FULLTEXT_SCREENING_ONLY",
+      "batch_02_verdict": "FAIL",
+      "batch_02_task_uuid": "cffe09b2-be88-4cd5-a630-ae525e024b0c",
+      "batch_02_review": "restart_2026_11_26/supplemental_screening/batch_02_review.md",
+      "evidence_archive": {
+        "artifact": "prisma_evidence/evidence_by_id.csv",
+        "git_commit": "a238201",
+        "pdfs": 136,
+        "supplemental_pdfs": 92,
+        "baseline_pdfs": 44,
+        "catalog_report_ids": 137,
+        "physical_pages": 2059,
+        "clean_checkout_check": "PASS",
+        "rules": "prisma_evidence/MAINTENANCE.md"
+      }
     }
   },
   "blockers": [],
