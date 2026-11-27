@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T16:05:51+07:00",
+  "updated_at": "2026-11-27T16:12:27+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "rq5_uniform_sources_verified",
@@ -11,20 +11,19 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T15:54:06+07:00",
-    "updated_at": "2026-11-27T16:05:51+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/rq5_uniform/review.md",
+    "updated_at": "2026-11-27T16:12:27+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/rq5_uniform/source_index_review.md",
     "decision_id": "hk261-editorial-uniform-outcome-inventory-v1"
   },
   "next_task": {
-    "task_id": "hk261-editorial-uniform-outcome-inventory-source-index",
+    "task_id": "hk261-editorial-uniform-outcome-inventory-source-index-correction",
     "owner": "GEMINI_RESEARCH",
-    "status": "active",
-    "action": "Locate full-text evaluation blocks for all 46 fixed reports.",
-    "acceptance": "46 exact IDs or an explicit shortfall; every adopted result locator is independently verified.",
-    "dispatch_brief": "restart_2026_11_26/extraction/rq5_uniform/source_index_brief.md",
-    "message_id": "hk261-editorial-rq5-source-map-ff1cf4b",
-    "task_uuid": "5b989d57-74a6-45e0-ba85-f393c60e5cf4",
-    "context_id": "1cb472ce-c5d0-4b18-93d7-b88c75e62106"
+    "status": "ready",
+    "action": "Confirm the two experimental settings from the original PDFs.",
+    "acceptance": "Two unique verified settings with exact excerpts, no extra IDs.",
+    "dispatch_brief": "restart_2026_11_26/extraction/rq5_uniform/source_index_correction_brief.md",
+    "message_id": "hk261-editorial-rq5-source-map-ff1cf4b-correction-1",
+    "parent_task_uuid": "5b989d57-74a6-45e0-ba85-f393c60e5cf4"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -722,20 +721,20 @@
       "outcomes": "restart_2026_11_26/extraction/rq5_uniform/outcomes.csv",
       "claim_source": "restart_2026_11_26/extraction/rq5_uniform/claim_source.csv",
       "review": "restart_2026_11_26/extraction/rq5_uniform/review.md",
-      "source_gate_completed_at": "2026-11-27T16:05:51+07:00",
+      "source_gate_completed_at": "2026-11-27T16:12:27+07:00",
       "included_reports": 46,
       "included_studies": 46,
-      "verified_numeric_reports": 35,
-      "plot_only_reports": 10,
+      "verified_numeric_reports": 36,
+      "plot_only_reports": 9,
       "printed_unresolved_reports": [
         "R0113"
       ],
-      "retained_rows": 97,
+      "retained_rows": 98,
       "matched_rows": 51,
       "matched_studies": 23,
-      "descriptive_rows": 46,
+      "descriptive_rows": 47,
       "held_rows": 7,
-      "cross_reference_rows": 2,
+      "cross_reference_rows": 3,
       "fixed_pending": [
         "R0081",
         "R0082",
@@ -743,7 +742,10 @@
       ],
       "fixed_unretrieved": [
         "R0116"
-      ]
+      ],
+      "source_index_receipt": "restart_2026_11_26/extraction/rq5_uniform/source_index_receipt.json",
+      "source_index_review": "restart_2026_11_26/extraction/rq5_uniform/source_index_review.md",
+      "source_index_first_outcome": "rejected_for_two_setting_labels"
     }
   },
   "blockers": [],
