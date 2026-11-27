@@ -1,5 +1,5 @@
 {
-  "status": "SUBMITTED",
+  "status": "CORRECTION_READY",
   "baseline_commit": "539f298",
   "input_manifest": "restart_2026_11_26/synthesis/active_synthesis_input_manifest.json",
   "input_manifest_sha256": "ba90dbb8d67054b2adf52a3a39fc5fee9c3022ca17e47508cf38ebda6191b24f",
@@ -22,7 +22,23 @@
       ],
       "task_uuid": "92e9eeb1-b7e8-4651-8956-0054b3a93f3a",
       "context_id": "b068e57b-68a4-4976-ac3e-d951c11da44e",
-      "dispatch": "restart_2026_11_26/synthesis/active_rq_dispatch.json"
+      "dispatch": "restart_2026_11_26/synthesis/active_rq_dispatch.json",
+      "primary_review": "restart_2026_11_26/synthesis/active_rq_primary_review.md",
+      "primary_gate": "FAIL",
+      "correction_brief": "restart_2026_11_26/synthesis/active_rq_correction_brief.md",
+      "correction_message_id": "e0996484-d12e-456e-9312-2d8e508a4df6",
+      "correction_keys": [
+        "RQ1-A",
+        "RQ1-B",
+        "RQ2-A",
+        "RQ2-B",
+        "RQ3-A",
+        "RQ3-B",
+        "RQ4-A",
+        "RQ4-B",
+        "RQ5-A",
+        "RQ5-B"
+      ]
     }
   ]
 }

@@ -1,0 +1,73 @@
+{
+  "claim_rows_expected": 10,
+  "claim_rows_present": 10,
+  "claim_rows_parseable": 1,
+  "malformed_claim_rows": 9,
+  "unexpected_keys": [],
+  "duplicate_keys": [],
+  "keys": {
+    "RQ1-A": {
+      "line": 1,
+      "parseable": false,
+      "error": "Expecting ',' delimiter",
+      "column": 779
+    },
+    "RQ1-B": {
+      "line": 2,
+      "parseable": true
+    },
+    "RQ2-A": {
+      "line": 3,
+      "parseable": false,
+      "error": "Expecting ',' delimiter",
+      "column": 1699
+    },
+    "RQ2-B": {
+      "line": 4,
+      "parseable": false,
+      "error": "Expecting ',' delimiter",
+      "column": 1652
+    },
+    "RQ3-A": {
+      "line": 5,
+      "parseable": false,
+      "error": "Expecting ',' delimiter",
+      "column": 995
+    },
+    "RQ3-B": {
+      "line": 6,
+      "parseable": false,
+      "error": "Expecting ',' delimiter",
+      "column": 902
+    },
+    "RQ4-A": {
+      "line": 7,
+      "parseable": false,
+      "error": "Expecting ',' delimiter",
+      "column": 1392
+    },
+    "RQ4-B": {
+      "line": 8,
+      "parseable": false,
+      "error": "Expecting ',' delimiter",
+      "column": 1177
+    },
+    "RQ5-A": {
+      "line": 9,
+      "parseable": false,
+      "error": "Expecting ',' delimiter",
+      "column": 1266
+    },
+    "RQ5-B": {
+      "line": 10,
+      "parseable": false,
+      "error": "Expecting ',' delimiter",
+      "column": 1897
+    },
+    "SUMMARY": {
+      "line": 11,
+      "parseable": true
+    }
+  },
+  "raw_provider_uuid": "92e9eeb1-b7e8-4651-8956-0054b3a93f3a"
+}
