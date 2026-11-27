@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:03:53+07:00",
+  "updated_at": "2026-11-27T13:04:26+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_extraction_in_progress",
@@ -11,16 +11,19 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T12:51:10+07:00",
-    "updated_at": "2026-11-27T13:03:53+07:00",
+    "updated_at": "2026-11-27T13:04:26+07:00",
     "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_01_correction_review.md",
     "decision_id": "restart-supplemental-extraction-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-extraction-batch01-semantic-review",
-    "owner": "CODEX_WRITING",
+    "task_id": "restart-supplemental-extraction-batch01-locator-repair",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Verify the corrected and retained original batch 01 claims against their original PDF pages in bounded report groups. Then authorize only the unresolved keys for targeted repair.",
-    "acceptance": "All 7 reports have exact, relevant source support or documented absence for all 91 required fields before batch 02."
+    "action": "Repair the three failed P08 correction locators only.",
+    "acceptance": "Exactly three unique keys and matching original physical PDF page excerpts.",
+    "dispatch_brief": "restart_2026_11_26/extraction/supplemental_batch_01_locator_brief.md",
+    "message_id": "b22c9e9b-74c6-4eb0-ba23-9892022dd2a0",
+    "parent_bridge_task_id": "f80b8621-d974-443f-9f92-5e29c0dd7895"
   },
   "project": {
     "target_venue": "SN Computer Science",
