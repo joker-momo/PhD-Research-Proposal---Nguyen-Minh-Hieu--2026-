@@ -1,0 +1,944 @@
+[
+  {
+    "id": "R0261",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "The reported multi-UAV evaluation addresses communications, with no distributed neural inference as defined by E3.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "1 INTRODUCTION",
+        "Cognitive radio operates on a closed-loop mechanism"
+      ],
+      [
+        "E2",
+        "PDF",
+        4,
+        "5.2 Test Environment",
+        "we conduct UAV formation flight tests"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "4.1 Distributed Anti-Jamming Architecture for UAV Swarms",
+        "local interference sensing, feature extraction and decision-making independently"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "5.2 Test Environment",
+        "test environment that combines simulation and field testing"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3801359.3801401",
+        0,
+        "Publisher-deposited published-online date",
+        "2026-05-04"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 INTRODUCTION",
+        "Satellite and aircraft communications form the backbone"
+      ],
+      [
+        "E7",
+        "https://www.ais.cn/attendees/notice/JJRIJN",
+        0,
+        "BDCTA 2026 organizing committee publication notice",
+        "所有投稿需经过3轮专家审稿"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0266",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "F",
+      "E2": "F",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E1",
+    "secondary": [
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "reason": "Secondary systematic mapping study of autonomous UAV security literature rather than a primary multi-UAV collaborative inference study.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "conducting a comprehensive Systematic Mapping Study"
+      ],
+      [
+        "E2",
+        "PDF",
+        2,
+        "1 Introduction",
+        "examine 185 primary studies published between April 2017"
+      ],
+      [
+        "E3",
+        "PDF",
+        8,
+        "3.1 Objective",
+        "our research goal is to map supporting tools"
+      ],
+      [
+        "E4",
+        "PDF",
+        14,
+        "5 Results",
+        "we classified the 185 selected primary studies"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3860892",
+        0,
+        "Publisher-deposited published-online date",
+        "2026-10-30"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Introduction",
+        "Over the past decade, autonomous aerial systems"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Footer",
+        "ACM Trans. Softw. Eng. Methodol."
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0269",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Single ground mmWave probe and laptop identify individual target drones; no multi-UAV architecture or collaborative DNN inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 INTRODUCTION",
+        "we propose our digital drone forensics system"
+      ],
+      [
+        "E2",
+        "PDF",
+        11,
+        "6 SYSTEM PROTOTYPE & EVALUATION",
+        "The experiments were conducted on 36 drones"
+      ],
+      [
+        "E3",
+        "PDF",
+        11,
+        "6 SYSTEM PROTOTYPE & EVALUATION",
+        "identification system is implemented on a laptop"
+      ],
+      [
+        "E4",
+        "PDF",
+        13,
+        "7.1 Drone Identification Accuracy",
+        "evaluate the ability of DroneTrace to identify different drones"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3534598",
+        0,
+        "Publisher-deposited published-online date",
+        "2022-07-07"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 INTRODUCTION",
+        "In past decades, drones have been developed"
+      ],
+      [
+        "E7",
+        "PDF",
+        21,
+        "Acknowledgments",
+        "We thank all anonymous reviewers"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0271",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "The evaluated scene contains a swarm as the observed target. The ground station performs the detection workload, with no neural inference distributed among UAVs.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 INTRODUCTION",
+        "investigates the development of a LiDAR-based system, LiSWARM"
+      ],
+      [
+        "E2",
+        "PDF",
+        7,
+        "§5.1 Setup",
+        "looking up at the drone cloud"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "3.2.2 Classification Algorithms",
+        "Neural network (NN) models for recognizing the drones"
+      ],
+      [
+        "E4",
+        "PDF",
+        6,
+        "5.1 Setup",
+        "evaluate it at 2 droneshow events"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3711875.3729156",
+        0,
+        "Publisher-deposited published-online date",
+        "2025-09-25"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 INTRODUCTION",
+        "Drone swarms have recently exhibited a tremendous growth"
+      ],
+      [
+        "E7",
+        "PDF",
+        12,
+        "ACKNOWLEDGMENTS",
+        "thank the shepherd and the anonymous reviewers"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0272",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "Neural network is used strictly as a DRL trajectory and wireless-charging optimizer rather than for collaborative DNN inference workloads.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        3,
+        "1 Introduction",
+        "propose a novel two-stage deep reinforcement learning framework"
+      ],
+      [
+        "E2",
+        "PDF",
+        6,
+        "3.1 System Model",
+        "a fleet of UAVs is periodically dispatched"
+      ],
+      [
+        "E3",
+        "PDF",
+        14,
+        "4 Solution",
+        "determines the future movement path and charging duration"
+      ],
+      [
+        "E4",
+        "PDF",
+        19,
+        "5.1 Parameter Setting",
+        "All experiments are conducted on a Ubuntu"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3789206",
+        0,
+        "Publisher-deposited published-online date",
+        "2026-03-10"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "Wireless Rechargeable Sensor Networks (WRSNs) are regarded"
+      ],
+      [
+        "E7",
+        "PDF",
+        38,
+        "History",
+        "Received 28 April 2025; revised 16 December 2025; accepted 2 January 2026"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0281",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "F",
+      "E2": "F",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "F"
+    },
+    "primary": "E1",
+    "secondary": [
+      "E7",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "reason": "The proceedings article is a workshop and challenge overview. Its reported challenge and accepted papers do not constitute an original multi-UAV inference evaluation.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "1 Background and Motivation",
+        "UAVM'26 was the fourth edition of the workshop series"
+      ],
+      [
+        "E2",
+        "PDF",
+        2,
+        "3.1 Task and Dataset",
+        "given a source image and a target image"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "3.3 Results",
+        "puts a light pose head on a frozen"
+      ],
+      [
+        "E4",
+        "PDF",
+        2,
+        "3.3 Results",
+        "The two leading teams submitted no accompanying paper"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3767308.3842139",
+        0,
+        "Publisher-deposited published-online date",
+        "2026-11-09"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Background and Motivation",
+        "Uncrewed aerial vehicles (UAVs), also known as drones"
+      ],
+      [
+        "E7",
+        "PDF",
+        3,
+        "§3.4 Accepted Papers",
+        "11 papers were accepted"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0292",
+    "access": "READ",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "Physical pp3–5 establish the two-UAV transfer of the tracking workload and hardware-in-the-loop evaluation. The official workshop review process and the exact DOI-level final publisher version and review record support E7.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 INTRODUCTION",
+        "introduce the vision based handover protocol that leverages"
+      ],
+      [
+        "E2",
+        "PDF",
+        3,
+        "4 COOPERATIVE CONTINUOUS TRACKING",
+        "proposed system comprises two quadrotor UAVs, D1 and D2"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "4.1 Handoff Protocol",
+        "D1 then wirelessly transmits live tracking data to D2"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "5.2 UAV Data Handover",
+        "onboard system tests were performed in a hardware-in-the-loop"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3711875.3737661",
+        0,
+        "Publisher-deposited published-online date",
+        "2025-09-25"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 INTRODUCTION",
+        "Effective monitoring of marine animals, such as sharks"
+      ],
+      [
+        "E7",
+        "https://dronet25.hotcrp.com/deadlines",
+        0,
+        "DroNet 2025 submission-deadline review rule",
+        "Submissions must be ready by this deadline to be reviewed."
+      ],
+      [
+        "E7",
+        "https://researchers.mq.edu.au/en/publications/continuous-marine-monitoring-via-autonomous-uav-handoff/",
+        0,
+        "Research output and final-publisher-version archive",
+        "Conference proceeding contribution › peer-review"
+      ],
+      [
+        "E7",
+        "https://sigmobile.org/mobisys/2025/accepted_workshops/",
+        0,
+        "DroNet 2025 Workshop",
+        "Eleventh Workshop on Micro Aerial Vehicle Networks, Systems, and Applications"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0294",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "F",
+      "E5": "T",
+      "E6": "T",
+      "E7": "F"
+    },
+    "primary": "E7",
+    "secondary": [
+      "E3",
+      "E4"
+    ],
+    "reason": "Vision/position workshop paper presenting planned future research without a concrete inference procedure or any experimental, simulation, or analytical evaluation.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "1 INTRODUCTION",
+        "The vision of this paper is to amplify"
+      ],
+      [
+        "E2",
+        "PDF",
+        1,
+        "1 INTRODUCTION",
+        "effectively harnessing networks of drones operating in concert"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "3 COLLABORATIVE VISUAL INFERENCE",
+        "Our plan is to investigate collaborative visual inference"
+      ],
+      [
+        "E4",
+        "PDF",
+        3,
+        "§3 Collaborative Visual Inference",
+        "Our plan is to investigate collaborative visual inference"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3469259.3470488",
+        0,
+        "Publisher-deposited published-online date",
+        "2021-07-30"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 INTRODUCTION",
+        "Unmanned aerial vehicles (UAVs), or drones, are envisioned"
+      ],
+      [
+        "E7",
+        "PDF",
+        5,
+        "4.2 Leveraging the UAV Mobility for a Self-Healing Aerial Network",
+        "Our final task would be to evaluate the performance"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0298",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "The evaluated neural model is a policy for scheduling sensing and charging. The paper does not evaluate a collaborative neural inference workload.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 INTRODUCTION",
+        "we propose MCMU, a novel multi-agent reinforcement learning"
+      ],
+      [
+        "E2",
+        "PDF",
+        7,
+        "5.1 Experimental Setups",
+        "5 UAVs are randomly initialized in the target area"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "2.1 System Overview",
+        "help them make appropriate moving, sensing, and charging decisions"
+      ],
+      [
+        "E4",
+        "PDF",
+        7,
+        "5.1 Experimental Setups",
+        "We construct and train K=20 tasks in our experiments"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3641512.3686367",
+        0,
+        "Publisher-deposited published-online date",
+        "2024-10"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 INTRODUCTION",
+        "Nowadays, unmanned aerial vehicles (UAVs) equipped with specialized sensors"
+      ],
+      [
+        "E7",
+        "https://www.sigmobile.org/mobihoc/2024/cfp.html",
+        0,
+        "Call for Papers",
+        "submit a one-page rebuttal for the reviews"
+      ],
+      [
+        "E7",
+        "https://www.sigmobile.org/mobihoc/2024/accepted-papers.html",
+        0,
+        "Accepted Papers",
+        "Multi-Task-Oriented UAV Crowd Sensing with Charging Budget Constraint"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0299",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Single-model optical image detector evaluated offline to detect target UAVs; no multi-UAV architecture or collaborative DNN inference, and publisher peer-review policy unverified.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 INTRODUCTION",
+        "introduces a new framework named MAHR-Net"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "4.1 The Evaluation Indicator Comparison",
+        "built a uav dataset called UAVD for training"
+      ],
+      [
+        "E3",
+        "PDF",
+        5,
+        "4.1 The Evaluation Indicator Comparison",
+        "our model, despite being a single model"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "4.1 The Evaluation Indicator Comparison",
+        "compare the proposed network with other state-of-the-art methods"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3757749.3757787",
+        0,
+        "Publisher-deposited published-online date",
+        "2025-09-15"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 INTRODUCTION",
+        "With the advancement of artificial intelligence technology"
+      ],
+      [
+        "E7",
+        "PDF",
+        5,
+        "Acknowledgments",
+        "organizers of the conference and the judges"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "6-page ACM ICCMT 2025 conference paper; E7 marked U because publisher-side peer-review policy was not directly verified."
+    }
+  },
+  {
+    "id": "R0302",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "Each nano-UAV runs standalone onboard CNN pest detection independently on a separate vineyard partition with no inter-UAV communication or collaborative DNN inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "designing a two-level autonomous transportation system"
+      ],
+      [
+        "E2",
+        "PDF",
+        20,
+        "6 Conclusions",
+        "using a swarm of 25 UAVs to explore"
+      ],
+      [
+        "E3",
+        "PDF",
+        19,
+        "5.2 Routing",
+        "does not involve communication between UAVs"
+      ],
+      [
+        "E4",
+        "PDF",
+        13,
+        "4.1.2 Embedded system deployment performance",
+        "comprehensive evaluation of the performance of all models"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "arXiv stamp",
+        "arXiv:2502.14455v1 [cs.RO] 20 Feb 2025"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "Heterogeneous ground-aerial autonomous robots combine the advantages"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Header",
+        "accepted for publication in the 2025 ACM Journal"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0309",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Standalone single-GPU YOLOv8n detector evaluated offline on an aerial dataset; no multi-UAV architecture or collaborative inference, and publisher peer-review policy unverified.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "2 RDC-YOLOv8n algorithm",
+        "an improved target detection algorithm RDC-YOLOv8n is proposed"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "3.1 Experimental dataset",
+        "use the MOT_FLY_V0.3 dataset for experimental evaluation"
+      ],
+      [
+        "E3",
+        "PDF",
+        5,
+        "3.2 Experimental environment and parameters",
+        "hardware parameters are shown in Table 2"
+      ],
+      [
+        "E4",
+        "PDF",
+        6,
+        "3.4 Ablation experiment",
+        "structures are evaluated by ablation experiments"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3703935.3704093",
+        0,
+        "Publisher-deposited published-online date",
+        "2025-06-27"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 INTRODUCTION",
+        "In recent years, drone technology has developed rapidly"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "ACM Reference Format",
+        "ACM, New York, NY, USA, 8 pages"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "8-page ACM AIPR 2024 conference paper; E7 marked U because publisher-side peer-review policy was not directly opened."
+    }
+  },
+  {
+    "id": "R0317",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Evaluates generic wireless clients for decentralized model training rather than a multi-UAV architecture or collaborative DNN inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "I. INTRODUCTION",
+        "propose a new algorithm De-RPOTA for resource-constrained decentralized learning"
+      ],
+      [
+        "E2",
+        "PDF",
+        10,
+        "V.A Experimental Setup",
+        "In our experiments, we work with 12 clients"
+      ],
+      [
+        "E3",
+        "PDF",
+        10,
+        "§V.A Experimental Setup",
+        "we train the ResNet-18 model"
+      ],
+      [
+        "E4",
+        "PDF",
+        10,
+        "V. EXPERIMENTS",
+        "conduct comprehensive experiments to assess the efficacy"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Footnote",
+        "Date of publication 1 October 2024"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "I. INTRODUCTION",
+        "exponential growth in data at the network edge"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Footnote",
+        "accepted 30 July 2024; approved by IEEE/ACM"
+      ]
+    ],
+    "criterion_notes": {}
+  }
+]

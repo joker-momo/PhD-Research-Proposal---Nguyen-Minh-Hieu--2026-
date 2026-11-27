@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T11:55:58+07:00",
+  "updated_at": "2026-11-27T12:06:06+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -11,19 +11,19 @@
     "owner": "CODEX_WRITING",
     "status": "completed",
     "started_at": "2026-11-27T10:02:39+07:00",
-    "updated_at": "2026-11-27T11:55:58+07:00",
-    "completed_at": "2026-11-27T11:55:58+07:00",
-    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_06_review.md",
+    "updated_at": "2026-11-27T12:06:06+07:00",
+    "completed_at": "2026-11-27T12:06:06+07:00",
+    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_07_review.md",
     "decision_id": "restart-supplemental-screening-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-screening-batch-07",
+    "task_id": "restart-supplemental-screening-batch-08",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "First-pass P03/P06 screen the next 13 supplemental PDF reports, batch 07.",
+    "action": "First-pass P03/P06 screen the next 13 supplemental PDF reports, batch 08.",
     "acceptance": "13 exact distinct IDs, seven criteria each and verified original locators.",
-    "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_07_brief.md",
-    "message_id": "c790635b-d1be-4b84-ae89-463bb00e9c98"
+    "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_08_brief.md",
+    "message_id": "c419213a-e5d9-4d1c-b532-8b3996b45cae"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -304,7 +304,7 @@
       "access_probe_task_uuid": "899b1fa0-0c83-41fa-ae84-effe69d7d663",
       "access_probe_chat_cleanup": "not_verified",
       "prior_awaiting_recheck": "restart_2026_11_26/supplemental_screening/prior_awaiting_recheck.json",
-      "screened_supplemental_count": 65,
+      "screened_supplemental_count": 78,
       "batch_01_inputs": "restart_2026_11_26/supplemental_screening/batch_01_inputs.json",
       "batch_01_verdict": "PASS_COMPOSITE",
       "batch_01_task_uuid": "c3ab44ab-75fa-4f7b-a4d4-230860a6bcc5",
@@ -362,8 +362,8 @@
       "batch_05_task_uuid": "9ab10f4e-fc8a-4143-913a-3fe61d516bbf",
       "batch_05_status": "VERIFIED_COMPLETED_BY_ORIGINAL_UUID",
       "batch_05_pending_reports": 0,
-      "supplemental_decisions_accounted": 66,
-      "remaining_supplemental_reports": 26,
+      "supplemental_decisions_accounted": 79,
+      "remaining_supplemental_reports": 13,
       "batch_05_review": "restart_2026_11_26/supplemental_screening/batch_05_review.md",
       "batch_05_verdict": "PASS_COMPOSITE",
       "batch_05_accepted": "restart_2026_11_26/supplemental_screening/batch_05_accepted.json",
@@ -374,7 +374,13 @@
       "batch_06_verdict": "PASS_COMPOSITE",
       "batch_06_accepted": "restart_2026_11_26/supplemental_screening/batch_06_accepted.json",
       "batch_06_provider_verdict": "FAIL_EXACT_LOCATORS_AND_SOURCE_APPLICABILITY",
-      "batch_07_inputs": "restart_2026_11_26/supplemental_screening/batch_07_inputs.json"
+      "batch_07_inputs": "restart_2026_11_26/supplemental_screening/batch_07_inputs.json",
+      "batch_07_task_uuid": "3df94f72-8cd8-44ce-8af2-e7685bf12966",
+      "batch_07_review": "restart_2026_11_26/supplemental_screening/batch_07_review.md",
+      "batch_07_verdict": "PASS_COMPOSITE",
+      "batch_07_accepted": "restart_2026_11_26/supplemental_screening/batch_07_accepted.json",
+      "batch_07_provider_verdict": "FAIL_LOCATORS_APPLICABILITY_AND_E7_DISPOSITION",
+      "batch_08_inputs": "restart_2026_11_26/supplemental_screening/batch_08_inputs.json"
     }
   },
   "blockers": [],

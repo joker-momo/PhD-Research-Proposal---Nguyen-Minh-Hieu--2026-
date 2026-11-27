@@ -1,0 +1,250 @@
+[
+  {
+    "id": "R0318",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0318.pdf",
+    "sha256": "bd7eb3b7e1ceb574bb8c52f5df9c9310cab0a8d1583a57cd94370049267a7a49",
+    "doi": "10.1145/3716550.3722038",
+    "title": "Trust-Based Assured Sensor Fusion in Distributed Aerial Autonomy",
+    "authors": "R. Spencer Hallyburton; Miroslav Pajic",
+    "year": "2025",
+    "venue": "Proceedings of the ACM/IEEE 16th International Conference on Cyber-Physical Systems (with CPS-IoT Week 2025)",
+    "pages": 12,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2025-05-07",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3716550.3722038"
+    },
+    "scope_notes": [
+      "ICCPS 2025 main accepted paper https://iccps.acm.org/2025/accepted-papers/index.html; exact CFP https://iccps.acm.org/2025/call-for-papers/index.html. Distinguish standalone neural model inputs/outputs from separate downstream state fusion. Neutral eligibility only."
+    ]
+  },
+  {
+    "id": "R0321",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0321.pdf",
+    "sha256": "e4d38901495a9f512ab1cf558e9d971e09216549a55b268fc2b0b4ef9c206323",
+    "doi": "10.1145/3696419",
+    "title": "Malicious Participants and Fake Task Detection Incorporating Gaussian Bias",
+    "authors": "Jian Wang; Delei Zhao; Guosheng Zhao",
+    "year": "2024",
+    "venue": "ACM Transactions on Internet Technology",
+    "pages": 19,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2024-10-04",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3696419"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0324",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0324.pdf",
+    "sha256": "507d375aabc5b0189685634f67bde8680c0e06647530aab6737fb597c476d2c4",
+    "doi": "10.1145/3755881.3755926",
+    "title": "Generating SysML Behavior Models via Large Language Models: an Empirical Study",
+    "authors": "Yuan Wang; Ning Ge; Jiangxi Liu; Zhilong Cao; Zheping Chen; Chunming Hu",
+    "year": "2025",
+    "venue": "Proceedings of the 16th International Conference on Internetware",
+    "pages": 12,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2025-10-27",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3755881.3755926"
+    },
+    "scope_notes": [
+      "Exact research-track policy and program: https://conf.researchr.org/track/internetware-2025/internetware-2025-research-track ."
+    ]
+  },
+  {
+    "id": "R0351",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0351.pdf",
+    "sha256": "cef4d5a4e8cebd6c6b56b155637062ef1c373c676759e5be7a89ae197639c80f",
+    "doi": "10.1145/3729706.3729731",
+    "title": "Intelligent Inspection and Deicing System for Power Transmission Lines Based on UAV Platform",
+    "authors": "Siwen Sun; Changjiang Song; Xiaodan Cong; Lei Fei; Lei Ding",
+    "year": "2025",
+    "venue": "Proceedings of the 2025 4th International Conference on Cyber Security, Artificial Intelligence and the Digital Economy",
+    "pages": 7,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2025-07",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3729706.3729731"
+    },
+    "scope_notes": [
+      "Use experimental topology. Exact conference archive https://2025.csaide.net/ . Do not use a later edition for peer review."
+    ]
+  },
+  {
+    "id": "R0367",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0367.pdf",
+    "sha256": "1aba74be4946f6753123704855265d810e9a424900a2e83044c02a00ca6bbd97",
+    "doi": "10.1145/3526195",
+    "title": "Digital Twin-enabled AI Enhancement in Smart Critical Infrastructures for 5G",
+    "authors": "Keke Gai; Qiang Xiao; Meikang Qiu; Guolei Zhang; Jianyu Chen; Yihang Wei; Yue Zhang",
+    "year": "2022",
+    "venue": "ACM Transactions on Sensor Networks",
+    "pages": 20,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2022-09-15",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3526195"
+    },
+    "scope_notes": [
+      "Check actual evaluated system topology in the experimental section, not cited background."
+    ]
+  },
+  {
+    "id": "R0373",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0373.pdf",
+    "sha256": "8dd7a937aea057d4cd438538599b88ce42ef0337ac3a97809d883758f54f500a",
+    "doi": "10.1145/3680207.3765244",
+    "title": "Auto-UIT: Automating UAV Inspection Trajectory by Recognizing Pylon Structure from 3D Point Cloud",
+    "authors": "Feng Lyu; Lijuan He; Mingliu Liu; Sijing Duan; Hao Wu; Jieyu Zhou; Yi Ding; Zaixun Ling; Yibo Cui",
+    "year": "2025",
+    "venue": "Proceedings of the 31st Annual International Conference on Mobile Computing and Networking",
+    "pages": 15,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2025-11-21",
+      "type": "publisher-deposited published-online date",
+      "url": "https://api.crossref.org/works/10.1145/3680207.3765244"
+    },
+    "scope_notes": [
+      "Exact conference is MobiCom 2025. Official accepted list https://sigmobile.org/mobicom/2025/accepted.html. Identity is exact DOI plus the same nine authors with two author positions swapped in the accepted list."
+    ]
+  },
+  {
+    "id": "R0384",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0384.pdf",
+    "sha256": "69c1ef8ba85ad80efa1f684d173f8a9535e35a2b3c2bf51129cb608dad8a3fd3",
+    "doi": "10.1145/3658644.3670293",
+    "title": "SUB-PLAY: Adversarial Policies against Partially Observed Multi-Agent Reinforcement Learning Systems",
+    "authors": "Oubo Ma; Yuwen Pu; Linkang Du; Yang Dai; Ruo Wang; Xiaolei Liu; Yingcai Wu; Shouling Ji",
+    "year": "2024",
+    "venue": "Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security",
+    "pages": 20,
+    "version": "ARXIV_DEPOSIT",
+    "date": {
+      "value": "2026-08-31",
+      "type": "arXiv v4 version-date",
+      "url": "https://arxiv.org/abs/2402.03741v4"
+    },
+    "scope_notes": [
+      "Physical p1 is arXiv v4 dated 2026-08-31, do not assume it is the submitted version. High-level eligibility only."
+    ]
+  },
+  {
+    "id": "R0400",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0400.pdf",
+    "sha256": "4994fbf2cc706a0c7ba3a3a34cebbd004d7d6097b417b527dd4710fab20efa52",
+    "doi": "10.1145/3609437.3609448",
+    "title": "UbiCap: A Capability-based Run-time Model for Heterogeneous Sensors Management in Ubiquitous Operating System",
+    "authors": "Xiaojuan Li; Yu Zhang; Zhengyan Zhu; Yuan Yao; Xingshe Zhou",
+    "year": "2023",
+    "venue": "Proceedings of the 14th Asia-Pacific Symposium on Internetware",
+    "pages": 10,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2023-10-05",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3609437.3609448"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0409",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0409.pdf",
+    "sha256": "5f8cdf6acfa5e74b5572e72fdee66f31f52bd970cae65499a3263e0334cd626c",
+    "doi": "10.1145/3487920",
+    "title": "Developing Action Policies with Q-Learning and Shallow Neural Networks on Reconfigurable Embedded Devices",
+    "authors": "Alwyn Burger; Gregor Schiele; David W. King",
+    "year": "2021",
+    "venue": "ACM Transactions on Autonomous and Adaptive Systems",
+    "pages": 25,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2021-12-20",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3487920"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0432",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0432.pdf",
+    "sha256": "71a1996f996539f55284f023dba458a347483b695065958deb2e964fe6210439",
+    "doi": "10.1145/3604280",
+    "title": "VPRNet: Voxel-based Efficient and Partial-to-Partial Point Cloud Registration on Mobile Devices",
+    "authors": "Zihao Yin; Chen Qiu; Zhiwen Yu; Bin Guo",
+    "year": "2023",
+    "venue": "Proceedings of the ACM on Human-Computer Interaction",
+    "pages": 19,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2023-09-13",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3604280"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0438",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0438.pdf",
+    "sha256": "889694428d189fb071992a9c6f8e7161c73c8a6bf01ef2c773a3ac12ebe39b73",
+    "doi": "10.1145/3643655.3643882",
+    "title": "Self-Adaptation of Loosely Coupled Systems across a System of Small Uncrewed Aerial Systems",
+    "authors": "Theodore Chambers; Jane Cleland-Huang; Michael Vierhauser",
+    "year": "2024",
+    "venue": "Proceedings of the 12th ACM/IEEE International Workshop on Software Engineering for Systems-of-Systems and Software Ecosystems",
+    "pages": 9,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2024-08-06",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3643655.3643882"
+    },
+    "scope_notes": [
+      "Exact workshop program and peer-review policy https://conf.researchr.org/home/icse-2024/sesos-2024 ."
+    ]
+  },
+  {
+    "id": "R0453",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0453.pdf",
+    "sha256": "c3619180568585956dcb96820f941b96ba90c0de07f90a9a782819b9ea58baba",
+    "doi": "10.1145/3639053",
+    "title": "MCFNet: Multi-Attentional Class Feature Augmentation Network for Real-Time Scene Parsing",
+    "authors": "Xizhong Wang; Rui Liu; Xin Yang; Qiang Zhang; Dongsheng Zhou",
+    "year": "2024",
+    "venue": "ACM Transactions on Multimedia Computing, Communications, and Applications",
+    "pages": 18,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2024-03-08",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3639053"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0465",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0465.pdf",
+    "sha256": "bbd38afad53837789bb8900a67befaddae73a4023bcb98bab555169690fe337a",
+    "doi": "10.1145/3465481.3470084",
+    "title": "Adaptive Mitigation of Tactical Denial of Sustainability",
+    "authors": "Marco Antonio Sotelo Monge; Jorge Maestre Vidal; Roumen Daton Medenou Choumanof",
+    "year": "2021",
+    "venue": "Proceedings of the 16th International Conference on Availability, Reliability and Security",
+    "pages": 9,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2021-08-17",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3465481.3470084"
+    },
+    "scope_notes": []
+  }
+]
