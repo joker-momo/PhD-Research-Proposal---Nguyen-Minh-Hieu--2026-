@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:24:42+07:00",
+  "updated_at": "2026-11-27T13:25:07+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_extraction_in_progress",
@@ -11,16 +11,18 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T12:51:10+07:00",
-    "updated_at": "2026-11-27T13:24:42+07:00",
+    "updated_at": "2026-11-27T13:25:07+07:00",
     "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_02_composite_review.md",
     "decision_id": "restart-supplemental-extraction-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-extraction-batch03-setup",
-    "owner": "CODEX_WRITING",
+    "task_id": "restart-supplemental-extraction-batch03",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Prepare and commit the native P08 supplemental batch 03 brief for the final seven manifest records; send once after gate.",
-    "acceptance": "Seven approved input IDs, stable message ID, original PDF locators and current Git source for one Task."
+    "action": "Dispatch the prepared final seven-report P08 native Task once before source verification.",
+    "acceptance": "7/7 source identities and 98 exact unique keys with matching original PDF evidence.",
+    "dispatch_brief": "restart_2026_11_26/extraction/supplemental_batch_03_brief.md",
+    "message_id": "ffde068c-2531-46e0-8fa6-aadb1f411037"
   },
   "project": {
     "target_venue": "SN Computer Science",
