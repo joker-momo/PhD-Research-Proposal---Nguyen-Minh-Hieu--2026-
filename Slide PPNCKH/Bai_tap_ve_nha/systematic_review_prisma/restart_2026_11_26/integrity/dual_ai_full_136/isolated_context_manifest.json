@@ -1,0 +1,52 @@
+{
+  "message_id": "53e7b88e-b04f-445b-a41e-a333bc32b762",
+  "previous_rejected_message_id": "b08929e0-6593-4aa3-9bb6-a9ee0f06c9de",
+  "direct_transport_result": {
+    "code": -32602,
+    "message": "Invalid context: Direct context must be the canonical HK261 review directory"
+  },
+  "brief": "restart_2026_11_26/integrity/dual_ai_full_136/gemini_isolated_brief.md",
+  "extractor": "Apple PDFKit; physical page markers; bibliography trim",
+  "files": {
+    "criteria.txt": {
+      "sha256": "62186168e901e14eb811168b529ab4310281e8e7354f16183d7663f102d1f055",
+      "bytes": 4091
+    },
+    "reports-4.txt": {
+      "sha256": "8724f0e3ed35e13343a897384c688ebb15b48b8030b7342c943fb493d7bc8bfe",
+      "bytes": 1141512
+    },
+    "reports-5.txt": {
+      "sha256": "c47cb9f533ef5a6ed7070c73d567166142767dc0fe09aa01e08f8d8c661c45bb",
+      "bytes": 899593
+    },
+    "reports-7.txt": {
+      "sha256": "5297d9cbe2557b1e57c9cadbf6420343c8d5e7d29415907537f940d6c834cddc",
+      "bytes": 819270
+    },
+    "reports-6.txt": {
+      "sha256": "8da1da17d5336aeee8749eb0e799776d114c25e7c367d4ae1c04986ad9d3674a",
+      "bytes": 766511
+    },
+    "reports-2.txt": {
+      "sha256": "8d0f94299fdb485936fadd877d4b225b0613bce211d4c9c2a8c8c73f5ef5e104",
+      "bytes": 741688
+    },
+    "reports-3.txt": {
+      "sha256": "b24607828f3dcf363c92ab3c8498decb647fac4ea3fcd2f5c8f5695da2e40ab4",
+      "bytes": 844172
+    },
+    "reports-1.txt": {
+      "sha256": "e8861a268cca8ffed4cb62bb6928268e8c923e5155ba58c3c36619942bb8ba17",
+      "bytes": 1099781
+    },
+    "HKF-093.pdf": {
+      "sha256": "a43032f0224778112719ca5d350ce2415799095c34bfbf4652616f64b62010e4",
+      "bytes": 173474
+    },
+    "reports-8.txt": {
+      "sha256": "cc410a147bc03dc28994acb6931a86d9a3d67038f9dc2df1d35ef2f7cc79ecd0",
+      "bytes": 1007553
+    }
+  }
+}
