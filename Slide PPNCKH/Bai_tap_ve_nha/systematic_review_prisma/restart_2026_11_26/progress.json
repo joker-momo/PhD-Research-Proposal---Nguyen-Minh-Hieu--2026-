@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T15:02:30+07:00",
+  "updated_at": "2026-11-27T15:07:58+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -1494,7 +1494,7 @@
       "owner": "CODEX_WRITING",
       "status": "completed",
       "started_at": "2026-11-27T08:00:27+07:00",
-      "updated_at": "2026-11-27T08:05:39+07:00",
+      "updated_at": "2026-11-27T15:07:58+07:00",
       "completed_at": "2026-11-27T08:05:39+07:00",
       "artifacts": [
         "manuscript/sn_computer_science/README.md",
@@ -1505,15 +1505,43 @@
         "manuscript/sn_computer_science/supplement_search_strategies.md",
         "manuscript/sn_computer_science/supplement_fulltext_exclusions.csv",
         "manuscript/sn_computer_science/step15_build_review.md",
-        "restart_2026_11_26/prisma/prisma_checklist.md"
+        "restart_2026_11_26/prisma/prisma_checklist.md",
+        "manuscript/sn_computer_science/step15_active_build_review.md"
       ],
       "acceptance": [
         {
           "criterion": "Step 15 manuscript build and evidence consistency",
           "verdict": "PASS",
           "evidence": "10 pages visually inspected; 26 bibliography entries and clickable DOI links; exact restart counts; 27/27 checklist items."
+        },
+        {
+          "criterion": "Active 46-study LaTeX manuscript gate",
+          "verdict": "PASS",
+          "evidence": "13 rendered PDF pages, 47 bibliography items, 87 traceable exclusions, four preserved unresolved dispositions, and three source-verified outcome rows."
         }
-      ]
+      ],
+      "supplemental": {
+        "status": "PASS",
+        "started_at": "2026-11-27T15:04:50+07:00",
+        "updated_at": "2026-11-27T15:07:58+07:00",
+        "completed_at": "2026-11-27T15:07:58+07:00",
+        "artifacts": [
+          "manuscript/sn_computer_science/README.md",
+          "manuscript/sn_computer_science/main.tex",
+          "manuscript/sn_computer_science/references.bib",
+          "manuscript/sn_computer_science/main.pdf",
+          "manuscript/sn_computer_science/prisma_flow.pdf",
+          "manuscript/sn_computer_science/supplement_fulltext_exclusions.csv",
+          "manuscript/sn_computer_science/step15_active_build_review.md"
+        ],
+        "acceptance": [
+          {
+            "criterion": "Active 46-study LaTeX manuscript gate",
+            "verdict": "PASS",
+            "evidence": "13 rendered PDF pages, 47 bibliography items, 87 traceable exclusions, four preserved unresolved dispositions, and three source-verified outcome rows."
+          }
+        ]
+      }
     },
     {
       "task_id": "restart-16",

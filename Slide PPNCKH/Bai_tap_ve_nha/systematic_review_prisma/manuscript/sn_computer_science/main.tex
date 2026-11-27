@@ -3,16 +3,16 @@
 \raggedbottom
 \begin{document}
 \title[Collaborative Inference in UAV Swarms]{Collaborative Neural Network Inference in Multi-Drone Systems: A Systematic Review}
-\abstract{\textbf{Purpose:} Collaborative inference can distribute neural-network workloads across unmanned aerial vehicles and edge resources. This review examines which inference decisions are distributed, how systems are evaluated, and what the evidence shows about mobility and service continuity.
-\textbf{Methods:} We searched IEEE Xplore, Scopus, ACM Digital Library, and OpenAlex on 26 November 2026 for peer-reviewed journal and conference reports published since January 2021. Eligible reports evaluated collaborative neural inference in multi-drone systems. We excluded preprints and reports without an eligible evaluation. We used a ten-domain engineering appraisal and narrative synthesis. AI-assisted work was checked against retained sources.
-\textbf{Results:} From 693 identified records, 465 remained after deduplication. We sought 137 reports and assessed 44 full texts. Of these, 25 reports representing 25 studies were included, 13 were excluded, and six await classification. Systems used tiered layer cuts, sub-layer parallelism, feature-map partitioning, and graph-based cuts. Baseline comparability was rated partial in 24 of 25 reports. Link interruption, node disconnection, and simulated UAV failure were evaluated under different setups.
-\textbf{Conclusion:} The reviewed studies show several ways to distribute inference and recover service under specified conditions. Differences in workloads, comparators, and validation settings limit comparisons of performance and recovery. Access gaps and the lack of independent human screening constrain coverage. No public registration is documented. Funding awaits author confirmation.}
+\abstract{\textbf{Purpose:} We reviewed how multi-drone systems distribute neural inference, what decisions they optimize, and how they evaluate outcomes and service continuity.
+\textbf{Methods:} We searched IEEE Xplore, Scopus, ACM Digital Library, and OpenAlex on 26 November 2026 for eligible peer-reviewed reports published since January 2021. We used a ten-domain engineering appraisal and structured narrative synthesis. AI-assisted work was verified against retained sources.
+\textbf{Results:} Of 693 identified records, 465 were screened after deduplication. We sought 137 reports and assessed 136 full texts. We included 46 reports representing 46 studies, excluded 87, and left three awaiting classification. One report was not retrieved. The studies illustrate tiered layer cuts, partitioning across and within airborne clusters, and expert dispatch. Baseline comparability was rated partial in 40 of 46 studies. Simulated failure, bench disconnection, and planned handoff provided distinct continuity evidence.
+\textbf{Conclusion:} The studies describe several ways to distribute inference and sustain service under specified conditions. Heterogeneous workloads, comparators, and testing constrain cross-study conclusions. Independent human screening was not documented. Review support awaits author confirmation.}
 \keywords{Collaborative inference, unmanned aerial vehicles, edge computing, model partitioning, fault recovery, systematic review}
 \maketitle
 \begin{center}\small HK261 coursework manuscript. Author details and declarations await confirmation.\end{center}
 
 \section{Introduction}\label{sec:intro}
-Airborne devices can execute part of an inference workload, send intermediate representations to peers, or use an edge or cloud server. The choice affects compute demand and what must cross the network. Layer cuts in hierarchical systems~\cite{R0001,R0054}, partitioning within convolutional layers~\cite{R0015,R0044}, and classifier-graph cuts~\cite{R0048} therefore describe different decision spaces. Reported performance also depends on the workload and on the way the network and participating UAVs are represented.
+Airborne devices can execute a neural inference stage, send intermediate representations to peers, or use compute at the edge or in the cloud. Tiered layer cuts~\cite{R0001}, airborne spatial partitioning~\cite{R0014}, and expert dispatch~\cite{R0118} allocate different units of computation or data. Reported outcomes also depend on the workload, network model, compute budget, and how a study tests interruption and recovery.
 
 This review connects architectural and optimization decisions to the conditions under which they were evaluated. It addresses five questions: (RQ1) which architectures, inference tasks, neural network families, topologies, and partition granularities have been evaluated? (RQ2) which partition, assignment, resource, placement, and trajectory decisions are optimized, with what objectives, constraints, and methods? (RQ3) which platforms, data, network models, and comparators support the evaluations? (RQ4) how are mobility, variable links, interruption, UAV failure, and recovery treated? (RQ5) what outcome evidence is supported for latency, energy, communication, accuracy, reliability, and scalability, and what limits its interpretation?
 
@@ -28,99 +28,121 @@ Raw rows received stable record IDs and file/row references. Duplicate records w
 Gemini.app supplied structured evidence for screening, extraction, appraisal, and synthesis. Codex verified accepted decisions, source locators, and scope, using original full-text sources where required, and drafted the manuscript. These are two AI roles. No independent human screening or author adjudication of the corpus was documented. No investigator check of the extracted results is documented.
 
 \subsection{Extraction and appraisal}\label{sec:extraction}
-We sought six groups of outcomes: inference delay and recovery time, energy use, communication rate or traffic, inference accuracy, service continuity or reliability, and performance as system scale changes. We also recorded study-defined composite costs with their component weights or settings when reported. The extraction captured architecture and node roles, inference tasks and models, datasets, partition and assignment, objectives and constraints, solution approaches, network and compute assumptions, mobility and fault mechanisms, evaluation settings, comparators, outcome results, uncertainty, artifact availability, and author-reported limitations. Values were retained with PDF page and section or table/figure, units, workload, baseline, and conditions. An unreported item was distinguished from an unverified value. The source matrix in Supplement~S3 preserves 58 verified quantitative entries from 17 studies. Eleven other quantitative keys were withheld from use. This matrix records the outcomes that passed verification. No exhaustive selection rule for every reported time point, metric variant, or analysis was documented.
+We recorded system architecture and node roles, workloads and neural models, partition and assignment, decision objectives and constraints, resource and wireless assumptions, mobility and recovery mechanisms, evaluation settings, comparators, outcome definitions, uncertainty, and artifact availability. Outcomes included latency and recovery time, energy, communication load, accuracy, continuity, and scalability. Study-defined composite outcomes retained the reported formulation and conditions. Each retained numerical entry has a physical PDF page and section, table, or figure. The record preserves reported units, workload, conditions, comparator, and analysis denominator where available. Unreported details and values that could not be verified were recorded separately. Supplement~S3 provides the extraction fields and 67 retained outcome entries across 25 studies. Outcome extraction was selective. The protocol did not specify an exhaustive rule for every metric variant, time point, or analysis.
 
-A bespoke engineering appraisal assessed system model, assumptions, configuration, comparator alignment, metric alignment, repetitions and variability, network and mobility realism, claim bounds, artifact availability, and reporting of limitations, funding, and conflicts. Each rating had a rationale and full-text locator. Supplement~S3 gives the ratings by report. Categories distinguished yes, partial, no, not reported, and not applicable. The appraisal describes methodological strengths and limitations. No separate study-level risk-of-bias assessment was performed. Appraisal ratings did not determine eligibility or formal outcome certainty.
+We used a ten-domain engineering appraisal~(Table~\ref{tab:appraisal}) to describe each report's methods and reporting. We assigned an appraisal category for each domain and retained a rationale and source locator. Categories distinguished yes, partial, no, not reported, and not applicable. The appraisal did not determine eligibility. We performed no separate study-level risk-of-bias assessment or outcome-level certainty grading.
 
 \subsection{Synthesis}\label{sec:synthesis}
-The narrative synthesis grouped evidence by execution topology and partition granularity, optimization scope, evaluation design, and resilience mechanism. Individual findings cite contributing studies with evidence relevant to the research question and a verified source locator. Supplement~S3 links findings to the characteristics and appraisal tables by report ID. Descriptive frequencies give their eligible set and denominator. The outcome table preserves source units and comparison conditions, including time for latency, rate or volume for communication, and each study's own scale for energy, accuracy, or composite cost. The narrative format preserves these distinctions because workloads, definitions, and baselines differ across reports. No pooled effect, formal heterogeneity analysis, missing-results bias assessment, outcome-level certainty grading, or sensitivity analysis was performed.
+We tabulated characteristics and appraisal judgments across all included studies. For RQ1--RQ4, we selected pairs of studies to illustrate contrasts in partition and assignment units, objectives and constraints, evaluation conditions, and continuity mechanisms. For RQ5, we selected two studies with verified within-study comparator settings. Each example needed a verified full-text locator and an applicable extracted field. Missing or ambiguous data were left unquantified. Frequencies use the 46 included studies as the denominator and are traceable to their contributing report IDs in Supplement~S3. For outcomes, we display selected comparisons only when the method and comparator share the reported workload and conditions within the study. We retain source units and definitions of uncertainty. Differences in outcomes, comparators, and test conditions led us to use structured narrative synthesis without pooling. We performed no formal heterogeneity investigation, missing-results bias assessment, or synthesis sensitivity analysis.
 
 \section{Results}\label{sec:results}
 \subsection{Study selection}\label{sec:selection}
-IEEE Xplore contributed 63 raw records, Scopus 110, ACM Digital Library 404, and OpenAlex 116, for 693 in total. Removing 228 duplicates left 465 screened records. Of these, 328 were excluded and 137 advanced to retrieval. PDFs were retrieved and assessed for 44 reports. The remaining 93 reports could not be retrieved through the checked routes (see Fig.~\ref{fig:flow}).
+IEEE Xplore contributed 63 raw records, Scopus 110, ACM Digital Library 404, and OpenAlex 116, for 693 in total. Removing 228 duplicates left 465 records for title and abstract screening. Of these, 328 were excluded and 137 reports were sought. The initial retrieval yielded 44 full texts. Supplemental retrieval recovered 92 of the 93 previously missing reports. In all, 136 reports were assessed and one (R0116) remained unretrieved (Fig.~\ref{fig:flow}).
 
-Of 44 assessed reports, 13 were excluded, six await classification, and 25 were included. The six pending reports comprise five with unresolved publication dates and one with unresolved publication-type eligibility. The full-text exclusion supplement gives a source identifier and decision evidence for all 13 excluded reports. Of 300 possible report pairs in the included set, 13 with linkage signals were examined in detail. None was linked as another report of the same study, yielding 25 reports mapped to 25 study IDs in the accepted ledger.
+Of the 136 assessed reports, 87 were excluded, three await classification, and 46 were included. R0081 and R0082 await confirmation of the publication criterion. R0132 has unresolved system and inference eligibility. Supplement~S2 lists each excluded report, its primary reason, and the supporting decision locator. The 28 candidate report pairs examined in depth were distinct, yielding 46 reports representing 46 studies (Table~\ref{tab:reports}).
 \begin{figure}[t]
 \centering
-\includegraphics[width=.98\textwidth]{prisma_flow.pdf}
-\caption{PRISMA 2020 flow for the restart. The six reports awaiting classification remain separate from exclusions and included studies.}
+\includegraphics[width=.97\linewidth]{prisma_flow.pdf}
+\caption{PRISMA 2020 flow for the restart. Three assessed reports await classification. One sought report remained unretrieved.}
 \label{fig:flow}
 \end{figure}
 
 \subsection{Architectures and partition granularity (RQ1)}\label{sec:rq1}
-The corpus spans partitioned neural inference and orchestration at the UAV, edge, and cloud tiers. Two studies illustrate sequential layer cuts across those three tiers~\cite{R0001,R0054}. Within-layer division also occurs: one approach schedules subtasks of a convolutional neural network (CNN) layer across UAVs~\cite{R0015}, another divides feature maps by rows and backtracks the required input range~\cite{R0044}, and another enumerates classifier-level cuts in a directed acyclic graph~\cite{R0048}. A tier label therefore does not specify the execution unit or the intermediate data exchanged. The included-study references are indexed in Table~\ref{tab:reports}; the source-located characteristics supplement describes individual workloads, architectures, and settings.
+A tiered design uses two layer cuts to place inference stages on a UAV, an edge server, and where applicable a cloud server~\cite{R0001}. An airborne cluster design distributes model segments between UAV clusters and spatial portions of data among UAVs within a cluster~\cite{R0014}. These examples distinguish placement across infrastructure tiers from partitioning within a swarm.
+
+A peer design chooses a neighboring UAV and a DNN layer cut for mini-batch inference~\cite{R0092}. In a mixture-of-experts design, UAVs host dedicated experts and requests are assigned to a UAV hosting the appropriate expert~\cite{R0118}. The partition or dispatch unit is therefore a useful descriptor in addition to network topology. Supplement~S3 reports the workloads, architectures, assignments, evaluation settings and mobility evidence for all included studies.
 
 \subsection{Optimization scope (RQ2)}\label{sec:rq2}
-One formulation optimizes horizontal UAV locations jointly with layer assignment subject to energy, memory, and coverage constraints, with a separate set of evaluation parameters for power, compute, memory, and coverage~\cite{R0006}. Another combines a split decision, trajectory, transmit power, and resource allocation in a latency--energy objective~\cite{R0009}. A formulation that introduces edge-server selection uses the nearest server in its implemented policy~\cite{R0001}. The distinction between model variables and choices the evaluated method actually makes matters when comparing optimization scope.
+One formulation minimizes pipeline completion time by jointly optimizing horizontal hovering positions and layer assignments under memory, energy, and coverage constraints~\cite{R0006}. A video analytics formulation couples continuous three-dimensional motion, discrete frame selection, and binary offloading to minimize delay under sensing, accuracy, and energy constraints~\cite{R0064}. The variables describe different decisions at different time scales.
+
+A distributed auction assigns a whole request to at most one server and maximizes aggregate utility under feasibility constraints~\cite{R0058}. An edge--cloud design uploads features first and conditionally sends quantized raw input. It jointly tunes confidence thresholds and quantization to improve accuracy under a bandwidth constraint~\cite{R0080}.
 
 \subsection{Evaluation settings and comparators (RQ3)}\label{sec:rq3}
-The evaluation evidence includes software simulation informed by measured embedded execution profiles~\cite{R0048} and a hardware prototype using airborne computing and communication modules~\cite{R0062}. The latter tested a software-induced communication interruption and did not document live flight-network or three-dimensional mobility validation. Baseline comparability was rated partial in 24 of 25 reports. Reasons included restriction to internal ablations and incomplete disclosure of tuning parity for external baselines~\cite{R0054,R0071,R0048}. Table~\ref{tab:appraisal} shows how appraisal judgments vary by domain.
+One study distinguishes indoor experiments on airborne computers from outdoor experiments with five UAVs~\cite{R0014}. Another reports physical hardware profiling and policy deployment alongside a probabilistic radio model and modeled failure rates~\cite{R0137}. Both earned partial ratings for network and mobility realism. The physical and modeled components support different parts of the respective evaluations.
 
-\subsection{Mobility, interrupted service, and UAV failure (RQ4)}\label{sec:rq4}
-One evaluation assumed hovering and deferred trajectory modeling~\cite{R0048}. Another replayed movement derived from Mid-Air flight traces in simulation~\cite{R0003}. A third evaluated horizontal and altitude control in simulation and used load or energy thresholds to trigger migration~\cite{R0045}. These evidence types support different conclusions about movement and radio behavior.
+Baseline comparability was rated partial for 40 of 46 studies (Table~\ref{tab:appraisal}). For example, the expert-based and layer-wise systems in one study shared a planner and a similar per-UAV memory budget, with different model complexity~\cite{R0118}. A workstation study varied the number of workers while holding allocation at four threads per worker, increasing the total thread budget as it scaled~\cite{R0125}. Both comparisons characterize the configurations tested.
 
-The recovery mechanisms also represent different events. One evaluation interrupted the cloud link and used edge fallback~\cite{R0063}. In the hardware prototype, disabling a node's communication program triggered repartitioning, and the prototype recovered speed after reconnection~\cite{R0062}. A separate study simulated random UAV failures and migration~\cite{R0002}. A software disconnect tests continuity under loss of communication. Its result does not establish behavior during a physical vehicle failure.
+\subsection{Mobility, interruption, and recovery (RQ4)}\label{sec:rq4}
+One simulator represents service migration during UAV movement and introduces random UAV failures at probability $0.0001$ per time slot~\cite{R0002}. Another represents a partner leaving communication range and uses reassignment or source-local recomputation when feasible~\cite{R0092}. A bench experiment deliberately disconnects a device and resumes processing from a stored Redis checkpoint~\cite{R0038}. A marine tracking study evaluates planned handoff using recorded footage and hardware-in-the-loop tests~\cite{R0292}. These settings exercise different continuity mechanisms and support distinct conclusions about recovery.
 
 \subsection{Outcome evidence and reproducibility (RQ5)}\label{sec:rq5}
-Two examples illustrate why the review retains within-study comparison conditions. The GAT-HSMAO method reported a normalized holdout cost of $2.720\pm0.226$ across five training seeds (95\% confidence interval half-width, four degrees of freedom). Training used 3,000 episodes per seed. The holdout used the reported arrival rate of 0.01 and the setting $\alpha_{\mathrm{RF}}=5$. In the same holdout, the Fixed-RIS comparator reported $2.402\pm0.151$\cite{R0054}. In a separate simulated evaluation on four UAV edge nodes with 1000~Mb/s inter-UAV and 200~Mb/s air-to-ground links, Orion reported 18,665~ms of prefill latency for one 64-token Llama-2 70B FP16 request. Jupiter and EdgeShard completed the request at 27,264~ms and 43,058~ms respectively, while Edge-Solo and the two cloud-edge variants ran out of memory~\cite{R0074}. This comparison supports a difference under the reported setting. It does not support the article's broader claim of unique 70B execution capability because two distributed comparators also ran the workload. A normalized cost and single-request latency cannot establish a common performance ranking.
+Table~\ref{tab:outcomes} gives three within-study outcome comparisons. At 100~Mb/s, the proposed edge--cloud scheme reported a higher mean top-1 accuracy and a higher mean latency than GSUP for the same ResNet-18/ResNet-101 pairing~\cite{R0080}. The reported intervals summarize three independent seeds. This review draws no inference of statistical separation. For VGG-16 on a shared two-UAV simulation substrate, DDCI reported higher mean deadline satisfaction than Comm-Min using all arrived tasks as the denominator~\cite{R0092}. The appraisal confirmed the shared comparator setting. This result applies to the reported simulator and workload.
 
-Artifact availability was not reported for 22 of 25 reports in the appraisal. Two received partial ratings, and one received no because its availability statement restricted data sharing and the checked sections did not provide a code repository~\cite{R0089}. All 25 configurations were rated partial for reproducibility. These ratings describe what is reported and verifiable in the checked sources. They do not determine whether an implementation exists outside the article.
+The appraisal recorded artifact availability as not reported for 40 of 46 studies. Configuration reproducibility was rated partial for 42 of 46. These ratings summarize evidence reported by the studies and checked by the review.
 
 \begin{table}[tb]
-\caption{Bibliographic index of the 25 included reports. Each report maps to one study ID in the reconciled ledger.}\label{tab:reports}
-\centering
-\begin{tabular}{@{}ccccc@{}}
+\caption{Selected within-study outcomes. Each row compares the proposed approach with the named comparator under the same reported conditions.}\label{tab:outcomes}
+\centering\small
+\begin{tabular}{@{}p{.42\linewidth}ll@{}}
 \toprule
-\multicolumn{5}{c}{Included references}\\
+Outcome and study & Proposed & Comparator \\
 \midrule
-\cite{R0001} & \cite{R0002} & \cite{R0003} & \cite{R0006} & \cite{R0009} \\
-\cite{R0010} & \cite{R0015} & \cite{R0019} & \cite{R0022} & \cite{R0029} \\
-\cite{R0044} & \cite{R0045} & \cite{R0048} & \cite{R0054} & \cite{R0059} \\
-\cite{R0062} & \cite{R0063} & \cite{R0068} & \cite{R0071} & \cite{R0073} \\
-\cite{R0074} & \cite{R0083} & \cite{R0089} & \cite{R0095} & \cite{R0121} \\
+Top-1 accuracy (\%), R0080~\cite{R0080} & $90.4\pm0.5$ & GSUP $89.5\pm0.5$ \\
+End-to-end latency (ms), R0080~\cite{R0080} & $120\pm3$ & GSUP $117\pm3$ \\
+Deadline satisfaction (\%), R0092~\cite{R0092} & $71.6\pm3.4$ & Comm-Min $64.4\pm4.3$ \\
+\bottomrule
+\end{tabular}
+\par\smallskip\raggedright R0080: ResNet-18 at the edge, ResNet-101 in the cloud, 100~Mb/s, mean $\pm$ 95\% Student-$t$ confidence interval half-width across three independent seeds. R0092: VGG-16, two-UAV collaborative pipeline, all arrived tasks, mean $\pm$ SD over 30 common-seed episodes. Source locations are R0080 Table~I and R0092 Table~V.
+\end{table}
+
+\begin{table}[tb]
+\caption{Bibliographic index of the 46 included reports in study-ID order. Each report maps to one study in the reconciled ledger.}\label{tab:reports}
+\centering
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+\multicolumn{6}{c}{Included references}\\
+\midrule
+\cite{R0001} & \cite{R0002} & \cite{R0003} & \cite{R0006} & \cite{R0009} & \cite{R0010} \\
+\cite{R0015} & \cite{R0019} & \cite{R0022} & \cite{R0029} & \cite{R0044} & \cite{R0045} \\
+\cite{R0048} & \cite{R0054} & \cite{R0059} & \cite{R0062} & \cite{R0063} & \cite{R0068} \\
+\cite{R0071} & \cite{R0073} & \cite{R0074} & \cite{R0083} & \cite{R0089} & \cite{R0095} \\
+\cite{R0121} & \cite{R0014} & \cite{R0036} & \cite{R0038} & \cite{R0043} & \cite{R0058} \\
+\cite{R0064} & \cite{R0075} & \cite{R0077} & \cite{R0080} & \cite{R0090} & \cite{R0092} \\
+\cite{R0106} & \cite{R0107} & \cite{R0110} & \cite{R0113} & \cite{R0118} & \cite{R0125} \\
+\cite{R0137} & \cite{R0145} & \cite{R0223} & \cite{R0292} &  &  \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \begin{table}[tb]
-\caption{Engineering appraisal judgments. The denominator is 25 included reports in each row. No not-applicable or unassessed ratings occurred.}\label{tab:appraisal}
-\centering
-\begin{tabular}{@{}p{.49\linewidth}rrrr@{}}
+\caption{Engineering appraisal judgments. Each row has a denominator of 46 included reports. All ratings fell into the four categories shown.}\label{tab:appraisal}
+\centering\small
+\begin{tabular}{@{}p{.46\linewidth}rrrr@{}}
 \toprule
 Domain & Yes & Partial & Not reported & No\\
 \midrule
-System model & 25 & 0 & 0 & 0\\
-Assumptions and constraints & 22 & 3 & 0 & 0\\
-Reproducible configuration & 0 & 25 & 0 & 0\\
-Baseline comparability & 1 & 24 & 0 & 0\\
-Metric alignment & 14 & 11 & 0 & 0\\
-Variability and sensitivity & 2 & 23 & 0 & 0\\
-Network and mobility realism & 1 & 24 & 0 & 0\\
-Claim bounds & 10 & 14 & 0 & 1\\
-Artifact availability & 0 & 2 & 22 & 1\\
-Limitations and declarations & 4 & 20 & 1 & 0\\
+System model & 45 & 1 & 0 & 0\\
+Assumptions and constraints & 38 & 8 & 0 & 0\\
+Reproducible configuration & 4 & 42 & 0 & 0\\
+Baseline comparability & 6 & 40 & 0 & 0\\
+Metric alignment & 26 & 20 & 0 & 0\\
+Variability and sensitivity & 5 & 39 & 2 & 0\\
+Network and mobility realism & 3 & 43 & 0 & 0\\
+Claim bounds & 20 & 25 & 0 & 1\\
+Artifact availability & 2 & 3 & 40 & 1\\
+Limitations and declarations & 5 & 38 & 3 & 0\\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \section{Discussion}\label{sec:discussion}
-The evidence suggests that comparisons should specify both the unit placed on a node and the cost of crossing a link. A layer cut changes the activation transferred between stages, whereas a feature-map split or a classifier-graph cut changes the shape of parallel work. A study can disclose its partition algorithm and still leave uncertainty about comparator tuning or applicability to a mobile network. Collecting those judgments by domain exposes where an inference pipeline is specified clearly and where the strength of its evaluation remains limited.
+The reviewed studies distribute inference at several levels. A layer cut determines where intermediate activations cross a link, spatial partitioning distributes data across workers, and expert placement determines which node processes a request. These design choices should be reported together with the workloads and resource constraints that make them feasible. Results from a shared comparator setup have a clearer interpretation when model complexity, compute budgets, workloads, and communication conditions are documented.
 
-A common benchmark is a research implication of these differences. Experiments could hold workload, hardware budgets, link trace, comparator budget, and failure trigger constant while measuring inference latency and quality, activation traffic, energy, and interruption or recovery for the same workload. Hardware and emulation results should state which components and channels were exercised. A disruption test should identify the failure trigger, surviving resources, work discarded or reused, and the definition of recovery time. This review does not estimate the advantage of a proposed benchmark or any new inference algorithm.
+The recovery evidence distinguishes migration during simulated vehicle failure, fallback after link interruption, bench-tested restart, and planned handoff. Future comparisons could specify the disruption trigger, surviving nodes and links, discarded or reused work, recovery time, and post-recovery inference quality. A common test workload with fixed comparator and hardware budgets would help attribute differences in latency, energy, and continuity to the intervention being tested.
 
 \subsection{Limits of evidence and review process}\label{sec:limits}
-The four-source set excludes Web of Science, uses manual result capture for ACM Digital Library, and is limited to English-language peer-reviewed reports in the specified window. Of 137 sought reports, 93 could not be retrieved. Six of the assessed reports await classification. Both gaps could change the composition and conclusions of the synthesis. The study count depends on the documented version-linkage evidence. AI-assisted selection and appraisal, despite source checks, do not provide independent human replication or author adjudication.
+The four-source search excludes Web of Science, used manual result capture for ACM Digital Library, and was restricted to English-language peer-reviewed reports. One of 137 sought reports remained unretrieved, and three of 136 assessed reports await classification. Both gaps could affect the included set. The study count depends on the available report-linkage evidence. AI-assisted selection and appraisal were source-checked, with no documented independent human screening, extraction, or author adjudication.
 
-Simulator, trace, and prototype studies report metrics under heterogeneous workloads, networks, and comparators. Their results support local comparisons. They cannot establish a field-wide advantage, the absence of an unreported mechanism, or deployment performance outside tested conditions. The domain appraisal is specific to this review. The results describe the studies retrieved and assessed here. No formal study-level risk-of-bias rating, reporting-bias assessment, or outcome-level certainty rating is available.
+The retained outcomes reflect heterogeneous workloads, comparators, metrics, network conditions, and validation settings. They support scoped comparisons within reported conditions. The review did not formally assess study-level risk of bias, bias due to missing results, or outcome-level certainty. The engineering appraisal describes how the evaluations and their limits were reported.
 
 \section{Conclusion}\label{sec:conclusion}
-The 25 included studies demonstrate different execution units and deployment choices for collaborative inference in multi-UAV systems. The documented mechanisms address cloud-link disruption, software-induced node unavailability, or simulated UAV failure under distinct evaluations. Reproducibility, comparator alignment, and network realism limit the strength of cross-study conclusions. A shared benchmark with explicit failure conditions and common comparators would make future comparisons more interpretable.
+Across 46 studies, collaborative inference was implemented using different model, data, and request distribution strategies. The reviewed evidence demonstrates several continuity mechanisms under distinct test conditions. Comparator alignment, reproducible configuration, and network and mobility reporting limit generalization. Reporting these details alongside the outcome measures would make future system comparisons easier to interpret.
 
 \section*{Statements and Declarations}\label{sec:declarations}
 Author order, affiliations, correspondence details, contributions, funding and other support, funder or sponsor roles (if applicable), acknowledgements, and competing interests await confirmation. The coursework package contains the protocol, search strategies, exclusion decisions, reconciled counts, and derived study, appraisal, outcome, and synthesis tables. Raw exports, source PDFs, detailed decision logs, and audit code are retained in the local project. Public access and redistribution permissions remain unconfirmed. AI assistance and its verification are described in Section~\ref{sec:search}.
 
 \section*{Supplementary material}
-Supplement~S1 contains the eight executed searches, filters, and documented changes. Supplement~S2 lists full-text exclusions and decision sources. Supplement~S3 contains the study characteristics, report-level appraisal and outcome tables, and the matrix linking synthesis findings to report IDs and source locations.
+Supplement~S1 contains the eight executed searches, filters, and documented changes. Supplement~S2 lists full-text exclusions and decision sources. Supplement~S3 contains all 46 study characteristics, report-level appraisal, retained outcome evidence, and the claim--source matrix. It also documents a source-verified correction to the transcribed R0092 comparator standard deviation.
 
 \bibliography{references}
 \end{document}

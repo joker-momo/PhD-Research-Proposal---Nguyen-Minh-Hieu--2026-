@@ -1,26 +1,28 @@
 # SN Computer Science coursework manuscript
 
-`main.tex` is the editable source, `references.bib` the bibliography, and
-`main.pdf` the compiled review. The Springer Nature `sn-jnl.cls` and
-`sn-vancouver-num.bst` match the official December 2024 template.
+`main.tex` is the editable source, `references.bib` is the bibliography, and
+`main.pdf` is the compiled HK261 review. The build uses the Springer Nature
+`sn-jnl.cls` and `sn-vancouver-num.bst` files from the December 2024 template.
 
-Build from this directory using the approved profile:
+Build from this directory with the approved command:
 
 ```sh
 tectonic --keep-logs --keep-intermediates main.tex
 ```
 
-The restart evidence includes 25 reports mapped to 25 study IDs. The manuscript
-uses [reconciled counts](../../restart_2026_11_26/prisma/prisma_counts.json),
-[accepted synthesis](../../restart_2026_11_26/synthesis/accepted_claims.json) and
-the [PRISMA 2020 checklist](../../restart_2026_11_26/prisma/prisma_checklist.md).
-Supplement S1 provides the actual searches. S2 gives the primary reasons for
-full-text exclusions. S3 comprises the [study characteristics and source
-matrices](../../restart_2026_11_26/synthesis/).
+The review includes 46 reports representing 46 studies. The
+[PRISMA ledger](../../restart_2026_11_26/prisma/prisma_counts.json) records 87
+full-text exclusions, three reports awaiting classification and one unretrieved
+report. The [PRISMA 2020 checklist](../../restart_2026_11_26/prisma/active_prisma_checklist.md)
+tracks reporting and its limits.
 
-The PDF is for HK261 coursework. Author details and declarations await
-confirmation. Journal submission and email forwarding are outside this delivery.
+- S1. [Search strategies](supplement_search_strategies.md)
+- S2. [Excluded full-text reports and decision locators](supplement_fulltext_exclusions.csv)
+- S3. [Study characteristics](../../restart_2026_11_26/synthesis/active_study_characteristics.csv),
+  [report-level appraisal](../../restart_2026_11_26/appraisal/active_appraisal_table.csv),
+  [outcome evidence](../../restart_2026_11_26/synthesis/active_outcome_evidence.csv),
+  [claim sources](../../restart_2026_11_26/synthesis/active_claim_source_matrix.csv) and
+  [R0092 source erratum](../../restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json).
 
-The [final integrity dossier](../../restart_2026_11_26/integrity/) contains DOI,
-publication-notice and source verification, a limitations report, and the
-coursework handoff archive.
+Author details and declarations await confirmation. Submission status remains
+pending author authorization.

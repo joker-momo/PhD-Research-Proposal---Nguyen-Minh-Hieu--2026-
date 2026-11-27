@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T15:02:30+07:00",
+  "updated_at": "2026-11-27T15:07:58+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "supplemental_rq_synthesis_pass",
-    "summary": "Step 14 accepted for 46 studies. Springer Nature manuscript revision is ready."
+    "status": "supplemental_manuscript_pass",
+    "summary": "Step 15 built and verified for the 46-study HK261 review. Step 16 integrity audit is ready."
   },
   "task": {
-    "task_id": "restart-supplemental-rq-synthesis",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T14:44:14+07:00",
-    "updated_at": "2026-11-27T15:02:30+07:00",
-    "checkpoint_path": "restart_2026_11_26/synthesis/active_rq_review.md",
-    "decision_id": "restart-supplemental-rq-synthesis-v1",
-    "completed_at": "2026-11-27T15:02:30+07:00"
-  },
-  "next_task": {
     "task_id": "restart-supplemental-manuscript",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-27T15:04:50+07:00",
+    "updated_at": "2026-11-27T15:07:58+07:00",
+    "completed_at": "2026-11-27T15:07:58+07:00",
+    "checkpoint_path": "manuscript/sn_computer_science/step15_active_build_review.md",
+    "decision_id": "restart-supplemental-manuscript-v1"
+  },
+  "next_task": {
+    "task_id": "restart-supplemental-integrity",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Revise the HK261 SN Computer Science manuscript from the accepted 46-study synthesis and reconciled PRISMA.",
-    "acceptance": "Main LaTeX source, bibliography, 87 exclusions, figure, references and compiled PDF agree. Author data and declarations retain the pending status."
+    "action": "Run the step 16 native bibliographic audit and independently verify the final PDF, checklist and bundle.",
+    "acceptance": "47 references accounted for, 27 PDF checklist locators, clean build and 13 visual page checks."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -65,7 +65,7 @@
     },
     "approved_plan": "restart_2026_11_26/approved_plan.md",
     "progress_tracker": "restart_2026_11_26/progress.json",
-    "manuscript_status": "RESTART_COURSEWORK_HANDOFF_PASS"
+    "manuscript_status": "ACTIVE_46_STUDY_BUILD_PASS_PENDING_STEP16"
   },
   "evidence": {
     "retrieval_reports": 136,
@@ -630,6 +630,24 @@
       "study_characteristics": 46,
       "appraisal_judgments": 460,
       "cleanup_verified": true
+    },
+    "supplemental_manuscript": {
+      "status": "PASS",
+      "started_at": "2026-11-27T15:04:50+07:00",
+      "updated_at": "2026-11-27T15:07:58+07:00",
+      "completed_at": "2026-11-27T15:07:58+07:00",
+      "review": "manuscript/sn_computer_science/step15_active_build_review.md",
+      "paper_pages": 13,
+      "bibliography_items": 47,
+      "formal_integrity": "PENDING_STEP_16",
+      "artifacts": {
+        "manuscript/sn_computer_science/README.md": "51c6bd0ea8c65ae85b24e2e7377fdd7374ba50c03e982747a9ffff5e113a657b",
+        "manuscript/sn_computer_science/main.tex": "33eef31a4dd16f47f942f7f03767876f3ce64d2b0a32cf0feffa55b47ffd66e6",
+        "manuscript/sn_computer_science/references.bib": "a2c6efa72172f848b58207b0296aad69e96132384939772dfe3b460a9f7c3a3e",
+        "manuscript/sn_computer_science/main.pdf": "2073c6cf0bccb91d1c124a1c2d77640eac911ec1a98573875b6e666f2c212789",
+        "manuscript/sn_computer_science/prisma_flow.pdf": "770e7d8418c14ee36eb583079b41aa6eb9832ff69519bfc28d5f0a8101ad473e",
+        "manuscript/sn_computer_science/supplement_fulltext_exclusions.csv": "385c88e811eec96f780747296ac46a1f67ed653187c9460a12a2903dbfd67d31"
+      }
     }
   },
   "blockers": [],

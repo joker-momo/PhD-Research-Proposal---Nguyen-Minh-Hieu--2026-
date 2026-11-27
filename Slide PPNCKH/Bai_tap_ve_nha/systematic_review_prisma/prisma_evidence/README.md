@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T15:02:30+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T15:07:58+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -812,9 +812,9 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=2.
 <a id="buoc-15"></a>
 ## Bước 15 · Viết manuscript LaTeX SN Computer Science
 
-**Đã chốt theo sổ tiến độ** · `2026-11-27T08:05:39+07:00`
+**Đã chốt theo sổ tiến độ** · `2026-11-27T15:07:58+07:00`
 
-Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
+Nghiệm thu cấp bước đã ghi trong sổ: PASS=2.
 
 - [README.md](../manuscript/sn_computer_science/README.md)
 - [main.tex](../manuscript/sn_computer_science/main.tex)
@@ -825,6 +825,7 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
 - [supplement_fulltext_exclusions.csv](../manuscript/sn_computer_science/supplement_fulltext_exclusions.csv)
 - [step15_build_review.md](../manuscript/sn_computer_science/step15_build_review.md)
 - [prisma_checklist.md](../restart_2026_11_26/prisma/prisma_checklist.md)
+- [step15_active_build_review.md](../manuscript/sn_computer_science/step15_active_build_review.md)
 
 <a id="buoc-16"></a>
 ## Bước 16 · Kiểm định và bàn giao
