@@ -10,6 +10,7 @@ Build the comparison draft from this directory:
 python3 build_technical_survey.py
 tectonic --keep-logs --keep-intermediates main.tex
 python3 build_technical_survey.py --check
+python3 check_evidence.py
 ```
 
 The generator derives both technical tables, the appraisal rows, and the figure
@@ -17,10 +18,21 @@ counts from the accepted corpus, the appraisal summary, and [the primary coding
 ledger](technical_coding.psv). Its check fails if a generated input is stale or
 an included study is missing from either study table or the analytical text.
 
+[Supplement S4](supplement_evidence_index.md) maps the text and 13 numbered
+figures, tables, and equations to their sources. It gives the calculation,
+input data and generation code for each chart, commands to rebuild the PRISMA
+diagram and manuscript, and original-page locators for the quantitative
+comparisons. The [snapshot](evidence_sha256.txt) fixes the file versions used
+for the crosswalk. Each new or changed factual claim, number, figure, table,
+and equation needs a source locator or a checkable derivation. Keep unresolved
+claims in the evidence record until they can be supported. Update the crosswalk,
+regenerate affected outputs, and run the checks before recording a new snapshot. `--record` records the reviewed
+files. It does not adjudicate a claim.
+
 The comparison PDF uses the Springer Nature class and bibliography style with
 a 216 mm text height and compact reference spacing to fit the full-corpus
 tables into the requested single-column length. For this branch, see
-[the technical survey review](technical_survey_review.md). The original
+[the initial technical survey review](technical_survey_review.md) and [the current evidence record](supplement_evidence_index.md). The original
 13-page coursework checkpoint remains available at commit `7a6675d`.
 
 The review includes 46 reports representing 46 studies. The

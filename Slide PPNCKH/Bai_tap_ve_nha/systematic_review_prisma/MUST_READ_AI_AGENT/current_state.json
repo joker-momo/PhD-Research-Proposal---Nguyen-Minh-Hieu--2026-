@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T15:52:02+07:00",
+  "updated_at": "2026-11-27T16:02:53+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "alternative_coursework_pdf_ready_for_comparison",
-    "summary": "The 29-page technical survey based on the accepted 46-study corpus is ready for the author to compare with the separate manuscript version."
+    "summary": "The 29-page technical survey has a versioned evidence and reproduction appendix for author comparison."
   },
   "task": {
-    "task_id": "hk261-alternative-technical-survey",
+    "task_id": "hk261-alternative-evidence-reproduction",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T15:42:36+07:00",
-    "updated_at": "2026-11-27T15:52:02+07:00",
-    "completed_at": "2026-11-27T15:52:02+07:00",
-    "checkpoint_path": "manuscript/sn_computer_science/technical_survey_review.md",
-    "decision_id": "hk261-alternative-technical-survey-v1"
+    "started_at": "2026-11-27T15:56:50+07:00",
+    "updated_at": "2026-11-27T16:02:53+07:00",
+    "completed_at": "2026-11-27T16:02:53+07:00",
+    "checkpoint_path": "manuscript/sn_computer_science/supplement_evidence_index.md",
+    "decision_id": "hk261-alternative-evidence-reproduction-v1"
   },
   "next_task": {
     "task_id": "hk261-alternative-author-comparison",
@@ -699,7 +699,17 @@
       ],
       "independent_human_adjudication": "NOT_DOCUMENTED",
       "review": "manuscript/sn_computer_science/technical_survey_review.md",
-      "pdf_sha256": "e5395576ec40ca29f3658b80453d3d2786c2c1907c3a6767d54c713bbb0dddfd"
+      "pdf_sha256": "5f0140cd740b0855f529decd5080bb66fb34d76448269d58098cb06cd62b0c36",
+      "evidence_reproduction": {
+        "index": "manuscript/sn_computer_science/supplement_evidence_index.md",
+        "snapshot": "manuscript/sn_computer_science/evidence_sha256.txt",
+        "previous_comparison_commit": "8fba1a2",
+        "equations": 3,
+        "indexed_outcomes": 9,
+        "hashed_evidence_files": 51,
+        "verified_original_pdfs": 49,
+        "reproduction": "PRISMA and 29 manuscript pages match independently rebuilt renders"
+      }
     }
   },
   "blockers": [],

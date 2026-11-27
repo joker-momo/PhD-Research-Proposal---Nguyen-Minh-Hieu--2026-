@@ -23,28 +23,28 @@ A cooperative airborne inference system can move some computation away from the 
 
 The coupling also affects service continuity. A departing worker can remove a computation stage, a copy of an intermediate activation, or the only available implementation of a model expert. A new placement can satisfy memory constraints and still fail the original request deadline if it requires moving state or repeating work. Planned reassignment, rerouting over surviving links, and recovery after abrupt node unavailability exercise different system capabilities~\cite{R0002,R0038,R0062,R0110,R0292}. The evaluation must specify both the workload and the event against which a design is judged.
 
-This distinction matters for infrastructure inspection, environmental monitoring, and other civilian sensing tasks where a decision can become stale while its input remains valid. A brief interruption can leave a gap in a tracking stream, whereas delaying a bulk classification batch may have little effect on its utility. The relevant comparison can therefore be per-request delay, sustained throughput, deadline satisfaction across arrivals, or the continuity of a sequence. A single speedup is insufficient to describe these operating regimes.
+Civil infrastructure inspection and precision agriculture are examples of civilian UAV edge-AI applications~\cite{survey_uav_edge_ai}. A gap in a tracking stream and a delay in a bulk classification batch illustrate why output utility can depend on timing in different ways. The relevant comparison can therefore be per-request delay, sustained throughput, deadline satisfaction across arrivals, or the continuity of a sequence. A single speedup cannot describe all of those quantities.
 
 \subsection{Position relative to existing surveys}
 Table~\ref{tab:related} contrasts seven relevant secondary sources. McEnroe et al. cover the interaction of edge computing and AI across UAV functions and applications~\cite{survey_uav_edge_ai}. Xia et al. emphasize management of compute and communication resources, while Ning et al. organize the literature around mobile edge computing and learning in the Internet of UAVs~\cite{survey_uav_resource,survey_iouav_mec_ml}. Cao et al. examine networking and collaboration at swarm scale~\cite{survey_uav_swarm_ci}. These works provide context for the availability of resources, topology decisions, and the operational constraints of mobile platforms.
 
-Ren et al. and Wang et al. address complementary parts of the inference problem. Ren et al. review collaborative DNN inference at the edge, and Wang et al. survey collaboration across end devices, edge infrastructure, and cloud services over the deep-learning lifecycle~\cite{survey_collab_dnn,survey_end_edge_cloud}. Hao et al. provide a recent partition taxonomy, common modeling vocabulary, and experimental toolchain survey. Their treatment explicitly covers mobile peer settings and reliability-sensitive placement~\cite{survey_hao2026}. The comparison supports a specific gap in the selected surveys. A reader still needs a study-level map connecting how multi-UAV inference is divided, which flight or communication decisions are coupled with it, and what evidence supports continuity when the execution path changes.
+Ren et al. review collaborative DNN inference at the edge, and Wang et al. survey collaboration across end devices, edge infrastructure, and cloud services over the deep-learning lifecycle~\cite{survey_collab_dnn,survey_end_edge_cloud}. Hao et al. classify DNN partitioning strategies and survey modeling and experimental tools~\cite{survey_hao2026}. The selected works establish the neighboring topics. This review adds a study-level map relating multi-UAV partition and dispatch, flight and communication decisions, and evidence of continuity when the execution path changes.
 
 \begin{table}[htbp]
-\caption{Scope of selected related surveys. C denotes a central theme, P denotes partial or adjacent coverage, and an en dash indicates the feature was not established as a focus in this comparison. NR indicates an unverified search window. The comparison is a positioning sample.}\label{tab:related}
+\caption{Stated focus of selected related surveys. Descriptions are based on the authors\textquotesingle{} published titles, abstracts, or scope sections. The sample positions the present review.}\label{tab:related}
 \centering\fontsize{8}{10}\selectfont\setlength{\tabcolsep}{2.3pt}\renewcommand{\arraystretch}{1.28}
-\begin{tabular}{@{}Y{.190\linewidth}Y{.074\linewidth}Y{.088\linewidth}Y{.090\linewidth}Y{.082\linewidth}Y{.085\linewidth}Y{.086\linewidth}Y{.080\linewidth}Y{.073\linewidth}@{}}
+\begin{tabular}{@{}Y{.23\linewidth}Y{.10\linewidth}Y{.635\linewidth}@{}}
 \toprule
-Survey & Issue year & Search window & Review method & Swarm focus & DNN split & Joint control & Faults & Audit \\
+Survey & Year & Stated focus \\
 \midrule
-McEnroe et al.~\cite{survey_uav_edge_ai} & 2022 & NR & -- & P & P & P & -- & -- \\
-Ren et al.~\cite{survey_collab_dnn} & 2023 & NR & -- & -- & C & P & P & -- \\
-Xia et al.~\cite{survey_uav_resource} & 2024 & NR & -- & P & -- & C & -- & -- \\
-Ning et al.~\cite{survey_iouav_mec_ml} & 2024 & NR & -- & P & P & C & -- & -- \\
-Cao et al.~\cite{survey_uav_swarm_ci} & 2024 & NR & -- & C & -- & C & P & -- \\
-Wang et al.~\cite{survey_end_edge_cloud} & 2024 & NR & -- & -- & C & P & P & -- \\
-Hao et al.~\cite{survey_hao2026} & 2026 & NR & -- & P & C & P & P & -- \\
-This review & 2026 & 2021--26 & PRISMA & C & C & C & C & D01--10 \\
+McEnroe et al.~\cite{survey_uav_edge_ai} & 2022 & Edge AI for UAV functions and civilian applications \\
+Ren et al.~\cite{survey_collab_dnn} & 2023 & Collaborative DNN inference paradigms among end, edge and cloud devices \\
+Xia et al.~\cite{survey_uav_resource} & 2024 & Resource management, collaboration and wireless models in UAV-enabled edge computing \\
+Ning et al.~\cite{survey_iouav_mec_ml} & 2023 & Integration of mobile edge computing and machine learning in the Internet of UAVs \\
+Cao et al.~\cite{survey_uav_swarm_ci} & 2024 & Computational intelligence for UAV swarm networking and collaboration \\
+Wang et al.~\cite{survey_end_edge_cloud} & 2024 & End--edge--cloud training, inference and model updates, including model partitioning \\
+Hao et al.~\cite{survey_hao2026} & 2026 & DNN partitioning models, granularity, optimization and experimental tools \\
+This review & 2026 & PRISMA review of inference architecture, evaluation and continuity in multi-UAV systems \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -317,10 +317,10 @@ A benchmark should define interchangeable traces, metrics, and fault events that
 Each workload can be run with a local baseline when feasible, a fixed-placement distributed baseline, and the evaluated adaptive policy. Report infeasibility, including memory exhaustion, independently of runtime. Budget matching should include aggregate CPU or accelerator allocations, usable memory, communication allowance, and allowed power. A second comparison at each design's own operating point can characterize capacity while preserving the distinction from a matched-budget test. Archive timestamped logs that can distinguish per-request, per-stage, and steady-state pipeline metrics.
 
 For continuity tests, prescribe an event timeline and distinguish planned departure, short link interruption, and abrupt worker unavailability in emulation or a controlled bench. Report when the fault begins, when the system detects it, when it selects a valid plan, when state finishes transferring, and when the first correct output resumes. For sequential recovery these timestamps give
-\[
+\begin{equation}\label{eq:recovery}
 T_{\mathrm{recover}}=T_{\mathrm{detect}}+T_{\mathrm{replan}}
  +T_{\mathrm{transfer}}+T_{\mathrm{recompute}}.
-\]
+\end{equation}
 When phases overlap, report the observed wall-clock interval and each phase duration. Record failed, stale, and duplicated outputs. Using all requests as the denominator for deadline satisfaction prevents a method that drops work from appearing fast solely because it returns a selected subset.
 
 Checkpointing uses compute and memory before a fault and can shorten recomputation after it. A full restart uses less steady-state checkpoint traffic and can repeat work. This trade-off can be isolated by holding event schedules, compute budget, and workload fixed, then measuring both steady-state checkpoint overhead and per-event loss. A report should disclose the storage location, checkpoint interval, restored state, and whether a checkpoint is still reachable after the designated fault. Such a benchmark design would permit direct comparison of continuity actions without tying the review to a simulator, autopilot, or runtime.
@@ -350,7 +350,7 @@ For RQ1, the 46 studies implement peer, head--worker, and tiered inference throu
 This coursework draft uses the documented search inputs and the accepted study, extraction, and appraisal records. Author names and order, affiliations, correspondence, contributions, funding, competing interests, and public redistribution permissions await author confirmation. The AI-assisted workflow and human verification boundary appear in Section~\ref{sec:methods}.
 
 \section*{Supplementary material}
-Supplement S1 contains the search strategies, filters, and changes. Supplement S2 lists excluded reports by ID with primary reasons and decision locators. Supplement S3 contains the study characteristics, engineering appraisal, retained outcome ledger, and claim--source matrix. The branch also retains the coded classifications and the generator used for Tables~\ref{tab:architecture}--\ref{tab:evaluation} and figure counts. Original report PDFs and database exports are kept in the project under their access conditions.
+Supplement S1 contains search strategies and filters. S2 lists exclusions and decision locators. S3 contains study characteristics, appraisal, outcomes, and the claim--source matrix. S4 indexes the evidence for this draft and provides the LaTeX code, data inputs, formulas, and reproduction commands for its figures and tables. Original PDFs and database exports are retained under their access conditions.
 
 \bibliography{references}
 \end{document}
