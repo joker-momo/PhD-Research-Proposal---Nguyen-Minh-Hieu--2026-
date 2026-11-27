@@ -1,5 +1,5 @@
 \resizebox{\linewidth}{!}{%
-\begin{tikzpicture}[font=\fontfamily{lmss}\selectfont\footnotesize, x=1cm, y=1cm]
+\begin{tikzpicture}[font=\rmfamily\footnotesize, x=1cm, y=1cm]
 \definecolor{panelblue}{HTML}{236183}
 \definecolor{panelteal}{HTML}{27786D}
 \newcommand{\overviewbar}[5]{%
@@ -7,10 +7,10 @@
   \fill[#5] (#1+.07,#2-.12) rectangle (#1+.07+#4*.115,#2+.12);
   \node[anchor=west,inner sep=1pt] at (#1+.14+#4*.115,#2) {#4};
 }
-\node[anchor=west,font=\fontfamily{lmss}\selectfont\bfseries] at (0,4.15) {(a) Publication year and venue};
-\node[anchor=west,font=\fontfamily{lmss}\selectfont\bfseries] at (6.9,4.15) {(b) Evaluated model families};
-\node[anchor=west,font=\fontfamily{lmss}\selectfont\bfseries] at (0,-.42) {(c) Optimization approaches};
-\node[anchor=west,font=\fontfamily{lmss}\selectfont\bfseries] at (6.9,-.42) {(d) Evaluation modalities};
+\node[anchor=west,font=\rmfamily\bfseries] at (0,4.15) {(a) Publication year and venue};
+\node[anchor=west,font=\rmfamily\bfseries] at (6.9,4.15) {(b) Evaluated model families};
+\node[anchor=west,font=\rmfamily\bfseries] at (0,-.42) {(c) Optimization approaches};
+\node[anchor=west,font=\rmfamily\bfseries] at (6.9,-.42) {(d) Evaluation modalities};
 \foreach \level in {0,5,10,15,20}{
   \pgfmathsetmacro{\tickheight}{.7+.16*\level}
   \draw[black!16] (.60,\tickheight)--(6.39,\tickheight);
@@ -32,7 +32,7 @@
 \node[anchor=west] at (.91,.10) {Journal};
 \fill[panelteal!55] (2.12,-.005) rectangle (2.41,.20);
 \node[anchor=west] at (2.43,.10) {Conference};
-\node[anchor=east,inner sep=0pt,font=\scriptsize] at (6.39,.10) {* Cutoff: 26 Nov 2026};
+\node[anchor=east,inner sep=0pt,font=\rmfamily\scriptsize] at (6.39,.10) {* Cutoff: 26 Nov 2026};
 \draw[black!40] (10.37,.65)--(10.37,3.79)
   (3.45,-3.39)--(3.45,-.79) (10.37,-3.39)--(10.37,-.79);
 \overviewbar{10.3}{3.57}{CNN classifiers}{\groupn{family}{cnn}}{panelblue}
