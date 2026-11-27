@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:04:40+07:00",
+  "updated_at": "2026-11-27T13:08:13+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_extraction_in_progress",
@@ -11,22 +11,16 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T12:51:10+07:00",
-    "updated_at": "2026-11-27T13:04:40+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_01_correction_review.md",
+    "updated_at": "2026-11-27T13:08:13+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_01_locator_review.md",
     "decision_id": "restart-supplemental-extraction-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-extraction-batch01-locator-repair",
-    "owner": "GEMINI_RESEARCH",
-    "status": "active",
-    "action": "Recover this original repair UUID and verify its three page locators. Review batch 01 semantic support separately before extraction acceptance.",
-    "acceptance": "Exactly three unique keys and matching original physical PDF page excerpts.",
-    "dispatch_brief": "restart_2026_11_26/extraction/supplemental_batch_01_locator_brief.md",
-    "message_id": "b22c9e9b-74c6-4eb0-ba23-9892022dd2a0",
-    "parent_bridge_task_id": "f80b8621-d974-443f-9f92-5e29c0dd7895",
-    "bridge_task_id": "5da8a22f-43b7-4764-8844-8440546f2957",
-    "bridge_context_id": "c4ea7832-6c11-42e6-a610-4c215a18dcb6",
-    "dispatch_receipt": "restart_2026_11_26/extraction/supplemental_batch_01_locator_dispatch.json"
+    "task_id": "restart-supplemental-extraction-batch01-semantic-composite",
+    "owner": "CODEX_WRITING",
+    "status": "ready",
+    "action": "Complete per-report source review for R0014, R0058, R0064 and R0075, then cross-check the 91-key composite across all seven reports.",
+    "acceptance": "7/7 sources, 91/91 required fields plus identity, no unsupported comparison or accepted but unresolved key."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -454,19 +448,14 @@
       "batch_01_correction_verdict": "FAIL_THREE_LOCATORS_SEMANTIC_REVIEW_OPEN",
       "batch_01_correction_uuid": "f80b8621-d974-443f-9f92-5e29c0dd7895",
       "batch_01_correction_review": "restart_2026_11_26/extraction/supplemental_batch_01_correction_review.md",
-      "batch_01_correction_unresolved_locator_keys": [
-        [
-          "R0014",
-          "evaluation"
-        ],
-        [
-          "R0058",
-          "architecture"
-        ],
-        [
-          "R0058",
-          "mobility_continuity"
-        ]
+      "batch_01_correction_unresolved_locator_keys": [],
+      "batch_01_locator_repair_gate": "PASS_3_KEYS",
+      "batch_01_locator_repair_uuid": "5da8a22f-43b7-4764-8844-8440546f2957",
+      "batch_01_locator_repair_review": "restart_2026_11_26/extraction/supplemental_batch_01_locator_review.md",
+      "batch_01_semantic_working_notes": [
+        "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0036.md",
+        "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0038.md",
+        "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0043.md"
       ]
     }
   },

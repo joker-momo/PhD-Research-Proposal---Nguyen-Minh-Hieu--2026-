@@ -1,0 +1,210 @@
+{
+  "id": "5da8a22f-43b7-4764-8844-8440546f2957",
+  "context_id": "c4ea7832-6c11-42e6-a610-4c215a18dcb6",
+  "native_state": "TASK_STATE_COMPLETED",
+  "expected_keys": 3,
+  "unique_keys": 3,
+  "missing_keys": [],
+  "duplicates": [],
+  "marker_final": true,
+  "summaries": 1,
+  "summary": {
+    "summary": true,
+    "tools_used": [
+      "client:view_file"
+    ],
+    "unavailable_or_skipped_tools": [
+      "PyMuPDF",
+      "Poppler",
+      "MinerU",
+      "Marker"
+    ],
+    "access_failures": [],
+    "unresolved_keys": [],
+    "workers_used": 0,
+    "notes": "Read R0014.pdf (physical pp. 1-17) and R0058.pdf (physical pp. 1-25) directly via client:view_file with zero access failures; shell-based PDF readers were not invoked due to the no-command constraint."
+  },
+  "pdf_sha256_match": {
+    "R0014": true,
+    "R0036": true,
+    "R0038": true,
+    "R0043": true,
+    "R0058": true,
+    "R0064": true,
+    "R0075": true
+  },
+  "locators": {
+    "FAIL": 7,
+    "EXACT_MATCH": 5
+  },
+  "failure_keys": [
+    [
+      "R0014",
+      "evaluation"
+    ],
+    [
+      "R0058",
+      "architecture"
+    ],
+    [
+      "R0058",
+      "mobility_continuity"
+    ]
+  ],
+  "errors": [
+    {
+      "line": 1,
+      "id": "R0014",
+      "key": "evaluation",
+      "issue": "excerpt mismatch on physical page 10; other pages []",
+      "page": 10,
+      "section": "Fig. 12"
+    },
+    {
+      "line": 1,
+      "id": "R0014",
+      "key": "evaluation",
+      "issue": "excerpt mismatch on physical page 10; other pages []",
+      "page": 10,
+      "section": "Fig. 12"
+    },
+    {
+      "line": 2,
+      "id": "R0058",
+      "key": "architecture",
+      "issue": "excerpt mismatch on physical page 5; other pages []",
+      "page": 5,
+      "section": "3.1"
+    },
+    {
+      "line": 2,
+      "id": "R0058",
+      "key": "architecture",
+      "issue": "excerpt mismatch on physical page 9; other pages []",
+      "page": 9,
+      "section": "4"
+    },
+    {
+      "line": 3,
+      "id": "R0058",
+      "key": "mobility_continuity",
+      "issue": "excerpt mismatch on physical page 9; other pages []",
+      "page": 9,
+      "section": "4.1"
+    },
+    {
+      "line": 3,
+      "id": "R0058",
+      "key": "mobility_continuity",
+      "issue": "excerpt mismatch on physical page 10; other pages []",
+      "page": 10,
+      "section": "4.1"
+    },
+    {
+      "line": 3,
+      "id": "R0058",
+      "key": "mobility_continuity",
+      "issue": "excerpt mismatch on physical page 10; other pages []",
+      "page": 10,
+      "section": "4.1"
+    }
+  ],
+  "checks": [
+    {
+      "line": 1,
+      "id": "R0014",
+      "key": "evaluation",
+      "page": 10,
+      "section": "Fig. 12",
+      "result": "FAIL"
+    },
+    {
+      "line": 1,
+      "id": "R0014",
+      "key": "evaluation",
+      "page": 10,
+      "section": "Fig. 12",
+      "result": "FAIL"
+    },
+    {
+      "line": 1,
+      "id": "R0014",
+      "key": "evaluation",
+      "page": 10,
+      "section": "VIII.A",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 1,
+      "id": "R0014",
+      "key": "evaluation",
+      "page": 11,
+      "section": "VIII.A",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 2,
+      "id": "R0058",
+      "key": "architecture",
+      "page": 5,
+      "section": "3.1",
+      "result": "FAIL"
+    },
+    {
+      "line": 2,
+      "id": "R0058",
+      "key": "architecture",
+      "page": 9,
+      "section": "4",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 2,
+      "id": "R0058",
+      "key": "architecture",
+      "page": 9,
+      "section": "4",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 2,
+      "id": "R0058",
+      "key": "architecture",
+      "page": 9,
+      "section": "4",
+      "result": "FAIL"
+    },
+    {
+      "line": 3,
+      "id": "R0058",
+      "key": "mobility_continuity",
+      "page": 9,
+      "section": "4.1",
+      "result": "FAIL"
+    },
+    {
+      "line": 3,
+      "id": "R0058",
+      "key": "mobility_continuity",
+      "page": 10,
+      "section": "4.1",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 3,
+      "id": "R0058",
+      "key": "mobility_continuity",
+      "page": 10,
+      "section": "4.1",
+      "result": "FAIL"
+    },
+    {
+      "line": 3,
+      "id": "R0058",
+      "key": "mobility_continuity",
+      "page": 10,
+      "section": "4.1",
+      "result": "FAIL"
+    }
+  ]
+}
