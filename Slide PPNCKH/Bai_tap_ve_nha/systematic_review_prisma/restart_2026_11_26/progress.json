@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T11:44:19+07:00",
+  "updated_at": "2026-11-27T11:55:58+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -642,7 +642,12 @@
         "restart_2026_11_26/supplemental_screening/batch_05_bridge_receipt.json",
         "restart_2026_11_26/supplemental_screening/batch_05_accepted.json",
         "restart_2026_11_26/supplemental_screening/batch_06_brief.md",
-        "restart_2026_11_26/supplemental_screening/batch_06_inputs.json"
+        "restart_2026_11_26/supplemental_screening/batch_06_inputs.json",
+        "restart_2026_11_26/supplemental_screening/batch_06_review.md",
+        "restart_2026_11_26/supplemental_screening/batch_06_bridge_receipt.json",
+        "restart_2026_11_26/supplemental_screening/batch_06_accepted.json",
+        "restart_2026_11_26/supplemental_screening/batch_07_brief.md",
+        "restart_2026_11_26/supplemental_screening/batch_07_inputs.json"
       ],
       "acceptance": [
         {

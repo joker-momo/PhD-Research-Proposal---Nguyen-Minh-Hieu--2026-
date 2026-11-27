@@ -1,0 +1,967 @@
+[
+  {
+    "id": "R0239",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "Evaluates multi-agent federated RL policy learning with onboard local execution rather than collaborative multi-UAV neural inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "present MulBERRY, a multi-agent robust learning framework"
+      ],
+      [
+        "E2",
+        "PDF",
+        8,
+        "6.1 System-Level UAV Experimental Setup",
+        "focus on a 4-UAV scenario for MulBERRY evaluation"
+      ],
+      [
+        "E3",
+        "PDF",
+        14,
+        "8 Related Work",
+        "MulBERRY targets learning as opposed to inference"
+      ],
+      [
+        "E3",
+        "PDF",
+        1,
+        "1 Introduction",
+        "with little-to-no offloading computation support"
+      ],
+      [
+        "E4",
+        "PDF",
+        8,
+        "6.1 System-Level UAV Experimental Setup",
+        "build upon PEDRA, an open-source multi-UAV simulation infrastructure"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3620665.3640420",
+        0,
+        "ACM-deposited published-online date",
+        "2024-04-27"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Introduction",
+        "The use of autonomous Unmanned Aerial Vehicles"
+      ],
+      [
+        "E7",
+        "https://www.asplos-conference.org/asplos2024/cfp/index.html",
+        0,
+        "Anonymizing",
+        "ASPLOS employs a double-blind review process"
+      ],
+      [
+        "E7",
+        "https://www.asplos-conference.org/asplos2024/main-program/index.html",
+        0,
+        "Session 8D",
+        "MulBERRY: Enabling Bit-Error Robustness"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0240",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "Evaluates federated learning training and aggregation of a detector rather than collaborative multi-UAV neural inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "we propose CMA-FL, a cognitive multi-agent assisted FL framework"
+      ],
+      [
+        "E2",
+        "PDF",
+        2,
+        "2 Problem Formulation",
+        "drone communication network with drone-edge clients"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "1 Introduction",
+        "FL enables each drone-edge client to train"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "4 Results and Discussion",
+        "evaluate CMA-FL using a public drone communication dataset"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3842435.3843959",
+        0,
+        "ACM-deposited published-online date",
+        "2026-10-26"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "Drone communication is increasingly used for surveillance"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Title",
+        "Poster: CMA-FL: Cognitive Multi-Agent Federated Learning"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "Six-page poster with method and benchmark results, but official DroneCom '26 poster-track peer-review policy could not be verified."
+    }
+  },
+  {
+    "id": "R0244",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Evaluates a standalone centralized classifier on an offline dataset without any multi-UAV architecture or collaborative inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "proposes an attention-guided UAV intrusion detection framework"
+      ],
+      [
+        "E2",
+        "PDF",
+        2,
+        "3 Proposed Approach",
+        "use an existing dataset of UAV network traffic"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "3 Proposed Approach",
+        "consists of three stages: feature selection, feature refinement"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "4.1 Dataset Representation",
+        "tested the proposed intrusion detection framework on the UAVIDS-2025"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3842435.3843954",
+        0,
+        "ACM-deposited published-online date",
+        "2026-10-26"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Introduction",
+        "Unmanned aerial vehicles (UAVs) have become integral"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "ACM Reference Format",
+        "Proceedings of Drone-Assisted Wireless Communications for 5G"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "Six-page workshop paper with method and results, but official DroneCom '26 peer-review policy could not be verified."
+    }
+  },
+  {
+    "id": "R0245",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Evaluates single-UAV standalone CNN+LSTM visual localization without multi-UAV architecture or collaborative inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "proposed a new approach based on LSTM"
+      ],
+      [
+        "E2",
+        "PDF",
+        3,
+        "§3.3 Solution",
+        "When the drone flies at a high altitude"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "3.3 Solution",
+        "trained a CNN to extract features and then"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "4.1 Training Process",
+        "use images of the entire Macau Peninsula"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3638884.3638938",
+        0,
+        "ACM-deposited published-online date",
+        "2024-04-23"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Introduction",
+        "Unmanned Aerial Vehicles (UAVs) have revolutionized various industries"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "ACM Reference Format",
+        "9th International Conference on Communication and Information Processing"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "Six-page conference paper with method and results, but 2023-edition ICCIP peer-review policy was not independently opened."
+    }
+  },
+  {
+    "id": "R0246",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Evaluates a single UAV running non-DNN Radio Tomographic Imaging for radio environment mapping without multi-UAV or collaborative neural inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "develop SKYSCALE, a robust and scalable REM estimation"
+      ],
+      [
+        "E2",
+        "PDF",
+        6,
+        "4.1 UAV Implementation and Testbed Dataset",
+        "is a lightweight custom-built quadcopter with a flight"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "3 Design of the SKYSCALE System",
+        "SKYSCALE uses an RTI based approach with improved"
+      ],
+      [
+        "E4",
+        "PDF",
+        6,
+        "4 UAV Testbed and Evaluation Datasets",
+        "evaluate SKYSCALE in an arena of size"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3641512.3686384",
+        0,
+        "ACM-deposited published-online date",
+        "2024-10"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Introduction",
+        "Recently, Unmanned Aerial Vehicle (UAV)-based platforms have emerged"
+      ],
+      [
+        "E7",
+        "https://www.sigmobile.org/mobihoc/2024/cfp.html",
+        0,
+        "Call for Papers",
+        "submit a one-page rebuttal for the reviews"
+      ],
+      [
+        "E7",
+        "https://www.sigmobile.org/mobihoc/2024/accepted-papers.html",
+        0,
+        "Accepted papers",
+        "SkySCALE: A Radio Tomographic Approach Towards Scaling UAV Network Deployments"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0248",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "Uses decentralized MADRL with Transformer strictly as a multi-UAV trajectory-planning optimizer for data collection without collaborative DNN inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        6,
+        "IV Proposed Solution",
+        "propose a decentralized MADRL method called"
+      ],
+      [
+        "E2",
+        "PDF",
+        3,
+        "III System Model",
+        "assume that a group of UAVs"
+      ],
+      [
+        "E3",
+        "PDF",
+        6,
+        "IV-A Transformer-Enhanced Distributed MADRL Framework",
+        "follows decentralized training and decentralized execution (DTDE) paradigm"
+      ],
+      [
+        "E4",
+        "PDF",
+        9,
+        "V Experimental Results",
+        "utilize two real-world datasets containing taxi trajectories"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "First-page footnote",
+        "Date of publication 12 July 2023"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "I Introduction",
+        "has become a promising paradigm to facilitate"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "First-page footnote",
+        "revised 22 May 2023; accepted 20 June 2023"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0249",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Models county-level post-disaster human population mobility recovery with a centralized Graph Neural ODE and evaluates no UAVs.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "propose a deep learning framework, named Coupled Dynamic"
+      ],
+      [
+        "E2",
+        "PDF",
+        6,
+        "5.1.2 Dataset",
+        "records the daily number of people moving between"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "4.1 Framework of Proposed Method",
+        "predict the population mobility recovery process post-disaster"
+      ],
+      [
+        "E4",
+        "PDF",
+        6,
+        "5.2 Performance Evaluation",
+        "assess the performance of different models in each"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3637528.3672027",
+        0,
+        "ACM-deposited published-online date",
+        "2024-08-24"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Introduction",
+        "The fast progress of urbanization and frequently occurred"
+      ],
+      [
+        "E7",
+        "https://kdd.org/kdd2024/research-track-call-for-papers/",
+        0,
+        "Reviewing Process",
+        "Each submission will receive at least three independent reviews"
+      ],
+      [
+        "E7",
+        "https://kdd.org/kdd2024/research-track-papers/",
+        0,
+        "Research Track Papers",
+        "Physics-informed Neural ODE for Post-disaster Mobility Recovery"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0251",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Evaluates a single UAV with factor-graph sensor fusion and scheduling optimization rather than multi-UAV collaborative neural inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "Abstract",
+        "proposes an integrated solution that integrates GNSS/INS/ vision"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "6.2 Experimental Environment Setup",
+        "A DJI Matrice 300 RTK UAV is equipped"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "3.1 Overall architecture of the model",
+        "takes the factor graph as the core framework"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "6.3 Experimental Scenario Design",
+        "Three types of complex scenarios are designed"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3795154.3795350",
+        0,
+        "ACM-deposited published-online date",
+        "2026-04"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Introduction",
+        "The rapid advancement of the digital economy"
+      ],
+      [
+        "E7",
+        "https://www.keoaeic.org/meeting/EIVBQQ.html",
+        0,
+        "ICCSMT 2025 submission instructions",
+        "全文进行同行评审"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0253",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "Uses MADRL strictly as a decentralized UAV trajectory and crowdsensing task-allocation optimizer without collaborative DNN inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        3,
+        "1 Introduction",
+        "propose a dynamic hierarchical human-UAV cooperative task allocation"
+      ],
+      [
+        "E2",
+        "PDF",
+        26,
+        "5.10 A Case Study in Real Application Environment",
+        "we utilized five UAVs and recruited 20 volunteers"
+      ],
+      [
+        "E3",
+        "PDF",
+        10,
+        "4.2 First layer",
+        "utilize MADRL-based method to decentralized learning optimal routes"
+      ],
+      [
+        "E4",
+        "PDF",
+        17,
+        "5 Performance Evaluation",
+        "analyzes comparisons with seven baselines and SOTA methods"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Footer",
+        "Article 188. Publication date: December 2025."
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "Mobile Crowdsensing (MCS) enables large-scale urban environmental data"
+      ],
+      [
+        "E7",
+        "https://prod-www.acm.bloomreach.cloud/publications/policies/conference-publication-policy",
+        0,
+        "Proceedings of the ACM on X",
+        "Minimum of two expert reviewers with written reviews"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0255",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Explicitly excludes multi-UAV operation from scope and evaluates strictly on-device standalone VLN inference on a single micro UAV.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "1 Introduction",
+        "propose EdgeCurator, a 14.8M-parameter early-fusion framework"
+      ],
+      [
+        "E2",
+        "PDF",
+        1,
+        "1 Introduction",
+        "Voice capture, multi-UAV operation, visitor comfort, manipulation"
+      ],
+      [
+        "E2",
+        "PDF",
+        2,
+        "2.3 Embodied Agents in Interactive Spaces",
+        "do not evaluate speech recognition, visitor-facing interaction, or multi-UAV"
+      ],
+      [
+        "E3",
+        "PDF",
+        7,
+        "4.4.1 System Integration and Latency",
+        "The entire multimodal pipeline is strictly on-device"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "4.1 Experimental Setup",
+        "deployed the trained policy on a physical micro UAV"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3840749.3841574",
+        0,
+        "ACM-deposited published-online date",
+        "2026-11-10"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Introduction",
+        "Efficient multimodal inference is difficult on aerial robots"
+      ],
+      [
+        "E7",
+        "https://erel-mir.github.io/",
+        0,
+        "MM2026 Fast Track",
+        "Such papers will bypass the peer-review process"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "The workshop has ordinary double-blind and expedited routes. The applicable route for this DOI remains unverified."
+    }
+  },
+  {
+    "id": "R0257",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Evaluates split federated learning training on generic IoT edge clients using MNIST/Fashion-MNIST without any multi-UAV setting or collaborative inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        5,
+        "1 Introduction",
+        "introduces GSFL, a novel FL algorithm that innovatively"
+      ],
+      [
+        "E2",
+        "PDF",
+        20,
+        "4.1.1 Dataset and Model",
+        "experiments employed datasets from Fashion-MNIST [45] and MNIST"
+      ],
+      [
+        "E3",
+        "PDF",
+        20,
+        "3.2.3 Grouping FL Process Based on SL Mechanism",
+        "forward propagation on the local device-side group model"
+      ],
+      [
+        "E4",
+        "PDF",
+        22,
+        "§4.2 Experimental Results",
+        "the use of grouping can improve"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Footer",
+        "Article 32. Publication date: November 2025."
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "With the unceasing advancement of 5G technology"
+      ],
+      [
+        "E7",
+        "PDF",
+        29,
+        "Article History",
+        "Received 20 February 2024; revised 6 November 2024"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0259",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "Runs a centralized LSTM energy-consumption predictor at the central station to guide UAV-BS deployment rather than collaborative multi-UAV neural inference.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1.0.2 Motivation and Contributions",
+        "proposes SemanticBlock, a blockchain-assisted framework that leverages semantic"
+      ],
+      [
+        "E2",
+        "PDF",
+        4,
+        "3 Performance Evaluation",
+        "samples collected from four UAVs at 5-minute intervals"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "2 Proposed Architecture",
+        "oversees the execution of deep learning (DL) models"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "3 Performance Evaluation",
+        "conducted simulations using Google Collaboratory for deep learning"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3789418.3789446",
+        0,
+        "ACM-deposited published-online date",
+        "2026-04-25"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Introduction",
+        "Unmanned aerial vehicles (UAVs) have become a vital"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "ACM Reference Format",
+        "In The 9th International"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "The DOI and proceedings are verified. The exact 2025 event policy was not established from the official archive or proceedings."
+    }
+  },
+  {
+    "id": "R0260",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "Benchmarks single-device mobile/wearable versus cloudlet edge offload on smartphones and smartglasses with no UAVs evaluated.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "presents a set of end-to-end benchmarks for comparing"
+      ],
+      [
+        "E2",
+        "PDF",
+        3,
+        "3.3 Devices",
+        "investigate real-time AI performance on three mobile devices"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "3.3 Devices",
+        "Mobile devices offload over WiFi to this cloudlet"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "4.1 Experimental Setup",
+        "experiments use the well-known ImageNet-1K dataset"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3769102.3770616",
+        0,
+        "ACM-deposited published-online date",
+        "2025-12-03"
+      ],
+      [
+        "E6",
+        "PDF",
+        1,
+        "1 Introduction",
+        "As AI advances, so does its voracious appetite"
+      ],
+      [
+        "E7",
+        "https://acm-ieee-sec.org/2025/call_for_papers.php",
+        0,
+        "Submitting a Paper",
+        "The review process will be double-blind"
+      ],
+      [
+        "E7",
+        "https://acm-ieee-sec.org/2025/program.php",
+        0,
+        "Session 3A",
+        "Does Accurate Real-Time AI Need Edge Offload?"
+      ]
+    ],
+    "criterion_notes": {}
+  }
+]

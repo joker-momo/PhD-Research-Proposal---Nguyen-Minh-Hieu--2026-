@@ -1,0 +1,33 @@
+# TASK
+Make the first-pass full-text HK261 P03/P06 decisions for the 13 original reports listed below.
+
+# REQUIRED WORK
+1. Use one Gemini.app Task and only the named original HK261 PDFs plus the protocol and official metadata sources named here. Read restart_2026_11_26/protocol_restart.md §§P03/P06. Confirm body-page access first. Use original physical PDF pages via PyMuPDF or Poppler where available, then MinerU/Marker locally only for ambiguous layout if available. If unavailable in your environment use the built-in local file reader and state any access limitation. Use only directly visible contiguous excerpts. Identify unavailable reports.
+2. Evaluate E1–E7 per report. E2 is the evaluated or explicitly identified multi-UAV architecture. E3 is explicit neural model inference workload placement, execution, feature flow, or requests as evaluated. Standalone neural inference, federated training, generic computation and a neural optimizer alone do not qualify. E4 should identify actual evaluation. For an absence use the inspected method and evaluation sections. Confirm full-text English on an original body page. For any uncertainty identify the exact missing evidence and checked source. Use E5 date of assessed version and E7 exact article type and review policy, avoid assuming a policy for a different track. Distinguish accession date, print date, event date and first-publication date.
+3. Use the ID/title/DOI and DOI-deposited date witnesses listed below. Record edition and page/field. Do not invent a day where the publisher specifies only a month. If a supplied date cannot be re-opened, identify it as Codex-supplied metadata and state the gap. A reference to a DOI alone is not proof of local version or review.
+4. Every item needs PDF body locate and evidence. If the original methods and evaluation fall outside the review, report only the high-level eligibility fact. For security/violence-related reports, record only bibliographic and neutral eligibility evidence and no technical attacks, evasion, exploitation or operational details.
+5. Give one consolidated output. If local body access fails, do not try web-only extraction. Report the explicit shortfall.
+
+# REQUIRED OUTPUT
+13 compact JSONL lines one per ID in the listed order, plus exactly one summary with {"returned_ids":[...],"unresolved_ids":[...],"workers_used":false,"complete":true}. Report schema {"id":"R0261","access":"READ","decision":"AWAITING_CLASSIFICATION","criteria":{"E1":"T","E2":"T","E3":"U","E4":"T","E5":"T","E6":"T","E7":"T"},"primary":"","secondary":[],"reason":"Exact uncertainty","evidence":[["E3","PDF",2,"Exact body section","4–9 contiguous words or exact field value","Short relevance, no unverifiable data"]]}. For each E output exactly one evidence entry, unless unavailable; a second locator is allowed only when needed. Allowed states T/F/U, READ/NOT_ACCESSIBLE, INCLUDE/EXCLUDE/AWAITING_CLASSIFICATION. For external source use exact official URL, page 0, precise field and original excerpt. PDF page index is physical, 1-based. Primary hierarchy E5,E6,E1,E7,E2,E3,E4. If a criterion is U despite another decisive exclusion, explain the specific gap in its own locator note. Do not add numerical outcomes, extra Markdown or unrelated context. The committed batch manifest supplies bibliographic metadata per ID.
+# ACCEPTANCE CRITERIA
+13 requested IDs with exact coverage or documented ID-specific shortfall. Zero duplicates, unexpected IDs, unsupported quantitative claims, fabricated quotations or wrong pages. Seven criteria and P06 precedence per report. 100% original PDF locators and authoritative external locators independently checked by Codex for adoption. Parent-only and no project writes or uploads.
+
+# BOUNDARIES
+Read only these named HK261 inputs. No editing, uploads, submission, exploit or attack information, operational targeting, weapons or evasion details. Do not invent or guess sources, identifiers, file contents, quotes, locators, search results, access attempts, decisions or numbers. Report only what you observed in a source you actually opened. If the source was inaccessible, missing, ambiguous or contradictory, declare the gap and give its specific reason. Keep any candidate URL or title separate as an unverified lead. Never present an abstract or search snippet as full-text evidence.
+
+# Authorized local PDFs
+All files below are original bytes in restart_2026_11_26/fulltext_retrieval/pdf.
+- R0261.pdf | DOI 10.1145/3801359.3801401 | 2026-05-04 (published-online) https://api.crossref.org/works/10.1145/3801359.3801401
+- R0266.pdf | DOI 10.1145/3860892 | 2026-10-30 (published-online) https://api.crossref.org/works/10.1145/3860892
+- R0269.pdf | DOI 10.1145/3534598 | 2022-07-07 (published-online) https://api.crossref.org/works/10.1145/3534598
+- R0271.pdf | DOI 10.1145/3711875.3729156 | 2025-09-25 (published-online) https://api.crossref.org/works/10.1145/3711875.3729156 Check whether the detected swarm is the target, versus the inference agents.
+- R0272.pdf | DOI 10.1145/3789206 | 2026-03-10 (published-online) https://api.crossref.org/works/10.1145/3789206
+- R0281.pdf | DOI 10.1145/3767308.3842139 | 2026-11-09 (published-online) https://api.crossref.org/works/10.1145/3767308.3842139
+- R0292.pdf | DOI 10.1145/3711875.3737661 | 2025-09-25 (published-online) https://api.crossref.org/works/10.1145/3711875.3737661 MobiSys 2025 proceedings and author-university archive https://researchers.mq.edu.au/en/publications/continuous-marine-monitoring-via-autonomous-uav-handoff/. Check physical p4 §4.1 and p5 §5.2 on workload handoff; the archive labels peer review, but seek evidence for the exact DroNet track from the organizer https://sites.google.com/view/dronet2025/home. Main-track policy cannot settle the workshop process.
+- R0294.pdf | DOI 10.1145/3469259.3470488 | 2021-07-30 (published-online) https://api.crossref.org/works/10.1145/3469259.3470488
+- R0298.pdf | DOI 10.1145/3641512.3686367 | 2024-10-01 (ACM DL published date) https://doi.org/10.1145/3641512.3686367
+- R0299.pdf | DOI 10.1145/3757749.3757787 | 2025-09-15 (published-online) https://api.crossref.org/works/10.1145/3757749.3757787
+- R0302.pdf | DOI 10.1145/3719210 | 2025-06-30 (published-online) https://api.crossref.org/works/10.1145/3719210 Physical p1 explicit AAM status and exact version DOI link https://arxiv.org/abs/2502.14455v1.
+- R0309.pdf | DOI 10.1145/3703935.3704093 | 2025-06-27 (published-online) https://api.crossref.org/works/10.1145/3703935.3704093
+- R0317.pdf | DOI 10.1109/tnet.2024.3438462 | 2024-10-01 (IEEE article date of publication, physical p1) https://doi.org/10.1109/tnet.2024.3438462

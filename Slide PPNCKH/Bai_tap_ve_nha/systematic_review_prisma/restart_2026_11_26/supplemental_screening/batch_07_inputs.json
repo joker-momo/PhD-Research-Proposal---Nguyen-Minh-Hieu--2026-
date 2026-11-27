@@ -1,0 +1,242 @@
+[
+  {
+    "id": "R0261",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0261.pdf",
+    "sha256": "0090e7b66a173b588c382ab7549a740d07c685e0f29b32e94390c17a759ddc9f",
+    "doi": "10.1145/3801359.3801401",
+    "title": "Application of cognitive radio in anti jamming of satellite and aircraft communication",
+    "authors": "Yilu Yang; Feiyang Xia",
+    "year": "2026",
+    "venue": "Proceedings of the 2026 2nd International Conference on Big Data, Communication Technology and Computer Applications",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2026-05-04",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3801359.3801401"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0266",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0266.pdf",
+    "sha256": "c19851879c254152d78bf053f97b65fbcc803b8cb9ecd256df3aba8169747c1b",
+    "doi": "10.1145/3860892",
+    "title": "Mind the Attack: How security threats are shaping software deployed on Unmanned Aerial Vehicles",
+    "authors": "Xiaoling Wei; Jacob Klymenko; Damiano Torre; Davide Fucci",
+    "year": "2026",
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "pages": 54,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2026-10-30",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3860892"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0269",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0269.pdf",
+    "sha256": "30f674bcf34ba4818935d6c1934d36ec42c542712dacc65f536c4d4e30f5efcd",
+    "doi": "10.1145/3534598",
+    "title": "Reliable Digital Forensics in the Air: Exploring an RF-based Drone Identification System",
+    "authors": "Zhengxiong Li; Baicheng Chen; Xingyu Chen; Chenhan Xu; Yuyang Chen",
+    "year": "2022",
+    "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+    "pages": 25,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2022-07-07",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3534598"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0271",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0271.pdf",
+    "sha256": "fd99cbcb9214ed3ddd790c91d44216a074b1681a8508af2acc9d39d20b6ee08c",
+    "doi": "10.1145/3711875.3729156",
+    "title": "Detection and Tracking of Drone Swarms using LiDAR",
+    "authors": "Tasnim Azad Abir; Vu Le; Endrowednes Kuantama; Pranjol Sen Gupta",
+    "year": "2025",
+    "venue": "Proceedings of the 23rd Annual International Conference on Mobile Systems, Applications and Services",
+    "pages": 15,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2025-09-25",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3711875.3729156"
+    },
+    "scope_notes": [
+      "Check whether the detected swarm is the target, versus the inference agents."
+    ]
+  },
+  {
+    "id": "R0272",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0272.pdf",
+    "sha256": "8234b37f18aaa3451a10c89506abf2050bc6474182ade3a609ae196b1e011255",
+    "doi": "10.1145/3789206",
+    "title": "DRL-Based Charging Strategy Optimization for IRS-Assisted UAV in Wireless Rechargeable Sensor Networks",
+    "authors": "Xudong Liu; Chuanxin Zhao; Siguang Chen; Taochun Wang; Fulong Chen",
+    "year": "2026",
+    "venue": "ACM Transactions on Sensor Networks",
+    "pages": 38,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2026-03-10",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3789206"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0281",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0281.pdf",
+    "sha256": "4adac720dcaafb144698e00edb719f252e366db86ddcef7548dbda37c4bf8ed4",
+    "doi": "10.1145/3767308.3842139",
+    "title": "The 4th Workshop on UAVs in Multimedia: Capturing the World from a New Perspective",
+    "authors": "Fabian Deuser; Yaxuan Li; Tingyu Wang; Yujiao Shi; Anna Bößendörfer",
+    "year": "2026",
+    "venue": "Proceedings of the 34th ACM International Conference on Multimedia",
+    "pages": 5,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2026-11-09",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3767308.3842139"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0292",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+    "sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+    "doi": "10.1145/3711875.3737661",
+    "title": "Continuous Marine Monitoring via Autonomous UAV Handoff",
+    "authors": "Heegyeong Kim; Alice James; Avishkar Seth; Endrowednes Kuantama",
+    "year": "2025",
+    "venue": "Proceedings of the 23rd Annual International Conference on Mobile Systems, Applications and Services",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2025-09-25",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3711875.3737661"
+    },
+    "scope_notes": [
+      "MobiSys 2025 proceedings and author-university archive https://researchers.mq.edu.au/en/publications/continuous-marine-monitoring-via-autonomous-uav-handoff/. Check physical p4 §4.1 and p5 §5.2 on workload handoff; the archive labels peer review, but seek evidence for the exact DroNet track from the organizer https://sites.google.com/view/dronet2025/home. Main-track policy cannot settle the workshop process."
+    ]
+  },
+  {
+    "id": "R0294",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0294.pdf",
+    "sha256": "3185dd6de006865407a1b83a20fbd82cb2d4f5ff437535404c2f870758a07a44",
+    "doi": "10.1145/3469259.3470488",
+    "title": "Towards Adaptive, Self-Configuring Networked Unmanned Aerial Vehicles",
+    "authors": "Nirupama Bulusu; Ehsan Aryafar; Feng Liu",
+    "year": "2021",
+    "venue": "Proceedings of the 7th Workshop on Micro Aerial Vehicle Networks, Systems, and Applications",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2021-07-30",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3469259.3470488"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0298",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0298.pdf",
+    "sha256": "0c69a27726e0fde96ae8b3108613479544955f947964b73ddf54a0871ce2eb94",
+    "doi": "10.1145/3641512.3686367",
+    "title": "Multi-Task-Oriented UAV Crowd Sensing with Charging Budget Constraint",
+    "authors": "Jiahui Sun; Guiyun Fan; Haiming Jin; Yiwen Song; Tianyuan Liu",
+    "year": "2024",
+    "venue": "MobiHoc '24: Proceedings of the Twenty-fifth International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing",
+    "pages": 10,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2024-10-01",
+      "type": "ACM DL published date",
+      "url": "https://doi.org/10.1145/3641512.3686367"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0299",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0299.pdf",
+    "sha256": "b0be471e736c839bc0b650fb0333302096d80ac066d047e03f58b9a5d07e12c9",
+    "doi": "10.1145/3757749.3757787",
+    "title": "Low-Altitude Economy Meets Safety Management: Leveraging a Multi-Attention High-Resolution Network for Enhanced UAV Detection",
+    "authors": "Lingxiao Kong",
+    "year": "2025",
+    "venue": "Proceedings of the 2025 2nd International Conference on Computer and Multimedia Technology",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2025-09-15",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3757749.3757787"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0302",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0302.pdf",
+    "sha256": "15c02e0b251b5f99122398fbb0e76016718611df10b3f489be507b71b37bb12c",
+    "doi": "10.1145/3719210",
+    "title": "An Efficient Ground-aerial Transportation System for Pest Control Enabled by AI-based Autonomous Nano-UAVs",
+    "authors": "Luca Crupi; Luca Butera; Alberto Ferrante; Alessandro Giusti; Daniele Palossi",
+    "year": "2025",
+    "venue": "ACM Journal on Autonomous Transportation Systems",
+    "pages": 23,
+    "version": "ARXIV_DEPOSIT",
+    "date": {
+      "value": "2025-06-30",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3719210"
+    },
+    "scope_notes": [
+      "Physical p1 explicit AAM status and exact version DOI link https://arxiv.org/abs/2502.14455v1."
+    ]
+  },
+  {
+    "id": "R0309",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0309.pdf",
+    "sha256": "b397af331883b52a1b781366e59967a63e3a33bfa60bb6cff212caaa3bdf16e6",
+    "doi": "10.1145/3703935.3704093",
+    "title": "Improved YOLOv8n Algorithm for Small Target Detection in UAV Perspective",
+    "authors": "Wei Luo",
+    "year": "2025",
+    "venue": "Proceedings of the 2024 7th International Conference on Artificial Intelligence and Pattern Recognition",
+    "pages": 8,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2025-06-27",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3703935.3704093"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0317",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0317.pdf",
+    "sha256": "94867940ce7315ecd27b946acf745641e4a95028070ac6cb6c6c6a93accc5d2a",
+    "doi": "10.1109/tnet.2024.3438462",
+    "title": "De-RPOTA: Decentralized Learning With Resource Adaptation and Privacy Preservation Through Over-the-Air Computation",
+    "authors": "Jing Qiao; Shikun Shen; Shuzhen Chen; Xiao Zhang; Tian Lan",
+    "year": "2024",
+    "venue": "IEEE/ACM Transactions on Networking",
+    "pages": 13,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2024-10-01",
+      "type": "IEEE article date of publication, physical p1",
+      "url": "https://doi.org/10.1109/tnet.2024.3438462"
+    },
+    "scope_notes": []
+  }
+]
