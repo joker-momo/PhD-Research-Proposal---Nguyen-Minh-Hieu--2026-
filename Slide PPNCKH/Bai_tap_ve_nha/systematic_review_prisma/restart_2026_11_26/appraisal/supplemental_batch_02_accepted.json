@@ -1,0 +1,1698 @@
+{
+  "schema_version": 1,
+  "gate": "PASS_COMPOSITE",
+  "prepared_and_verified_at": "2026-11-27T14:07:13+07:00",
+  "reports": 7,
+  "domain_judgments": 70,
+  "access": [
+    {
+      "id": "R0077",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "1. Introduction",
+          "inference is completed collaboratively without relying on"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+      "source_pdf_sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+      "study_id": "S033"
+    },
+    {
+      "id": "R0080",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "II. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "conducts onboard feature extraction to lightweight raw"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+      "source_pdf_sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5",
+      "study_id": "S034"
+    },
+    {
+      "id": "R0090",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "II. SYSTEM ARCHITECTURE: AEROAGRINET",
+          "The new swarm empowered flying edge architecture"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+      "source_pdf_sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+      "study_id": "S035"
+    },
+    {
+      "id": "R0092",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "I. INTRODUCTION",
+          "The remainder of this paper is organized"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "source_pdf_sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "study_id": "S036"
+    },
+    {
+      "id": "R0106",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "I. INTRODUCTION",
+          "allow the rest of the working UAVs"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+      "source_pdf_sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+      "study_id": "S037"
+    },
+    {
+      "id": "R0107",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "I. INTRODUCTION",
+          "proposes a collaborative regulation framework that jointly"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+      "source_pdf_sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7",
+      "study_id": "S038"
+    },
+    {
+      "id": "R0110",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "I. INTRODUCTION",
+          "a resilient distributed inference framework that combines"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "source_pdf_sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "study_id": "S039"
+    }
+  ],
+  "native_task_ids": [
+    "fa578019-cecc-4edf-b6de-e5185597ebd0",
+    "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+    "bcfddbd8-e581-4c19-a968-29ffec3c3992"
+  ],
+  "unverified_chat_cleanup": [
+    {
+      "task_uuid": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "reason": "Accessibility snapshot failed: Gemini snapshot failed: Expected one composer"
+    }
+  ],
+  "status_counts": {
+    "YES": 30,
+    "PARTIAL": 33,
+    "NOT_REPORTED": 7
+  },
+  "judgments": [
+    {
+      "id": "R0077",
+      "key": "D01",
+      "s": "YES",
+      "f": "Defines distributed split-computing question and task, communication, energy, and capability-diffusion workflow.",
+      "l": [
+        [
+          4,
+          "3.1. Task Computation Model",
+          "machine learning tasks that are partitioned into"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+      "source_pdf_sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+      "study_id": "S033"
+    },
+    {
+      "id": "R0077",
+      "key": "D02",
+      "s": "YES",
+      "f": "States pre-deployment, trajectory, pathloss, single-transfer, and threshold assumptions, variables, and constraints.",
+      "l": [
+        [
+          5,
+          "3.2. Communication Model",
+          "each UAV can maintain at most one"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+      "source_pdf_sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+      "study_id": "S033"
+    },
+    {
+      "id": "R0077",
+      "key": "D03",
+      "s": "PARTIAL",
+      "f": "Tabulates swarm, radio, and threshold parameters, but omits model architecture and simulator details.",
+      "l": [
+        [
+          9,
+          "5. Performance Evaluation",
+          "we emulate two truncated inference operating"
+        ]
+      ],
+      "g": "Specific neural network architecture, dataset, per-layer compute and activation sizes, and simulator software are not reported.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+      "source_pdf_sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+      "study_id": "S033"
+    },
+    {
+      "id": "R0077",
+      "key": "D04",
+      "s": "YES",
+      "f": "Evaluates five named offloading strategies under common simulation conditions with disclosed parameter settings.",
+      "l": [
+        [
+          8,
+          "5. Performance Evaluation",
+          "The third approach adopts a greedy policy"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+      "source_pdf_sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+      "study_id": "S033"
+    },
+    {
+      "id": "R0077",
+      "key": "D05",
+      "s": "PARTIAL",
+      "f": "Aligns latency, fairness, energy, and FOM metrics with objectives, using parameterized accuracy proxies.",
+      "l": [
+        [
+          9,
+          "5. Performance Evaluation",
+          "These values are simulation parameters intended to"
+        ]
+      ],
+      "g": "Inference accuracy for full and early-exit modes is parameterized as fixed simulation values rather than measured on a dataset.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+      "source_pdf_sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+      "study_id": "S033"
+    },
+    {
+      "id": "R0077",
+      "key": "D06",
+      "s": "YES",
+      "f": "Reports confidence intervals over independent runs, parameter sensitivity sweeps, and theoretical convergence.",
+      "l": [
+        [
+          8,
+          "5. Performance Evaluation",
+          "with 95% confidence intervals derived from"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+      "source_pdf_sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+      "study_id": "S033"
+    },
+    {
+      "id": "R0077",
+      "key": "D07",
+      "s": "PARTIAL",
+      "f": "The simulation models circular trajectories, two-ray pathloss, Shannon link capacity, and predominantly line-of-sight links, while authors propose real flight data in future work.",
+      "l": [
+        [
+          5,
+          "3.2. Communication Model",
+          "across a region and follow circular trajectories"
+        ],
+        [
+          5,
+          "3.2. Communication Model",
+          "approximate the instantaneous link speed by the Shannon"
+        ],
+        [
+          8,
+          "5. Performance Evaluation",
+          "and follow circular trajectories with a movement radius"
+        ],
+        [
+          12,
+          "6. Conclusion",
+          "mobility models and real flight data to capture"
+        ]
+      ],
+      "g": "Real flight validation is absent and mobility relies on idealized circular trajectories.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+      "source_pdf_sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+      "study_id": "S033"
+    },
+    {
+      "id": "R0077",
+      "key": "D08",
+      "s": "YES",
+      "f": "Bounds conclusions to simulation results and specifies field-deployment requirements and future extensions.",
+      "l": [
+        [
+          12,
+          "6. Conclusion",
+          "For healthy operation in the field"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+      "source_pdf_sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+      "study_id": "S033"
+    },
+    {
+      "id": "R0077",
+      "key": "D09",
+      "s": "NOT_REPORTED",
+      "f": "No code, simulator, dataset, or trace availability statement is provided.",
+      "l": [
+        [
+          8,
+          "5. Performance Evaluation",
+          null
+        ],
+        [
+          12,
+          "Acknowledgment",
+          null
+        ]
+      ],
+      "g": "No code, simulator, dataset, or trace availability statement appears in Methods, Conclusion, or Acknowledgment.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+      "source_pdf_sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+      "study_id": "S033"
+    },
+    {
+      "id": "R0077",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "Conclusion identifies operational needs for runtime monitoring, parameter tuning, early-exit policy, and real flight data, and Acknowledgment discloses funding.",
+      "l": [
+        [
+          12,
+          "6. Conclusion",
+          "mobility models and real flight data to capture"
+        ],
+        [
+          12,
+          "6. Conclusion",
+          "For healthy operation in the field"
+        ],
+        [
+          12,
+          "Acknowledgment",
+          "This work is supported by Istanbul Technical University"
+        ],
+        [
+          1,
+          "Front Matter",
+          null
+        ],
+        [
+          12,
+          "Acknowledgment",
+          null
+        ]
+      ],
+      "g": "Conflict-of-interest disclosure is not reported on the first page or in Acknowledgment.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+      "source_pdf_sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+      "study_id": "S033"
+    },
+    {
+      "id": "R0080",
+      "key": "D01",
+      "s": "YES",
+      "f": "Formulates edge-cloud collaborative inference for distributionally diverse UAVs using KDE confidence thresholding.",
+      "l": [
+        [
+          2,
+          "II. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "A cloud server is deployed on the"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+      "source_pdf_sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5",
+      "study_id": "S034"
+    },
+    {
+      "id": "R0080",
+      "key": "D02",
+      "s": "YES",
+      "f": "States three analytical assumptions, threshold and quantization variables, and total bandwidth constraints.",
+      "l": [
+        [
+          3,
+          "III. ANALYTICAL INSIGHTS AND OPTIMAL SOLUTIONS",
+          "The raw data classification accuracy function"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+      "source_pdf_sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5",
+      "study_id": "S034"
+    },
+    {
+      "id": "R0080",
+      "key": "D03",
+      "s": "PARTIAL",
+      "f": "Specifies dataset, backbones, augmentations, and GPU, but omits quantization set and rate parameters.",
+      "l": [
+        [
+          5,
+          "IV. EXPERIMENTS",
+          "All experiments are conducted within a simulated"
+        ]
+      ],
+      "g": "Quantization bit set, per-UAV spectral efficiencies, arrival rates, feature bit size, and model training details are not reported.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+      "source_pdf_sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5",
+      "study_id": "S034"
+    },
+    {
+      "id": "R0080",
+      "key": "D04",
+      "s": "YES",
+      "f": "Table I and experimental setup compare Raw-Only, Feat-Only, GSUP, and the proposed method across matched edge-cloud model combinations and synthetic CIFAR-10 distributions, with Table I sharing a fixed bandwidth condition while baselines differ in payload and decision rules by design.",
+      "l": [
+        [
+          5,
+          "IV.A. Experimental Setup",
+          "the UAVs send all its raw data with full"
+        ],
+        [
+          5,
+          "IV.A. Experimental Setup",
+          "assumes all UAVs share identical confidence"
+        ],
+        [
+          5,
+          "IV.B. Experiment Results",
+          "and latency of four different model configurations"
+        ],
+        [
+          6,
+          "IV.B. Experiment Results",
+          "a bandwidth of 100 Mbps"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+      "source_pdf_sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5",
+      "study_id": "S034"
+    },
+    {
+      "id": "R0080",
+      "key": "D05",
+      "s": "YES",
+      "f": "Measures Top-1 classification accuracy and simulated end-to-end latency matching stated optimization goals.",
+      "l": [
+        [
+          5,
+          "IV. EXPERIMENTS",
+          "The reported results are presented as the"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+      "source_pdf_sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5",
+      "study_id": "S034"
+    },
+    {
+      "id": "R0080",
+      "key": "D06",
+      "s": "PARTIAL",
+      "f": "Experimental setup reports independent-seed repetitions with mean and Student-t confidence intervals, and Figures 2 and 3 examine sensitivity to threshold, bandwidth, and UAV count.",
+      "l": [
+        [
+          5,
+          "IV.A. Experimental Setup",
+          "The reported results are presented as the mean with"
+        ],
+        [
+          5,
+          "IV.B. Experiment Results",
+          "A single UAV scenario was simulated by sweeping thresholds"
+        ],
+        [
+          6,
+          "IV.B. Experiment Results",
+          "analyze the relationship between system accuracy and"
+        ],
+        [
+          6,
+          "Fig. 3",
+          null
+        ]
+      ],
+      "g": "Dispersion intervals are omitted in Figures 2 and 3, Figure 2 is limited to a single-UAV sweep, and empirical convergence curves are not reported.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+      "source_pdf_sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5",
+      "study_id": "S034"
+    },
+    {
+      "id": "R0080",
+      "key": "D07",
+      "s": "PARTIAL",
+      "f": "Abstracts wireless links into static spectral efficiencies without UAV mobility or fading models.",
+      "l": [
+        [
+          2,
+          "II. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "by all UAVs can not exceed the"
+        ]
+      ],
+      "g": "Wireless links are abstracted as static per-UAV spectral efficiencies without UAV mobility, fading, or packet-loss modeling.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+      "source_pdf_sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5",
+      "study_id": "S034"
+    },
+    {
+      "id": "R0080",
+      "key": "D08",
+      "s": "PARTIAL",
+      "f": "Experimental setup explicitly identifies a simulated evaluation with synthesized non-identical data distributions, while Conclusion reports accuracy gains over identical-distribution baselines under RAN transmissions.",
+      "l": [
+        [
+          5,
+          "IV.A. Experimental Setup",
+          "are synthesized by applying Gaussian noise"
+        ],
+        [
+          6,
+          "V. CONCLUSION",
+          "the proposed scheme achieves an accuracy improvement compared to"
+        ],
+        [
+          6,
+          "V. CONCLUSION",
+          "data distribution through RAN transmissions"
+        ]
+      ],
+      "g": "Conclusion does not restate the simulation and synthetic-dataset boundary when summarizing the RAN accuracy comparison.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+      "source_pdf_sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5",
+      "study_id": "S034"
+    },
+    {
+      "id": "R0080",
+      "key": "D09",
+      "s": "NOT_REPORTED",
+      "f": "Cites public CIFAR-10 dataset without any author code or augmented-data availability statement.",
+      "l": [
+        [
+          5,
+          "IV. EXPERIMENTS",
+          null
+        ],
+        [
+          6,
+          "ACKNOWLEDGEMENT",
+          null
+        ]
+      ],
+      "g": "Uses public CIFAR-10 dataset, but no author code, script, or augmented-data availability statement is reported.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+      "source_pdf_sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5",
+      "study_id": "S034"
+    },
+    {
+      "id": "R0080",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "Acknowledgement discloses supporting funding grants.",
+      "l": [
+        [
+          6,
+          "ACKNOWLEDGEMENT",
+          "This work was supported in part by"
+        ],
+        [
+          6,
+          "V. CONCLUSION",
+          null
+        ],
+        [
+          6,
+          "ACKNOWLEDGEMENT",
+          null
+        ],
+        [
+          1,
+          "Front Matter",
+          null
+        ]
+      ],
+      "g": "Study limitations in Conclusion and conflict-of-interest disclosures in Front Matter and Acknowledgement are not reported.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+      "source_pdf_sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5",
+      "study_id": "S034"
+    },
+    {
+      "id": "R0090",
+      "key": "D01",
+      "s": "PARTIAL",
+      "f": "Presents a five-layer flying-edge architecture and swarm coordination workflow for agricultural sensing and onboard AI inference.",
+      "l": [
+        [
+          2,
+          "II. SYSTEM ARCHITECTURE: AEROAGRINET",
+          "The new swarm empowered flying edge architecture"
+        ],
+        [
+          3,
+          "III. COMMUNICATION AND TASK DISTRIBUTION PROTOCOL",
+          "AeroAgriNet has a redundant task assignment mechanism"
+        ]
+      ],
+      "g": "Lacks formal specification of inference partitioning rules, task-allocation logic, and how layered components coordinate execution.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+      "source_pdf_sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+      "study_id": "S035"
+    },
+    {
+      "id": "R0090",
+      "key": "D02",
+      "s": "PARTIAL",
+      "f": "Specifies simulation tools and a hardware field prototype setup with test-field area and LoRaWAN sensor integration.",
+      "l": [
+        [
+          4,
+          "V.E. Simulations and Prototype Deployment on Test Fields",
+          "A large agricultural setting was simulated with heterogeneity"
+        ],
+        [
+          4,
+          "V.E. Simulations and Prototype Deployment on Test Fields",
+          "we built up a hardware prototype that"
+        ],
+        [
+          4,
+          "V.E. Simulations and Prototype Deployment on Test Fields",
+          null
+        ]
+      ],
+      "g": "Detailed channel, interference, weather-disturbance, workload, and decentralized coordination parameters are not reported.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+      "source_pdf_sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+      "study_id": "S035"
+    },
+    {
+      "id": "R0090",
+      "key": "D03",
+      "s": "PARTIAL",
+      "f": "Names simulation tools and drone hardware, omitting network, model, dataset, and workload parameters.",
+      "l": [
+        [
+          4,
+          "V. EXPERIMENTAL SETUP AND SIMULATION",
+          "integrates DJI Phantom 4 drones for mounting"
+        ]
+      ],
+      "g": "Lacks simulation parameters, AI model architectures, datasets, workload rates, and baseline implementation details needed for reconstruction.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+      "source_pdf_sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+      "study_id": "S035"
+    },
+    {
+      "id": "R0090",
+      "key": "D04",
+      "s": "PARTIAL",
+      "f": "Names traditional and cloud-based baselines without documenting their configurations or workload parity.",
+      "l": [
+        [
+          5,
+          "V. RESULTS AND DISCUSSION",
+          "comparing it with two baseline systems"
+        ]
+      ],
+      "g": "Baseline implementations, model choices, network parameters, and workload parity are not documented.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+      "source_pdf_sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+      "study_id": "S035"
+    },
+    {
+      "id": "R0090",
+      "key": "D05",
+      "s": "PARTIAL",
+      "f": "Reports latency, completion, and energy metrics, but omits accuracy for agricultural prediction tasks.",
+      "l": [
+        [
+          5,
+          "V. RESULTS AND DISCUSSION",
+          "The results validate the efficacy of"
+        ]
+      ],
+      "g": "Evaluates latency, completion rate, and energy, but omits accuracy metrics for pest detection, NDVI, and yield forecasting.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+      "source_pdf_sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+      "study_id": "S035"
+    },
+    {
+      "id": "R0090",
+      "key": "D06",
+      "s": "PARTIAL",
+      "f": "Reports sensitivity sweeps across increasing UAV counts and node dropout scenarios.",
+      "l": [
+        [
+          5,
+          "V.H. Scalability under Load",
+          "Scalability was assessed by increasing the number of"
+        ],
+        [
+          6,
+          "V.K. Swarm Resilience",
+          "Swarm resilience was tested under UAV dropout"
+        ],
+        [
+          5,
+          "V. RESULTS AND DISCUSSION",
+          null
+        ],
+        [
+          6,
+          "V.K. Swarm Resilience",
+          null
+        ]
+      ],
+      "g": "Independent repetition counts and dispersion metrics are not reported.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+      "source_pdf_sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+      "study_id": "S035"
+    },
+    {
+      "id": "R0090",
+      "key": "D07",
+      "s": "PARTIAL",
+      "f": "Reports both multi-tool simulation and a field prototype coordinated by a local ROS base station, and labels §V.F latency and packet-loss results as simulated or emulated.",
+      "l": [
+        [
+          4,
+          "V.E. Simulations and Prototype Deployment on Test Fields",
+          "coordinated by a local base station using ROS"
+        ],
+        [
+          5,
+          "V.F. Performance Evaluation Metrics",
+          "in simulation experiments compared to"
+        ],
+        [
+          5,
+          "V.G-V.J",
+          null
+        ]
+      ],
+      "g": "Modality attribution is incomplete for later result subsections where simulation versus field-prototype origin is unspecified.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+      "source_pdf_sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+      "study_id": "S035"
+    },
+    {
+      "id": "R0090",
+      "key": "D08",
+      "s": "PARTIAL",
+      "f": "Reports consistent improvements across evaluation metrics and cites both experimental findings and simulations in Conclusion.",
+      "l": [
+        [
+          6,
+          "V.L. Discussion Summary",
+          "The results demonstrate that AeroAgriNet consistently"
+        ],
+        [
+          6,
+          "VI. CONCLUSION",
+          "The experimental findings and simulations demonstrate"
+        ],
+        [
+          6,
+          "VI. CONCLUSION",
+          null
+        ]
+      ],
+      "g": "Modality attribution remains incomplete and Conclusion states broad resilience guarantees without bounding tested conditions.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+      "source_pdf_sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+      "study_id": "S035"
+    },
+    {
+      "id": "R0090",
+      "key": "D09",
+      "s": "NOT_REPORTED",
+      "f": "No code, simulation script, dataset, or field-trace availability statement is provided.",
+      "l": [
+        [
+          4,
+          "V. EXPERIMENTAL SETUP AND SIMULATION",
+          null
+        ],
+        [
+          6,
+          "VI. CONCLUSION",
+          null
+        ]
+      ],
+      "g": "No code, simulation script, dataset, or field-trace availability statement appears in Section V or end matter.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+      "source_pdf_sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+      "study_id": "S035"
+    },
+    {
+      "id": "R0090",
+      "key": "D10",
+      "s": "NOT_REPORTED",
+      "f": "Front matter, Conclusion, and end-matter references were inspected for limitations, funding, and conflict-of-interest disclosures.",
+      "l": [
+        [
+          1,
+          "Front Matter",
+          null
+        ],
+        [
+          6,
+          "VI. CONCLUSION",
+          null
+        ],
+        [
+          7,
+          "REFERENCES",
+          null
+        ]
+      ],
+      "g": "Study limitations, funding sources, and conflict-of-interest disclosures are not reported in the inspected front matter, Conclusion, or end-matter sections.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+      "source_pdf_sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+      "study_id": "S035"
+    },
+    {
+      "id": "R0092",
+      "key": "D01",
+      "s": "YES",
+      "f": "Formulates decentralized DRL partner selection and DNN partitioning with Pareto filtering and MiniBatch pipelining.",
+      "l": [
+        [
+          3,
+          "III. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "We present the system model for decentralized"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "source_pdf_sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "study_id": "S036"
+    },
+    {
+      "id": "R0092",
+      "key": "D02",
+      "s": "YES",
+      "f": "States system assumptions, joint decision variables, hard simulator constraints, and soft deadline/energy preferences.",
+      "l": [
+        [
+          6,
+          "III. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "The objective is to jointly minimize the"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "source_pdf_sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "study_id": "S036"
+    },
+    {
+      "id": "R0092",
+      "key": "D03",
+      "s": "YES",
+      "f": "Provides complete simulator, radio, energy, DNN layer-profile, training, and seed parameters in Tables III-IV.",
+      "l": [
+        [
+          15,
+          "V. EXPERIMENTAL EVALUATION",
+          "Evaluation uses common test seeds"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "source_pdf_sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "study_id": "S036"
+    },
+    {
+      "id": "R0092",
+      "key": "D04",
+      "s": "YES",
+      "f": "Distinguishes Local, same-substrate baselines sharing the Pareto Top-K pool and MiniBatch pipeline under common test seeds, and the separate faithful original EPCTA chain baseline with survivorship qualification in Table V.",
+      "l": [
+        [
+          10,
+          "V.B. Baselines and Metrics",
+          "All collaborative baselines share the same"
+        ],
+        [
+          10,
+          "V.B. Baselines and Metrics",
+          "applies its original decision heuristic on our substrate"
+        ],
+        [
+          13,
+          "Table V",
+          "PERFORMANCE COMPARISON ACROSS FOUR DNN ARCHITECTURES"
+        ],
+        [
+          13,
+          "Table V",
+          "reflects only the surviving minority"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "source_pdf_sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "study_id": "S036"
+    },
+    {
+      "id": "R0092",
+      "key": "D05",
+      "s": "YES",
+      "f": "Evaluates P50 latency, strict all-arrived deadline satisfaction, high-priority satisfaction, energy, and failure/drop rates.",
+      "l": [
+        [
+          10,
+          "V. EXPERIMENTAL EVALUATION",
+          "satisfaction rates use the strict"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "source_pdf_sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "study_id": "S036"
+    },
+    {
+      "id": "R0092",
+      "key": "D06",
+      "s": "YES",
+      "f": "Reports multi-seed convergence, thirty-episode dispersion, Holm-corrected Wilcoxon tests, Cliff's delta, and sensitivity sweeps.",
+      "l": [
+        [
+          12,
+          "V. EXPERIMENTAL EVALUATION",
+          "All results are averaged over 30 episodes"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "source_pdf_sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "study_id": "S036"
+    },
+    {
+      "id": "R0092",
+      "key": "D07",
+      "s": "YES",
+      "f": "Models task-aware mobility, 802.11ac shadowing, Doppler, MCS, CSMA contention, and link-break recovery.",
+      "l": [
+        [
+          3,
+          "III. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "communicate via Wi-Fi 802.11ac at 5 GHz"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "source_pdf_sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "study_id": "S036"
+    },
+    {
+      "id": "R0092",
+      "key": "D08",
+      "s": "YES",
+      "f": "Bounds conclusions to evaluated simulator, four DNNs, flow-level CSMA, and single-operator swarm assumptions.",
+      "l": [
+        [
+          9,
+          "IV. DDCI: DRL-ASSISTED DECENTRALIZED COLLABORATIVE INFERENCE",
+          "we assume a single-operator swarm"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "source_pdf_sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "study_id": "S036"
+    },
+    {
+      "id": "R0092",
+      "key": "D09",
+      "s": "YES",
+      "f": "Provides public GitHub repository URL containing source code, environment, baselines, and entry points.",
+      "l": [
+        [
+          15,
+          "V. EXPERIMENTAL EVALUATION",
+          "The complete source code, environment, baselines"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "source_pdf_sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "study_id": "S036"
+    },
+    {
+      "id": "R0092",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "Discloses funding grants and inline technical boundaries, omitting conflict-of-interest disclosure.",
+      "l": [
+        [
+          1,
+          "I. INTRODUCTION",
+          "This work was supported by National Natural"
+        ],
+        [
+          15,
+          "VI. CONCLUSION",
+          null
+        ]
+      ],
+      "g": "Funding is disclosed on page 1 and technical boundaries are noted inline, but conflict-of-interest disclosure is not reported.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "source_pdf_sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "study_id": "S036"
+    },
+    {
+      "id": "R0106",
+      "key": "D01",
+      "s": "YES",
+      "f": "Formulates multi-UAV ISCC group-target sensing with split NN blocks and collaborative MA-DDPG optimization.",
+      "l": [
+        [
+          3,
+          "III. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "We represent an MUAV-enabled ISCC network"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+      "source_pdf_sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+      "study_id": "S037"
+    },
+    {
+      "id": "R0106",
+      "key": "D02",
+      "s": "YES",
+      "f": "States satellite-backhaul and Doppler assumptions, five optimization variables, and nine operational constraints.",
+      "l": [
+        [
+          6,
+          "III. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "guarantee that the available computation capacity of"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+      "source_pdf_sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+      "study_id": "S037"
+    },
+    {
+      "id": "R0106",
+      "key": "D03",
+      "s": "PARTIAL",
+      "f": "Tabulates radio, UAV, and DRL parameters with AlexNet FLOPs, omitting layer sizes and seeds.",
+      "l": [
+        [
+          10,
+          "V. SIMULATION RESULTS",
+          "use Python and PyTorch for simulation"
+        ]
+      ],
+      "g": "Layer output sizes, minimum rate threshold, reward weights, actor-critic network dimensions, mobility speeds, and random seeds are omitted.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+      "source_pdf_sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+      "study_id": "S037"
+    },
+    {
+      "id": "R0106",
+      "key": "D04",
+      "s": "PARTIAL",
+      "f": "Evaluates six named baselines and MA-PPO in simulation, omitting learning-baseline tuning parity.",
+      "l": [
+        [
+          10,
+          "V. SIMULATION RESULTS",
+          "typical schemes are selected as the benchmark"
+        ]
+      ],
+      "g": "Hyperparameter tuning parity for learning baselines and configuration details for K-Means and straight-line baselines are not disclosed.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+      "source_pdf_sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+      "study_id": "S037"
+    },
+    {
+      "id": "R0106",
+      "key": "D05",
+      "s": "PARTIAL",
+      "f": "Numerical simulation evaluates the formulated GTST completion rate and simulated group-target tracking parameters.",
+      "l": [
+        [
+          10,
+          "V. SIMULATION RESULTS",
+          "of the proposed scheme are proved by numerical simulation"
+        ],
+        [
+          11,
+          "V.B. Group Target Sensing Task Completion Rate Analysis",
+          "and the GTST completion rate under different schemes"
+        ],
+        [
+          13,
+          "V.D. Overall Situation Awareness Analysis",
+          "simulates the different GT parameters under different schemes"
+        ],
+        [
+          10,
+          "V. SIMULATION RESULTS",
+          null
+        ]
+      ],
+      "g": "Empirical classification accuracy of the pre-trained neural network is not evaluated in the simulation.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+      "source_pdf_sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+      "study_id": "S037"
+    },
+    {
+      "id": "R0106",
+      "key": "D06",
+      "s": "PARTIAL",
+      "f": "Presents training reward convergence analysis and sensitivity sweeps across disabled UAVs, targets, swarm size, and compute capacity.",
+      "l": [
+        [
+          10,
+          "V.A. Convergence Analysis",
+          "and the sum reward becomes stable"
+        ],
+        [
+          11,
+          "V.B. Group Target Sensing Task Completion Rate Analysis",
+          "and the number of targets under different"
+        ],
+        [
+          12,
+          "V.B. Group Target Sensing Task Completion Rate Analysis",
+          "completion rate versus the number of UAVs under different"
+        ],
+        [
+          10,
+          "V. SIMULATION RESULTS",
+          null
+        ]
+      ],
+      "g": "Multi-run or multi-seed documentation and dispersion metrics are not reported.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+      "source_pdf_sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+      "study_id": "S037"
+    },
+    {
+      "id": "R0106",
+      "key": "D07",
+      "s": "PARTIAL",
+      "f": "Models probabilistic U2G links and group mobility, assuming handover-free satellite backhaul and exact Doppler.",
+      "l": [
+        [
+          4,
+          "III. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "free propagation model is taken to describe"
+        ]
+      ],
+      "g": "Assumes handover-free satellite backhaul and exact Doppler compensation while claiming real-environment applicability with minor adjustments.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+      "source_pdf_sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+      "study_id": "S037"
+    },
+    {
+      "id": "R0106",
+      "key": "D08",
+      "s": "PARTIAL",
+      "f": "Conclusion states that exceeding the training maximum requires retraining, whereas Discussion claims the trained scheme can be applied to any number of UAV swarms.",
+      "l": [
+        [
+          14,
+          "VI. CONCLUSION AND FUTURE WORK",
+          "greater than the maximum number"
+        ],
+        [
+          14,
+          "VI. CONCLUSION AND FUTURE WORK",
+          "retrained, which increases the use cost"
+        ],
+        [
+          14,
+          "VII. DISCUSSION",
+          "be applied to any number of UAV swarms"
+        ]
+      ],
+      "g": "Broad execution-phase swarm-size transfer claims in Discussion are in tension with Conclusion's retraining requirement above the training maximum.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+      "source_pdf_sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+      "study_id": "S037"
+    },
+    {
+      "id": "R0106",
+      "key": "D09",
+      "s": "NOT_REPORTED",
+      "f": "No code, simulation script, or data availability statement is reported.",
+      "l": [
+        [
+          10,
+          "V. SIMULATION RESULTS",
+          null
+        ],
+        [
+          14,
+          "VII. DISCUSSION",
+          null
+        ]
+      ],
+      "g": "No code, simulation script, or data availability statement is reported in Section V or end matter.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+      "source_pdf_sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+      "study_id": "S037"
+    },
+    {
+      "id": "R0106",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "Reports explicit limitations in Sections VI-VII and funding on page 1, omitting conflict disclosures.",
+      "l": [
+        [
+          14,
+          "VII. DISCUSSION",
+          "there are still some limitations in the"
+        ],
+        [
+          1,
+          "I. INTRODUCTION",
+          "Baolin Yin and Xuming Fang was supported"
+        ]
+      ],
+      "g": "Explicit limitations and funding grants are reported, but conflict-of-interest disclosure is not reported.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+      "source_pdf_sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+      "study_id": "S037"
+    },
+    {
+      "id": "R0107",
+      "key": "D01",
+      "s": "YES",
+      "f": "Defines the multi-UAV collaborative semantic fusion and adaptive semantic compression granularity workflow and formulates the joint QoE optimization problem.",
+      "l": [
+        [
+          3,
+          "III.A. Multi-UAV Network Model",
+          "performs joint semantic fusion, where local semantic features"
+        ],
+        [
+          3,
+          "III.A. Multi-UAV Network Model",
+          "extracted by spatially distributed UAVs are aggregated into a"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+      "source_pdf_sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7",
+      "study_id": "S038"
+    },
+    {
+      "id": "R0107",
+      "key": "D02",
+      "s": "YES",
+      "f": "States LoS/NLoS channel models, fusion-weight and granularity variables, and seven QoE constraints.",
+      "l": [
+        [
+          5,
+          "III. SYSTEM MODEL AND PROBLEM FORMULATIONS",
+          "optimization problem in (16) is subject to"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+      "source_pdf_sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7",
+      "study_id": "S038"
+    },
+    {
+      "id": "R0107",
+      "key": "D03",
+      "s": "PARTIAL",
+      "f": "Specifies hardware, bandwidth, SNR range, symbol levels, VQA dataset, and selected KL divergence coefficient setting.",
+      "l": [
+        [
+          9,
+          "VI.A. Experimental Setup",
+          "which provides paired visual observations"
+        ],
+        [
+          12,
+          "VI.F. Sensitivity Analysis of Key Hyperparameters",
+          "in the subsequent experiments to ensure robust"
+        ],
+        [
+          9,
+          "VI.A. Experimental Setup",
+          null
+        ]
+      ],
+      "g": "Random seeds and several RL training parameters such as group size, learning rate, and clipping epsilon are not reported.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+      "source_pdf_sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7",
+      "study_id": "S038"
+    },
+    {
+      "id": "R0107",
+      "key": "D04",
+      "s": "PARTIAL",
+      "f": "Compares against SFT, PPO, and single-expert baselines, omitting multi-UAV baselines and PPO tuning.",
+      "l": [
+        [
+          10,
+          "VI. SIMULATIONS AND RESULTS ANALYSIS",
+          "convergence behavior of JSCR-GRPO is further compared"
+        ]
+      ],
+      "g": "Lacks multi-UAV collaborative baselines beyond single-expert models, and PPO tuning parity is not documented.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+      "source_pdf_sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7",
+      "study_id": "S038"
+    },
+    {
+      "id": "R0107",
+      "key": "D05",
+      "s": "YES",
+      "f": "Evaluates semantic task accuracy and composite QoE aligned with accuracy-latency-energy optimization.",
+      "l": [
+        [
+          11,
+          "VI. SIMULATIONS AND RESULTS ANALYSIS",
+          "evaluation is primarily based on semantic task"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+      "source_pdf_sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7",
+      "study_id": "S038"
+    },
+    {
+      "id": "R0107",
+      "key": "D06",
+      "s": "PARTIAL",
+      "f": "Shows training curves and SNR/KL sensitivity sweeps without repeated runs or dispersion intervals.",
+      "l": [
+        [
+          12,
+          "VI. SIMULATIONS AND RESULTS ANALYSIS",
+          "investigate the sensitivity of the JSCR-GRPO algorithm"
+        ]
+      ],
+      "g": "Number of independent runs, random seeds, and variance or confidence intervals are not reported.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+      "source_pdf_sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7",
+      "study_id": "S038"
+    },
+    {
+      "id": "R0107",
+      "key": "D07",
+      "s": "PARTIAL",
+      "f": "Sweeps SNR directly on a workstation without simulating UAV mobility, trajectories, or Jetson hardware.",
+      "l": [
+        [
+          9,
+          "VI. SIMULATIONS AND RESULTS ANALYSIS",
+          "and the SNR dynamically varying"
+        ]
+      ],
+      "g": "Evaluation sweeps SNR directly on a workstation without simulating UAV mobility, spatial trajectories, or Jetson deployment.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+      "source_pdf_sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7",
+      "study_id": "S038"
+    },
+    {
+      "id": "R0107",
+      "key": "D08",
+      "s": "YES",
+      "f": "Bounds results to simulation and identifies open synchronization and onboard constraints for future deployment.",
+      "l": [
+        [
+          12,
+          "VII. CONCLUSION",
+          "While the proposed framework achieves promising simulation"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+      "source_pdf_sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7",
+      "study_id": "S038"
+    },
+    {
+      "id": "R0107",
+      "key": "D09",
+      "s": "NOT_REPORTED",
+      "f": "Uses public COCO VQA dataset and named experts without author code availability.",
+      "l": [
+        [
+          9,
+          "VI. SIMULATIONS AND RESULTS ANALYSIS",
+          null
+        ],
+        [
+          12,
+          "VII. CONCLUSION",
+          null
+        ]
+      ],
+      "g": "Uses public COCO VQA dataset and named models, but author code and implementation availability are not reported.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+      "source_pdf_sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7",
+      "study_id": "S038"
+    },
+    {
+      "id": "R0107",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "Notes deployment limitations in Conclusion, but funding and conflict-of-interest disclosures are absent.",
+      "l": [
+        [
+          12,
+          "VII. CONCLUSION",
+          "several practical deployment aspects remain open"
+        ],
+        [
+          13,
+          "REFERENCES",
+          null
+        ]
+      ],
+      "g": "Open deployment challenges are noted in Conclusion, but funding and conflict-of-interest disclosures are not reported.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+      "source_pdf_sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7",
+      "study_id": "S038"
+    },
+    {
+      "id": "R0110",
+      "key": "D01",
+      "s": "YES",
+      "f": "Formulates two-timescale resilient LLM inference using offline shard replication and online A'+E+B activation.",
+      "l": [
+        [
+          3,
+          "III. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "RDI-LLM follows the original two-timescale design"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "source_pdf_sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "study_id": "S039"
+    },
+    {
+      "id": "R0110",
+      "key": "D02",
+      "s": "YES",
+      "f": "States Transformer-scope, exogenous-trajectory, and independence assumptions alongside offline/online variables and constraints.",
+      "l": [
+        [
+          3,
+          "III. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "applies to decoder-only Transformer LLMs whose per-layer"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "source_pdf_sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "study_id": "S039"
+    },
+    {
+      "id": "R0110",
+      "key": "D03",
+      "s": "PARTIAL",
+      "f": "Documents decomposed Llama-2 workloads, mobility traces, channel parameters, timeout, precision, seeds, and controller settings in §V.A and Table III alongside offline deployment assumptions in §IV.B.",
+      "l": [
+        [
+          9,
+          "V.A. Simulation Setup",
+          "All compared methods receive the same mobility traces"
+        ],
+        [
+          10,
+          "Table III",
+          "SIMULATION AND CONTROLLER PARAMETERS"
+        ],
+        [
+          6,
+          "IV.B. Stage 1: Offline Affinity-Aware Static Deployment",
+          "Stage 1 does not replace the online variables"
+        ],
+        [
+          6,
+          "IV.B. Stage 1: Offline Affinity-Aware Static Deployment",
+          null
+        ]
+      ],
+      "g": "Exact offline per-shard compute and memory profile values and chosen replication-factor settings are not reported.",
+      "native_task_id": "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "source_pdf_sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "study_id": "S039"
+    },
+    {
+      "id": "R0110",
+      "key": "D04",
+      "s": "YES",
+      "f": "Compares eight baselines and two ablations under identical traces, partitions, timeout rules, and seeds.",
+      "l": [
+        [
+          10,
+          "V. NUMERICAL RESULTS",
+          "All methods receive the same mobility traces"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "source_pdf_sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "study_id": "S039"
+    },
+    {
+      "id": "R0110",
+      "key": "D05",
+      "s": "PARTIAL",
+      "f": "Evaluated metrics cover completion rate, latency, energy, and first-token timing, and the authors explicitly advise interpreting conditional latency, energy, and TTFT jointly with mission-completion rates.",
+      "l": [
+        [
+          11,
+          "V-C. Online Execution Results",
+          "TTFT are conditional on completed missions"
+        ]
+      ],
+      "g": "Conditioning latency, energy, and TTFT on completed missions does not eliminate selection or survivorship distortion when baselines have different completion rates.",
+      "native_task_id": "bcfddbd8-e581-4c19-a968-29ffec3c3992",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "source_pdf_sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "study_id": "S039"
+    },
+    {
+      "id": "R0110",
+      "key": "D06",
+      "s": "YES",
+      "f": "Evaluates thirty-to-hundred-seed sweeps, sensitivity to weight and V, and empirical queue-scaling verification.",
+      "l": [
+        [
+          9,
+          "V. NUMERICAL RESULTS",
+          "operating point is evaluated using 30 independent"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "source_pdf_sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "study_id": "S039"
+    },
+    {
+      "id": "R0110",
+      "key": "D07",
+      "s": "YES",
+      "f": "Tests 3GPP LoS, probabilistic NLoS, Rician, shadowing, and three mobility models matching simulation scope.",
+      "l": [
+        [
+          5,
+          "III. SYSTEM MODEL AND PROBLEM FORMULATION",
+          "adopted model is anchored to standardized 3GPP"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "source_pdf_sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "study_id": "S039"
+    },
+    {
+      "id": "R0110",
+      "key": "D08",
+      "s": "YES",
+      "f": "Bounds model-agnosticism to decomposable FFN Transformers and distinguishes theoretical bounds from hardware latency.",
+      "l": [
+        [
+          7,
+          "IV. THE RDI-LLM SOLVER FRAMEWORK",
+          "Hardware wall-clock latency is a separate implementation"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "source_pdf_sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "study_id": "S039"
+    },
+    {
+      "id": "R0110",
+      "key": "D09",
+      "s": "NOT_REPORTED",
+      "f": "No code, simulator, or trace availability statement is provided.",
+      "l": [
+        [
+          9,
+          "V. NUMERICAL RESULTS",
+          null
+        ],
+        [
+          14,
+          "VII. CONCLUSION",
+          null
+        ]
+      ],
+      "g": "No code, simulator, or trace availability statement appears in Section V or end matter.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "source_pdf_sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "study_id": "S039"
+    },
+    {
+      "id": "R0110",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "Provides dedicated Limitations section and page-1 funding grants, omitting conflict-of-interest disclosure.",
+      "l": [
+        [
+          14,
+          "VI. LIMITATIONS",
+          "RDI-LLM has three main limitations"
+        ],
+        [
+          1,
+          "I. INTRODUCTION",
+          "supported in part by the Ministry of"
+        ]
+      ],
+      "g": "Dedicated Limitations section and funding grants are reported, but conflict-of-interest disclosure is not reported.",
+      "native_task_id": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "source_pdf_sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "study_id": "S039"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "created_at": "2026-11-27T13:37:04+07:00",
-  "status": "BATCH_02_REPAIR_SUBMITTED",
+  "status": "BATCH_03_READY",
   "baseline": {
     "reports": 25,
     "judgments": 250,
@@ -54,7 +54,7 @@
     },
     {
       "batch": 2,
-      "status": "REPAIR_SUBMITTED",
+      "status": "PASS_COMPOSITE",
       "brief": "restart_2026_11_26/appraisal/supplemental_batch_02_brief.md",
       "message_id": "d7e86bde-9fdb-4844-9558-4a9d32b33dd6",
       "report_ids": [
@@ -80,11 +80,13 @@
       "repair_keys": 1,
       "correction_review": "restart_2026_11_26/appraisal/supplemental_batch_02_correction_review.md",
       "repair_uuid": "bcfddbd8-e581-4c19-a968-29ffec3c3992",
-      "repair_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_02_repair_dispatch.json"
+      "repair_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_02_repair_dispatch.json",
+      "acceptance": "restart_2026_11_26/appraisal/supplemental_batch_02_accepted.json",
+      "composite_review": "restart_2026_11_26/appraisal/supplemental_batch_02_composite_review.md"
     },
     {
       "batch": 3,
-      "status": "QUEUED",
+      "status": "READY",
       "brief": "restart_2026_11_26/appraisal/supplemental_batch_03_brief.md",
       "message_id": "aebba6e8-134d-4ae4-8957-ec8396496540",
       "report_ids": [

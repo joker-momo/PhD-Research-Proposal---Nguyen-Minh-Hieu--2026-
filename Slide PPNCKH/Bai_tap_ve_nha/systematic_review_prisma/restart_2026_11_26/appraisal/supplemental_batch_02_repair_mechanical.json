@@ -1,0 +1,23 @@
+{
+  "provider_state": "TASK_STATE_COMPLETED",
+  "expected_pairs": 1,
+  "received_pairs": 1,
+  "valid_anchors": 1,
+  "state_counts": {
+    "PARTIAL": 1
+  },
+  "missing": [],
+  "bad_pairs": [],
+  "errors": [],
+  "summary": {
+    "id": "SUMMARY",
+    "report_count": 1,
+    "key_count": 1,
+    "no_workers_used": true,
+    "tools_used": [
+      "client:grep_search",
+      "client:view_file"
+    ],
+    "unresolved": []
+  }
+}
