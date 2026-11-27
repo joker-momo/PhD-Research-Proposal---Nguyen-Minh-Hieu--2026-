@@ -1,0 +1,101 @@
+{
+  "appraisal": {
+    "D01": {
+      "NO": 0,
+      "NOT_APPLICABLE": 0,
+      "NOT_REPORTED": 0,
+      "NOT_YET_ASSESSED": 0,
+      "PARTIAL": 1,
+      "YES": 45
+    },
+    "D02": {
+      "NO": 0,
+      "NOT_APPLICABLE": 0,
+      "NOT_REPORTED": 0,
+      "NOT_YET_ASSESSED": 0,
+      "PARTIAL": 8,
+      "YES": 38
+    },
+    "D03": {
+      "NO": 0,
+      "NOT_APPLICABLE": 0,
+      "NOT_REPORTED": 0,
+      "NOT_YET_ASSESSED": 0,
+      "PARTIAL": 42,
+      "YES": 4
+    },
+    "D04": {
+      "NO": 0,
+      "NOT_APPLICABLE": 0,
+      "NOT_REPORTED": 0,
+      "NOT_YET_ASSESSED": 0,
+      "PARTIAL": 40,
+      "YES": 6
+    },
+    "D05": {
+      "NO": 0,
+      "NOT_APPLICABLE": 0,
+      "NOT_REPORTED": 0,
+      "NOT_YET_ASSESSED": 0,
+      "PARTIAL": 20,
+      "YES": 26
+    },
+    "D06": {
+      "NO": 0,
+      "NOT_APPLICABLE": 0,
+      "NOT_REPORTED": 0,
+      "NOT_YET_ASSESSED": 0,
+      "PARTIAL": 41,
+      "YES": 5
+    },
+    "D07": {
+      "NO": 0,
+      "NOT_APPLICABLE": 0,
+      "NOT_REPORTED": 0,
+      "NOT_YET_ASSESSED": 0,
+      "PARTIAL": 43,
+      "YES": 3
+    },
+    "D08": {
+      "NO": 1,
+      "NOT_APPLICABLE": 0,
+      "NOT_REPORTED": 0,
+      "NOT_YET_ASSESSED": 0,
+      "PARTIAL": 25,
+      "YES": 20
+    },
+    "D09": {
+      "NO": 1,
+      "NOT_APPLICABLE": 0,
+      "NOT_REPORTED": 40,
+      "NOT_YET_ASSESSED": 0,
+      "PARTIAL": 3,
+      "YES": 2
+    },
+    "D10": {
+      "NO": 0,
+      "NOT_APPLICABLE": 0,
+      "NOT_REPORTED": 3,
+      "NOT_YET_ASSESSED": 0,
+      "PARTIAL": 38,
+      "YES": 5
+    }
+  },
+  "coverage": {
+    "PLOT_ONLY": 11,
+    "VERIFIED_EXACT": 35
+  },
+  "layers_outdoor": 0,
+  "layers_software": 15,
+  "layers_total": 17,
+  "matched_reports": 23,
+  "outcome_ledger_rows": 105,
+  "outcome_rows": {
+    "cross_reference": 3,
+    "descriptive": 46,
+    "held": 3,
+    "matched": 51,
+    "reference": 2
+  },
+  "studies": 46
+}

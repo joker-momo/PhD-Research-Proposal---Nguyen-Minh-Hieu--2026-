@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T16:16:52+07:00",
+  "updated_at": "2026-11-28T01:07:05+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "rq5_uniform_outcomes_verified",
-    "summary": "The RQ5 editorial revision is verified for the 46-study HK261 corpus. Author confirmation remains open."
+    "status": "editorial_revision_verified_human_work_pending",
+    "summary": "The 30-page comparison draft omits tool references from the manuscript. S2 and the audit archive retain their original provenance and the decisions are unchanged at 46/90/0."
   },
   "task": {
-    "task_id": "hk261-editorial-uniform-outcome-inventory",
+    "task_id": "hk261-branch-integration",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T15:54:06+07:00",
-    "updated_at": "2026-11-27T16:16:52+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/rq5_uniform/manuscript_review.md",
-    "decision_id": "hk261-editorial-uniform-outcome-inventory-v1",
-    "completed_at": "2026-11-27T16:16:52+07:00"
+    "started_at": "2026-11-28T01:04:32+07:00",
+    "updated_at": "2026-11-28T01:07:05+07:00",
+    "completed_at": "2026-11-28T01:07:05+07:00",
+    "decision_id": "hk261-branch-integration-v1",
+    "checkpoint_path": "manuscript/sn_computer_science/main.pdf"
   },
   "next_task": {
-    "task_id": "hk261-author-confirmations",
+    "task_id": "hk261-collect-new-independent-screening-round",
     "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "Await the author's confirmation of the manuscript metadata and declarations.",
-    "acceptance": "Author order, affiliations, correspondence, contributions, funding, acknowledgements, competing interests and applicable sharing conditions confirmed by the author."
+    "action": "Await the two reviewer-authored screening exports locked separately before reconciliation.",
+    "acceptance": "Two original CSV exports supplied by the reviewers, with provenance and dates, before any change to S2 or PRISMA."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -65,15 +65,15 @@
     },
     "approved_plan": "restart_2026_11_26/approved_plan.md",
     "progress_tracker": "restart_2026_11_26/progress.json",
-    "manuscript_status": "RQ5_UNIFORM_OUTCOMES_MANUSCRIPT_VERIFIED"
+    "manuscript_status": "FINAL_46_COMPARISON_PDF_BUILT_AND_VERIFIED"
   },
   "evidence": {
     "retrieval_reports": 136,
     "screened_reports": 136,
     "working_decisions": {
       "include": 46,
-      "exclude": 87,
-      "uncertain": 3
+      "exclude": 90,
+      "uncertain": 0
     },
     "restart_inventory": {
       "manifest": "restart_2026_11_26/step01_inventory.json",
@@ -553,10 +553,10 @@
       ]
     },
     "supplemental_prisma": {
-      "status": "ACTIVE_RECONCILIATION_PASS",
+      "status": "ACTIVE_ELIGIBILITY_RECONCILIATION_PASS",
       "started_at": "2026-11-27T14:35:33+07:00",
-      "updated_at": "2026-11-27T14:36:55+07:00",
-      "completed_at": "2026-11-27T14:36:55+07:00",
+      "updated_at": "2026-11-27T18:33:08+07:00",
+      "completed_at": "2026-11-27T18:33:08+07:00",
       "counts_path": "restart_2026_11_26/prisma/prisma_counts.json",
       "flow": "restart_2026_11_26/prisma/prisma_flow.pdf",
       "review": "restart_2026_11_26/prisma/active_reconciliation_review.md",
@@ -568,24 +568,20 @@
         "records_excluded": 328,
         "records_screened": 465,
         "reports_assessed": 136,
-        "reports_awaiting_classification": 3,
-        "reports_excluded": 87,
+        "reports_awaiting_classification": 0,
+        "reports_excluded": 90,
         "reports_not_retrieved": 1,
         "reports_sought": 137
       },
-      "awaiting_classification": {
-        "R0081": "E7",
-        "R0082": "E7",
-        "R0132": "E2|E3"
-      },
+      "awaiting_classification": {},
       "not_retrieved": [
         "R0116"
       ],
-      "ledger_sha256": "fb3735667bceea491daacdd22db88b0e9e56a036f3f6b53120897203f530ff12",
-      "flow_sha256": "770e7d8418c14ee36eb583079b41aa6eb9832ff69519bfc28d5f0a8101ad473e",
+      "ledger_sha256": "c5090d808b13dac072c7181c3f6528d9ad8b6b9385e204260cbaa907f583c42e",
+      "flow_sha256": "0f4e29ff3ba719c3a56e8a41e601521973594353fbb2667f01a4370f380e7790",
       "unexplained_arithmetic_differences": 0,
       "checklist": "restart_2026_11_26/prisma/active_prisma_checklist.md",
-      "checklist_sha256": "f2968755b437b598c7c5149c86c8b43c75e287e9d0e2c438791fad631a3a43fd",
+      "checklist_sha256": "12b7cdf6d5966ad2ae6766a51bc8834e915b8d94a18c5ca5cbfdd00ded24dc29",
       "checklist_items_verified": 27,
       "checklist_locators_verified": 45,
       "checklist_status_counts": {
@@ -594,9 +590,12 @@
         "Not performed": 4,
         "Awaiting author confirmation": 2
       },
-      "final_pdf_page_locators": "VERIFIED_27_ITEMS",
+      "final_pdf_page_locators": "PREVIOUS_46_STUDY_PDF",
       "checklist_completed_at": "2026-11-27T14:39:56+07:00",
-      "final_pdf_pages_verified_at": "2026-11-27T15:27:31+07:00"
+      "final_pdf_pages_verified_at": "2026-11-27T15:27:31+07:00",
+      "post_lock_study_ids": {
+        "R0082": "S047"
+      }
     },
     "supplemental_synthesis_inputs": {
       "status": "MECHANICAL_INPUTS_VERIFIED",
@@ -681,6 +680,649 @@
       },
       "open_items": "restart_2026_11_26/integrity/active_limitations.md"
     },
+    "alternative_technical_survey": {
+      "baseline_commit": "7a6675d",
+      "pages": 29,
+      "numbered_sections": 7,
+      "figures": 5,
+      "tables": 8,
+      "studies_in_both_tables_and_analysis": 46,
+      "within_study_comparisons": 9,
+      "appraisal_domains": 10,
+      "recorded_references": 55,
+      "verified_dois": 54,
+      "independent_human_adjudication": "INDEPENDENT_SCREENING_UNDOCUMENTED_TWO_AUTHOR_EXCLUSIONS_AND_ONE_DEFERRAL_RECORDED",
+      "review": "restart_2026_11_26/prisma/active_reconciliation_review.md",
+      "pdf_sha256": "93e136dfacda0b383eb58007292c1a70872b3bd66972ebc78c86418984b1aa4f",
+      "evidence_reproduction": {
+        "index": "manuscript/sn_computer_science/supplement_evidence_index.md",
+        "snapshot": "manuscript/sn_computer_science/evidence_sha256.txt",
+        "previous_comparison_commit": "c921e90",
+        "equations": 3,
+        "indexed_outcomes": 9,
+        "hashed_evidence_files": 75,
+        "verified_original_pdfs": 49,
+        "reproduction": "Compared all 29 rendered pages with the prior comparison PDF and verified the nine changed pages. An isolated rebuild from the portable evidence reproduced all 29 rendered pages.",
+        "portable_package": {
+          "readme": "manuscript/sn_computer_science/minh_chung_hinh_bang/README.md",
+          "index": "manuscript/sn_computer_science/minh_chung_hinh_bang/ITEM_INDEX.md",
+          "manifest": "manuscript/sn_computer_science/minh_chung_hinh_bang/SHA256SUMS",
+          "archived_source_files": 40,
+          "figures": 5,
+          "tables": 8,
+          "equations": 3,
+          "independent_build": "All 29 pages matched the archived PDF after rebuilding from copied evidence sources in isolation."
+        }
+      },
+      "claim_audit": {
+        "prose_map": "manuscript/sn_computer_science/s4_claim_audit.md",
+        "study_row_map": "manuscript/sn_computer_science/s4_study_row_sources.csv",
+        "claim_entries": 164,
+        "prose_lines": 90,
+        "mapped_studies": 46,
+        "narrowed_entries": 19,
+        "open_entries": 13,
+        "verified_contrasts": 9,
+        "original_pdf_hashes": 49,
+        "verified_pdf_item_pages": 16,
+        "scope": "Accepted source locators for 46 studies with targeted direct checks on claims and the nine displayed contrasts."
+      },
+      "editorial_integration": {
+        "rq5_source_commit": "5910b6b",
+        "reports_read": 46,
+        "numerical_reports": 36,
+        "retained_outcomes": 98,
+        "matched_outcomes": 51,
+        "descriptive_outcomes": 47,
+        "plot_only_reports": 9,
+        "unresolved_outcome_reports": 1,
+        "human_log_rows": 136,
+        "human_reviews_recorded": 3,
+        "human_log": "manuscript/sn_computer_science/human_adjudication_log.csv",
+        "supplement_s3": "manuscript/sn_computer_science/supplement_s3.md",
+        "source_lookup_task_id": "01a21c52-100e-7a50-afbd-184b571116b8",
+        "source_lookup_context_id": "01a21c52-1014-7952-8ad4-044ca498543a",
+        "source_lookup_verdict": "FAIL_NOT_ADOPTED",
+        "author_confirmed_deferrals": {},
+        "adjudication_audit": {
+          "json": "manuscript/sn_computer_science/audit_summary.json",
+          "latex": "manuscript/sn_computer_science/adjudication_audit_table.tex",
+          "paired_human_decisions": 0,
+          "final_human_decisions": 8,
+          "author_confirmed_deferrals": 0,
+          "author_processed_reports": 8,
+          "reports_without_author_confirmation": 128,
+          "manuscript_table": 8,
+          "physical_pdf_page": 24,
+          "changed_among_author_processed": "4/8",
+          "changed_among_final_decisions": "4/8",
+          "comparison_pdf_snapshot": "46-study selection and earlier S2 audit"
+        }
+      },
+      "reports_awaiting_classification": [],
+      "scope": "previous_46_study_comparison_with_current_s2_checkpoint",
+      "superseded_by": "evidence.final_46_comparison"
+    },
+    "borderline_author_review": {
+      "report": "restart_2026_11_26/integrity/borderline_author_review/report.md",
+      "manifest": "restart_2026_11_26/integrity/borderline_author_review/manifest.json",
+      "ids": [
+        "R0001",
+        "R0113",
+        "R0145",
+        "R0223",
+        "R0292"
+      ],
+      "acceptance": "RAW_GEMINI_NOT_ADOPTED_REPORT_INDEPENDENTLY_VERIFIED",
+      "gemini_initial_task": "d3d31bbf-3b92-4b9c-9e87-9e6ed802857b",
+      "gemini_final_task": "a55ea74a-a12f-45e5-bff3-f75c6501ea65",
+      "gemini_final_receipt": "restart_2026_11_26/integrity/borderline_author_review/gemini-parent-correction-receipt.json",
+      "author_confirmations_added": 5,
+      "working_prisma": {
+        "include": 46,
+        "exclude": 90,
+        "pending": {}
+      },
+      "author_confirmed": {
+        "R0001": "INCLUDE",
+        "R0113": "EXCLUDE (E3)",
+        "R0145": "INCLUDE",
+        "R0223": "INCLUDE",
+        "R0292": "INCLUDE"
+      }
+    },
+    "final_46_comparison": {
+      "review": "restart_2026_11_26/synthesis/final_46/release_review.md",
+      "completed_at": "2026-11-27T18:49:15+07:00",
+      "manuscript": "manuscript/sn_computer_science/main.tex",
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "50f4bfcb0be9b173c9babf5e3c921a2a14afcfaa57ea008f72b7964d3c330376",
+      "previous_pdf": "manuscript/sn_computer_science/comparison_previous_46.pdf",
+      "previous_pdf_sha256": "93e136dfacda0b383eb58007292c1a70872b3bd66972ebc78c86418984b1aa4f",
+      "previous_pdf_commit": "92edf84",
+      "pages": 29,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "corpus_delta": {
+        "added": [
+          "R0082"
+        ],
+        "removed": [
+          "R0113"
+        ],
+        "retained_priority": [
+          "R0292"
+        ]
+      },
+      "recomputed_counts": "restart_2026_11_26/synthesis/final_46/recomputed_counts.json",
+      "r0082_review": "restart_2026_11_26/synthesis/final_46/r0082_review.md",
+      "r0082_publisher_pdf_verified": false,
+      "paired_independent_human_decisions": 0,
+      "author_final_decisions": 8,
+      "reports_without_author_confirmation": 128,
+      "changed_among_author_processed": "4/8",
+      "changed_among_final_decisions": "4/8",
+      "supplements": {
+        "s2": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+        "s3": "manuscript/sn_computer_science/supplement_s3.md",
+        "s4": "manuscript/sn_computer_science/supplement_evidence_index.md",
+        "s4_claims": "manuscript/sn_computer_science/s4_claim_audit.md"
+      },
+      "package": "manuscript/sn_computer_science/minh_chung_hinh_bang/README.md",
+      "package_independent_rebuild": "29/29 rendered pages matched; 5 figures, 8 tables and 3 equations indexed",
+      "r0082_provider": {
+        "primary": "b62a3afe-8942-49e3-acf6-2197062d963e",
+        "correction": "f6696609-30c3-41a0-8d7e-808373512953",
+        "locator": "37716cab-71cd-4f3a-8434-2b9ac76f1f15",
+        "final_locator_gate": "PASS",
+        "locator_chat_cleanup": "deleted"
+      },
+      "superseded_by": "evidence.editorial_revision"
+    },
+    "editorial_revision": {
+      "review": "restart_2026_11_26/synthesis/final_46/editorial_response.md",
+      "pages": 30,
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "c7ab7d765829263d3ccff1368224dd7fb78d3e9b619f097bb505d89b2722deb4",
+      "previous_pdf": "manuscript/sn_computer_science/comparison_pre_editorial.pdf",
+      "previous_pdf_commit": "360d8d2",
+      "primary_coding": "manuscript/sn_computer_science/technical_coding.psv",
+      "prisma_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "r0082_publisher_receipt": "restart_2026_11_26/synthesis/final_46/r0082_publisher_crosscheck.json",
+      "publisher_checks_passed": 20,
+      "scope_sensitivity": "restart_2026_11_26/synthesis/final_46/scope_sensitivity.json",
+      "author_final_decisions": 8,
+      "reports_without_author_confirmation": 128,
+      "independent_pairs": 0,
+      "recorded_human_extraction_checks": 0,
+      "human_review_packet": "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md",
+      "screening_records_per_reviewer": 136,
+      "source_checks_per_reviewer": 887,
+      "package_independent_rebuild": "30/30 rendered pages matched; 16 figures, tables and equations indexed",
+      "completed_at": "2026-11-27T19:08:53+07:00",
+      "human_review_pdf_checksums_verified": 136,
+      "human_review_pdf_local_directory": "restart_2026_11_26/fulltext_retrieval/pdf/human_review_full_136",
+      "superseded_by": "evidence.priority_author_revision"
+    },
+    "dual_ai_full_136": {
+      "report": "restart_2026_11_26/integrity/dual_ai_full_136/report.pdf",
+      "pages": 17,
+      "pdf_sha256": "fb30e175670ae8fdc9ab6fcf21c2144ce8dc2b7e610d4227b7bb63e49238eb45",
+      "screening_csv": "restart_2026_11_26/integrity/dual_ai_full_136/review_136.csv",
+      "extraction_check": "restart_2026_11_26/integrity/dual_ai_full_136/extraction_locator_audit.csv",
+      "verification": "restart_2026_11_26/integrity/dual_ai_full_136/gemini_review.md",
+      "codex_valid": 136,
+      "gemini_valid": 136,
+      "paired_ai": 136,
+      "ai_disposition_agreement": 126,
+      "kappa_ai": 0.852558542931483,
+      "paired_independent_human_decisions": 0,
+      "human_extraction_checks": 0,
+      "frozen_prisma": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "s2_applied": false
+    },
+    "e5_date_audit": {
+      "result_csv": "restart_2026_11_26/integrity/dual_ai_full_136/e5_date_check/results.csv",
+      "crossref_receipts": "restart_2026_11_26/integrity/dual_ai_full_136/e5_date_check/crossref_receipts.json",
+      "publisher_lookup": "restart_2026_11_26/integrity/dual_ai_full_136/e5_date_check/publisher_lookup.json",
+      "flagged_records": 11,
+      "within_date_window": 11,
+      "crossref": 5,
+      "ieee_xplore": 6,
+      "screening_or_prisma_changed": false
+    },
+    "dual_ai_source_review_887": {
+      "reports": 46,
+      "keys": 887,
+      "codex_returned": 887,
+      "gemini_initial_parseable": 868,
+      "gemini_after_correction_parseable": 887,
+      "baseline_discrepancies": 7,
+      "restricted_gemini_gaps": 38,
+      "report": "restart_2026_11_26/integrity/source_review_887/report.pdf",
+      "source_table": "restart_2026_11_26/integrity/source_review_887/source_review_887.csv",
+      "human_approval": "two_ai_assisted_endorsements_recorded",
+      "provider_evidence_batch_acceptance": "not_adopted",
+      "source_endorsements": {
+        "receipt": "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md",
+        "date": "2026-11-27",
+        "R1": {
+          "attribution": "author_endorsed_codex",
+          "rows": 887,
+          "file": "restart_2026_11_26/synthesis/final_46/human_review_packet/R1/source_verification.csv"
+        },
+        "R2": {
+          "attribution": "colleague_endorsed_gemini_as_confirmed_by_author",
+          "rows": 887,
+          "file": "restart_2026_11_26/synthesis/final_46/human_review_packet/R2/source_verification.csv"
+        },
+        "independent_human_review_pairs": 0,
+        "screening_decisions_recorded": 0
+      },
+      "reconciliation": {
+        "report": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/report.pdf",
+        "queue_path": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/muc_can_chot.csv",
+        "source_pairs": 887,
+        "rows_flagged": 608,
+        "priority_cases": 12,
+        "scope_limited": 38,
+        "author_decisions": 12,
+        "author_decision_ledger": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/author_decisions.csv",
+        "application": "restart_2026_11_26/synthesis/final_46/author_decision_application.json"
+      },
+      "s2_source_appendix": {
+        "path": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+        "r1_source": "restart_2026_11_26/synthesis/final_46/human_review_packet/R1/source_verification.csv",
+        "r1_sha256": "5f3da8ca4a71b7551cf6d73b46654c1e39c1d4119524dd33380aa68a01e3cf94",
+        "source_items": 887,
+        "included_reports": 46,
+        "screening_decisions_added": 0,
+        "r2_source": "restart_2026_11_26/synthesis/final_46/human_review_packet/R2/source_verification.csv",
+        "r2_sha256": "145356987e0a7f9942543909f80a4ad1c9ce37467bef938a4eb42b189a90de46",
+        "r2_source_items": 887,
+        "r2_attribution": "colleague_endorsed_gemini_as_confirmed_by_author"
+      }
+    },
+    "priority_author_revision": {
+      "completed_at": "2026-11-27T23:52:39+07:00",
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "cf5c3ff2b8ec561fd5f8776ff8b097ddba80b8b003bfc522955578c3585ab5e8",
+      "pages": 30,
+      "previous_pdf_commit": "6ea64b4",
+      "previous_pdf_sha256": "c7ab7d765829263d3ccff1368224dd7fb78d3e9b619f097bb505d89b2722deb4",
+      "priority_decisions_applied": 12,
+      "s3": "manuscript/sn_computer_science/supplement_s3.md",
+      "s4": "manuscript/sn_computer_science/supplement_evidence_index.md",
+      "claim_audit": "manuscript/sn_computer_science/s4_claim_audit.md",
+      "source_matrix": "restart_2026_11_26/synthesis/final_46/claim_source_matrix.csv",
+      "application_data": "restart_2026_11_26/synthesis/final_46/author_decision_application.json",
+      "recomputed_counts": "restart_2026_11_26/synthesis/final_46/recomputed_counts.json",
+      "retained_numeric_outcomes": 97,
+      "studies_with_retained_numeric_outcomes": 35,
+      "reference_benchmark_entries": 2,
+      "appraisal_d06": {
+        "YES": 5,
+        "PARTIAL": 41,
+        "NOT_REPORTED": 0
+      },
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "screening_unchanged": true,
+      "package": "manuscript/sn_computer_science/minh_chung_hinh_bang/README.md",
+      "package_independent_rebuild": "30/30 rendered pages match. All 16 numbered item pages verified.",
+      "superseded_by": "evidence.s2_source_forms_manuscript_revision"
+    },
+    "s2_source_forms_manuscript_revision": {
+      "completed_at": "2026-11-28T00:02:16+07:00",
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "6ea902ce6d5177fb7317d5f2a17c5c1131dc995707290926216b7815670eb93c",
+      "pages": 30,
+      "previous_pdf_commit": "d2fc563",
+      "previous_pdf_sha256": "cf5c3ff2b8ec561fd5f8776ff8b097ddba80b8b003bfc522955578c3585ab5e8",
+      "s2": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+      "s4": "manuscript/sn_computer_science/supplement_evidence_index.md",
+      "claim_audit": "manuscript/sn_computer_science/s4_claim_audit.md",
+      "s2_source_form_entries": {
+        "R1": 887,
+        "R2": 887
+      },
+      "attribution": {
+        "R1": "author_endorsed_codex",
+        "R2": "colleague_endorsed_gemini_as_confirmed_by_author"
+      },
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "screening_unchanged": true,
+      "pdf_verified_pages": [
+        4,
+        25,
+        26
+      ],
+      "package_independent_rebuild": "30/30 rendered pages match. All 16 numbered item pages verified.",
+      "superseded_by": "evidence.s2_r0121_r0125_author_confirmation"
+    },
+    "s2_r0121_r0125_author_confirmation": {
+      "completed_at": "2026-11-28T00:10:10+07:00",
+      "s2": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+      "decision_log": "manuscript/sn_computer_science/human_adjudication_log.csv",
+      "audit": "manuscript/sn_computer_science/audit_summary.json",
+      "confirmed": {
+        "R0121": "INCLUDE, mathematical analysis without simulation or empirical validation",
+        "R0125": "INCLUDE, software prototype evaluated on one workstation"
+      },
+      "author_confirmed_reports": 10,
+      "assessed_reports": 136,
+      "reports_without_author_confirmation": 126,
+      "independent_pairs": 0,
+      "changed_from_ai": 4,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "prisma_change": "Updated S2 input SHA-256 only. Counts, IDs, and diagram are unchanged.",
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "d9dafa5baad6124b4be706ef7658df0f88100a8eddb4bead30ed60ac955c0fa8",
+      "pages": 30,
+      "previous_pdf_commit": "d507122",
+      "package_independent_rebuild": "30/30 rendered pages match. All 16 numbered item pages verified."
+    },
+    "r0292_publisher_crosscheck": {
+      "path": "restart_2026_11_26/synthesis/final_46/r0292_publisher_crosscheck.md",
+      "doi": "10.1145/3711875.3737661",
+      "comparison": "Local ACM proceedings PDF versus independently retrieved arXiv:2507.12763v1. No findings change the evidence tier.",
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      }
+    },
+    "s2_final_eligibility_register": {
+      "path": "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
+      "author_endorsement_scope": "entire final full-text eligibility set",
+      "author_endorsement_date": "2026-11-28",
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "documented_item_level_author_decisions": 10,
+      "independent_human_screening_pairs": 0
+    },
+    "manuscript_author_eligibility_endorsement": {
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "b85fab5a8d2091d55dc811ec3884e1ae2dd110520eee7ef01fade5316822ef51",
+      "pages": 30,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "details_pages": [
+        1,
+        4,
+        6,
+        25,
+        26
+      ],
+      "documented_item_level_author_decisions": 10,
+      "register": "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
+      "independent_rebuild_matched_rendered_pages": 30
+    },
+    "reviewer_roles_author_statement": {
+      "path": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+      "section": "Author statement on reviewer responsibilities",
+      "source": "Author statement in the HK261 project conversation on 28 November 2026.",
+      "scope": "Author-reported human screening and appraisal ratings, with AI file handling in their review. Historical preliminary AI outputs and AI-assisted source verification remain documented.",
+      "independent_human_screening_pairs_documented": 0,
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "a6203f46997d1107ca92c16165f81aeb9ef63bf229cba7411f8b19494fadbf37",
+      "pages": 30,
+      "details_pages": [
+        1,
+        4,
+        25,
+        26
+      ],
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "independent_rebuild_matched_rendered_pages": 30
+    },
+    "new_independent_screening_round_packages": {
+      "purpose": "New full-text screening by the author and a colleague. Packaged blank copies only.",
+      "delivery": "Local Downloads/HK261-sang-loc-doc-lap-2026-11-28, outside Git.",
+      "roster_and_aliases": "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md",
+      "pdfs_per_reviewer": 136,
+      "blank_rows_per_reviewer": 136,
+      "pairs_recorded": 0,
+      "reviewer_packages": {
+        "R1": {
+          "name": "HK261_R1_136_PDF.zip",
+          "bytes": 529378597,
+          "sha256": "f02bb991ce2f868b9a72116bae27ea403ef903100360bb72a436e38e05b36e36",
+          "form_sha256": "5b62f5a172aa09b804f25647899627553c4ea1223203087acbbc058c0423ecc5"
+        },
+        "R2": {
+          "name": "HK261_R2_136_PDF.zip",
+          "bytes": 529378597,
+          "sha256": "80c6cbce71d7612a00acdfa57667d20d945b1e7baacd494c100a1f8d296c1a86",
+          "form_sha256": "415a901c996808dae5230c1e6e8d0c970253e6ad64ef47ed717202d477b05443"
+        }
+      },
+      "source_manifest_sha256": "c5b9c0d7709342faa5ddabccf9007fe88943f7698f37864503319bf9658a3177",
+      "guide_sha256": "0d3316833f568698503cdc4722de8014686c70157a4038c95cc1d878d73f0d19",
+      "version_hashes": {
+        "R0292": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+        "R0082": "7a9a00413539e420d7cf412c2cb71e522311744151dc3a4008c08f2b1415a5ad"
+      },
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      }
+    },
+    "retrospective_review_reference_forms": {
+      "delivery": "Local Downloads/HK261-sang-loc-doc-lap-2026-11-28/Phieu-tham-chieu, outside Git.",
+      "basis": [
+        "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
+        "restart_2026_11_26/synthesis/final_46/human_review_packet/R2/source_verification.csv",
+        "restart_2026_11_26/synthesis/final_46/human_review_packet/coordinator/key.csv"
+      ],
+      "reference_forms": {
+        "R1": {
+          "filename": "HK261_R1_THAM_CHIEU_HOI_TO.csv",
+          "sha256": "894679e26c8f0fefc3090033f139745cd211e73b992ff91cb04596ab326deca2",
+          "rows": 136
+        },
+        "R2": {
+          "filename": "HK261_R2_THAM_CHIEU_HOI_TO.csv",
+          "sha256": "502add896c1c50c844f4cf3c39c9caa210248affdae4a0bf87df5bae8ec2b883",
+          "rows": 136
+        }
+      },
+      "r1_item_level_author_endorsements": 10,
+      "r2_source_verification_items": 887,
+      "r2_reports_with_source_verification": 46,
+      "new_independent_pairs": 0,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      }
+    },
+    "complete_retrospective_review_reference_forms": {
+      "delivery": "Local Downloads/HK261-sang-loc-doc-lap-2026-11-28/Phieu-tham-chieu-day-du, outside Git.",
+      "shared_eligibility_source": "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
+      "reference_forms": {
+        "R1": {
+          "filename": "HK261_R1_THAM_CHIEU_DAY_DU.csv",
+          "sha256": "c54f6fbf48f472514de9aa9af1cf7274417dbd68aa0005ac67ee3a34a4a2a6cd",
+          "rows": 136,
+          "source_checks": 887,
+          "item_level_R1_endorsements": 10
+        },
+        "R2": {
+          "filename": "HK261_R2_THAM_CHIEU_DAY_DU.csv",
+          "sha256": "b7de1e7204ebd1451eb421f3e9e9aeda535862ef199af6e1fbc28fe2d274e473",
+          "rows": 136,
+          "source_checks": 887,
+          "item_level_R1_endorsements": 0
+        }
+      },
+      "new_independent_pairs": 0,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      }
+    },
+    "retrospective_independent_pair_evidence_audit": {
+      "filename": "HK261_DOI_CHIEU_MINH_CHUNG_136_HKF.csv",
+      "sha256": "947b06a2a8f60364601c32a15c62884afd72c48499eaa9850c412e9745b04f4f",
+      "matched_hkf_ids": 136,
+      "independent_pairs": 0,
+      "disagreements": null,
+      "r1_separately_documented_final_confirmations": 10,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      }
+    },
+    "full_screening_pass_endorsements": {
+      "confirmation_date": "2026-11-28",
+      "confirmation_source": "Author statement in the HK261 project conversation.",
+      "attribution": "Author endorses Codex screening judgments. The author confirms the colleague endorses Gemini screening judgments.",
+      "source": "restart_2026_11_26/integrity/dual_ai_full_136/review_136.csv",
+      "screening_pairs_endorsed": 136,
+      "same_disposition": 126,
+      "different_disposition": 10,
+      "same_exclusion_different_code": 15,
+      "new_independent_human_pairs": 0,
+      "delivery": "Local Downloads/HK261-sang-loc-doc-lap-2026-11-28/Phieu-xac-nhan-Codex-Gemini",
+      "files": {
+        "R1": {
+          "filename": "HK261_R1_XAC_NHAN_CODEX_136.csv",
+          "rows": 136,
+          "sha256": "c913d5847726c285805b92a0f570647f635625b0dccec378f38d269e1ada98bf"
+        },
+        "R2": {
+          "filename": "HK261_R2_XAC_NHAN_GEMINI_136.csv",
+          "rows": 136,
+          "sha256": "4e8768813535eba1f0d1b2495eb192ccce26671994e42fe9e3df4328044b9b9d"
+        },
+        "disagreements": {
+          "filename": "HK261_BAT_DONG_CAC_LUOT_DA_XAC_NHAN.csv",
+          "rows": 25,
+          "sha256": "c8626c73573d60ed51f2963f050a5e736a0e89914b8af8232734ec6211985aeb"
+        }
+      },
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "label_revision": {
+        "date": "2026-11-28",
+        "screening_assessment_label": "Nhận định sàng lọc của tác giả và đồng nghiệp, theo xác nhận của tác giả.",
+        "files": {
+          "R1": {
+            "before_sha256": "7a7eae2509dea51521cb005b514d5e50a1df8dfb13eff5b3121943d2be6c3eca",
+            "sha256": "c913d5847726c285805b92a0f570647f635625b0dccec378f38d269e1ada98bf",
+            "rows": 136
+          },
+          "R2": {
+            "before_sha256": "f29f673a3000f864d2a6a87de3dd30255715b7f501c5e0b2323e89c5b88c8689",
+            "sha256": "4e8768813535eba1f0d1b2495eb192ccce26671994e42fe9e3df4328044b9b9d",
+            "rows": 136
+          }
+        }
+      }
+    },
+    "approved_reviewer_wording_pdf": {
+      "source": "Author clarification and approval in the HK261 chat on 28 November 2026.",
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pages": 30,
+      "sha256": "552da06d87cedaab543f8c42353c9b9103108b7448a4fc52eb57c61e9482763e",
+      "updated_pdf_pages": {
+        "abstract": [
+          1
+        ],
+        "section_2_3": [
+          4
+        ],
+        "section_6_4": [
+          24,
+          25
+        ]
+      },
+      "prisma_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "s2_and_prisma_files_unchanged": true,
+      "portable_reproduction": "30 of 30 rendered pages matched. The S2 audit JSON and LaTeX table also matched."
+    },
+    "option_a_first_person_disclosure": {
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pages": 30,
+      "sha256": "d698cf80e4669448b6a4438b5917c3f488a7dee1a60bc5e0898e334636c03da0",
+      "prisma_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "table_8_page": 25,
+      "paired_independent_human_decisions": 0,
+      "separate_final_status_changes": "4/10",
+      "formal_declarations_pending": true,
+      "s2_prisma_and_audit_json_unchanged": true
+    },
+    "kappa_omitted_from_manuscript": {
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "sha256": "7b289bac6460001e297f68bd0f42801a15486a06773ad9b5a60ce348588477fb",
+      "pages": 30,
+      "table_8_page": 25,
+      "independent_pairs": 0,
+      "prisma_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "s2_and_audit_json_unchanged": true
+    },
+    "manuscript_tool_reference_removal": {
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pages": 30,
+      "sha256": "58052ee017676f01722efd5502d1a5de4d48815f6bdc9109986f8e1d6356f4be",
+      "prisma_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "s2_prisma_audit_json_unchanged": true
+    },
     "desk_reject_revision": {
       "baseline_commit": "7a6675d",
       "recorded_at": "2026-11-27T15:50:22+07:00",
@@ -755,6 +1397,24 @@
       "source_index_correction_outcome": "PASS",
       "source_index_chats_cleanup": "verified_deleted_both",
       "completed_at": "2026-11-27T16:16:52+07:00"
+    },
+    "integrated_rq5_main_snapshot": {
+      "commit": "5910b6b",
+      "path": "restart_2026_11_26/extraction/rq5_uniform/main_5910b6b_snapshot",
+      "scope": "prior main RQ5 manuscript snapshot and verification history",
+      "p1_original_commit": "1bb5af3"
+    },
+    "integrated_branch_verification": {
+      "prior_main": "5910b6b",
+      "comparison_head": "d9fadfc",
+      "p1_changes_checkpoint": "1bb5af3",
+      "manuscript_pdf_sha256": "58052ee017676f01722efd5502d1a5de4d48815f6bdc9109986f8e1d6356f4be",
+      "working_decisions": {
+        "include": 46,
+        "exclude": 90,
+        "uncertain": 0
+      },
+      "rebuild_pages": 30
     }
   },
   "blockers": [],
@@ -762,8 +1422,7 @@
     "Verified author order, consent, HCMUT email, affiliations and identifiers.",
     "Contributions, funding, conflicts, data availability and AI disclosure.",
     "Exact examination date for calculating the course deadline.",
-    "Explicit authorization before journal submission or forwarding course evidence.",
-    "Independent human screening and adjudication documentation, including R0081, R0082, R0132 and the R0223 eligibility boundary."
+    "Explicit authorization before journal submission or forwarding course evidence."
   ],
   "history": {
     "event_log": "MUST_READ_AI_AGENT/events.jsonl",

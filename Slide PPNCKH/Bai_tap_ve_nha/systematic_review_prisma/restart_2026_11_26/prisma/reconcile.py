@@ -284,12 +284,42 @@ def audit_supplemental(project, baseline):
         eq((row["pdf"], row["sha256"]), (catalog_relative, pdfs[key]["sha256"]), f"{key}: catalog identity")
         eq(sha256((project / row["pdf"]).read_bytes()).hexdigest(), row["sha256"], f"{key}: original PDF checksum")
 
-    groups = split(partition, "status", {"INCLUDE", "EXCLUDE", "AWAITING_CLASSIFICATION"})
-    reasons = split({key: partition[key] for key in groups["EXCLUDE"]}, "reason", {f"E{i}" for i in range(1, 8)})
-    pending = {key: partition[key]["pending"] for key in groups["AWAITING_CLASSIFICATION"]}
-    eq(pending, {"R0081": "E7", "R0082": "E7", "R0132": "E2|E3"}, "pending statuses")
+    original_pending = {key: row["pending"] for key, row in partition.items()
+                        if row["status"] == "AWAITING_CLASSIFICATION"}
+    eq(original_pending, {"R0081": "E7", "R0082": "E7", "R0132": "E2|E3"}, "pre-adjudication pending statuses")
+    adjudication_path = project / "manuscript/sn_computer_science/human_adjudication_log.csv"
+    adjudications = read_csv(adjudication_path, "Record_ID")
+    eq(set(adjudications), set(partition), "S2 adjudication coverage")
+    author_exclusions = {}
+    author_inclusions = set()
+    for key, row in adjudications.items():
+        decision = row["Final_Human_Decision"]
+        if not decision:
+            continue
+        eq((row["Source_PDF"], row["PDF_SHA256"]),
+           (partition[key]["pdf"], partition[key]["sha256"]), f"{key}: S2 report identity")
+        reason = row["Primary_Reason_Code"]
+        require(row["PDF_Page_Evidence"] and row["Adjudicated_Date"], f"{key}: missing author decision provenance")
+        if decision == "INCLUDE" and not reason:
+            if partition[key]["status"] == "INCLUDE":
+                continue
+            require(key in original_pending and row["Adjudication_Notes"],
+                    f"{key}: author inclusion requires a pending report and documented rationale")
+            author_inclusions.add(key)
+            continue
+        require(decision == "EXCLUDE" and row["Adjudication_Notes"]
+                and reason in {f"E{i}" for i in range(1, 8)},
+                f"{key}: author exclusion requires a valid reason and documented rationale")
+        if key in original_pending:
+            require(reason in original_pending[key].split("|"), f"{key}: inconsistent primary reason")
+        else:
+            require(partition[key]["status"] == "INCLUDE",
+                    f"{key}: author decision requires separate corpus reconciliation")
+        author_exclusions[key] = reason
+
     study_map = read_csv(linkage_map, "report_id")
-    eq(set(study_map), set(groups["INCLUDE"]), "active study-linkage coverage")
+    eq(set(study_map), {key for key, row in partition.items() if row["status"] == "INCLUDE"},
+       "locked study-linkage coverage")
     studies = split(study_map, "study_id")
     eq((active_p08["reports_verified"], active_p08["studies_verified"]),
        (len(study_map), len(studies)), "P08 active totals")
@@ -322,6 +352,42 @@ def audit_supplemental(project, baseline):
         for report in members:
             eq(study_map[report]["group_member_reports"], "|".join(members), f"{report}: study membership")
 
+    state = json.loads((project / "MUST_READ_AI_AGENT/current_state.json").read_text())
+    added_study_ids = state["evidence"]["supplemental_prisma"].get("post_lock_study_ids", {})
+    eq(set(added_study_ids), author_inclusions, "post-lock inclusion linkage coverage")
+    new_ids = set(added_study_ids.values())
+    require(all(new_ids) and len(new_ids) == len(added_study_ids) and not new_ids.intersection(studies),
+            "new study IDs must be distinct and outside the locked study map")
+
+    deferrals = state["evidence"]["alternative_technical_survey"]["editorial_integration"][
+        "author_confirmed_deferrals"]
+    for key, reason in deferrals.items():
+        require(key in adjudications and reason in {f"E{i}" for i in range(1, 8)}, f"{key}: invalid author deferral")
+        row = adjudications[key]
+        eq((row["Source_PDF"], row["PDF_SHA256"]),
+           (partition[key]["pdf"], partition[key]["sha256"]), f"{key}: S2 deferral identity")
+        require(not row["Final_Human_Decision"] and row["PDF_Page_Evidence"]
+                and f"AWAITING_CLASSIFICATION ({reason})" in row["Adjudication_Notes"],
+                f"{key}: missing author deferral evidence")
+        if partition[key]["status"] == "AWAITING_CLASSIFICATION":
+            eq(partition[key]["pending"], reason, f"{key}: prior deferral criterion")
+            continue
+        require(key in study_map and row["Adjudicated_Date"], f"{key}: deferral requires a dated inclusion")
+        partition[key].update(status="AWAITING_CLASSIFICATION", reason="", pending=reason)
+
+    # Validate the locked synthesis corpus above before projecting the current eligibility set.
+    for key, reason in author_exclusions.items():
+        partition[key].update(status="EXCLUDE", reason=reason, pending="")
+    for key in author_inclusions:
+        partition[key].update(status="INCLUDE", reason="", pending="")
+    groups = split(partition, "status", {"INCLUDE", "EXCLUDE", "AWAITING_CLASSIFICATION"})
+    reasons = split({key: partition[key] for key in groups["EXCLUDE"]}, "reason", {f"E{i}" for i in range(1, 8)})
+    pending = {key: partition[key]["pending"] for key in groups.setdefault("AWAITING_CLASSIFICATION", [])}
+    included = set(groups["INCLUDE"])
+    studies = split({key: study_map[key] for key in included - author_inclusions}, "study_id")
+    studies.update({study_id: [key] for key, study_id in added_study_ids.items()})
+    pairs = {key: row for key, row in pairs.items() if {row["report_a"], row["report_b"]} <= included}
+
     retrieval_groups = {"NOT_RETRIEVED": ["R0116"], "RETRIEVED_PDF": sorted(partition)}
     sought = set().union(*map(set, baseline["report_ids_by_retrieval_decision"].values()))
     eq(set(partition) | {"R0116"}, sought, "sought/assessed set identity")
@@ -335,12 +401,12 @@ def audit_supplemental(project, baseline):
         "reports_assessed": len(partition),
         "reports_excluded": len(groups["EXCLUDE"]),
         "reports_awaiting_classification": len(pending),
-        "included_reports": len(study_map),
+        "included_reports": len(included),
         "included_studies": len(studies),
     }
     differences = baseline["arithmetic_differences"] | {
         "sought_minus_unretrieved_and_assessed": len(sought) - 1 - len(partition),
-        "assessed_minus_excluded_pending_and_included": len(partition) - counts["reports_excluded"] - len(pending) - len(study_map),
+        "assessed_minus_excluded_pending_and_included": len(partition) - counts["reports_excluded"] - len(pending) - len(included),
     }
     require(not any(differences.values()), "unexplained PRISMA count differences")
     return baseline | {
@@ -366,11 +432,205 @@ def audit_supplemental(project, baseline):
 def audit(project):
     return audit_supplemental(project, audit_baseline(project))
 
+
+def supplemental_study_groups(rows, included_ids):
+    study_map = index(rows, "report_id", "supplemental study mapping")
+    eq(set(study_map), included_ids, "included report-to-study mapping")
+    return split(study_map, "study_id")
+
+
+def audit_supplemental_intake(project, *, require_complete=False, study_map=None):
+    """Validate the original supplemental intake and screening batches without editing decisions."""
+    baseline = audit_baseline(project)
+    restart = project / "restart_2026_11_26"
+    supplement = restart / "supplemental_screening"
+    pdf_dir = restart / "fulltext_retrieval/pdf"
+
+    def read_json(path):
+        return json.loads(path.read_text(encoding="utf-8"))
+
+    def read_csv(path, key):
+        with path.open(newline="", encoding="utf-8-sig") as handle:
+            return index(csv.DictReader(handle), key, path.name)
+
+    manifest = read_json(supplement / "manifest.json")
+    intake = read_csv(supplement / "supplemental_intake.csv", "id")
+    identity = read_csv(restart / "fulltext_retrieval/fulltext_identity_index.csv", "screening_id")
+    queue = read_csv(restart / "unique_record_queue.csv", "screening_id")
+    state = read_json(project / "MUST_READ_AI_AGENT/current_state.json")["evidence"]["supplemental_screening"]
+    missing = set(manifest["not_retrieved"])
+    eq(len(missing), len(manifest["not_retrieved"]), "distinct not-retrieved IDs")
+    eq(len(intake), manifest["supplemental_files_by_id"], "supplemental intake count")
+    require(not (intake.keys() & missing), "intake overlaps not-retrieved IDs")
+    eq(intake.keys() | missing, set(baseline["report_ids_by_retrieval_decision"]["NOT_RETRIEVED"]),
+       "previously unretrieved report IDs")
+    require(not (identity.keys() & intake.keys()), "baseline and supplemental intake overlap")
+    for key in missing:
+        path = pdf_dir / f"{key}.pdf"
+        require(not (path.exists() or path.is_symlink()), f"{key}: unexpected PDF for not-retrieved report")
+
+    seen_hashes = {row["sha256"] for row in identity.values()}
+    for key, row in intake.items():
+        eq(row["title"], queue[key]["title"], f"{key}: intake title")
+        eq(row["doi"].strip().lower(), (queue[key]["doi"].strip().lower() or "doi_not_found"),
+           f"{key}: intake DOI")
+        path = pdf_dir / f"{key}.pdf"
+        require(path.is_file() and not path.is_symlink(), f"{key}: missing or linked intake PDF")
+        digest = sha256(path.read_bytes()).hexdigest()
+        eq(digest, row["sha256"], f"{key}: intake PDF checksum")
+        require(digest not in seen_hashes, f"{key}: duplicate intake PDF")
+        seen_hashes.add(digest)
+        require(int(row["physical_pages"]) > 0, f"{key}: invalid PDF page count")
+
+    by_decision = baseline["report_ids_by_fulltext_decision"]
+    eq(manifest["carry_forward"], {
+        "included_reports": len(by_decision["INCLUDE"]),
+        "excluded_reports": len(by_decision["EXCLUDE"]),
+        "previously_awaiting": len(by_decision["AWAITING_CLASSIFICATION"]),
+    }, "baseline carry-forward counts")
+    prior = read_json(supplement / "prior_awaiting_recheck.json")
+    round_path = restart / "retrieval_round_01/round_01_evidence.json"
+    eq(prior["source_round_01"], round_path.relative_to(project).as_posix(), "round 01 source path")
+    source_bytes = round_path.read_bytes()
+    eq(prior["source_round_01_sha256"], sha256(source_bytes).hexdigest(), "round 01 source checksum")
+    awaiting = index(prior["records"], "id", "prior awaiting recheck")
+    eq(set(awaiting), set(by_decision["AWAITING_CLASSIFICATION"]), "prior awaiting IDs")
+    criteria = {f"E{i}" for i in range(1, 8)}
+    decisions = {"INCLUDE", "EXCLUDE", "AWAITING_CLASSIFICATION"}
+    prior_decisions = split(awaiting, "decision_supported_by_round_01", decisions)
+    round_data = json.loads(source_bytes)
+    round_awaiting = index(round_data["awaiting_recheck"], "id", "round 01 awaiting")
+    eq(set(round_awaiting), set(awaiting), "round 01 awaiting IDs")
+    for key, row in awaiting.items():
+        source_row = round_awaiting[key]
+        eq(row["decision_supported_by_round_01"], source_row["decision"], f"{key}: prior decision")
+        for field in ("pdf", "sha256", "pages"):
+            eq(row[field], source_row[field], f"{key}: prior source {field}")
+        path = pdf_dir / f"{key}.pdf"
+        eq(row["pdf"], path.relative_to(project).as_posix(), f"{key}: prior PDF path")
+        eq(row["sha256"], identity[key]["sha256"], f"{key}: prior identity checksum")
+        eq(sha256(path.read_bytes()).hexdigest(), row["sha256"], f"{key}: prior PDF checksum")
+        eq(row["pages"], int(identity[key]["page_count"]), f"{key}: prior pages")
+        eq(row["prior_verified_locators"], source_row["rechecked_pdf_locators"], f"{key}: prior source locators")
+        require(row["prior_verified_locators"], f"{key}: no prior PDF locators")
+        for item in row["prior_verified_locators"].values():
+            require(1 <= item["page"] <= row["pages"] and item["section"], f"{key}: invalid prior locator")
+        unresolved = row["criterion_to_resolve"]
+        eq(set(unresolved), {name for name, value in source_row["criteria"].items() if value == "U"},
+           f"{key}: unresolved prior criteria")
+        require(bool(unresolved) == (row["decision_supported_by_round_01"] == "AWAITING_CLASSIFICATION"),
+                f"{key}: unresolved criteria do not match prior decision")
+
+    carried = {}
+    for key, row in index(round_data["retrieval"], "id", "round 01 retrieval").items():
+        if "eligibility" in row:
+            require(key in intake, f"{key}: carried decision outside supplemental intake")
+            decision = row["eligibility"]
+            require(decision["decision"] in decisions, f"{key}: invalid carried decision")
+            if decision["decision"] == "EXCLUDE":
+                reason = decision["primary_reason"]
+                require(reason in criteria and decision["criteria"][reason][0] == "F",
+                        f"{key}: invalid carried exclusion reason")
+            carried[key] = decision["decision"]
+
+    screened = {}
+    assigned = set()
+    batch_inputs = {}
+    for path in sorted(supplement.glob("batch_*_inputs.json")):
+        inputs = index(read_json(path), "id", path.name)
+        batch_inputs[path.name.removesuffix("_inputs.json")] = inputs
+        require(inputs.keys() <= intake.keys(), f"{path.name}: IDs outside intake")
+        require(not (inputs.keys() & (assigned | carried.keys())),
+                f"{path.name}: duplicate batch or carried IDs")
+        assigned.update(inputs)
+        for key, row in inputs.items():
+            eq(row["sha256"], intake[key]["sha256"], f"{key}: batch input checksum")
+            eq(row["pdf"], (pdf_dir / f"{key}.pdf").relative_to(project).as_posix(),
+               f"{key}: batch input PDF path")
+    for path in sorted(supplement.glob("batch_*_accepted.json")):
+        prefix = path.name.removesuffix("_accepted.json")
+        require(prefix in batch_inputs, f"{prefix}: missing inputs")
+        review = supplement / f"{prefix}_review.md"
+        require(review.is_file(), f"{prefix}: missing review")
+        require(state.get(f"{prefix}_verdict") in {"PASS", "PASS_COMPOSITE"}, f"{prefix}: no accepted review")
+        eq(state.get(f"{prefix}_review"), review.relative_to(project).as_posix(), f"{prefix}: review path")
+        eq(state.get(f"{prefix}_accepted"), path.relative_to(project).as_posix(), f"{prefix}: accepted output path")
+        accepted = index(read_json(path), "id", path.name)
+        eq(accepted.keys(), batch_inputs[prefix].keys(), f"{prefix}: accepted batch coverage")
+        for key, row in accepted.items():
+            gates = row["criteria"]
+            eq(set(gates), criteria, f"{key}: criterion coverage")
+            require(set(gates.values()) <= {"T", "F", "U"}, f"{key}: invalid criterion value")
+            expected = ("EXCLUDE" if "F" in gates.values() else
+                        "AWAITING_CLASSIFICATION" if "U" in gates.values() else "INCLUDE")
+            eq(row["decision"], expected, f"{key}: decision and criteria")
+            if expected == "EXCLUDE":
+                require(gates.get(row["primary"]) == "F" and (row.get("reason") or "").strip(),
+                        f"{key}: missing or invalid primary exclusion reason")
+            located = set()
+            for criterion, source, page, section, excerpt in row["evidence"]:
+                require(criterion in criteria and source and section.strip() and excerpt.strip(),
+                        f"{key}: incomplete evidence locator")
+                if source == "PDF":
+                    require(type(page) is int and 1 <= page <= int(intake[key]["physical_pages"]),
+                            f"{key}: invalid physical PDF page")
+                located.add(criterion)
+            eq(located, criteria, f"{key}: evidence criteria")
+            screened[key] = expected
+
+    pending = intake.keys() - carried.keys() - screened.keys()
+    if require_complete or study_map is not None:
+        require(not pending, f"pending screening: {', '.join(sorted(pending))}")
+    totals = Counter({value: len(by_decision[value]) for value in ("INCLUDE", "EXCLUDE")})
+    totals.update(row["decision_supported_by_round_01"] for row in awaiting.values())
+    totals.update(carried.values())
+    totals.update(screened.values())
+    eq(sum(totals.values()) + len(pending) + len(missing),
+       len(identity) + len(intake) + len(missing), "supplemental report partition")
+    included_ids = set(by_decision["INCLUDE"]) | set(prior_decisions.get("INCLUDE", []))
+    included_ids |= {key for key, decision in (carried | screened).items() if decision == "INCLUDE"}
+    for field, expected in {
+        "intake_pdf_count": len(intake),
+        "screened_supplemental_count": len(screened),
+        "supplemental_decisions_accounted": len(screened) + len(carried),
+        "remaining_supplemental_reports": len(pending),
+        "pending_retrieval_ids": sorted(missing),
+    }.items():
+        eq(state[field], expected, f"supplemental state {field}")
+    return {
+        "intake_ids": sorted(intake), "not_retrieved_ids": sorted(missing),
+        "prior_awaiting_ids": sorted(awaiting), "prior_awaiting_by_decision": prior_decisions,
+        "assessed_by_source": {"round_01": carried, "supplemental_batches": screened},
+        "pending_screening_ids": sorted(pending), "report_decision_totals": dict(totals),
+        "study_ids_to_report_ids": (
+            supplemental_study_groups(study_map, included_ids) if study_map is not None else None
+        ),
+    }
+
+
 def main():
     project = Path(__file__).resolve().parents[2]
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true")
+    modes = parser.add_mutually_exclusive_group()
+    modes.add_argument("--check", action="store_true")
+    modes.add_argument("--check-supplemental", action="store_true",
+                       help="Validate the expansion and print diagnostics without writing files")
+    parser.add_argument("--require-complete", action="store_true", help="Require all supplemental PDFs to be assessed")
+    parser.add_argument("--study-map", type=Path, help="Optional expanded report_id,study_id CSV to validate")
     args = parser.parse_args()
+    if args.check_supplemental:
+        try:
+            study_map = None
+            if args.study_map:
+                with args.study_map.open(newline="", encoding="utf-8-sig") as handle:
+                    study_map = list(csv.DictReader(handle))
+            result = audit_supplemental_intake(project, require_complete=args.require_complete, study_map=study_map)
+        except (ValueError, OSError, KeyError, TypeError) as error:
+            parser.exit(1, f"Supplemental reconciliation failed: {error}\n")
+        print(json.dumps(result, sort_keys=True))
+        return
+    if args.require_complete or args.study_map:
+        parser.error("--require-complete and --study-map require --check-supplemental")
     result = audit(project)
     output = Path(__file__).with_name("prisma_counts.json")
     expected = json.dumps(result, indent=2, sort_keys=True) + "\n"

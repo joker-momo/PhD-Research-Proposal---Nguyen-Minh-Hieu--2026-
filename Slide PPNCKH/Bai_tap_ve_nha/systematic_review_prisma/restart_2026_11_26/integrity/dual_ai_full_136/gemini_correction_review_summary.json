@@ -1,0 +1,86 @@
+{
+  "records": 136,
+  "codex_valid": 136,
+  "codex_rejected": {},
+  "codex_malformed": 0,
+  "gemini_valid": 126,
+  "gemini_rejected": {
+    "HKF-004": "Neo không khớp trang nguồn",
+    "HKF-005": "Neo không khớp trang nguồn",
+    "HKF-006": "Neo không khớp trang nguồn",
+    "HKF-011": "Neo không khớp trang nguồn",
+    "HKF-027": "Neo không khớp trang nguồn",
+    "HKF-032": "Neo không khớp trang nguồn",
+    "HKF-083": "Neo không khớp trang nguồn",
+    "HKF-096": "Neo không khớp trang nguồn",
+    "HKF-113": "Neo không khớp trang nguồn",
+    "HKF-119": "Neo không khớp trang nguồn"
+  },
+  "gemini_malformed": 0,
+  "gemini_transport": "TASK_STATE_COMPLETED",
+  "gemini_context_verified": true,
+  "gemini_initial_task": "edf9686b-8e4a-4193-ba44-52b689d10013",
+  "gemini_correction_task": "7bbe72f1-590c-4449-801c-c0ea4ec885a3",
+  "gemini_exact_correction": true,
+  "gemini_cleanup": "deleted",
+  "gemini_gate": "FAIL",
+  "codex_decisions": {
+    "AWAITING_CLASSIFICATION": 16,
+    "EXCLUDE": 87,
+    "INCLUDE": 33
+  },
+  "gemini_decisions": {
+    "EXCLUDE": 86,
+    "INCLUDE": 28,
+    "AWAITING_CLASSIFICATION": 12
+  },
+  "paired": 0,
+  "agreement": 0,
+  "cross_tab": [],
+  "automated_extraction_checks": {
+    "TEXT_ANCHOR_MATCH": 333,
+    "PARTIAL_ANCHOR_MATCH": 169,
+    "PAGE_RANGE_VALID": 322,
+    "CHECK_TEXT_OR_RENDERED_PAGE": 54,
+    "RENDERED_SOURCE_MATCH": 9
+  },
+  "codex_matches_frozen": 116,
+  "codex_differs_from_frozen": 20,
+  "codex_cross_tab_frozen": [
+    {
+      "frozen": "EXCLUDE",
+      "codex": "AWAITING_CLASSIFICATION",
+      "count": 5
+    },
+    {
+      "frozen": "EXCLUDE",
+      "codex": "EXCLUDE",
+      "count": 84
+    },
+    {
+      "frozen": "EXCLUDE",
+      "codex": "INCLUDE",
+      "count": 1
+    },
+    {
+      "frozen": "INCLUDE",
+      "codex": "AWAITING_CLASSIFICATION",
+      "count": 11
+    },
+    {
+      "frozen": "INCLUDE",
+      "codex": "EXCLUDE",
+      "count": 3
+    },
+    {
+      "frozen": "INCLUDE",
+      "codex": "INCLUDE",
+      "count": 32
+    }
+  ],
+  "codex_uncertainty_counts": {
+    "E5": 11,
+    "E3": 3,
+    "E7": 2
+  }
+}

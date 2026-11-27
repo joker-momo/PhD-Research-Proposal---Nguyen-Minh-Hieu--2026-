@@ -341,6 +341,7 @@
       "inputs": [
         "search_dataset_manifest.json",
         "restart selection and linkage CSV ledgers",
+        "S2 human_adjudication_log.csv",
         "P08/P09 lock manifests"
       ],
       "outputs": [
@@ -388,6 +389,546 @@
         "report-id",
         "sha256",
         "clean-checkout"
+      ]
+    },
+    {
+      "artifact_id": "hk261-alternative-technical-survey-generator",
+      "name": "HK261 technical survey table and coverage generator",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_technical_survey.py",
+      "purpose": "Derive full-corpus technical tables, appraisal and figure counts, and enforce coverage in the analytical text.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_technical_survey.py\"",
+      "inputs": [
+        "Accepted 46-study corpus",
+        "Accepted ten-domain appraisal summary",
+        "Technical coding ledger",
+        "LaTeX manuscript and BibTeX bibliography"
+      ],
+      "outputs": [
+        "Two full-corpus technical tables",
+        "Appraisal rows and figure inputs",
+        "Primary-category counts and coverage report"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_technical_survey.py"
+      ],
+      "test_command": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_technical_survey.py\" --check",
+      "status": "active",
+      "tags": [
+        "manuscript",
+        "synthesis",
+        "coverage",
+        "latex"
+      ]
+    },
+    {
+      "artifact_id": "hk261-alternative-evidence-snapshot",
+      "name": "HK261 alternative manuscript evidence snapshot",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py",
+      "purpose": "Verify claim coverage, derive the study-row source map, and guard figures, tables, equations, outcome keys, and original PDF identities.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py\"",
+      "inputs": [
+        "S4 evidence index",
+        "Accepted evidence ledgers and PDF originals",
+        "Manuscript, generated inputs and PDF"
+      ],
+      "outputs": [
+        "Study-row source map, evidence snapshot or verification report"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py"
+      ],
+      "test_command": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py\"",
+      "status": "active",
+      "tags": [
+        "manuscript",
+        "evidence",
+        "reproduction",
+        "latex"
+      ]
+    },
+    {
+      "artifact_id": "hk261-alternative-portable-figure-table-package",
+      "name": "HK261 portable figure and table evidence package",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/minh_chung_hinh_bang/package_evidence.py",
+      "purpose": "Copy the accepted figure and table build inputs and verify the archive against the canonical sources.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/minh_chung_hinh_bang/package_evidence.py\" --refresh",
+      "inputs": [
+        "Supplement S4",
+        "Accepted study coding and outcomes",
+        "LaTeX and TikZ source",
+        "PRISMA counts and template"
+      ],
+      "outputs": [
+        "Archived build inputs",
+        "Per-item crosswalk",
+        "SHA-256 manifest"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/minh_chung_hinh_bang/package_evidence.py"
+      ],
+      "test_command": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/minh_chung_hinh_bang/package_evidence.py\"",
+      "status": "active",
+      "tags": [
+        "manuscript",
+        "evidence",
+        "reproduction",
+        "latex"
+      ]
+    },
+    {
+      "artifact_id": "hk261-editorial-evidence-tables",
+      "name": "HK261 editorial cross-tabulation and review log generator",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_editorial_evidence.py",
+      "purpose": "Derive the mechanism and outcome coverage tables from the verified inventory and seed the author adjudication log from the frozen selection.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_editorial_evidence.py\" tables",
+      "inputs": [
+        "Frozen 46-report manifest and original PDF identities",
+        "Verified RQ5 outcomes and report coverage",
+        "Primary mechanism and evaluation coding",
+        "Assessment dispositions and full-text exclusions"
+      ],
+      "outputs": [
+        "Mechanism by strongest evaluation LaTeX table",
+        "Numerical outcome coverage LaTeX table",
+        "136-report blank human adjudication log"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_editorial_evidence.py",
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py"
+      ],
+      "test_command": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_editorial_evidence.py\" check --verify-pdfs",
+      "status": "active",
+      "tags": [
+        "manuscript",
+        "reproduction",
+        "outcomes",
+        "adjudication"
+      ]
+    },
+    {
+      "artifact_id": "hk261-s2-adjudication-audit",
+      "name": "HK261 S2 adjudication audit",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/audit_adjudication.py",
+      "purpose": "Report documented human decisions, deferrals and paired evidence alongside verified PRISMA dispositions.",
+      "entrypoint": "python3 -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/audit_adjudication.py\" --check",
+      "inputs": [
+        "manuscript/sn_computer_science/human_adjudication_log.csv",
+        "PRISMA ledger and reconciler",
+        "Canonical author-confirmed deferrals"
+      ],
+      "outputs": [
+        "manuscript/sn_computer_science/audit_summary.json",
+        "manuscript/sn_computer_science/adjudication_audit_table.tex"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/test_audit_adjudication.py"
+      ],
+      "test_command": "python3 -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/test_audit_adjudication.py\"",
+      "status": "active",
+      "tags": [
+        "hk261",
+        "adjudication",
+        "prisma",
+        "reproduction"
+      ]
+    },
+    {
+      "artifact_id": "hk261-final-46-synthesis-reconciliation",
+      "name": "HK261 final 46-study synthesis",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/reconcile_inputs.py",
+      "purpose": "Recompute included-study, appraisal and outcome data by final eligibility ID, applying the source-checked R0082 delta and the 12 author-confirmed scope and coding decisions.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/reconcile_inputs.py\" [--check]",
+      "inputs": [
+        "Verified PRISMA ledger",
+        "locked comparison extraction and appraisal",
+        "R0082 evidence and PDF SHA-256",
+        "Author decision ledger and application data with original PDF hashes"
+      ],
+      "outputs": [
+        "13 final 46-study inputs, claim indexes, manifest and census"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py"
+      ],
+      "test_command": "python3 -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/check_evidence.py\"",
+      "status": "active",
+      "tags": [
+        "HK261",
+        "PRISMA",
+        "synthesis",
+        "evidence"
+      ]
+    },
+    {
+      "artifact_id": "hk261-independent-human-review-packet",
+      "name": "HK261 independent full-text and extraction review packet",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/build_human_review_packet.py",
+      "purpose": "Generate masked blank forms for two independent reviewers of all 136 assessed full texts and source verification for the 46 retained studies.",
+      "entrypoint": "python3.11 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/build_human_review_packet.py'",
+      "inputs": [
+        "manuscript/sn_computer_science/human_adjudication_log.csv",
+        "restart_2026_11_26/prisma/prisma_counts.json",
+        "manuscript/sn_computer_science/s4_study_row_sources.csv",
+        "restart_2026_11_26/synthesis/final_46/outcomes.csv",
+        "restart_2026_11_26/synthesis/final_46/appraisal_rationale.csv"
+      ],
+      "outputs": [
+        "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md",
+        "Masked PDFs with optional local materialization"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/build_human_review_packet.py"
+      ],
+      "test_command": "python3.11 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/build_human_review_packet.py'",
+      "status": "active",
+      "tags": [
+        "human-review",
+        "masking",
+        "full-corpus",
+        "source-locators"
+      ]
+    },
+    {
+      "artifact_id": "hk261-llhr-publisher-crosscheck",
+      "name": "LLHR IEEE proceedings page-locator cross-check",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/verify_llhr_publisher.py",
+      "purpose": "Check the verified IEEE file and compare the R0082 anchors with the archived preprint.",
+      "entrypoint": "python3.11 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/verify_llhr_publisher.py' <local IEEE PDF>",
+      "inputs": [
+        "restart_2026_11_26/synthesis/final_46/r0082_evidence.json",
+        "restart_2026_11_26/synthesis/final_46/pdfkit_pages.swift",
+        "Local IEEE PDF and archived preprint"
+      ],
+      "outputs": [
+        "restart_2026_11_26/synthesis/final_46/r0082_publisher_crosscheck.json"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/verify_llhr_publisher.py"
+      ],
+      "test_command": "python3.11 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/verify_llhr_publisher.py' <local IEEE PDF>",
+      "status": "active",
+      "tags": [
+        "pdf",
+        "publisher",
+        "evidence",
+        "R0082"
+      ]
+    },
+    {
+      "artifact_id": "hk261-dual-ai-prepare-masked-inputs",
+      "name": "prepare_review_pages.py",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_review_pages.py",
+      "purpose": "Verify 136 source PDF hashes, extract text by physical page and reproduce the isolated Gemini context hashes.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_review_pages.py' /tmp/hk261-dual-repro-pages --gemini-context /tmp/hk261-dual-repro-context",
+      "inputs": [
+        "phase_manifest.json",
+        "isolated_context_manifest.json",
+        "Local 136 masked PDFs"
+      ],
+      "outputs": [
+        "Page JSON directory",
+        "Optional isolated context directory"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_review_pages.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_review_pages.py' /tmp/hk261-dual-repro-pages --gemini-context /tmp/hk261-dual-repro-context",
+      "status": "active",
+      "tags": [
+        "screening",
+        "evidence",
+        "HK261"
+      ]
+    },
+    {
+      "artifact_id": "hk261-dual-ai-audit-extraction",
+      "name": "audit_review_inputs.py",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/audit_review_inputs.py",
+      "purpose": "Rebuild 887 source-locator checks and reconcile manual visual checks for nine rows.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/audit_review_inputs.py' /tmp/hk261-dual-repro-pages",
+      "inputs": [
+        "Local PDFKit physical-page JSON",
+        "S4 and final 46 source matrices",
+        "visual_outcome_review.csv"
+      ],
+      "outputs": [
+        "restart_2026_11_26/integrity/dual_ai_full_136/extraction_locator_audit.csv"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/audit_review_inputs.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/audit_review_inputs.py' /tmp/hk261-dual-repro-pages",
+      "status": "active",
+      "tags": [
+        "screening",
+        "evidence",
+        "HK261"
+      ]
+    },
+    {
+      "artifact_id": "hk261-dual-ai-assemble-review",
+      "name": "assemble_review.py",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/assemble_review.py",
+      "purpose": "Validate and compare masked AI screening evidence and generate the CSV, LaTeX inputs and statistics.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/assemble_review.py' /tmp/hk261-dual-repro-pages 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/codex_pass.jsonl' 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/gemini_receipt.json'",
+      "inputs": [
+        "Local PDFKit physical-page JSON",
+        "codex_pass.jsonl",
+        "Gemini Task receipt",
+        "Coordinator key"
+      ],
+      "outputs": [
+        "restart_2026_11_26/integrity/dual_ai_full_136/review_136.csv",
+        "restart_2026_11_26/integrity/dual_ai_full_136/review_rows.tex",
+        "restart_2026_11_26/integrity/dual_ai_full_136/report_status.tex",
+        "restart_2026_11_26/integrity/dual_ai_full_136/review_summary.json"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/assemble_review.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/assemble_review.py' /tmp/hk261-dual-repro-pages 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/codex_pass.jsonl' 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/gemini_receipt.json'",
+      "status": "active",
+      "tags": [
+        "screening",
+        "evidence",
+        "HK261"
+      ]
+    },
+    {
+      "artifact_id": "hk261-dual-ai-resegment-gemini",
+      "name": "Resegment failed Gemini screening targets",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_gemini_correction.py",
+      "purpose": "Reuse original page text for the 101 failed keys with each file under the Gemini text reader limit.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_gemini_correction.py' /tmp/hk261-dual-repro-context 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/gemini_initial_review_summary.json' /tmp/hk261-dual-repro-correction /tmp/hk261-dual-repro-correction-manifest.json",
+      "inputs": [
+        "Page-marked original Gemini context",
+        "gemini_initial_review_summary.json"
+      ],
+      "outputs": [
+        "Corrective Gemini input folder",
+        "gemini_correction_context_manifest.json"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_gemini_correction.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/prepare_gemini_correction.py' /tmp/hk261-dual-repro-context 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/gemini_initial_review_summary.json' /tmp/hk261-dual-repro-correction /tmp/hk261-dual-repro-correction-manifest.json",
+      "status": "active",
+      "tags": [
+        "screening",
+        "evidence",
+        "Gemini",
+        "HK261"
+      ]
+    },
+    {
+      "artifact_id": "hk261-check-e5",
+      "name": "HK261 E5 DOI publication date check",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/check_e5.py",
+      "purpose": "Check publication dates for both masked screening passes using Crossref and DOI-matched IEEE Xplore evidence.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/check_e5.py'",
+      "inputs": [
+        "restart_2026_11_26/integrity/dual_ai_full_136/review_136.csv",
+        "restart_2026_11_26/fulltext_screening/fulltext_screening.csv",
+        "restart_2026_11_26/supplemental_screening/screening_decisions.csv",
+        "restart_2026_11_26/retrieval_round_01/round_01_evidence.json",
+        "restart_2026_11_26/integrity/dual_ai_full_136/e5_date_check/publisher_lookup.json",
+        "Crossref REST API or local replay archive"
+      ],
+      "outputs": [
+        "restart_2026_11_26/integrity/dual_ai_full_136/e5_date_check/results.csv",
+        "restart_2026_11_26/integrity/dual_ai_full_136/e5_date_check/crossref_receipts.json"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/check_e5.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/check_e5.py' --replay",
+      "status": "active",
+      "tags": [
+        "screening",
+        "evidence",
+        "HK261",
+        "E5",
+        "Crossref"
+      ]
+    },
+    {
+      "artifact_id": "hk261-prepare-dual-source-review-887",
+      "name": "HK261 source review context builder",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/prepare.py",
+      "purpose": "Hash-check 46 source PDFs and derive disjoint source-check batches for all 887 keys.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/prepare.py' /tmp/hk261-source-rebuild",
+      "inputs": [
+        "Frozen reviewer packet, original and masked PDFs, outcomes.csv"
+      ],
+      "outputs": [
+        "restart_2026_11_26/integrity/source_review_887/phase_manifest.json",
+        "Eight isolated local batches, 46 physical-page transcripts"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/prepare.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/prepare.py' /tmp/hk261-source-rebuild",
+      "status": "active",
+      "tags": [
+        "HK261",
+        "source verification",
+        "PDF",
+        "Gemini"
+      ]
+    },
+    {
+      "artifact_id": "hk261-review-dual-source-887",
+      "name": "HK261 887-key source report",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/review_sources.py",
+      "purpose": "Regenerate the 887-key advisory source table and aggregate checks from frozen PDF source pages and provider receipts.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/review_sources.py' /tmp/hk261-source-review",
+      "inputs": [
+        "Codex archived pass, Gemini raw and normalized receipts, source page arrays and frozen verification inventory"
+      ],
+      "outputs": [
+        "source_review_887.csv, source_review_summary.json and report_data.tex"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/review_sources.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/review_sources.py' /tmp/hk261-source-review",
+      "status": "active",
+      "tags": [
+        "HK261",
+        "source verification",
+        "PDF",
+        "Gemini"
+      ]
+    },
+    {
+      "artifact_id": "hk261-source-correction-packet",
+      "name": "HK261 bounded PDF correction context",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/correction_packet.py",
+      "purpose": "Reconstruct the Gemini correction page selection and its exact file hashes from the frozen original page map.",
+      "entrypoint": "rtk uv run --offline --no-project --with pymupdf==1.26.7 python -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/correction_packet.py' correction_targets.json /tmp/hk261-correction/assets",
+      "inputs": [
+        "Source review keys or correction_targets.json and verified original PDFs"
+      ],
+      "outputs": [
+        "Correction folder and correction_manifest.json"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/correction_packet.py"
+      ],
+      "test_command": "rtk uv run --offline --no-project --with pymupdf==1.26.7 python -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/correction_packet.py' correction_targets.json /tmp/hk261-correction/assets",
+      "status": "active",
+      "tags": [
+        "HK261",
+        "source verification",
+        "PDF",
+        "Gemini"
+      ]
+    },
+    {
+      "artifact_id": "hk261-normalize-source-correction",
+      "name": "HK261 correction response syntax recovery",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/normalize_correction.py",
+      "purpose": "Escape only the embedded ASCII quote marks reviewed in seven malformed raw JSON rows and verify exact coverage.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/normalize_correction.py' receipts/batch-09-raw.json correction_targets.json /tmp/normalized-correction.json",
+      "inputs": [
+        "Archived raw Gemini correction receipt, correction_targets.json"
+      ],
+      "outputs": [
+        "Normalized, replayable correction receipt and seven recorded recovered keys"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/normalize_correction.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/normalize_correction.py' receipts/batch-09-raw.json correction_targets.json /tmp/normalized-correction.json",
+      "status": "active",
+      "tags": [
+        "HK261",
+        "source verification",
+        "PDF",
+        "Gemini"
+      ]
+    },
+    {
+      "artifact_id": "hk261-record-source-review-endorsements",
+      "name": "Record HK261 source verification endorsements",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/human_review_packet/record_source_endorsements.py",
+      "purpose": "Transcribe two attributed endorsements against the frozen 887 source keys and preserve the evidence limits and form order.",
+      "entrypoint": "python3 -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/human_review_packet/record_source_endorsements.py\" <recorded-date> [--packet <packet-directory>] [--check]",
+      "inputs": [
+        "Frozen source_review_887.csv",
+        "R1 and R2 source-verification forms",
+        "Documented confirmation date in the packet README"
+      ],
+      "outputs": [
+        "restart_2026_11_26/synthesis/final_46/human_review_packet/R1/source_verification.csv",
+        "restart_2026_11_26/synthesis/final_46/human_review_packet/R2/source_verification.csv"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/human_review_packet/record_source_endorsements.py"
+      ],
+      "test_command": "python3 -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/human_review_packet/record_source_endorsements.py\" 2026-11-27 --check",
+      "status": "active",
+      "tags": [
+        "source-verification",
+        "reviewer-endorsement",
+        "hk261",
+        "csv"
+      ]
+    },
+    {
+      "artifact_id": "hk261-r1-r2-source-reconciliation",
+      "name": "Build HK261 R1/R2 source reconciliation",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/build_reconciliation.py",
+      "purpose": "Join attributed endorsements and provide traceable PDF locators and proposals for author decisions.",
+      "entrypoint": "uv run --offline --no-project --with pymupdf==1.26.7 python -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/build_reconciliation.py\" [--output <directory>]",
+      "inputs": [
+        "Frozen R1 and R2 source-verification files",
+        "Original PDFs with SHA-256",
+        "Source review table and archived original visual checks"
+      ],
+      "outputs": [
+        "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/muc_can_chot.csv",
+        "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/doi_chieu_887.csv",
+        "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/summary.json",
+        "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/report_data.tex"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/build_reconciliation.py"
+      ],
+      "test_command": "tmp=$(mktemp -d) && uv run --offline --no-project --with pymupdf==1.26.7 python -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/build_reconciliation.py\" --output \"$tmp\" && cmp \"$tmp/muc_can_chot.csv\" \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/muc_can_chot.csv\"",
+      "status": "active",
+      "tags": [
+        "hk261",
+        "source-verification",
+        "reconciliation",
+        "author-confirmation",
+        "pdf"
+      ]
+    },
+    {
+      "artifact_id": "hk261-s2-final-eligibility-register",
+      "name": "S2 final eligibility register generator",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_s2_eligibility.py",
+      "purpose": "Build or verify the 136-row final S2 full-text decision register from accepted inputs.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_s2_eligibility.py'",
+      "inputs": [
+        "PRISMA final disposition IDs and exclusion codes",
+        "S2 review and exclusion ledgers",
+        "Accepted screening, date recheck and S3 study evidence"
+      ],
+      "outputs": [
+        "manuscript/sn_computer_science/supplement_s2_eligibility.csv"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_s2_eligibility.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/build_s2_eligibility.py' --check",
+      "status": "active",
+      "tags": [
+        "S2",
+        "eligibility",
+        "screening",
+        "PRISMA"
       ]
     }
   ]

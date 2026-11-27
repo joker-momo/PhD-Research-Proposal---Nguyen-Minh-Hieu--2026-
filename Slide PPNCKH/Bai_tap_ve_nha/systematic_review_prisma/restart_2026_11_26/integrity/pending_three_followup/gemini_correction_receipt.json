@@ -1,0 +1,45 @@
+{
+  "id": "133c68cc-d77f-4cb1-9cdd-ad4a5f613097",
+  "contextId": "0fe7a0de-ad59-4e65-bb0f-2ee974ec73ce",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-27T11:02:19.040+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-27T10:55:53.560+00:00",
+    "updated_at": "2026-11-27T11:02:19.040+00:00",
+    "started_at": "2026-11-27T10:55:53.565+00:00",
+    "completed_at": "2026-11-27T11:02:19.040+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — Evidence Verification for Research",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "d51c12f7-0445-49ed-aa67-73c8d4bc3749",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"id\":\"R0082\",\"title\":\"LLHR: Low Latency and High Reliability CNN Distributed Inference for Resource-Constrained UAV Swarms\",\"authors\":[\"Marwan Dhuheir\",\"Aiman Erbad\",\"Sinan Sabeeh\"],\"year\":2023,\"venue\":\"2023 IEEE Wireless Communications and Networking Conference (WCNC)\",\"doi\":\"10.1109/WCNC55385.2023.10118908\",\"local_access\":\"VERIFIED\",\"recommendation\":\"AWAITING_CLASSIFICATION\",\"criteria_open\":[\"E7\"],\"gap\":\"Local PDF is arXiv 2305.15858v1 preprint; IEEE conference peer-review policy is verified separately, but publisher full text at IEEE Xplore 10118908 was inaccessible.\",\"checked_unresolved_source\":\"https://ieeexplore.ieee.org/document/10118908\",\"evidence\":[{\"claim\":\"Body describes distributing CNN layers across multiple UAVs in the local arXiv 2305.15858v1 PDF read via built-in PDF viewer\",\"source\":\"restart_2026_11_26/fulltext_retrieval/pdf/R0082.pdf\",\"locator\":\"physical PDF p. 2, Section I\",\"excerpt\":\"Our strategy involves distributing CNN layers across multiple UAVs\"},{\"claim\":\"Official IEEE conference policy requires peer review before publication, distinct from publisher full-text access\",\"source\":\"https://conferences.ieeeauthorcenter.ieee.org/understand-peer-review/\",\"locator\":\"About Conference Peer Review\",\"excerpt\":\"IEEE requires all conference papers go through the peer review process\"},{\"claim\":\"arXiv 2305.15858v1 links to WCNC 2023 DOI 10.1109/WCNC55385.2023.10118908 while IEEE Xplore document 10118908 full text could not be accessed\",\"source\":\"https://arxiv.org/abs/2305.15858\",\"locator\":\"Journal reference and Related DOI\",\"excerpt\":\"IEEE Wireless Communications and Networking Conference (WCNC)\"}]}\n{\"id\":\"R0113\",\"title\":\"A Neuromorphic Spiking Neural Network-Based Continual Learning Framework for Energy-Efficient Edge Intelligence in Autonomous UAV Swarm Navigation\",\"authors\":[\"Singareddy Hemasri\",\"K.S. Raghavendra Reddy\"],\"year\":2026,\"venue\":\"American Journal of AI Cyber Computing Management\",\"doi\":\"DOI_NOT_FOUND\",\"local_access\":\"VERIFIED\",\"recommendation\":\"AWAITING_CLASSIFICATION\",\"criteria_open\":[\"E3\",\"E4\",\"E7\"],\"gap\":\"E3/E4: pp. 7-13 lack concrete distributed inference architecture, dataset, and evaluation definitions. E7: Author Guidelines section 8 and Policies conflict on review wording and article 771 lists an incomplete DOI prefix without article-level review confirmation; no absence of peer review is inferred.\",\"checked_unresolved_source\":\"https://ajaccm.com/journal/index.php/ajaccm/article/view/771\",\"evidence\":[{\"claim\":\"Body describes UAVs exchanging navigation embeddings on p. 7, while pp. 7-13 and Tables 1-4 verified via built-in PDF viewer omit concrete architecture and evaluation definitions\",\"source\":\"restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf\",\"locator\":\"physical PDF p. 7, Methodology\",\"excerpt\":\"Each UAV periodically exchanges compact navigation embeddings, local obstacle information\"},{\"claim\":\"Author Guidelines section 8 states double-blind peer review by independent experts\",\"source\":\"https://ajaccm.com/journal/index.php/ajaccm/author-guidelines\",\"locator\":\"Section 8, Peer Review Process\",\"excerpt\":\"AJACCM follows a double-blind peer review process\"},{\"claim\":\"Policies state editors may confer with reviewers, differing from Author Guidelines section 8, while official article 771 gives only an incomplete DOI prefix\",\"source\":\"https://ajaccm.com/journal/index.php/ajaccm/policies\",\"locator\":\"Editorial Policy\",\"excerpt\":\"The editor may confer with reviewers for an evaluation\"}]}\n{\"id\":\"R0292\",\"title\":\"Continuous Marine Tracking via Autonomous UAV Handoff\",\"authors\":[\"Heegyeong Kim\",\"Alice James\",\"Avishkar Seth\",\"Endrowednes Kuantama\",\"Jane Williamson\",\"Yimeng Feng\",\"Richard Han\"],\"year\":2025,\"venue\":\"MobiSys '25\",\"doi\":\"10.1145/3711875.3737661\",\"local_access\":\"VERIFIED\",\"recommendation\":\"AWAITING_CLASSIFICATION\",\"criteria_open\":[\"E7\"],\"gap\":\"Macquarie repository institutional peer-review classification is distinct from ACM or DroNet workshop review-process confirmation; DroNet 2025 Program Session 3 subpage was inaccessible to browse and the workshop home states no peer-review policy.\",\"checked_unresolved_source\":\"https://sites.google.com/view/dronet2025/program\",\"evidence\":[{\"claim\":\"Body describes inter-UAV tracking handoff from D1 to D2 across pp. 3-5 with Tables 1-3 verified on pp. 4-5 via built-in PDF viewer\",\"source\":\"restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf\",\"locator\":\"physical PDF p. 4, Section 4.1\",\"excerpt\":\"D1 then wirelessly transmits live tracking data to D2\"},{\"claim\":\"Macquarie Research output metadata provides institutional peer-review classification, distinct from ACM or workshop review confirmation\",\"source\":\"https://researchers.mq.edu.au/en/publications/continuous-marine-monitoring-via-autonomous-uav-handoff/\",\"locator\":\"Research output metadata\",\"excerpt\":\"Research output: Chapter in Book/Report/Conference proceeding › Conference proceeding contribution › peer-review\"},{\"claim\":\"Official DroNet 2025 site identifies the workshop co-located with MobiSys 2025, but Program Session 3 subpage was inaccessible and no review policy is stated\",\"source\":\"https://sites.google.com/view/dronet2025/\",\"locator\":\"Header\",\"excerpt\":\"Eleventh Workshop on Micro Aerial Vehicle Networks, Systems, and Applications\"}]}\n{\"complete\":true,\"unresolved_ids\":[\"R0082\",\"R0113\",\"R0292\"],\"workers_used\":false,\"worker_assignments\":{}}"
+        }
+      ]
+    }
+  ]
+}

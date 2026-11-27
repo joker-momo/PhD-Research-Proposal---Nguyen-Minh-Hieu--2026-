@@ -1,0 +1,67 @@
+{
+  "id": "75ad9323-c83b-4789-811c-db233aa69cf2",
+  "contextId": "351798a4-24ea-4531-acbc-33be8e1e9f54",
+  "status": {
+    "state": "TASK_STATE_FAILED",
+    "timestamp": "2026-11-27T13:59:07.173+00:00",
+    "message": {
+      "messageId": "7507b02c-22bc-4b9b-8f0f-11c2a578f2dd",
+      "role": "ROLE_AGENT",
+      "parts": [
+        {
+          "text": "Task deadline exceeded; generation may continue in Gemini; not resent"
+        }
+      ],
+      "taskId": "75ad9323-c83b-4789-811c-db233aa69cf2",
+      "contextId": "351798a4-24ea-4531-acbc-33be8e1e9f54"
+    }
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-27T13:44:05.076+00:00",
+    "updated_at": "2026-11-27T13:59:07.173+00:00",
+    "started_at": "2026-11-27T13:44:05.084+00:00",
+    "completed_at": "2026-11-27T13:59:07.173+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/private/tmp/hk261-source-887.dYAZEL/batch-03",
+      "files": {
+        "HKF-019-01.txt": {
+          "sha256": "e44e5b1d8a09bf2a68534c5265e846fca8ea4b216829a54c0d6dce4bdd3e9e7a",
+          "bytes": 27595
+        },
+        "HKF-043-01.txt": {
+          "sha256": "90d3a6adb87b71e3b5104baf5f9f952309849bcca8d31b3e9dc4b4267be7bd36",
+          "bytes": 71339
+        },
+        "HKF-067-01.txt": {
+          "sha256": "cacbc2a14f5cd25bbb4b5f66a5b6346b95bee29c1165de4bc96567f574a4e907",
+          "bytes": 27937
+        },
+        "HKF-080-01.txt": {
+          "sha256": "1de808ba2fcfd4d579b0bf03112fe85d8e0c8c2b586f8187b0d92bb6f9b7eb07",
+          "bytes": 41545
+        },
+        "HKF-112-01.txt": {
+          "sha256": "a190fb64659339a050e6906a063ec8b0ab3e618bf412da3ff08e5f6a71f4c753",
+          "bytes": 34878
+        },
+        "HKF-118.pdf": {
+          "sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+          "bytes": 769118
+        },
+        "HKF-134-01.txt": {
+          "sha256": "60caa26c78edee26eac53daf4ae6b689d1c6892eff8499b88b9d251937de45a2",
+          "bytes": 61758
+        },
+        "targets.json": {
+          "sha256": "cde61f69d6e26b773a0131b87f66f891647d44416fd4953a149dd4cc85fdba46",
+          "bytes": 17913
+        }
+      },
+      "folder": "/Users/joker/Projects/gemini-app-a2a-bridge/.runtime/tasks/75ad9323-c83b-4789-811c-db233aa69cf2/context-75ad9323-c83b-4789-811c-db233aa69cf2"
+    }
+  }
+}

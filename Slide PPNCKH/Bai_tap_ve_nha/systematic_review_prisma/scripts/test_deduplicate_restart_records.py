@@ -25,6 +25,29 @@ class DeduplicationTest(unittest.TestCase):
         })
         self.assertEqual({x["record_id"] for x in rows}, {x["record_id"] for x in mapping})
 
+    def test_reordered_and_extended_locked_input_preserves_assigned_ids(self):
+        with (PROJECT / "restart_2026_11_26/records_normalized.csv").open() as handle:
+            rows = list(csv.DictReader(handle))
+        with (PROJECT / "restart_2026_11_26/dedup_map.csv").open() as handle:
+            previous = list(csv.DictReader(handle))
+        added = rows[0] | {"record_id": "NEW:1", "title": "New distinct report", "doi": "10.1000/new"}
+        drafts = [added, *reversed(rows)]
+        queue, mapping, _, _ = deduplicate(drafts, previous)
+        self.assertEqual(mapping[:len(previous)], previous)
+        self.assertEqual(queue[-1]["screening_id"], "R0466")
+
+    def test_previous_groups_cannot_be_silently_split_or_merged(self):
+        row = {"title": "Paper", "doi": "10.1000/a", "year": "2025",
+               "abstract": "", "authors": "", "venue": "", "abstract_snippet": "", "url": ""}
+        a, b = [row | {"record_id": key} for key in ("a", "b")]
+        _, grouped, _, _ = deduplicate([a, b])
+        b_changed = b | {"doi": "10.1000/b"}
+        _, distinct, _, _ = deduplicate([a, b_changed])
+        with self.assertRaisesRegex(ValueError, "split"):
+            deduplicate([a, b_changed], grouped)
+        with self.assertRaisesRegex(ValueError, "merge"):
+            deduplicate([a, b], distinct)
+
     def test_distinct_dois_are_never_joined_on_title_alone(self):
         rows = [
             {"record_id": "a", "title": "Paper", "doi": "10.1000/a"},

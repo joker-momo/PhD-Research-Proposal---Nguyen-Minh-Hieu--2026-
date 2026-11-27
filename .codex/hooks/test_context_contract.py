@@ -1,5 +1,7 @@
 """Regression checks for the HK261 low-token onboarding contract."""
 from pathlib import Path
+import subprocess
+import sys
 import unittest
 
 
@@ -8,13 +10,15 @@ PROJECT = ROOT / "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
 MUST_READ = PROJECT / "MUST_READ_AI_AGENT"
 BASELINE_BYTES = 52_423
 MAX_CORE_BYTES = 15_000
+STATE_COMMAND = "python3 .codex/hooks/project_state.py show"
 
 
 class ContextContractTests(unittest.TestCase):
     def test_manifest_uses_tiered_core_not_full_required_order(self):
         manifest = (MUST_READ / "context_manifest.yaml").read_text()
 
-        self.assertIn("core_read_order:", manifest)
+        self.assertRegex(manifest, r'(?m)^core_read_order:\n  - README\.md\ncore_state_command:')
+        self.assertIn(f'core_state_command: "{STATE_COMMAND}"', manifest)
         self.assertIn("task_read_routes:", manifest)
         self.assertNotIn("required_read_order:", manifest)
 
@@ -24,10 +28,14 @@ class ContextContractTests(unittest.TestCase):
             PROJECT / "AI_AGENT_START_HERE.md",
             MUST_READ / "context_manifest.yaml",
             MUST_READ / "README.md",
-            MUST_READ / "current_state.json",
         )
+        rendered = subprocess.run(
+            [sys.executable, *STATE_COMMAND.split()[1:]],
+            cwd=ROOT, check=True, capture_output=True,
+        ).stdout
 
-        current_bytes = sum(path.stat().st_size for path in paths)
+        self.assertIn(b"# HK261 current state", rendered)
+        current_bytes = sum(path.stat().st_size for path in paths) + len(rendered)
 
         self.assertLessEqual(current_bytes, MAX_CORE_BYTES)
         self.assertGreaterEqual(1 - current_bytes / BASELINE_BYTES, 0.60)

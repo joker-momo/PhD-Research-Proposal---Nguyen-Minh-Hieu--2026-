@@ -1,0 +1,446 @@
+{
+  "version": 1,
+  "keys": 887,
+  "reports": 46,
+  "counts": {
+    "appraisal": 460,
+    "outcome": 105,
+    "report_coverage": 46,
+    "technical": 276
+  },
+  "batches": [
+    {
+      "number": 1,
+      "reports": [
+        "HKF-118",
+        "HKF-116",
+        "HKF-032",
+        "HKF-008",
+        "HKF-058",
+        "HKF-024"
+      ],
+      "keys": 112,
+      "message_id": "89b7f7fb-53ce-5240-96b5-b45ecffa5528",
+      "assets": {
+        "HKF-008-01.txt": "4b06eaa80d84c7c948902737a4cd0394d22f2e56b403f11f39dbb5e3f3d42715",
+        "HKF-024-01.txt": "fb642df74ecea6306f76794662805b2e9ed2dab6c2d179337c56b1cabae91938",
+        "HKF-032-01.txt": "69e4d2bc792836982f62fa536ba72a8991a53b4b0202f951c6cf6eb49e95da19",
+        "HKF-058-01.txt": "97e4bb9d7a5e2c8003c5731ec06ce2938c6f9da83751abd62dd776dc55c84f39",
+        "HKF-116-01.txt": "e39b3a4ce25f93df255336ecce2b580a0de7340070b7b20a3b1d16f56be3f1a7",
+        "HKF-118-01.txt": "2207c96381787d7289d1e1769bdca2d9284a0dd93ea9d00033fbeef4d04beebb",
+        "HKF-118.pdf": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+        "targets.json": "14367a138626c3604a2b14312d7dfd98edf19286704c2e4dfad9e8471f4f00f6"
+      }
+    },
+    {
+      "number": 2,
+      "reports": [
+        "HKF-128",
+        "HKF-013",
+        "HKF-049",
+        "HKF-085",
+        "HKF-077",
+        "HKF-121"
+      ],
+      "keys": 111,
+      "message_id": "f8970dba-80e0-573e-b629-8e9c39f3a9c2",
+      "assets": {
+        "HKF-013-01.txt": "5b004b1c2d53a5b8140aad6ef4ce41c899ec9cbaa5954133033849c3aff55a25",
+        "HKF-049-01.txt": "4a444b03fb1bf3d627288c0f598cad05dd4fa907840497a7892697ac4fd3d925",
+        "HKF-049-02.txt": "19f5aab6192f66e27e9b557c7febcaf3853b3ac83a281de3e414d0a8ceaa4116",
+        "HKF-077-01.txt": "d4ae20e718798cede26ed489ce10ef66148fed7ad223250fc0edbcf6de0b1dd5",
+        "HKF-085-01.txt": "9a1af7fea22aaeeb2fcd03299d9135e48b3c6c78d583360ff5d45a3c8945a906",
+        "HKF-118.pdf": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+        "HKF-121-01.txt": "ec0402751c2406ba2e7d8c39be58e7634c12bc77274b69fd4abaa8db8529c017",
+        "HKF-121-02.txt": "eec8fcc927d6fc74e0af3d68ff513d1b87b4b461b7a7b56b91e49874b0567876",
+        "HKF-128-01.txt": "d714a7ef334b4cdd00df046b9a727e97c04eba48a83f5c37e2bd361134929e6b",
+        "HKF-128-02.txt": "9a33b225b06c55c7c7e5be90a4c0e9f79d11c46e5969dc80256a25e146e73f2f",
+        "targets.json": "3944ca9e598c8a0d4bb5f13bbc56bce72552cc52cf157aca3c26511c265977a3"
+      }
+    },
+    {
+      "number": 3,
+      "reports": [
+        "HKF-112",
+        "HKF-067",
+        "HKF-080",
+        "HKF-134",
+        "HKF-043",
+        "HKF-019"
+      ],
+      "keys": 112,
+      "message_id": "8fb94533-28a9-504c-a565-624833d54b15",
+      "assets": {
+        "HKF-019-01.txt": "e44e5b1d8a09bf2a68534c5265e846fca8ea4b216829a54c0d6dce4bdd3e9e7a",
+        "HKF-043-01.txt": "90d3a6adb87b71e3b5104baf5f9f952309849bcca8d31b3e9dc4b4267be7bd36",
+        "HKF-067-01.txt": "cacbc2a14f5cd25bbb4b5f66a5b6346b95bee29c1165de4bc96567f574a4e907",
+        "HKF-080-01.txt": "1de808ba2fcfd4d579b0bf03112fe85d8e0c8c2b586f8187b0d92bb6f9b7eb07",
+        "HKF-112-01.txt": "a190fb64659339a050e6906a063ec8b0ab3e618bf412da3ff08e5f6a71f4c753",
+        "HKF-118.pdf": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+        "HKF-134-01.txt": "60caa26c78edee26eac53daf4ae6b689d1c6892eff8499b88b9d251937de45a2",
+        "targets.json": "cde61f69d6e26b773a0131b87f66f891647d44416fd4953a149dd4cc85fdba46"
+      }
+    },
+    {
+      "number": 4,
+      "reports": [
+        "HKF-088",
+        "HKF-127",
+        "HKF-031",
+        "HKF-130",
+        "HKF-108",
+        "HKF-011"
+      ],
+      "keys": 112,
+      "message_id": "a3ac139a-4077-5ae9-8886-f8872bfcd07c",
+      "assets": {
+        "HKF-011-01.txt": "e478e4185dbe4520c1b969179c199a794611db81c6e5b921924d36dc14c5ab35",
+        "HKF-088-01.txt": "056eff5d2533a24d17422447cb678e808249afbe9b4c5653c4b0ccccfdbd5173",
+        "HKF-108-01.txt": "ad5104790dbbc43369dc7b65b56bb639959eddb067cf2c2048c9949890205429",
+        "HKF-108-02.txt": "bf5d132a4e7acb47dea8a27f475de81ebcd296c7f9c7c49fe87209772dd365b2",
+        "HKF-118.pdf": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+        "HKF-127-01.txt": "93f5465a69c11c2c446296e6c17aa9d27bedd7abf3f7d7608bdd3a84a11f4ba7",
+        "targets.json": "c02779a140bde1f5d14cb795835ba918eb7f3e9fd78f2932fc5a1e227ba4d646"
+      }
+    },
+    {
+      "number": 5,
+      "reports": [
+        "HKF-064",
+        "HKF-022",
+        "HKF-104",
+        "HKF-086",
+        "HKF-100",
+        "HKF-038"
+      ],
+      "keys": 116,
+      "message_id": "c7bf3d45-b0e5-5f12-9557-56325decc8dd",
+      "assets": {
+        "HKF-022-01.txt": "98586a6c8eff71695ce7a383cd3a5dc1521b484cd3594a3406d7e03e6d918d7e",
+        "HKF-038-01.txt": "a208eb215f8c038a0f4efd9db5239f750634c80ec356425df41763b8af6d6fad",
+        "HKF-064-01.txt": "3b43e5c4980e8b7cf60f0c4615020fd9d26e318061446709803fd7501fdd1a5a",
+        "HKF-086-01.txt": "1cb8b5079cdd0dce294855f1b5e72c268deb5c37cbda70356a1fa5a743c8c137",
+        "HKF-086-02.txt": "8ae3e9ff97f1133b0f6371276899b8fade9a20b63de1485f06e4dbc7b470cbd1",
+        "HKF-100-01.txt": "72c10fc2aeaf4bcb23733b6a8321d6f3e4a604aad26573776e3a60169e90c795",
+        "HKF-104-01.txt": "e32390aaaf0bd6d40291fd0b4f32ab18fd1a96b5c6ef159bc96f11601a72f020",
+        "HKF-104-02.txt": "c03b16ac106277da1d87403fa256fe780374b895d00551d4e30fa85e35e7eafe",
+        "HKF-118.pdf": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+        "targets.json": "b4345b2d3852a5484146c87dc37a1cd961b601ec117284788b84bec28aad6088"
+      }
+    },
+    {
+      "number": 6,
+      "reports": [
+        "HKF-115",
+        "HKF-062",
+        "HKF-051",
+        "HKF-110",
+        "HKF-001",
+        "HKF-079"
+      ],
+      "keys": 123,
+      "message_id": "2f8618cc-6c74-5e6a-b11d-4ef4489e0acd",
+      "assets": {
+        "HKF-001-01.txt": "51ebed08bedc5c90826a19d781fbc826620d6abd0d1fab530cb0538a4cd96538",
+        "HKF-001-02.txt": "bd3f51d9ecb1f8996b8c7a2d30ff0852303ea02516d49fbbb05e3d8655b7c6f6",
+        "HKF-051-01.txt": "0ccef1e820842e33b0be8a2a1455adae29efe18c9328bdb3a518f41aa19d2bdf",
+        "HKF-062-01.txt": "12dc373c1a66102101e278a720beb29e9e6457a9b6246b3780f94b6d54524b4d",
+        "HKF-079-01.txt": "f2163c2554413620fe43b2959f61188146ffd2fdee32e399245ef007f693e64c",
+        "HKF-110-01.txt": "77f0cb413a2762e68471fab3d1f320db11d1c67aa41ecf2e4e56d67c34f7ec7a",
+        "HKF-115-01.txt": "cc2ba82cf66267d77fad672513f4ca985994cdf2d49e6efc5de00915d204893c",
+        "HKF-115-IEEE.txt": "51ce3641bec0ece6db33316e7f55b63a1af72450279fd326e48f81d9016763fb",
+        "HKF-118.pdf": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+        "targets.json": "923c616967341ab02fa050c587d671b6443491ddf14e73fdcc93c36c3fdf712b"
+      }
+    },
+    {
+      "number": 7,
+      "reports": [
+        "HKF-044",
+        "HKF-061",
+        "HKF-057",
+        "HKF-060",
+        "HKF-053",
+        "HKF-035"
+      ],
+      "keys": 122,
+      "message_id": "926489d9-c4f7-5c62-af2b-a91113d8f87b",
+      "assets": {
+        "HKF-035-01.txt": "0d5279e4c532cca0639121225631a15371d4a244e509e9195f98b4eebe3f60b1",
+        "HKF-044-01.txt": "4b0deca1319d4706c18eb04ff6f689d24a36cf96357f95bee4986cd5501bf295",
+        "HKF-044-02.txt": "660da9f115565d1dd26e6742ec4c38e395977ac45da22aabc3c29e501b73a0af",
+        "HKF-053-01.txt": "72b64df7868273418607d5516743687689b903883a392596fae292c69b31a063",
+        "HKF-057-01.txt": "4687d532b3ff10cb0e76778aa06085e39112e3d433c736067cb35f3fb7a4b643",
+        "HKF-057-02.txt": "ba583d3b96e9a6454d63e589291ed39ec7b40f5051cf986957534ae244ae1919",
+        "HKF-060-01.txt": "51dc6863ecb2a7ffd6f51eb7c7c99585fe643ec2e76d4dcdceb72ea1174eee91",
+        "HKF-060-02.txt": "f36fc0decaddcf5b8856212c4f496af2040f22f39dbbed5b1c2a5f3bd3f65fc0",
+        "HKF-061-01.txt": "382ceb291cebfb94865b0a89403679f9ff4795b06de925822fab95a4c66fea60",
+        "HKF-061-02.txt": "a917fdc0587c42f5aefac936867c15292e6ca5a330dec7d67d3529cea2e7203d",
+        "HKF-118.pdf": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+        "targets.json": "3f1d9f728fac37cadc8399adf3be12b5a7adb87a74b8e6975597a35d2de31124"
+      }
+    },
+    {
+      "number": 8,
+      "reports": [
+        "HKF-094",
+        "HKF-028",
+        "HKF-029",
+        "HKF-109"
+      ],
+      "keys": 79,
+      "message_id": "0ce3ea93-82c8-5442-b899-166eced286f5",
+      "assets": {
+        "HKF-028-01.txt": "83a3e6d01a546f2a6b62564aab823839ac15c51dab79d7dcb2b44ab4de96d7fb",
+        "HKF-028-02.txt": "8593d3bdf12314194bba4972d704ada4193937be70a1a3f4b83715af7628949e",
+        "HKF-029-01.txt": "f47a5448ed43a6a7bfa61239625c9da01113dcfbe3a72e2003180e8529f24935",
+        "HKF-094-01.txt": "d0ccc0b07004f55d0b47047f98f431938546ce95941f5526787bc9bc69411cb1",
+        "HKF-094-02.txt": "321abfcbbd5c5e106e2d4fd36aa3a08ecc7cc478adadafbeca5a358f22874a16",
+        "HKF-109-01.txt": "474978431a929eadc1df6b182f18e54937464d914f76ee200af4e7f2e5f43add",
+        "HKF-118.pdf": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+        "targets.json": "9a1ced5290f9a330bac843d7e9f1c2bc6b9042940ac4d207207548f530341f50"
+      }
+    }
+  ],
+  "supplemental_pdf": {
+    "packet_id": "HKF-115",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0082_ieee_wcnc_2023.pdf",
+    "sha256": "7a9a00413539e420d7cf412c2cb71e522311744151dc3a4008c08f2b1415a5ad"
+  },
+  "restrictions": {
+    "HKF-031": "Original omitted from Gemini context. Report inaccessible to Gemini.",
+    "HKF-130": "Original omitted from Gemini context. Report inaccessible to Gemini."
+  },
+  "pdfs": {
+    "HKF-001": {
+      "record_id": "R0092",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93"
+    },
+    "HKF-008": {
+      "record_id": "R0006",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf",
+      "sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030"
+    },
+    "HKF-011": {
+      "record_id": "R0068",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0068.pdf",
+      "sha256": "30ab2b2966529939f9d4c04eeed75689126fccfdc2b9b345e3b0d6aaffbb630a"
+    },
+    "HKF-013": {
+      "record_id": "R0015",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf",
+      "sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83"
+    },
+    "HKF-019": {
+      "record_id": "R0054",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0054.pdf",
+      "sha256": "48138e33b7cec08714cea8472199fcb44117893e6fd0c24ab9fa8d308dcc87e5"
+    },
+    "HKF-022": {
+      "record_id": "R0073",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0073.pdf",
+      "sha256": "597ff420ac58a13811f5f13f06faa60803529a1f149875161cd39e80cc9ca312"
+    },
+    "HKF-024": {
+      "record_id": "R0010",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf",
+      "sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8"
+    },
+    "HKF-028": {
+      "record_id": "R0145",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6"
+    },
+    "HKF-029": {
+      "record_id": "R0223",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3"
+    },
+    "HKF-031": {
+      "record_id": "R0062",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0062.pdf",
+      "sha256": "6d0c4eab7261f241261a3e8f3b3898f785e8658acd4a17ca1aa27184d70d349f"
+    },
+    "HKF-032": {
+      "record_id": "R0003",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf",
+      "sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3"
+    },
+    "HKF-035": {
+      "record_id": "R0125",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460"
+    },
+    "HKF-038": {
+      "record_id": "R0080",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+      "sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5"
+    },
+    "HKF-043": {
+      "record_id": "R0048",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0048.pdf",
+      "sha256": "27e027ecd322e4f06af79412bca5c603c304fd38e7cde7de75adefe66f843d98"
+    },
+    "HKF-044": {
+      "record_id": "R0106",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+      "sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f"
+    },
+    "HKF-049": {
+      "record_id": "R0019",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+      "sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1"
+    },
+    "HKF-051": {
+      "record_id": "R0089",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0089.pdf",
+      "sha256": "44e2147c5d37b416a5fd19b690ec44354e1a340ef29459e77ac21e813e8248be"
+    },
+    "HKF-053": {
+      "record_id": "R0121",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0121.pdf",
+      "sha256": "83b93927c7a804b04412f6aa0c7b438817c9f114dbc3d061f08840b77a361ec0"
+    },
+    "HKF-057": {
+      "record_id": "R0110",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38"
+    },
+    "HKF-058": {
+      "record_id": "R0009",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf",
+      "sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf"
+    },
+    "HKF-060": {
+      "record_id": "R0118",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672"
+    },
+    "HKF-061": {
+      "record_id": "R0107",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+      "sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7"
+    },
+    "HKF-062": {
+      "record_id": "R0083",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0083.pdf",
+      "sha256": "f339a0eb83ca064fb88e73360af42a22cb5bd8210534c8755bebf40c8726604e"
+    },
+    "HKF-064": {
+      "record_id": "R0071",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0071.pdf",
+      "sha256": "75526755f4f92c411c109aadcad0e02dd870504649976b77ce7c6f6d0d68f025"
+    },
+    "HKF-067": {
+      "record_id": "R0043",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0043.pdf",
+      "sha256": "a0f21d4599dc515f501dc5c81a30e6c082448068819609151165f2a31a79e19f"
+    },
+    "HKF-077": {
+      "record_id": "R0029",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf",
+      "sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89"
+    },
+    "HKF-079": {
+      "record_id": "R0095",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0095.pdf",
+      "sha256": "a86e926de0d40dddd292784362c655a1eb3f35fb61aed98e02c817410f56adad"
+    },
+    "HKF-080": {
+      "record_id": "R0044",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0044.pdf",
+      "sha256": "764cc894f9711a4b0e6f74ce45c1df93d3d1b6d9ed9c6a3b9534bb68801bc029"
+    },
+    "HKF-085": {
+      "record_id": "R0022",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf",
+      "sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc"
+    },
+    "HKF-086": {
+      "record_id": "R0075",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0075.pdf",
+      "sha256": "18d44887a60aadc52dfdea791615ef8ee43952ae3df0cf92687cb80fef54707f"
+    },
+    "HKF-088": {
+      "record_id": "R0058",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0058.pdf",
+      "sha256": "a995e55cc24eda515eb4066996a648d5777065084f7babbe6760e2691d46dbd3"
+    },
+    "HKF-094": {
+      "record_id": "R0137",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907"
+    },
+    "HKF-100": {
+      "record_id": "R0077",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+      "sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f"
+    },
+    "HKF-104": {
+      "record_id": "R0074",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0074.pdf",
+      "sha256": "f9dc09402cc09d3e426cc693458070cee2e480acab8f538da24ecbaa3c93d151"
+    },
+    "HKF-108": {
+      "record_id": "R0064",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0064.pdf",
+      "sha256": "6cfc6cd0d7d4d924833f9add0b3d56334dcacebe8941705729178bdaf765d52f"
+    },
+    "HKF-109": {
+      "record_id": "R0292",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee"
+    },
+    "HKF-110": {
+      "record_id": "R0090",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+      "sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c"
+    },
+    "HKF-112": {
+      "record_id": "R0038",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0038.pdf",
+      "sha256": "1b94aec23aab27479644c382566260bfe504d11c65c04076f6e980064a571c59"
+    },
+    "HKF-115": {
+      "record_id": "R0082",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0082.pdf",
+      "sha256": "f3e0dd1ffad3178604921574f7b9ef2fdad34167cbbb792f7e9531ca28f8a775"
+    },
+    "HKF-116": {
+      "record_id": "R0002",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf",
+      "sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f"
+    },
+    "HKF-118": {
+      "record_id": "R0001",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf",
+      "sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0"
+    },
+    "HKF-121": {
+      "record_id": "R0036",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0036.pdf",
+      "sha256": "f14e34f86c864e1283d2d34a8abc06f7adbc9f0a92fd26582be06f5116af5631"
+    },
+    "HKF-127": {
+      "record_id": "R0059",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0059.pdf",
+      "sha256": "9e8c96dbe6c3717efd91c23f02c3c8fcb10b8aa034ab7be150d9da74b85c0957"
+    },
+    "HKF-128": {
+      "record_id": "R0014",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0014.pdf",
+      "sha256": "798f36a8717c4efc667a308aeee22236b895dad4faaafbde979e2610fde72f44"
+    },
+    "HKF-130": {
+      "record_id": "R0063",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0063.pdf",
+      "sha256": "85df65849c3d01c7532c20c8d19d978455becf0590c1f91da79d8a4ee0c100b9"
+    },
+    "HKF-134": {
+      "record_id": "R0045",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0045.pdf",
+      "sha256": "9b5e95e1b30fa30510772f0d7fd0d4524b634a4d0d7fca27f49b105dbacacc52"
+    }
+  }
+}

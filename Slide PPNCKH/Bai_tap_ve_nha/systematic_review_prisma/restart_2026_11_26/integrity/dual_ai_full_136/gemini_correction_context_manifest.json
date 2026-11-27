@@ -1,0 +1,566 @@
+{
+  "record_ids": [
+    "HKF-001",
+    "HKF-003",
+    "HKF-004",
+    "HKF-005",
+    "HKF-006",
+    "HKF-007",
+    "HKF-008",
+    "HKF-009",
+    "HKF-010",
+    "HKF-011",
+    "HKF-012",
+    "HKF-013",
+    "HKF-014",
+    "HKF-015",
+    "HKF-016",
+    "HKF-017",
+    "HKF-018",
+    "HKF-019",
+    "HKF-025",
+    "HKF-026",
+    "HKF-027",
+    "HKF-028",
+    "HKF-029",
+    "HKF-030",
+    "HKF-031",
+    "HKF-032",
+    "HKF-033",
+    "HKF-034",
+    "HKF-043",
+    "HKF-044",
+    "HKF-045",
+    "HKF-046",
+    "HKF-047",
+    "HKF-048",
+    "HKF-049",
+    "HKF-050",
+    "HKF-051",
+    "HKF-057",
+    "HKF-058",
+    "HKF-059",
+    "HKF-060",
+    "HKF-061",
+    "HKF-062",
+    "HKF-063",
+    "HKF-064",
+    "HKF-065",
+    "HKF-066",
+    "HKF-067",
+    "HKF-068",
+    "HKF-069",
+    "HKF-070",
+    "HKF-073",
+    "HKF-074",
+    "HKF-075",
+    "HKF-076",
+    "HKF-077",
+    "HKF-078",
+    "HKF-079",
+    "HKF-080",
+    "HKF-081",
+    "HKF-082",
+    "HKF-083",
+    "HKF-084",
+    "HKF-085",
+    "HKF-086",
+    "HKF-092",
+    "HKF-094",
+    "HKF-095",
+    "HKF-096",
+    "HKF-097",
+    "HKF-098",
+    "HKF-099",
+    "HKF-100",
+    "HKF-101",
+    "HKF-102",
+    "HKF-107",
+    "HKF-108",
+    "HKF-109",
+    "HKF-110",
+    "HKF-111",
+    "HKF-112",
+    "HKF-113",
+    "HKF-114",
+    "HKF-115",
+    "HKF-116",
+    "HKF-117",
+    "HKF-118",
+    "HKF-119",
+    "HKF-124",
+    "HKF-125",
+    "HKF-126",
+    "HKF-127",
+    "HKF-128",
+    "HKF-129",
+    "HKF-130",
+    "HKF-131",
+    "HKF-132",
+    "HKF-133",
+    "HKF-134",
+    "HKF-135",
+    "HKF-136"
+  ],
+  "file_index": {
+    "HKF-001": [
+      "correction-01.txt"
+    ],
+    "HKF-003": [
+      "correction-01.txt"
+    ],
+    "HKF-004": [
+      "correction-02.txt"
+    ],
+    "HKF-005": [
+      "correction-02.txt"
+    ],
+    "HKF-006": [
+      "correction-02.txt"
+    ],
+    "HKF-007": [
+      "correction-03.txt"
+    ],
+    "HKF-008": [
+      "correction-03.txt"
+    ],
+    "HKF-009": [
+      "correction-03.txt"
+    ],
+    "HKF-010": [
+      "correction-04.txt"
+    ],
+    "HKF-011": [
+      "correction-04.txt"
+    ],
+    "HKF-012": [
+      "correction-05.txt"
+    ],
+    "HKF-013": [
+      "correction-05.txt"
+    ],
+    "HKF-014": [
+      "correction-05.txt"
+    ],
+    "HKF-015": [
+      "correction-06.txt"
+    ],
+    "HKF-016": [
+      "correction-06.txt"
+    ],
+    "HKF-017": [
+      "correction-07.txt"
+    ],
+    "HKF-018": [
+      "correction-07.txt"
+    ],
+    "HKF-019": [
+      "correction-07.txt"
+    ],
+    "HKF-025": [
+      "correction-07.txt"
+    ],
+    "HKF-026": [
+      "correction-07.txt"
+    ],
+    "HKF-027": [
+      "correction-08.txt"
+    ],
+    "HKF-028": [
+      "correction-08.txt"
+    ],
+    "HKF-029": [
+      "correction-08.txt"
+    ],
+    "HKF-030": [
+      "correction-08.txt"
+    ],
+    "HKF-031": [
+      "correction-09.txt"
+    ],
+    "HKF-032": [
+      "correction-09.txt"
+    ],
+    "HKF-033": [
+      "correction-10.txt"
+    ],
+    "HKF-034": [
+      "correction-10.txt"
+    ],
+    "HKF-043": [
+      "correction-11.txt"
+    ],
+    "HKF-044": [
+      "correction-11.txt"
+    ],
+    "HKF-045": [
+      "correction-12.txt"
+    ],
+    "HKF-046": [
+      "correction-12.txt"
+    ],
+    "HKF-047": [
+      "correction-13.txt"
+    ],
+    "HKF-048": [
+      "correction-13.txt"
+    ],
+    "HKF-049": [
+      "correction-13.txt"
+    ],
+    "HKF-050": [
+      "correction-14.txt"
+    ],
+    "HKF-051": [
+      "correction-14.txt"
+    ],
+    "HKF-057": [
+      "correction-14.txt"
+    ],
+    "HKF-058": [
+      "correction-15.txt"
+    ],
+    "HKF-059": [
+      "correction-15.txt",
+      "correction-16.txt",
+      "correction-17.txt"
+    ],
+    "HKF-060": [
+      "correction-17.txt"
+    ],
+    "HKF-061": [
+      "correction-17.txt"
+    ],
+    "HKF-062": [
+      "correction-18.txt"
+    ],
+    "HKF-063": [
+      "correction-18.txt"
+    ],
+    "HKF-064": [
+      "correction-18.txt"
+    ],
+    "HKF-065": [
+      "correction-18.txt"
+    ],
+    "HKF-066": [
+      "correction-19.txt"
+    ],
+    "HKF-067": [
+      "correction-19.txt"
+    ],
+    "HKF-068": [
+      "correction-19.txt"
+    ],
+    "HKF-069": [
+      "correction-19.txt"
+    ],
+    "HKF-070": [
+      "correction-20.txt"
+    ],
+    "HKF-073": [
+      "correction-20.txt"
+    ],
+    "HKF-074": [
+      "correction-20.txt"
+    ],
+    "HKF-075": [
+      "correction-21.txt"
+    ],
+    "HKF-076": [
+      "correction-21.txt"
+    ],
+    "HKF-077": [
+      "correction-21.txt"
+    ],
+    "HKF-078": [
+      "correction-22.txt"
+    ],
+    "HKF-079": [
+      "correction-22.txt"
+    ],
+    "HKF-080": [
+      "correction-22.txt"
+    ],
+    "HKF-081": [
+      "correction-23.txt"
+    ],
+    "HKF-082": [
+      "correction-23.txt"
+    ],
+    "HKF-083": [
+      "correction-23.txt"
+    ],
+    "HKF-084": [
+      "correction-24.txt"
+    ],
+    "HKF-085": [
+      "correction-24.txt"
+    ],
+    "HKF-086": [
+      "correction-24.txt"
+    ],
+    "HKF-092": [
+      "correction-24.txt"
+    ],
+    "HKF-094": [
+      "correction-25.txt"
+    ],
+    "HKF-095": [
+      "correction-25.txt"
+    ],
+    "HKF-096": [
+      "correction-25.txt"
+    ],
+    "HKF-097": [
+      "correction-26.txt"
+    ],
+    "HKF-098": [
+      "correction-26.txt"
+    ],
+    "HKF-099": [
+      "correction-26.txt"
+    ],
+    "HKF-100": [
+      "correction-26.txt"
+    ],
+    "HKF-101": [
+      "correction-27.txt"
+    ],
+    "HKF-102": [
+      "correction-27.txt"
+    ],
+    "HKF-107": [
+      "correction-27.txt"
+    ],
+    "HKF-108": [
+      "correction-28.txt"
+    ],
+    "HKF-109": [
+      "correction-28.txt"
+    ],
+    "HKF-110": [
+      "correction-28.txt"
+    ],
+    "HKF-111": [
+      "correction-29.txt"
+    ],
+    "HKF-112": [
+      "correction-29.txt"
+    ],
+    "HKF-113": [
+      "correction-29.txt"
+    ],
+    "HKF-114": [
+      "correction-29.txt"
+    ],
+    "HKF-115": [
+      "correction-29.txt"
+    ],
+    "HKF-116": [
+      "correction-30.txt"
+    ],
+    "HKF-117": [
+      "correction-30.txt"
+    ],
+    "HKF-118": [
+      "correction-30.txt"
+    ],
+    "HKF-119": [
+      "correction-30.txt"
+    ],
+    "HKF-124": [
+      "correction-30.txt"
+    ],
+    "HKF-125": [
+      "correction-31.txt"
+    ],
+    "HKF-126": [
+      "correction-31.txt"
+    ],
+    "HKF-127": [
+      "correction-31.txt"
+    ],
+    "HKF-128": [
+      "correction-32.txt"
+    ],
+    "HKF-129": [
+      "correction-32.txt"
+    ],
+    "HKF-130": [
+      "correction-33.txt"
+    ],
+    "HKF-131": [
+      "correction-34.txt"
+    ],
+    "HKF-132": [
+      "correction-34.txt"
+    ],
+    "HKF-133": [
+      "correction-34.txt"
+    ],
+    "HKF-134": [
+      "correction-35.txt"
+    ],
+    "HKF-135": [
+      "correction-35.txt"
+    ],
+    "HKF-136": [
+      "correction-35.txt"
+    ]
+  },
+  "files": {
+    "HKF-093.pdf": {
+      "sha256": "a43032f0224778112719ca5d350ce2415799095c34bfbf4652616f64b62010e4",
+      "bytes": 173474
+    },
+    "correction-01.txt": {
+      "sha256": "61093d66187184588816abfb92cc6a858f4f8decf833b66def36b50de1a0ac80",
+      "bytes": 185001
+    },
+    "correction-02.txt": {
+      "sha256": "049dfad2ebcdec5a8228430e0d210db8c5e16e470329f897366ed716f8d5fab9",
+      "bytes": 160017
+    },
+    "correction-03.txt": {
+      "sha256": "51094d2fa64c9e326f3b532e3f705fcc3afec42bf1db3d8c7c9c2eebd80e1e8f",
+      "bytes": 160369
+    },
+    "correction-04.txt": {
+      "sha256": "6fb72d576153d99c0fd9062acb95a4db59ca1e13e70916d77c33a65c054dba6e",
+      "bytes": 177596
+    },
+    "correction-05.txt": {
+      "sha256": "5122f0fbc2e103a799d1f59de464c0fde87573fea00a8f39ce6f245b0c8abf6c",
+      "bytes": 117508
+    },
+    "correction-06.txt": {
+      "sha256": "ee215b51441dc7531e2641900f962753ca99780cd24456734b367002953d5e0a",
+      "bytes": 169783
+    },
+    "correction-07.txt": {
+      "sha256": "79635c4e0544bb64fa2b85eafd285746b2a6c5a92f4f85daae9b58cff634e72d",
+      "bytes": 169970
+    },
+    "correction-08.txt": {
+      "sha256": "5e5003a2d196c6b55c816dba7673cfb0ff5edb4dc30f5aaa869323fec0562cd4",
+      "bytes": 180223
+    },
+    "correction-09.txt": {
+      "sha256": "bf99e4df1f02e8a01090629f9abc51d4aeda28cd84ae830a1bc9fe8dbfcfe7f4",
+      "bytes": 69020
+    },
+    "correction-10.txt": {
+      "sha256": "22d371f9540dcf6a49d7d57aa3a416b21574611c0576f3904039f027e149316b",
+      "bytes": 175438
+    },
+    "correction-11.txt": {
+      "sha256": "8c875061d8394814ebba376d18ad361c298d747802722447007e6f1ded52932f",
+      "bytes": 125903
+    },
+    "correction-12.txt": {
+      "sha256": "ad0d5d8790422fd9835a26584cc61f980b507626b75b9d98aa0cf116f996097b",
+      "bytes": 169932
+    },
+    "correction-13.txt": {
+      "sha256": "a15838773a3f7fbdd0cec189f06ff6601e01e63f179856bbd41a618aee70dd42",
+      "bytes": 190810
+    },
+    "correction-14.txt": {
+      "sha256": "1d222da24edd1541808f258da1a4809028a859f810fdc1963ac5f0f054a72bbb",
+      "bytes": 177878
+    },
+    "correction-15.txt": {
+      "sha256": "37c324b441c90ddc3c8750f3f6dae18f673b0517e5ab3d515c740567a09941c1",
+      "bytes": 199935
+    },
+    "correction-16.txt": {
+      "sha256": "923a95f1c8d9586ccbba69cb3e56ca704aae4eb4bb4c58cdbe7c119e3c3cb2ce",
+      "bytes": 199535
+    },
+    "correction-17.txt": {
+      "sha256": "4e91a3e7cf6d9f011fd1fd764d00d1436d46b64392d206e513df818cb9fc04a0",
+      "bytes": 173991
+    },
+    "correction-18.txt": {
+      "sha256": "82f22be6af3d1f4a7e09cf91e6f5ebb684003e5077fd95f8ec79555e88f26054",
+      "bytes": 183966
+    },
+    "correction-19.txt": {
+      "sha256": "2e4304a0e1022568efcca6bac5bccacefbbcc9d3f74dfd0423383edf718adba2",
+      "bytes": 178681
+    },
+    "correction-20.txt": {
+      "sha256": "9b78f87ca4ecee328da2fbc54d39b62249044b7ec43b1b39ac678c8f96d7c25e",
+      "bytes": 146654
+    },
+    "correction-21.txt": {
+      "sha256": "7a48385a9905727884922c833b6f6ee6689172f42a022e6cc09ba0e5ebff8f64",
+      "bytes": 138016
+    },
+    "correction-22.txt": {
+      "sha256": "4d5436ede60610fffc5df70b2b4164c5f120b19a40117b7636e18a8afdf5a824",
+      "bytes": 171352
+    },
+    "correction-23.txt": {
+      "sha256": "71c9c53166e3d2a5086ff59b1bf271067d06344e428671b4f471d5c9b1eef074",
+      "bytes": 174469
+    },
+    "correction-24.txt": {
+      "sha256": "54e185438cdc08d2bd3c32ad1965bc422bc45b518b6c3ef3ba4962bb46777ca5",
+      "bytes": 182874
+    },
+    "correction-25.txt": {
+      "sha256": "abef163ceed82eb40887d1a8d1306e2209bf98a8eeabbae8a7f0ff267b9afafb",
+      "bytes": 195083
+    },
+    "correction-26.txt": {
+      "sha256": "88647b1a9dde1f9553f99c4ec6c79212370c0000a9320b41dea931e566a6fdcf",
+      "bytes": 176885
+    },
+    "correction-27.txt": {
+      "sha256": "d59a09f3d27f0155b415bda152bad0fd45772ca3de67345fd5dca2dfd4fe44bc",
+      "bytes": 146011
+    },
+    "correction-28.txt": {
+      "sha256": "e979e7c268aeb14ed609ce3b1af318aa97e5e1e2e7427c80851021d330ea0966",
+      "bytes": 132707
+    },
+    "correction-29.txt": {
+      "sha256": "0a0f8adda26bb8b87b76fa7af065dab0ade8714399ad88e089b3a53fc245e2ec",
+      "bytes": 174091
+    },
+    "correction-30.txt": {
+      "sha256": "063aa798dd19ba7eef045a8ae93edc311437375d2163b48492e1f8120a5f0624",
+      "bytes": 194370
+    },
+    "correction-31.txt": {
+      "sha256": "885b61743657aa18ad535747193f470f6492ad7e6a848a3ec31edbeeb542c8f4",
+      "bytes": 199217
+    },
+    "correction-32.txt": {
+      "sha256": "14d8d8353ca68b60dd8dbf51deafc60aa4e4a5947fd8920d614c7756b76eea69",
+      "bytes": 127653
+    },
+    "correction-33.txt": {
+      "sha256": "57ac6074f5733f4c2761dd09a6f62d228657e2238dc836ab77a766cfcd4dd9bd",
+      "bytes": 91043
+    },
+    "correction-34.txt": {
+      "sha256": "60b31c8352b0aa47777a4576d330c76d7c558ecc503ce60e1652e9aca03bf42d",
+      "bytes": 181755
+    },
+    "correction-35.txt": {
+      "sha256": "47223700daef2c24b986d65feff12f53165c20ea7694bb63828608aabb7b59f2",
+      "bytes": 102409
+    },
+    "criteria.txt": {
+      "sha256": "62186168e901e14eb811168b529ab4310281e8e7354f16183d7663f102d1f055",
+      "bytes": 4091
+    },
+    "index.json": {
+      "sha256": "62b5c1bcabf472e76b15a985862d6238d4f1522720bc987ebf6fe94758754bb2",
+      "bytes": 4497
+    }
+  }
+}

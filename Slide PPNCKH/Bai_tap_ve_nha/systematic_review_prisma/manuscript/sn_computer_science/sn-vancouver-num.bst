@@ -1267,7 +1267,15 @@ FUNCTION {format.vol.num.pages}
       "(" swap$ * ")" *
     }
   if$ *
-  format.journal.pages
+  eid empty$
+    'format.journal.pages
+    { duplicate$ empty$
+        { pop$ "art. no. " }
+        { ":art. no. " * }
+      if$
+      eid "eid" bibinfo.check *
+    }
+  if$
 }
 
 FUNCTION {format.chapter.pages}
@@ -1841,6 +1849,7 @@ FUNCTION {inproceedings}
   format.pages "pages" output.check
   new.block
   format.note output
+  format.ddoi output
   output.web.refs  % urlbst
   fin.entry
 }

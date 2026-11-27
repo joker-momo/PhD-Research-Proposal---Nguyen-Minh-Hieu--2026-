@@ -1,0 +1,127 @@
+{
+  "ai_to_final_human_decisions": {
+    "changed_among_author_processed": {
+      "changed": 4,
+      "total": 10
+    },
+    "changed_reports": 4,
+    "compared_reports": 10,
+    "scope": "Compared reports have documented final decisions. Author-processed reports include final decisions and confirmed deferrals. Both counts describe the documented subset.",
+    "transitions": {
+      "AWAITING_CLASSIFICATION -> EXCLUDE": [
+        "R0081",
+        "R0132"
+      ],
+      "AWAITING_CLASSIFICATION -> INCLUDE": [
+        "R0082"
+      ],
+      "INCLUDE -> EXCLUDE": [
+        "R0113"
+      ]
+    }
+  },
+  "paired_human_agreement": {
+    "cohens_kappa": null,
+    "confidence_interval_95": null,
+    "expected_agreement": null,
+    "matched": null,
+    "matrix": {
+      "AWAITING_CLASSIFICATION": {
+        "AWAITING_CLASSIFICATION": 0,
+        "EXCLUDE": 0,
+        "INCLUDE": 0
+      },
+      "EXCLUDE": {
+        "AWAITING_CLASSIFICATION": 0,
+        "EXCLUDE": 0,
+        "INCLUDE": 0
+      },
+      "INCLUDE": {
+        "AWAITING_CLASSIFICATION": 0,
+        "EXCLUDE": 0,
+        "INCLUDE": 0
+      }
+    },
+    "paired_reports": 0,
+    "percent_agreement": null,
+    "status": "NO_PAIRED_DECISIONS"
+  },
+  "prisma": {
+    "arithmetic_differences": {
+      "assessed_minus_excluded_pending_and_included": 0,
+      "identified_minus_duplicates_and_screened": 0,
+      "screened_minus_excluded_and_sought": 0,
+      "sought_minus_unretrieved_and_assessed": 0
+    },
+    "awaiting_classification_codes": {},
+    "counts": {
+      "duplicate_records_removed": 228,
+      "included_reports": 46,
+      "included_studies": 46,
+      "raw_records": 693,
+      "records_excluded": 328,
+      "records_screened": 465,
+      "reports_assessed": 136,
+      "reports_awaiting_classification": 0,
+      "reports_excluded": 90,
+      "reports_not_retrieved": 1,
+      "reports_sought": 137
+    }
+  },
+  "s2": {
+    "author_confirmed_deferrals": {},
+    "author_processed_reports": 10,
+    "corpus_author_endorsement": {
+      "date": "2026-11-28",
+      "excluded_reports": 90,
+      "included_reports": 46,
+      "register": "manuscript/sn_computer_science/supplement_s2_eligibility.csv"
+    },
+    "final_human_decisions": {
+      "R0001": {
+        "decision": "INCLUDE",
+        "reason": ""
+      },
+      "R0081": {
+        "decision": "EXCLUDE",
+        "reason": "E7"
+      },
+      "R0082": {
+        "decision": "INCLUDE",
+        "reason": ""
+      },
+      "R0113": {
+        "decision": "EXCLUDE",
+        "reason": "E3"
+      },
+      "R0121": {
+        "decision": "INCLUDE",
+        "reason": ""
+      },
+      "R0125": {
+        "decision": "INCLUDE",
+        "reason": ""
+      },
+      "R0132": {
+        "decision": "EXCLUDE",
+        "reason": "E3"
+      },
+      "R0145": {
+        "decision": "INCLUDE",
+        "reason": ""
+      },
+      "R0223": {
+        "decision": "INCLUDE",
+        "reason": ""
+      },
+      "R0292": {
+        "decision": "INCLUDE",
+        "reason": ""
+      }
+    },
+    "reports_in_log": 136,
+    "reports_without_separate_final_author_entry": 126,
+    "reviewer1_decisions": 0,
+    "reviewer2_decisions": 0
+  }
+}

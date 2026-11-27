@@ -7,6 +7,8 @@ from pathlib import Path
 
 
 PROJECT = Path(__file__).resolve().parents[1]
+CONTEXT_MANIFEST = PROJECT / "MUST_READ_AI_AGENT/context_manifest.yaml"
+LOCATOR_MAPPING = PROJECT / "migration/historical_locator_mapping.tsv"
 HISTORICAL_PATH = re.compile(
     r"/Users/joker/\.codex/worktrees/[^\n]*?/Slide PPNCKH/"
     r"Bai_tap_ve_nha/systematic_review_prisma/[^\s,)]+"
@@ -15,8 +17,7 @@ HISTORICAL_PATH = re.compile(
 
 class MigrationIntegrityTests(unittest.TestCase):
     def test_historical_locator_mapping_covers_immutable_accepted_outputs(self):
-        mapping_path = PROJECT / "migration/historical_locator_mapping.tsv"
-        with mapping_path.open() as handle:
+        with LOCATOR_MAPPING.open(encoding="utf-8", newline="") as handle:
             rows = list(csv.DictReader(handle, delimiter="\t"))
         observed = []
         for artifact in (
@@ -45,20 +46,30 @@ class MigrationIntegrityTests(unittest.TestCase):
         ]
         self.assertEqual(len(observed), 8)
         self.assertEqual(mapped, observed)
+        project_marker = f"/{PROJECT.name}/"
         for row in rows:
-            canonical = Path(row["canonical_path"])
-            self.assertTrue(canonical.is_file(), canonical)
+            recorded_path = Path(row["canonical_path"])
+            self.assertTrue(recorded_path.is_absolute(), recorded_path)
+            _, separator, locator = recorded_path.as_posix().partition(project_marker)
+            self.assertTrue(separator and locator, recorded_path)
+            local_path = (PROJECT / locator).resolve()
+            self.assertTrue(local_path.is_relative_to(PROJECT), local_path)
+            # Legacy PDFs and raw corrections may exist only in the recorded archive.
+            source = local_path if local_path.is_file() else recorded_path
+            self.assertTrue(source.is_file(), source)
             self.assertEqual(
-                hashlib.sha256(canonical.read_bytes()).hexdigest(),
+                hashlib.sha256(source.read_bytes()).hexdigest(),
                 row["sha256"],
             )
 
     def test_context_manifest_registers_historical_locator_mapping(self):
-        context = (PROJECT / "MUST_READ_AI_AGENT/context_manifest.yaml").read_text()
-        self.assertIn(
-            'historical_locator_mapping: "../migration/historical_locator_mapping.tsv"',
-            context,
-        )
+        context = CONTEXT_MANIFEST.read_text(encoding="utf-8")
+        matches = re.findall(r'(?m)^  historical_locator_mapping: "([^"]+)"$', context)
+        self.assertEqual(len(matches), 1)
+        locator = Path(matches[0])
+        self.assertFalse(locator.is_absolute())
+        self.assertEqual((CONTEXT_MANIFEST.parent / locator).resolve(), LOCATOR_MAPPING)
+        self.assertTrue(LOCATOR_MAPPING.is_file())
 
 
 if __name__ == "__main__":

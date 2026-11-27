@@ -16,8 +16,12 @@ entry-point and manifest while the after figure includes both, so the reported
 reduction is conservative. Task-specific policy files are loaded only by the
 matching manifest route.
 
-Regression test: `.codex/hooks/test_context_contract.py` enforces a 15,000-byte
-ceiling and at least 60% reduction against the recorded baseline.
+The default onboarding now uses the validated output of
+`python3 .codex/hooks/project_state.py show` as its state summary. The full
+`current_state.json` remains canonical and available for task-specific details.
+The regression test counts `AGENTS.md`, the entry point, manifest, README and
+the UTF-8 bytes of the actual command output. It enforces the 15,000-byte ceiling
+and at least 60% reduction against the recorded baseline.
 
 ## Per-prompt hook output and latency
 

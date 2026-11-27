@@ -1,0 +1,356 @@
+\documentclass[pdflatex,sn-vancouver-num]{sn-jnl}
+\usepackage{amsmath,amssymb,graphicx,booktabs,array,longtable,tikz,placeins}
+\usetikzlibrary{arrows.meta}\newcommand{\surveycheck}{\tikz[x=.8ex,y=.8ex]{\draw[line width=.44pt] (0,.49)--(.35,.13)--(1.13,.99);}}\newcommand{\surveyadj}{\tikz[x=.8ex,y=.8ex]{\draw[line width=.44pt] (0,0)--(1.1,0)--(.55,.99)--cycle;}}
+\geometry{textheight=216mm}
+\setlength{\bibsep}{4pt}
+\newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\groupcite}[2]{\csname grp#1#2\endcsname}
+\newcommand{\groupn}[2]{\csname num#1#2\endcsname}
+\input{technical_macros}
+\input{technical_appraisal}
+\raggedbottom
+\raggedbottom\providecommand{\doi}[1]{}\renewcommand{\doi}[1]{\mbox{\href{https://doi.org/#1}{DOI: \nolinkurl{#1}}}}
+\begin{document}
+\title[Collaborative Inference in UAV Swarms]{Collaborative Neural Inference in Multi-Drone Systems: A Systematic Technical Survey}
+\abstract{Splitting neural inference across unmanned aerial vehicles changes where computation runs, which intermediate data cross wireless links, and how much work can be recovered when a device leaves. This survey examines these dependencies across IEEE Xplore, Scopus, ACM Digital Library, and OpenAlex for peer-reviewed publications from January 2021 to 26 November 2026. The PRISMA 2020 flow identified 693 records and sought 137 reports. We assessed 136 full-text reports, included 46 studies, and excluded 90 reports. Our synthesis and engineering appraisal drew on direct reading of the full texts. Supplement~S2 documents the final eligibility decisions. We classify each study by execution topology, partition or dispatch unit, optimization method, evaluation modality, and disruption evidence. A shared formulation relates those choices to latency, energy, inference accuracy, and recovery. A uniform post-protocol reread retained 97 numerical entries from 35 studies, including 51 within-study entries matched on reported conditions and outcome denominators. Controlled disconnection, modeled node unavailability, and planned handoff represent different kinds of continuity evidence. Across ten engineering appraisal domains, 42 of 46 studies were rated partial for configuration reproducibility, 40 for baseline comparability, and 43 for wireless and mobility realism. These results motivate an evaluation protocol that separates wireless conditions, compute budgets, and fault-recovery phases. The lead reviewer endorsed the final selection, changed four preliminary dispositions among ten separately documented decisions, and resolved 12 priority items in extraction, technical coding, and appraisal. The full-text register contains no paired, independent human decisions from before reconciliation, so we could not estimate reviewer agreement. We documented the protocol locally without public registration.}
+\keywords{Collaborative inference, unmanned aerial vehicle swarms, edge computing, model partitioning, service continuity, systematic review}
+\maketitle
+\relax
+
+\section{Introduction}\label{sec:intro}
+\subsection{Motivation and technical coupling}
+A cooperative airborne inference system can assign some computation to other devices. A cut selects both the operators left on the source and the intermediate data sent over the link. At fixed precision and encoding, an activation with fewer elements has a smaller payload. Whether a cut reduces latency depends on the computation reassigned and the effective link rate~\cite{R0001,R0010,R0092,R0121}.
+
+A departing worker can interrupt a stage, remove its intermediate state, or make a required model expert unavailable when no reachable replica exists. If migration or recomputation lies on the critical path, a placement that fits memory can still miss the original deadline. Planned reassignment, path fallback, and abrupt worker unavailability are separate test conditions~\cite{R0002,R0038,R0062,R0110,R0118,R0292}.
+
+Civil infrastructure inspection and precision agriculture are examples of civilian UAV edge-AI applications~\cite{survey_uav_edge_ai}. Consider a gap in a tracking stream and a delay in a batch of classifications. These examples motivate reporting per-request delay, sustained throughput, deadline satisfaction across arrivals, or sequence continuity, depending on the workload.
+
+\subsection{Position relative to existing surveys}
+Table~\ref{tab:related} contrasts seven relevant secondary sources. McEnroe et al. cover the interaction of edge computing and AI across UAV functions and applications~\cite{survey_uav_edge_ai}. Xia et al. emphasize management of compute and communication resources, while Ning et al. organize the literature around mobile edge computing and learning in the Internet of UAVs~\cite{survey_uav_resource,survey_iouav_mec_ml}. Cao et al. examine networking and collaboration at swarm scale~\cite{survey_uav_swarm_ci}. These works provide context for the availability of resources, topology decisions, and the operational constraints of mobile platforms.
+
+Ren et al. review collaborative DNN inference at the edge, and Wang et al. survey collaboration across end devices, edge infrastructure, and cloud services over the deep-learning lifecycle~\cite{survey_collab_dnn,survey_end_edge_cloud}. Hao et al. classify DNN partitioning strategies and survey modeling and experimental tools~\cite{survey_hao2026}. The selected works establish the neighboring topics. This review adds a study-level map relating multi-UAV partition and dispatch, flight and communication decisions, and evidence of continuity when the execution path changes.
+
+\begin{table}[htbp]
+\caption{Documented coverage of selected related surveys across seven dimensions.}\label{tab:related}
+\centering\small\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.18}
+\begin{tabular}{@{}lccccccc@{}}
+\toprule
+Survey & S & U & P & J & L & F & A \\
+\midrule
+McEnroe et al.~\cite{survey_uav_edge_ai} & ? & \surveyadj & ? & ? & ? & ? & ? \\
+Ren et al.~\cite{survey_collab_dnn} & ? & ? & \surveycheck & ? & ? & \surveycheck & ? \\
+Xia et al.~\cite{survey_uav_resource} & ? & \surveyadj & ? & \surveyadj & ? & ? & ? \\
+Ning et al.~\cite{survey_iouav_mec_ml} & ? & \surveyadj & ? & \surveyadj & ? & ? & ? \\
+Cao et al.~\cite{survey_uav_swarm_ci} & ? & \surveycheck & ? & \surveyadj & ? & ? & ? \\
+Wang et al.~\cite{survey_end_edge_cloud} & ? & ? & \surveycheck & ? & ? & ? & ? \\
+Hao et al.~\cite{survey_hao2026} & ? & ? & \surveycheck & ? & ? & ? & ? \\
+This review & \surveycheck & \surveycheck & \surveycheck & \surveyadj & \surveyadj & \surveycheck & \surveycheck \\
+\bottomrule
+\end{tabular}
+\par\smallskip\raggedright S, systematic review methods; U, multi-UAV or swarm systems; P, neural inference partitioning; J, joint trajectory and radio decisions; L, language models or mixture of experts; F, inference recovery; A, engineering appraisal. A check marks direct coverage, a triangle marks related or limited coverage, and ? marks coverage unestablished in the inspected material.\end{table}
+
+\subsection{Research questions and contributions}
+The review asks the following questions.
+\begin{enumerate}
+\item[\textbf{RQ1}] Which architectures, inference tasks, neural families, collaboration topologies, and partition granularities have been evaluated?
+\item[\textbf{RQ2}] Which partition, assignment, placement, compute, radio, or trajectory variables are optimized, with what objectives, constraints, and methods?
+\item[\textbf{RQ3}] Which workloads, platforms, network models, comparators, and metrics support the evaluations?
+\item[\textbf{RQ4}] How do studies represent and evaluate mobility, link interruption, node failure, and recovery?
+\item[\textbf{RQ5}] Which within-study metrics support findings about latency, energy, communication, accuracy, reliability, and scalability, and what limits their interpretation?
+\end{enumerate}
+Sections~\ref{sec:methods} and~\ref{sec:selection} describe protocol and corpus, Sections~\ref{sec:architecture} and~\ref{sec:evaluation} answer the five questions, and Section~\ref{sec:discussion} proposes a benchmark design. The survey contributes four outputs.
+\begin{enumerate}
+\item A PRISMA 2020 evidence map from database records to included studies and identifiable unresolved reports.
+\item A full-corpus taxonomy and common formulation linking placement, partition granularity, mobility, and resource use.
+\item A recovery evidence classification that records both the disruption tested and the system action observed or proposed.
+\item A ten-domain engineering appraisal and condition-specific comparisons that identify limits to reproducibility and transfer.
+\end{enumerate}
+
+\section{Review Methodology}\label{sec:methods}
+\subsection{Protocol and eligibility}
+We followed restart protocol version 1.1 and used PRISMA 2020 for reporting~\cite{prisma2020}. The protocol was documented after the original search runs and before fresh screening. The protocol, search translations, and differences between initial and accepted runs are retained with Supplement~S1. No public registration is documented.
+
+Eligible primary contributions were English-language, peer-reviewed journal or conference reports dated 1 January 2021 through 26 November 2026. They needed substantive methods and performance evidence for a setting with at least two UAVs or an explicitly evaluated multi-UAV, swarm, or flying ad hoc network. At least one identifiable neural inference workload had to be distributed, partitioned, assigned, migrated, fused, or jointly orchestrated across the participating system. At request or tracker-state granularity, eligibility requires evaluated assignment or transfer of an identifiable inference workload or its state across eligible nodes. Thus, coverage of model splitting and failure recovery varies within the corpus.
+
+Generic task offloading, standalone inference without collaboration, pure path planning, communications-only systems, and training-only work did not qualify. An evaluated inference component could still qualify in a larger planning or training system when it met the same collaboration requirement. Secondary sources were used for positioning. Preprints could inform version linkage, while eligibility required an established peer-reviewed report. Short research papers were assessed under the same methods, results, and peer-review criteria. A demo or extended abstract cannot establish eligibility as a peer-reviewed research report without supporting publication evidence.
+
+\subsection{Information sources and search strategy}
+IEEE Xplore, Scopus, and ACM Digital Library provided the core searches. OpenAlex added supplementary discovery. Each source contributed a high-recall search oriented around UAV and collaborative inference terms and a complementary search emphasizing neural models and decision variables. The eight selected runs were dated 26 November 2026. The IEEE and Scopus audit uses export-file modification time where that was the recorded timestamp basis. ACM results were captured manually from two lists under a month-level upper date filter. Screening enforced the exact day cutoff downstream. The revised OpenAlex complementary export superseded the earlier export. Web of Science Core Collection was unavailable, and citation chaining contributed no records to the restart.
+
+Supplement~S1 archives search translations, selected inputs, and source-row identifiers. The PRISMA flow uses the locked inputs, including records that were later identified as duplicates.
+
+\subsection{Screening, retrieval, and adjudication}
+Each record was assigned a stable identifier and linked to the original export row or ACM capture position. Deduplication used normalized DOI and bibliographic metadata with conflict checks. At title and abstract screening we excluded clear failures and advanced likely eligible and unclear records to full-text assessment. Retrieval logged the file, version, access route, and checksum. At full text, an exclusion required one primary criterion and a supporting locator. An unresolved criterion kept the report in awaiting classification. Retrieval succeeded for 136 of 137 sought reports (99.3\%).
+
+A report is a document. A study is the investigation behind one or more reports. Matching authors or similar titles were insufficient evidence of a common investigation. Linkage decisions considered explicit version links and substantive overlap in evaluated workloads, systems, and experimental designs using evidence from both reports. The earlier ledger retained 28 examined pairs as distinct. Li et al. evaluated model-size selection for one stream in the conference study and competing CNN streams in the journal study~\cite{R0003,R0059}. Ren et al. evaluated parallel computation within layers in one study and sequential pipeline scheduling in another~\cite{R0015,R0010}. An additional check retained LLHR and the related PPO study as distinct technical evaluations. They share an evaluation design lineage, and separate simulation runs could not be verified~\cite{R0082,R0019}.
+
+\textbf{Full-text review and verification.} Our lead reviewer read the full texts directly, wrote summaries, and made screening and engineering appraisal judgments. A colleague also provided screening judgments. Supplement~S2 records the lead reviewer's endorsement of all 136 final dispositions (46 inclusions and 90 exclusions) and ten separate adjudication entries (seven inclusions and three exclusions). Four of those ten decisions differed from their archived preliminary dispositions (Table~\ref{tab:adjudication_audit}). We archived two source-verification forms in Supplement~S2, each with 887 entries across the 46 included studies. R1 records the lead reviewer's endorsement of one set of source checks. R2 records a colleague's endorsement of the other set, relayed by the lead reviewer. Supplement~S2 documents the provenance and scope of both forms. The comparison identified 12 priority disagreements or evidence gaps. Our lead reviewer checked them against the source PDFs and documented the decisions and remaining limits in Supplement~S3. We used the published IEEE proceedings report of LLHR~\cite{R0082} for eligibility and cross-checked all extracted field and appraisal locators. The checked evidence uses the same physical pages in the proceedings and preprint copies.
+
+\subsection{Extraction and engineering appraisal}
+We extracted study identity, node roles, workload, assignments, decision variables, hardware, mobility, evaluation platform, comparator, uncertainty, and artifacts. A uniform post-protocol reread of all 46 results sections retained explicit numerical results with an identified workload, units, measurement boundary, and original physical page. A result was matched when the workload, operating conditions, and outcome denominator were shared. Results with sufficient context and separate denominators or without a matched comparator were kept as descriptive. Plot-only, unresolved, cross-referenced duplicate, and reference benchmark entries were excluded from the retained count. Supplement~S3 records these decisions.
+
+We scored ten engineering domains. D01 checks whether the question and system model are stated. D02 checks constraints and assumptions. D03 asks whether the configuration can be reconstructed. D04 checks whether comparators share the conditions needed to isolate the claimed effect. D05 examines metric alignment with the objective. D06 assesses repetitions, variability, or sensitivity where applicable. D07 checks network and mobility realism relative to the claim. D08 asks whether conclusions respect evaluation scope. D09 examines availability of relevant code, data, traces, or artifacts. D10 checks limitations and declarations. Yes requires affirmative evidence, partial denotes incomplete support, no requires observed contrary or inadequate evidence, not reported denotes missing documentation, and not applicable requires a reason. Judgments retain a rationale and locator. The appraisal informs interpretation without supplying a study-level exclusion threshold.
+
+\subsection{Synthesis and additional coding}
+We used a structured narrative synthesis with study counts and explicit denominators. The technical tables use the same 46 report IDs as the accepted study map. The taxonomy assigns one primary label per dimension. Topology follows the primary execution path. A head--worker arrangement requires an explicit coordinator or worker hierarchy. Partition identifies a distinguishing data, model, or dispatch boundary. Table~\ref{tab:architecture} can describe additional boundaries in a hybrid design. Optimization labels distinguish mathematical methods, heuristics, learning-led methods, hybrids, and system rules or descriptive models. Tables~\ref{tab:settings} and~\ref{tab:coverage} use the same partition and dispatch codes as Figure~\ref{fig:taxonomy}.
+
+Evaluation modality records a primary evidence setting under a five-category rule. Analytical calculation and conventional software simulation are distinct. Trace- or profile-backed studies use identifiable measured or trace inputs in a simulator or modeled workload. Bench evidence includes component measurements, emulated workers, and hardware-in-the-loop tests. The outdoor class requires a reported outdoor multi-UAV inference evaluation. Tables~\ref{tab:settings} and~\ref{tab:evaluation} and Figure~\ref{fig:macro} use the same five modality codes. A device profile alone does not establish that the collaborative system ran on hardware. Each quantitative contrast keeps its own test setting.
+
+For continuity we assign a primary evidence class from the documented event and response. A residual class records that the accepted extraction contains no qualifying mechanism or test. Simulated loss and physical disconnection remain distinguishable in Table~\ref{tab:evaluation}. The table distinguishes proposed actions, modeled responses, and observed outcomes where the sources document them.
+
+Table~\ref{tab:outcomes} requires a named method, an identifiable within-study comparator, checked values, a shared workload or an explicit setup change, and a physical locator. We prioritized controlled contrasts reporting seeds or uncertainty and added comparisons illustrating distinct decision contexts or measurement boundaries. Two outcomes were retained for a trade-off and two baselines for a workload-specific ranking. We did not pool outcomes measured under different boundaries or comparators. We recalculated descriptive counts after omitting each of the two planning studies and after omitting both. Formal missing-results bias assessment and certainty grading were outside the analysis.
+
+\section{Study Selection and Corpus Overview}\label{sec:selection}
+\subsection{PRISMA selection}
+IEEE Xplore contributed 63 records, Scopus 110, ACM Digital Library 404, and OpenAlex 116. Removing 228 duplicates from 693 records left 465 screened records. Of these, 328 were excluded at title and abstract, and 137 reports were sought. The initial retrieval supplied 44 full texts. Supplemental retrieval supplied 92 of the 93 initially missing reports, giving 136 assessed full texts. The remaining repository candidate contained code and did not supply the report.
+
+The assessed reports reconcile as 46 inclusions, 90 exclusions, and zero awaiting classification. The included reports represent 46 distinct studies. We retained 46 inclusions and 90 exclusions as the final eligibility set. The lead reviewer endorsed the full set and recorded separate adjudication entries for ten reports, comprising seven inclusions and three exclusions. Four of these ten decisions differ from the archived preliminary dispositions (Table~\ref{tab:adjudication_audit}). Figure~\ref{fig:flow} summarizes the selection. The final eligibility register in Supplement~S2 gives the reason and source locator for each of the 136 decisions.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.98\linewidth]{prisma_flow.pdf}
+\caption{PRISMA 2020 selection flow. Counts distinguish records, reports, and studies.}\label{fig:flow}
+\end{figure}
+
+\subsection{Corpus composition}
+Figure~\ref{fig:macro} summarizes year and venue, neural workloads, optimization, and evaluation. Publication year is the bibliography's citation year, which can differ from an online-first date used to decide eligibility. The 2026 column is bounded by the November cutoff and cannot establish a full-calendar-year trend. The locked corpus contains no 2021 study. A targeted backward check identified the 2021 DistInference report cited by Dhuheir et al.~\cite{R0068,dhuheir_iwcmc2021}. The candidate was absent as a record from the locked exports and was retained for a future screening update.
+
+The workload coding includes classifiers and detectors. ASAP distributes parts of a detector workload and Orion models partitioned dense language-model inference~\cite{R0014,R0074}. NetMoE uses CIFAR-100 image classification for its representative expert-dispatch configuration in Sect. VI.B~\cite{R0118}. Mixed-family rows represent multiple evaluated families or heterogeneous learned components. LLHR evaluates LeNet and AlexNet in simulation, and the tracking handoff study uses a transformer tracker~\cite{R0082,R0292}. Generic rows retain model proxies or reference workloads when the evaluated setting lacks a concrete model family.
+
+The modality panel separates conventional simulation from software evaluations informed by traces or device measurements. It also distinguishes software studies from bench and outdoor evaluations. See Table~\ref{tab:evaluation} for the setting of each study. In mixed evaluations, device execution and modeled wireless performance can describe different parts of one system.
+\input{editorial_mechanism_setting}
+\begin{figure}[htbp]
+\centering
+\input{technical_overview_figure}
+\caption{Corpus overview. The four panels assign one primary bin per study. Year conventions and coding rules are described in Sections~\ref{sec:methods} and~\ref{sec:selection}.}\label{fig:macro}
+\end{figure}
+\FloatBarrier
+
+\section{Architectures, Partitioning, and Optimization}\label{sec:architecture}
+\subsection{Execution topologies and architectural patterns}
+\textbf{Intra-swarm peers (\groupcite{topology}{peer}).}
+Peer systems keep the primary inference path inside the aerial group. Examples include choosing a neighboring UAV for a task and passing activations between stages~\cite{R0010,R0092}. Each assigned stage needs compute and a feasible path for any payload it receives. The reference-tensor study models the transport traffic incurred below that inference boundary~\cite{R0121}.
+
+\textbf{Cluster or head--worker execution (\groupcite{topology}{cluster}).}
+A coordinating role groups nodes or allocates work. In ASAP, pipeline stages span clusters and spatial subtasks are distributed inside a cluster~\cite{R0014}. Expert dispatch and redundant transformer execution track the availability of hosted experts or replicas~\cite{R0110,R0118}. These designs raise separate questions about updating the allocation after a membership change and reassigning the coordinator itself. ASAP reports rescheduling after deliberate head disconnection~\cite{R0014}.
+
+\textbf{Air--edge or air--edge--cloud execution (\groupcite{topology}{tier}).}
+These studies use an infrastructure tier or coordinate aerial edge servers with other endpoints. In one design two cuts divide a model among the vehicle, selected edge server, and optional cloud server~\cite{R0001}. Another sends a compact representation and can send additional data under a confidence rule~\cite{R0080}. If the path uses an additional tier, the transfer to that tier adds a link term. The category groups systems by functional roles, including ground clients served by aerial edge nodes and sensing UAVs using terrestrial edge nodes.
+
+\begin{figure}[htbp]
+\centering
+\input{technical_architecture_figure}
+\caption{Illustrative execution topologies. Solid arrows show input, activation, or task data. Dashed arrows denote coordination or recovery signaling. The three patterns summarize functional roles across the corpus.}\label{fig:topologies}
+\end{figure}
+
+\subsection{Partition and dispatch granularity}
+\textbf{Sequential layers or stages (\groupcite{unit}{layer}).}
+At a sequential cut the source executes a prefix and sends its activation to the next assigned device~\cite{R0010,R0092}. A multi-cut path repeats the transition. Under an ideal pipeline with independent stages and a steady backlog, first-result latency follows the full path and the steady inter-result interval is bounded below by its slowest stage. Stage profiles and link accounting are needed to evaluate an actual pipeline.
+
+\textbf{Sub-layer, spatial, and tensor-level boundaries (\groupcite{unit}{spatial}).}
+ASAP partitions spatial work across devices, and a workstation detector distributes image tiles and merges detections~\cite{R0014,R0125}. Convolutional tiles require halo data where receptive fields cross a tile boundary. Processing an overlap on two workers duplicates computation in that region. Language-model shards use different payloads and synchronization patterns~\cite{R0074}. Table~\ref{tab:architecture} labels the reference-tensor workload as transport analysis~\cite{R0121}.
+
+\textbf{DAG and early-exit execution (\groupcite{unit}{branch}).}
+A directed acyclic graph expresses which operations must finish before a dependent operation can start. An early exit omits later operations for requests meeting its exit rule~\cite{R0075}. Concurrent branches can shorten the critical path when workers and communication are available. An additional live replica consumes memory. Reliability inferred from a replica model and continuity observed after a fault require different evidence~\cite{R0110,R0121}.
+
+\textbf{Adaptive model choice and representation changes (\groupcite{unit}{adaptive}).}
+Adaptive designs vary a model, precision, or transmitted representation along with placement. An edge--cloud policy can send more data based on prediction confidence~\cite{R0080}. The reported comparison pairs accuracy with latency at specified conditions. The two policy points describe a trade-off in that setting.
+
+\textbf{Expert, whole-request, and state dispatch (\groupcite{unit}{request}).}
+A dispatcher can allocate an inference request or expert, or transfer tracker state~\cite{R0058,R0118,R0292}. For whole-request dispatch the collaboration is in orchestration across nodes. For expert dispatch the chosen destination must host the expert or provide access to it. For tracker handoff the transferred state and tracking performance define the continuity boundary. Under the request-level eligibility rule, Wang and Deng qualify through assigned LLM/VLM roles evaluated across planning and perception configurations, while Xiao et al. qualify through small-edge and large-cloud LLM dispatch evaluated across model-use policies~\cite{R0223,R0145}. These comparisons measure configuration-level performance. Omitting both studies leaves seven rather than nine dispatch studies and reduces the number of studies with retained numerical entries from 35 to 34 (Supplement~S3).
+
+\begin{figure}[htbp]
+\centering
+\input{technical_taxonomy_figure}
+\caption{Technical taxonomy used in this review. Leaf counts represent primary assignments among the 46 studies in each branch. Branches describe different dimensions and each sums independently to 46.}\label{fig:taxonomy}
+\end{figure}
+
+\subsection{A common optimization formulation}
+A given inference request induces a directed graph $G=(V,E)$ whose operations or stages lie in $V$ and whose data dependencies lie in $E$. Denote a partition, exit, representation or dispatch choice by $\mathbf{x}$ and a stage-to-device or migration assignment by $\mathbf{y}$. Let $\mathbf{q}$ be UAV positions or trajectories and $\mathbf{r}=(\mathbf{f},\mathbf{p},\mathbf{b})$ denote compute rates, transmit powers, and bandwidth shares. A schematic family of objectives is
+\begin{equation}
+\min_{\mathbf{x},\mathbf{y},\mathbf{q},\mathbf{r}}
+\mathbb{E}_{\omega}\!\left[
+ \alpha_T T_{\mathrm{e2e}} + \alpha_E E_{\mathrm{tot}}
+ - \alpha_A A_{\mathrm{inf}} + \alpha_R C_{\mathrm{rec}}
+\right],\label{eq:objective}
+\end{equation}
+where $\omega$ contains workload arrivals, channel variation, and node availability. The terms are end-to-end latency, system energy, inference quality, and recovery cost. Each weight absorbs unit scaling. When the underlying metrics have different task meanings, normalization and the actual reported units must remain explicit. A recovery penalty can represent lost work or interruption cost. If recovery delay is already included in $T_{\mathrm{e2e}}$, its separate penalty must account for a distinct cost or state the intentional weighting.
+
+A crossed dependency $e=(u,v)$ with payload $s_e(\mathbf{x})$ contributes communication delay. A first-order decomposition on the link from $i$ to $j$ is
+\begin{equation}
+ T_{e,ij}\approx T^{\mathrm{queue}}_{ij}
+     +\frac{s_e(\mathbf{x})}{R_{ij}(\mathbf{q},\mathbf{r},\omega)}
+     +T^{\mathrm{protocol}}_{ij}.
+\label{eq:link}
+\end{equation}
+The effective rate and additive terms use a common accounting boundary. Queue and protocol terms exclude costs already folded into the rate. Serial delays add along a path. Parallel completion waits for the last required input or for a specified quorum. Early exits change which vertices execute, and autoregressive inference can repeat stage dependencies across decode steps. Provisioning a live replica adds its resource requirements at the host.
+
+Assignment constraints connect the graph to device roles. Typical bounds concern peak working memory, energy, deadline, link feasibility, and vehicle separation. Memory includes weights and live intermediate state, with replicas counted at their actual locations. Mobility feasibility limits where nodes can move. Reliability can constrain the probability of completing before a deadline or the tolerated disruption set. Constraints need only apply to the study setting. A stationary test can set $\mathbf{q}$ exogenously. A request auction can fix the model graph and choose $\mathbf{y}$, while layer-and-hover co-design varies both placement and geometry~\cite{R0006,R0058}. In a threshold-driven transfer policy, $\mathbf{x}$ changes the payload and accuracy boundary~\cite{R0080}. Equation~\ref{eq:objective} provides a vocabulary for comparing these subproblems. It does not imply that every study measured every term.
+
+\subsection{Optimization scopes and solution methods}
+\textbf{Mathematical optimization (\groupcite{optimizer}{math}).}
+Graph and resource models define the subproblem for mathematical optimization. Layer-cut and hover co-design and language-model placement use different variables and feasibility constraints~\cite{R0006,R0074}. Reported solver guarantees and costs apply to their corresponding subproblem and test conditions.
+
+\textbf{Heuristic or auction allocation (\groupcite{optimizer}{heuristic}).}
+An auction can match requests and resources through bids, and a heuristic can exchange partial information about reachable workers~\cite{R0058,R0077}. An online-cost measurement should include bids, required state exchange, and schedule recomputation when they precede execution.
+
+\textbf{Learning-led allocation (\groupcite{optimizer}{rl}).}
+Learning-led examples include PPO cell/layer allocation and DQN neighbor selection~\cite{R0019,R0092}. Centralized training with decentralized execution changes which information the policy uses at dispatch~\cite{R0106}. If observation assembly and feasibility checks precede dispatch, the full online latency includes their time as well as policy evaluation.
+
+\textbf{Hybrid search and control (\groupcite{optimizer}{hybrid}).}
+Hybrid methods combine distinct solution steps. A tiered allocation design pairs PPO with continuous resource allocation~\cite{R0001}. Any resource solve or cache update on the decision path contributes to its online latency.
+
+\textbf{System rules or descriptive models (\groupcite{optimizer}{rule}).}
+Explicit deployment rules and analytical protocol models can provide evidence independently of an optimization algorithm. The container test measures prototype behavior, and the frame-delivery analysis estimates a transport boundary~\cite{R0038,R0121}. An optimality or scaling claim would require evidence for that separate question.
+
+For online placement, we recommend reporting the number of workers, candidate stages, communication rounds, and the timing boundary. Tables~\ref{tab:architecture} and~\ref{tab:evaluation} pair the solution type with its evaluation setting.
+\FloatBarrier
+\input{technical_architecture}
+
+\section{Evaluation, Resilience, and Evidence Appraisal}\label{sec:evaluation}
+\subsection{Evaluation modalities, wireless assumptions, and mobility}
+\textbf{Analytical configurations (\groupcite{evaluation}{analytical}).}
+The reference-tensor analysis derives serialization and intact-delivery estimates from fragmentation and frame-loss assumptions~\cite{R0121}. The outputs are analytical estimates for a specified payload and delivery rule.
+
+\textbf{Software simulation (\groupcite{evaluation}{sim}).}
+The simulations include examples of modeled computation and communication under fixed-rate or distance-dependent links~\cite{R0015,R0022}. Such results are conditional on the implemented assumptions. A transmitter-rate equation alone specifies service rate. Competition for that service requires a separately specified sharing or queueing rule.
+
+\textbf{Trace- or profile-backed simulation (\groupcite{evaluation}{trace}).}
+Mid-Air trajectories provide simulated geometry in two studies~\cite{R0003,R0010}. CIDER uses Jetson TX2 device profiles and modeled communication~\cite{R0075}. A replayed trajectory supplies positions, and a device profile supplies compute measurements under its stated conditions. An airborne throughput claim would require throughput observations from the relevant deployment.
+
+\textbf{Bench, emulation, or hardware-in-the-loop evaluations (\groupcite{evaluation}{bench}).}
+The container recovery study exercises deployed software on a stationary testbed~\cite{R0038}. The frame-tiling study implements HTTP transfer and measures workstation throughput~\cite{R0125}. The tracker study reports a hardware-in-the-loop evaluation of handoff and tracking~\cite{R0292}. Each supports behavior under its stated evaluation conditions.
+
+\textbf{Outdoor multi-UAV inference evaluation (\groupcite{evaluation}{flight}).}
+ASAP reports an outdoor five-UAV setting and an indoor embedded deployment. Its disconnection result is separately located. Treating the outdoor result as evidence of an outdoor disconnect test would attach the wrong conditions to the claim.
+
+Network assumptions include constant rate, distance-dependent loss, probabilistic line of sight, 802.11s packet drops, and frame fragmentation~\cite{R0015,R0022,R0073,R0083,R0121}. The extraction records these at their respective levels of modeling. Mobility can enter as static geometry, simulated or replayed trajectories, or actual flight~\cite{R0003,R0014,R0074}. Table~\ref{tab:evaluation} records the deployment and network or mobility conditions documented for each study.
+
+NetMoE compares expert and layer-wise configurations with the same centralized planner in its simulation~\cite{R0118}. The workstation comparison increases the total nominal worker thread allocation when it adds workers~\cite{R0125}. Outcomes describe the tested configurations. An isolated effect would require holding other relevant workload and resource conditions fixed.
+
+\subsection{Continuity and fault-recovery evidence}
+\textbf{Level 1, modeled reliability or stress (\groupcite{resilience}{analytic}).}
+The frame-delivery study provides an analytical result without simulation or empirical validation. The attribution of its probability input remains unresolved~\cite{R0121}. Orion varies bandwidth in simulation~\cite{R0074}. Detection and resumption latency require a timed replacement or restoration event.
+
+\textbf{Level 2, planned reassignment (\groupcite{resilience}{proactive}).}
+Meng et al. model service migration triggered by load or energy thresholds~\cite{R0045}. Transformer tracking evaluates planned state handoff in hardware-in-the-loop~\cite{R0292}. A planned handoff with access to outgoing state describes a separate condition from abrupt worker disappearance.
+
+\textbf{Level 3, link disruption or tier fallback (\groupcite{resilience}{link}).}
+The auction study describes retries, buffering, and local execution under short contacts~\cite{R0058}. DDCI evaluates resource-aware choices among candidate peers and local execution under dynamic links~\cite{R0092}. A collaboration model sends an incomplete task to a base station for reprocessing after return-data failure~\cite{R0044}. These evaluations report the modeled response or connectivity sensitivity without phase-level fallback timing.
+
+\textbf{Level 4, controlled disconnection (\groupcite{resilience}{bench}).}
+In the Docker Swarm prototype, input continued while a dependent stage waited, and computation resumed from an intermediate result in Redis~\cite{R0038}. A separate test disabled a device's communication program and reassigned work. ASAP reports rescheduling latency after deliberate head disconnection~\cite{R0062,R0014}. Rescheduling time and time to the first correct resumed output are separate measures.
+
+\textbf{Level 5, node unavailability with recovery or completion evidence (\groupcite{resilience}{node}).}
+Predictive migration includes modeled random UAV failures, and other studies vary available nodes or model selectively activated replicas~\cite{R0002,R0073,R0106,R0110}. The observed quantities are specific to the stress and available outputs. Phase-resolved recovery and validation during flight require separate evidence.
+
+\textbf{No qualifying continuity evidence (\groupcite{resilience}{none}).}
+These studies inform architecture, optimization or evaluation, with no qualifying disruption-and-response evidence in the accepted extraction. Variable channels, normal queue dynamics, and a backup described without evaluation should not be read as measured fault recovery. Table~\ref{tab:evaluation} preserves relevant partial descriptions even where the aggregate class records no recovery evidence. Figure~\ref{fig:taxonomy} counts four studies with modeled reliability or stress, four with planned or predictive transfer, five with link fallback, three with controlled disconnection, and five with node-unavailability evidence. The remaining 25 had no qualifying continuity evidence.
+\input{technical_evaluation}\FloatBarrier
+
+\subsection{Condition-specific quantitative comparisons}
+The uniform reread retained 97 entries from 35 of 46 studies, including 51 matched entries from 23 studies and 46 descriptive entries. Eleven studies had plot-only outcomes under the extraction rule. LLHR contributes to this group because its latency and transmit-power results are shown as curves~\cite{R0082}. Table~\ref{tab:coverage} shows coverage by mechanism. For layers or stages, Table~\ref{tab:settings} records 15 of 17 studies in simulation or trace-backed evaluation, two in bench evaluation, and zero in outdoor evaluation. Table~\ref{tab:outcomes} illustrates nine previously verified contrasts using their original workloads, units, and measurement boundaries.
+
+In the 100 Mb/s edge--cloud test, the proposed policy had higher mean top-1 accuracy and mean latency than GSUP with the ResNet-18/101 pair. The intervals are 95\% Student-$t$ confidence intervals across three seeds. The separate 100 MHz sweep at 20 UAVs reports an accuracy advantage of 0.9\% over GSUP and 1.5\% over Raw-Only in the prose. The difference scale and the GSUP/GDUP legend discrepancy remain unresolved~\cite{R0080}.\par In the two-UAV VGG-16 simulation, DDCI had higher mean deadline satisfaction than Comm-Min. System-total compute and communication energy was $1.477\pm0.054$ Wh for DDCI and $1.502\pm0.048$ Wh for Comm-Min (mean $\pm$ SD, 30 common-seed episodes)~\cite{R0092}.
+
+In Orion's parameterized simulation for Llama-2 7B at a 64-token input, distributed prefill is faster than the cloud-assisted configuration and slower than the single-device configuration, where the model fits~\cite{R0074}. These are prefill times for that setup. For Llama-2 70B, RDI-LLM and Orion-DP report approximately 0.8 and 0.3~s per token over the 30 and 22 missions they completed, respectively, from 30 seeded missions per method~\cite{R0110}. The per-token averages condition on different completed sets. CIDER's comparison covers a routing boundary with profiled computation and modeled communication~\cite{R0075}.
+
+ASAP reports seconds per task over a sequence in its indoor scale test~\cite{R0014}. The workstation study reports 12.8 FPS with two workers at four threads each versus 6.9 FPS with one four-thread worker (1.85$\times$ as reported)~\cite{R0125}. A controlled prototype continued at a lower frame rate after one device became unavailable~\cite{R0062}.\par SAC$^2$ reports 22\% greater accumulated surveillance coverage than Random-to-upload at 20 Mb/s~\cite{R0036}. AeroAgriNet's Figure 5 labels 91\% task completion at 20 UAVs. The prose claim of throughput above 90\% remains unresolved~\cite{R0090}.\par Xiao et al. report benchmark reference time to first token (TTFT) of 0.68 and 0.19 s and time per output token (TPOT) of $1/53$ and $1/246$ s for DeepSeek-R1-Distill-Llama-8B and LLaMA-3.2-3B, respectively. Attribution to local measurement remains unresolved~\cite{R0145}.
+\input{editorial_outcome_coverage}\FloatBarrier
+\begingroup\fontsize{8}{10}\selectfont\setlength{\tabcolsep}{2.5pt}\renewcommand{\arraystretch}{1.22}
+\begin{longtable}{@{}Y{.064\linewidth}Y{.158\linewidth}Y{.103\linewidth}Y{.103\linewidth}Y{.094\linewidth}Y{.122\linewidth}Y{.269\linewidth}@{}}
+\caption{Verified within-study contrasts. Values are proposed/configuration A versus comparator/configuration B. CI denotes 95\% Student-$t$ confidence interval half-width. A plain value preserves a reported point estimate or summary. Approximate values retain the approximation mark.}\label{tab:outcomes}\\
+\toprule
+Study & Workload / setup & Method A & Baseline B & Metric & Values A / B & Conditions and locator \\
+\midrule
+\endfirsthead
+\toprule
+Study & Workload / setup & Method A & Baseline B & Metric & Values A / B & Conditions and locator \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\cite{R0080} & CIFAR-10, edge and cloud & Proposed policy & GSUP & Top-1 (\%) & \mbox{$90.4\pm0.5$ /}\newline\mbox{$89.5\pm0.5$} & ResNet-18/101, 100 Mb/s, three seeds, \mbox{mean $\pm$ CI}, p. 5, Table I \\
+\cite{R0080} & Same model and data pair & Proposed policy & GSUP & Latency (ms) & $120\pm3$ / $117\pm3$ & Same condition and uncertainty; edge, transfer and cloud, p. 5, Table I \\
+\cite{R0092} & VGG-16, two UAVs in simulation & DDCI & Comm-Min & Deadline success (\%) & $71.6\pm3.4$ / $64.4\pm4.3$ & \mbox{Mean $\pm$ SD} over 30 common-seed episodes; all arrivals, p. 13, Table V \\
+\cite{R0075} & CIFAR-10, profiled and modeled links & CIDER & Full Final Exit & Compute + radio (ms) & 26.85 / 38.81 & Routing boundary only; frozen test router, p. 10, Table III \\
+\cite{R0074} & Llama-2 7B FP16, 64 tokens & Orion & Cloud-Edge-Opt & Prefill (ms) & 8,864 / 46,522 & Simulated four-node case, 1,000 Mb/s inter-UAV, 200 Mb/s air--ground, p. 16, Sect. 4.2 and Fig. 4 \\
+\cite{R0074} & Same parameterized simulation & Orion & Edge-Solo & Prefill (ms) & 8,864 / 8,047 & Same workload; single-device fit in this setting, p. 16, Sect. 4.2 and Fig. 4 \\
+\cite{R0014} & ResNet-152, 720 by 1280 video & ASAP, 20 devices & ASAP, four devices & Task sequence (s/task) & 1.32 / 2.32 & Indoor devices; span of 100 tasks divided by 100, p. 12, Table III \\
+\cite{R0062} & Faster R-CNN stream, embedded prototype & Three participating UAVs & Four participating UAVs & Rate (fps) & $\sim$2 / $\sim$3 & Stages reallocated after disabling device communication, p. 6, UAV unavailability test \\
+\cite{R0125} & YOLO11m frame detection & Four workers & One worker & Rate (fps) & 22.4 / 6.9 & Four threads per worker; total worker thread allocations are 16 and 4, p. 3, Table I and Sect. IV.B \\
+\end{longtable}\endgroup
+
+\subsection{Ten-domain appraisal and reproducibility}
+Table~\ref{tab:appraisal} and Figure~\ref{fig:appraisalbar} record 45/46 affirmative ratings for question and system-model clarity. Ratings were partial for configuration reproducibility in 42/46, baseline comparability in 40/46, and network and mobility realism in 43/46. D06 received 41 partial ratings. R0003 varies request and UAV counts, and R0145 compares 20 generated scenarios. Independent repeats or within-setting dispersion are unreported in those cases~\cite{R0003,R0145}. Artifact availability was undocumented in 40/46 assessed reports, including access to study-specific code or test video within the workstation study PDF~\cite{R0125}.
+
+The appraisal suggests concrete reporting checks. Specify data versions, splits, seeds, and configuration for reproduction. For comparisons, record resolution, precision, batch size, and thread budget where applicable. For wireless modeling, state whether spatial geometry, queueing, interfering traffic, and retransmissions are represented. Archive the configuration and orchestration needed to repeat execution.
+
+\begin{table}[htbp]
+\caption{Ten-domain engineering appraisal. Each row has 46 judgments. No included report received N/A in these domains.}\label{tab:appraisal}
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}Y{.43\linewidth}rrrrr@{}}
+\toprule
+Domain & Yes & Partial & Not reported & No & Yes (\%) \\
+\midrule
+\technicalappraisalrows
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[!htbp]
+\centering
+\input{technical_appraisal_figure}
+\caption{Engineering appraisal across the ten domains. A bar shows the proportion among 46 studies. The table gives exact counts and percentages.}\label{fig:appraisalbar}
+\end{figure}
+\FloatBarrier
+
+\section{Discussion, Open Challenges, and Future Research Agenda}\label{sec:discussion}
+\subsection{From activation transfers to language-model state}
+The execution graph determines which operations and payloads an assignment requires. Given a rate and a deadline, Equation~\ref{eq:link} connects crossed dependencies to latency feasibility. After a disruption, continuity also depends on the state still reachable and the remaining time. Changing any of those conditions can change which assignments are feasible.
+
+Vision designs in the corpus use activation cuts, spatial overlap, and early exits~\cite{R0010,R0014,R0075}. Orion distinguishes prefill from repeated decode steps with a key--value cache~\cite{R0074}. When work resumes on a replacement and that state is required, the system needs an accessible copy or must reconstruct it. RDI-LLM models redundant transformer execution, and NetMoE assigns requests with reference to expert placement~\cite{R0110,R0118}. These examples characterize different software evaluation settings.
+
+\subsection{Tool-agnostic evaluation benchmark}
+A benchmark should define interchangeable traces, metrics, and fault events that can be implemented in numerical simulators, emulators, and physical testbeds. We propose workloads at three scales. A small image classifier probes tight local latency and energy budgets. A detector stresses spatial data distribution, overlap, and merge. A compact language model tests prefill, decode, memory pressure, and state persistence over multiple tokens. A common input trace should specify release times, deadlines, payloads, output-quality targets, and any allowed approximations. Hardware capacity, power mode, runtime versions, and initialization should be declared for each implementation.
+
+Each workload can be run with a local baseline when feasible, a fixed-placement distributed baseline, and the evaluated adaptive policy. Report infeasibility, including memory exhaustion, independently of runtime. Budget matching should include aggregate CPU or accelerator allocations, usable memory, communication allowance, and allowed power. A second comparison at each design's own operating point can characterize capacity while preserving the distinction from a matched-budget test. Archive timestamped logs that can distinguish per-request, per-stage, and steady-state pipeline metrics.
+
+For continuity tests, prescribe an event timeline and distinguish planned departure, short link interruption, and abrupt worker unavailability in emulation or a controlled bench. Report when the fault begins, when the system detects it, when it selects a valid plan, when state finishes transferring, and when the first correct output resumes. For sequential recovery these timestamps give
+\begin{equation}\label{eq:recovery}
+T_{\mathrm{recover}}=T_{\mathrm{detect}}+T_{\mathrm{replan}}
+ +T_{\mathrm{transfer}}+T_{\mathrm{recompute}}.
+\end{equation}
+When recovery phases overlap, report the observed wall-clock interval and each phase duration. Record failed, stale, and duplicated outputs. Define deadline satisfaction as unique eligible arrivals with a correct result by their original deadline divided by all eligible arrivals. Dropped requests then count in the denominator only.
+
+We propose comparing checkpointing with full restart at fixed workload, event schedule, and compute budget. Measure steady-state checkpoint overhead and per-event lost work. Record storage location, checkpoint interval, restored state, and whether the checkpoint remains reachable after the fault.
+
+\subsection{Open challenges}
+\textbf{Hardware- and thermal-aware profiling.}
+We propose testing whether a scheduler calibrated under one measured hardware profile remains feasible when the operating state changes. Record clock, power mode, temperature, memory, and precision alongside workload latency and accuracy.
+
+\textbf{Cross-layer representation and wireless control.}
+A controlled test can examine whether compression, early exits, or link scheduling change feature traffic, accuracy, and completion under shared links. Replay the same offered workload and mobility trace across policies and measure contention for each run.
+
+\textbf{Deadline-aware continuity.}
+Recovered throughput can coexist with missed deadlines for requests present at fault onset. Record admission and original deadlines through reassignment, along with whether the needed input or intermediate state remained available. Report the tail of recovery time and the quality of results after the event.
+
+\textbf{Inference integrity.}
+A benchmark can test whether outputs carry evidence of the expected model and intact data. We propose measuring the overhead of provenance checks, their behavior under benign data corruption or outages, and their effect on on-time completion.
+
+\subsection{Threats to validity and review limitations}
+Database coverage, manual ACM result capture, English-language eligibility, and the absence of Web of Science can affect recall. One sought report was not retrieved. LLHR reports results as curves in both the IEEE proceedings version and arXiv v1. The IEEE cross-check covers the evidence locations used in this review~\cite{R0082}. The scope of the technical coding reflects the accepted evidence set, and alternate primary labels can be reasonable for composite studies. The supplementary coding ledger retains the decisions behind counts in the figures.
+
+Our S2 register contains zero paired, independent human eligibility decisions recorded before reconciliation. We therefore could not estimate agreement between reviewers (Table~\ref{tab:adjudication_audit}). The four status changes among ten separate adjudication entries describe only that documented subset. We retain both 887-entry source-verification forms and the 12 targeted decisions. Independent duplicate extraction remains undocumented. Prior classifications and draft extractions can influence later judgments. We make the eligibility register, source-verification forms, and PDF locators available in Supplements~S2--S4 so readers can audit these judgments. The uniform extraction rule samples explicit outcomes within domains. Differences in result availability can affect which studies and outcomes contribute numerical evidence. The verification required for Table~\ref{tab:outcomes} does not remove variation in test conditions or support a pooled effect. Engineering appraisal describes reported design and evaluation. No formal risk-of-bias or certainty assessment was conducted. The comparison with related surveys is a contextual sample and supports a bounded positioning claim.
+\input{adjudication_audit_table.tex}
+\section{Conclusion}\label{sec:conclusion}
+The 46-study taxonomy identifies peer, head--worker, and tiered execution, with different boundaries for layer, spatial, graph, representation, and request decisions. The evaluated methods vary in the placement, partitioning, resource, and mobility variables they control. Evidence ranges from analytical estimates to software, bench, and outdoor evaluations. Modeled reliability, planned handoff, and tested unavailability support claims at different continuity boundaries. The nine numerical comparisons are specific to their configurations, and appraisal identifies incomplete reporting of settings, comparators, and artifacts. We propose a benchmark with shared workloads, explicit resource accounting, and a timed recovery sequence.
+
+\section*{Statements and Declarations}
+\textbf{Author Contributions, Funding, and Competing Interests.} The final authorship list, formal contribution roles, funding disclosure, and competing-interest declarations are pending confirmation. \par\textbf{Data Availability.} We provide search strategies, eligibility decisions, and study-level verification and analysis records in Supplements~S1--S4, as itemized below. We retain the protocol with Supplement~S1. This supplement package omits publisher PDFs.
+
+\section*{Supplementary material}
+Supplement S1 contains search strategies and filters. S2 contains the final eligibility register (\nolinkurl{supplement_s2_eligibility.csv}) with reasons and source locators for all decisions, our record of reviewer responsibilities, the adjudication log, and the R1 and R2 source-verification forms. S3 contains study characteristics, appraisal, RQ5 extraction and outcome evidence, and the S2 audit results. S4 maps manuscript claims to primary sources or derivations and indexes the inputs, formulas, and code for figures and tables. Original reports are retained under their access conditions.
+
+\bibliography{references}
+\end{document}

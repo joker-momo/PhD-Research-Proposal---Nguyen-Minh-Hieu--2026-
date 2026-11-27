@@ -101,6 +101,25 @@ class ProjectStateTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "completed_at is only valid"):
             project_state.validate_files(self.state_path, self.events_path, now=self.now)
 
+    def test_supplemental_totals_are_validated(self):
+        supplemental = {
+            "intake_pdf_count": 92,
+            "screened_supplemental_count": 78,
+            "supplemental_decisions_accounted": 79,
+            "remaining_supplemental_reports": 13,
+            "pending_retrieval_ids": ["R0116"],
+        }
+        self.state["evidence"]["supplemental_screening"] = supplemental
+        project_state.validate_state(self.state, [self.event], self.now)
+        for key, value in (("screened_supplemental_count", 999),
+                           ("remaining_supplemental_reports", 12),
+                           ("supplemental_decisions_accounted", 77),
+                           ("pending_retrieval_ids", ["R0116", "R0116"])):
+            with self.subTest(key=key):
+                self.state["evidence"]["supplemental_screening"] = supplemental | {key: value}
+                with self.assertRaisesRegex(ValueError, "supplemental"):
+                    project_state.validate_state(self.state, [self.event], self.now)
+
     def test_summary_is_compact_and_contains_next_action(self):
         rendered = project_state.render_summary(self.state)
 
@@ -108,6 +127,19 @@ class ProjectStateTests(unittest.TestCase):
         self.assertIn("task-2", rendered)
         self.assertIn("NOT_READY_NOT_SUBMITTED", rendered)
         self.assertNotIn("Formal database search is incomplete.\nFormal", rendered)
+
+    def test_summary_reports_supplemental_progress(self):
+        self.state["evidence"]["supplemental_screening"] = {
+            "intake_pdf_count": 92,
+            "screened_supplemental_count": 78,
+            "supplemental_decisions_accounted": 79,
+            "pending_retrieval_ids": ["R0116"],
+            "raw_provider_artifacts": ["fixture must stay outside default context"],
+        }
+        rendered = project_state.render_summary(self.state)
+        self.assertIn("79/92 accounted", rendered)
+        self.assertIn("1 not retrieved", rendered)
+        self.assertNotIn("fixture must stay outside default context", rendered)
 
     def test_cli_validate_and_show(self):
         script = Path(project_state.__file__)

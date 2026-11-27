@@ -1,0 +1,121 @@
+{
+  "records": 136,
+  "codex_valid": 136,
+  "codex_rejected": {},
+  "codex_malformed": 0,
+  "gemini_valid": 136,
+  "gemini_rejected": {},
+  "gemini_malformed": 0,
+  "gemini_transport": "TASK_STATE_COMPLETED",
+  "gemini_context_verified": true,
+  "gemini_initial_task": "edf9686b-8e4a-4193-ba44-52b689d10013",
+  "gemini_followups": {
+    "correction": {
+      "task_id": "7bbe72f1-590c-4449-801c-c0ea4ec885a3",
+      "exact_ids_and_footer": true,
+      "transport_state": "TASK_STATE_COMPLETED"
+    },
+    "targeted": {
+      "task_id": "a474df80-d88a-40d3-af3a-4561d0fde636",
+      "exact_ids_and_footer": true,
+      "transport_state": "TASK_STATE_COMPLETED"
+    }
+  },
+  "gemini_editorial_omissions": [
+    "HKF-008",
+    "HKF-127"
+  ],
+  "gemini_cleanup": "deleted",
+  "gemini_gate": "PASS",
+  "codex_decisions": {
+    "AWAITING_CLASSIFICATION": 16,
+    "EXCLUDE": 87,
+    "INCLUDE": 33
+  },
+  "gemini_decisions": {
+    "EXCLUDE": 93,
+    "INCLUDE": 29,
+    "AWAITING_CLASSIFICATION": 14
+  },
+  "paired": 136,
+  "agreement": 126,
+  "cross_tab": [
+    {
+      "codex": "AWAITING_CLASSIFICATION",
+      "gemini": "AWAITING_CLASSIFICATION",
+      "count": 12
+    },
+    {
+      "codex": "AWAITING_CLASSIFICATION",
+      "gemini": "EXCLUDE",
+      "count": 4
+    },
+    {
+      "codex": "EXCLUDE",
+      "gemini": "AWAITING_CLASSIFICATION",
+      "count": 2
+    },
+    {
+      "codex": "EXCLUDE",
+      "gemini": "EXCLUDE",
+      "count": 85
+    },
+    {
+      "codex": "INCLUDE",
+      "gemini": "EXCLUDE",
+      "count": 4
+    },
+    {
+      "codex": "INCLUDE",
+      "gemini": "INCLUDE",
+      "count": 29
+    }
+  ],
+  "automated_extraction_checks": {
+    "TEXT_ANCHOR_MATCH": 333,
+    "PARTIAL_ANCHOR_MATCH": 169,
+    "PAGE_RANGE_VALID": 322,
+    "CHECK_TEXT_OR_RENDERED_PAGE": 54,
+    "RENDERED_SOURCE_MATCH": 9
+  },
+  "codex_matches_frozen": 116,
+  "codex_differs_from_frozen": 20,
+  "codex_cross_tab_frozen": [
+    {
+      "frozen": "EXCLUDE",
+      "codex": "AWAITING_CLASSIFICATION",
+      "count": 5
+    },
+    {
+      "frozen": "EXCLUDE",
+      "codex": "EXCLUDE",
+      "count": 84
+    },
+    {
+      "frozen": "EXCLUDE",
+      "codex": "INCLUDE",
+      "count": 1
+    },
+    {
+      "frozen": "INCLUDE",
+      "codex": "AWAITING_CLASSIFICATION",
+      "count": 11
+    },
+    {
+      "frozen": "INCLUDE",
+      "codex": "EXCLUDE",
+      "count": 3
+    },
+    {
+      "frozen": "INCLUDE",
+      "codex": "INCLUDE",
+      "count": 32
+    }
+  ],
+  "codex_uncertainty_counts": {
+    "E5": 11,
+    "E3": 3,
+    "E7": 2
+  },
+  "kappa_ai": 0.852558542931483
+}

@@ -1,0 +1,187 @@
+{
+  "id": "7bbe72f1-590c-4449-801c-c0ea4ec885a3",
+  "contextId": "d516a192-69e2-47a9-801c-5b9b5d4051da",
+  "status": {
+    "state": "TASK_STATE_FAILED",
+    "timestamp": "2026-11-27T12:53:19.109+00:00",
+    "message": {
+      "messageId": "2abb7cb6-6356-481c-9c45-afa1def02fa9",
+      "role": "ROLE_AGENT",
+      "parts": [
+        {
+          "text": "Task deadline exceeded; generation may continue in Gemini; not resent"
+        }
+      ],
+      "taskId": "7bbe72f1-590c-4449-801c-c0ea4ec885a3",
+      "contextId": "d516a192-69e2-47a9-801c-5b9b5d4051da"
+    }
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-27T12:38:17.789+00:00",
+    "updated_at": "2026-11-27T12:53:19.109+00:00",
+    "started_at": "2026-11-27T12:38:17.803+00:00",
+    "completed_at": "2026-11-27T12:53:19.109+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/private/tmp/hk261-dual-ai-gemini-correction-9ea7b0aa",
+      "files": {
+        "HKF-093.pdf": {
+          "sha256": "a43032f0224778112719ca5d350ce2415799095c34bfbf4652616f64b62010e4",
+          "bytes": 173474
+        },
+        "correction-01.txt": {
+          "sha256": "61093d66187184588816abfb92cc6a858f4f8decf833b66def36b50de1a0ac80",
+          "bytes": 185001
+        },
+        "correction-02.txt": {
+          "sha256": "049dfad2ebcdec5a8228430e0d210db8c5e16e470329f897366ed716f8d5fab9",
+          "bytes": 160017
+        },
+        "correction-03.txt": {
+          "sha256": "51094d2fa64c9e326f3b532e3f705fcc3afec42bf1db3d8c7c9c2eebd80e1e8f",
+          "bytes": 160369
+        },
+        "correction-04.txt": {
+          "sha256": "6fb72d576153d99c0fd9062acb95a4db59ca1e13e70916d77c33a65c054dba6e",
+          "bytes": 177596
+        },
+        "correction-05.txt": {
+          "sha256": "5122f0fbc2e103a799d1f59de464c0fde87573fea00a8f39ce6f245b0c8abf6c",
+          "bytes": 117508
+        },
+        "correction-06.txt": {
+          "sha256": "ee215b51441dc7531e2641900f962753ca99780cd24456734b367002953d5e0a",
+          "bytes": 169783
+        },
+        "correction-07.txt": {
+          "sha256": "79635c4e0544bb64fa2b85eafd285746b2a6c5a92f4f85daae9b58cff634e72d",
+          "bytes": 169970
+        },
+        "correction-08.txt": {
+          "sha256": "5e5003a2d196c6b55c816dba7673cfb0ff5edb4dc30f5aaa869323fec0562cd4",
+          "bytes": 180223
+        },
+        "correction-09.txt": {
+          "sha256": "bf99e4df1f02e8a01090629f9abc51d4aeda28cd84ae830a1bc9fe8dbfcfe7f4",
+          "bytes": 69020
+        },
+        "correction-10.txt": {
+          "sha256": "22d371f9540dcf6a49d7d57aa3a416b21574611c0576f3904039f027e149316b",
+          "bytes": 175438
+        },
+        "correction-11.txt": {
+          "sha256": "8c875061d8394814ebba376d18ad361c298d747802722447007e6f1ded52932f",
+          "bytes": 125903
+        },
+        "correction-12.txt": {
+          "sha256": "ad0d5d8790422fd9835a26584cc61f980b507626b75b9d98aa0cf116f996097b",
+          "bytes": 169932
+        },
+        "correction-13.txt": {
+          "sha256": "a15838773a3f7fbdd0cec189f06ff6601e01e63f179856bbd41a618aee70dd42",
+          "bytes": 190810
+        },
+        "correction-14.txt": {
+          "sha256": "1d222da24edd1541808f258da1a4809028a859f810fdc1963ac5f0f054a72bbb",
+          "bytes": 177878
+        },
+        "correction-15.txt": {
+          "sha256": "37c324b441c90ddc3c8750f3f6dae18f673b0517e5ab3d515c740567a09941c1",
+          "bytes": 199935
+        },
+        "correction-16.txt": {
+          "sha256": "923a95f1c8d9586ccbba69cb3e56ca704aae4eb4bb4c58cdbe7c119e3c3cb2ce",
+          "bytes": 199535
+        },
+        "correction-17.txt": {
+          "sha256": "4e91a3e7cf6d9f011fd1fd764d00d1436d46b64392d206e513df818cb9fc04a0",
+          "bytes": 173991
+        },
+        "correction-18.txt": {
+          "sha256": "82f22be6af3d1f4a7e09cf91e6f5ebb684003e5077fd95f8ec79555e88f26054",
+          "bytes": 183966
+        },
+        "correction-19.txt": {
+          "sha256": "2e4304a0e1022568efcca6bac5bccacefbbcc9d3f74dfd0423383edf718adba2",
+          "bytes": 178681
+        },
+        "correction-20.txt": {
+          "sha256": "9b78f87ca4ecee328da2fbc54d39b62249044b7ec43b1b39ac678c8f96d7c25e",
+          "bytes": 146654
+        },
+        "correction-21.txt": {
+          "sha256": "7a48385a9905727884922c833b6f6ee6689172f42a022e6cc09ba0e5ebff8f64",
+          "bytes": 138016
+        },
+        "correction-22.txt": {
+          "sha256": "4d5436ede60610fffc5df70b2b4164c5f120b19a40117b7636e18a8afdf5a824",
+          "bytes": 171352
+        },
+        "correction-23.txt": {
+          "sha256": "71c9c53166e3d2a5086ff59b1bf271067d06344e428671b4f471d5c9b1eef074",
+          "bytes": 174469
+        },
+        "correction-24.txt": {
+          "sha256": "54e185438cdc08d2bd3c32ad1965bc422bc45b518b6c3ef3ba4962bb46777ca5",
+          "bytes": 182874
+        },
+        "correction-25.txt": {
+          "sha256": "abef163ceed82eb40887d1a8d1306e2209bf98a8eeabbae8a7f0ff267b9afafb",
+          "bytes": 195083
+        },
+        "correction-26.txt": {
+          "sha256": "88647b1a9dde1f9553f99c4ec6c79212370c0000a9320b41dea931e566a6fdcf",
+          "bytes": 176885
+        },
+        "correction-27.txt": {
+          "sha256": "d59a09f3d27f0155b415bda152bad0fd45772ca3de67345fd5dca2dfd4fe44bc",
+          "bytes": 146011
+        },
+        "correction-28.txt": {
+          "sha256": "e979e7c268aeb14ed609ce3b1af318aa97e5e1e2e7427c80851021d330ea0966",
+          "bytes": 132707
+        },
+        "correction-29.txt": {
+          "sha256": "0a0f8adda26bb8b87b76fa7af065dab0ade8714399ad88e089b3a53fc245e2ec",
+          "bytes": 174091
+        },
+        "correction-30.txt": {
+          "sha256": "063aa798dd19ba7eef045a8ae93edc311437375d2163b48492e1f8120a5f0624",
+          "bytes": 194370
+        },
+        "correction-31.txt": {
+          "sha256": "885b61743657aa18ad535747193f470f6492ad7e6a848a3ec31edbeeb542c8f4",
+          "bytes": 199217
+        },
+        "correction-32.txt": {
+          "sha256": "14d8d8353ca68b60dd8dbf51deafc60aa4e4a5947fd8920d614c7756b76eea69",
+          "bytes": 127653
+        },
+        "correction-33.txt": {
+          "sha256": "57ac6074f5733f4c2761dd09a6f62d228657e2238dc836ab77a766cfcd4dd9bd",
+          "bytes": 91043
+        },
+        "correction-34.txt": {
+          "sha256": "60b31c8352b0aa47777a4576d330c76d7c558ecc503ce60e1652e9aca03bf42d",
+          "bytes": 181755
+        },
+        "correction-35.txt": {
+          "sha256": "47223700daef2c24b986d65feff12f53165c20ea7694bb63828608aabb7b59f2",
+          "bytes": 102409
+        },
+        "criteria.txt": {
+          "sha256": "62186168e901e14eb811168b529ab4310281e8e7354f16183d7663f102d1f055",
+          "bytes": 4091
+        },
+        "index.json": {
+          "sha256": "62b5c1bcabf472e76b15a985862d6238d4f1522720bc987ebf6fe94758754bb2",
+          "bytes": 4497
+        }
+      },
+      "folder": "/Users/joker/Projects/gemini-app-a2a-bridge/.runtime/tasks/7bbe72f1-590c-4449-801c-c0ea4ec885a3/context-7bbe72f1-590c-4449-801c-c0ea4ec885a3"
+    }
+  }
+}

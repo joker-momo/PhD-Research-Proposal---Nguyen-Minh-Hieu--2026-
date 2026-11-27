@@ -1,15 +1,15 @@
 schema_version: 2
-context_version: "2026-11-26.29"
-policy_updated_at: "2026-11-26T19:54:05+07:00"
+context_version: "2026-11-27.1"
+policy_updated_at: "2026-11-27T12:22:45+07:00"
 project: "HK261 PRISMA systematic review"
 canonical_workspace:
   path: "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)"
   branch: "main"
 
-# Always read only these two files after this manifest.
+# Read these files first, then run the state command from the repository root.
 core_read_order:
   - README.md
-  - current_state.json
+core_state_command: "python3 .codex/hooks/project_state.py show"
 
 # Select the smallest matching route; union and deduplicate for multi-goal work.
 task_read_routes:
@@ -44,6 +44,10 @@ canonical_state:
   historical_handoff: history/CURRENT_HANDOFF.pre-state-v1.2026-11-26.md
   rule: "current_state.json is current truth; Git/events/decisions are immutable history"
 
+# Use this table only when auditing or migrating legacy locators.
+historical_migration:
+  historical_locator_mapping: "../migration/historical_locator_mapping.tsv"
+
 canonical_external_sources:
   official_assignment_pdf: "../../../HK261 - Bài tập lớn-Tiểu luận.pdf"
   fixed_protocol: "../protocol.md"
@@ -63,6 +67,7 @@ persistent_task_gate:
   freshness_rule: "Gemini.app requires a committed brief, matching ready state and a phase manifest or previous review committed with state; legacy routes require state in the latest project commit"
 
 default_exclusions_from_context:
+  - current_state.json
   - events.jsonl
   - history/
   - CURRENT_HANDOFF.md

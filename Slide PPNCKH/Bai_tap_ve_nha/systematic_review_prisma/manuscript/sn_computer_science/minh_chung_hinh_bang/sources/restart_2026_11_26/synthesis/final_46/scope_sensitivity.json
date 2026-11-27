@@ -1,0 +1,112 @@
+{
+  "basis": "Descriptive recalculation after the 12 author decisions, with frozen eligibility.",
+  "scenarios": [
+    {
+      "coverage": {
+        "PLOT_ONLY": 11,
+        "VERIFIED_EXACT": 35
+      },
+      "entries": 97,
+      "matched_entries": 51,
+      "modality": {
+        "analytical": 1,
+        "bench": 7,
+        "flight": 1,
+        "sim": 27,
+        "trace": 10
+      },
+      "omitted": [],
+      "partition": {
+        "adaptive": 6,
+        "branch": 6,
+        "layer": 17,
+        "request": 9,
+        "spatial": 8
+      },
+      "studies": 46,
+      "studies_with_entries": 35
+    },
+    {
+      "coverage": {
+        "PLOT_ONLY": 10,
+        "VERIFIED_EXACT": 35
+      },
+      "entries": 97,
+      "matched_entries": 51,
+      "modality": {
+        "analytical": 1,
+        "bench": 7,
+        "flight": 1,
+        "sim": 26,
+        "trace": 10
+      },
+      "omitted": [
+        "R0145"
+      ],
+      "partition": {
+        "adaptive": 6,
+        "branch": 6,
+        "layer": 17,
+        "request": 8,
+        "spatial": 8
+      },
+      "studies": 45,
+      "studies_with_entries": 35
+    },
+    {
+      "coverage": {
+        "PLOT_ONLY": 11,
+        "VERIFIED_EXACT": 34
+      },
+      "entries": 95,
+      "matched_entries": 51,
+      "modality": {
+        "analytical": 1,
+        "bench": 7,
+        "flight": 1,
+        "sim": 26,
+        "trace": 10
+      },
+      "omitted": [
+        "R0223"
+      ],
+      "partition": {
+        "adaptive": 6,
+        "branch": 6,
+        "layer": 17,
+        "request": 8,
+        "spatial": 8
+      },
+      "studies": 45,
+      "studies_with_entries": 34
+    },
+    {
+      "coverage": {
+        "PLOT_ONLY": 10,
+        "VERIFIED_EXACT": 34
+      },
+      "entries": 95,
+      "matched_entries": 51,
+      "modality": {
+        "analytical": 1,
+        "bench": 7,
+        "flight": 1,
+        "sim": 25,
+        "trace": 10
+      },
+      "omitted": [
+        "R0145",
+        "R0223"
+      ],
+      "partition": {
+        "adaptive": 6,
+        "branch": 6,
+        "layer": 17,
+        "request": 7,
+        "spatial": 8
+      },
+      "studies": 44,
+      "studies_with_entries": 34
+    }
+  ]
+}

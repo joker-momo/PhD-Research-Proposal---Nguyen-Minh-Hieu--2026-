@@ -1,0 +1,127 @@
+{
+  "id": "546ba372-6f10-4c81-a821-68754be4e36c",
+  "contextId": "83453072-bb0b-42b6-9c39-451b13678620",
+  "status": {
+    "state": "TASK_STATE_FAILED",
+    "timestamp": "2026-11-27T15:14:21.802+00:00",
+    "message": {
+      "messageId": "d2e41867-5562-4e3c-aec1-d0c79e4197c9",
+      "role": "ROLE_AGENT",
+      "parts": [
+        {
+          "text": "Accessibility snapshot failed: Gemini snapshot failed: Expected one Gemini window"
+        }
+      ],
+      "taskId": "546ba372-6f10-4c81-a821-68754be4e36c",
+      "contextId": "83453072-bb0b-42b6-9c39-451b13678620"
+    }
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-27T15:09:00.067+00:00",
+    "updated_at": "2026-11-27T15:14:21.802+00:00",
+    "started_at": "2026-11-27T15:09:00.096+00:00",
+    "completed_at": "2026-11-27T15:14:21.802+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/private/tmp/hk261-source-887.dYAZEL/correction-final/assets",
+      "files": {
+        "HKF-011-selected-pages.pdf": {
+          "sha256": "8948713c4bccf1cea209788e50c6100d92a31855f4cf9d4228abee6ddbfc9f8b",
+          "bytes": 1008435
+        },
+        "HKF-013-selected-pages.txt": {
+          "sha256": "f1ca19c8e1349b4234ce0936aaccc6c4be12532963cbede124fc02e0c4a0d742",
+          "bytes": 14508
+        },
+        "HKF-028-selected-pages.pdf": {
+          "sha256": "a5e2e45e7c68357d229f40a1212de2e34dafc6bdaeb223960532b04bc1fce607",
+          "bytes": 312597
+        },
+        "HKF-029-selected-pages.txt": {
+          "sha256": "d2c8c660b67339377f85a8a6d28bcc4468309566224107f8a0de362817dde913",
+          "bytes": 12121
+        },
+        "HKF-032-selected-pages.pdf": {
+          "sha256": "88e5263bcd3215ac75fc536cfd99fd63b6b57d91ffa1874406778049ae513a03",
+          "bytes": 519390
+        },
+        "HKF-035-selected-pages.pdf": {
+          "sha256": "c6c692498dac0574bb1642ce0c7d471bc65211fe6a021a762c73b265e9283e21",
+          "bytes": 853533
+        },
+        "HKF-038-selected-pages.txt": {
+          "sha256": "0619271a9b314ae800b7f20c7cd578fb6647293d8a0a5a8e9986cc6674c81b50",
+          "bytes": 11306
+        },
+        "HKF-043-selected-pages.pdf": {
+          "sha256": "95ae0c054e504c78ca87147cf023ad80d5968c089cb7fdb60551af6c1e61609c",
+          "bytes": 882731
+        },
+        "HKF-044-selected-pages.txt": {
+          "sha256": "7ba058d001884f321259eda2b8d837f19073474ab1c03f767a1bfe90a11a5379",
+          "bytes": 42903
+        },
+        "HKF-049-selected-pages.txt": {
+          "sha256": "9b6f6d09acd5c3f91c0f44f1e397c7b26c33229e5c81b80b9f8c6eda509f99e7",
+          "bytes": 40920
+        },
+        "HKF-053-selected-pages.txt": {
+          "sha256": "3ac2393bb8d3e24fbaf086dfc4893dc1ec0276e816bc8d326d5b7b4ee2585b55",
+          "bytes": 21882
+        },
+        "HKF-058-selected-pages.pdf": {
+          "sha256": "67d14c505ca205c6bac3a2762ccbeb8aad7b40b6fcf20ee312501f26dbd067fd",
+          "bytes": 1112597
+        },
+        "HKF-061-selected-pages.txt": {
+          "sha256": "cf00dd779f9edc4ac38b5738fe803e0c10a3992371b116eeb9435f18f5127045",
+          "bytes": 12328
+        },
+        "HKF-079-selected-pages.pdf": {
+          "sha256": "5a7f0ad7eb9d4acee2c36d30fa90be6c72c4b4c4453d969b16c5739f2c4ae45d",
+          "bytes": 302513
+        },
+        "HKF-085-selected-pages.pdf": {
+          "sha256": "31d96e8f9b842dc24d027bb289643e351d14026428f50ab8991228774f43aae5",
+          "bytes": 743269
+        },
+        "HKF-100-selected-pages.txt": {
+          "sha256": "6fdaf6b369ad5b7c6c8fd623c09d5443316f7549c2245cfaa4832889a52bbcb5",
+          "bytes": 17342
+        },
+        "HKF-104-selected-pages.txt": {
+          "sha256": "0c4389a3004fb71d678bce3ca90630f7619998fbc03c88d77e8b50b6ade8aad5",
+          "bytes": 18950
+        },
+        "HKF-109-selected-pages.txt": {
+          "sha256": "07716f451b7f5a1023ff874356ef02db4dec8d4cb315a983de35e8c99fe713a2",
+          "bytes": 15448
+        },
+        "HKF-110-selected-pages.txt": {
+          "sha256": "bce387156e3b413ff1d65eec8ee081af2ea6a824e2f27336d04aa5d06f86ebd4",
+          "bytes": 9185
+        },
+        "HKF-118.pdf": {
+          "sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+          "bytes": 769118
+        },
+        "HKF-121-selected-pages.txt": {
+          "sha256": "ef91ad9c4b3d825fa332f3b3e5722e67a5e52e0651271b067c8b9b9c027d7784",
+          "bytes": 17863
+        },
+        "HKF-128-selected-pages.pdf": {
+          "sha256": "f1428dbf710b11d4a9d6acf7c3c90490710e720e1e50f17751114f68e00f760c",
+          "bytes": 985966
+        },
+        "targets.json": {
+          "sha256": "deb1cfc1cfd546903cffb3c258595529a69b91bf6c49ee5a4a5a183eab60ba5c",
+          "bytes": 25504
+        }
+      },
+      "folder": "/Users/joker/Projects/gemini-app-a2a-bridge/.runtime/tasks/546ba372-6f10-4c81-a821-68754be4e36c/context-546ba372-6f10-4c81-a821-68754be4e36c"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+\newcommand{\KeyCount}{887}
+\newcommand{\QueueCount}{608}
+\newcommand{\QueueReports}{46}
+\newcommand{\SemanticDiff}{89}
+\newcommand{\StateDiff}{280}
+\newcommand{\AnchoredCount}{570}
+\newcommand{\CandidateCount}{0}
+\newcommand{\RestrictedCount}{38}
+\newcommand{\SourcePDFCount}{47}
+\newcommand{\PriorityFirst}{%
+\caseitem{R0003 · D06}{PDF gốc tr. 5–6 · Hình 2 và §V.B}{R1 PARTIAL · R2 UNRESOLVED}{Chốt PARTIAL cho D06. Thử độ nhạy theo số yêu cầu/UAV, chưa có biến thiên giữa các lần lặp độc lập.}
+\caseitem{R0036 · Q01}{PDF gốc tr. 12 · §VI, Hình 8(a)}{R1 DISCREPANCY · R2 VERIFIED}{Dùng đúng điều kiện 20 Mbps và đối chứng RU cho 22\% tác giả báo cáo. Giữ dấu vết đơn vị 20 MHz đang sai trong sổ.}
+\caseitem{R0080 · Q03}{PDF gốc tr. 6 · §IV.C, Hình 3 và Bảng I}{R1 PARTIAL · R2 UNRESOLVED}{Giữ nguyên cách nguồn in “0.9\% higher” và “1.5\% higher”. Treo đơn vị chênh lệch tương đối hay điểm phần trăm. Điều kiện Hình 3 là 100 MHz, còn 100 Mbps thuộc Bảng I.}
+\caseitem{R0090 · Q05}{PDF gốc tr. 5 · Hình 5 và định nghĩa chỉ số}{R1 DISCREPANCY · R2 PARTIAL}{Dùng 91\% cho tỷ lệ hoàn thành ở 20 UAV nếu giữ chỉ số này. Treo tuyên bố throughput trên 90\% do mẫu số và định nghĩa chưa khớp.}
+\caseitem{R0092 · Q02}{PDF gốc tr. 13 · §V.D, Bảng V}{R1 DISCREPANCY · R2 VERIFIED}{Dùng 1.477 ± 0.054 Wh cho năng lượng toàn hệ thống, trung bình ± SD qua 30 lượt chung seed. Bỏ diễn giải Wh cho mỗi tác vụ.}
+}
+\newcommand{\PriorityRest}{%
+\caseitem{R0118 · workload}{PDF gốc tr. 9 · §VI.B}{R1 DISCREPANCY · R2 PARTIAL}{Mã hóa thí nghiệm CIFAR-100 là workload thị giác. Giới hạn sửa ở thí nghiệm được đối chiếu.}
+\caseitem{R0121 · mạng và đánh giá}{PDF gốc tr. 5, 7–8 · §4, Hình 3 và Bảng 4}{R1 VERIFIED · R2 UNRESOLVED}{Giữ kết luận ở mức mô hình phân tích. Treo cách gán tham số xác suất và mọi kết luận xác nhận bằng thực nghiệm.}
+\caseitem{R0125 · D09}{PDF gốc tr. 3–5 · §§III–V và phần cuối bài}{R1 NOT\_REPORTED · R2 UNRESOLVED}{Chốt NOT\_REPORTED cho đường dẫn hiện vật do tác giả cung cấp trong phạm vi đã kiểm tra. Ghi riêng các framework được nêu.}
+\caseitem{R0125 · Q01}{PDF gốc tr. 3 · §IV.B, Hình 1}{R1 VERIFIED · R2 UNRESOLVED}{Gắn 12.8 FPS với đúng cấu hình hai worker và kiểm tra riêng đối chứng một worker bốn luồng. Tách hai cấu hình cùng có con số 12.8 FPS.}
+\caseitem{R0145 · D06}{PDF gốc tr. 18 · §6.3, đoạn dưới Hình 11}{R1 DISCREPANCY · R2 PARTIAL}{Chốt PARTIAL. 20 kịch bản edge cloud cho thấy biến thiên theo kịch bản. Giữ thiếu số lần lặp và độ phân tán trong cùng cấu hình.}
+\caseitem{R0145 · Q01}{PDF gốc tr. 8, 15 · §3.4, Hình 4}{R1 DISCREPANCY · R2 VERIFIED}{Gắn TTFT ở Hình 4 với dữ liệu chuẩn mà bài dẫn ở [3]. Treo quy kết cho phần cứng/thí nghiệm tại chỗ.}
+\caseitem{R0145 · Q02}{PDF gốc tr. 8, 15 · §3.4, Hình 4}{R1 DISCREPANCY · R2 VERIFIED}{Gắn TPOT ở Hình 4 với dữ liệu chuẩn mà bài dẫn ở [3]. Treo quy kết cho phần cứng/thí nghiệm tại chỗ.}
+}
