@@ -1,0 +1,45 @@
+{
+  "id": "0efbe392-ef6d-410d-91f0-bfad2c18ba7a",
+  "contextId": "57103822-9e66-4338-a92e-135eca0c212d",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-26T19:27:46.716+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-26T19:22:43.641+00:00",
+    "updated_at": "2026-11-26T19:27:46.716+00:00",
+    "started_at": "2026-11-26T19:22:43.647+00:00",
+    "completed_at": "2026-11-26T19:27:46.716+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — Systematic Review Claim Correction",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "25ed15bc-5a32-4f3b-a622-84596d7f1701",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"rq\":\"RQ1\",\"claim_id\":\"RQ1-A\",\"finding\":\"R0001 and R0054 both describe layer-level DNN partitioning across UAV, edge, and cloud tiers.\",\"citations\":[{\"report_id\":\"R0001\",\"source\":\"P08\",\"key\":\"partition_and_assignment:1\",\"physical_page\":2,\"section\":\"II.A Inference Partitioning\"},{\"report_id\":\"R0054\",\"source\":\"P08\",\"key\":\"partition_and_assignment:1\",\"physical_page\":3,\"section\":\"Section II-B Three-tier DNN inference, Eq. (13) and (17e)\"}],\"frequency\":null,\"quantitative\":null}\n{\"rq\":\"RQ1\",\"claim_id\":\"RQ1-B\",\"finding\":\"Partitioning granularities beyond sequential layer cuts include sub-layer CNN tasks in R0015, row-wise feature-map partitioning in R0044, and classifier-level DAG cuts in R0048.\",\"citations\":[{\"report_id\":\"R0015\",\"source\":\"P08\",\"key\":\"partition_and_assignment:1\",\"physical_page\":3,\"section\":\"III.A System Model\"},{\"report_id\":\"R0044\",\"source\":\"P08\",\"key\":\"partition_and_assignment:1\",\"physical_page\":3,\"section\":\"II.C DNN Partitioning and Offloading\"},{\"report_id\":\"R0048\",\"source\":\"P08\",\"key\":\"partition_and_assignment:1\",\"physical_page\":7,\"section\":\"V.B Algorithm\"}],\"frequency\":null,\"quantitative\":null}\n{\"rq\":\"RQ2\",\"claim_id\":\"RQ2-A\",\"finding\":\"In R0006, the formulation optimizes horizontal UAV positions and layer assignment under memory, energy, and coverage constraints, while the evaluation specifies compute, memory, power, and coverage parameters.\",\"citations\":[{\"report_id\":\"R0006\",\"source\":\"P08\",\"key\":\"decision_variables_objectives_constraints_and_solver:1\",\"physical_page\":4,\"section\":\"III.B & IV\"},{\"report_id\":\"R0006\",\"source\":\"P08\",\"key\":\"compute_and_radio:1\",\"physical_page\":6,\"section\":\"V-A, UAV specifications and communication/energy parameter bullets\"}],\"frequency\":null,\"quantitative\":null}\n{\"rq\":\"RQ2\",\"claim_id\":\"RQ2-B\",\"finding\":\"R0009 combines split, trajectory, power, and resource decisions in its latency-energy formulation, whereas in R0001 the formulation describes edge-server selection while its policy uses the nearest edge server.\",\"citations\":[{\"report_id\":\"R0009\",\"source\":\"P08\",\"key\":\"decision_variables_objectives_constraints_and_solver:1\",\"physical_page\":6,\"section\":\"IV.C Trajectory & Power\"},{\"report_id\":\"R0001\",\"source\":\"P09\",\"key\":\"D02\",\"physical_page\":2,\"section\":\"II.E\"}],\"frequency\":null,\"quantitative\":null}\n{\"rq\":\"RQ4\",\"claim_id\":\"RQ4-A\",\"finding\":\"R0048 assumes hovering and defers trajectories, R0003 uses trace-driven simulation, and R0045 simulates horizontal and altitude control with task migration responding to energy or load thresholds.\",\"citations\":[{\"report_id\":\"R0048\",\"source\":\"P08\",\"key\":\"mobility_channel_intermittency_failure_and_recovery:1\",\"physical_page\":12,\"section\":\"VIII. CONCLUSION\"},{\"report_id\":\"R0003\",\"source\":\"P08\",\"key\":\"evaluation_platform_simulator_hardware_and_traces:1\",\"physical_page\":5,\"section\":\"V.A Simulation Settings\"},{\"report_id\":\"R0045\",\"source\":\"P08\",\"key\":\"mobility_channel_intermittency_failure_and_recovery:1\",\"physical_page\":11,\"section\":\"IV-B.3 and IV-C, trajectory and migration trigger\"}],\"frequency\":null,\"quantitative\":null}\n{\"rq\":\"RQ4\",\"claim_id\":\"RQ4-B\",\"finding\":\"R0063 evaluates cloud-link interruption with edge fallback, R0062 disables a node's communication program to examine task redistribution and return upon reconnection, and R0002 separately simulates random UAV failures and migration.\",\"citations\":[{\"report_id\":\"R0063\",\"source\":\"P08\",\"key\":\"mobility_channel_intermittency_failure_and_recovery:1\",\"physical_page\":16,\"section\":\"Section 5.3.3 and Table 9, pp. 16-17\"},{\"report_id\":\"R0062\",\"source\":\"P08\",\"key\":\"mobility_channel_intermittency_failure_and_recovery:1\",\"physical_page\":6,\"section\":\"Section EFFECT OF UAV UNAVAILABILITY\"},{\"report_id\":\"R0002\",\"source\":\"P08\",\"key\":\"mobility_channel_intermittency_failure_and_recovery:1\",\"physical_page\":7,\"section\":\"VII.A Experimental Settings\"}],\"frequency\":null,\"quantitative\":null}\n{\"summary\":true,\"limitations\":{\"RQ1\":\"Original-viewer reading is restricted to the locked P08 and P09 artifacts read-only without opening underlying PDFs or claiming exhaustive corpus inspection; qualitative partitioning categories reflect only documented evidence-base examples, do not treat unreported mechanisms as absent, and do not establish empirical performance outcomes.\",\"RQ2\":\"Original-viewer verification is limited to the locked P08 and P09 records without inspecting full primary PDFs; reported formulations and evaluation parameters reflect documented study scope rather than exhaustive modeling coverage, unreported parameters do not imply absence, and qualitative comparisons do not establish actual optimization outcomes.\",\"RQ3\":\"Original-viewer inspection is bounded to the locked P08 and P09 artifacts without reopening primary PDFs or asserting exhaustive coverage of the evidence base; any retained quantitative matrix scope is not summarized numerically here, missing reporting does not indicate absence, and extracted metrics cannot be conflated with real-world operational outcomes.\",\"RQ4\":\"Original-viewer reading covers only the locked P08 and P09 records without direct inspection of primary PDFs; mobility, link-interruption, and failure-recovery findings reflect the specific simulated or controlled evidence-base setups rather than exhaustive field coverage, unreported fault modes do not constitute absence, and experimental behaviors do not establish live flight outcomes.\",\"RQ5\":\"Original-viewer review is confined to the locked P08 and P09 files without opening underlying PDFs or claiming complete corpus access; synthesis of open challenges and validation gaps is bounded by what the evidence base explicitly reports, unreported limitations do not imply absence, and identified gaps remain distinct from observed deployment outcomes.\"},\"tools\":[],\"workers_used\":false,\"unresolved\":[]}\nHK261_RESTART_14_CORRECTION_COMPLETE"
+        }
+      ]
+    }
+  ]
+}

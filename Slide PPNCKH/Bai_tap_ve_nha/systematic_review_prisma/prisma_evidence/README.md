@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T02:15:42+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T08:00:27+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -557,9 +557,24 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=4.
 <a id="buoc-14"></a>
 ## Bước 14 · Tổng hợp theo câu hỏi nghiên cứu
 
-**Chưa bắt đầu** · `2026-11-26T18:07:38+07:00`
+**Đã chốt theo sổ tiến độ** · `2026-11-27T08:00:27+07:00`
 
-Chưa có tệp minh chứng được đăng ký cho bước này.
+Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
+
+- [accepted_claims.json](../restart_2026_11_26/synthesis/accepted_claims.json)
+- [appraisal_summary.md](../restart_2026_11_26/synthesis/appraisal_summary.md)
+- [claim_source_matrix.csv](../restart_2026_11_26/synthesis/claim_source_matrix.csv)
+- [correction_brief.md](../restart_2026_11_26/synthesis/correction_brief.md)
+- [correction_dispatch.json](../restart_2026_11_26/synthesis/correction_dispatch.json)
+- [correction_raw.json](../restart_2026_11_26/synthesis/correction_raw.json)
+- [primary_review.md](../restart_2026_11_26/synthesis/primary_review.md)
+- [review.md](../restart_2026_11_26/synthesis/review.md)
+- [rq_synthesis_brief.md](../restart_2026_11_26/synthesis/rq_synthesis_brief.md)
+- [rq_synthesis_dispatch.json](../restart_2026_11_26/synthesis/rq_synthesis_dispatch.json)
+- [rq_synthesis_raw.json](../restart_2026_11_26/synthesis/rq_synthesis_raw.json)
+- [rq_synthesis_recovery.json](../restart_2026_11_26/synthesis/rq_synthesis_recovery.json)
+- [rq_synthesis_transport_failure.json](../restart_2026_11_26/synthesis/rq_synthesis_transport_failure.json)
+- [study_characteristics.csv](../restart_2026_11_26/synthesis/study_characteristics.csv)
 
 <a id="buoc-15"></a>
 ## Bước 15 · Viết manuscript LaTeX SN Computer Science

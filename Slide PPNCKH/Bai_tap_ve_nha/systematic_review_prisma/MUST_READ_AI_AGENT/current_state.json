@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T02:15:42+07:00",
+  "updated_at": "2026-11-27T08:00:27+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step12_complete_step13_ready",
     "summary": "P09 quality appraisal passed for all 25 locked P08 reports. Approved step 13 PRISMA reconciliation is ready."
   },
   "task": {
-    "task_id": "restart-13",
+    "task_id": "restart-14",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T02:07:21+07:00",
-    "updated_at": "2026-11-27T02:15:42+07:00",
-    "checkpoint_path": "restart_2026_11_26/prisma/reconciliation_review.md",
-    "decision_id": "restart-13-prisma-v1",
-    "completed_at": "2026-11-27T02:15:42+07:00"
+    "started_at": "2026-11-27T02:16:26+07:00",
+    "updated_at": "2026-11-27T08:00:27+07:00",
+    "completed_at": "2026-11-27T08:00:27+07:00",
+    "checkpoint_path": "restart_2026_11_26/synthesis/review.md",
+    "decision_id": "restart-14-synthesis-v1"
   },
   "next_task": {
-    "task_id": "restart-14",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "restart-15",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Synthesize RQ1–RQ5 from the reconciled restart with the frozen P08 and P09 data.",
-    "acceptance": "All adopted claims have supported locators, counts include denominators, and no incompatible performance effects are pooled."
+    "action": "Write Springer Nature LaTeX SN Computer Science manuscript from accepted restart evidence.",
+    "acceptance": "Consistent source-located results, locked corpus counts, resolved references, compiled PDF, and explicit metadata and process limits."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -233,6 +233,16 @@
         "gemini_audit_verdict": "PASS",
         "gemini_task_id": "38e73b37-23c9-415a-8b38-51c7e42b4563",
         "counts_path": "restart_2026_11_26/prisma/prisma_counts.json"
+      },
+      "synthesis": {
+        "gate": "PASS",
+        "claims": 10,
+        "locators": 26,
+        "review_questions": 5,
+        "study_table_rows": 25,
+        "provider_tasks": 2,
+        "verified_deleted": 2,
+        "completed_at": "2026-11-27T08:00:27+07:00"
       }
     }
   },

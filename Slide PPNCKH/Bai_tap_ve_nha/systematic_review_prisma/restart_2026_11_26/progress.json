@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T02:15:42+07:00",
+  "updated_at": "2026-11-27T08:00:27+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -1095,12 +1095,33 @@
       "task_id": "restart-14",
       "title": "Tổng hợp theo câu hỏi nghiên cứu",
       "owner": "GEMINI_RESEARCH + CODEX_WRITING",
-      "status": "pending",
-      "started_at": null,
-      "updated_at": "2026-11-26T18:07:38+07:00",
-      "completed_at": null,
-      "artifacts": [],
-      "acceptance": []
+      "status": "completed",
+      "started_at": "2026-11-27T02:16:26+07:00",
+      "updated_at": "2026-11-27T08:00:27+07:00",
+      "completed_at": "2026-11-27T08:00:27+07:00",
+      "artifacts": [
+        "restart_2026_11_26/synthesis/accepted_claims.json",
+        "restart_2026_11_26/synthesis/appraisal_summary.md",
+        "restart_2026_11_26/synthesis/claim_source_matrix.csv",
+        "restart_2026_11_26/synthesis/correction_brief.md",
+        "restart_2026_11_26/synthesis/correction_dispatch.json",
+        "restart_2026_11_26/synthesis/correction_raw.json",
+        "restart_2026_11_26/synthesis/primary_review.md",
+        "restart_2026_11_26/synthesis/review.md",
+        "restart_2026_11_26/synthesis/rq_synthesis_brief.md",
+        "restart_2026_11_26/synthesis/rq_synthesis_dispatch.json",
+        "restart_2026_11_26/synthesis/rq_synthesis_raw.json",
+        "restart_2026_11_26/synthesis/rq_synthesis_recovery.json",
+        "restart_2026_11_26/synthesis/rq_synthesis_transport_failure.json",
+        "restart_2026_11_26/synthesis/study_characteristics.csv"
+      ],
+      "acceptance": [
+        {
+          "criterion": "Gemini.app composite synthesis",
+          "verdict": "PASS",
+          "evidence": "10/10 findings, 26/26 locators, 2/2 frequency ID sets and quantitative rows, 25 characteristic entries and 250 domain judgments."
+        }
+      ]
     },
     {
       "task_id": "restart-15",

@@ -1,0 +1,370 @@
+{
+  "claims": [
+    {
+      "rq": "RQ1",
+      "claim_id": "RQ1-A",
+      "finding": "R0001 and R0054 both describe layer-level DNN partitioning across UAV, edge, and cloud tiers.",
+      "citations": [
+        {
+          "report_id": "R0001",
+          "source": "P08",
+          "key": "partition_and_assignment:1",
+          "physical_page": 2,
+          "section": "II.A Inference Partitioning"
+        },
+        {
+          "report_id": "R0054",
+          "source": "P08",
+          "key": "partition_and_assignment:1",
+          "physical_page": 3,
+          "section": "Section II-B Three-tier DNN inference, Eq. (13) and (17e)"
+        }
+      ],
+      "frequency": null,
+      "quantitative": null
+    },
+    {
+      "rq": "RQ1",
+      "claim_id": "RQ1-B",
+      "finding": "Partitioning granularities beyond sequential layer cuts include sub-layer CNN tasks in R0015, row-wise feature-map partitioning in R0044, and classifier-level DAG cuts in R0048.",
+      "citations": [
+        {
+          "report_id": "R0015",
+          "source": "P08",
+          "key": "partition_and_assignment:1",
+          "physical_page": 3,
+          "section": "III.A System Model"
+        },
+        {
+          "report_id": "R0044",
+          "source": "P08",
+          "key": "partition_and_assignment:1",
+          "physical_page": 3,
+          "section": "II.C DNN Partitioning and Offloading"
+        },
+        {
+          "report_id": "R0048",
+          "source": "P08",
+          "key": "partition_and_assignment:1",
+          "physical_page": 7,
+          "section": "V.B Algorithm"
+        }
+      ],
+      "frequency": null,
+      "quantitative": null
+    },
+    {
+      "rq": "RQ2",
+      "claim_id": "RQ2-A",
+      "finding": "In R0006, the formulation optimizes horizontal UAV positions and layer assignment under memory, energy, and coverage constraints, while the evaluation specifies compute, memory, power, and coverage parameters.",
+      "citations": [
+        {
+          "report_id": "R0006",
+          "source": "P08",
+          "key": "decision_variables_objectives_constraints_and_solver:1",
+          "physical_page": 4,
+          "section": "III.B & IV"
+        },
+        {
+          "report_id": "R0006",
+          "source": "P08",
+          "key": "compute_and_radio:1",
+          "physical_page": 6,
+          "section": "V-A, UAV specifications and communication/energy parameter bullets"
+        }
+      ],
+      "frequency": null,
+      "quantitative": null
+    },
+    {
+      "rq": "RQ2",
+      "claim_id": "RQ2-B",
+      "finding": "R0009 combines split, trajectory, power, and resource decisions in its latency-energy formulation, whereas in R0001 the formulation describes edge-server selection while its policy uses the nearest edge server.",
+      "citations": [
+        {
+          "report_id": "R0009",
+          "source": "P08",
+          "key": "decision_variables_objectives_constraints_and_solver:1",
+          "physical_page": 6,
+          "section": "IV.C Trajectory & Power"
+        },
+        {
+          "report_id": "R0001",
+          "source": "P09",
+          "key": "D02",
+          "physical_page": 2,
+          "section": "II.E"
+        }
+      ],
+      "frequency": null,
+      "quantitative": null
+    },
+    {
+      "rq": "RQ3",
+      "claim_id": "RQ3-A",
+      "finding": "Evidence types span profiled software simulations and benchtop hardware testbeds without flight-network validation: R0048 evaluates Python/PyTorch simulations parameterized with measured Raspberry Pi 3B+ and NCS1/NCS2 profiles, whereas R0062 evaluates a physical 4-UAV hardware testbed (3 Jetson Nano + 1 Jetson TX2 with airborne communication modules) that P09 D07 rates PARTIAL because actual flight-network and 3D mobility validation are absent.",
+      "citations": [
+        {
+          "report_id": "R0048",
+          "source": "P08",
+          "key": "evaluation_platform_simulator_hardware_and_traces:1",
+          "physical_page": 9,
+          "section": "VII. NUMERICAL RESULTS"
+        },
+        {
+          "report_id": "R0062",
+          "source": "P08",
+          "key": "evaluation_platform_simulator_hardware_and_traces:1",
+          "physical_page": 5,
+          "section": "Section EXPERIMENT SETUP"
+        },
+        {
+          "report_id": "R0062",
+          "source": "P09",
+          "key": "D07",
+          "physical_page": 5,
+          "section": "Performance Evaluation"
+        }
+      ],
+      "frequency": null,
+      "quantitative": null
+    },
+    {
+      "rq": "RQ3",
+      "claim_id": "RQ3-B",
+      "finding": "Under P09 domain D04 (baseline comparability), 24 of 25 included study units are rated PARTIAL (only R0121 is rated YES); source-located rationales document internal-ablation-only comparator setups without external baselines (R0054's six internal schemes and R0071's no-LSTM MHAPPO ablation) and undisclosed hyperparameter/tuning parity for external DRL baselines (C-PPO, C-DQN, and MADDPG in R0048).",
+      "citations": [
+        {
+          "report_id": "R0054",
+          "source": "P09",
+          "key": "D04",
+          "physical_page": 4,
+          "section": "§IV Protocol"
+        },
+        {
+          "report_id": "R0071",
+          "source": "P09",
+          "key": "D04",
+          "physical_page": 6,
+          "section": "IV. Simulation Results and Discussion"
+        },
+        {
+          "report_id": "R0048",
+          "source": "P09",
+          "key": "D04",
+          "physical_page": 10,
+          "section": "VII.A.3 Baselines"
+        }
+      ],
+      "frequency": {
+        "n": 24,
+        "N": 25,
+        "numerator_ids": [
+          "R0001",
+          "R0002",
+          "R0003",
+          "R0006",
+          "R0009",
+          "R0010",
+          "R0015",
+          "R0019",
+          "R0022",
+          "R0029",
+          "R0044",
+          "R0045",
+          "R0048",
+          "R0054",
+          "R0059",
+          "R0062",
+          "R0063",
+          "R0068",
+          "R0071",
+          "R0073",
+          "R0074",
+          "R0083",
+          "R0089",
+          "R0095"
+        ],
+        "denominator": "All 25 included study units in the locked HK261 restart (appraisal_table.csv, domain D04 = PARTIAL)"
+      },
+      "quantitative": null
+    },
+    {
+      "rq": "RQ4",
+      "claim_id": "RQ4-A",
+      "finding": "R0048 assumes hovering and defers trajectories, R0003 uses trace-driven simulation, and R0045 simulates horizontal and altitude control with task migration responding to energy or load thresholds.",
+      "citations": [
+        {
+          "report_id": "R0048",
+          "source": "P08",
+          "key": "mobility_channel_intermittency_failure_and_recovery:1",
+          "physical_page": 12,
+          "section": "VIII. CONCLUSION"
+        },
+        {
+          "report_id": "R0003",
+          "source": "P08",
+          "key": "evaluation_platform_simulator_hardware_and_traces:1",
+          "physical_page": 5,
+          "section": "V.A Simulation Settings"
+        },
+        {
+          "report_id": "R0045",
+          "source": "P08",
+          "key": "mobility_channel_intermittency_failure_and_recovery:1",
+          "physical_page": 11,
+          "section": "IV-B.3 and IV-C, trajectory and migration trigger"
+        }
+      ],
+      "frequency": null,
+      "quantitative": null
+    },
+    {
+      "rq": "RQ4",
+      "claim_id": "RQ4-B",
+      "finding": "R0063 evaluates cloud-link interruption with edge fallback, R0062 disables a node's communication program to examine task redistribution and return upon reconnection, and R0002 separately simulates random UAV failures and migration.",
+      "citations": [
+        {
+          "report_id": "R0063",
+          "source": "P08",
+          "key": "mobility_channel_intermittency_failure_and_recovery:1",
+          "physical_page": 16,
+          "section": "Section 5.3.3 and Table 9, pp. 16-17"
+        },
+        {
+          "report_id": "R0062",
+          "source": "P08",
+          "key": "mobility_channel_intermittency_failure_and_recovery:1",
+          "physical_page": 6,
+          "section": "Section EFFECT OF UAV UNAVAILABILITY"
+        },
+        {
+          "report_id": "R0002",
+          "source": "P08",
+          "key": "mobility_channel_intermittency_failure_and_recovery:1",
+          "physical_page": 7,
+          "section": "VII.A Experimental Settings"
+        }
+      ],
+      "frequency": null,
+      "quantitative": null
+    },
+    {
+      "rq": "RQ5",
+      "claim_id": "RQ5-A",
+      "finding": "In R0054's matched multi-seed holdout evaluation (n = 5 independent training seeds, df = 4, alpha_RF = 5, lambda_task = 0.01), GAT-HSMAO records a normalized holdout cost of 2.720 ± 0.226, lower than No-GAT (2.874 ± 0.354), Fixed-H (3.046 ± 0.297), CSI-Only (2.882 ± 0.241), and No-RIS (2.843 ± 0.288), while Fixed-RIS achieves a lower cost (2.402 ± 0.151) under the same holdout configuration; this study-specific normalized metric is not poolable across studies.",
+      "citations": [
+        {
+          "report_id": "R0054",
+          "source": "P08_QUANT",
+          "key": "quantity:1",
+          "physical_page": 5,
+          "section": "Table I, row 'GAT-HSMAO', column 'Norm. cost'"
+        },
+        {
+          "report_id": "R0054",
+          "source": "P08",
+          "key": "partition_and_assignment:1",
+          "physical_page": 3,
+          "section": "Section II-B Three-tier DNN inference, Eq. (13) and (17e)"
+        }
+      ],
+      "frequency": null,
+      "quantitative": {
+        "report_id": "R0054",
+        "key": "quantity:1",
+        "value": "2.720 ± 0.226",
+        "units": "dimensionless (normalized cost)",
+        "baseline": "No-GAT (2.874 ± 0.354), Fixed-H (3.046 ± 0.297), CSI-Only (2.882 ± 0.241), Fixed-RIS (2.402 ± 0.151), No-RIS (2.843 ± 0.288)",
+        "denominator": "n = 5 independent training seeds (df = 4)",
+        "workload": "3,000 training episodes per seed; normal task arrival rate lambda_task = 0.01; held-out scenarios",
+        "conditions": "Matched holdout evaluation, alpha_RF = 5, Student-t 95% CI half-width (n = 5, df = 4); Fixed-RIS attains lower cost (2.402 ± 0.151)",
+        "page": 5,
+        "locator": "Table I, row 'GAT-HSMAO', column 'Norm. cost'"
+      }
+    },
+    {
+      "rq": "RQ5",
+      "claim_id": "RQ5-B",
+      "finding": "In R0074, Orion reports 18,665 ms latency for a single 64-token Llama-2 70B FP16 request across 4 UAV edge nodes (1000 Mb/s inter-UAV, 200 Mb/s A2G) versus Jupiter (27,264 ms), EdgeShard (43,058 ms), and Edge-Solo/Cloud-Edge (OOM); however, P09 D08 rates R0074 NO because its Introduction claims Orion is the only framework capable of running 70B on memory-constrained UAVs despite Section 4.2 showing EdgeShard and Jupiter also execute 70B, and across all 25 study units P09 D09 records 22 NOT_REPORTED (0 YES, 2 PARTIAL, 1 NO in R0089) for code/data/traces availability.",
+      "citations": [
+        {
+          "report_id": "R0074",
+          "source": "P08_QUANT",
+          "key": "quantity:3",
+          "physical_page": 17,
+          "section": "Section 4.2 and Fig. 4, pp. 16-17"
+        },
+        {
+          "report_id": "R0074",
+          "source": "P09",
+          "key": "D08",
+          "physical_page": 3,
+          "section": "1. Introduction"
+        },
+        {
+          "report_id": "R0089",
+          "source": "P09",
+          "key": "D09",
+          "physical_page": 11,
+          "section": "Data availability"
+        }
+      ],
+      "frequency": {
+        "n": 22,
+        "N": 25,
+        "numerator_ids": [
+          "R0001",
+          "R0002",
+          "R0003",
+          "R0006",
+          "R0009",
+          "R0010",
+          "R0015",
+          "R0019",
+          "R0022",
+          "R0029",
+          "R0044",
+          "R0045",
+          "R0048",
+          "R0054",
+          "R0059",
+          "R0062",
+          "R0068",
+          "R0071",
+          "R0073",
+          "R0083",
+          "R0095",
+          "R0121"
+        ],
+        "denominator": "All 25 included study units in the locked HK261 restart (appraisal_table.csv, domain D09 = NOT_REPORTED; remaining 3 are R0063 and R0074 = PARTIAL, R0089 = NO)"
+      },
+      "quantitative": {
+        "report_id": "R0074",
+        "key": "quantity:3",
+        "value": "18,665",
+        "units": "ms",
+        "baseline": "Jupiter (27,264 ms); EdgeShard (43,058 ms); Edge-Solo & Cloud-Edge (OOM)",
+        "denominator": "Single 64-token request",
+        "workload": "Llama-2 70B FP16, 64-token sensor log",
+        "conditions": "1000 Mb/s inter-UAV, 200 Mb/s A2G, 4 UAV edge nodes",
+        "page": 17,
+        "locator": "Section 4.2 and Fig. 4, pp. 16-17"
+      }
+    }
+  ],
+  "summary": {
+    "summary": true,
+    "limitations": {
+      "RQ1": "Original-viewer reading is restricted to the locked P08 and P09 artifacts read-only without opening underlying PDFs or claiming exhaustive corpus inspection; qualitative partitioning categories reflect only documented evidence-base examples, do not treat unreported mechanisms as absent, and do not establish empirical performance outcomes.",
+      "RQ2": "Original-viewer verification is limited to the locked P08 and P09 records without inspecting full primary PDFs; reported formulations and evaluation parameters reflect documented study scope rather than exhaustive modeling coverage, unreported parameters do not imply absence, and qualitative comparisons do not establish actual optimization outcomes.",
+      "RQ3": "Original-viewer inspection is bounded to the locked P08 and P09 artifacts without reopening primary PDFs or asserting exhaustive coverage of the evidence base; any retained quantitative matrix scope is not summarized numerically here, missing reporting does not indicate absence, and extracted metrics cannot be conflated with real-world operational outcomes.",
+      "RQ4": "Original-viewer reading covers only the locked P08 and P09 records without direct inspection of primary PDFs; mobility, link-interruption, and failure-recovery findings reflect the specific simulated or controlled evidence-base setups rather than exhaustive field coverage, unreported fault modes do not constitute absence, and experimental behaviors do not establish live flight outcomes.",
+      "RQ5": "Original-viewer review is confined to the locked P08 and P09 files without opening underlying PDFs or claiming complete corpus access; synthesis of open challenges and validation gaps is bounded by what the evidence base explicitly reports, unreported limitations do not imply absence, and identified gaps remain distinct from observed deployment outcomes."
+    },
+    "tools": [],
+    "workers_used": false,
+    "unresolved": []
+  },
+  "provider_viewer_limit": "p08_extraction_table.json:tail_truncation"
+}
