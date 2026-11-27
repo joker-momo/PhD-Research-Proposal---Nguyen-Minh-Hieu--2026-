@@ -1,0 +1,993 @@
+{
+  "status": "REGISTRY_LEADS_FOR_SOURCE_REVIEW",
+  "notes": "Dates are registry observations. Verify date type, version and conflicting fields against the protocol and original source before use. Registry type does not establish peer review.",
+  "records": [
+    {
+      "id": "R0036",
+      "doi": "10.1109/tccn.2025.3641511",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1109/tccn.2025.3641511",
+      "checked_at": "2026-11-27T10:07:40+07:00",
+      "http": 200,
+      "registry_doi": "10.1109/tccn.2025.3641511",
+      "registry_title": [
+        "Wider Eyes in the Sky: Scene-Adaptive Video Analytics in Low-Altitude Surveillance Networks"
+      ],
+      "year_date_fields": {
+        "published-print": [
+          [
+            2026
+          ]
+        ],
+        "published": [
+          [
+            2026
+          ]
+        ],
+        "issued": [
+          [
+            2026
+          ]
+        ]
+      },
+      "registry_type": "journal-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0077",
+      "doi": "10.1016/j.sysarc.2026.103804",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1016/j.sysarc.2026.103804",
+      "checked_at": "2026-11-27T10:07:40+07:00",
+      "status": "REGISTRY_ACCESS_FAILED",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "id": "R0107",
+      "doi": "10.1109/tvt.2026.3733130",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1109/tvt.2026.3733130",
+      "checked_at": "2026-11-27T10:07:40+07:00",
+      "status": "REGISTRY_ACCESS_FAILED",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "id": "R0113",
+      "doi": "DOI_NOT_FOUND",
+      "registry": "crossref",
+      "url": null,
+      "checked_at": "2026-11-27T10:07:40+07:00",
+      "status": "DOI_NOT_FOUND"
+    },
+    {
+      "id": "R0122",
+      "doi": "10.1145/3842721.3850224",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3842721.3850224",
+      "checked_at": "2026-11-27T10:07:40+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3842721.3850224",
+      "registry_title": [
+        "Trust-Driven Multi-Criteria Aerial Networking for Mission-Critical IoT with Localization Uncertainty"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            11,
+            22
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            11,
+            23
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            11,
+            22
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            11,
+            22
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0126",
+      "doi": "10.5772/intechopen.1011880",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.5772/intechopen.1011880",
+      "checked_at": "2026-11-27T10:07:41+07:00",
+      "http": 200,
+      "registry_doi": "10.5772/intechopen.1011880",
+      "registry_title": [
+        "Knowledge Aggregation in Autonomous Systems via Pre-Trained Model"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            3,
+            19
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            3,
+            19
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            3,
+            19
+          ]
+        ]
+      },
+      "registry_type": "book-chapter",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0128",
+      "doi": "10.1109/miot.2026.3711893",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1109/miot.2026.3711893",
+      "checked_at": "2026-11-27T10:07:41+07:00",
+      "http": 200,
+      "registry_doi": "10.1109/miot.2026.3711893",
+      "registry_title": [
+        "Toward Secure Visual Semantic Communication: A Semantic Segmentation Perspective"
+      ],
+      "year_date_fields": {
+        "published-print": [
+          [
+            2026
+          ]
+        ],
+        "published": [
+          [
+            2026
+          ]
+        ],
+        "issued": [
+          [
+            2026
+          ]
+        ]
+      },
+      "registry_type": "journal-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0132",
+      "doi": "10.5281/zenodo.20445205",
+      "registry": "datacite",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.20445205",
+      "checked_at": "2026-11-27T10:07:41+07:00",
+      "http": 200,
+      "registry_doi": "10.5281/zenodo.20445205",
+      "registry_title": [
+        "Human-Centred and Explainable AI Framework for Operational Deployment of Transformer-MARL Distributed Air-Defence Systems in Contested Electromagnetic Environments"
+      ],
+      "year_date_fields": {
+        "dates": [
+          {
+            "date": "2026-05-29",
+            "dateType": "Issued"
+          }
+        ],
+        "publicationYear": 2026
+      },
+      "registry_type": "JournalArticle",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0142",
+      "doi": "10.1145/3817395.3817421",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3817395.3817421",
+      "checked_at": "2026-11-27T10:07:41+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3817395.3817421",
+      "registry_title": [
+        "Development of drone swarm intelligence applications"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            8,
+            25
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            3,
+            20
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            3,
+            20
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            3,
+            20
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0148",
+      "doi": "10.1145/3801359.3801406",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3801359.3801406",
+      "checked_at": "2026-11-27T10:07:42+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3801359.3801406",
+      "registry_title": [
+        "Two-Stage Deep Energy Optimization for UAV-Assisted Edge Computing: JointTask Offloading and Deployment"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            5,
+            4
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            2,
+            6
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            2,
+            6
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            2,
+            6
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0221",
+      "doi": "10.1145/3820709.3820744",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3820709.3820744",
+      "checked_at": "2026-11-27T10:07:42+07:00",
+      "status": "REGISTRY_ACCESS_FAILED",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "id": "R0225",
+      "doi": "10.1145/3846184",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3846184",
+      "checked_at": "2026-11-27T10:07:42+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3846184",
+      "registry_title": [
+        "SwarmUpdate: Hierarchical Software Updates and Deep Learning Model Patching for Heterogeneous UAV Swarms"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            9,
+            10
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            9,
+            10
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            9,
+            10
+          ]
+        ]
+      },
+      "registry_type": "journal-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0229",
+      "doi": "10.1145/3838457.3838477",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3838457.3838477",
+      "checked_at": "2026-11-27T10:07:43+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3838457.3838477",
+      "registry_title": [
+        "Federated Learning-Based Trajectory Optimization for UAV Swarms with Wind Impact Analysis"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            9,
+            14
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            5,
+            15
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            5,
+            15
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            5,
+            15
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0231",
+      "doi": "10.1145/3772281",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3772281",
+      "checked_at": "2026-11-27T10:07:43+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3772281",
+      "registry_title": [
+        "c2mec: Cooperative Multi-split and Multi-hop Edge Computing Based on Deep Reinforcement Learning"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            8,
+            24
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            9,
+            30
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            8,
+            24
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            8,
+            24
+          ]
+        ]
+      },
+      "registry_type": "journal-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0234",
+      "doi": "10.1145/3844610",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3844610",
+      "checked_at": "2026-11-27T10:07:43+07:00",
+      "status": "REGISTRY_ACCESS_FAILED",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "id": "R0238",
+      "doi": "10.1145/3821725.3821803",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3821725.3821803",
+      "checked_at": "2026-11-27T10:07:44+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3821725.3821803",
+      "registry_title": [
+        "A Method for Dynamic Knowledge Graph and Two-Stage Subgraph Matching for Pattern Recognition and Risk Assessment in Situation Awareness"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            9,
+            16
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            4,
+            10
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            4,
+            10
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            4,
+            10
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0240",
+      "doi": "10.1145/3842435.3843959",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3842435.3843959",
+      "checked_at": "2026-11-27T10:07:44+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3842435.3843959",
+      "registry_title": [
+        "Poster: CMA-FL: Cognitive Multi-Agent Federated Learning for Resource-Aware Drone Communication Attack Detection"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0242",
+      "doi": "10.1145/3807408.3807409",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3807408.3807409",
+      "checked_at": "2026-11-27T10:07:44+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3807408.3807409",
+      "registry_title": [
+        "Real-Time Drone-Car Collaboration for Future Mobility: Vision and Challenge"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            5,
+            1
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            3,
+            1
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            3,
+            1
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            3,
+            1
+          ]
+        ]
+      },
+      "registry_type": "journal-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0244",
+      "doi": "10.1145/3842435.3843954",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3842435.3843954",
+      "checked_at": "2026-11-27T10:07:45+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3842435.3843954",
+      "registry_title": [
+        "Attention-Guided UAV Intrusion Detection with BSO-Based Feature Selection"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0251",
+      "doi": "10.1145/3795154.3795350",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3795154.3795350",
+      "checked_at": "2026-11-27T10:07:45+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3795154.3795350",
+      "registry_title": [
+        "Research on accurate operation system of UAV in complex Scene Based on multi-source intelligent Fusion and dynamic Management"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            4
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            12,
+            26
+          ]
+        ],
+        "published": [
+          [
+            2025,
+            12,
+            26
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            12,
+            26
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0255",
+      "doi": "10.1145/3840749.3841574",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3840749.3841574",
+      "checked_at": "2026-11-27T10:07:45+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3840749.3841574",
+      "registry_title": [
+        "EdgeCurator: Efficient Cross-Modal Grounding for Real-Time Language-Guided UAV Navigation"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0259",
+      "doi": "10.1145/3789418.3789446",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3789418.3789446",
+      "checked_at": "2026-11-27T10:07:46+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3789418.3789446",
+      "registry_title": [
+        "SemanticBlock: Blockchain-Assisted Secure and Energy-Aware UAV-BS Deployment Leveraging Semantic Learning"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            4,
+            25
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            12,
+            12
+          ]
+        ],
+        "published": [
+          [
+            2025,
+            12,
+            12
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            12,
+            12
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0261",
+      "doi": "10.1145/3801359.3801401",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3801359.3801401",
+      "checked_at": "2026-11-27T10:07:46+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3801359.3801401",
+      "registry_title": [
+        "Application of cognitive radio in anti jamming of satellite and aircraft communication"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            5,
+            4
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            2,
+            6
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            2,
+            6
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            2,
+            6
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0266",
+      "doi": "10.1145/3860892",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3860892",
+      "checked_at": "2026-11-27T10:07:46+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3860892",
+      "registry_title": [
+        "Mind the Attack: How security threats are shaping software deployed on Unmanned Aerial Vehicles"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            10,
+            30
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            10,
+            30
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            10,
+            30
+          ]
+        ]
+      },
+      "registry_type": "journal-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0272",
+      "doi": "10.1145/3789206",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3789206",
+      "checked_at": "2026-11-27T10:07:46+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3789206",
+      "registry_title": [
+        "DRL-Based Charging Strategy Optimization for IRS-Assisted UAV in Wireless Rechargeable Sensor Networks"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            3,
+            10
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            5,
+            30
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            3,
+            10
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            3,
+            10
+          ]
+        ]
+      },
+      "registry_type": "journal-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0281",
+      "doi": "10.1145/3767308.3842139",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3767308.3842139",
+      "checked_at": "2026-11-27T10:07:47+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3767308.3842139",
+      "registry_title": [
+        "The 4th Workshop on UAVs in Multimedia: Capturing the World from a New Perspective"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            11,
+            9
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            11,
+            9
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            11,
+            9
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0308",
+      "doi": "10.1145/3745756.3809186",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3745756.3809186",
+      "checked_at": "2026-11-27T10:07:47+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3745756.3809186",
+      "registry_title": [
+        "Needle in a Haystack: Tracking UAVs from Massive Noise in Real-World 5G-A Base Station Data"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            6,
+            20
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            6,
+            21
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            6,
+            20
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            6,
+            20
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    },
+    {
+      "id": "R0402",
+      "doi": "10.1145/3842435.3843964",
+      "registry": "crossref",
+      "url": "https://api.crossref.org/works/10.1145/3842435.3843964",
+      "checked_at": "2026-11-27T10:07:47+07:00",
+      "http": 200,
+      "registry_doi": "10.1145/3842435.3843964",
+      "registry_title": [
+        "PDT-TCN: Prefix-Drop Temporal Convolutional Networks for Early Attack Detection in UAV-GCS Communications"
+      ],
+      "year_date_fields": {
+        "published-online": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ],
+        "published": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            10,
+            26
+          ]
+        ]
+      },
+      "registry_type": "proceedings-article",
+      "status": "DOI_MATCH"
+    }
+  ]
+}
