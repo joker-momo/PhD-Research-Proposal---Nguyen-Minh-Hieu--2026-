@@ -15,7 +15,7 @@ FILES = [
         "build_technical_survey.py", "build_editorial_evidence.py", "main.tex",
         "editorial_mechanism_setting.tex", "editorial_outcome_coverage.tex", "main.pdf", "references.bib",
         "supplement_fulltext_exclusions.csv", "human_adjudication_log.csv", "audit_adjudication.py", "audit_summary.json", "adjudication_audit_table.tex",
-        "supplement_s2_eligibility.csv",
+        "supplement_s2_eligibility.csv", "supplement_s2_adjudication.md",
         "sn-jnl.cls", "sn-vancouver-num.bst", "technical_coding.psv", "prisma_flow.pdf",
         "technical_appraisal.tex", "technical_appraisal_bars.tex",
         "technical_appraisal_figure.tex", "technical_architecture.tex",

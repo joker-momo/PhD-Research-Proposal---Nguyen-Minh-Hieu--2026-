@@ -21,6 +21,23 @@ forms contain zero paired eligibility decisions.
 Run `python3 -B build_s2_eligibility.py --check` from this directory to
 verify the register against the accepted inputs.
 
+## Author statement on reviewer responsibilities
+
+On 28 November 2026, the author reported that they and a colleague conducted
+all screening rounds and assigned the study appraisal ratings themselves.
+The author described AI assistance in their own review as administrative
+file handling and attributed the screening judgments and appraisal ratings
+to the two human reviewers. The author supplied this account for both
+reviewers in the HK261 project conversation.
+
+The documented project workflow also includes preliminary AI outputs and
+AI-assisted evidence checks. The R1 and R2 appendices below record the
+endorsements of the Codex- and Gemini-assisted source reviews, respectively.
+The records available for audit contain zero paired independent full-text
+eligibility decisions. They do not establish how the two reviewers divided
+the work or whether they screened independently. The final register and
+appraisal ratings are unchanged by this statement.
+
 ## Screening and adjudication history
 
 The [136-report review log](human_adjudication_log.csv) carries the existing

@@ -14,6 +14,8 @@ The [historical reread review](../../restart_2026_11_26/extraction/rq5_uniform/r
 
 R0082's bibliography identifies the IEEE proceedings publication. The archived extraction uses physical pages counted from one in the retained arXiv v1 PDF. All six field anchors, all ten appraisal anchors and all four result figure captions were cross-checked at the same physical pages in the author-supplied IEEE proceedings PDF. The [cross-check](../../restart_2026_11_26/synthesis/final_46/r0082_publisher_crosscheck.json) records the file fingerprints and results. Source review records overlap with R0019 and the distinct technical evaluations. Shared run provenance remains unresolved. The figure-only R0082 results contribute zero exact outcome entries.
 
+The [S2 author statement](supplement_s2_adjudication.md#author-statement-on-reviewer-responsibilities) records that the author and a colleague assigned the appraisal ratings. The retained appraisal rationales and the R1/R2 records document the underlying source locators and the AI-assisted source reviews.
+
 ## Twelve priority decisions
 
 The author resolved the 12 listed items after reviewing the AI-assisted comparison. The [decision ledger](../../restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/author_decisions.csv) records the author confirmations. The [application data](../../restart_2026_11_26/synthesis/final_46/author_decision_application.json) record each coding change and open issue. Physical PDF pages are counted from one. The comparison did not repeat the extraction independently for all reports and did not change eligibility.

@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:19:47+07:00",
+  "updated_at": "2026-11-28T00:26:56+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
-    "summary": "The verified 30-page manuscript and S2 audit document author endorsement of all 46 included and 90 excluded reports, with ten separately documented final decisions and zero independent screening pairs. The S2 eligibility register gives evidence for all 136 assessed reports. PRISMA is unchanged."
+    "summary": "The verified 30-page manuscript and S2 record the author’s account that the author and a colleague conducted screening and assigned appraisal ratings. Preliminary AI records are retained. The author endorsed 46 inclusions and 90 exclusions. Ten decisions have separate author entries. Zero paired independent full-text decisions are documented. PRISMA is unchanged."
   },
   "task": {
-    "task_id": "hk261-manuscript-author-eligibility-endorsement",
+    "task_id": "hk261-manuscript-author-reviewer-roles",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:18:44+07:00",
-    "updated_at": "2026-11-28T00:19:47+07:00",
-    "decision_id": "hk261-manuscript-author-eligibility-endorsement-v1",
+    "started_at": "2026-11-28T00:25:20+07:00",
+    "updated_at": "2026-11-28T00:26:56+07:00",
+    "decision_id": "hk261-manuscript-author-reviewer-roles-v1",
     "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
-    "completed_at": "2026-11-28T00:19:47+07:00"
+    "completed_at": "2026-11-28T00:26:56+07:00"
   },
   "next_task": {
     "task_id": "hk261-priority-draft-author-comparison",
@@ -1084,6 +1084,28 @@
       ],
       "documented_item_level_author_decisions": 10,
       "register": "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
+      "independent_rebuild_matched_rendered_pages": 30
+    },
+    "reviewer_roles_author_statement": {
+      "path": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+      "section": "Author statement on reviewer responsibilities",
+      "source": "Author statement in the HK261 project conversation on 28 November 2026.",
+      "scope": "Author-reported human screening and appraisal ratings, with AI file handling in their review. Historical preliminary AI outputs and AI-assisted source verification remain documented.",
+      "independent_human_screening_pairs_documented": 0,
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "a6203f46997d1107ca92c16165f81aeb9ef63bf229cba7411f8b19494fadbf37",
+      "pages": 30,
+      "details_pages": [
+        1,
+        4,
+        25,
+        26
+      ],
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
       "independent_rebuild_matched_rendered_pages": 30
     }
   },
