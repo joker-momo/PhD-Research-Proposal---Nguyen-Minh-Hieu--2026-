@@ -360,6 +360,35 @@
         "reconciliation",
         "report-study-map"
       ]
+    },
+    {
+      "artifact_id": "hk261-report-evidence-catalog",
+      "name": "HK261 report-level evidence catalog",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/prisma_evidence/build_report_catalog.py",
+      "purpose": "Preserve and validate report-level PDF custody, source links, checksums and screening evidence in Git.",
+      "entrypoint": "python3 prisma_evidence/build_report_catalog.py",
+      "inputs": [
+        "unique_record_queue.csv",
+        "fulltext_retrieval/retrieval_log.csv",
+        "fulltext_retrieval/fulltext_identity_index.csv",
+        "supplemental_screening/supplemental_intake.csv",
+        "original PDF and accepted evidence ledgers"
+      ],
+      "outputs": [
+        "prisma_evidence/evidence_by_id.csv"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/prisma_evidence/build_report_catalog.py"
+      ],
+      "test_command": "python3 prisma_evidence/build_report_catalog.py --check",
+      "status": "active",
+      "tags": [
+        "hk261",
+        "evidence",
+        "report-id",
+        "sha256",
+        "clean-checkout"
+      ]
     }
   ]
 }

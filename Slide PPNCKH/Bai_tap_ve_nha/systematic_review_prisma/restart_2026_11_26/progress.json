@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T10:25:28+07:00",
+  "updated_at": "2026-11-27T10:34:30+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -516,7 +516,12 @@
         "restart_2026_11_26/fulltext_retrieval/retrieval_log.csv",
         "restart_2026_11_26/fulltext_retrieval/fulltext_identity_index.csv",
         "restart_2026_11_26/fulltext_retrieval/missing_pdf.csv",
-        "restart_2026_11_26/fulltext_retrieval/step08_retrieval_summary.md"
+        "restart_2026_11_26/fulltext_retrieval/step08_retrieval_summary.md",
+        "prisma_evidence/evidence_by_id.csv",
+        "prisma_evidence/MAINTENANCE.md",
+        "prisma_evidence/build_report_catalog.py",
+        "restart_2026_11_26/supplemental_screening/manifest.json",
+        "restart_2026_11_26/supplemental_screening/supplemental_intake.csv"
       ],
       "acceptance": [
         {

@@ -4,12 +4,13 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T10:25:28+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T10:34:30+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
 - [Trạng thái dự án](../MUST_READ_AI_AGENT/current_state.json)
 - [Nhật ký sự kiện theo thời gian](../MUST_READ_AI_AGENT/events.jsonl)
+- [Danh mục minh chứng theo ID](evidence_by_id.csv)
 - [Cách kiểm tra và cập nhật thư mục](MAINTENANCE.md)
 
 - [Bước 01](#buoc-01) · Kiểm kê dữ liệu đầu vào
@@ -278,6 +279,11 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=3.
 - [fulltext_identity_index.csv](../restart_2026_11_26/fulltext_retrieval/fulltext_identity_index.csv)
 - [missing_pdf.csv](../restart_2026_11_26/fulltext_retrieval/missing_pdf.csv)
 - [step08_retrieval_summary.md](../restart_2026_11_26/fulltext_retrieval/step08_retrieval_summary.md)
+- [evidence_by_id.csv](../prisma_evidence/evidence_by_id.csv)
+- [MAINTENANCE.md](../prisma_evidence/MAINTENANCE.md)
+- [build_report_catalog.py](../prisma_evidence/build_report_catalog.py)
+- [manifest.json](../restart_2026_11_26/supplemental_screening/manifest.json)
+- [supplemental_intake.csv](../restart_2026_11_26/supplemental_screening/supplemental_intake.csv)
 
 <a id="buoc-09"></a>
 ## Bước 09 · Sàng lọc toàn văn mới

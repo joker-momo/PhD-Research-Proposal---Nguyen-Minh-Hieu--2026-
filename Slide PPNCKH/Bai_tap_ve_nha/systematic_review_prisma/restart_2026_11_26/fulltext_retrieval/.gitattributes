@@ -1,0 +1,2 @@
+pdf/*.pdf -text -diff -merge
+versions/**/*.pdf -text -diff -merge

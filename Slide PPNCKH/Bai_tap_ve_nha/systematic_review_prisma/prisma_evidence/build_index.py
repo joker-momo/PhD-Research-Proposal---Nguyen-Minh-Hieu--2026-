@@ -54,6 +54,7 @@ def render_index(project, progress, extra_paths):
         "- [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)",
         "- [Trạng thái dự án](../MUST_READ_AI_AGENT/current_state.json)",
         "- [Nhật ký sự kiện theo thời gian](../MUST_READ_AI_AGENT/events.jsonl)",
+        "- [Danh mục minh chứng theo ID](evidence_by_id.csv)",
         "- [Cách kiểm tra và cập nhật thư mục](MAINTENANCE.md)",
         "",
     ]
