@@ -718,6 +718,37 @@
         "Gemini",
         "HK261"
       ]
+    },
+    {
+      "artifact_id": "hk261-check-e5",
+      "name": "HK261 E5 DOI publication date check",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/check_e5.py",
+      "purpose": "Check publication dates for both masked screening passes using Crossref and DOI-matched IEEE Xplore evidence.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/check_e5.py'",
+      "inputs": [
+        "restart_2026_11_26/integrity/dual_ai_full_136/review_136.csv",
+        "restart_2026_11_26/fulltext_screening/fulltext_screening.csv",
+        "restart_2026_11_26/supplemental_screening/screening_decisions.csv",
+        "restart_2026_11_26/retrieval_round_01/round_01_evidence.json",
+        "restart_2026_11_26/integrity/dual_ai_full_136/e5_date_check/publisher_lookup.json",
+        "Crossref REST API or local replay archive"
+      ],
+      "outputs": [
+        "restart_2026_11_26/integrity/dual_ai_full_136/e5_date_check/results.csv",
+        "restart_2026_11_26/integrity/dual_ai_full_136/e5_date_check/crossref_receipts.json"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/check_e5.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/dual_ai_full_136/check_e5.py' --replay",
+      "status": "active",
+      "tags": [
+        "screening",
+        "evidence",
+        "HK261",
+        "E5",
+        "Crossref"
+      ]
     }
   ]
 }
