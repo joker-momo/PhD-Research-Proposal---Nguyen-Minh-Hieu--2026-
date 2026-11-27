@@ -42,28 +42,33 @@ def compact_images(path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("review", type=Path)
+    parser.add_argument("review", type=Path, help="Source review CSV or a frozen correction_targets.json")
     parser.add_argument("destination", type=Path)
     args = parser.parse_args()
     args.destination.mkdir(parents=True, exist_ok=False)
     phase = load(HERE / "phase_manifest.json")
     selected = defaultdict(list)
-    for row in rows(args.review):
-        ident = row["packet_id"]
-        if ident in LIMITED:
-            continue
-        if (row["gemini_semantic"] != "FAIL"
-                and row["gemini_locator_check"] != "SCHEMA_INVALID"
-                and row["gemini_status"] != "MISSING_PASS"):
-            continue
-        description = row["gemini_semantic_reason"] or row["gemini_locator_check"] or "Provider row missing."
-        locators = (row["gemini_semantic_recheck"], row["codex_locator"], row["gemini_locator"],
-                    row["suggested_locator"], description)
-        pages = sorted(set().union(*(page_numbers(text) for text in locators)))
-        selected[ident].append({
-            "kind": row["kind"], "key": row["key"], "prior_issue": description,
-            "original_pdf_pages": pages,
-        })
+    if args.review.suffix == ".json":
+        selected.update({ident: record["targets"] for ident, record in load(args.review).items()})
+    else:
+        for row in rows(args.review):
+            ident = row["packet_id"]
+            if ident in LIMITED:
+                continue
+            if (row["gemini_semantic"] != "FAIL"
+                    and row["gemini_locator_check"] != "SCHEMA_INVALID"
+                    and row["gemini_status"] != "MISSING_PASS"):
+                continue
+            description = row["gemini_semantic_reason"] or row["gemini_locator_check"] or "Provider row missing."
+            locators = (row["gemini_semantic_recheck"], row["codex_locator"], row["gemini_locator"],
+                        row["suggested_locator"], description)
+            pages = sorted(set().union(*(page_numbers(text) for text in locators)))
+            selected[ident].append({
+                "kind": row["kind"], "key": row["key"], "prior_issue": description,
+                "original_pdf_pages": pages,
+            })
+    if selected.keys() & LIMITED:
+        raise ValueError("Correction input includes a restricted source")
     source_map = {}
     for ident, items in sorted(selected.items()):
         source = phase["pdfs"][ident]

@@ -41,12 +41,13 @@
     "UNRESOLVED": 2
   },
   "errors": [],
+  "normalized_json_keys": [],
   "missing_keys": [],
   "semantic": {
-    "PARTIAL": 27,
-    "PASS": 33,
-    "FAIL": 4
+    "FAIL": 7,
+    "PARTIAL": 30,
+    "PASS": 42
   },
-  "semantic_unreviewed": 15,
+  "semantic_unreviewed": 0,
   "semantic_missing_row_reviews": 0
 }

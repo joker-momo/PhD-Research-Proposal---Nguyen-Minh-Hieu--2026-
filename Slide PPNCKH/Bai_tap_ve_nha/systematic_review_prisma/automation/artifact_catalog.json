@@ -774,6 +774,78 @@
         "PDF",
         "Gemini"
       ]
+    },
+    {
+      "artifact_id": "hk261-review-dual-source-887",
+      "name": "HK261 887-key source report",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/review_sources.py",
+      "purpose": "Regenerate the 887-key advisory source table and aggregate checks from frozen PDF source pages and provider receipts.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/review_sources.py' /tmp/hk261-source-review",
+      "inputs": [
+        "Codex archived pass, Gemini raw and normalized receipts, source page arrays and frozen verification inventory"
+      ],
+      "outputs": [
+        "source_review_887.csv, source_review_summary.json and report_data.tex"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/review_sources.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/review_sources.py' /tmp/hk261-source-review",
+      "status": "active",
+      "tags": [
+        "HK261",
+        "source verification",
+        "PDF",
+        "Gemini"
+      ]
+    },
+    {
+      "artifact_id": "hk261-source-correction-packet",
+      "name": "HK261 bounded PDF correction context",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/correction_packet.py",
+      "purpose": "Reconstruct the Gemini correction page selection and its exact file hashes from the frozen original page map.",
+      "entrypoint": "rtk uv run --offline --no-project --with pymupdf==1.26.7 python -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/correction_packet.py' correction_targets.json /tmp/hk261-correction/assets",
+      "inputs": [
+        "Source review keys or correction_targets.json and verified original PDFs"
+      ],
+      "outputs": [
+        "Correction folder and correction_manifest.json"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/correction_packet.py"
+      ],
+      "test_command": "rtk uv run --offline --no-project --with pymupdf==1.26.7 python -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/correction_packet.py' correction_targets.json /tmp/hk261-correction/assets",
+      "status": "active",
+      "tags": [
+        "HK261",
+        "source verification",
+        "PDF",
+        "Gemini"
+      ]
+    },
+    {
+      "artifact_id": "hk261-normalize-source-correction",
+      "name": "HK261 correction response syntax recovery",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/normalize_correction.py",
+      "purpose": "Escape only the embedded ASCII quote marks reviewed in seven malformed raw JSON rows and verify exact coverage.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/normalize_correction.py' receipts/batch-09-raw.json correction_targets.json /tmp/normalized-correction.json",
+      "inputs": [
+        "Archived raw Gemini correction receipt, correction_targets.json"
+      ],
+      "outputs": [
+        "Normalized, replayable correction receipt and seven recorded recovered keys"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/normalize_correction.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/normalize_correction.py' receipts/batch-09-raw.json correction_targets.json /tmp/normalized-correction.json",
+      "status": "active",
+      "tags": [
+        "HK261",
+        "source verification",
+        "PDF",
+        "Gemini"
+      ]
     }
   ]
 }

@@ -134,6 +134,8 @@ def receipt_review(path, batch, expected, sources):
     text = "\n".join(p["text"] for artifact in receipt.get("artifacts", [])
                      for p in artifact.get("parts", []) if isinstance(p.get("text"), str))
     data, errors, preflight = extract(text, expected)
+    normalization = meta.get("quote_normalization", {})
+    errors += normalization.get("original_errors", [])
     given_hashes = {name: record.get("sha256") for name, record in meta.get("geminiApp", {}).get("files", {}).items()}
     for k, item in data.items():
         item["locator_check"] = assess(item, sources)
@@ -168,6 +170,7 @@ def receipt_review(path, batch, expected, sources):
         "locator_checks": dict(Counter(item["locator_check"] for item in data.values())),
         "status_counts": dict(Counter(str(item.get("status", "")) for item in data.values())),
         "errors": errors,
+        "normalized_json_keys": normalization.get("recovered_keys", []),
         "missing_keys": sorted(expected - data.keys()),
     }
     return data, stats
@@ -257,6 +260,16 @@ def codex_scope(codex):
                            evidence=[], note="The quantitative details are outside the scope of this review.")
 
 
+def recheck_text(gate):
+    corrected = gate.get("corrected_evidence", [])
+    if not isinstance(corrected, list):
+        return str(corrected)
+    return gate.get("suggested_fix", "") or " | ".join(
+        f"PDF p. {a.get('page', '')}, {a.get('section', '')}: {a.get('quote', '')}"
+        for a in corrected if isinstance(a, dict)
+    )
+
+
 def csv_row(target, info, codex, gemini, prior, gate, supplemental, correction, correction_gate):
     ident, kind, key = input_key(target)
     record = {"record_id": info["record_id"], "packet_id": ident, "kind": kind, "key": key,
@@ -277,21 +290,18 @@ def csv_row(target, info, codex, gemini, prior, gate, supplemental, correction, 
         record[f"{name}_excerpt"] = " | ".join(a.get("quote", "") for a in anchors
                                                if isinstance(a, dict) and isinstance(a.get("quote"), str))
     record["gemini_semantic"] = gate.get("semantic", "PENDING") if gemini else "NO_RESULT"
+    record["gemini_semantic_reason"] = gate.get("reason", "")
+    record["gemini_semantic_recheck"] = recheck_text(gate)
     record["correction_semantic"] = correction_gate.get("semantic", "PENDING") if correction else ""
     record["correction_semantic_reason"] = correction_gate.get("reason", "")
-    record["gemini_semantic_reason"] = gate.get("reason", "")
-    corrected = gate.get("corrected_evidence", [])
-    record["gemini_semantic_recheck"] = gate.get("suggested_fix", "") or " | ".join(
-        f"PDF p. {a.get('page', '')}, {a.get('section', '')}: {a.get('quote', '')}"
-        for a in corrected if isinstance(a, dict)
-    ) if isinstance(corrected, list) else str(corrected)
+    record["correction_semantic_recheck"] = recheck_text(correction_gate)
     if record["codex_status"] == "DISCREPANCY":
         record["author_attention"] = "BASELINE_DISCREPANCY"
     elif ident in LIMITED:
         record["author_attention"] = "RESTRICTED_SOURCE"
-    elif (record["gemini_semantic"] != "PASS"
+    elif ((record["gemini_semantic"] != "PASS" and record["correction_semantic"] != "PASS")
           or record["codex_status"] != "VERIFIED"
-          or record["comparison"] == "DIFFERENT_LABEL"):
+          or (record["comparison"] == "DIFFERENT_LABEL" and record["correction_semantic"] != "PASS")):
         record["author_attention"] = "CHECK_EVIDENCE"
     else:
         record["author_attention"] = "EVIDENCE_AVAILABLE"
@@ -359,8 +369,16 @@ def report_tex(path, summary, report):
         lines.append(
             f"Lô sửa trả {followup['seen']}/{followup['expected']} mục. "
             f"Tính cả lô sửa, Gemini có {summary['gemini_unique_with_correction']}/{summary['expected']} mục phân tích được. "
+            f"Đã thoát dấu ngoặc kép trong {len(followup.get('normalized_json_keys', []))} dòng JSON để đọc dữ liệu gốc. "
             "Cột có tiền tố correction trong CSV lưu chứng cứ và kết quả kiểm tra riêng."
         )
+        if followup.get("semantic"):
+            semantic = followup["semantic"]
+            lines.append(
+                f"Lượt sửa qua kiểm tra nội dung {semantic.get('PASS', 0)}, hỗ trợ một phần "
+                f"{semantic.get('PARTIAL', 0)}, không qua {semantic.get('FAIL', 0)}. "
+                "Các kết quả đọc được vẫn cần người thẩm định xác nhận."
+            )
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -414,7 +432,7 @@ def main():
         data, stats = receipt_review(receipt, batch, members, sources)
         checked = load_semantic_checks(args.workspace, batch["number"], members)
         semantic.update(checked)
-        stats["semantic"] = dict(Counter(checked[k]["semantic"] for k in data.keys() & checked.keys()))
+        stats["semantic"] = dict(sorted(Counter(checked[k]["semantic"] for k in data.keys() & checked.keys()).items()))
         stats["semantic_unreviewed"] = len(data.keys() - checked.keys())
         stats["semantic_missing_row_reviews"] = len(checked.keys() - data.keys())
         gemini.update(data)
@@ -430,8 +448,9 @@ def main():
         correction_receipt = HERE / "receipts/batch-09-receipt.json"
         correction, correction_stats = receipt_review(correction_receipt, correction_manifest, correction_keys, sources)
         correction_semantic = load_semantic_checks(args.workspace, 9, correction_keys)
-        correction_stats["semantic"] = dict(Counter(correction_semantic[k]["semantic"]
-                                                    for k in correction.keys() & correction_semantic.keys()))
+        correction_counts = Counter(correction_semantic[k]["semantic"]
+                                    for k in correction.keys() & correction_semantic.keys())
+        correction_stats["semantic"] = dict(sorted(correction_counts.items()))
         correction_stats["semantic_unreviewed"] = len(correction.keys() - correction_semantic.keys())
     baseline = baseline_values()
     report = []

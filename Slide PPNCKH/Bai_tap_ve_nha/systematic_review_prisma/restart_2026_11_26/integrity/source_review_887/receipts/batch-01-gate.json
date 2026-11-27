@@ -10,6 +10,19 @@
   "hash_inventory_match": true,
   "context_unchanged": true,
   "preflight_anchor_match": true,
+  "identity_count": 6,
+  "identity_expected": 6,
+  "identity_records": [
+    "HKF-008",
+    "HKF-024",
+    "HKF-032",
+    "HKF-058",
+    "HKF-116",
+    "HKF-118"
+  ],
+  "identity_missing": [],
+  "identity_duplicate_dois": 0,
+  "identity_duplicate_titles": 0,
   "end_marker": true,
   "cleanup": {
     "state": "deleted",
@@ -26,5 +39,13 @@
     "PARTIAL": 2
   },
   "errors": [],
-  "missing_keys": []
+  "normalized_json_keys": [],
+  "missing_keys": [],
+  "semantic": {
+    "FAIL": 4,
+    "PARTIAL": 46,
+    "PASS": 62
+  },
+  "semantic_unreviewed": 0,
+  "semantic_missing_row_reviews": 0
 }

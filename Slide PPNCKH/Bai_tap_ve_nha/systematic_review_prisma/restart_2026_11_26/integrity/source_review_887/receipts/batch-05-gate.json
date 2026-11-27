@@ -44,6 +44,7 @@
   "errors": [
     "malformed JSONL 1: Expecting ',' delimiter: line 1 column 121 (char 120)"
   ],
+  "normalized_json_keys": [],
   "missing_keys": [
     [
       "HKF-100",
@@ -52,10 +53,10 @@
     ]
   ],
   "semantic": {
-    "PASS": 59,
-    "PARTIAL": 34,
-    "FAIL": 2
+    "FAIL": 3,
+    "PARTIAL": 40,
+    "PASS": 72
   },
-  "semantic_unreviewed": 20,
+  "semantic_unreviewed": 0,
   "semantic_missing_row_reviews": 1
 }

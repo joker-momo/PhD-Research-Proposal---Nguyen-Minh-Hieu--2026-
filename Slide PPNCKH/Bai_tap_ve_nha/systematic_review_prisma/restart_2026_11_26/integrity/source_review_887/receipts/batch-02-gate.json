@@ -20,6 +20,7 @@
     "HKF-121",
     "HKF-128"
   ],
+  "identity_missing": [],
   "identity_duplicate_dois": 0,
   "identity_duplicate_titles": 0,
   "end_marker": true,
@@ -41,7 +42,13 @@
     "NOT_REPORTED": 5
   },
   "errors": [],
+  "normalized_json_keys": [],
   "missing_keys": [],
-  "semantic": {},
-  "semantic_unreviewed": 111
+  "semantic": {
+    "FAIL": 8,
+    "PARTIAL": 32,
+    "PASS": 71
+  },
+  "semantic_unreviewed": 0,
+  "semantic_missing_row_reviews": 0
 }

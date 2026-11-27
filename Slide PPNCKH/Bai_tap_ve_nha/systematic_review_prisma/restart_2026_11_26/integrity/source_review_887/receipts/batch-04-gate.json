@@ -10,9 +10,15 @@
   "hash_inventory_match": true,
   "context_unchanged": true,
   "preflight_anchor_match": true,
-  "identity_count": 0,
+  "identity_count": 4,
   "identity_expected": 4,
-  "identity_records": [],
+  "identity_records": [
+    "HKF-011",
+    "HKF-088",
+    "HKF-108",
+    "HKF-127"
+  ],
+  "identity_missing": [],
   "identity_duplicate_dois": 0,
   "identity_duplicate_titles": 0,
   "end_marker": true,
@@ -34,7 +40,13 @@
     "UNRESOLVED": 38
   },
   "errors": [],
+  "normalized_json_keys": [],
   "missing_keys": [],
-  "semantic": {},
-  "semantic_unreviewed": 112
+  "semantic": {
+    "FAIL": 2,
+    "PARTIAL": 40,
+    "PASS": 70
+  },
+  "semantic_unreviewed": 0,
+  "semantic_missing_row_reviews": 0
 }

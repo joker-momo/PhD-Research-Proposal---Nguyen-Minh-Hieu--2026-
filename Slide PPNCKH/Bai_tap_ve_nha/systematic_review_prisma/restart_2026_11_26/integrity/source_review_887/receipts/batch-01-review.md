@@ -8,7 +8,8 @@ Trạng thái bridge `TASK_STATE_COMPLETED`. Bắt đầu 2026-11-27T13:27:52.93
 | Hash đầu vào và đầu ra bridge | PASS | Đối chiếu manifest và biên nhận. |
 | Neo kiểm tra đọc PDF | PASS | HKF-118, PDF tr. 2. |
 | Khóa chính xác và dấu kết thúc | PASS | 112/112 dòng. 0 lỗi cấu trúc hoặc khóa. |
+| Nhận diện thư mục học thuật | PASS | 6/6 dòng nhận diện, 0 DOI trùng, 0 tiêu đề trùng. |
 | Neo nguồn hoặc khoảng trống rõ | FAIL | 95 neo khớp đủ; 0 ghi khoảng trống; 17 cần chỉnh. |
-| Đủ căn cứ cho toàn bộ kết luận | FAIL | Cần rà nội dung, đơn vị và điều kiện từng nhận định. |
+| Đủ căn cứ cho toàn bộ kết luận | FAIL | Qua 62, một phần 46, không qua 4, chưa kiểm 0. |
 
 Kết quả lô giữ ở trạng thái tham khảo. Việc khớp neo chưa xác nhận nội dung của phán định.

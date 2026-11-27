@@ -10,7 +10,7 @@ Trạng thái bridge `TASK_STATE_COMPLETED`. Bắt đầu 2026-11-27T14:17:50.28
 | Khóa chính xác và dấu kết thúc | FAIL | 115/116 dòng. 1 lỗi cấu trúc hoặc khóa. |
 | Nhận diện thư mục học thuật | PASS | 6/6 dòng nhận diện, 0 DOI trùng, 0 tiêu đề trùng. |
 | Neo nguồn hoặc khoảng trống rõ | FAIL | 90 neo khớp đủ; 0 ghi khoảng trống; 25 cần chỉnh. |
-| Đủ căn cứ cho toàn bộ kết luận | FAIL | Qua 59, một phần 34, không qua 2, chưa kiểm 20. |
+| Đủ căn cứ cho toàn bộ kết luận | FAIL | Qua 72, một phần 40, không qua 3, chưa kiểm 0. |
 
 Kết quả lô giữ ở trạng thái tham khảo. Việc khớp neo chưa xác nhận nội dung của phán định.
 

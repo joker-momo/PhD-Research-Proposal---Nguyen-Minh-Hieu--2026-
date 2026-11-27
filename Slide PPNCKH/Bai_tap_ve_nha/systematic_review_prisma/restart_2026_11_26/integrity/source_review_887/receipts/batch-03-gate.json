@@ -20,6 +20,7 @@
     "HKF-112",
     "HKF-134"
   ],
+  "identity_missing": [],
   "identity_duplicate_dois": 0,
   "identity_duplicate_titles": 0,
   "end_marker": true,
@@ -40,7 +41,13 @@
     "UNRESOLVED": 4
   },
   "errors": [],
+  "normalized_json_keys": [],
   "missing_keys": [],
-  "semantic": {},
-  "semantic_unreviewed": 112
+  "semantic": {
+    "FAIL": 6,
+    "PARTIAL": 34,
+    "PASS": 72
+  },
+  "semantic_unreviewed": 0,
+  "semantic_missing_row_reviews": 0
 }

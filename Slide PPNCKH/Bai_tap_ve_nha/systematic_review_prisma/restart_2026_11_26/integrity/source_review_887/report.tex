@@ -1,10 +1,10 @@
-\documentclass[11pt,a4paper]{article}
-\usepackage[margin=21mm]{geometry}
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=20mm]{geometry}
 \usepackage{fontspec,booktabs,longtable,xcolor,hyperref}
 \setmainfont{Times New Roman}
 \hypersetup{colorlinks=true,urlcolor=blue}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt}
+\setlength{\parskip}{4pt}
 \begin{document}
 \begin{center}
 {\Large\bfseries HK261 — Đối chiếu dữ liệu với PDF gốc}\\[4pt]
@@ -32,9 +32,10 @@ Neo khớp văn bản chỉ xác nhận chuỗi chữ có trên trang. Một k�
 cần đúng hàng/cột, đơn vị, mẫu số và điều kiện đo. Một kết luận về thẩm định
 còn cần áp dụng đúng tiêu chí. Trang vật lý bắt đầu từ 1.
 
-Với R0082, SHA-256 trong bảng nhận diện bản PDF đóng băng trong phiếu. Khi lượt rà
-có đối chiếu thêm bản IEEE do tác giả cung cấp, ghi chú của mục nêu rõ điều đó
-và biên bản kiểm tra ấn bản nằm trong \texttt{r0082\_publisher\_crosscheck.json}.
+Với R0082, bảng ghi riêng SHA-256 của bản trong phiếu và bản IEEE do tác giả cung cấp.
+Chi tiết đối chiếu hai ấn bản nằm trong tệp sau.
+
+\texttt{r0082\_publisher\_crosscheck.json}
 
 Bảng này lưu kết quả rà hỗ trợ bằng AI để tác giả xem lại. Phiếu R1/R2, S2
 và số đếm PRISMA (46 đưa vào, 90 loại, 0 chờ) giữ nguyên.

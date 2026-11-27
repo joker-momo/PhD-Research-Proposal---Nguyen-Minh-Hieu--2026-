@@ -1,0 +1,38 @@
+\section*{Phạm vi và tiến độ}
+Đối chiếu 887 mục trong 46 bài. Codex trả 887 mục và Gemini trả 868 mục ở lượt đầu.
+Gemini đọc văn bản tách theo trang từ PDF đã khóa hash. Mỗi lô có bài kiểm tra đọc trực tiếp PDF mẫu. Codex đối chiếu theo trang và mở ảnh PDF ở các vị trí cần kiểm tra bố cục.
+\begin{center}\begin{tabular}{lrr}\toprule Trạng thái do lượt rà ghi & Codex & Gemini \\ \midrule
+DISCREPANCY & 7 & 0 \\
+INVALID\_STATUS & 0 & 11 \\
+MISSING\_PASS & 0 & 19 \\
+NOT\_REPORTED & 40 & 40 \\
+PARTIAL & 332 & 182 \\
+UNRESOLVED & 32 & 45 \\
+VERIFIED & 476 & 590 \\
+\bottomrule\end{tabular}\end{center}
+\section*{Các mục Codex đề nghị kiểm tra hoặc sửa}
+\begin{longtable}{p{.15\linewidth}p{.76\linewidth}}\toprule Mã và mục & Nhận định đối chiếu \\ \midrule\endhead
+R0036 Q01 & The reported relative coverage improvement is 22\% against Random-to-upload. The PDF uses 20 Mbps at Fig. 8(a); update the recorded measurement condition currently labeled 20 MHz. PDF p. 12, VI, Fig. 8(a) | PDF p. 12, VI, Fig. 8(a) discussion \\
+R0090 Q05 & The body calls >90\% “task throughput” at 20 drones. Figure 5 explicitly measures task completion and reports 91\% AeroAgriNet, 60\% cloud, and 40\% traditional at 20 UAVs. Throughput is separately defined as data per time. The throughput denominator is unresolved. PDF p. 5, Figure 5; 20-UAV column, AeroAgriNet/cloud/traditional | PDF p. 5, Figure 5 | PDF p. 5, V.H, Fig. 5 \\
+R0092 Q02 & Table V reports DDCI VGG-16 system-total energy 1.477 ± 0.054 Wh versus Comm-Min 1.502 ± 0.048 Wh. It is summarized over 30 common-seed episodes (mean ± SD). The article calls it system-total energy and does not give this value per task. PDF p. 13, V.D, Table V | PDF p. 13, Energy overhead discussion \\
+R0118 t2\_workload & The concrete NetMoE instantiation uses MobileNetV3-small experts and a ResNet-50 comparator on CIFAR-100. The source does not establish a language-model experimental workload. PDF p. 9, Source body (exact quote locator) | PDF p. 9, Source body (exact quote locator) \\
+R0145 D06 & PARTIAL | Section 6.3 compares multiple randomly generated test scenarios. This establishes a scenario-variability check; it does not establish independent repeats or uncertainty intervals for each configuration. PDF p. 18, 6.3 Performance Comparison of Different Methods, Fig. 12 \\
+R0145 Q01 & Fig. 4 visually identifies TTFT 17/25 and 19/100 s for DeepSeek-R1-Distill-Llama-8B and LLaMA-3.2-3B, respectively. P. 8 cites standardized industry data [3]; do not attribute these plotted values to the authors’ local hardware. PDF p. 15, Figure 4; blue bars for selected models | PDF p. 8, Model selection, outcome provenance \\
+R0145 Q02 & Fig. 4 visually identifies TPOT 1/53 and 1/246 s for DeepSeek-R1-Distill-Llama-8B and LLaMA-3.2-3B, respectively. P. 8 cites standardized industry data [3]; do not attribute these plotted values to the authors’ local hardware. PDF p. 15, Figure 4; orange bars for selected models | PDF p. 8, Model selection, outcome provenance \\
+\bottomrule\end{longtable}
+\section*{Kiểm tra phản hồi Gemini}
+\begin{center}\begin{tabular}{rrrrrrrr}\toprule Lô & Dự kiến & Trả về & Neo khớp & Qua & Một phần & Trượt & Chưa rà \\ \midrule
+1 & 112 & 112 & 95 & 62 & 46 & 4 & 0 \\
+2 & 111 & 111 & 99 & 71 & 32 & 8 & 0 \\
+3 & 112 & 112 & 92 & 72 & 34 & 6 & 0 \\
+4 & 112 & 112 & 70 & 70 & 40 & 2 & 0 \\
+5 & 116 & 115 & 90 & 72 & 40 & 3 & 0 \\
+6 & 123 & 123 & 109 & 76 & 45 & 2 & 0 \\
+7 & 122 & 104 & 87 & 70 & 29 & 5 & 0 \\
+8 & 79 & 79 & 66 & 42 & 30 & 7 & 0 \\
+\bottomrule\end{tabular}\end{center}
+Trong các mục Gemini trả về, 38 mục ghi rõ khoảng trống mà không có trích đoạn. Các phán định phần nội dung có thể xác nhận cách ghi khoảng trống nếu nguồn không được cung cấp.
+Bảng CSV giữ riêng kết quả Gemini trả về và trạng thái kiểm tra vị trí nguồn. Những dòng thiếu
+minh chứng hoặc vẫn chờ đối chiếu ngữ nghĩa cần được đọc lại từ PDF.
+Lô sửa trả 55/55 mục. Tính cả lô sửa, Gemini có 887/887 mục phân tích được. Đã thoát dấu ngoặc kép trong 7 dòng JSON để đọc dữ liệu gốc. Cột có tiền tố correction trong CSV lưu chứng cứ và kết quả kiểm tra riêng.
+Lượt sửa qua kiểm tra nội dung 17, hỗ trợ một phần 34, không qua 4. Các kết quả đọc được vẫn cần người thẩm định xác nhận.

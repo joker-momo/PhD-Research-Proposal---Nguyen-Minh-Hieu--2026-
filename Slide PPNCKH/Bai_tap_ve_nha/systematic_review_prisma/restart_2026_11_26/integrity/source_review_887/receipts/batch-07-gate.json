@@ -43,6 +43,7 @@
   "errors": [
     "JSONL line contains 104 adjacent objects; raw objects recovered without edits"
   ],
+  "normalized_json_keys": [],
   "missing_keys": [
     [
       "HKF-035",
@@ -136,10 +137,10 @@
     ]
   ],
   "semantic": {
-    "PARTIAL": 27,
     "FAIL": 5,
-    "PASS": 51
+    "PARTIAL": 29,
+    "PASS": 70
   },
-  "semantic_unreviewed": 21,
+  "semantic_unreviewed": 0,
   "semantic_missing_row_reviews": 0
 }

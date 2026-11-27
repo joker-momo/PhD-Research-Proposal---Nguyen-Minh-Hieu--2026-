@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T22:08:14+07:00",
+  "updated_at": "2026-11-27T22:48:44+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
@@ -9,20 +9,19 @@
   "task": {
     "task_id": "hk261-dual-ai-source-review-887",
     "owner": "CODEX_WRITING",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-27T20:21:38+07:00",
-    "updated_at": "2026-11-27T22:08:14+07:00",
-    "decision_id": "hk261-dual-ai-source-review-887-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/correction_manifest.json"
+    "updated_at": "2026-11-27T22:48:44+07:00",
+    "decision_id": "hk261-dual-ai-source-review-887-final-v2",
+    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/report.pdf",
+    "completed_at": "2026-11-27T22:48:44+07:00"
   },
   "next_task": {
-    "task_id": "hk261-dual-ai-source-review-887-correction",
-    "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Check 19 missing and 36 rejected provider rows on bounded PDF pages.",
-    "acceptance": "Recover or explicitly account for 55 exact keyed items, citing printed evidence on mapped physical pages.",
-    "dispatch_brief": "restart_2026_11_26/integrity/source_review_887/gemini_correction_brief.md",
-    "message_id": "646947b9-0c36-5004-9e06-01e4a53cdbac"
+    "task_id": "hk261-dual-ai-source-review-887-author-confirmation",
+    "owner": "CODEX_WRITING",
+    "status": "blocked",
+    "action": "Wait for the author and human reviewer to confirm the source evidence and any corrections.",
+    "acceptance": "Explicit human confirmation precedes any change to human forms, screening ledger, PRISMA or manuscript."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -903,20 +902,17 @@
       "screening_or_prisma_changed": false
     },
     "dual_ai_source_review_887": {
-      "status": "active",
-      "manifest": "restart_2026_11_26/integrity/source_review_887/phase_manifest.json",
-      "codex_pass": "restart_2026_11_26/integrity/source_review_887/codex_pass.jsonl",
-      "expected": 887,
+      "reports": 46,
+      "keys": 887,
       "codex_returned": 887,
-      "codex_status": {
-        "VERIFIED": 479,
-        "PARTIAL": 332,
-        "NOT_REPORTED": 40,
-        "UNRESOLVED": 32,
-        "DISCREPANCY": 4
-      },
-      "gemini_returned": 112,
-      "human_forms_changed": false
+      "gemini_initial_parseable": 868,
+      "gemini_after_correction_parseable": 887,
+      "baseline_discrepancies": 7,
+      "restricted_gemini_gaps": 38,
+      "report": "restart_2026_11_26/integrity/source_review_887/report.pdf",
+      "source_table": "restart_2026_11_26/integrity/source_review_887/source_review_887.csv",
+      "human_approval": "pending",
+      "provider_evidence_batch_acceptance": "not_adopted"
     }
   },
   "blockers": [],

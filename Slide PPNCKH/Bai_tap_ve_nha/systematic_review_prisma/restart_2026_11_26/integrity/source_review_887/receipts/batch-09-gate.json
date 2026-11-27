@@ -1,0 +1,110 @@
+{
+  "batch": 9,
+  "expected": 55,
+  "seen": 55,
+  "task_id": "546ba372-6f10-4c81-a821-68754be4e36c",
+  "context_id": "83453072-bb0b-42b6-9c39-451b13678620",
+  "transport": "TASK_STATE_FAILED",
+  "provider_started_at": "2026-11-27T15:09:00.096+00:00",
+  "provider_completed_at": "2026-11-27T15:14:21.802+00:00",
+  "hash_inventory_match": true,
+  "context_unchanged": true,
+  "preflight_anchor_match": true,
+  "identity_count": 21,
+  "identity_expected": 21,
+  "identity_records": [
+    "HKF-011",
+    "HKF-013",
+    "HKF-028",
+    "HKF-029",
+    "HKF-032",
+    "HKF-035",
+    "HKF-038",
+    "HKF-043",
+    "HKF-044",
+    "HKF-049",
+    "HKF-053",
+    "HKF-058",
+    "HKF-061",
+    "HKF-079",
+    "HKF-085",
+    "HKF-100",
+    "HKF-104",
+    "HKF-109",
+    "HKF-110",
+    "HKF-121",
+    "HKF-128"
+  ],
+  "identity_missing": [],
+  "identity_duplicate_dois": 0,
+  "identity_duplicate_titles": 0,
+  "end_marker": true,
+  "cleanup": {
+    "state": "deleted",
+    "verified_new_chat": true,
+    "method": "owned native helper after single-window verification",
+    "verified_at": "2026-11-27T22:37:58+07:00"
+  },
+  "locator_checks": {
+    "PARTIAL_ANCHOR_MATCH": 33,
+    "ANCHORS_MATCH": 10,
+    "ANCHOR_NEEDS_VISUAL_OR_CORRECTION": 12
+  },
+  "status_counts": {
+    "PARTIAL": 13,
+    "VERIFIED": 42
+  },
+  "errors": [
+    "malformed JSONL 1: Expecting ',' delimiter: line 1 column 1485 (char 1484)",
+    "malformed JSONL 2: Expecting ',' delimiter: line 1 column 540 (char 539)",
+    "malformed JSONL 3: Expecting ',' delimiter: line 1 column 1286 (char 1285)",
+    "malformed JSONL 4: Expecting ',' delimiter: line 1 column 190 (char 189)",
+    "malformed JSONL 5: Expecting ',' delimiter: line 1 column 131 (char 130)",
+    "malformed JSONL 6: Expecting ',' delimiter: line 1 column 108 (char 107)",
+    "malformed JSONL 7: Expecting ',' delimiter: line 1 column 159 (char 158)"
+  ],
+  "normalized_json_keys": [
+    [
+      "HKF-011",
+      "technical",
+      "t2_decisions_objective_solver"
+    ],
+    [
+      "HKF-035",
+      "outcome",
+      "Q01"
+    ],
+    [
+      "HKF-044",
+      "technical",
+      "t2_decisions_objective_solver"
+    ],
+    [
+      "HKF-049",
+      "technical",
+      "t3_platform_modality"
+    ],
+    [
+      "HKF-100",
+      "appraisal",
+      "D08"
+    ],
+    [
+      "HKF-110",
+      "outcome",
+      "Q05"
+    ],
+    [
+      "HKF-121",
+      "appraisal",
+      "D07"
+    ]
+  ],
+  "missing_keys": [],
+  "semantic": {
+    "FAIL": 4,
+    "PARTIAL": 34,
+    "PASS": 17
+  },
+  "semantic_unreviewed": 0
+}
