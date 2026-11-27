@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T18:41:07+07:00",
+  "updated_at": "2026-11-27T18:46:09+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "author_eligibility_reconciled_synthesis_update_pending",
@@ -11,18 +11,18 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T18:35:09+07:00",
-    "updated_at": "2026-11-27T18:41:07+07:00",
+    "updated_at": "2026-11-27T18:46:09+07:00",
     "decision_id": "hk261-synthesis-reconciliation-final-46-v1",
-    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/r0082_primary_review.md"
+    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/r0082_correction_review.md"
   },
   "next_task": {
-    "task_id": "hk261-r0082-arxiv-correction",
+    "task_id": "hk261-r0082-arxiv-exact-geometry",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Correct failed R0082 locators and assess shared design with R0019.",
-    "acceptance": "Two PDF accesses and eight keyed checks or explicit shortfalls.",
-    "dispatch_brief": "restart_2026_11_26/synthesis/final_46/r0082_correction_brief.md",
-    "message_id": "hk261-final46-r0082-correction-20261127"
+    "action": "Correct the two repeated geometry anchors on R0082 physical p. 5.",
+    "acceptance": "Two keyed exact locators or explicit shortfalls.",
+    "dispatch_brief": "restart_2026_11_26/synthesis/final_46/r0082_locator_brief.md",
+    "message_id": "hk261-final46-r0082-geometry-20261127"
   },
   "project": {
     "target_venue": "SN Computer Science",

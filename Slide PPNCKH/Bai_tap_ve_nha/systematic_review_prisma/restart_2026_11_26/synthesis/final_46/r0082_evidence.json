@@ -1,0 +1,240 @@
+{
+  "identity": {
+    "original_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0082.pdf",
+    "original_pdf_sha256": "f3e0dd1ffad3178604921574f7b9ef2fdad34167cbbb792f7e9531ca28f8a775",
+    "source_version": "arXiv:2305.15858v1",
+    "version_url": "https://arxiv.org/abs/2305.15858v1",
+    "publisher_doi_url": "https://doi.org/10.1109/WCNC55385.2023.10118908",
+    "authors": [
+      "Marwan Dhuheir",
+      "Aiman Erbad",
+      "Sinan Sabeeh"
+    ],
+    "physical_pdf_pages": 6,
+    "ieee_publisher_pdf_checked": false
+  },
+  "provider_uuid": "b62a3afe-8942-49e3-acf6-2197062d963e",
+  "characteristics": {
+    "title": "LLHR: Low Latency and High Reliability CNN Distributed Inference for Resource-Constrained UAV Swarms",
+    "doi": "10.1109/WCNC55385.2023.10118908",
+    "citation_year": 2023,
+    "venue": "2023 IEEE Wireless Communications and Networking Conference (WCNC)",
+    "uav_architecture_role_and_topology": "UAV cameras generate image classification requests; same-altitude UAVs cooperate over a wireless ad hoc network. The inference path is intra-swarm.",
+    "inference_model_task_and_dataset": "Surveillance image classification using LeNet and AlexNet. The evaluated image dataset is not named in §IV.",
+    "partition_and_assignment": "Discrete assignment of each CNN layer to one UAV, with memory and compute bounds and modeled delegation on insufficient capacity.",
+    "evaluation_platform_simulator_hardware_and_traces": "Simulation with synthetic surveillance grid and Raspberry Pi B+ device profiles. Figures 2–5 show average latency and minimum radio transmit power; Fig. 5 uses static-path and random-movement baselines.",
+    "mobility_channel_intermittency_failure_and_recovery": "The link model is line-of-sight and distance dependent; position choice respects modeled separation. The minimum transmission-rate constraint represents link reliability. No outage, link loss or failure/recovery trial is reported in §IV."
+  },
+  "reports": [
+    {
+      "report_id": "R0082",
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "page": 2,
+          "locator": "§II, Fig. 1",
+          "quote": "form a wireless ad hoc network",
+          "value": "UAV cameras generate image classification requests; same-altitude UAVs cooperate over a wireless ad hoc network. The inference path is intra-swarm.",
+          "sources": [
+            {
+              "physical_page": 4,
+              "locator": "§III.C, Layers Allocations Optimization"
+            }
+          ]
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "page": 5,
+          "locator": "§IV",
+          "quote": "In the experiments, we used two different CNNs",
+          "value": "Surveillance image classification using LeNet and AlexNet. The evaluated image dataset is not named in §IV.",
+          "sources": []
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "page": 5,
+          "locator": "§III.C, Eqs. 10–11",
+          "quote": "that each layer is computed by one UAV",
+          "value": "Discrete assignment of each CNN layer to one UAV, with memory and compute bounds and modeled delegation on insufficient capacity.",
+          "sources": [
+            {
+              "physical_page": 2,
+              "locator": "§II, System Model"
+            },
+            {
+              "physical_page": 4,
+              "locator": "§III.C, Eqs. 10–11"
+            }
+          ]
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "page": 3,
+          "locator": "§III, Problem Formulation",
+          "quote": "find the optimal positions of the connected UAVs",
+          "value": "Three mathematical subproblems address transmission power, grid positions and layer assignment to reduce the modeled minimum power and end-to-end latency.",
+          "sources": [
+            {
+              "physical_page": 4,
+              "locator": "§III.B–C, Eqs. 8–11"
+            },
+            {
+              "physical_page": 5,
+              "locator": "§III.C, Eqs. 11–14"
+            }
+          ]
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "page": 5,
+          "locator": "§IV, Figs. 2–3",
+          "quote": "which have the resource capabilities of the family of",
+          "value": "Simulation with synthetic surveillance grid and Raspberry Pi B+ device profiles. Figures 2–5 show average latency and minimum radio transmit power; Fig. 5 uses static-path and random-movement baselines.",
+          "sources": [
+            {
+              "physical_page": 6,
+              "locator": "§IV, Figs. 4–5"
+            }
+          ]
+        },
+        "mobility_continuity": {
+          "status": "PARTIAL",
+          "page": 3,
+          "locator": "§II.B, Eqs. 4–5",
+          "quote": "the thermal noise power",
+          "value": "The link model is line-of-sight and distance dependent; position choice respects modeled separation. The minimum transmission-rate constraint represents link reliability. No outage, link loss or failure/recovery trial is reported in §IV.",
+          "sources": [
+            {
+              "physical_page": 4,
+              "locator": "§III.B–C"
+            },
+            {
+              "physical_page": 5,
+              "locator": "§IV"
+            },
+            {
+              "physical_page": 6,
+              "locator": "§IV–V"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "appraisal": [
+    {
+      "domain": "D01",
+      "judgment": "YES",
+      "rationale": "The distributed inference question, placement and peer communication system are stated; §III specifies the objectives.",
+      "physical_page": 2,
+      "section": "§II, Fig. 1",
+      "quote": "form a wireless ad hoc network"
+    },
+    {
+      "domain": "D02",
+      "judgment": "PARTIAL",
+      "rationale": "Same altitude, LoS and constrained compute, memory and power are described. Interference and non-line-of-sight are not modeled (see §V future work).",
+      "physical_page": 3,
+      "section": "§II.B, Eqs. 4–5",
+      "quote": "the thermal noise power"
+    },
+    {
+      "domain": "D03",
+      "judgment": "PARTIAL",
+      "rationale": "Device, grid and link assumptions are reported. Solver configuration, repeat or seed details and a complete comparator configuration are not given in §III–IV.",
+      "physical_page": 5,
+      "section": "§IV, setup and Fig. 3",
+      "quote": "which have the resource capabilities of the family of"
+    },
+    {
+      "domain": "D04",
+      "judgment": "PARTIAL",
+      "rationale": "Static-path and random movement baselines are described. Fig. 5 text does not fully specify CNN, radio or device configuration.",
+      "physical_page": 6,
+      "section": "§IV, Fig. 5",
+      "quote": "the UAVs have a static path to follow"
+    },
+    {
+      "domain": "D05",
+      "judgment": "PARTIAL",
+      "rationale": "Average latency and minimum radio transmit power match their objectives. Reliability is modeled as a rate constraint; §IV presents no measured outage or delivery outcome.",
+      "physical_page": 6,
+      "section": "§IV, Figs. 4–5",
+      "quote": "Average Latency for Different Requests in Different Models"
+    },
+    {
+      "domain": "D06",
+      "judgment": "PARTIAL",
+      "rationale": "The figures sweep request load, radio settings and swarm size across conditions. No repeated-run variability is reported in §IV.",
+      "physical_page": 6,
+      "section": "§IV, Figs. 4–5",
+      "quote": "as we vary the number of"
+    },
+    {
+      "domain": "D07",
+      "judgment": "PARTIAL",
+      "rationale": "Distance-dependent channel and grid position constrain the simulation. The link model omits NLoS and interference effects, and §IV reports no mobility interruption trial.",
+      "physical_page": 3,
+      "section": "§II.B, Eqs. 4–5",
+      "quote": "the thermal noise power"
+    },
+    {
+      "domain": "D08",
+      "judgment": "PARTIAL",
+      "rationale": "The conclusion identifies simulations and deferred channel tests, but interprets the model constraint broadly as guaranteed transmission reliability.",
+      "physical_page": 6,
+      "section": "§V",
+      "quote": "future work, we plan to study the effect of interference on"
+    },
+    {
+      "domain": "D09",
+      "judgment": "NOT_REPORTED",
+      "rationale": "No implementation, data or experimental artifact link found in the retained six-page version.",
+      "physical_page": 6,
+      "section": "§§I–V, Acknowledgment and References (physical pp. 1–6)",
+      "quote": "This work was made possible by NPRP grant"
+    },
+    {
+      "domain": "D10",
+      "judgment": "PARTIAL",
+      "rationale": "Funding and channel-related future work are stated; the retained text does not give artifact availability or conflict declarations.",
+      "physical_page": 6,
+      "section": "§V and Acknowledgment",
+      "quote": "This work was made possible by NPRP grant"
+    }
+  ],
+  "coverage": {
+    "physical_pdf_pages": 6,
+    "outcome_pages_checked": "5–6",
+    "section_table_figure_index": "§IV; Figs. 2–5",
+    "outcome_blocks": "Average latency; average minimum radio transmit power",
+    "source_format": "PLOT_ONLY",
+    "limits": "Figures present curves without retained exact numerical outcome values. Setup values are not outcomes; no figure point was read off.",
+    "exact_outcome_status": "PLOT_ONLY",
+    "retained_numeric_rows": 0,
+    "unresolved_printed_rows": 0
+  },
+  "mechanism": {
+    "citation_year": 2023,
+    "mechanism": "layer_or_stage",
+    "decision_method": "mathematical_search_or_auction",
+    "evaluation_setting": "software_or_trace",
+    "retained_outcome_rows": 0,
+    "outcome_inventory_status": "PLOT_ONLY",
+    "synthesis_eligibility_note": "arXiv v1 physical locators; author confirmed IEEE identity for eligibility. Related R0019 is not treated as independent replication.",
+    "mechanism_evidence": "Per-layer binary assignment (§III.C, arXiv physical pp. 4–5)",
+    "evaluation_evidence": "Simulation (§IV, arXiv physical pp. 5–6)",
+    "decision_method_evidence": "Mathematical optimization for power, position and assignment (§III, arXiv physical pp. 3–5)",
+    "workload_evidence": "LeNet and AlexNet (§IV, arXiv physical p. 5)",
+    "mobility_evidence": "LoS channel and grid-linked positions (§II.B, §III.B, arXiv physical pp. 3–4)",
+    "accepted_outcome_description": "Latency and minimum radio transmit power figures without exact retained values (§IV, arXiv physical pp. 5–6, Figs. 2–5).",
+    "model_family": "cnn_without_tagged_transformer",
+    "model_family_source_note": "LeNet and AlexNet (§IV, arXiv physical p. 5)"
+  },
+  "related_report": {
+    "report_id": "R0019",
+    "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf",
+    "sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+    "comparison_review": "r0082_review.md"
+  }
+}

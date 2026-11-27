@@ -55,7 +55,9 @@ def render():
     with (PROJECT / source).open("rb") as stream:
         if hashlib.file_digest(stream, "sha256").hexdigest() != digest:
             raise ValueError("R0082 source PDF checksum changed")
-    relative = lambda path: path.relative_to(PROJECT).as_posix()
+    def relative(path):
+        return path.relative_to(PROJECT).as_posix()
+
     evidence_path = relative(HERE / "r0082_evidence.json")
     appraisal_path = relative(HERE / "appraisal_table.csv")
     rationale_path = relative(HERE / "appraisal_rationale.csv")
@@ -68,6 +70,8 @@ def render():
             raise ValueError(f"Unexpected starting corpus in {original.name}")
         final = sorted_rows([row for row in baseline if row["report_id"] in eligible] +
                             [dict(row, report_id=ADDED, study_id=study_id) for row in extra])
+        if filename != "appraisal_rationale.csv" and len(final) != len(eligible):
+            raise ValueError(f"Duplicate or missing report row in {filename}")
         if {row["report_id"]: row["study_id"] for row in final} != study_ids:
             raise ValueError(f"Study identity mismatch in {filename}")
         result[filename] = serialize(fields, final)
@@ -81,6 +85,8 @@ def render():
     }])
     project_table(SYNTHESIS / "active_study_characteristics.csv", "study_characteristics.csv", [dict(
         delta["characteristics"], pdf_path=source, accepted_extraction_source=evidence_path)])
+    if [item["domain"] for item in delta["appraisal"]] != [f"D{i:02}" for i in range(1, 11)]:
+        raise ValueError("Expected one ordered R0082 judgment per appraisal domain")
     appraisal = project_table(APPRAISAL / "active_appraisal_table.csv", "appraisal_table.csv", [
         {item["domain"]: item["judgment"] for item in delta["appraisal"]}
     ])
@@ -112,7 +118,15 @@ def render():
     fields, contrasts = rows(SYNTHESIS / "active_outcome_evidence.csv")
     result["contrast_evidence.csv"] = serialize(fields, [row for row in contrasts if row["report_id"] in eligible])
     fields, claims = rows(SYNTHESIS / "active_claim_source_matrix.csv")
-    result["claim_source_matrix.csv"] = serialize(fields, [row for row in claims if row["report_id"] in eligible])
+    claims = [row for row in claims if row["report_id"] in eligible]
+    for claim, key in (("RQ1-R0082", "partition_assignment"), ("RQ2-R0082", "optimization"),
+                       ("RQ3-R0082", "evaluation"), ("RQ4-R0082", "mobility_continuity")):
+        field = evidence["fields"][key]
+        claims.append(dict(claim_id=claim, report_id=ADDED, study_id=study_id, source_path=source,
+                           sha256=digest, physical_page=field["page"], section=field["locator"],
+                           anchor=field["quote"], accepted_artifact=evidence_path,
+                           accepted_key=key, judgment=field["status"]))
+    result["claim_source_matrix.csv"] = serialize(fields, claims)
     sources = sorted_rows([dict(report_id=row["report_id"], study_id=row["study_id"],
                                 path=row["source_pdf"], sha256=row["pdf_sha256"]) for row in coverage])
     result["outcome_manifest.json"] = json.dumps({"inputs": sources, "fixed_pending": ledger["awaiting_classification_codes"],
@@ -129,6 +143,23 @@ def render():
                    layers_physical=cells["layer_or_stage", "reported_physical_multi_uav"],
                    appraisal={domain: {row["judgment"]: row["numerator"] for row in summary if row["domain"] == domain}
                               for domain in (f"D{i:02}" for i in range(1, 11))})
+    claim_fields, rq5_claims = rows(RQ5 / "claim_source.csv")
+    for row in rq5_claims:
+        key = row["claim_id"]
+        if key == "RQ5-U01":
+            row["source_file_or_outcome_key"] = "outcome_manifest.json; report_coverage.csv"
+        if key == "RQ5-U02":
+            row["claim"] = (f'{covered["VERIFIED_EXACT"]} verified numerical, {covered["PLOT_ONLY"]} plot-only, '
+                            f'{covered["PRINTED_UNRESOLVED"]} printed unresolved')
+        if key == "RQ5-U04":
+            row.update(claim="Mechanism coverage and entry counts in Table 5",
+                       source_file_or_outcome_key="report_coverage.csv; mechanisms.csv; outcomes.csv")
+        if key == "RQ5-U09":
+            row["source_file_or_outcome_key"] = "appraisal_table.csv; appraisal_summary.csv"
+    rq5_claims.append(dict(claim_id="RQ5-U10", claim="R0082 contributes plot-only outcomes",
+                           source_file_or_outcome_key="R0082 in report_coverage.csv; r0082_evidence.json",
+                           derivation_or_locator="arXiv v1 physical pp. 5–6, §IV, Figs. 2–5; zero inferred values"))
+    result["rq5_claim_sources.csv"] = serialize(claim_fields, rq5_claims)
     result["recomputed_counts.json"] = json.dumps(metrics, indent=2, sort_keys=True) + "\n"
     return result
 

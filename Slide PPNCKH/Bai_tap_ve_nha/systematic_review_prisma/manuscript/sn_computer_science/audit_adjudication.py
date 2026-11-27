@@ -172,10 +172,13 @@ def render_latex(report):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Verify both saved outputs without writing")
+    parser.add_argument("--frozen-prisma", action="store_true",
+                        help="Use the checksummed PRISMA ledger in the portable evidence package")
     args = parser.parse_args()
     try:
-        subprocess.run([sys.executable, "-B", str(PRISMA / "reconcile.py"), "--check"],
-                       check=True, stdout=subprocess.DEVNULL)
+        if not args.frozen_prisma:
+            subprocess.run([sys.executable, "-B", str(PRISMA / "reconcile.py"), "--check"],
+                           check=True, stdout=subprocess.DEVNULL)
         ledger = json.loads((PRISMA / "prisma_counts.json").read_text())
         state = json.loads((PROJECT / "MUST_READ_AI_AGENT/current_state.json").read_text())
         deferrals = state["evidence"]["alternative_technical_survey"]["editorial_integration"][

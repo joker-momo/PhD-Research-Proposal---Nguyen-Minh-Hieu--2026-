@@ -9,7 +9,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 RESTART = HERE.parent.parent / "restart_2026_11_26"
-RQ5 = RESTART / "extraction/rq5_uniform"
+RQ5 = RESTART / "synthesis/final_46"
 MECHANISMS = {
     "layer_or_stage": "Layers or stages",
     "spatial_or_intra_layer": "Spatial or within-layer",
@@ -34,11 +34,11 @@ def keyed(records, key):
 
 
 def outcome_tables(verify_pdfs=False):
-    coding = keyed(read(RESTART / "synthesis/desk_reject_evidence_map.csv"), "report_id")
+    coding = keyed(read(RQ5 / "mechanisms.csv"), "report_id")
     coverage = keyed(read(RQ5 / "report_coverage.csv"), "report_id")
     outcomes = keyed(read(RQ5 / "outcomes.csv"), "outcome_id")
-    manifest = keyed(json.loads((RQ5 / "manifest.json").read_text())["inputs"], "report_id")
-    study_rows = keyed(read(RESTART / "synthesis/active_synthesis_input_index.csv"), "report_id")
+    manifest = keyed(json.loads((RQ5 / "outcome_manifest.json").read_text())["inputs"], "report_id")
+    study_rows = keyed(read(RQ5 / "synthesis_input_index.csv"), "report_id")
     if not coding.keys() == coverage.keys() == manifest.keys() == study_rows.keys() or len(coding) != 46:
         raise ValueError("Outcome data must match all 46 included reports")
     retained = Counter()
@@ -88,8 +88,11 @@ def outcome_tables(verify_pdfs=False):
         census[mechanism, status] += 1
         modality[mechanism, setting] += 1
         entries[mechanism] += retained[report]
-    if (len(outcomes), states["matched"], len(matched_reports), states["descriptive"],
-        sum(map(bool, retained.values()))) != (108, 51, 23, 47, 36):
+    summary = json.loads((RQ5 / "recomputed_counts.json").read_text())
+    if (len(outcomes), dict(states), len(matched_reports), sum(map(bool, retained.values()))) != (
+        summary["outcome_ledger_rows"], summary["outcome_rows"], summary["matched_reports"],
+        summary["coverage"]["VERIFIED_EXACT"]
+    ):
         raise ValueError("Retained outcome census differs from the verified source release")
     settings_rows = [
         (name, *counts, sum(counts))

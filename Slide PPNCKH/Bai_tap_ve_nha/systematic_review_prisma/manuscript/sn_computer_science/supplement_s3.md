@@ -2,43 +2,18 @@
 
 | Need | Evidence |
 | --- | --- |
-| Find one of the 46 studies | [Study characteristics](../../restart_2026_11_26/synthesis/active_study_characteristics.csv), [source identity and SHA-256](../../restart_2026_11_26/synthesis/active_synthesis_input_index.csv), and [sources for individual technical-table cells](s4_study_row_sources.csv). |
-| Check one engineering judgment | [460 judgments with rationales and original locators](../../restart_2026_11_26/appraisal/active_appraisal_rationale_matrix.csv). |
-| Reconstruct the uniform RQ5 reread | [Pre-extraction rule](../../restart_2026_11_26/extraction/rq5_uniform/rule.md), [frozen PDF manifest](../../restart_2026_11_26/extraction/rq5_uniform/manifest.json), [report coverage](../../restart_2026_11_26/extraction/rq5_uniform/report_coverage.csv), and [outcome ledger](../../restart_2026_11_26/extraction/rq5_uniform/outcomes.csv). |
-| Check the quantitative prose and the two summary tables | [RQ5 claim sources](../../restart_2026_11_26/extraction/rq5_uniform/claim_source.csv), [mechanism and evaluation coding with original locators](../../restart_2026_11_26/synthesis/desk_reject_evidence_map.csv), and [table generator](build_editorial_evidence.py). |
+| Find one of the 46 studies | [Study characteristics](../../restart_2026_11_26/synthesis/final_46/study_characteristics.csv), [source identity and SHA-256](../../restart_2026_11_26/synthesis/final_46/synthesis_input_index.csv), and [sources for individual technical-table cells](s4_study_row_sources.csv). |
+| Check the R0082 source and relation to R0019 | [Source review](../../restart_2026_11_26/synthesis/final_46/r0082_review.md), [accepted field and appraisal evidence](../../restart_2026_11_26/synthesis/final_46/r0082_evidence.json), and [reconciliation script](../../restart_2026_11_26/synthesis/final_46/reconcile_inputs.py). |
+| Check one engineering judgment | [460 judgments with rationales and original locators](../../restart_2026_11_26/synthesis/final_46/appraisal_rationale.csv). |
+| Reconstruct the uniform RQ5 reread | [Pre-extraction rule](../../restart_2026_11_26/extraction/rq5_uniform/rule.md), [frozen PDF manifest](../../restart_2026_11_26/synthesis/final_46/outcome_manifest.json), [report coverage](../../restart_2026_11_26/synthesis/final_46/report_coverage.csv), and [outcome ledger](../../restart_2026_11_26/synthesis/final_46/outcomes.csv). |
+| Check the quantitative prose and the two summary tables | [RQ5 claim sources](../../restart_2026_11_26/synthesis/final_46/rq5_claim_sources.csv), [mechanism and evaluation coding with original locators](../../restart_2026_11_26/synthesis/final_46/mechanisms.csv), and [table generator](build_editorial_evidence.py). |
 | Check the nine illustrated comparisons | [S4 row map](supplement_evidence_index.md#numerical-contrast-row-map) and [source-verified R0092 correction](../../restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json). |
 | Reproduce the S2 audit in Table 8 | [S2 log](human_adjudication_log.csv), [audit output](audit_summary.json), [generated LaTeX](adjudication_audit_table.tex), and [S4 derivations](supplement_evidence_index.md#s2-audit-derivations). |
 
-The numerical inventory, coverage and coding were imported from the sibling
-manuscript's verified release at Git commit `5910b6b`. The [source release
-review](../../restart_2026_11_26/extraction/rq5_uniform/review.md) records the
-inspection method, tabular and plot locators, and issues requiring original-page
-inspection. The integration verified that all 46 report/study pairs, original
-paths and PDF hashes agree with the technical survey. The 108 ledger rows
-comprise 51 matched, 47 descriptive, seven held and three cross-references.
-Only matched and descriptive rows contribute to the total of 98. The 36
-studies contributing numbers include the 23 with matched results. Nine have
-plot-only evidence under the rule and one has printed values lacking
-interpretable measurement context. Physical PDF pages are counted from one.
-The extraction samples explicit outcomes by domain and does not estimate
-reporting completeness or supply a pooled effect.
+The [historical reread review](../../restart_2026_11_26/extraction/rq5_uniform/review.md) documents the source method. The final release filters the previous corpus by the approved PRISMA IDs, removes R0113 and adds the independently checked R0082 fields. R0292 remains included. The 105 numerical-ledger rows contain 51 matched, 47 descriptive, four held and three cross-references. The 98 retained entries come from 36 studies, including 23 with matched entries. Ten studies, including R0082, report results only as curves under the extraction rule. The final corpus has zero studies with printed outcomes held at report level for unresolved context. Individual held rows remain listed. The inventory samples explicit outcomes and supplies no pooled effect.
 
-The 21 supplemental included reports are identified by
-`supplemental_batch_` in the accepted input index's `extraction_source`.
-Joining by report ID to report coverage yields 18 with retained quantitative
-evidence (52 entries), two plot-only (R0043, R0077) and one with printed
-results whose conditions are unresolved (R0113). The study count and outcomes
-refer to the current PRISMA selection of 46 included studies.
+R0082's bibliography identifies the IEEE proceedings publication. Method and figure locators refer to the retained arXiv v1 PDF and use physical pages counted from one. Source review records overlap with R0019 and the distinct technical evaluations. Shared run provenance remains unresolved. The figure-only R0082 results contribute zero exact outcome entries.
 
 ## S2 audit of author decisions
 
-Of the 136 assessed reports, 133 lack documented author confirmation
-(136 − 2 final decisions − 1 confirmed deferral). The author processed three
-reports. R0081 (E7) and R0132 (E3) moved from awaiting classification to
-exclusion, and R0082 remains awaiting E7 verification. Changes therefore
-account for **2/3 author-processed reports** and **2/2 reports with final
-decisions**. These fractions describe the recorded subset. The S2 log has
-zero paired independent human decisions, so observed agreement and Cohen's
-kappa are undefined. The verified PRISMA totals are 46 included,
-89 excluded and one awaiting classification. See [S2](supplement_s2_adjudication.md)
-for the case-level decisions and original-page locators.
+Of 136 assessed reports, **128** lack documented author confirmation (136 − 8). Eight reports were author-processed, all with final decisions. Four changed status relative to the frozen AI ledger, so the two change fractions are **4/8**. The S2 log has zero paired independent human decisions. Observed agreement and Cohen's kappa are undefined. PRISMA reconciles 46 included, 90 excluded and zero awaiting classification. [S2](supplement_s2_adjudication.md) and [S4 derivations](supplement_evidence_index.md#s2-audit-derivations) record the case-level evidence and calculation.

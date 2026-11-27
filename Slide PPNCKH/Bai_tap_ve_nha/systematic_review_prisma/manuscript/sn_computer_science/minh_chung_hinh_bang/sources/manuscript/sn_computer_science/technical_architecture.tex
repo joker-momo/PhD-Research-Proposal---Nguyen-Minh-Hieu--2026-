@@ -15,6 +15,7 @@ Ref. & Topology & DNN / task & Partition / dispatch & Decisions & Objective & So
 \endlastfoot
 \cite{R0003} (2023) & Intra-swarm peers & VGG-16, AlexNet, SqueezeNet & Model choice with layer placement & Model and layer assignment & Accuracy-latency utility & Genetic search \\
 \cite{R0015} (2023) & Intra-swarm peers & AlexNet, VGG-16, ResNet-152 & Intra-layer subtasks & UAV assignments per layer & Capture-to-result latency & EECIA heuristic \\
+\cite{R0082} (2023) & Intra-swarm peers & LeNet and AlexNet classification & One UAV per CNN layer; intermediate transfer & Transmit power, UAV positions, layer assignment & Latency and transmit power; rate constraint & Three mathematical subproblems; solver setup NR \\
 \cite{R0010} (2024) & Intra-swarm peers & AlexNet, GoogLeNet, VGG-16 & Per-request pipeline cuts & Layer counts on successive stages & Inference latency & Hierarchical DQN \\
 \cite{R0062} (2024) & Intra-swarm peers & Faster R-CNN video detection & Pipelined submodels & Partition and remaining-node assignment & Inference rate and continuity & Adaptive OODA scheduler \\
 \cite{R0073} (2024) & Intra-swarm peers & AlexNet, VGG-16, YOLO & CNN layers & Layer allocation and UAV operability & End-to-end latency & ILP formulation; PPO policy \\
@@ -25,7 +26,6 @@ Ref. & Topology & DNN / task & Partition / dispatch & Decisions & Objective & So
 \cite{R0074} (2026) & Intra-swarm peers & Llama-2 multisensor logs & Layer and sequence partitions & Stage mapping and token splits & Bottleneck prefill latency & State-compressed and min-max DP \\
 \cite{R0077} (2026) & Intra-swarm peers & Modeled layered inference graph & Distributed graph with early exits & Offload threshold and exit & Congestion and completion & Capacity diffusion and threshold rules \\
 \cite{R0092} (2026) & Intra-swarm peers & VGG and other vision models & Two-UAV mini-batch pipeline & Peer and cut selection & Deadline and energy trade-offs & Pareto shortlist and DQN \\
-\cite{R0113} (2026) & Intra-swarm peers & Event-camera spiking navigation & Peer representation exchange & Local adaptation and coordination & Energy-aware cooperative perception & Continual learning and RL coordination \\
 \cite{R0121} (2026) & Intra-swarm peers & Reference detector-like activation tensor & Activation transport and fragmentation & Encoding and protocol representation & Analytical latency and traffic & Link-layer analytical model \\
 \cite{R0029} (2022) & Cluster or head--worker & AlexNet, VGG-19, GoogLeNet, ResNet-101 & DAG layer replicas & Layer-to-UAV replica mapping & Energy at deadline and reliability limits & DQN with penalties \\
 \cite{R0019} (2023) & Cluster or head--worker & LeNet, AlexNet, VGG-16 & CNN layers & Grid position and layer allocation & Image decision delay & PPO \\

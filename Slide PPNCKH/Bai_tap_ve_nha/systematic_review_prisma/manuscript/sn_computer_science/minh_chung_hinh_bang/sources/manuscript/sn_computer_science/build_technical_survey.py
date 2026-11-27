@@ -6,7 +6,7 @@ from collections import Counter
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SYNTHESIS = HERE.parent.parent / "restart_2026_11_26" / "synthesis"
+SYNTHESIS = HERE.parent.parent / "restart_2026_11_26" / "synthesis/final_46"
 DIMENSIONS = {
     "topology": {
         "peer": "Intra-swarm peers", "cluster": "Cluster or head--worker",
@@ -77,7 +77,7 @@ def long_table(title, label, widths, headings, body):
 
 
 def render():
-    source = {r["report_id"]: r for r in read_rows(SYNTHESIS / "active_study_characteristics.csv")}
+    source = {r["report_id"]: r for r in read_rows(SYNTHESIS / "study_characteristics.csv")}
     coding = read_rows(HERE / "technical_coding.psv", "|")
     ids = [r["id"] for r in coding]
     if len(source) != 46 or len(ids) != len(set(ids)) or set(ids) != set(source):
@@ -118,7 +118,7 @@ def render():
          for r in sorted_rows],
     )
 
-    summary = read_rows(SYNTHESIS / "active_appraisal_summary.csv")
+    summary = read_rows(SYNTHESIS / "appraisal_summary.csv")
     code = {}
     for entry in summary:
         if entry["domain"] == "D09":

@@ -10,26 +10,31 @@ PROJECT = MANUSCRIPT.parents[1]
 RESTART = Path("restart_2026_11_26")
 MANUSCRIPT_PATH = MANUSCRIPT.relative_to(PROJECT)
 FILES = [
+    Path("MUST_READ_AI_AGENT/current_state.json"),
     *(MANUSCRIPT_PATH / name for name in (
         "build_technical_survey.py", "build_editorial_evidence.py", "main.tex",
         "editorial_mechanism_setting.tex", "editorial_outcome_coverage.tex", "main.pdf", "references.bib",
-        "human_adjudication_log.csv", "audit_adjudication.py", "audit_summary.json", "adjudication_audit_table.tex",
+        "supplement_fulltext_exclusions.csv", "human_adjudication_log.csv", "audit_adjudication.py", "audit_summary.json", "adjudication_audit_table.tex",
         "sn-jnl.cls", "sn-vancouver-num.bst", "technical_coding.psv", "prisma_flow.pdf",
         "technical_appraisal.tex", "technical_appraisal_bars.tex",
         "technical_appraisal_figure.tex", "technical_architecture.tex",
         "technical_architecture_figure.tex", "technical_evaluation.tex",
-        "technical_macros.tex", "technical_overview_figure.tex", "technical_taxonomy_figure.tex",
+        "s4_study_row_sources.csv", "technical_macros.tex", "technical_overview_figure.tex", "technical_taxonomy_figure.tex",
     )),
     *(RESTART / name for name in (
+        "prisma/reconcile.py", "fulltext_screening/fulltext_screening.csv",
+        "supplemental_screening/screening_decisions.csv", "synthesis/active_synthesis_input_index.csv",
         "prisma/flow_template.tex", "prisma/prisma_counts.json", "prisma/prisma_flow.tex",
-        "synthesis/active_study_characteristics.csv",
-        "synthesis/active_appraisal_summary.csv", "synthesis/active_outcome_evidence.csv",
-        "synthesis/active_rq_p08_erratum_R0092.json", "synthesis/active_synthesis_input_index.csv",
+        "synthesis/final_46/study_characteristics.csv",
+        "synthesis/final_46/appraisal_summary.csv", "synthesis/final_46/contrast_evidence.csv",
+        "synthesis/active_rq_p08_erratum_R0092.json", "synthesis/final_46/synthesis_input_index.csv",
         "extraction/p08_source_inventory.json",
-        "extraction/rq5_uniform/manifest.json", "extraction/rq5_uniform/rule.md",
-        "extraction/rq5_uniform/outcomes.csv", "extraction/rq5_uniform/report_coverage.csv",
-        "synthesis/desk_reject_evidence_map.csv",
-        "appraisal/active_appraisal_table.csv", "appraisal/active_appraisal_rationale_matrix.csv",
+        "synthesis/final_46/outcome_manifest.json", "extraction/rq5_uniform/rule.md",
+        "synthesis/final_46/outcomes.csv", "synthesis/final_46/report_coverage.csv",
+        "synthesis/final_46/mechanisms.csv", "synthesis/final_46/recomputed_counts.json",
+        "synthesis/final_46/claim_source_matrix.csv", "synthesis/final_46/rq5_claim_sources.csv", "synthesis/final_46/r0082_evidence.json",
+        "synthesis/final_46/r0082_review.md", "synthesis/final_46/reconcile_inputs.py",
+        "synthesis/final_46/appraisal_table.csv", "synthesis/final_46/appraisal_rationale.csv",
     )),
 ]
 
@@ -50,9 +55,7 @@ def build_index():
             return match[0]
         name, delimiter, anchor = link.partition("#")
         source = (MANUSCRIPT / name).resolve().relative_to(PROJECT)
-        if source == RESTART / "prisma/reconcile.py":
-            target = "../" + name
-        elif source in FILES:
+        if source in FILES:
             target = (Path("sources") / source).as_posix()
         else:
             raise ValueError(f"Unpacked source in item index: {source}")
