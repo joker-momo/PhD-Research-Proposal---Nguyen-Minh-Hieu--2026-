@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:36:11+07:00",
+  "updated_at": "2026-11-28T00:37:24+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The verified 30-page manuscript and S2 record the author’s account that the author and a colleague conducted screening and assigned appraisal ratings. Preliminary AI records are retained. The author endorsed 46 inclusions and 90 exclusions. Ten decisions have separate author entries. Zero paired independent full-text decisions are documented. PRISMA is unchanged."
   },
   "task": {
-    "task_id": "hk261-complete-retrospective-review-reference-forms",
+    "task_id": "hk261-audit-independent-pair-evidence",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:36:11+07:00",
-    "updated_at": "2026-11-28T00:36:11+07:00",
-    "decision_id": "hk261-complete-retrospective-review-reference-forms-v1",
+    "started_at": "2026-11-28T00:37:24+07:00",
+    "updated_at": "2026-11-28T00:37:24+07:00",
+    "decision_id": "hk261-audit-independent-pair-evidence-v1",
     "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
-    "completed_at": "2026-11-28T00:36:11+07:00"
+    "completed_at": "2026-11-28T00:37:24+07:00"
   },
   "next_task": {
     "task_id": "hk261-collect-new-independent-screening-round",
@@ -1190,6 +1190,19 @@
         }
       },
       "new_independent_pairs": 0,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      }
+    },
+    "retrospective_independent_pair_evidence_audit": {
+      "filename": "HK261_DOI_CHIEU_MINH_CHUNG_136_HKF.csv",
+      "sha256": "947b06a2a8f60364601c32a15c62884afd72c48499eaa9850c412e9745b04f4f",
+      "matched_hkf_ids": 136,
+      "independent_pairs": 0,
+      "disagreements": null,
+      "r1_separately_documented_final_confirmations": 10,
       "working_counts": {
         "include": 46,
         "exclude": 90,
