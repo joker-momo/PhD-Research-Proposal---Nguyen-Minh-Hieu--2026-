@@ -177,7 +177,7 @@ A given inference request induces a directed graph $G=(V,E)$ whose operations or
 \begin{aligned}
 \min_{\mathbf{x},\mathbf{y},\mathbf{q},\mathbf{r}}\quad
  &\mathbb{E}_{\omega}\bigl[\alpha_T T_{\mathrm{e2e}} + \alpha_E E_{\mathrm{tot}} \\
- &\qquad - \alpha_A A_{\mathrm{inf}} + \alpha_R C_{\mathrm{rec}}\bigr].
+ &\qquad - \alpha_A A_{\mathrm{inf}} + \alpha_R C_{\mathrm{rec}}\bigr],
 \end{aligned}\label{eq:objective}
 \end{equation}
 where $\omega$ contains workload arrivals, channel variation, and node availability. The terms are end-to-end latency, system energy, inference quality, and recovery cost. Each weight absorbs unit scaling. When the underlying metrics have different task meanings, normalization and the actual reported units must remain explicit. A recovery penalty can represent lost work or interruption cost. If recovery delay is already included in $T_{\mathrm{e2e}}$, its separate penalty must account for a distinct cost or state the intentional weighting.
