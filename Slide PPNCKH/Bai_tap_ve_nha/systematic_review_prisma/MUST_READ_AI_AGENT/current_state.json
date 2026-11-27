@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:34:35+07:00",
+  "updated_at": "2026-11-28T00:36:11+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The verified 30-page manuscript and S2 record the author’s account that the author and a colleague conducted screening and assigned appraisal ratings. Preliminary AI records are retained. The author endorsed 46 inclusions and 90 exclusions. Ten decisions have separate author entries. Zero paired independent full-text decisions are documented. PRISMA is unchanged."
   },
   "task": {
-    "task_id": "hk261-prepare-retrospective-review-reference-forms",
+    "task_id": "hk261-complete-retrospective-review-reference-forms",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:34:35+07:00",
-    "updated_at": "2026-11-28T00:34:35+07:00",
-    "decision_id": "hk261-prepare-retrospective-review-reference-forms-v1",
+    "started_at": "2026-11-28T00:36:11+07:00",
+    "updated_at": "2026-11-28T00:36:11+07:00",
+    "decision_id": "hk261-complete-retrospective-review-reference-forms-v1",
     "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
-    "completed_at": "2026-11-28T00:34:35+07:00"
+    "completed_at": "2026-11-28T00:36:11+07:00"
   },
   "next_task": {
     "task_id": "hk261-collect-new-independent-screening-round",
@@ -1163,6 +1163,32 @@
       "r1_item_level_author_endorsements": 10,
       "r2_source_verification_items": 887,
       "r2_reports_with_source_verification": 46,
+      "new_independent_pairs": 0,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      }
+    },
+    "complete_retrospective_review_reference_forms": {
+      "delivery": "Local Downloads/HK261-sang-loc-doc-lap-2026-11-28/Phieu-tham-chieu-day-du, outside Git.",
+      "shared_eligibility_source": "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
+      "reference_forms": {
+        "R1": {
+          "filename": "HK261_R1_THAM_CHIEU_DAY_DU.csv",
+          "sha256": "c54f6fbf48f472514de9aa9af1cf7274417dbd68aa0005ac67ee3a34a4a2a6cd",
+          "rows": 136,
+          "source_checks": 887,
+          "item_level_R1_endorsements": 10
+        },
+        "R2": {
+          "filename": "HK261_R2_THAM_CHIEU_DAY_DU.csv",
+          "sha256": "b7de1e7204ebd1451eb421f3e9e9aeda535862ef199af6e1fbc28fe2d274e473",
+          "rows": 136,
+          "source_checks": 887,
+          "item_level_R1_endorsements": 0
+        }
+      },
       "new_independent_pairs": 0,
       "working_counts": {
         "include": 46,
