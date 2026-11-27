@@ -20,3 +20,7 @@ matrices](../../restart_2026_11_26/synthesis/).
 
 The PDF is for HK261 coursework. Author details and declarations await
 confirmation. Journal submission and email forwarding are outside this delivery.
+
+The [final integrity dossier](../../restart_2026_11_26/integrity/) contains DOI,
+publication-notice and source verification, a limitations report, and the
+coursework handoff archive.

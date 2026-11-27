@@ -5,7 +5,7 @@ Reporting references follow [Page et al., BMJ 2021;372:n71](https://doi.org/10.1
 | Item | Topic | Current status | Evidence locator or destination | Limit or follow-up |
 |---:|---|---|---|---|
 | 1 | Review identification in title | Reported | p. 1, title · [Protocol P01](../protocol_restart.md#p01--objective-and-unit) | Identified as a systematic review in the title. |
-| 2 | Abstract | Reported with limitations | p. 1, abstract · [Counts](prisma_counts.json) `counts` | Structured abstract reports selection counts, scope and limits. Funding and registration are discussed in the main dossier. |
+| 2 | Abstract | Reported with limitations | p. 1, abstract · [Counts](prisma_counts.json) `counts` | Structured abstract reports selection counts, scope and limits. The abstract explicitly reports registration and funding status. |
 | 3 | Rationale | Reported | pp. 1–2, §1 · [Protocol P01–P02](../protocol_restart.md) | Context uses published examples within the included corpus. |
 | 4 | Review objective and questions | Reported | p. 2, §1 · [Protocol P01–P02](../protocol_restart.md) | Five objectives correspond to the five Results subsections. |
 | 5 | Eligibility and synthesis groups | Reported | pp. 2–3, §§2.1 and 2.4 · [Protocol P03 and P10](../protocol_restart.md) | Eligibility and narrative synthesis groupings are reported. |
