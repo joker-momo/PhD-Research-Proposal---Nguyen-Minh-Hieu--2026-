@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T01:47:57+07:00",
+  "updated_at": "2026-11-28T01:54:03+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The 30-page comparison draft corrects R0019 continuity coding, records reviewer responsibilities and available evidence, and links a current PRISMA checklist. S2 and the reconciled counts remain 46/90/0."
   },
   "task": {
-    "task_id": "hk261-ieee-reviewer-role-and-ai-disclosure",
+    "task_id": "hk261-ieee-screening-round-provenance",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T01:45:33+07:00",
-    "updated_at": "2026-11-28T01:47:57+07:00",
-    "decision_id": "hk261-ieee-reviewer-role-and-ai-disclosure-v1",
+    "started_at": "2026-11-28T01:52:42+07:00",
+    "updated_at": "2026-11-28T01:54:03+07:00",
+    "decision_id": "hk261-ieee-screening-round-provenance-v1",
     "checkpoint_path": "manuscript/ieee_journal/HK261_IEEE_S1-S4.zip",
-    "completed_at": "2026-11-28T01:47:57+07:00"
+    "completed_at": "2026-11-28T01:54:03+07:00"
   },
   "next_task": {
     "task_id": "hk261-collect-new-independent-screening-round",

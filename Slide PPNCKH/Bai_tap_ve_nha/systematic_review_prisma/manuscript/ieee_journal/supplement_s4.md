@@ -107,7 +107,17 @@ Inspect the original locator for the comparator, condition and uncertainty.
 | §IV-D, p. 7 (layer-cut and hover co-design, [28]) | [Coding ledger](../sn_computer_science/technical_coding.psv) classifies R0006 as hybrid. The mathematical paragraph refers to the hover-position subproblem. |
 | §V-B, p. 10, Fig. 4, p. 7, and Table IV, pp. 11–12 (R0019) | Original physical p. 15 (printed 8199), Fig. 19. PPO reward reconverges after modeled active-set changes. Transfer in progress and time to the first correct resumed inference output are unreported. [S3 continuity rationale](../sn_computer_science/supplement_s3.md#continuity-correction-for-r0019). |
 | §V-C, pp. 10, 13–14 (RQ5) | [RQ5 source map](../../restart_2026_11_26/synthesis/final_46/rq5_claim_sources.csv) and the contrast map above. The 97 entries, 51 matched entries and nine illustrative contrasts describe different selections. |
-| §II-C and §VI-D, pp. 2–3 and 15 | [S2 roles](../sn_computer_science/supplement_s2_adjudication.md#author-statement-on-reviewer-responsibilities). Table VIII records zero paired independent human decisions. The two AI-assisted evidence forms record source checks. Independent duplicate extraction remains undocumented. See the acknowledgment on p. 16 for the AI-use disclosure. |
+| §II-C and §VI-D, pp. 2–3 and 15 | See the screening workflow below and [S2 reviewer roles](../sn_computer_science/supplement_s2_adjudication.md#author-statement-on-reviewer-responsibilities). Table VIII records zero paired independent human decisions. The two AI-assisted evidence forms record source checks for the included studies. Independent duplicate extraction remains undocumented. See the acknowledgment on p. 16 for the AI-use disclosure. |
+
+## Screening workflow provenance
+
+| Round | Roles recorded in the logs | Decision ledger and project log locator |
+| --- | --- | --- |
+| Title and abstract | Gemini proposed one disposition per unique record across seven batches (465 records). Codex checked record coverage, criteria, and source excerpts before batch acceptance. | [465-record ledger](../../restart_2026_11_26/title_abstract_screening.csv). Project log `restart_2026_11_26/step07_screening_summary.md` indexes the seven batch acceptance records. |
+| Full text, initial batches | Gemini proposed dispositions for the initial 44 reports. Codex checked report evidence, eligibility criteria, and dispositions before batch acceptance. | [44-report ledger](../../restart_2026_11_26/fulltext_screening/fulltext_screening.csv). Project log `restart_2026_11_26/fulltext_screening/step09_screening_summary.md`. |
+| Full text, supplemental batches | The supplemental ledger contains 91 batch dispositions and one previously verified exclusion (R0070). Gemini proposed batch dispositions and Codex checked source locators and criterion application. | [92-report ledger](../../restart_2026_11_26/supplemental_screening/screening_decisions.csv). Project log `restart_2026_11_26/supplemental_screening/screening_closeout.md`. |
+
+The ledgers above record intermediate screening. The [S2 final register](../sn_computer_science/supplement_s2_eligibility.csv) records the lead reviewer's confirmation of all 136 final full-text dispositions. The [S2 author statement](../sn_computer_science/supplement_s2_adjudication.md#author-statement-on-reviewer-responsibilities) gives the documented human roles. Item-level human assignments and independence could not be reconstructed.
 
 ## S2 audit derivations
 
