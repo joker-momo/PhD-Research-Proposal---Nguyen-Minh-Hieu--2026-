@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T22:48:44+07:00",
+  "updated_at": "2026-11-27T23:03:02+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
-    "summary": "The local 30-page HK261 revision, unified coding and IEEE R0082 cross-check are verified on the 46/90/0 corpus. Independent screening, human extraction verification and declarations remain pending."
+    "summary": "The verified 30-page revision remains frozen on the 46/90/0 corpus. Two AI-assisted source-review endorsements are recorded. Independent human assessment and declarations remain pending."
   },
   "task": {
-    "task_id": "hk261-dual-ai-source-review-887",
+    "task_id": "hk261-record-source-review-endorsements",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T20:21:38+07:00",
-    "updated_at": "2026-11-27T22:48:44+07:00",
-    "decision_id": "hk261-dual-ai-source-review-887-final-v2",
-    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/report.pdf",
-    "completed_at": "2026-11-27T22:48:44+07:00"
+    "started_at": "2026-11-27T23:00:45+07:00",
+    "updated_at": "2026-11-27T23:03:02+07:00",
+    "decision_id": "hk261-record-source-review-endorsements-v1",
+    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md",
+    "completed_at": "2026-11-27T23:03:02+07:00"
   },
   "next_task": {
-    "task_id": "hk261-dual-ai-source-review-887-author-confirmation",
+    "task_id": "hk261-independent-assessment-or-evidence-reconciliation",
     "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "Wait for the author and human reviewer to confirm the source evidence and any corrections.",
-    "acceptance": "Explicit human confirmation precedes any change to human forms, screening ledger, PRISMA or manuscript."
+    "action": "Await an explicit instruction before independent screening follow-up or any evidence changes in S2, PRISMA or the manuscript.",
+    "acceptance": "Human judgments and source disagreements remain traceable. The article and screening record require explicit authorization before edits."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -911,8 +911,24 @@
       "restricted_gemini_gaps": 38,
       "report": "restart_2026_11_26/integrity/source_review_887/report.pdf",
       "source_table": "restart_2026_11_26/integrity/source_review_887/source_review_887.csv",
-      "human_approval": "pending",
-      "provider_evidence_batch_acceptance": "not_adopted"
+      "human_approval": "two_ai_assisted_endorsements_recorded",
+      "provider_evidence_batch_acceptance": "not_adopted",
+      "source_endorsements": {
+        "receipt": "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md",
+        "date": "2026-11-27",
+        "R1": {
+          "attribution": "author_endorsed_codex",
+          "rows": 887,
+          "file": "restart_2026_11_26/synthesis/final_46/human_review_packet/R1/source_verification.csv"
+        },
+        "R2": {
+          "attribution": "colleague_endorsed_gemini_as_confirmed_by_author",
+          "rows": 887,
+          "file": "restart_2026_11_26/synthesis/final_46/human_review_packet/R2/source_verification.csv"
+        },
+        "independent_human_review_pairs": 0,
+        "screening_decisions_recorded": 0
+      }
     }
   },
   "blockers": [],

@@ -846,6 +846,33 @@
         "PDF",
         "Gemini"
       ]
+    },
+    {
+      "artifact_id": "hk261-record-source-review-endorsements",
+      "name": "Record HK261 source verification endorsements",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/human_review_packet/record_source_endorsements.py",
+      "purpose": "Transcribe two attributed endorsements against the frozen 887 source keys and preserve the evidence limits and form order.",
+      "entrypoint": "python3 -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/human_review_packet/record_source_endorsements.py\" <recorded-date> [--packet <packet-directory>] [--check]",
+      "inputs": [
+        "Frozen source_review_887.csv",
+        "R1 and R2 source-verification forms",
+        "Documented confirmation date in the packet README"
+      ],
+      "outputs": [
+        "restart_2026_11_26/synthesis/final_46/human_review_packet/R1/source_verification.csv",
+        "restart_2026_11_26/synthesis/final_46/human_review_packet/R2/source_verification.csv"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/human_review_packet/record_source_endorsements.py"
+      ],
+      "test_command": "python3 -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/human_review_packet/record_source_endorsements.py\" 2026-11-27 --check",
+      "status": "active",
+      "tags": [
+        "source-verification",
+        "reviewer-endorsement",
+        "hk261",
+        "csv"
+      ]
     }
   ]
 }

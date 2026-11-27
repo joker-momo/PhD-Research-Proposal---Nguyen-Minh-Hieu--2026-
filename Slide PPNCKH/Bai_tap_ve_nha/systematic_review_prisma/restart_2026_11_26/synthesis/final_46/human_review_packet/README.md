@@ -1,10 +1,25 @@
-# Phiếu thẩm định độc lập HK261
+# Phiếu thẩm định HK261
 
-Trạng thái tại lần xuất bản thảo này: tác giả xác nhận 8/136 quyết định toàn văn. Hai phiếu đều để trống, hiện có 0 cặp đánh giá độc lập và 0 kiểm tra trích xuất do người thực hiện được ghi nhận.
+Tại lần xuất bản thảo gần nhất, tác giả đã xác nhận 8/136 quyết định toàn văn. Hai phiếu `screening.csv` vẫn để trống. Sổ S2 và PRISMA vẫn theo quyết định đã lưu (46 đưa vào, 90 loại, 0 chờ).
+
+## Xác nhận hai phiếu đối chiếu nguồn
+
+Ngày ghi nhận **2026-11-27**. Tác giả xác nhận trong chat HK261: “Điền R1 theo nhận định của tôi đồng ý với Codex và R2 theo ý kiến đồng nghiệp đồng ý với Gemini do tôi xác nhận lại. Giữ nguyên S2, PRISMA và bản thảo.”
+
+- **R1** ghi nhận nhận định của tác giả sau khi xem và đồng ý với lượt Codex. [Phiếu R1](R1/source_verification.csv)
+- **R2** ghi nhận ý kiến đồng nghiệp đồng ý với lượt Gemini, theo xác nhận lại của tác giả trong chat. [Phiếu R2](R2/source_verification.csv)
+
+Hai xác nhận dựa trên kết quả hỗ trợ AI đã được xem. Hồ sơ ghi nhận xác nhận chung cho mỗi lượt. Cột `date` ghi ngày tiếp nhận xác nhận. Nguồn xác nhận R2 là lời tác giả. Bộ phiếu này cung cấp 0 cặp đánh giá độc lập hoặc làm mù và 0 cặp quyết định sàng lọc mới.
+
+Mỗi phiếu có 887 khóa. R1 giữ 476 mục xác minh được, 332 mục một phần, 40 mục nguồn không báo cáo, 32 mục chưa giải quyết và 7 mục chênh lệch với dữ liệu đã lưu. R2 ghi 404 mục xác minh được, 403 mục một phần, 37 mục nguồn không báo cáo và 43 mục chưa giải quyết. R2 lấy lượt Gemini rà lại khi có. Mục một phần ghi phần kết luận được kiểm chứng và giới hạn tương ứng. Mục không qua kiểm tra nội dung hoặc vướng quyền truy cập giữ trạng thái chưa giải quyết. Với 38 khóa có giới hạn nguồn, R1 ghi trạng thái Codex ở mức tổng quát và R2 ghi giới hạn truy cập của Gemini.
+
+Định vị từng mục bằng ba cột `packet_id`, `check_type`, `check_key` trong phiếu, tương ứng `packet_id`, `kind`, `key` trong bảng nguồn. Bảng nguồn lưu mã bài, hash PDF, trang vật lý đếm từ 1 và các kết quả kiểm tra trước khi điền phiếu. Ô đơn vị, điều kiện hoặc trang có thể để trống khi bảng nguồn chưa xác lập thông tin tương ứng ở mức có thể tách riêng. [Bảng nguồn](../../../integrity/source_review_887/source_review_887.csv) · [Báo cáo đối chiếu](../../../integrity/source_review_887/report.pdf)
+
+Từ thư mục này, chạy `python3 -B record_source_endorsements.py 2026-11-27 --check` để kiểm tra hai phiếu đã lưu. Để tái tạo, dùng bản trắng của hai phiếu tại commit `1123203` trong một thư mục tạm rồi chạy lại lệnh với `--packet <thư_mục_tạm>` thay cho `--check`. SHA-256 của bảng nguồn là `8128156c04562d626965e38963bda056f034d517afcdd10a8343ce093b83ade1`.
 
 Bản sao 136 PDF đã kiểm tra SHA-256 nằm trong [thư mục PDF cục bộ](../../../fulltext_retrieval/pdf/human_review_full_136/). PDF nguồn được lưu cục bộ theo điều kiện truy cập.
 
-## Điều phối
+## Điều phối đánh giá độc lập
 
 1. Tạo một thư mục PDF riêng trên máy bằng `python3.11 -B build_human_review_packet.py --materialize-pdfs /đường/dẫn/nội/bộ` từ thư mục cha của gói. Lệnh kiểm tra SHA-256 rồi sao chép 136 PDF dưới mã trung lập `HKF-001` đến `HKF-136`. Chỉ cung cấp bản PDF theo điều kiện truy cập của từng nguồn. R0082 trong tập này dùng bản arXiv đã lưu của bản ghi. Bản IEEE đã kiểm chứng có thể được đối chiếu riêng theo DOI và SHA-256 trong hồ sơ xuất bản.
 2. Gửi mỗi người bộ PDF mã hoá và bản sao phiếu `screening.csv` của riêng họ. Người điều phối giữ `coordinator/key.csv`, `coordinator/exclusion_coverage.csv`, hồ sơ S2, bản thảo và kết quả AI cho đến khi nhận đủ hai phiếu sàng lọc. Hai người làm riêng và ghi mã người chấm, ngày ISO 8601, quyết định, lý do và trang vật lý. Lưu nguyên hai bản trước hoà giải. Ghi `INCLUDE`, `EXCLUDE` hoặc `AWAITING_CLASSIFICATION`; chọn một lý do E1–E7 theo thứ tự E5 → E6 → E1 → E7 → E2 → E3 → E4 của [giao thức](../../../protocol_restart.md#p06--selection-and-retrieval-steps0709) hoặc ghi bằng chứng cần bổ sung cho hồ sơ chờ.
