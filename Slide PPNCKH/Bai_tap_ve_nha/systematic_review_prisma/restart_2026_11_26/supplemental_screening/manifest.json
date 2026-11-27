@@ -1,0 +1,33 @@
+{
+  "task_id": "restart-supplemental-screening",
+  "baseline_commit": "c1eed89",
+  "recorded_at": "2026-11-27T10:02:39+07:00",
+  "protocol": "restart_2026_11_26/protocol_restart.md",
+  "carry_forward": {
+    "included_reports": 25,
+    "excluded_reports": 13,
+    "previously_awaiting": 6
+  },
+  "supplemental_files_by_id": 82,
+  "not_retrieved": [
+    "R0007",
+    "R0023",
+    "R0027",
+    "R0028",
+    "R0043",
+    "R0058",
+    "R0064",
+    "R0090",
+    "R0116",
+    "R0125",
+    "R0130"
+  ],
+  "probe": {
+    "id": "R0096",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0096.pdf",
+    "sha256": "c5283d235135a0dc53556e211dce33f5ab445639d1e5e02264a520addb19250c",
+    "physical_page": 2,
+    "brief": "restart_2026_11_26/supplemental_screening/access_probe_brief.md",
+    "message_id": "9932a384-6633-44e3-ad9a-257289f4abe5"
+  }
+}
