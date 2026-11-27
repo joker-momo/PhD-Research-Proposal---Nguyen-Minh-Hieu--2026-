@@ -1,0 +1,40 @@
+{
+  "R0077": [
+    "access",
+    "compute_radio"
+  ],
+  "R0080": [
+    "access",
+    "compute_radio"
+  ],
+  "R0090": [
+    "access",
+    "mobility_continuity",
+    "variability"
+  ],
+  "R0092": [
+    "access",
+    "architecture",
+    "code_data",
+    "outcomes"
+  ],
+  "R0106": [
+    "access",
+    "architecture",
+    "partition_assignment",
+    "optimization",
+    "compute_radio",
+    "mobility_continuity",
+    "outcomes"
+  ],
+  "R0107": [
+    "access",
+    "baselines"
+  ],
+  "R0110": [
+    "access",
+    "compute_radio",
+    "mobility_continuity",
+    "outcomes"
+  ]
+}

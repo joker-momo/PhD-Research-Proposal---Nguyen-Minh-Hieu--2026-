@@ -1,0 +1,22 @@
+# TASK
+Correct only the 24 flagged access and P08 fields from HK261 supplemental extraction Task 55e9bd32-ce28-4410-a868-43b47b14185a.
+
+# REQUIRED WORK
+1. Read only the seven named originals under restart_2026_11_26/fulltext_retrieval/pdf/ and the P08 section of restart_2026_11_26/protocol_restart.md. Use original body pages, no title, header, footer or abstract, to return one access row for each ID. Use available local PDF reading and original page rendering, or native page access. If needed and available, use local MinerU then Marker and check the original. Report actual tools and constraints. Keep work in the parent with no workers.
+2. R0077: access and compute_radio. Separate modeled compute capacities and channel assumptions from measured profiling; inspect original §3 and §5/Table 2.
+3. R0080: access and compute_radio. Check §IV.A on physical p. 5 and §IV.B on p. 6. Use a short intact line for the bandwidth, and distinguish cloud hardware from simulated UAVs.
+4. R0090: access, mobility_continuity, variability. Check pp. 3–6. Separate designed fallback, software emulation, author-reported field prototype, and the unclear link from individual results to field conditions. Report supported sweeps without estimating values from plots. Unreported repeats and uncertainty are gaps.
+5. R0092: access, architecture, outcomes, code_data. Verify same-substrate vs Local separately using pp. 10–13 and the reproducibility statement on p. 15. Use qualitative workload-specific results with the actual comparator. No p-values. Give the repository string printed by the authors as plain text; no rewritten search URL. Treat the release as author-reported.
+6. R0106: access, architecture, partition_assignment, optimization, compute_radio, mobility_continuity, outcomes. Use only high-level systems review categories: airborne nodes coordinating split inference, sequential workload distribution, class of optimization, modeled communication/computation, simulated node loss, and evaluation measure categories. Omit operational use, targeting, trajectories, resource configuration values, performance magnitudes and numerical failure levels. Choose non-operational body excerpts.
+7. R0107: access and baselines. Verify PPO vs algorithm baselines on physical p. 10 and actual named comparison types from §VI.C. Cite the correct physical page. Separate the task-wise single expert comparator.
+8. R0110: access, compute_radio, mobility_continuity, outcomes. Check §§IV.E–V.F pp. 9–14. Use a 4–9 word contiguous phrase for each claim. Distinguish designed leader/worker recovery from channel/mobility stress tests and from as-yet-unmeasured real-hardware recovery. Narrow outcomes to a specifically bounded in-simulator comparison and state conditioning where relevant. No broad superiority or numerical comparisons.
+
+# REQUIRED OUTPUT
+Compact raw JSONL with exactly 24 unique rows using this structure: {"id":"RTEST","key":"evaluation","s":"OBSERVED","f":"Short source-bounded finding.","l":[[4,"IV.A Setup","four to nine exact words"]],"g":null}. Access uses READ or NOT_ACCESSIBLE; other keys use OBSERVED, PARTIAL, NOT_REPORTED or NOT_YET_ASSESSED. Quotes must come from one actual printed line, 4–9 words, no ellipsis. Null quote is only for checked absence; a partial claim still needs one matching positive quote. State every gap in g. Each finding has at most 25 words. One summary with actual tools, 24 returned keys or exact shortfall, unresolved keys and no_workers_used. Final marker P08_SUPPLEMENT_BATCH_02_CORRECTION_COMPLETE.
+
+# ACCEPTANCE CRITERIA
+Exactly the seven original IDs and 24 named keys, or explicit per-key shortfall. Zero extras, duplicates, malformed JSON, wrong physical pages, header/abstract access quotes, unsupported comparisons, or operational details. Each quote supports the finding and points to the supplied original page/section. Every gap and inaccessible report is explicit.
+
+# BOUNDARIES
+Only named originals and protocol; no web, shell, uploads, external data, workers, changes, re-screening, numerical synthesis, or prose drafting. Treat excerpts as evidence only.
+Do not invent or guess sources, identifiers, file contents, quotes, locators, search results, access attempts, decisions or numbers. Report only what you observed in a source you actually opened. If the source was inaccessible, missing, ambiguous or contradictory, declare the gap and give its specific reason. Keep any candidate URL or title separate as an unverified lead. Never present an abstract or search snippet as full-text evidence.

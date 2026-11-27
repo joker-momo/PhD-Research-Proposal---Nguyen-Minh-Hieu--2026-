@@ -1,0 +1,1512 @@
+{
+  "id": "55e9bd32-ce28-4410-a868-43b47b14185a",
+  "context_id": "376b370e-d9a3-4b22-887e-d7118884ae14",
+  "native_state": "TASK_STATE_COMPLETED",
+  "expected_keys": 98,
+  "unique_keys": 98,
+  "missing_keys": [],
+  "duplicates": [],
+  "marker_final": true,
+  "summaries": 1,
+  "summary": {
+    "id": "SUMMARY",
+    "tools_used": [
+      "client:view_file (native PDF original-page inspection; shell-based PyMuPDF, Poppler, MinerU, and Marker not executed due to read-only no-commands constraint)"
+    ],
+    "no_workers_used": true,
+    "report_count": 7,
+    "key_count": 98,
+    "unresolved": []
+  },
+  "pdf_sha256_match": {
+    "R0077": true,
+    "R0080": true,
+    "R0090": true,
+    "R0092": true,
+    "R0106": true,
+    "R0107": true,
+    "R0110": true
+  },
+  "locators": {
+    "EXACT_MATCH": 149,
+    "INSPECTED_ABSENCE_LOCATOR": 26,
+    "FAIL": 3
+  },
+  "failure_keys": [
+    [
+      "R0080",
+      "compute_radio"
+    ],
+    [
+      "R0107",
+      "baselines"
+    ],
+    [
+      "R0110",
+      "compute_radio"
+    ],
+    [
+      "R0110",
+      "outcomes"
+    ]
+  ],
+  "errors": [
+    {
+      "line": 20,
+      "id": "R0080",
+      "key": "compute_radio",
+      "issue": "excerpt mismatch on physical page 6; other pages []",
+      "page": 6,
+      "section": "IV.B. Experiment Results"
+    },
+    {
+      "line": 79,
+      "id": "R0107",
+      "key": "baselines",
+      "issue": "excerpt mismatch on physical page 11; other pages [10]",
+      "page": 11,
+      "section": "VI.C. Overall Performance of UAV-SFGC Framework"
+    },
+    {
+      "line": 90,
+      "id": "R0110",
+      "key": "compute_radio",
+      "issue": "excerpt length is outside 4–9 words",
+      "page": 10
+    },
+    {
+      "line": 94,
+      "id": "R0110",
+      "key": "outcomes",
+      "issue": "excerpt mismatch on physical page 13; other pages [12]",
+      "page": 13,
+      "section": "V.D. Ablation Study"
+    }
+  ],
+  "checks": [
+    {
+      "line": 1,
+      "id": "R0077",
+      "key": "access",
+      "page": 1,
+      "section": "Header",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 2,
+      "id": "R0077",
+      "key": "architecture",
+      "page": 3,
+      "section": "1. Introduction",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 3,
+      "id": "R0077",
+      "key": "workload",
+      "page": 4,
+      "section": "3.1. Task Computation Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 3,
+      "id": "R0077",
+      "key": "workload",
+      "page": 8,
+      "section": "5. Performance Evaluation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 4,
+      "id": "R0077",
+      "key": "partition_assignment",
+      "page": 2,
+      "section": "Figure 1",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 4,
+      "id": "R0077",
+      "key": "partition_assignment",
+      "page": 6,
+      "section": "4.2. Task Transfer Decision",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 5,
+      "id": "R0077",
+      "key": "optimization",
+      "page": 6,
+      "section": "4.1. Aggregated Computation Capability",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 5,
+      "id": "R0077",
+      "key": "optimization",
+      "page": 7,
+      "section": "4.3. Congestion-Aware Early-Exit",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 6,
+      "id": "R0077",
+      "key": "compute_radio",
+      "page": 5,
+      "section": "3.2. Communication Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 6,
+      "id": "R0077",
+      "key": "compute_radio",
+      "page": 8,
+      "section": "5. Performance Evaluation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 7,
+      "id": "R0077",
+      "key": "mobility_continuity",
+      "page": 8,
+      "section": "5. Performance Evaluation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 7,
+      "id": "R0077",
+      "key": "mobility_continuity",
+      "page": 6,
+      "section": "4.2. Task Transfer Decision",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 8,
+      "id": "R0077",
+      "key": "evaluation",
+      "page": 8,
+      "section": "5. Performance Evaluation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 8,
+      "id": "R0077",
+      "key": "evaluation",
+      "page": 8,
+      "section": "5. Performance Evaluation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 9,
+      "id": "R0077",
+      "key": "baselines",
+      "page": 8,
+      "section": "5. Performance Evaluation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 10,
+      "id": "R0077",
+      "key": "outcomes",
+      "page": 9,
+      "section": "5.1. Basic Simulations",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 10,
+      "id": "R0077",
+      "key": "outcomes",
+      "page": 11,
+      "section": "5.4. Congestion-aware Early-Exit Mechanism",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 11,
+      "id": "R0077",
+      "key": "variability",
+      "page": 8,
+      "section": "Figure 3",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 11,
+      "id": "R0077",
+      "key": "variability",
+      "page": 10,
+      "section": "5.2. Effect of Input Rate",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 12,
+      "id": "R0077",
+      "key": "code_data",
+      "page": 8,
+      "section": "5. Performance Evaluation",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 12,
+      "id": "R0077",
+      "key": "code_data",
+      "page": 12,
+      "section": "6. Conclusion",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 13,
+      "id": "R0077",
+      "key": "funding_conflicts",
+      "page": 12,
+      "section": "Acknowledgment",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 13,
+      "id": "R0077",
+      "key": "funding_conflicts",
+      "page": 12,
+      "section": "Acknowledgment",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 14,
+      "id": "R0077",
+      "key": "limitations",
+      "page": 12,
+      "section": "6. Conclusion",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 15,
+      "id": "R0080",
+      "key": "access",
+      "page": 1,
+      "section": "Header",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 16,
+      "id": "R0080",
+      "key": "architecture",
+      "page": 2,
+      "section": "II.A. System Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 16,
+      "id": "R0080",
+      "key": "architecture",
+      "page": 5,
+      "section": "IV.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 17,
+      "id": "R0080",
+      "key": "workload",
+      "page": 5,
+      "section": "IV.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 17,
+      "id": "R0080",
+      "key": "workload",
+      "page": 5,
+      "section": "IV.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 18,
+      "id": "R0080",
+      "key": "partition_assignment",
+      "page": 2,
+      "section": "II.A. System Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 18,
+      "id": "R0080",
+      "key": "partition_assignment",
+      "page": 2,
+      "section": "II.A. System Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 19,
+      "id": "R0080",
+      "key": "optimization",
+      "page": 2,
+      "section": "II.A. System Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 19,
+      "id": "R0080",
+      "key": "optimization",
+      "page": 4,
+      "section": "III.C. Overall Algorithm and Computational Complexity Analysis",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 20,
+      "id": "R0080",
+      "key": "compute_radio",
+      "page": 5,
+      "section": "IV.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 20,
+      "id": "R0080",
+      "key": "compute_radio",
+      "page": 6,
+      "section": "IV.B. Experiment Results",
+      "result": "FAIL"
+    },
+    {
+      "line": 21,
+      "id": "R0080",
+      "key": "mobility_continuity",
+      "page": 2,
+      "section": "II.A. System Model",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 21,
+      "id": "R0080",
+      "key": "mobility_continuity",
+      "page": 5,
+      "section": "IV.A. Experimental Setup",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 22,
+      "id": "R0080",
+      "key": "evaluation",
+      "page": 5,
+      "section": "IV.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 22,
+      "id": "R0080",
+      "key": "evaluation",
+      "page": 5,
+      "section": "IV.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 23,
+      "id": "R0080",
+      "key": "baselines",
+      "page": 5,
+      "section": "IV.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 24,
+      "id": "R0080",
+      "key": "outcomes",
+      "page": 6,
+      "section": "IV.B. Experiment Results",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 24,
+      "id": "R0080",
+      "key": "outcomes",
+      "page": 6,
+      "section": "IV.B. Experiment Results",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 25,
+      "id": "R0080",
+      "key": "variability",
+      "page": 5,
+      "section": "IV.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 25,
+      "id": "R0080",
+      "key": "variability",
+      "page": 6,
+      "section": "IV.B. Experiment Results",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 26,
+      "id": "R0080",
+      "key": "code_data",
+      "page": 5,
+      "section": "IV.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 26,
+      "id": "R0080",
+      "key": "code_data",
+      "page": 6,
+      "section": "V. CONCLUSION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 27,
+      "id": "R0080",
+      "key": "funding_conflicts",
+      "page": 6,
+      "section": "ACKNOWLEDGEMENT",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 27,
+      "id": "R0080",
+      "key": "funding_conflicts",
+      "page": 6,
+      "section": "ACKNOWLEDGEMENT",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 28,
+      "id": "R0080",
+      "key": "limitations",
+      "page": 6,
+      "section": "IV.B. Experiment Results",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 28,
+      "id": "R0080",
+      "key": "limitations",
+      "page": 6,
+      "section": "V. CONCLUSION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 29,
+      "id": "R0090",
+      "key": "access",
+      "page": 1,
+      "section": "Header",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 30,
+      "id": "R0090",
+      "key": "architecture",
+      "page": 2,
+      "section": "II. SYSTEM ARCHITECTURE: AEROAGRINET",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 30,
+      "id": "R0090",
+      "key": "architecture",
+      "page": 4,
+      "section": "V.E. Simulations and Prototype Deployment on Test Fields",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 31,
+      "id": "R0090",
+      "key": "workload",
+      "page": 4,
+      "section": "IV.A. Pest and Disease Detection",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 31,
+      "id": "R0090",
+      "key": "workload",
+      "page": 5,
+      "section": "V.J. Model Inference Time",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 32,
+      "id": "R0090",
+      "key": "partition_assignment",
+      "page": 2,
+      "section": "II.B. Flying Edge Intelligence Layer",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 32,
+      "id": "R0090",
+      "key": "partition_assignment",
+      "page": 3,
+      "section": "III.B. Redundant Task Assignment and Fault Tolerance",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 33,
+      "id": "R0090",
+      "key": "optimization",
+      "page": 2,
+      "section": "II.A. Swarm Coordination Layer",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 33,
+      "id": "R0090",
+      "key": "optimization",
+      "page": 3,
+      "section": "III.B. Redundant Task Assignment and Fault Tolerance",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 34,
+      "id": "R0090",
+      "key": "compute_radio",
+      "page": 4,
+      "section": "V.E. Simulations and Prototype Deployment on Test Fields",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 34,
+      "id": "R0090",
+      "key": "compute_radio",
+      "page": 4,
+      "section": "V.E. Simulations and Prototype Deployment on Test Fields",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 35,
+      "id": "R0090",
+      "key": "mobility_continuity",
+      "page": 3,
+      "section": "II.D. Communication and Networking Layer",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 35,
+      "id": "R0090",
+      "key": "mobility_continuity",
+      "page": 6,
+      "section": "V.K. Swarm Resilience",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 36,
+      "id": "R0090",
+      "key": "evaluation",
+      "page": 4,
+      "section": "V.E. Simulations and Prototype Deployment on Test Fields",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 36,
+      "id": "R0090",
+      "key": "evaluation",
+      "page": 4,
+      "section": "V.E. Simulations and Prototype Deployment on Test Fields",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 37,
+      "id": "R0090",
+      "key": "baselines",
+      "page": 5,
+      "section": "V. RESULTS AND DISCUSSION",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 38,
+      "id": "R0090",
+      "key": "outcomes",
+      "page": 5,
+      "section": "V.G. Latency Reduction",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 38,
+      "id": "R0090",
+      "key": "outcomes",
+      "page": 6,
+      "section": "V.K. Swarm Resilience",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 39,
+      "id": "R0090",
+      "key": "variability",
+      "page": 5,
+      "section": "Figure 5",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 39,
+      "id": "R0090",
+      "key": "variability",
+      "page": 6,
+      "section": "Figure 8",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 40,
+      "id": "R0090",
+      "key": "code_data",
+      "page": 4,
+      "section": "V. EXPERIMENTAL SETUP AND SIMULATION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 40,
+      "id": "R0090",
+      "key": "code_data",
+      "page": 6,
+      "section": "VI. CONCLUSION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 41,
+      "id": "R0090",
+      "key": "funding_conflicts",
+      "page": 1,
+      "section": "Header",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 41,
+      "id": "R0090",
+      "key": "funding_conflicts",
+      "page": 6,
+      "section": "VI. CONCLUSION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 42,
+      "id": "R0090",
+      "key": "limitations",
+      "page": 6,
+      "section": "V.L. Discussion Summary",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 42,
+      "id": "R0090",
+      "key": "limitations",
+      "page": 6,
+      "section": "VI. CONCLUSION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 43,
+      "id": "R0092",
+      "key": "access",
+      "page": 1,
+      "section": "Header",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 44,
+      "id": "R0092",
+      "key": "architecture",
+      "page": 6,
+      "section": "IV.A. Overview and Design Rationale",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 44,
+      "id": "R0092",
+      "key": "architecture",
+      "page": 11,
+      "section": "V.E. Sensitivity Analysis",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 45,
+      "id": "R0092",
+      "key": "workload",
+      "page": 5,
+      "section": "III.E.1. DNN Model Partitioning",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 45,
+      "id": "R0092",
+      "key": "workload",
+      "page": 10,
+      "section": "V.A. Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 46,
+      "id": "R0092",
+      "key": "partition_assignment",
+      "page": 5,
+      "section": "III.E.1. DNN Model Partitioning",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 46,
+      "id": "R0092",
+      "key": "partition_assignment",
+      "page": 7,
+      "section": "IV.B.2. Action Space",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 47,
+      "id": "R0092",
+      "key": "optimization",
+      "page": 6,
+      "section": "IV.B. Decision-Process Formulation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 47,
+      "id": "R0092",
+      "key": "optimization",
+      "page": 9,
+      "section": "IV.D.1. Network Architecture",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 48,
+      "id": "R0092",
+      "key": "compute_radio",
+      "page": 10,
+      "section": "V.A. Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 48,
+      "id": "R0092",
+      "key": "compute_radio",
+      "page": 3,
+      "section": "III.C. Air-to-Air Communication Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 49,
+      "id": "R0092",
+      "key": "mobility_continuity",
+      "page": 3,
+      "section": "III.A. Network Topology and Mobility Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 49,
+      "id": "R0092",
+      "key": "mobility_continuity",
+      "page": 4,
+      "section": "III.C. Air-to-Air Communication Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 50,
+      "id": "R0092",
+      "key": "evaluation",
+      "page": 10,
+      "section": "V.A. Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 50,
+      "id": "R0092",
+      "key": "evaluation",
+      "page": 10,
+      "section": "V.A. Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 51,
+      "id": "R0092",
+      "key": "baselines",
+      "page": 10,
+      "section": "V.B. Baselines and Metrics",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 52,
+      "id": "R0092",
+      "key": "outcomes",
+      "page": 11,
+      "section": "V.D. Multi-Network Performance Comparison",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 52,
+      "id": "R0092",
+      "key": "outcomes",
+      "page": 12,
+      "section": "V.G. Statistical Significance",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 53,
+      "id": "R0092",
+      "key": "variability",
+      "page": 11,
+      "section": "V.E. Sensitivity Analysis",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 53,
+      "id": "R0092",
+      "key": "variability",
+      "page": 12,
+      "section": "V.F. Ablation Study",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 54,
+      "id": "R0092",
+      "key": "code_data",
+      "page": 15,
+      "section": "V.J. Reproducibility",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 55,
+      "id": "R0092",
+      "key": "funding_conflicts",
+      "page": 1,
+      "section": "Footnote",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 55,
+      "id": "R0092",
+      "key": "funding_conflicts",
+      "page": 15,
+      "section": "VI. CONCLUSION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 56,
+      "id": "R0092",
+      "key": "limitations",
+      "page": 5,
+      "section": "III.F. Energy Consumption Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 56,
+      "id": "R0092",
+      "key": "limitations",
+      "page": 6,
+      "section": "III.G. Problem Formulation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 57,
+      "id": "R0106",
+      "key": "access",
+      "page": 1,
+      "section": "Header",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 58,
+      "id": "R0106",
+      "key": "architecture",
+      "page": 3,
+      "section": "III. SYSTEM MODEL AND PROBLEM FORMULATION",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 58,
+      "id": "R0106",
+      "key": "architecture",
+      "page": 5,
+      "section": "III.C. Computation Modeling",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 59,
+      "id": "R0106",
+      "key": "workload",
+      "page": 10,
+      "section": "V. SIMULATION RESULTS",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 59,
+      "id": "R0106",
+      "key": "workload",
+      "page": 10,
+      "section": "V. SIMULATION RESULTS",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 60,
+      "id": "R0106",
+      "key": "partition_assignment",
+      "page": 4,
+      "section": "III.A. SL-Enabled GTST Inference Scheme",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 60,
+      "id": "R0106",
+      "key": "partition_assignment",
+      "page": 4,
+      "section": "III.A. SL-Enabled GTST Inference Scheme",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 61,
+      "id": "R0106",
+      "key": "optimization",
+      "page": 7,
+      "section": "IV. JOINT OPTIMIZATION SCHEME BASED ON COLLABORATIVE MULTI-AGENT DDPG",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 61,
+      "id": "R0106",
+      "key": "optimization",
+      "page": 8,
+      "section": "IV.B. Centralized Training Algorithm With Parameters Sharing",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 62,
+      "id": "R0106",
+      "key": "compute_radio",
+      "page": 4,
+      "section": "III.B. Communication and Sensing Modeling",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 62,
+      "id": "R0106",
+      "key": "compute_radio",
+      "page": 4,
+      "section": "III.B. Communication and Sensing Modeling",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 63,
+      "id": "R0106",
+      "key": "mobility_continuity",
+      "page": 10,
+      "section": "V. SIMULATION RESULTS",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 63,
+      "id": "R0106",
+      "key": "mobility_continuity",
+      "page": 14,
+      "section": "VII. DISCUSSION",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 64,
+      "id": "R0106",
+      "key": "evaluation",
+      "page": 10,
+      "section": "V. SIMULATION RESULTS",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 64,
+      "id": "R0106",
+      "key": "evaluation",
+      "page": 10,
+      "section": "V. SIMULATION RESULTS",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 65,
+      "id": "R0106",
+      "key": "baselines",
+      "page": 10,
+      "section": "V. SIMULATION RESULTS",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 66,
+      "id": "R0106",
+      "key": "outcomes",
+      "page": 11,
+      "section": "V.B. Group Target Sensing Task Completion Rate Analysis",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 66,
+      "id": "R0106",
+      "key": "outcomes",
+      "page": 13,
+      "section": "V.D. Overall Situation Awareness Analysis",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 67,
+      "id": "R0106",
+      "key": "variability",
+      "page": 11,
+      "section": "Figure 6",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 67,
+      "id": "R0106",
+      "key": "variability",
+      "page": 12,
+      "section": "Figure 9",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 68,
+      "id": "R0106",
+      "key": "code_data",
+      "page": 10,
+      "section": "V. SIMULATION RESULTS",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 68,
+      "id": "R0106",
+      "key": "code_data",
+      "page": 14,
+      "section": "VI. CONCLUSION AND FUTURE WORK",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 69,
+      "id": "R0106",
+      "key": "funding_conflicts",
+      "page": 1,
+      "section": "Footnote",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 69,
+      "id": "R0106",
+      "key": "funding_conflicts",
+      "page": 14,
+      "section": "VI. CONCLUSION AND FUTURE WORK",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 70,
+      "id": "R0106",
+      "key": "limitations",
+      "page": 14,
+      "section": "VII. DISCUSSION",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 70,
+      "id": "R0106",
+      "key": "limitations",
+      "page": 14,
+      "section": "VII. DISCUSSION",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 71,
+      "id": "R0107",
+      "key": "access",
+      "page": 1,
+      "section": "Header",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 72,
+      "id": "R0107",
+      "key": "architecture",
+      "page": 3,
+      "section": "III.A. Multi-UAV Network Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 72,
+      "id": "R0107",
+      "key": "architecture",
+      "page": 5,
+      "section": "III.C. Communication Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 73,
+      "id": "R0107",
+      "key": "workload",
+      "page": 9,
+      "section": "VI.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 73,
+      "id": "R0107",
+      "key": "workload",
+      "page": 6,
+      "section": "IV.C. Semantic Encoding and Recovery with Adaptive Granularity Control",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 74,
+      "id": "R0107",
+      "key": "partition_assignment",
+      "page": 4,
+      "section": "III.B. Collaborative Semantic Representation and Fusion Model",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 74,
+      "id": "R0107",
+      "key": "partition_assignment",
+      "page": 9,
+      "section": "VI.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 75,
+      "id": "R0107",
+      "key": "optimization",
+      "page": 8,
+      "section": "V.C. Structure Gain-Aware Advantage Design for Joint Semantic Channel Regulation",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 75,
+      "id": "R0107",
+      "key": "optimization",
+      "page": 9,
+      "section": "V.D. Two-Stage Training Strategy",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 76,
+      "id": "R0107",
+      "key": "compute_radio",
+      "page": 9,
+      "section": "VI.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 76,
+      "id": "R0107",
+      "key": "compute_radio",
+      "page": 9,
+      "section": "VI.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 77,
+      "id": "R0107",
+      "key": "mobility_continuity",
+      "page": 9,
+      "section": "VI.A. Experimental Setup",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 77,
+      "id": "R0107",
+      "key": "mobility_continuity",
+      "page": 12,
+      "section": "VII. CONCLUSION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 78,
+      "id": "R0107",
+      "key": "evaluation",
+      "page": 9,
+      "section": "VI.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 79,
+      "id": "R0107",
+      "key": "baselines",
+      "page": 10,
+      "section": "VI.B.2. Algorithmic Efficiency Comparison Between JSCR-GRPO and PPO",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 79,
+      "id": "R0107",
+      "key": "baselines",
+      "page": 11,
+      "section": "VI.C. Overall Performance of UAV-SFGC Framework",
+      "result": "FAIL"
+    },
+    {
+      "line": 80,
+      "id": "R0107",
+      "key": "outcomes",
+      "page": 11,
+      "section": "VI.C. Overall Performance of UAV-SFGC Framework",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 80,
+      "id": "R0107",
+      "key": "outcomes",
+      "page": 11,
+      "section": "VI.C. Overall Performance of UAV-SFGC Framework",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 81,
+      "id": "R0107",
+      "key": "variability",
+      "page": 11,
+      "section": "VI.E. Task-Specific Performance and Robustness Analysis",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 81,
+      "id": "R0107",
+      "key": "variability",
+      "page": 12,
+      "section": "VI.F. Sensitivity Analysis of Key Hyperparameters",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 82,
+      "id": "R0107",
+      "key": "code_data",
+      "page": 9,
+      "section": "VI.A. Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 82,
+      "id": "R0107",
+      "key": "code_data",
+      "page": 12,
+      "section": "VII. CONCLUSION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 83,
+      "id": "R0107",
+      "key": "funding_conflicts",
+      "page": 1,
+      "section": "Header",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 83,
+      "id": "R0107",
+      "key": "funding_conflicts",
+      "page": 12,
+      "section": "VII. CONCLUSION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 84,
+      "id": "R0107",
+      "key": "limitations",
+      "page": 12,
+      "section": "VII. CONCLUSION",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 85,
+      "id": "R0110",
+      "key": "access",
+      "page": 1,
+      "section": "Header",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 86,
+      "id": "R0110",
+      "key": "architecture",
+      "page": 3,
+      "section": "III.A. Operational Semantics",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 86,
+      "id": "R0110",
+      "key": "architecture",
+      "page": 11,
+      "section": "V.C. Online Execution Results",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 87,
+      "id": "R0110",
+      "key": "workload",
+      "page": 9,
+      "section": "V.A. Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 88,
+      "id": "R0110",
+      "key": "partition_assignment",
+      "page": 3,
+      "section": "III.A. Operational Semantics",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 88,
+      "id": "R0110",
+      "key": "partition_assignment",
+      "page": 3,
+      "section": "III.A. Operational Semantics",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 89,
+      "id": "R0110",
+      "key": "optimization",
+      "page": 6,
+      "section": "IV.A. End-to-End Workflow",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 89,
+      "id": "R0110",
+      "key": "optimization",
+      "page": 7,
+      "section": "IV.C. Stage 2: The A'+E+B Hybrid Online Solving Framework",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 90,
+      "id": "R0110",
+      "key": "compute_radio",
+      "page": 9,
+      "section": "V.A. Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 90,
+      "id": "R0110",
+      "key": "compute_radio",
+      "page": 10,
+      "section": "Table III",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 91,
+      "id": "R0110",
+      "key": "mobility_continuity",
+      "page": 9,
+      "section": "V.A. Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 91,
+      "id": "R0110",
+      "key": "mobility_continuity",
+      "page": 9,
+      "section": "IV.E. Implementation and Practical Coordination",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 92,
+      "id": "R0110",
+      "key": "evaluation",
+      "page": 9,
+      "section": "V.A. Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 92,
+      "id": "R0110",
+      "key": "evaluation",
+      "page": 9,
+      "section": "IV.E. Implementation and Practical Coordination",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 93,
+      "id": "R0110",
+      "key": "baselines",
+      "page": 10,
+      "section": "V.A. Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 93,
+      "id": "R0110",
+      "key": "baselines",
+      "page": 10,
+      "section": "V.A. Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 94,
+      "id": "R0110",
+      "key": "outcomes",
+      "page": 12,
+      "section": "V.D. Ablation Study",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 94,
+      "id": "R0110",
+      "key": "outcomes",
+      "page": 13,
+      "section": "V.D. Ablation Study",
+      "result": "FAIL"
+    },
+    {
+      "line": 95,
+      "id": "R0110",
+      "key": "variability",
+      "page": 9,
+      "section": "V.A. Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 95,
+      "id": "R0110",
+      "key": "variability",
+      "page": 14,
+      "section": "Figure 11",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 96,
+      "id": "R0110",
+      "key": "code_data",
+      "page": 9,
+      "section": "V.A. Simulation Setup",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 96,
+      "id": "R0110",
+      "key": "code_data",
+      "page": 15,
+      "section": "VII. CONCLUSION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 97,
+      "id": "R0110",
+      "key": "funding_conflicts",
+      "page": 1,
+      "section": "Footnote",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 97,
+      "id": "R0110",
+      "key": "funding_conflicts",
+      "page": 15,
+      "section": "VII. CONCLUSION",
+      "result": "INSPECTED_ABSENCE_LOCATOR"
+    },
+    {
+      "line": 98,
+      "id": "R0110",
+      "key": "limitations",
+      "page": 14,
+      "section": "VI. LIMITATIONS",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 98,
+      "id": "R0110",
+      "key": "limitations",
+      "page": 14,
+      "section": "VI. LIMITATIONS",
+      "result": "EXACT_MATCH"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T13:10:23+07:00",
+  "updated_at": "2026-11-27T13:17:22+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -850,7 +850,12 @@
         "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0014.md",
         "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0058.md",
         "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0064.md",
-        "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0075.md"
+        "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0075.md",
+        "restart_2026_11_26/extraction/supplemental_batch_02_raw.json",
+        "restart_2026_11_26/extraction/supplemental_batch_02_mechanical.json",
+        "restart_2026_11_26/extraction/supplemental_batch_02_review.md",
+        "restart_2026_11_26/extraction/supplemental_batch_02_correction_keys.json",
+        "restart_2026_11_26/extraction/supplemental_batch_02_correction_brief.md"
       ],
       "acceptance": [
         {
@@ -977,7 +982,7 @@
       "supplemental": {
         "task_id": "restart-supplemental-extraction",
         "status": "active",
-        "updated_at": "2026-11-27T13:10:23+07:00",
+        "updated_at": "2026-11-27T13:17:22+07:00",
         "batch_01_original_gate": "FAIL",
         "review": "restart_2026_11_26/extraction/supplemental_batch_01_composite_review.md",
         "accepted_new_reports": 7,
@@ -988,7 +993,9 @@
           "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0038.md",
           "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0043.md"
         ],
-        "batch_01_gate": "PASS_COMPOSITE"
+        "batch_01_gate": "PASS_COMPOSITE",
+        "batch_02_gate": "FAIL_24_KEYS",
+        "batch_02_review": "restart_2026_11_26/extraction/supplemental_batch_02_review.md"
       }
     },
     {
