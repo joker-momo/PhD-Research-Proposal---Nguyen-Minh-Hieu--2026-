@@ -504,6 +504,33 @@
         "outcomes",
         "adjudication"
       ]
+    },
+    {
+      "artifact_id": "hk261-s2-adjudication-audit",
+      "name": "HK261 S2 adjudication audit",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/audit_adjudication.py",
+      "purpose": "Report documented human decisions, deferrals and paired evidence alongside verified PRISMA dispositions.",
+      "entrypoint": "python3 -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/audit_adjudication.py\" --check",
+      "inputs": [
+        "manuscript/sn_computer_science/human_adjudication_log.csv",
+        "PRISMA ledger and reconciler",
+        "Canonical author-confirmed deferrals"
+      ],
+      "outputs": [
+        "manuscript/sn_computer_science/audit_summary.json",
+        "manuscript/sn_computer_science/adjudication_audit_table.tex"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/test_audit_adjudication.py"
+      ],
+      "test_command": "python3 -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/test_audit_adjudication.py\"",
+      "status": "active",
+      "tags": [
+        "hk261",
+        "adjudication",
+        "prisma",
+        "reproduction"
+      ]
     }
   ]
 }

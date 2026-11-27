@@ -16,6 +16,13 @@ that R0082 remains pending under E7. S2 records two final exclusions and one
 confirmed deferral.
 Independent duplicate human screening remains undocumented.
 
+The [audit report](audit_summary.json) and [LaTeX summary](adjudication_audit_table.tex)
+report the current S2 coverage and reconciled PRISMA counts. Run
+`python3 -B audit_adjudication.py` from this directory to regenerate both.
+Add `--check` to verify the saved outputs. The count of changed decisions uses
+only documented final decisions. Agreement statistics require paired reviewer
+entries. Confidence intervals require a documented sampling design.
+
 ## Priority records for the author
 
 PDF pages are physical, one-based. Look up the local original and checksum

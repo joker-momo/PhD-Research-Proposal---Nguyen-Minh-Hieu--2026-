@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T16:47:29+07:00",
+  "updated_at": "2026-11-27T16:55:22+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "alternative_editorial_pdf_ready_for_comparison",
     "summary": "The 29-page HK261 comparison PDF and S2 reflect the author-confirmed exclusions of R0081 (E7) and R0132 (E3). R0082 remains pending under E7."
   },
   "task": {
-    "task_id": "hk261-author-adjudication-r0132",
+    "task_id": "hk261-s2-adjudication-audit",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T16:45:56+07:00",
-    "updated_at": "2026-11-27T16:47:29+07:00",
-    "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
-    "decision_id": "hk261-author-adjudication-r0132-v1",
-    "completed_at": "2026-11-27T16:47:29+07:00"
+    "started_at": "2026-11-27T16:53:46+07:00",
+    "updated_at": "2026-11-27T16:55:22+07:00",
+    "checkpoint_path": "manuscript/sn_computer_science/audit_summary.json",
+    "decision_id": "hk261-s2-adjudication-audit-v1",
+    "completed_at": "2026-11-27T16:55:22+07:00"
   },
   "next_task": {
     "task_id": "hk261-r0082-proceedings-version-check",
@@ -744,6 +744,13 @@
         "source_lookup_verdict": "FAIL_NOT_ADOPTED",
         "author_confirmed_deferrals": {
           "R0082": "E7"
+        },
+        "adjudication_audit": {
+          "json": "manuscript/sn_computer_science/audit_summary.json",
+          "latex": "manuscript/sn_computer_science/adjudication_audit_table.tex",
+          "paired_human_decisions": 0,
+          "final_human_decisions": 2,
+          "author_confirmed_deferrals": 1
         }
       },
       "reports_awaiting_classification": [
