@@ -1,27 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T12:19:25+07:00",
+  "updated_at": "2026-11-27T12:23:54+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
     "summary": "The 25-study coursework handoff includes the revised PRISMA reporting checklist and rebuilt LaTeX/PDF. Remaining reporting gaps and pending author confirmations are recorded."
   },
   "task": {
-    "task_id": "restart-supplemental-screening",
+    "task_id": "restart-supplemental-linkage",
     "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T10:02:39+07:00",
-    "updated_at": "2026-11-27T12:19:25+07:00",
-    "completed_at": "2026-11-27T12:19:25+07:00",
-    "checkpoint_path": "restart_2026_11_26/supplemental_screening/screening_closeout.md",
-    "decision_id": "restart-supplemental-screening-v2"
+    "status": "active",
+    "started_at": "2026-11-27T12:23:54+07:00",
+    "updated_at": "2026-11-27T12:23:54+07:00",
+    "checkpoint_path": "restart_2026_11_26/study_linkage/supplemental_linkage_brief.md",
+    "decision_id": "restart-supplemental-linkage-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-screening-complete",
-    "owner": "CODEX_WRITING",
-    "status": "none",
-    "action": "Resume the approved plan at report-to-study linkage after the supplemental screening checkpoint.",
-    "acceptance": "Ninety-two supplemental reports trace to the original evidence. Unresolved classifications remain explicit."
+    "task_id": "restart-supplemental-linkage-gemini",
+    "owner": "GEMINI_RESEARCH",
+    "status": "ready",
+    "action": "Verify plausible study families for the 21 newly included reports.",
+    "acceptance": "21 unique identities, 11 mandatory original-PDF comparisons, no unsupported links.",
+    "dispatch_brief": "restart_2026_11_26/study_linkage/supplemental_linkage_brief.md",
+    "message_id": "462631bf-a353-4b85-ab08-841a6819eb2e"
   },
   "project": {
     "target_venue": "SN Computer Science",
