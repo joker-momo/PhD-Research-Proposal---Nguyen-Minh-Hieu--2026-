@@ -29,9 +29,9 @@ def compact_images(path):
     compact = path.with_suffix(".compact.pdf")
     with pymupdf.open(path) as readable, pymupdf.open() as image_pdf:
         for page in readable:
-            pixmap = page.get_pixmap(dpi=150, colorspace=pymupdf.csRGB, alpha=False)
+            pixmap = page.get_pixmap(dpi=120, colorspace=pymupdf.csGRAY, alpha=False)
             output = image_pdf.new_page(width=page.rect.width, height=page.rect.height)
-            output.insert_image(output.rect, stream=pixmap.tobytes("jpg", jpg_quality=72))
+            output.insert_image(output.rect, stream=pixmap.tobytes("jpg", jpg_quality=48))
         image_pdf.save(compact, garbage=4, deflate=True, use_objstms=1, no_new_id=True)
     if compact.stat().st_size < path.stat().st_size:
         compact.replace(path)
@@ -90,7 +90,25 @@ def main():
         if sum(p.stat().st_size for p in args.destination.iterdir()) < max_bytes - 100000:
             break
         if compact_images(args.destination / row["attachment"]):
-            row["render"] = "Original PDF pages rendered at 150 dpi for attachment-size limit"
+            row["render"] = "Original PDF pages rendered in grayscale at 120 dpi for attachment-size limit"
+    text_first = sorted(source_map, key=lambda ident: (
+        any(re.search(r"table|fig(?:ure)?\.|printed cell|equation", row["prior_issue"], re.IGNORECASE)
+            for row in source_map[ident]["targets"]),
+        -(args.destination / source_map[ident]["attachment"]).stat().st_size,
+    ))
+    for ident in text_first:
+        if sum(p.stat().st_size for p in args.destination.iterdir()) < max_bytes - 100000:
+            break
+        row = source_map[ident]
+        replaced = args.destination / row["attachment"]
+        attachment = replaced.with_suffix(".txt")
+        with pymupdf.open(PROJECT / phase["pdfs"][ident]["source_pdf"]) as original:
+            attachment.write_text("\n".join(
+                f"===== {ident} original physical page {page} =====\n{original[page - 1].get_text()}"
+                for page in row["attachment_physical_to_original_physical"]
+            ), encoding="utf-8")
+        replaced.unlink()
+        row.update(attachment=attachment.name, render="Text extracted by original physical page with PyMuPDF 1.26.7")
     dump(args.destination / "targets.json", source_map)
     files = list(args.destination.iterdir())
     if len(files) > 50 or sum(path.stat().st_size for path in files) > max_bytes:

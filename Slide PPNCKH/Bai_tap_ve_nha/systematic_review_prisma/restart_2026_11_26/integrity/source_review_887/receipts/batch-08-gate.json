@@ -1,0 +1,52 @@
+{
+  "batch": 8,
+  "expected": 79,
+  "seen": 79,
+  "task_id": "521d5446-f852-42d6-b0de-363e42f2d5d0",
+  "context_id": "36f4d199-4d46-4b5b-8df5-19e20b0bc758",
+  "transport": "TASK_STATE_COMPLETED",
+  "provider_started_at": "2026-11-27T14:50:29.878+00:00",
+  "provider_completed_at": "2026-11-27T14:57:02.697+00:00",
+  "hash_inventory_match": true,
+  "context_unchanged": true,
+  "preflight_anchor_match": true,
+  "identity_count": 4,
+  "identity_expected": 4,
+  "identity_records": [
+    "HKF-028",
+    "HKF-029",
+    "HKF-094",
+    "HKF-109"
+  ],
+  "identity_missing": [],
+  "identity_duplicate_dois": 0,
+  "identity_duplicate_titles": 0,
+  "end_marker": true,
+  "cleanup": {
+    "state": "deleted",
+    "verified_new_chat": true,
+    "mode_restored": "chat"
+  },
+  "locator_checks": {
+    "ANCHORS_MATCH": 66,
+    "PARTIAL_ANCHOR_MATCH": 6,
+    "SCHEMA_INVALID": 4,
+    "ANCHOR_NEEDS_VISUAL_OR_CORRECTION": 3
+  },
+  "status_counts": {
+    "VERIFIED": 41,
+    "PARTIAL": 28,
+    "NOT_REPORTED": 4,
+    "NO": 4,
+    "UNRESOLVED": 2
+  },
+  "errors": [],
+  "missing_keys": [],
+  "semantic": {
+    "PARTIAL": 27,
+    "PASS": 33,
+    "FAIL": 4
+  },
+  "semantic_unreviewed": 15,
+  "semantic_missing_row_reviews": 0
+}

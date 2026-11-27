@@ -257,7 +257,7 @@ def codex_scope(codex):
                            evidence=[], note="The quantitative details are outside the scope of this review.")
 
 
-def csv_row(target, info, codex, gemini, prior, gate, supplemental):
+def csv_row(target, info, codex, gemini, prior, gate, supplemental, correction, correction_gate):
     ident, kind, key = input_key(target)
     record = {"record_id": info["record_id"], "packet_id": ident, "kind": kind, "key": key,
               "pdf_path": info["source_pdf"], "pdf_sha256": info["sha256"],
@@ -265,18 +265,20 @@ def csv_row(target, info, codex, gemini, prior, gate, supplemental):
               "supplemental_pdf_sha256": supplemental.get("sha256", ""),
               "suggested_locator": suggested(target), "baseline": prior,
               "comparison": conclusion(codex, gemini, kind)}
-    for name, item in (("codex", codex), ("gemini", gemini)):
+    for name, item in (("codex", codex), ("gemini", gemini), ("correction", correction)):
         anchors = item.get("evidence") if item else None
         anchors = anchors if isinstance(anchors, list) else []
         for field in ("status", "finding", "note", "locator_check"):
             record[f"{name}_{field}"] = str(item.get(field, "")) if item else (
-                "MISSING_PASS" if field == "status" else "")
+                "MISSING_PASS" if field == "status" and name != "correction" else "")
         record[f"{name}_locator"] = " | ".join(f"PDF p. {a['page']}, {a['section']}"
                                               for a in anchors if isinstance(a, dict)
                                               and "page" in a and "section" in a)
         record[f"{name}_excerpt"] = " | ".join(a.get("quote", "") for a in anchors
                                                if isinstance(a, dict) and isinstance(a.get("quote"), str))
     record["gemini_semantic"] = gate.get("semantic", "PENDING") if gemini else "NO_RESULT"
+    record["correction_semantic"] = correction_gate.get("semantic", "PENDING") if correction else ""
+    record["correction_semantic_reason"] = correction_gate.get("reason", "")
     record["gemini_semantic_reason"] = gate.get("reason", "")
     corrected = gate.get("corrected_evidence", [])
     record["gemini_semantic_recheck"] = gate.get("suggested_fix", "") or " | ".join(
@@ -315,7 +317,7 @@ def report_tex(path, summary, report):
     codex, gemini = counts
     lines = [
         r"\section*{Phạm vi và tiến độ}",
-        f"Đối chiếu {summary['expected']} mục trong {summary['reports']} bài. Codex trả {summary['codex_returned']} mục và Gemini trả {summary['gemini_returned']} mục.",
+        f"Đối chiếu {summary['expected']} mục trong {summary['reports']} bài. Codex trả {summary['codex_returned']} mục và Gemini trả {summary['gemini_returned']} mục ở lượt đầu.",
         "Gemini đọc văn bản tách theo trang từ PDF đã khóa hash. Mỗi lô có bài kiểm tra đọc trực tiếp PDF mẫu. Codex đối chiếu theo trang và mở ảnh PDF ở các vị trí cần kiểm tra bố cục.",
         r"\begin{center}\begin{tabular}{lrr}\toprule Trạng thái do lượt rà ghi & Codex & Gemini \\ \midrule",
     ]
@@ -352,6 +354,13 @@ def report_tex(path, summary, report):
         "Bảng CSV giữ riêng kết quả Gemini trả về và trạng thái kiểm tra vị trí nguồn. Những dòng thiếu",
         "minh chứng hoặc vẫn chờ đối chiếu ngữ nghĩa cần được đọc lại từ PDF.",
     ])
+    if summary.get("correction"):
+        followup = summary["correction"]
+        lines.append(
+            f"Lô sửa trả {followup['seen']}/{followup['expected']} mục. "
+            f"Tính cả lô sửa, Gemini có {summary['gemini_unique_with_correction']}/{summary['expected']} mục phân tích được. "
+            "Cột có tiền tố correction trong CSV lưu chứng cứ và kết quả kiểm tra riêng."
+        )
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -392,6 +401,8 @@ def main():
     for key, item in codex.items():
         item["locator_check"] = "RENDERED_SOURCE_CHECKED" if key in visual else assess(item, sources)
     gemini = {}
+    correction = {}
+    correction_semantic = {}
     semantic = {}
     reviews = []
     for batch in manifest["batches"]:
@@ -408,6 +419,20 @@ def main():
         stats["semantic_missing_row_reviews"] = len(checked.keys() - data.keys())
         gemini.update(data)
         reviews.append(stats)
+    correction_stats = None
+    correction_context = HERE / "correction_manifest.json"
+    if correction_context.is_file():
+        correction_manifest = load(correction_context)
+        correction_inputs = load(HERE / "correction_targets.json")
+        correction_keys = {(ident, t["kind"], t["key"]) for ident, src in correction_inputs.items() for t in src["targets"]}
+        if not correction_keys <= expected or len(correction_keys) != correction_manifest["keys"]:
+            raise ValueError("Correction target keys differ from the committed manifest")
+        correction_receipt = HERE / "receipts/batch-09-receipt.json"
+        correction, correction_stats = receipt_review(correction_receipt, correction_manifest, correction_keys, sources)
+        correction_semantic = load_semantic_checks(args.workspace, 9, correction_keys)
+        correction_stats["semantic"] = dict(Counter(correction_semantic[k]["semantic"]
+                                                    for k in correction.keys() & correction_semantic.keys()))
+        correction_stats["semantic_unreviewed"] = len(correction.keys() - correction_semantic.keys())
     baseline = baseline_values()
     report = []
     for target in sorted(packet, key=lambda t: (manifest["pdfs"][t["packet_id"]]["record_id"], input_key(t))):
@@ -418,7 +443,8 @@ def main():
             prior = "Restricted to non-operational scholarly assessment."
         supplemental = manifest.get("supplemental_pdf", {})
         report.append(csv_row(target, info, codex.get(k), gemini.get(k), prior, semantic.get(k, {}),
-                              supplemental if supplemental.get("packet_id") == ident else {}))
+                              supplemental if supplemental.get("packet_id") == ident else {},
+                              correction.get(k), correction_semantic.get(k, {})))
     with (args.output / "source_review_887.csv").open("w", newline="", encoding="utf-8-sig") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(report[0]), lineterminator="\n")
         writer.writeheader()
@@ -433,6 +459,8 @@ def main():
         "author_attention": dict(Counter(r["author_attention"] for r in report)),
         "labels": dict(Counter(r["comparison"] for r in report)),
         "batches": reviews,
+        "correction": correction_stats,
+        "gemini_unique_with_correction": len(gemini.keys() | correction.keys()),
     }
     dump(args.output / "source_review_summary.json", summary)
     report_tex(args.output / "report_data.tex", summary, report)

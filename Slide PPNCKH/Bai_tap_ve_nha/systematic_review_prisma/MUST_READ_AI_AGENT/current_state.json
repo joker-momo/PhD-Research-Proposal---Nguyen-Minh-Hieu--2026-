@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T21:49:45+07:00",
+  "updated_at": "2026-11-27T22:00:19+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
@@ -11,18 +11,16 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T20:21:38+07:00",
-    "updated_at": "2026-11-27T21:49:45+07:00",
+    "updated_at": "2026-11-27T22:00:19+07:00",
     "decision_id": "hk261-dual-ai-source-review-887-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/receipts/batch-07-review.md"
+    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/receipts/batch-08-review.md"
   },
   "next_task": {
-    "task_id": "hk261-dual-ai-source-review-887-batch-08",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "hk261-dual-ai-source-review-887-reconcile",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Assess batch 08 using only the attached source materials.",
-    "acceptance": "Direct source access check and 79 distinct keys or transparent gaps.",
-    "dispatch_brief": "restart_2026_11_26/integrity/source_review_887/gemini_brief.md",
-    "message_id": "0ce3ea93-82c8-5442-b899-166eced286f5"
+    "action": "Reconcile returned evidence and record item-level gaps.",
+    "acceptance": "Publish all 887 keys with explicit source evidence or gaps."
   },
   "project": {
     "target_venue": "SN Computer Science",
