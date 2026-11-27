@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:39:34+07:00",
+  "updated_at": "2026-11-28T00:41:31+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The verified 30-page manuscript and S2 record the author’s account that the author and a colleague conducted screening and assigned appraisal ratings. Preliminary AI records are retained. The author endorsed 46 inclusions and 90 exclusions. Ten decisions have separate author entries. Zero paired independent full-text decisions are documented. PRISMA is unchanged."
   },
   "task": {
-    "task_id": "hk261-record-endorsements-of-full-screening-passes",
+    "task_id": "hk261-label-confirmed-screening-forms",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:39:34+07:00",
-    "updated_at": "2026-11-28T00:39:34+07:00",
-    "decision_id": "hk261-record-endorsements-of-full-screening-passes-v1",
+    "started_at": "2026-11-28T00:41:31+07:00",
+    "updated_at": "2026-11-28T00:41:31+07:00",
+    "decision_id": "hk261-label-confirmed-screening-forms-v1",
     "checkpoint_path": "restart_2026_11_26/integrity/dual_ai_full_136/review_136.csv",
-    "completed_at": "2026-11-28T00:39:34+07:00"
+    "completed_at": "2026-11-28T00:41:31+07:00"
   },
   "next_task": {
     "task_id": "hk261-collect-new-independent-screening-round",
@@ -1224,12 +1224,12 @@
         "R1": {
           "filename": "HK261_R1_XAC_NHAN_CODEX_136.csv",
           "rows": 136,
-          "sha256": "7a7eae2509dea51521cb005b514d5e50a1df8dfb13eff5b3121943d2be6c3eca"
+          "sha256": "c913d5847726c285805b92a0f570647f635625b0dccec378f38d269e1ada98bf"
         },
         "R2": {
           "filename": "HK261_R2_XAC_NHAN_GEMINI_136.csv",
           "rows": 136,
-          "sha256": "f29f673a3000f864d2a6a87de3dd30255715b7f501c5e0b2323e89c5b88c8689"
+          "sha256": "4e8768813535eba1f0d1b2495eb192ccce26671994e42fe9e3df4328044b9b9d"
         },
         "disagreements": {
           "filename": "HK261_BAT_DONG_CAC_LUOT_DA_XAC_NHAN.csv",
@@ -1241,6 +1241,22 @@
         "include": 46,
         "exclude": 90,
         "awaiting": 0
+      },
+      "label_revision": {
+        "date": "2026-11-28",
+        "screening_assessment_label": "Nhận định sàng lọc của tác giả và đồng nghiệp, theo xác nhận của tác giả.",
+        "files": {
+          "R1": {
+            "before_sha256": "7a7eae2509dea51521cb005b514d5e50a1df8dfb13eff5b3121943d2be6c3eca",
+            "sha256": "c913d5847726c285805b92a0f570647f635625b0dccec378f38d269e1ada98bf",
+            "rows": 136
+          },
+          "R2": {
+            "before_sha256": "f29f673a3000f864d2a6a87de3dd30255715b7f501c5e0b2323e89c5b88c8689",
+            "sha256": "4e8768813535eba1f0d1b2495eb192ccce26671994e42fe9e3df4328044b9b9d",
+            "rows": 136
+          }
+        }
       }
     }
   },
