@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T16:42:50+07:00",
+  "updated_at": "2026-11-27T16:44:58+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "alternative_editorial_pdf_ready_for_comparison",
-    "summary": "The 29-page HK261 comparison PDF reflects one author-confirmed E7 exclusion. R0082 and R0132 remain pending."
+    "summary": "The 29-page HK261 comparison PDF reflects the author-confirmed E7 exclusion of R0081. S2 records the author-confirmed E7 deferral for R0082. R0132 awaits an author decision."
   },
   "task": {
-    "task_id": "hk261-author-adjudication-r0081",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T16:40:47+07:00",
-    "updated_at": "2026-11-27T16:42:50+07:00",
-    "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
-    "decision_id": "hk261-author-adjudication-r0081-v1",
-    "completed_at": "2026-11-27T16:42:50+07:00"
-  },
-  "next_task": {
     "task_id": "hk261-author-adjudication-r0082",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-27T16:44:16+07:00",
+    "updated_at": "2026-11-27T16:44:58+07:00",
+    "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
+    "decision_id": "hk261-author-adjudication-r0082-v1",
+    "completed_at": "2026-11-27T16:44:58+07:00"
+  },
+  "next_task": {
+    "task_id": "hk261-author-adjudication-r0132",
+    "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "Await author disposition for R0082 after inspection of arXiv v1 and available publication-version evidence.",
-    "acceptance": "Record explicit author confirmation before updating S2 and PRISMA for R0082."
+    "action": "Await the author decision for R0132 after review of its original PDF and eligibility criteria.",
+    "acceptance": "Apply only the explicit author decision for R0132 and reconcile S2 and PRISMA if the disposition changes."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -580,7 +580,7 @@
       "not_retrieved": [
         "R0116"
       ],
-      "ledger_sha256": "a7fd419a5aa43ef63a978bd8511e6840d9513644f99644a6f06c6adf0ecaaec8",
+      "ledger_sha256": "7a0658decbbfa91a5f0c17f6033b7ac39db04c1114b7c10a6886bdfb4870dae8",
       "flow_sha256": "030a6cf31a4cacd22fffa118624b17f7d893b42cd0eaf80a41569b35184815a2",
       "unexplained_arithmetic_differences": 0,
       "checklist": "restart_2026_11_26/prisma/active_prisma_checklist.md",
@@ -737,12 +737,15 @@
         "plot_only_reports": 9,
         "unresolved_outcome_reports": 1,
         "human_log_rows": 136,
-        "human_reviews_recorded": 1,
+        "human_reviews_recorded": 2,
         "human_log": "manuscript/sn_computer_science/human_adjudication_log.csv",
         "supplement_s3": "manuscript/sn_computer_science/supplement_s3.md",
         "source_lookup_task_id": "01a21c52-100e-7a50-afbd-184b571116b8",
         "source_lookup_context_id": "01a21c52-1014-7952-8ad4-044ca498543a",
-        "source_lookup_verdict": "FAIL_NOT_ADOPTED"
+        "source_lookup_verdict": "FAIL_NOT_ADOPTED",
+        "author_confirmed_deferrals": {
+          "R0082": "E7"
+        }
       },
       "reports_awaiting_classification": [
         "R0082",
