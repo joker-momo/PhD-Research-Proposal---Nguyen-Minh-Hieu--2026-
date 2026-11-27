@@ -1,0 +1,29 @@
+{
+  "provider_state": "LOCAL_RECOVERY_COMPLETE",
+  "expected_pairs": 39,
+  "received_pairs": 39,
+  "valid_anchors": 69,
+  "state_counts": {
+    "PARTIAL": 26,
+    "NOT_REPORTED": 3,
+    "YES": 9,
+    "READ": 1
+  },
+  "missing": [],
+  "bad_pairs": [],
+  "errors": [
+    [
+      40,
+      null,
+      null,
+      "extra or duplicate key"
+    ],
+    [
+      null,
+      null,
+      null,
+      "invalid or incomplete SUMMARY"
+    ]
+  ],
+  "summary": null
+}
