@@ -8,19 +8,9 @@
     "excluded_reports": 13,
     "previously_awaiting": 6
   },
-  "supplemental_files_by_id": 82,
+  "supplemental_files_by_id": 92,
   "not_retrieved": [
-    "R0007",
-    "R0023",
-    "R0027",
-    "R0028",
-    "R0043",
-    "R0058",
-    "R0064",
-    "R0090",
-    "R0116",
-    "R0125",
-    "R0130"
+    "R0116"
   ],
   "probe": {
     "id": "R0096",
@@ -29,5 +19,37 @@
     "physical_page": 2,
     "brief": "restart_2026_11_26/supplemental_screening/access_probe_brief.md",
     "message_id": "9932a384-6633-44e3-ad9a-257289f4abe5"
+  },
+  "updated_at": "2026-11-27T10:30:31+07:00",
+  "intake_revision": {
+    "previous_intake_count": 82,
+    "previous_intake_sha256": "d87d5f90f053ec0380d5009553382b6e3ffe5b3514216bce02523278bffcc9cc",
+    "additional_ids": [
+      "R0007",
+      "R0023",
+      "R0027",
+      "R0028",
+      "R0043",
+      "R0058",
+      "R0064",
+      "R0090",
+      "R0125",
+      "R0130"
+    ],
+    "additional_doi_matches": 10,
+    "overlaps_with_prior_intake_or_decisions": 0,
+    "checks": [
+      "id",
+      "doi",
+      "normalized_title",
+      "sha256"
+    ],
+    "not_retrieved_evidence": {
+      "id": "R0116",
+      "url": "https://zenodo.org/records/20404256",
+      "candidate_asset": "dmaker_light-v1.0.1.zip",
+      "disposition": "User retained as not retrieved. The retrieval thread inspected the repository inventory and ZIP contents and reported source code only, with zero report PDFs. DataCite verifies identifier and title. Direct verification of Zenodo inventory in the screening thread returned HTTP 403."
+    },
+    "scope": "Retrieval intake and protocol screening only. PRISMA and manuscript checkout not revised in this pass."
   }
 }
