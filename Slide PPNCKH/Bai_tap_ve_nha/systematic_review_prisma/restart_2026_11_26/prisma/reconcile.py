@@ -290,6 +290,7 @@ def audit_supplemental(project, baseline):
     adjudication_path = project / "manuscript/sn_computer_science/human_adjudication_log.csv"
     adjudications = read_csv(adjudication_path, "Record_ID")
     eq(set(adjudications), set(partition), "S2 adjudication coverage")
+    author_exclusions = {}
     for key, row in adjudications.items():
         decision = row["Final_Human_Decision"]
         if not decision:
@@ -300,9 +301,15 @@ def audit_supplemental(project, baseline):
         require(row["PDF_Page_Evidence"] and row["Adjudicated_Date"], f"{key}: missing author decision provenance")
         if decision == partition[key]["status"] == "INCLUDE" and not reason:
             continue
-        require(key in original_pending and decision == "EXCLUDE" and reason in original_pending[key].split("|"),
-                f"{key}: author decision requires separate corpus reconciliation")
-        partition[key].update(status=decision, reason=reason, pending="")
+        require(decision == "EXCLUDE" and row["Adjudication_Notes"]
+                and reason in {f"E{i}" for i in range(1, 8)},
+                f"{key}: author exclusion requires a valid reason and documented rationale")
+        if key in original_pending:
+            require(reason in original_pending[key].split("|"), f"{key}: inconsistent primary reason")
+        else:
+            require(partition[key]["status"] == "INCLUDE",
+                    f"{key}: author decision requires separate corpus reconciliation")
+        author_exclusions[key] = reason
 
     study_map = read_csv(linkage_map, "report_id")
     eq(set(study_map), {key for key, row in partition.items() if row["status"] == "INCLUDE"},
@@ -357,6 +364,8 @@ def audit_supplemental(project, baseline):
         partition[key].update(status="AWAITING_CLASSIFICATION", reason="", pending=reason)
 
     # Validate the locked synthesis corpus above before projecting the current eligibility set.
+    for key, reason in author_exclusions.items():
+        partition[key].update(status="EXCLUDE", reason=reason, pending="")
     groups = split(partition, "status", {"INCLUDE", "EXCLUDE", "AWAITING_CLASSIFICATION"})
     reasons = split({key: partition[key] for key in groups["EXCLUDE"]}, "reason", {f"E{i}" for i in range(1, 8)})
     pending = {key: partition[key]["pending"] for key in groups["AWAITING_CLASSIFICATION"]}

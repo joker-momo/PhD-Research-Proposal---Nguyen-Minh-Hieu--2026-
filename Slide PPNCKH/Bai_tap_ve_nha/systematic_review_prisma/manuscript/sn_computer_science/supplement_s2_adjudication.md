@@ -7,14 +7,14 @@ The original decisions reconcile to 46 inclusions, 87 exclusions and three
 awaiting classification. R0116 was not retrieved and therefore has no
 full-text review row. The [exclusions ledger](supplement_fulltext_exclusions.csv)
 preserves the 87 baseline exclusions and their primary reasons. The author
-confirmed two additional exclusions, R0081 (E7) and R0132 (E3), on
+confirmed three additional exclusions, R0081 (E7), R0113 (E3) and R0132 (E3), on
 27 November 2026. The
 [active PRISMA ledger](../../restart_2026_11_26/prisma/prisma_counts.json)
 combines the screening and author decisions. The current eligibility set
-contains 44 included, 89 excluded and three awaiting classification.
-The author confirmed deferrals for R0082 (E7), R0113 (E3) and R0292 (E7).
-S2 records five final decisions (three inclusions and two exclusions) and
-three confirmed deferrals. Eight of 136 reports have author confirmation.
+contains 44 included, 90 excluded and two awaiting classification.
+The author confirmed deferrals for R0082 (E7) and R0292 (E7).
+S2 records six final decisions (three inclusions and three exclusions) and
+two confirmed deferrals. Eight of 136 reports have author confirmation.
 The prior 46-study comparison PDF, extraction, appraisal and synthesis
 are an earlier snapshot pending reconciliation to the current set.
 Independent duplicate human screening remains undocumented.
@@ -38,7 +38,7 @@ and record the original page and criterion behind each decision.
 | R0082, LLHR | The [conference DOI](https://doi.org/10.1109/WCNC55385.2023.10118908) identifies the publication. The retained file is [arXiv:2305.15858v1](https://arxiv.org/abs/2305.15858), as shown on p. 1. The arXiv page links the conference DOI. This verifies the bibliographic linkage. Its §§I and IV (pp. 2 and 5) support a scope candidate. The IEEE version of record was unavailable in the current public-access check. | **Author reaffirmed AWAITING_CLASSIFICATION (E7), 27 November 2026,** after the [targeted source recheck](../../restart_2026_11_26/integrity/pending_three_followup/review.md). Reassess when an authorized IEEE proceedings copy is available for comparison. The preprint stays outside the primary synthesis while E7 is pending. |
 | R0132 | Original p. 10, §§8.1–8.2, and pp. 17–20, including Table 12, describe system-level simulation, HIL replay and component metrics. They do not tie a specific evaluated multi-UAV workload to shared neural inference across those UAVs. The [DataCite deposit record](https://api.datacite.org/dois/10.5281/zenodo.20445205) links a separate version DOI ending 20445206 and journal ISSN 3051-3820. This establishes publication metadata, while E7 remains to be confirmed. | **Author confirmed EXCLUDE (E3), 27 November 2026.** Figures 12–13 place Transformer fusion at the edge and show the UAV in a sensing role. Table 12 reports HIL and component benchmarks. These do not establish an evaluated neural workload executed collaboratively within the multi-UAV system. E3 is the sole primary exclusion code. |
 | R0223, Wang and Deng | Physical pp. 3–5 and 7, §§3.2 and 4.2, Figs. 3 and 7, Table 2. | **Author confirmed INCLUDE.** The system-level experiment evaluates configurations of server and UAV neural model orchestration. |
-| R0113, Hemasri and Reddy | Physical pp. 7, 9 and 13, Methodology, Implementation and Results, Table 4. | **Author confirmed AWAITING_CLASSIFICATION (E3).** The reported inter-UAV embeddings still need to be linked to evaluated collaborative inference. E4 for that workload and E7 remain open. |
+| R0113, Hemasri and Reddy | [Original PDF](../../restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf), physical pp. 7–9 and 12–13 (printed pp. 454–456 and 459–460), including the methodology flow chart and Table 4. | **Author confirmed EXCLUDE (E3), 27 November 2026.** The paper describes inter-UAV embedding exchange and reports an ablation with graph coordination. The cited sections do not establish which inference operation uses a received embedding in the evaluated configuration. E3 is the sole primary exclusion code. |
 | R0145, Xiao et al. | Physical pp. 6 and 17–18, §§3.1 and 6.2, Figs. 2 and 7–10. | **Author confirmed INCLUDE.** Whole LLM requests are assigned locally or to cloud according to connectivity. The study evaluates three assignment schemes. |
 | R0292, Kim et al. | Physical pp. 3–5, §§4–5.2, Fig. 3 and Table 3, and the DroNet workshop documentation. | **Author confirmed AWAITING_CLASSIFICATION (E7).** The handoff and HIL evidence were verified. The track or report still requires authoritative peer-review evidence. |
 | R0001, Dong et al. | Physical pp. 2–3, §§II.A–B and III.A, Figs. 2–3, and the official ICWS WIP programme and author policy. | **Author confirmed INCLUDE.** Evaluated DNN partitioning and a substantive peer-reviewed WIP report. |

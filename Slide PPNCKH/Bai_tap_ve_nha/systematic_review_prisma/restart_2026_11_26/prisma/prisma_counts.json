@@ -7,7 +7,6 @@
   },
   "awaiting_classification_codes": {
     "R0082": "E7",
-    "R0113": "E3",
     "R0292": "E7"
   },
   "counts": {
@@ -18,8 +17,8 @@
     "records_excluded": 328,
     "records_screened": 465,
     "reports_assessed": 136,
-    "reports_awaiting_classification": 3,
-    "reports_excluded": 89,
+    "reports_awaiting_classification": 2,
+    "reports_excluded": 90,
     "reports_not_retrieved": 1,
     "reports_sought": 137
   },
@@ -1710,6 +1709,7 @@
       "R0099",
       "R0105",
       "R0108",
+      "R0113",
       "R0122",
       "R0130",
       "R0132",
@@ -3928,7 +3928,6 @@
   "report_ids_by_fulltext_decision": {
     "AWAITING_CLASSIFICATION": [
       "R0082",
-      "R0113",
       "R0292"
     ],
     "EXCLUDE": [
@@ -3949,6 +3948,7 @@
       "R0105",
       "R0108",
       "R0111",
+      "R0113",
       "R0115",
       "R0117",
       "R0122",
@@ -4829,7 +4829,7 @@
     ]
   },
   "supplemental_input_sha256_relative_to_project": {
-    "manuscript/sn_computer_science/human_adjudication_log.csv": "453daf7bb936a475d5c970f46e6478294610a501abb6c90c4f761f5789b5871b",
+    "manuscript/sn_computer_science/human_adjudication_log.csv": "cdee0ebcd31d8815b43dd8449855bf2e0c912263d589d68c7951e6fd6f31a000",
     "prisma_evidence/evidence_by_id.csv": "375c3b8d6d4a1d2465bfbd53359da2a68d3d0d17dd5a19b8f93c1a63bbb82aa9",
     "restart_2026_11_26/appraisal/active_appraisal_table.csv": "e3bec6ad43ca4b89b2812ea6ab1f74f70b07c5538e00e8d9b25cacc98dcff795",
     "restart_2026_11_26/appraisal/active_p09_appraisal_lock.json": "3f1c458ec32a0565914abba011114b3a97b14db95f8541af1d929560c9f2312f",
