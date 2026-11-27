@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:25:22+07:00",
+  "updated_at": "2026-11-27T13:30:43+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_extraction_in_progress",
@@ -11,21 +11,19 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T12:51:10+07:00",
-    "updated_at": "2026-11-27T13:25:22+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_02_composite_review.md",
+    "updated_at": "2026-11-27T13:30:43+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_03_review.md",
     "decision_id": "restart-supplemental-extraction-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-extraction-batch03",
+    "task_id": "restart-supplemental-extraction-batch03-correction",
     "owner": "GEMINI_RESEARCH",
-    "status": "active",
-    "action": "Collect this original P08 batch 03 UUID without resending. Check the 98 expected keys and original PDFs.",
-    "acceptance": "7/7 source identities and 98 exact unique keys with matching original PDF evidence.",
-    "dispatch_brief": "restart_2026_11_26/extraction/supplemental_batch_03_brief.md",
-    "message_id": "ffde068c-2531-46e0-8fa6-aadb1f411037",
-    "bridge_task_id": "815814f5-5097-4e23-98a8-ceb3e7680d8a",
-    "bridge_context_id": "6ebee921-05e9-4458-a65c-327a352df1a9",
-    "dispatch_receipt": "restart_2026_11_26/extraction/supplemental_batch_03_dispatch.json"
+    "status": "ready",
+    "action": "Send the native 16-key correction once, then verify against original sources before closing P08.",
+    "acceptance": "16 scoped keys, each on verified physical PDF pages, correct scope and one JSON summary.",
+    "dispatch_brief": "restart_2026_11_26/extraction/supplemental_batch_03_correction_brief.md",
+    "message_id": "9f7b2e07-7af3-4d56-8ad0-1ffa5fa46a94",
+    "parent_bridge_task_id": "815814f5-5097-4e23-98a8-ceb3e7680d8a"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -477,7 +475,10 @@
       "batch_02_repair_review": "restart_2026_11_26/extraction/supplemental_batch_02_repair_review.md",
       "batch_02_accepted": "restart_2026_11_26/extraction/supplemental_batch_02_accepted.json",
       "batch_02_composite_review": "restart_2026_11_26/extraction/supplemental_batch_02_composite_review.md",
-      "batch_03_original_uuid": "815814f5-5097-4e23-98a8-ceb3e7680d8a"
+      "batch_03_original_uuid": "815814f5-5097-4e23-98a8-ceb3e7680d8a",
+      "batch_03_gate": "FAIL_16_KEYS",
+      "batch_03_review": "restart_2026_11_26/extraction/supplemental_batch_03_review.md",
+      "batch_03_correction_keys": "restart_2026_11_26/extraction/supplemental_batch_03_correction_keys.json"
     }
   },
   "blockers": [],
