@@ -1,0 +1,13 @@
+{
+  "task_id": "a474df80-d88a-40d3-af3a-4561d0fde636",
+  "criteria": {
+    "original_pdf": "PASS",
+    "provenance": "PASS",
+    "method_and_evaluation": "PASS",
+    "quantitative_claims": "PASS",
+    "unresolved_ids": "PASS",
+    "worker_statement": "PASS"
+  },
+  "basis": "gemini_review.md",
+  "released_scope": "Anchored AI screening judgments; two contextual scale phrases omitted with an audit trail; original receipts retained."
+}

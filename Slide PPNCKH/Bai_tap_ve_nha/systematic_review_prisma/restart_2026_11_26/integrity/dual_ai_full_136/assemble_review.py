@@ -57,7 +57,7 @@ def merge_gemini(first, second, keys):
     return "\n".join(retained) + "\n" + footer, exact
 
 
-def parse(text, source, pages):
+def parse(text, source, pages, omissions=None):
     rows = {}
     rejected = {}
     malformed = 0
@@ -92,7 +92,15 @@ def parse(text, source, pages):
             else:
                 gates = item.get("gates", "")
                 reason = item.get("why")
+                if omissions and key in omissions:
+                    phrase = omissions[key]["remove"]
+                    if not isinstance(reason, str) or reason.count(phrase) != 1:
+                        raise ValueError("Không áp dụng được ghi chú biên tập đã lưu")
+                    reason = reason.replace(phrase, "", 1)
                 primary = item.get("primary")
+                if decision == "INCLUDE" and primary == "NONE":
+                    # Provider used its explicit no-criterion marker instead of an empty string.
+                    primary = ""
                 anchors = item.get("evidence", [])
             if not isinstance(gates, str) or not re.fullmatch("[PFU]{7}", gates):
                 raise ValueError("Mã E1–E7 sai")
@@ -153,7 +161,7 @@ def parse(text, source, pages):
 def tex(text):
     replace = {"\\": r"\textbackslash{}", "{": r"\{", "}": r"\}", "$": r"\$", "&": r"\&",
                "#": r"\#", "%": r"\%", "_": r"\_", "~": r"\textasciitilde{}", "^": r"\textasciicircum{}"}
-    return "".join(replace.get(ch, ch) for ch in str(text))
+    return "".join(replace.get(ch, ch) for ch in " ".join(str(text).split()))
 
 
 def compare(key, codex, gemini, gemini_pass):
@@ -173,7 +181,10 @@ def compare(key, codex, gemini, gemini_pass):
         c, g = row["codex_decision"], row["gemini_decision"]
         if c and g and gemini_pass:
             pairs[c, g] += 1
-        row["comparison"] = ("Đủ hai neo đã soát" if c and g and gemini_pass else "Chưa có cặp được chấp nhận")
+        row["comparison"] = (
+            ("TRÙNG" if c == g else "KHÁC") if c and g and gemini_pass
+            else "Chưa có cặp được chấp nhận"
+        )
         report.append(row)
     return report, pairs
 
@@ -184,6 +195,7 @@ def main():
     parser.add_argument("codex", type=Path)
     parser.add_argument("gemini", type=Path)
     parser.add_argument("--gemini-correction", type=Path)
+    parser.add_argument("--gemini-targeted", type=Path)
     parser.add_argument("--gemini-gate", type=Path)
     args = parser.parse_args()
     key = csv_rows(SYNTHESIS / "human_review_packet/coordinator/key.csv")
@@ -192,23 +204,36 @@ def main():
     original = json.loads(args.gemini.read_text())
     raw = original
     context_ok = context_verified(original, "isolated_context_manifest.json")
-    exact_correction = None
-    correction_task = None
-    if args.gemini_correction:
-        raw = json.loads(args.gemini_correction.read_text())
-        correction_task = raw.get("id")
-        manifest = "gemini_correction_context_manifest.json"
+    phases = (
+        ("correction", args.gemini_correction, "END_HK261_CORRECTION_101"),
+        ("targeted", args.gemini_targeted, "END_HK261_TARGETED_14"),
+    )
+    completed_phases = {}
+    for name, receipt, footer in phases:
+        if not receipt:
+            continue
+        if name == "targeted" and not args.gemini_correction:
+            raise ValueError("Targeted review also requires the previous correction receipt.")
+        raw = json.loads(receipt.read_text())
+        manifest = f"gemini_{name}_context_manifest.json"
         context_ok = context_ok and context_verified(raw, manifest)
         target = json.loads((HERE / manifest).read_text())["record_ids"]
-        correction_text = unpack(args.gemini_correction, "gemini")
-        source_text["gemini"], exact_correction = merge_gemini(source_text["gemini"], correction_text, target)
-        exact_correction = exact_correction and "END_HK261_CORRECTION_101" in correction_text
-    c, g = [parse(source_text[name], name, pages) for name in ("codex", "gemini")]
+        correction_text = unpack(receipt, "gemini")
+        source_text["gemini"], exact_count = merge_gemini(source_text["gemini"], correction_text, target)
+        completed_phases[name] = {"task_id": raw.get("id"),
+                                  "exact_ids_and_footer": exact_count and footer in correction_text,
+                                  "transport_state": raw["status"]["state"]}
+    omissions = (json.loads((HERE / "gemini_editorial_omissions.json").read_text())
+                 if args.gemini_targeted else {})
+    c = parse(source_text["codex"], "codex", pages)
+    g = parse(source_text["gemini"], "gemini", pages, omissions)
     review = json.loads(args.gemini_gate.read_text()) if args.gemini_gate else {}
     metadata = raw.get("metadata", {})
     required = {"original_pdf", "provenance", "method_and_evaluation", "quantitative_claims",
                 "unresolved_ids", "worker_statement"}
-    gate = (context_ok and exact_correction is not False
+    gate = (context_ok and all(phase["exact_ids_and_footer"]
+                              and phase["transport_state"] == "TASK_STATE_COMPLETED"
+                              for phase in completed_phases.values())
             and len(g[0]) == len(key) and not g[1] and not g[2]
             and raw["status"]["state"] == "TASK_STATE_COMPLETED"
             and "END_HK261_136" in source_text["gemini"]
@@ -223,8 +248,8 @@ def main():
         records=len(key), codex_valid=len(c[0]), codex_rejected=c[1], codex_malformed=c[2],
         gemini_valid=len(g[0]), gemini_rejected=g[1], gemini_malformed=g[2],
         gemini_transport=raw["status"]["state"], gemini_context_verified=context_ok,
-        gemini_initial_task=original.get("id"), gemini_correction_task=correction_task,
-        gemini_exact_correction=exact_correction,
+        gemini_initial_task=original.get("id"), gemini_followups=completed_phases,
+        gemini_editorial_omissions=sorted(omissions),
         gemini_cleanup=metadata.get("chat_cleanup", {}).get("state", "not_reported"),
         gemini_gate="PASS" if gate else "FAIL",
         codex_decisions=dict(Counter(row["decision"] for row in c[0].values())),
@@ -271,14 +296,20 @@ def main():
         ))
     if gate:
         kappa = f"{summary['kappa_ai']:.3f}" if summary["kappa_ai"] is not None else "không xác định"
-        status.append(tex(f"Gemini có {summary['gemini_valid']}/136 hồ sơ qua kiểm tra. Hai AI trùng quyết định "
-                          f"{summary['agreement']}/{total} cặp. Cohen’s kappa giữa hai AI là {kappa}."))
+        gemini_overview = ", ".join(f"{summary['gemini_decisions'].get(decision, 0)} {label.lower()}"
+                                    for decision, label in LABELS.items())
+        different = sorted(row["record_id"] for row in report if row["comparison"] == "KHÁC")
+        status.append(tex(f"Gemini có {summary['gemini_valid']}/136 hồ sơ qua kiểm tra, gồm {gemini_overview}. "
+                          f"Hai AI trùng trạng thái {summary['agreement']}/{total} cặp "
+                          f"({100*summary['agreement']/total:.1f}%). Cohen’s kappa giữa hai AI là {kappa}."))
+        status.append(tex(f"{len(different)} hồ sơ có đề xuất khác trạng thái gồm " + ", ".join(different) + "."))
     else:
         status.append(tex(f"Gemini có {summary['gemini_valid']}/136 dòng qua kiểm tra cấu trúc và neo sau khi đối chiếu phản hồi. "
                           "Lượt Gemini chưa đủ điều kiện để tính số đồng thuận giữa hai AI."))
     (HERE / "report_status.tex").write_text("\n\n".join(status) + "\n")
     tex_rows = []
     priority_rows = sorted(report, key=lambda row: (
+        row["comparison"] != "KHÁC",
         row["codex_decision"] == row["frozen_disposition"]
         and (not gate or row["gemini_decision"] == row["frozen_disposition"]),
         row["record_id"],

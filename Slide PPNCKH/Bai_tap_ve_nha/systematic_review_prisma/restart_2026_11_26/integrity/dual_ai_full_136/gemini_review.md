@@ -27,3 +27,18 @@ Task 7bbe72f1-590c-4449-801c-c0ea4ec885a3, context d516a192-69e2-47a9-801c-5b9b5
 | Căn cứ ngày xuất bản | PASS | HKF-001, HKF-057 và HKF-086 đã đánh dấu thiếu ngày xuất bản xác minh, tách dấu tải xuống. |
 | Danh mục, mã bỏ ngỏ và worker | PASS | Đủ trường bắt buộc và có khai báo mã thiếu, liên kết ấn bản và 0 worker. Phản hồi liệt kê 10 hồ sơ chờ trong 101 mã. |
 | Toàn lượt | FAIL | 14 mã cần rà bổ sung. Dừng tính đồng thuận đến khi kiểm tra xong. |
+
+## Lượt sửa 14 hồ sơ và kết quả hợp nhất
+
+Task a474df80-d88a-40d3-af3a-4561d0fde636, context 2c0a8192-c7f6-411a-8695-ff70dec58adc. Bridge thu và lưu [phản hồi](gemini_targeted_receipt.json), xác nhận 8 tệp giữ nguyên hash và đã xóa đúng chat sau khi lưu.
+
+| Tiêu chí | Kết quả | Minh chứng |
+| --- | --- | --- |
+| Quyền đọc PDF gốc | PASS | HKF-093, tr. 1, §1. Cụm “traditional ground base stations face limitations in construction” khớp nguyên văn PDF. |
+| Mã, cấu trúc và quyền đọc | PASS | 14/14 mã đích đúng tập. Hợp nhất còn 136 mã duy nhất, 0 dòng JSON lỗi, 0 mã thiếu neo. Ba dòng đưa vào có mã NONE, được quy đổi thành ô lý do chính trống. Quy đổi giữ nguyên phán định. |
+| Truy vết, thư mục và liên kết bản trùng | PASS | Tất cả 136 dòng có trích đoạn khớp trang vật lý và trường thư mục bắt buộc hoặc mã chưa biết. Không có cặp DOI hoặc tiêu đề trùng thiếu ghi chú. Thông tin ấn bản vẫn giới hạn theo nguồn cung cấp. |
+| Minh chứng phương pháp và đánh giá | PASS | Cả 29/29 đề xuất đưa vào có hai neo phân biệt. HKF-050 ghi E3 chờ từ mức bằng chứng của bên nhận, HKF-109 ghi E7 chờ sau khi ghi nhận chuyển giao. HKF-115 giới hạn kết luận E7 vào bản arXiv được đọc. |
+| Nội dung định lượng được dùng | PASS | Báo cáo bỏ hai cụm quy mô chưa xác minh ở HKF-008 và HKF-127. Các [lược bỏ và trang đã kiểm tra](gemini_editorial_omissions.json) có thể tái tạo. Không đổi bất cứ phán định hay neo nào. HKF-130 giữ ở mức mô tả học thuật để giải thích điều kiện đưa vào. |
+| Minh bạch về thiếu chứng cứ và worker | PASS | Sau hợp nhất, 14 hồ sơ chờ có tiêu chí và lý do theo từng dòng CSV. Không có hồ sơ còn báo lỗi truy cập. Lượt sửa 101 và 14 ghi 0 worker. |
+| Quy trách nhiệm | PASS | CSV và PDF phân biệt sổ hiện hành với hai cột đề xuất AI. Không có phán định nào được ghi vào phiếu của người thẩm định. |
+| Toàn lượt cho mục đích tham khảo | PASS | 136 cặp. 126 trùng trạng thái và 10 khác trạng thái. Cohen’s kappa giữa AI tính trên ba trạng thái và không đo mức đồng thuận của người thẩm định. |

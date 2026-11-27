@@ -1,29 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T20:01:12+07:00",
+  "updated_at": "2026-11-27T20:10:05+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The local 30-page HK261 revision, unified coding and IEEE R0082 cross-check are verified on the 46/90/0 corpus. Independent screening, human extraction verification and declarations remain pending."
   },
   "task": {
-    "task_id": "hk261-dual-ai-136-gemini-correction",
-    "owner": "GEMINI_RESEARCH",
-    "status": "rejected",
-    "started_at": "2026-11-27T19:38:17+07:00",
-    "updated_at": "2026-11-27T20:01:12+07:00",
-    "completed_at": "2026-11-27T20:01:12+07:00",
-    "decision_id": "hk261-dual-ai-136-gemini-correction-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/dual_ai_full_136/gemini_review.md"
+    "task_id": "hk261-dual-ai-136-report",
+    "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-27T20:07:55+07:00",
+    "updated_at": "2026-11-27T20:10:05+07:00",
+    "completed_at": "2026-11-27T20:10:05+07:00",
+    "decision_id": "hk261-dual-ai-136-report-v1",
+    "checkpoint_path": "restart_2026_11_26/integrity/dual_ai_full_136/review_summary.json"
   },
   "next_task": {
-    "task_id": "hk261-dual-ai-136-gemini-targeted",
-    "owner": "GEMINI_RESEARCH",
-    "status": "ready",
-    "action": "Correct 14 named items in the recovered Gemini full-screening result.",
-    "acceptance": "14 distinct correction IDs with exact source anchors and stated gaps.",
-    "dispatch_brief": "restart_2026_11_26/integrity/dual_ai_full_136/gemini_targeted_brief.md",
-    "message_id": "b060ba41-736d-4949-9064-f1646a053b2b"
+    "task_id": "hk261-human-reviewed-two-screeners",
+    "owner": "CODEX_WRITING",
+    "status": "blocked",
+    "action": "Receive separately completed or individually confirmed human screening decisions from the author and second reviewer.",
+    "acceptance": "Each human decision is attributed only after that reviewer confirms record, disposition, criterion, source locator and date. Document any AI assistance."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -871,6 +869,27 @@
       "completed_at": "2026-11-27T19:08:53+07:00",
       "human_review_pdf_checksums_verified": 136,
       "human_review_pdf_local_directory": "restart_2026_11_26/fulltext_retrieval/pdf/human_review_full_136"
+    },
+    "dual_ai_full_136": {
+      "report": "restart_2026_11_26/integrity/dual_ai_full_136/report.pdf",
+      "pages": 17,
+      "pdf_sha256": "fb30e175670ae8fdc9ab6fcf21c2144ce8dc2b7e610d4227b7bb63e49238eb45",
+      "screening_csv": "restart_2026_11_26/integrity/dual_ai_full_136/review_136.csv",
+      "extraction_check": "restart_2026_11_26/integrity/dual_ai_full_136/extraction_locator_audit.csv",
+      "verification": "restart_2026_11_26/integrity/dual_ai_full_136/gemini_review.md",
+      "codex_valid": 136,
+      "gemini_valid": 136,
+      "paired_ai": 136,
+      "ai_disposition_agreement": 126,
+      "kappa_ai": 0.852558542931483,
+      "paired_independent_human_decisions": 0,
+      "human_extraction_checks": 0,
+      "frozen_prisma": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "s2_applied": false
     }
   },
   "blockers": [],
