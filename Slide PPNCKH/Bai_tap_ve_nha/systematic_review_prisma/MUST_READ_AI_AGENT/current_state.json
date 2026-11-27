@@ -1,32 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T12:46:34+07:00",
+  "updated_at": "2026-11-27T12:50:37+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step16_complete_coursework_handoff",
-    "summary": "The 25-study coursework handoff includes the revised PRISMA reporting checklist and rebuilt LaTeX/PDF. Remaining reporting gaps and pending author confirmations are recorded."
+    "status": "supplemental_linkage_accepted",
+    "summary": "Updated HK261 eligibility and study linkage verified. The supplemented corpus has 46 reports mapped to 46 study IDs. New P08/P09 evidence and an updated manuscript are pending."
   },
   "task": {
     "task_id": "restart-supplemental-linkage",
     "owner": "CODEX_WRITING",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-27T12:23:54+07:00",
-    "updated_at": "2026-11-27T12:46:34+07:00",
-    "checkpoint_path": "restart_2026_11_26/study_linkage/supplemental_linkage_correction_review.md",
-    "decision_id": "restart-supplemental-linkage-v1"
+    "updated_at": "2026-11-27T12:50:37+07:00",
+    "checkpoint_path": "restart_2026_11_26/study_linkage/supplemental_linkage_review.md",
+    "decision_id": "restart-supplemental-linkage-v1",
+    "completed_at": "2026-11-27T12:50:37+07:00"
   },
   "next_task": {
-    "task_id": "restart-supplemental-linkage-locator-repair",
-    "owner": "GEMINI_RESEARCH",
-    "status": "active",
-    "action": "Collect the original locator-only repair UUID. Do not resend.",
-    "acceptance": "Five keys and seven exact locators without extra outcome claims.",
-    "dispatch_brief": "restart_2026_11_26/study_linkage/supplemental_linkage_locator_repair_brief.md",
-    "message_id": "15dad087-7833-467a-91e8-d859996899ab",
-    "prior_bridge_task_id": "7229c607-4779-42d7-b684-b6eb19173445",
-    "bridge_task_id": "491e8b9a-861c-4575-84d1-ce6bfdf60e37",
-    "bridge_context_id": "42688fa7-f942-430b-9e7f-8c85cf9b747d",
-    "dispatch_receipt": "restart_2026_11_26/study_linkage/supplemental_linkage_locator_repair_dispatch.json"
+    "task_id": "restart-supplemental-extraction",
+    "owner": "CODEX_WRITING",
+    "status": "ready",
+    "action": "Prepare the first P08 native Task from the 21 added eligible reports.",
+    "acceptance": "Preserve accepted P08 data for 25 baseline reports and verify field/locator coverage for 21 added reports."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -73,12 +68,12 @@
     "manuscript_status": "RESTART_COURSEWORK_HANDOFF_PASS"
   },
   "evidence": {
-    "retrieval_reports": 44,
-    "screened_reports": 44,
+    "retrieval_reports": 136,
+    "screened_reports": 136,
     "working_decisions": {
-      "include": 25,
-      "exclude": 13,
-      "uncertain": 6
+      "include": 46,
+      "exclude": 87,
+      "uncertain": 3
     },
     "restart_inventory": {
       "manifest": "restart_2026_11_26/step01_inventory.json",
@@ -428,6 +423,19 @@
       "still_not_retrieved": [
         "R0116"
       ]
+    },
+    "supplemental_linkage": {
+      "gate": "PASS",
+      "reports": 46,
+      "studies": 46,
+      "all_pairs": 1035,
+      "deep_pairs": 28,
+      "merge_edges": 0,
+      "unresolved_pairs": 0,
+      "map": "restart_2026_11_26/study_linkage/active_report_study_map.csv",
+      "pairs": "restart_2026_11_26/study_linkage/active_pair_evidence.csv",
+      "review": "restart_2026_11_26/study_linkage/supplemental_linkage_review.md",
+      "gate_at": "2026-11-27T12:50:37+07:00"
     }
   },
   "blockers": [],
