@@ -1,0 +1,22 @@
+{
+  "provider_state": "TASK_STATE_COMPLETED",
+  "expected_pairs": 7,
+  "received_pairs": 7,
+  "valid_anchors": 19,
+  "state_counts": {
+    "PARTIAL": 7
+  },
+  "missing": [],
+  "bad_pairs": [],
+  "errors": [],
+  "summary": {
+    "id": "SUMMARY",
+    "report_count": 4,
+    "key_count": 7,
+    "no_workers_used": true,
+    "tools_used": [
+      "client:view_file"
+    ],
+    "unresolved": []
+  }
+}

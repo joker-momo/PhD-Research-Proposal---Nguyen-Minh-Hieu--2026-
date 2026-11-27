@@ -1,0 +1,1883 @@
+{
+  "schema_version": 1,
+  "gate": "PASS_COMPOSITE",
+  "prepared_and_verified_at": "2026-11-27T14:34:25+07:00",
+  "reports": 7,
+  "domain_judgments": 70,
+  "access": [
+    {
+      "id": "R0113",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "INTRODUCTION",
+          "autonomous control have enabled UAVs to perform"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "source_pdf_sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "study_id": "S040"
+    },
+    {
+      "id": "R0118",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "I. INTRODUCTION",
+          "Our contributions are as follows"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "source_pdf_sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "study_id": "S041"
+    },
+    {
+      "id": "R0125",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "II. SYSTEM ARCHITECTURE",
+          "Our distributed inference approach employs spatial frame"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "source_pdf_sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+      "study_id": "S042"
+    },
+    {
+      "id": "R0137",
+      "key": "access",
+      "s": "READ",
+      "f": "Full text of R0137 was opened and verified on physical page 10.",
+      "l": [
+        [
+          10,
+          "VI.A. Experimental Setup",
+          "deployed them onto our physical"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "source_pdf_sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "study_id": "S043"
+    },
+    {
+      "id": "R0145",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "1 INTRODUCTION",
+          "optimizing UAV mobility paths and quality of"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "source_pdf_sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+      "study_id": "S044"
+    },
+    {
+      "id": "R0223",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "3 Methods",
+          "propose a loop intelligent control framework called"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "source_pdf_sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+      "study_id": "S045"
+    },
+    {
+      "id": "R0292",
+      "key": "access",
+      "s": "READ",
+      "f": "Original PDF body opened and verified at physical page two.",
+      "l": [
+        [
+          2,
+          "2 RELATED WORK",
+          "Previous studies on tracking animals have utilized"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "source_pdf_sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+      "study_id": "S046"
+    }
+  ],
+  "native_task_ids": [
+    "720b8516-3478-416c-95ab-61044918105e",
+    "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+    "6cba67ff-4129-4421-afd3-8635416cf326"
+  ],
+  "unverified_chat_cleanup": [],
+  "status_counts": {
+    "YES": 21,
+    "PARTIAL": 41,
+    "NOT_REPORTED": 8
+  },
+  "judgments": [
+    {
+      "id": "R0113",
+      "key": "D01",
+      "s": "YES",
+      "f": "Defines continual neuromorphic UAV swarm navigation objective and eleven-stage architecture.",
+      "l": [
+        [
+          3,
+          "Objective",
+          "The primary objective of this research is"
+        ],
+        [
+          6,
+          "METHODOLOGY",
+          "The fused event streams are then processed"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "source_pdf_sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "study_id": "S040"
+    },
+    {
+      "id": "R0113",
+      "key": "D02",
+      "s": "PARTIAL",
+      "f": "Scope exclusions are explicitly stated, and Implementation and Results outlines the simulated swarm scenarios, sensor streams, and high-level system components, while concrete scenario and configuration assumptions remain incompletely specified.",
+      "l": [
+        [
+          4,
+          "Scope",
+          "are beyond the scope of this investigation"
+        ],
+        [
+          9,
+          "Implementation and Results",
+          "conducted using a simulated autonomous UAV swarm"
+        ],
+        [
+          9,
+          "Implementation and Results",
+          null
+        ]
+      ],
+      "g": "Implementation and Results omits specific onboard embedded edge hardware models, simulator-to-experiment assignments, communication disruption assumptions, and concrete obstacle or mission scenario parameters.",
+      "native_task_id": "6cba67ff-4129-4421-afd3-8635416cf326",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "source_pdf_sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "study_id": "S040"
+    },
+    {
+      "id": "R0113",
+      "key": "D03",
+      "s": "PARTIAL",
+      "f": "Lists software stack and swarm scale but omits network architectures and hyperparameters.",
+      "l": [
+        [
+          9,
+          "IMPLEMENTATION AND RESULTS",
+          "40 cooperative UAVs operating within dynamic urban"
+        ],
+        [
+          9,
+          "IMPLEMENTATION AND RESULTS",
+          "The entire framework was deployed on"
+        ]
+      ],
+      "g": "Network architectures hyperparameters hardware specs and task definitions are omitted.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "source_pdf_sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "study_id": "S040"
+    },
+    {
+      "id": "R0113",
+      "key": "D04",
+      "s": "PARTIAL",
+      "f": "Names CNN ViT SNN and continual learning baselines without tuning parity details.",
+      "l": [
+        [
+          9,
+          "IMPLEMENTATION AND RESULTS",
+          "Comparative analysis was performed against conventional"
+        ],
+        [
+          10,
+          "Table 1",
+          "Performance comparison of autonomous UAV swarm navigation"
+        ]
+      ],
+      "g": "Comparator architectures training budgets and tuning parity are unreported.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "source_pdf_sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "study_id": "S040"
+    },
+    {
+      "id": "R0113",
+      "key": "D05",
+      "s": "PARTIAL",
+      "f": "Navigation accuracy, collision avoidance, continual learning, and energy metrics match stated goals, but percentage baselines and conditions are undefined.",
+      "l": [
+        [
+          9,
+          "IMPLEMENTATION AND RESULTS",
+          "reducing computational energy consumption"
+        ],
+        [
+          13,
+          "IMPLEMENTATION AND RESULTS",
+          "significantly reduce energy consumption"
+        ]
+      ],
+      "g": "Energy efficiency and saving percentage baselines and measurement conditions are not defined.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "source_pdf_sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "study_id": "S040"
+    },
+    {
+      "id": "R0113",
+      "key": "D06",
+      "s": "NOT_REPORTED",
+      "f": "Independent runs, random seeds, and statistical dispersion metrics are absent across the evaluation tables.",
+      "l": [
+        [
+          11,
+          "IMPLEMENTATION AND RESULTS",
+          null
+        ],
+        [
+          12,
+          "IMPLEMENTATION AND RESULTS",
+          null
+        ]
+      ],
+      "g": "No independent seeds, repeat counts, or dispersion measures are reported.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "source_pdf_sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "study_id": "S040"
+    },
+    {
+      "id": "R0113",
+      "key": "D07",
+      "s": "PARTIAL",
+      "f": "Both simulation and hardware-in-the-loop testing platforms are reported, without attributing individual table outcomes to each modality or real flight.",
+      "l": [
+        [
+          9,
+          "IMPLEMENTATION AND RESULTS",
+          "The experiments were performed in both"
+        ],
+        [
+          9,
+          "IMPLEMENTATION AND RESULTS",
+          "testing platforms incorporating dynamic urban landscapes"
+        ],
+        [
+          10,
+          "Table 1",
+          null
+        ]
+      ],
+      "g": "Individual results lack simulation-versus-HIL attribution and no real flight test is reported.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "source_pdf_sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "study_id": "S040"
+    },
+    {
+      "id": "R0113",
+      "key": "D08",
+      "s": "PARTIAL",
+      "f": "Conclusions project large-scale real-world swarm deployments beyond the narrower simulated and HIL setup.",
+      "l": [
+        [
+          15,
+          "CONCLUSION",
+          "directly on lightweight embedded edge computing platforms"
+        ],
+        [
+          15,
+          "CONCLUSION",
+          "coordinated operation of hundreds of intelligent autonomous"
+        ]
+      ],
+      "g": "Claims extrapolate beyond documented simulation and HIL conditions without explicit scope qualification.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "source_pdf_sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "study_id": "S040"
+    },
+    {
+      "id": "R0113",
+      "key": "D09",
+      "s": "NOT_REPORTED",
+      "f": "Names software libraries and DVS streams without author code or dataset links.",
+      "l": [
+        [
+          9,
+          "IMPLEMENTATION AND RESULTS",
+          "The entire framework was deployed on"
+        ],
+        [
+          16,
+          "CONCLUSION",
+          null
+        ],
+        [
+          17,
+          "REFERENCES",
+          null
+        ]
+      ],
+      "g": "No code repository dataset or artifact availability statement in inspected sections.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "source_pdf_sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "study_id": "S040"
+    },
+    {
+      "id": "R0113",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "An explicit scope boundary is stated, while study limitations, funding, and conflict-of-interest disclosures are absent.",
+      "l": [
+        [
+          4,
+          "Scope",
+          "beyond the scope of this investigation"
+        ],
+        [
+          1,
+          "Title and Abstract",
+          null
+        ],
+        [
+          16,
+          "CONCLUSION",
+          null
+        ]
+      ],
+      "g": "Limitations, funding, and conflict-of-interest disclosures are not reported.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "source_pdf_sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "study_id": "S040"
+    },
+    {
+      "id": "R0118",
+      "key": "D01",
+      "s": "YES",
+      "f": "Formulates joint trajectory planning and distributed MoE routing in UAV swarms.",
+      "l": [
+        [
+          3,
+          "III. SYSTEM MODEL",
+          "We ground the system model in"
+        ],
+        [
+          7,
+          "V-B. NetMoE Hierarchical Control Architecture",
+          "NetMoE accordingly adopts a hierarchical control architecture"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "source_pdf_sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "study_id": "S041"
+    },
+    {
+      "id": "R0118",
+      "key": "D02",
+      "s": "YES",
+      "f": "States four explicit modeling assumptions and formal MINLP constraints.",
+      "l": [
+        [
+          5,
+          "III-D. Modeling Assumptions",
+          "abstract information the mission withholds"
+        ],
+        [
+          6,
+          "IV-B. Optimization Objective",
+          "The joint trajectory planning and expert routing"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "source_pdf_sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "study_id": "S041"
+    },
+    {
+      "id": "R0118",
+      "key": "D03",
+      "s": "YES",
+      "f": "The simulation environment, channel model, hyperparameters, training and evaluation episode counts, and public code repository are documented.",
+      "l": [
+        [
+          9,
+          "VI. PERFORMANCE EVALUATION",
+          "summarizes all simulation parameters"
+        ],
+        [
+          10,
+          "TABLE III",
+          "SIMULATION PARAMETERS AND HYPERPARAMETER SETTINGS"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "source_pdf_sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "study_id": "S041"
+    },
+    {
+      "id": "R0118",
+      "key": "D04",
+      "s": "PARTIAL",
+      "f": "NetMoE and layer-wise baselines share the same centralized trajectory planner and per-UAV memory, but differ in model complexity.",
+      "l": [
+        [
+          9,
+          "VI.B. Evaluation Results",
+          "baseline driven by the same"
+        ],
+        [
+          9,
+          "VI.B. Evaluation Results",
+          "Each MoE expert is taken to"
+        ]
+      ],
+      "g": "The layer-wise baseline uses a much larger monolithic DNN than individual MoE experts.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "source_pdf_sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "study_id": "S041"
+    },
+    {
+      "id": "R0118",
+      "key": "D05",
+      "s": "YES",
+      "f": "Task completion rate is separated from decomposed inference, transmission, carrier, detection, and modeled resource costs under simulation.",
+      "l": [
+        [
+          9,
+          "VI.B. Evaluation Results",
+          "statistically equivalent on task completion rate"
+        ],
+        [
+          9,
+          "VI.B. Evaluation Results",
+          "isolates what the inference paradigm itself contributes"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "source_pdf_sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "study_id": "S041"
+    },
+    {
+      "id": "R0118",
+      "key": "D06",
+      "s": "PARTIAL",
+      "f": "Multi-seed evaluation across three independent seeds with confidence intervals and Welch t-tests is reported, pooling episodes across seeds.",
+      "l": [
+        [
+          9,
+          "VI.B. Evaluation Results",
+          "Table V summarizes the key performance metrics"
+        ],
+        [
+          17,
+          "VII. CONCLUSION",
+          "Across three independent random seeds"
+        ]
+      ],
+      "g": "Confidence intervals and t-tests pool episodes across seeds, and specific seed values are omitted.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "source_pdf_sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "study_id": "S041"
+    },
+    {
+      "id": "R0118",
+      "key": "D07",
+      "s": "PARTIAL",
+      "f": "Claims are bounded to an abstract discrete-grid simulation with idealized sensing, and the lack of real testbed validation is explicitly noted.",
+      "l": [
+        [
+          17,
+          "VII. CONCLUSION",
+          "established at the level of an abstract"
+        ],
+        [
+          17,
+          "VII. CONCLUSION",
+          "Motion is a discrete grid walk without"
+        ]
+      ],
+      "g": "Physical UAV kinematics, wind, energy budgets, and real testbed validation are not evaluated.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "source_pdf_sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "study_id": "S041"
+    },
+    {
+      "id": "R0118",
+      "key": "D08",
+      "s": "YES",
+      "f": "Explicitly scopes conclusions to abstract modeling layer and connected-swarm missions.",
+      "l": [
+        [
+          17,
+          "VII. CONCLUSION",
+          "not yet tested on a real testbed"
+        ],
+        [
+          17,
+          "VII. CONCLUSION",
+          "scoped to missions whose operating area a"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "source_pdf_sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "study_id": "S041"
+    },
+    {
+      "id": "R0118",
+      "key": "D09",
+      "s": "YES",
+      "f": "Provides public GitHub repository for source code and simulation environment.",
+      "l": [
+        [
+          9,
+          "VI. PERFORMANCE EVALUATION",
+          "The source code and simulation environment"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "source_pdf_sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "study_id": "S041"
+    },
+    {
+      "id": "R0118",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "Reports explicit limitations and NRF funding but omits conflict disclosure.",
+      "l": [
+        [
+          17,
+          "VII. CONCLUSION",
+          "Limitations and future work"
+        ],
+        [
+          17,
+          "ACKNOWLEDGMENT",
+          "supported by the National Research Foundation of"
+        ],
+        [
+          17,
+          "ACKNOWLEDGMENT",
+          null
+        ]
+      ],
+      "g": "Explicit limitations and funding are reported but conflict disclosure is unreported.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "source_pdf_sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "study_id": "S041"
+    },
+    {
+      "id": "R0125",
+      "key": "D01",
+      "s": "YES",
+      "f": "Describes orchestrator-worker UXEC architecture with spatial frame decomposition and aggregation.",
+      "l": [
+        [
+          2,
+          "II-A. Overview",
+          "each UAV can assume one of three"
+        ],
+        [
+          2,
+          "II-B. Spatial Frame Decomposition",
+          "partitioned into non overlapping rectangular regions with"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "source_pdf_sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+      "study_id": "S042"
+    },
+    {
+      "id": "R0125",
+      "key": "D02",
+      "s": "YES",
+      "f": "System roles, spatial partitioning rules with boundary overlap, thread and memory allocations, and video input bounds are explicitly defined.",
+      "l": [
+        [
+          2,
+          "II.B. Spatial Frame Decomposition",
+          "Overlap regions of 20 pixels are maintained"
+        ],
+        [
+          3,
+          "III.D. Experimental Configuration",
+          "Test video consists of urban surveillance footage"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "source_pdf_sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+      "study_id": "S042"
+    },
+    {
+      "id": "R0125",
+      "key": "D03",
+      "s": "PARTIAL",
+      "f": "Specifies software stack YOLO11m and workstation hardware but omits video and threshold details.",
+      "l": [
+        [
+          3,
+          "III-B. Model Selection",
+          "We employ YOLO11m as the detection model"
+        ],
+        [
+          3,
+          "III-D. Experimental Configuration",
+          "Test video consists of urban surveillance footage"
+        ]
+      ],
+      "g": "Test video source clip length and IoU or confidence thresholds omitted.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "source_pdf_sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+      "study_id": "S042"
+    },
+    {
+      "id": "R0125",
+      "key": "D04",
+      "s": "PARTIAL",
+      "f": "Multi-worker scaling allocates four threads per worker, increasing aggregate compute relative to the single-worker baseline without external distributed baselines.",
+      "l": [
+        [
+          3,
+          "IV.A. Single Worker Baseline",
+          "baseline performance with a single worker"
+        ],
+        [
+          3,
+          "IV.B. Distributed Inference Scalability",
+          "where each worker is allocated 4 threads"
+        ]
+      ],
+      "g": "Aggregate thread count scales with worker count and no external distributed baseline is compared.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "source_pdf_sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+      "study_id": "S042"
+    },
+    {
+      "id": "R0125",
+      "key": "D05",
+      "s": "YES",
+      "f": "Measured frame latency, throughput, scaling efficiency, detection quality, and overhead breakdown align directly with the declared real-time inference objectives.",
+      "l": [
+        [
+          4,
+          "IV.B. Distributed Inference Scalability",
+          "actual speedup divided by"
+        ],
+        [
+          4,
+          "IV.F. Detection Quality Preservation",
+          "comparing detection outputs between single worker and distributed"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "source_pdf_sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+      "study_id": "S042"
+    },
+    {
+      "id": "R0125",
+      "key": "D06",
+      "s": "PARTIAL",
+      "f": "Reports per-frame latency CDF and thread-change trace without repeat-run variance.",
+      "l": [
+        [
+          4,
+          "IV-C. Latency Distribution Analysis",
+          "cumulative distribution of per frame latency for"
+        ],
+        [
+          4,
+          "IV-E. Dynamic Thread Adaptation",
+          "throughput decrease followed by stabilization"
+        ]
+      ],
+      "g": "Variability across repeated runs and statistical confidence intervals are unreported.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "source_pdf_sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+      "study_id": "S042"
+    },
+    {
+      "id": "R0125",
+      "key": "D07",
+      "s": "PARTIAL",
+      "f": "Evaluation uses workstation process emulation on recorded surveillance video, while wireless UAV field communication remains unvalidated.",
+      "l": [
+        [
+          3,
+          "III.D. Experimental Configuration",
+          "simulates a fleet of UAV workers"
+        ],
+        [
+          5,
+          "IV.G. Communication Overhead Analysis",
+          "bandwidth constrained wireless scenarios typical of UAV"
+        ]
+      ],
+      "g": "Workstation emulation with recorded video omits real wireless UAV links and onboard flight dynamics.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "source_pdf_sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+      "study_id": "S042"
+    },
+    {
+      "id": "R0125",
+      "key": "D08",
+      "s": "PARTIAL",
+      "f": "Conclusions validate collaborative edge feasibility from workstation tests while wireless bandwidth constraints and flight limits remain untested.",
+      "l": [
+        [
+          5,
+          "V. CONCLUSION",
+          "validate the feasibility of collaborative AI"
+        ],
+        [
+          5,
+          "IV.G. Communication Overhead Analysis",
+          "bandwidth constrained wireless scenarios typical of UAV"
+        ]
+      ],
+      "g": "Projected swarm feasibility extrapolates beyond workstation emulation under unvalidated wireless conditions.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "source_pdf_sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+      "study_id": "S042"
+    },
+    {
+      "id": "R0125",
+      "key": "D09",
+      "s": "NOT_REPORTED",
+      "f": "Names ONNX Runtime and COCO dataset without author code or video release.",
+      "l": [
+        [
+          3,
+          "III-A. System Components",
+          "Workers are implemented using ONNX Runtime for"
+        ],
+        [
+          5,
+          "ACKNOWLEDGMENT",
+          null
+        ],
+        [
+          5,
+          "REFERENCES",
+          null
+        ]
+      ],
+      "g": "No code repository video dataset or availability statement in inspected sections.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "source_pdf_sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+      "study_id": "S042"
+    },
+    {
+      "id": "R0125",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "Specific orchestration, boundary, and bandwidth limitations and NSERC funding are reported, while conflict-of-interest disclosure is absent.",
+      "l": [
+        [
+          5,
+          "IV.G. Communication Overhead Analysis",
+          "bandwidth constrained wireless scenarios typical of UAV"
+        ],
+        [
+          5,
+          "ACKNOWLEDGMENT",
+          "supported by the Natural Sciences and"
+        ],
+        [
+          5,
+          "V. CONCLUSION",
+          null
+        ]
+      ],
+      "g": "Conflict-of-interest disclosure is not reported.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+      "source_pdf_sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+      "study_id": "S042"
+    },
+    {
+      "id": "R0137",
+      "key": "D01",
+      "s": "YES",
+      "f": "The multi-UAV MEC video analytics problem is formally defined to jointly optimize offloading, frame resolution, and model selection.",
+      "l": [
+        [
+          6,
+          "IV.A. Problem Formulation",
+          "formulate the video analytics optimization problem"
+        ],
+        [
+          6,
+          "IV.A. Problem Formulation",
+          "jointly optimizing offloading decision"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "source_pdf_sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "study_id": "S043"
+    },
+    {
+      "id": "R0137",
+      "key": "D02",
+      "s": "YES",
+      "f": "Defines Poisson failure assumptions decision variables delay threshold and energy constraints.",
+      "l": [
+        [
+          5,
+          "III-B. Reliability Model",
+          "represented through Poisson probability models"
+        ],
+        [
+          6,
+          "IV-A. Problem Formulation",
+          "energy consumption of all UAVs cannot exceed"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "source_pdf_sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "study_id": "S043"
+    },
+    {
+      "id": "R0137",
+      "key": "D03",
+      "s": "PARTIAL",
+      "f": "Experimental Setup documents the UAV and edge server hardware, operating system, PyTorch stack, video and workload sources, profiled DNN models and resolutions, MARL network architecture, and the configured permissible delay threshold sweep.",
+      "l": [
+        [
+          10,
+          "VI.A Experimental Setup",
+          "drones equipped with the Manifold platform"
+        ],
+        [
+          10,
+          "VI.A Experimental Setup",
+          "the PyTorch deep learning library and Python programming"
+        ],
+        [
+          12,
+          "VI.B Performance Analysis",
+          "As the permissible delay threshold increases"
+        ],
+        [
+          10,
+          "VI.A Experimental Setup",
+          null
+        ]
+      ],
+      "g": "VI.A Experimental Setup omits key training reproducibility details including random seeds, optimizer choice, batch size, replay buffer capacity, and target network update rate.",
+      "native_task_id": "6cba67ff-4129-4421-afd3-8635416cf326",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "source_pdf_sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "study_id": "S043"
+    },
+    {
+      "id": "R0137",
+      "key": "D04",
+      "s": "PARTIAL",
+      "f": "Compares MBF SOA static bounds and ablations without baseline tuning parity details.",
+      "l": [
+        [
+          11,
+          "VI-A. Experimental Setup",
+          "introduce four solutions for comparison"
+        ],
+        [
+          12,
+          "VI-C. Ablation Experiments",
+          "compared it with two baseline algorithms"
+        ]
+      ],
+      "g": "Training budgets and hyperparameter tuning parity for MBF and SOA unreported.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "source_pdf_sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "study_id": "S043"
+    },
+    {
+      "id": "R0137",
+      "key": "D05",
+      "s": "YES",
+      "f": "Evaluates task delay original accuracy reliable rate and joint inference accuracy.",
+      "l": [
+        [
+          6,
+          "IV-A. Problem Formulation",
+          "maximize the inference accuracy on the premise"
+        ],
+        [
+          11,
+          "VI-B. Performance Analysis",
+          "comparison of the performance in four aspects"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "source_pdf_sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "study_id": "S043"
+    },
+    {
+      "id": "R0137",
+      "key": "D06",
+      "s": "PARTIAL",
+      "f": "Performance Analysis evaluates training convergence across multiple learning rates and examines sensitivity across varying permissible delay thresholds alongside ablation comparisons.",
+      "l": [
+        [
+          11,
+          "VI.B Performance Analysis",
+          "We evaluate the algorithm convergence"
+        ],
+        [
+          12,
+          "VI.B Performance Analysis",
+          "As the permissible delay threshold increases"
+        ],
+        [
+          12,
+          "VI.B Performance Analysis",
+          null
+        ]
+      ],
+      "g": "VI.B Performance Analysis does not report independent repeated runs, multiple random seeds, or dispersion metrics such as variance or confidence intervals for convergence or comparative results.",
+      "native_task_id": "6cba67ff-4129-4421-afd3-8635416cf326",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "source_pdf_sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "study_id": "S043"
+    },
+    {
+      "id": "R0137",
+      "key": "D07",
+      "s": "PARTIAL",
+      "f": "Offline training and physical policy deployment are conducted in two distinct phases, combining hardware-profiled timings on the multi-UAV testbed with probabilistic LoS and NLoS path-loss channel modeling and modeled computation and transmission failure rates.",
+      "l": [
+        [
+          10,
+          "VI.A Experimental Setup",
+          "were conducted in two distinct phases"
+        ],
+        [
+          10,
+          "VI.A Experimental Setup",
+          "not fully modeled in our current simulation"
+        ],
+        [
+          11,
+          "VI.A Experimental Setup",
+          "and measured from the physical hardware"
+        ],
+        [
+          12,
+          "VI.B Performance Analysis",
+          "varied permissible delay thresholds do not serve as"
+        ]
+      ],
+      "g": "Sim2Real factors such as OS scheduling jitter are explicitly not fully modeled in simulation, and the delay-threshold comparisons do not constitute dedicated fault-injection validation.",
+      "native_task_id": "6cba67ff-4129-4421-afd3-8635416cf326",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "source_pdf_sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "study_id": "S043"
+    },
+    {
+      "id": "R0137",
+      "key": "D08",
+      "s": "YES",
+      "f": "Explicitly bounds simulation via Sim2Real note non-fault-injection caveat and battery future work.",
+      "l": [
+        [
+          10,
+          "VI-A. Experimental Setup",
+          "constitutes a known limitation of this work"
+        ],
+        [
+          13,
+          "VII. CONCLUSIONS",
+          "demonstrated its superior performance compared to existing"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "source_pdf_sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "study_id": "S043"
+    },
+    {
+      "id": "R0137",
+      "key": "D09",
+      "s": "NOT_REPORTED",
+      "f": "Cites third-party video and workload trace without author code or artifact release.",
+      "l": [
+        [
+          10,
+          "VI-A. Experimental Setup",
+          "use urban traffic footage"
+        ],
+        [
+          13,
+          "ACKNOWLEDGMENTS",
+          null
+        ],
+        [
+          14,
+          "REFERENCES",
+          null
+        ]
+      ],
+      "g": "No author code or artifact availability statement in inspected sections.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "source_pdf_sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "study_id": "S043"
+    },
+    {
+      "id": "R0137",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "Reports explicit limitations and multiple funding grants but omits conflict disclosure.",
+      "l": [
+        [
+          10,
+          "VI-A. Experimental Setup",
+          "are not fully modeled in our current"
+        ],
+        [
+          13,
+          "ACKNOWLEDGMENTS",
+          "supported by the Shandong Provincial Natural Science"
+        ],
+        [
+          13,
+          "ACKNOWLEDGMENTS",
+          null
+        ]
+      ],
+      "g": "Explicit limitations and funding are reported but conflict disclosure is unreported.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "source_pdf_sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "study_id": "S043"
+    },
+    {
+      "id": "R0145",
+      "key": "D01",
+      "s": "YES",
+      "f": "The cloud-edge LLM path planning and perception-range adaptation mechanism is defined across the system model and planning sections.",
+      "l": [
+        [
+          6,
+          "3.1 System Overview",
+          "upload the perceived information to the cloud"
+        ],
+        [
+          6,
+          "3.1 System Overview",
+          "autonomously reduce their perceived range"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "source_pdf_sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+      "study_id": "S044"
+    },
+    {
+      "id": "R0145",
+      "key": "D02",
+      "s": "YES",
+      "f": "Specifies fixed-altitude assumptions 3GPP channel TTFT/TPOT model and constrained optimization formulation.",
+      "l": [
+        [
+          6,
+          "3.2 UAV Control Model",
+          "assume that all UAVs are at the"
+        ],
+        [
+          9,
+          "3.5 Formulation of the Problem",
+          "restricts the speed of the UAV must"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "source_pdf_sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+      "study_id": "S044"
+    },
+    {
+      "id": "R0145",
+      "key": "D03",
+      "s": "PARTIAL",
+      "f": "Reports software versions LoRA settings and grid size while omitting reward and baseline constants.",
+      "l": [
+        [
+          14,
+          "6.1 Experiment settings",
+          "The UAV swarm consists of 10 UAVs"
+        ],
+        [
+          14,
+          "6.1 Experiment settings",
+          "The experimental code is based on Python"
+        ]
+      ],
+      "g": "Reward constants perception diameters and baseline hyperparameters are omitted.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "source_pdf_sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+      "study_id": "S044"
+    },
+    {
+      "id": "R0145",
+      "key": "D04",
+      "s": "PARTIAL",
+      "f": "Large and small LLMs are compared separately, and planner baselines are evaluated separately, while cloud and edge LLM schemes use different perception ranges.",
+      "l": [
+        [
+          17,
+          "6.2 Performance Comparison of Different LLMs",
+          "uses a larger range of localized observations"
+        ],
+        [
+          17,
+          "6.3 Performance Comparison of Different Methods",
+          "fixed the EC scenario and evaluated"
+        ]
+      ],
+      "g": "Cloud and edge LLM schemes differ in perception range and traditional baselines face an iteration cap.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "source_pdf_sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+      "study_id": "S044"
+    },
+    {
+      "id": "R0145",
+      "key": "D05",
+      "s": "YES",
+      "f": "Measures TTFT TPOT completion count inference time FLOPs and local decision accuracy.",
+      "l": [
+        [
+          17,
+          "6.2 Performance Comparison of Different LLMs",
+          "compared the total running time"
+        ],
+        [
+          19,
+          "6.3 Performance Comparison of Different Methods",
+          "evaluate the ability of different methods to"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "source_pdf_sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+      "study_id": "S044"
+    },
+    {
+      "id": "R0145",
+      "key": "D06",
+      "s": "NOT_REPORTED",
+      "f": "Random scenarios and generated samples are evaluated without independent random seeds, repeated runs, or statistical dispersion.",
+      "l": [
+        [
+          18,
+          "6.3 Performance Comparison of Different Methods",
+          null
+        ],
+        [
+          19,
+          "6.3 Performance Comparison of Different Methods",
+          null
+        ]
+      ],
+      "g": "Independent seeds, repeated runs, and dispersion or uncertainty measures are not reported.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "source_pdf_sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+      "study_id": "S044"
+    },
+    {
+      "id": "R0145",
+      "key": "D07",
+      "s": "PARTIAL",
+      "f": "Experiments run on a lab GPU server in a simplified 2D grid with analytical TTFT/TPOT and wireless models rather than flight tests.",
+      "l": [
+        [
+          14,
+          "6.1 Experiment settings",
+          "simplify the EC rescue scenario"
+        ],
+        [
+          14,
+          "6.1 Experiment settings",
+          "conducted on our lab server equipped with"
+        ]
+      ],
+      "g": "2D grid simulation and analytical latency/channel models omit real UAV flight and 3D dynamics.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "source_pdf_sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+      "study_id": "S044"
+    },
+    {
+      "id": "R0145",
+      "key": "D08",
+      "s": "PARTIAL",
+      "f": "Conclusions note LLM computational overhead and defer distributed swarm collaboration, while generalizing grid simulation results to Industry 5.0 deployments.",
+      "l": [
+        [
+          18,
+          "6.3 Performance Comparison of Different Methods",
+          "significantly increase computational consumption and processing time"
+        ],
+        [
+          20,
+          "7 CONCLUSION",
+          "achieves the highest task completion rate"
+        ]
+      ],
+      "g": "Claims are not explicitly bounded to the 2D grid simulation and lab-server evaluation.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "source_pdf_sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+      "study_id": "S044"
+    },
+    {
+      "id": "R0145",
+      "key": "D09",
+      "s": "NOT_REPORTED",
+      "f": "Names Unsloth and base LLMs without releasing author code datasets or prompt templates.",
+      "l": [
+        [
+          14,
+          "6.1 Experiment settings",
+          "The experimental code is based on Python"
+        ],
+        [
+          20,
+          "7 CONCLUSION",
+          null
+        ],
+        [
+          22,
+          "REFERENCES",
+          null
+        ]
+      ],
+      "g": "No author code dataset or prompt availability statement in inspected sections.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "source_pdf_sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+      "study_id": "S044"
+    },
+    {
+      "id": "R0145",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "Reports NSFC and Guangxi funding plus compute caveat without formal limitations or conflicts.",
+      "l": [
+        [
+          1,
+          "Title Page",
+          "supported in part by the National Natural"
+        ],
+        [
+          18,
+          "6.3 Performance Comparison of Different Methods",
+          "they significantly increase computational consumption and processing"
+        ],
+        [
+          22,
+          "REFERENCES",
+          null
+        ]
+      ],
+      "g": "Funding and computational-cost caveat are reported but formal limitations and conflicts unreported.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+      "source_pdf_sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+      "study_id": "S044"
+    },
+    {
+      "id": "R0223",
+      "key": "D01",
+      "s": "YES",
+      "f": "Presents UTTUT control loop factor graph model and CTDE improved PPO path planning.",
+      "l": [
+        [
+          3,
+          "3.1.2 Joint Policy Sharing and CTDE Mechanism",
+          "adopt the Centralized Training with Decentralized Execution"
+        ],
+        [
+          3,
+          "3.2 Multi-Agent Collaborative Task Planning",
+          "introduces the UTTUT framework and the"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "source_pdf_sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+      "study_id": "S045"
+    },
+    {
+      "id": "R0223",
+      "key": "D02",
+      "s": "YES",
+      "f": "State and action spaces, multi-objective rewards, safety thresholds, known-localization assumptions, and obstacle configurations are explicitly stated.",
+      "l": [
+        [
+          3,
+          "3.2 Multi-Agent Collaborative Task Planning",
+          "assume that UAV localization is known"
+        ],
+        [
+          5,
+          "4.1 Reinforcement Learning-Based Path Planning Experiments",
+          "scenarios containing 6 and 9 randomly distributed"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "source_pdf_sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+      "study_id": "S045"
+    },
+    {
+      "id": "R0223",
+      "key": "D03",
+      "s": "PARTIAL",
+      "f": "Hardware, PyTorch, AirSim scenarios, and MATLAB setup are documented, while PPO architecture, training parameters, and prompts are explicitly omitted.",
+      "l": [
+        [
+          4,
+          "4 Experience",
+          "simulation environment was based on Microsoft AirSim"
+        ],
+        [
+          5,
+          "5 Conclusion",
+          "detailed descriptions of the PPO model architecture"
+        ]
+      ],
+      "g": "PPO architecture, training parameters, training procedures, and scenario prompts are omitted.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "source_pdf_sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+      "study_id": "S045"
+    },
+    {
+      "id": "R0223",
+      "key": "D04",
+      "s": "PARTIAL",
+      "f": "Table 1 RL baselines share state and action spaces with unverified tuning parity, while Table 2 coordination architectures differ in active model components.",
+      "l": [
+        [
+          5,
+          "4.1 Reinforcement Learning-Based Path Planning Experiments",
+          "unified state representation and action space"
+        ],
+        [
+          7,
+          "Figure 7",
+          "Comparison of Different System Architectures"
+        ]
+      ],
+      "g": "RL tuning parity is unreported and coordination architectures vary in active LLM and perception modules.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "source_pdf_sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+      "study_id": "S045"
+    },
+    {
+      "id": "R0223",
+      "key": "D05",
+      "s": "YES",
+      "f": "Per-step inference time, path length, and success in Table 1 and response, completion, and success in Table 2 align with their objectives.",
+      "l": [
+        [
+          5,
+          "4.1 Reinforcement Learning-Based Path Planning Experiments",
+          "Inference time per step"
+        ],
+        [
+          5,
+          "4.2 Multi-Agent Cooperative Task Planning Experiments",
+          "response time for initial plan generation"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "source_pdf_sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+      "study_id": "S045"
+    },
+    {
+      "id": "R0223",
+      "key": "D06",
+      "s": "PARTIAL",
+      "f": "Cooperative task planning experiments document repeated execution per task and path planning evaluates multiple start-end pairs with training reward curves, while Table 2 reports only aggregate point results.",
+      "l": [
+        [
+          5,
+          "4.2 Multi-Agent Cooperative Task Planning Experiments",
+          "Each task is executed at least"
+        ],
+        [
+          7,
+          "Table 2",
+          "cooperative task planning experiments"
+        ],
+        [
+          6,
+          "Figure 5",
+          null
+        ],
+        [
+          7,
+          "Table 2",
+          null
+        ]
+      ],
+      "g": "Neither the path planning nor cooperative task planning tables report dispersion measures, Figure 5 does not identify any dispersion metric for its reward curves, and independent training seed counts are omitted.",
+      "native_task_id": "6cba67ff-4129-4421-afd3-8635416cf326",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "source_pdf_sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+      "study_id": "S045"
+    },
+    {
+      "id": "R0223",
+      "key": "D07",
+      "s": "PARTIAL",
+      "f": "3D AirSim scenarios and separate MATLAB path-planning simulations are used without wireless network modeling or real-world flight validation.",
+      "l": [
+        [
+          4,
+          "4 Experience",
+          "simulation environment was based on Microsoft AirSim"
+        ],
+        [
+          4,
+          "4 Experience",
+          "path planning were primarily implemented in MATLAB"
+        ]
+      ],
+      "g": "Experiments are confined to AirSim and MATLAB simulations without field flight or network realism.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "source_pdf_sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+      "study_id": "S045"
+    },
+    {
+      "id": "R0223",
+      "key": "D08",
+      "s": "PARTIAL",
+      "f": "Practical reliability claims for centralized control are balanced by explicitly deferring real-world validation to future work.",
+      "l": [
+        [
+          5,
+          "4.2 Multi-Agent Cooperative Task Planning Experiments",
+          "remain more reliable and secure in practical applications"
+        ],
+        [
+          5,
+          "5 Conclusion",
+          "prompts in each scenario are omitted"
+        ]
+      ],
+      "g": "Conclusions rely on simulation results without real-world UAV flight validation.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "source_pdf_sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+      "study_id": "S045"
+    },
+    {
+      "id": "R0223",
+      "key": "D09",
+      "s": "NOT_REPORTED",
+      "f": "Names AirSim Doubao and Grounding DINO without author code or prompt availability.",
+      "l": [
+        [
+          4,
+          "4 Experience",
+          "interface between AirSim and Python was established"
+        ],
+        [
+          5,
+          "5 Conclusion",
+          null
+        ],
+        [
+          8,
+          "References",
+          null
+        ]
+      ],
+      "g": "No author code prompts or artifact availability statement in inspected sections.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "source_pdf_sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+      "study_id": "S045"
+    },
+    {
+      "id": "R0223",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "Reports explicit limitations in conclusion but omits funding and conflict disclosures.",
+      "l": [
+        [
+          5,
+          "5 Conclusion",
+          "this work has certain"
+        ],
+        [
+          1,
+          "Title Page",
+          null
+        ],
+        [
+          5,
+          "5 Conclusion",
+          null
+        ]
+      ],
+      "g": "Explicit limitations are reported but funding and conflict disclosures are unreported.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+      "source_pdf_sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+      "study_id": "S045"
+    },
+    {
+      "id": "R0292",
+      "key": "D01",
+      "s": "YES",
+      "f": "The continuous marine monitoring platform is formulated around two quadrotors performing vision-based shark tracking and Wi-Fi handoff.",
+      "l": [
+        [
+          1,
+          "ABSTRACT",
+          "autonomous UAV vision system for continuous"
+        ],
+        [
+          3,
+          "4 COOPERATIVE CONTINUOUS TRACKING",
+          "proposed system comprises two quadrotor UAVs"
+        ]
+      ],
+      "g": null,
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "source_pdf_sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+      "study_id": "S046"
+    },
+    {
+      "id": "R0292",
+      "key": "D02",
+      "s": "PARTIAL",
+      "f": "States hardware roles and geometry without battery trigger or communication range bounds.",
+      "l": [
+        [
+          3,
+          "4 COOPERATIVE CONTINUOUS TRACKING",
+          "An onboard NVIDIA Jetson Nano"
+        ],
+        [
+          4,
+          "4.1 Handoff Protocol",
+          "uses onboard vision to detect the ArUco"
+        ]
+      ],
+      "g": "Battery trigger threshold communication bounds and handoff confidence thresholds are omitted.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "source_pdf_sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+      "study_id": "S046"
+    },
+    {
+      "id": "R0292",
+      "key": "D03",
+      "s": "PARTIAL",
+      "f": "Hardware, OSTrack configuration, and dataset are described, but narrative padding settings conflict with Table 3 and frame counts differ across sections.",
+      "l": [
+        [
+          5,
+          "5.2 UAV Data Handover",
+          "tighter templates with varying paddings"
+        ],
+        [
+          5,
+          "Table 3",
+          "Table 3: Matching performance"
+        ]
+      ],
+      "g": "Narrative padding values conflict with Table 3, frame counts differ across sections, and code is unlinked.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "source_pdf_sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+      "study_id": "S046"
+    },
+    {
+      "id": "R0292",
+      "key": "D04",
+      "s": "PARTIAL",
+      "f": "Compares five trackers on shared video without fine-tuning parity or handover baseline.",
+      "l": [
+        [
+          4,
+          "5.1 Tracking Performance",
+          "on our custom dataset composed of"
+        ],
+        [
+          5,
+          "5.2 UAV Data Handover",
+          "achieved the highest target coverage of"
+        ]
+      ],
+      "g": "Fine-tuning parity across trackers is unstated and handover lacks a baseline.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "source_pdf_sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+      "study_id": "S046"
+    },
+    {
+      "id": "R0292",
+      "key": "D05",
+      "s": "PARTIAL",
+      "f": "Measures tracking IoU drift coverage and HIL compute without live flight handover duration.",
+      "l": [
+        [
+          4,
+          "5.1 Tracking Performance",
+          "evaluated three complementary metrics"
+        ],
+        [
+          6,
+          "5.2 UAV Data Handover",
+          "resulted in an average power consumption of"
+        ]
+      ],
+      "g": "End-to-end flight handover success and mission endurance extension are not measured.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "source_pdf_sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+      "study_id": "S046"
+    },
+    {
+      "id": "R0292",
+      "key": "D06",
+      "s": "PARTIAL",
+      "f": "Tracking experiments evaluate frame-level accuracy and robustness on an aerial shark footage sequence, while separate handover experiments assess template-padding sensitivity and record a hardware-in-the-loop time-series trace of onboard system performance.",
+      "l": [
+        [
+          3,
+          "3.2 Dataset",
+          "Each frame is annotated with shark bounding boxes"
+        ],
+        [
+          4,
+          "5.1 Tracking Performance",
+          "each model localized the target spatially and temporally"
+        ],
+        [
+          5,
+          "5.2 UAV Data Handover",
+          "localize the shark within this region using tighter templates"
+        ],
+        [
+          5,
+          "5.2 UAV Data Handover",
+          "The onboard system tests were performed in a"
+        ],
+        [
+          5,
+          "5.2 UAV Data Handover",
+          null
+        ]
+      ],
+      "g": "Neither the tracker evaluation nor the handover and hardware-in-the-loop experiments report independent repetitions across multiple sequences or trials, nor any dispersion statistics.",
+      "native_task_id": "6cba67ff-4129-4421-afd3-8635416cf326",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "source_pdf_sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+      "study_id": "S046"
+    },
+    {
+      "id": "R0292",
+      "key": "D07",
+      "s": "PARTIAL",
+      "f": "Evaluates on real aerial shark video and HIL bench without live ocean flight testing.",
+      "l": [
+        [
+          3,
+          "3.2 Dataset",
+          "originally collected by marine biologists for ecological"
+        ],
+        [
+          5,
+          "5.2 UAV Data Handover",
+          "onboard system tests were performed in a"
+        ]
+      ],
+      "g": "Evaluation uses recorded video and HIL without live multi-UAV flight or Wi-Fi testing.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "source_pdf_sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+      "study_id": "S046"
+    },
+    {
+      "id": "R0292",
+      "key": "D08",
+      "s": "PARTIAL",
+      "f": "Conclusion projects practical feasibility for sustained marine monitoring from HIL tests and a single-sequence dataset without explicit scope bounds.",
+      "l": [
+        [
+          5,
+          "5.2 UAV Data Handover",
+          "onboard system tests were performed"
+        ],
+        [
+          6,
+          "6 CONCLUSION",
+          "highlight its novelty in enabling lightweight"
+        ]
+      ],
+      "g": "Practical feasibility claims are not explicitly bounded to HIL testing and single-sequence evaluation.",
+      "native_task_id": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "source_pdf_sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+      "study_id": "S046"
+    },
+    {
+      "id": "R0292",
+      "key": "D09",
+      "s": "NOT_REPORTED",
+      "f": "Uses repurposed shark video and OSTrack without releasing code or curated dataset.",
+      "l": [
+        [
+          3,
+          "3.2 Dataset",
+          "repurposed for the evaluation of visual tracking"
+        ],
+        [
+          6,
+          "6 CONCLUSION",
+          null
+        ],
+        [
+          6,
+          "REFERENCES",
+          null
+        ]
+      ],
+      "g": "No author code or curated dataset availability statement in inspected sections.",
+      "native_task_id": "720b8516-3478-416c-95ab-61044918105e",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "source_pdf_sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+      "study_id": "S046"
+    },
+    {
+      "id": "R0292",
+      "key": "D10",
+      "s": "PARTIAL",
+      "f": "Section 5.1 documents a study-specific interpretation caveat noting that low drift values are unreliable when calculated only on a minimal subset of successful frames, and Section 5.2 specifies that onboard system tests were conducted in hardware-in-the-loop mode.",
+      "l": [
+        [
+          5,
+          "5.1 Tracking Performance",
+          "calculated only on a minimal subset of successful frames"
+        ],
+        [
+          5,
+          "5.2 UAV Data Handover",
+          "The onboard system tests were performed in a"
+        ],
+        [
+          1,
+          "Front Matter",
+          null
+        ],
+        [
+          6,
+          "6 Conclusion and End Matter",
+          null
+        ]
+      ],
+      "g": "No dedicated limitations section is provided in Section 6, and neither the front matter nor the end matter includes funding or conflict-of-interest disclosures.",
+      "native_task_id": "6cba67ff-4129-4421-afd3-8635416cf326",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+      "source_pdf_sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+      "study_id": "S046"
+    }
+  ]
+}

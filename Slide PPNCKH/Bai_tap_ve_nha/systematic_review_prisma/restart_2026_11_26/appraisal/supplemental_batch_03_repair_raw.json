@@ -1,0 +1,45 @@
+{
+  "id": "6cba67ff-4129-4421-afd3-8635416cf326",
+  "contextId": "9095d93c-960c-491c-bccd-13efc02dc745",
+  "status": {
+    "state": "TASK_STATE_COMPLETED",
+    "timestamp": "2026-11-27T07:31:18.230+00:00"
+  },
+  "metadata": {
+    "backend": "Gemini.app Accessibility",
+    "created_at": "2026-11-27T07:27:42.370+00:00",
+    "updated_at": "2026-11-27T07:31:18.230+00:00",
+    "started_at": "2026-11-27T07:27:42.375+00:00",
+    "completed_at": "2026-11-27T07:31:18.230+00:00",
+    "acceptance": "unreviewed",
+    "app_bundle_id": "com.google.GeminiMacOS",
+    "geminiApp": {
+      "mode": "task",
+      "source_dir": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma",
+      "context_kind": "direct_project",
+      "folder": "/Volumes/JokerData/PhD/PhD Research Proposal - Nguyen Minh Hieu (2026) (v3)/Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma"
+    },
+    "window_title": "Gemini — HK261 Appraisal Batch Correction",
+    "chat_cleanup": {
+      "state": "deleted",
+      "verified_new_chat": true,
+      "mode_restored": "chat"
+    },
+    "context_audit": {
+      "unchanged": null,
+      "scope": "direct_project",
+      "reason": "No folder-wide digest; verify task evidence against the cited project files"
+    }
+  },
+  "artifacts": [
+    {
+      "artifactId": "6f267f8b-e23b-432b-8305-0f23f68b6a22",
+      "name": "gemini-app-response",
+      "parts": [
+        {
+          "text": "{\"id\":\"R0113\",\"key\":\"D02\",\"s\":\"PARTIAL\",\"f\":\"Scope exclusions are explicitly stated, and Implementation and Results outlines the simulated swarm scenarios, sensor streams, and high-level system components, while concrete scenario and configuration assumptions remain incompletely specified.\",\"l\":[[4,\"Scope\",\"are beyond the scope of this investigation\"],[9,\"Implementation and Results\",\"conducted using a simulated autonomous UAV swarm\"],[9,\"Implementation and Results\",null]],\"g\":\"Implementation and Results omits specific onboard embedded edge hardware models, simulator-to-experiment assignments, communication disruption assumptions, and concrete obstacle or mission scenario parameters.\"}\n{\"id\":\"R0137\",\"key\":\"D03\",\"s\":\"PARTIAL\",\"f\":\"Experimental Setup documents the UAV and edge server hardware, operating system, PyTorch stack, video and workload sources, profiled DNN models and resolutions, MARL network architecture, and the configured permissible delay threshold sweep.\",\"l\":[[10,\"VI.A Experimental Setup\",\"drones equipped with the Manifold platform\"],[10,\"VI.A Experimental Setup\",\"the PyTorch deep learning library and Python programming\"],[12,\"VI.B Performance Analysis\",\"As the permissible delay threshold increases\"],[10,\"VI.A Experimental Setup\",null]],\"g\":\"VI.A Experimental Setup omits key training reproducibility details including random seeds, optimizer choice, batch size, replay buffer capacity, and target network update rate.\"}\n{\"id\":\"R0137\",\"key\":\"D06\",\"s\":\"PARTIAL\",\"f\":\"Performance Analysis evaluates training convergence across multiple learning rates and examines sensitivity across varying permissible delay thresholds alongside ablation comparisons.\",\"l\":[[11,\"VI.B Performance Analysis\",\"We evaluate the algorithm convergence\"],[12,\"VI.B Performance Analysis\",\"As the permissible delay threshold increases\"],[12,\"VI.B Performance Analysis\",null]],\"g\":\"VI.B Performance Analysis does not report independent repeated runs, multiple random seeds, or dispersion metrics such as variance or confidence intervals for convergence or comparative results.\"}\n{\"id\":\"R0137\",\"key\":\"D07\",\"s\":\"PARTIAL\",\"f\":\"Offline training and physical policy deployment are conducted in two distinct phases, combining hardware-profiled timings on the multi-UAV testbed with probabilistic LoS and NLoS path-loss channel modeling and modeled computation and transmission failure rates.\",\"l\":[[10,\"VI.A Experimental Setup\",\"were conducted in two distinct phases\"],[10,\"VI.A Experimental Setup\",\"not fully modeled in our current simulation\"],[11,\"VI.A Experimental Setup\",\"and measured from the physical hardware\"],[12,\"VI.B Performance Analysis\",\"varied permissible delay thresholds do not serve as\"]],\"g\":\"Sim2Real factors such as OS scheduling jitter are explicitly not fully modeled in simulation, and the delay-threshold comparisons do not constitute dedicated fault-injection validation.\"}\n{\"id\":\"R0223\",\"key\":\"D06\",\"s\":\"PARTIAL\",\"f\":\"Cooperative task planning experiments document repeated execution per task and path planning evaluates multiple start-end pairs with training reward curves, while Table 2 reports only aggregate point results.\",\"l\":[[5,\"4.2 Multi-Agent Cooperative Task Planning Experiments\",\"Each task is executed at least\"],[7,\"Table 2\",\"cooperative task planning experiments\"],[6,\"Figure 5\",null],[7,\"Table 2\",null]],\"g\":\"Neither the path planning nor cooperative task planning tables report dispersion measures, Figure 5 does not identify any dispersion metric for its reward curves, and independent training seed counts are omitted.\"}\n{\"id\":\"R0292\",\"key\":\"D06\",\"s\":\"PARTIAL\",\"f\":\"Tracking experiments evaluate frame-level accuracy and robustness on an aerial shark footage sequence, while separate handover experiments assess template-padding sensitivity and record a hardware-in-the-loop time-series trace of onboard system performance.\",\"l\":[[3,\"3.2 Dataset\",\"Each frame is annotated with shark bounding boxes\"],[4,\"5.1 Tracking Performance\",\"each model localized the target spatially and temporally\"],[5,\"5.2 UAV Data Handover\",\"localize the shark within this region using tighter templates\"],[5,\"5.2 UAV Data Handover\",\"The onboard system tests were performed in a\"],[5,\"5.2 UAV Data Handover\",null]],\"g\":\"Neither the tracker evaluation nor the handover and hardware-in-the-loop experiments report independent repetitions across multiple sequences or trials, nor any dispersion statistics.\"}\n{\"id\":\"R0292\",\"key\":\"D10\",\"s\":\"PARTIAL\",\"f\":\"Section 5.1 documents a study-specific interpretation caveat noting that low drift values are unreliable when calculated only on a minimal subset of successful frames, and Section 5.2 specifies that onboard system tests were conducted in hardware-in-the-loop mode.\",\"l\":[[5,\"5.1 Tracking Performance\",\"calculated only on a minimal subset of successful frames\"],[5,\"5.2 UAV Data Handover\",\"The onboard system tests were performed in a\"],[1,\"Front Matter\",null],[6,\"6 Conclusion and End Matter\",null]],\"g\":\"No dedicated limitations section is provided in Section 6, and neither the front matter nor the end matter includes funding or conflict-of-interest disclosures.\"}\n{\"id\":\"SUMMARY\",\"report_count\":4,\"key_count\":7,\"no_workers_used\":true,\"tools_used\":[\"client:view_file\"],\"unresolved\":[]}\nP09_SUPPLEMENT_BATCH_03_REPAIR_COMPLETE"
+        }
+      ]
+    }
+  ]
+}
