@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T12:18:44+07:00",
+  "updated_at": "2026-11-27T12:19:25+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -11,17 +11,17 @@
     "owner": "CODEX_WRITING",
     "status": "completed",
     "started_at": "2026-11-27T10:02:39+07:00",
-    "updated_at": "2026-11-27T12:18:44+07:00",
-    "completed_at": "2026-11-27T12:18:44+07:00",
-    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_08_review.md",
-    "decision_id": "restart-supplemental-screening-v1"
+    "updated_at": "2026-11-27T12:19:25+07:00",
+    "completed_at": "2026-11-27T12:19:25+07:00",
+    "checkpoint_path": "restart_2026_11_26/supplemental_screening/screening_closeout.md",
+    "decision_id": "restart-supplemental-screening-v2"
   },
   "next_task": {
-    "task_id": "restart-supplemental-screening-close",
+    "task_id": "restart-supplemental-screening-complete",
     "owner": "CODEX_WRITING",
-    "status": "ready",
-    "action": "Reconcile supplemental screening and verify evidence checkout.",
-    "acceptance": "92 unique accounted reports plus six prior rechecks, zero PRISMA or manuscript edits."
+    "status": "none",
+    "action": "Resume the approved plan at report-to-study linkage after the supplemental screening checkpoint.",
+    "acceptance": "Ninety-two supplemental reports trace to the original evidence. Unresolved classifications remain explicit."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -389,7 +389,40 @@
       "batch_08_review": "restart_2026_11_26/supplemental_screening/batch_08_review.md",
       "batch_08_verdict": "PASS_COMPOSITE",
       "batch_08_accepted": "restart_2026_11_26/supplemental_screening/batch_08_accepted.json",
-      "batch_08_provider_verdict": "FAIL_LOCATORS_APPLICABILITY_AND_TWO_PRIMARY_REASONS"
+      "batch_08_provider_verdict": "FAIL_LOCATORS_APPLICABILITY_AND_TWO_PRIMARY_REASONS",
+      "closeout": "restart_2026_11_26/supplemental_screening/screening_closeout.md",
+      "decision_ledger": "restart_2026_11_26/supplemental_screening/screening_decisions.csv",
+      "fulltext_report_counts": {
+        "EXCLUDE": 74,
+        "INCLUDE": 16,
+        "AWAITING_CLASSIFICATION": 2
+      },
+      "resumed_report_counts": {
+        "INCLUDE": 5,
+        "EXCLUDE": 47
+      },
+      "supplemental_awaiting": {
+        "R0082": "E7",
+        "R0132": "E2|E3"
+      },
+      "fulltext_primary_exclusion_reasons": {
+        "E3": 35,
+        "E1": 8,
+        "E2": 26,
+        "E4": 1,
+        "E7": 4
+      },
+      "prior_awaiting_recheck_outcomes": {
+        "R0075": "INCLUDE",
+        "R0081": "AWAITING_CLASSIFICATION",
+        "R0092": "INCLUDE",
+        "R0110": "INCLUDE",
+        "R0118": "INCLUDE",
+        "R0137": "INCLUDE"
+      },
+      "still_not_retrieved": [
+        "R0116"
+      ]
     }
   },
   "blockers": [],

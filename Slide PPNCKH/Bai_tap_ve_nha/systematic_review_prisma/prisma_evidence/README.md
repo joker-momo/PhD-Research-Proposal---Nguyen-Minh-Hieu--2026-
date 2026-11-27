@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T12:18:44+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T12:19:25+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -398,6 +398,11 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=4.
 - [batch_08_review.md](../restart_2026_11_26/supplemental_screening/batch_08_review.md)
 - [batch_08_bridge_receipt.json](../restart_2026_11_26/supplemental_screening/batch_08_bridge_receipt.json)
 - [batch_08_accepted.json](../restart_2026_11_26/supplemental_screening/batch_08_accepted.json)
+- [batch_08_transport_failure.json](../restart_2026_11_26/supplemental_screening/batch_08_transport_failure.json)
+- [batch_08_transport_failure_retry.json](../restart_2026_11_26/supplemental_screening/batch_08_transport_failure_retry.json)
+- [batch_08_retry_brief.md](../restart_2026_11_26/supplemental_screening/batch_08_retry_brief.md)
+- [screening_closeout.md](../restart_2026_11_26/supplemental_screening/screening_closeout.md)
+- [screening_decisions.csv](../restart_2026_11_26/supplemental_screening/screening_decisions.csv)
 
 <a id="buoc-10"></a>
 ## Bước 10 · Liên kết report với study
