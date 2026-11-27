@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T14:35:14+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T14:36:55+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -769,6 +769,7 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=4.
 - [reconcile.py](../restart_2026_11_26/prisma/reconcile.py)
 - [reconciliation_review.md](../restart_2026_11_26/prisma/reconciliation_review.md)
 - [test_reconcile.py](../restart_2026_11_26/prisma/test_reconcile.py)
+- [active_reconciliation_review.md](../restart_2026_11_26/prisma/active_reconciliation_review.md)
 
 <a id="buoc-14"></a>
 ## Bước 14 · Tổng hợp theo câu hỏi nghiên cứu

@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T14:35:14+07:00",
+  "updated_at": "2026-11-27T14:36:55+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -1328,7 +1328,8 @@
         "restart_2026_11_26/prisma/prisma_flow.tex",
         "restart_2026_11_26/prisma/reconcile.py",
         "restart_2026_11_26/prisma/reconciliation_review.md",
-        "restart_2026_11_26/prisma/test_reconcile.py"
+        "restart_2026_11_26/prisma/test_reconcile.py",
+        "restart_2026_11_26/prisma/active_reconciliation_review.md"
       ],
       "acceptance": [
         {
@@ -1351,7 +1352,40 @@
           "verdict": "PASS",
           "evidence": "Vector diagram compiled and inspected 1/1 pages. Checklist 27/27 statuses, locators and limits."
         }
-      ]
+      ],
+      "supplemental": {
+        "status": "ACTIVE_RECONCILIATION_PASS",
+        "started_at": "2026-11-27T14:35:33+07:00",
+        "updated_at": "2026-11-27T14:36:55+07:00",
+        "completed_at": "2026-11-27T14:36:55+07:00",
+        "counts_path": "restart_2026_11_26/prisma/prisma_counts.json",
+        "flow": "restart_2026_11_26/prisma/prisma_flow.pdf",
+        "review": "restart_2026_11_26/prisma/active_reconciliation_review.md",
+        "counts": {
+          "duplicate_records_removed": 228,
+          "included_reports": 46,
+          "included_studies": 46,
+          "raw_records": 693,
+          "records_excluded": 328,
+          "records_screened": 465,
+          "reports_assessed": 136,
+          "reports_awaiting_classification": 3,
+          "reports_excluded": 87,
+          "reports_not_retrieved": 1,
+          "reports_sought": 137
+        },
+        "awaiting_classification": {
+          "R0081": "E7",
+          "R0082": "E7",
+          "R0132": "E2|E3"
+        },
+        "not_retrieved": [
+          "R0116"
+        ],
+        "ledger_sha256": "fb3735667bceea491daacdd22db88b0e9e56a036f3f6b53120897203f530ff12",
+        "flow_sha256": "770e7d8418c14ee36eb583079b41aa6eb9832ff69519bfc28d5f0a8101ad473e",
+        "unexplained_arithmetic_differences": 0
+      }
     },
     {
       "task_id": "restart-14",

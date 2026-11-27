@@ -34,7 +34,7 @@ def split(rows, field, allowed=None):
     return dict(sorted(groups.items()))
 
 
-def audit(project):
+def audit_baseline(project):
     restart = project / "restart_2026_11_26"
     hashes = {}
 
@@ -190,6 +190,181 @@ def audit(project):
         "input_sha256_relative_to_restart": hashes,
     }
 
+
+def audit_supplemental(project, baseline):
+    restart = project / "restart_2026_11_26"
+    supplemental = restart / "supplemental_screening"
+    linkage = restart / "study_linkage"
+    inputs = []
+    linkage_map = linkage / "active_report_study_map.csv"
+
+    def read_json(path):
+        inputs.append(path)
+        return json.loads(path.read_text())
+
+    for phase, lock_path, status in (
+        ("P08", restart / "extraction/active_p08_extraction_lock.json", "LOCKED_ACTIVE_P08_PASS"),
+        ("P09", restart / "appraisal/active_p09_appraisal_lock.json", "LOCKED_ACTIVE_P09_PASS"),
+    ):
+        lock = read_json(lock_path)
+        eq(lock["status"], status, f"{phase} active gate")
+        eq(lock["study_linkage"]["path"], linkage_map.relative_to(project).as_posix(), f"{phase} linkage path")
+        eq(sha256(linkage_map.read_bytes()).hexdigest(), lock["study_linkage"]["sha256"], f"{phase} linkage SHA-256")
+        if phase == "P08":
+            eq(lock["outstanding_reports"], [], "P08 outstanding reports")
+            active_p08 = lock
+        else:
+            eq(lock["pending_judgments"], 0, "P09 pending judgments")
+            eq(sha256((project / lock["active_p08"]["path"]).read_bytes()).hexdigest(),
+               lock["active_p08"]["sha256"], "P09 consumed P08 SHA-256")
+            for relative, digest in lock["artifact_sha256"].items():
+                eq(sha256((project / relative).read_bytes()).hexdigest(), digest, f"P09 {relative} SHA-256")
+            active_p09 = lock
+
+
+    def read_csv(path, key):
+        inputs.append(path)
+        with path.open(newline="", encoding="utf-8-sig") as source:
+            return index(csv.DictReader(source), key, path.name)
+
+    original = read_csv(restart / "fulltext_screening/fulltext_screening.csv", "screening_id")
+    addition = read_csv(supplemental / "screening_decisions.csv", "id")
+    missing = read_csv(restart / "fulltext_retrieval/missing_pdf.csv", "screening_id")
+    retrieval_meta = read_json(supplemental / "manifest.json")
+    eq(retrieval_meta["not_retrieved"], ["R0116"], "supplemental screening unretrieved IDs")
+    intake = read_csv(supplemental / "supplemental_intake.csv", "id")
+    eq(set(intake), set(addition), "intake and screened supplement IDs")
+    eq(set(original) & set(addition), set(), "baseline/supplemental overlap")
+    eq(set(missing) - set(addition), {"R0116"}, "unretrieved report")
+    eq(set(addition) - set(missing), set(), "supplemental not part of original shortfall")
+
+    recheck_path = supplemental / "prior_awaiting_recheck.json"
+    recheck = index(read_json(recheck_path)["records"], "id", recheck_path.name)
+    eq(set(recheck), set(baseline["awaiting_classification_codes"]), "baseline recheck coverage")
+    partition = {
+        key: {"status": row["decision"], "reason": row["primary_reason_code"],
+              "pending": row["unresolved_codes"], "pdf": row["pdf_path"], "sha256": row["sha256"]}
+        for key, row in original.items()
+    }
+    for key, row in recheck.items():
+        eq((row["pdf"], row["sha256"]), (partition[key]["pdf"], partition[key]["sha256"]), f"{key}: recheck identity")
+        partition[key]["status"] = row["decision_supported_by_round_01"]
+        partition[key]["pending"] = "|".join(row["criterion_to_resolve"])
+
+    normalized_ids = set()
+    decision_files = set()
+    for key, row in addition.items():
+        eq((row["doi"], row["sha256"], row["physical_pages"]),
+           (intake[key]["doi"], intake[key]["sha256"], intake[key]["physical_pages"]),
+           f"{key}: intake and screening identity")
+        doi = row["doi"].casefold()
+        if doi:
+            require(doi not in normalized_ids, f"{key}: duplicate supplemental DOI")
+            normalized_ids.add(doi)
+        decision_path = project / row["decision_evidence"]
+        require(decision_path.is_file() and row["principal_locators"], f"{key}: missing decision evidence")
+        decision_files.add(decision_path)
+        partition[key] = {
+            "status": row["decision"], "reason": row["primary_reason"],
+            "pending": row["unresolved_criteria"], "pdf": row["pdf"], "sha256": row["sha256"],
+        }
+
+    inputs.extend(sorted(decision_files))
+    catalog_path = project / "prisma_evidence/evidence_by_id.csv"
+    inputs.append(catalog_path)
+    with catalog_path.open(newline="", encoding="utf-8-sig") as handle:
+        pdfs = index(
+            (row for row in csv.DictReader(handle) if row["evidence_type"] in {"BASELINE_PDF", "SUPPLEMENTAL_PDF"}),
+            "id", "original PDF catalog",
+        )
+    eq(set(partition), set(pdfs), "PDF catalog coverage")
+    repository_prefix = project.relative_to(project.parents[2])
+    for key, row in partition.items():
+        catalog_relative = Path(pdfs[key]["repo_path"]).relative_to(repository_prefix).as_posix()
+        eq((row["pdf"], row["sha256"]), (catalog_relative, pdfs[key]["sha256"]), f"{key}: catalog identity")
+        eq(sha256((project / row["pdf"]).read_bytes()).hexdigest(), row["sha256"], f"{key}: original PDF checksum")
+
+    groups = split(partition, "status", {"INCLUDE", "EXCLUDE", "AWAITING_CLASSIFICATION"})
+    reasons = split({key: partition[key] for key in groups["EXCLUDE"]}, "reason", {f"E{i}" for i in range(1, 8)})
+    pending = {key: partition[key]["pending"] for key in groups["AWAITING_CLASSIFICATION"]}
+    eq(pending, {"R0081": "E7", "R0082": "E7", "R0132": "E2|E3"}, "pending statuses")
+    study_map = read_csv(linkage_map, "report_id")
+    eq(set(study_map), set(groups["INCLUDE"]), "active study-linkage coverage")
+    studies = split(study_map, "study_id")
+    eq((active_p08["reports_verified"], active_p08["studies_verified"]),
+       (len(study_map), len(studies)), "P08 active totals")
+    eq((active_p09["reports"], active_p09["studies"]),
+       (len(study_map), len(studies)), "P09 active totals")
+    eq(active_p09["judgments"], len(study_map) * active_p09["domains_per_report"], "P09 decision count")
+    appraisal = read_csv(restart / "appraisal/active_appraisal_table.csv", "report_id")
+    eq(set(appraisal), set(study_map), "P09 exact included report IDs")
+    for key, row in appraisal.items():
+        eq(row["study_id"], study_map[key]["study_id"], f"{key}: P09 study ID")
+
+    pairs = read_csv(linkage / "active_pair_evidence.csv", "pair_id")
+    merged_pairs = set()
+    for row in pairs.values():
+        a, b = row["report_a"], row["report_b"]
+        require(a < b and a in study_map and b in study_map, "invalid study-linkage pair")
+        eq(row["pair_id"], f"{a}/{b}", "pair key")
+        require(row["decision"] in {"DISTINCT", "SAME_STUDY"}, "unresolved linkage family")
+        eq(study_map[a]["study_id"] == study_map[b]["study_id"], row["decision"] == "SAME_STUDY",
+           f"{a}/{b}: linkage and study group disagree")
+        if row["decision"] == "SAME_STUDY":
+            merged_pairs.add(frozenset((a, b)))
+    for members in studies.values():
+        connected = {members[0]}
+        for _ in members:
+            for edge in merged_pairs:
+                if edge & connected:
+                    connected |= edge
+        eq(connected, set(members), "study merge lacks connected evidence")
+        for report in members:
+            eq(study_map[report]["group_member_reports"], "|".join(members), f"{report}: study membership")
+
+    retrieval_groups = {"NOT_RETRIEVED": ["R0116"], "RETRIEVED_PDF": sorted(partition)}
+    sought = set().union(*map(set, baseline["report_ids_by_retrieval_decision"].values()))
+    eq(set(partition) | {"R0116"}, sought, "sought/assessed set identity")
+    by_title_decision = baseline["screening_ids_by_title_abstract_decision"]
+    by_initial = {
+        status: dict(Counter("RETRIEVED_PDF" if key in partition else "NOT_RETRIEVED" for key in ids))
+        for status, ids in by_title_decision.items() if status != "EXCLUDE"
+    }
+    counts = baseline["counts"] | {
+        "reports_not_retrieved": 1,
+        "reports_assessed": len(partition),
+        "reports_excluded": len(groups["EXCLUDE"]),
+        "reports_awaiting_classification": len(pending),
+        "included_reports": len(study_map),
+        "included_studies": len(studies),
+    }
+    differences = baseline["arithmetic_differences"] | {
+        "sought_minus_unretrieved_and_assessed": len(sought) - 1 - len(partition),
+        "assessed_minus_excluded_pending_and_included": len(partition) - counts["reports_excluded"] - len(pending) - len(study_map),
+    }
+    require(not any(differences.values()), "unexplained PRISMA count differences")
+    return baseline | {
+        "counts": counts,
+        "supplemental_retrieval": {"original_missing": len(missing), "recovered": len(addition),
+                                   "unretrieved": len(missing) - len(addition)},
+
+        "arithmetic_differences": differences,
+        "report_ids_by_retrieval_decision": retrieval_groups,
+        "retrieval_counts_by_title_decision": by_initial,
+        "not_retrieved_by_reason": {"NO_VERIFIED_PDF_FROM_CHECKED_ROUTES": ["R0116"]},
+        "report_ids_by_fulltext_decision": groups,
+        "fulltext_exclusions_by_primary_reason": reasons,
+        "awaiting_classification_codes": pending,
+        "study_ids_to_report_ids": studies,
+        "tested_version_pairs": {key: [row["report_a"], row["report_b"], row["decision"]] for key, row in pairs.items()},
+        "supplemental_input_sha256_relative_to_project": {
+            path.relative_to(project).as_posix(): sha256(path.read_bytes()).hexdigest() for path in inputs
+        },
+    }
+
+
+def audit(project):
+    return audit_supplemental(project, audit_baseline(project))
 
 def main():
     project = Path(__file__).resolve().parents[2]

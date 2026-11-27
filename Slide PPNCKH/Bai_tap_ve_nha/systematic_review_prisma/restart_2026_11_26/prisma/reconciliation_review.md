@@ -1,5 +1,7 @@
 # Step 13 — PRISMA 2020 reconciliation of the HK261 restart
 
+This review records the 25-study baseline. See the [active PRISMA reconciliation](active_reconciliation_review.md) for the supplemental checkpoint.
+
 The data unit changes after title/abstract screening. The [count artifact](prisma_counts.json) anchors each transition to exact raw record IDs, screening or report IDs, or study IDs. Its normalized raw-row locations are 1-based data rows, excluding CSV headers. Inputs are the restart's locked search dataset, decisions and appraisal artifacts. No old 46-report dataset was imported.
 
 | Transition | Equation | Evidence |

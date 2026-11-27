@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 import unittest
 
-from reconcile import audit, index, split
+from reconcile import audit, audit_baseline, index, split
 
 
 class TestReconciliation(unittest.TestCase):
@@ -17,7 +17,7 @@ class TestReconciliation(unittest.TestCase):
 
     def test_restart_ledger_and_checklist(self):
         folder = Path(__file__).resolve().parent
-        result = audit(folder.parents[1])
+        result = audit_baseline(folder.parents[1])
         self.assertEqual(set(result["arithmetic_differences"].values()), {0})
         self.assertEqual(result["counts"]["included_reports"], 25)
         self.assertEqual(result["counts"]["included_studies"], 25)
@@ -33,6 +33,28 @@ class TestReconciliation(unittest.TestCase):
             self.assertTrue(all(value.strip() for value in cols))
             for target in re.findall(r"\]\((?!https?://)([^)#]+)", cols[3]):
                 self.assertTrue((folder / target).is_file(), target)
+
+    def test_active_ledger_accounts_for_every_sought_report(self):
+        project = Path(__file__).resolve().parents[2]
+        result = audit(project)
+        self.assertEqual(set(result["arithmetic_differences"].values()), {0})
+        self.assertEqual(result["supplemental_retrieval"], {
+            "original_missing": 93, "recovered": 92, "unretrieved": 1
+        })
+        self.assertEqual(result["report_ids_by_retrieval_decision"]["NOT_RETRIEVED"], ["R0116"])
+        self.assertEqual(result["awaiting_classification_codes"], {
+            "R0081": "E7", "R0082": "E7", "R0132": "E2|E3"
+        })
+        counts = result["counts"]
+        self.assertEqual(
+            tuple(counts[key] for key in ("reports_assessed", "reports_excluded", "included_reports", "included_studies")),
+            (136, 87, 46, 46)
+        )
+        decision_sets = [set(ids) for ids in result["report_ids_by_fulltext_decision"].values()]
+        assessed = set(result["report_ids_by_retrieval_decision"]["RETRIEVED_PDF"])
+        self.assertEqual(set.union(*decision_sets), assessed)
+        self.assertEqual(sum(map(len, decision_sets)), len(assessed))
+        self.assertEqual(sum(map(len, result["fulltext_exclusions_by_primary_reason"].values())), 87)
 
 
 if __name__ == "__main__":

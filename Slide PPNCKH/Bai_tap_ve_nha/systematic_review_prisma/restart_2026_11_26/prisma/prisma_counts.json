@@ -6,24 +6,21 @@
     "sought_minus_unretrieved_and_assessed": 0
   },
   "awaiting_classification_codes": {
-    "R0075": "E5",
     "R0081": "E7",
-    "R0092": "E5",
-    "R0110": "E5",
-    "R0118": "E5",
-    "R0137": "E5"
+    "R0082": "E7",
+    "R0132": "E2|E3"
   },
   "counts": {
     "duplicate_records_removed": 228,
-    "included_reports": 25,
-    "included_studies": 25,
+    "included_reports": 46,
+    "included_studies": 46,
     "raw_records": 693,
     "records_excluded": 328,
     "records_screened": 465,
-    "reports_assessed": 44,
-    "reports_awaiting_classification": 6,
-    "reports_excluded": 13,
-    "reports_not_retrieved": 93,
+    "reports_assessed": 136,
+    "reports_awaiting_classification": 3,
+    "reports_excluded": 87,
+    "reports_not_retrieved": 1,
     "reports_sought": 137
   },
   "dataset_id": "hk261-restart-2026-11-26-v1",
@@ -1654,27 +1651,103 @@
   },
   "fulltext_exclusions_by_primary_reason": {
     "E1": [
+      "R0115",
       "R0117",
+      "R0126",
+      "R0128",
+      "R0142",
       "R0218",
+      "R0235",
       "R0241",
-      "R0262"
+      "R0242",
+      "R0262",
+      "R0266",
+      "R0281"
     ],
     "E2": [
       "R0139",
+      "R0144",
+      "R0231",
+      "R0232",
       "R0233",
-      "R0445"
+      "R0238",
+      "R0244",
+      "R0245",
+      "R0246",
+      "R0249",
+      "R0251",
+      "R0255",
+      "R0257",
+      "R0260",
+      "R0269",
+      "R0299",
+      "R0309",
+      "R0317",
+      "R0321",
+      "R0324",
+      "R0351",
+      "R0367",
+      "R0384",
+      "R0400",
+      "R0402",
+      "R0409",
+      "R0432",
+      "R0445",
+      "R0453"
     ],
     "E3": [
+      "R0023",
+      "R0024",
+      "R0027",
+      "R0028",
       "R0047",
+      "R0052",
+      "R0056",
       "R0061",
+      "R0070",
+      "R0091",
+      "R0096",
+      "R0099",
+      "R0105",
       "R0108",
-      "R0288"
+      "R0122",
+      "R0130",
+      "R0148",
+      "R0157",
+      "R0170",
+      "R0220",
+      "R0221",
+      "R0228",
+      "R0229",
+      "R0230",
+      "R0234",
+      "R0239",
+      "R0240",
+      "R0248",
+      "R0253",
+      "R0259",
+      "R0261",
+      "R0271",
+      "R0272",
+      "R0288",
+      "R0298",
+      "R0302",
+      "R0318",
+      "R0373",
+      "R0438"
+    ],
+    "E4": [
+      "R0007"
     ],
     "E6": [
       "R0138"
     ],
     "E7": [
-      "R0111"
+      "R0111",
+      "R0225",
+      "R0294",
+      "R0308",
+      "R0465"
     ]
   },
   "input_sha256_relative_to_restart": {
@@ -1699,111 +1772,7 @@
   },
   "not_retrieved_by_reason": {
     "NO_VERIFIED_PDF_FROM_CHECKED_ROUTES": [
-      "R0064",
-      "R0091",
-      "R0113",
-      "R0116",
-      "R0130",
-      "R0132"
-    ],
-    "PDF_FAILED_IDENTITY_OR_READABILITY": [
-      "R0144"
-    ],
-    "PDF_REPORT_VERSION_UNVERIFIED": [
-      "R0126",
-      "R0302",
-      "R0384"
-    ],
-    "PREPRINT_ONLY_TARGET_VERSION_UNVERIFIED": [
-      "R0077",
-      "R0082",
-      "R0170",
-      "R0225",
-      "R0235",
-      "R0308"
-    ],
-    "PUBLISHER_ANTI_BOT_CHALLENGE": [
-      "R0058",
-      "R0070",
-      "R0096",
-      "R0099",
-      "R0122",
-      "R0142",
-      "R0145",
-      "R0148",
-      "R0157",
-      "R0220",
-      "R0221",
-      "R0223",
-      "R0228",
-      "R0229",
-      "R0230",
-      "R0231",
-      "R0232",
-      "R0234",
-      "R0238",
-      "R0239",
-      "R0240",
-      "R0242",
-      "R0244",
-      "R0245",
-      "R0246",
-      "R0249",
-      "R0251",
-      "R0253",
-      "R0255",
-      "R0257",
-      "R0259",
-      "R0260",
-      "R0261",
-      "R0266",
-      "R0269",
-      "R0271",
-      "R0272",
-      "R0281",
-      "R0292",
-      "R0294",
-      "R0298",
-      "R0299",
-      "R0309",
-      "R0318",
-      "R0321",
-      "R0324",
-      "R0351",
-      "R0367",
-      "R0373",
-      "R0400",
-      "R0402",
-      "R0409",
-      "R0432",
-      "R0438",
-      "R0453",
-      "R0465"
-    ],
-    "PUBLISHER_OR_PDF_ACCESS_RESTRICTED": [
-      "R0056"
-    ],
-    "PUBLISHER_OR_PDF_AUTOMATED_ACCESS_UNAVAILABLE": [
-      "R0007",
-      "R0014",
-      "R0023",
-      "R0024",
-      "R0027",
-      "R0028",
-      "R0036",
-      "R0038",
-      "R0043",
-      "R0052",
-      "R0080",
-      "R0090",
-      "R0105",
-      "R0106",
-      "R0107",
-      "R0115",
-      "R0125",
-      "R0128",
-      "R0248",
-      "R0317"
+      "R0116"
     ]
   },
   "raw_file_index": {
@@ -3956,111 +3925,56 @@
   },
   "report_ids_by_fulltext_decision": {
     "AWAITING_CLASSIFICATION": [
-      "R0075",
       "R0081",
-      "R0092",
-      "R0110",
-      "R0118",
-      "R0137"
+      "R0082",
+      "R0132"
     ],
     "EXCLUDE": [
-      "R0047",
-      "R0061",
-      "R0108",
-      "R0111",
-      "R0117",
-      "R0138",
-      "R0139",
-      "R0218",
-      "R0233",
-      "R0241",
-      "R0262",
-      "R0288",
-      "R0445"
-    ],
-    "INCLUDE": [
-      "R0001",
-      "R0002",
-      "R0003",
-      "R0006",
-      "R0009",
-      "R0010",
-      "R0015",
-      "R0019",
-      "R0022",
-      "R0029",
-      "R0044",
-      "R0045",
-      "R0048",
-      "R0054",
-      "R0059",
-      "R0062",
-      "R0063",
-      "R0068",
-      "R0071",
-      "R0073",
-      "R0074",
-      "R0083",
-      "R0089",
-      "R0095",
-      "R0121"
-    ]
-  },
-  "report_ids_by_retrieval_decision": {
-    "NOT_RETRIEVED": [
       "R0007",
-      "R0014",
       "R0023",
       "R0024",
       "R0027",
       "R0028",
-      "R0036",
-      "R0038",
-      "R0043",
+      "R0047",
       "R0052",
       "R0056",
-      "R0058",
-      "R0064",
+      "R0061",
       "R0070",
-      "R0077",
-      "R0080",
-      "R0082",
-      "R0090",
       "R0091",
       "R0096",
       "R0099",
       "R0105",
-      "R0106",
-      "R0107",
-      "R0113",
+      "R0108",
+      "R0111",
       "R0115",
-      "R0116",
+      "R0117",
       "R0122",
-      "R0125",
       "R0126",
       "R0128",
       "R0130",
-      "R0132",
+      "R0138",
+      "R0139",
       "R0142",
       "R0144",
-      "R0145",
       "R0148",
       "R0157",
       "R0170",
+      "R0218",
       "R0220",
       "R0221",
-      "R0223",
       "R0225",
       "R0228",
       "R0229",
       "R0230",
       "R0231",
       "R0232",
+      "R0233",
       "R0234",
       "R0235",
       "R0238",
       "R0239",
       "R0240",
+      "R0241",
       "R0242",
       "R0244",
       "R0245",
@@ -4074,11 +3988,203 @@
       "R0259",
       "R0260",
       "R0261",
+      "R0262",
       "R0266",
       "R0269",
       "R0271",
       "R0272",
       "R0281",
+      "R0288",
+      "R0294",
+      "R0298",
+      "R0299",
+      "R0302",
+      "R0308",
+      "R0309",
+      "R0317",
+      "R0318",
+      "R0321",
+      "R0324",
+      "R0351",
+      "R0367",
+      "R0373",
+      "R0384",
+      "R0400",
+      "R0402",
+      "R0409",
+      "R0432",
+      "R0438",
+      "R0445",
+      "R0453",
+      "R0465"
+    ],
+    "INCLUDE": [
+      "R0001",
+      "R0002",
+      "R0003",
+      "R0006",
+      "R0009",
+      "R0010",
+      "R0014",
+      "R0015",
+      "R0019",
+      "R0022",
+      "R0029",
+      "R0036",
+      "R0038",
+      "R0043",
+      "R0044",
+      "R0045",
+      "R0048",
+      "R0054",
+      "R0058",
+      "R0059",
+      "R0062",
+      "R0063",
+      "R0064",
+      "R0068",
+      "R0071",
+      "R0073",
+      "R0074",
+      "R0075",
+      "R0077",
+      "R0080",
+      "R0083",
+      "R0089",
+      "R0090",
+      "R0092",
+      "R0095",
+      "R0106",
+      "R0107",
+      "R0110",
+      "R0113",
+      "R0118",
+      "R0121",
+      "R0125",
+      "R0137",
+      "R0145",
+      "R0223",
+      "R0292"
+    ]
+  },
+  "report_ids_by_retrieval_decision": {
+    "NOT_RETRIEVED": [
+      "R0116"
+    ],
+    "RETRIEVED_PDF": [
+      "R0001",
+      "R0002",
+      "R0003",
+      "R0006",
+      "R0007",
+      "R0009",
+      "R0010",
+      "R0014",
+      "R0015",
+      "R0019",
+      "R0022",
+      "R0023",
+      "R0024",
+      "R0027",
+      "R0028",
+      "R0029",
+      "R0036",
+      "R0038",
+      "R0043",
+      "R0044",
+      "R0045",
+      "R0047",
+      "R0048",
+      "R0052",
+      "R0054",
+      "R0056",
+      "R0058",
+      "R0059",
+      "R0061",
+      "R0062",
+      "R0063",
+      "R0064",
+      "R0068",
+      "R0070",
+      "R0071",
+      "R0073",
+      "R0074",
+      "R0075",
+      "R0077",
+      "R0080",
+      "R0081",
+      "R0082",
+      "R0083",
+      "R0089",
+      "R0090",
+      "R0091",
+      "R0092",
+      "R0095",
+      "R0096",
+      "R0099",
+      "R0105",
+      "R0106",
+      "R0107",
+      "R0108",
+      "R0110",
+      "R0111",
+      "R0113",
+      "R0115",
+      "R0117",
+      "R0118",
+      "R0121",
+      "R0122",
+      "R0125",
+      "R0126",
+      "R0128",
+      "R0130",
+      "R0132",
+      "R0137",
+      "R0138",
+      "R0139",
+      "R0142",
+      "R0144",
+      "R0145",
+      "R0148",
+      "R0157",
+      "R0170",
+      "R0218",
+      "R0220",
+      "R0221",
+      "R0223",
+      "R0225",
+      "R0228",
+      "R0229",
+      "R0230",
+      "R0231",
+      "R0232",
+      "R0233",
+      "R0234",
+      "R0235",
+      "R0238",
+      "R0239",
+      "R0240",
+      "R0241",
+      "R0242",
+      "R0244",
+      "R0245",
+      "R0246",
+      "R0248",
+      "R0249",
+      "R0251",
+      "R0253",
+      "R0255",
+      "R0257",
+      "R0259",
+      "R0260",
+      "R0261",
+      "R0262",
+      "R0266",
+      "R0269",
+      "R0271",
+      "R0272",
+      "R0281",
+      "R0288",
       "R0292",
       "R0294",
       "R0298",
@@ -4099,64 +4205,18 @@
       "R0409",
       "R0432",
       "R0438",
+      "R0445",
       "R0453",
       "R0465"
-    ],
-    "RETRIEVED_PDF": [
-      "R0001",
-      "R0002",
-      "R0003",
-      "R0006",
-      "R0009",
-      "R0010",
-      "R0015",
-      "R0019",
-      "R0022",
-      "R0029",
-      "R0044",
-      "R0045",
-      "R0047",
-      "R0048",
-      "R0054",
-      "R0059",
-      "R0061",
-      "R0062",
-      "R0063",
-      "R0068",
-      "R0071",
-      "R0073",
-      "R0074",
-      "R0075",
-      "R0081",
-      "R0083",
-      "R0089",
-      "R0092",
-      "R0095",
-      "R0108",
-      "R0110",
-      "R0111",
-      "R0117",
-      "R0118",
-      "R0121",
-      "R0137",
-      "R0138",
-      "R0139",
-      "R0218",
-      "R0233",
-      "R0241",
-      "R0262",
-      "R0288",
-      "R0445"
     ]
   },
   "retrieval_counts_by_title_decision": {
     "RETRIEVE_FULL_TEXT": {
-      "NOT_RETRIEVED": 14,
-      "RETRIEVED_PDF": 30
+      "RETRIEVED_PDF": 44
     },
     "UNCLEAR": {
-      "NOT_RETRIEVED": 79,
-      "RETRIEVED_PDF": 14
+      "NOT_RETRIEVED": 1,
+      "RETRIEVED_PDF": 92
     }
   },
   "screening_ids_by_title_abstract_decision": {
@@ -4707,72 +4767,238 @@
     ],
     "S025": [
       "R0121"
+    ],
+    "S026": [
+      "R0014"
+    ],
+    "S027": [
+      "R0036"
+    ],
+    "S028": [
+      "R0038"
+    ],
+    "S029": [
+      "R0043"
+    ],
+    "S030": [
+      "R0058"
+    ],
+    "S031": [
+      "R0064"
+    ],
+    "S032": [
+      "R0075"
+    ],
+    "S033": [
+      "R0077"
+    ],
+    "S034": [
+      "R0080"
+    ],
+    "S035": [
+      "R0090"
+    ],
+    "S036": [
+      "R0092"
+    ],
+    "S037": [
+      "R0106"
+    ],
+    "S038": [
+      "R0107"
+    ],
+    "S039": [
+      "R0110"
+    ],
+    "S040": [
+      "R0113"
+    ],
+    "S041": [
+      "R0118"
+    ],
+    "S042": [
+      "R0125"
+    ],
+    "S043": [
+      "R0137"
+    ],
+    "S044": [
+      "R0145"
+    ],
+    "S045": [
+      "R0223"
+    ],
+    "S046": [
+      "R0292"
     ]
   },
+  "supplemental_input_sha256_relative_to_project": {
+    "prisma_evidence/evidence_by_id.csv": "375c3b8d6d4a1d2465bfbd53359da2a68d3d0d17dd5a19b8f93c1a63bbb82aa9",
+    "restart_2026_11_26/appraisal/active_appraisal_table.csv": "e3bec6ad43ca4b89b2812ea6ab1f74f70b07c5538e00e8d9b25cacc98dcff795",
+    "restart_2026_11_26/appraisal/active_p09_appraisal_lock.json": "3f1c458ec32a0565914abba011114b3a97b14db95f8541af1d929560c9f2312f",
+    "restart_2026_11_26/extraction/active_p08_extraction_lock.json": "1cef72e2eed42751458485988f6503dba7801f6b6b095f2f5914b9a9d0996d82",
+    "restart_2026_11_26/fulltext_retrieval/missing_pdf.csv": "d8df3e6e5a7bfe49dbeabd2c8a5f3fe5e109f0cee6fb94dbbafb3b83cb9d66bc",
+    "restart_2026_11_26/fulltext_screening/fulltext_screening.csv": "3a51798ba0454a47e6e5c1b168afd6f7a529ad24dc9394b3e6cb7c30921aea8a",
+    "restart_2026_11_26/retrieval_round_01/round_01_evidence.json": "2f9e649b9db1b05f30c48ab89db42afafbb56ae004b1bccfd4ed620dbcafb118",
+    "restart_2026_11_26/study_linkage/active_pair_evidence.csv": "1ce001ee51fbe3796b2f875e8c61da01d9d47a4f830735b4f116e0dea7bd0e7c",
+    "restart_2026_11_26/study_linkage/active_report_study_map.csv": "e4981e40de3bddfe24689ac974316fc00de81a912654db58694d11957a72a097",
+    "restart_2026_11_26/supplemental_screening/batch_01_accepted.json": "c1949ec48db178cc98256569626f7110772846ec3012bbe581dcec9221f51073",
+    "restart_2026_11_26/supplemental_screening/batch_02_accepted.json": "8fa1981732242433adfd9917d1937f45053459f1f13cf6ad6eef8f40fa40cfbe",
+    "restart_2026_11_26/supplemental_screening/batch_03_accepted.json": "5e3967415892d61180efcea36ce75942a99d72e9fe096652f59b3b49dc623a20",
+    "restart_2026_11_26/supplemental_screening/batch_04_accepted.json": "015dcb9b65ea834313930cc9341737ae12c04f496a527b2c4a1b23c94702eeec",
+    "restart_2026_11_26/supplemental_screening/batch_05_accepted.json": "abeaaf95a3678d8304353b357a13f4cd821b0e2405a8c0852b05b5f8b5716e63",
+    "restart_2026_11_26/supplemental_screening/batch_06_accepted.json": "9fa51090c37a2a9bbc8b63c02c58deab901ff526d6baccd1ce76b2069c48c55a",
+    "restart_2026_11_26/supplemental_screening/batch_07_accepted.json": "bf5f54115f1f4369e1d5f85db1073a6d3457df8cbc4216a44c9d97fbb03364a2",
+    "restart_2026_11_26/supplemental_screening/batch_08_accepted.json": "bc5c489b2adb665cb4ea2da6ac384439e3f141995e8f08bf8da1dc1237405443",
+    "restart_2026_11_26/supplemental_screening/manifest.json": "8dcaac4ec14ad89d811446bfac9e02b32d9c23c5d94052e5eb249dff164274dd",
+    "restart_2026_11_26/supplemental_screening/prior_awaiting_recheck.json": "0e642fe552dbe12fc778104d91b6ea5c114ab30a4de016b1f3ceb9c68e9d6a89",
+    "restart_2026_11_26/supplemental_screening/screening_decisions.csv": "b37fbccf1bc6a6357ebf23476f90602f2a0439eae1bec15ef7ac62c0e0c4ad10",
+    "restart_2026_11_26/supplemental_screening/supplemental_intake.csv": "9b6d277b625ebe435aaec7dcef7c6d036f6de09710ddd0217bd87e39e38e65e5"
+  },
+  "supplemental_retrieval": {
+    "original_missing": 93,
+    "recovered": 92,
+    "unretrieved": 1
+  },
   "tested_version_pairs": {
-    "R0003+R0010": [
+    "R0001/R0092": [
+      "R0001",
+      "R0092",
+      "DISTINCT"
+    ],
+    "R0003/R0010": [
       "R0003",
       "R0010",
       "DISTINCT"
     ],
-    "R0003+R0015": [
+    "R0003/R0014": [
+      "R0003",
+      "R0014",
+      "DISTINCT"
+    ],
+    "R0003/R0015": [
       "R0003",
       "R0015",
       "DISTINCT"
     ],
-    "R0003+R0059": [
+    "R0003/R0059": [
       "R0003",
       "R0059",
       "DISTINCT"
     ],
-    "R0003+R0062": [
+    "R0003/R0062": [
       "R0003",
       "R0062",
       "DISTINCT"
     ],
-    "R0006+R0010": [
+    "R0006/R0010": [
       "R0006",
       "R0010",
       "DISTINCT"
     ],
-    "R0009+R0010": [
+    "R0006/R0014": [
+      "R0006",
+      "R0014",
+      "DISTINCT"
+    ],
+    "R0009/R0010": [
       "R0009",
       "R0010",
       "DISTINCT"
     ],
-    "R0010+R0015": [
+    "R0009/R0014": [
+      "R0009",
+      "R0014",
+      "DISTINCT"
+    ],
+    "R0010/R0014": [
+      "R0010",
+      "R0014",
+      "DISTINCT"
+    ],
+    "R0010/R0015": [
       "R0010",
       "R0015",
       "DISTINCT"
     ],
-    "R0010+R0059": [
+    "R0010/R0059": [
       "R0010",
       "R0059",
       "DISTINCT"
     ],
-    "R0010+R0062": [
+    "R0010/R0062": [
       "R0010",
       "R0062",
       "DISTINCT"
     ],
-    "R0015+R0059": [
+    "R0014/R0015": [
+      "R0014",
+      "R0015",
+      "DISTINCT"
+    ],
+    "R0014/R0059": [
+      "R0014",
+      "R0059",
+      "DISTINCT"
+    ],
+    "R0014/R0062": [
+      "R0014",
+      "R0062",
+      "DISTINCT"
+    ],
+    "R0015/R0059": [
       "R0015",
       "R0059",
       "DISTINCT"
     ],
-    "R0015+R0062": [
+    "R0015/R0062": [
       "R0015",
       "R0062",
       "DISTINCT"
     ],
-    "R0019+R0068": [
+    "R0019/R0068": [
       "R0019",
       "R0068",
       "DISTINCT"
     ],
-    "R0059+R0062": [
+    "R0036/R0048": [
+      "R0036",
+      "R0048",
+      "DISTINCT"
+    ],
+    "R0045/R0137": [
+      "R0045",
+      "R0137",
+      "DISTINCT"
+    ],
+    "R0054/R0106": [
+      "R0054",
+      "R0106",
+      "DISTINCT"
+    ],
+    "R0059/R0062": [
       "R0059",
       "R0062",
+      "DISTINCT"
+    ],
+    "R0074/R0110": [
+      "R0074",
+      "R0110",
+      "DISTINCT"
+    ],
+    "R0075/R0080": [
+      "R0075",
+      "R0080",
+      "DISTINCT"
+    ],
+    "R0083/R0118": [
+      "R0083",
+      "R0118",
+      "DISTINCT"
+    ],
+    "R0145/R0223": [
+      "R0145",
+      "R0223",
       "DISTINCT"
     ]
   },

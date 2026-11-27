@@ -1,5 +1,7 @@
 # PRISMA 2020 reporting checklist — HK261 restart
 
+This checklist applies to the 25-study manuscript revision. Page locators for the expanded corpus are pending its final PDF. See the [active PRISMA reconciliation](active_reconciliation_review.md) for the current study selection.
+
 Reporting references follow [Page et al., BMJ 2021;372:n71](https://doi.org/10.1136/bmj.n71) and the [official detailed checklist](https://www.prisma-statement.org/prisma-2020-checklist). Each row accounts for one numbered item and its lettered subitems. Page numbers refer to the [coursework PDF](../../manuscript/sn_computer_science/main.pdf).
 
 Final coursework audit: **12 reported, 9 partially reported, 4 not performed, and 2 awaiting author confirmation**. These counts describe completeness of reporting against the numbered items. Supplements S1–S3 are bundled separately and introduced on PDF p. 8.

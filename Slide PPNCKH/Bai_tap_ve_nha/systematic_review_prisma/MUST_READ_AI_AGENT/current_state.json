@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T14:35:14+07:00",
+  "updated_at": "2026-11-27T14:36:55+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "supplemental_appraisal_completed",
-    "summary": "Active P09 covers all 46 HK261 included reports and 46 linked studies with 460 decided source-located domains. Formal reconciliation is ready."
+    "status": "supplemental_prisma_reconciled",
+    "summary": "Active PRISMA reconciles 46 studies. Expanded synthesis and the SN Computer Science LaTeX/PDF are pending."
   },
   "task": {
-    "task_id": "restart-supplemental-appraisal",
+    "task_id": "restart-supplemental-prisma",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T13:37:04+07:00",
-    "updated_at": "2026-11-27T14:35:14+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/active_p09_appraisal_lock.json",
-    "decision_id": "restart-supplemental-appraisal-v2",
-    "completed_at": "2026-11-27T14:35:14+07:00"
+    "started_at": "2026-11-27T14:35:33+07:00",
+    "updated_at": "2026-11-27T14:36:55+07:00",
+    "completed_at": "2026-11-27T14:36:55+07:00",
+    "checkpoint_path": "restart_2026_11_26/prisma/active_reconciliation_review.md",
+    "decision_id": "restart-supplemental-prisma-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-prisma-setup",
+    "task_id": "restart-supplemental-synthesis-setup",
     "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Open formal PRISMA reconciliation on a dedicated worktree using accepted screening, linkage, P08 and P09.",
-    "acceptance": "Exhaustive record/report/study accounting with no unexplained discrepancies. Preserve awaiting and not-retrieved states exactly."
+    "action": "Prepare the expanded RQ1–RQ5 synthesis with active P08/P09 and the reconciled PRISMA ledger, then revise the SN Computer Science manuscript.",
+    "acceptance": "Every adopted claim has included-study source evidence and conditions. Keep author approvals and unresolved full texts explicit."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -251,7 +251,8 @@
       "references": 26,
       "distinct_doi_links": 26,
       "checklist_items": 27,
-      "completed_at": "2026-11-27T08:05:39+07:00"
+      "completed_at": "2026-11-27T08:05:39+07:00",
+      "scope": "historical_25_study_revision"
     },
     "final_integrity": {
       "gate": "PASS",
@@ -263,7 +264,8 @@
       "reports": 25,
       "studies": 25,
       "recorded_at": "2026-11-27T08:21:37+07:00",
-      "bundle": "restart_2026_11_26/integrity/HK261-PRISMA-restart-LaTeX-PDF-data.zip"
+      "bundle": "restart_2026_11_26/integrity/HK261-PRISMA-restart-LaTeX-PDF-data.zip",
+      "scope": "historical_25_study_revision"
     },
     "retrieval_round_01": {
       "status": "COMPLETED_PENDING_PRISMA_RECONCILIATION",
@@ -549,6 +551,39 @@
           "reason": "Accessibility snapshot failed: Gemini snapshot failed: Expected one composer"
         }
       ]
+    },
+    "supplemental_prisma": {
+      "status": "ACTIVE_RECONCILIATION_PASS",
+      "started_at": "2026-11-27T14:35:33+07:00",
+      "updated_at": "2026-11-27T14:36:55+07:00",
+      "completed_at": "2026-11-27T14:36:55+07:00",
+      "counts_path": "restart_2026_11_26/prisma/prisma_counts.json",
+      "flow": "restart_2026_11_26/prisma/prisma_flow.pdf",
+      "review": "restart_2026_11_26/prisma/active_reconciliation_review.md",
+      "counts": {
+        "duplicate_records_removed": 228,
+        "included_reports": 46,
+        "included_studies": 46,
+        "raw_records": 693,
+        "records_excluded": 328,
+        "records_screened": 465,
+        "reports_assessed": 136,
+        "reports_awaiting_classification": 3,
+        "reports_excluded": 87,
+        "reports_not_retrieved": 1,
+        "reports_sought": 137
+      },
+      "awaiting_classification": {
+        "R0081": "E7",
+        "R0082": "E7",
+        "R0132": "E2|E3"
+      },
+      "not_retrieved": [
+        "R0116"
+      ],
+      "ledger_sha256": "fb3735667bceea491daacdd22db88b0e9e56a036f3f6b53120897203f530ff12",
+      "flow_sha256": "770e7d8418c14ee36eb583079b41aa6eb9832ff69519bfc28d5f0a8101ad473e",
+      "unexplained_arithmetic_differences": 0
     }
   },
   "blockers": [],
