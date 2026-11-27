@@ -34,6 +34,8 @@ FILES = [
         "synthesis/final_46/mechanisms.csv", "synthesis/final_46/recomputed_counts.json",
         "synthesis/final_46/claim_source_matrix.csv", "synthesis/final_46/rq5_claim_sources.csv", "synthesis/final_46/r0082_evidence.json",
         "synthesis/final_46/r0082_review.md", "synthesis/final_46/reconcile_inputs.py",
+        "synthesis/final_46/scope_sensitivity.json", "synthesis/final_46/r0082_publisher_crosscheck.json",
+        "synthesis/final_46/verify_llhr_publisher.py", "synthesis/final_46/pdfkit_pages.swift",
         "synthesis/final_46/r0082_primary_review.md", "synthesis/final_46/gemini_primary_receipt.json",
         "synthesis/final_46/r0082_correction_review.md", "synthesis/final_46/gemini_correction_receipt.json",
         "synthesis/final_46/r0082_locator_review.md", "synthesis/final_46/gemini_locator_receipt.json",

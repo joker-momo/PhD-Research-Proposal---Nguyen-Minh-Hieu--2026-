@@ -1,0 +1,131 @@
+{
+  "report_id": "R0082",
+  "doi": "10.1109/WCNC55385.2023.10118908",
+  "ieee_pdf_sha256": "7a9a00413539e420d7cf412c2cb71e522311744151dc3a4008c08f2b1415a5ad",
+  "preprint_pdf_sha256": "f3e0dd1ffad3178604921574f7b9ef2fdad34167cbbb792f7e9531ca28f8a775",
+  "physical_pages": 6,
+  "source": "Author-supplied local IEEE WCNC proceedings PDF",
+  "text_parser": "Apple PDFKit",
+  "checks": [
+    {
+      "key": "architecture",
+      "physical_page_in_both_copies": 2,
+      "locator": "§II, Fig. 1",
+      "status": "PASS"
+    },
+    {
+      "key": "workload",
+      "physical_page_in_both_copies": 5,
+      "locator": "§IV",
+      "status": "PASS"
+    },
+    {
+      "key": "partition_assignment",
+      "physical_page_in_both_copies": 5,
+      "locator": "§III.C, Eqs. 10–11",
+      "status": "PASS"
+    },
+    {
+      "key": "optimization",
+      "physical_page_in_both_copies": 3,
+      "locator": "§III, Problem Formulation",
+      "status": "PASS"
+    },
+    {
+      "key": "evaluation",
+      "physical_page_in_both_copies": 5,
+      "locator": "§IV, Figs. 2–3",
+      "status": "PASS"
+    },
+    {
+      "key": "mobility_continuity",
+      "physical_page_in_both_copies": 3,
+      "locator": "§II.B, Eqs. 4–5",
+      "status": "PASS"
+    },
+    {
+      "key": "D01",
+      "physical_page_in_both_copies": 2,
+      "locator": "§II, Fig. 1",
+      "status": "PASS"
+    },
+    {
+      "key": "D02",
+      "physical_page_in_both_copies": 3,
+      "locator": "§II.B, Eqs. 4–5",
+      "status": "PASS"
+    },
+    {
+      "key": "D03",
+      "physical_page_in_both_copies": 5,
+      "locator": "§IV, setup and Fig. 3",
+      "status": "PASS"
+    },
+    {
+      "key": "D04",
+      "physical_page_in_both_copies": 6,
+      "locator": "§IV, Fig. 5",
+      "status": "PASS"
+    },
+    {
+      "key": "D05",
+      "physical_page_in_both_copies": 6,
+      "locator": "§IV, Figs. 4–5",
+      "status": "PASS"
+    },
+    {
+      "key": "D06",
+      "physical_page_in_both_copies": 6,
+      "locator": "§IV, Figs. 4–5",
+      "status": "PASS"
+    },
+    {
+      "key": "D07",
+      "physical_page_in_both_copies": 3,
+      "locator": "§II.B, Eqs. 4–5",
+      "status": "PASS"
+    },
+    {
+      "key": "D08",
+      "physical_page_in_both_copies": 6,
+      "locator": "§V",
+      "status": "PASS"
+    },
+    {
+      "key": "D09",
+      "physical_page_in_both_copies": 6,
+      "locator": "§§I–V, Acknowledgment and References (physical pp. 1–6)",
+      "status": "PASS"
+    },
+    {
+      "key": "D10",
+      "physical_page_in_both_copies": 6,
+      "locator": "§V and Acknowledgment",
+      "status": "PASS"
+    },
+    {
+      "key": "figure_2",
+      "physical_page_in_both_copies": 5,
+      "locator": "§IV",
+      "status": "PASS"
+    },
+    {
+      "key": "figure_3",
+      "physical_page_in_both_copies": 5,
+      "locator": "§IV",
+      "status": "PASS"
+    },
+    {
+      "key": "figure_4",
+      "physical_page_in_both_copies": 6,
+      "locator": "§IV",
+      "status": "PASS"
+    },
+    {
+      "key": "figure_5",
+      "physical_page_in_both_copies": 6,
+      "locator": "§IV",
+      "status": "PASS"
+    }
+  ]
+}

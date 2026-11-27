@@ -85,9 +85,9 @@
     "PLOT_ONLY": 10,
     "VERIFIED_EXACT": 36
   },
-  "layers_physical": 0,
-  "layers_software": 24,
-  "layers_total": 27,
+  "layers_outdoor": 0,
+  "layers_software": 15,
+  "layers_total": 17,
   "matched_reports": 23,
   "outcome_ledger_rows": 105,
   "outcome_rows": {

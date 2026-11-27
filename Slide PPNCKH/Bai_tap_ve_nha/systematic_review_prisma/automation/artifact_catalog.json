@@ -557,6 +557,61 @@
         "synthesis",
         "evidence"
       ]
+    },
+    {
+      "artifact_id": "hk261-independent-human-review-packet",
+      "name": "HK261 independent full-text and extraction review packet",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/build_human_review_packet.py",
+      "purpose": "Generate masked separate blank reviewer forms from final eligibility and source records.",
+      "entrypoint": "python3.11 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/build_human_review_packet.py'",
+      "inputs": [
+        "manuscript/sn_computer_science/human_adjudication_log.csv",
+        "restart_2026_11_26/prisma/prisma_counts.json",
+        "manuscript/sn_computer_science/s4_study_row_sources.csv",
+        "restart_2026_11_26/synthesis/final_46/outcomes.csv",
+        "restart_2026_11_26/synthesis/final_46/appraisal_rationale.csv"
+      ],
+      "outputs": [
+        "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md",
+        "Masked PDFs with optional local materialization"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/build_human_review_packet.py"
+      ],
+      "test_command": "python3.11 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/build_human_review_packet.py'",
+      "status": "active",
+      "tags": [
+        "human-review",
+        "masking",
+        "stratified-sampling",
+        "source-locators"
+      ]
+    },
+    {
+      "artifact_id": "hk261-llhr-publisher-crosscheck",
+      "name": "LLHR IEEE proceedings page-locator cross-check",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/verify_llhr_publisher.py",
+      "purpose": "Check the verified IEEE file and compare the R0082 anchors with the archived preprint.",
+      "entrypoint": "python3.11 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/verify_llhr_publisher.py' <local IEEE PDF>",
+      "inputs": [
+        "restart_2026_11_26/synthesis/final_46/r0082_evidence.json",
+        "restart_2026_11_26/synthesis/final_46/pdfkit_pages.swift",
+        "Local IEEE PDF and archived preprint"
+      ],
+      "outputs": [
+        "restart_2026_11_26/synthesis/final_46/r0082_publisher_crosscheck.json"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/verify_llhr_publisher.py"
+      ],
+      "test_command": "python3.11 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/synthesis/final_46/verify_llhr_publisher.py' <local IEEE PDF>",
+      "status": "active",
+      "tags": [
+        "pdf",
+        "publisher",
+        "evidence",
+        "R0082"
+      ]
     }
   ]
 }

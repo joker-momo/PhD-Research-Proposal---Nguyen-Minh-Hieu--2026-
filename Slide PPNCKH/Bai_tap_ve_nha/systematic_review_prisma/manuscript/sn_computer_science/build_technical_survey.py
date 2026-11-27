@@ -54,7 +54,7 @@ def read_rows(path, delimiter=","):
 
 
 def tex(text):
-    return "".join(ESCAPES.get(char, char) for char in text).replace("/", r"/\allowbreak{}")
+    return "".join(ESCAPES.get(char, char) for char in text).replace("/", r"\allowbreak{}/")
 
 
 def row(*cells):
@@ -103,7 +103,7 @@ def render():
                           str(len(members)) + "}")
 
     def ref(report_id):
-        return r"\cite{" + report_id + "} (" + source[report_id]["citation_year"] + ")"
+        return r"\cite{" + report_id + r"}\newline\mbox{(" + source[report_id]["citation_year"] + ")}"
 
     sorted_rows = sorted(coding, key=lambda r: (
         list(DIMENSIONS["topology"]).index(r["topology"]), source[r["id"]]["citation_year"], r["id"]))
@@ -129,8 +129,8 @@ def render():
     short = {"YES": "Yes", "PARTIAL": "Partial", "NOT_REPORTED": "NR", "NO": "No",
              "NOT_APPLICABLE": "N/A"}
 
-    modality = {"analytical": "Analytical", "sim": "Simulation", "trace": "Trace/profile sim.",
-                "bench": "Bench/emulation", "flight": "Outdoor flight"}
+    modality = {"analytical": "Analytical", "sim": "Simulation", "trace": "Trace or profile sim.",
+                "bench": "Bench or emulation", "flight": "Outdoor flight"}
     evaluation = long_table(
         "Evaluation modality, network and mobility, resilience, and artifact reporting for all "
         "46 studies. Artifact status records the D09 judgment. NR denotes not reported in the accepted evidence.",

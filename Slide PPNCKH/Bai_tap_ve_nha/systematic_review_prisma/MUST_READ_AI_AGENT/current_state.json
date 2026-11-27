@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T18:49:15+07:00",
+  "updated_at": "2026-11-27T19:08:53+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "author_eligibility_and_final_46_comparison_reconciled",
-    "summary": "The final 46-study LaTeX/PDF comparison is built and audited. PRISMA: 46 included, 90 excluded, zero awaiting classification. R0082 replaces R0113 relative to the previous 46-study comparison; R0292 remains included."
+    "status": "editorial_revision_verified_human_work_pending",
+    "summary": "The local 30-page HK261 revision, unified coding and IEEE R0082 cross-check are verified on the 46/90/0 corpus. Independent screening, human extraction verification and declarations remain pending."
   },
   "task": {
-    "task_id": "hk261-synthesis-reconciliation-final-46",
+    "task_id": "hk261-final-46-editorial-revision",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T18:35:09+07:00",
-    "updated_at": "2026-11-27T18:49:15+07:00",
-    "decision_id": "hk261-synthesis-reconciliation-final-46-v2",
-    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/release_review.md",
-    "completed_at": "2026-11-27T18:49:15+07:00"
+    "started_at": "2026-11-27T19:00:35+07:00",
+    "updated_at": "2026-11-27T19:08:53+07:00",
+    "decision_id": "hk261-final-46-editorial-revision-v1",
+    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/editorial_response.md",
+    "completed_at": "2026-11-27T19:08:53+07:00"
   },
   "next_task": {
-    "task_id": "hk261-author-comparison",
+    "task_id": "hk261-independent-human-review",
     "owner": "CODEX_WRITING",
-    "status": "none",
-    "action": "The author can compare the preserved PDFs on the task branch.",
-    "acceptance": "No release action is authorized by this completed comparison task."
+    "status": "blocked",
+    "action": "Two human reviewers independently complete the masked screening forms and source-verification forms; the author confirms reconciled outcomes and declarations.",
+    "acceptance": "Two dated screening forms and a documented reconciliation for 68 reports, with original-page evidence and a manual check of the 46 retained-study extractions."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -839,7 +839,34 @@
         "locator": "37716cab-71cd-4f3a-8434-2b9ac76f1f15",
         "final_locator_gate": "PASS",
         "locator_chat_cleanup": "deleted"
-      }
+      },
+      "superseded_by": "evidence.editorial_revision"
+    },
+    "editorial_revision": {
+      "review": "restart_2026_11_26/synthesis/final_46/editorial_response.md",
+      "pages": 30,
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "c7ab7d765829263d3ccff1368224dd7fb78d3e9b619f097bb505d89b2722deb4",
+      "previous_pdf": "manuscript/sn_computer_science/comparison_pre_editorial.pdf",
+      "previous_pdf_commit": "360d8d2",
+      "primary_coding": "manuscript/sn_computer_science/technical_coding.psv",
+      "prisma_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "r0082_publisher_receipt": "restart_2026_11_26/synthesis/final_46/r0082_publisher_crosscheck.json",
+      "publisher_checks_passed": 20,
+      "scope_sensitivity": "restart_2026_11_26/synthesis/final_46/scope_sensitivity.json",
+      "author_final_decisions": 8,
+      "reports_without_author_confirmation": 128,
+      "independent_pairs": 0,
+      "recorded_human_extraction_checks": 0,
+      "human_review_packet": "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md",
+      "screening_records_per_reviewer": 68,
+      "source_checks_per_reviewer": 887,
+      "package_independent_rebuild": "30/30 rendered pages matched; 16 figures, tables and equations indexed",
+      "completed_at": "2026-11-27T19:08:53+07:00"
     }
   },
   "blockers": [],

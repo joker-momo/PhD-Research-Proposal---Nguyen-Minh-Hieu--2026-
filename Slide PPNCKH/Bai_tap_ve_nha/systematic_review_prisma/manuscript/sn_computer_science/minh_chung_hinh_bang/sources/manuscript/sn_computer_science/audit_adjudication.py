@@ -143,14 +143,14 @@ def render_latex(report):
                       if row["decision"] == "EXCLUDE")
     rows = (
         ("Reports in the S2 log", s2["reports_in_log"]),
-        ("Final human decisions", len(s2["final_human_decisions"])),
+        ("Final decisions confirmed by the author", len(s2["final_human_decisions"])),
         ("Author-confirmed exclusions", final or "None"),
         ("Author-confirmed deferrals", len(s2["author_confirmed_deferrals"])),
         ("Reports without author confirmation", s2["reports_without_author_confirmation"]),
-        ("Reviewer 1 / Reviewer 2 decisions", f"{s2['reviewer1_decisions']} / {s2['reviewer2_decisions']}"),
-        ("Paired human decisions", paired["paired_reports"]),
+        ("Independent reviewer decisions (R1 / R2)", f"{s2['reviewer1_decisions']} / {s2['reviewer2_decisions']}"),
+        ("Paired independent decisions", paired["paired_reports"]),
         ("Observed agreement on pairs", "N/A" if agreement is None else rf"{agreement:.1f}\%"),
-        (r"Cohen's $\kappa$ on pairs", "N/A" if kappa is None else f"{kappa:.3f}"),
+        (r"Cohen's kappa ($\kappa$) on pairs", "N/A" if kappa is None else f"{kappa:.3f}"),
         ("Changes among author-processed reports", f"{processed['changed']} / {processed['total']}"
          if processed["total"] else "N/A"),
         ("Changes among final human decisions", f"{comparison['changed_reports']} / {comparison['compared_reports']}"

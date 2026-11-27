@@ -64,7 +64,7 @@ def render():
     versioned_review = relative(HERE / "r0082_review.md")
     result = {}
 
-    def project_table(original, filename, extra):
+    def project_table(original, filename, extra, coding=None):
         fields, baseline = rows(original)
         if {row["report_id"] for row in baseline} != (eligible - {ADDED}) | {REMOVED}:
             raise ValueError(f"Unexpected starting corpus in {original.name}")
@@ -74,6 +74,10 @@ def render():
             raise ValueError(f"Duplicate or missing report row in {filename}")
         if {row["report_id"]: row["study_id"] for row in final} != study_ids:
             raise ValueError(f"Study identity mismatch in {filename}")
+        if coding is not None:
+            for row in final:
+                code = coding[row["report_id"]]
+                row.update(mechanism=code["unit"], evaluation_setting=code["evaluation"])
         result[filename] = serialize(fields, final)
         return final
 
@@ -97,9 +101,15 @@ def render():
     coverage = project_table(RQ5 / "report_coverage.csv", "report_coverage.csv", [
         dict(delta["coverage"], source_pdf=source, pdf_sha256=digest)
     ])
+    coding_path = PROJECT / "manuscript/sn_computer_science/technical_coding.psv"
+    with coding_path.open(newline="", encoding="utf-8") as stream:
+        codes = list(csv.DictReader(stream, delimiter="|"))
+    coding = {row["id"]: row for row in codes}
+    if len(codes) != len(coding) or coding.keys() != eligible:
+        raise ValueError("Primary coding differs from the final eligible set")
     mechanism = project_table(SYNTHESIS / "desk_reject_evidence_map.csv", "mechanisms.csv", [
         dict(delta["mechanism"], source_pdf=source, accepted_extraction_source=evidence_path)
-    ])
+    ], coding=coding)
     summary = []
     for domain in (f"D{i:02}" for i in range(1, 11)):
         for status in STATUSES:
@@ -134,13 +144,29 @@ def render():
                                                 indent=2) + "\n"
     counts = Counter(row["comparison_status"] for row in outcomes)
     covered = Counter(row["exact_outcome_status"] for row in coverage)
+    def describe(omitted):
+        selected = eligible - set(omitted)
+        records = [row for row in outcomes if row["report_id"] in selected
+                   and row["comparison_status"] in {"matched", "descriptive"}]
+        return dict(studies=len(selected), entries=len(records),
+                    matched_entries=sum(row["comparison_status"] == "matched" for row in records),
+                    studies_with_entries=len({row["report_id"] for row in records}),
+                    coverage=dict(Counter(row["exact_outcome_status"] for row in coverage
+                                          if row["report_id"] in selected)),
+                    partition=dict(Counter(coding[key]["unit"] for key in selected)),
+                    modality=dict(Counter(coding[key]["evaluation"] for key in selected)))
+    alternatives = ((), ("R0145",), ("R0223",), ("R0145", "R0223"))
+    result["scope_sensitivity.json"] = json.dumps(
+        {"basis": "Descriptive recalculation of the frozen extraction, without changing eligibility.",
+         "scenarios": [dict(omitted=keys, **describe(keys)) for keys in alternatives]},
+        indent=2, sort_keys=True) + "\n"
     cells = Counter((row["mechanism"], row["evaluation_setting"]) for row in mechanism)
     metrics = dict(studies=len(eligible), outcome_ledger_rows=len(outcomes), outcome_rows=dict(counts),
                    coverage=dict(covered),
                    matched_reports=len({row["report_id"] for row in outcomes if row["comparison_status"] == "matched"}),
-                   layers_total=sum(num for (code, _), num in cells.items() if code == "layer_or_stage"),
-                   layers_software=cells["layer_or_stage", "software_or_trace"],
-                   layers_physical=cells["layer_or_stage", "reported_physical_multi_uav"],
+                   layers_total=sum(num for (code, _), num in cells.items() if code == "layer"),
+                   layers_software=cells["layer", "sim"] + cells["layer", "trace"],
+                   layers_outdoor=cells["layer", "flight"],
                    appraisal={domain: {row["judgment"]: row["numerator"] for row in summary if row["domain"] == domain}
                               for domain in (f"D{i:02}" for i in range(1, 11))})
     claim_fields, rq5_claims = rows(RQ5 / "claim_source.csv")
@@ -158,7 +184,7 @@ def render():
             row["source_file_or_outcome_key"] = "appraisal_table.csv; appraisal_summary.csv"
     rq5_claims.append(dict(claim_id="RQ5-U10", claim="R0082 contributes plot-only outcomes",
                            source_file_or_outcome_key="R0082 in report_coverage.csv; r0082_evidence.json",
-                           derivation_or_locator="arXiv v1 physical pp. 5–6, §IV, Figs. 2–5; zero inferred values"))
+                           derivation_or_locator="IEEE WCNC and arXiv v1 physical pp. 5–6, §IV, Figs. 2–5; zero inferred values"))
     result["rq5_claim_sources.csv"] = serialize(claim_fields, rq5_claims)
     result["recomputed_counts.json"] = json.dumps(metrics, indent=2, sort_keys=True) + "\n"
     return result

@@ -7,17 +7,13 @@ import json
 from collections import Counter
 from pathlib import Path
 
+from build_technical_survey import DIMENSIONS
+
 HERE = Path(__file__).resolve().parent
 RESTART = HERE.parent.parent / "restart_2026_11_26"
 RQ5 = RESTART / "synthesis/final_46"
-MECHANISMS = {
-    "layer_or_stage": "Layers or stages",
-    "spatial_or_intra_layer": "Spatial or within-layer",
-    "representation_or_state": "Representation or state",
-    "request_or_stream": "Request or stream",
-    "specialized_model_components": "Specialized components",
-}
-SETTINGS = ("software_or_trace", "bench_hil_or_host_emulation", "reported_physical_multi_uav", "analytical")
+MECHANISMS = DIMENSIONS["unit"]
+SETTINGS = DIMENSIONS["evaluation"]
 STATUSES = ("VERIFIED_EXACT", "PLOT_ONLY", "PRINTED_UNRESOLVED")
 
 
@@ -106,16 +102,16 @@ def outcome_tables(verify_pdfs=False):
     ]
     return {
         "editorial_mechanism_setting.tex": table(
-            "settings", "Primary inference mechanism by strongest documented system-level evaluation.",
-            r"Mechanism & Software & Bench & Physical & Analytical & Total",
+            "settings", "Primary inference mechanism by primary evaluation modality.",
+            r"Partition or dispatch unit & Analyt. & Sim. & Trace & Bench & Outdoor & Total",
             settings_rows,
-            "Software includes trace-driven work. Bench includes hardware-in-the-loop and host "
-            "emulation. Physical means a reported multi-UAV system or field prototype. "
-            "Individual outcomes can have narrower measurement boundaries.",
+            "Sim. denotes software evaluation. Trace denotes trace- or profile-backed evaluation. "
+            "Bench includes component measurement, host emulation, and hardware-in-the-loop. "
+            "Outdoor requires a multi-UAV inference evaluation.",
         ),
         "editorial_outcome_coverage.tex": table(
             "coverage", "Coverage of retained numerical outcomes by primary inference mechanism.",
-            r"Mechanism & Studies & Verified & Plot only & Unresolved & Entries",
+            r"Partition or dispatch unit & Studies & Verified & Plot only & Unresolved & Entries",
             coverage_rows,
             "The first four numeric columns count studies. Entries counts matched or descriptive "
             "results. The extraction rule retains explicit results with interpretable conditions.",
@@ -130,7 +126,7 @@ def table(label, caption, heading, records, note):
         r"\begin{table}[tbp]",
         rf"\caption{{{caption}}}\label{{tab:{label}}}",
         r"\centering\small\setlength{\tabcolsep}{4pt}",
-        r"\begin{tabular}{@{}p{.31\linewidth}rrrrr@{}}",
+        r"\begin{tabular}{@{}p{.31\linewidth}" + "r" * len(totals) + "@{}}",
         r"\toprule", heading + r" \\", r"\midrule", body,
         r"\bottomrule", r"\end{tabular}",
         rf"\par\smallskip\raggedright {note}",

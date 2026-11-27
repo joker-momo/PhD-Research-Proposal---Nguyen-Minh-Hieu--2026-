@@ -2,7 +2,7 @@
 
 ## Retained version
 
-The author confirmed R0082 for inclusion as the IEEE WCNC proceedings paper, DOI `10.1109/WCNC55385.2023.10118908`. [Crossref deposited metadata](https://api.crossref.org/works/10.1109/WCNC55385.2023.10118908) corroborates the title, authors, year and venue. The [arXiv v1 identifier](https://arxiv.org/abs/2305.15858v1) is on physical page 1 of the retained six-page original. Its registration records the WCNC DOI. The PDF under `restart_2026_11_26/fulltext_retrieval/pdf/R0082.pdf` is arXiv v1. Its SHA-256, version, field anchors and appraisal judgments are in [r0082_evidence.json](r0082_evidence.json). IEEE publisher-page equivalence beyond the author's confirmation remains unverified.
+The author confirmed R0082 for inclusion as the IEEE WCNC proceedings paper, DOI `10.1109/WCNC55385.2023.10118908`. [Crossref deposited metadata](https://api.crossref.org/works/10.1109/WCNC55385.2023.10118908) corroborates the title, authors, year and venue. The [arXiv v1 identifier](https://arxiv.org/abs/2305.15858v1) is on physical page 1 of the retained six-page original. Its registration records the WCNC DOI. The PDF under `restart_2026_11_26/fulltext_retrieval/pdf/R0082.pdf` is arXiv v1. Its SHA-256, version, field anchors and appraisal judgments are in [r0082_evidence.json](r0082_evidence.json). The author later supplied the local IEEE proceedings PDF. The [publisher cross-check](r0082_publisher_crosscheck.json) records the DOI, file fingerprints and 20 same-page checks (six extraction anchors, ten appraisal anchors, four figure captions). Physical pp. 2–5 cover the system model and optimization, and pp. 5–6 contain the four result plots in both versions. We rendered the IEEE results pages and checked the chart labels and measurement boundaries. No outcome values were inferred from the graphs.
 
 ## Coding and numerical coverage
 
@@ -27,3 +27,7 @@ The [LLHR arXiv record](https://arxiv.org/abs/2305.15858v1) flags text overlap w
 | Disposition | The distinguishable methods and evaluation configurations support retaining two technical evaluations. The relationship does not establish independent replications, and the source files do not document whether any simulation runs or underlying inputs were reused. No R0082 numeric effect was combined with R0019. | |
 
 The [primary review](r0082_primary_review.md) and [first correction review](r0082_correction_review.md) record unsupported or inexact provider material. The [final geometry locator review](r0082_locator_review.md) verified both disputed p. 5 anchors. The release uses the independently checked source fields and appraisal rationale above.
+
+## Reproduce the publisher check
+
+From this directory, run `python3.11 verify_llhr_publisher.py ../../fulltext_retrieval/pdf/R0082_ieee_wcnc_2023.pdf` on macOS. The publisher copy is retained locally under its access conditions. It is referenced by DOI and SHA-256 in Git. Supply the exact author-provided PDF as the argument if using a separate local path. The [PDFKit extractor](pdfkit_pages.swift) reads physical pages counted from one. The receipt describes evidence-locator equivalence for this extraction.

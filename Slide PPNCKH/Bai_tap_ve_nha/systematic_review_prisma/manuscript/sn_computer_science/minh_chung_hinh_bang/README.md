@@ -24,14 +24,14 @@ Tra các nhận định và các chỗ thiếu minh chứng trong [S4](../supple
 | Bảng 6 · Đối chiếu định lượng | [Sổ kết quả](sources/restart_2026_11_26/synthesis/final_46/contrast_evidence.csv), [đính chính R0092](sources/restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json), [bản đồ 9 hàng](ITEM_INDEX.md#numerical-contrast-row-map) và [hàng LaTeX](sources/manuscript/sn_computer_science/main.tex#L260). Giữ số liệu, đơn vị, comparator và độ bất định như đã kiểm chứng. | Bước 3 dàn bảng ở trang 21. |
 | Bảng 7 · Kết quả thẩm định | Tổng hợp 10 tiêu chí và [lý do theo nghiên cứu](sources/restart_2026_11_26/synthesis/final_46/appraisal_rationale.csv). Tỷ lệ Yes là 100 × số Yes / 46, làm tròn một chữ số thập phân. | Bước 2 sinh [hàng LaTeX](sources/manuscript/sn_computer_science/technical_appraisal.tex). Bước 3 dàn bảng ở trang 22. |
 | Bảng 2 · Cơ chế × mức thực nghiệm | Đếm mỗi ID đúng một lần theo hai cột mã hóa trong [dữ liệu phân loại](sources/restart_2026_11_26/synthesis/final_46/mechanisms.csv). | Bước 2 sinh bảng, bước 3 dàn ở trang 7. |
-| Bảng 5 · Độ phủ định lượng | Nối [dữ liệu theo nghiên cứu](sources/restart_2026_11_26/synthesis/final_46/report_coverage.csv) và [sổ kết quả](sources/restart_2026_11_26/synthesis/final_46/outcomes.csv) bằng report ID. Đếm số nghiên cứu theo trạng thái và cộng số mục matched và descriptive theo cơ chế. | Bước 2 sinh bảng, bước 3 dàn ở trang 20. |
-| Bảng 8 · Kiểm toán S2 | [Sổ S2](sources/manuscript/sn_computer_science/human_adjudication_log.csv), [JSON](sources/manuscript/sn_computer_science/audit_summary.json), mã kiểm toán và [phép suy ra trong S4](../supplement_evidence_index.md#s2-audit-derivations). | Bước 2 chạy lại kiểm toán từ sổ S2, dữ liệu sàng lọc nền và PRISMA đã khóa. Bước 3 dùng [LaTeX đã sinh](sources/manuscript/sn_computer_science/adjudication_audit_table.tex) để dàn trang 24. |
+| Bảng 5 · Độ phủ định lượng | Nối [dữ liệu theo nghiên cứu](sources/restart_2026_11_26/synthesis/final_46/report_coverage.csv) và [sổ kết quả](sources/restart_2026_11_26/synthesis/final_46/outcomes.csv) bằng report ID. Đếm số nghiên cứu theo trạng thái và cộng số mục matched và descriptive theo cơ chế. | Bước 2 sinh bảng, bước 3 dàn ở trang 21. |
+| Bảng 8 · Kiểm toán S2 | [Sổ S2](sources/manuscript/sn_computer_science/human_adjudication_log.csv), [JSON](sources/manuscript/sn_computer_science/audit_summary.json), mã kiểm toán và [phép suy ra trong S4](../supplement_evidence_index.md#s2-audit-derivations). | Bước 2 chạy lại kiểm toán từ sổ S2, dữ liệu sàng lọc nền và PRISMA đã khóa. Bước 3 dùng [LaTeX đã sinh](sources/manuscript/sn_computer_science/adjudication_audit_table.tex) để dàn trang 25. |
 | Công thức 1–3 | [LaTeX và phép suy ra](ITEM_INDEX.md#figures-tables-and-equations) cho hàm mục tiêu, độ trễ liên kết và thời gian phục hồi. | Bước 3 dàn công thức ở trang 10 và 23. |
 
 ## Các lệnh tái tạo
 
 Chạy từ thư mục này. Dùng Python 3, pdfLaTeX và Tectonic. Lần đối chiếu dùng
-Python 3.14.5, pdfTeX 1.40.27 (TeX Live 2025) và Tectonic 0.16.9. Tệp PDF
+Python 3.11.15, pdfTeX 1.40.27 (TeX Live 2025) và Tectonic 0.16.9. Tệp PDF
 tạo lại có thể khác metadata. So sánh nội dung trang hoặc ảnh kết xuất.
 
 ```sh

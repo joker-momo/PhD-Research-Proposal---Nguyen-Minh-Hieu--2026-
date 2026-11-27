@@ -8,4 +8,4 @@ RQ5-U06,VGG-16 deadline satisfaction against Comm-Min,R0092-Q06,"R0092 physical 
 RQ5-U07,RDI-LLM and Orion-DP latency on completed missions and all-seed completion,R0110-Q02; R0110-Q03,"R0110 physical p. 13 Table IV, same seeded evaluation, method-specific latency denominators"
 RQ5-U08,One-hop analytical transmission time has a separate measurement boundary,R0121-Q02,R0121 physical p. 7 Table 3
 RQ5-U09,Artifact availability unreported for 40/46; configuration reproducibility partial for 42/46,appraisal_table.csv; appraisal_summary.csv,Existing engineering appraisal of 46 studies
-RQ5-U10,R0082 contributes plot-only outcomes,R0082 in report_coverage.csv; r0082_evidence.json,"arXiv v1 physical pp. 5–6, §IV, Figs. 2–5; zero inferred values"
+RQ5-U10,R0082 contributes plot-only outcomes,R0082 in report_coverage.csv; r0082_evidence.json,"IEEE WCNC and arXiv v1 physical pp. 5–6, §IV, Figs. 2–5; zero inferred values"
