@@ -1,0 +1,5347 @@
+{
+  "arithmetic_differences": {
+    "assessed_minus_excluded_pending_and_included": 0,
+    "identified_minus_duplicates_and_screened": 0,
+    "screened_minus_excluded_and_sought": 0,
+    "sought_minus_unretrieved_and_assessed": 0
+  },
+  "awaiting_classification_codes": {
+    "R0081": "E7",
+    "R0082": "E7",
+    "R0132": "E2|E3"
+  },
+  "counts": {
+    "duplicate_records_removed": 228,
+    "included_reports": 46,
+    "included_studies": 46,
+    "raw_records": 693,
+    "records_excluded": 328,
+    "records_screened": 465,
+    "reports_assessed": 136,
+    "reports_awaiting_classification": 3,
+    "reports_excluded": 87,
+    "reports_not_retrieved": 1,
+    "reports_sought": 137
+  },
+  "dataset_id": "hk261-restart-2026-11-26-v1",
+  "dedup_groups": {
+    "R0001": [
+      "IEEE-COMP:0001",
+      "IEEE-HR:0001",
+      "OPENALEX-COMP:0003",
+      "OPENALEX-HR:0007",
+      "SCOPUS-COMP:0006",
+      "SCOPUS-HR:0004"
+    ],
+    "R0002": [
+      "IEEE-HR:0002",
+      "OPENALEX-HR:0023",
+      "SCOPUS-HR:0054"
+    ],
+    "R0003": [
+      "IEEE-HR:0003",
+      "OPENALEX-HR:0008",
+      "SCOPUS-HR:0048"
+    ],
+    "R0004": [
+      "IEEE-HR:0004",
+      "OPENALEX-HR:0005",
+      "SCOPUS-HR:0065"
+    ],
+    "R0005": [
+      "IEEE-HR:0005",
+      "SCOPUS-HR:0009"
+    ],
+    "R0006": [
+      "IEEE-COMP:0013",
+      "IEEE-HR:0006",
+      "OPENALEX-COMP:0024",
+      "OPENALEX-HR:0035",
+      "SCOPUS-COMP:0028",
+      "SCOPUS-HR:0069"
+    ],
+    "R0007": [
+      "IEEE-HR:0007",
+      "OPENALEX-HR:0040",
+      "SCOPUS-HR:0044"
+    ],
+    "R0008": [
+      "IEEE-HR:0008",
+      "OPENALEX-HR:0009",
+      "SCOPUS-HR:0036"
+    ],
+    "R0009": [
+      "IEEE-COMP:0005",
+      "IEEE-HR:0009",
+      "OPENALEX-COMP:0023",
+      "OPENALEX-HR:0048",
+      "SCOPUS-COMP:0011",
+      "SCOPUS-HR:0006"
+    ],
+    "R0010": [
+      "IEEE-HR:0010",
+      "OPENALEX-HR:0034",
+      "SCOPUS-HR:0031"
+    ],
+    "R0011": [
+      "IEEE-HR:0011",
+      "OPENALEX-HR:0031",
+      "SCOPUS-HR:0001"
+    ],
+    "R0012": [
+      "IEEE-HR:0012",
+      "OPENALEX-HR:0024",
+      "SCOPUS-HR:0071"
+    ],
+    "R0013": [
+      "IEEE-HR:0013"
+    ],
+    "R0014": [
+      "IEEE-COMP:0009",
+      "IEEE-HR:0014",
+      "OPENALEX-COMP:0019",
+      "SCOPUS-COMP:0019",
+      "SCOPUS-HR:0059"
+    ],
+    "R0015": [
+      "IEEE-COMP:0008",
+      "IEEE-HR:0015",
+      "OPENALEX-COMP:0005",
+      "SCOPUS-COMP:0031",
+      "SCOPUS-HR:0074"
+    ],
+    "R0016": [
+      "IEEE-HR:0016",
+      "SCOPUS-HR:0019"
+    ],
+    "R0017": [
+      "IEEE-HR:0017",
+      "SCOPUS-HR:0050"
+    ],
+    "R0018": [
+      "IEEE-HR:0018",
+      "SCOPUS-HR:0040"
+    ],
+    "R0019": [
+      "IEEE-HR:0019",
+      "OPENALEX-HR:0002",
+      "SCOPUS-HR:0057"
+    ],
+    "R0020": [
+      "IEEE-HR:0020",
+      "OPENALEX-HR:0004",
+      "SCOPUS-HR:0012"
+    ],
+    "R0021": [
+      "IEEE-HR:0021",
+      "OPENALEX-HR:0030",
+      "SCOPUS-HR:0033"
+    ],
+    "R0022": [
+      "IEEE-COMP:0007",
+      "IEEE-HR:0022",
+      "OPENALEX-COMP:0006",
+      "OPENALEX-HR:0043",
+      "SCOPUS-COMP:0015",
+      "SCOPUS-HR:0052"
+    ],
+    "R0023": [
+      "IEEE-HR:0023",
+      "OPENALEX-HR:0050",
+      "SCOPUS-HR:0010"
+    ],
+    "R0024": [
+      "IEEE-HR:0024",
+      "OPENALEX-HR:0041",
+      "SCOPUS-HR:0015"
+    ],
+    "R0025": [
+      "IEEE-HR:0025",
+      "SCOPUS-HR:0029"
+    ],
+    "R0026": [
+      "IEEE-HR:0026",
+      "OPENALEX-HR:0061",
+      "SCOPUS-HR:0063"
+    ],
+    "R0027": [
+      "IEEE-HR:0027",
+      "OPENALEX-HR:0042",
+      "SCOPUS-HR:0047"
+    ],
+    "R0028": [
+      "IEEE-HR:0028",
+      "OPENALEX-HR:0071"
+    ],
+    "R0029": [
+      "IEEE-COMP:0004",
+      "IEEE-HR:0029",
+      "OPENALEX-COMP:0004",
+      "OPENALEX-HR:0025",
+      "SCOPUS-COMP:0010",
+      "SCOPUS-HR:0038"
+    ],
+    "R0030": [
+      "IEEE-HR:0030",
+      "SCOPUS-HR:0056"
+    ],
+    "R0031": [
+      "IEEE-HR:0031",
+      "OPENALEX-HR:0027",
+      "SCOPUS-HR:0007"
+    ],
+    "R0032": [
+      "IEEE-HR:0032",
+      "OPENALEX-HR:0072",
+      "SCOPUS-HR:0075"
+    ],
+    "R0033": [
+      "IEEE-HR:0033",
+      "SCOPUS-HR:0035"
+    ],
+    "R0034": [
+      "IEEE-HR:0034",
+      "OPENALEX-HR:0077"
+    ],
+    "R0035": [
+      "IEEE-HR:0035",
+      "OPENALEX-HR:0084",
+      "SCOPUS-HR:0021"
+    ],
+    "R0036": [
+      "IEEE-HR:0036",
+      "SCOPUS-HR:0032"
+    ],
+    "R0037": [
+      "IEEE-HR:0037",
+      "SCOPUS-HR:0045"
+    ],
+    "R0038": [
+      "IEEE-HR:0038",
+      "OPENALEX-HR:0032",
+      "SCOPUS-HR:0076"
+    ],
+    "R0039": [
+      "IEEE-HR:0039",
+      "OPENALEX-HR:0064"
+    ],
+    "R0040": [
+      "IEEE-HR:0040",
+      "OPENALEX-HR:0081",
+      "SCOPUS-HR:0061"
+    ],
+    "R0041": [
+      "IEEE-HR:0041",
+      "OPENALEX-HR:0051",
+      "SCOPUS-HR:0051"
+    ],
+    "R0042": [
+      "IEEE-HR:0042",
+      "OPENALEX-HR:0074",
+      "SCOPUS-HR:0077"
+    ],
+    "R0043": [
+      "IEEE-COMP:0002",
+      "OPENALEX-COMP:0001",
+      "SCOPUS-COMP:0012"
+    ],
+    "R0044": [
+      "IEEE-COMP:0003",
+      "OPENALEX-COMP:0009",
+      "SCOPUS-COMP:0033"
+    ],
+    "R0045": [
+      "IEEE-COMP:0006",
+      "OPENALEX-COMP:0007",
+      "SCOPUS-COMP:0008"
+    ],
+    "R0046": [
+      "IEEE-COMP:0010",
+      "OPENALEX-COMP:0002",
+      "SCOPUS-COMP:0029"
+    ],
+    "R0047": [
+      "IEEE-COMP:0011",
+      "OPENALEX-COMP:0011",
+      "SCOPUS-COMP:0016"
+    ],
+    "R0048": [
+      "IEEE-COMP:0012"
+    ],
+    "R0049": [
+      "IEEE-COMP:0014"
+    ],
+    "R0050": [
+      "IEEE-COMP:0015",
+      "OPENALEX-COMP:0021",
+      "SCOPUS-COMP:0003"
+    ],
+    "R0051": [
+      "IEEE-COMP:0016"
+    ],
+    "R0052": [
+      "IEEE-COMP:0017"
+    ],
+    "R0053": [
+      "IEEE-COMP:0018"
+    ],
+    "R0054": [
+      "IEEE-COMP:0019",
+      "OPENALEX-COMP:0013",
+      "SCOPUS-COMP:0013"
+    ],
+    "R0055": [
+      "IEEE-COMP:0020",
+      "OPENALEX-COMP:0022",
+      "SCOPUS-COMP:0030"
+    ],
+    "R0056": [
+      "IEEE-COMP:0021",
+      "OPENALEX-COMP:0029",
+      "SCOPUS-COMP:0014"
+    ],
+    "R0057": [
+      "SCOPUS-HR:0002"
+    ],
+    "R0058": [
+      "OPENALEX-HR:0062",
+      "SCOPUS-HR:0003"
+    ],
+    "R0059": [
+      "OPENALEX-HR:0012",
+      "SCOPUS-HR:0005"
+    ],
+    "R0060": [
+      "SCOPUS-HR:0008"
+    ],
+    "R0061": [
+      "OPENALEX-HR:0014",
+      "SCOPUS-HR:0011"
+    ],
+    "R0062": [
+      "OPENALEX-HR:0001",
+      "SCOPUS-HR:0013"
+    ],
+    "R0063": [
+      "OPENALEX-HR:0047",
+      "SCOPUS-HR:0014"
+    ],
+    "R0064": [
+      "OPENALEX-COMP:0025",
+      "OPENALEX-HR:0053",
+      "SCOPUS-COMP:0018",
+      "SCOPUS-HR:0016"
+    ],
+    "R0065": [
+      "OPENALEX-HR:0076",
+      "SCOPUS-HR:0017"
+    ],
+    "R0066": [
+      "SCOPUS-HR:0018"
+    ],
+    "R0067": [
+      "OPENALEX-HR:0052",
+      "SCOPUS-HR:0020"
+    ],
+    "R0068": [
+      "OPENALEX-HR:0020",
+      "SCOPUS-HR:0022"
+    ],
+    "R0069": [
+      "SCOPUS-HR:0023"
+    ],
+    "R0070": [
+      "OPENALEX-HR:0029",
+      "SCOPUS-HR:0024"
+    ],
+    "R0071": [
+      "SCOPUS-COMP:0027",
+      "SCOPUS-HR:0025"
+    ],
+    "R0072": [
+      "SCOPUS-HR:0026"
+    ],
+    "R0073": [
+      "OPENALEX-HR:0060",
+      "SCOPUS-HR:0027"
+    ],
+    "R0074": [
+      "OPENALEX-HR:0045",
+      "SCOPUS-HR:0028"
+    ],
+    "R0075": [
+      "OPENALEX-COMP:0010",
+      "OPENALEX-HR:0022",
+      "SCOPUS-COMP:0001",
+      "SCOPUS-HR:0030"
+    ],
+    "R0076": [
+      "OPENALEX-HR:0079",
+      "SCOPUS-HR:0034"
+    ],
+    "R0077": [
+      "OPENALEX-HR:0003",
+      "SCOPUS-HR:0037"
+    ],
+    "R0078": [
+      "OPENALEX-HR:0058",
+      "SCOPUS-HR:0039"
+    ],
+    "R0079": [
+      "SCOPUS-HR:0041"
+    ],
+    "R0080": [
+      "OPENALEX-HR:0054",
+      "SCOPUS-HR:0042"
+    ],
+    "R0081": [
+      "ACM-HR+COMP:0003",
+      "ACM-HR+COMP:0092",
+      "OPENALEX-HR:0015",
+      "SCOPUS-HR:0043"
+    ],
+    "R0082": [
+      "OPENALEX-HR:0017",
+      "SCOPUS-HR:0046"
+    ],
+    "R0083": [
+      "OPENALEX-HR:0013",
+      "SCOPUS-HR:0049"
+    ],
+    "R0084": [
+      "OPENALEX-HR:0067",
+      "SCOPUS-HR:0053"
+    ],
+    "R0085": [
+      "SCOPUS-HR:0055"
+    ],
+    "R0086": [
+      "SCOPUS-HR:0058"
+    ],
+    "R0087": [
+      "OPENALEX-HR:0057",
+      "SCOPUS-HR:0060"
+    ],
+    "R0088": [
+      "OPENALEX-HR:0028",
+      "SCOPUS-HR:0062"
+    ],
+    "R0089": [
+      "OPENALEX-COMP:0018",
+      "SCOPUS-COMP:0022",
+      "SCOPUS-HR:0064"
+    ],
+    "R0090": [
+      "SCOPUS-HR:0066"
+    ],
+    "R0091": [
+      "OPENALEX-HR:0065",
+      "SCOPUS-HR:0067"
+    ],
+    "R0092": [
+      "OPENALEX-COMP:0015",
+      "OPENALEX-HR:0006",
+      "SCOPUS-COMP:0025",
+      "SCOPUS-HR:0068"
+    ],
+    "R0093": [
+      "OPENALEX-HR:0068",
+      "SCOPUS-HR:0070"
+    ],
+    "R0094": [
+      "SCOPUS-HR:0072"
+    ],
+    "R0095": [
+      "OPENALEX-HR:0011",
+      "SCOPUS-HR:0073"
+    ],
+    "R0096": [
+      "ACM-HR+COMP:0086",
+      "OPENALEX-COMP:0020",
+      "SCOPUS-COMP:0002"
+    ],
+    "R0097": [
+      "SCOPUS-COMP:0004"
+    ],
+    "R0098": [
+      "SCOPUS-COMP:0005"
+    ],
+    "R0099": [
+      "OPENALEX-COMP:0026",
+      "SCOPUS-COMP:0007"
+    ],
+    "R0100": [
+      "OPENALEX-COMP:0027",
+      "SCOPUS-COMP:0009"
+    ],
+    "R0101": [
+      "OPENALEX-COMP:0012",
+      "SCOPUS-COMP:0017"
+    ],
+    "R0102": [
+      "SCOPUS-COMP:0020"
+    ],
+    "R0103": [
+      "SCOPUS-COMP:0021"
+    ],
+    "R0104": [
+      "SCOPUS-COMP:0023"
+    ],
+    "R0105": [
+      "SCOPUS-COMP:0024"
+    ],
+    "R0106": [
+      "SCOPUS-COMP:0026"
+    ],
+    "R0107": [
+      "SCOPUS-COMP:0032"
+    ],
+    "R0108": [
+      "OPENALEX-HR:0010"
+    ],
+    "R0109": [
+      "OPENALEX-HR:0016"
+    ],
+    "R0110": [
+      "OPENALEX-HR:0018"
+    ],
+    "R0111": [
+      "OPENALEX-HR:0019"
+    ],
+    "R0112": [
+      "OPENALEX-HR:0021"
+    ],
+    "R0113": [
+      "OPENALEX-HR:0026"
+    ],
+    "R0114": [
+      "OPENALEX-HR:0033"
+    ],
+    "R0115": [
+      "OPENALEX-HR:0036"
+    ],
+    "R0116": [
+      "OPENALEX-HR:0037"
+    ],
+    "R0117": [
+      "OPENALEX-HR:0038"
+    ],
+    "R0118": [
+      "OPENALEX-COMP:0016",
+      "OPENALEX-HR:0039"
+    ],
+    "R0119": [
+      "OPENALEX-HR:0044"
+    ],
+    "R0120": [
+      "OPENALEX-HR:0046"
+    ],
+    "R0121": [
+      "OPENALEX-COMP:0017",
+      "OPENALEX-HR:0049"
+    ],
+    "R0122": [
+      "OPENALEX-HR:0055"
+    ],
+    "R0123": [
+      "OPENALEX-HR:0056"
+    ],
+    "R0124": [
+      "OPENALEX-HR:0059"
+    ],
+    "R0125": [
+      "OPENALEX-HR:0063"
+    ],
+    "R0126": [
+      "OPENALEX-HR:0066"
+    ],
+    "R0127": [
+      "OPENALEX-HR:0069"
+    ],
+    "R0128": [
+      "OPENALEX-HR:0070"
+    ],
+    "R0129": [
+      "OPENALEX-HR:0073"
+    ],
+    "R0130": [
+      "OPENALEX-HR:0075"
+    ],
+    "R0131": [
+      "OPENALEX-HR:0078"
+    ],
+    "R0132": [
+      "OPENALEX-HR:0080"
+    ],
+    "R0133": [
+      "OPENALEX-HR:0082"
+    ],
+    "R0134": [
+      "OPENALEX-HR:0083"
+    ],
+    "R0135": [
+      "OPENALEX-HR:0085"
+    ],
+    "R0136": [
+      "OPENALEX-COMP:0008"
+    ],
+    "R0137": [
+      "OPENALEX-COMP:0014"
+    ],
+    "R0138": [
+      "OPENALEX-COMP:0028"
+    ],
+    "R0139": [
+      "OPENALEX-COMP:0030"
+    ],
+    "R0140": [
+      "OPENALEX-COMP:0031"
+    ],
+    "R0141": [
+      "ACM-HR+COMP:0001",
+      "ACM-HR+COMP:0089"
+    ],
+    "R0142": [
+      "ACM-HR+COMP:0002"
+    ],
+    "R0143": [
+      "ACM-HR+COMP:0004"
+    ],
+    "R0144": [
+      "ACM-HR+COMP:0005"
+    ],
+    "R0145": [
+      "ACM-HR+COMP:0006",
+      "ACM-HR+COMP:0094"
+    ],
+    "R0146": [
+      "ACM-HR+COMP:0007"
+    ],
+    "R0147": [
+      "ACM-HR+COMP:0008",
+      "ACM-HR+COMP:0155"
+    ],
+    "R0148": [
+      "ACM-HR+COMP:0009"
+    ],
+    "R0149": [
+      "ACM-HR+COMP:0010",
+      "ACM-HR+COMP:0109"
+    ],
+    "R0150": [
+      "ACM-HR+COMP:0011",
+      "ACM-HR+COMP:0111"
+    ],
+    "R0151": [
+      "ACM-HR+COMP:0012"
+    ],
+    "R0152": [
+      "ACM-HR+COMP:0013"
+    ],
+    "R0153": [
+      "ACM-HR+COMP:0014",
+      "ACM-HR+COMP:0136"
+    ],
+    "R0154": [
+      "ACM-HR+COMP:0015",
+      "ACM-HR+COMP:0143"
+    ],
+    "R0155": [
+      "ACM-HR+COMP:0016",
+      "ACM-HR+COMP:0149"
+    ],
+    "R0156": [
+      "ACM-HR+COMP:0017",
+      "ACM-HR+COMP:0125"
+    ],
+    "R0157": [
+      "ACM-HR+COMP:0018",
+      "ACM-HR+COMP:0174"
+    ],
+    "R0158": [
+      "ACM-HR+COMP:0019",
+      "ACM-HR+COMP:0133"
+    ],
+    "R0159": [
+      "ACM-HR+COMP:0020",
+      "ACM-HR+COMP:0159"
+    ],
+    "R0160": [
+      "ACM-HR+COMP:0021",
+      "ACM-HR+COMP:0100"
+    ],
+    "R0161": [
+      "ACM-HR+COMP:0022",
+      "ACM-HR+COMP:0147"
+    ],
+    "R0162": [
+      "ACM-HR+COMP:0023"
+    ],
+    "R0163": [
+      "ACM-HR+COMP:0024",
+      "ACM-HR+COMP:0201"
+    ],
+    "R0164": [
+      "ACM-HR+COMP:0025",
+      "ACM-HR+COMP:0207"
+    ],
+    "R0165": [
+      "ACM-HR+COMP:0026"
+    ],
+    "R0166": [
+      "ACM-HR+COMP:0027",
+      "ACM-HR+COMP:0237"
+    ],
+    "R0167": [
+      "ACM-HR+COMP:0028",
+      "ACM-HR+COMP:0245"
+    ],
+    "R0168": [
+      "ACM-HR+COMP:0029",
+      "ACM-HR+COMP:0221"
+    ],
+    "R0169": [
+      "ACM-HR+COMP:0030",
+      "ACM-HR+COMP:0161"
+    ],
+    "R0170": [
+      "ACM-HR+COMP:0031"
+    ],
+    "R0171": [
+      "ACM-HR+COMP:0032",
+      "ACM-HR+COMP:0293"
+    ],
+    "R0172": [
+      "ACM-HR+COMP:0033",
+      "ACM-HR+COMP:0240"
+    ],
+    "R0173": [
+      "ACM-HR+COMP:0034",
+      "ACM-HR+COMP:0182"
+    ],
+    "R0174": [
+      "ACM-HR+COMP:0035",
+      "ACM-HR+COMP:0206"
+    ],
+    "R0175": [
+      "ACM-HR+COMP:0036",
+      "ACM-HR+COMP:0151"
+    ],
+    "R0176": [
+      "ACM-HR+COMP:0037",
+      "ACM-HR+COMP:0198",
+      "ACM-HR+COMP:0200"
+    ],
+    "R0177": [
+      "ACM-HR+COMP:0038",
+      "ACM-HR+COMP:0168"
+    ],
+    "R0178": [
+      "ACM-HR+COMP:0039",
+      "ACM-HR+COMP:0231"
+    ],
+    "R0179": [
+      "ACM-HR+COMP:0040",
+      "ACM-HR+COMP:0275"
+    ],
+    "R0180": [
+      "ACM-HR+COMP:0041",
+      "ACM-HR+COMP:0192"
+    ],
+    "R0181": [
+      "ACM-HR+COMP:0042",
+      "ACM-HR+COMP:0307"
+    ],
+    "R0182": [
+      "ACM-HR+COMP:0043",
+      "ACM-HR+COMP:0316"
+    ],
+    "R0183": [
+      "ACM-HR+COMP:0044"
+    ],
+    "R0184": [
+      "ACM-HR+COMP:0045",
+      "ACM-HR+COMP:0180"
+    ],
+    "R0185": [
+      "ACM-HR+COMP:0046",
+      "ACM-HR+COMP:0203"
+    ],
+    "R0186": [
+      "ACM-HR+COMP:0047",
+      "ACM-HR+COMP:0175"
+    ],
+    "R0187": [
+      "ACM-HR+COMP:0048",
+      "ACM-HR+COMP:0327"
+    ],
+    "R0188": [
+      "ACM-HR+COMP:0049",
+      "ACM-HR+COMP:0188"
+    ],
+    "R0189": [
+      "ACM-HR+COMP:0050",
+      "ACM-HR+COMP:0170"
+    ],
+    "R0190": [
+      "ACM-HR+COMP:0051",
+      "ACM-HR+COMP:0312"
+    ],
+    "R0191": [
+      "ACM-HR+COMP:0052",
+      "ACM-HR+COMP:0185"
+    ],
+    "R0192": [
+      "ACM-HR+COMP:0053",
+      "ACM-HR+COMP:0225"
+    ],
+    "R0193": [
+      "ACM-HR+COMP:0054",
+      "ACM-HR+COMP:0352"
+    ],
+    "R0194": [
+      "ACM-HR+COMP:0055",
+      "ACM-HR+COMP:0276"
+    ],
+    "R0195": [
+      "ACM-HR+COMP:0056",
+      "ACM-HR+COMP:0353"
+    ],
+    "R0196": [
+      "ACM-HR+COMP:0057",
+      "ACM-HR+COMP:0296"
+    ],
+    "R0197": [
+      "ACM-HR+COMP:0058"
+    ],
+    "R0198": [
+      "ACM-HR+COMP:0059",
+      "ACM-HR+COMP:0340"
+    ],
+    "R0199": [
+      "ACM-HR+COMP:0060",
+      "ACM-HR+COMP:0061",
+      "ACM-HR+COMP:0369"
+    ],
+    "R0200": [
+      "ACM-HR+COMP:0062",
+      "ACM-HR+COMP:0261"
+    ],
+    "R0201": [
+      "ACM-HR+COMP:0063",
+      "ACM-HR+COMP:0227"
+    ],
+    "R0202": [
+      "ACM-HR+COMP:0064",
+      "ACM-HR+COMP:0326"
+    ],
+    "R0203": [
+      "ACM-HR+COMP:0065"
+    ],
+    "R0204": [
+      "ACM-HR+COMP:0066",
+      "ACM-HR+COMP:0184"
+    ],
+    "R0205": [
+      "ACM-HR+COMP:0067",
+      "ACM-HR+COMP:0223"
+    ],
+    "R0206": [
+      "ACM-HR+COMP:0068",
+      "ACM-HR+COMP:0262"
+    ],
+    "R0207": [
+      "ACM-HR+COMP:0069",
+      "ACM-HR+COMP:0338"
+    ],
+    "R0208": [
+      "ACM-HR+COMP:0070",
+      "ACM-HR+COMP:0347"
+    ],
+    "R0209": [
+      "ACM-HR+COMP:0071",
+      "ACM-HR+COMP:0344"
+    ],
+    "R0210": [
+      "ACM-HR+COMP:0072",
+      "ACM-HR+COMP:0252"
+    ],
+    "R0211": [
+      "ACM-HR+COMP:0073",
+      "ACM-HR+COMP:0216"
+    ],
+    "R0212": [
+      "ACM-HR+COMP:0074",
+      "ACM-HR+COMP:0213"
+    ],
+    "R0213": [
+      "ACM-HR+COMP:0075",
+      "ACM-HR+COMP:0374"
+    ],
+    "R0214": [
+      "ACM-HR+COMP:0076",
+      "ACM-HR+COMP:0318",
+      "ACM-HR+COMP:0320"
+    ],
+    "R0215": [
+      "ACM-HR+COMP:0077",
+      "ACM-HR+COMP:0236"
+    ],
+    "R0216": [
+      "ACM-HR+COMP:0078",
+      "ACM-HR+COMP:0365"
+    ],
+    "R0217": [
+      "ACM-HR+COMP:0079",
+      "ACM-HR+COMP:0311"
+    ],
+    "R0218": [
+      "ACM-HR+COMP:0080"
+    ],
+    "R0219": [
+      "ACM-HR+COMP:0081"
+    ],
+    "R0220": [
+      "ACM-HR+COMP:0082"
+    ],
+    "R0221": [
+      "ACM-HR+COMP:0083"
+    ],
+    "R0222": [
+      "ACM-HR+COMP:0084"
+    ],
+    "R0223": [
+      "ACM-HR+COMP:0085"
+    ],
+    "R0224": [
+      "ACM-HR+COMP:0087"
+    ],
+    "R0225": [
+      "ACM-HR+COMP:0088"
+    ],
+    "R0226": [
+      "ACM-HR+COMP:0090"
+    ],
+    "R0227": [
+      "ACM-HR+COMP:0091"
+    ],
+    "R0228": [
+      "ACM-HR+COMP:0093"
+    ],
+    "R0229": [
+      "ACM-HR+COMP:0095"
+    ],
+    "R0230": [
+      "ACM-HR+COMP:0096"
+    ],
+    "R0231": [
+      "ACM-HR+COMP:0097"
+    ],
+    "R0232": [
+      "ACM-HR+COMP:0098"
+    ],
+    "R0233": [
+      "ACM-HR+COMP:0099"
+    ],
+    "R0234": [
+      "ACM-HR+COMP:0101"
+    ],
+    "R0235": [
+      "ACM-HR+COMP:0102"
+    ],
+    "R0236": [
+      "ACM-HR+COMP:0103"
+    ],
+    "R0237": [
+      "ACM-HR+COMP:0104"
+    ],
+    "R0238": [
+      "ACM-HR+COMP:0105"
+    ],
+    "R0239": [
+      "ACM-HR+COMP:0106"
+    ],
+    "R0240": [
+      "ACM-HR+COMP:0107"
+    ],
+    "R0241": [
+      "ACM-HR+COMP:0108"
+    ],
+    "R0242": [
+      "ACM-HR+COMP:0110"
+    ],
+    "R0243": [
+      "ACM-HR+COMP:0112"
+    ],
+    "R0244": [
+      "ACM-HR+COMP:0113"
+    ],
+    "R0245": [
+      "ACM-HR+COMP:0114"
+    ],
+    "R0246": [
+      "ACM-HR+COMP:0115"
+    ],
+    "R0247": [
+      "ACM-HR+COMP:0116"
+    ],
+    "R0248": [
+      "ACM-HR+COMP:0117"
+    ],
+    "R0249": [
+      "ACM-HR+COMP:0118"
+    ],
+    "R0250": [
+      "ACM-HR+COMP:0119"
+    ],
+    "R0251": [
+      "ACM-HR+COMP:0120"
+    ],
+    "R0252": [
+      "ACM-HR+COMP:0121"
+    ],
+    "R0253": [
+      "ACM-HR+COMP:0122"
+    ],
+    "R0254": [
+      "ACM-HR+COMP:0123"
+    ],
+    "R0255": [
+      "ACM-HR+COMP:0124"
+    ],
+    "R0256": [
+      "ACM-HR+COMP:0126"
+    ],
+    "R0257": [
+      "ACM-HR+COMP:0127"
+    ],
+    "R0258": [
+      "ACM-HR+COMP:0128"
+    ],
+    "R0259": [
+      "ACM-HR+COMP:0129"
+    ],
+    "R0260": [
+      "ACM-HR+COMP:0130"
+    ],
+    "R0261": [
+      "ACM-HR+COMP:0131"
+    ],
+    "R0262": [
+      "ACM-HR+COMP:0132"
+    ],
+    "R0263": [
+      "ACM-HR+COMP:0134"
+    ],
+    "R0264": [
+      "ACM-HR+COMP:0135"
+    ],
+    "R0265": [
+      "ACM-HR+COMP:0137"
+    ],
+    "R0266": [
+      "ACM-HR+COMP:0138"
+    ],
+    "R0267": [
+      "ACM-HR+COMP:0139"
+    ],
+    "R0268": [
+      "ACM-HR+COMP:0140"
+    ],
+    "R0269": [
+      "ACM-HR+COMP:0141"
+    ],
+    "R0270": [
+      "ACM-HR+COMP:0142"
+    ],
+    "R0271": [
+      "ACM-HR+COMP:0144"
+    ],
+    "R0272": [
+      "ACM-HR+COMP:0145"
+    ],
+    "R0273": [
+      "ACM-HR+COMP:0146"
+    ],
+    "R0274": [
+      "ACM-HR+COMP:0148"
+    ],
+    "R0275": [
+      "ACM-HR+COMP:0150"
+    ],
+    "R0276": [
+      "ACM-HR+COMP:0152"
+    ],
+    "R0277": [
+      "ACM-HR+COMP:0153"
+    ],
+    "R0278": [
+      "ACM-HR+COMP:0154"
+    ],
+    "R0279": [
+      "ACM-HR+COMP:0156"
+    ],
+    "R0280": [
+      "ACM-HR+COMP:0157"
+    ],
+    "R0281": [
+      "ACM-HR+COMP:0158"
+    ],
+    "R0282": [
+      "ACM-HR+COMP:0160"
+    ],
+    "R0283": [
+      "ACM-HR+COMP:0162"
+    ],
+    "R0284": [
+      "ACM-HR+COMP:0163"
+    ],
+    "R0285": [
+      "ACM-HR+COMP:0164"
+    ],
+    "R0286": [
+      "ACM-HR+COMP:0165"
+    ],
+    "R0287": [
+      "ACM-HR+COMP:0166"
+    ],
+    "R0288": [
+      "ACM-HR+COMP:0167"
+    ],
+    "R0289": [
+      "ACM-HR+COMP:0169"
+    ],
+    "R0290": [
+      "ACM-HR+COMP:0171"
+    ],
+    "R0291": [
+      "ACM-HR+COMP:0172"
+    ],
+    "R0292": [
+      "ACM-HR+COMP:0173"
+    ],
+    "R0293": [
+      "ACM-HR+COMP:0176"
+    ],
+    "R0294": [
+      "ACM-HR+COMP:0177"
+    ],
+    "R0295": [
+      "ACM-HR+COMP:0178"
+    ],
+    "R0296": [
+      "ACM-HR+COMP:0179"
+    ],
+    "R0297": [
+      "ACM-HR+COMP:0181"
+    ],
+    "R0298": [
+      "ACM-HR+COMP:0183"
+    ],
+    "R0299": [
+      "ACM-HR+COMP:0186"
+    ],
+    "R0300": [
+      "ACM-HR+COMP:0187"
+    ],
+    "R0301": [
+      "ACM-HR+COMP:0189"
+    ],
+    "R0302": [
+      "ACM-HR+COMP:0190"
+    ],
+    "R0303": [
+      "ACM-HR+COMP:0191"
+    ],
+    "R0304": [
+      "ACM-HR+COMP:0193"
+    ],
+    "R0305": [
+      "ACM-HR+COMP:0194"
+    ],
+    "R0306": [
+      "ACM-HR+COMP:0195"
+    ],
+    "R0307": [
+      "ACM-HR+COMP:0196"
+    ],
+    "R0308": [
+      "ACM-HR+COMP:0197"
+    ],
+    "R0309": [
+      "ACM-HR+COMP:0199"
+    ],
+    "R0310": [
+      "ACM-HR+COMP:0202"
+    ],
+    "R0311": [
+      "ACM-HR+COMP:0204"
+    ],
+    "R0312": [
+      "ACM-HR+COMP:0205"
+    ],
+    "R0313": [
+      "ACM-HR+COMP:0208"
+    ],
+    "R0314": [
+      "ACM-HR+COMP:0209"
+    ],
+    "R0315": [
+      "ACM-HR+COMP:0210"
+    ],
+    "R0316": [
+      "ACM-HR+COMP:0211"
+    ],
+    "R0317": [
+      "ACM-HR+COMP:0212"
+    ],
+    "R0318": [
+      "ACM-HR+COMP:0214"
+    ],
+    "R0319": [
+      "ACM-HR+COMP:0215"
+    ],
+    "R0320": [
+      "ACM-HR+COMP:0217"
+    ],
+    "R0321": [
+      "ACM-HR+COMP:0218"
+    ],
+    "R0322": [
+      "ACM-HR+COMP:0219",
+      "ACM-HR+COMP:0220"
+    ],
+    "R0323": [
+      "ACM-HR+COMP:0222"
+    ],
+    "R0324": [
+      "ACM-HR+COMP:0224"
+    ],
+    "R0325": [
+      "ACM-HR+COMP:0226"
+    ],
+    "R0326": [
+      "ACM-HR+COMP:0228"
+    ],
+    "R0327": [
+      "ACM-HR+COMP:0229"
+    ],
+    "R0328": [
+      "ACM-HR+COMP:0230"
+    ],
+    "R0329": [
+      "ACM-HR+COMP:0232"
+    ],
+    "R0330": [
+      "ACM-HR+COMP:0233"
+    ],
+    "R0331": [
+      "ACM-HR+COMP:0234"
+    ],
+    "R0332": [
+      "ACM-HR+COMP:0235"
+    ],
+    "R0333": [
+      "ACM-HR+COMP:0238",
+      "ACM-HR+COMP:0241"
+    ],
+    "R0334": [
+      "ACM-HR+COMP:0239"
+    ],
+    "R0335": [
+      "ACM-HR+COMP:0242"
+    ],
+    "R0336": [
+      "ACM-HR+COMP:0243"
+    ],
+    "R0337": [
+      "ACM-HR+COMP:0244"
+    ],
+    "R0338": [
+      "ACM-HR+COMP:0246"
+    ],
+    "R0339": [
+      "ACM-HR+COMP:0247"
+    ],
+    "R0340": [
+      "ACM-HR+COMP:0248"
+    ],
+    "R0341": [
+      "ACM-HR+COMP:0249"
+    ],
+    "R0342": [
+      "ACM-HR+COMP:0250"
+    ],
+    "R0343": [
+      "ACM-HR+COMP:0251"
+    ],
+    "R0344": [
+      "ACM-HR+COMP:0253"
+    ],
+    "R0345": [
+      "ACM-HR+COMP:0254"
+    ],
+    "R0346": [
+      "ACM-HR+COMP:0255"
+    ],
+    "R0347": [
+      "ACM-HR+COMP:0256"
+    ],
+    "R0348": [
+      "ACM-HR+COMP:0257"
+    ],
+    "R0349": [
+      "ACM-HR+COMP:0258"
+    ],
+    "R0350": [
+      "ACM-HR+COMP:0259",
+      "ACM-HR+COMP:0265"
+    ],
+    "R0351": [
+      "ACM-HR+COMP:0260"
+    ],
+    "R0352": [
+      "ACM-HR+COMP:0263"
+    ],
+    "R0353": [
+      "ACM-HR+COMP:0264"
+    ],
+    "R0354": [
+      "ACM-HR+COMP:0266"
+    ],
+    "R0355": [
+      "ACM-HR+COMP:0267"
+    ],
+    "R0356": [
+      "ACM-HR+COMP:0268"
+    ],
+    "R0357": [
+      "ACM-HR+COMP:0269"
+    ],
+    "R0358": [
+      "ACM-HR+COMP:0270"
+    ],
+    "R0359": [
+      "ACM-HR+COMP:0271"
+    ],
+    "R0360": [
+      "ACM-HR+COMP:0272"
+    ],
+    "R0361": [
+      "ACM-HR+COMP:0273"
+    ],
+    "R0362": [
+      "ACM-HR+COMP:0274"
+    ],
+    "R0363": [
+      "ACM-HR+COMP:0277"
+    ],
+    "R0364": [
+      "ACM-HR+COMP:0278",
+      "ACM-HR+COMP:0280"
+    ],
+    "R0365": [
+      "ACM-HR+COMP:0279",
+      "ACM-HR+COMP:0282"
+    ],
+    "R0366": [
+      "ACM-HR+COMP:0281"
+    ],
+    "R0367": [
+      "ACM-HR+COMP:0283"
+    ],
+    "R0368": [
+      "ACM-HR+COMP:0284"
+    ],
+    "R0369": [
+      "ACM-HR+COMP:0285"
+    ],
+    "R0370": [
+      "ACM-HR+COMP:0286"
+    ],
+    "R0371": [
+      "ACM-HR+COMP:0287"
+    ],
+    "R0372": [
+      "ACM-HR+COMP:0288"
+    ],
+    "R0373": [
+      "ACM-HR+COMP:0289"
+    ],
+    "R0374": [
+      "ACM-HR+COMP:0290"
+    ],
+    "R0375": [
+      "ACM-HR+COMP:0291"
+    ],
+    "R0376": [
+      "ACM-HR+COMP:0292"
+    ],
+    "R0377": [
+      "ACM-HR+COMP:0294"
+    ],
+    "R0378": [
+      "ACM-HR+COMP:0295"
+    ],
+    "R0379": [
+      "ACM-HR+COMP:0297",
+      "ACM-HR+COMP:0302"
+    ],
+    "R0380": [
+      "ACM-HR+COMP:0298",
+      "ACM-HR+COMP:0300"
+    ],
+    "R0381": [
+      "ACM-HR+COMP:0299"
+    ],
+    "R0382": [
+      "ACM-HR+COMP:0301"
+    ],
+    "R0383": [
+      "ACM-HR+COMP:0303"
+    ],
+    "R0384": [
+      "ACM-HR+COMP:0304"
+    ],
+    "R0385": [
+      "ACM-HR+COMP:0305"
+    ],
+    "R0386": [
+      "ACM-HR+COMP:0306"
+    ],
+    "R0387": [
+      "ACM-HR+COMP:0308"
+    ],
+    "R0388": [
+      "ACM-HR+COMP:0309"
+    ],
+    "R0389": [
+      "ACM-HR+COMP:0310"
+    ],
+    "R0390": [
+      "ACM-HR+COMP:0313"
+    ],
+    "R0391": [
+      "ACM-HR+COMP:0314"
+    ],
+    "R0392": [
+      "ACM-HR+COMP:0315"
+    ],
+    "R0393": [
+      "ACM-HR+COMP:0317"
+    ],
+    "R0394": [
+      "ACM-HR+COMP:0319"
+    ],
+    "R0395": [
+      "ACM-HR+COMP:0321"
+    ],
+    "R0396": [
+      "ACM-HR+COMP:0322"
+    ],
+    "R0397": [
+      "ACM-HR+COMP:0323"
+    ],
+    "R0398": [
+      "ACM-HR+COMP:0324"
+    ],
+    "R0399": [
+      "ACM-HR+COMP:0325"
+    ],
+    "R0400": [
+      "ACM-HR+COMP:0328"
+    ],
+    "R0401": [
+      "ACM-HR+COMP:0329"
+    ],
+    "R0402": [
+      "ACM-HR+COMP:0330"
+    ],
+    "R0403": [
+      "ACM-HR+COMP:0331"
+    ],
+    "R0404": [
+      "ACM-HR+COMP:0332"
+    ],
+    "R0405": [
+      "ACM-HR+COMP:0333"
+    ],
+    "R0406": [
+      "ACM-HR+COMP:0334"
+    ],
+    "R0407": [
+      "ACM-HR+COMP:0335"
+    ],
+    "R0408": [
+      "ACM-HR+COMP:0336"
+    ],
+    "R0409": [
+      "ACM-HR+COMP:0337"
+    ],
+    "R0410": [
+      "ACM-HR+COMP:0339",
+      "ACM-HR+COMP:0342"
+    ],
+    "R0411": [
+      "ACM-HR+COMP:0341"
+    ],
+    "R0412": [
+      "ACM-HR+COMP:0343"
+    ],
+    "R0413": [
+      "ACM-HR+COMP:0345"
+    ],
+    "R0414": [
+      "ACM-HR+COMP:0346"
+    ],
+    "R0415": [
+      "ACM-HR+COMP:0348"
+    ],
+    "R0416": [
+      "ACM-HR+COMP:0349"
+    ],
+    "R0417": [
+      "ACM-HR+COMP:0350"
+    ],
+    "R0418": [
+      "ACM-HR+COMP:0351"
+    ],
+    "R0419": [
+      "ACM-HR+COMP:0354"
+    ],
+    "R0420": [
+      "ACM-HR+COMP:0355"
+    ],
+    "R0421": [
+      "ACM-HR+COMP:0356"
+    ],
+    "R0422": [
+      "ACM-HR+COMP:0357"
+    ],
+    "R0423": [
+      "ACM-HR+COMP:0358"
+    ],
+    "R0424": [
+      "ACM-HR+COMP:0359"
+    ],
+    "R0425": [
+      "ACM-HR+COMP:0360"
+    ],
+    "R0426": [
+      "ACM-HR+COMP:0361"
+    ],
+    "R0427": [
+      "ACM-HR+COMP:0362"
+    ],
+    "R0428": [
+      "ACM-HR+COMP:0363"
+    ],
+    "R0429": [
+      "ACM-HR+COMP:0364"
+    ],
+    "R0430": [
+      "ACM-HR+COMP:0366"
+    ],
+    "R0431": [
+      "ACM-HR+COMP:0367"
+    ],
+    "R0432": [
+      "ACM-HR+COMP:0368"
+    ],
+    "R0433": [
+      "ACM-HR+COMP:0370"
+    ],
+    "R0434": [
+      "ACM-HR+COMP:0371"
+    ],
+    "R0435": [
+      "ACM-HR+COMP:0372"
+    ],
+    "R0436": [
+      "ACM-HR+COMP:0373"
+    ],
+    "R0437": [
+      "ACM-HR+COMP:0375"
+    ],
+    "R0438": [
+      "ACM-HR+COMP:0376"
+    ],
+    "R0439": [
+      "ACM-HR+COMP:0377"
+    ],
+    "R0440": [
+      "ACM-HR+COMP:0378"
+    ],
+    "R0441": [
+      "ACM-HR+COMP:0379"
+    ],
+    "R0442": [
+      "ACM-HR+COMP:0380"
+    ],
+    "R0443": [
+      "ACM-HR+COMP:0381"
+    ],
+    "R0444": [
+      "ACM-HR+COMP:0382"
+    ],
+    "R0445": [
+      "ACM-HR+COMP:0383"
+    ],
+    "R0446": [
+      "ACM-HR+COMP:0384"
+    ],
+    "R0447": [
+      "ACM-HR+COMP:0385"
+    ],
+    "R0448": [
+      "ACM-HR+COMP:0386"
+    ],
+    "R0449": [
+      "ACM-HR+COMP:0387"
+    ],
+    "R0450": [
+      "ACM-HR+COMP:0388"
+    ],
+    "R0451": [
+      "ACM-HR+COMP:0389"
+    ],
+    "R0452": [
+      "ACM-HR+COMP:0390"
+    ],
+    "R0453": [
+      "ACM-HR+COMP:0391"
+    ],
+    "R0454": [
+      "ACM-HR+COMP:0392"
+    ],
+    "R0455": [
+      "ACM-HR+COMP:0393"
+    ],
+    "R0456": [
+      "ACM-HR+COMP:0394"
+    ],
+    "R0457": [
+      "ACM-HR+COMP:0395"
+    ],
+    "R0458": [
+      "ACM-HR+COMP:0396"
+    ],
+    "R0459": [
+      "ACM-HR+COMP:0397"
+    ],
+    "R0460": [
+      "ACM-HR+COMP:0398"
+    ],
+    "R0461": [
+      "ACM-HR+COMP:0399",
+      "ACM-HR+COMP:0401"
+    ],
+    "R0462": [
+      "ACM-HR+COMP:0400"
+    ],
+    "R0463": [
+      "ACM-HR+COMP:0402"
+    ],
+    "R0464": [
+      "ACM-HR+COMP:0403"
+    ],
+    "R0465": [
+      "ACM-HR+COMP:0404"
+    ]
+  },
+  "fulltext_exclusions_by_primary_reason": {
+    "E1": [
+      "R0115",
+      "R0117",
+      "R0126",
+      "R0128",
+      "R0142",
+      "R0218",
+      "R0235",
+      "R0241",
+      "R0242",
+      "R0262",
+      "R0266",
+      "R0281"
+    ],
+    "E2": [
+      "R0139",
+      "R0144",
+      "R0231",
+      "R0232",
+      "R0233",
+      "R0238",
+      "R0244",
+      "R0245",
+      "R0246",
+      "R0249",
+      "R0251",
+      "R0255",
+      "R0257",
+      "R0260",
+      "R0269",
+      "R0299",
+      "R0309",
+      "R0317",
+      "R0321",
+      "R0324",
+      "R0351",
+      "R0367",
+      "R0384",
+      "R0400",
+      "R0402",
+      "R0409",
+      "R0432",
+      "R0445",
+      "R0453"
+    ],
+    "E3": [
+      "R0023",
+      "R0024",
+      "R0027",
+      "R0028",
+      "R0047",
+      "R0052",
+      "R0056",
+      "R0061",
+      "R0070",
+      "R0091",
+      "R0096",
+      "R0099",
+      "R0105",
+      "R0108",
+      "R0122",
+      "R0130",
+      "R0148",
+      "R0157",
+      "R0170",
+      "R0220",
+      "R0221",
+      "R0228",
+      "R0229",
+      "R0230",
+      "R0234",
+      "R0239",
+      "R0240",
+      "R0248",
+      "R0253",
+      "R0259",
+      "R0261",
+      "R0271",
+      "R0272",
+      "R0288",
+      "R0298",
+      "R0302",
+      "R0318",
+      "R0373",
+      "R0438"
+    ],
+    "E4": [
+      "R0007"
+    ],
+    "E6": [
+      "R0138"
+    ],
+    "E7": [
+      "R0111",
+      "R0225",
+      "R0294",
+      "R0308",
+      "R0465"
+    ]
+  },
+  "input_sha256_relative_to_restart": {
+    "appraisal/appraisal_table.csv": "ff6b070804dd6fbf0c2a60e06e8ef71986d2ac6c8b40b2ea7228b1eca1a101ba",
+    "appraisal/p09_appraisal_lock.json": "a8edf143498f244bcd45472700b7ee4e7a7673c909fbfe4afb96e5197b53e1e9",
+    "dedup_map.csv": "53e7e918d42b0e96e599cff375556323dd8bf1be2f68f412dad547a30dd0e20f",
+    "extraction/p08_extraction_lock.json": "ab54de5cf60ea77d590e58adeeb7ac57b9fdfa66eb9750a53feda680e9a3f8d3",
+    "extraction/p08_extraction_table.json": "455af97503534a0c494429677ffed67d3492d29f0af0ba6ab360f8a2f9b5af9e",
+    "fulltext_retrieval/fulltext_identity_index.csv": "fd6967eb7f9280352ec292a6c882c4f023c056148decae20f20168e55d7c1233",
+    "fulltext_retrieval/missing_pdf.csv": "d8df3e6e5a7bfe49dbeabd2c8a5f3fe5e109f0cee6fb94dbbafb3b83cb9d66bc",
+    "fulltext_retrieval/retrieval_log.csv": "effc4734ab68ae7e305201924091e0b6d576e258869883df636d4e61f5c26e0d",
+    "fulltext_screening/exclusions.csv": "893d91e542345e22b4f2edafdaf037f6a023835775edd2a1d9649b8ce66685d4",
+    "fulltext_screening/fulltext_screening.csv": "3a51798ba0454a47e6e5c1b168afd6f7a529ad24dc9394b3e6cb7c30921aea8a",
+    "records_normalized.csv": "b78129226c82adc3d6eb77b3e8468b0cd22ea8c703cb204a8831bf12ce33660a",
+    "search_dataset_manifest.json": "5b9f879937d293466b77727ea7dcca66bb7b3b1c0a356d5c716f3943b2a52e37",
+    "study_linkage/manifest.json": "21ee46562b1df403774e8ba2bcf6a82a840aad746755aa907f23dcbaa7ebef35",
+    "study_linkage/pair_evidence.csv": "1eb0cdc00d45c984e3abc0ac015023e33737da863b741256cbb644a32e084f69",
+    "study_linkage/report_study_map.csv": "b9d6db6fb62254e95f5640c43043be39964d63a4a7e6d2527f5f65c31489b2c3",
+    "study_linkage/unresolved_families.csv": "493bd011bef29fd62a0f085b00bf8e6cce9d8f8c4b04fc864c20fb3e3c944e44",
+    "title_abstract_screening.csv": "eb3708f299ffa4d1c1fd6a7ea2dd44e707fc225d1221f86c962f175792f8f4e3",
+    "unique_record_queue.csv": "b790ac15e0d15c2b37622cb57b1256a0441f21d43da10f3239371121bc6d81a0"
+  },
+  "not_retrieved_by_reason": {
+    "NO_VERIFIED_PDF_FROM_CHECKED_ROUTES": [
+      "R0116"
+    ]
+  },
+  "raw_file_index": {
+    "sources/normalized/core_searches/acm_manual_capture_2026-11-26/acm_all_records.csv": {
+      "query_id": "ACM-HR+COMP",
+      "record_ids_in_data_row_order": [
+        "ACM-HR+COMP:0001",
+        "ACM-HR+COMP:0002",
+        "ACM-HR+COMP:0003",
+        "ACM-HR+COMP:0004",
+        "ACM-HR+COMP:0005",
+        "ACM-HR+COMP:0006",
+        "ACM-HR+COMP:0007",
+        "ACM-HR+COMP:0008",
+        "ACM-HR+COMP:0009",
+        "ACM-HR+COMP:0010",
+        "ACM-HR+COMP:0011",
+        "ACM-HR+COMP:0012",
+        "ACM-HR+COMP:0013",
+        "ACM-HR+COMP:0014",
+        "ACM-HR+COMP:0015",
+        "ACM-HR+COMP:0016",
+        "ACM-HR+COMP:0017",
+        "ACM-HR+COMP:0018",
+        "ACM-HR+COMP:0019",
+        "ACM-HR+COMP:0020",
+        "ACM-HR+COMP:0021",
+        "ACM-HR+COMP:0022",
+        "ACM-HR+COMP:0023",
+        "ACM-HR+COMP:0024",
+        "ACM-HR+COMP:0025",
+        "ACM-HR+COMP:0026",
+        "ACM-HR+COMP:0027",
+        "ACM-HR+COMP:0028",
+        "ACM-HR+COMP:0029",
+        "ACM-HR+COMP:0030",
+        "ACM-HR+COMP:0031",
+        "ACM-HR+COMP:0032",
+        "ACM-HR+COMP:0033",
+        "ACM-HR+COMP:0034",
+        "ACM-HR+COMP:0035",
+        "ACM-HR+COMP:0036",
+        "ACM-HR+COMP:0037",
+        "ACM-HR+COMP:0038",
+        "ACM-HR+COMP:0039",
+        "ACM-HR+COMP:0040",
+        "ACM-HR+COMP:0041",
+        "ACM-HR+COMP:0042",
+        "ACM-HR+COMP:0043",
+        "ACM-HR+COMP:0044",
+        "ACM-HR+COMP:0045",
+        "ACM-HR+COMP:0046",
+        "ACM-HR+COMP:0047",
+        "ACM-HR+COMP:0048",
+        "ACM-HR+COMP:0049",
+        "ACM-HR+COMP:0050",
+        "ACM-HR+COMP:0051",
+        "ACM-HR+COMP:0052",
+        "ACM-HR+COMP:0053",
+        "ACM-HR+COMP:0054",
+        "ACM-HR+COMP:0055",
+        "ACM-HR+COMP:0056",
+        "ACM-HR+COMP:0057",
+        "ACM-HR+COMP:0058",
+        "ACM-HR+COMP:0059",
+        "ACM-HR+COMP:0060",
+        "ACM-HR+COMP:0061",
+        "ACM-HR+COMP:0062",
+        "ACM-HR+COMP:0063",
+        "ACM-HR+COMP:0064",
+        "ACM-HR+COMP:0065",
+        "ACM-HR+COMP:0066",
+        "ACM-HR+COMP:0067",
+        "ACM-HR+COMP:0068",
+        "ACM-HR+COMP:0069",
+        "ACM-HR+COMP:0070",
+        "ACM-HR+COMP:0071",
+        "ACM-HR+COMP:0072",
+        "ACM-HR+COMP:0073",
+        "ACM-HR+COMP:0074",
+        "ACM-HR+COMP:0075",
+        "ACM-HR+COMP:0076",
+        "ACM-HR+COMP:0077",
+        "ACM-HR+COMP:0078",
+        "ACM-HR+COMP:0079",
+        "ACM-HR+COMP:0080",
+        "ACM-HR+COMP:0081",
+        "ACM-HR+COMP:0082",
+        "ACM-HR+COMP:0083",
+        "ACM-HR+COMP:0084",
+        "ACM-HR+COMP:0085",
+        "ACM-HR+COMP:0086",
+        "ACM-HR+COMP:0087",
+        "ACM-HR+COMP:0088",
+        "ACM-HR+COMP:0089",
+        "ACM-HR+COMP:0090",
+        "ACM-HR+COMP:0091",
+        "ACM-HR+COMP:0092",
+        "ACM-HR+COMP:0093",
+        "ACM-HR+COMP:0094",
+        "ACM-HR+COMP:0095",
+        "ACM-HR+COMP:0096",
+        "ACM-HR+COMP:0097",
+        "ACM-HR+COMP:0098",
+        "ACM-HR+COMP:0099",
+        "ACM-HR+COMP:0100",
+        "ACM-HR+COMP:0101",
+        "ACM-HR+COMP:0102",
+        "ACM-HR+COMP:0103",
+        "ACM-HR+COMP:0104",
+        "ACM-HR+COMP:0105",
+        "ACM-HR+COMP:0106",
+        "ACM-HR+COMP:0107",
+        "ACM-HR+COMP:0108",
+        "ACM-HR+COMP:0109",
+        "ACM-HR+COMP:0110",
+        "ACM-HR+COMP:0111",
+        "ACM-HR+COMP:0112",
+        "ACM-HR+COMP:0113",
+        "ACM-HR+COMP:0114",
+        "ACM-HR+COMP:0115",
+        "ACM-HR+COMP:0116",
+        "ACM-HR+COMP:0117",
+        "ACM-HR+COMP:0118",
+        "ACM-HR+COMP:0119",
+        "ACM-HR+COMP:0120",
+        "ACM-HR+COMP:0121",
+        "ACM-HR+COMP:0122",
+        "ACM-HR+COMP:0123",
+        "ACM-HR+COMP:0124",
+        "ACM-HR+COMP:0125",
+        "ACM-HR+COMP:0126",
+        "ACM-HR+COMP:0127",
+        "ACM-HR+COMP:0128",
+        "ACM-HR+COMP:0129",
+        "ACM-HR+COMP:0130",
+        "ACM-HR+COMP:0131",
+        "ACM-HR+COMP:0132",
+        "ACM-HR+COMP:0133",
+        "ACM-HR+COMP:0134",
+        "ACM-HR+COMP:0135",
+        "ACM-HR+COMP:0136",
+        "ACM-HR+COMP:0137",
+        "ACM-HR+COMP:0138",
+        "ACM-HR+COMP:0139",
+        "ACM-HR+COMP:0140",
+        "ACM-HR+COMP:0141",
+        "ACM-HR+COMP:0142",
+        "ACM-HR+COMP:0143",
+        "ACM-HR+COMP:0144",
+        "ACM-HR+COMP:0145",
+        "ACM-HR+COMP:0146",
+        "ACM-HR+COMP:0147",
+        "ACM-HR+COMP:0148",
+        "ACM-HR+COMP:0149",
+        "ACM-HR+COMP:0150",
+        "ACM-HR+COMP:0151",
+        "ACM-HR+COMP:0152",
+        "ACM-HR+COMP:0153",
+        "ACM-HR+COMP:0154",
+        "ACM-HR+COMP:0155",
+        "ACM-HR+COMP:0156",
+        "ACM-HR+COMP:0157",
+        "ACM-HR+COMP:0158",
+        "ACM-HR+COMP:0159",
+        "ACM-HR+COMP:0160",
+        "ACM-HR+COMP:0161",
+        "ACM-HR+COMP:0162",
+        "ACM-HR+COMP:0163",
+        "ACM-HR+COMP:0164",
+        "ACM-HR+COMP:0165",
+        "ACM-HR+COMP:0166",
+        "ACM-HR+COMP:0167",
+        "ACM-HR+COMP:0168",
+        "ACM-HR+COMP:0169",
+        "ACM-HR+COMP:0170",
+        "ACM-HR+COMP:0171",
+        "ACM-HR+COMP:0172",
+        "ACM-HR+COMP:0173",
+        "ACM-HR+COMP:0174",
+        "ACM-HR+COMP:0175",
+        "ACM-HR+COMP:0176",
+        "ACM-HR+COMP:0177",
+        "ACM-HR+COMP:0178",
+        "ACM-HR+COMP:0179",
+        "ACM-HR+COMP:0180",
+        "ACM-HR+COMP:0181",
+        "ACM-HR+COMP:0182",
+        "ACM-HR+COMP:0183",
+        "ACM-HR+COMP:0184",
+        "ACM-HR+COMP:0185",
+        "ACM-HR+COMP:0186",
+        "ACM-HR+COMP:0187",
+        "ACM-HR+COMP:0188",
+        "ACM-HR+COMP:0189",
+        "ACM-HR+COMP:0190",
+        "ACM-HR+COMP:0191",
+        "ACM-HR+COMP:0192",
+        "ACM-HR+COMP:0193",
+        "ACM-HR+COMP:0194",
+        "ACM-HR+COMP:0195",
+        "ACM-HR+COMP:0196",
+        "ACM-HR+COMP:0197",
+        "ACM-HR+COMP:0198",
+        "ACM-HR+COMP:0199",
+        "ACM-HR+COMP:0200",
+        "ACM-HR+COMP:0201",
+        "ACM-HR+COMP:0202",
+        "ACM-HR+COMP:0203",
+        "ACM-HR+COMP:0204",
+        "ACM-HR+COMP:0205",
+        "ACM-HR+COMP:0206",
+        "ACM-HR+COMP:0207",
+        "ACM-HR+COMP:0208",
+        "ACM-HR+COMP:0209",
+        "ACM-HR+COMP:0210",
+        "ACM-HR+COMP:0211",
+        "ACM-HR+COMP:0212",
+        "ACM-HR+COMP:0213",
+        "ACM-HR+COMP:0214",
+        "ACM-HR+COMP:0215",
+        "ACM-HR+COMP:0216",
+        "ACM-HR+COMP:0217",
+        "ACM-HR+COMP:0218",
+        "ACM-HR+COMP:0219",
+        "ACM-HR+COMP:0220",
+        "ACM-HR+COMP:0221",
+        "ACM-HR+COMP:0222",
+        "ACM-HR+COMP:0223",
+        "ACM-HR+COMP:0224",
+        "ACM-HR+COMP:0225",
+        "ACM-HR+COMP:0226",
+        "ACM-HR+COMP:0227",
+        "ACM-HR+COMP:0228",
+        "ACM-HR+COMP:0229",
+        "ACM-HR+COMP:0230",
+        "ACM-HR+COMP:0231",
+        "ACM-HR+COMP:0232",
+        "ACM-HR+COMP:0233",
+        "ACM-HR+COMP:0234",
+        "ACM-HR+COMP:0235",
+        "ACM-HR+COMP:0236",
+        "ACM-HR+COMP:0237",
+        "ACM-HR+COMP:0238",
+        "ACM-HR+COMP:0239",
+        "ACM-HR+COMP:0240",
+        "ACM-HR+COMP:0241",
+        "ACM-HR+COMP:0242",
+        "ACM-HR+COMP:0243",
+        "ACM-HR+COMP:0244",
+        "ACM-HR+COMP:0245",
+        "ACM-HR+COMP:0246",
+        "ACM-HR+COMP:0247",
+        "ACM-HR+COMP:0248",
+        "ACM-HR+COMP:0249",
+        "ACM-HR+COMP:0250",
+        "ACM-HR+COMP:0251",
+        "ACM-HR+COMP:0252",
+        "ACM-HR+COMP:0253",
+        "ACM-HR+COMP:0254",
+        "ACM-HR+COMP:0255",
+        "ACM-HR+COMP:0256",
+        "ACM-HR+COMP:0257",
+        "ACM-HR+COMP:0258",
+        "ACM-HR+COMP:0259",
+        "ACM-HR+COMP:0260",
+        "ACM-HR+COMP:0261",
+        "ACM-HR+COMP:0262",
+        "ACM-HR+COMP:0263",
+        "ACM-HR+COMP:0264",
+        "ACM-HR+COMP:0265",
+        "ACM-HR+COMP:0266",
+        "ACM-HR+COMP:0267",
+        "ACM-HR+COMP:0268",
+        "ACM-HR+COMP:0269",
+        "ACM-HR+COMP:0270",
+        "ACM-HR+COMP:0271",
+        "ACM-HR+COMP:0272",
+        "ACM-HR+COMP:0273",
+        "ACM-HR+COMP:0274",
+        "ACM-HR+COMP:0275",
+        "ACM-HR+COMP:0276",
+        "ACM-HR+COMP:0277",
+        "ACM-HR+COMP:0278",
+        "ACM-HR+COMP:0279",
+        "ACM-HR+COMP:0280",
+        "ACM-HR+COMP:0281",
+        "ACM-HR+COMP:0282",
+        "ACM-HR+COMP:0283",
+        "ACM-HR+COMP:0284",
+        "ACM-HR+COMP:0285",
+        "ACM-HR+COMP:0286",
+        "ACM-HR+COMP:0287",
+        "ACM-HR+COMP:0288",
+        "ACM-HR+COMP:0289",
+        "ACM-HR+COMP:0290",
+        "ACM-HR+COMP:0291",
+        "ACM-HR+COMP:0292",
+        "ACM-HR+COMP:0293",
+        "ACM-HR+COMP:0294",
+        "ACM-HR+COMP:0295",
+        "ACM-HR+COMP:0296",
+        "ACM-HR+COMP:0297",
+        "ACM-HR+COMP:0298",
+        "ACM-HR+COMP:0299",
+        "ACM-HR+COMP:0300",
+        "ACM-HR+COMP:0301",
+        "ACM-HR+COMP:0302",
+        "ACM-HR+COMP:0303",
+        "ACM-HR+COMP:0304",
+        "ACM-HR+COMP:0305",
+        "ACM-HR+COMP:0306",
+        "ACM-HR+COMP:0307",
+        "ACM-HR+COMP:0308",
+        "ACM-HR+COMP:0309",
+        "ACM-HR+COMP:0310",
+        "ACM-HR+COMP:0311",
+        "ACM-HR+COMP:0312",
+        "ACM-HR+COMP:0313",
+        "ACM-HR+COMP:0314",
+        "ACM-HR+COMP:0315",
+        "ACM-HR+COMP:0316",
+        "ACM-HR+COMP:0317",
+        "ACM-HR+COMP:0318",
+        "ACM-HR+COMP:0319",
+        "ACM-HR+COMP:0320",
+        "ACM-HR+COMP:0321",
+        "ACM-HR+COMP:0322",
+        "ACM-HR+COMP:0323",
+        "ACM-HR+COMP:0324",
+        "ACM-HR+COMP:0325",
+        "ACM-HR+COMP:0326",
+        "ACM-HR+COMP:0327",
+        "ACM-HR+COMP:0328",
+        "ACM-HR+COMP:0329",
+        "ACM-HR+COMP:0330",
+        "ACM-HR+COMP:0331",
+        "ACM-HR+COMP:0332",
+        "ACM-HR+COMP:0333",
+        "ACM-HR+COMP:0334",
+        "ACM-HR+COMP:0335",
+        "ACM-HR+COMP:0336",
+        "ACM-HR+COMP:0337",
+        "ACM-HR+COMP:0338",
+        "ACM-HR+COMP:0339",
+        "ACM-HR+COMP:0340",
+        "ACM-HR+COMP:0341",
+        "ACM-HR+COMP:0342",
+        "ACM-HR+COMP:0343",
+        "ACM-HR+COMP:0344",
+        "ACM-HR+COMP:0345",
+        "ACM-HR+COMP:0346",
+        "ACM-HR+COMP:0347",
+        "ACM-HR+COMP:0348",
+        "ACM-HR+COMP:0349",
+        "ACM-HR+COMP:0350",
+        "ACM-HR+COMP:0351",
+        "ACM-HR+COMP:0352",
+        "ACM-HR+COMP:0353",
+        "ACM-HR+COMP:0354",
+        "ACM-HR+COMP:0355",
+        "ACM-HR+COMP:0356",
+        "ACM-HR+COMP:0357",
+        "ACM-HR+COMP:0358",
+        "ACM-HR+COMP:0359",
+        "ACM-HR+COMP:0360",
+        "ACM-HR+COMP:0361",
+        "ACM-HR+COMP:0362",
+        "ACM-HR+COMP:0363",
+        "ACM-HR+COMP:0364",
+        "ACM-HR+COMP:0365",
+        "ACM-HR+COMP:0366",
+        "ACM-HR+COMP:0367",
+        "ACM-HR+COMP:0368",
+        "ACM-HR+COMP:0369",
+        "ACM-HR+COMP:0370",
+        "ACM-HR+COMP:0371",
+        "ACM-HR+COMP:0372",
+        "ACM-HR+COMP:0373",
+        "ACM-HR+COMP:0374",
+        "ACM-HR+COMP:0375",
+        "ACM-HR+COMP:0376",
+        "ACM-HR+COMP:0377",
+        "ACM-HR+COMP:0378",
+        "ACM-HR+COMP:0379",
+        "ACM-HR+COMP:0380",
+        "ACM-HR+COMP:0381",
+        "ACM-HR+COMP:0382",
+        "ACM-HR+COMP:0383",
+        "ACM-HR+COMP:0384",
+        "ACM-HR+COMP:0385",
+        "ACM-HR+COMP:0386",
+        "ACM-HR+COMP:0387",
+        "ACM-HR+COMP:0388",
+        "ACM-HR+COMP:0389",
+        "ACM-HR+COMP:0390",
+        "ACM-HR+COMP:0391",
+        "ACM-HR+COMP:0392",
+        "ACM-HR+COMP:0393",
+        "ACM-HR+COMP:0394",
+        "ACM-HR+COMP:0395",
+        "ACM-HR+COMP:0396",
+        "ACM-HR+COMP:0397",
+        "ACM-HR+COMP:0398",
+        "ACM-HR+COMP:0399",
+        "ACM-HR+COMP:0400",
+        "ACM-HR+COMP:0401",
+        "ACM-HR+COMP:0402",
+        "ACM-HR+COMP:0403",
+        "ACM-HR+COMP:0404"
+      ],
+      "sha256": "44ddc082686f54af1f2c8199ee0db613296f84d7f5b8e3b5d510bc76fd510a06",
+      "source": "ACM"
+    },
+    "sources/raw/core_searches/ieee_xplore_complementary_export_2026-11-26.csv": {
+      "query_id": "IEEE-COMP",
+      "record_ids_in_data_row_order": [
+        "IEEE-COMP:0001",
+        "IEEE-COMP:0002",
+        "IEEE-COMP:0003",
+        "IEEE-COMP:0004",
+        "IEEE-COMP:0005",
+        "IEEE-COMP:0006",
+        "IEEE-COMP:0007",
+        "IEEE-COMP:0008",
+        "IEEE-COMP:0009",
+        "IEEE-COMP:0010",
+        "IEEE-COMP:0011",
+        "IEEE-COMP:0012",
+        "IEEE-COMP:0013",
+        "IEEE-COMP:0014",
+        "IEEE-COMP:0015",
+        "IEEE-COMP:0016",
+        "IEEE-COMP:0017",
+        "IEEE-COMP:0018",
+        "IEEE-COMP:0019",
+        "IEEE-COMP:0020",
+        "IEEE-COMP:0021"
+      ],
+      "sha256": "913d2c1ada71f4a865ee2a6ecc78a048d94552204ebd0ff63c539a9a515237f8",
+      "source": "IEEE"
+    },
+    "sources/raw/core_searches/ieee_xplore_high_recall_export_2026-11-26.csv": {
+      "query_id": "IEEE-HR",
+      "record_ids_in_data_row_order": [
+        "IEEE-HR:0001",
+        "IEEE-HR:0002",
+        "IEEE-HR:0003",
+        "IEEE-HR:0004",
+        "IEEE-HR:0005",
+        "IEEE-HR:0006",
+        "IEEE-HR:0007",
+        "IEEE-HR:0008",
+        "IEEE-HR:0009",
+        "IEEE-HR:0010",
+        "IEEE-HR:0011",
+        "IEEE-HR:0012",
+        "IEEE-HR:0013",
+        "IEEE-HR:0014",
+        "IEEE-HR:0015",
+        "IEEE-HR:0016",
+        "IEEE-HR:0017",
+        "IEEE-HR:0018",
+        "IEEE-HR:0019",
+        "IEEE-HR:0020",
+        "IEEE-HR:0021",
+        "IEEE-HR:0022",
+        "IEEE-HR:0023",
+        "IEEE-HR:0024",
+        "IEEE-HR:0025",
+        "IEEE-HR:0026",
+        "IEEE-HR:0027",
+        "IEEE-HR:0028",
+        "IEEE-HR:0029",
+        "IEEE-HR:0030",
+        "IEEE-HR:0031",
+        "IEEE-HR:0032",
+        "IEEE-HR:0033",
+        "IEEE-HR:0034",
+        "IEEE-HR:0035",
+        "IEEE-HR:0036",
+        "IEEE-HR:0037",
+        "IEEE-HR:0038",
+        "IEEE-HR:0039",
+        "IEEE-HR:0040",
+        "IEEE-HR:0041",
+        "IEEE-HR:0042"
+      ],
+      "sha256": "b7144436386f015eec92fa3dc2f568c1b7c0e3794d438564e16ad81287ff067f",
+      "source": "IEEE"
+    },
+    "sources/raw/core_searches/openalex_compensatory_2026-11-26/openalex_high_recall_2026-11-26_normalized.csv": {
+      "query_id": "OPENALEX-HR",
+      "record_ids_in_data_row_order": [
+        "OPENALEX-HR:0001",
+        "OPENALEX-HR:0002",
+        "OPENALEX-HR:0003",
+        "OPENALEX-HR:0004",
+        "OPENALEX-HR:0005",
+        "OPENALEX-HR:0006",
+        "OPENALEX-HR:0007",
+        "OPENALEX-HR:0008",
+        "OPENALEX-HR:0009",
+        "OPENALEX-HR:0010",
+        "OPENALEX-HR:0011",
+        "OPENALEX-HR:0012",
+        "OPENALEX-HR:0013",
+        "OPENALEX-HR:0014",
+        "OPENALEX-HR:0015",
+        "OPENALEX-HR:0016",
+        "OPENALEX-HR:0017",
+        "OPENALEX-HR:0018",
+        "OPENALEX-HR:0019",
+        "OPENALEX-HR:0020",
+        "OPENALEX-HR:0021",
+        "OPENALEX-HR:0022",
+        "OPENALEX-HR:0023",
+        "OPENALEX-HR:0024",
+        "OPENALEX-HR:0025",
+        "OPENALEX-HR:0026",
+        "OPENALEX-HR:0027",
+        "OPENALEX-HR:0028",
+        "OPENALEX-HR:0029",
+        "OPENALEX-HR:0030",
+        "OPENALEX-HR:0031",
+        "OPENALEX-HR:0032",
+        "OPENALEX-HR:0033",
+        "OPENALEX-HR:0034",
+        "OPENALEX-HR:0035",
+        "OPENALEX-HR:0036",
+        "OPENALEX-HR:0037",
+        "OPENALEX-HR:0038",
+        "OPENALEX-HR:0039",
+        "OPENALEX-HR:0040",
+        "OPENALEX-HR:0041",
+        "OPENALEX-HR:0042",
+        "OPENALEX-HR:0043",
+        "OPENALEX-HR:0044",
+        "OPENALEX-HR:0045",
+        "OPENALEX-HR:0046",
+        "OPENALEX-HR:0047",
+        "OPENALEX-HR:0048",
+        "OPENALEX-HR:0049",
+        "OPENALEX-HR:0050",
+        "OPENALEX-HR:0051",
+        "OPENALEX-HR:0052",
+        "OPENALEX-HR:0053",
+        "OPENALEX-HR:0054",
+        "OPENALEX-HR:0055",
+        "OPENALEX-HR:0056",
+        "OPENALEX-HR:0057",
+        "OPENALEX-HR:0058",
+        "OPENALEX-HR:0059",
+        "OPENALEX-HR:0060",
+        "OPENALEX-HR:0061",
+        "OPENALEX-HR:0062",
+        "OPENALEX-HR:0063",
+        "OPENALEX-HR:0064",
+        "OPENALEX-HR:0065",
+        "OPENALEX-HR:0066",
+        "OPENALEX-HR:0067",
+        "OPENALEX-HR:0068",
+        "OPENALEX-HR:0069",
+        "OPENALEX-HR:0070",
+        "OPENALEX-HR:0071",
+        "OPENALEX-HR:0072",
+        "OPENALEX-HR:0073",
+        "OPENALEX-HR:0074",
+        "OPENALEX-HR:0075",
+        "OPENALEX-HR:0076",
+        "OPENALEX-HR:0077",
+        "OPENALEX-HR:0078",
+        "OPENALEX-HR:0079",
+        "OPENALEX-HR:0080",
+        "OPENALEX-HR:0081",
+        "OPENALEX-HR:0082",
+        "OPENALEX-HR:0083",
+        "OPENALEX-HR:0084",
+        "OPENALEX-HR:0085"
+      ],
+      "sha256": "673d2ab06811432f24903598fa49935d085da5f89d026512e2b2f6dc04cbe8bb",
+      "source": "OPENALEX"
+    },
+    "sources/raw/core_searches/openalex_complementary_revision_2026-11-26/openalex_complementary_2026-11-26_normalized.csv": {
+      "query_id": "OPENALEX-COMP",
+      "record_ids_in_data_row_order": [
+        "OPENALEX-COMP:0001",
+        "OPENALEX-COMP:0002",
+        "OPENALEX-COMP:0003",
+        "OPENALEX-COMP:0004",
+        "OPENALEX-COMP:0005",
+        "OPENALEX-COMP:0006",
+        "OPENALEX-COMP:0007",
+        "OPENALEX-COMP:0008",
+        "OPENALEX-COMP:0009",
+        "OPENALEX-COMP:0010",
+        "OPENALEX-COMP:0011",
+        "OPENALEX-COMP:0012",
+        "OPENALEX-COMP:0013",
+        "OPENALEX-COMP:0014",
+        "OPENALEX-COMP:0015",
+        "OPENALEX-COMP:0016",
+        "OPENALEX-COMP:0017",
+        "OPENALEX-COMP:0018",
+        "OPENALEX-COMP:0019",
+        "OPENALEX-COMP:0020",
+        "OPENALEX-COMP:0021",
+        "OPENALEX-COMP:0022",
+        "OPENALEX-COMP:0023",
+        "OPENALEX-COMP:0024",
+        "OPENALEX-COMP:0025",
+        "OPENALEX-COMP:0026",
+        "OPENALEX-COMP:0027",
+        "OPENALEX-COMP:0028",
+        "OPENALEX-COMP:0029",
+        "OPENALEX-COMP:0030",
+        "OPENALEX-COMP:0031"
+      ],
+      "sha256": "c8b14cca849d9d58293471067e5ee7fcc8815d773e0b0fe9310fa0e4b1c72af5",
+      "source": "OPENALEX"
+    },
+    "sources/raw/core_searches/scopus_complementary_export_2026-11-26.csv": {
+      "query_id": "SCOPUS-COMP",
+      "record_ids_in_data_row_order": [
+        "SCOPUS-COMP:0001",
+        "SCOPUS-COMP:0002",
+        "SCOPUS-COMP:0003",
+        "SCOPUS-COMP:0004",
+        "SCOPUS-COMP:0005",
+        "SCOPUS-COMP:0006",
+        "SCOPUS-COMP:0007",
+        "SCOPUS-COMP:0008",
+        "SCOPUS-COMP:0009",
+        "SCOPUS-COMP:0010",
+        "SCOPUS-COMP:0011",
+        "SCOPUS-COMP:0012",
+        "SCOPUS-COMP:0013",
+        "SCOPUS-COMP:0014",
+        "SCOPUS-COMP:0015",
+        "SCOPUS-COMP:0016",
+        "SCOPUS-COMP:0017",
+        "SCOPUS-COMP:0018",
+        "SCOPUS-COMP:0019",
+        "SCOPUS-COMP:0020",
+        "SCOPUS-COMP:0021",
+        "SCOPUS-COMP:0022",
+        "SCOPUS-COMP:0023",
+        "SCOPUS-COMP:0024",
+        "SCOPUS-COMP:0025",
+        "SCOPUS-COMP:0026",
+        "SCOPUS-COMP:0027",
+        "SCOPUS-COMP:0028",
+        "SCOPUS-COMP:0029",
+        "SCOPUS-COMP:0030",
+        "SCOPUS-COMP:0031",
+        "SCOPUS-COMP:0032",
+        "SCOPUS-COMP:0033"
+      ],
+      "sha256": "1858cedf423e71cac13429eebaab5aae031e9e6f41e19179c0667662eb57ceca",
+      "source": "SCOPUS"
+    },
+    "sources/raw/core_searches/scopus_high_recall_export_2026-11-26.csv": {
+      "query_id": "SCOPUS-HR",
+      "record_ids_in_data_row_order": [
+        "SCOPUS-HR:0001",
+        "SCOPUS-HR:0002",
+        "SCOPUS-HR:0003",
+        "SCOPUS-HR:0004",
+        "SCOPUS-HR:0005",
+        "SCOPUS-HR:0006",
+        "SCOPUS-HR:0007",
+        "SCOPUS-HR:0008",
+        "SCOPUS-HR:0009",
+        "SCOPUS-HR:0010",
+        "SCOPUS-HR:0011",
+        "SCOPUS-HR:0012",
+        "SCOPUS-HR:0013",
+        "SCOPUS-HR:0014",
+        "SCOPUS-HR:0015",
+        "SCOPUS-HR:0016",
+        "SCOPUS-HR:0017",
+        "SCOPUS-HR:0018",
+        "SCOPUS-HR:0019",
+        "SCOPUS-HR:0020",
+        "SCOPUS-HR:0021",
+        "SCOPUS-HR:0022",
+        "SCOPUS-HR:0023",
+        "SCOPUS-HR:0024",
+        "SCOPUS-HR:0025",
+        "SCOPUS-HR:0026",
+        "SCOPUS-HR:0027",
+        "SCOPUS-HR:0028",
+        "SCOPUS-HR:0029",
+        "SCOPUS-HR:0030",
+        "SCOPUS-HR:0031",
+        "SCOPUS-HR:0032",
+        "SCOPUS-HR:0033",
+        "SCOPUS-HR:0034",
+        "SCOPUS-HR:0035",
+        "SCOPUS-HR:0036",
+        "SCOPUS-HR:0037",
+        "SCOPUS-HR:0038",
+        "SCOPUS-HR:0039",
+        "SCOPUS-HR:0040",
+        "SCOPUS-HR:0041",
+        "SCOPUS-HR:0042",
+        "SCOPUS-HR:0043",
+        "SCOPUS-HR:0044",
+        "SCOPUS-HR:0045",
+        "SCOPUS-HR:0046",
+        "SCOPUS-HR:0047",
+        "SCOPUS-HR:0048",
+        "SCOPUS-HR:0049",
+        "SCOPUS-HR:0050",
+        "SCOPUS-HR:0051",
+        "SCOPUS-HR:0052",
+        "SCOPUS-HR:0053",
+        "SCOPUS-HR:0054",
+        "SCOPUS-HR:0055",
+        "SCOPUS-HR:0056",
+        "SCOPUS-HR:0057",
+        "SCOPUS-HR:0058",
+        "SCOPUS-HR:0059",
+        "SCOPUS-HR:0060",
+        "SCOPUS-HR:0061",
+        "SCOPUS-HR:0062",
+        "SCOPUS-HR:0063",
+        "SCOPUS-HR:0064",
+        "SCOPUS-HR:0065",
+        "SCOPUS-HR:0066",
+        "SCOPUS-HR:0067",
+        "SCOPUS-HR:0068",
+        "SCOPUS-HR:0069",
+        "SCOPUS-HR:0070",
+        "SCOPUS-HR:0071",
+        "SCOPUS-HR:0072",
+        "SCOPUS-HR:0073",
+        "SCOPUS-HR:0074",
+        "SCOPUS-HR:0075",
+        "SCOPUS-HR:0076",
+        "SCOPUS-HR:0077"
+      ],
+      "sha256": "92201eb7431a1828792e2aac75a22b0b1b67e70f749a978617e70d924185dd58",
+      "source": "SCOPUS"
+    }
+  },
+  "raw_ids_by_dedup_reason": {
+    "exact_title_year_acm_proceeding": [
+      "ACM-HR+COMP:0111",
+      "ACM-HR+COMP:0125",
+      "ACM-HR+COMP:0133",
+      "ACM-HR+COMP:0136",
+      "ACM-HR+COMP:0147",
+      "ACM-HR+COMP:0149",
+      "ACM-HR+COMP:0151",
+      "ACM-HR+COMP:0159",
+      "ACM-HR+COMP:0161",
+      "ACM-HR+COMP:0168",
+      "ACM-HR+COMP:0170",
+      "ACM-HR+COMP:0175"
+    ],
+    "matching_doi_and_title": [
+      "ACM-HR+COMP:0003",
+      "ACM-HR+COMP:0018",
+      "ACM-HR+COMP:0024",
+      "ACM-HR+COMP:0034",
+      "ACM-HR+COMP:0035",
+      "ACM-HR+COMP:0037",
+      "ACM-HR+COMP:0041",
+      "ACM-HR+COMP:0045",
+      "ACM-HR+COMP:0046",
+      "ACM-HR+COMP:0049",
+      "ACM-HR+COMP:0052",
+      "ACM-HR+COMP:0061",
+      "ACM-HR+COMP:0066",
+      "ACM-HR+COMP:0073",
+      "ACM-HR+COMP:0074",
+      "ACM-HR+COMP:0086",
+      "ACM-HR+COMP:0089",
+      "ACM-HR+COMP:0092",
+      "ACM-HR+COMP:0094",
+      "ACM-HR+COMP:0100",
+      "ACM-HR+COMP:0109",
+      "ACM-HR+COMP:0143",
+      "ACM-HR+COMP:0155",
+      "ACM-HR+COMP:0200",
+      "ACM-HR+COMP:0207",
+      "ACM-HR+COMP:0220",
+      "ACM-HR+COMP:0221",
+      "ACM-HR+COMP:0223",
+      "ACM-HR+COMP:0225",
+      "ACM-HR+COMP:0227",
+      "ACM-HR+COMP:0231",
+      "ACM-HR+COMP:0236",
+      "ACM-HR+COMP:0237",
+      "ACM-HR+COMP:0240",
+      "ACM-HR+COMP:0241",
+      "ACM-HR+COMP:0245",
+      "ACM-HR+COMP:0252",
+      "ACM-HR+COMP:0261",
+      "ACM-HR+COMP:0262",
+      "ACM-HR+COMP:0265",
+      "ACM-HR+COMP:0275",
+      "ACM-HR+COMP:0276",
+      "ACM-HR+COMP:0280",
+      "ACM-HR+COMP:0282",
+      "ACM-HR+COMP:0293",
+      "ACM-HR+COMP:0296",
+      "ACM-HR+COMP:0300",
+      "ACM-HR+COMP:0302",
+      "ACM-HR+COMP:0307",
+      "ACM-HR+COMP:0311",
+      "ACM-HR+COMP:0312",
+      "ACM-HR+COMP:0316",
+      "ACM-HR+COMP:0318",
+      "ACM-HR+COMP:0320",
+      "ACM-HR+COMP:0326",
+      "ACM-HR+COMP:0327",
+      "ACM-HR+COMP:0338",
+      "ACM-HR+COMP:0340",
+      "ACM-HR+COMP:0342",
+      "ACM-HR+COMP:0344",
+      "ACM-HR+COMP:0347",
+      "ACM-HR+COMP:0352",
+      "ACM-HR+COMP:0353",
+      "ACM-HR+COMP:0365",
+      "ACM-HR+COMP:0369",
+      "ACM-HR+COMP:0374",
+      "ACM-HR+COMP:0401",
+      "IEEE-COMP:0001",
+      "IEEE-COMP:0004",
+      "IEEE-COMP:0005",
+      "IEEE-COMP:0007",
+      "IEEE-COMP:0008",
+      "IEEE-COMP:0009",
+      "IEEE-COMP:0013",
+      "OPENALEX-COMP:0001",
+      "OPENALEX-COMP:0002",
+      "OPENALEX-COMP:0003",
+      "OPENALEX-COMP:0004",
+      "OPENALEX-COMP:0005",
+      "OPENALEX-COMP:0006",
+      "OPENALEX-COMP:0007",
+      "OPENALEX-COMP:0009",
+      "OPENALEX-COMP:0010",
+      "OPENALEX-COMP:0011",
+      "OPENALEX-COMP:0012",
+      "OPENALEX-COMP:0013",
+      "OPENALEX-COMP:0015",
+      "OPENALEX-COMP:0016",
+      "OPENALEX-COMP:0017",
+      "OPENALEX-COMP:0018",
+      "OPENALEX-COMP:0019",
+      "OPENALEX-COMP:0020",
+      "OPENALEX-COMP:0021",
+      "OPENALEX-COMP:0022",
+      "OPENALEX-COMP:0023",
+      "OPENALEX-COMP:0024",
+      "OPENALEX-COMP:0025",
+      "OPENALEX-COMP:0026",
+      "OPENALEX-COMP:0027",
+      "OPENALEX-COMP:0029",
+      "OPENALEX-HR:0001",
+      "OPENALEX-HR:0002",
+      "OPENALEX-HR:0003",
+      "OPENALEX-HR:0004",
+      "OPENALEX-HR:0005",
+      "OPENALEX-HR:0006",
+      "OPENALEX-HR:0007",
+      "OPENALEX-HR:0008",
+      "OPENALEX-HR:0009",
+      "OPENALEX-HR:0011",
+      "OPENALEX-HR:0012",
+      "OPENALEX-HR:0013",
+      "OPENALEX-HR:0014",
+      "OPENALEX-HR:0015",
+      "OPENALEX-HR:0017",
+      "OPENALEX-HR:0020",
+      "OPENALEX-HR:0022",
+      "OPENALEX-HR:0023",
+      "OPENALEX-HR:0024",
+      "OPENALEX-HR:0025",
+      "OPENALEX-HR:0027",
+      "OPENALEX-HR:0028",
+      "OPENALEX-HR:0029",
+      "OPENALEX-HR:0030",
+      "OPENALEX-HR:0031",
+      "OPENALEX-HR:0032",
+      "OPENALEX-HR:0034",
+      "OPENALEX-HR:0035",
+      "OPENALEX-HR:0040",
+      "OPENALEX-HR:0041",
+      "OPENALEX-HR:0042",
+      "OPENALEX-HR:0043",
+      "OPENALEX-HR:0045",
+      "OPENALEX-HR:0047",
+      "OPENALEX-HR:0048",
+      "OPENALEX-HR:0050",
+      "OPENALEX-HR:0051",
+      "OPENALEX-HR:0052",
+      "OPENALEX-HR:0053",
+      "OPENALEX-HR:0054",
+      "OPENALEX-HR:0057",
+      "OPENALEX-HR:0058",
+      "OPENALEX-HR:0060",
+      "OPENALEX-HR:0061",
+      "OPENALEX-HR:0062",
+      "OPENALEX-HR:0064",
+      "OPENALEX-HR:0065",
+      "OPENALEX-HR:0067",
+      "OPENALEX-HR:0068",
+      "OPENALEX-HR:0071",
+      "OPENALEX-HR:0072",
+      "OPENALEX-HR:0074",
+      "OPENALEX-HR:0076",
+      "OPENALEX-HR:0077",
+      "OPENALEX-HR:0079",
+      "OPENALEX-HR:0081",
+      "OPENALEX-HR:0084",
+      "SCOPUS-COMP:0001",
+      "SCOPUS-COMP:0003",
+      "SCOPUS-COMP:0006",
+      "SCOPUS-COMP:0008",
+      "SCOPUS-COMP:0010",
+      "SCOPUS-COMP:0011",
+      "SCOPUS-COMP:0012",
+      "SCOPUS-COMP:0013",
+      "SCOPUS-COMP:0014",
+      "SCOPUS-COMP:0015",
+      "SCOPUS-COMP:0016",
+      "SCOPUS-COMP:0018",
+      "SCOPUS-COMP:0019",
+      "SCOPUS-COMP:0022",
+      "SCOPUS-COMP:0025",
+      "SCOPUS-COMP:0027",
+      "SCOPUS-COMP:0028",
+      "SCOPUS-COMP:0029",
+      "SCOPUS-COMP:0030",
+      "SCOPUS-COMP:0031",
+      "SCOPUS-COMP:0033",
+      "SCOPUS-HR:0001",
+      "SCOPUS-HR:0004",
+      "SCOPUS-HR:0006",
+      "SCOPUS-HR:0007",
+      "SCOPUS-HR:0009",
+      "SCOPUS-HR:0010",
+      "SCOPUS-HR:0012",
+      "SCOPUS-HR:0015",
+      "SCOPUS-HR:0019",
+      "SCOPUS-HR:0021",
+      "SCOPUS-HR:0029",
+      "SCOPUS-HR:0031",
+      "SCOPUS-HR:0032",
+      "SCOPUS-HR:0033",
+      "SCOPUS-HR:0035",
+      "SCOPUS-HR:0036",
+      "SCOPUS-HR:0038",
+      "SCOPUS-HR:0040",
+      "SCOPUS-HR:0044",
+      "SCOPUS-HR:0045",
+      "SCOPUS-HR:0047",
+      "SCOPUS-HR:0048",
+      "SCOPUS-HR:0050",
+      "SCOPUS-HR:0051",
+      "SCOPUS-HR:0052",
+      "SCOPUS-HR:0054",
+      "SCOPUS-HR:0056",
+      "SCOPUS-HR:0057",
+      "SCOPUS-HR:0059",
+      "SCOPUS-HR:0061",
+      "SCOPUS-HR:0063",
+      "SCOPUS-HR:0065",
+      "SCOPUS-HR:0069",
+      "SCOPUS-HR:0071",
+      "SCOPUS-HR:0074",
+      "SCOPUS-HR:0075",
+      "SCOPUS-HR:0076",
+      "SCOPUS-HR:0077"
+    ],
+    "representative": [
+      "ACM-HR+COMP:0001",
+      "ACM-HR+COMP:0002",
+      "ACM-HR+COMP:0004",
+      "ACM-HR+COMP:0005",
+      "ACM-HR+COMP:0006",
+      "ACM-HR+COMP:0007",
+      "ACM-HR+COMP:0008",
+      "ACM-HR+COMP:0009",
+      "ACM-HR+COMP:0010",
+      "ACM-HR+COMP:0011",
+      "ACM-HR+COMP:0012",
+      "ACM-HR+COMP:0013",
+      "ACM-HR+COMP:0014",
+      "ACM-HR+COMP:0015",
+      "ACM-HR+COMP:0016",
+      "ACM-HR+COMP:0017",
+      "ACM-HR+COMP:0019",
+      "ACM-HR+COMP:0020",
+      "ACM-HR+COMP:0021",
+      "ACM-HR+COMP:0022",
+      "ACM-HR+COMP:0023",
+      "ACM-HR+COMP:0025",
+      "ACM-HR+COMP:0026",
+      "ACM-HR+COMP:0027",
+      "ACM-HR+COMP:0028",
+      "ACM-HR+COMP:0029",
+      "ACM-HR+COMP:0030",
+      "ACM-HR+COMP:0031",
+      "ACM-HR+COMP:0032",
+      "ACM-HR+COMP:0033",
+      "ACM-HR+COMP:0036",
+      "ACM-HR+COMP:0038",
+      "ACM-HR+COMP:0039",
+      "ACM-HR+COMP:0040",
+      "ACM-HR+COMP:0042",
+      "ACM-HR+COMP:0043",
+      "ACM-HR+COMP:0044",
+      "ACM-HR+COMP:0047",
+      "ACM-HR+COMP:0048",
+      "ACM-HR+COMP:0050",
+      "ACM-HR+COMP:0051",
+      "ACM-HR+COMP:0053",
+      "ACM-HR+COMP:0054",
+      "ACM-HR+COMP:0055",
+      "ACM-HR+COMP:0056",
+      "ACM-HR+COMP:0057",
+      "ACM-HR+COMP:0058",
+      "ACM-HR+COMP:0059",
+      "ACM-HR+COMP:0060",
+      "ACM-HR+COMP:0062",
+      "ACM-HR+COMP:0063",
+      "ACM-HR+COMP:0064",
+      "ACM-HR+COMP:0065",
+      "ACM-HR+COMP:0067",
+      "ACM-HR+COMP:0068",
+      "ACM-HR+COMP:0069",
+      "ACM-HR+COMP:0070",
+      "ACM-HR+COMP:0071",
+      "ACM-HR+COMP:0072",
+      "ACM-HR+COMP:0075",
+      "ACM-HR+COMP:0076",
+      "ACM-HR+COMP:0077",
+      "ACM-HR+COMP:0078",
+      "ACM-HR+COMP:0079",
+      "ACM-HR+COMP:0080",
+      "ACM-HR+COMP:0081",
+      "ACM-HR+COMP:0082",
+      "ACM-HR+COMP:0083",
+      "ACM-HR+COMP:0084",
+      "ACM-HR+COMP:0085",
+      "ACM-HR+COMP:0087",
+      "ACM-HR+COMP:0088",
+      "ACM-HR+COMP:0090",
+      "ACM-HR+COMP:0091",
+      "ACM-HR+COMP:0093",
+      "ACM-HR+COMP:0095",
+      "ACM-HR+COMP:0096",
+      "ACM-HR+COMP:0097",
+      "ACM-HR+COMP:0098",
+      "ACM-HR+COMP:0099",
+      "ACM-HR+COMP:0101",
+      "ACM-HR+COMP:0102",
+      "ACM-HR+COMP:0103",
+      "ACM-HR+COMP:0104",
+      "ACM-HR+COMP:0105",
+      "ACM-HR+COMP:0106",
+      "ACM-HR+COMP:0107",
+      "ACM-HR+COMP:0108",
+      "ACM-HR+COMP:0110",
+      "ACM-HR+COMP:0112",
+      "ACM-HR+COMP:0113",
+      "ACM-HR+COMP:0114",
+      "ACM-HR+COMP:0115",
+      "ACM-HR+COMP:0116",
+      "ACM-HR+COMP:0117",
+      "ACM-HR+COMP:0118",
+      "ACM-HR+COMP:0119",
+      "ACM-HR+COMP:0120",
+      "ACM-HR+COMP:0121",
+      "ACM-HR+COMP:0122",
+      "ACM-HR+COMP:0123",
+      "ACM-HR+COMP:0124",
+      "ACM-HR+COMP:0126",
+      "ACM-HR+COMP:0127",
+      "ACM-HR+COMP:0128",
+      "ACM-HR+COMP:0129",
+      "ACM-HR+COMP:0130",
+      "ACM-HR+COMP:0131",
+      "ACM-HR+COMP:0132",
+      "ACM-HR+COMP:0134",
+      "ACM-HR+COMP:0135",
+      "ACM-HR+COMP:0137",
+      "ACM-HR+COMP:0138",
+      "ACM-HR+COMP:0139",
+      "ACM-HR+COMP:0140",
+      "ACM-HR+COMP:0141",
+      "ACM-HR+COMP:0142",
+      "ACM-HR+COMP:0144",
+      "ACM-HR+COMP:0145",
+      "ACM-HR+COMP:0146",
+      "ACM-HR+COMP:0148",
+      "ACM-HR+COMP:0150",
+      "ACM-HR+COMP:0152",
+      "ACM-HR+COMP:0153",
+      "ACM-HR+COMP:0154",
+      "ACM-HR+COMP:0156",
+      "ACM-HR+COMP:0157",
+      "ACM-HR+COMP:0158",
+      "ACM-HR+COMP:0160",
+      "ACM-HR+COMP:0162",
+      "ACM-HR+COMP:0163",
+      "ACM-HR+COMP:0164",
+      "ACM-HR+COMP:0165",
+      "ACM-HR+COMP:0166",
+      "ACM-HR+COMP:0167",
+      "ACM-HR+COMP:0169",
+      "ACM-HR+COMP:0171",
+      "ACM-HR+COMP:0172",
+      "ACM-HR+COMP:0173",
+      "ACM-HR+COMP:0174",
+      "ACM-HR+COMP:0176",
+      "ACM-HR+COMP:0177",
+      "ACM-HR+COMP:0178",
+      "ACM-HR+COMP:0179",
+      "ACM-HR+COMP:0180",
+      "ACM-HR+COMP:0181",
+      "ACM-HR+COMP:0182",
+      "ACM-HR+COMP:0183",
+      "ACM-HR+COMP:0184",
+      "ACM-HR+COMP:0185",
+      "ACM-HR+COMP:0186",
+      "ACM-HR+COMP:0187",
+      "ACM-HR+COMP:0188",
+      "ACM-HR+COMP:0189",
+      "ACM-HR+COMP:0190",
+      "ACM-HR+COMP:0191",
+      "ACM-HR+COMP:0192",
+      "ACM-HR+COMP:0193",
+      "ACM-HR+COMP:0194",
+      "ACM-HR+COMP:0195",
+      "ACM-HR+COMP:0196",
+      "ACM-HR+COMP:0197",
+      "ACM-HR+COMP:0198",
+      "ACM-HR+COMP:0199",
+      "ACM-HR+COMP:0201",
+      "ACM-HR+COMP:0202",
+      "ACM-HR+COMP:0203",
+      "ACM-HR+COMP:0204",
+      "ACM-HR+COMP:0205",
+      "ACM-HR+COMP:0206",
+      "ACM-HR+COMP:0208",
+      "ACM-HR+COMP:0209",
+      "ACM-HR+COMP:0210",
+      "ACM-HR+COMP:0211",
+      "ACM-HR+COMP:0212",
+      "ACM-HR+COMP:0213",
+      "ACM-HR+COMP:0214",
+      "ACM-HR+COMP:0215",
+      "ACM-HR+COMP:0216",
+      "ACM-HR+COMP:0217",
+      "ACM-HR+COMP:0218",
+      "ACM-HR+COMP:0219",
+      "ACM-HR+COMP:0222",
+      "ACM-HR+COMP:0224",
+      "ACM-HR+COMP:0226",
+      "ACM-HR+COMP:0228",
+      "ACM-HR+COMP:0229",
+      "ACM-HR+COMP:0230",
+      "ACM-HR+COMP:0232",
+      "ACM-HR+COMP:0233",
+      "ACM-HR+COMP:0234",
+      "ACM-HR+COMP:0235",
+      "ACM-HR+COMP:0238",
+      "ACM-HR+COMP:0239",
+      "ACM-HR+COMP:0242",
+      "ACM-HR+COMP:0243",
+      "ACM-HR+COMP:0244",
+      "ACM-HR+COMP:0246",
+      "ACM-HR+COMP:0247",
+      "ACM-HR+COMP:0248",
+      "ACM-HR+COMP:0249",
+      "ACM-HR+COMP:0250",
+      "ACM-HR+COMP:0251",
+      "ACM-HR+COMP:0253",
+      "ACM-HR+COMP:0254",
+      "ACM-HR+COMP:0255",
+      "ACM-HR+COMP:0256",
+      "ACM-HR+COMP:0257",
+      "ACM-HR+COMP:0258",
+      "ACM-HR+COMP:0259",
+      "ACM-HR+COMP:0260",
+      "ACM-HR+COMP:0263",
+      "ACM-HR+COMP:0264",
+      "ACM-HR+COMP:0266",
+      "ACM-HR+COMP:0267",
+      "ACM-HR+COMP:0268",
+      "ACM-HR+COMP:0269",
+      "ACM-HR+COMP:0270",
+      "ACM-HR+COMP:0271",
+      "ACM-HR+COMP:0272",
+      "ACM-HR+COMP:0273",
+      "ACM-HR+COMP:0274",
+      "ACM-HR+COMP:0277",
+      "ACM-HR+COMP:0278",
+      "ACM-HR+COMP:0279",
+      "ACM-HR+COMP:0281",
+      "ACM-HR+COMP:0283",
+      "ACM-HR+COMP:0284",
+      "ACM-HR+COMP:0285",
+      "ACM-HR+COMP:0286",
+      "ACM-HR+COMP:0287",
+      "ACM-HR+COMP:0288",
+      "ACM-HR+COMP:0289",
+      "ACM-HR+COMP:0290",
+      "ACM-HR+COMP:0291",
+      "ACM-HR+COMP:0292",
+      "ACM-HR+COMP:0294",
+      "ACM-HR+COMP:0295",
+      "ACM-HR+COMP:0297",
+      "ACM-HR+COMP:0298",
+      "ACM-HR+COMP:0299",
+      "ACM-HR+COMP:0301",
+      "ACM-HR+COMP:0303",
+      "ACM-HR+COMP:0304",
+      "ACM-HR+COMP:0305",
+      "ACM-HR+COMP:0306",
+      "ACM-HR+COMP:0308",
+      "ACM-HR+COMP:0309",
+      "ACM-HR+COMP:0310",
+      "ACM-HR+COMP:0313",
+      "ACM-HR+COMP:0314",
+      "ACM-HR+COMP:0315",
+      "ACM-HR+COMP:0317",
+      "ACM-HR+COMP:0319",
+      "ACM-HR+COMP:0321",
+      "ACM-HR+COMP:0322",
+      "ACM-HR+COMP:0323",
+      "ACM-HR+COMP:0324",
+      "ACM-HR+COMP:0325",
+      "ACM-HR+COMP:0328",
+      "ACM-HR+COMP:0329",
+      "ACM-HR+COMP:0330",
+      "ACM-HR+COMP:0331",
+      "ACM-HR+COMP:0332",
+      "ACM-HR+COMP:0333",
+      "ACM-HR+COMP:0334",
+      "ACM-HR+COMP:0335",
+      "ACM-HR+COMP:0336",
+      "ACM-HR+COMP:0337",
+      "ACM-HR+COMP:0339",
+      "ACM-HR+COMP:0341",
+      "ACM-HR+COMP:0343",
+      "ACM-HR+COMP:0345",
+      "ACM-HR+COMP:0346",
+      "ACM-HR+COMP:0348",
+      "ACM-HR+COMP:0349",
+      "ACM-HR+COMP:0350",
+      "ACM-HR+COMP:0351",
+      "ACM-HR+COMP:0354",
+      "ACM-HR+COMP:0355",
+      "ACM-HR+COMP:0356",
+      "ACM-HR+COMP:0357",
+      "ACM-HR+COMP:0358",
+      "ACM-HR+COMP:0359",
+      "ACM-HR+COMP:0360",
+      "ACM-HR+COMP:0361",
+      "ACM-HR+COMP:0362",
+      "ACM-HR+COMP:0363",
+      "ACM-HR+COMP:0364",
+      "ACM-HR+COMP:0366",
+      "ACM-HR+COMP:0367",
+      "ACM-HR+COMP:0368",
+      "ACM-HR+COMP:0370",
+      "ACM-HR+COMP:0371",
+      "ACM-HR+COMP:0372",
+      "ACM-HR+COMP:0373",
+      "ACM-HR+COMP:0375",
+      "ACM-HR+COMP:0376",
+      "ACM-HR+COMP:0377",
+      "ACM-HR+COMP:0378",
+      "ACM-HR+COMP:0379",
+      "ACM-HR+COMP:0380",
+      "ACM-HR+COMP:0381",
+      "ACM-HR+COMP:0382",
+      "ACM-HR+COMP:0383",
+      "ACM-HR+COMP:0384",
+      "ACM-HR+COMP:0385",
+      "ACM-HR+COMP:0386",
+      "ACM-HR+COMP:0387",
+      "ACM-HR+COMP:0388",
+      "ACM-HR+COMP:0389",
+      "ACM-HR+COMP:0390",
+      "ACM-HR+COMP:0391",
+      "ACM-HR+COMP:0392",
+      "ACM-HR+COMP:0393",
+      "ACM-HR+COMP:0394",
+      "ACM-HR+COMP:0395",
+      "ACM-HR+COMP:0396",
+      "ACM-HR+COMP:0397",
+      "ACM-HR+COMP:0398",
+      "ACM-HR+COMP:0399",
+      "ACM-HR+COMP:0400",
+      "ACM-HR+COMP:0402",
+      "ACM-HR+COMP:0403",
+      "ACM-HR+COMP:0404",
+      "IEEE-COMP:0002",
+      "IEEE-COMP:0003",
+      "IEEE-COMP:0006",
+      "IEEE-COMP:0010",
+      "IEEE-COMP:0011",
+      "IEEE-COMP:0012",
+      "IEEE-COMP:0014",
+      "IEEE-COMP:0015",
+      "IEEE-COMP:0016",
+      "IEEE-COMP:0017",
+      "IEEE-COMP:0018",
+      "IEEE-COMP:0019",
+      "IEEE-COMP:0020",
+      "IEEE-COMP:0021",
+      "IEEE-HR:0001",
+      "IEEE-HR:0002",
+      "IEEE-HR:0003",
+      "IEEE-HR:0004",
+      "IEEE-HR:0005",
+      "IEEE-HR:0006",
+      "IEEE-HR:0007",
+      "IEEE-HR:0008",
+      "IEEE-HR:0009",
+      "IEEE-HR:0010",
+      "IEEE-HR:0011",
+      "IEEE-HR:0012",
+      "IEEE-HR:0013",
+      "IEEE-HR:0014",
+      "IEEE-HR:0015",
+      "IEEE-HR:0016",
+      "IEEE-HR:0017",
+      "IEEE-HR:0018",
+      "IEEE-HR:0019",
+      "IEEE-HR:0020",
+      "IEEE-HR:0021",
+      "IEEE-HR:0022",
+      "IEEE-HR:0023",
+      "IEEE-HR:0024",
+      "IEEE-HR:0025",
+      "IEEE-HR:0026",
+      "IEEE-HR:0027",
+      "IEEE-HR:0028",
+      "IEEE-HR:0029",
+      "IEEE-HR:0030",
+      "IEEE-HR:0031",
+      "IEEE-HR:0032",
+      "IEEE-HR:0033",
+      "IEEE-HR:0034",
+      "IEEE-HR:0035",
+      "IEEE-HR:0036",
+      "IEEE-HR:0037",
+      "IEEE-HR:0038",
+      "IEEE-HR:0039",
+      "IEEE-HR:0040",
+      "IEEE-HR:0041",
+      "IEEE-HR:0042",
+      "OPENALEX-COMP:0008",
+      "OPENALEX-COMP:0014",
+      "OPENALEX-COMP:0028",
+      "OPENALEX-COMP:0030",
+      "OPENALEX-COMP:0031",
+      "OPENALEX-HR:0010",
+      "OPENALEX-HR:0016",
+      "OPENALEX-HR:0018",
+      "OPENALEX-HR:0019",
+      "OPENALEX-HR:0021",
+      "OPENALEX-HR:0026",
+      "OPENALEX-HR:0033",
+      "OPENALEX-HR:0036",
+      "OPENALEX-HR:0037",
+      "OPENALEX-HR:0038",
+      "OPENALEX-HR:0039",
+      "OPENALEX-HR:0044",
+      "OPENALEX-HR:0046",
+      "OPENALEX-HR:0049",
+      "OPENALEX-HR:0055",
+      "OPENALEX-HR:0056",
+      "OPENALEX-HR:0059",
+      "OPENALEX-HR:0063",
+      "OPENALEX-HR:0066",
+      "OPENALEX-HR:0069",
+      "OPENALEX-HR:0070",
+      "OPENALEX-HR:0073",
+      "OPENALEX-HR:0075",
+      "OPENALEX-HR:0078",
+      "OPENALEX-HR:0080",
+      "OPENALEX-HR:0082",
+      "OPENALEX-HR:0083",
+      "OPENALEX-HR:0085",
+      "SCOPUS-COMP:0002",
+      "SCOPUS-COMP:0004",
+      "SCOPUS-COMP:0005",
+      "SCOPUS-COMP:0007",
+      "SCOPUS-COMP:0009",
+      "SCOPUS-COMP:0017",
+      "SCOPUS-COMP:0020",
+      "SCOPUS-COMP:0021",
+      "SCOPUS-COMP:0023",
+      "SCOPUS-COMP:0024",
+      "SCOPUS-COMP:0026",
+      "SCOPUS-COMP:0032",
+      "SCOPUS-HR:0002",
+      "SCOPUS-HR:0003",
+      "SCOPUS-HR:0005",
+      "SCOPUS-HR:0008",
+      "SCOPUS-HR:0011",
+      "SCOPUS-HR:0013",
+      "SCOPUS-HR:0014",
+      "SCOPUS-HR:0016",
+      "SCOPUS-HR:0017",
+      "SCOPUS-HR:0018",
+      "SCOPUS-HR:0020",
+      "SCOPUS-HR:0022",
+      "SCOPUS-HR:0023",
+      "SCOPUS-HR:0024",
+      "SCOPUS-HR:0025",
+      "SCOPUS-HR:0026",
+      "SCOPUS-HR:0027",
+      "SCOPUS-HR:0028",
+      "SCOPUS-HR:0030",
+      "SCOPUS-HR:0034",
+      "SCOPUS-HR:0037",
+      "SCOPUS-HR:0039",
+      "SCOPUS-HR:0041",
+      "SCOPUS-HR:0042",
+      "SCOPUS-HR:0043",
+      "SCOPUS-HR:0046",
+      "SCOPUS-HR:0049",
+      "SCOPUS-HR:0053",
+      "SCOPUS-HR:0055",
+      "SCOPUS-HR:0058",
+      "SCOPUS-HR:0060",
+      "SCOPUS-HR:0062",
+      "SCOPUS-HR:0064",
+      "SCOPUS-HR:0066",
+      "SCOPUS-HR:0067",
+      "SCOPUS-HR:0068",
+      "SCOPUS-HR:0070",
+      "SCOPUS-HR:0072",
+      "SCOPUS-HR:0073"
+    ]
+  },
+  "record_ids_by_source": {
+    "ACM": [
+      "ACM-HR+COMP:0001",
+      "ACM-HR+COMP:0002",
+      "ACM-HR+COMP:0003",
+      "ACM-HR+COMP:0004",
+      "ACM-HR+COMP:0005",
+      "ACM-HR+COMP:0006",
+      "ACM-HR+COMP:0007",
+      "ACM-HR+COMP:0008",
+      "ACM-HR+COMP:0009",
+      "ACM-HR+COMP:0010",
+      "ACM-HR+COMP:0011",
+      "ACM-HR+COMP:0012",
+      "ACM-HR+COMP:0013",
+      "ACM-HR+COMP:0014",
+      "ACM-HR+COMP:0015",
+      "ACM-HR+COMP:0016",
+      "ACM-HR+COMP:0017",
+      "ACM-HR+COMP:0018",
+      "ACM-HR+COMP:0019",
+      "ACM-HR+COMP:0020",
+      "ACM-HR+COMP:0021",
+      "ACM-HR+COMP:0022",
+      "ACM-HR+COMP:0023",
+      "ACM-HR+COMP:0024",
+      "ACM-HR+COMP:0025",
+      "ACM-HR+COMP:0026",
+      "ACM-HR+COMP:0027",
+      "ACM-HR+COMP:0028",
+      "ACM-HR+COMP:0029",
+      "ACM-HR+COMP:0030",
+      "ACM-HR+COMP:0031",
+      "ACM-HR+COMP:0032",
+      "ACM-HR+COMP:0033",
+      "ACM-HR+COMP:0034",
+      "ACM-HR+COMP:0035",
+      "ACM-HR+COMP:0036",
+      "ACM-HR+COMP:0037",
+      "ACM-HR+COMP:0038",
+      "ACM-HR+COMP:0039",
+      "ACM-HR+COMP:0040",
+      "ACM-HR+COMP:0041",
+      "ACM-HR+COMP:0042",
+      "ACM-HR+COMP:0043",
+      "ACM-HR+COMP:0044",
+      "ACM-HR+COMP:0045",
+      "ACM-HR+COMP:0046",
+      "ACM-HR+COMP:0047",
+      "ACM-HR+COMP:0048",
+      "ACM-HR+COMP:0049",
+      "ACM-HR+COMP:0050",
+      "ACM-HR+COMP:0051",
+      "ACM-HR+COMP:0052",
+      "ACM-HR+COMP:0053",
+      "ACM-HR+COMP:0054",
+      "ACM-HR+COMP:0055",
+      "ACM-HR+COMP:0056",
+      "ACM-HR+COMP:0057",
+      "ACM-HR+COMP:0058",
+      "ACM-HR+COMP:0059",
+      "ACM-HR+COMP:0060",
+      "ACM-HR+COMP:0061",
+      "ACM-HR+COMP:0062",
+      "ACM-HR+COMP:0063",
+      "ACM-HR+COMP:0064",
+      "ACM-HR+COMP:0065",
+      "ACM-HR+COMP:0066",
+      "ACM-HR+COMP:0067",
+      "ACM-HR+COMP:0068",
+      "ACM-HR+COMP:0069",
+      "ACM-HR+COMP:0070",
+      "ACM-HR+COMP:0071",
+      "ACM-HR+COMP:0072",
+      "ACM-HR+COMP:0073",
+      "ACM-HR+COMP:0074",
+      "ACM-HR+COMP:0075",
+      "ACM-HR+COMP:0076",
+      "ACM-HR+COMP:0077",
+      "ACM-HR+COMP:0078",
+      "ACM-HR+COMP:0079",
+      "ACM-HR+COMP:0080",
+      "ACM-HR+COMP:0081",
+      "ACM-HR+COMP:0082",
+      "ACM-HR+COMP:0083",
+      "ACM-HR+COMP:0084",
+      "ACM-HR+COMP:0085",
+      "ACM-HR+COMP:0086",
+      "ACM-HR+COMP:0087",
+      "ACM-HR+COMP:0088",
+      "ACM-HR+COMP:0089",
+      "ACM-HR+COMP:0090",
+      "ACM-HR+COMP:0091",
+      "ACM-HR+COMP:0092",
+      "ACM-HR+COMP:0093",
+      "ACM-HR+COMP:0094",
+      "ACM-HR+COMP:0095",
+      "ACM-HR+COMP:0096",
+      "ACM-HR+COMP:0097",
+      "ACM-HR+COMP:0098",
+      "ACM-HR+COMP:0099",
+      "ACM-HR+COMP:0100",
+      "ACM-HR+COMP:0101",
+      "ACM-HR+COMP:0102",
+      "ACM-HR+COMP:0103",
+      "ACM-HR+COMP:0104",
+      "ACM-HR+COMP:0105",
+      "ACM-HR+COMP:0106",
+      "ACM-HR+COMP:0107",
+      "ACM-HR+COMP:0108",
+      "ACM-HR+COMP:0109",
+      "ACM-HR+COMP:0110",
+      "ACM-HR+COMP:0111",
+      "ACM-HR+COMP:0112",
+      "ACM-HR+COMP:0113",
+      "ACM-HR+COMP:0114",
+      "ACM-HR+COMP:0115",
+      "ACM-HR+COMP:0116",
+      "ACM-HR+COMP:0117",
+      "ACM-HR+COMP:0118",
+      "ACM-HR+COMP:0119",
+      "ACM-HR+COMP:0120",
+      "ACM-HR+COMP:0121",
+      "ACM-HR+COMP:0122",
+      "ACM-HR+COMP:0123",
+      "ACM-HR+COMP:0124",
+      "ACM-HR+COMP:0125",
+      "ACM-HR+COMP:0126",
+      "ACM-HR+COMP:0127",
+      "ACM-HR+COMP:0128",
+      "ACM-HR+COMP:0129",
+      "ACM-HR+COMP:0130",
+      "ACM-HR+COMP:0131",
+      "ACM-HR+COMP:0132",
+      "ACM-HR+COMP:0133",
+      "ACM-HR+COMP:0134",
+      "ACM-HR+COMP:0135",
+      "ACM-HR+COMP:0136",
+      "ACM-HR+COMP:0137",
+      "ACM-HR+COMP:0138",
+      "ACM-HR+COMP:0139",
+      "ACM-HR+COMP:0140",
+      "ACM-HR+COMP:0141",
+      "ACM-HR+COMP:0142",
+      "ACM-HR+COMP:0143",
+      "ACM-HR+COMP:0144",
+      "ACM-HR+COMP:0145",
+      "ACM-HR+COMP:0146",
+      "ACM-HR+COMP:0147",
+      "ACM-HR+COMP:0148",
+      "ACM-HR+COMP:0149",
+      "ACM-HR+COMP:0150",
+      "ACM-HR+COMP:0151",
+      "ACM-HR+COMP:0152",
+      "ACM-HR+COMP:0153",
+      "ACM-HR+COMP:0154",
+      "ACM-HR+COMP:0155",
+      "ACM-HR+COMP:0156",
+      "ACM-HR+COMP:0157",
+      "ACM-HR+COMP:0158",
+      "ACM-HR+COMP:0159",
+      "ACM-HR+COMP:0160",
+      "ACM-HR+COMP:0161",
+      "ACM-HR+COMP:0162",
+      "ACM-HR+COMP:0163",
+      "ACM-HR+COMP:0164",
+      "ACM-HR+COMP:0165",
+      "ACM-HR+COMP:0166",
+      "ACM-HR+COMP:0167",
+      "ACM-HR+COMP:0168",
+      "ACM-HR+COMP:0169",
+      "ACM-HR+COMP:0170",
+      "ACM-HR+COMP:0171",
+      "ACM-HR+COMP:0172",
+      "ACM-HR+COMP:0173",
+      "ACM-HR+COMP:0174",
+      "ACM-HR+COMP:0175",
+      "ACM-HR+COMP:0176",
+      "ACM-HR+COMP:0177",
+      "ACM-HR+COMP:0178",
+      "ACM-HR+COMP:0179",
+      "ACM-HR+COMP:0180",
+      "ACM-HR+COMP:0181",
+      "ACM-HR+COMP:0182",
+      "ACM-HR+COMP:0183",
+      "ACM-HR+COMP:0184",
+      "ACM-HR+COMP:0185",
+      "ACM-HR+COMP:0186",
+      "ACM-HR+COMP:0187",
+      "ACM-HR+COMP:0188",
+      "ACM-HR+COMP:0189",
+      "ACM-HR+COMP:0190",
+      "ACM-HR+COMP:0191",
+      "ACM-HR+COMP:0192",
+      "ACM-HR+COMP:0193",
+      "ACM-HR+COMP:0194",
+      "ACM-HR+COMP:0195",
+      "ACM-HR+COMP:0196",
+      "ACM-HR+COMP:0197",
+      "ACM-HR+COMP:0198",
+      "ACM-HR+COMP:0199",
+      "ACM-HR+COMP:0200",
+      "ACM-HR+COMP:0201",
+      "ACM-HR+COMP:0202",
+      "ACM-HR+COMP:0203",
+      "ACM-HR+COMP:0204",
+      "ACM-HR+COMP:0205",
+      "ACM-HR+COMP:0206",
+      "ACM-HR+COMP:0207",
+      "ACM-HR+COMP:0208",
+      "ACM-HR+COMP:0209",
+      "ACM-HR+COMP:0210",
+      "ACM-HR+COMP:0211",
+      "ACM-HR+COMP:0212",
+      "ACM-HR+COMP:0213",
+      "ACM-HR+COMP:0214",
+      "ACM-HR+COMP:0215",
+      "ACM-HR+COMP:0216",
+      "ACM-HR+COMP:0217",
+      "ACM-HR+COMP:0218",
+      "ACM-HR+COMP:0219",
+      "ACM-HR+COMP:0220",
+      "ACM-HR+COMP:0221",
+      "ACM-HR+COMP:0222",
+      "ACM-HR+COMP:0223",
+      "ACM-HR+COMP:0224",
+      "ACM-HR+COMP:0225",
+      "ACM-HR+COMP:0226",
+      "ACM-HR+COMP:0227",
+      "ACM-HR+COMP:0228",
+      "ACM-HR+COMP:0229",
+      "ACM-HR+COMP:0230",
+      "ACM-HR+COMP:0231",
+      "ACM-HR+COMP:0232",
+      "ACM-HR+COMP:0233",
+      "ACM-HR+COMP:0234",
+      "ACM-HR+COMP:0235",
+      "ACM-HR+COMP:0236",
+      "ACM-HR+COMP:0237",
+      "ACM-HR+COMP:0238",
+      "ACM-HR+COMP:0239",
+      "ACM-HR+COMP:0240",
+      "ACM-HR+COMP:0241",
+      "ACM-HR+COMP:0242",
+      "ACM-HR+COMP:0243",
+      "ACM-HR+COMP:0244",
+      "ACM-HR+COMP:0245",
+      "ACM-HR+COMP:0246",
+      "ACM-HR+COMP:0247",
+      "ACM-HR+COMP:0248",
+      "ACM-HR+COMP:0249",
+      "ACM-HR+COMP:0250",
+      "ACM-HR+COMP:0251",
+      "ACM-HR+COMP:0252",
+      "ACM-HR+COMP:0253",
+      "ACM-HR+COMP:0254",
+      "ACM-HR+COMP:0255",
+      "ACM-HR+COMP:0256",
+      "ACM-HR+COMP:0257",
+      "ACM-HR+COMP:0258",
+      "ACM-HR+COMP:0259",
+      "ACM-HR+COMP:0260",
+      "ACM-HR+COMP:0261",
+      "ACM-HR+COMP:0262",
+      "ACM-HR+COMP:0263",
+      "ACM-HR+COMP:0264",
+      "ACM-HR+COMP:0265",
+      "ACM-HR+COMP:0266",
+      "ACM-HR+COMP:0267",
+      "ACM-HR+COMP:0268",
+      "ACM-HR+COMP:0269",
+      "ACM-HR+COMP:0270",
+      "ACM-HR+COMP:0271",
+      "ACM-HR+COMP:0272",
+      "ACM-HR+COMP:0273",
+      "ACM-HR+COMP:0274",
+      "ACM-HR+COMP:0275",
+      "ACM-HR+COMP:0276",
+      "ACM-HR+COMP:0277",
+      "ACM-HR+COMP:0278",
+      "ACM-HR+COMP:0279",
+      "ACM-HR+COMP:0280",
+      "ACM-HR+COMP:0281",
+      "ACM-HR+COMP:0282",
+      "ACM-HR+COMP:0283",
+      "ACM-HR+COMP:0284",
+      "ACM-HR+COMP:0285",
+      "ACM-HR+COMP:0286",
+      "ACM-HR+COMP:0287",
+      "ACM-HR+COMP:0288",
+      "ACM-HR+COMP:0289",
+      "ACM-HR+COMP:0290",
+      "ACM-HR+COMP:0291",
+      "ACM-HR+COMP:0292",
+      "ACM-HR+COMP:0293",
+      "ACM-HR+COMP:0294",
+      "ACM-HR+COMP:0295",
+      "ACM-HR+COMP:0296",
+      "ACM-HR+COMP:0297",
+      "ACM-HR+COMP:0298",
+      "ACM-HR+COMP:0299",
+      "ACM-HR+COMP:0300",
+      "ACM-HR+COMP:0301",
+      "ACM-HR+COMP:0302",
+      "ACM-HR+COMP:0303",
+      "ACM-HR+COMP:0304",
+      "ACM-HR+COMP:0305",
+      "ACM-HR+COMP:0306",
+      "ACM-HR+COMP:0307",
+      "ACM-HR+COMP:0308",
+      "ACM-HR+COMP:0309",
+      "ACM-HR+COMP:0310",
+      "ACM-HR+COMP:0311",
+      "ACM-HR+COMP:0312",
+      "ACM-HR+COMP:0313",
+      "ACM-HR+COMP:0314",
+      "ACM-HR+COMP:0315",
+      "ACM-HR+COMP:0316",
+      "ACM-HR+COMP:0317",
+      "ACM-HR+COMP:0318",
+      "ACM-HR+COMP:0319",
+      "ACM-HR+COMP:0320",
+      "ACM-HR+COMP:0321",
+      "ACM-HR+COMP:0322",
+      "ACM-HR+COMP:0323",
+      "ACM-HR+COMP:0324",
+      "ACM-HR+COMP:0325",
+      "ACM-HR+COMP:0326",
+      "ACM-HR+COMP:0327",
+      "ACM-HR+COMP:0328",
+      "ACM-HR+COMP:0329",
+      "ACM-HR+COMP:0330",
+      "ACM-HR+COMP:0331",
+      "ACM-HR+COMP:0332",
+      "ACM-HR+COMP:0333",
+      "ACM-HR+COMP:0334",
+      "ACM-HR+COMP:0335",
+      "ACM-HR+COMP:0336",
+      "ACM-HR+COMP:0337",
+      "ACM-HR+COMP:0338",
+      "ACM-HR+COMP:0339",
+      "ACM-HR+COMP:0340",
+      "ACM-HR+COMP:0341",
+      "ACM-HR+COMP:0342",
+      "ACM-HR+COMP:0343",
+      "ACM-HR+COMP:0344",
+      "ACM-HR+COMP:0345",
+      "ACM-HR+COMP:0346",
+      "ACM-HR+COMP:0347",
+      "ACM-HR+COMP:0348",
+      "ACM-HR+COMP:0349",
+      "ACM-HR+COMP:0350",
+      "ACM-HR+COMP:0351",
+      "ACM-HR+COMP:0352",
+      "ACM-HR+COMP:0353",
+      "ACM-HR+COMP:0354",
+      "ACM-HR+COMP:0355",
+      "ACM-HR+COMP:0356",
+      "ACM-HR+COMP:0357",
+      "ACM-HR+COMP:0358",
+      "ACM-HR+COMP:0359",
+      "ACM-HR+COMP:0360",
+      "ACM-HR+COMP:0361",
+      "ACM-HR+COMP:0362",
+      "ACM-HR+COMP:0363",
+      "ACM-HR+COMP:0364",
+      "ACM-HR+COMP:0365",
+      "ACM-HR+COMP:0366",
+      "ACM-HR+COMP:0367",
+      "ACM-HR+COMP:0368",
+      "ACM-HR+COMP:0369",
+      "ACM-HR+COMP:0370",
+      "ACM-HR+COMP:0371",
+      "ACM-HR+COMP:0372",
+      "ACM-HR+COMP:0373",
+      "ACM-HR+COMP:0374",
+      "ACM-HR+COMP:0375",
+      "ACM-HR+COMP:0376",
+      "ACM-HR+COMP:0377",
+      "ACM-HR+COMP:0378",
+      "ACM-HR+COMP:0379",
+      "ACM-HR+COMP:0380",
+      "ACM-HR+COMP:0381",
+      "ACM-HR+COMP:0382",
+      "ACM-HR+COMP:0383",
+      "ACM-HR+COMP:0384",
+      "ACM-HR+COMP:0385",
+      "ACM-HR+COMP:0386",
+      "ACM-HR+COMP:0387",
+      "ACM-HR+COMP:0388",
+      "ACM-HR+COMP:0389",
+      "ACM-HR+COMP:0390",
+      "ACM-HR+COMP:0391",
+      "ACM-HR+COMP:0392",
+      "ACM-HR+COMP:0393",
+      "ACM-HR+COMP:0394",
+      "ACM-HR+COMP:0395",
+      "ACM-HR+COMP:0396",
+      "ACM-HR+COMP:0397",
+      "ACM-HR+COMP:0398",
+      "ACM-HR+COMP:0399",
+      "ACM-HR+COMP:0400",
+      "ACM-HR+COMP:0401",
+      "ACM-HR+COMP:0402",
+      "ACM-HR+COMP:0403",
+      "ACM-HR+COMP:0404"
+    ],
+    "IEEE": [
+      "IEEE-COMP:0001",
+      "IEEE-COMP:0002",
+      "IEEE-COMP:0003",
+      "IEEE-COMP:0004",
+      "IEEE-COMP:0005",
+      "IEEE-COMP:0006",
+      "IEEE-COMP:0007",
+      "IEEE-COMP:0008",
+      "IEEE-COMP:0009",
+      "IEEE-COMP:0010",
+      "IEEE-COMP:0011",
+      "IEEE-COMP:0012",
+      "IEEE-COMP:0013",
+      "IEEE-COMP:0014",
+      "IEEE-COMP:0015",
+      "IEEE-COMP:0016",
+      "IEEE-COMP:0017",
+      "IEEE-COMP:0018",
+      "IEEE-COMP:0019",
+      "IEEE-COMP:0020",
+      "IEEE-COMP:0021",
+      "IEEE-HR:0001",
+      "IEEE-HR:0002",
+      "IEEE-HR:0003",
+      "IEEE-HR:0004",
+      "IEEE-HR:0005",
+      "IEEE-HR:0006",
+      "IEEE-HR:0007",
+      "IEEE-HR:0008",
+      "IEEE-HR:0009",
+      "IEEE-HR:0010",
+      "IEEE-HR:0011",
+      "IEEE-HR:0012",
+      "IEEE-HR:0013",
+      "IEEE-HR:0014",
+      "IEEE-HR:0015",
+      "IEEE-HR:0016",
+      "IEEE-HR:0017",
+      "IEEE-HR:0018",
+      "IEEE-HR:0019",
+      "IEEE-HR:0020",
+      "IEEE-HR:0021",
+      "IEEE-HR:0022",
+      "IEEE-HR:0023",
+      "IEEE-HR:0024",
+      "IEEE-HR:0025",
+      "IEEE-HR:0026",
+      "IEEE-HR:0027",
+      "IEEE-HR:0028",
+      "IEEE-HR:0029",
+      "IEEE-HR:0030",
+      "IEEE-HR:0031",
+      "IEEE-HR:0032",
+      "IEEE-HR:0033",
+      "IEEE-HR:0034",
+      "IEEE-HR:0035",
+      "IEEE-HR:0036",
+      "IEEE-HR:0037",
+      "IEEE-HR:0038",
+      "IEEE-HR:0039",
+      "IEEE-HR:0040",
+      "IEEE-HR:0041",
+      "IEEE-HR:0042"
+    ],
+    "OPENALEX": [
+      "OPENALEX-COMP:0001",
+      "OPENALEX-COMP:0002",
+      "OPENALEX-COMP:0003",
+      "OPENALEX-COMP:0004",
+      "OPENALEX-COMP:0005",
+      "OPENALEX-COMP:0006",
+      "OPENALEX-COMP:0007",
+      "OPENALEX-COMP:0008",
+      "OPENALEX-COMP:0009",
+      "OPENALEX-COMP:0010",
+      "OPENALEX-COMP:0011",
+      "OPENALEX-COMP:0012",
+      "OPENALEX-COMP:0013",
+      "OPENALEX-COMP:0014",
+      "OPENALEX-COMP:0015",
+      "OPENALEX-COMP:0016",
+      "OPENALEX-COMP:0017",
+      "OPENALEX-COMP:0018",
+      "OPENALEX-COMP:0019",
+      "OPENALEX-COMP:0020",
+      "OPENALEX-COMP:0021",
+      "OPENALEX-COMP:0022",
+      "OPENALEX-COMP:0023",
+      "OPENALEX-COMP:0024",
+      "OPENALEX-COMP:0025",
+      "OPENALEX-COMP:0026",
+      "OPENALEX-COMP:0027",
+      "OPENALEX-COMP:0028",
+      "OPENALEX-COMP:0029",
+      "OPENALEX-COMP:0030",
+      "OPENALEX-COMP:0031",
+      "OPENALEX-HR:0001",
+      "OPENALEX-HR:0002",
+      "OPENALEX-HR:0003",
+      "OPENALEX-HR:0004",
+      "OPENALEX-HR:0005",
+      "OPENALEX-HR:0006",
+      "OPENALEX-HR:0007",
+      "OPENALEX-HR:0008",
+      "OPENALEX-HR:0009",
+      "OPENALEX-HR:0010",
+      "OPENALEX-HR:0011",
+      "OPENALEX-HR:0012",
+      "OPENALEX-HR:0013",
+      "OPENALEX-HR:0014",
+      "OPENALEX-HR:0015",
+      "OPENALEX-HR:0016",
+      "OPENALEX-HR:0017",
+      "OPENALEX-HR:0018",
+      "OPENALEX-HR:0019",
+      "OPENALEX-HR:0020",
+      "OPENALEX-HR:0021",
+      "OPENALEX-HR:0022",
+      "OPENALEX-HR:0023",
+      "OPENALEX-HR:0024",
+      "OPENALEX-HR:0025",
+      "OPENALEX-HR:0026",
+      "OPENALEX-HR:0027",
+      "OPENALEX-HR:0028",
+      "OPENALEX-HR:0029",
+      "OPENALEX-HR:0030",
+      "OPENALEX-HR:0031",
+      "OPENALEX-HR:0032",
+      "OPENALEX-HR:0033",
+      "OPENALEX-HR:0034",
+      "OPENALEX-HR:0035",
+      "OPENALEX-HR:0036",
+      "OPENALEX-HR:0037",
+      "OPENALEX-HR:0038",
+      "OPENALEX-HR:0039",
+      "OPENALEX-HR:0040",
+      "OPENALEX-HR:0041",
+      "OPENALEX-HR:0042",
+      "OPENALEX-HR:0043",
+      "OPENALEX-HR:0044",
+      "OPENALEX-HR:0045",
+      "OPENALEX-HR:0046",
+      "OPENALEX-HR:0047",
+      "OPENALEX-HR:0048",
+      "OPENALEX-HR:0049",
+      "OPENALEX-HR:0050",
+      "OPENALEX-HR:0051",
+      "OPENALEX-HR:0052",
+      "OPENALEX-HR:0053",
+      "OPENALEX-HR:0054",
+      "OPENALEX-HR:0055",
+      "OPENALEX-HR:0056",
+      "OPENALEX-HR:0057",
+      "OPENALEX-HR:0058",
+      "OPENALEX-HR:0059",
+      "OPENALEX-HR:0060",
+      "OPENALEX-HR:0061",
+      "OPENALEX-HR:0062",
+      "OPENALEX-HR:0063",
+      "OPENALEX-HR:0064",
+      "OPENALEX-HR:0065",
+      "OPENALEX-HR:0066",
+      "OPENALEX-HR:0067",
+      "OPENALEX-HR:0068",
+      "OPENALEX-HR:0069",
+      "OPENALEX-HR:0070",
+      "OPENALEX-HR:0071",
+      "OPENALEX-HR:0072",
+      "OPENALEX-HR:0073",
+      "OPENALEX-HR:0074",
+      "OPENALEX-HR:0075",
+      "OPENALEX-HR:0076",
+      "OPENALEX-HR:0077",
+      "OPENALEX-HR:0078",
+      "OPENALEX-HR:0079",
+      "OPENALEX-HR:0080",
+      "OPENALEX-HR:0081",
+      "OPENALEX-HR:0082",
+      "OPENALEX-HR:0083",
+      "OPENALEX-HR:0084",
+      "OPENALEX-HR:0085"
+    ],
+    "SCOPUS": [
+      "SCOPUS-COMP:0001",
+      "SCOPUS-COMP:0002",
+      "SCOPUS-COMP:0003",
+      "SCOPUS-COMP:0004",
+      "SCOPUS-COMP:0005",
+      "SCOPUS-COMP:0006",
+      "SCOPUS-COMP:0007",
+      "SCOPUS-COMP:0008",
+      "SCOPUS-COMP:0009",
+      "SCOPUS-COMP:0010",
+      "SCOPUS-COMP:0011",
+      "SCOPUS-COMP:0012",
+      "SCOPUS-COMP:0013",
+      "SCOPUS-COMP:0014",
+      "SCOPUS-COMP:0015",
+      "SCOPUS-COMP:0016",
+      "SCOPUS-COMP:0017",
+      "SCOPUS-COMP:0018",
+      "SCOPUS-COMP:0019",
+      "SCOPUS-COMP:0020",
+      "SCOPUS-COMP:0021",
+      "SCOPUS-COMP:0022",
+      "SCOPUS-COMP:0023",
+      "SCOPUS-COMP:0024",
+      "SCOPUS-COMP:0025",
+      "SCOPUS-COMP:0026",
+      "SCOPUS-COMP:0027",
+      "SCOPUS-COMP:0028",
+      "SCOPUS-COMP:0029",
+      "SCOPUS-COMP:0030",
+      "SCOPUS-COMP:0031",
+      "SCOPUS-COMP:0032",
+      "SCOPUS-COMP:0033",
+      "SCOPUS-HR:0001",
+      "SCOPUS-HR:0002",
+      "SCOPUS-HR:0003",
+      "SCOPUS-HR:0004",
+      "SCOPUS-HR:0005",
+      "SCOPUS-HR:0006",
+      "SCOPUS-HR:0007",
+      "SCOPUS-HR:0008",
+      "SCOPUS-HR:0009",
+      "SCOPUS-HR:0010",
+      "SCOPUS-HR:0011",
+      "SCOPUS-HR:0012",
+      "SCOPUS-HR:0013",
+      "SCOPUS-HR:0014",
+      "SCOPUS-HR:0015",
+      "SCOPUS-HR:0016",
+      "SCOPUS-HR:0017",
+      "SCOPUS-HR:0018",
+      "SCOPUS-HR:0019",
+      "SCOPUS-HR:0020",
+      "SCOPUS-HR:0021",
+      "SCOPUS-HR:0022",
+      "SCOPUS-HR:0023",
+      "SCOPUS-HR:0024",
+      "SCOPUS-HR:0025",
+      "SCOPUS-HR:0026",
+      "SCOPUS-HR:0027",
+      "SCOPUS-HR:0028",
+      "SCOPUS-HR:0029",
+      "SCOPUS-HR:0030",
+      "SCOPUS-HR:0031",
+      "SCOPUS-HR:0032",
+      "SCOPUS-HR:0033",
+      "SCOPUS-HR:0034",
+      "SCOPUS-HR:0035",
+      "SCOPUS-HR:0036",
+      "SCOPUS-HR:0037",
+      "SCOPUS-HR:0038",
+      "SCOPUS-HR:0039",
+      "SCOPUS-HR:0040",
+      "SCOPUS-HR:0041",
+      "SCOPUS-HR:0042",
+      "SCOPUS-HR:0043",
+      "SCOPUS-HR:0044",
+      "SCOPUS-HR:0045",
+      "SCOPUS-HR:0046",
+      "SCOPUS-HR:0047",
+      "SCOPUS-HR:0048",
+      "SCOPUS-HR:0049",
+      "SCOPUS-HR:0050",
+      "SCOPUS-HR:0051",
+      "SCOPUS-HR:0052",
+      "SCOPUS-HR:0053",
+      "SCOPUS-HR:0054",
+      "SCOPUS-HR:0055",
+      "SCOPUS-HR:0056",
+      "SCOPUS-HR:0057",
+      "SCOPUS-HR:0058",
+      "SCOPUS-HR:0059",
+      "SCOPUS-HR:0060",
+      "SCOPUS-HR:0061",
+      "SCOPUS-HR:0062",
+      "SCOPUS-HR:0063",
+      "SCOPUS-HR:0064",
+      "SCOPUS-HR:0065",
+      "SCOPUS-HR:0066",
+      "SCOPUS-HR:0067",
+      "SCOPUS-HR:0068",
+      "SCOPUS-HR:0069",
+      "SCOPUS-HR:0070",
+      "SCOPUS-HR:0071",
+      "SCOPUS-HR:0072",
+      "SCOPUS-HR:0073",
+      "SCOPUS-HR:0074",
+      "SCOPUS-HR:0075",
+      "SCOPUS-HR:0076",
+      "SCOPUS-HR:0077"
+    ]
+  },
+  "report_ids_by_fulltext_decision": {
+    "AWAITING_CLASSIFICATION": [
+      "R0081",
+      "R0082",
+      "R0132"
+    ],
+    "EXCLUDE": [
+      "R0007",
+      "R0023",
+      "R0024",
+      "R0027",
+      "R0028",
+      "R0047",
+      "R0052",
+      "R0056",
+      "R0061",
+      "R0070",
+      "R0091",
+      "R0096",
+      "R0099",
+      "R0105",
+      "R0108",
+      "R0111",
+      "R0115",
+      "R0117",
+      "R0122",
+      "R0126",
+      "R0128",
+      "R0130",
+      "R0138",
+      "R0139",
+      "R0142",
+      "R0144",
+      "R0148",
+      "R0157",
+      "R0170",
+      "R0218",
+      "R0220",
+      "R0221",
+      "R0225",
+      "R0228",
+      "R0229",
+      "R0230",
+      "R0231",
+      "R0232",
+      "R0233",
+      "R0234",
+      "R0235",
+      "R0238",
+      "R0239",
+      "R0240",
+      "R0241",
+      "R0242",
+      "R0244",
+      "R0245",
+      "R0246",
+      "R0248",
+      "R0249",
+      "R0251",
+      "R0253",
+      "R0255",
+      "R0257",
+      "R0259",
+      "R0260",
+      "R0261",
+      "R0262",
+      "R0266",
+      "R0269",
+      "R0271",
+      "R0272",
+      "R0281",
+      "R0288",
+      "R0294",
+      "R0298",
+      "R0299",
+      "R0302",
+      "R0308",
+      "R0309",
+      "R0317",
+      "R0318",
+      "R0321",
+      "R0324",
+      "R0351",
+      "R0367",
+      "R0373",
+      "R0384",
+      "R0400",
+      "R0402",
+      "R0409",
+      "R0432",
+      "R0438",
+      "R0445",
+      "R0453",
+      "R0465"
+    ],
+    "INCLUDE": [
+      "R0001",
+      "R0002",
+      "R0003",
+      "R0006",
+      "R0009",
+      "R0010",
+      "R0014",
+      "R0015",
+      "R0019",
+      "R0022",
+      "R0029",
+      "R0036",
+      "R0038",
+      "R0043",
+      "R0044",
+      "R0045",
+      "R0048",
+      "R0054",
+      "R0058",
+      "R0059",
+      "R0062",
+      "R0063",
+      "R0064",
+      "R0068",
+      "R0071",
+      "R0073",
+      "R0074",
+      "R0075",
+      "R0077",
+      "R0080",
+      "R0083",
+      "R0089",
+      "R0090",
+      "R0092",
+      "R0095",
+      "R0106",
+      "R0107",
+      "R0110",
+      "R0113",
+      "R0118",
+      "R0121",
+      "R0125",
+      "R0137",
+      "R0145",
+      "R0223",
+      "R0292"
+    ]
+  },
+  "report_ids_by_retrieval_decision": {
+    "NOT_RETRIEVED": [
+      "R0116"
+    ],
+    "RETRIEVED_PDF": [
+      "R0001",
+      "R0002",
+      "R0003",
+      "R0006",
+      "R0007",
+      "R0009",
+      "R0010",
+      "R0014",
+      "R0015",
+      "R0019",
+      "R0022",
+      "R0023",
+      "R0024",
+      "R0027",
+      "R0028",
+      "R0029",
+      "R0036",
+      "R0038",
+      "R0043",
+      "R0044",
+      "R0045",
+      "R0047",
+      "R0048",
+      "R0052",
+      "R0054",
+      "R0056",
+      "R0058",
+      "R0059",
+      "R0061",
+      "R0062",
+      "R0063",
+      "R0064",
+      "R0068",
+      "R0070",
+      "R0071",
+      "R0073",
+      "R0074",
+      "R0075",
+      "R0077",
+      "R0080",
+      "R0081",
+      "R0082",
+      "R0083",
+      "R0089",
+      "R0090",
+      "R0091",
+      "R0092",
+      "R0095",
+      "R0096",
+      "R0099",
+      "R0105",
+      "R0106",
+      "R0107",
+      "R0108",
+      "R0110",
+      "R0111",
+      "R0113",
+      "R0115",
+      "R0117",
+      "R0118",
+      "R0121",
+      "R0122",
+      "R0125",
+      "R0126",
+      "R0128",
+      "R0130",
+      "R0132",
+      "R0137",
+      "R0138",
+      "R0139",
+      "R0142",
+      "R0144",
+      "R0145",
+      "R0148",
+      "R0157",
+      "R0170",
+      "R0218",
+      "R0220",
+      "R0221",
+      "R0223",
+      "R0225",
+      "R0228",
+      "R0229",
+      "R0230",
+      "R0231",
+      "R0232",
+      "R0233",
+      "R0234",
+      "R0235",
+      "R0238",
+      "R0239",
+      "R0240",
+      "R0241",
+      "R0242",
+      "R0244",
+      "R0245",
+      "R0246",
+      "R0248",
+      "R0249",
+      "R0251",
+      "R0253",
+      "R0255",
+      "R0257",
+      "R0259",
+      "R0260",
+      "R0261",
+      "R0262",
+      "R0266",
+      "R0269",
+      "R0271",
+      "R0272",
+      "R0281",
+      "R0288",
+      "R0292",
+      "R0294",
+      "R0298",
+      "R0299",
+      "R0302",
+      "R0308",
+      "R0309",
+      "R0317",
+      "R0318",
+      "R0321",
+      "R0324",
+      "R0351",
+      "R0367",
+      "R0373",
+      "R0384",
+      "R0400",
+      "R0402",
+      "R0409",
+      "R0432",
+      "R0438",
+      "R0445",
+      "R0453",
+      "R0465"
+    ]
+  },
+  "retrieval_counts_by_title_decision": {
+    "RETRIEVE_FULL_TEXT": {
+      "RETRIEVED_PDF": 44
+    },
+    "UNCLEAR": {
+      "NOT_RETRIEVED": 1,
+      "RETRIEVED_PDF": 92
+    }
+  },
+  "screening_ids_by_title_abstract_decision": {
+    "EXCLUDE": [
+      "R0004",
+      "R0005",
+      "R0008",
+      "R0011",
+      "R0012",
+      "R0013",
+      "R0016",
+      "R0017",
+      "R0018",
+      "R0020",
+      "R0021",
+      "R0025",
+      "R0026",
+      "R0030",
+      "R0031",
+      "R0032",
+      "R0033",
+      "R0034",
+      "R0035",
+      "R0037",
+      "R0039",
+      "R0040",
+      "R0041",
+      "R0042",
+      "R0046",
+      "R0049",
+      "R0050",
+      "R0051",
+      "R0053",
+      "R0055",
+      "R0057",
+      "R0060",
+      "R0065",
+      "R0066",
+      "R0067",
+      "R0069",
+      "R0072",
+      "R0076",
+      "R0078",
+      "R0079",
+      "R0084",
+      "R0085",
+      "R0086",
+      "R0087",
+      "R0088",
+      "R0093",
+      "R0094",
+      "R0097",
+      "R0098",
+      "R0100",
+      "R0101",
+      "R0102",
+      "R0103",
+      "R0104",
+      "R0109",
+      "R0112",
+      "R0114",
+      "R0119",
+      "R0120",
+      "R0123",
+      "R0124",
+      "R0127",
+      "R0129",
+      "R0131",
+      "R0133",
+      "R0134",
+      "R0135",
+      "R0136",
+      "R0140",
+      "R0141",
+      "R0143",
+      "R0146",
+      "R0147",
+      "R0149",
+      "R0150",
+      "R0151",
+      "R0152",
+      "R0153",
+      "R0154",
+      "R0155",
+      "R0156",
+      "R0158",
+      "R0159",
+      "R0160",
+      "R0161",
+      "R0162",
+      "R0163",
+      "R0164",
+      "R0165",
+      "R0166",
+      "R0167",
+      "R0168",
+      "R0169",
+      "R0171",
+      "R0172",
+      "R0173",
+      "R0174",
+      "R0175",
+      "R0176",
+      "R0177",
+      "R0178",
+      "R0179",
+      "R0180",
+      "R0181",
+      "R0182",
+      "R0183",
+      "R0184",
+      "R0185",
+      "R0186",
+      "R0187",
+      "R0188",
+      "R0189",
+      "R0190",
+      "R0191",
+      "R0192",
+      "R0193",
+      "R0194",
+      "R0195",
+      "R0196",
+      "R0197",
+      "R0198",
+      "R0199",
+      "R0200",
+      "R0201",
+      "R0202",
+      "R0203",
+      "R0204",
+      "R0205",
+      "R0206",
+      "R0207",
+      "R0208",
+      "R0209",
+      "R0210",
+      "R0211",
+      "R0212",
+      "R0213",
+      "R0214",
+      "R0215",
+      "R0216",
+      "R0217",
+      "R0219",
+      "R0222",
+      "R0224",
+      "R0226",
+      "R0227",
+      "R0236",
+      "R0237",
+      "R0243",
+      "R0247",
+      "R0250",
+      "R0252",
+      "R0254",
+      "R0256",
+      "R0258",
+      "R0263",
+      "R0264",
+      "R0265",
+      "R0267",
+      "R0268",
+      "R0270",
+      "R0273",
+      "R0274",
+      "R0275",
+      "R0276",
+      "R0277",
+      "R0278",
+      "R0279",
+      "R0280",
+      "R0282",
+      "R0283",
+      "R0284",
+      "R0285",
+      "R0286",
+      "R0287",
+      "R0289",
+      "R0290",
+      "R0291",
+      "R0293",
+      "R0295",
+      "R0296",
+      "R0297",
+      "R0300",
+      "R0301",
+      "R0303",
+      "R0304",
+      "R0305",
+      "R0306",
+      "R0307",
+      "R0310",
+      "R0311",
+      "R0312",
+      "R0313",
+      "R0314",
+      "R0315",
+      "R0316",
+      "R0319",
+      "R0320",
+      "R0322",
+      "R0323",
+      "R0325",
+      "R0326",
+      "R0327",
+      "R0328",
+      "R0329",
+      "R0330",
+      "R0331",
+      "R0332",
+      "R0333",
+      "R0334",
+      "R0335",
+      "R0336",
+      "R0337",
+      "R0338",
+      "R0339",
+      "R0340",
+      "R0341",
+      "R0342",
+      "R0343",
+      "R0344",
+      "R0345",
+      "R0346",
+      "R0347",
+      "R0348",
+      "R0349",
+      "R0350",
+      "R0352",
+      "R0353",
+      "R0354",
+      "R0355",
+      "R0356",
+      "R0357",
+      "R0358",
+      "R0359",
+      "R0360",
+      "R0361",
+      "R0362",
+      "R0363",
+      "R0364",
+      "R0365",
+      "R0366",
+      "R0368",
+      "R0369",
+      "R0370",
+      "R0371",
+      "R0372",
+      "R0374",
+      "R0375",
+      "R0376",
+      "R0377",
+      "R0378",
+      "R0379",
+      "R0380",
+      "R0381",
+      "R0382",
+      "R0383",
+      "R0385",
+      "R0386",
+      "R0387",
+      "R0388",
+      "R0389",
+      "R0390",
+      "R0391",
+      "R0392",
+      "R0393",
+      "R0394",
+      "R0395",
+      "R0396",
+      "R0397",
+      "R0398",
+      "R0399",
+      "R0401",
+      "R0403",
+      "R0404",
+      "R0405",
+      "R0406",
+      "R0407",
+      "R0408",
+      "R0410",
+      "R0411",
+      "R0412",
+      "R0413",
+      "R0414",
+      "R0415",
+      "R0416",
+      "R0417",
+      "R0418",
+      "R0419",
+      "R0420",
+      "R0421",
+      "R0422",
+      "R0423",
+      "R0424",
+      "R0425",
+      "R0426",
+      "R0427",
+      "R0428",
+      "R0429",
+      "R0430",
+      "R0431",
+      "R0433",
+      "R0434",
+      "R0435",
+      "R0436",
+      "R0437",
+      "R0439",
+      "R0440",
+      "R0441",
+      "R0442",
+      "R0443",
+      "R0444",
+      "R0446",
+      "R0447",
+      "R0448",
+      "R0449",
+      "R0450",
+      "R0451",
+      "R0452",
+      "R0454",
+      "R0455",
+      "R0456",
+      "R0457",
+      "R0458",
+      "R0459",
+      "R0460",
+      "R0461",
+      "R0462",
+      "R0463",
+      "R0464"
+    ],
+    "RETRIEVE_FULL_TEXT": [
+      "R0001",
+      "R0002",
+      "R0003",
+      "R0006",
+      "R0009",
+      "R0010",
+      "R0014",
+      "R0015",
+      "R0019",
+      "R0022",
+      "R0029",
+      "R0038",
+      "R0043",
+      "R0044",
+      "R0045",
+      "R0047",
+      "R0048",
+      "R0054",
+      "R0058",
+      "R0059",
+      "R0062",
+      "R0063",
+      "R0064",
+      "R0068",
+      "R0070",
+      "R0071",
+      "R0073",
+      "R0074",
+      "R0075",
+      "R0077",
+      "R0080",
+      "R0082",
+      "R0083",
+      "R0089",
+      "R0092",
+      "R0095",
+      "R0096",
+      "R0106",
+      "R0107",
+      "R0110",
+      "R0118",
+      "R0121",
+      "R0221",
+      "R0402"
+    ],
+    "UNCLEAR": [
+      "R0007",
+      "R0023",
+      "R0024",
+      "R0027",
+      "R0028",
+      "R0036",
+      "R0052",
+      "R0056",
+      "R0061",
+      "R0081",
+      "R0090",
+      "R0091",
+      "R0099",
+      "R0105",
+      "R0108",
+      "R0111",
+      "R0113",
+      "R0115",
+      "R0116",
+      "R0117",
+      "R0122",
+      "R0125",
+      "R0126",
+      "R0128",
+      "R0130",
+      "R0132",
+      "R0137",
+      "R0138",
+      "R0139",
+      "R0142",
+      "R0144",
+      "R0145",
+      "R0148",
+      "R0157",
+      "R0170",
+      "R0218",
+      "R0220",
+      "R0223",
+      "R0225",
+      "R0228",
+      "R0229",
+      "R0230",
+      "R0231",
+      "R0232",
+      "R0233",
+      "R0234",
+      "R0235",
+      "R0238",
+      "R0239",
+      "R0240",
+      "R0241",
+      "R0242",
+      "R0244",
+      "R0245",
+      "R0246",
+      "R0248",
+      "R0249",
+      "R0251",
+      "R0253",
+      "R0255",
+      "R0257",
+      "R0259",
+      "R0260",
+      "R0261",
+      "R0262",
+      "R0266",
+      "R0269",
+      "R0271",
+      "R0272",
+      "R0281",
+      "R0288",
+      "R0292",
+      "R0294",
+      "R0298",
+      "R0299",
+      "R0302",
+      "R0308",
+      "R0309",
+      "R0317",
+      "R0318",
+      "R0321",
+      "R0324",
+      "R0351",
+      "R0367",
+      "R0373",
+      "R0384",
+      "R0400",
+      "R0409",
+      "R0432",
+      "R0438",
+      "R0445",
+      "R0453",
+      "R0465"
+    ]
+  },
+  "study_ids_to_report_ids": {
+    "S001": [
+      "R0001"
+    ],
+    "S002": [
+      "R0002"
+    ],
+    "S003": [
+      "R0003"
+    ],
+    "S004": [
+      "R0006"
+    ],
+    "S005": [
+      "R0009"
+    ],
+    "S006": [
+      "R0010"
+    ],
+    "S007": [
+      "R0015"
+    ],
+    "S008": [
+      "R0019"
+    ],
+    "S009": [
+      "R0022"
+    ],
+    "S010": [
+      "R0029"
+    ],
+    "S011": [
+      "R0044"
+    ],
+    "S012": [
+      "R0045"
+    ],
+    "S013": [
+      "R0048"
+    ],
+    "S014": [
+      "R0054"
+    ],
+    "S015": [
+      "R0059"
+    ],
+    "S016": [
+      "R0062"
+    ],
+    "S017": [
+      "R0063"
+    ],
+    "S018": [
+      "R0068"
+    ],
+    "S019": [
+      "R0071"
+    ],
+    "S020": [
+      "R0073"
+    ],
+    "S021": [
+      "R0074"
+    ],
+    "S022": [
+      "R0083"
+    ],
+    "S023": [
+      "R0089"
+    ],
+    "S024": [
+      "R0095"
+    ],
+    "S025": [
+      "R0121"
+    ],
+    "S026": [
+      "R0014"
+    ],
+    "S027": [
+      "R0036"
+    ],
+    "S028": [
+      "R0038"
+    ],
+    "S029": [
+      "R0043"
+    ],
+    "S030": [
+      "R0058"
+    ],
+    "S031": [
+      "R0064"
+    ],
+    "S032": [
+      "R0075"
+    ],
+    "S033": [
+      "R0077"
+    ],
+    "S034": [
+      "R0080"
+    ],
+    "S035": [
+      "R0090"
+    ],
+    "S036": [
+      "R0092"
+    ],
+    "S037": [
+      "R0106"
+    ],
+    "S038": [
+      "R0107"
+    ],
+    "S039": [
+      "R0110"
+    ],
+    "S040": [
+      "R0113"
+    ],
+    "S041": [
+      "R0118"
+    ],
+    "S042": [
+      "R0125"
+    ],
+    "S043": [
+      "R0137"
+    ],
+    "S044": [
+      "R0145"
+    ],
+    "S045": [
+      "R0223"
+    ],
+    "S046": [
+      "R0292"
+    ]
+  },
+  "supplemental_input_sha256_relative_to_project": {
+    "prisma_evidence/evidence_by_id.csv": "375c3b8d6d4a1d2465bfbd53359da2a68d3d0d17dd5a19b8f93c1a63bbb82aa9",
+    "restart_2026_11_26/appraisal/active_appraisal_table.csv": "e3bec6ad43ca4b89b2812ea6ab1f74f70b07c5538e00e8d9b25cacc98dcff795",
+    "restart_2026_11_26/appraisal/active_p09_appraisal_lock.json": "3f1c458ec32a0565914abba011114b3a97b14db95f8541af1d929560c9f2312f",
+    "restart_2026_11_26/extraction/active_p08_extraction_lock.json": "1cef72e2eed42751458485988f6503dba7801f6b6b095f2f5914b9a9d0996d82",
+    "restart_2026_11_26/fulltext_retrieval/missing_pdf.csv": "d8df3e6e5a7bfe49dbeabd2c8a5f3fe5e109f0cee6fb94dbbafb3b83cb9d66bc",
+    "restart_2026_11_26/fulltext_screening/fulltext_screening.csv": "3a51798ba0454a47e6e5c1b168afd6f7a529ad24dc9394b3e6cb7c30921aea8a",
+    "restart_2026_11_26/retrieval_round_01/round_01_evidence.json": "2f9e649b9db1b05f30c48ab89db42afafbb56ae004b1bccfd4ed620dbcafb118",
+    "restart_2026_11_26/study_linkage/active_pair_evidence.csv": "1ce001ee51fbe3796b2f875e8c61da01d9d47a4f830735b4f116e0dea7bd0e7c",
+    "restart_2026_11_26/study_linkage/active_report_study_map.csv": "e4981e40de3bddfe24689ac974316fc00de81a912654db58694d11957a72a097",
+    "restart_2026_11_26/supplemental_screening/batch_01_accepted.json": "c1949ec48db178cc98256569626f7110772846ec3012bbe581dcec9221f51073",
+    "restart_2026_11_26/supplemental_screening/batch_02_accepted.json": "8fa1981732242433adfd9917d1937f45053459f1f13cf6ad6eef8f40fa40cfbe",
+    "restart_2026_11_26/supplemental_screening/batch_03_accepted.json": "5e3967415892d61180efcea36ce75942a99d72e9fe096652f59b3b49dc623a20",
+    "restart_2026_11_26/supplemental_screening/batch_04_accepted.json": "015dcb9b65ea834313930cc9341737ae12c04f496a527b2c4a1b23c94702eeec",
+    "restart_2026_11_26/supplemental_screening/batch_05_accepted.json": "abeaaf95a3678d8304353b357a13f4cd821b0e2405a8c0852b05b5f8b5716e63",
+    "restart_2026_11_26/supplemental_screening/batch_06_accepted.json": "9fa51090c37a2a9bbc8b63c02c58deab901ff526d6baccd1ce76b2069c48c55a",
+    "restart_2026_11_26/supplemental_screening/batch_07_accepted.json": "bf5f54115f1f4369e1d5f85db1073a6d3457df8cbc4216a44c9d97fbb03364a2",
+    "restart_2026_11_26/supplemental_screening/batch_08_accepted.json": "bc5c489b2adb665cb4ea2da6ac384439e3f141995e8f08bf8da1dc1237405443",
+    "restart_2026_11_26/supplemental_screening/manifest.json": "8dcaac4ec14ad89d811446bfac9e02b32d9c23c5d94052e5eb249dff164274dd",
+    "restart_2026_11_26/supplemental_screening/prior_awaiting_recheck.json": "0e642fe552dbe12fc778104d91b6ea5c114ab30a4de016b1f3ceb9c68e9d6a89",
+    "restart_2026_11_26/supplemental_screening/screening_decisions.csv": "b37fbccf1bc6a6357ebf23476f90602f2a0439eae1bec15ef7ac62c0e0c4ad10",
+    "restart_2026_11_26/supplemental_screening/supplemental_intake.csv": "9b6d277b625ebe435aaec7dcef7c6d036f6de09710ddd0217bd87e39e38e65e5"
+  },
+  "supplemental_retrieval": {
+    "original_missing": 93,
+    "recovered": 92,
+    "unretrieved": 1
+  },
+  "tested_version_pairs": {
+    "R0001/R0092": [
+      "R0001",
+      "R0092",
+      "DISTINCT"
+    ],
+    "R0003/R0010": [
+      "R0003",
+      "R0010",
+      "DISTINCT"
+    ],
+    "R0003/R0014": [
+      "R0003",
+      "R0014",
+      "DISTINCT"
+    ],
+    "R0003/R0015": [
+      "R0003",
+      "R0015",
+      "DISTINCT"
+    ],
+    "R0003/R0059": [
+      "R0003",
+      "R0059",
+      "DISTINCT"
+    ],
+    "R0003/R0062": [
+      "R0003",
+      "R0062",
+      "DISTINCT"
+    ],
+    "R0006/R0010": [
+      "R0006",
+      "R0010",
+      "DISTINCT"
+    ],
+    "R0006/R0014": [
+      "R0006",
+      "R0014",
+      "DISTINCT"
+    ],
+    "R0009/R0010": [
+      "R0009",
+      "R0010",
+      "DISTINCT"
+    ],
+    "R0009/R0014": [
+      "R0009",
+      "R0014",
+      "DISTINCT"
+    ],
+    "R0010/R0014": [
+      "R0010",
+      "R0014",
+      "DISTINCT"
+    ],
+    "R0010/R0015": [
+      "R0010",
+      "R0015",
+      "DISTINCT"
+    ],
+    "R0010/R0059": [
+      "R0010",
+      "R0059",
+      "DISTINCT"
+    ],
+    "R0010/R0062": [
+      "R0010",
+      "R0062",
+      "DISTINCT"
+    ],
+    "R0014/R0015": [
+      "R0014",
+      "R0015",
+      "DISTINCT"
+    ],
+    "R0014/R0059": [
+      "R0014",
+      "R0059",
+      "DISTINCT"
+    ],
+    "R0014/R0062": [
+      "R0014",
+      "R0062",
+      "DISTINCT"
+    ],
+    "R0015/R0059": [
+      "R0015",
+      "R0059",
+      "DISTINCT"
+    ],
+    "R0015/R0062": [
+      "R0015",
+      "R0062",
+      "DISTINCT"
+    ],
+    "R0019/R0068": [
+      "R0019",
+      "R0068",
+      "DISTINCT"
+    ],
+    "R0036/R0048": [
+      "R0036",
+      "R0048",
+      "DISTINCT"
+    ],
+    "R0045/R0137": [
+      "R0045",
+      "R0137",
+      "DISTINCT"
+    ],
+    "R0054/R0106": [
+      "R0054",
+      "R0106",
+      "DISTINCT"
+    ],
+    "R0059/R0062": [
+      "R0059",
+      "R0062",
+      "DISTINCT"
+    ],
+    "R0074/R0110": [
+      "R0074",
+      "R0110",
+      "DISTINCT"
+    ],
+    "R0075/R0080": [
+      "R0075",
+      "R0080",
+      "DISTINCT"
+    ],
+    "R0083/R0118": [
+      "R0083",
+      "R0118",
+      "DISTINCT"
+    ],
+    "R0145/R0223": [
+      "R0145",
+      "R0223",
+      "DISTINCT"
+    ]
+  },
+  "title_abstract_exclusions_by_reason": {
+    "E1": [
+      "R0025",
+      "R0031",
+      "R0034",
+      "R0035",
+      "R0051",
+      "R0112",
+      "R0119",
+      "R0123",
+      "R0124",
+      "R0131",
+      "R0133",
+      "R0134",
+      "R0135",
+      "R0140",
+      "R0141",
+      "R0147",
+      "R0149",
+      "R0151",
+      "R0152",
+      "R0154",
+      "R0160",
+      "R0162",
+      "R0164",
+      "R0219",
+      "R0222",
+      "R0224",
+      "R0236",
+      "R0237",
+      "R0250",
+      "R0252",
+      "R0254",
+      "R0258",
+      "R0267",
+      "R0323",
+      "R0330",
+      "R0377",
+      "R0391",
+      "R0392",
+      "R0393",
+      "R0395",
+      "R0396",
+      "R0397",
+      "R0398",
+      "R0399",
+      "R0401",
+      "R0403",
+      "R0404",
+      "R0405",
+      "R0406",
+      "R0407",
+      "R0408",
+      "R0410",
+      "R0411",
+      "R0412",
+      "R0413",
+      "R0414",
+      "R0415",
+      "R0416",
+      "R0417",
+      "R0418",
+      "R0419",
+      "R0420",
+      "R0421",
+      "R0422",
+      "R0423",
+      "R0424",
+      "R0425",
+      "R0426",
+      "R0427",
+      "R0428",
+      "R0429",
+      "R0430",
+      "R0431",
+      "R0433",
+      "R0434",
+      "R0435",
+      "R0436",
+      "R0437",
+      "R0439",
+      "R0441",
+      "R0442",
+      "R0443",
+      "R0444",
+      "R0446",
+      "R0447",
+      "R0448",
+      "R0450",
+      "R0451",
+      "R0454",
+      "R0455",
+      "R0456",
+      "R0457",
+      "R0458",
+      "R0462",
+      "R0463",
+      "R0464"
+    ],
+    "E2": [
+      "R0042",
+      "R0100",
+      "R0165",
+      "R0247",
+      "R0263",
+      "R0270",
+      "R0394",
+      "R0440",
+      "R0452",
+      "R0459",
+      "R0460",
+      "R0461"
+    ],
+    "E3": [
+      "R0004",
+      "R0005",
+      "R0008",
+      "R0011",
+      "R0012",
+      "R0013",
+      "R0016",
+      "R0017",
+      "R0018",
+      "R0020",
+      "R0021",
+      "R0026",
+      "R0030",
+      "R0032",
+      "R0033",
+      "R0037",
+      "R0039",
+      "R0040",
+      "R0041",
+      "R0046",
+      "R0049",
+      "R0050",
+      "R0053",
+      "R0055",
+      "R0057",
+      "R0060",
+      "R0065",
+      "R0066",
+      "R0067",
+      "R0069",
+      "R0072",
+      "R0076",
+      "R0078",
+      "R0079",
+      "R0084",
+      "R0085",
+      "R0086",
+      "R0087",
+      "R0088",
+      "R0093",
+      "R0094",
+      "R0097",
+      "R0098",
+      "R0101",
+      "R0102",
+      "R0103",
+      "R0104",
+      "R0143",
+      "R0146",
+      "R0449"
+    ],
+    "E7": [
+      "R0109",
+      "R0114",
+      "R0120",
+      "R0127",
+      "R0129",
+      "R0136",
+      "R0150",
+      "R0153",
+      "R0155",
+      "R0156",
+      "R0158",
+      "R0159",
+      "R0161",
+      "R0163",
+      "R0166",
+      "R0167",
+      "R0168",
+      "R0169",
+      "R0171",
+      "R0172",
+      "R0173",
+      "R0174",
+      "R0175",
+      "R0176",
+      "R0177",
+      "R0178",
+      "R0179",
+      "R0180",
+      "R0181",
+      "R0182",
+      "R0183",
+      "R0184",
+      "R0185",
+      "R0186",
+      "R0187",
+      "R0188",
+      "R0189",
+      "R0190",
+      "R0191",
+      "R0192",
+      "R0193",
+      "R0194",
+      "R0195",
+      "R0196",
+      "R0197",
+      "R0198",
+      "R0199",
+      "R0200",
+      "R0201",
+      "R0202",
+      "R0203",
+      "R0204",
+      "R0205",
+      "R0206",
+      "R0207",
+      "R0208",
+      "R0209",
+      "R0210",
+      "R0211",
+      "R0212",
+      "R0213",
+      "R0214",
+      "R0215",
+      "R0216",
+      "R0217",
+      "R0226",
+      "R0227",
+      "R0243",
+      "R0256",
+      "R0264",
+      "R0265",
+      "R0268",
+      "R0273",
+      "R0274",
+      "R0275",
+      "R0276",
+      "R0277",
+      "R0278",
+      "R0279",
+      "R0280",
+      "R0282",
+      "R0283",
+      "R0284",
+      "R0285",
+      "R0286",
+      "R0287",
+      "R0289",
+      "R0290",
+      "R0291",
+      "R0293",
+      "R0295",
+      "R0296",
+      "R0297",
+      "R0300",
+      "R0301",
+      "R0303",
+      "R0304",
+      "R0305",
+      "R0306",
+      "R0307",
+      "R0310",
+      "R0311",
+      "R0312",
+      "R0313",
+      "R0314",
+      "R0315",
+      "R0316",
+      "R0319",
+      "R0320",
+      "R0322",
+      "R0325",
+      "R0326",
+      "R0327",
+      "R0328",
+      "R0329",
+      "R0331",
+      "R0332",
+      "R0333",
+      "R0334",
+      "R0335",
+      "R0336",
+      "R0337",
+      "R0338",
+      "R0339",
+      "R0340",
+      "R0341",
+      "R0342",
+      "R0343",
+      "R0344",
+      "R0345",
+      "R0346",
+      "R0347",
+      "R0348",
+      "R0349",
+      "R0350",
+      "R0352",
+      "R0353",
+      "R0354",
+      "R0355",
+      "R0356",
+      "R0357",
+      "R0358",
+      "R0359",
+      "R0360",
+      "R0361",
+      "R0362",
+      "R0363",
+      "R0364",
+      "R0365",
+      "R0366",
+      "R0368",
+      "R0369",
+      "R0370",
+      "R0371",
+      "R0372",
+      "R0374",
+      "R0375",
+      "R0376",
+      "R0378",
+      "R0379",
+      "R0380",
+      "R0381",
+      "R0382",
+      "R0383",
+      "R0385",
+      "R0386",
+      "R0387",
+      "R0388",
+      "R0389",
+      "R0390"
+    ]
+  },
+  "wos": {
+    "count": null,
+    "status": "not_searched_access_unavailable"
+  }
+}

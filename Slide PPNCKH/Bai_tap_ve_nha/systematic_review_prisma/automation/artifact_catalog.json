@@ -444,6 +444,35 @@
         "reproduction",
         "latex"
       ]
+    },
+    {
+      "artifact_id": "hk261-alternative-portable-figure-table-package",
+      "name": "HK261 portable figure and table evidence package",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/minh_chung_hinh_bang/package_evidence.py",
+      "purpose": "Copy the accepted figure and table build inputs and verify the archive against the canonical sources.",
+      "entrypoint": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/minh_chung_hinh_bang/package_evidence.py\" --refresh",
+      "inputs": [
+        "Supplement S4",
+        "Accepted study coding and outcomes",
+        "LaTeX and TikZ source",
+        "PRISMA counts and template"
+      ],
+      "outputs": [
+        "Archived build inputs",
+        "Per-item crosswalk",
+        "SHA-256 manifest"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/minh_chung_hinh_bang/package_evidence.py"
+      ],
+      "test_command": "python3 \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/manuscript/sn_computer_science/minh_chung_hinh_bang/package_evidence.py\"",
+      "status": "active",
+      "tags": [
+        "manuscript",
+        "evidence",
+        "reproduction",
+        "latex"
+      ]
     }
   ]
 }

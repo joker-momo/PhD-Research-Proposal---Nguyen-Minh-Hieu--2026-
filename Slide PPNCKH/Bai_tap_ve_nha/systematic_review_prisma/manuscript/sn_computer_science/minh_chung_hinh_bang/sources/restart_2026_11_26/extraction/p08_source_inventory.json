@@ -1,0 +1,3880 @@
+{
+  "R0001": {
+    "sha256": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+    "pages": 3,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 proceedings header and DOI; PDF spans three physical pages."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–2, Fig. 1 and §II; p. 3, §III.A lists 10 UAVs, four edge servers, one cloud."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1, §II defines convolutional and fully connected sets; p. 3, §III.A names two data inputs and does not name the simulated DNN."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–2, §II.A introduces k-specific edge/cloud and p/q cut points and enumerates five configurations."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2, §II.E states PPO and convex subproblems; p. 3, §II.F solves continuous allocations."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3, Eqs. (7)–(12); frequency bounds and formula, resource fractions and log-rate formula checked."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1, Introduction; p. 2, §§II.B,E; mobility changes distances/link quality. No failure/recovery mechanism in pp. 1–3."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1 and 3, Introduction/§III.A, dataset sources [3]–[4]; §III.A supplies no simulator or host name."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3, §III.A numbered baseline list explicitly enumerates seven."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3, Figs. 2–3 and adjacent results; both are reward comparisons. Exact plotted outcome values are not printed."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3, §II.F identifies alpha as latency weight; Fig. 3 and adjacent text support falling rewards."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–3, body and end matter; dataset inputs cited, no implementation repository."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3, Acknowledgements lists all three grants."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–3, title footnotes and Acknowledgements/References: no conflict statement located."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2, §II.B explicitly excludes return time on the grounds that result data are small."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf"
+  },
+  "R0002": {
+    "sha256": "35495fbee42842f11e1bbd0b3c249a26b8913261e68485390f19f6667621834f",
+    "pages": 9,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 proceedings footer gives 2026 ICWS; nine physical pages."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, §VII.A and Fig. 2(a); 5+10+15=30, ground station at origin, 100 m triangular deployment, and pictured migration pathways."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, §VII.A states ResNet-18, CIFAR-10, image classification and urban monitoring."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, §VII.A describes equal two-module Greedy initial allocation; p. 6, §VI defines PDBH cross/intra-swarm decisions."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6, Eqs. (24)–(25), P1/P2 and theorem; §VI Algorithm 1 and p. 9 conclusion identify LST-GNN/PDBH."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, Fig. 2(b) and §VII.A specify bandwidth, computing power, transmit/receive/flight power, speed and hardware profiles."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–4, system delays and battery threshold; p. 7, §VII.A states simulated probability 0.0001 per slot; p. 8, §VII.B describes proactive migration."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, §VII.A lists CPU, clock, RAM and describes a simulation with parameter profiles from the platform."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 7–8, §VII.A–B and Figs. 3–4 axes identify four baselines, three arrival scales and axis reaching slot 1000."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8, discussion of Figs. 3–4 explicitly links more migrations, higher cost and greater task success."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 7–8, setup and plots; three workload scales, without reported multi-seed error bars."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–9, full-text availability inspection; §VII.A names CIFAR-10, no implementation repository stated."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, Acknowledgement gives grant 62572122."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1 and 9, title matter and conclusion/end matter; no conflict statement located."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, §VIII identifies joining/exiting, location disruptions, and intermittent GCS connectivity as future work."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0002.pdf"
+  },
+  "R0003": {
+    "sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+    "pages": 7,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–2, IEEE WCSP 2023 proceedings footer, DOI and DMS name; PDF has seven physical pages."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 Fig. 1 and §III define the coordinator and its local-versus-swarm decision; pp. 6–7 Figs. 2–3 and Table I support the range and reference case."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3, 5–6; metric-label inconsistency explicitly retained."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–4 §§III.A–C, Eqs. (1), (4) and (13): the complete small model runs at U1 and each large-model layer has one UAV assignment."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 Eqs. (10)–(14) and §IV; normalized accuracy and latency weights, compute/memory limits and genetic algorithm."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 Eq. (3) gives path loss, complex normal coefficient and AWGN; p. 5 §V.A gives all five board profiles and RAM convention."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3 and 5, Eq. (3) and §V.A: moving traces inform distances and rates; no failure/recovery stage in the system model or evaluation."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 accuracy example, p. 5 §V.A and p. 7 reference [21]; named model dataset and trace dataset checked separately."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–7, §V and Figs. 2–3; enumerated baselines, sweeps and Table I reference case."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 2; utility ranking and decline supported for both pairings."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Figs. 2–3 axes and §V.B report narrowing gap against GA-uniform as swarm size increases."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 trace data citation and p. 7 reference [21]; reviewed pp. 5–7 setup, results, end matter for implementation URL."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 Acknowledgement lists both NSFC grants."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 author block and p. 7 Acknowledgement/References show no conflict declaration."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 objective has accuracy and latency only; p. 7 Conclusions state energy as future work."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, Table I(a) and discussion; five UAVs, seven requests; all four baseline values match."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3, 5–7; Table I(a) values and baseline match; metric-label ambiguity preserved."
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, Table I(b) and discussion; five UAVs, seven requests; all four baseline values match."
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3, 5–7; Table I(b) values and baseline match; metric-label ambiguity preserved."
+      },
+      {
+        "key": "quantity:5",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, Table I and §V.B; overall latency reduction checked against both pairings and Large-only."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0003.pdf"
+  },
+  "R0006": {
+    "sha256": "96814e138ec294f2ea6ed462e7b49a083c52a488d99c2b4ec5cc69578f5f0030",
+    "pages": 8,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 ICPADS 2025 proceedings footer and AirInfer name, p. 2 introduction; eight-page physical span."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 §III.A and p. 6 §V.B establish node roles, fixed altitude and scope of the five-UAV example; Fig. 6(a) on p. 7 supplies the swept count."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 mentions architectures as background; p. 6 §V.A supplies the model depth and all three per-layer demand ranges."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 §III.A assignment variable and p. 4 §IV.A allocation constraints and DP method."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 §III.B and §IV outline weighted resource constraints and the two subproblems; p. 5 §IV.B identifies CVX/MOSEK."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §V.A explicitly groups hardware, communications and energy assumptions."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §III.A uses a distance-dependent rate and fixed hovering; pp. 6–8 evaluation and conclusions do not describe failure or recovery."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §V.A gives 100 trials, threshold 0.8 and common initialization; §V.C specifies 0.7 for Fig. 5."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §V.A lists the three labels and explains each method."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, §V.B–C and Figs. 4–5; relative span recomputed from listed baselines; contradictory 37% withheld."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 original Fig. 6 axes checked; general trial count confined to p. 6 §V.A."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–8 experimental setup, conclusion, end matter and references lack a release URL."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 Acknowledgment confirms grant identifiers and institution."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 title block and p. 8 acknowledgments/end matter checked."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §V explicitly names simplifying the transmission model for tractability."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 §V.C and Fig. 5 establish 527 ms and three baseline latencies; p. 6 §V.C states 32 iterations and 0.7 coverage threshold."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 §V.C gives 57.5–67.9%, reproduced from its individual latency values, up to rounding (57.47–67.92%). Its separate 37% statement conflicts with the same values and is not extracted."
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, Fig. 3b narrative states stability by iteration 11; Fig. 4 renders the endpoints exactly."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0006.pdf"
+  },
+  "R0009": {
+    "sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+    "pages": 11,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 issue heading, date-of-publication footnote and DPDTS name; eleven-page physical span."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §III and system illustration give ground users and UAV edge servers."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 §V.A gives all three pretrained models and the local profiling method."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §III defines first/second partitions and limiting cases."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–7 §IV describes the energy–latency objective, variables, partition selection, matching and TD3."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §IV.A AlexNet illustration explicitly gives the three conditions."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §III specifies free-space LoS communication; p. 8 §V.A gives speed/area; pp. 8–10 do not evaluate UAV failure or recovery."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 Table I and Fig. 5 introduction; p. 9 Fig. 5 captions."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 §V.A explicitly names all workloads and four baselines."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, Figs. 5–6; radius and ground-user sweeps separated; four energy percentages checked."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 9–10 §V.B and Figs. 6–7 give both sweeps; the bandwidth comparison shows the stated direction."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8–11 experiment, conclusion and references inspected for release links."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 title footnote lists all four grant numbers."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 author footnote and pp. 10–11 end matter inspected for declaration."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 10 §VI explicitly notes both limitations."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9 Fig. 5(a) discussion gives J, metric and four baseline reductions; p. 8 §V.B gives averaging scope."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9 Fig. 5(b) and discussion give ms, per-user metric and reduction percentages in same baseline order; p. 8 §V.B gives scope."
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, preceding and following columns of Fig. 6a discussion specify 70 users and 2,209.0 J."
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8–9, Fig. 6b verifies 389 ms at 80 users and comparator order. Fig. 5's stated episode count is not transferred to Fig. 6b."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0009.pdf"
+  },
+  "R0010": {
+    "sha256": "f76db928b9cf3ab846ddc682636883be06fb2f8a2dba48a0b6d2d9678e0a5ca8",
+    "pages": 6,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 IEEE WCNC 2024 conference footer; six original physical pages."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 §III.A, Fig. 1 and adjacent system-model paragraph; p. 5 §V.B confirms the five-UAV training and device examples."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §V.A lists the three CNNs and [22] as trajectory source; pp. 2–3 Eq. (1) gives the distance-dependent rate."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 §III.A, Figs. 1–2 and physical p. 3 Eqs. (6)–(9); split points index the task and pipeline position."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 §IV.B and Algorithm 1 state the paired increases/decreases and constraints on actions."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 2–3 §III.A, Eq. (1) is a logarithmic distance-dependent rate; p. 5 §V.B and Fig. 4 identify device tiers without numeric properties."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §V.A, p. 6 ref. [22], and p. 3 Eq. (1); no node-failure or recovery scenario in pp. 2–6."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §V.A, p. 6 ref. [22]; §V.A–B methods/results do not name software or host."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §V.A–B explicitly lists five baselines and 10/30-task experiments; p. 6 Fig. 5 axes give task sweep."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6 §V.B and visual Fig. 5: all three model sweeps show the directional latency result; no unsupported model-specific aggregate inferred."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6 Figs. 4–5; both configurations and task-count sweep verified, no multi-seed error bar shown."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §V.A, p. 6 ref. [22] confirm Mid-Air; full experimental and end-matter sections have no code link."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 Acknowledgement explicitly gives both grants."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1–6, author block, simulation and Acknowledgement/References checked for conflict statement."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6 §VI names real-environment verification and more dynamic scenarios as future work."
+      },
+      {
+        "key": "quantity:1",
+        "status": "UNVERIFIED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "p. 2 abstracted comparison in Introduction; p. 5 plots do not establish identical comparator aggregation and scenario.",
+        "withheld_disposition": {
+          "decision": "EXCLUDE_EXACT_VALUE",
+          "source_review": "Physical p. 2 Introduction gives the AlexNet average. Figure 5(a) and discussion on pp. 5–6 do not specify comparator weights or reconstruct the reported aggregation. Retain the already verified qualitative sweep only.",
+          "eligible_for_synthesis": false
+        }
+      },
+      {
+        "key": "quantity:2",
+        "status": "UNVERIFIED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "p. 2 abstracted comparison in Introduction; p. 5 plots do not establish identical comparator aggregation and scenario.",
+        "withheld_disposition": {
+          "decision": "EXCLUDE_EXACT_VALUE",
+          "source_review": "Physical p. 2 Introduction gives the GoogLeNet average. Figure 5(b) and discussion on pp. 5–6 do not specify comparator weights or reconstruct the reported aggregation. Retain the already verified qualitative sweep only.",
+          "eligible_for_synthesis": false
+        }
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, Fig. 4 and Results; five UAVs, 30 VGG-16 tasks, high computing power."
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, Fig. 4 and Results; exact 2.78% reduction against CoDNN at high computing power."
+      },
+      {
+        "key": "quantity:5",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, Fig. 4 and Results; exact 7.61% reduction against CoDNN at low computing power."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0010.pdf"
+  },
+  "R0015": {
+    "sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+    "pages": 8,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 IEEE BIGCOM proceedings, 2023; PDF has eight physical pages; p. 5 names EECIA."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 2–3 §III.A defines rotary-wing wireless ad hoc swarm and both node roles; p. 7 Fig. 5 gives the simulated UAV ranges and local architecture is reiterated in the conclusion."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV.A gives the three named architectures and image classification workload; no dataset name in simulation settings."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–5 §III.A–C and Eqs. (14)–(15); confirms N as equality and S as a bound."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5 Eq. (10) includes input transfer, layer processing and intermediate transfer, with Eqs. (11)–(16) constraints and §III.C heuristic."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7 §IV.A and Figs. 3–5; board profiles, million multiplications/second and task-specific link rates."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV.A states rate constant during each request and that all devices can reach each other."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV.A explicitly describes hardware profiles in the simulated image classification setting."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV.A identifies four baselines and describes each."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV.B and Table II distinguish algorithm running time from inference latency."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 Fig. 4 and Fig. 5 sweep axes; pp. 5–7 methods and results do not present multi-run variance."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–8 setup/results, Conclusions, Acknowledgement and References checked for replication artifacts."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 Acknowledgement lists R&D grant and both NSFC grants."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1 and 7 author/end matter checked; no conflict declaration."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 Conclusions identify RL for future dynamic networks."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 3 discussion; AlexNet, three UAVs, 72.2 Mbps, DistInference and 4.55% checked."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 3 discussion; ResNet152, five UAVs, 72.2 Mbps, DistInference and 7.57% checked."
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 3 discussion; VGG-16, five UAVs, 72.2 Mbps, DistInference and 7.97% checked."
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Table II and its running-time heading; EECIA, VGG-16, I=5, 0.0090 s."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0015.pdf"
+  },
+  "R0019": {
+    "sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+    "pages": 17,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 issue heading and online publication footnote; seventeen-page physical span."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 §III.C defines a single agent choosing position and whether each UAV executes an assigned current layer."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11 §IV specifies surveillance workload and all three CNNs."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 §III.A layer assignment and binary variable; pp. 5–6 constraints on the assignment."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5, 8–9 and 11 §III and Table II distinguish constraints and solver/implementation."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4 and 11 communication model and §IV/Table II; no explicit million-scale label on the profile values."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 collision constraint, p. 15 Fig. 19 and surrounding text; charging is an example only."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11 §IV and Table II give arrival process and policy; simulator package/host not named."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 14,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 12–15 figures and captions confirm separate comparator groups."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 12–13 and 15 explicitly report three sets of values; p. 11 defines constraint accuracy."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 13 original Figs. 11, 13–14 and p. 15 Fig. 19 verified against axes and labels."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 15,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 11–17 experiments, conclusion and end matter list no public code/data URL."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 funding footnote and p. 15 acknowledgement confirm grant."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 15,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 and pp. 15–17 checked for conflict declaration."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 15 §V explicitly identifies all the future-work topics."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12 Fig. 8 and prose give the three percentages; p. 11 defines evaluated steps after convergence."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 14–15 Fig. 17 and paragraph give both policy percentages and constraint metric."
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 13 Fig. 11 and adjacent text give value, units, capacity profile, architecture, and workload."
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 13 Fig. 11 and adjacent text give value, units, capacity profile, architecture, and workload."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0019.pdf"
+  },
+  "R0022": {
+    "sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+    "pages": 6,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 IEEE ICCT 2025 proceedings header and six-page span; p. 6 establishes algorithm context."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 §II.B and p. 5 Table I give group owner, N+1 indexing and N=8; p. 6 says eight in the single-task comparison. Exact simulation headcount remains scoped to the source wording."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §IV identifies AlexNet and the image recognition task, without naming a dataset; p. 6 Fig. 6 shows three selected exit levels."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 §II.A–B, Eqs. (1)–(2) and early-exit condition; the multi-UAV stage assignment applies only to executed layers."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §II.D Eq. (10) and §III.A give the weighted objective, energy/delay bounds and Option-Critic approach."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, rendered Table I and Figs. 4–5; rows, numeric units and bandwidth sweep checked.",
+        "prior_excerpt_exception_review": "VISUAL"
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 Eq. (4), p. 5 setup and p. 6 conclusion: channel coefficient/distance term retained; complex mobility and communication uncertainty reserved for future work."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 rendered Table I has rows N and r; pp. 5–6 describe simulator construction but do not name software or host."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §IV and p. 6 single-task discussion; three comparator mechanisms and image workload."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6 Figs. 3–5 and discussion separate reward, latency and bandwidth-specific energy findings; no exact plotted values retained."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 original Fig. 6 rendered via PyMuPDF: all five bandwidth ticks and mode of exit point rising from 1 to 3; pp. 5–6 discuss Figs. 4–6."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6 §IV, conclusion, acknowledgement and references checked for code/data release."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 Acknowledgment confirms NSFC grant 62071179."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1 and 6 front and end matter inspected; no conflict declaration."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 Conclusion explicitly identifies more complex swarm dynamics and communication uncertainty for future work."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0022.pdf"
+  },
+  "R0029": {
+    "sha256": "d6b5f373bd10b5e6d45e94772925e550f004b28e905d84760fdc6a99569a3e89",
+    "pages": 6,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 IWCMC 2022 conference and DOI footer; six-page physical span."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §IV.A gives exact total, group owner and setting."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §IV.A lists all models and provenance of layer profiles, no named image dataset; p. 3 defines DAG."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §II.A and p. 4 assignment constraints describe active replication."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 §§II.C–III objective, constraints and squared penalty expression."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §IV.A parameters list confirms each description and the CPU-frequency distribution."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §II.A states failure model; pp. 5–6 Fig. 5 setting and discussion give the rate ranges."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §IV.A gives profiling source and scenario, no identified host or package."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §IV.A–B names all three comparators; Fig. 4 has 700–1200 ms deadlines."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §IV.B/Fig. 4 and p. 6 Fig. 5 discussion report two distinct percentage sets, in the listed orders."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 visual Figs. 4–5 establish deadlines, named scenarios and absence of displayed variance bars; §IV.B explains them."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6 setup and end matter checked for public release."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 acknowledgment supplies both sponsors and NSFC grant."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 and p. 6 checked for competing-interest statement."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §V describes outcomes and contains no explicit limitation."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, §§IV.A–B, default configuration and AlexNet at 700 ms, RA 45.5%."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, §§IV.A–B, default configuration and AlexNet at 700 ms, PSO 36.8%."
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5, §§IV.A–B, default configuration and AlexNet at 700 ms, GA 36.0%."
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6, Fig. 5a discussion; poor-environment rates and comparator order checked."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0029.pdf"
+  },
+  "R0044": {
+    "sha256": "764cc894f9711a4b0e6f74ce45c1df93d3d1b6d9ed9c6a3b9534bb68801bc029",
+    "pages": 8,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 ISPCE-ASIA 2024 footer, and algorithm names in article body; eight-page physical span."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 §II.A topology and p. 6 §IV.A match altitude, speed, coverage radius, count and BS."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §II.C defines feature-extraction stages and p. 6–7 §IV specifies default and compared models without a named dataset."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §II.C and Fig. 2 show output-row ranges, AIR backtracking through earlier layers and binary offloading."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §III.C after Eq. (26) gives CPOO, multiplier steps and KKT power adjustment."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV.A explicitly states all compute, transmission and channel parameters listed."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 2–3 §II.A and §II.C(2) explain fallback after failed return and maximum transmit power."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV.A states random distribution, four fixed-altitude UAV servers and BS at area center."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 §IV.A bullet list calls comparison Local, RPOM and Edgent-P; numerical prose uses PROM for RPOM."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 7–8, §IV.B, Figs. 3–7; model, bandwidth and reliability findings kept distinct."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 original Fig. 5 explicitly shows a flat Local baseline while offloading schemes improve with bandwidth."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–8 simulation, conclusion and references checked for implementation/data access; cited third-party links are not this study’s release."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "NOT_REPORTED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 title/author block and pp. 6–8 experiment and end matter checked. Conclusion leads directly to references without an acknowledgment or funding statement."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 and p. 8 front/end matter checked for conflict disclosure."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "NOT_REPORTED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 §V conclusion states method and performance but contains no explicit limitations."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0044.pdf"
+  },
+  "R0045": {
+    "sha256": "9b5e95e1b30fa30510772f0d7fd0d4524b634a4d0d7fca27f49b105dbacacc52",
+    "pages": 12,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 issue heading and date-of-publication footnote; original has 12 pages; §III and §V name the solver components."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3 and 9–10, system model, §IV.A and Figs. 4, 5 and 8; default and sweep settings separated."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 2 and 9 Fig. 1 and §IV.A; pretrained architectures named, no specific train/test dataset in simulation settings."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–4 §II.C, split variable and limiting all-local/full-offload cases."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–9 §III and §V p. 11, SAC/PER and inner convex allocation described separately."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 §II.D, p. 9 §IV.A parameter list and p. 10 Fig. 7 for the compute-cap sweep."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3 and 5 §§II.B and II.F define 3-D motion and both triggers; p. 11 §§IV.B.3 and C discuss horizontal and altitude control and migration response."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9 §IV.A and rendered Fig. 4(b) legend give library versions and three seeds; convex subproblem discussion names CVX."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9 §IV opening sections enumerate the DRL family and three alternative partitioners."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9 Fig. 4(a), p. 10 Figs. 5–8 and §IV.B prose support scoped convergence and energy findings."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11 §IV.C and Fig. 10 describe energy and computational thresholds and the two distinct excessive/insufficient mechanisms."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–12 algorithm, settings, conclusion, acknowledgements and references inspected for code/data repository; no implementation link located."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 title footnote lists all three funding sources and IDs."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 title/footnote and pp. 11–12 end matter inspected; no conflicting-interest statement identified."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11 §V final paragraph states robustness-aware optimization for dynamic demand and uncertain communication."
+      },
+      {
+        "key": "quantity:1",
+        "status": "UNVERIFIED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "p. 1 abstract gives 14.6%; numerical results do not explicitly state the value, comparator and denominator together.",
+        "withheld_disposition": {
+          "decision": "EXCLUDE_EXACT_VALUE",
+          "source_review": "p. 1 Abstract states 14.6%. §IV.B, Figs. 5–8 on pp. 9–10 do not label a matching comparison, denominator and exact value. Use only the scoped qualitative comparisons.",
+          "eligible_for_synthesis": false
+        }
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0045.pdf"
+  },
+  "R0048": {
+    "sha256": "27e027ecd322e4f06af79412bca5c603c304fd38e7cde7de75adefe66f843d98",
+    "pages": 14,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 TGCN volume, online publication footnote and UCAA/JDTSO/MAPDP identification; fourteen-page physical span."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9 original Table II and §VII.A.2 give area, altitude and exact grid of sizes; p. 10 Fig. 3 and narrative identify where JDTSO results are available."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–4 DAG model and p. 9 §VII.A.1 gives sampled frames, background subtraction and classifier."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4 and 7 DAG description, offloading variables and bounded enumeration of candidate cuts."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 contributions, p. 7 §V.B solver decomposition and p. 12 conclusion give GA–DP–DAG and MAPPO–DAG components."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9 original Table II and adjacent §VII.A.2 hardware prose confirm all units and scope."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9 original Table II gives assumptions; p. 10–11 comparisons and p. 12 future work checked."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9 §VII and §VII.A describe simulators/libraries, host GPUs and measured execution profiles."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 9–10 §§VII.A.3–4 explicitly enumerate the five baselines."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "original pp. 10–11 Figs. 3–8 and prose support size comparisons; p. 12 original Table III and prose give exact per-column ranges for 60 UAVs."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "original pp. 10–12 Figs. 4, 6, 8–11 and Table III show distinct UAV counts, three learning-rate settings and three efficiencies."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 12,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 9–14 methods/results, conclusion, references and end matter checked; no code repository or dataset source for evaluation videos found."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 title footnote lists both grants."
+      },
+      {
+        "key": "funding_and_conflicts:2",
+        "status": "NOT_REPORTED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 title/author block and pp. 12–14 end matter inspected for declarations."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12 §VIII states trajectory planning, mobility constraints and inter-UAV interference as future work."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12, rendered Table III and adjacent body: 0.511 s at 0.7, 60 UAVs.",
+        "prior_excerpt_exception_review": "VISUAL"
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12, rendered Table III and adjacent body: 670.8 J at 0.7, 60 UAVs.",
+        "prior_excerpt_exception_review": "VISUAL"
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12, rendered Table III and adjacent body: 117.4 IPS at 0.7, 60 UAVs.",
+        "prior_excerpt_exception_review": "VISUAL"
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0048.pdf"
+  },
+  "R0054": {
+    "sha256": "48138e33b7cec08714cea8472199fcb44117893e6fd0c24ab9fa8d308dcc87e5",
+    "pages": 5,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 title and publication footnote and p. 5 running header verify the bibliographic range, date and DOI."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 §II.A hardware and network roles; p. 3 power model; rendered p. 4 Fig. 1 caption and trajectory labels."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:2",
+        "status": "UNVERIFIED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "p. 4 Fig. 1 shows U1–U3 in a replay and p. 5 Fig. 3c shows out-of-distribution M levels. Table I baseline counts are unverified.",
+        "prior_excerpt_exception_review": "CORRECTED",
+        "withheld_disposition": {
+          "decision": "EXCLUDE_UNVERIFIED_DETAIL",
+          "source_review": "p. 4 §IV/Fig. 1 and p. 5 Table I/Fig. 3(c): retain replay count and OOD levels as separate settings. Exact matched-holdout K/M/N_tar is not identified and stays out of synthesis.",
+          "eligible_for_synthesis": false
+        }
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §II.B three-tier inference, Eq. (13) sets accuracy from the offline profile and Eq. (17e) gives allowed bitwidths."
+      },
+      {
+        "key": "inference_model_task_and_dataset:2",
+        "status": "NOT_REPORTED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–5 model, training protocol and numerical results inspected. Calibration and scenario holdout are mentioned without a named CNN/data set."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §II.B Eqs. (13) and (17e) define split variables and bitwidths."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 2–3 §II.B objective components, constraints in Eq. (17), and rejection in the execution design on pp. 3–4."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:2",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 §§III.A–B identify GAT, shared actors, centralized critic and execution stages; p. 3 explains KKT allocation."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 §II.A and p. 3 Eq. (17) confirm shared RF and compute assumptions/budgets."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "NOT_REPORTED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–5 last paragraph of §II.B, execution shield, numerical results and conclusion identify feasibility and rejection, no evaluated outage or node recovery."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §IV Generalization and runtime states process count, exact training times, GPU configuration; no named simulator in pp. 4–5."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 §IV protocol and Fig. 2; p. 5 Fig. 3 caption gives runtime denominators separately."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5, §IV and rendered Table I; four held-out metrics are means with Student-t 95% CI half-widths."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 protocol and p. 5 original Fig. 3(c) caption give independent seeds and OOD modes/values."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5 protocol, results, conclusion and references inspected for code/data release links."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 grant footnote and p. 5 end matter inspected for financial disclosures and potential conflict statement."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 closing §II.B and §III.B state feasibility and generalization boundaries; p. 5 explains Fixed-RIS/cost and no uniform dominance."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5, protocol and rendered Table I; cost and five baselines match. CI half-width and train/holdout distinction verified."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 2, 4–5, §II-A, §IV and rendered Table I; active-queue definition, admitted percentage and all comparators checked."
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5, protocol and rendered Table I; rates, Mbit/s and all comparator CIs checked."
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5, Fig. 3(f) and numerical results; frozen policies, P50/P95, 10,000 decisions/scheme. Training GPU timing is separate."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0054.pdf"
+  },
+  "R0059": {
+    "sha256": "9e8c96dbe6c3717efd91c23f02c3c8fcb10b8aa034ab7be150d9da74b85c0957",
+    "pages": 13,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 heading, full-length article label, first-listed author, volume, article number and DOI."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §3 defines task and relay roles; p. 9 §5.2.2 and p. 10 Fig. 5 establish deployment counts; p. 11 Fig. 6(c) establishes per-link count sweep."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 surveillance-task system description and p. 8 §5.1 names two architectures and top-5 metric."
+      },
+      {
+        "key": "inference_model_task_and_dataset:2",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 2–3 trajectory description, p. 12 ref. 34 identifies Mid-Air, p. 8 §5.1 no named accuracy dataset."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §3 distinguishes onboard small-model inference and forwarding through assigned CNN submodels."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 objective and constraints, pp. 6–8 §4 and algorithms distinguish switch and MADDPG-based partitioning."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 original Table 1 links each embedded profile with available memory and multiplications; adjacent paragraph defines scaling."
+      },
+      {
+        "key": "compute_and_radio:2",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 §3.1 rates and path-loss terms; p. 10 original Table 5 identifies MHz values across links."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §3 assumptions and p. 8 §5.1 describe predetermined flight and stable relative links."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §3/ref. 34 and pp. 8–11 simulator setup and results; p. 8 Table 1 gives embedded profiles; executable package not identified."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 §5.1 identifies architectures and seven baselines across specific stages."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, Task UAV 1 overhead and 4096-B reference; 28 B and approximate 0.68% preserved."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 9–10, §5.2.2 and Fig. 5; four named partitioning baselines and percentages checked."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:3",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8, §5.2.1, Fig. 3; three comparator-specific switching percentages checked."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9 §5.2.1 horizon experiment; pp. 10–11 Table 5 and original Fig. 6 confirm independent bandwidth, memory, capacity and count sweeps."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8–13 experimental, end matter and references contain citation to trajectories but no availability link for the implementation or experiments."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11 original acknowledgment and declaration identify grants and competing-interest statement."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11 §6 final paragraph lists the three extensions explicitly."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 Fig. 3 and §5.2.1 give 10 to 80 plotted tasks, identical Algorithm 2 partitioning, three comparisons, reported averages and percent units; p. 3 traces are referenced."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 9–10, Fig. 5 and its separated columns; range 10–80 tasks, both three-task-UAV links and the four-task-UAV case, six relays, and four named comparator values."
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, Table 4 and text; 2.65% is across four task counts and four horizon settings."
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "Physical p. 11 §5.2.2 reports a 2.1% gap and Fig. 6(b) shows the four homogeneous capacity settings. The paper does not specify how it aggregates the relative gap over these settings. The candidate assertion that it is averaged cannot be verified. Preserve the supports for workload and parameter sweep separately.",
+        "withheld_disposition": {
+          "decision": "EXCLUDE_EXACT_VALUE",
+          "source_review": "Physical p. 11 §5.2.2 reports a 2.1% gap and Fig. 6(b) shows the four homogeneous capacity settings. The paper does not specify how it aggregates the relative gap over these settings. The candidate assertion that it is averaged cannot be verified. Preserve the supports for workload and parameter sweep separately.",
+          "eligible_for_synthesis": false
+        }
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0059.pdf"
+  },
+  "R0062": {
+    "sha256": "6d0c4eab7261f241261a3e8f3b3898f785e8658acd4a17ca1aa27184d70d349f",
+    "pages": 7,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 and p. 7 running footers and p. 1 title block verify magazine/date, authorship and printed page range."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 architecture identifies the loop; p. 5 Experiment Setup and original Fig. 4 show planner, collaboration and four-UAV configuration."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 Action section gives pre-stored model; p. 5 setup gives video and Faster R-CNN, does not name a dataset."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 Action stage and p. 6 Fig. 6 discussion describe allocation and reallocation."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 Architecture Overview gives all four steps, monitoring, latency estimation and replanning."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 Observation text states 7 bits per ratio, 16 reserved bits and 96-bit message; p. 5 setup confirms board configuration and communication modules."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 Effect of UAV Unavailability and original Fig. 6 report disabled UAV #3, reassignment, and restored speed after reconnection."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 Experiment Setup and Fig. 4 supply hardware and roles."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 workload and p. 6 original Figs. 5–6 distinguish measured hardware configurations and conceptual conventional-CoEI failure."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 6 and Stage 2 body; 2 FPS is approximate and applies after the communication program is disabled."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Stage 3 body; previous throughput refers to Stage 1."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 original Fig. 5 labels four configurations and contains no variance bars; adjoining experiment text reports direction."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–7 setup, conclusion and acknowledgment/end matter inspected for code/video availability."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 acknowledgment contains the funding list, including Guangdong grant 2021B0101400003; pp. 1 and 7 checked for conflict."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 Main Technical Challenges covers discovery overhead, multi-hop feedback and partition backups; p. 7 Potential Research Directions covers scheduling."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 6 and Stage 1; four UAVs, Faster R-CNN and approximate 3 FPS."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 6 and Stage 2; approximate 2 FPS and reassignment; conventional CoEI contrast stated by authors."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0062.pdf"
+  },
+  "R0063": {
+    "sha256": "85df65849c3d01c7532c20c8d19d978455becf0590c1f91da79d8a4ee0c100b9",
+    "pages": 22,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 publication block and title block agree on year, venue, first author, article number and DOI."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §4.1 and p. 11 §5.1.2 give architecture and role setup; p. 14 Table 6 shows scalability sizes."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5 and 11 give system timescales and model/board placement; original p. 13 Table 3 confirms architecture and quantization."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §4.1 buffer and timescales; pp. 11 and 15 identify respective model roles and measured comparisons."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 §4.6 and pp. 9–11 loss/optimization describe POMG, critic, distinct policies and role regularizer."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11 §5.1.1 lists devices and Gaussian delay; p. 12 software identifies vLLM/PagedAttention and TensorRT-LLM; p. 16 §5.3.3 tests link effects."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 16,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "original pp. 16–17 Fig. 6 axes and Table 9; p. 16 prose identifies buffering, Markov outages and recovery/fallback."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11 §5.1.1 original simulation description, p. 12 software environment, p. 13 original Table 3 gives build/interface."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "original p. 13 Table 4 has six baselines and associated text gives trials and scenario sizes; p. 14 Table 6 separate."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 13–16 original four tables, captions and result prose; kept numerators, units and uncertainty scoped to each table."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 18,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 17–18 Tables 10, 11, 12 and frequency sweep prose confirm listed groups/frequencies."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 20,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 20 Data availability statement says article/supplement/correspondence; pp. 11–20 contain no public implementation URL."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 20,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 20 Funding and Conflict of interest statements identify grant, employers and other declarations."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 20,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 20 discussion frames physical multi-hop latency as a limitation and future research directions as prospective."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "original p. 15 Table 7 and §5.3.1 give latency, model comparators and ratio; p. 11 gives deployment."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 16,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "original p. 16 Table 8 and Fig. 5 give sizes, rates and units, and distinguish traffic and link impairment experiments."
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "original p. 13 Table 4 confirms mean ± SD and comparator rows; pp. 11 and 13 establish scenario and trial scope."
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 17,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "original p. 17 Table 9 row verifies 0.65 vs 0.18 in flapping Scenario C with 2 s out/5 s in; p. 16 gives baseline and modeled link."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0063.pdf"
+  },
+  "R0068": {
+    "sha256": "30ab2b2966529939f9d4c04eeed75689126fccfdc2b9b345e3b0d6aaffbb630a",
+    "pages": 15,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 1 and 15 publication footnote and printed page range verify the journal, date and article span."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–4, architecture and system assumptions describe IIoT input, wireless ad hoc collaboration and no remote server."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 10 §VI.A gives both architectures, depths and RGB image dimensions."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 §III.A and p. 7 §V.A: each UAV holds a trained replica and forwards outputs for the assigned layer sequence."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–8 problem formulation, §V.A decomposition, Lagrange/CVX methods and §V.B asynchronous actor-critic meta-RL."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 10 §VI.A provides processor/RAM profile and rendered Table 3 p. 11 lists 50 MHz, 200 mW, 2 Mbps and −170 dBm."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 remaining-energy condition and p. 12 §VI.B(5)/Fig. 7 confirm return and redistribution model and the distinct join/leave experiment."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 10 §VI opening states OS, CPU wording, clocks, memory and package versions as transcribed."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 10 §VI and VI.A lists all comparators, both model workloads and Poisson input process."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 10–11, Fig. 4 and paragraph continuation; accuracy denotes constraints satisfied."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11, §VI.B(2), Fig. 5; closest to LDTP in the authors' bandwidth comparison."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:3",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11, §VI.B(3), Fig. 6a; convergence and sustained reliably shared data."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:4",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 11–12, Fig. 6b and §VI.B(4); three memory sizes and comparison supported."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:5",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12, Fig. 7a–b, §VI.B(5); 5+3−2 UAVs, rewards and latency."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:6",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12, Fig. 7c, §VI.B(5); fixed five UAVs and 560→256→512 MB."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:7",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 12–13 §VI.B(6), rendered Fig. 8 and adjacent narrative support the plotted aggregate latency/power ranking under the three swarm counts."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:8",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 13 §VI.B(7), rendered Fig. 9 and narrative support latency/power comparison for 36, 49 and 64 cells."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 11–13, rendered Figs. 5–9 and corresponding subsections checked; configured sweeps with no numerical CI shown."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 15,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 10–15 simulation settings, results, conclusion, end matter and biographies inspected for code/data release."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 funding footnote and p. 15 end matter identify the grant and Open Access support; no conflict declaration in end matter."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 10 §V.D reports O(L × U^3) and real-time cost; p. 13 §VII identifies CSI and Doppler as future work."
+      },
+      {
+        "key": "quantity:1",
+        "status": "UNVERIFIED",
+        "page": null,
+        "excerpt_check": "NO_SINGLE_LOCATOR",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "pp. 11–13, VI.B plots/body not sufficient to reproduce the headline numeric aggregation.",
+        "withheld_disposition": {
+          "decision": "EXCLUDE_EXACT_VALUE",
+          "source_review": "p. 1 Abstract gives around 29%. §VI.B, Figs. 5–9 on pp. 11–13 give individual comparisons; no corresponding pooled denominator or aggregation is stated.",
+          "eligible_for_synthesis": false
+        }
+      },
+      {
+        "key": "quantity:2",
+        "status": "UNVERIFIED",
+        "page": null,
+        "excerpt_check": "NO_SINGLE_LOCATOR",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "pp. 11–13, VI.B plots/body not sufficient to reproduce the headline numeric aggregation.",
+        "withheld_disposition": {
+          "decision": "EXCLUDE_EXACT_VALUE",
+          "source_review": "p. 1 Abstract gives around 23%. §VI.B, Figs. 8–9 on p. 13 give per-configuration power bars; no corresponding pooled denominator or aggregation is stated.",
+          "eligible_for_synthesis": false
+        }
+      },
+      {
+        "key": "quantity:3",
+        "status": "UNVERIFIED",
+        "page": null,
+        "excerpt_check": "NO_SINGLE_LOCATOR",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "pp. 11–13, VI.B plots/body not sufficient to reproduce the headline numeric aggregation.",
+        "withheld_disposition": {
+          "decision": "EXCLUDE_EXACT_VALUE",
+          "source_review": "p. 1 Abstract gives 9%. §VI.B, Figs. 5, 8–9 on pp. 11–13 support closeness to LDTP in tested scenarios but do not give the matched aggregate calculation.",
+          "eligible_for_synthesis": false
+        }
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0068.pdf"
+  },
+  "R0071": {
+    "sha256": "75526755f4f92c411c109aadcad0e02dd870504649976b77ce7c6f6d0d68f025",
+    "pages": 6,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 conference footer and title block; six-page printed proceedings span."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 2 and 5 §II and original §IV state fixed altitude, roles, area, exact counts and server GPUs."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 original Table I and §IV name ResNet-18 and list split profiles; image data source not named."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 §II.A logistics and local/server workload equations; p. 5 Table I confirms limiting no/full offload values."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–5 §§II.D–III formulate P-MDP, list joint control variables and describe the CTDE recurrent scheme."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 2–3 solar-energy Poisson model and OFDM equations; original p. 5 Table II lists compute, bandwidth and carrier."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 2,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 2–4 describe repulsion, bounded motion, zero energy and local/offloaded variants."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §IV identifies 3000 slots, averaging over five trajectories, and separately ten training seeds; no software name given there."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 2 task model and p. 5 Table II give Poisson rate; pp. 5–6 §IV and Fig. 3 name baseline and parameter grid."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6, Fig. 3 and §IV; at least 13.8% applies only to the weighted sum, relative to MHAPPO."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6 original figures and captions identify sweep values; shades have no stated statistical definition."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6 §IV–V, acknowledgement and references inspected for release links."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 Acknowledgment lists both sets of grant numbers and sponsor; p. 1 and p. 6 checked for declaration."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "NOT_REPORTED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §II.A explicitly excludes SUAV computation delay; p. 6 has no limitations section."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §IV Fig. 3 results discussion states at least 13.8% for the weighted sum; pp. 5–6 give 3000-slot simulations, model, trajectory replicates and parameter settings."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "p. 6 §IV and Fig. 3(a) report a cap of 27.7% of MHAPPO degradation as the slot length grows, but do not specify the exact endpoints or aggregation used to calculate the cap. Preserve the qualitative stability claim only.",
+        "withheld_disposition": {
+          "decision": "EXCLUDE_EXACT_VALUE",
+          "source_review": "p. 6 §IV and Fig. 3(a) report a cap of 27.7% of MHAPPO degradation as the slot length grows, but do not specify the exact endpoints or aggregation used to calculate the cap. Preserve the qualitative stability claim only.",
+          "eligible_for_synthesis": false
+        }
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0071.pdf"
+  },
+  "R0073": {
+    "sha256": "597ff420ac58a13811f5f13f06faa60803529a1f149875161cd39e80cc9ca312",
+    "pages": 15,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 citation and publication block identify article, date, authors and DOI."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 3–4 §2, topology and both link types; p. 5 §3 explicitly models transmission of the final output of the last layer to the ground device."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9 §5.1 and Table 1: architectures, layers, and separate training datasets."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 §2 states each UAV has a copy, layer allocation depends on local resources and positions, with reassignment on loss."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–9 §§3–4, ILP variables and constraints, offline training for runtime assignment, and PPO."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5 rural LoS/NLoS model; pp. 9–10 §§5.1 and Table 2 for compute, memory, bandwidth, TX power and noise."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 §2 defines inoperable-state variable and reallocation; p. 9 §5.1 supplies the zero-to-two training setup."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 9–10 §5.1 and Fig. 3; plotted training duration and missing simulator/host details are distinguished."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 10–12 §5.2 and Figs. 4–6 for the three named baselines, sweep and distinct memory/failure cases."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 11–12 §5.2 and Figs. 4–6; qualitative trend only and failure case explicitly separate."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 10–12 §5.2, Fig. 3 shows named swarm sizes; Fig. 5 uses two memory levels; Fig. 6 uses zero, one and two inoperable UAVs."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 13, author Data Availability Statement; both dataset references checked; no code repository supplied there."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 13, Funding and Conflicts of Interest, employment and both sources of funding checked."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 13,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 12–13 §6 explicitly lists environment, Doppler and battery as future work."
+      },
+      {
+        "key": "quantity:1",
+        "status": "UNVERIFIED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "pp. 10–12, §5.2 and rendered Figs. 4–6. Source location and scenario conditions corrected; exact plotted observations are withheld.",
+        "prior_excerpt_exception_review": "CORRECTED",
+        "withheld_disposition": {
+          "decision": "QUALITATIVE_ONLY",
+          "source_review": "pp. 10–12 §5.2/Figs. 4–6 show latency ordering. Exact coordinates are not labeled; preserve the separately verified qualitative result and the distinct failure scenario.",
+          "eligible_for_synthesis": false
+        }
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0073.pdf"
+  },
+  "R0074": {
+    "sha256": "f9dc09402cc09d3e426cc693458070cee2e480acab8f538da24ecbaa3c93d151",
+    "pages": 26,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 title block, date, authors, journal, article number and DOI footnote."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 §3.1.1 sets the no-cloud constraint; pp. 14–15 §4.1 and Table 1 give emulated swarm hardware and the separate cloud baseline."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 14–16 §4.1 and Table 1 give modeled attention, precision, model scales and log lengths; p. 23 §5.4 confirms logs are textual."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–13 §3, Algorithms 1–2 and §3.3 separate layer placement, adaptive sequence chunking and predictive first-token decoding."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8–11 §§3.1.2 and 3.2.2, recurrence, memory constraint, algorithm complexity and min-max partition objective."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 14–15 §4.1 and Table 1 list emulated hardware, link ranges, jitter and activation size."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 21,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 15 §4.1 uniform bandwidth fluctuation setting; p. 21 §4.8 lists separate multiplicative Gaussian perturbations and percentages."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 14,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 14 §4.1 gives Python 3.13.5 and describes simulated hardware/network/inference processes."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 15,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 15–16 §4.1 and Table 1 enumerate all five baselines, model scales and token lengths."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 16,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 16–17 §4.2 and Fig. 4 supply network/token conditions and distinguish OOM (Edge-Solo and both cloud-edge baselines) at 70B."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
+        "status": "OBSERVED",
+        "page": 17,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 17 §4.2 gives all three successful distributed solutions and their three latencies in its results paragraph."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 19,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 19–21 §§4.6–4.8: ablation variants, 300 simulations per configuration for break-even, 100 independent trials per noise scenario."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 24,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 24, Data Availability Statement; article contributions and correspondence, no code URL stated."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 24,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 24, Funding and Conflicts, two grants and no conflicts."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 22,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 22–23 §§5.1, 5.3–5.5 distinguish current decoding, assumed latency and cluster size, textual-only input and proposed physical validation."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 16,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 16, §4.2 and Fig. 4; absolute prefill ms and baseline comparison under fixed token/bandwidth settings."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 16,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 16, §4.2 and Fig. 4; absolute prefill ms and baseline comparison under fixed token/bandwidth settings."
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 17,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 16–17, §4.2 and Fig. 4; separates OOM from completed runs and checks the three successful latency values."
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 20,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 20 §4.7 and rendered Fig. 9; 8.94% is supported by body and annotations, with 300 Monte Carlo runs, 64 tokens, and 1000 Mb/s ±20%. Intersection latency withheld because units conflict."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0074.pdf"
+  },
+  "R0083": {
+    "sha256": "f339a0eb83ca064fb88e73360af42a22cb5bd8210534c8755bebf40c8726604e",
+    "pages": 10,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 journal heading/citation, author line and DOI footer."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §3.1.1 confirms 802.11s mesh, both worker roles and a non-inferencing center that still computes the deployment plan."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 modeled use case and p. 6 §4.1 model pair; p. 9 explicitly states that no data was used."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 3,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 3 §3.1.2 deployment sequence describes container records, per-device managers and assignments; p. 6 Algorithm 1."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6 Eq. (8) and Algorithm 1 describe feasibility constraints, sorting, complexity and weights."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 §4.1 gives all hardware values and radio inputs, with 802.11s and packet-loss model on pp. 3–4."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 RPG mobility and collision loss model; pp. 7–8 §§4.2 Fig. 4 battery experiment. No node failure/recovery run was reported therein."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 explicitly names Python for timing and gives simulation setup; §§4.1–4.2 do not name simulator or host."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7 §§4.1–4.2 model mix and baselines, original Fig. 3 request axes."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 7–8, Figs. 3–5 and adjacent body; area, per-device battery scenarios and longevity configuration separated."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 7–8 original Figs. 2–4 confirm areas, number of UAVs, requests and battery cases; plotted comparisons contain no error bars."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, author Data availability declaration; no data was used."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9, declaration and acknowledgement; both funding and conflicts checked."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 9 conclusion expressly lists both future-work topics."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 original Fig. 3(a) caption, axes and §4.2 support all maxima, percent units and 100 m² with 10 UAVs."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 7–8 §4.2 and Fig. 4(a) distinguish the three baseline comparisons and battery condition."
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8, Fig. 5a–b and paragraph; 19 runs on 10 UAVs with 10 simultaneous requests per run under both stated battery settings."
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 paragraph after Eq. (9) directly states seconds, fixed request count and all corresponding N values."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0083.pdf"
+  },
+  "R0089": {
+    "sha256": "44e2147c5d37b416a5fd19b690ec44354e1a340ef29459e77ac21e813e8248be",
+    "pages": 12,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 title, DOI footer, journal header and online publication line."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5 and 8 §§3.4 and 5; number of drone terminals and edge devices and laser-link topology."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §3.3 specifies ResNet/Branchy, 32 layers, train/test counts; p. 8 confirms image dimensions and channels."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §3.3 and p. 11 §6; shallow exit and bottleneck, full network on edge, and the three task paths."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 7–8 §§4.1–4.2 provide priority upload policies and inverse-queue-based edge balancing."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5 and 8 §§3.4 and 5 give OFDMA and stated simulation values."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "NOT_REPORTED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8–11 §§5–6 inspected; mobility-induced topology and task-load variations deferred, no failure/recovery evaluation."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 §5 specifies PyTorch and 5000 cycles to smooth each curve; no host spec in §5."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8–10 §5 and plots identify all policies; p. 8 states the generation process, image count, period, and deadlines."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 9–10 §§5.1–5.3 and rendered Figs. 4(b), 5(b) and 6(b) establish scoped qualitative comparisons and convergence under low compute."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 9–10 §§5.1–5.3, visual axis ranges of Figs. 4–6."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8 and 11, evaluation and Data availability; CIFAR used, data sharing permission absent."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11, competing-interest declaration and both grant identifiers."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 11 §6 explicitly defers dynamic loads/topology due to UAV mobility and proposes trajectory planning and offloading."
+      },
+      {
+        "key": "quantity:1",
+        "status": "UNVERIFIED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "WITHHELD",
+        "semantic_evidence": "pp. 9–10, Figs. 4–6 compare directional accuracy; exact plot values are withheld.",
+        "withheld_disposition": {
+          "decision": "QUALITATIVE_ONLY",
+          "source_review": "pp. 9–10 rendered Figs. 4(b), 5(b), 6(b) and §§5.1–5.3 support the now scoped directional comparisons. No point values were read off the curves.",
+          "eligible_for_synthesis": false
+        }
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0089.pdf"
+  },
+  "R0095": {
+    "sha256": "a86e926de0d40dddd292784362c655a1eb3f35fb61aed98e02c817410f56adad",
+    "pages": 13,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 journal header, article number and available-online line."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 §5.1 and Table 1 give 1000 m sides, one core scheduler and four executing UAVs."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 §5.1 lists the three modeled architectures, 10 blocks, and states latency rather than accuracy evaluation."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 partition boundaries, pp. 5–6 priority and pipeline/cache model, p. 8 Table 1 for capacity."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–7 priority replacement, PPO objective and hybrid action space for partition/displacement."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 Table 1 and §5.1 give all listed settings and approximate cache coverage."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 §§4.5, 5.1 and Table 1 distinguish proposed failover and simulated safety distance; experiments on pp. 9–11 do not directly evaluate failover."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 §5.1 lists all system and training specifications."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 §5.1/Table 1 gives workload/timeout; pp. 9–10 §5.4.1–2 lists the two families of baselines."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 10, rendered Figs. 9b–c and discussion; 100% at 1.5 s, 31.9287 ms decision overhead. Relative reduction removed."
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "original p. 9 Table 2 cells confirm all pairs and ranges; pp. 8 and 11 describe replicates, standard deviation, task scaling and four architecture profiles."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "OBSERVED",
+        "page": 12,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 12, author declaration that no data were used; no code link in adjacent declarations."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 funding and p. 12 competing-interest declaration confirm details."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 11,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 8 §5.1 clarifies latency scope and core overhead; p. 11 §6 reserves energy modeling for future work."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8–9, Tables 1–2; run conditions and row 19.539 s, 100%, at alpha=1 and beta=1."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 10,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "original p. 10 Fig. 9(c) labels 31.9287 ms, 1.78 µs and 117.1472 ms; p. 8 §5.1 hardware and §5.2 coefficients."
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0095.pdf"
+  },
+  "R0121": {
+    "sha256": "83b93927c7a804b04412f6aa0c7b438817c9f114dbc3d061f08840b77a361ec0",
+    "pages": 11,
+    "rows": [
+      {
+        "key": "identity:1",
+        "status": "OBSERVED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 title and DOI, p. 6 running citation confirms journal, year, volume and page span."
+      },
+      {
+        "key": "uav_architecture_role_and_topology:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 §3 graph, one cut, quantized propagation and aggregator; §4 names mesh underlying protocol."
+      },
+      {
+        "key": "inference_model_task_and_dataset:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 original fills dimensions, size and YOLO example. §7 on pp. 8–9 explicitly defers empirical evaluation."
+      },
+      {
+        "key": "partition_and_assignment:1",
+        "status": "OBSERVED",
+        "page": 4,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 4 system model and Table 1 give local and aggregate ranges and signaling fields."
+      },
+      {
+        "key": "decision_variables_objectives_constraints_and_solver:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 5–6 §5 Eqs. (1)–(7) derive analytical quantities without an identified solver."
+      },
+      {
+        "key": "compute_and_radio:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 5 §5 derives header sizes, payload and MTU. p. 6 original Table 2 gives timing, rates and precision."
+      },
+      {
+        "key": "mobility_channel_intermittency_failure_and_recovery:1",
+        "status": "OBSERVED",
+        "page": 5,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 4–5 §4 defines freshness and degraded quorum behavior; p. 7 result uses independent delivery probability; p. 8 states independence limitation."
+      },
+      {
+        "key": "evaluation_platform_simulator_hardware_and_traces:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8–9 Table 4 and §7 explicitly classify evidence and defer simulation and channel emulation."
+      },
+      {
+        "key": "baselines_and_workloads:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 workload and settings, p. 7 original Table 3 compares three precisions and both stacks."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 prose gives approximate reduction. p. 5 Eq. (3), p. 6 header sizes and p. 7 FP32 frame counts give 3.72% with L2–L7 as denominator."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:2",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 prose gives approximate reduction. p. 7 original Table 3 caption and FP32 row reproduce (5332−4911)/5332 ≈ 7.9%."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:3",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 6 prose gives approximate reduction. p. 7 original Table 3 caption and FP32 row reproduce (4526−2875)/4526 ≈ 36.5%."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:4",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7 §6, Table 3 and Fig. 2 give value, unit, bitrate, tensor shape, same stack and precision change."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:5",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 original Table 3, FP32 row and caption, confirms time and frame columns, baseline and condition."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:6",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 original Table 3, INT8 row and caption, confirms time and frame columns, baseline and condition."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:7",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 original Table 3, ADT row and caption, confirms time and frame columns, baseline and condition."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:8",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 §6 below Fig. 2 and Table 3 INT8 row; p. 5 Eq. (6) justifies multiplication and independence."
+      },
+      {
+        "key": "outcomes_latency_energy_communication_accuracy_reliability_and_scalability:9",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7 rendered formula paragraph; n=6, p_d=0.70, q=3 gives 0.93 versus 0.74 for q=4.",
+        "prior_excerpt_exception_review": "VISUAL"
+      },
+      {
+        "key": "sensitivity_and_variability:1",
+        "status": "OBSERVED",
+        "page": 6,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–8 original Table 2 and Figs. 1–3 support payload, bitwidth, rate, and quorum parameter comparisons."
+      },
+      {
+        "key": "code_and_data:1",
+        "status": "NOT_REPORTED",
+        "page": 9,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 and pp. 8–11 inspected including limitations, conclusion, references and translated back matter. No article release statement or repository identified."
+      },
+      {
+        "key": "funding_and_conflicts:1",
+        "status": "NOT_REPORTED",
+        "page": 1,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 1 and pp. 8–11 inspected including conclusion, references and translated back matter. No funding or conflict disclosure identified."
+      },
+      {
+        "key": "reported_limitations:1",
+        "status": "OBSERVED",
+        "page": 8,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 8–9 §7 identifies five limitations and separately scopes the numerical analysis to a single hop."
+      },
+      {
+        "key": "quantity:1",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, Tables 2–3; 150 microsecond overhead, 12 Mbit/s, FP32 workload and both endpoint results."
+      },
+      {
+        "key": "quantity:2",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "pp. 6–7, Tables 2–3; 0.8-bit tensor, both latency values and FP32 comparison."
+      },
+      {
+        "key": "quantity:3",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "MATCH",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, Table 3 and Eq. (6) discussion below Fig. 2; source probabilities, frame counts and success rate."
+      },
+      {
+        "key": "quantity:4",
+        "status": "OBSERVED",
+        "page": 7,
+        "excerpt_check": "UNMATCHED_NEEDS_REVIEW",
+        "semantic_verdict": "PASS",
+        "semantic_evidence": "p. 7, Eq. (7) callout; rendered symbols and both probabilities checked.",
+        "prior_excerpt_exception_review": "VISUAL"
+      }
+    ],
+    "pdf_path": "restart_2026_11_26/fulltext_retrieval/pdf/R0121.pdf"
+  }
+}

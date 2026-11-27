@@ -18,6 +18,10 @@ counts from the accepted corpus, the appraisal summary, and [the primary coding
 ledger](technical_coding.psv). Its check fails if a generated input is stale or
 an included study is missing from either study table or the analytical text.
 
+[Minh chứng hình, bảng và công thức](minh_chung_hinh_bang/README.md)
+contains the archived inputs and code, item index, and independent rebuild
+commands for the 5 figures, 5 tables, and 3 equations.
+
 [Supplement S4](supplement_evidence_index.md) maps the text and 13 numbered
 figures, tables, and equations to their sources. It gives the calculation,
 input data and generation code for each chart, commands to rebuild the PRISMA
