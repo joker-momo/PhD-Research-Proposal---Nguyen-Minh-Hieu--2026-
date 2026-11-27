@@ -24,13 +24,16 @@ class TestAdjudicationAudit(unittest.TestCase):
         state = json.loads((PROJECT / "MUST_READ_AI_AGENT/current_state.json").read_text())
         cls.deferrals = state["evidence"]["alternative_technical_survey"]["editorial_integration"][
             "author_confirmed_deferrals"]
+        cls.endorsement = state["evidence"]["s2_final_eligibility_register"]
 
     def test_real_s2_does_not_count_blanks_as_changes(self):
         rows = load_rows(self.source, self.baseline, self.ids)
-        report = build_report(rows, self.ledger, self.deferrals)
+        report = build_report(rows, self.ledger, self.deferrals, self.endorsement)
         self.assertEqual(report["s2"]["reports_in_log"], 136)
         self.assertEqual(report["s2"]["author_processed_reports"], 10)
-        self.assertEqual(report["s2"]["reports_without_author_confirmation"], 126)
+        self.assertEqual(report["s2"]["reports_without_separate_final_author_entry"], 126)
+        endorsement = report["s2"]["corpus_author_endorsement"]
+        self.assertEqual((endorsement["included_reports"], endorsement["excluded_reports"]), (46, 90))
         self.assertEqual(report["s2"]["author_confirmed_deferrals"], {})
         comparison = report["ai_to_final_human_decisions"]
         self.assertEqual((comparison["changed_reports"], comparison["compared_reports"]), (4, 10))
@@ -42,9 +45,11 @@ class TestAdjudicationAudit(unittest.TestCase):
         self.assertEqual(report["paired_human_agreement"]["paired_reports"], 0)
         self.assertIsNone(report["paired_human_agreement"]["cohens_kappa"])
         table = render_latex(report)
-        self.assertIn("Reports without author confirmation & 126", table)
-        self.assertIn("Changes among author-processed reports & 4 / 10", table)
-        self.assertIn("Changes among final human decisions & 4 / 10", table)
+        self.assertIn("Author-endorsed set (include / exclude) & 46 / 90", table)
+        self.assertIn("Final decisions with separate author entries & 10", table)
+        self.assertIn("Reports without a separate final author entry & 126", table)
+        self.assertIn("Changes among separately documented reports & 4 / 10", table)
+        self.assertIn("Changes among separate final decisions & 4 / 10", table)
         self.assertIn("46 / 90 / 0", table)
         self.assertIn("PRISMA awaiting classification & None", table)
 

@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:16:17+07:00",
+  "updated_at": "2026-11-28T00:19:47+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
-    "summary": "The author endorsed the full 46-included, 90-excluded, zero-awaiting eligibility set. S2 now links a final register with reasons and source locators for all 136 assessed reports. Ten decisions have separately documented report-specific author entries and there are zero independent screening pairs. The manuscript PDF and PRISMA ledger are unchanged."
+    "summary": "The verified 30-page manuscript and S2 audit document author endorsement of all 46 included and 90 excluded reports, with ten separately documented final decisions and zero independent screening pairs. The S2 eligibility register gives evidence for all 136 assessed reports. PRISMA is unchanged."
   },
   "task": {
-    "task_id": "hk261-s2-final-eligibility-register",
+    "task_id": "hk261-manuscript-author-eligibility-endorsement",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:15:27+07:00",
-    "updated_at": "2026-11-28T00:16:17+07:00",
-    "decision_id": "hk261-s2-final-eligibility-register-v1",
-    "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
-    "completed_at": "2026-11-28T00:16:17+07:00"
+    "started_at": "2026-11-28T00:18:44+07:00",
+    "updated_at": "2026-11-28T00:19:47+07:00",
+    "decision_id": "hk261-manuscript-author-eligibility-endorsement-v1",
+    "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
+    "completed_at": "2026-11-28T00:19:47+07:00"
   },
   "next_task": {
     "task_id": "hk261-priority-draft-author-comparison",
@@ -1065,6 +1065,26 @@
       },
       "documented_item_level_author_decisions": 10,
       "independent_human_screening_pairs": 0
+    },
+    "manuscript_author_eligibility_endorsement": {
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pdf_sha256": "b85fab5a8d2091d55dc811ec3884e1ae2dd110520eee7ef01fade5316822ef51",
+      "pages": 30,
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "details_pages": [
+        1,
+        4,
+        6,
+        25,
+        26
+      ],
+      "documented_item_level_author_decisions": 10,
+      "register": "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
+      "independent_rebuild_matched_rendered_pages": 30
     }
   },
   "blockers": [],

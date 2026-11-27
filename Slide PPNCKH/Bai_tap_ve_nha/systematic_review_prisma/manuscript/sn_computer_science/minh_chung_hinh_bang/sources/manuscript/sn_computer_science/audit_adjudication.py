@@ -84,7 +84,14 @@ def paired_agreement(pairs):
                      "cohens_kappa": (n * matched - expected) / (n**2 - expected)}
 
 
-def build_report(rows, ledger, deferrals):
+def build_report(rows, ledger, deferrals, endorsement):
+    counts = ledger["counts"]
+    if endorsement["working_counts"] != {
+        "include": counts["included_reports"],
+        "exclude": counts["reports_excluded"],
+        "awaiting": counts["reports_awaiting_classification"],
+    }:
+        raise ValueError("The S2 author endorsement does not match the PRISMA dispositions")
     pending = ledger["awaiting_classification_codes"]
     for report_id, reason in deferrals.items():
         row = rows.get(report_id)
@@ -106,7 +113,13 @@ def build_report(rows, ledger, deferrals):
         "s2": {
             "reports_in_log": len(rows),
             "author_processed_reports": processed_reports,
-            "reports_without_author_confirmation": len(rows) - processed_reports,
+            "reports_without_separate_final_author_entry": len(rows) - len(final),
+            "corpus_author_endorsement": {
+                "date": endorsement["author_endorsement_date"],
+                "register": endorsement["path"],
+                "included_reports": counts["included_reports"],
+                "excluded_reports": counts["reports_excluded"],
+            },
             "final_human_decisions": {
                 key: {"decision": row["Final_Human_Decision"], "reason": row["Primary_Reason_Code"]}
                 for key, row in sorted(final.items())
@@ -135,6 +148,7 @@ def render_latex(report):
     comparison = report["ai_to_final_human_decisions"]
     processed = comparison["changed_among_author_processed"]
     prisma = report["prisma"]["counts"]
+    endorsement = s2["corpus_author_endorsement"]
     agreement = paired["percent_agreement"]
     kappa = paired["cohens_kappa"]
     pending = ", ".join(f"{key} ({reason})"
@@ -143,17 +157,19 @@ def render_latex(report):
                       if row["decision"] == "EXCLUDE")
     rows = (
         ("Reports in the S2 log", s2["reports_in_log"]),
-        ("Final decisions confirmed by the author", len(s2["final_human_decisions"])),
-        ("Author-confirmed exclusions", final or "None"),
-        ("Author-confirmed deferrals", len(s2["author_confirmed_deferrals"])),
-        ("Reports without author confirmation", s2["reports_without_author_confirmation"]),
+        ("Author-endorsed set (include / exclude)",
+         f"{endorsement['included_reports']} / {endorsement['excluded_reports']}"),
+        ("Final decisions with separate author entries", len(s2["final_human_decisions"])),
+        ("Exclusions with separate author entries", final or "None"),
+        ("Separately documented author deferrals", len(s2["author_confirmed_deferrals"])),
+        ("Reports without a separate final author entry", s2["reports_without_separate_final_author_entry"]),
         ("Independent reviewer decisions (R1 / R2)", f"{s2['reviewer1_decisions']} / {s2['reviewer2_decisions']}"),
         ("Paired independent decisions", paired["paired_reports"]),
         ("Observed agreement on pairs", "N/A" if agreement is None else rf"{agreement:.1f}\%"),
         (r"Cohen's kappa ($\kappa$) on pairs", "N/A" if kappa is None else f"{kappa:.3f}"),
-        ("Changes among author-processed reports", f"{processed['changed']} / {processed['total']}"
+        ("Changes among separately documented reports", f"{processed['changed']} / {processed['total']}"
          if processed["total"] else "N/A"),
-        ("Changes among final human decisions", f"{comparison['changed_reports']} / {comparison['compared_reports']}"
+        ("Changes among separate final decisions", f"{comparison['changed_reports']} / {comparison['compared_reports']}"
          if comparison["compared_reports"] else "N/A"),
         ("PRISMA included / excluded / awaiting",
          f"{prisma['included_reports']} / {prisma['reports_excluded']} / {prisma['reports_awaiting_classification']}"),
@@ -182,13 +198,15 @@ def main():
         ledger = json.loads((PRISMA / "prisma_counts.json").read_text())
         if args.frozen_prisma:
             deferrals = json.loads((HERE / "s2_author_confirmed_deferrals.json").read_text())
+            endorsement = json.loads((HERE / "s2_corpus_author_endorsement.json").read_text())
         else:
             state = json.loads((PROJECT / "MUST_READ_AI_AGENT/current_state.json").read_text())
             deferrals = state["evidence"]["alternative_technical_survey"]["editorial_integration"][
                 "author_confirmed_deferrals"]
+            endorsement = state["evidence"]["s2_final_eligibility_register"]
         assessed_ids = ledger["report_ids_by_retrieval_decision"]["RETRIEVED_PDF"]
         source = (HERE / "human_adjudication_log.csv").read_text(encoding="utf-8-sig")
-        report = build_report(load_rows(source, review_log(), set(assessed_ids)), ledger, deferrals)
+        report = build_report(load_rows(source, review_log(), set(assessed_ids)), ledger, deferrals, endorsement)
         outputs = {
             "audit_summary.json": json.dumps(report, indent=2, sort_keys=True) + "\n",
             "adjudication_audit_table.tex": render_latex(report),

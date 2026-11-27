@@ -71,6 +71,12 @@
   "s2": {
     "author_confirmed_deferrals": {},
     "author_processed_reports": 10,
+    "corpus_author_endorsement": {
+      "date": "2026-11-28",
+      "excluded_reports": 90,
+      "included_reports": 46,
+      "register": "manuscript/sn_computer_science/supplement_s2_eligibility.csv"
+    },
     "final_human_decisions": {
       "R0001": {
         "decision": "INCLUDE",
@@ -114,7 +120,7 @@
       }
     },
     "reports_in_log": 136,
-    "reports_without_author_confirmation": 126,
+    "reports_without_separate_final_author_entry": 126,
     "reviewer1_decisions": 0,
     "reviewer2_decisions": 0
   }

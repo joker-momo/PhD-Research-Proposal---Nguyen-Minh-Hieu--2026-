@@ -15,6 +15,7 @@ FILES = [
         "build_technical_survey.py", "build_editorial_evidence.py", "main.tex",
         "editorial_mechanism_setting.tex", "editorial_outcome_coverage.tex", "main.pdf", "references.bib",
         "supplement_fulltext_exclusions.csv", "human_adjudication_log.csv", "audit_adjudication.py", "audit_summary.json", "adjudication_audit_table.tex",
+        "supplement_s2_eligibility.csv",
         "sn-jnl.cls", "sn-vancouver-num.bst", "technical_coding.psv", "prisma_flow.pdf",
         "technical_appraisal.tex", "technical_appraisal_bars.tex",
         "technical_appraisal_figure.tex", "technical_architecture.tex",
@@ -86,6 +87,9 @@ def snapshot():
         "author_confirmed_deferrals"]
     deferrals_path = Path("sources") / MANUSCRIPT_PATH / "s2_author_confirmed_deferrals.json"
     items[deferrals_path] = (json.dumps(deferrals, indent=2, sort_keys=True) + "\n").encode()
+    endorsement = state["evidence"]["s2_final_eligibility_register"]
+    endorsement_path = Path("sources") / MANUSCRIPT_PATH / "s2_corpus_author_endorsement.json"
+    items[endorsement_path] = (json.dumps(endorsement, indent=2, sort_keys=True) + "\n").encode()
     items[Path("ITEM_INDEX.md")] = build_index()
     manifest = "".join(f"{hashlib.sha256(data).hexdigest()}  {path.as_posix()}\n"
                        for path, data in sorted(items.items()))
