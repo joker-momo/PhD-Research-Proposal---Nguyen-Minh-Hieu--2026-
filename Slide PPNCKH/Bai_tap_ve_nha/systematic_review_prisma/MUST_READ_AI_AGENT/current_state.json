@@ -1,27 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T12:50:37+07:00",
+  "updated_at": "2026-11-27T12:51:10+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "supplemental_linkage_accepted",
-    "summary": "Updated HK261 eligibility and study linkage verified. The supplemented corpus has 46 reports mapped to 46 study IDs. New P08/P09 evidence and an updated manuscript are pending."
+    "status": "supplemental_extraction_in_progress",
+    "summary": "The 46-study linkage checkpoint is accepted. Supplemental original-PDF extraction is underway."
   },
   "task": {
-    "task_id": "restart-supplemental-linkage",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T12:23:54+07:00",
-    "updated_at": "2026-11-27T12:50:37+07:00",
-    "checkpoint_path": "restart_2026_11_26/study_linkage/supplemental_linkage_review.md",
-    "decision_id": "restart-supplemental-linkage-v1",
-    "completed_at": "2026-11-27T12:50:37+07:00"
-  },
-  "next_task": {
     "task_id": "restart-supplemental-extraction",
     "owner": "CODEX_WRITING",
+    "status": "active",
+    "started_at": "2026-11-27T12:51:10+07:00",
+    "updated_at": "2026-11-27T12:51:10+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/supplemental_extraction_manifest.json",
+    "decision_id": "restart-supplemental-extraction-v1"
+  },
+  "next_task": {
+    "task_id": "restart-supplemental-extraction-batch01",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Prepare the first P08 native Task from the 21 added eligible reports.",
-    "acceptance": "Preserve accepted P08 data for 25 baseline reports and verify field/locator coverage for 21 added reports."
+    "action": "Run one parent native extraction for the authorized seven reports.",
+    "acceptance": "Seven PDF access checks, 91 scoped field keys, exact locators, and zero unsupported outcomes.",
+    "dispatch_brief": "restart_2026_11_26/extraction/supplemental_batch_01_brief.md",
+    "message_id": "e5cbf5cb-1178-4b76-b0f4-c73b65b7756d"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -436,6 +437,12 @@
       "pairs": "restart_2026_11_26/study_linkage/active_pair_evidence.csv",
       "review": "restart_2026_11_26/study_linkage/supplemental_linkage_review.md",
       "gate_at": "2026-11-27T12:50:37+07:00"
+    },
+    "supplemental_extraction": {
+      "accepted_prior_reports": 25,
+      "new_reports_required": 21,
+      "new_reports_accepted": 0,
+      "manifest": "restart_2026_11_26/extraction/supplemental_extraction_manifest.json"
     }
   },
   "blockers": [],

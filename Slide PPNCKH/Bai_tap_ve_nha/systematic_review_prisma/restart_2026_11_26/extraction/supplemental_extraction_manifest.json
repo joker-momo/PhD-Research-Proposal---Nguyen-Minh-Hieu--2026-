@@ -1,0 +1,191 @@
+{
+  "created_at": "2026-11-27T12:51:10+07:00",
+  "baseline_accepted_reports": 25,
+  "added_reports": 21,
+  "status": "BATCH_01_READY",
+  "batches": [
+    {
+      "batch": 1,
+      "records": [
+        {
+          "report_id": "R0014",
+          "study_id": "S026",
+          "title": "All-Sky Autonomous Computing in UAV Swarm",
+          "doi": "10.1109/TMC.2024.3427420",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0014.pdf",
+          "sha256": "798f36a8717c4efc667a308aeee22236b895dad4faaafbde979e2610fde72f44"
+        },
+        {
+          "report_id": "R0036",
+          "study_id": "S027",
+          "title": "Wider Eyes in the Sky: Scene-Adaptive Video Analytics in Low-Altitude Surveillance Networks",
+          "doi": "10.1109/TCCN.2025.3641511",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0036.pdf",
+          "sha256": "f14e34f86c864e1283d2d34a8abc06f7adbc9f0a92fd26582be06f5116af5631"
+        },
+        {
+          "report_id": "R0038",
+          "study_id": "S028",
+          "title": "On Convolutional Neural Networks for Mini UAV Swarms",
+          "doi": "10.1109/WINCOM65874.2025.11313424",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0038.pdf",
+          "sha256": "1b94aec23aab27479644c382566260bfe504d11c65c04076f6e980064a571c59"
+        },
+        {
+          "report_id": "R0043",
+          "study_id": "S029",
+          "title": "Multi-UAV Maritime Search and Rescue with DNN Inference Acceleration",
+          "doi": "10.1109/Ucom59132.2023.10257649",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0043.pdf",
+          "sha256": "a0f21d4599dc515f501dc5c81a30e6c082448068819609151165f2a31a79e19f"
+        },
+        {
+          "report_id": "R0058",
+          "study_id": "S030",
+          "title": "Efficient AI Inference Offloading for UAVs via Distributed Auctions in Dynamic Edge Environments",
+          "doi": "10.1142/S0218126626440020",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0058.pdf",
+          "sha256": "a995e55cc24eda515eb4066996a648d5777065084f7babbe6760e2691d46dbd3"
+        },
+        {
+          "report_id": "R0064",
+          "study_id": "S031",
+          "title": "Joint optimization of data sensing and computing in the air–ground collaborative inference framework: A multi-agent hybrid-action DRL approach",
+          "doi": "10.1016/j.comnet.2025.111540",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0064.pdf",
+          "sha256": "6cfc6cd0d7d4d924833f9add0b3d56334dcacebe8941705729178bdaf765d52f"
+        },
+        {
+          "report_id": "R0075",
+          "study_id": "S032",
+          "title": "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks",
+          "doi": "10.1109/JIOT.2026.3746980",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0075.pdf",
+          "sha256": "18d44887a60aadc52dfdea791615ef8ee43952ae3df0cf92687cb80fef54707f"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "records": [
+        {
+          "report_id": "R0077",
+          "study_id": "S033",
+          "title": "Distributed split computing using diffusive metrics for UAV swarms",
+          "doi": "10.1016/j.sysarc.2026.103804",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0077.pdf",
+          "sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f"
+        },
+        {
+          "report_id": "R0080",
+          "study_id": "S034",
+          "title": "Edge-Cloud Collaborative Model Inference for Aerial Networks with Distributionally Diverse Data",
+          "doi": "10.1109/VTC2025-Fall65116.2025.11310097",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0080.pdf",
+          "sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5"
+        },
+        {
+          "report_id": "R0090",
+          "study_id": "S035",
+          "title": "Aeroagrinet: Swarm-Enabled Flying Edge Framework for Real-Time Agricultural Intelligence",
+          "doi": "10.1109/ICoEIT63558.2025.11457712",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0090.pdf",
+          "sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c"
+        },
+        {
+          "report_id": "R0092",
+          "study_id": "S036",
+          "title": "A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference",
+          "doi": "10.1109/JIOT.2026.3740035",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+          "sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93"
+        },
+        {
+          "report_id": "R0106",
+          "study_id": "S037",
+          "title": "Robust Group Target Awareness Inference in Multi-UAV-Enabled ISCC Networks Based on Split Deep Reinforcement Learning",
+          "doi": "10.1109/TWC.2025.3573654",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0106.pdf",
+          "sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f"
+        },
+        {
+          "report_id": "R0107",
+          "study_id": "S038",
+          "title": "Joint Semantic Compression and Resource Allocation for Multi-UAV Networks: A Knowledge-Guided Reinforcement Learning Approach",
+          "doi": "10.1109/TVT.2026.3733130",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0107.pdf",
+          "sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7"
+        },
+        {
+          "report_id": "R0110",
+          "study_id": "S039",
+          "title": "RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV Swarms",
+          "doi": "10.1109/tvt.2026.3755123",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+          "sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38"
+        }
+      ]
+    },
+    {
+      "batch": 3,
+      "records": [
+        {
+          "report_id": "R0113",
+          "study_id": "S040",
+          "title": "A Neuromorphic Spiking Neural Network-Based Continual Learning Framework for Energy-Efficient Edge Intelligence in Autonomous UAV Swarm Navigation",
+          "doi": "DOI_NOT_FOUND",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+          "sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132"
+        },
+        {
+          "report_id": "R0118",
+          "study_id": "S041",
+          "title": "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms",
+          "doi": "10.1109/jiot.2026.3755315",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+          "sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672"
+        },
+        {
+          "report_id": "R0125",
+          "study_id": "S042",
+          "title": "UAV Extreme Edge Computing for Real Time AI Inference: A Distributed Processing Approach",
+          "doi": "10.1109/sm69703.2026.11614110",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0125.pdf",
+          "sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460"
+        },
+        {
+          "report_id": "R0137",
+          "study_id": "S043",
+          "title": "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems",
+          "doi": "10.1109/tcsvt.2026.3745821",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+          "sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907"
+        },
+        {
+          "report_id": "R0145",
+          "study_id": "S044",
+          "title": "LLM-based UAV Path Planning for Autonomous and Adaptive Industry Systems",
+          "doi": "10.1145/3774655",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf",
+          "sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6"
+        },
+        {
+          "report_id": "R0223",
+          "study_id": "S045",
+          "title": "Outdoor Multi-UAV Collaborative Task Planning System Based on Multi-Agent and Improved PPO Algorithm",
+          "doi": "10.1145/3760269.3760299",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf",
+          "sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3"
+        },
+        {
+          "report_id": "R0292",
+          "study_id": "S046",
+          "title": "Continuous Marine Monitoring via Autonomous UAV Handoff",
+          "doi": "10.1145/3711875.3737661",
+          "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf",
+          "sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee"
+        }
+      ]
+    }
+  ]
+}
