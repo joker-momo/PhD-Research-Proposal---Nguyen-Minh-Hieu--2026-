@@ -1,8 +1,8 @@
 {
-  "status": "CORRECTION_READY",
+  "status": "CORRECTION_SUBMITTED",
   "baseline_commit": "8dec459",
   "started_at": "2026-11-27T15:10:06+07:00",
-  "updated_at": "2026-11-27T15:21:45+07:00",
+  "updated_at": "2026-11-27T15:22:10+07:00",
   "brief": "restart_2026_11_26/integrity/active_source_audit_brief.md",
   "message_id": "e3720ac8-1682-4946-a7ac-51183e564172",
   "expected_reference_ids": {
@@ -115,5 +115,8 @@
     "R0074",
     "R0113",
     "prisma2020"
-  ]
+  ],
+  "correction_dispatch": "restart_2026_11_26/integrity/active_source_audit_correction_dispatch.json",
+  "correction_task_uuid": "ee609ba8-1c3d-4d4e-a01a-59425b5fd23a",
+  "correction_context_id": "d5bb0d1a-eb2b-4193-81b0-eef3f6369ffa"
 }

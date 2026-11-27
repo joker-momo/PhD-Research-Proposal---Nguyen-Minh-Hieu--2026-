@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T15:21:45+07:00",
+  "updated_at": "2026-11-27T15:22:10+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_integrity_active",
@@ -11,18 +11,19 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T15:10:06+07:00",
-    "updated_at": "2026-11-27T15:21:45+07:00",
-    "checkpoint_path": "restart_2026_11_26/integrity/active_source_audit_correction_brief.md",
+    "updated_at": "2026-11-27T15:22:10+07:00",
+    "checkpoint_path": "restart_2026_11_26/integrity/active_source_audit_correction_dispatch.json",
     "decision_id": "restart-supplemental-integrity-v1"
   },
   "next_task": {
     "task_id": "restart-supplemental-integrity-source-correction",
-    "owner": "GEMINI_RESEARCH",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Send one correction using the captured first-party evidence, linked to the primary UUID.",
+    "action": "Recover this UUID without resending. Validate 41 corrected rows against the local evidence; close the explicitly limited publisher notice scope.",
     "acceptance": "41 source-specific identity and notice rows. No overlap with the six supported primary rows.",
     "dispatch_brief": "restart_2026_11_26/integrity/active_source_audit_correction_brief.md",
-    "message_id": "b2c81037-4164-45bc-88aa-b70fbf1f6589"
+    "message_id": "b2c81037-4164-45bc-88aa-b70fbf1f6589",
+    "task_uuid": "ee609ba8-1c3d-4d4e-a01a-59425b5fd23a"
   },
   "project": {
     "target_venue": "SN Computer Science",
