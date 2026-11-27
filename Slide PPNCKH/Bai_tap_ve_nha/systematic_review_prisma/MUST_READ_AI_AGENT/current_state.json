@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T14:44:14+07:00",
+  "updated_at": "2026-11-27T14:44:48+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_rq_synthesis_active",
@@ -11,18 +11,19 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T14:44:14+07:00",
-    "updated_at": "2026-11-27T14:44:14+07:00",
-    "checkpoint_path": "restart_2026_11_26/synthesis/active_rq_phase_manifest.json",
+    "updated_at": "2026-11-27T14:44:48+07:00",
+    "checkpoint_path": "restart_2026_11_26/synthesis/active_rq_dispatch.json",
     "decision_id": "restart-supplemental-rq-synthesis-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-rq-synthesis-batch-01",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "restart-supplemental-rq-synthesis-review",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Return ten structured RQ findings from the named sources.",
+    "action": "Collect and verify the existing UUID, without resending.",
     "acceptance": "Ten exact keys, five limitations, original evidence and three locked quantitative rows.",
     "dispatch_brief": "restart_2026_11_26/synthesis/active_rq_brief.md",
-    "message_id": "fdb24fbe-525c-4913-9cdf-f47619cb4eda"
+    "message_id": "fdb24fbe-525c-4913-9cdf-f47619cb4eda",
+    "task_uuid": "92e9eeb1-b7e8-4651-8956-0054b3a93f3a"
   },
   "project": {
     "target_venue": "SN Computer Science",

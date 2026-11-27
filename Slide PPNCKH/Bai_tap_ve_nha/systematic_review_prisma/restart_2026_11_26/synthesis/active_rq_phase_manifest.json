@@ -1,5 +1,5 @@
 {
-  "status": "BRIEF_READY",
+  "status": "SUBMITTED",
   "baseline_commit": "539f298",
   "input_manifest": "restart_2026_11_26/synthesis/active_synthesis_input_manifest.json",
   "input_manifest_sha256": "ba90dbb8d67054b2adf52a3a39fc5fee9c3022ca17e47508cf38ebda6191b24f",
@@ -19,7 +19,10 @@
         "RQ4-B",
         "RQ5-A",
         "RQ5-B"
-      ]
+      ],
+      "task_uuid": "92e9eeb1-b7e8-4651-8956-0054b3a93f3a",
+      "context_id": "b068e57b-68a4-4976-ac3e-d951c11da44e",
+      "dispatch": "restart_2026_11_26/synthesis/active_rq_dispatch.json"
     }
   ]
 }
