@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:43:36+07:00",
+  "updated_at": "2026-11-27T13:48:42+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_appraisal_in_progress",
@@ -11,19 +11,18 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T13:37:04+07:00",
-    "updated_at": "2026-11-27T13:43:36+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_01_correction_dispatch.json",
+    "updated_at": "2026-11-27T13:48:42+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_01_correction_review.md",
     "decision_id": "restart-supplemental-appraisal-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-appraisal-batch-01-correction-collect",
-    "owner": "CODEX_WRITING",
+    "task_id": "restart-supplemental-appraisal-batch-01-repair",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Retrieve the existing Task by UUID and independently check original-page evidence; do not resend.",
-    "acceptance": "30 unique source-grounded corrected domain judgments, precise physical pages, valid JSONL, independent acceptance and verified cleanup.",
-    "dispatch_brief": "restart_2026_11_26/appraisal/supplemental_batch_01_correction_brief.md",
-    "message_id": "e275aed5-c798-42a0-9104-d1dff677252c",
-    "task_uuid": "15ee76c5-479f-4f66-945b-a7fe6d1b99bf"
+    "action": "Dispatch repair only for four failed locators and one D09 consistency requirement.",
+    "acceptance": "Exactly 5 verified report/domain pairs with valid JSONL, matching physical pages and original support, and verified cleanup.",
+    "dispatch_brief": "restart_2026_11_26/appraisal/supplemental_batch_01_repair_brief.md",
+    "message_id": "25a30c31-dab5-4889-b9a5-989413587d1a"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -491,7 +490,7 @@
       "studies_verified": 46
     },
     "supplemental_appraisal": {
-      "status": "BATCH_01_CORRECTION_SUBMITTED",
+      "status": "BATCH_01_REPAIR_READY",
       "manifest": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
       "baseline_reports": 25,
       "supplemental_reports_required": 21,
@@ -503,7 +502,10 @@
       "batch_01_correction_key_count": 30,
       "batch_01_review": "restart_2026_11_26/appraisal/supplemental_batch_01_review.md",
       "batch_01_correction_uuid": "15ee76c5-479f-4f66-945b-a7fe6d1b99bf",
-      "batch_01_correction_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_01_correction_dispatch.json"
+      "batch_01_correction_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_01_correction_dispatch.json",
+      "batch_01_correction_gate": "FAIL_FIVE_KEYS",
+      "batch_01_repair_key_count": 5,
+      "batch_01_correction_review": "restart_2026_11_26/appraisal/supplemental_batch_01_correction_review.md"
     }
   },
   "blockers": [],
