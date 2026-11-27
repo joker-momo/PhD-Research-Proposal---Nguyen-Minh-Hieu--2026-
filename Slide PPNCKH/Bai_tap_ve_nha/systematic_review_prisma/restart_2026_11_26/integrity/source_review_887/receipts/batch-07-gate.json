@@ -1,0 +1,145 @@
+{
+  "batch": 7,
+  "expected": 122,
+  "seen": 104,
+  "task_id": "6312652a-5f97-4a36-8838-07f323a74b1e",
+  "context_id": "76c7b138-2887-41a9-ac3c-2bf6819c39dd",
+  "transport": "TASK_STATE_COMPLETED",
+  "provider_started_at": "2026-11-27T14:39:29.429+00:00",
+  "provider_completed_at": "2026-11-27T14:46:37.787+00:00",
+  "hash_inventory_match": true,
+  "context_unchanged": true,
+  "preflight_anchor_match": true,
+  "identity_count": 6,
+  "identity_expected": 6,
+  "identity_records": [
+    "HKF-035",
+    "HKF-044",
+    "HKF-053",
+    "HKF-057",
+    "HKF-060",
+    "HKF-061"
+  ],
+  "identity_missing": [],
+  "identity_duplicate_dois": 0,
+  "identity_duplicate_titles": 0,
+  "end_marker": true,
+  "cleanup": {
+    "state": "deleted",
+    "verified_new_chat": true,
+    "mode_restored": "chat"
+  },
+  "locator_checks": {
+    "ANCHORS_MATCH": 87,
+    "ANCHOR_NEEDS_VISUAL_OR_CORRECTION": 15,
+    "SCHEMA_INVALID": 2
+  },
+  "status_counts": {
+    "VERIFIED": 78,
+    "PARTIAL": 20,
+    "NOT_REPORTED": 4,
+    "NO": 2
+  },
+  "errors": [
+    "JSONL line contains 104 adjacent objects; raw objects recovered without edits"
+  ],
+  "missing_keys": [
+    [
+      "HKF-035",
+      "appraisal",
+      "D01"
+    ],
+    [
+      "HKF-035",
+      "appraisal",
+      "D02"
+    ],
+    [
+      "HKF-035",
+      "appraisal",
+      "D03"
+    ],
+    [
+      "HKF-035",
+      "appraisal",
+      "D04"
+    ],
+    [
+      "HKF-035",
+      "appraisal",
+      "D05"
+    ],
+    [
+      "HKF-035",
+      "appraisal",
+      "D06"
+    ],
+    [
+      "HKF-035",
+      "appraisal",
+      "D07"
+    ],
+    [
+      "HKF-035",
+      "appraisal",
+      "D08"
+    ],
+    [
+      "HKF-035",
+      "appraisal",
+      "D09"
+    ],
+    [
+      "HKF-035",
+      "appraisal",
+      "D10"
+    ],
+    [
+      "HKF-035",
+      "outcome",
+      "Q01"
+    ],
+    [
+      "HKF-035",
+      "outcome",
+      "Q02"
+    ],
+    [
+      "HKF-035",
+      "outcome",
+      "Q03"
+    ],
+    [
+      "HKF-035",
+      "outcome",
+      "Q04"
+    ],
+    [
+      "HKF-035",
+      "report_coverage",
+      "coverage"
+    ],
+    [
+      "HKF-035",
+      "technical",
+      "t2_decisions_objective_solver"
+    ],
+    [
+      "HKF-035",
+      "technical",
+      "t2_partition"
+    ],
+    [
+      "HKF-053",
+      "technical",
+      "t3_platform_modality"
+    ]
+  ],
+  "semantic": {
+    "PARTIAL": 27,
+    "FAIL": 5,
+    "PASS": 51
+  },
+  "semantic_unreviewed": 21,
+  "semantic_missing_row_reviews": 0
+}

@@ -43,6 +43,17 @@ def read_pages(path):
     return {p.stem: load(p) for p in path.glob("HKF-*.json")} if path.is_dir() else {}
 
 
+def decode_line(line):
+    decoder = json.JSONDecoder()
+    values = []
+    remaining = line
+    while remaining:
+        value, end = decoder.raw_decode(remaining)
+        values.append(value)
+        remaining = remaining[end:].lstrip()
+    return values
+
+
 def extract(text, expected):
     data = {}
     errors = []
@@ -55,9 +66,16 @@ def extract(text, expected):
         if not candidate.startswith("{"):
             continue
         try:
-            item = json.loads(candidate)
+            objects = decode_line(candidate)
+        except (ValueError, TypeError) as exc:
+            errors.append(f"malformed JSONL {len(errors) + 1}: {exc}")
+            continue
+        if len(objects) > 1:
+            errors.append(f"JSONL line contains {len(objects)} adjacent objects; raw objects recovered without edits")
+        for item in objects:
             if not isinstance(item, dict):
-                raise ValueError("not an object")
+                errors.append("invalid JSONL value: expected an object")
+                continue
             if "file" in item and "id" not in item:
                 preflight = item
                 continue
@@ -73,8 +91,6 @@ def extract(text, expected):
                 continue
             seen.add(key)
             data[key] = item
-        except (ValueError, TypeError) as exc:
-            errors.append(f"malformed JSONL {len(errors) + 1}: {exc}")
     return data, errors, preflight
 
 
