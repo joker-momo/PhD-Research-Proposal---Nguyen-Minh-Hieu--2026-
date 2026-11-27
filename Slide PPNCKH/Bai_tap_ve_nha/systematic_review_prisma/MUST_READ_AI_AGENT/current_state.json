@@ -1,30 +1,30 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T17:25:56+07:00",
+  "updated_at": "2026-11-27T17:28:55+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "alternative_editorial_pdf_ready_for_comparison",
     "summary": "The 29-page HK261 comparison PDF includes the S2 audit as Table 8 on page 24. PRISMA retains 46 included, 89 excluded, and R0082 pending E7."
   },
   "task": {
-    "task_id": "hk261-borderline-author-review-correction-received",
+    "task_id": "hk261-borderline-parent-access-verified",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T17:19:21+07:00",
-    "updated_at": "2026-11-27T17:25:56+07:00",
-    "completed_at": "2026-11-27T17:25:56+07:00",
-    "decision_id": "hk261-borderline-author-review-correction-received-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/borderline_author_review/correction-review.md"
+    "started_at": "2026-11-27T17:26:00+07:00",
+    "updated_at": "2026-11-27T17:28:55+07:00",
+    "completed_at": "2026-11-27T17:28:55+07:00",
+    "decision_id": "hk261-borderline-parent-access-verified-v1",
+    "checkpoint_path": "restart_2026_11_26/integrity/borderline_author_review/access-review.md"
   },
   "next_task": {
-    "task_id": "hk261-borderline-author-review-parent-access",
+    "task_id": "hk261-borderline-author-review-parent-correction",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Verify direct native parent access to original body pages without workers before any retry.",
-    "acceptance": "Five pages independently quote-verified and zero workers, or stop the source extraction.",
-    "dispatch_brief": "restart_2026_11_26/integrity/borderline_author_review/access-check-brief.md",
-    "message_id": "a4b81b75-0b62-4b6a-bd27-a821657e47d9",
-    "parent_gemini_task_id": "e8b6e8c4-3b18-4410-9c3a-aa4e19bbdcad"
+    "action": "Return only the 15 requested evidence corrections from one parent conversation with no workers.",
+    "acceptance": "Five IDs, 15 keys, direct source access, zero workers, and verified page or URL for all claims.",
+    "dispatch_brief": "restart_2026_11_26/integrity/borderline_author_review/parent-correction-brief.md",
+    "message_id": "eb7c09be-7895-4f1a-bc36-c60e9232c220",
+    "parent_gemini_task_id": "ac203ee7-54ea-4c3e-b2ca-c23c92dda581"
   },
   "project": {
     "target_venue": "SN Computer Science",
