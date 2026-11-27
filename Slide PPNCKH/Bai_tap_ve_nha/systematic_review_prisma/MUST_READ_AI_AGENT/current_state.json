@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:55:33+07:00",
+  "updated_at": "2026-11-28T00:58:25+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
-    "summary": "The 30-page comparison draft reports zero documented independent human pairs and omits Cohen's kappa from the manuscript and Table 8. S2 and PRISMA remain 46/90/0."
+    "summary": "The 30-page comparison draft omits tool references from the manuscript. S2 and the audit archive retain their original provenance and the decisions are unchanged at 46/90/0."
   },
   "task": {
-    "task_id": "hk261-omit-cohens-kappa-from-manuscript",
+    "task_id": "hk261-remove-tool-references-from-comparison-draft",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:54:59+07:00",
-    "updated_at": "2026-11-28T00:55:33+07:00",
-    "decision_id": "hk261-omit-cohens-kappa-from-manuscript-v1",
+    "started_at": "2026-11-28T00:57:29+07:00",
+    "updated_at": "2026-11-28T00:58:25+07:00",
+    "decision_id": "hk261-remove-tool-references-from-comparison-draft-v1",
     "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
-    "completed_at": "2026-11-28T00:55:33+07:00"
+    "completed_at": "2026-11-28T00:58:25+07:00"
   },
   "next_task": {
     "task_id": "hk261-collect-new-independent-screening-round",
@@ -1311,6 +1311,17 @@
         "awaiting": 0
       },
       "s2_and_audit_json_unchanged": true
+    },
+    "manuscript_tool_reference_removal": {
+      "pdf": "manuscript/sn_computer_science/main.pdf",
+      "pages": 30,
+      "sha256": "58052ee017676f01722efd5502d1a5de4d48815f6bdc9109986f8e1d6356f4be",
+      "prisma_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      },
+      "s2_prisma_audit_json_unchanged": true
     }
   },
   "blockers": [],

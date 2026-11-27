@@ -172,7 +172,7 @@ def render_latex(report):
          f"{final_count + deferral_count} ({final_count - exclusion_count} / {exclusion_count} / {deferral_count})"),
         ("Exclusions with separate entries", final or "None"),
         ("Reports without a separate final entry", s2["reports_without_separate_final_author_entry"]),
-        ("Status changes from preliminary AI dispositions (separate final entries)", final_change),
+        ("Status changes from preliminary dispositions (separate final entries)", final_change),
         ("Independent human decisions recorded (R1 / R2)", f"{s2['reviewer1_decisions']} / {s2['reviewer2_decisions']}"),
         ("Paired independent human decisions", paired["paired_reports"]),
         ("Observed agreement on independent pairs", agreement_label),

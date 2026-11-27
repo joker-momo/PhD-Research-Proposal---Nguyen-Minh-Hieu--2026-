@@ -48,7 +48,7 @@ class TestAdjudicationAudit(unittest.TestCase):
         self.assertIn("Decisions endorsed by the lead reviewer (include / exclude) & 136 (46 / 90)", table)
         self.assertIn("Separate adjudication entries (include / exclude / defer) & 10 (7 / 3 / 0)", table)
         self.assertIn("Reports without a separate final entry & 126", table)
-        self.assertIn("Status changes from preliminary AI dispositions (separate final entries) & 4 / 10", table)
+        self.assertIn("Status changes from preliminary dispositions (separate final entries) & 4 / 10", table)
         self.assertEqual(table.count(" & 4 / 10 "), 1)
         self.assertIn("Observed agreement on independent pairs & N/A", table)
         self.assertNotIn("Cohen", table)
