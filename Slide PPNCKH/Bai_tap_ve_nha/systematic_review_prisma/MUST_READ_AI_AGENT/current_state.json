@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T00:32:09+07:00",
+  "updated_at": "2026-11-28T00:34:35+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The verified 30-page manuscript and S2 record the author’s account that the author and a colleague conducted screening and assigned appraisal ratings. Preliminary AI records are retained. The author endorsed 46 inclusions and 90 exclusions. Ten decisions have separate author entries. Zero paired independent full-text decisions are documented. PRISMA is unchanged."
   },
   "task": {
-    "task_id": "hk261-prepare-new-independent-screening-round",
+    "task_id": "hk261-prepare-retrospective-review-reference-forms",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T00:31:33+07:00",
-    "updated_at": "2026-11-28T00:32:09+07:00",
-    "decision_id": "hk261-prepare-new-independent-screening-round-v1",
-    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md",
-    "completed_at": "2026-11-28T00:32:09+07:00"
+    "started_at": "2026-11-28T00:34:35+07:00",
+    "updated_at": "2026-11-28T00:34:35+07:00",
+    "decision_id": "hk261-prepare-retrospective-review-reference-forms-v1",
+    "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
+    "completed_at": "2026-11-28T00:34:35+07:00"
   },
   "next_task": {
     "task_id": "hk261-collect-new-independent-screening-round",
@@ -1135,6 +1135,35 @@
         "R0292": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
         "R0082": "7a9a00413539e420d7cf412c2cb71e522311744151dc3a4008c08f2b1415a5ad"
       },
+      "working_counts": {
+        "include": 46,
+        "exclude": 90,
+        "awaiting": 0
+      }
+    },
+    "retrospective_review_reference_forms": {
+      "delivery": "Local Downloads/HK261-sang-loc-doc-lap-2026-11-28/Phieu-tham-chieu, outside Git.",
+      "basis": [
+        "manuscript/sn_computer_science/supplement_s2_eligibility.csv",
+        "restart_2026_11_26/synthesis/final_46/human_review_packet/R2/source_verification.csv",
+        "restart_2026_11_26/synthesis/final_46/human_review_packet/coordinator/key.csv"
+      ],
+      "reference_forms": {
+        "R1": {
+          "filename": "HK261_R1_THAM_CHIEU_HOI_TO.csv",
+          "sha256": "894679e26c8f0fefc3090033f139745cd211e73b992ff91cb04596ab326deca2",
+          "rows": 136
+        },
+        "R2": {
+          "filename": "HK261_R2_THAM_CHIEU_HOI_TO.csv",
+          "sha256": "502add896c1c50c844f4cf3c39c9caa210248affdae4a0bf87df5bae8ec2b883",
+          "rows": 136
+        }
+      },
+      "r1_item_level_author_endorsements": 10,
+      "r2_source_verification_items": 887,
+      "r2_reports_with_source_verification": 46,
+      "new_independent_pairs": 0,
       "working_counts": {
         "include": 46,
         "exclude": 90,
