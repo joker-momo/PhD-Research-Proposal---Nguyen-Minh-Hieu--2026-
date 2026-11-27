@@ -1,0 +1,36 @@
+{
+  "keys": 887,
+  "reports": 46,
+  "source_pdfs_hash_checked": 47,
+  "queue": 608,
+  "queue_reports": 46,
+  "priority": {
+    "1 — chốt trước": 12,
+    "2 — đối chiếu": 336,
+    "3 — minh chứng thiếu": 222,
+    "4 — giới hạn nguồn": 38
+  },
+  "flags_overlap": {
+    "KHAC_TRANG_THAI": 280,
+    "KHAC_NHAN_GOC": 89,
+    "R2_KHONG_QUA_DOI_CHIEU": 5,
+    "CHUA_GIAI_QUYET": 43,
+    "GIOI_HAN_MINH_CHUNG": 542,
+    "CHOT_TRUOC": 12,
+    "LECH_DU_LIEU_DA_LUU": 7,
+    "RA_LAI_GIA_TRI_HAI_BEN": 22,
+    "NGUON_GIOI_HAN": 38
+  },
+  "locators": {
+    "Có neo văn bản hoặc bằng chứng hình": 570,
+    "Giới hạn nguồn": 38
+  },
+  "kinds": {
+    "appraisal": 370,
+    "outcome": 57,
+    "technical": 158,
+    "report_coverage": 23
+  },
+  "author_decisions": 0,
+  "pymupdf": "1.26.7"
+}

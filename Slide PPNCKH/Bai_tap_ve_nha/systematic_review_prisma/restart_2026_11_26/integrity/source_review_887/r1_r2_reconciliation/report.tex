@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=19mm]{geometry}
+\usepackage{fontspec,xcolor,booktabs,tabularx,fancyhdr}
+\setmainfont{Times New Roman}
+\definecolor{ink}{HTML}{142E43}
+\definecolor{muted}{HTML}{41596D}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{muted}{HK261 · Đối chiếu phiếu nguồn}}
+\fancyhead[R]{\textcolor{muted}{27.11.2026}}
+\fancyfoot[L]{\textcolor{muted}{Tài liệu để tác giả quyết định}}
+\fancyfoot[R]{\thepage}
+\newcommand{\caseitem}[4]{%
+  \par\noindent\begin{minipage}{\linewidth}%
+  {\bfseries\color{ink}#1}\hfill{\small\color{muted}#3}\par
+  {\small\color{muted}#2}\par
+  #4
+  \end{minipage}\par\vspace{5pt}}
+\input{report_data.tex}
+\begin{document}
+{\huge\bfseries\color{ink} Đối chiếu R1 và R2}\par
+{\large\color{muted} HK261 · Minh chứng cần tác giả chốt}\par
+Đã ghép \KeyCount\ khóa của hai phiếu. Có \textbf{\QueueCount\ mục cần xem trên \QueueReports\ bài}. Cờ so sánh có thể trùng trên một mục. PRISMA giữ 46 đưa vào, 90 loại, 0 chờ.
+\medskip
+
+\begin{tabularx}{\linewidth}{@{}Xr@{}}
+\toprule
+\textbf{Tín hiệu khi đối chiếu} & \textbf{Số mục} \\
+\midrule
+Khác trạng thái trong hai phiếu & \StateDiff \\
+Khác nhãn phán định gốc ở mục thẩm định hoặc độ phủ & \SemanticDiff \\
+Có đoạn, hình, bảng hoặc mục được định vị trên PDF & \AnchoredCount \\
+Trang ứng viên còn cần đọc lại & \CandidateCount \\
+Giới hạn phạm vi nguồn & \RestrictedCount \\
+\bottomrule
+\end{tabularx}
+
+\medskip
+Bảng \texttt{muc\_can\_chot.csv} ghi bài, PDF, trang, nhận định và lý do của từng phiếu. Cột \texttt{tac\_gia\_chot} để trống. Bảng \texttt{doi\_chieu\_887.csv} giữ toàn bộ khóa để tra cứu. PDF gốc và PDF IEEE bổ sung của R0082 có số trang riêng.
+\medskip
+
+{\Large\bfseries\color{ink} 12 mục nên xem trước}\par
+Bảy mục lệch dữ liệu đã lưu và năm mục R2 chưa qua đối chiếu nội dung. Mỗi đề xuất dưới đây giữ mức kết luận mà PDF hỗ trợ.
+\smallskip
+
+\PriorityFirst
+\newpage
+{\Large\bfseries\color{ink} Các mục nên xem trước, tiếp theo}\par
+\smallskip
+
+\PriorityRest
+\medskip
+{\large\bfseries\color{ink} Cách dùng trang và cờ đối chiếu}\par
+Tất cả trang tính từ trang đầu của tệp PDF. Cụm trích khớp trang giúp định vị đoạn cần đọc. Căn cứ cho một kết luận định lượng còn phụ thuộc tên chỉ số, đúng ô bảng hoặc nhãn hình, đơn vị, đối chứng và điều kiện đo. Trang ứng viên cần đọc lại trước khi chốt. Tập đầu vào gồm \SourcePDFCount\ tệp đã so SHA-256, tính cả PDF IEEE bổ sung.
+
+R1 ghi xác nhận của tác giả sau khi xem Codex. R2 ghi ý kiến đồng nghiệp sau khi xem Gemini, do tác giả xác nhận lại. Cờ khác trạng thái có thể phát sinh khi mức xác minh của hai lượt khác nhau. Hồ sơ này ghi các phương án để tác giả chốt.
+\end{document}

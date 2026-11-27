@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T23:03:02+07:00",
+  "updated_at": "2026-11-27T23:12:08+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The verified 30-page revision remains frozen on the 46/90/0 corpus. Two AI-assisted source-review endorsements are recorded. Independent human assessment and declarations remain pending."
   },
   "task": {
-    "task_id": "hk261-record-source-review-endorsements",
+    "task_id": "hk261-r1-r2-source-reconciliation",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T23:00:45+07:00",
-    "updated_at": "2026-11-27T23:03:02+07:00",
-    "decision_id": "hk261-record-source-review-endorsements-v1",
-    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/human_review_packet/README.md",
-    "completed_at": "2026-11-27T23:03:02+07:00"
+    "started_at": "2026-11-27T23:05:30+07:00",
+    "updated_at": "2026-11-27T23:12:08+07:00",
+    "decision_id": "hk261-r1-r2-source-reconciliation-v1",
+    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/report.pdf",
+    "completed_at": "2026-11-27T23:12:08+07:00"
   },
   "next_task": {
-    "task_id": "hk261-independent-assessment-or-evidence-reconciliation",
+    "task_id": "hk261-r1-r2-reconciliation-author-decision",
     "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "Await an explicit instruction before independent screening follow-up or any evidence changes in S2, PRISMA or the manuscript.",
-    "acceptance": "Human judgments and source disagreements remain traceable. The article and screening record require explicit authorization before edits."
+    "action": "Wait for the author to confirm treatment of specific reconciliation keys.",
+    "acceptance": "Record explicit decisions by key and scope. Preserve R1/R2, S2, PRISMA and the manuscript unless a separate instruction authorizes changes."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -928,6 +928,15 @@
         },
         "independent_human_review_pairs": 0,
         "screening_decisions_recorded": 0
+      },
+      "reconciliation": {
+        "report": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/report.pdf",
+        "queue_path": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/muc_can_chot.csv",
+        "source_pairs": 887,
+        "rows_flagged": 608,
+        "priority_cases": 12,
+        "scope_limited": 38,
+        "author_decisions": 0
       }
     }
   },

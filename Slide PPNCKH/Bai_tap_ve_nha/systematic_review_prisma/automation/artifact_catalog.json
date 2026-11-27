@@ -873,6 +873,36 @@
         "hk261",
         "csv"
       ]
+    },
+    {
+      "artifact_id": "hk261-r1-r2-source-reconciliation",
+      "name": "Build HK261 R1/R2 source reconciliation",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/build_reconciliation.py",
+      "purpose": "Join attributed endorsements and provide traceable PDF locators and proposals for author decisions.",
+      "entrypoint": "uv run --offline --no-project --with pymupdf==1.26.7 python -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/build_reconciliation.py\" [--output <directory>]",
+      "inputs": [
+        "Frozen R1 and R2 source-verification files",
+        "Original PDFs with SHA-256",
+        "Source review table and archived original visual checks"
+      ],
+      "outputs": [
+        "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/muc_can_chot.csv",
+        "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/doi_chieu_887.csv",
+        "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/summary.json",
+        "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/report_data.tex"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/build_reconciliation.py"
+      ],
+      "test_command": "tmp=$(mktemp -d) && uv run --offline --no-project --with pymupdf==1.26.7 python -B \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/build_reconciliation.py\" --output \"$tmp\" && cmp \"$tmp/muc_can_chot.csv\" \"Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/muc_can_chot.csv\"",
+      "status": "active",
+      "tags": [
+        "hk261",
+        "source-verification",
+        "reconciliation",
+        "author-confirmation",
+        "pdf"
+      ]
     }
   ]
 }
