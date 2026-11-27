@@ -1,0 +1,93 @@
+{
+  "id": "d82c0a71-388c-42d3-bc40-79b16e305c75",
+  "context_id": "3e0f0f98-9563-492e-bf58-09853c38b299",
+  "native_state": "TASK_STATE_COMPLETED",
+  "expected_keys": 3,
+  "unique_keys": 3,
+  "missing_keys": [],
+  "duplicates": [],
+  "marker_final": true,
+  "summaries": 1,
+  "summary": {
+    "id": "SUMMARY",
+    "tools_used": [
+      "client:list_dir",
+      "client:view_file"
+    ],
+    "key_count": 3,
+    "no_workers_used": true,
+    "unresolved": []
+  },
+  "pdf_sha256_match": {
+    "R0077": true,
+    "R0080": true,
+    "R0090": true,
+    "R0092": true,
+    "R0106": true,
+    "R0107": true,
+    "R0110": true
+  },
+  "locators": {
+    "EXACT_MATCH": 7
+  },
+  "failure_keys": [],
+  "errors": [],
+  "checks": [
+    {
+      "line": 1,
+      "id": "R0080",
+      "key": "compute_radio",
+      "page": 5,
+      "section": "IV.A Experimental Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 1,
+      "id": "R0080",
+      "key": "compute_radio",
+      "page": 6,
+      "section": "IV.B Experiment Results",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 2,
+      "id": "R0090",
+      "key": "variability",
+      "page": 5,
+      "section": "V.H Scalability under Load",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 2,
+      "id": "R0090",
+      "key": "variability",
+      "page": 6,
+      "section": "V.K Swarm Resilience",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 3,
+      "id": "R0110",
+      "key": "compute_radio",
+      "page": 9,
+      "section": "V.A Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 3,
+      "id": "R0110",
+      "key": "compute_radio",
+      "page": 9,
+      "section": "V.A Simulation Setup",
+      "result": "EXACT_MATCH"
+    },
+    {
+      "line": 3,
+      "id": "R0110",
+      "key": "compute_radio",
+      "page": 10,
+      "section": "Table III Simulation and Controller Parameters",
+      "result": "EXACT_MATCH"
+    }
+  ]
+}
