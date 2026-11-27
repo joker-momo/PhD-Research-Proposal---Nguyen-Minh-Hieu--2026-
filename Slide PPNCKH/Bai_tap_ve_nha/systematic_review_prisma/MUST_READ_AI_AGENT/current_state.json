@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T10:02:39+07:00",
+  "updated_at": "2026-11-27T10:05:25+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -11,19 +11,19 @@
     "owner": "CODEX_WRITING",
     "status": "completed",
     "started_at": "2026-11-27T10:02:39+07:00",
-    "updated_at": "2026-11-27T10:02:39+07:00",
-    "completed_at": "2026-11-27T10:02:39+07:00",
-    "checkpoint_path": "restart_2026_11_26/supplemental_screening/manifest.json",
+    "updated_at": "2026-11-27T10:05:25+07:00",
+    "completed_at": "2026-11-27T10:05:25+07:00",
+    "checkpoint_path": "restart_2026_11_26/supplemental_screening/access_probe_review.md",
     "decision_id": "restart-supplemental-screening-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-screening-access-probe",
+    "task_id": "restart-supplemental-screening-batch-01",
     "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Verify access to physical page 2 of R0096 in the authorized project.",
-    "acceptance": "One matching original-PDF body excerpt or a documented access failure.",
-    "dispatch_brief": "restart_2026_11_26/supplemental_screening/access_probe_brief.md",
-    "message_id": "9932a384-6633-44e3-ad9a-257289f4abe5"
+    "action": "Screen eight named original full-text reports under P03/P06.",
+    "acceptance": "Exact eight IDs, evidence for every adopted E1–E7 judgment, and one primary reason per exclusion.",
+    "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_01_brief.md",
+    "message_id": "17f859d5-3399-4b52-814d-ee8bbd71fbfa"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -296,6 +296,16 @@
       "unresolved": 3,
       "chat_cleanup": "not_verified",
       "prisma_updated": false
+    },
+    "supplemental_screening": {
+      "intake": "restart_2026_11_26/supplemental_screening/supplemental_intake.csv",
+      "intake_pdf_count": 82,
+      "access_probe": "PASS",
+      "access_probe_task_uuid": "899b1fa0-0c83-41fa-ae84-effe69d7d663",
+      "access_probe_chat_cleanup": "not_verified",
+      "prior_awaiting_recheck": "restart_2026_11_26/supplemental_screening/prior_awaiting_recheck.json",
+      "screened_supplemental_count": 0,
+      "batch_01_inputs": "restart_2026_11_26/supplemental_screening/batch_01_inputs.json"
     }
   },
   "blockers": [],

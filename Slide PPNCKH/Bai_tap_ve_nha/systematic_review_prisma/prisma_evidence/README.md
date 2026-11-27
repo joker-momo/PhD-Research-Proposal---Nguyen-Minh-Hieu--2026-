@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T08:22:28+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T10:05:25+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -332,6 +332,14 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=4.
 - [exclusions.csv](../restart_2026_11_26/fulltext_screening/exclusions.csv)
 - [awaiting_classification.csv](../restart_2026_11_26/fulltext_screening/awaiting_classification.csv)
 - [step09_screening_summary.md](../restart_2026_11_26/fulltext_screening/step09_screening_summary.md)
+- [access_probe_brief.md](../restart_2026_11_26/supplemental_screening/access_probe_brief.md)
+- [access_probe_receipt.json](../restart_2026_11_26/supplemental_screening/access_probe_receipt.json)
+- [access_probe_review.md](../restart_2026_11_26/supplemental_screening/access_probe_review.md)
+- [batch_01_brief.md](../restart_2026_11_26/supplemental_screening/batch_01_brief.md)
+- [batch_01_inputs.json](../restart_2026_11_26/supplemental_screening/batch_01_inputs.json)
+- [manifest.json](../restart_2026_11_26/supplemental_screening/manifest.json)
+- [prior_awaiting_recheck.json](../restart_2026_11_26/supplemental_screening/prior_awaiting_recheck.json)
+- [supplemental_intake.csv](../restart_2026_11_26/supplemental_screening/supplemental_intake.csv)
 
 <a id="buoc-10"></a>
 ## Bước 10 · Liên kết report với study
@@ -617,10 +625,3 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
 - [source_audit_transport_failure.json](../restart_2026_11_26/integrity/source_audit_transport_failure.json)
 - [main.tex](../manuscript/sn_computer_science/main.tex)
 - [main.pdf](../manuscript/sn_computer_science/main.pdf)
-
-## Retrieval follow-up, round 1
-
-The round 1 evidence records 14 retrieval attempts and six classification rechecks. The operational counts are pending reconciliation with the locked coursework baseline.
-
-- [Round 1 review](../restart_2026_11_26/retrieval_round_01/review.md)
-- [Round 1 evidence by ID](../restart_2026_11_26/retrieval_round_01/round_01_evidence.json)

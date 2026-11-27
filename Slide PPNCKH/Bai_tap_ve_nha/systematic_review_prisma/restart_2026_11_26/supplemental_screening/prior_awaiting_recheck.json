@@ -1,0 +1,274 @@
+{
+  "verified_at": "2026-11-27T10:04:29+07:00",
+  "source_round_01": "restart_2026_11_26/retrieval_round_01/round_01_evidence.json",
+  "source_round_01_sha256": "2f9e649b9db1b05f30c48ab89db42afafbb56ae004b1bccfd4ed620dbcafb118",
+  "parser": "PyMuPDF 2.0",
+  "status": "READY_FOR_RECONCILIATION",
+  "records": [
+    {
+      "id": "R0075",
+      "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0075.pdf",
+      "pages": 15,
+      "sha256": "18d44887a60aadc52dfdea791615ef8ee43952ae3df0cf92687cb80fef54707f",
+      "doi_on_physical_page_1": true,
+      "prior_verified_locators": {
+        "E1": {
+          "page": 1,
+          "section": "Abstract"
+        },
+        "E2": {
+          "page": 11,
+          "section": "IV-C. Parameter Analysis"
+        },
+        "E3": {
+          "page": 4,
+          "section": "III-A. Task Definition"
+        },
+        "E4": {
+          "page": 10,
+          "section": "IV-B. Results Analysis"
+        },
+        "E6": {
+          "page": 1,
+          "section": "I. Introduction"
+        },
+        "E7": {
+          "page": 1,
+          "section": "Header"
+        }
+      },
+      "decision_supported_by_round_01": "INCLUDE",
+      "criterion_to_resolve": [],
+      "publisher_evidence": {
+        "source": "https://ieeexplore.ieee.org/document/11753908/",
+        "field": "Date of Publication",
+        "display_value": "26 October 2026",
+        "date_iso": "2026-10-26",
+        "publisher_version_label": "Early Access",
+        "matching_doi": "10.1109/JIOT.2026.3746980"
+      },
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11753908/"
+      ]
+    },
+    {
+      "id": "R0081",
+      "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0081.pdf",
+      "pages": 2,
+      "sha256": "a0a5c323273e076a36e965e9e3c840b753a79a95d38d3ae567ab608d203f7ffe",
+      "doi_on_physical_page_1": true,
+      "prior_verified_locators": {
+        "E1": {
+          "page": 1,
+          "section": "Abstract"
+        },
+        "E2": {
+          "page": 2,
+          "section": "3 DEMONSTRATION & RESULTS"
+        },
+        "E3": {
+          "page": 1,
+          "section": "1 INTRODUCTION"
+        },
+        "E4": {
+          "page": 2,
+          "section": "3 DEMONSTRATION & RESULTS"
+        },
+        "E6": {
+          "page": 1,
+          "section": "1 INTRODUCTION"
+        }
+      },
+      "decision_supported_by_round_01": "AWAITING_CLASSIFICATION",
+      "criterion_to_resolve": [
+        "E7"
+      ],
+      "publisher_evidence": {
+        "date_iso": "2022-06-27",
+        "type_source_locator": "Accepted Demos, IDEA; Call for Demos §§Selection and Demo/Video Submission Guidelines",
+        "finding": "Hai trang có thiết kế và kết quả nguyên mẫu theo §§2–3. ACM xác nhận track demo và extended abstract, chưa xác nhận quy trình phản biện của báo cáo này theo E7."
+      },
+      "sources": [
+        "https://www.sigmobile.org/mobisys/2022/accepted-demos.html",
+        "https://www.sigmobile.org/mobisys/2022/demos.html",
+        "https://api.crossref.org/works/10.1145/3498361.3538674"
+      ]
+    },
+    {
+      "id": "R0092",
+      "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0092.pdf",
+      "pages": 16,
+      "sha256": "bbfafe89b1288a55f37db94d57990f419734c2bc7b20310e8d5eeca6f2a0ff93",
+      "doi_on_physical_page_1": true,
+      "prior_verified_locators": {
+        "E1": {
+          "page": 1,
+          "section": "Abstract"
+        },
+        "E2": {
+          "page": 10,
+          "section": "V-A. Simulation Setup"
+        },
+        "E3": {
+          "page": 5,
+          "section": "III-E.1. DNN Model Partitioning"
+        },
+        "E4": {
+          "page": 10,
+          "section": "V-D. Multi-Network Performance Comparison"
+        },
+        "E6": {
+          "page": 1,
+          "section": "I. Introduction"
+        },
+        "E7": {
+          "page": 1,
+          "section": "Header"
+        }
+      },
+      "decision_supported_by_round_01": "INCLUDE",
+      "criterion_to_resolve": [],
+      "publisher_evidence": {
+        "source": "https://ieeexplore.ieee.org/document/11719586/",
+        "field": "Date of Publication",
+        "display_value": "06 October 2026",
+        "date_iso": "2026-10-06",
+        "publisher_version_label": "Early Access",
+        "matching_doi": "10.1109/JIOT.2026.3740035"
+      },
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11719586/"
+      ]
+    },
+    {
+      "id": "R0110",
+      "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0110.pdf",
+      "pages": 16,
+      "sha256": "25b480e194035539ff482616da9ae5744ac3e9b157a4f273c3cebed97bae5c38",
+      "doi_on_physical_page_1": true,
+      "prior_verified_locators": {
+        "E1": {
+          "page": 1,
+          "section": "Abstract"
+        },
+        "E2": {
+          "page": 10,
+          "section": "TABLE III"
+        },
+        "E3": {
+          "page": 3,
+          "section": "III-A. Operational Semantics"
+        },
+        "E4": {
+          "page": 12,
+          "section": "V-D. Ablation Study"
+        },
+        "E6": {
+          "page": 1,
+          "section": "I. INTRODUCTION"
+        },
+        "E7": {
+          "page": 1,
+          "section": "Header"
+        }
+      },
+      "decision_supported_by_round_01": "INCLUDE",
+      "criterion_to_resolve": [],
+      "publisher_evidence": {
+        "source": "https://ieeexplore.ieee.org/document/11804735/",
+        "field": "Date of Publication",
+        "display_value": "18 November 2026",
+        "date_iso": "2026-11-18",
+        "publisher_version_label": "Early Access",
+        "matching_doi": "10.1109/tvt.2026.3755123"
+      },
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11804735/"
+      ]
+    },
+    {
+      "id": "R0118",
+      "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0118.pdf",
+      "pages": 18,
+      "sha256": "c14525f9b21ac4b90fde61e1a2a919692e82131516f5c5a7d6c8c77e5bf55672",
+      "doi_on_physical_page_1": true,
+      "prior_verified_locators": {
+        "E1": {
+          "page": 1,
+          "section": "Abstract"
+        },
+        "E2": {
+          "page": 15,
+          "section": "VI-H. Planner Overhead and Scalability"
+        },
+        "E3": {
+          "page": 8,
+          "section": "V.D.2) Task Assignment and Multi-Hop Routing"
+        },
+        "E4": {
+          "page": 9,
+          "section": "VI.B. Evaluation Results"
+        },
+        "E6": {
+          "page": 1,
+          "section": "I. INTRODUCTION"
+        }
+      },
+      "decision_supported_by_round_01": "INCLUDE",
+      "criterion_to_resolve": [],
+      "publisher_evidence": {
+        "source": "https://ieeexplore.ieee.org/document/11804345/",
+        "field": "Date of Publication",
+        "display_value": "18 November 2026",
+        "date_iso": "2026-11-18",
+        "publisher_version_label": "Early Access",
+        "matching_doi": "10.1109/jiot.2026.3755315"
+      },
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11804345/"
+      ]
+    },
+    {
+      "id": "R0137",
+      "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0137.pdf",
+      "pages": 14,
+      "sha256": "a74dc93faea3e40310c0160b7df41c21f7a350523763f4a9ded7c6d5d2827907",
+      "doi_on_physical_page_1": true,
+      "prior_verified_locators": {
+        "E1": {
+          "page": 1,
+          "section": "Abstract"
+        },
+        "E2": {
+          "page": 10,
+          "section": "VI.A. Experimental Setup"
+        },
+        "E3": {
+          "page": 6,
+          "section": "IV.A. Problem Formulation"
+        },
+        "E4": {
+          "page": 10,
+          "section": "VI.A. Experimental Setup"
+        },
+        "E6": {
+          "page": 2,
+          "section": "I. INTRODUCTION"
+        }
+      },
+      "decision_supported_by_round_01": "INCLUDE",
+      "criterion_to_resolve": [],
+      "publisher_evidence": {
+        "source": "https://ieeexplore.ieee.org/document/11745919/",
+        "field": "Date of Publication",
+        "display_value": "23 October 2026",
+        "date_iso": "2026-10-23",
+        "publisher_version_label": "Early Access",
+        "matching_doi": "10.1109/tcsvt.2026.3745821"
+      },
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11745919/"
+      ]
+    }
+  ]
+}
