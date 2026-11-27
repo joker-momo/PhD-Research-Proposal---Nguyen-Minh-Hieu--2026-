@@ -749,6 +749,31 @@
         "E5",
         "Crossref"
       ]
+    },
+    {
+      "artifact_id": "hk261-prepare-dual-source-review-887",
+      "name": "HK261 source review context builder",
+      "path": "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/prepare.py",
+      "purpose": "Hash-check 46 source PDFs and derive disjoint source-check batches for all 887 keys.",
+      "entrypoint": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/prepare.py' /tmp/hk261-source-rebuild",
+      "inputs": [
+        "Frozen reviewer packet, original and masked PDFs, outcomes.csv"
+      ],
+      "outputs": [
+        "restart_2026_11_26/integrity/source_review_887/phase_manifest.json",
+        "Eight isolated local batches, 46 physical-page transcripts"
+      ],
+      "tests": [
+        "Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/prepare.py"
+      ],
+      "test_command": "python3 -B 'Slide PPNCKH/Bai_tap_ve_nha/systematic_review_prisma/restart_2026_11_26/integrity/source_review_887/prepare.py' /tmp/hk261-source-rebuild",
+      "status": "active",
+      "tags": [
+        "HK261",
+        "source verification",
+        "PDF",
+        "Gemini"
+      ]
     }
   ]
 }

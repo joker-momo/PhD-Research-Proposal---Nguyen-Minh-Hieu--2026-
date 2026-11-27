@@ -1,27 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T20:16:44+07:00",
+  "updated_at": "2026-11-27T20:23:10+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The local 30-page HK261 revision, unified coding and IEEE R0082 cross-check are verified on the 46/90/0 corpus. Independent screening, human extraction verification and declarations remain pending."
   },
   "task": {
-    "task_id": "hk261-e5-date-audit",
+    "task_id": "hk261-dual-ai-source-review-887",
     "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T20:13:46+07:00",
-    "updated_at": "2026-11-27T20:16:44+07:00",
-    "completed_at": "2026-11-27T20:16:44+07:00",
-    "decision_id": "hk261-e5-date-audit-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/dual_ai_full_136/e5_date_check/results.csv"
+    "status": "active",
+    "started_at": "2026-11-27T20:21:38+07:00",
+    "updated_at": "2026-11-27T20:23:10+07:00",
+    "decision_id": "hk261-dual-ai-source-review-887-v1",
+    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/phase_manifest.json"
   },
   "next_task": {
-    "task_id": "hk261-human-reviewed-two-screeners",
-    "owner": "CODEX_WRITING",
-    "status": "blocked",
-    "action": "Receive separately completed or individually confirmed human screening decisions from the author and second reviewer.",
-    "acceptance": "Each human decision is attributed only after that reviewer confirms record, disposition, criterion, source locator and date. Document any AI assistance."
+    "task_id": "hk261-dual-ai-source-review-887-batch-01",
+    "owner": "GEMINI_RESEARCH",
+    "status": "ready",
+    "action": "Assess batch 01 using only the attached originals and page text.",
+    "acceptance": "Direct PDF preflight and exactly 112 source keys or transparent gaps.",
+    "dispatch_brief": "restart_2026_11_26/integrity/source_review_887/gemini_brief.md",
+    "message_id": "89b7f7fb-53ce-5240-96b5-b45ecffa5528"
   },
   "project": {
     "target_venue": "SN Computer Science",
