@@ -92,6 +92,7 @@ def main():
         if compact_images(args.destination / row["attachment"]):
             row["render"] = "Original PDF pages rendered in grayscale at 120 dpi for attachment-size limit"
     text_first = sorted(source_map, key=lambda ident: (
+        sum(row["prior_issue"] == "Provider row missing." for row in source_map[ident]["targets"]) > 1,
         any(re.search(r"table|fig(?:ure)?\.|printed cell|equation", row["prior_issue"], re.IGNORECASE)
             for row in source_map[ident]["targets"]),
         -(args.destination / source_map[ident]["attachment"]).stat().st_size,
@@ -111,7 +112,8 @@ def main():
         row.update(attachment=attachment.name, render="Text extracted by original physical page with PyMuPDF 1.26.7")
     dump(args.destination / "targets.json", source_map)
     files = list(args.destination.iterdir())
-    if len(files) > 50 or sum(path.stat().st_size for path in files) > max_bytes:
+    if (len(files) > 50 or sum(path.stat().st_size for path in files) > max_bytes
+            or any(path.stat().st_size > 2 * 1024 * 1024 for path in files)):
         raise ValueError("Correction context exceeds bridge limits")
     total = sum(len(items) for items in selected.values())
     linked = [b["message_id"] for b in phase["batches"] if selected.keys() & set(b["reports"])]

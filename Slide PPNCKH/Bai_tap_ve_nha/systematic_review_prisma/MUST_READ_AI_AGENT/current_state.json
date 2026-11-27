@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T22:00:19+07:00",
+  "updated_at": "2026-11-27T22:08:14+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
@@ -11,16 +11,18 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T20:21:38+07:00",
-    "updated_at": "2026-11-27T22:00:19+07:00",
+    "updated_at": "2026-11-27T22:08:14+07:00",
     "decision_id": "hk261-dual-ai-source-review-887-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/receipts/batch-08-review.md"
+    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/correction_manifest.json"
   },
   "next_task": {
-    "task_id": "hk261-dual-ai-source-review-887-reconcile",
-    "owner": "CODEX_WRITING",
+    "task_id": "hk261-dual-ai-source-review-887-correction",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Reconcile returned evidence and record item-level gaps.",
-    "acceptance": "Publish all 887 keys with explicit source evidence or gaps."
+    "action": "Check 19 missing and 36 rejected provider rows on bounded PDF pages.",
+    "acceptance": "Recover or explicitly account for 55 exact keyed items, citing printed evidence on mapped physical pages.",
+    "dispatch_brief": "restart_2026_11_26/integrity/source_review_887/gemini_correction_brief.md",
+    "message_id": "646947b9-0c36-5004-9e06-01e4a53cdbac"
   },
   "project": {
     "target_venue": "SN Computer Science",

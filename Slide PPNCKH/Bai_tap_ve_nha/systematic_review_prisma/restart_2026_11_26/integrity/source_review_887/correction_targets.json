@@ -1,0 +1,786 @@
+{
+  "HKF-011": {
+    "attachment": "HKF-011-selected-pages.pdf",
+    "original_sha256": "30ab2b2966529939f9d4c04eeed75689126fccfdc2b9b345e3b0d6aaffbb630a",
+    "attachment_physical_to_original_physical": [
+      1,
+      6,
+      8,
+      10,
+      11,
+      12
+    ],
+    "targets": [
+      {
+        "kind": "technical",
+        "key": "t2_decisions_objective_solver",
+        "prior_issue": "Physical p. 11 Table 3 is legible and reports evaluation settings. Sections IV–V support the principal optimization and meta-RL descriptions, while exact move count and solver naming require their separate algorithm/model locators.",
+        "original_pdf_pages": [
+          8,
+          10,
+          11
+        ]
+      },
+      {
+        "kind": "technical",
+        "key": "t3_network_event_response",
+        "prior_issue": "Physical p. 11 Table 3 is legible and reports radio constants. Separate the modeled depleted-energy rule and the p. 12 variable-group-size results from measured outage or mobility recovery.",
+        "original_pdf_pages": [
+          6,
+          10,
+          11,
+          12
+        ]
+      }
+    ]
+  },
+  "HKF-013": {
+    "attachment": "HKF-013-selected-pages.txt",
+    "original_sha256": "377dd035a5a060190250d95013705ab7f2255a137d6c4bb0f24e2eb58e30cc83",
+    "attachment_physical_to_original_physical": [
+      1,
+      6,
+      7
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D07",
+        "prior_issue": "Outer result status NO is invalid. The literal constant-rate and reachability passages support an explicit simulation simplification and later deferral of dynamic networks. Recommend outer PARTIAL / domain PARTIAL for this bounded simulation evidence.",
+        "original_pdf_pages": [
+          6,
+          7
+        ]
+      }
+    ],
+    "render": "Text extracted by original physical page with PyMuPDF 1.26.7"
+  },
+  "HKF-028": {
+    "attachment": "HKF-028-selected-pages.pdf",
+    "original_sha256": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+    "attachment_physical_to_original_physical": [
+      1,
+      8,
+      14,
+      15,
+      16,
+      18
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D07",
+        "prior_issue": "GPU-server evaluation and a simplified grid substantiate simulation rather than physical UAV navigation validation. The outer provider status is outside the agreed schema.",
+        "original_pdf_pages": [
+          8,
+          14
+        ]
+      },
+      {
+        "kind": "outcome",
+        "key": "Q01",
+        "prior_issue": "Original p. 15 Fig. 4 is readable. Blue bar labels for the two models are 17/25 s (DeepSeek-R1-Distill-Llama-8B) and 19/100 s (LLaMA-3.2-3B). Physical p. 8 attributes standardized TTFT/TPOT to external source [3].",
+        "original_pdf_pages": [
+          8,
+          15,
+          16
+        ]
+      },
+      {
+        "kind": "outcome",
+        "key": "Q02",
+        "prior_issue": "Original p. 15 Fig. 4 orange labels are 1/53 s (DeepSeek-R1-Distill-Llama-8B) and 1/246 s (LLaMA-3.2-3B). The legend says TPOT and the caption TPOP. P. 8 cites standardized industry metrics, separate from the p. 14 study setup.",
+        "original_pdf_pages": [
+          8,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "kind": "report_coverage",
+        "key": "coverage",
+        "prior_issue": "Fig. 4 p. 15 explicitly prints numerical fractions beside both data series and they map to model names. The retained outcomes therefore support VERIFIED_EXACT. Other unlabeled graph coordinates remain plot-only.",
+        "original_pdf_pages": [
+          15,
+          16,
+          18
+        ]
+      }
+    ]
+  },
+  "HKF-029": {
+    "attachment": "HKF-029-selected-pages.txt",
+    "original_sha256": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+    "attachment_physical_to_original_physical": [
+      1,
+      4,
+      5
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D03",
+        "prior_issue": "P.5 §5 explicitly omits the PPO model architecture, training parameters and procedures, and scenario prompts. These omissions prevent exact reconstruction. The passage does not separately enumerate reward weights as an explicit omission. The outer provider status is outside the agreed schema.",
+        "original_pdf_pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "kind": "appraisal",
+        "key": "D07",
+        "prior_issue": "AirSim and MATLAB experiments support modeled validation. No live validation or measured aerial link behavior is identified. The outer provider status is outside the agreed schema.",
+        "original_pdf_pages": [
+          4,
+          5
+        ]
+      }
+    ],
+    "render": "Text extracted by original physical page with PyMuPDF 1.26.7"
+  },
+  "HKF-032": {
+    "attachment": "HKF-032-selected-pages.pdf",
+    "original_sha256": "1de3c68d7df71c1a97e6961fe0954870409f10ee8cab92998ee585291958b9d3",
+    "attachment_physical_to_original_physical": [
+      1,
+      5,
+      6
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D06",
+        "prior_issue": "Fig. 2 on p. 5 visibly ranges from 4 through 8 inference requests, not 1 through 8. The provider's p. 6 quote also crosses a broken word. Keep the study's scope and absence-of-dispersion observation separate from this corrected range.",
+        "original_pdf_pages": [
+          5,
+          6
+        ]
+      }
+    ],
+    "render": "Original PDF pages rendered in grayscale at 120 dpi for attachment-size limit"
+  },
+  "HKF-035": {
+    "attachment": "HKF-035-selected-pages.pdf",
+    "original_sha256": "7182b09665e0f7496fdba8552ca683daf636097390007d6e4c963a51a1c34460",
+    "attachment_physical_to_original_physical": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D01",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          2
+        ]
+      },
+      {
+        "kind": "appraisal",
+        "key": "D02",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "appraisal",
+        "key": "D03",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          3
+        ]
+      },
+      {
+        "kind": "appraisal",
+        "key": "D04",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          3
+        ]
+      },
+      {
+        "kind": "appraisal",
+        "key": "D05",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          4
+        ]
+      },
+      {
+        "kind": "appraisal",
+        "key": "D06",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          4
+        ]
+      },
+      {
+        "kind": "appraisal",
+        "key": "D07",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          3,
+          5
+        ]
+      },
+      {
+        "kind": "appraisal",
+        "key": "D08",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          5
+        ]
+      },
+      {
+        "kind": "appraisal",
+        "key": "D09",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          3,
+          5
+        ]
+      },
+      {
+        "kind": "appraisal",
+        "key": "D10",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          5
+        ]
+      },
+      {
+        "kind": "outcome",
+        "key": "Q01",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          3
+        ]
+      },
+      {
+        "kind": "outcome",
+        "key": "Q02",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          3
+        ]
+      },
+      {
+        "kind": "outcome",
+        "key": "Q03",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          4
+        ]
+      },
+      {
+        "kind": "outcome",
+        "key": "Q04",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          5
+        ]
+      },
+      {
+        "kind": "report_coverage",
+        "key": "coverage",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          3
+        ]
+      },
+      {
+        "kind": "technical",
+        "key": "t2_decisions_objective_solver",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "kind": "technical",
+        "key": "t2_partition",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          2
+        ]
+      }
+    ]
+  },
+  "HKF-038": {
+    "attachment": "HKF-038-selected-pages.txt",
+    "original_sha256": "7b931aa1f44c653ef65138651d088b618e1c5aa9e90c8c9f3420a7b971386dd5",
+    "attachment_physical_to_original_physical": [
+      1,
+      2
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D07",
+        "prior_issue": "Static link abstraction and synthesized distributions do not establish UAV mobility or fading behavior. The domain NO can be reported in finding; it is invalid as the outer result status.",
+        "original_pdf_pages": [
+          2
+        ]
+      }
+    ],
+    "render": "Text extracted by original physical page with PyMuPDF 1.26.7"
+  },
+  "HKF-043": {
+    "attachment": "HKF-043-selected-pages.pdf",
+    "original_sha256": "27e027ecd322e4f06af79412bca5c603c304fd38e7cde7de75adefe66f843d98",
+    "attachment_physical_to_original_physical": [
+      1,
+      2,
+      5,
+      8,
+      9,
+      10,
+      12
+    ],
+    "targets": [
+      {
+        "kind": "outcome",
+        "key": "Q01",
+        "prior_issue": "Table III is readable on original physical p. 12. For energy-efficiency settings 0.6/0.7/0.8 and 60 simulated UAVs, the Energy consumption column prints 778.7/670.8/596.1 J, respectively. The provider limitation is text extraction, not absence of a printed outcome.",
+        "original_pdf_pages": [
+          12
+        ]
+      },
+      {
+        "kind": "outcome",
+        "key": "Q02",
+        "prior_issue": "Table III is readable on original physical p. 12. For energy-efficiency settings 0.6/0.7/0.8 and 60 simulated UAVs, the Inference latency column prints 0.515/0.511/0.513 s, respectively. The provider limitation is text extraction, not absence of a printed outcome.",
+        "original_pdf_pages": [
+          12
+        ]
+      },
+      {
+        "kind": "outcome",
+        "key": "Q03",
+        "prior_issue": "Table III is readable on original physical p. 12. For energy-efficiency settings 0.6/0.7/0.8 and 60 simulated UAVs, the Throughput column prints 116.6/117.4/117.1 IPS, respectively. The provider limitation is text extraction, not absence of a printed outcome.",
+        "original_pdf_pages": [
+          12
+        ]
+      },
+      {
+        "kind": "report_coverage",
+        "key": "coverage",
+        "prior_issue": "The original physical p. 12 Table III explicitly prints all three retained outcome columns and three energy-efficiency settings. The correct retained-row coverage is VERIFIED_EXACT. The distinct Fig. 3–11 curves should remain plot-only where there are no annotated points.",
+        "original_pdf_pages": [
+          12
+        ]
+      },
+      {
+        "kind": "technical",
+        "key": "t2_decisions_objective_solver",
+        "prior_issue": "Physical p. 9 Table II is legible and reports radio and UAV parameters. Use Eq. (16)/(23) and §§V–VI for the valid optimization description. The first provider quote also drops the printed word break.",
+        "original_pdf_pages": [
+          2,
+          8,
+          9
+        ]
+      },
+      {
+        "kind": "technical",
+        "key": "t3_network_event_response",
+        "prior_issue": "Physical p. 9 Table II is legible and provides radio assumptions. The conclusion lists mobility/interference as future work, with link resilience distinct and unestablished.",
+        "original_pdf_pages": [
+          5,
+          9,
+          10,
+          12
+        ]
+      }
+    ]
+  },
+  "HKF-044": {
+    "attachment": "HKF-044-selected-pages.txt",
+    "original_sha256": "d24d303e54beeec02cad5beed3cf87b73c27ad4735823b6b71a89108fa2a066f",
+    "attachment_physical_to_original_physical": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "targets": [
+      {
+        "kind": "technical",
+        "key": "t2_decisions_objective_solver",
+        "prior_issue": "The split-reinforcement method is supported, and physical p. 10 Table II visibly prints the numeric simulation and actor/critic settings that the provider called missing.",
+        "original_pdf_pages": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "kind": "technical",
+        "key": "t3_platform_modality",
+        "prior_issue": "The paper specifies Python/PyTorch and Tesla V100 numerical evaluation. Original physical p. 10 Table II contains legible numerical parameters, so this is a parser limitation, not a source reporting gap.",
+        "original_pdf_pages": [
+          10
+        ]
+      }
+    ],
+    "render": "Text extracted by original physical page with PyMuPDF 1.26.7"
+  },
+  "HKF-049": {
+    "attachment": "HKF-049-selected-pages.txt",
+    "original_sha256": "cf3b03ea32b227fabed31d14fc41bcb5d6645db248d821bb576bb81cd10818f1",
+    "attachment_physical_to_original_physical": [
+      1,
+      4,
+      5,
+      7,
+      8,
+      9,
+      11,
+      15
+    ],
+    "targets": [
+      {
+        "kind": "technical",
+        "key": "t2_decisions_objective_solver",
+        "prior_issue": "The optimization and centralized PPO description have direct support. Physical p. 11 Table II visibly prints training and radio parameters. Treating missing selectable cells as a technical evidence gap is incorrect.",
+        "original_pdf_pages": [
+          4,
+          5,
+          7,
+          8,
+          9,
+          11
+        ]
+      },
+      {
+        "kind": "technical",
+        "key": "t3_network_event_response",
+        "prior_issue": "The per-link model and UAV join/leave simulation are described, and Doppler appears as future work. Physical p. 11 Table II visibly reports fixed transmit power and bandwidth despite parser omissions.",
+        "original_pdf_pages": [
+          4,
+          5,
+          11,
+          15
+        ]
+      },
+      {
+        "kind": "technical",
+        "key": "t3_platform_modality",
+        "prior_issue": "§IV directly identifies the simulated Raspberry Pi B+ profiles. The quote differs in Pi/pi source casing/spelling around the device family, and p. 11 Table II actually prints numeric simulation parameters.",
+        "original_pdf_pages": [
+          11
+        ]
+      }
+    ],
+    "render": "Text extracted by original physical page with PyMuPDF 1.26.7"
+  },
+  "HKF-053": {
+    "attachment": "HKF-053-selected-pages.txt",
+    "original_sha256": "83b93927c7a804b04412f6aa0c7b438817c9f114dbc3d061f08840b77a361ec0",
+    "attachment_physical_to_original_physical": [
+      1,
+      2,
+      5,
+      6,
+      8,
+      9
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D07",
+        "prior_issue": "The conclusions rely on single-hop estimates under simplifying assumptions, with no physical or mobile test validating the model. The outer provider status is outside the agreed schema.",
+        "original_pdf_pages": [
+          8,
+          9
+        ]
+      },
+      {
+        "kind": "technical",
+        "key": "t3_network_event_response",
+        "prior_issue": "The delivered object mixes two reports. Its cited page/section and spatial-frame excerpt concern HKF-035, while the key belongs to HKF-053. HKF-053’s source discusses only modeled degraded operation and explicitly leaves validation open.",
+        "original_pdf_pages": [
+          2,
+          5,
+          6,
+          8
+        ]
+      },
+      {
+        "kind": "technical",
+        "key": "t3_platform_modality",
+        "prior_issue": "Provider row missing.",
+        "original_pdf_pages": [
+          8
+        ]
+      }
+    ],
+    "render": "Text extracted by original physical page with PyMuPDF 1.26.7"
+  },
+  "HKF-058": {
+    "attachment": "HKF-058-selected-pages.pdf",
+    "original_sha256": "96678450e68e0ccaf210fbff016fc8c8af3d798e26b819881987320520700caf",
+    "attachment_physical_to_original_physical": [
+      1,
+      4,
+      5,
+      6,
+      8,
+      9
+    ],
+    "targets": [
+      {
+        "kind": "technical",
+        "key": "t2_decisions_objective_solver",
+        "prior_issue": "Original p. 8 visibly contains a populated Table I. Gemini also cites an altered p. 5 quote and uses the table-parser omission as a scientific reporting gap. p. 5–6 support OPPS/matching/TD3 at the method level.",
+        "original_pdf_pages": [
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      {
+        "kind": "technical",
+        "key": "t2_workload",
+        "prior_issue": "The model list and baseline names can be verified, but p. 8 actually lists task-arrival parameter range [0,5] in Table I. The second quoted string is not contiguous wording from the PDF.",
+        "original_pdf_pages": [
+          8
+        ]
+      },
+      {
+        "kind": "technical",
+        "key": "t3_platform_modality",
+        "prior_issue": "The publication reports Table I values visibly. Physical p. 8 table and simulation paragraphs support setup; absence from parser output does not imply absent from the source.",
+        "original_pdf_pages": [
+          8,
+          9
+        ]
+      }
+    ],
+    "render": "Original PDF pages rendered in grayscale at 120 dpi for attachment-size limit"
+  },
+  "HKF-061": {
+    "attachment": "HKF-061-selected-pages.txt",
+    "original_sha256": "0fb72f2749c20ee7306cff3b93dc9ee01991c452530ed364afff07a1a4ac96a7",
+    "attachment_physical_to_original_physical": [
+      1,
+      9
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D07",
+        "prior_issue": "An RTX workstation and SNR simulation are described. Physical mobility, aerial links and embedded execution were not validated. The outer provider status is outside the agreed schema.",
+        "original_pdf_pages": [
+          9
+        ]
+      }
+    ],
+    "render": "Text extracted by original physical page with PyMuPDF 1.26.7"
+  },
+  "HKF-079": {
+    "attachment": "HKF-079-selected-pages.pdf",
+    "original_sha256": "a86e926de0d40dddd292784362c655a1eb3f35fb61aed98e02c817410f56adad",
+    "attachment_physical_to_original_physical": [
+      1,
+      10
+    ],
+    "targets": [
+      {
+        "kind": "outcome",
+        "key": "Q03",
+        "prior_issue": "The original p. 10 Fig. 9(c) prints numerical bar labels, including PPO-DMCP 31.9287 ms. The parser does not establish absence. This is single-decision overhead.",
+        "original_pdf_pages": [
+          10
+        ]
+      }
+    ],
+    "render": "Original PDF pages rendered in grayscale at 120 dpi for attachment-size limit"
+  },
+  "HKF-085": {
+    "attachment": "HKF-085-selected-pages.pdf",
+    "original_sha256": "6cda59f8e6d8f578164154618ad23d5aa197caf5533a92828bc246bcbe2c60bc",
+    "attachment_physical_to_original_physical": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D02",
+        "prior_issue": "No positive-energy sign typo is shown. Equation (10) on p.3 has a leading minus over the parenthesis containing both latency and energy. Expanded Equation (18) on p.4 also subtracts both weighted costs. Retain the other genuine constraints and any documented modeling gaps.",
+        "original_pdf_pages": [
+          2,
+          3,
+          4,
+          6
+        ]
+      },
+      {
+        "kind": "appraisal",
+        "key": "D07",
+        "prior_issue": "Outer result status NO is invalid. The paper contributes a channel model but evaluates a simplified single-task simulation. Recommend outer PARTIAL / domain PARTIAL and preserve the explicit future-work qualification.",
+        "original_pdf_pages": [
+          5,
+          6
+        ]
+      }
+    ]
+  },
+  "HKF-100": {
+    "attachment": "HKF-100-selected-pages.txt",
+    "original_sha256": "2f7ca4d261bbd074c725640d59d01e30acebfb13023bddfa3f161ab10780339f",
+    "attachment_physical_to_original_physical": [
+      1,
+      8,
+      12
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D08",
+        "prior_issue": "The Gemini line is malformed JSONL and was rejected. Independently, p.12 claims robustness across speeds, while §5 gives a nominal 75 m/s upper speed and reports no explicit speed-sensitivity comparison. This requires user review against the original and does not validate field operation.",
+        "original_pdf_pages": [
+          8,
+          12
+        ]
+      }
+    ],
+    "render": "Text extracted by original physical page with PyMuPDF 1.26.7"
+  },
+  "HKF-104": {
+    "attachment": "HKF-104-selected-pages.txt",
+    "original_sha256": "f9dc09402cc09d3e426cc693458070cee2e480acab8f538da24ecbaa3c93d151",
+    "attachment_physical_to_original_physical": [
+      1,
+      3,
+      16,
+      17,
+      19,
+      23
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D08",
+        "prior_issue": "P.1 highlights claim exclusivity for successful onboard 70B evaluation. In §4.2, the 70B comparison spans pp.16–17 and reports Jupiter and EdgeShard finishing in the distributed simulation. Retain this conflict and distinguish emulated from physical execution. Orion’s 70B value is 18,665 ms in §4.2 and 16,793 ms in §4.6, which states consistent settings; keep the figures separately scoped and the distinction unresolved. The domain NO can be reported in finding; it is invalid as the outer result status.",
+        "original_pdf_pages": [
+          1,
+          3,
+          16,
+          17,
+          19,
+          23
+        ]
+      }
+    ],
+    "render": "Text extracted by original physical page with PyMuPDF 1.26.7"
+  },
+  "HKF-109": {
+    "attachment": "HKF-109-selected-pages.txt",
+    "original_sha256": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee",
+    "attachment_physical_to_original_physical": [
+      1,
+      5,
+      6
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D10",
+        "prior_issue": "P.5 qualifies drift computed only for successful frames and identifies HIL modality. Separate funding, conflicts and formal limitations disclosures were not located. One or more supplied quotations do not match the stated original page literally. The outer provider status is outside the agreed schema.",
+        "original_pdf_pages": [
+          1,
+          5,
+          6
+        ]
+      }
+    ],
+    "render": "Text extracted by original physical page with PyMuPDF 1.26.7"
+  },
+  "HKF-110": {
+    "attachment": "HKF-110-selected-pages.txt",
+    "original_sha256": "5264562eed6f78b7aa4ee39a3eb803ca2f148599a3a20daba23a54e76d182b2c",
+    "attachment_physical_to_original_physical": [
+      1,
+      5
+    ],
+    "targets": [
+      {
+        "kind": "outcome",
+        "key": "Q05",
+        "prior_issue": "P. 5 §V.H calls above 90% throughput. Figure 5 labels 91% as task completion at 20 drones. The source separately defines throughput as data transferred per time; a percentage calculation boundary for its throughput claim is absent.",
+        "original_pdf_pages": [
+          5
+        ]
+      }
+    ],
+    "render": "Text extracted by original physical page with PyMuPDF 1.26.7"
+  },
+  "HKF-121": {
+    "attachment": "HKF-121-selected-pages.txt",
+    "original_sha256": "f14e34f86c864e1283d2d34a8abc06f7adbc9f0a92fd26582be06f5116af5631",
+    "attachment_physical_to_original_physical": [
+      1,
+      10,
+      13
+    ],
+    "targets": [
+      {
+        "kind": "appraisal",
+        "key": "D07",
+        "prior_issue": "Outer result status NO is invalid. Data are ground-view clips captured from a car and static model evaluation; the model supplies some geometry without validating flight mobility. Recommend outer PARTIAL / domain PARTIAL with p.10 and p.13 evidence.",
+        "original_pdf_pages": [
+          10,
+          13
+        ]
+      }
+    ],
+    "render": "Text extracted by original physical page with PyMuPDF 1.26.7"
+  },
+  "HKF-128": {
+    "attachment": "HKF-128-selected-pages.pdf",
+    "original_sha256": "798f36a8717c4efc667a308aeee22236b895dad4faaafbde979e2610fde72f44",
+    "attachment_physical_to_original_physical": [
+      1,
+      11,
+      12,
+      13,
+      14
+    ],
+    "targets": [
+      {
+        "kind": "report_coverage",
+        "key": "coverage",
+        "prior_issue": "The PRINTED_UNRESOLVED classification conflates text extraction with the original PDF. Tables III (p. 12), IV (p. 13) and V (p. 14) visibly report latency results in stated units. The original supports VERIFIED_EXACT for retained rows, and also includes distinct plot-only results.",
+        "original_pdf_pages": [
+          11,
+          12,
+          13,
+          14
+        ]
+      }
+    ],
+    "render": "Original PDF pages rendered in grayscale at 120 dpi for attachment-size limit"
+  }
+}
