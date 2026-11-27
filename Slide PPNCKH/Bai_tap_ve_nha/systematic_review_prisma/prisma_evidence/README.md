@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T13:08:13+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T13:10:23+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -527,6 +527,12 @@ Nghiệm thu cấp bước đã ghi trong sổ: FAIL=19, PASS=5.
 - [supplemental_batch_01_semantic_R0036.md](../restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0036.md)
 - [supplemental_batch_01_semantic_R0038.md](../restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0038.md)
 - [supplemental_batch_01_semantic_R0043.md](../restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0043.md)
+- [supplemental_batch_01_accepted.json](../restart_2026_11_26/extraction/supplemental_batch_01_accepted.json)
+- [supplemental_batch_01_composite_review.md](../restart_2026_11_26/extraction/supplemental_batch_01_composite_review.md)
+- [supplemental_batch_01_semantic_R0014.md](../restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0014.md)
+- [supplemental_batch_01_semantic_R0058.md](../restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0058.md)
+- [supplemental_batch_01_semantic_R0064.md](../restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0064.md)
+- [supplemental_batch_01_semantic_R0075.md](../restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0075.md)
 
 <a id="buoc-12"></a>
 ## Bước 12 · Đánh giá chất lượng và nguy cơ sai lệch

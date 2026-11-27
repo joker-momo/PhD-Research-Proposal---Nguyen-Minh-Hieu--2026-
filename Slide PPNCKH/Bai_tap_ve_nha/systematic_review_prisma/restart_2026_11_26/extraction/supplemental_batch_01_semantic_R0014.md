@@ -1,0 +1,19 @@
+# Supplemental P08, batch 01 — R0014 source review
+
+Source: `restart_2026_11_26/fulltext_retrieval/pdf/R0014.pdf`. The manifest SHA-256 matched. Physical pages are 1-based. PyMuPDF and original renderings of pp. 10–12 were used.
+
+| Required field | Source-bounded interpretation | Original physical locator |
+|---|---|---|
+| Architecture | ASAP uses multiple airborne clusters with cluster heads and members. Across clusters it pipelines execution, and within a cluster it distributes data-dependent work. Its proposed system can execute inference without a ground station. | pp. 4–5, §III and system figures |
+| Workload | Evaluation uses source video at three resolutions and six CNNs grouped by size. A separate intermediate-data compression test uses a VGG16 trained on CIFAR-10. | p. 11, §VIII.A; p. 14, §VIII.E |
+| Partition and assignment | Sequential model segments are allocated across clusters, and spatial input ranges are divided within each cluster. Mapping of receptive fields and padding preserve dependencies. A separate compressor reduces intermediate traffic. | pp. 5–7, §§III–IV; p. 9, §VI |
+| Optimization | Internal and external scheduling consider device capabilities and estimated execution latency. The scheduler adapts assignments when cluster membership changes. The paper presents load balancing and latency prediction algorithms. | pp. 5–8, §§III–V |
+| Compute and radio | Indoor airborne computers use WiFi, while the separate outdoor UAV setup uses ad hoc modules. Jetson board composition is documented. | pp. 10–11, Fig. 12 and §VIII.A |
+| Mobility and continuity | A deliberate disconnection of one cluster head leads to rescheduling across surviving nodes. The response is observed in the task sequence and latency returns toward the prior level after reconnection. The scheduling paragraph does not establish an outdoor disconnection test. | pp. 7 and 10, §§IV.C and VII.B; p. 13, §VIII.C, Fig. 16(b) and Table IV |
+| Evaluation | The study distinguishes indoor airborne-computer measurements from its outdoor deployment on five UAVs. The results specify different configurations and video resolutions where appropriate. | pp. 10–12, Fig. 12, §VIII.A–B and Fig. 13 |
+| Baselines | The paper compares raw offloading, Neurosurgeon, DeepSlicing, MoDNN and onboard execution in distinct settings. Average scheduling and prediction alternatives are used for component comparisons. Comparable model choices differ where a baseline cannot run the workload. | pp. 11–14, §§VIII.A–D, Tables III–IV and Figs. 13, 16–17 |
+| Outcomes | The paper reports workload-specific latency, per-node compute and memory overhead, and scheduling measures. Table III gives exact host-testbed latency by model and node count. Fig. 13 separately reports the five-UAV setting. | pp. 11–13, §VIII.B–C, Table III, Figs. 13–16 |
+| Variability | The evaluation varies workload size, task setting and node count. Section VIII describes the latency aggregation and includes parameter sweeps. Independent repeats and confidence intervals for the cited outcomes are unreported in the inspected comparison text and figures. | pp. 11–14, §VIII.B–E |
+| Code and data | The article states that the ASAP implementation is released and gives its repository. The evaluation distinguishes video source material from CIFAR-10. The source video used for latency comparisons is not named in the setup. | p. 3, §I; p. 9, §VII; pp. 11 and 14, §VIII |
+| Funding and conflicts | The first page records funding. The first page and final sections inspected do not contain a competing-interest declaration. | p. 1, funding footnote; pp. 15–17, discussion, conclusion and end sections |
+| Reported limitations | The discussion describes single-task-flow scope and needs further scheduling for concurrent flows or transformer attention heads. It identifies a limit on workload-dependent scaling. | pp. 11 and 15–16, §VIII.B and §IX |

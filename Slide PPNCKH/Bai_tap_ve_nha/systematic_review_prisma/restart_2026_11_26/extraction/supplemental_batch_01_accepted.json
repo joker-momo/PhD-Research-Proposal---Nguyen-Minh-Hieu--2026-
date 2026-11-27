@@ -1,0 +1,639 @@
+{
+  "step": 11,
+  "scope": "HK261 supplemental P08 batch 01",
+  "status": "PASS_COMPOSITE",
+  "checked_at": "2026-11-27T13:10:23+07:00",
+  "parent_task_id": "15cbc890-5eb8-41d6-ad0a-52686af3dd74",
+  "correction_task_ids": [
+    "f80b8621-d974-443f-9f92-5e29c0dd7895",
+    "5da8a22f-43b7-4764-8844-8440546f2957"
+  ],
+  "reports": [
+    {
+      "report_id": "R0014",
+      "study_id": "S026",
+      "title": "All-Sky Autonomous Computing in UAV Swarm",
+      "doi": "10.1109/TMC.2024.3427420",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0014.pdf",
+      "sha256": "798f36a8717c4efc667a308aeee22236b895dad4faaafbde979e2610fde72f44",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0014.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "All-Sky Autonomous Computing in UAV Swarm",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "ASAP uses multiple airborne clusters with cluster heads and members. Across clusters it pipelines execution, and within a cluster it distributes data-dependent work. Its proposed system can execute inference without a ground station.",
+          "original_locator": "pp. 4–5, §III and system figures"
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "finding": "Evaluation uses source video at three resolutions and six CNNs grouped by size. A separate intermediate-data compression test uses a VGG16 trained on CIFAR-10.",
+          "original_locator": "p. 11, §VIII.A; p. 14, §VIII.E"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "Sequential model segments are allocated across clusters, and spatial input ranges are divided within each cluster. Mapping of receptive fields and padding preserve dependencies. A separate compressor reduces intermediate traffic.",
+          "original_locator": "pp. 5–7, §§III–IV; p. 9, §VI"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "Internal and external scheduling consider device capabilities and estimated execution latency. The scheduler adapts assignments when cluster membership changes. The paper presents load balancing and latency prediction algorithms.",
+          "original_locator": "pp. 5–8, §§III–V"
+        },
+        "compute_radio": {
+          "status": "OBSERVED",
+          "finding": "Indoor airborne computers use WiFi, while the separate outdoor UAV setup uses ad hoc modules. Jetson board composition is documented.",
+          "original_locator": "pp. 10–11, Fig. 12 and §VIII.A"
+        },
+        "mobility_continuity": {
+          "status": "PARTIAL",
+          "finding": "A deliberate disconnection of one cluster head leads to rescheduling across surviving nodes. The response is observed in the task sequence and latency returns toward the prior level after reconnection. The scheduling paragraph does not establish an outdoor disconnection test.",
+          "original_locator": "pp. 7 and 10, §§IV.C and VII.B; p. 13, §VIII.C, Fig. 16(b) and Table IV"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "The study distinguishes indoor airborne-computer measurements from its outdoor deployment on five UAVs. The results specify different configurations and video resolutions where appropriate.",
+          "original_locator": "pp. 10–12, Fig. 12, §VIII.A–B and Fig. 13"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "The paper compares raw offloading, Neurosurgeon, DeepSlicing, MoDNN and onboard execution in distinct settings. Average scheduling and prediction alternatives are used for component comparisons. Comparable model choices differ where a baseline cannot run the workload.",
+          "original_locator": "pp. 11–14, §§VIII.A–D, Tables III–IV and Figs. 13, 16–17"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "The paper reports workload-specific latency, per-node compute and memory overhead, and scheduling measures. Table III gives exact host-testbed latency by model and node count. Fig. 13 separately reports the five-UAV setting.",
+          "original_locator": "pp. 11–13, §VIII.B–C, Table III, Figs. 13–16"
+        },
+        "variability": {
+          "status": "PARTIAL",
+          "finding": "The evaluation varies workload size, task setting and node count. Section VIII describes the latency aggregation and includes parameter sweeps. Independent repeats and confidence intervals for the cited outcomes are unreported in the inspected comparison text and figures.",
+          "original_locator": "pp. 11–14, §VIII.B–E"
+        },
+        "code_data": {
+          "status": "PARTIAL",
+          "finding": "The article states that the ASAP implementation is released and gives its repository. The evaluation distinguishes video source material from CIFAR-10. The source video used for latency comparisons is not named in the setup.",
+          "original_locator": "p. 3, §I; p. 9, §VII; pp. 11 and 14, §VIII"
+        },
+        "funding_conflicts": {
+          "status": "PARTIAL",
+          "finding": "The first page records funding. The first page and final sections inspected do not contain a competing-interest declaration.",
+          "original_locator": "p. 1, funding footnote; pp. 15–17, discussion, conclusion and end sections"
+        },
+        "limitations": {
+          "status": "OBSERVED",
+          "finding": "The discussion describes single-task-flow scope and needs further scheduling for concurrent flows or transformer attention heads. It identifies a limit on workload-dependent scaling.",
+          "original_locator": "pp. 11 and 15–16, §VIII.B and §IX"
+        }
+      },
+      "quantitative_rows": [
+        {
+          "metric": "average inference latency as defined for a task sequence",
+          "value": "1.32",
+          "units": "s",
+          "baseline": "ASAP on 4 nodes: 2.32 s",
+          "denominator": "100 tasks, elapsed from first start to last completion divided by 100",
+          "workload": "ResNet152, high-resolution 720 × 1280 video",
+          "conditions": "ASAP on 20 Jetson Nano airborne computers; same model and resolution as 4-node ASAP",
+          "page": 12,
+          "locator": "Table III, ResNet152, ASAP 20-node and 4-node columns; see p. 11 §VIII.B",
+          "printed_support": "ResNet152: 2.32 (4 nodes); 1.32 (20 nodes); seconds"
+        }
+      ]
+    },
+    {
+      "report_id": "R0036",
+      "study_id": "S027",
+      "title": "Wider Eyes in the Sky: Scene-Adaptive Video Analytics in Low-Altitude Surveillance Networks",
+      "doi": "10.1109/TCCN.2025.3641511",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0036.pdf",
+      "sha256": "f14e34f86c864e1283d2d34a8abc06f7adbc9f0a92fd26582be06f5116af5631",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0036.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "Wider Eyes in the Sky: Scene-Adaptive Video Analytics in Low-Altitude Surveillance Networks",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "Each UAV preprocesses its video, and an edge controller selects streams and their configurations for edge-side inference.",
+          "original_locator": "pp. 4–5, §III"
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "finding": "The study runs YOLOv5 object detection on video frames from the ground-view ETH pedestrian dataset. The source video is divided into ten-second chunks, with candidate spatial and temporal sampling settings.",
+          "original_locator": "p. 10, §VI and Fig. 4"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "The assigned unit is a configured video stream or chunk. UAVs sample and resize frames before upload. The edge performs detection on offloaded frames.",
+          "original_locator": "p. 4, §III; p. 10, §VI"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "Joint stream selection, resolution and frame-rate choices maximize effective weighted surveillance coverage subject to accuracy, delay, bandwidth and edge compute constraints. The method combines a learned accuracy profiler and greedy local search.",
+          "original_locator": "pp. 5–6, §§III–IV; pp. 9–10, §V.C and Theorem 2"
+        },
+        "compute_radio": {
+          "status": "PARTIAL",
+          "finding": "The evaluation uses modeled shared bandwidth and edge processing capacity in frames per second. Physical radio and processor implementation for the scenario are unreported.",
+          "original_locator": "p. 5, §III; pp. 10–12, §VI and Table II"
+        },
+        "mobility_continuity": {
+          "status": "NOT_REPORTED",
+          "finding": "Videos capture target/camera motion, while the multi-UAV scenarios assign surveillance positions and vary system conditions. The inspected experiments establish no evaluated UAV trajectory, handover or failure-recovery mechanism.",
+          "original_locator": "pp. 10–12, §VI and Figs. 5–8"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "Simulations use car-mounted stereo footage as a controlled input and synthesize UAV positions and coverage. They distinguish a single-UAV runtime scenario from multi-UAV coverage tests.",
+          "original_locator": "pp. 10–12, §VI and Figs. 4–8"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "Fixed Configuration, Capacity Based Adaptation, All-to-upload, Random-to-upload and an exhaustive-search reference are identified. The latter is an upper-bound reference.",
+          "original_locator": "pp. 10 and 12, §VI and Fig. 8"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "The report compares effective coverage and discusses how changing target dynamics affects detection accuracy and resource conditions. Coverage patterns depend on link bandwidth and compute capacity. It presents a bounded comparison to Random-to-upload for a particular bandwidth setting.",
+          "original_locator": "pp. 11–13, §VI and Figs. 6–8"
+        },
+        "variability": {
+          "status": "PARTIAL",
+          "finding": "The authors average 20 Random-to-upload trials per parameter setting and run several scenario sweeps. This supports comparator repeat coverage, with uncertainty or repetitions for SAC2 unreported in the compared settings.",
+          "original_locator": "pp. 11–12, §VI, §VI text for Fig. 8 and Figs. 6–8"
+        },
+        "code_data": {
+          "status": "PARTIAL",
+          "finding": "The paper identifies the external ETH dataset. The inspected evaluation, conclusion and accompanying end sections provide no author source-code or custom-data release statement.",
+          "original_locator": "p. 10, §VI and dataset reference 40; pp. 13–15, conclusion and end sections"
+        },
+        "funding_conflicts": {
+          "status": "PARTIAL",
+          "finding": "Funding sources appear in first-page footnotes. The inspected first page and end sections do not state a competing-interest declaration.",
+          "original_locator": "p. 1, footnotes; pp. 13–15, conclusion and end sections"
+        },
+        "limitations": {
+          "status": "OBSERVED",
+          "finding": "The authors identify further work on spatiotemporal correlations and aerial scene dynamics. The use of ground-view video is an explicit setup choice and limits direct inference about aerial imagery.",
+          "original_locator": "p. 10, §VI; p. 13, §VII"
+        }
+      },
+      "quantitative_rows": []
+    },
+    {
+      "report_id": "R0038",
+      "study_id": "S028",
+      "title": "On Convolutional Neural Networks for Mini UAV Swarms",
+      "doi": "10.1109/WINCOM65874.2025.11313424",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0038.pdf",
+      "sha256": "1b94aec23aab27479644c382566260bfe504d11c65c04076f6e980064a571c59",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0038.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "On Convolutional Neural Networks for Mini UAV Swarms",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "A four-stage distributed CNN pipeline uses Docker Swarm for orchestration and Redis for intermediate outputs. The testbed contains base-station stand-ins and UAV-node stand-ins. Omit the unneeded “three-tier” label.",
+          "original_locator": "p. 3, §III.B and Fig. 2; p. 5, §V.A and Table II"
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "finding": "The evaluation describes a TensorFlow CNN classifying aircraft images and a set of 100 images at 255 × 255 pixels. The test images are described as bundled in the input container.",
+          "original_locator": "pp. 3–4, §§III.B and IV.C; p. 5, §V.A and §V.B.1"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "The CNN is split into an input stage, two convolutional stages and an output stage. The stages run in separate containers and publish outputs to Redis. Docker Swarm orchestrates placement.",
+          "original_locator": "pp. 3–4, §§III.B and IV.A, IV.C"
+        },
+        "optimization": {
+          "status": "NOT_REPORTED",
+          "finding": "The implementation specifies container-placement constraints and recovery behavior. The inspected system model and implementation do not present a mathematical objective or an optimization solver for the evaluated system.",
+          "original_locator": "pp. 3–4, §§III.B and IV"
+        },
+        "compute_radio": {
+          "status": "PARTIAL",
+          "finding": "The physical testbed includes an Ubuntu desktop, an Ubuntu laptop and two Raspberry Pi 5 devices. Table II lists Memory and Data Size as separate columns. The setup does not give a radio standard, bandwidth or field channel profile.",
+          "original_locator": "pp. 4–5, §§IV.C and V.A; p. 5, Table II"
+        },
+        "mobility_continuity": {
+          "status": "PARTIAL",
+          "finding": "After deliberate disconnection of a device running a convolutional stage, the dependent stage waited and the input stage kept ingesting. Docker Swarm redeployed the container and it resumed from the last Redis checkpoint. No UAV motion was evaluated in this experiment.",
+          "original_locator": "pp. 5–6, §V.B.2"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "Physical Docker Swarm testbed with two computer base-station stand-ins and two Raspberry Pi 5 UAV-node stand-ins. The setup and the test described in §V use physical electronics, with no live-flight condition established. Use body evidence in place of the inconsistent abstract device count.",
+          "original_locator": "pp. 4–5, §§IV.C and V.A; p. 5, Table II"
+        },
+        "baselines": {
+          "status": "PARTIAL",
+          "finding": "The unsplit CNN was used for the classification accuracy comparison and an uninterrupted run provided the processing comparison for failure. The results do not present an experimentally evaluated external distributed-inference comparator.",
+          "original_locator": "p. 5, §V.B.1–2"
+        },
+        "outcomes": {
+          "status": "PARTIAL",
+          "finding": "The authors report per-stage time, classification accuracy and recovery after interruption. Fig. 3 labels four distinct stage timings. Their sum differs from the reported approximate end-to-end number. The paper does not establish how concurrent stage execution relates the two measures. Withhold the end-to-end number as a verified aggregate.",
+          "original_locator": "p. 5, Fig. 3 and §V.B.1–2"
+        },
+        "variability": {
+          "status": "NOT_REPORTED",
+          "finding": "The results give an accuracy range and average time by stage. Independent repeat counts, seed-level results and confidence intervals for latency or recovery are unreported in these sections. The report does not establish “only one run.”",
+          "original_locator": "pp. 5–6, §V.A–B"
+        },
+        "code_data": {
+          "status": "NOT_REPORTED",
+          "finding": "Test images are described as a local folder in the input container. No author repository or dataset release is stated in the inspected implementation, evaluation and end matter. Documentation links for named dependencies do not establish availability of this study's artifacts.",
+          "original_locator": "pp. 4–6, §§IV, V.A–B, VI and references"
+        },
+        "funding_conflicts": {
+          "status": "NOT_REPORTED",
+          "finding": "The acknowledgement records development affiliation and thanks a supporter. The inspected first page and end matter do not state a grant or competing-interest declaration. Do not infer the authors lack either.",
+          "original_locator": "p. 1, byline/footnotes; p. 6, Acknowledgment"
+        },
+        "limitations": {
+          "status": "OBSERVED",
+          "finding": "The authors report lower classification accuracy after splitting and the delay after deliberate disconnection. Their conclusion defers evaluation with replicated layers across swarms. Limited field applicability and unresolved aggregation are review observations.",
+          "original_locator": "pp. 5–6, §V.B.1–2 and §VI"
+        }
+      },
+      "quantitative_rows": []
+    },
+    {
+      "report_id": "R0043",
+      "study_id": "S029",
+      "title": "Multi-UAV Maritime Search and Rescue with DNN Inference Acceleration",
+      "doi": "10.1109/Ucom59132.2023.10257649",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0043.pdf",
+      "sha256": "a0f21d4599dc515f501dc5c81a30e6c082448068819609151165f2a31a79e19f",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0043.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "Multi-UAV Maritime Search and Rescue with DNN Inference Acceleration",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "User UAVs originate data and server-equipped UAVs process DNN subtasks in an aerial network. The server nodes can queue those subtasks and store models.",
+          "original_locator": "p. 2, §II.A–B; p. 3, Fig. 2"
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "finding": "The simulated workload uses SeaShip images and four benchmark models, NiN, VGG16, AlexNet and ResNet18. Task arrivals are Poisson. The source establishes a visual workload with six ship types. Avoid an unqualified claim that an evaluated detector reports detection accuracy.",
+          "original_locator": "p. 5, §IV.A and Table I"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "The approach divides fused convolutional blocks into sub-blocks with overlapping spatial inputs. The scheme assigns the subtasks to matched server UAVs.",
+          "original_locator": "pp. 3–4, Fig. 2 and §III.A–B"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "The formulation seeks to minimize total inference time. It bounds the number of servers per task and imposes a minimum transmission rate. Fine-grained partition and genetic-algorithm coalition matching are separate subproblems. Avoid substituting the coalition-fitness expression for the overall objective.",
+          "original_locator": "p. 3, §II.C Eq. (6); pp. 4–5, §III.A–B, Algorithm 1 and Eq. (11)"
+        },
+        "compute_radio": {
+          "status": "OBSERVED",
+          "finding": "Table I reports 30 user nodes and six server nodes. The stated simulation parameters are 20 MHz system bandwidth, 10 dBm user transmit power and 60 GFLOPS computing power per modeled server node. The network model states fixed bandwidth and includes Rayleigh fading.",
+          "original_locator": "pp. 2–3, §II.A–C; p. 5, Table I and §IV.A"
+        },
+        "mobility_continuity": {
+          "status": "NOT_REPORTED",
+          "finding": "Bandwidth is held fixed in the network model. The inspected model and simulation do not establish movement trajectories, outages, migration or recovery tests.",
+          "original_locator": "p. 2, §II.A; pp. 5–6, §IV and Fig. 3"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "The paper reports simulations with common node power assumptions and a task-count sweep for the four benchmark models. Fig. 3 plots through 3,000 tasks. No physical flight experiment is described in the evaluation.",
+          "original_locator": "p. 5, §IV.A–B and Table I; p. 6, Fig. 3"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "Random fusion retains DIA-O, Random offload retains DIA-FP and Greedy sends a whole task to the nearest server without partitioning.",
+          "original_locator": "p. 5, §IV.A"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "DIA shows the lowest simulated total inference time on all four plotted model panels for the reported task-count sweep. Preserve the matched qualitative comparison. The abstract's range does not identify the exact model, task-count and comparator denominator needed for a verified numerical comparison.",
+          "original_locator": "pp. 5–6, §IV.B and Fig. 3"
+        },
+        "variability": {
+          "status": "NOT_REPORTED",
+          "finding": "Fig. 3 shows a task-count sweep without visible error bars. Independent repetitions and dispersion are unreported in the inspected setup and result text.",
+          "original_locator": "pp. 5–6, §IV and Fig. 3"
+        },
+        "code_data": {
+          "status": "PARTIAL",
+          "finding": "The SeaShip dataset is identified through reference 11. The inspected implementation, evaluation and end matter give no author implementation release statement.",
+          "original_locator": "pp. 4–6, §III, §IV.A and reference 11"
+        },
+        "funding_conflicts": {
+          "status": "PARTIAL",
+          "finding": "The acknowledgment names two funding sources. The inspected first page and end matter do not document a competing-interest statement.",
+          "original_locator": "pp. 1 and 6, first page and Acknowledgment"
+        },
+        "limitations": {
+          "status": "OBSERVED",
+          "finding": "The authors defer a partitioning scheme to avoid accuracy loss and handling heterogeneous compute and energy supplies. The evaluated configuration assumes homogeneous server compute.",
+          "original_locator": "p. 5, §IV.A; p. 6, §V"
+        }
+      },
+      "quantitative_rows": []
+    },
+    {
+      "report_id": "R0058",
+      "study_id": "S030",
+      "title": "Efficient AI Inference Offloading for UAVs via Distributed Auctions in Dynamic Edge Environments",
+      "doi": "10.1142/S0218126626440020",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0058.pdf",
+      "sha256": "a995e55cc24eda515eb4066996a648d5777065084f7babbe6760e2691d46dbd3",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0058.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "10.1142/S0218126626440020",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "Autonomous UAVs generate inference tasks and ground edge servers execute eligible offloaded tasks. A distributed auction coordinates UAV bids and server resource offers.",
+          "original_locator": "pp. 5–6, §3.1 and Fig. 1; p. 9, §4"
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "finding": "Simulated ResNet-18 image classification tasks use random draws from CIFAR-10 test images, with task input, output and computation sizes specified in the simulator configuration.",
+          "original_locator": "p. 19, §6.1"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "The task-to-server decision is binary with at most one server per task. Local or deferred operation is described as a fallback. No split by model layer appears in the evaluated assignment variable.",
+          "original_locator": "pp. 5–6, §3.1; pp. 9–10, §4.1; p. 11, §4.2"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "The formulation considers latency and accuracy with connection and compute constraints. Buyers and sellers separately evaluate bids and service costs, and the auction objective maximizes aggregate utility subject to feasibility.",
+          "original_locator": "pp. 8–9, §3; pp. 11–12, §4.2; pp. 14–16, §§4.4–5"
+        },
+        "compute_radio": {
+          "status": "PARTIAL",
+          "finding": "The simulator uses modeled sub-6 GHz links with prescribed bandwidth and compute budgets. The source’s stated default server count falls outside its stated range. Preserve that conflict and avoid assigning a default for reported plots.",
+          "original_locator": "p. 19, §6.1; pp. 20–22, §§6.2–6.3"
+        },
+        "mobility_continuity": {
+          "status": "PARTIAL",
+          "finding": "The design estimates remaining connection time and describes retry, buffering or simplified local operation. A system-level task-success test varies simulated UAV speed and does not isolate retry or fallback.",
+          "original_locator": "pp. 9–10, §4.1; pp. 21–22, §6.3 and Fig. 4"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "Discrete-time simulator with modeled ground servers, moving UAVs and an image-classification workload. The paper reports no hardware or live-flight trial in §6.",
+          "original_locator": "pp. 19–22, §6.1–6.4"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "Compares local-only, MWBS, LADPO and OATS schemes. Section 6 identifies the comparators by scheduling approach.",
+          "original_locator": "pp. 19–20, §6.1"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "Reports latency, accuracy and task success under separate sweeps over server frequency, system scale and UAV speed. In the matched 1,500 MHz scenario, the text supplies direct latency and accuracy comparisons with MWBS. Keep results within those simulation conditions.",
+          "original_locator": "pp. 20–22, §§6.2–6.3 and Figs. 2–4"
+        },
+        "variability": {
+          "status": "PARTIAL",
+          "finding": "Task-success distributions in Fig. 4 and experimental sweeps are available. The latency and accuracy plots provide no precision interval. Convergence criteria and plotted distributions do not establish independent-repeat counts.",
+          "original_locator": "pp. 19–22, §§6.1–6.3 and Figs. 2–4"
+        },
+        "code_data": {
+          "status": "PARTIAL",
+          "finding": "Tasks use the external CIFAR-10 test set. The inspected setup, conclusion and end matter do not give an implementation or simulation-script release.",
+          "original_locator": "pp. 19 and 23–25, §6.1, conclusion and end matter"
+        },
+        "funding_conflicts": {
+          "status": "NOT_REPORTED",
+          "finding": "No funding declaration or competing-interest statement appears in the inspected front and end matter. The ORCID listing is separate from a declaration.",
+          "original_locator": "pp. 1–2 and 23–25, front matter, conclusion and end sections"
+        },
+        "limitations": {
+          "status": "NOT_REPORTED",
+          "finding": "The conclusion states results under simulated conditions. No dedicated author limitations or field-validation result is supplied in the inspected conclusion. The inconsistent server default is a review observation.",
+          "original_locator": "pp. 19 and 23, §6.1 and §7"
+        }
+      },
+      "quantitative_rows": [
+        {
+          "metric": "inference latency",
+          "value": "19",
+          "units": "ms",
+          "baseline": "MWBS: 29 ms",
+          "denominator": "Study-reported point comparison; no variance at this setting",
+          "workload": "Simulated ResNet-18 using CIFAR-10 test images",
+          "conditions": "Edge CPU at 1500 MHz; no unconfirmed default node counts attached",
+          "page": 20,
+          "locator": "§6.2 and Fig. 2(b), 1500 MHz, DADAO and MWBS",
+          "printed_support": "19 ms at 1500 MHz, compared to MWBS (29 ms)"
+        }
+      ]
+    },
+    {
+      "report_id": "R0064",
+      "study_id": "S031",
+      "title": "Joint optimization of data sensing and computing in the air–ground collaborative inference framework: A multi-agent hybrid-action DRL approach",
+      "doi": "10.1016/j.comnet.2025.111540",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0064.pdf",
+      "sha256": "6cfc6cd0d7d4d924833f9add0b3d56334dcacebe8941705729178bdaf765d52f",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0064.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "Joint optimization of data sensing and computing in the air–ground collaborative inference framework: A multi-agent hybrid-action DRL approach",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "Multiple camera-equipped UAVs survey points of interest. UAVs carry compressed DNNs, while ground edge servers provide uncompressed inference.",
+          "original_locator": "pp. 3–4, §3 and Fig. 2"
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "finding": "The analytic workload models temporally correlated multi-frame recognition, with an accuracy function of sampled frame count and a compressed-model penalty. The setup uses 1080 × 1080 frames and allowed frame counts from 5 to 20 with gaps above 13. It reports no real-video experiment.",
+          "original_locator": "pp. 5–6, §§3.3–3.4; p. 8, §5.1; p. 12, §6"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "Each UAV executes the whole sampled task locally or sends it to one ground edge server. The formulation preserves temporal correlation across sampled frames.",
+          "original_locator": "p. 5, §3.3 and Eq. (19); p. 12, §6"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "MAPPO-HA trains a cooperative policy for 3D motion, frame sampling and binary offloading to minimize delay subject to sensing, accuracy and energy constraints. Its actor separates continuous and discrete action dimensions.",
+          "original_locator": "pp. 6–8, §§3.5, 4.1–4.2"
+        },
+        "compute_radio": {
+          "status": "OBSERVED",
+          "finding": "The default simulated configuration uses probabilistic LoS/NLoS links, a 2 MHz bandwidth and distinct onboard and edge compute budgets. A bandwidth sweep varies that value.",
+          "original_locator": "pp. 4–5, §3; p. 9, Table 2 and §5.2.2"
+        },
+        "mobility_continuity": {
+          "status": "PARTIAL",
+          "finding": "The model varies 3D trajectories and uses a minimum UAV separation. The discussion explicitly omits congestion-related loss and changing locations of mobile points of interest. The evaluated framework does not verify service recovery after node dropout.",
+          "original_locator": "p. 4, §3.1.1; pp. 9–11, Table 2 and §5.2; p. 12, §6"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "The analytical workload and channel run as simulations on an Ubuntu server. Baseline runs use a scenario with three UAVs, two fixed servers and fifty points of interest. Separate tests vary swarm size.",
+          "original_locator": "pp. 8–9, §5.1; p. 11, §5.2.5"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "MAPPO-DA, MADQN, static-frame sampling, fixed flight trajectories, edge-only computing and local-only computing. Distinguish external algorithm designs from framework ablations.",
+          "original_locator": "p. 9, §5.1"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "The study compares modeled inference delay and accuracy and reports reward, sensing counts and fairness in particular experiments. The proposed approach shows lower simulated delay in the compared bandwidth sweep. This result uses the modeled accuracy function.",
+          "original_locator": "pp. 9–11, §§5.2.1–5.2.7"
+        },
+        "variability": {
+          "status": "PARTIAL",
+          "finding": "The bandwidth comparison reports 50 test episodes and 95% confidence intervals. NumPy and Torch seeds are fixed in the setup. The stated confidence intervals describe the reported tests, not between-seed training variance.",
+          "original_locator": "p. 9, §§5.1, 5.2.1–5.2.2; p. 10, Fig. 7"
+        },
+        "code_data": {
+          "status": "PARTIAL",
+          "finding": "The article states that no data were used. The inspected simulation section and end matter do not identify a released implementation.",
+          "original_locator": "pp. 8–9, §5.1; p. 12, Data availability"
+        },
+        "funding_conflicts": {
+          "status": "OBSERVED",
+          "finding": "The authors identify funding and report no known competing financial interests or personal relationships of the stated kind.",
+          "original_locator": "p. 12, Acknowledgments and Declaration of competing interest"
+        },
+        "limitations": {
+          "status": "OBSERVED",
+          "finding": "The discussion identifies limits of binary offloading, the absence of real video or high-fidelity physics, unmodeled packet losses and mobile points of interest, and the need to retrain when the environment changes.",
+          "original_locator": "pp. 11–12, §6"
+        }
+      },
+      "quantitative_rows": [
+        {
+          "metric": "relative reduction in average inference delay",
+          "value": "9.28",
+          "units": "%",
+          "baseline": "MAPPO-DA",
+          "denominator": "MAPPO-DA delay; 50 test episodes reported in §5.2.2",
+          "workload": "Modeled multi-frame video inference workload",
+          "conditions": "2 MHz simulated uplink; modeled accuracy and comparison under §5.1–5.2.2",
+          "page": 9,
+          "locator": "§5.2.2, first percentage in the named baseline list at 2 MHz; Fig. 7 on p. 10",
+          "printed_support": "2 MHz; MAPPO-DA; 9.28% first in the reduction list"
+        }
+      ]
+    },
+    {
+      "report_id": "R0075",
+      "study_id": "S032",
+      "title": "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks",
+      "doi": "10.1109/JIOT.2026.3746980",
+      "path": "restart_2026_11_26/fulltext_retrieval/pdf/R0075.pdf",
+      "sha256": "18d44887a60aadc52dfdea791615ef8ee43952ae3df0cf92687cb80fef54707f",
+      "source_review": "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0075.md",
+      "identity": {
+        "page": 1,
+        "excerpt": "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks",
+        "study_linkage": "restart_2026_11_26/study_linkage/active_report_study_map.csv"
+      },
+      "fields": {
+        "architecture": {
+          "status": "OBSERVED",
+          "finding": "Assistant UAVs compute branches of a multi-exit student model and transmit selected intermediate features. A master forms the final prediction from its own representation and the received features.",
+          "original_locator": "pp. 4–5, §III.A–C"
+        },
+        "workload": {
+          "status": "OBSERVED",
+          "finding": "CIFAR-10 and CIFAR-100 image classification with Wide Residual Network teachers and lighter multi-exit students. The experiment uses classification benchmarks in place of aerial imagery.",
+          "original_locator": "pp. 8–9, §IV.A and Table I; p. 13, §IV.E"
+        },
+        "partition_assignment": {
+          "status": "OBSERVED",
+          "finding": "The offline alignment method assigns ranked teacher feature channels to student branches using device-capacity allocation and deterministic overlap. The master can select different exit depths for different assistants.",
+          "original_locator": "pp. 4–5, §III.C; pp. 6–8, §III.D and Algorithm 1"
+        },
+        "optimization": {
+          "status": "OBSERVED",
+          "finding": "The sequential LinUCB exit router uses confidence and modeled computation, communication and synchronization costs, learns on the validation split and is frozen during testing.",
+          "original_locator": "pp. 6–8, §III.D and Algorithm 1; pp. 9–10, Tables II–III"
+        },
+        "compute_radio": {
+          "status": "OBSERVED",
+          "finding": "Local sequential execution is profiled on a Jetson TX2. The network experiment uses modeled Rician fading and sets or sweeps feature-stream rates.",
+          "original_locator": "pp. 8–9, §IV.A and Table I; p. 11, §IV.C"
+        },
+        "mobility_continuity": {
+          "status": "PARTIAL",
+          "finding": "Time-varying link rates, bandwidth sweeps and assistant waiting are represented. The reported setup does not establish live mobility, a node-failure test or restart performance.",
+          "original_locator": "pp. 8–9, §IV.A; p. 11, §IV.C; p. 13, §IV.E"
+        },
+        "evaluation": {
+          "status": "OBSERVED",
+          "finding": "Hardware profiles feed a simulation with saved channel traces and separate validation/test roles. It is a profiled simulation of routing, with no full distributed on-device deployment reported.",
+          "original_locator": "pp. 8–10, §IV.A–B and Tables I–III; p. 13, §IV.E"
+        },
+        "baselines": {
+          "status": "OBSERVED",
+          "finding": "Random, epsilon-greedy and similarity-based exit, AdaEE, COBEE, Full Final Exit, and Offline Oracle final-agreement are compared. The oracle knows future information and is a reference bound.",
+          "original_locator": "pp. 9–10, §IV.B and Table III"
+        },
+        "outcomes": {
+          "status": "OBSERVED",
+          "finding": "Under Table III conditions CIDER reduces routing-controlled computation and communication latency relative to Full Final Exit and reports lower accuracy than that comparator. The trade-off varies by comparator and dataset. The measured boundary excludes multiple sensing-to-output stages and overheads.",
+          "original_locator": "p. 10, Table III and §IV.B; p. 13, §IV.E"
+        },
+        "variability": {
+          "status": "PARTIAL",
+          "finding": "The analysis includes swarm-size, rate, and other sensitivity tests. Table III gives point results. The confidence-target ablation separately gives dispersion; do not use it as uncertainty for the main comparison.",
+          "original_locator": "pp. 10–13, Table III, §IV.C–D and Table XIV"
+        },
+        "code_data": {
+          "status": "PARTIAL",
+          "finding": "CIFAR-10 and CIFAR-100 are externally sourced benchmarks. The inspected methods, setup and end sections do not identify an author artifact release.",
+          "original_locator": "pp. 4–9, §§III and IV.A; pp. 13–15, §IV.E and end sections"
+        },
+        "funding_conflicts": {
+          "status": "PARTIAL",
+          "finding": "First-page footnote discloses project funding. The inspected first page and end sections do not state a competing-interest declaration.",
+          "original_locator": "p. 1, footnotes; pp. 13–15, §IV.E and end sections"
+        },
+        "limitations": {
+          "status": "OBSERVED",
+          "finding": "The paper defines a limited routing latency boundary and calls for aerial imagery, full-device evaluation and measurement of excluded components. It also identifies scaling, straggler and open-link feature protection concerns.",
+          "original_locator": "pp. 13–14, §IV.E"
+        }
+      },
+      "quantitative_rows": [
+        {
+          "metric": "routing-controlled combined computation and communication latency",
+          "value": "26.85",
+          "units": "ms",
+          "baseline": "Full Final Exit: 38.81 ms",
+          "denominator": "Per-task routing boundary in the validation-learned and test-frozen protocol",
+          "workload": "CIFAR-10; Table I Wide Residual Network teacher and student setting",
+          "conditions": "Jetson TX2 profiles with simulated Rician links; boundary excludes other sensing-to-output elements (§IV.E)",
+          "page": 10,
+          "locator": "Table III, CIFAR-10 CIDER and Full Final Exit rows, Comp.+Comm. column",
+          "printed_support": "CIDER 26.85; Full Final Exit 38.81; Comp.+Comm. (ms)"
+        }
+      ]
+    }
+  ]
+}

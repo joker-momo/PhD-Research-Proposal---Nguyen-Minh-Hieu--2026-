@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:08:13+07:00",
+  "updated_at": "2026-11-27T13:10:23+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_extraction_in_progress",
@@ -11,16 +11,16 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T12:51:10+07:00",
-    "updated_at": "2026-11-27T13:08:13+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_01_locator_review.md",
+    "updated_at": "2026-11-27T13:10:23+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_01_composite_review.md",
     "decision_id": "restart-supplemental-extraction-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-extraction-batch01-semantic-composite",
+    "task_id": "restart-supplemental-extraction-batch02-setup",
     "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Complete per-report source review for R0014, R0058, R0064 and R0075, then cross-check the 91-key composite across all seven reports.",
-    "acceptance": "7/7 sources, 91/91 required fields plus identity, no unsupported comparison or accepted but unresolved key."
+    "action": "Prepare and commit the native P08 supplemental batch 02 brief for the next seven manifest records.",
+    "acceptance": "Exact approved input IDs, stable message identifier, original PDF locators, and current Git source available for one authorized native Task."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -439,7 +439,7 @@
     "supplemental_extraction": {
       "accepted_prior_reports": 25,
       "new_reports_required": 21,
-      "new_reports_accepted": 0,
+      "new_reports_accepted": 7,
       "manifest": "restart_2026_11_26/extraction/supplemental_extraction_manifest.json",
       "batch_01_verdict": "FAIL_EXACT_LOCATORS_AND_JSONL",
       "batch_01_review": "restart_2026_11_26/extraction/supplemental_batch_01_review.md",
@@ -456,7 +456,10 @@
         "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0036.md",
         "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0038.md",
         "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0043.md"
-      ]
+      ],
+      "batch_01_gate": "PASS_COMPOSITE",
+      "batch_01_accepted": "restart_2026_11_26/extraction/supplemental_batch_01_accepted.json",
+      "batch_01_composite_review": "restart_2026_11_26/extraction/supplemental_batch_01_composite_review.md"
     }
   },
   "blockers": [],

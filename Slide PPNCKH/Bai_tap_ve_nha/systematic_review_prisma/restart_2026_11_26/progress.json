@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T13:08:13+07:00",
+  "updated_at": "2026-11-27T13:10:23+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -844,7 +844,13 @@
         "restart_2026_11_26/extraction/supplemental_batch_01_locator_review.md",
         "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0036.md",
         "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0038.md",
-        "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0043.md"
+        "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0043.md",
+        "restart_2026_11_26/extraction/supplemental_batch_01_accepted.json",
+        "restart_2026_11_26/extraction/supplemental_batch_01_composite_review.md",
+        "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0014.md",
+        "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0058.md",
+        "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0064.md",
+        "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0075.md"
       ],
       "acceptance": [
         {
@@ -971,17 +977,18 @@
       "supplemental": {
         "task_id": "restart-supplemental-extraction",
         "status": "active",
-        "updated_at": "2026-11-27T13:08:13+07:00",
+        "updated_at": "2026-11-27T13:10:23+07:00",
         "batch_01_original_gate": "FAIL",
-        "review": "restart_2026_11_26/extraction/supplemental_batch_01_locator_review.md",
-        "accepted_new_reports": 0,
+        "review": "restart_2026_11_26/extraction/supplemental_batch_01_composite_review.md",
+        "accepted_new_reports": 7,
         "batch_01_correction_gate": "FAIL",
         "batch_01_locator_repair_gate": "PASS",
         "batch_01_semantic_notes": [
           "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0036.md",
           "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0038.md",
           "restart_2026_11_26/extraction/supplemental_batch_01_semantic_R0043.md"
-        ]
+        ],
+        "batch_01_gate": "PASS_COMPOSITE"
       }
     },
     {
