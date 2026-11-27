@@ -320,14 +320,19 @@ def report_tex(path, summary, report):
     lines.extend([
         r"\bottomrule\end{longtable}",
         r"\section*{Kiểm tra phản hồi Gemini}",
-        r"\begin{center}\begin{tabular}{rrrrr}\toprule Lô & Số mục dự kiến & Trả về & Neo khớp & Nội dung qua kiểm tra \\ \midrule",
+        r"\begin{center}\begin{tabular}{rrrrrrrr}\toprule Lô & Dự kiến & Trả về & Neo khớp & Qua & Một phần & Trượt & Chưa rà \\ \midrule",
     ])
     for row in summary["batches"]:
         matches = row.get("locator_checks", {}).get("ANCHORS_MATCH", 0)
-        verified = row["semantic"].get("PASS", 0)
-        lines.append(f"{row['batch']} & {row['expected']} & {row['seen']} & {matches} & {verified} \\\\")
+        semantic = row["semantic"]
+        values = [row["batch"], row["expected"], row["seen"], matches,
+                  semantic.get("PASS", 0), semantic.get("PARTIAL", 0),
+                  semantic.get("FAIL", 0), row["semantic_unreviewed"]]
+        lines.append(" & ".join(map(str, values)) + r" \\")
     lines.extend([
         r"\bottomrule\end{tabular}\end{center}",
+        f"Trong các mục Gemini trả về, {sum(b.get('locator_checks', {}).get('GAP_DOCUMENTED', 0) for b in summary['batches'])} mục ghi rõ khoảng trống mà không có trích đoạn. "
+        "Các phán định phần nội dung có thể xác nhận cách ghi khoảng trống nếu nguồn không được cung cấp.",
         "Bảng CSV giữ riêng kết quả Gemini trả về và trạng thái kiểm tra vị trí nguồn. Những dòng thiếu",
         "minh chứng hoặc vẫn chờ đối chiếu ngữ nghĩa cần được đọc lại từ PDF.",
     ])
