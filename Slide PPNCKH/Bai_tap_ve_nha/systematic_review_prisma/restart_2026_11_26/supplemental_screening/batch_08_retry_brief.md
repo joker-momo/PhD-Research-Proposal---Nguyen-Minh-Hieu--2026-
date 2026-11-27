@@ -1,7 +1,7 @@
 # TASK
 Make the first-pass full-text HK261 P03/P06 decisions for the 13 original reports listed below.
 
-Transport correction only. The previous Task a7852db4-723a-4958-aee8-7367b25e7948 failed before any prompt was sent. There is no prior answer for these 13 IDs. Apply the identical scope and output schema below.
+Transport correction only. The previous Task a7852db4-723a-4958-aee8-7367b25e7948 failed before any prompt was sent. The preflight retry 97103e4e-3f92-4dd4-9d7e-d7152638c31d opened no chat because the previous attempt left its folder selection in the empty composer. That selection has been removed. There is no prior answer for these 13 IDs. Apply the identical scope and output schema below.
 
 # REQUIRED WORK
 1. Use one Gemini.app Task and only the named original HK261 PDFs plus the protocol and official metadata sources named here. Read restart_2026_11_26/protocol_restart.md §§P03/P06. Confirm body-page access first. Use original physical PDF pages via PyMuPDF or Poppler where available, then MinerU/Marker locally only for ambiguous layout if available. If unavailable in your environment use the built-in local file reader and state any access limitation. Use only directly visible contiguous excerpts. Identify unavailable reports.

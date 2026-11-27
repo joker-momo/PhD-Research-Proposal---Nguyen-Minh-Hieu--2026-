@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T12:08:37+07:00",
+  "updated_at": "2026-11-27T12:09:42+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "step16_complete_coursework_handoff",
@@ -11,9 +11,9 @@
     "owner": "CODEX_WRITING",
     "status": "completed",
     "started_at": "2026-11-27T10:02:39+07:00",
-    "updated_at": "2026-11-27T12:08:37+07:00",
-    "completed_at": "2026-11-27T12:08:37+07:00",
-    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_08_transport_failure.json",
+    "updated_at": "2026-11-27T12:09:42+07:00",
+    "completed_at": "2026-11-27T12:09:42+07:00",
+    "checkpoint_path": "restart_2026_11_26/supplemental_screening/batch_08_transport_failure_retry.json",
     "decision_id": "restart-supplemental-screening-v1"
   },
   "next_task": {
@@ -23,7 +23,7 @@
     "action": "Run the unchanged 13-report batch 08 first-pass after confirmed pre-send transport failure.",
     "acceptance": "13 exact distinct IDs, seven criteria each and verified original locators.",
     "dispatch_brief": "restart_2026_11_26/supplemental_screening/batch_08_retry_brief.md",
-    "message_id": "5e92a6b0-a09b-4871-b0ec-cfc19fe9eeda"
+    "message_id": "8717bcb2-f94d-439c-be3b-c107cda75fb7"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -383,7 +383,10 @@
       "batch_08_inputs": "restart_2026_11_26/supplemental_screening/batch_08_inputs.json",
       "batch_08_failed_task_uuid": "a7852db4-723a-4958-aee8-7367b25e7948",
       "batch_08_failed_message_id": "c419213a-e5d9-4d1c-b532-8b3996b45cae",
-      "batch_08_transport_failure": "restart_2026_11_26/supplemental_screening/batch_08_transport_failure.json"
+      "batch_08_transport_failure": "restart_2026_11_26/supplemental_screening/batch_08_transport_failure.json",
+      "batch_08_preflight_task_uuid": "97103e4e-3f92-4dd4-9d7e-d7152638c31d",
+      "batch_08_preflight_message_id": "5e92a6b0-a09b-4871-b0ec-cfc19fe9eeda",
+      "batch_08_preflight_failure": "restart_2026_11_26/supplemental_screening/batch_08_transport_failure_retry.json"
     }
   },
   "blockers": [],
