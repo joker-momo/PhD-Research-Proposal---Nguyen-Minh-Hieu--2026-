@@ -1,0 +1,20 @@
+{
+  "task_id": "hk261-borderline-author-review",
+  "message_id": "7765a908-14d9-488f-975e-72eec973b58f",
+  "started_at": "2026-11-27T17:08:12+07:00",
+  "brief": "restart_2026_11_26/integrity/borderline_author_review/brief.md",
+  "prior_next_task": {
+    "task_id": "hk261-r0082-proceedings-version-check",
+    "owner": "CODEX_WRITING",
+    "status": "blocked",
+    "action": "R0082 remains pending under E7 until an authorized IEEE proceedings copy or further author direction is available.",
+    "acceptance": "Reassess the proceedings version against E7 and obtain explicit author confirmation before changing the disposition."
+  },
+  "inputs": {
+    "restart_2026_11_26/fulltext_retrieval/pdf/R0001.pdf": "2ee57ff832a8654732452de77c7fd44d0b3d8120fdf7c8fba9dccaf656f143e0",
+    "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+    "restart_2026_11_26/fulltext_retrieval/pdf/R0145.pdf": "f0ea59d3e401c04a7bca87f2edb3d2979f9551ecba96671b2132142ebf2418b6",
+    "restart_2026_11_26/fulltext_retrieval/pdf/R0223.pdf": "a84f2ecee4ee2ebed195d7601bef280eabff0360da8f5ed355104c872524dfa3",
+    "restart_2026_11_26/fulltext_retrieval/pdf/R0292.pdf": "4e5096ec52cf47a3b7cbd249dd16bd5faa5e5282b82148a64a5d00c72f7acfee"
+  }
+}

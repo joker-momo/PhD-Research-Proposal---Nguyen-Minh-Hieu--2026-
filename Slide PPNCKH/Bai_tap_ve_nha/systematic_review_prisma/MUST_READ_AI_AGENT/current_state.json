@@ -1,27 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T17:03:13+07:00",
+  "updated_at": "2026-11-27T17:09:08+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "alternative_editorial_pdf_ready_for_comparison",
     "summary": "The 29-page HK261 comparison PDF includes the S2 audit as Table 8 on page 24. PRISMA retains 46 included, 89 excluded, and R0082 pending E7."
   },
   "task": {
-    "task_id": "hk261-s2-audit-manuscript-integration",
+    "task_id": "hk261-borderline-author-review-setup",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-27T16:59:38+07:00",
-    "updated_at": "2026-11-27T17:03:13+07:00",
-    "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
-    "decision_id": "hk261-s2-audit-manuscript-integration-v1",
-    "completed_at": "2026-11-27T17:03:13+07:00"
+    "started_at": "2026-11-27T17:08:12+07:00",
+    "updated_at": "2026-11-27T17:09:08+07:00",
+    "completed_at": "2026-11-27T17:09:08+07:00",
+    "decision_id": "hk261-borderline-author-review-setup-v1",
+    "checkpoint_path": "restart_2026_11_26/integrity/borderline_author_review/manifest.json"
   },
   "next_task": {
-    "task_id": "hk261-r0082-proceedings-version-check",
-    "owner": "CODEX_WRITING",
-    "status": "blocked",
-    "action": "R0082 remains pending under E7 until an authorized IEEE proceedings copy or further author direction is available.",
-    "acceptance": "Reassess the proceedings version against E7 and obtain explicit author confirmation before changing the disposition."
+    "task_id": "hk261-borderline-author-review",
+    "owner": "GEMINI_RESEARCH",
+    "status": "ready",
+    "action": "Use one native Gemini.app task to return evidence for five named borderline reports.",
+    "acceptance": "Five accounted-for IDs and 20 traceable criterion assessments or explicit gaps. No PRISMA changes.",
+    "dispatch_brief": "restart_2026_11_26/integrity/borderline_author_review/brief.md",
+    "message_id": "7765a908-14d9-488f-975e-72eec973b58f"
   },
   "project": {
     "target_venue": "SN Computer Science",
