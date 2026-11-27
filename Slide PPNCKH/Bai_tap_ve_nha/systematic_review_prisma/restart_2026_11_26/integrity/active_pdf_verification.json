@@ -1,0 +1,110 @@
+{
+  "pdf_sha256": "7a157b644d1bed6e7e68f8b87235726b6c9ac6903f17fa89807d25a92430cd4a",
+  "pages": 13,
+  "page_inspection": [
+    {
+      "physical_page": 1,
+      "content": "Abstract and Introduction",
+      "pixel_identical_to_step15": false,
+      "pdf_page_render_sha256": "c5a320b83ede3a76989ed4fd9e67d30becbf51c3ecdc90b54ff03c000308fddf",
+      "visual_evidence": "Step 16 direct visual inspection of the final rendered page"
+    },
+    {
+      "physical_page": 2,
+      "content": "Methods, eligibility and search",
+      "pixel_identical_to_step15": true,
+      "pdf_page_render_sha256": "f143d900563a6c3a7f2267bec80d50ac2a75e83e10fe20cbaef20a69c784f977",
+      "visual_evidence": "Step 15 direct visual inspection, confirmed by identical rendered pixels"
+    },
+    {
+      "physical_page": 3,
+      "content": "Extraction and synthesis",
+      "pixel_identical_to_step15": true,
+      "pdf_page_render_sha256": "4cf98249e401ffeb2270bd674754c97caa94504862c98a2efcaf1adf21bed798",
+      "visual_evidence": "Step 15 direct visual inspection, confirmed by identical rendered pixels"
+    },
+    {
+      "physical_page": 4,
+      "content": "PRISMA flow and counts",
+      "pixel_identical_to_step15": false,
+      "pdf_page_render_sha256": "38dce50922ba2739226f09da5c3fcc5974a5925ce471da8c810a9e8f85cdf7b9",
+      "visual_evidence": "Step 16 direct visual inspection of the final rendered page"
+    },
+    {
+      "physical_page": 5,
+      "content": "RQ1–RQ4",
+      "pixel_identical_to_step15": true,
+      "pdf_page_render_sha256": "5be048113508b32789cfe31eafb1d72ecdc3a47d06b4ae9c8a8f1fd22cb18e12",
+      "visual_evidence": "Step 15 direct visual inspection, confirmed by identical rendered pixels"
+    },
+    {
+      "physical_page": 6,
+      "content": "RQ4–RQ5 and outcomes",
+      "pixel_identical_to_step15": true,
+      "pdf_page_render_sha256": "e846fb119b517b34a871e1e9afbb6a4c8e617ce0496942011af50f0ff16b6049",
+      "visual_evidence": "Step 15 direct visual inspection, confirmed by identical rendered pixels"
+    },
+    {
+      "physical_page": 7,
+      "content": "Bibliographic index and appraisal",
+      "pixel_identical_to_step15": true,
+      "pdf_page_render_sha256": "98296455228ffc77c45aab2162b6129032e6534f1a58d05eca4407127cdeef32",
+      "visual_evidence": "Step 15 direct visual inspection, confirmed by identical rendered pixels"
+    },
+    {
+      "physical_page": 8,
+      "content": "Conclusion, declarations and supplements",
+      "pixel_identical_to_step15": true,
+      "pdf_page_render_sha256": "c3738d596be0d55916e99943748326e753164ee746bd8cabdc3ac862872d33b6",
+      "visual_evidence": "Step 15 direct visual inspection, confirmed by identical rendered pixels"
+    },
+    {
+      "physical_page": 9,
+      "content": "References",
+      "pixel_identical_to_step15": true,
+      "pdf_page_render_sha256": "8941738134c4363434d535fa3340c80afe24111509d1568a0317c32a2fce8044",
+      "visual_evidence": "Step 15 direct visual inspection, confirmed by identical rendered pixels"
+    },
+    {
+      "physical_page": 10,
+      "content": "References",
+      "pixel_identical_to_step15": true,
+      "pdf_page_render_sha256": "8160b63c28d4ff74534efc19bc6b368e7a9929600c780658c84115a3990e68ad",
+      "visual_evidence": "Step 15 direct visual inspection, confirmed by identical rendered pixels"
+    },
+    {
+      "physical_page": 11,
+      "content": "References",
+      "pixel_identical_to_step15": true,
+      "pdf_page_render_sha256": "5f4324a9028c95f8980d711cc0e9f55fdde435cf87f940da61113b0e36a918ad",
+      "visual_evidence": "Step 15 direct visual inspection, confirmed by identical rendered pixels"
+    },
+    {
+      "physical_page": 12,
+      "content": "References",
+      "pixel_identical_to_step15": true,
+      "pdf_page_render_sha256": "1dee0bf02e8dc055742e4124198b9910d4f2c086163f0dd20eb1e818328d8a65",
+      "visual_evidence": "Step 15 direct visual inspection, confirmed by identical rendered pixels"
+    },
+    {
+      "physical_page": 13,
+      "content": "References",
+      "pixel_identical_to_step15": true,
+      "pdf_page_render_sha256": "440e1b5325612593b69c952ad46de69b606277e32e5850a5bbf806c755d9ce76",
+      "visual_evidence": "Step 15 direct visual inspection, confirmed by identical rendered pixels"
+    }
+  ],
+  "abstract_word_count_excluding_labels": 174,
+  "doi_uri_count": 46,
+  "renderer": "PyMuPDF 2.0",
+  "comparison_dpi_scale": 1.7,
+  "build_profile": "tectonic 0.16.9 --only-cached --keep-logs --keep-intermediates main.tex",
+  "checklist": {
+    "file": "restart_2026_11_26/prisma/active_prisma_checklist.md",
+    "items": 27,
+    "local_link_occurrences_verified": 45
+  },
+  "bibliography_items_in_resolved_build": 47,
+  "unresolved_citations": 0,
+  "unresolved_references": 0
+}

@@ -1,0 +1,3734 @@
+{
+  "checked_at": "2026-11-27T15:14:11+07:00",
+  "works": [
+    {
+      "id": "R0001",
+      "doi": "10.1109/icws72778.2026.00154",
+      "title": "Adaptive Partition and Resource Allocation for Collaborative Inference Services in UAV Swarm",
+      "authors": [
+        {
+          "given": "Ying",
+          "family": "Dong",
+          "name": ""
+        },
+        {
+          "given": "Jiebei",
+          "family": "Shi",
+          "name": ""
+        },
+        {
+          "given": "Songwei",
+          "family": "Li",
+          "name": ""
+        },
+        {
+          "given": "Yuzhou",
+          "family": "Gao",
+          "name": ""
+        },
+        {
+          "given": "Yeping",
+          "family": "Zhu",
+          "name": ""
+        },
+        {
+          "given": "Jianbing",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Jiwei",
+          "family": "Huang",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026,
+            7
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            7
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "venue": "2026 IEEE International Conference on Web Services (ICWS)",
+      "source": "https://api.crossref.org/works/10.1109/icws72778.2026.00154",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:11+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:15+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/icws72778.2026.00154",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ficws72778.2026.00154&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0002",
+      "doi": "10.1109/icws72778.2026.00067",
+      "title": "Promise: Predictive and Cost-Optimal Migrations for Service-Continuous Edge Intelligence in Multi-UAV Networks",
+      "authors": [
+        {
+          "given": "Jian",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Ming",
+          "family": "Tao",
+          "name": ""
+        },
+        {
+          "given": "Renping",
+          "family": "Xie",
+          "name": ""
+        },
+        {
+          "given": "Yin",
+          "family": "Zhang",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026,
+            7
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            7
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "venue": "2026 IEEE International Conference on Web Services (ICWS)",
+      "source": "https://api.crossref.org/works/10.1109/icws72778.2026.00067",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:10+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:12+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/icws72778.2026.00067",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ficws72778.2026.00067&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0003",
+      "doi": "10.1109/wcsp58612.2023.10405273",
+      "title": "Dynamic DNN Model Switching for Collaborative Edge Intelligence in UAV Swarm",
+      "authors": [
+        {
+          "given": "Yu",
+          "family": "Li",
+          "name": ""
+        },
+        {
+          "given": "Yuben",
+          "family": "Qu",
+          "name": ""
+        },
+        {
+          "given": "Chao",
+          "family": "Dong",
+          "name": ""
+        },
+        {
+          "given": "Fuhui",
+          "family": "Zhou",
+          "name": ""
+        },
+        {
+          "given": "Lei",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Qihui",
+          "family": "Wu",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2023,
+            11,
+            2
+          ]
+        ],
+        "published-print": [
+          [
+            2023,
+            11,
+            2
+          ]
+        ],
+        "issued": [
+          [
+            2023,
+            11,
+            2
+          ]
+        ]
+      },
+      "venue": "2023 International Conference on Wireless Communications and Signal Processing (WCSP)",
+      "source": "https://api.crossref.org/works/10.1109/wcsp58612.2023.10405273",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:16+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:20+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/wcsp58612.2023.10405273",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fwcsp58612.2023.10405273&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0006",
+      "doi": "10.1109/icpads67057.2025.11322921",
+      "title": "Joint UAV Deployment and Model Partition for Efficient Collaborative Inference",
+      "authors": [
+        {
+          "given": "Wenjing",
+          "family": "Xia",
+          "name": ""
+        },
+        {
+          "given": "Tao",
+          "family": "Wu",
+          "name": ""
+        },
+        {
+          "given": "Hongjun",
+          "family": "Wang",
+          "name": ""
+        },
+        {
+          "given": "Ruhao",
+          "family": "Jiang",
+          "name": ""
+        },
+        {
+          "given": "Mingjin",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Yuben",
+          "family": "Qu",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            12,
+            14
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            12,
+            14
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            12,
+            14
+          ]
+        ]
+      },
+      "venue": "2025 IEEE 31th International Conference on Parallel and Distributed Systems (ICPADS)",
+      "source": "https://api.crossref.org/works/10.1109/icpads67057.2025.11322921",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:10+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:13+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/icpads67057.2025.11322921",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ficpads67057.2025.11322921&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0009",
+      "doi": "10.1109/tits.2025.3629117",
+      "title": "Deep Reinforcement Learning-Based Task Offloading With Collaborative Inference in UAV-Assisted Mobile Edge Computing Networks",
+      "authors": [
+        {
+          "given": "Xiangping Bryce",
+          "family": "Zhai",
+          "name": ""
+        },
+        {
+          "given": "Shuang",
+          "family": "Fu",
+          "name": ""
+        },
+        {
+          "given": "Changyan",
+          "family": "Yi",
+          "name": ""
+        },
+        {
+          "given": "Zhiquan",
+          "family": "Liu",
+          "name": ""
+        },
+        {
+          "given": "Chao",
+          "family": "Dong",
+          "name": ""
+        },
+        {
+          "given": "Chee",
+          "family": "Wei Tan",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026,
+            1
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            1
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            1
+          ]
+        ]
+      },
+      "venue": "IEEE Transactions on Intelligent Transportation Systems",
+      "source": "https://api.crossref.org/works/10.1109/tits.2025.3629117",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:13+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:16+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/tits.2025.3629117",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ftits.2025.3629117&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0010",
+      "doi": "10.1109/wcnc57260.2024.10570535",
+      "title": "Efficient Pipeline Collaborative DNN Inference in Resource-Constrained UAV Swarm",
+      "authors": [
+        {
+          "given": "Weiqing",
+          "family": "Ren",
+          "name": ""
+        },
+        {
+          "given": "Yuben",
+          "family": "Qu",
+          "name": ""
+        },
+        {
+          "given": "Zhen",
+          "family": "Qin",
+          "name": ""
+        },
+        {
+          "given": "Chao",
+          "family": "Dong",
+          "name": ""
+        },
+        {
+          "given": "Fuhui",
+          "family": "Zhou",
+          "name": ""
+        },
+        {
+          "given": "Lei",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Qihui",
+          "family": "Wu",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2024,
+            4,
+            21
+          ]
+        ],
+        "published-print": [
+          [
+            2024,
+            4,
+            21
+          ]
+        ],
+        "issued": [
+          [
+            2024,
+            4,
+            21
+          ]
+        ]
+      },
+      "venue": "2024 IEEE Wireless Communications and Networking Conference (WCNC)",
+      "source": "https://api.crossref.org/works/10.1109/wcnc57260.2024.10570535",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:16+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:18+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/wcnc57260.2024.10570535",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fwcnc57260.2024.10570535&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0014",
+      "doi": "10.1109/tmc.2024.3427420",
+      "title": "All-Sky Autonomous Computing in UAV Swarm",
+      "authors": [
+        {
+          "given": "Hao",
+          "family": "Sun",
+          "name": ""
+        },
+        {
+          "given": "Yuben",
+          "family": "Qu",
+          "name": ""
+        },
+        {
+          "given": "Chao",
+          "family": "Dong",
+          "name": ""
+        },
+        {
+          "given": "Haipeng",
+          "family": "Dai",
+          "name": ""
+        },
+        {
+          "given": "Zhenhua",
+          "family": "Li",
+          "name": ""
+        },
+        {
+          "given": "Lei",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Qihui",
+          "family": "Wu",
+          "name": ""
+        },
+        {
+          "given": "Song",
+          "family": "Guo",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2024,
+            12
+          ]
+        ],
+        "published-print": [
+          [
+            2024,
+            12
+          ]
+        ],
+        "issued": [
+          [
+            2024,
+            12
+          ]
+        ]
+      },
+      "venue": "IEEE Transactions on Mobile Computing",
+      "source": "https://api.crossref.org/works/10.1109/tmc.2024.3427420",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:35+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:36+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/tmc.2024.3427420",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ftmc.2024.3427420&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0015",
+      "doi": "10.1109/bigcom61073.2023.00034",
+      "title": "Energy-Efficient Collaborative DNN Inference in UAV Swarm",
+      "authors": [
+        {
+          "given": "Weiqing",
+          "family": "Ren",
+          "name": ""
+        },
+        {
+          "given": "Yuben",
+          "family": "Qu",
+          "name": ""
+        },
+        {
+          "given": "Zhen",
+          "family": "Qin",
+          "name": ""
+        },
+        {
+          "given": "Chao",
+          "family": "Dong",
+          "name": ""
+        },
+        {
+          "given": "Hao",
+          "family": "Sun",
+          "name": ""
+        },
+        {
+          "given": "Lei",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Qihui",
+          "family": "Wu",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2023,
+            8,
+            4
+          ]
+        ],
+        "published-print": [
+          [
+            2023,
+            8,
+            4
+          ]
+        ],
+        "issued": [
+          [
+            2023,
+            8,
+            4
+          ]
+        ]
+      },
+      "venue": "2023 9th International Conference on Big Data Computing and Communications (BigCom)",
+      "source": "https://api.crossref.org/works/10.1109/bigcom61073.2023.00034",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:16+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:18+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/bigcom61073.2023.00034",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fbigcom61073.2023.00034&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0019",
+      "doi": "10.1109/jiot.2022.3231341",
+      "title": "Deep Reinforcement Learning for Trajectory Path Planning and Distributed Inference in Resource-Constrained UAV Swarms",
+      "authors": [
+        {
+          "given": "Marwan Abdou",
+          "family": "Dhuheir",
+          "name": ""
+        },
+        {
+          "given": "Emna",
+          "family": "Baccour",
+          "name": ""
+        },
+        {
+          "given": "Aiman",
+          "family": "Erbad",
+          "name": ""
+        },
+        {
+          "given": "Sinan Sabeeh",
+          "family": "Al-Obaidi",
+          "name": ""
+        },
+        {
+          "given": "Mounir",
+          "family": "Hamdi",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2023,
+            5,
+            1
+          ]
+        ],
+        "published-print": [
+          [
+            2023,
+            5,
+            1
+          ]
+        ],
+        "issued": [
+          [
+            2023,
+            5,
+            1
+          ]
+        ]
+      },
+      "venue": "IEEE Internet of Things Journal",
+      "source": "https://api.crossref.org/works/10.1109/jiot.2022.3231341",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:16+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:18+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/jiot.2022.3231341",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fjiot.2022.3231341&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0022",
+      "doi": "10.1109/icct67417.2025.11374232",
+      "title": "Multi-UAV Collaborative Model Inference Based on Hierarchical Reinforcement Learning",
+      "authors": [
+        {
+          "given": "Xinchen",
+          "family": "Li",
+          "name": ""
+        },
+        {
+          "given": "Chen",
+          "family": "Xu",
+          "name": ""
+        },
+        {
+          "given": "Lidong",
+          "family": "Ma",
+          "name": ""
+        },
+        {
+          "given": "Wenfei",
+          "family": "Yuan",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            10,
+            16
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            10,
+            16
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            10,
+            16
+          ]
+        ]
+      },
+      "venue": "2025 IEEE 25th International Conference on Communication Technology (ICCT)",
+      "source": "https://api.crossref.org/works/10.1109/icct67417.2025.11374232",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:17+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:25+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/icct67417.2025.11374232",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ficct67417.2025.11374232&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0029",
+      "doi": "10.1109/iwcmc55113.2022.9824945",
+      "title": "Reliable DNN Partitioning for UAV Swarm",
+      "authors": [
+        {
+          "given": "Mingyue",
+          "family": "Zhao",
+          "name": ""
+        },
+        {
+          "given": "Xing",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Zezhao",
+          "family": "Meng",
+          "name": ""
+        },
+        {
+          "given": "Xiangwang",
+          "family": "Hou",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2022,
+            5,
+            30
+          ]
+        ],
+        "published-print": [
+          [
+            2022,
+            5,
+            30
+          ]
+        ],
+        "issued": [
+          [
+            2022,
+            5,
+            30
+          ]
+        ]
+      },
+      "venue": "2022 International Wireless Communications and Mobile Computing (IWCMC)",
+      "source": "https://api.crossref.org/works/10.1109/iwcmc55113.2022.9824945",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:19+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:21+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/iwcmc55113.2022.9824945",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fiwcmc55113.2022.9824945&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0036",
+      "doi": "10.1109/tccn.2025.3641511",
+      "title": "Wider Eyes in the Sky: Scene-Adaptive Video Analytics in Low-Altitude Surveillance Networks",
+      "authors": [
+        {
+          "given": "Liang",
+          "family": "Li",
+          "name": ""
+        },
+        {
+          "given": "Wen",
+          "family": "Wu",
+          "name": ""
+        },
+        {
+          "given": "Shanxiang",
+          "family": "Fang",
+          "name": ""
+        },
+        {
+          "given": "Sihua",
+          "family": "Wang",
+          "name": ""
+        },
+        {
+          "given": "Changchuan",
+          "family": "Yin",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026
+          ]
+        ],
+        "published-print": [
+          [
+            2026
+          ]
+        ],
+        "issued": [
+          [
+            2026
+          ]
+        ]
+      },
+      "venue": "IEEE Transactions on Cognitive Communications and Networking",
+      "source": "https://api.crossref.org/works/10.1109/tccn.2025.3641511",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:35+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:36+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/tccn.2025.3641511",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ftccn.2025.3641511&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0038",
+      "doi": "10.1109/wincom65874.2025.11313424",
+      "title": "On Convolutional Neural Networks for Mini UAV Swarms",
+      "authors": [
+        {
+          "given": "Ryan",
+          "family": "McCarthy",
+          "name": ""
+        },
+        {
+          "given": "Noor",
+          "family": "Ahmed",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            11,
+            25
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            11,
+            25
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            11,
+            25
+          ]
+        ]
+      },
+      "venue": "2025 12th International Conference on Wireless Networks and Mobile Communications (WINCOM)",
+      "source": "https://api.crossref.org/works/10.1109/wincom65874.2025.11313424",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:37+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:38+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/wincom65874.2025.11313424",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fwincom65874.2025.11313424&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0043",
+      "doi": "10.1109/ucom59132.2023.10257649",
+      "title": "Multi-UAV Maritime Search and Rescue with DNN Inference Acceleration",
+      "authors": [
+        {
+          "given": "Tingting",
+          "family": "Yang",
+          "name": ""
+        },
+        {
+          "given": "Hongjian",
+          "family": "He",
+          "name": ""
+        },
+        {
+          "given": "Lingzheng",
+          "family": "Kong",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2023,
+            7,
+            7
+          ]
+        ],
+        "published-print": [
+          [
+            2023,
+            7,
+            7
+          ]
+        ],
+        "issued": [
+          [
+            2023,
+            7,
+            7
+          ]
+        ]
+      },
+      "venue": "2023 International Conference on Ubiquitous Communication (Ucom)",
+      "source": "https://api.crossref.org/works/10.1109/ucom59132.2023.10257649",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:39+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:41+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/ucom59132.2023.10257649",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fucom59132.2023.10257649&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0044",
+      "doi": "10.1109/ispce-asia64773.2024.10756252",
+      "title": "DNN-Based Task Partitioning and Offloading with Reliability Guarantees in Multi-UAV-Assisted MEC System",
+      "authors": [
+        {
+          "given": "Ling",
+          "family": "Wang",
+          "name": ""
+        },
+        {
+          "given": "Junhua",
+          "family": "Wang",
+          "name": ""
+        },
+        {
+          "given": "Chen",
+          "family": "Dai",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2024,
+            10,
+            25
+          ]
+        ],
+        "published-print": [
+          [
+            2024,
+            10,
+            25
+          ]
+        ],
+        "issued": [
+          [
+            2024,
+            10,
+            25
+          ]
+        ]
+      },
+      "venue": "2024 IEEE International Symposium on Product Compliance Engineering - Asia (ISPCE-ASIA)",
+      "source": "https://api.crossref.org/works/10.1109/ispce-asia64773.2024.10756252",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:19+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:27+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/ispce-asia64773.2024.10756252",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fispce-asia64773.2024.10756252&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0045",
+      "doi": "10.1109/jiot.2026.3685675",
+      "title": "DNN Task Partitioning and Migration Strategies in Multi-UAV-Assisted Mobile Edge Computing",
+      "authors": [
+        {
+          "given": "Shuman",
+          "family": "Meng",
+          "name": ""
+        },
+        {
+          "given": "Bin",
+          "family": "Li",
+          "name": ""
+        },
+        {
+          "given": "Zhao",
+          "family": "Yi",
+          "name": ""
+        },
+        {
+          "given": "Lei",
+          "family": "Liu",
+          "name": ""
+        },
+        {
+          "given": "Zesong",
+          "family": "Fei",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026,
+            7,
+            1
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            7,
+            1
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            7,
+            1
+          ]
+        ]
+      },
+      "venue": "IEEE Internet of Things Journal",
+      "source": "https://api.crossref.org/works/10.1109/jiot.2026.3685675",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:19+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:23+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/jiot.2026.3685675",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fjiot.2026.3685675&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0048",
+      "doi": "10.1109/tgcn.2025.3625726",
+      "title": "Toward Inference Latency Optimization for Scalable Collaborative Multi-UAV Analytics",
+      "authors": [
+        {
+          "given": "Ying",
+          "family": "Wang",
+          "name": ""
+        },
+        {
+          "given": "Jingling",
+          "family": "Yuan",
+          "name": ""
+        },
+        {
+          "given": "Wenbo",
+          "family": "Wu",
+          "name": ""
+        },
+        {
+          "given": "Quanfeng",
+          "family": "Yao",
+          "name": ""
+        },
+        {
+          "given": "Donglei",
+          "family": "Xu",
+          "name": ""
+        },
+        {
+          "given": "Zhishu",
+          "family": "Shen",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026
+          ]
+        ],
+        "published-print": [
+          [
+            2026
+          ]
+        ],
+        "issued": [
+          [
+            2026
+          ]
+        ]
+      },
+      "venue": "IEEE Transactions on Green Communications and Networking",
+      "source": "https://api.crossref.org/works/10.1109/tgcn.2025.3625726",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:21+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:23+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/tgcn.2025.3625726",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ftgcn.2025.3625726&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0054",
+      "doi": "10.1109/lwc.2026.3743641",
+      "title": "Heading-Coupled STAR-RIS Assisted Multi-UAV Networks for Semantic ISCC",
+      "authors": [
+        {
+          "given": "Menghui",
+          "family": "Shen",
+          "name": ""
+        },
+        {
+          "given": "Honggui",
+          "family": "Deng",
+          "name": ""
+        },
+        {
+          "given": "Shujiang",
+          "family": "Zeng",
+          "name": ""
+        },
+        {
+          "given": "Jingyue",
+          "family": "Fang",
+          "name": ""
+        },
+        {
+          "given": "Yuxiang",
+          "family": "Deng",
+          "name": ""
+        },
+        {
+          "given": "Dehua",
+          "family": "Wu",
+          "name": ""
+        },
+        {
+          "given": "Yun",
+          "family": "Ou",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026
+          ]
+        ],
+        "published-print": [
+          [
+            2026
+          ]
+        ],
+        "issued": [
+          [
+            2026
+          ]
+        ]
+      },
+      "venue": "IEEE Wireless Communications Letters",
+      "source": "https://api.crossref.org/works/10.1109/lwc.2026.3743641",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:22+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:26+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/lwc.2026.3743641",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Flwc.2026.3743641&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0058",
+      "doi": "10.1142/s0218126626440020",
+      "title": "Efficient AI Inference Offloading for UAVs via Distributed Auctions in Dynamic Edge Environments",
+      "authors": [
+        {
+          "given": "Yi",
+          "family": "Yang",
+          "name": ""
+        },
+        {
+          "given": "Hao",
+          "family": "Liu",
+          "name": ""
+        },
+        {
+          "given": "Peng",
+          "family": "Wang",
+          "name": ""
+        },
+        {
+          "given": "Xiuping",
+          "family": "Li",
+          "name": ""
+        },
+        {
+          "given": "Wen",
+          "family": "Sun",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            12,
+            6
+          ]
+        ],
+        "published-online": [
+          [
+            2025,
+            12,
+            6
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            12,
+            6
+          ]
+        ]
+      },
+      "venue": "Journal of Circuits, Systems and Computers",
+      "source": "https://api.crossref.org/works/10.1142/s0218126626440020",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:37+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:39+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1142/s0218126626440020",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1142%2Fs0218126626440020&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0059",
+      "doi": "10.1016/j.cja.2025.103564",
+      "title": "Adaptive model switching of collaborative inference for multi-CNN streams in UAV swarm",
+      "authors": [
+        {
+          "given": "Yu",
+          "family": "LI",
+          "name": ""
+        },
+        {
+          "given": "Yuben",
+          "family": "QU",
+          "name": ""
+        },
+        {
+          "given": "Chao",
+          "family": "DONG",
+          "name": ""
+        },
+        {
+          "given": "Zhen",
+          "family": "QIN",
+          "name": ""
+        },
+        {
+          "given": "Lei",
+          "family": "ZHANG",
+          "name": ""
+        },
+        {
+          "given": "Qihui",
+          "family": "WU",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            8
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            8
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            8
+          ]
+        ]
+      },
+      "venue": "Chinese Journal of Aeronautics",
+      "source": "https://api.crossref.org/works/10.1016/j.cja.2025.103564",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:24+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:32+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.1016/elsevier_cm_policy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1016/j.cja.2025.103564",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1016%2Fj.cja.2025.103564&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0062",
+      "doi": "10.1109/mcom.002.2300129",
+      "title": "Elastic Collaborative Edge Intelligence for UAV Swarm: Architecture, Challenges, and Opportunities",
+      "authors": [
+        {
+          "given": "Yuben",
+          "family": "Qu",
+          "name": ""
+        },
+        {
+          "given": "Hao",
+          "family": "Sun",
+          "name": ""
+        },
+        {
+          "given": "Chao",
+          "family": "Dong",
+          "name": ""
+        },
+        {
+          "given": "Jiawen",
+          "family": "Kang",
+          "name": ""
+        },
+        {
+          "given": "Haipeng",
+          "family": "Dai",
+          "name": ""
+        },
+        {
+          "given": "Qihui",
+          "family": "Wu",
+          "name": ""
+        },
+        {
+          "given": "Song",
+          "family": "Guo",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2024,
+            1
+          ]
+        ],
+        "published-print": [
+          [
+            2024,
+            1
+          ]
+        ],
+        "issued": [
+          [
+            2024,
+            1
+          ]
+        ]
+      },
+      "venue": "IEEE Communications Magazine",
+      "source": "https://api.crossref.org/works/10.1109/mcom.002.2300129",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:24+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:28+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/mcom.002.2300129",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fmcom.002.2300129&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0063",
+      "doi": "10.3389/fnbot.2026.1799054",
+      "title": "A cognitive synergetic hierarchical framework for UAV swarm combat via speculative inference and role-decoupled reinforcement learning",
+      "authors": [
+        {
+          "given": "Lixa",
+          "family": "Wang",
+          "name": ""
+        },
+        {
+          "given": "Yunqing",
+          "family": "Liu",
+          "name": ""
+        },
+        {
+          "given": "Linyang",
+          "family": "Guo",
+          "name": ""
+        },
+        {
+          "given": "Ran",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Yu",
+          "family": "Cui",
+          "name": ""
+        },
+        {
+          "given": "Yihan",
+          "family": "Cui",
+          "name": ""
+        },
+        {
+          "given": "Chunlin",
+          "family": "Xu",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026,
+            5,
+            19
+          ]
+        ],
+        "published-online": [
+          [
+            2026,
+            5,
+            19
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            5,
+            19
+          ]
+        ]
+      },
+      "venue": "Frontiers in Neurorobotics",
+      "source": "https://api.crossref.org/works/10.3389/fnbot.2026.1799054",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:14:05+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:14:09+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.3389/crossmark-policy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.3389/fnbot.2026.1799054",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.3389%2Ffnbot.2026.1799054&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0064",
+      "doi": "10.1016/j.comnet.2025.111540",
+      "title": "Joint optimization of data sensing and computing in the air–ground collaborative inference framework: A multi-agent hybrid-action DRL approach",
+      "authors": [
+        {
+          "given": "Xiaokun",
+          "family": "Fan",
+          "name": ""
+        },
+        {
+          "given": "Yali",
+          "family": "Chen",
+          "name": ""
+        },
+        {
+          "given": "Min",
+          "family": "Liu",
+          "name": ""
+        },
+        {
+          "given": "Yuchen",
+          "family": "Zhu",
+          "name": ""
+        },
+        {
+          "given": "Zhongcheng",
+          "family": "Li",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            10
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            10
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            10
+          ]
+        ]
+      },
+      "venue": "Computer Networks",
+      "source": "https://api.crossref.org/works/10.1016/j.comnet.2025.111540",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:14:05+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:14:06+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.1016/elsevier_cm_policy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1016/j.comnet.2025.111540",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1016%2Fj.comnet.2025.111540&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0068",
+      "doi": "10.1109/access.2025.3572036",
+      "title": "Multi-Agent Meta Reinforcement Learning for Reliable and Low-Latency Distributed Inference in Resource-Constrained UAV Swarms",
+      "authors": [
+        {
+          "given": "Marwan",
+          "family": "Dhuheir",
+          "name": ""
+        },
+        {
+          "given": "Aiman",
+          "family": "Erbad",
+          "name": ""
+        },
+        {
+          "given": "Bechir",
+          "family": "Hamdaoui",
+          "name": ""
+        },
+        {
+          "given": "Samir Brahim",
+          "family": "Belhaouari",
+          "name": ""
+        },
+        {
+          "given": "Mohsen",
+          "family": "Guizani",
+          "name": ""
+        },
+        {
+          "given": "Thang X.",
+          "family": "Vu",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025
+          ]
+        ],
+        "published-print": [
+          [
+            2025
+          ]
+        ],
+        "issued": [
+          [
+            2025
+          ]
+        ]
+      },
+      "venue": "IEEE Access",
+      "source": "https://api.crossref.org/works/10.1109/access.2025.3572036",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:27+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:28+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/access.2025.3572036",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Faccess.2025.3572036&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0071",
+      "doi": "10.1109/icc52391.2025.11162059",
+      "title": "LE-MHAPPO-Enhanced DNN Task Partitioning in Energy-Harvesting Heterogeneous UAV Swarms",
+      "authors": [
+        {
+          "given": "Ke",
+          "family": "Gao",
+          "name": ""
+        },
+        {
+          "given": "Jun",
+          "family": "Du",
+          "name": ""
+        },
+        {
+          "given": "Chunxiao",
+          "family": "Jiang",
+          "name": ""
+        },
+        {
+          "given": "Debashisha",
+          "family": "Mishra",
+          "name": ""
+        },
+        {
+          "given": "Chao",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Merouane",
+          "family": "Debbah",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            6,
+            8
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            6,
+            8
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            6,
+            8
+          ]
+        ]
+      },
+      "venue": "ICC 2025 - IEEE International Conference on Communications",
+      "source": "https://api.crossref.org/works/10.1109/icc52391.2025.11162059",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:28+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:30+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/icc52391.2025.11162059",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ficc52391.2025.11162059&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0073",
+      "doi": "10.3390/app142310832",
+      "title": "End-to-End Latency Optimization for Resilient Distributed Convolutional Neural Network Inference in Resource-Constrained Unmanned Aerial Vehicle Swarms",
+      "authors": [
+        {
+          "given": "Jeongho",
+          "family": "Kim",
+          "name": ""
+        },
+        {
+          "given": "Joonho",
+          "family": "Seon",
+          "name": ""
+        },
+        {
+          "given": "Soohyun",
+          "family": "Kim",
+          "name": ""
+        },
+        {
+          "given": "Seongwoo",
+          "family": "Lee",
+          "name": ""
+        },
+        {
+          "given": "Jinwook",
+          "family": "Kim",
+          "name": ""
+        },
+        {
+          "given": "Byungsun",
+          "family": "Hwang",
+          "name": ""
+        },
+        {
+          "given": "Youngghyu",
+          "family": "Sun",
+          "name": ""
+        },
+        {
+          "given": "Jinyoung",
+          "family": "Kim",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2024,
+            11,
+            22
+          ]
+        ],
+        "published-online": [
+          [
+            2024,
+            11,
+            22
+          ]
+        ],
+        "issued": [
+          [
+            2024,
+            11,
+            22
+          ]
+        ]
+      },
+      "venue": "Applied Sciences",
+      "source": "https://api.crossref.org/works/10.3390/app142310832",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:14:05+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:14:06+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.3390/mdpi_crossmark_policy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.3390/app142310832",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.3390%2Fapp142310832&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0074",
+      "doi": "10.3390/drones10060410",
+      "title": "Orion: A Collaborative Edge Inference Framework for Large Language Models Processing Multi-Sensor Data in UAV Swarms",
+      "authors": [
+        {
+          "given": "Tianchou",
+          "family": "Yang",
+          "name": ""
+        },
+        {
+          "given": "Hongjie",
+          "family": "Guo",
+          "name": ""
+        },
+        {
+          "given": "Zhengyu",
+          "family": "Zhao",
+          "name": ""
+        },
+        {
+          "given": "Donglin",
+          "family": "Zhu",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026,
+            5,
+            26
+          ]
+        ],
+        "published-online": [
+          [
+            2026,
+            5,
+            26
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            5,
+            26
+          ]
+        ]
+      },
+      "venue": "Drones",
+      "source": "https://api.crossref.org/works/10.3390/drones10060410",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:29+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:31+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.3390/mdpi_crossmark_policy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.3390/drones10060410",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.3390%2Fdrones10060410&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0075",
+      "doi": "10.1109/jiot.2026.3746980",
+      "title": "CIDER: Collaborative Inference with Distilled Early-Exit Routing for Multi-UAV Edge Networks",
+      "authors": [
+        {
+          "given": "Lianming",
+          "family": "Xu",
+          "name": ""
+        },
+        {
+          "given": "Yixue",
+          "family": "Liang",
+          "name": ""
+        },
+        {
+          "given": "Lei",
+          "family": "Jin",
+          "name": ""
+        },
+        {
+          "given": "Li",
+          "family": "Wang",
+          "name": ""
+        },
+        {
+          "given": "Ying-Jun Angela",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Xiaoyu",
+          "family": "Zhao",
+          "name": ""
+        },
+        {
+          "given": "Aiguo",
+          "family": "Fei",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026
+          ]
+        ],
+        "published-print": [
+          [
+            2026
+          ]
+        ],
+        "issued": [
+          [
+            2026
+          ]
+        ]
+      },
+      "venue": "IEEE Internet of Things Journal",
+      "source": "https://api.crossref.org/works/10.1109/jiot.2026.3746980",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:40+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:41+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/jiot.2026.3746980",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fjiot.2026.3746980&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0077",
+      "doi": "10.1016/j.sysarc.2026.103804",
+      "title": "Distributed split computing using diffusive metrics for UAV swarms",
+      "authors": [
+        {
+          "given": "Talip Tolga",
+          "family": "Sarı",
+          "name": ""
+        },
+        {
+          "given": "Gökhan",
+          "family": "Seçinti",
+          "name": ""
+        },
+        {
+          "given": "Angelo",
+          "family": "Trotta",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026,
+            7
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            7
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "venue": "Journal of Systems Architecture",
+      "source": "https://api.crossref.org/works/10.1016/j.sysarc.2026.103804",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:40+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:48+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.1016/elsevier_cm_policy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1016/j.sysarc.2026.103804",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1016%2Fj.sysarc.2026.103804&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0080",
+      "doi": "10.1109/vtc2025-fall65116.2025.11310097",
+      "title": "Edge-Cloud Collaborative Model Inference for Aerial Networks with Distributionally Diverse Data",
+      "authors": [
+        {
+          "given": "Nanqian",
+          "family": "Jia",
+          "name": ""
+        },
+        {
+          "given": "Shuhang",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Lingyang",
+          "family": "Song",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            10,
+            19
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            10,
+            19
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            10,
+            19
+          ]
+        ]
+      },
+      "venue": "2025 IEEE 102nd Vehicular Technology Conference (VTC2025-Fall)",
+      "source": "https://api.crossref.org/works/10.1109/vtc2025-fall65116.2025.11310097",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:43+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:45+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/vtc2025-fall65116.2025.11310097",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fvtc2025-fall65116.2025.11310097&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0083",
+      "doi": "10.1016/j.iot.2024.101479",
+      "title": "Distributed inference in IoT-based aerial network of UAVs",
+      "authors": [
+        {
+          "given": "HyungBin",
+          "family": "Park",
+          "name": ""
+        },
+        {
+          "given": "SuKyoung",
+          "family": "Lee",
+          "name": ""
+        },
+        {
+          "given": "ShinYoung",
+          "family": "Cho",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            3
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            3
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            3
+          ]
+        ]
+      },
+      "venue": "Internet of Things",
+      "source": "https://api.crossref.org/works/10.1016/j.iot.2024.101479",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:31+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:33+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.1016/elsevier_cm_policy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1016/j.iot.2024.101479",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1016%2Fj.iot.2024.101479&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0089",
+      "doi": "10.1016/j.phycom.2023.102129",
+      "title": "A hybrid fast inference approach with distributed neural networks for edge computing enabled UAV swarm",
+      "authors": [
+        {
+          "given": "Peng",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Hui",
+          "family": "Tian",
+          "name": ""
+        },
+        {
+          "given": "Hao",
+          "family": "Luo",
+          "name": ""
+        },
+        {
+          "given": "XingWang",
+          "family": "Li",
+          "name": ""
+        },
+        {
+          "given": "GaoFeng",
+          "family": "Nie",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2023,
+            10
+          ]
+        ],
+        "published-print": [
+          [
+            2023,
+            10
+          ]
+        ],
+        "issued": [
+          [
+            2023,
+            10
+          ]
+        ]
+      },
+      "venue": "Physical Communication",
+      "source": "https://api.crossref.org/works/10.1016/j.phycom.2023.102129",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:32+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:34+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.1016/elsevier_cm_policy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1016/j.phycom.2023.102129",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1016%2Fj.phycom.2023.102129&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0090",
+      "doi": "10.1109/icoeit63558.2025.11457712",
+      "title": "Aeroagrinet: Swarm-Enabled Flying Edge Framework for Real-Time Agricultural Intelligence",
+      "authors": [
+        {
+          "given": "Mohammad Shahnawaz",
+          "family": "Shaikh",
+          "name": ""
+        },
+        {
+          "given": "Sumersing D",
+          "family": "Patil",
+          "name": ""
+        },
+        {
+          "given": "Prabhat",
+          "family": "Parashar",
+          "name": ""
+        },
+        {
+          "given": "Aparajita",
+          "family": "Biswal",
+          "name": ""
+        },
+        {
+          "given": "Syed Ibad",
+          "family": "Ali",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            7,
+            4
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            7,
+            4
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            7,
+            4
+          ]
+        ]
+      },
+      "venue": "2025 International Conference on Engineering Innovations and Technologies (ICoEIT)",
+      "source": "https://api.crossref.org/works/10.1109/icoeit63558.2025.11457712",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:43+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:46+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/icoeit63558.2025.11457712",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ficoeit63558.2025.11457712&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0092",
+      "doi": "10.1109/jiot.2026.3740035",
+      "title": "A DRL-Assisted Decentralized Framework for UAV Swarm Collaborative Inference",
+      "authors": [
+        {
+          "given": "Songwei",
+          "family": "Li",
+          "name": ""
+        },
+        {
+          "given": "Zhihan",
+          "family": "Wang",
+          "name": ""
+        },
+        {
+          "given": "Jiebei",
+          "family": "Shi",
+          "name": ""
+        },
+        {
+          "given": "Jiwei",
+          "family": "Huang",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026
+          ]
+        ],
+        "published-print": [
+          [
+            2026
+          ]
+        ],
+        "issued": [
+          [
+            2026
+          ]
+        ]
+      },
+      "venue": "IEEE Internet of Things Journal",
+      "source": "https://api.crossref.org/works/10.1109/jiot.2026.3740035",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:45+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:47+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/jiot.2026.3740035",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fjiot.2026.3740035&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0095",
+      "doi": "10.1016/j.adhoc.2026.104347",
+      "title": "Multi-UAV cooperative inference for IoVs: Dynamic partitioning and caching optimization",
+      "authors": [
+        {
+          "given": "Qiutian",
+          "family": "Xu",
+          "name": ""
+        },
+        {
+          "given": "Chao",
+          "family": "Yang",
+          "name": ""
+        },
+        {
+          "given": "Xuandong",
+          "family": "Lai",
+          "name": ""
+        },
+        {
+          "given": "Yi",
+          "family": "Liu",
+          "name": ""
+        },
+        {
+          "given": "Xin",
+          "family": "Chen",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026,
+            12
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            12
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            12
+          ]
+        ]
+      },
+      "venue": "Ad Hoc Networks",
+      "source": "https://api.crossref.org/works/10.1016/j.adhoc.2026.104347",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:35+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:44+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.1016/elsevier_cm_policy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1016/j.adhoc.2026.104347",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1016%2Fj.adhoc.2026.104347&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0106",
+      "doi": "10.1109/twc.2025.3573654",
+      "title": "Robust Group Target Awareness Inference in Multi-UAV-Enabled ISCC Networks Based on Split Deep Reinforcement Learning",
+      "authors": [
+        {
+          "given": "Baolin",
+          "family": "Yin",
+          "name": ""
+        },
+        {
+          "given": "Xuming",
+          "family": "Fang",
+          "name": ""
+        },
+        {
+          "given": "Xianbin",
+          "family": "Wang",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            11
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            11
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            11
+          ]
+        ]
+      },
+      "venue": "IEEE Transactions on Wireless Communications",
+      "source": "https://api.crossref.org/works/10.1109/twc.2025.3573654",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:52+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:54+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/twc.2025.3573654",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ftwc.2025.3573654&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0107",
+      "doi": "10.1109/tvt.2026.3733130",
+      "title": "Joint Semantic Compression and Resource Allocation for Multi-UAV Networks: A Knowledge-Guided Reinforcement Learning Approach",
+      "authors": [
+        {
+          "given": "Lin",
+          "family": "Du",
+          "name": ""
+        },
+        {
+          "given": "Wenji",
+          "family": "He",
+          "name": ""
+        },
+        {
+          "given": "Haipeng",
+          "family": "Yao",
+          "name": ""
+        },
+        {
+          "given": "Yu",
+          "family": "Liu",
+          "name": ""
+        },
+        {
+          "given": "Xiaoxu",
+          "family": "Ren",
+          "name": ""
+        },
+        {
+          "given": "Chao",
+          "family": "Qiu",
+          "name": ""
+        },
+        {
+          "given": "Jiangtian",
+          "family": "Nie",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026
+          ]
+        ],
+        "published-print": [
+          [
+            2026
+          ]
+        ],
+        "issued": [
+          [
+            2026
+          ]
+        ]
+      },
+      "venue": "IEEE Transactions on Vehicular Technology",
+      "source": "https://api.crossref.org/works/10.1109/tvt.2026.3733130",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:48+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:56+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/tvt.2026.3733130",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ftvt.2026.3733130&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0110",
+      "doi": "10.1109/tvt.2026.3755123",
+      "title": "RDI-LLM: A Resilient Distributed Inference Framework for LLMs in Resource-Constrained UAV Swarms",
+      "authors": [
+        {
+          "given": "Shengjie",
+          "family": "Zhong",
+          "name": ""
+        },
+        {
+          "given": "Zhongliang",
+          "family": "Zhao",
+          "name": ""
+        },
+        {
+          "given": "Jingxuan",
+          "family": "Chen",
+          "name": ""
+        },
+        {
+          "given": "Xianbin",
+          "family": "Cao",
+          "name": ""
+        },
+        {
+          "given": "Zhiyi",
+          "family": "Liu",
+          "name": ""
+        },
+        {
+          "given": "Dapeng O.",
+          "family": "Wu",
+          "name": ""
+        },
+        {
+          "given": "Tony Q. S.",
+          "family": "Quek",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026
+          ]
+        ],
+        "published-print": [
+          [
+            2026
+          ]
+        ],
+        "issued": [
+          [
+            2026
+          ]
+        ]
+      },
+      "venue": "IEEE Transactions on Vehicular Technology",
+      "source": "https://api.crossref.org/works/10.1109/tvt.2026.3755123",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:47+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:49+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/tvt.2026.3755123",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ftvt.2026.3755123&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0113",
+      "doi": "DOI_NOT_FOUND",
+      "identity": "VERIFIED_PUBLISHER_AND_PDF_NO_VALID_DOI",
+      "title": "A Neuromorphic Spiking Neural Network-Based Continual Learning Framework for Energy-Efficient Edge Intelligence in Autonomous UAV Swarm Navigation",
+      "authors": [
+        "Singareddy Hemasri",
+        "K.S. Raghavendra Reddy"
+      ],
+      "year": 2026,
+      "venue": "American Journal of AI Cyber Computing Management",
+      "source": "https://ajaccm.com/journal/index.php/ajaccm/article/view/771",
+      "publisher_http": 200,
+      "publisher_html_sha256": "095ada5034561d69060399271af7616866966c478d48b849cd60cef5c4db3d2b",
+      "publisher_citation_doi": "10.64751/",
+      "original_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0113.pdf",
+      "physical_page": 1,
+      "original_pdf_sha256": "04198fa0e118af3a31153686228ea266b96b08b3af4e1382563c0dec498c7132",
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_sources": [
+        "https://ajaccm.com/journal/index.php/ajaccm/article/view/771",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/"
+      ],
+      "notice_limits": "Publisher article and exact titled matching on Retraction Watch. No usable DOI for reverse lookup.",
+      "retraction_watch_matches": []
+    },
+    {
+      "id": "R0118",
+      "doi": "10.1109/jiot.2026.3755315",
+      "title": "NetMoE: Joint Trajectory Planning and Distributed Mixture-of-Experts Inference for UAV Swarms",
+      "authors": [
+        {
+          "given": "HyungBin",
+          "family": "Park",
+          "name": ""
+        },
+        {
+          "given": "SuKyoung",
+          "family": "Lee",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026
+          ]
+        ],
+        "published-print": [
+          [
+            2026
+          ]
+        ],
+        "issued": [
+          [
+            2026
+          ]
+        ]
+      },
+      "venue": "IEEE Internet of Things Journal",
+      "source": "https://api.crossref.org/works/10.1109/jiot.2026.3755315",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:48+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:51+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/jiot.2026.3755315",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fjiot.2026.3755315&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0121",
+      "doi": "10.23939/ictee2026.02.144",
+      "title": "A LINK-LAYER MODEL OF A UAV SWARM MESH NETWORK WITH ENCAPSULATION OF INTERMEDIATE DEEP NEURAL NETWORK ACTIVATIONS: ANALYTICAL EVALUATION OF LATENCY AND TRAFFIC VOLUME",
+      "authors": [
+        {
+          "given": "Artem",
+          "family": "Kasianchuk",
+          "name": ""
+        },
+        {
+          "given": "Halyna",
+          "family": "Lastivka",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026,
+            10
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            11
+          ]
+        ],
+        "published-online": [
+          [
+            2026,
+            10
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            10
+          ]
+        ]
+      },
+      "venue": "Infocommunication technologies and electronic engineering",
+      "source": "https://api.crossref.org/works/10.23939/ictee2026.02.144",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:34+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:36+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.23939/ictee2026.02.144",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.23939%2Fictee2026.02.144&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0125",
+      "doi": "10.1109/sm69703.2026.11614110",
+      "title": "UAV Extreme Edge Computing for Real Time AI Inference: A Distributed Processing Approach",
+      "authors": [
+        {
+          "given": "MHD Saria",
+          "family": "Allahham",
+          "name": ""
+        },
+        {
+          "given": "Hossam S.",
+          "family": "Hassanein",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026,
+            5
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            5
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            5
+          ]
+        ]
+      },
+      "venue": "2026 International Conference on Smart Mobility (SM)",
+      "source": "https://api.crossref.org/works/10.1109/sm69703.2026.11614110",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:49+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:51+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/sm69703.2026.11614110",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Fsm69703.2026.11614110&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0137",
+      "doi": "10.1109/tcsvt.2026.3745821",
+      "title": "MARL-based Reliability-aware Video Analytics in Multi-UAV-Assisted MEC Systems",
+      "authors": [
+        {
+          "given": "Hao",
+          "family": "Hao",
+          "name": ""
+        },
+        {
+          "given": "Changqiao",
+          "family": "Xu",
+          "name": ""
+        },
+        {
+          "given": "Wei",
+          "family": "Zhang",
+          "name": ""
+        },
+        {
+          "given": "Shujie",
+          "family": "Yang",
+          "name": ""
+        },
+        {
+          "given": "Xiaolong",
+          "family": "Wang",
+          "name": ""
+        },
+        {
+          "given": "Huiling",
+          "family": "Shi",
+          "name": ""
+        },
+        {
+          "given": "Gabriel-Miro",
+          "family": "Muntean",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2026
+          ]
+        ],
+        "published-print": [
+          [
+            2026
+          ]
+        ],
+        "issued": [
+          [
+            2026
+          ]
+        ]
+      },
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "source": "https://api.crossref.org/works/10.1109/tcsvt.2026.3745821",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:50+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:52+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": null,
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1109/tcsvt.2026.3745821",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1109%2Ftcsvt.2026.3745821&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0145",
+      "doi": "10.1145/3774655",
+      "title": "LLM-based UAV Path Planning for Autonomous and Adaptive Industry Systems",
+      "authors": [
+        {
+          "given": "Wenjing",
+          "family": "Xiao",
+          "name": ""
+        },
+        {
+          "given": "Chenglong",
+          "family": "Shi",
+          "name": ""
+        },
+        {
+          "given": "Miaojiang",
+          "family": "Chen",
+          "name": ""
+        },
+        {
+          "given": "Athanasios V.",
+          "family": "Vasilakos",
+          "name": ""
+        },
+        {
+          "given": "Min",
+          "family": "Chen",
+          "name": ""
+        },
+        {
+          "given": "Ahmed",
+          "family": "Farouk",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            11,
+            3
+          ]
+        ],
+        "published-online": [
+          [
+            2025,
+            11,
+            3
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            11,
+            3
+          ]
+        ]
+      },
+      "venue": "ACM Transactions on Autonomous and Adaptive Systems",
+      "source": "https://api.crossref.org/works/10.1145/3774655",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:52+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:53+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.1145/crossmark-policy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1145/3774655",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1145%2F3774655&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0223",
+      "doi": "10.1145/3760269.3760299",
+      "title": "Outdoor Multi-UAV Collaborative Task Planning System Based on Multi-Agent and Improved PPO Algorithm",
+      "authors": [
+        {
+          "given": "Runmin",
+          "family": "Wang",
+          "name": ""
+        },
+        {
+          "given": "Zhongliang",
+          "family": "Deng",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            6,
+            6
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            6,
+            6
+          ]
+        ],
+        "published-online": [
+          [
+            2025,
+            9,
+            17
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            6,
+            6
+          ]
+        ]
+      },
+      "venue": "Proceedings of the 2025 5th International Conference on Automation Control, Algorithm and Intelligent Bionics",
+      "source": "https://api.crossref.org/works/10.1145/3760269.3760299",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:52+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:12:00+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.1145/crossmark-policy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1145/3760269.3760299",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1145%2F3760269.3760299&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "R0292",
+      "doi": "10.1145/3711875.3737661",
+      "title": "Continuous Marine Monitoring via Autonomous UAV Handoff",
+      "authors": [
+        {
+          "given": "Heegyeong",
+          "family": "Kim",
+          "name": ""
+        },
+        {
+          "given": "Alice",
+          "family": "James",
+          "name": ""
+        },
+        {
+          "given": "Avishkar",
+          "family": "Seth",
+          "name": ""
+        },
+        {
+          "given": "Endrowednes",
+          "family": "Kuantama",
+          "name": ""
+        },
+        {
+          "given": "Jane",
+          "family": "Williamson",
+          "name": ""
+        },
+        {
+          "given": "Yimeng",
+          "family": "Feng",
+          "name": ""
+        },
+        {
+          "given": "Richard",
+          "family": "Han",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ],
+        "published-print": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ],
+        "published-online": [
+          [
+            2025,
+            9,
+            25
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ]
+      },
+      "venue": "Proceedings of the 23rd Annual International Conference on Mobile Systems, Applications and Services",
+      "source": "https://api.crossref.org/works/10.1145/3711875.3737661",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:53+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:57+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.1145/crossmark-policy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {},
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1145/3711875.3737661",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1145%2F3711875.3737661&rows=20"
+      ],
+      "title_similarity": 1.0
+    },
+    {
+      "id": "prisma2020",
+      "doi": "10.1136/bmj.n71",
+      "title": "The PRISMA 2020 statement: an updated guideline for reporting systematic reviews",
+      "authors": [
+        {
+          "given": "Matthew J",
+          "family": "Page",
+          "name": ""
+        },
+        {
+          "given": "Joanne E",
+          "family": "McKenzie",
+          "name": ""
+        },
+        {
+          "given": "Patrick M",
+          "family": "Bossuyt",
+          "name": ""
+        },
+        {
+          "given": "Isabelle",
+          "family": "Boutron",
+          "name": ""
+        },
+        {
+          "given": "Tammy C",
+          "family": "Hoffmann",
+          "name": ""
+        },
+        {
+          "given": "Cynthia D",
+          "family": "Mulrow",
+          "name": ""
+        },
+        {
+          "given": "Larissa",
+          "family": "Shamseer",
+          "name": ""
+        },
+        {
+          "given": "Jennifer M",
+          "family": "Tetzlaff",
+          "name": ""
+        },
+        {
+          "given": "Elie A",
+          "family": "Akl",
+          "name": ""
+        },
+        {
+          "given": "Sue E",
+          "family": "Brennan",
+          "name": ""
+        },
+        {
+          "given": "Roger",
+          "family": "Chou",
+          "name": ""
+        },
+        {
+          "given": "Julie",
+          "family": "Glanville",
+          "name": ""
+        },
+        {
+          "given": "Jeremy M",
+          "family": "Grimshaw",
+          "name": ""
+        },
+        {
+          "given": "Asbjørn",
+          "family": "Hróbjartsson",
+          "name": ""
+        },
+        {
+          "given": "Manoj M",
+          "family": "Lalu",
+          "name": ""
+        },
+        {
+          "given": "Tianjing",
+          "family": "Li",
+          "name": ""
+        },
+        {
+          "given": "Elizabeth W",
+          "family": "Loder",
+          "name": ""
+        },
+        {
+          "given": "Evan",
+          "family": "Mayo-Wilson",
+          "name": ""
+        },
+        {
+          "given": "Steve",
+          "family": "McDonald",
+          "name": ""
+        },
+        {
+          "given": "Luke A",
+          "family": "McGuinness",
+          "name": ""
+        },
+        {
+          "given": "Lesley A",
+          "family": "Stewart",
+          "name": ""
+        },
+        {
+          "given": "James",
+          "family": "Thomas",
+          "name": ""
+        },
+        {
+          "given": "Andrea C",
+          "family": "Tricco",
+          "name": ""
+        },
+        {
+          "given": "Vivian A",
+          "family": "Welch",
+          "name": ""
+        },
+        {
+          "given": "Penny",
+          "family": "Whiting",
+          "name": ""
+        },
+        {
+          "given": "David",
+          "family": "Moher",
+          "name": ""
+        }
+      ],
+      "years": {
+        "published": [
+          [
+            2021,
+            3,
+            29
+          ]
+        ],
+        "published-online": [
+          [
+            2021,
+            3,
+            29
+          ]
+        ],
+        "issued": [
+          [
+            2021,
+            3,
+            29
+          ]
+        ]
+      },
+      "venue": "BMJ",
+      "source": "https://api.crossref.org/works/10.1136/bmj.n71",
+      "source_http": 200,
+      "checked_at": "2026-11-27T08:11:10+00:00",
+      "crossref_reverse_checked_at": "2026-11-27T08:11:15+00:00",
+      "crossref_reverse_http": 200,
+      "notice_status": "NO_NOTICE_FOUND_AT_CHECKED_SOURCES",
+      "notice_check": {
+        "update_to": [],
+        "updated_by": [],
+        "key_prefix": "https://doi.org/10.1136/crossmarkpolicy",
+        "reverse_update_checked": true,
+        "reverse_update_count": 0,
+        "reverse_update_items": [],
+        "relations": {
+          "is-referenced-by": [
+            {
+              "id-type": "doi",
+              "id": "10.1007/s00261-025-04933-9",
+              "asserted-by": "object"
+            },
+            {
+              "id-type": "doi",
+              "id": "10.1186/s41927-026-00635-x",
+              "asserted-by": "object"
+            },
+            {
+              "id-type": "doi",
+              "id": "10.1007/s12311-026-01994-4",
+              "asserted-by": "object"
+            },
+            {
+              "id-type": "doi",
+              "id": "10.1186/s12984-025-01744-3",
+              "asserted-by": "object"
+            },
+            {
+              "id-type": "doi",
+              "id": "10.1007/s10903-025-01721-x",
+              "asserted-by": "object"
+            },
+            {
+              "id-type": "doi",
+              "id": "10.1007/s10096-025-05122-8",
+              "asserted-by": "object"
+            }
+          ]
+        },
+        "retraction_watch_matches": []
+      },
+      "notice_sources": [
+        "https://api.crossref.org/works/10.1136/bmj.n71",
+        "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+        "https://api.crossref.org/works?filter=updates%3A10.1136%2Fbmj.n71&rows=20"
+      ],
+      "title_similarity": 1.0
+    }
+  ],
+  "registry_docs": [
+    "https://www.crossref.org/crossmark/",
+    "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/"
+  ],
+  "retraction_watch": {
+    "url": "https://gitlab.com/crossref/retraction-watch-data/-/raw/main/retraction_watch.csv",
+    "sha256": "8fdc4d3474239203222e75f2155b0367f40e0c963997d53aa56f650c1d1ea08b",
+    "rows_scanned": 74131,
+    "doi_count": 46,
+    "title_count": 47,
+    "matching_entries": []
+  },
+  "identity_exceptions": [
+    {
+      "id": "R0058",
+      "retained_issue_year": 2026,
+      "crossref_online_date": "2025-12-06",
+      "source_pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0058.pdf",
+      "physical_page": 1,
+      "evidence": "PDF imprint gives 2026 issue and 6 December 2025 publication."
+    },
+    {
+      "id": "R0077",
+      "evidence": "BibTeX dotless-i encoding preserves the Crossref surname Sarı."
+    },
+    {
+      "id": "R0113",
+      "evidence": "Publisher and p. 1 agree on identity and author sequence. Publisher citation_doi 10.64751/ is incomplete; no DOI is assigned."
+    }
+  ],
+  "coverage": {
+    "reference_ids": 47,
+    "crossref_work_http_200": 46,
+    "crossref_reverse_http_200": 46,
+    "publisher_and_physical_pdf_identity": 1,
+    "exact_doi_or_normalized_title_retraction_watch_hits": 0,
+    "formal_notices_found": 0
+  },
+  "scope_limit": "Findings apply to Crossref work and reverse links, a dated Retraction Watch extract, and the R0113 publisher record. Individual publisher notice coverage was not exhaustive."
+}

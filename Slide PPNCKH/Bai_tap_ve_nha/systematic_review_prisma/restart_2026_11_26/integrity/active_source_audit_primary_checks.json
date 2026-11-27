@@ -1,0 +1,23 @@
+{
+  "records": 47,
+  "unique": 47,
+  "duplicate_ids": [],
+  "missing": [],
+  "malformed": [],
+  "marker_line": [
+    49
+  ],
+  "summary_count": 1,
+  "states": {
+    "VERIFIED UNRESOLVED": 1,
+    "UNRESOLVED UNRESOLVED": 37,
+    "MISMATCH UNRESOLVED": 2,
+    "MISMATCH NO_NOTICE_FOUND_AT_CHECKED_SOURCES": 1,
+    "VERIFIED NO_NOTICE_FOUND_AT_CHECKED_SOURCES": 6
+  },
+  "issues": {
+    "R0001": [
+      "identity_source_requires_full_authority"
+    ]
+  }
+}

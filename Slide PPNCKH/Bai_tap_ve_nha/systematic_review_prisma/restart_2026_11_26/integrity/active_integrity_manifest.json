@@ -1,8 +1,8 @@
 {
-  "status": "AUDIT_SUBMITTED",
+  "status": "PRIMARY_FAILED_PENDING_CORRECTION",
   "baseline_commit": "8dec459",
   "started_at": "2026-11-27T15:10:06+07:00",
-  "updated_at": "2026-11-27T15:10:46+07:00",
+  "updated_at": "2026-11-27T15:21:02+07:00",
   "brief": "restart_2026_11_26/integrity/active_source_audit_brief.md",
   "message_id": "e3720ac8-1682-4946-a7ac-51183e564172",
   "expected_reference_ids": {
@@ -58,5 +58,9 @@
   "pdf_sha256": "2073c6cf0bccb91d1c124a1c2d77640eac911ec1a98573875b6e666f2c212789",
   "task_uuid": "78bde50a-7fb8-46d6-822f-9cd3cb26147f",
   "context_id": "c66020fd-a1ec-4f85-9dde-56f20d51af40",
-  "dispatch": "restart_2026_11_26/integrity/active_source_audit_dispatch.json"
+  "dispatch": "restart_2026_11_26/integrity/active_source_audit_dispatch.json",
+  "primary_review": "restart_2026_11_26/integrity/active_source_audit_primary_review.md",
+  "correction_needed_rows": 41,
+  "local_registry": "restart_2026_11_26/integrity/active_independent_registry_evidence.json",
+  "local_pdf_verification": "restart_2026_11_26/integrity/active_pdf_verification.json"
 }

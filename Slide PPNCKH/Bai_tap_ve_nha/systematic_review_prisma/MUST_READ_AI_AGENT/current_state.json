@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T15:10:46+07:00",
+  "updated_at": "2026-11-27T15:21:02+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_integrity_active",
@@ -11,16 +11,16 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T15:10:06+07:00",
-    "updated_at": "2026-11-27T15:10:46+07:00",
-    "checkpoint_path": "restart_2026_11_26/integrity/active_source_audit_dispatch.json",
+    "updated_at": "2026-11-27T15:21:02+07:00",
+    "checkpoint_path": "restart_2026_11_26/integrity/active_source_audit_primary_review.md",
     "decision_id": "restart-supplemental-integrity-v1"
   },
   "next_task": {
     "task_id": "restart-supplemental-integrity-verify",
     "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Recover the existing UUID and compare the native results with independent registry and PDF sources.",
-    "acceptance": "47 reference IDs, 46 recorded DOIs, one DOI_NOT_FOUND, source-bounded notice checks.",
+    "action": "Prepare a linked correction for the 41 failed native rows with first-party registry evidence.",
+    "acceptance": "41 exact correction rows and zero overlap with six supported primary rows.",
     "dispatch_brief": "restart_2026_11_26/integrity/active_source_audit_brief.md",
     "message_id": "e3720ac8-1682-4946-a7ac-51183e564172",
     "task_uuid": "78bde50a-7fb8-46d6-822f-9cd3cb26147f"
