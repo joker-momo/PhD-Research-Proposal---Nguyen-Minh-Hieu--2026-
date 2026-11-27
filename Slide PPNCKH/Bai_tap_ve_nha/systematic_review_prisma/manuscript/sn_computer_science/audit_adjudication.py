@@ -100,9 +100,13 @@ def build_report(rows, ledger, deferrals):
         if row["Changed_From_AI"].upper() == "YES":
             transition = f'{row["AI_Decision"]} -> {row["Final_Human_Decision"]}'
             transitions[transition].append(report_id)
+    processed_reports = len(final) + len(deferrals)
+    changed_reports = sum(map(len, transitions.values()))
     return {
         "s2": {
             "reports_in_log": len(rows),
+            "author_processed_reports": processed_reports,
+            "reports_without_author_confirmation": len(rows) - processed_reports,
             "final_human_decisions": {
                 key: {"decision": row["Final_Human_Decision"], "reason": row["Primary_Reason_Code"]}
                 for key, row in sorted(final.items())
@@ -114,9 +118,11 @@ def build_report(rows, ledger, deferrals):
         "paired_human_agreement": paired_agreement(pairs),
         "ai_to_final_human_decisions": {
             "compared_reports": len(final),
-            "changed_reports": sum(map(len, transitions.values())),
+            "changed_reports": changed_reports,
+            "changed_among_author_processed": {"changed": changed_reports, "total": processed_reports},
             "transitions": dict(transitions),
-            "scope": "Documented final decisions only. This comparison does not estimate corpus agreement.",
+            "scope": "Compared reports have documented final decisions. Author-processed reports include final "
+                     "decisions and confirmed deferrals. Both counts describe the documented subset.",
         },
         "prisma": {"counts": ledger["counts"], "awaiting_classification_codes": pending,
                    "arithmetic_differences": ledger["arithmetic_differences"]},
@@ -127,6 +133,7 @@ def render_latex(report):
     s2 = report["s2"]
     paired = report["paired_human_agreement"]
     comparison = report["ai_to_final_human_decisions"]
+    processed = comparison["changed_among_author_processed"]
     prisma = report["prisma"]["counts"]
     agreement = paired["percent_agreement"]
     kappa = paired["cohens_kappa"]
@@ -139,10 +146,13 @@ def render_latex(report):
         ("Final human decisions", len(s2["final_human_decisions"])),
         ("Author-confirmed exclusions", final or "None"),
         ("Author-confirmed deferrals", len(s2["author_confirmed_deferrals"])),
+        ("Reports without author confirmation", s2["reports_without_author_confirmation"]),
         ("Reviewer 1 / Reviewer 2 decisions", f"{s2['reviewer1_decisions']} / {s2['reviewer2_decisions']}"),
         ("Paired human decisions", paired["paired_reports"]),
         ("Observed agreement on pairs", "N/A" if agreement is None else rf"{agreement:.1f}\%"),
         (r"Cohen's $\kappa$ on pairs", "N/A" if kappa is None else f"{kappa:.3f}"),
+        ("Changes among author-processed reports", f"{processed['changed']} / {processed['total']}"
+         if processed["total"] else "N/A"),
         ("Changes among final human decisions", f"{comparison['changed_reports']} / {comparison['compared_reports']}"
          if comparison["compared_reports"] else "N/A"),
         ("PRISMA included / excluded / awaiting",

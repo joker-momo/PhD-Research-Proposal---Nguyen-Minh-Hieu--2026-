@@ -1,8 +1,12 @@
 {
   "ai_to_final_human_decisions": {
+    "changed_among_author_processed": {
+      "changed": 2,
+      "total": 3
+    },
     "changed_reports": 2,
     "compared_reports": 2,
-    "scope": "Documented final decisions only. This comparison does not estimate corpus agreement.",
+    "scope": "Compared reports have documented final decisions. Author-processed reports include final decisions and confirmed deferrals. Both counts describe the documented subset.",
     "transitions": {
       "AWAITING_CLASSIFICATION -> EXCLUDE": [
         "R0081",
@@ -64,6 +68,7 @@
     "author_confirmed_deferrals": {
       "R0082": "E7"
     },
+    "author_processed_reports": 3,
     "final_human_decisions": {
       "R0081": {
         "decision": "EXCLUDE",
@@ -75,6 +80,7 @@
       }
     },
     "reports_in_log": 136,
+    "reports_without_author_confirmation": 133,
     "reviewer1_decisions": 0,
     "reviewer2_decisions": 0
   }
