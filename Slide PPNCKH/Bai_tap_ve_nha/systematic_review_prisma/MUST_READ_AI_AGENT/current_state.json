@@ -1,27 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T15:07:58+07:00",
+  "updated_at": "2026-11-27T15:10:06+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "supplemental_manuscript_pass",
-    "summary": "Step 15 built and verified for the 46-study HK261 review. Step 16 integrity audit is ready."
+    "status": "supplemental_integrity_active",
+    "summary": "Step 16 audits the 46-study manuscript and prepares the coursework handoff."
   },
   "task": {
-    "task_id": "restart-supplemental-manuscript",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T15:04:50+07:00",
-    "updated_at": "2026-11-27T15:07:58+07:00",
-    "completed_at": "2026-11-27T15:07:58+07:00",
-    "checkpoint_path": "manuscript/sn_computer_science/step15_active_build_review.md",
-    "decision_id": "restart-supplemental-manuscript-v1"
-  },
-  "next_task": {
     "task_id": "restart-supplemental-integrity",
     "owner": "CODEX_WRITING",
+    "status": "active",
+    "started_at": "2026-11-27T15:10:06+07:00",
+    "updated_at": "2026-11-27T15:10:06+07:00",
+    "checkpoint_path": "restart_2026_11_26/integrity/active_integrity_manifest.json",
+    "decision_id": "restart-supplemental-integrity-v1"
+  },
+  "next_task": {
+    "task_id": "restart-supplemental-integrity-source-audit",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Run the step 16 native bibliographic audit and independently verify the final PDF, checklist and bundle.",
-    "acceptance": "47 references accounted for, 27 PDF checklist locators, clean build and 13 visual page checks."
+    "action": "Dispatch exactly one native read-only reference audit.",
+    "acceptance": "47 reference IDs, 46 recorded DOIs, one DOI_NOT_FOUND, source-bounded notice checks.",
+    "dispatch_brief": "restart_2026_11_26/integrity/active_source_audit_brief.md",
+    "message_id": "e3720ac8-1682-4946-a7ac-51183e564172"
   },
   "project": {
     "target_venue": "SN Computer Science",
