@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T15:07:58+07:00",
+  "updated_at": "2026-11-27T15:27:31+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -1549,9 +1549,30 @@
       "owner": "CODEX_WRITING + GEMINI_RESEARCH",
       "status": "completed",
       "started_at": "2026-11-27T08:06:16+07:00",
-      "updated_at": "2026-11-27T08:22:28+07:00",
+      "updated_at": "2026-11-27T15:27:31+07:00",
       "completed_at": "2026-11-27T08:21:37+07:00",
       "artifacts": [
+        "restart_2026_11_26/integrity/active_final_integrity_audit.md",
+        "restart_2026_11_26/integrity/active_handoff_verification.json",
+        "restart_2026_11_26/integrity/HK261-PRISMA-46-LaTeX-PDF-data.zip",
+        "restart_2026_11_26/prisma/active_prisma_checklist.md",
+        "restart_2026_11_26/integrity/active_integrity_manifest.json",
+        "restart_2026_11_26/integrity/active_independent_registry_evidence.json",
+        "restart_2026_11_26/integrity/active_pdf_verification.json",
+        "restart_2026_11_26/integrity/active_limitations.md",
+        "restart_2026_11_26/integrity/active_source_audit_brief.md",
+        "restart_2026_11_26/integrity/active_source_audit_dispatch.json",
+        "restart_2026_11_26/integrity/active_source_audit_primary_raw.json",
+        "restart_2026_11_26/integrity/active_source_audit_primary_checks.json",
+        "restart_2026_11_26/integrity/active_source_audit_primary_review.md",
+        "restart_2026_11_26/integrity/active_source_audit_correction_brief.md",
+        "restart_2026_11_26/integrity/active_source_audit_correction_dispatch.json",
+        "restart_2026_11_26/integrity/active_source_audit_correction_raw.json",
+        "restart_2026_11_26/integrity/active_source_audit_correction_checks.json",
+        "restart_2026_11_26/integrity/active_source_audit_composite_review.md",
+        "manuscript/sn_computer_science/README.md",
+        "manuscript/sn_computer_science/main.tex",
+        "manuscript/sn_computer_science/main.pdf",
         "restart_2026_11_26/integrity/HK261-PRISMA-restart-LaTeX-PDF-data.zip",
         "restart_2026_11_26/integrity/final_integrity_audit.md",
         "restart_2026_11_26/integrity/independent_registry_evidence.json",
@@ -1566,17 +1587,56 @@
         "restart_2026_11_26/integrity/source_audit_native_payload.json",
         "restart_2026_11_26/integrity/source_audit_primary_review.md",
         "restart_2026_11_26/integrity/source_audit_recovery.json",
-        "restart_2026_11_26/integrity/source_audit_transport_failure.json",
-        "manuscript/sn_computer_science/main.tex",
-        "manuscript/sn_computer_science/main.pdf"
+        "restart_2026_11_26/integrity/source_audit_transport_failure.json"
       ],
       "acceptance": [
         {
           "criterion": "Final build, sources, PRISMA and coursework handoff",
           "verdict": "PASS",
           "evidence": "26 DOI identities verified, 27 PRISMA checklist entries, 10/10 pages inspected, unresolved citations 0. Gemini.app result: PASS 26/26 composite, correction chat deleted, primary chat cleanup BLOCKED without confirm. See final integrity audit."
+        },
+        {
+          "criterion": "Active 46-study final integrity and coursework handoff",
+          "verdict": "PASS",
+          "evidence": "13/13 inspected PDF pages and 13/13 pixel-identical from a clean ZIP extraction rebuild, 47 source identities, 0 unresolved citations, all 27 PRISMA items with final physical locators, and 46 SHA-256-checked ZIP members plus ledger."
         }
-      ]
+      ],
+      "supplemental": {
+        "status": "PASS",
+        "started_at": "2026-11-27T15:10:06+07:00",
+        "updated_at": "2026-11-27T15:27:31+07:00",
+        "completed_at": "2026-11-27T15:27:31+07:00",
+        "artifacts": [
+          "restart_2026_11_26/integrity/active_final_integrity_audit.md",
+          "restart_2026_11_26/integrity/active_handoff_verification.json",
+          "restart_2026_11_26/integrity/HK261-PRISMA-46-LaTeX-PDF-data.zip",
+          "restart_2026_11_26/prisma/active_prisma_checklist.md",
+          "restart_2026_11_26/integrity/active_integrity_manifest.json",
+          "restart_2026_11_26/integrity/active_independent_registry_evidence.json",
+          "restart_2026_11_26/integrity/active_pdf_verification.json",
+          "restart_2026_11_26/integrity/active_limitations.md",
+          "restart_2026_11_26/integrity/active_source_audit_brief.md",
+          "restart_2026_11_26/integrity/active_source_audit_dispatch.json",
+          "restart_2026_11_26/integrity/active_source_audit_primary_raw.json",
+          "restart_2026_11_26/integrity/active_source_audit_primary_checks.json",
+          "restart_2026_11_26/integrity/active_source_audit_primary_review.md",
+          "restart_2026_11_26/integrity/active_source_audit_correction_brief.md",
+          "restart_2026_11_26/integrity/active_source_audit_correction_dispatch.json",
+          "restart_2026_11_26/integrity/active_source_audit_correction_raw.json",
+          "restart_2026_11_26/integrity/active_source_audit_correction_checks.json",
+          "restart_2026_11_26/integrity/active_source_audit_composite_review.md",
+          "manuscript/sn_computer_science/README.md",
+          "manuscript/sn_computer_science/main.tex",
+          "manuscript/sn_computer_science/main.pdf"
+        ],
+        "acceptance": [
+          {
+            "criterion": "Active 46-study final integrity and coursework handoff",
+            "verdict": "PASS",
+            "evidence": "13/13 inspected PDF pages and 13/13 pixel-identical from a clean ZIP extraction rebuild, 47 source identities, 0 unresolved citations, all 27 PRISMA items with final physical locators, and 46 SHA-256-checked ZIP members plus ledger."
+          }
+        ]
+      }
     }
   ],
   "plan_sha256": "bcb85b6d37e553c3fb505fe2b4b1589d6e5b421a87c8e4b05f806b35bb72031a"

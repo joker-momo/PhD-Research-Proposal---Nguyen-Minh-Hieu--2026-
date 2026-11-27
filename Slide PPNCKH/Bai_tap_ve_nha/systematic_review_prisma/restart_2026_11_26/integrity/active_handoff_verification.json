@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-11-27T15:27:31+07:00",
+  "bundle": "restart_2026_11_26/integrity/HK261-PRISMA-46-LaTeX-PDF-data.zip",
+  "archive_sha256": "12400a71f0f90e53f98cad5bd6ad26ba8011f3549e49bae793ea9e8f2a18665d",
+  "bytes": 513627,
+  "members": 47,
+  "hashed": 46,
+  "checklist_links_resolved": 45,
+  "zip_crc": "PASS",
+  "clean_extraction_build": {
+    "engine": "Tectonic 0.16.9",
+    "command": "tectonic --only-cached --keep-logs --keep-intermediates main.tex",
+    "verdict": "PASS",
+    "resolved_bibliography_entries": 47,
+    "unresolved_citations": 0,
+    "unresolved_references": 0,
+    "overfull_boxes": 0,
+    "observed_warnings": [
+      "Underfull boxes",
+      "Input PRISMA flow PDF 1.7 reports a version warning in PDF 1.5 output"
+    ],
+    "physical_page_count": 13,
+    "equal_page_text_and_bounds": 13,
+    "matching_unique_doi_uris": 46,
+    "doi_annotation_rectangles": 67,
+    "identical_render_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "parser": "PyMuPDF 2.0"
+  }
+}

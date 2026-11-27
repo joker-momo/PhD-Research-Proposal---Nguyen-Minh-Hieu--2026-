@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "uuid": "ee609ba8-1c3d-4d4e-a01a-59425b5fd23a",
+  "exact_ids": 41,
+  "duplicates": 0,
+  "traceable_rows": 41,
+  "supported_primary": [
+    "R0059",
+    "R0063",
+    "R0073",
+    "R0074",
+    "R0113",
+    "prisma2020"
+  ],
+  "composite_count": 47,
+  "schema_or_identity_or_notice_failures": [],
+  "validated_notice_scope": "Supplied dated first-party snapshots (Crossref work deposit W, Crossref reverse update query U, 74,131-row Retraction Watch extract RW) cross-checked against attached canonical HK261 context (manuscript/sn_computer_science/references.bib); no live browsing or publisher-wide clearance",
+  "raw_sha256": "074cda89cfed4528b86210a32488a1caa942e2919a118fab8a9657eee7251499",
+  "cleanup": {
+    "state": "deleted",
+    "verified_new_chat": true,
+    "mode_restored": "chat"
+  }
+}

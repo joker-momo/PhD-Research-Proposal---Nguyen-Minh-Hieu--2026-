@@ -24,5 +24,4 @@ tracks reporting and its limits.
   [claim sources](../../restart_2026_11_26/synthesis/active_claim_source_matrix.csv) and
   [R0092 source erratum](../../restart_2026_11_26/synthesis/active_rq_p08_erratum_R0092.json).
 
-Author details and declarations await confirmation. Submission status remains
-pending author authorization.
+The [final integrity audit](../../restart_2026_11_26/integrity/active_final_integrity_audit.md) and [limitations](../../restart_2026_11_26/integrity/active_limitations.md) accompany the coursework handoff. Author details and declarations await confirmation. Journal submission is outside the current HK261 scope.

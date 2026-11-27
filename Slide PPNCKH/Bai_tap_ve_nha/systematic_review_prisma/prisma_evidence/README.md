@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T15:07:58+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T15:27:31+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -830,10 +830,31 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=2.
 <a id="buoc-16"></a>
 ## Bước 16 · Kiểm định và bàn giao
 
-**Đã chốt theo sổ tiến độ** · `2026-11-27T08:22:28+07:00`
+**Đã chốt theo sổ tiến độ** · `2026-11-27T15:27:31+07:00`
 
-Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
+Nghiệm thu cấp bước đã ghi trong sổ: PASS=2.
 
+- [active_final_integrity_audit.md](../restart_2026_11_26/integrity/active_final_integrity_audit.md)
+- [active_handoff_verification.json](../restart_2026_11_26/integrity/active_handoff_verification.json)
+- [HK261-PRISMA-46-LaTeX-PDF-data.zip](../restart_2026_11_26/integrity/HK261-PRISMA-46-LaTeX-PDF-data.zip)
+- [active_prisma_checklist.md](../restart_2026_11_26/prisma/active_prisma_checklist.md)
+- [active_integrity_manifest.json](../restart_2026_11_26/integrity/active_integrity_manifest.json)
+- [active_independent_registry_evidence.json](../restart_2026_11_26/integrity/active_independent_registry_evidence.json)
+- [active_pdf_verification.json](../restart_2026_11_26/integrity/active_pdf_verification.json)
+- [active_limitations.md](../restart_2026_11_26/integrity/active_limitations.md)
+- [active_source_audit_brief.md](../restart_2026_11_26/integrity/active_source_audit_brief.md)
+- [active_source_audit_dispatch.json](../restart_2026_11_26/integrity/active_source_audit_dispatch.json)
+- [active_source_audit_primary_raw.json](../restart_2026_11_26/integrity/active_source_audit_primary_raw.json)
+- [active_source_audit_primary_checks.json](../restart_2026_11_26/integrity/active_source_audit_primary_checks.json)
+- [active_source_audit_primary_review.md](../restart_2026_11_26/integrity/active_source_audit_primary_review.md)
+- [active_source_audit_correction_brief.md](../restart_2026_11_26/integrity/active_source_audit_correction_brief.md)
+- [active_source_audit_correction_dispatch.json](../restart_2026_11_26/integrity/active_source_audit_correction_dispatch.json)
+- [active_source_audit_correction_raw.json](../restart_2026_11_26/integrity/active_source_audit_correction_raw.json)
+- [active_source_audit_correction_checks.json](../restart_2026_11_26/integrity/active_source_audit_correction_checks.json)
+- [active_source_audit_composite_review.md](../restart_2026_11_26/integrity/active_source_audit_composite_review.md)
+- [README.md](../manuscript/sn_computer_science/README.md)
+- [main.tex](../manuscript/sn_computer_science/main.tex)
+- [main.pdf](../manuscript/sn_computer_science/main.pdf)
 - [HK261-PRISMA-restart-LaTeX-PDF-data.zip](../restart_2026_11_26/integrity/HK261-PRISMA-restart-LaTeX-PDF-data.zip)
 - [final_integrity_audit.md](../restart_2026_11_26/integrity/final_integrity_audit.md)
 - [independent_registry_evidence.json](../restart_2026_11_26/integrity/independent_registry_evidence.json)
@@ -849,5 +870,3 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
 - [source_audit_primary_review.md](../restart_2026_11_26/integrity/source_audit_primary_review.md)
 - [source_audit_recovery.json](../restart_2026_11_26/integrity/source_audit_recovery.json)
 - [source_audit_transport_failure.json](../restart_2026_11_26/integrity/source_audit_transport_failure.json)
-- [main.tex](../manuscript/sn_computer_science/main.tex)
-- [main.pdf](../manuscript/sn_computer_science/main.pdf)

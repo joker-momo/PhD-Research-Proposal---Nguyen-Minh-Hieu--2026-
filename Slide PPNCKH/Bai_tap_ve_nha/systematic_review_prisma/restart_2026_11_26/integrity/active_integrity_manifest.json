@@ -1,8 +1,8 @@
 {
-  "status": "CORRECTION_SUBMITTED",
+  "status": "PASS",
   "baseline_commit": "8dec459",
   "started_at": "2026-11-27T15:10:06+07:00",
-  "updated_at": "2026-11-27T15:22:10+07:00",
+  "updated_at": "2026-11-27T15:27:31+07:00",
   "brief": "restart_2026_11_26/integrity/active_source_audit_brief.md",
   "message_id": "e3720ac8-1682-4946-a7ac-51183e564172",
   "expected_reference_ids": {
@@ -55,7 +55,7 @@
     "R0292": "10.1145/3711875.3737661"
   },
   "reference_sha256": "a2c6efa72172f848b58207b0296aad69e96132384939772dfe3b460a9f7c3a3e",
-  "pdf_sha256": "2073c6cf0bccb91d1c124a1c2d77640eac911ec1a98573875b6e666f2c212789",
+  "pdf_sha256": "6680c950060546c3d8ac3fd75614d663c7d20b8d254b759fce5a28199e2f4b03",
   "task_uuid": "78bde50a-7fb8-46d6-822f-9cd3cb26147f",
   "context_id": "c66020fd-a1ec-4f85-9dde-56f20d51af40",
   "dispatch": "restart_2026_11_26/integrity/active_source_audit_dispatch.json",
@@ -118,5 +118,43 @@
   ],
   "correction_dispatch": "restart_2026_11_26/integrity/active_source_audit_correction_dispatch.json",
   "correction_task_uuid": "ee609ba8-1c3d-4d4e-a01a-59425b5fd23a",
-  "correction_context_id": "d5bb0d1a-eb2b-4193-81b0-eef3f6369ffa"
+  "correction_context_id": "d5bb0d1a-eb2b-4193-81b0-eef3f6369ffa",
+  "completed_at": "2026-11-27T15:27:31+07:00",
+  "baseline_pdf_sha256": "2073c6cf0bccb91d1c124a1c2d77640eac911ec1a98573875b6e666f2c212789",
+  "final_audit": "restart_2026_11_26/integrity/active_final_integrity_audit.md",
+  "bundle": "restart_2026_11_26/integrity/HK261-PRISMA-46-LaTeX-PDF-data.zip",
+  "archive_sha256": "12400a71f0f90e53f98cad5bd6ad26ba8011f3549e49bae793ea9e8f2a18665d",
+  "source_gate": {
+    "verdict": "PASS",
+    "reference_ids": 47,
+    "dois": 46,
+    "doi_not_found": [
+      "R0113"
+    ],
+    "primary_supported": 6,
+    "correction_verified": 41,
+    "formal_notices_in_checked_sources": 0
+  },
+  "artifacts": {
+    "restart_2026_11_26/integrity/active_final_integrity_audit.md": "f3be8f788e61b5cf6663db3b684ad0021dbf525733b6abef38a63e7c26d2b1f3",
+    "restart_2026_11_26/integrity/active_handoff_verification.json": "9e8f9dc08d2c27cbbb9301ed4c8098ecc3a44adfde41a6b92e1acf85b9a85e03",
+    "restart_2026_11_26/integrity/HK261-PRISMA-46-LaTeX-PDF-data.zip": "12400a71f0f90e53f98cad5bd6ad26ba8011f3549e49bae793ea9e8f2a18665d",
+    "restart_2026_11_26/prisma/active_prisma_checklist.md": "f2968755b437b598c7c5149c86c8b43c75e287e9d0e2c438791fad631a3a43fd",
+    "restart_2026_11_26/integrity/active_independent_registry_evidence.json": "89e575536e5f518eedfd6b529759cba7fbadcdbd5a8aea0331f36cb1ef3340dc",
+    "restart_2026_11_26/integrity/active_pdf_verification.json": "13480f56e0975cb9039e6689c7f174ef6cae02a48a86f21e4fb8d4aaf380a21b",
+    "restart_2026_11_26/integrity/active_limitations.md": "2f29f4ff207e8eeb3b482d04d166c97de59683678a300fe6c5546179be2b3420",
+    "restart_2026_11_26/integrity/active_source_audit_brief.md": "abab88fd2865a5f178a7bc7c770d7377d26587d4b2621f764619dc4a90d90b83",
+    "restart_2026_11_26/integrity/active_source_audit_dispatch.json": "b4c32b4cbe74db91a43c09e95f1bb6448c9e221723881d2f038fd5fd4113a9cb",
+    "restart_2026_11_26/integrity/active_source_audit_primary_raw.json": "3bc11a5b7ad1284f5dbceae8dd68ea35157aeb26fab18c7d6703278838cab945",
+    "restart_2026_11_26/integrity/active_source_audit_primary_checks.json": "c60f711195ff6bfe4492e6c1f3f8b11491abc92d75667aaa775fc7b74ee86f01",
+    "restart_2026_11_26/integrity/active_source_audit_primary_review.md": "dc33fed3e3a76414f35350ef88b95e31c59b9718a00fad281313b713193d7891",
+    "restart_2026_11_26/integrity/active_source_audit_correction_brief.md": "d4204125c483630b7ddffaf5ebe04d1a3a9e403281b6d807c2ff4a6aef1e2e2d",
+    "restart_2026_11_26/integrity/active_source_audit_correction_dispatch.json": "25ee6df4711652be3516b8fb9d9cd2b2e9510f26120a1d84c389052f723889eb",
+    "restart_2026_11_26/integrity/active_source_audit_correction_raw.json": "074cda89cfed4528b86210a32488a1caa942e2919a118fab8a9657eee7251499",
+    "restart_2026_11_26/integrity/active_source_audit_correction_checks.json": "574d9d6d098979df799cb8cceea7828513efa752935bec3f9754612064430cb1",
+    "restart_2026_11_26/integrity/active_source_audit_composite_review.md": "306c8c8b4282b66257ecaea12007e668bef03d3db80a7963e99143eae331388a",
+    "manuscript/sn_computer_science/README.md": "3dd129bbd13253dfd77d406ee1606a809c15766231fb7d9ab877e7a59fd91f2d",
+    "manuscript/sn_computer_science/main.tex": "f3ba58f930393f1af7da10e708a384509e9a7a9298d949d5435c289289378b08",
+    "manuscript/sn_computer_science/main.pdf": "6680c950060546c3d8ac3fd75614d663c7d20b8d254b759fce5a28199e2f4b03"
+  }
 }
