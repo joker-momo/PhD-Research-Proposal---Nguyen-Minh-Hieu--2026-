@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T23:33:27+07:00",
+  "updated_at": "2026-11-27T23:35:01+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "The verified 30-page revision remains frozen on the 46/90/0 corpus. Two AI-assisted source-review endorsements are recorded. Independent human assessment and declarations remain pending."
   },
   "task": {
-    "task_id": "hk261-r0118-t2-workload-author-decision",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T23:33:27+07:00",
-    "updated_at": "2026-11-27T23:33:27+07:00",
-    "decision_id": "hk261-r0118-t2-workload-author-decision-v1",
-    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/author_decisions.csv",
-    "completed_at": "2026-11-27T23:33:27+07:00"
-  },
-  "next_task": {
     "task_id": "hk261-r0121-t3-network-event-response-author-decision",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-27T23:35:01+07:00",
+    "updated_at": "2026-11-27T23:35:01+07:00",
+    "decision_id": "hk261-r0121-t3-network-event-response-author-decision-v1",
+    "checkpoint_path": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/author_decisions.csv",
+    "completed_at": "2026-11-27T23:35:01+07:00"
+  },
+  "next_task": {
+    "task_id": "hk261-r0125-d09-author-decision",
+    "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "Wait for the author to confirm the analytical-model scope and handling of the disputed probability assignment.",
-    "acceptance": "Record R0121 t3_network_event_response only after explicit confirmation. Preserve R1/R2, S2, PRISMA and the manuscript."
+    "action": "Wait for the author to confirm the scoped NOT_REPORTED verdict on the availability of study artifacts.",
+    "acceptance": "Record R0125 D09 only after explicit confirmation. Preserve R1/R2, S2, PRISMA and the manuscript."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -936,7 +936,7 @@
         "rows_flagged": 608,
         "priority_cases": 12,
         "scope_limited": 38,
-        "author_decisions": 6,
+        "author_decisions": 7,
         "author_decision_ledger": "restart_2026_11_26/integrity/source_review_887/r1_r2_reconciliation/author_decisions.csv"
       }
     }
