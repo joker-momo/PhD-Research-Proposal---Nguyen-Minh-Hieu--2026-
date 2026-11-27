@@ -1,27 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T17:41:56+07:00",
+  "updated_at": "2026-11-27T17:48:01+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "author_eligibility_reconciled_synthesis_update_pending",
     "summary": "Current eligibility: 44 included, 89 excluded, 3 awaiting classification. The 29-page comparison PDF and synthesis freeze describe the previous 46-study snapshot."
   },
   "task": {
-    "task_id": "hk261-borderline-author-confirmation",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T17:40:05+07:00",
-    "updated_at": "2026-11-27T17:41:56+07:00",
-    "completed_at": "2026-11-27T17:41:56+07:00",
-    "decision_id": "hk261-borderline-author-confirmation-v1",
-    "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_adjudication.md"
+    "task_id": "hk261-pending-three-evidence",
+    "owner": "GEMINI_RESEARCH",
+    "status": "active",
+    "started_at": "2026-11-27T17:48:01+07:00",
+    "updated_at": "2026-11-27T17:48:01+07:00",
+    "decision_id": "hk261-pending-three-evidence-v1",
+    "checkpoint_path": "restart_2026_11_26/integrity/pending_three_followup/manifest.json"
   },
   "next_task": {
-    "task_id": "hk261-synthesis-reconciliation-after-author-deferrals",
-    "owner": "CODEX_WRITING",
+    "task_id": "hk261-pending-three-evidence",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Reconcile active linkage, extraction, appraisal, synthesis and manuscript to the current eligibility set when working on the next comparison revision. Keep R0082 E7, R0113 E3 and R0292 E7 pending until resolved.",
-    "acceptance": "44 included report-study pairs across the regenerated outputs and no claim sourced only from deferred reports."
+    "action": "Run the native parent task and independently verify returned evidence for the three pending records.",
+    "acceptance": "Exactly three distinct records and accepted locators or explicit shortfalls; no eligibility mutations.",
+    "dispatch_brief": "restart_2026_11_26/integrity/pending_three_followup/brief.md",
+    "message_id": "hk261-pending-three-evidence-20261127"
   },
   "project": {
     "target_venue": "SN Computer Science",
