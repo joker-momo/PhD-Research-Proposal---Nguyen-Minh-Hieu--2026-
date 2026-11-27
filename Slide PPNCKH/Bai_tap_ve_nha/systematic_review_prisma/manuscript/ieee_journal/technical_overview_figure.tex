@@ -25,13 +25,14 @@
   \fill[panelblue] (\xx-.26,.7+\conferenceheight) rectangle (\xx+.26,.7+\allheight);
   \pgfmathtruncatemacro{\total}{\jcount+\ccount}
   \node[anchor=south,inner sep=2pt,fill=white] at (\xx,.7+\allheight) {\total};
-  \node[anchor=north] at (\xx,.69) {\yr};
+  \node[anchor=north] at (\xx,.69) {\yr\ifnum\yr=2026\relax*\fi};
 }
 \draw[gray] (.60,.7)--(6.39,.7);
-\fill[panelblue] (.85,-.005) rectangle (1.14,.20);
-\node[anchor=west] at (1.16,.10) {Journal};
-\fill[panelteal!55] (2.65,-.005) rectangle (2.94,.20);
-\node[anchor=west] at (2.96,.10) {Conference};
+\fill[panelblue] (.60,-.005) rectangle (.89,.20);
+\node[anchor=west] at (.91,.10) {Journal};
+\fill[panelteal!55] (2.12,-.005) rectangle (2.41,.20);
+\node[anchor=west] at (2.43,.10) {Conference};
+\node[anchor=east,inner sep=0pt,font=\scriptsize] at (6.39,.10) {* Cutoff: 26 Nov 2026};
 \draw[black!40] (10.37,.65)--(10.37,3.79)
   (3.45,-3.39)--(3.45,-.79) (10.37,-3.39)--(10.37,-.79);
 \overviewbar{10.3}{3.57}{CNN classifiers}{\groupn{family}{cnn}}{panelblue}

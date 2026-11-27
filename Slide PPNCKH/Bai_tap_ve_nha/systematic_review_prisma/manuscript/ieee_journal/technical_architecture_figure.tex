@@ -17,17 +17,19 @@
 
 \node[heading] at (0,3.27) {(b) Clustered or head--worker swarm};
 \node[system] (sensor2) at (1.15,2.43) {Sensor input};
-\node[system] (head) at (4.5,2.43) {UAV head\\split tasks};
-\node[system] (worker1) at (8.05,2.91) {Worker UAV 1};
-\node[system] (worker2) at (8.05,1.95) {Worker UAV 2};
-\node[system] (output2) at (11.25,2.43) {UAV head\\merge results};
+\node[system,minimum height=1.02cm] (head) at (4.5,2.43) {UAV head\\split / merge};
+\node[system] (worker1) at (9.1,2.96) {Worker UAV 1};
+\node[system] (worker2) at (9.1,1.95) {Worker UAV 2};
 \draw[data] (sensor2)--(head);
-\draw[data] (head.east) -- node[above,sloped]{Tile} (worker1.west);
-\draw[data] (head.east) -- (worker2.west);
-\draw[data] (worker1.east) -- (output2.west);
-\draw[data] (worker2.east) -- (output2.west);
-\draw[control] (worker2.south) to[bend left=16] node[below]{Worker status} (head.south);
+\draw[data] ([yshift=8pt]head.east)
+  -- node[pos=.62,above,sloped]{Tasks} ([yshift=4pt]worker1.west);
+\draw[data] ([yshift=-4pt]worker1.west)
+  -- node[pos=.30,below,sloped,inner sep=2pt]{Results} ([yshift=2pt]head.east);
+\draw[data] ([yshift=-8pt]head.east) -- ([yshift=-4pt]worker2.west);
+\draw[data] ([yshift=4pt]worker2.west) -- ([yshift=-2pt]head.east);
+\draw[control] (worker2.south) to[bend left=15] node[below,inner sep=2pt]{Worker status} (head.south);
 
+\begin{scope}[yshift=-.29cm]
 \node[heading] at (0,.98) {(c) Hierarchical execution with cloud};
 \node[system] (sensor3) at (1.15,.15) {Sensor input};
 \node[system] (uav) at (4.5,.15) {UAV\\prefix};
@@ -37,4 +39,5 @@
 \draw[data] (uav)--node[above]{Feature}(edge);
 \draw[data] (edge)--node[above]{Feature}(cloud);
 \draw[control] (cloud.south) to[bend left=18] node[below]{Placement / fallback} (edge.south);
+\end{scope}
 \end{tikzpicture}}
