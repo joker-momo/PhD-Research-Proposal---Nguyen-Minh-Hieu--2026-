@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:34:27+07:00",
+  "updated_at": "2026-11-27T13:34:41+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_extraction_in_progress",
@@ -9,18 +9,19 @@
   "task": {
     "task_id": "restart-supplemental-extraction",
     "owner": "CODEX_WRITING",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-27T12:51:10+07:00",
-    "updated_at": "2026-11-27T13:34:27+07:00",
-    "checkpoint_path": "restart_2026_11_26/extraction/supplemental_batch_03_composite_review.md",
-    "decision_id": "restart-supplemental-extraction-v1"
+    "updated_at": "2026-11-27T13:34:41+07:00",
+    "checkpoint_path": "restart_2026_11_26/extraction/active_p08_extraction_lock.json",
+    "decision_id": "restart-supplemental-extraction-v2",
+    "completed_at": "2026-11-27T13:34:41+07:00"
   },
   "next_task": {
-    "task_id": "restart-supplemental-extraction-lock",
+    "task_id": "restart-supplemental-appraisal-setup",
     "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Verify the three accepted batches, baseline hashes and 46 report-study identities; close active P08 with one reproducible lock before P09.",
-    "acceptance": "46/46 reports with no duplicate or pending extraction and exact pinned source hashes."
+    "action": "Open supplemental step 12 on a dedicated P09 worktree. Reuse the 25 locked baseline appraisals and apply D01–D10 to 21 supplemental reports with original evidence.",
+    "acceptance": "Each report and study ID matches active P08. Exact 210 supplemental quality-domain judgments and independent source support, 460 total after validation."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -478,7 +479,14 @@
       "batch_03_correction_keys": "restart_2026_11_26/extraction/supplemental_batch_03_correction_keys.json",
       "batch_03_correction_uuid": "1f40d2c8-f036-4e41-afe0-0d86d1da0ca1",
       "batch_03_accepted": "restart_2026_11_26/extraction/supplemental_batch_03_accepted.json",
-      "batch_03_composite_review": "restart_2026_11_26/extraction/supplemental_batch_03_composite_review.md"
+      "batch_03_composite_review": "restart_2026_11_26/extraction/supplemental_batch_03_composite_review.md",
+      "status": "completed",
+      "completed_at": "2026-11-27T13:34:41+07:00",
+      "gate": "LOCKED_ACTIVE_P08_PASS",
+      "active_lock": "restart_2026_11_26/extraction/active_p08_extraction_lock.json",
+      "active_lock_sha256": "1cef72e2eed42751458485988f6503dba7801f6b6b095f2f5914b9a9d0996d82",
+      "reports_verified": 46,
+      "studies_verified": 46
     }
   },
   "blockers": [],

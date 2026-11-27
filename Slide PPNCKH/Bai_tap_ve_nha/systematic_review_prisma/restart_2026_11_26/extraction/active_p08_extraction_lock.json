@@ -1,0 +1,44 @@
+{
+  "baseline": {
+    "record_count": 25,
+    "lock": "restart_2026_11_26/extraction/p08_extraction_lock.json",
+    "sha256": "ab54de5cf60ea77d590e58adeeb7ac57b9fdfa66eb9750a53feda680e9a3f8d3"
+  },
+  "supplemental_batches": [
+    {
+      "batch": 1,
+      "path": "restart_2026_11_26/extraction/supplemental_batch_01_accepted.json",
+      "sha256": "35af3ef65492cd612baf963fa7f01c75bfffb5323c2d93857fcd2168b52699bd",
+      "reports": 7
+    },
+    {
+      "batch": 2,
+      "path": "restart_2026_11_26/extraction/supplemental_batch_02_accepted.json",
+      "sha256": "bbae32c680ba43fc2be230e9b79d549b7903ade8dbf3a66eb3fabf4a756d1a73",
+      "reports": 7
+    },
+    {
+      "batch": 3,
+      "path": "restart_2026_11_26/extraction/supplemental_batch_03_accepted.json",
+      "sha256": "43189e70822f879fe61518aef616a8673d817762acccf1cbaf8649e3f0e689aa",
+      "reports": 7
+    }
+  ],
+  "study_linkage": {
+    "path": "restart_2026_11_26/study_linkage/active_report_study_map.csv",
+    "sha256": "e4981e40de3bddfe24689ac974316fc00de81a912654db58694d11957a72a097"
+  },
+  "reports_verified": 46,
+  "studies_verified": 46,
+  "required_field_groups": 644,
+  "not_yet_assessed": 0,
+  "outstanding_reports": [],
+  "status": "LOCKED_ACTIVE_P08_PASS",
+  "locked_at": "2026-11-27T13:34:41+07:00",
+  "scope": "HK261 only, step 11",
+  "baseline_required_field_groups": 350,
+  "supplemental_required_field_groups": 294,
+  "supplemental_source_identities": 21,
+  "supplemental_quantitative_rows": 9,
+  "study_linkage_status_preserved": true
+}

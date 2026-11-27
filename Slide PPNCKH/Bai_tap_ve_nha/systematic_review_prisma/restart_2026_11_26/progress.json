@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T13:34:27+07:00",
+  "updated_at": "2026-11-27T13:34:41+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -894,7 +894,8 @@
         "restart_2026_11_26/extraction/supplemental_batch_03_semantic_R0137.md",
         "restart_2026_11_26/extraction/supplemental_batch_03_semantic_R0145.md",
         "restart_2026_11_26/extraction/supplemental_batch_03_semantic_R0223.md",
-        "restart_2026_11_26/extraction/supplemental_batch_03_semantic_R0292.md"
+        "restart_2026_11_26/extraction/supplemental_batch_03_semantic_R0292.md",
+        "restart_2026_11_26/extraction/active_p08_extraction_lock.json"
       ],
       "acceptance": [
         {
@@ -1020,8 +1021,8 @@
       ],
       "supplemental": {
         "task_id": "restart-supplemental-extraction",
-        "status": "active",
-        "updated_at": "2026-11-27T13:34:27+07:00",
+        "status": "completed",
+        "updated_at": "2026-11-27T13:34:41+07:00",
         "batch_01_original_gate": "FAIL",
         "review": "restart_2026_11_26/extraction/supplemental_batch_03_composite_review.md",
         "accepted_new_reports": 21,
@@ -1038,7 +1039,12 @@
         "batch_02_correction_gate": "FAIL_3_KEYS_AND_SUMMARY",
         "batch_02_correction_review": "restart_2026_11_26/extraction/supplemental_batch_02_correction_review.md",
         "batch_03_gate": "PASS_COMPOSITE",
-        "batch_03_review": "restart_2026_11_26/extraction/supplemental_batch_03_review.md"
+        "batch_03_review": "restart_2026_11_26/extraction/supplemental_batch_03_review.md",
+        "gate": "LOCKED_ACTIVE_P08_PASS",
+        "completed_at": "2026-11-27T13:34:41+07:00",
+        "reports_verified": 46,
+        "active_lock": "restart_2026_11_26/extraction/active_p08_extraction_lock.json",
+        "active_lock_sha256": "1cef72e2eed42751458485988f6503dba7801f6b6b095f2f5914b9a9d0996d82"
       }
     },
     {
