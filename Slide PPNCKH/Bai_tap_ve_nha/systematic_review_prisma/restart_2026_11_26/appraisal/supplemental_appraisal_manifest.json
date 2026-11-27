@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "created_at": "2026-11-27T13:37:04+07:00",
-  "status": "BATCH_03_CORRECTION_READY",
+  "status": "BATCH_03_CORRECTION_SUBMITTED",
   "baseline": {
     "reports": 25,
     "judgments": 250,
@@ -86,7 +86,7 @@
     },
     {
       "batch": 3,
-      "status": "CORRECTION_READY",
+      "status": "CORRECTION_SUBMITTED",
       "brief": "restart_2026_11_26/appraisal/supplemental_batch_03_brief.md",
       "message_id": "aebba6e8-134d-4ae4-8957-ec8396496540",
       "report_ids": [
@@ -104,7 +104,9 @@
       "correction_brief": "restart_2026_11_26/appraisal/supplemental_batch_03_correction_brief.md",
       "correction_message_id": "62077e85-beb8-44aa-9a50-b1d67f5d58af",
       "correction_keys": 39,
-      "review": "restart_2026_11_26/appraisal/supplemental_batch_03_review.md"
+      "review": "restart_2026_11_26/appraisal/supplemental_batch_03_review.md",
+      "correction_uuid": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "correction_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_03_correction_dispatch.json"
     }
   ]
 }

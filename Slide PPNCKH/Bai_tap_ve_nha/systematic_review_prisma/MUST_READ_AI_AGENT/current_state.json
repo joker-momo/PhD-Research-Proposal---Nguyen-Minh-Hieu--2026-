@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T14:18:09+07:00",
+  "updated_at": "2026-11-27T14:19:29+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "supplemental_appraisal_in_progress",
@@ -11,18 +11,19 @@
     "owner": "CODEX_WRITING",
     "status": "active",
     "started_at": "2026-11-27T13:37:04+07:00",
-    "updated_at": "2026-11-27T14:18:09+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_03_review.md",
+    "updated_at": "2026-11-27T14:19:29+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_03_correction_dispatch.json",
     "decision_id": "restart-supplemental-appraisal-v1"
   },
   "next_task": {
-    "task_id": "restart-supplemental-appraisal-batch-03-correction",
-    "owner": "GEMINI_RESEARCH",
+    "task_id": "restart-supplemental-appraisal-batch-03-correction-collect",
+    "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Dispatch only the 39 unresolved keys once.",
+    "action": "Retrieve the existing Task by UUID and independently check original-page evidence; do not resend.",
     "acceptance": "39 verifiable domain/access results and traceable cleanup.",
     "dispatch_brief": "restart_2026_11_26/appraisal/supplemental_batch_03_correction_brief.md",
-    "message_id": "62077e85-beb8-44aa-9a50-b1d67f5d58af"
+    "message_id": "62077e85-beb8-44aa-9a50-b1d67f5d58af",
+    "task_uuid": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd"
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -490,7 +491,7 @@
       "studies_verified": 46
     },
     "supplemental_appraisal": {
-      "status": "BATCH_03_CORRECTION_READY",
+      "status": "BATCH_03_CORRECTION_SUBMITTED",
       "manifest": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
       "baseline_reports": 25,
       "supplemental_reports_required": 21,
@@ -529,7 +530,9 @@
       "batch_02_accepted": "restart_2026_11_26/appraisal/supplemental_batch_02_accepted.json",
       "batch_03_uuid": "720b8516-3478-416c-95ab-61044918105e",
       "batch_03_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_03_dispatch.json",
-      "batch_03_correction_key_count": 39
+      "batch_03_correction_key_count": 39,
+      "batch_03_correction_uuid": "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+      "batch_03_correction_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_03_correction_dispatch.json"
     }
   },
   "blockers": [],
