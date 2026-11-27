@@ -2,16 +2,17 @@
 
 The [136-report review log](human_adjudication_log.csv) carries the existing
 AI-assisted decision, initial evidence, the original PDF path and SHA-256.
-It has separate blanks for each human finding and the final adjudication.
+It separates the initial assessment, author notes and final adjudication.
 The original decisions reconcile to 46 inclusions, 87 exclusions and three
 awaiting classification. R0116 was not retrieved and therefore has no
 full-text review row. The [exclusions ledger](supplement_fulltext_exclusions.csv)
 preserves the 87 baseline exclusions and their primary reasons. The author
-confirmed one additional exclusion, R0081 (E7), on 27 November 2026. The
+confirmed two additional exclusions, R0081 (E7) and R0132 (E3), on
+27 November 2026. The
 [active PRISMA ledger](../../restart_2026_11_26/prisma/prisma_counts.json)
-combines both sources: 46 inclusions, 88 exclusions and two awaiting
-classification (R0082 and R0132). The author confirmed on 27 November 2026
-that R0082 remains pending under E7. S2 records one final exclusion and one
+combines both sources: 46 inclusions, 89 exclusions and one awaiting
+classification (R0082). The author confirmed on 27 November 2026
+that R0082 remains pending under E7. S2 records two final exclusions and one
 confirmed deferral.
 Independent duplicate human screening remains undocumented.
 
@@ -25,7 +26,7 @@ and record the original page and criterion behind each decision.
 | --- | --- | --- |
 | R0081, Sun et al., IDEA | Original pp. 1–2, §§1–3 describes model splitting and prototype results. The [MobiSys accepted demos](https://www.sigmobile.org/mobisys/2022/accepted-demos.html) list the report. The [Call for Demos](https://www.sigmobile.org/mobisys/2022/demos.html) specifies a demo extended abstract and selection for audience interest. | **Author confirmed EXCLUDE (E7), 27 November 2026.** The official ACM demo category and its extended-abstract format establish the publication type. |
 | R0082, LLHR | The [conference DOI](https://doi.org/10.1109/WCNC55385.2023.10118908) identifies the publication. The retained file is [arXiv:2305.15858v1](https://arxiv.org/abs/2305.15858), as shown on p. 1. The arXiv page links the conference DOI. This verifies the bibliographic linkage. Its §§I and IV (pp. 2 and 5) support a scope candidate. The IEEE version of record was unavailable in the current public-access check. | **Author confirmed AWAITING_CLASSIFICATION (E7), 27 November 2026.** Reassess when an authorized IEEE proceedings copy is available for comparison. The preprint stays outside the primary synthesis while E7 is pending. |
-| R0132 | Original p. 10, §§8.1–8.2, and pp. 17–20, including Table 12, describe system-level simulation, HIL replay and component metrics. They do not tie a specific evaluated multi-UAV workload to shared neural inference across those UAVs. The [DataCite deposit record](https://api.datacite.org/dois/10.5281/zenodo.20445205) links a separate version DOI ending 20445206 and journal ISSN 3051-3820. This establishes publication metadata, while E7 remains to be confirmed. | Ask the author reviewer to locate one evaluated configuration showing both at least two UAVs or explicit swarm operation (E2) and jointly executed neural inference (E3). If neither the report nor qualifying supplemental evidence resolves the inference mapping, E3 is the proposed primary exclusion. Verify E7 separately. |
+| R0132 | Original p. 10, §§8.1–8.2, and pp. 17–20, including Table 12, describe system-level simulation, HIL replay and component metrics. They do not tie a specific evaluated multi-UAV workload to shared neural inference across those UAVs. The [DataCite deposit record](https://api.datacite.org/dois/10.5281/zenodo.20445205) links a separate version DOI ending 20445206 and journal ISSN 3051-3820. This establishes publication metadata, while E7 remains to be confirmed. | **Author confirmed EXCLUDE (E3), 27 November 2026.** Figures 12–13 place Transformer fusion at the edge and show the UAV in a sensing role. Table 12 reports HIL and component benchmarks. These do not establish an evaluated neural workload executed collaboratively within the multi-UAV system. E3 is the sole primary exclusion code. |
 | R0223, Wang and Deng | Original pp. 2–4 §§2–3 describes task-graph and perception feedback. Pp. 5–7 §4 and Table 2 measure scenario response and coordination. Those measures do not isolate assignment, transfer or fusion of a neural inference workload. | Proposed exclusion under E3 if author review confirms that coordinated planning is the evaluated unit. |
 | R0113, Hemasri and Reddy | Original p. 1 identifies the venue, and pp. 9–13 describe simulation and HIL without consistently locating which setting produced the printed outcomes. The [ISSN record](https://portal.issn.org/resource/ISSN/3069-0102) confirms 3069-0102. The [publisher's About page](https://ajaccm.com/journal/index.php/ajaccm/about) states that the journal uses peer review, lists discovery services and gives a journal-level identifier. The [article landing page](https://ajaccm.com/journal/index.php/ajaccm/article/view/771) confirms the title and both authors, but its citation DOI contains only the prefix. An article-level DOI or authoritative Scopus/WoS coverage was not verified. | Recheck E3 and E7 using the exact article and issue, and separate venue eligibility from unusable outcome context. The locked protocol does not require Scopus/WoS coverage or an article DOI. A new index requirement would require a documented amendment and consistent rescreening of all reports. |
 | R0145, Xiao et al. | Original pp. 4–6 and 11–14 describe edge/cloud model roles, and p. 15 Fig. 4 plus p. 16 identify stand-alone model times. The reported component timings do not establish matched orchestration performance for the multi-UAV request workload. | Retain as whole-request orchestration only if the author confirms an evaluated cross-node assignment of identifiable neural calls or state distinct from trajectory generation alone. Otherwise propose E3. |

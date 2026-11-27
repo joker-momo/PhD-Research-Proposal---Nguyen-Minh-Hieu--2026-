@@ -23,11 +23,11 @@ IEEE Xplore: 63, Scopus: 110\\ ACM Digital Library: 404, OpenAlex: 116};
 \node[main,below=of screen] (sought) {Reports sought for retrieval ($n=137$)};
 \node[detail,right=of sought] (missing) {Reports not retrieved ($n=1$)};
 \node[main,below=13mm of sought] (assessed) {Reports assessed for eligibility ($n=136$)};
-\node[detail,right=of assessed] (fulltextex) {\textbf{Reports excluded ($n=88$)}\\
-Secondary or non-primary report: 12\\ No evaluated multi-UAV system: 29\\ No collaborative inference: 39\\ No evaluative evidence: 1\\ Language ineligible: 1\\ Incomplete or ineligible report type: 6};
+\node[detail,right=of assessed] (fulltextex) {\textbf{Reports excluded ($n=89$)}\\
+Secondary or non-primary report: 12\\ No evaluated multi-UAV system: 29\\ No collaborative inference: 40\\ No evaluative evidence: 1\\ Language ineligible: 1\\ Incomplete or ineligible report type: 6};
 \node[main,below=13mm of assessed] (included) {\textbf{Included in the review}\\
 Reports of included studies ($n=46$)\\ Studies ($n=46$)};
-\node[detail,right=of included] (pending) {Reports awaiting classification ($n=2$)};
+\node[detail,right=of included] (pending) {Reports awaiting classification ($n=1$)};
 \foreach \from/\to in {raw/screen,screen/sought,sought/assessed,assessed/included,raw/dup,screen/screenex,sought/missing,assessed/fulltextex}
   \draw[fork] (\from) -- (\to);
 \draw[fork] ([yshift=-2.5mm]assessed.east) -- ++(2mm,0) |- (pending.west);

@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T16:44:58+07:00",
+  "updated_at": "2026-11-27T16:47:29+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "alternative_editorial_pdf_ready_for_comparison",
-    "summary": "The 29-page HK261 comparison PDF reflects the author-confirmed E7 exclusion of R0081. S2 records the author-confirmed E7 deferral for R0082. R0132 awaits an author decision."
+    "summary": "The 29-page HK261 comparison PDF and S2 reflect the author-confirmed exclusions of R0081 (E7) and R0132 (E3). R0082 remains pending under E7."
   },
   "task": {
-    "task_id": "hk261-author-adjudication-r0082",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T16:44:16+07:00",
-    "updated_at": "2026-11-27T16:44:58+07:00",
-    "checkpoint_path": "manuscript/sn_computer_science/supplement_s2_adjudication.md",
-    "decision_id": "hk261-author-adjudication-r0082-v1",
-    "completed_at": "2026-11-27T16:44:58+07:00"
-  },
-  "next_task": {
     "task_id": "hk261-author-adjudication-r0132",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-27T16:45:56+07:00",
+    "updated_at": "2026-11-27T16:47:29+07:00",
+    "checkpoint_path": "manuscript/sn_computer_science/main.pdf",
+    "decision_id": "hk261-author-adjudication-r0132-v1",
+    "completed_at": "2026-11-27T16:47:29+07:00"
+  },
+  "next_task": {
+    "task_id": "hk261-r0082-proceedings-version-check",
+    "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "Await the author decision for R0132 after review of its original PDF and eligibility criteria.",
-    "acceptance": "Apply only the explicit author decision for R0132 and reconcile S2 and PRISMA if the disposition changes."
+    "action": "R0082 remains pending under E7 until an authorized IEEE proceedings copy or further author direction is available.",
+    "acceptance": "Reassess the proceedings version against E7 and obtain explicit author confirmation before changing the disposition."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -72,8 +72,8 @@
     "screened_reports": 136,
     "working_decisions": {
       "include": 46,
-      "exclude": 88,
-      "uncertain": 2
+      "exclude": 89,
+      "uncertain": 1
     },
     "restart_inventory": {
       "manifest": "restart_2026_11_26/step01_inventory.json",
@@ -568,23 +568,22 @@
         "records_excluded": 328,
         "records_screened": 465,
         "reports_assessed": 136,
-        "reports_awaiting_classification": 2,
-        "reports_excluded": 88,
+        "reports_awaiting_classification": 1,
+        "reports_excluded": 89,
         "reports_not_retrieved": 1,
         "reports_sought": 137
       },
       "awaiting_classification": {
-        "R0082": "E7",
-        "R0132": "E2|E3"
+        "R0082": "E7"
       },
       "not_retrieved": [
         "R0116"
       ],
-      "ledger_sha256": "7a0658decbbfa91a5f0c17f6033b7ac39db04c1114b7c10a6886bdfb4870dae8",
-      "flow_sha256": "030a6cf31a4cacd22fffa118624b17f7d893b42cd0eaf80a41569b35184815a2",
+      "ledger_sha256": "4548efff09255839d83d072f726575d11f6103fec0e505fdfd4cc1457d156f19",
+      "flow_sha256": "c7389bf6fa1fbbaf0c4e7d389f22c7042b767a7d8fe6b4abe510cabd5dc2d7d5",
       "unexplained_arithmetic_differences": 0,
       "checklist": "restart_2026_11_26/prisma/active_prisma_checklist.md",
-      "checklist_sha256": "142c0beaf2289086e6d34dd27dd77f7075eacbec38a137b81f17822a93a2df97",
+      "checklist_sha256": "e2d899a6b3f98f66a2b55a199527a133d1570fe329e90ed4204d0a6202060fac",
       "checklist_items_verified": 27,
       "checklist_locators_verified": 45,
       "checklist_status_counts": {
@@ -691,9 +690,9 @@
       "appraisal_domains": 10,
       "recorded_references": 55,
       "verified_dois": 54,
-      "independent_human_adjudication": "INDEPENDENT_SCREENING_UNDOCUMENTED_ONE_AUTHOR_DECISION_RECORDED",
+      "independent_human_adjudication": "INDEPENDENT_SCREENING_UNDOCUMENTED_TWO_AUTHOR_EXCLUSIONS_AND_ONE_DEFERRAL_RECORDED",
       "review": "restart_2026_11_26/prisma/active_reconciliation_review.md",
-      "pdf_sha256": "064af5ee45c81260066a0162c7d42edfd689d9b396042bd1a9fc5077a1cb03ce",
+      "pdf_sha256": "cf9174992af2f3ec13cad68cce2f3a184a6c0381fc660f3bbcaf682fe98dda22",
       "evidence_reproduction": {
         "index": "manuscript/sn_computer_science/supplement_evidence_index.md",
         "snapshot": "manuscript/sn_computer_science/evidence_sha256.txt",
@@ -702,7 +701,7 @@
         "indexed_outcomes": 9,
         "hashed_evidence_files": 72,
         "verified_original_pdfs": 49,
-        "reproduction": "PRISMA count ledger and TikZ source reproduced. Standalone flow and manuscript page 6 were inspected.",
+        "reproduction": "Count ledger and TikZ source reproduced. Compared all 29 PDF pages with the preceding revision; visually checked the four changed pages and standalone flow.",
         "portable_package": {
           "readme": "manuscript/sn_computer_science/minh_chung_hinh_bang/README.md",
           "index": "manuscript/sn_computer_science/minh_chung_hinh_bang/ITEM_INDEX.md",
@@ -737,7 +736,7 @@
         "plot_only_reports": 9,
         "unresolved_outcome_reports": 1,
         "human_log_rows": 136,
-        "human_reviews_recorded": 2,
+        "human_reviews_recorded": 3,
         "human_log": "manuscript/sn_computer_science/human_adjudication_log.csv",
         "supplement_s3": "manuscript/sn_computer_science/supplement_s3.md",
         "source_lookup_task_id": "01a21c52-100e-7a50-afbd-184b571116b8",
@@ -748,8 +747,7 @@
         }
       },
       "reports_awaiting_classification": [
-        "R0082",
-        "R0132"
+        "R0082"
       ]
     }
   },
