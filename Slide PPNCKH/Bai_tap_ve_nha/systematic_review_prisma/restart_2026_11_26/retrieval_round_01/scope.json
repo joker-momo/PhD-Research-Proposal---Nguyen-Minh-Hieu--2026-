@@ -1,0 +1,32 @@
+{
+  "task_id": "restart-retrieval-round-01",
+  "source_commit": "bcf73c7",
+  "cutoff": "2026-11-26",
+  "retrieval_ids": [
+    "R0096",
+    "R0221",
+    "R0402",
+    "R0014",
+    "R0038",
+    "R0043",
+    "R0058",
+    "R0064",
+    "R0070",
+    "R0077",
+    "R0080",
+    "R0082",
+    "R0106",
+    "R0107"
+  ],
+  "awaiting_ids": [
+    "R0075",
+    "R0081",
+    "R0092",
+    "R0110",
+    "R0118",
+    "R0137"
+  ],
+  "dispatch_authorized": false,
+  "manuscript_edit_authorized": false,
+  "round_02_authorized": false
+}
