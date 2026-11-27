@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T08:00:27+07:00",
+  "updated_at": "2026-11-27T08:05:39+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "step12_complete_step13_ready",
-    "summary": "P09 quality appraisal passed for all 25 locked P08 reports. Approved step 13 PRISMA reconciliation is ready."
+    "status": "step15_complete_step16_ready",
+    "summary": "Restart-based Springer Nature LaTeX and PDF verified. Final source integrity and coursework handoff ready."
   },
   "task": {
-    "task_id": "restart-14",
-    "owner": "CODEX_WRITING",
-    "status": "completed",
-    "started_at": "2026-11-27T02:16:26+07:00",
-    "updated_at": "2026-11-27T08:00:27+07:00",
-    "completed_at": "2026-11-27T08:00:27+07:00",
-    "checkpoint_path": "restart_2026_11_26/synthesis/review.md",
-    "decision_id": "restart-14-synthesis-v1"
-  },
-  "next_task": {
     "task_id": "restart-15",
     "owner": "CODEX_WRITING",
+    "status": "completed",
+    "started_at": "2026-11-27T08:00:27+07:00",
+    "updated_at": "2026-11-27T08:05:39+07:00",
+    "completed_at": "2026-11-27T08:05:39+07:00",
+    "checkpoint_path": "manuscript/sn_computer_science/step15_build_review.md",
+    "decision_id": "restart-15-sncs-v1"
+  },
+  "next_task": {
+    "task_id": "restart-16",
+    "owner": "GEMINI_RESEARCH",
     "status": "ready",
-    "action": "Write Springer Nature LaTeX SN Computer Science manuscript from accepted restart evidence.",
-    "acceptance": "Consistent source-located results, locked corpus counts, resolved references, compiled PDF, and explicit metadata and process limits."
+    "action": "Verify source identity and publication notices in Gemini.app, then finish independent manuscript integrity and handoff.",
+    "acceptance": "Build PASS, 0 unresolved citations, 0 unsupported values, all PDF pages inspected, gates and limitations documented."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -65,7 +65,7 @@
     },
     "approved_plan": "restart_2026_11_26/approved_plan.md",
     "progress_tracker": "restart_2026_11_26/progress.json",
-    "manuscript_status": "HISTORICAL_DRAFT_NOT_VALIDATED_FOR_RESTART"
+    "manuscript_status": "RESTART_MANUSCRIPT_STEP15_PASS_STEP16_PENDING"
   },
   "evidence": {
     "retrieval_reports": 44,
@@ -244,6 +244,14 @@
         "verified_deleted": 2,
         "completed_at": "2026-11-27T08:00:27+07:00"
       }
+    },
+    "manuscript": {
+      "gate": "PASS",
+      "pages": 10,
+      "references": 26,
+      "distinct_doi_links": 26,
+      "checklist_items": 27,
+      "completed_at": "2026-11-27T08:05:39+07:00"
     }
   },
   "blockers": [],

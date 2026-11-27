@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T08:00:27+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T08:05:39+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -579,9 +579,19 @@ Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
 <a id="buoc-15"></a>
 ## Bước 15 · Viết manuscript LaTeX SN Computer Science
 
-**Chưa bắt đầu** · `2026-11-26T18:07:38+07:00`
+**Đã chốt theo sổ tiến độ** · `2026-11-27T08:05:39+07:00`
 
-Chưa có tệp minh chứng được đăng ký cho bước này.
+Nghiệm thu cấp bước đã ghi trong sổ: PASS=1.
+
+- [README.md](../manuscript/sn_computer_science/README.md)
+- [main.tex](../manuscript/sn_computer_science/main.tex)
+- [main.pdf](../manuscript/sn_computer_science/main.pdf)
+- [references.bib](../manuscript/sn_computer_science/references.bib)
+- [prisma_flow.pdf](../manuscript/sn_computer_science/prisma_flow.pdf)
+- [supplement_search_strategies.md](../manuscript/sn_computer_science/supplement_search_strategies.md)
+- [supplement_fulltext_exclusions.csv](../manuscript/sn_computer_science/supplement_fulltext_exclusions.csv)
+- [step15_build_review.md](../manuscript/sn_computer_science/step15_build_review.md)
+- [prisma_checklist.md](../restart_2026_11_26/prisma/prisma_checklist.md)
 
 <a id="buoc-16"></a>
 ## Bước 16 · Kiểm định và bàn giao

@@ -1,24 +1,22 @@
 # SN Computer Science coursework manuscript
 
-Active source: `main.tex`; bibliography: `references.bib`; compiled output: `main.pdf`.
-The original Springer Nature `sn-jnl.cls` and `sn-vancouver-num.bst` are retained unchanged.
+`main.tex` is the editable source, `references.bib` the bibliography, and
+`main.pdf` the compiled review. The Springer Nature `sn-jnl.cls` and
+`sn-vancouver-num.bst` match the official December 2024 template.
 
-Current basis: 46 full-text reports screened, 36 working included, two excluded,
-eight awaiting classification. Unique-study count is unknown. This is an interim
-review copy, not a submission-ready or author-approved manuscript.
-
-Build in this directory:
+Build from this directory using the approved profile:
 
 ```sh
 tectonic --keep-logs --keep-intermediates main.tex
 ```
 
-The release audit and 36-row extraction table are in `../../release_46report/`.
-The complete 27-item reporting checklist is `../../prisma_2020_checklist_working.md`.
-Twenty-four reports have detailed extraction and nine usable appraisal domains;
-12 additional reports have minimum source-located extraction and no detailed
-appraisal. Missing conference page metadata is omitted, not invented.
+The restart evidence includes 25 reports mapped to 25 study IDs. The manuscript
+uses [reconciled counts](../../restart_2026_11_26/prisma/prisma_counts.json),
+[accepted synthesis](../../restart_2026_11_26/synthesis/accepted_claims.json) and
+the [PRISMA 2020 checklist](../../restart_2026_11_26/prisma/prisma_checklist.md).
+Supplement S1 provides the actual searches. S2 gives the primary reasons for
+full-text exclusions. S3 comprises the [study characteristics and source
+matrices](../../restart_2026_11_26/synthesis/).
 
-Authorship, declarations, complete database searches, study-family reconciliation,
-and uniform appraisal remain outside the completed bounded delivery. No submission
-or email has been performed. Historical packages must not be used as the current PDF.
+The PDF is for HK261 coursework. Author details and declarations await
+confirmation. Journal submission and email forwarding are outside this delivery.
