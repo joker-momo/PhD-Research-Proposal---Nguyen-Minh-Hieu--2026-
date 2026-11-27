@@ -1,0 +1,242 @@
+[
+  {
+    "id": "R0239",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0239.pdf",
+    "sha256": "f1f3a9883a57d7b5b38de5666347cace630146e24ec5cb782ba05f0647c15321",
+    "doi": "10.1145/3620665.3640420",
+    "title": "MulBERRY: Enabling Bit-Error Robustness for Energy-Efficient Multi-Agent Autonomous Systems",
+    "authors": "Zishen Wan; Nandhini Chandramoorthy; Karthik Swaminathan; Pin-Yu Chen",
+    "year": "2024",
+    "venue": "Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2",
+    "pages": 17,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2024-04-27",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3620665.3640420"
+    },
+    "scope_notes": [
+      "Publisher Main Program accepted title and exact-paper review procedure https://www.asplos-conference.org/asplos2024/cfp/index.html. Distinguish federated policy learning from collaborative evaluated inference."
+    ]
+  },
+  {
+    "id": "R0240",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0240.pdf",
+    "sha256": "4583ce88eb96496dbfb65627595612cb282cb5240a04c1adbdb52f9993f17b20",
+    "doi": "10.1145/3842435.3843959",
+    "title": "Poster: CMA-FL: Cognitive Multi-Agent Federated Learning for Resource-Aware Drone Communication Attack Detection",
+    "authors": "Pronaya Bhattacharya; Anwesha Mukherjee; Somnath Bera; Debashis De",
+    "year": "2026",
+    "venue": "Proceedings of the 7th International Workshop on Drone-Assisted Wireless Communications for 5G and Beyond",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2026-10-26",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3842435.3843959"
+    },
+    "scope_notes": [
+      "Check poster result completeness and exact track. Do not infer from page count alone."
+    ]
+  },
+  {
+    "id": "R0244",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0244.pdf",
+    "sha256": "7b1dc6dcc59209a5231dd48661ab11efc8a234fc6a7d7a0de7ba9f4fa544ffc7",
+    "doi": "10.1145/3842435.3843954",
+    "title": "Attention-Guided UAV Intrusion Detection with BSO-Based Feature Selection",
+    "authors": "Akshat Gaurav; Varsha Arya; Ching-Hsien Hsu; Kwok Tai Chui; Brij B. Gupta",
+    "year": "2026",
+    "venue": "Proceedings of the 7th International Workshop on Drone-Assisted Wireless Communications for 5G and Beyond",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2026-10-26",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3842435.3843954"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0245",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0245.pdf",
+    "sha256": "a6a69fb688cc79494c7189bbcccd6ecdbe3e09b5fddb70c3b8254aa3e638f826",
+    "doi": "10.1145/3638884.3638938",
+    "title": "Multi-height Visual Drone Positioning Based on LSTM and Convolutional Neural Networks",
+    "authors": "Qibin He; Yapeng Wang; Xu Yang; Sio-Kei Im",
+    "year": "2024",
+    "venue": "Proceedings of the 2023 9th International Conference on Communication and Information Processing",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2024-04-23",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3638884.3638938"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0246",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0246.pdf",
+    "sha256": "063c8b0873e3a8c8733cdaee46d45e2973a3c2e270c7726f1df56fe6eba7d1f5",
+    "doi": "10.1145/3641512.3686384",
+    "title": "SkySCALE: A Radio Tomographic Approach Towards Scaling UAV Network Deployments",
+    "authors": "Subrata Das; Ayon Chakraborty",
+    "year": "2024",
+    "venue": "VENUE_NOT_PARSED",
+    "pages": 10,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2024",
+      "type": "publisher 2024 proceedings year only",
+      "url": "https://doi.org/10.1145/3641512.3686384"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0248",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0248.pdf",
+    "sha256": "471f2f4876dff0b42bdde3910e59ae520decfe8bb4ca5b550598e007156c56db",
+    "doi": "10.1109/tnet.2023.3289172",
+    "title": "Ensuring Threshold AoI for UAV-Assisted Mobile Crowdsensing by Multi-Agent Deep Reinforcement Learning With Transformer",
+    "authors": "Hao Wang; Chi Harold Liu; Haoming Yang; Guoren Wang; Kin K. Leung",
+    "year": "2023",
+    "venue": "IEEE/ACM Transactions on Networking",
+    "pages": 16,
+    "version": "PUBLISHER_FINAL_VERSION",
+    "date": {
+      "value": "2023-07-12",
+      "type": "IEEE article date of publication, physical p1",
+      "url": "https://doi.org/10.1109/tnet.2023.3289172"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0249",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0249.pdf",
+    "sha256": "d16fd743ca90aff8ea727f96145d5aafcf2ab0726950de573c6f1ded0aeb7cdf",
+    "doi": "10.1145/3637528.3672027",
+    "title": "Physics-informed Neural ODE for Post-disaster Mobility Recovery",
+    "authors": "Jiahao Li; Huandong Wang; Xinlei Chen",
+    "year": "2024",
+    "venue": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+    "pages": 12,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2024-08-24",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3637528.3672027"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0251",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0251.pdf",
+    "sha256": "fdbf01fab5a8c2db806f398de15fe6d21c3446a2dd090813b05e94c6d48ac58c",
+    "doi": "10.1145/3795154.3795350",
+    "title": "Research on accurate operation system of UAV in complex Scene Based on multi-source intelligent Fusion and dynamic Management",
+    "authors": "Chang Wei; Yu Shuai",
+    "year": "2026",
+    "venue": "Proceedings of the 2025 6th International Conference on Computer Science and Management Technology",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2026-04",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3795154.3795350"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0253",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0253.pdf",
+    "sha256": "51bb1a46abf54500651754751df02022c4ceed8ce87a9420a2b5644652c874e3",
+    "doi": "10.1145/3770651",
+    "title": "Hierarchical Human-UAV Cooperative Task Allocation for Spatiotemporal Crowdsensing in Disaster Response",
+    "authors": "Qingyang Li; Zexuan Li; Qianru Wang; Lei Han; Jiangtao Cui; Zhiwen Yu",
+    "year": "2025",
+    "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+    "pages": 33,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2025-12-02",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3770651"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0255",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0255.pdf",
+    "sha256": "a34253706d86ac82184a2019f3cdce28e531abc0e1c81c6722344843f0e6134e",
+    "doi": "10.1145/3840749.3841574",
+    "title": "EdgeCurator: Efficient Cross-Modal Grounding for Real-Time Language-Guided UAV Navigation",
+    "authors": "Sitian Peng; Rui Wang",
+    "year": "2026",
+    "venue": "Proceedings of the 2nd International Workshop on Efficient Representation Learning for Multimodal Information Retrieval",
+    "pages": 9,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2026-11-10",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3840749.3841574"
+    },
+    "scope_notes": [
+      "Check physical pp1–2 explicit scope and physical micro-UAV evaluation."
+    ]
+  },
+  {
+    "id": "R0257",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0257.pdf",
+    "sha256": "0985ce96eb166938d8787d755740ce2820344d1acd8209c4729fc0515e3ba52a",
+    "doi": "10.1145/3725221",
+    "title": "GSFL: A Privacy-Preserving Grouping-Split Federated Learning Approach in Resource-Constrained Edge Computing Scenarios",
+    "authors": "Qi Liu; Zhilu Wang; Xiaokang Zhou; Yonghong Zhang; Xiaodong Liu; Haiyang Lin",
+    "year": "2025",
+    "venue": "ACM Transactions on Autonomous and Adaptive Systems",
+    "pages": 29,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2025-11-26",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3725221"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0259",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0259.pdf",
+    "sha256": "2443f7b7fdce982ee93ae6b60b47a0b72477b776e8172dd63750c2caa92d8535",
+    "doi": "10.1145/3789418.3789446",
+    "title": "SemanticBlock: Blockchain-Assisted Secure and Energy-Aware UAV-BS Deployment Leveraging Semantic Learning",
+    "authors": "Mohtasin Golam; Esmot Ara Tuli; Jae-Min Lee; Dong-Seong Kim",
+    "year": "2026",
+    "venue": "Proceedings of the 9th International Conference on Algorithms, Computing and Systems",
+    "pages": 6,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2026-04-25",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3789418.3789446"
+    },
+    "scope_notes": []
+  },
+  {
+    "id": "R0260",
+    "pdf": "restart_2026_11_26/fulltext_retrieval/pdf/R0260.pdf",
+    "sha256": "752dd73337644f33e5011de572dd56d10493260a31917cf22b3fa30ddc2fe3a7",
+    "doi": "10.1145/3769102.3770616",
+    "title": "Does Accurate Real-Time AI Need Edge Offload?",
+    "authors": "Qifei Dong; Jingao Xu; Padmanabhan Pillai; Mahadev Satyanarayanan",
+    "year": "2025",
+    "venue": "Proceedings of the Tenth ACM/IEEE Symposium on Edge Computing",
+    "pages": 18,
+    "version": "PENDING_VERSION_ADJUDICATION",
+    "date": {
+      "value": "2025-12-03",
+      "type": "published-online",
+      "url": "https://api.crossref.org/works/10.1145/3769102.3770616"
+    },
+    "scope_notes": []
+  }
+]

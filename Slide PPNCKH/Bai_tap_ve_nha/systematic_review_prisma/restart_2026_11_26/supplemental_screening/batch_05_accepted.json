@@ -1,0 +1,914 @@
+[
+  {
+    "id": "R0038",
+    "access": "READ",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        3,
+        "B. System Model",
+        "We split the CNN architecture into four logical components"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "A. Experimental Setup",
+        "a pair of UAVs running on Raspberry Pis"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "System architecture",
+        "We split the CNN architecture into four logical components"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "B. Experimental Results",
+        "average inference time per CNN layer operating independently"
+      ],
+      [
+        "E5",
+        "https://www.wincom-conf.org/WINCOM_2025/?page=submission",
+        0,
+        "News",
+        "2025-12-31"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "II. Related Work",
+        "Various architectural approaches have been proposed"
+      ],
+      [
+        "E7",
+        "https://www.wincom-conf.org/WINCOM_2025/?page=submission",
+        0,
+        "Submission",
+        "All submitted papers will go through a peer review"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0052",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "E3: The inference workload is executed independently on each aircraft. System coordination does not distribute the perception workload.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "III. METHODOLOGY",
+        "the proposed framework leverages a modular drone-swarm system"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "B) Defensive Swarm Configuration",
+        "comprises 10 quadrotor UAVs, each equipped with simulated"
+      ],
+      [
+        "E3",
+        "PDF",
+        3,
+        "A) System Overview and Architectural Design",
+        "Each drone independently performs perception"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "A) Simulation Environment",
+        "developed in a hybrid simulation setup integrating Microsoft AirSim"
+      ],
+      [
+        "E5",
+        "sources/raw/core_searches/ieee_xplore_complementary_export_2026-11-26.csv",
+        0,
+        "Online Date",
+        "21 Jan 2026"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "A) Swarm Intelligence in Autonomous Aerial Systems",
+        "Swarm intelligence has gained traction in UAV applications"
+      ],
+      [
+        "E7",
+        "https://pspb.ieee.org/images/files/PSPB/opsmanual.pdf",
+        0,
+        "§8.2.2.B.1, physical PDF p115",
+        "applies to all conference proceedings published through IEEE Xplore"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0106",
+    "access": "READ",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "I. INTRODUCTION",
+        "we consider a multiple UAV (MUAV)-enabled ISCC network"
+      ],
+      [
+        "E2",
+        "PDF",
+        3,
+        "III. SYSTEM MODEL AND PROBLEM FORMULATION",
+        "which consists of M UAVs, N single antenna"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "A. SL-Enabled GTST Inference Scheme",
+        "different NN blocks are inferred on different W-UAVs"
+      ],
+      [
+        "E4",
+        "PDF",
+        10,
+        "V. SIMULATION RESULTS",
+        "effectiveness and performance superiority of the proposed scheme"
+      ],
+      [
+        "E5",
+        "PDF",
+        1,
+        "Footnote",
+        "Date of publication 3 June 2025"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "II. RELATED WORKS",
+        "The UAV-enabled ISCC networks have been extensively studied"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "Footnote",
+        "associate editor coordinating the review of this article"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0145",
+    "access": "READ",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "",
+    "version_note": "ACM Just Accepted author manuscript (nonfinal copy; not final typeset issue version).",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        6,
+        "3.1 System Overview",
+        "each UAV is equipped with a small LLM"
+      ],
+      [
+        "E2",
+        "PDF",
+        14,
+        "6.1 Experiment settings",
+        "The UAV swarm consists of 10 UAVs"
+      ],
+      [
+        "E3",
+        "PDF",
+        16,
+        "6.2 Performance Comparison of Different LLMs",
+        "DeepSeek-R1-Distill-Llama-8B and LLaMA-3.2-3B as the cloud-side and"
+      ],
+      [
+        "E4",
+        "PDF",
+        17,
+        "6.2 Performance Comparison of Different LLMs",
+        "uniformly compared the communication time, inference time, and"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3774655",
+        0,
+        "published-online",
+        "2025-11-03"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 INTRODUCTION",
+        "multiple UAVs are often deployed in swarms to"
+      ],
+      [
+        "E7",
+        "PDF",
+        22,
+        "Publication history",
+        "Received 23 June 2025; revised 6 September 2025"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0220",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "E3: Factor-graph cooperative navigation evaluation does not use a neural inference workload. E7: exact track review unconfirmed.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        5,
+        "2.3 Factor Screening Method",
+        "this paper proposes an efficient distributed cooperative navigation"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "3.1 Simulation Experiment Design",
+        "The UAV swarm consist of 196 fixed-wing MAV"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "2.3 Factor Screening Method",
+        "we use Weighted Least Squares (WLS) algorithm to"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "3.1 Simulation Experiment Design",
+        "simulation flight duration is 500s, and each experiment"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3727993.3728075",
+        0,
+        "published-online",
+        "2025-05-26"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "The algorithm based on factor graph has an"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "ACM Reference Format",
+        "International Conference on Computational Modeling, Simulation and Data Analysis"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "Unconfirmed exact applicable peer-review policy."
+    }
+  },
+  {
+    "id": "R0223",
+    "access": "READ",
+    "decision": "INCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "",
+    "secondary": [],
+    "reason": "",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "3 Methods",
+        "We propose a loop intelligent control framework called UTTUT"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "4.2 Multi-Agent Cooperative Task Planning Experiments",
+        "to assess UAV swarm coordination"
+      ],
+      [
+        "E3",
+        "PDF",
+        5,
+        "4.2 Multi-Agent Cooperative Task Planning Experiments",
+        "compare centralization, parallelism, distribution, and master frameworks shown"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "4.2 Multi-Agent Cooperative Task Planning Experiments",
+        "Each task is executed at least 30 times"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3760269.3760299",
+        0,
+        "published-online",
+        "2025-09-17"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "2 Relative work",
+        "Path planning for multi-agent UAV systems has become"
+      ],
+      [
+        "E7",
+        "https://www.keoaeic.org/meeting/FNJRAJ.html",
+        0,
+        "ACAIB 2025, 论文出版",
+        "所有的投稿都必须经过2-3位组委会专家审稿"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0228",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "E3: Sections 4–6 evaluate standalone image classification benchmarks separately from the multi-UAV digital twin. E7: the workshop CFP did not establish review.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        1,
+        "1 INTRODUCTION",
+        "have developed a Digital Twin (DT) System named GazeboNS3"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "5 EXPERIMENTAL RESULTS",
+        "networking delays and packet losses by using two UAVs"
+      ],
+      [
+        "E3",
+        "PDF",
+        6,
+        "6 CONCLUSION",
+        "plan to use this DT system to evaluate"
+      ],
+      [
+        "E4",
+        "PDF",
+        6,
+        "5 EXPERIMENTAL RESULTS",
+        "the simulation performance remains stable up to 10 drones"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3711875.3737659",
+        0,
+        "published-online",
+        "2025-09-25"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "2 RELATED WORK",
+        "Our work is based on three foundational open-source components"
+      ],
+      [
+        "E7",
+        "https://sites.google.com/view/dronet2025/",
+        0,
+        "IMPORTANT DATES",
+        "Paper submission: April 19th May 4th, 2025"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "Unconfirmed exact applicable peer-review policy."
+    }
+  },
+  {
+    "id": "R0229",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "E3: Evaluated federated optimization aggregates training updates. Local policy use does not establish shared inference. E7: exact track review unconfirmed.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "2.1 System architecture",
+        "consists of three main components: local learning units deployed"
+      ],
+      [
+        "E2",
+        "PDF",
+        4,
+        "3 EXPERIMENTAL SETUP",
+        "In each experiment, five UAVs complete ten mission rounds"
+      ],
+      [
+        "E3",
+        "PDF",
+        2,
+        "2.1 System architecture",
+        "Each UAV observes local flight states, trains a local"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "4.1 Energy reduction",
+        "The FL-based optimizer reduces the average energy consumption"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3838457.3838477",
+        0,
+        "published-online",
+        "2026-09-14"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "2.1 System architecture",
+        "The proposed system consists of three main components"
+      ],
+      [
+        "E7",
+        "PDF",
+        1,
+        "ACM Reference Format",
+        "Internet of Things and Machine Learning (IoTML 2026)"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "Unconfirmed exact applicable peer-review policy."
+    }
+  },
+  {
+    "id": "R0230",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "E3: Body §§3.2 and 4 describe a federated model-training evaluation without collaborative inference. E7: the organizer lists the report, but exact review track remains unconfirmed.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "1 Introduction",
+        "developed a comprehensive framework that integrates FL techniques"
+      ],
+      [
+        "E2",
+        "PDF",
+        3,
+        "3.1 AERPAW Experiment Configuration",
+        "The setup encompasses 2 to 5 portable nodes"
+      ],
+      [
+        "E3",
+        "PDF",
+        4,
+        "3.2.1 FL Preliminaries",
+        "Flower orchestrates the distributed training process by coordinating"
+      ],
+      [
+        "E4",
+        "PDF",
+        7,
+        "4.1 Evaluation Framework",
+        "we extend the measurement workflow with custom Python"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3700838.3700857",
+        0,
+        "published-online",
+        "2025-01-04"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "2.1 AERPAW Testbed",
+        "AERPAW offers a comprehensive infrastructure for conducting experiments"
+      ],
+      [
+        "E7",
+        "https://cse.iith.ac.in/icdcn-2025/accepted_paper.html",
+        0,
+        "Accepted Papers",
+        "Federated Learning-enabled Network Incident Anomaly Detection Optimization for Drone Swarms"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "Unconfirmed exact applicable peer-review policy."
+    }
+  },
+  {
+    "id": "R0231",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "E2: the evaluated topology serves stationary IoT devices without a multi-UAV system. E3: the evaluation offloads generic task data.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        3,
+        "1 Introduction",
+        "we propose a cooperative multi-split and multi-hop stochastic"
+      ],
+      [
+        "E2",
+        "PDF",
+        6,
+        "3.1 Two Timescales Optimization",
+        "targets a subset of IoT devices characterized by stationary"
+      ],
+      [
+        "E3",
+        "PDF",
+        7,
+        "3.1 Two Timescales Optimization",
+        "indicates the amount of data generated by IoT device"
+      ],
+      [
+        "E4",
+        "PDF",
+        19,
+        "7 Performance Evaluation",
+        "we show simulation results to validate the schedulability"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3772281",
+        0,
+        "published-online",
+        "2026-08-24"
+      ],
+      [
+        "E6",
+        "PDF",
+        4,
+        "2.1 Multi-hop Task Offloading",
+        "The multi-hop task offloading problems have been studied"
+      ],
+      [
+        "E7",
+        "PDF",
+        28,
+        "Publication history",
+        "Received 2 November 2024; revised 3 May 2025"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0232",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "T",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E2",
+    "secondary": [],
+    "reason": "E2: §§4.1–4.2 benchmark one onboard pipeline at a time linked to an edge laptop. Physical p2 Fig. 1 is the motivating multi-UAV application; the experiments do not instantiate its multi-UAV topology.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        3,
+        "3 OBJECT RECOGNITION OFFLOADING",
+        "propose two methods to identify the region for offloading"
+      ],
+      [
+        "E2",
+        "PDF",
+        4,
+        "4 EXPERIMENTAL RESULTS",
+        "Raspberry Pi 4 Model B, a Jetson Nano, and"
+      ],
+      [
+        "E3",
+        "PDF",
+        5,
+        "4.2 Performance Comparison with Baselines",
+        "The laptop runs the YOLOv7 model on GPU"
+      ],
+      [
+        "E4",
+        "PDF",
+        4,
+        "4.2 Performance Comparison with Baselines",
+        "compare the following metrics: energy consumption of RPi and"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3597060.3597240",
+        0,
+        "published-online",
+        "2023-06-19"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "2 RELATED WORK",
+        "The two most popular classes of algorithms for"
+      ],
+      [
+        "E7",
+        "https://dronet2023.github.io/",
+        0,
+        "Submission Intructions",
+        "DroNet follows a single-blinded review process"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0234",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "T",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "T"
+    },
+    "primary": "E3",
+    "secondary": [],
+    "reason": "E3: §§3.1 and 5.1 evaluate generic divisible computational tasks. Neural networks are used for optimization.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        3,
+        "1 Introduction",
+        "We propose a novel Kolmogorov-Arnold Transformer-based MAPPO"
+      ],
+      [
+        "E2",
+        "PDF",
+        15,
+        "5.1 Simulation Settings",
+        "served by 3 UAV edge servers and a cloud"
+      ],
+      [
+        "E3",
+        "PDF",
+        5,
+        "3.1 Task and Computation Model",
+        "required number of CPU cycles to execute a"
+      ],
+      [
+        "E4",
+        "PDF",
+        14,
+        "5 Performance Evaluation",
+        "evaluate the training performance and system performance during training"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3844610",
+        0,
+        "published-online",
+        "2026-09-23"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "1 Introduction",
+        "Task offloading has emerged as a key component for"
+      ],
+      [
+        "E7",
+        "PDF",
+        23,
+        "Publication history",
+        "Received 14 October 2025; revised 4 June 2026"
+      ]
+    ],
+    "criterion_notes": {}
+  },
+  {
+    "id": "R0238",
+    "access": "READ",
+    "decision": "EXCLUDE",
+    "criteria": {
+      "E1": "T",
+      "E2": "F",
+      "E3": "F",
+      "E4": "T",
+      "E5": "T",
+      "E6": "T",
+      "E7": "U"
+    },
+    "primary": "E2",
+    "secondary": [
+      "E3"
+    ],
+    "reason": "E2: §6.1 describes an offline computational experiment without an evaluated multi-UAV inference topology. E3: §6.2 evaluates graph matching rather than distributed model inference. E7: exact track review unconfirmed.",
+    "evidence": [
+      [
+        "E1",
+        "PDF",
+        2,
+        "3.2 Formal Definition of Dynamic Event Graph",
+        "The dynamic event knowledge graph can be formalized"
+      ],
+      [
+        "E2",
+        "PDF",
+        5,
+        "6.1 Experimental Environment and Dataset",
+        "this study employs a simulation-generated scenario dataset"
+      ],
+      [
+        "E3",
+        "PDF",
+        5,
+        "6.2 Comparison Methods and Metrics",
+        "which performs direct exact subgraph matching"
+      ],
+      [
+        "E4",
+        "PDF",
+        5,
+        "6.2 Comparison Methods and Metrics",
+        "all five methods were evaluated"
+      ],
+      [
+        "E5",
+        "https://api.crossref.org/works/10.1145/3821725.3821803",
+        0,
+        "published-online",
+        "2026-09-16"
+      ],
+      [
+        "E6",
+        "PDF",
+        2,
+        "3.1 Situational Awareness Element Ontology Design",
+        "the ontology is structured into six entity categories"
+      ],
+      [
+        "E7",
+        "PDF",
+        5,
+        "Proceedings running header",
+        "MLNN 2026"
+      ]
+    ],
+    "criterion_notes": {
+      "E7": "Unconfirmed exact applicable peer-review policy."
+    }
+  }
+]
