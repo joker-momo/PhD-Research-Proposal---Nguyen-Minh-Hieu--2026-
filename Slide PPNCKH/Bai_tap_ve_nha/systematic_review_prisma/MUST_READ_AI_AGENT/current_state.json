@@ -1,26 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T14:34:25+07:00",
+  "updated_at": "2026-11-27T14:35:14+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
-    "status": "supplemental_appraisal_in_progress",
-    "summary": "Active P08 is locked for 46 reports. P09 appraises 21 supplemental reports and inherits 25 previously locked appraisals."
+    "status": "supplemental_appraisal_completed",
+    "summary": "Active P09 covers all 46 HK261 included reports and 46 linked studies with 460 decided source-located domains. Formal reconciliation is ready."
   },
   "task": {
     "task_id": "restart-supplemental-appraisal",
     "owner": "CODEX_WRITING",
-    "status": "active",
+    "status": "completed",
     "started_at": "2026-11-27T13:37:04+07:00",
-    "updated_at": "2026-11-27T14:34:25+07:00",
-    "checkpoint_path": "restart_2026_11_26/appraisal/supplemental_batch_03_composite_review.md",
-    "decision_id": "restart-supplemental-appraisal-v1"
+    "updated_at": "2026-11-27T14:35:14+07:00",
+    "checkpoint_path": "restart_2026_11_26/appraisal/active_p09_appraisal_lock.json",
+    "decision_id": "restart-supplemental-appraisal-v2",
+    "completed_at": "2026-11-27T14:35:14+07:00"
   },
   "next_task": {
-    "task_id": "restart-supplemental-appraisal-lock",
+    "task_id": "restart-supplemental-prisma-setup",
     "owner": "CODEX_WRITING",
     "status": "ready",
-    "action": "Check each adopted batch with the baseline appraisal and exact active P08 identity then generate P09 lock.",
-    "acceptance": "46 unique report/study IDs and 460 decided domains, zero unresolved and verified SHA-256 for all active inputs."
+    "action": "Open formal PRISMA reconciliation on a dedicated worktree using accepted screening, linkage, P08 and P09.",
+    "acceptance": "Exhaustive record/report/study accounting with no unexplained discrepancies. Preserve awaiting and not-retrieved states exactly."
   },
   "project": {
     "target_venue": "SN Computer Science",
@@ -488,7 +489,7 @@
       "studies_verified": 46
     },
     "supplemental_appraisal": {
-      "status": "P09_ACTIVE_LOCK_READY",
+      "status": "LOCKED_ACTIVE_P09_PASS",
       "manifest": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
       "baseline_reports": 25,
       "supplemental_reports_required": 21,
@@ -535,7 +536,19 @@
       "batch_03_repair_dispatch": "restart_2026_11_26/appraisal/supplemental_batch_03_repair_dispatch.json",
       "batch_03_composite_gate": "PASS_COMPOSITE",
       "batch_03_composite_review": "restart_2026_11_26/appraisal/supplemental_batch_03_composite_review.md",
-      "batch_03_accepted": "restart_2026_11_26/appraisal/supplemental_batch_03_accepted.json"
+      "batch_03_accepted": "restart_2026_11_26/appraisal/supplemental_batch_03_accepted.json",
+      "completed_at": "2026-11-27T14:35:14+07:00",
+      "active_lock": "restart_2026_11_26/appraisal/active_p09_appraisal_lock.json",
+      "active_lock_sha256": "3f1c458ec32a0565914abba011114b3a97b14db95f8541af1d929560c9f2312f",
+      "reports_verified": 46,
+      "studies_verified": 46,
+      "domain_judgments": 460,
+      "unverified_chat_cleanup": [
+        {
+          "task_uuid": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+          "reason": "Accessibility snapshot failed: Gemini snapshot failed: Expected one composer"
+        }
+      ]
     }
   },
   "blockers": [],

@@ -4,7 +4,7 @@ Mở mục của từng bước để xem bằng chứng gốc, biên bản nghi
 Các liên kết trỏ tới bản gốc trong dự án. PDF có giới hạn truy cập được truy vết từ sổ thu thập và chỉ mục nhận dạng ở bước 08.
 Kết quả thô hoặc biên bản FAIL được lưu để truy vết. Chỉ biên bản nghiệm thu mới xác nhận bằng chứng được sử dụng.
 
-Sổ tiến độ cập nhật lúc `2026-11-27T14:34:25+07:00`.
+Sổ tiến độ cập nhật lúc `2026-11-27T14:35:14+07:00`.
 
 - [Kế hoạch 16 bước đã duyệt](../restart_2026_11_26/approved_plan.md)
 - [Sổ tiến độ và các tiêu chí nghiệm thu](../restart_2026_11_26/progress.json)
@@ -739,6 +739,10 @@ Nghiệm thu cấp bước đã ghi trong sổ: FAIL=7, PASS=7.
 - [supplemental_batch_03_repair_raw.json](../restart_2026_11_26/appraisal/supplemental_batch_03_repair_raw.json)
 - [supplemental_batch_03_review.md](../restart_2026_11_26/appraisal/supplemental_batch_03_review.md)
 - [supplemental_batch_03_source_scope_review.md](../restart_2026_11_26/appraisal/supplemental_batch_03_source_scope_review.md)
+- [active_appraisal_rationale_matrix.csv](../restart_2026_11_26/appraisal/active_appraisal_rationale_matrix.csv)
+- [active_appraisal_table.csv](../restart_2026_11_26/appraisal/active_appraisal_table.csv)
+- [active_p09_appraisal_lock.json](../restart_2026_11_26/appraisal/active_p09_appraisal_lock.json)
+- [active_p09_appraisal_review.md](../restart_2026_11_26/appraisal/active_p09_appraisal_review.md)
 
 <a id="buoc-13"></a>
 ## Bước 13 · Hòa giải PRISMA

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "created_at": "2026-11-27T13:37:04+07:00",
-  "status": "P09_ACTIVE_LOCK_READY",
+  "status": "LOCKED_ACTIVE_P09_PASS",
   "baseline": {
     "reports": 25,
     "judgments": 250,
@@ -116,5 +116,8 @@
       "acceptance": "restart_2026_11_26/appraisal/supplemental_batch_03_accepted.json",
       "composite_review": "restart_2026_11_26/appraisal/supplemental_batch_03_composite_review.md"
     }
-  ]
+  ],
+  "completed_at": "2026-11-27T14:35:14+07:00",
+  "active_lock": "restart_2026_11_26/appraisal/active_p09_appraisal_lock.json",
+  "active_lock_sha256": "3f1c458ec32a0565914abba011114b3a97b14db95f8541af1d929560c9f2312f"
 }

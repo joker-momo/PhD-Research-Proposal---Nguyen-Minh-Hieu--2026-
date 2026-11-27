@@ -1,7 +1,7 @@
 {
   "plan_id": "HK261-PRISMA-RESTART-20261126-v1",
   "recorded_at": "2026-11-26T18:07:38+07:00",
-  "updated_at": "2026-11-27T14:34:25+07:00",
+  "updated_at": "2026-11-27T14:35:14+07:00",
   "plan_path": "restart_2026_11_26/approved_plan.md",
   "steps": [
     {
@@ -1208,7 +1208,11 @@
         "restart_2026_11_26/appraisal/supplemental_batch_03_repair_mechanical.json",
         "restart_2026_11_26/appraisal/supplemental_batch_03_repair_raw.json",
         "restart_2026_11_26/appraisal/supplemental_batch_03_review.md",
-        "restart_2026_11_26/appraisal/supplemental_batch_03_source_scope_review.md"
+        "restart_2026_11_26/appraisal/supplemental_batch_03_source_scope_review.md",
+        "restart_2026_11_26/appraisal/active_appraisal_rationale_matrix.csv",
+        "restart_2026_11_26/appraisal/active_appraisal_table.csv",
+        "restart_2026_11_26/appraisal/active_p09_appraisal_lock.json",
+        "restart_2026_11_26/appraisal/active_p09_appraisal_review.md"
       ],
       "acceptance": [
         {
@@ -1283,16 +1287,19 @@
         }
       ],
       "supplemental": {
-        "status": "active",
+        "status": "completed",
         "started_at": "2026-11-27T13:37:04+07:00",
-        "updated_at": "2026-11-27T14:34:25+07:00",
+        "updated_at": "2026-11-27T14:35:14+07:00",
         "required_reports": 21,
         "accepted_reports": 21,
         "baseline_reports": 25,
         "required_new_judgments": 210,
         "new_judgments": 210,
         "manifest": "restart_2026_11_26/appraisal/supplemental_appraisal_manifest.json",
-        "latest_review": "restart_2026_11_26/appraisal/supplemental_batch_03_composite_review.md"
+        "latest_review": "restart_2026_11_26/appraisal/active_p09_appraisal_review.md",
+        "completed_at": "2026-11-27T14:35:14+07:00",
+        "active_lock": "restart_2026_11_26/appraisal/active_p09_appraisal_lock.json",
+        "active_judgments": 460
       }
     },
     {

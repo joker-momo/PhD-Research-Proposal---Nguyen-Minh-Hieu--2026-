@@ -1,0 +1,81 @@
+{
+  "status": "LOCKED_ACTIVE_P09_PASS",
+  "completed_at": "2026-11-27T14:35:14+07:00",
+  "scope": "HK261 only, step 12",
+  "baseline": {
+    "reports": 25,
+    "judgments": 250,
+    "path": "restart_2026_11_26/appraisal/p09_appraisal_lock.json",
+    "sha256": "a8edf143498f244bcd45472700b7ee4e7a7673c909fbfe4afb96e5197b53e1e9"
+  },
+  "active_p08": {
+    "path": "restart_2026_11_26/extraction/active_p08_extraction_lock.json",
+    "sha256": "1cef72e2eed42751458485988f6503dba7801f6b6b095f2f5914b9a9d0996d82"
+  },
+  "study_linkage": {
+    "path": "restart_2026_11_26/study_linkage/active_report_study_map.csv",
+    "sha256": "e4981e40de3bddfe24689ac974316fc00de81a912654db58694d11957a72a097"
+  },
+  "supplemental_batches": [
+    {
+      "batch": 1,
+      "path": "restart_2026_11_26/appraisal/supplemental_batch_01_accepted.json",
+      "sha256": "5d5833efc9f2afe6603404b8d4f6326fa1c1c86d4791621e6a70a8c71d82ddc9",
+      "native_task_ids": [
+        "c00d2a32-b348-45ea-b0b4-204f0aed5fef",
+        "15ee76c5-479f-4f66-945b-a7fe6d1b99bf",
+        "d0b30c90-0398-4339-9bb0-0ff4340902a5",
+        "90dc92ff-69a4-4987-bc57-3c5dfe0bc9b5"
+      ],
+      "reports": 7,
+      "judgments": 70
+    },
+    {
+      "batch": 2,
+      "path": "restart_2026_11_26/appraisal/supplemental_batch_02_accepted.json",
+      "sha256": "c33ac4553d39e27b292c76df58943e914bacc94e3b0bc5ebf9380ace1a1e36f7",
+      "native_task_ids": [
+        "fa578019-cecc-4edf-b6de-e5185597ebd0",
+        "c395ea32-3c1c-4183-9d7e-a173ae86061d",
+        "bcfddbd8-e581-4c19-a968-29ffec3c3992"
+      ],
+      "reports": 7,
+      "judgments": 70
+    },
+    {
+      "batch": 3,
+      "path": "restart_2026_11_26/appraisal/supplemental_batch_03_accepted.json",
+      "sha256": "58c1c60a0fe83092f62669731c4891768d31aceb04cdcbf24a1b7415dea68752",
+      "native_task_ids": [
+        "720b8516-3478-416c-95ab-61044918105e",
+        "98563ef0-9ab9-4d77-ba85-45c52f4c94dd",
+        "6cba67ff-4129-4421-afd3-8635416cf326"
+      ],
+      "reports": 7,
+      "judgments": 70
+    }
+  ],
+  "reports": 46,
+  "studies": 46,
+  "domains_per_report": 10,
+  "judgments": 460,
+  "pending_judgments": 0,
+  "source_locators": 1054,
+  "unverified_chat_cleanup": [
+    {
+      "task_uuid": "fa578019-cecc-4edf-b6de-e5185597ebd0",
+      "reason": "Accessibility snapshot failed: Gemini snapshot failed: Expected one composer"
+    }
+  ],
+  "domain_judgment_counts": {
+    "PARTIAL": 259,
+    "YES": 154,
+    "NOT_REPORTED": 45,
+    "NO": 2
+  },
+  "artifact_sha256": {
+    "restart_2026_11_26/appraisal/active_appraisal_table.csv": "e3bec6ad43ca4b89b2812ea6ab1f74f70b07c5538e00e8d9b25cacc98dcff795",
+    "restart_2026_11_26/appraisal/active_appraisal_rationale_matrix.csv": "330aacd0f3a4f464f321648c033e4eef3f2bc78c4d0a03f9b194ae316c94c594",
+    "restart_2026_11_26/appraisal/active_p09_appraisal_review.md": "3683acc3eb6d6f1f843e380b16da92a712abb2c215b623a03301997c08a63448"
+  }
+}
