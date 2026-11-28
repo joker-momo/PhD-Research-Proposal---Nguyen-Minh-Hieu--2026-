@@ -18,13 +18,36 @@ PRE_TASK_GIT_STATUS: branch, staged/modified/untracked counts, preceding commit
 CODE_FIRST_DECISION: REUSE_EXISTING | WRITE_SCRIPT | MANUAL -- one sentence
 ```
 
-Run Git status first. Residue in this project, `.codex/`, or `AGENTS.md` blocks
-new work and research dispatch. Preserve unrelated user work. Use a dedicated
-branch/worktree per phase or standalone change. Use explicit staging, relevant
-tests and dead-code/secret/diff audit. For Gemini.app phases, commit setup once,
-then commit each batch's result and review before sending the next batch.
-Fast-forward, verify and clean up once per phase. Advance the approved plan only
-after the phase acceptance gate passes.
+## Git workflow and user approval
+
+1. **B1 — Check Git before starting.** Record the branch and HEAD. Check
+   `git status --short`, the unstaged diff, and the staged diff. Start only
+   with zero staged, unstaged, or untracked changes. If any exist, warn the
+   user and pause. Preserve existing work.
+2. **B2 — Isolate the task.** Create a new, descriptively named branch and a
+   separate worktree from the current committed main branch.
+3. **B3 — Make and commit the change.** Edit only the agreed scope, stage
+   explicit paths, audit the diff for leftovers and secrets, and run relevant
+   checks. Use descriptive commit subjects that state the action and affected
+   area. Add a commit body when needed to explain the reason or provenance.
+   For Gemini.app phases, keep setup and batch checkpoints on the phase branch.
+4. **B4 — Request approval.** Show the user the branch, commit ID, change
+   summary, and verification results. Wait for explicit approval of that
+   revision before merging into main.
+5. **B5 — Revise when requested.** Return to B3 on the same branch and worktree.
+   Commit the revisions with a descriptive message, then repeat B4. Approval
+   applies to the revision shown to the user.
+6. **B6 — Audit, integrate, and clean up after approval.** Review every changed
+   file and check both worktrees. Remove only confirmed task leftovers. Commit
+   cleanup and rerun affected checks. If cleanup or integration preparation
+   changes the approved deliverables, repeat B4. Use a fast-forward-only
+   merge when possible. If main has diverged, preserve both histories and
+   resolve integration safely on the task branch. Verify the integrated
+   result and confirm the approved commits are reachable from main before
+   removing the clean task worktree and deleting the merged branch without
+   force. Confirm main is clean and report the integrated commit ID.
+
+Advance an HK261 phase only after its acceptance gate and B4 approval pass.
 
 ## Code-first and durable evidence
 

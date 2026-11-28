@@ -68,10 +68,10 @@ For every material change:
    claims, and unrelated edits.
 5. Commit each checkpoint atomically with an intent-revealing message. Validate
    canonical state and the automation registry when their records change.
-6. At phase completion, fast-forward, verify the merged result and remove the
-   merged branch/worktree. An early fast-forward is only needed when an approved
-   input is visible to Gemini.app solely from the canonical checkout. Keep the
-   phase branch/worktree in that case.
+6. At phase completion, show the user the committed revision and verification
+   results. Follow B4–B6 in root `AGENTS.md` for approval, integration and cleanup.
+   If Gemini.app can only see an input from the canonical checkout, keep the
+   checkpoint isolated until the user approves integration.
 
 ## Status language
 
