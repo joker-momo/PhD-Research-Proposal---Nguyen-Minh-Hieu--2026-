@@ -1,0 +1,137 @@
+﻿hkf,comparison,r2_missing_page_and_section,r2_mentions_truncation,r1_sheet_row,r1_decision,r1_criterion,r1_physical_pdf_page,r1_section,r1_reviewer_code,r1_recorded_date,r2_sheet_row,r2_decision,r2_criterion,r2_physical_pdf_page,r2_section,r2_reviewer_code,r2_recorded_date
+HKF-001,different_disposition,0,0,131,AWAITING_CLASSIFICATION,E5,1,Title and citation imprint,R1,2026-11-26,133,INCLUDE,,"5, 10, 11",p.5 III.E.1) DNN Model Partitioning; p.10 V.A. Simulation Setup; p.11 V.D. Multi-Network Performance Comparison,R2,2026-11-27
+HKF-002,same_disposition,0,0,26,EXCLUDE,E2,3,Contribution description,R1,2026-11-26,14,EXCLUDE,E2,6,p.6 3.1 Two Timescales Optimization,R2,2026-11-27
+HKF-003,same_disposition,0,0,71,EXCLUDE,E1,4,§2.1 Survey Methodology,R1,2026-11-26,31,EXCLUDE,E1,2,p.2 Abstract,R2,2026-11-27
+HKF-004,different_disposition,1,1,34,EXCLUDE,E2,5,§4 Experiment and Performance Evaluation,R1,2026-11-26,24,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-005,different_disposition,1,1,114,INCLUDE,,4,"§3, Fig. 4",R1,2026-11-26,104,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-006,different_disposition,1,1,88,EXCLUDE,E2,4,§4.1 Experimental Setup,R1,2026-11-26,9,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-007,different_disposition,1,1,57,EXCLUDE,E2,14,§4.2 trajectory and charging formulation,R1,2026-11-26,73,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-008,different_disposition,1,1,120,INCLUDE,,4,"§IV, illustration of collaboration",R1,2026-11-26,76,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-009,different_disposition,1,1,130,EXCLUDE,E4,2,§III.B Results,R1,2026-11-26,114,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-010,different_disposition,1,1,81,EXCLUDE,E1,6,Our Survey Contributions,R1,2026-11-26,99,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-011,different_disposition,1,1,9,INCLUDE,,4,"§III.A, Fig. 1",R1,2026-11-26,18,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-012,different_disposition,1,1,40,EXCLUDE,E3,3,§2.3 Federated learning model,R1,2026-11-26,46,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-013,different_disposition,1,1,69,INCLUDE,,2,Contributions and §III.1,R1,2026-11-26,109,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-014,different_disposition,1,1,62,EXCLUDE,E2,11,§5 Introduction,R1,2026-11-26,81,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-015,different_disposition,1,1,136,EXCLUDE,E3,4,§3.2 Detecting Individual Drones in a Swarm,R1,2026-11-26,38,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-016,same_disposition,1,1,74,AWAITING_CLASSIFICATION,E3,17,§10 Experimental Validation Framework,R1,2026-11-26,19,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-017,different_disposition,1,1,45,EXCLUDE,E3,6,"§4.1, anomaly detection",R1,2026-11-26,124,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-018,same_disposition,0,0,92,AWAITING_CLASSIFICATION,E7,2,§3 Demonstration & Results,R1,2026-11-26,137,AWAITING_CLASSIFICATION,E7,1,p.1 ABSTRACT,R2,2026-11-27
+HKF-019,same_disposition,0,0,39,INCLUDE,,3,"§II, neural computation model",R1,2026-11-26,60,INCLUDE,,"3, 4",p.3 II.B. ISCC Metrics and Optimization Problem; p.4 IV. NUMERICAL RESULTS,R2,2026-11-27
+HKF-020,same_disposition,0,0,125,EXCLUDE,E2,3,§3.3 visual positioning model,R1,2026-11-26,72,EXCLUDE,E2,1,p.1 ABSTRACT,R2,2026-11-27
+HKF-021,different_exclusion_criterion,0,0,35,EXCLUDE,E2,5,§5.3 Performance,R1,2026-11-26,56,EXCLUDE,E3,3,p.3 4.1 Distributed Anti-Jamming Architecture for UAV Swarms,R2,2026-11-27
+HKF-022,same_disposition,0,0,29,INCLUDE,,9,Simulation Settings,R1,2026-11-26,25,INCLUDE,,"1, 9",p.1 Abstract; p.9 5.1. Simulation Settings,R2,2026-11-27
+HKF-023,same_disposition,0,0,33,EXCLUDE,E3,8,§6 Experimental Setup,R1,2026-11-26,7,EXCLUDE,E3,14,p.14 8 Related Work,R2,2026-11-27
+HKF-024,same_disposition,0,0,77,INCLUDE,,2,Figure 1; collaborative DNN workflow,R1,2026-11-26,96,INCLUDE,,"2, 5",p.2 III.A. System Model; p.5 V.B. Results Analysis,R2,2026-11-27
+HKF-025,same_disposition,0,0,13,EXCLUDE,E2,14,§5.1 Experiment Configuration,R1,2026-11-26,103,EXCLUDE,E2,6,p.6 3.2.1 The Proposed Model,R2,2026-11-27
+HKF-026,different_disposition,1,1,46,EXCLUDE,E2,4,"§4, Fig. 2",R1,2026-11-26,63,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-027,different_disposition,1,1,32,EXCLUDE,E3,12,Experiment Setup,R1,2026-11-26,69,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-028,different_disposition,1,1,99,INCLUDE,,6,§3.1 System Overview,R1,2026-11-26,64,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-029,different_disposition,1,1,101,INCLUDE,,7,"§4.2, Table 2",R1,2026-11-26,121,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-030,different_disposition,1,1,111,EXCLUDE,E2,3,§3.5 Performance Comparison across Aerial Detection Frameworks,R1,2026-11-26,34,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-031,different_disposition,1,1,110,INCLUDE,,6,Performance Evaluation,R1,2026-11-26,117,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-032,different_disposition,1,1,122,INCLUDE,,6,"§IV, latency and accuracy results",R1,2026-11-26,71,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-033,different_disposition,1,1,36,EXCLUDE,E1,5,Table II,R1,2026-11-26,108,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-034,different_disposition,1,1,16,EXCLUDE,E3,4,§3 Performance Evaluation,R1,2026-11-26,141,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-035,same_disposition,0,0,44,AWAITING_CLASSIFICATION,E5,2,§III Worker definition,R1,2026-11-26,139,AWAITING_CLASSIFICATION,E5,1,p.1 Header,R2,2026-11-27
+HKF-036,different_disposition,0,0,41,AWAITING_CLASSIFICATION,E3,5,§IV Implementation,R1,2026-11-26,11,EXCLUDE,E3,3,p.3 III.A) System Overview and Architectural Design,R2,2026-11-27
+HKF-037,different_exclusion_criterion,0,0,117,EXCLUDE,E2,6,figure/workflow,R1,2026-11-26,10,EXCLUDE,E1,1,p.1 ABSTRACT,R2,2026-11-27
+HKF-038,same_disposition,0,0,108,INCLUDE,,5,Experimental Setup,R1,2026-11-26,45,INCLUDE,,"2, 5",p.2 II.A. System Model; p.5 IV.A. Experimental Setup,R2,2026-11-27
+HKF-039,same_disposition,0,0,11,EXCLUDE,E3,8,"method, decision model",R1,2026-11-26,44,EXCLUDE,E3,4,p.4 3.1 Edge Intelligent Digital Twin-Assisted Low-altitude Network,R2,2026-11-27
+HKF-040,same_disposition,0,0,126,EXCLUDE,E3,6,application case,R1,2026-11-26,67,EXCLUDE,E3,4,p.4 IV.A. An Experimental Environment,R2,2026-11-27
+HKF-041,same_disposition,0,0,83,EXCLUDE,E3,12,Discussion; swarm workload,R1,2026-11-26,21,EXCLUDE,E3,6,p.6 Edge Intelligence-Enabled Autonomous Drone Swarm System,R2,2026-11-27
+HKF-042,same_disposition,0,0,85,EXCLUDE,E2,3,Abstract,R1,2026-11-26,122,EXCLUDE,E2,5,p.5 3.2 Hardware Architecture,R2,2026-11-27
+HKF-043,different_disposition,1,1,64,INCLUDE,,4,Multi-UAV analytics system model,R1,2026-11-26,27,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-044,different_disposition,1,1,104,INCLUDE,,4,SL-Enabled GTST Inference Scheme,R1,2026-11-26,142,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-045,different_disposition,1,1,60,EXCLUDE,E5,15,Figure 5 discussion,R1,2026-11-26,131,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-046,different_disposition,1,1,75,EXCLUDE,E2,3,Introduction,R1,2026-11-26,17,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-047,different_disposition,1,1,127,EXCLUDE,E3,3,System model; task divisibility,R1,2026-11-26,39,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-048,different_disposition,1,1,105,EXCLUDE,E3,4,Method name,R1,2026-11-26,86,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-049,different_disposition,1,1,7,INCLUDE,,2,Approach; CNN layer distribution,R1,2026-11-26,130,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-050,different_disposition,1,1,112,EXCLUDE,E3,9,Implementation,R1,2026-11-26,91,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-051,different_disposition,1,1,42,INCLUDE,,1,Abstract,R1,2026-11-26,112,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-052,same_disposition,0,0,14,EXCLUDE,E1,1,Abstract,R1,2026-11-26,58,EXCLUDE,E1,1,p.1 Abstract,R2,2026-11-27
+HKF-053,same_disposition,0,0,68,AWAITING_CLASSIFICATION,E5,1,Publication masthead,R1,2026-11-26,106,AWAITING_CLASSIFICATION,E5,1,p.1 Header,R2,2026-11-27
+HKF-054,different_exclusion_criterion,0,0,28,EXCLUDE,E5,6,Results and discussions,R1,2026-11-26,37,EXCLUDE,E3,5,p.5 III. PROPOSED METHODOLOGY,R2,2026-11-27
+HKF-055,same_disposition,0,0,67,EXCLUDE,E6,9,Body and figure caption,R1,2026-11-26,113,EXCLUDE,E6,1,p.1 Citation,R2,2026-11-27
+HKF-056,same_disposition,0,0,20,EXCLUDE,E2,4,Framework priorities,R1,2026-11-26,89,EXCLUDE,E2,8,p.8 6 CONCLUSIONS,R2,2026-11-27
+HKF-057,different_disposition,0,0,52,AWAITING_CLASSIFICATION,E5,3,System design,R1,2026-11-26,51,INCLUDE,,"3, 9",p.3 III.A. Operational Semantics; p.9 V.A. Simulation Setup,R2,2026-11-27
+HKF-058,different_disposition,0,1,25,INCLUDE,,2,Introduction; split execution,R1,2026-11-26,85,AWAITING_CLASSIFICATION,E7,1,p.1 Abstract,R2,2026-11-27
+HKF-059,different_disposition,1,1,72,EXCLUDE,E1,1,Title page,R1,2026-11-26,48,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-060,same_disposition,1,1,96,AWAITING_CLASSIFICATION,E5,9,Evaluation workload,R1,2026-11-26,129,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-061,same_disposition,1,1,140,AWAITING_CLASSIFICATION,E5,4,System model,R1,2026-11-26,52,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-062,different_disposition,1,1,107,INCLUDE,,3,System model; UAV swarm,R1,2026-11-26,41,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-063,different_disposition,1,1,134,EXCLUDE,E2,17,Experiment 4: Division of Labor,R1,2026-11-26,77,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-064,different_disposition,1,1,116,INCLUDE,,2,Task Reception and DNN Partition Inference Model,R1,2026-11-26,90,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-065,different_disposition,1,1,19,EXCLUDE,E1,3,Emerging Convergence Technologies,R1,2026-11-26,98,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-066,different_disposition,1,1,63,EXCLUDE,E2,9,Conclusion,R1,2026-11-26,70,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-067,different_disposition,1,1,70,INCLUDE,,3,Figure 2,R1,2026-11-26,82,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-068,different_disposition,1,1,128,EXCLUDE,E4,6,Conclusion,R1,2026-11-26,80,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-069,same_disposition,0,0,79,EXCLUDE,E3,6,Architecture,R1,2026-11-26,40,EXCLUDE,E3,1,p.1 Abstract,R2,2026-11-27
+HKF-070,same_disposition,0,0,141,EXCLUDE,E3,5,3.1 Task and Computation Model,R1,2026-11-26,53,EXCLUDE,E3,5,p.5 3.1 Task and Computation Model,R2,2026-11-27
+HKF-071,different_exclusion_criterion,0,0,22,EXCLUDE,E2,4,Experimental environment,R1,2026-11-26,66,EXCLUDE,E3,4,p.4 IV.A. An Experimental Environment,R2,2026-11-27
+HKF-072,same_disposition,0,0,47,EXCLUDE,E1,3,Definition and dimensions,R1,2026-11-26,92,EXCLUDE,E1,1,p.1 CCS Concepts,R2,2026-11-27
+HKF-073,different_disposition,0,1,133,EXCLUDE,E2,13,CamVid comparison,R1,2026-11-26,33,AWAITING_CLASSIFICATION,E7,1,p.1 Abstract,R2,2026-11-27
+HKF-074,different_disposition,1,1,91,EXCLUDE,E3,2,Spatial perturbations model,R1,2026-11-26,8,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-075,different_disposition,1,1,73,EXCLUDE,E3,7,Experimental setup,R1,2026-11-26,102,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-076,different_disposition,1,1,48,EXCLUDE,E7,1,Title page,R1,2026-11-26,62,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-077,different_disposition,1,1,27,INCLUDE,,2,System model,R1,2026-11-26,57,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-078,different_disposition,1,1,30,EXCLUDE,E2,10,Experiments using CMS traces,R1,2026-11-26,42,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-079,different_disposition,1,1,106,INCLUDE,,3,System model,R1,2026-11-26,13,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-080,different_disposition,1,1,56,INCLUDE,,2,Main contributions,R1,2026-11-26,43,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-081,same_disposition,1,1,102,AWAITING_CLASSIFICATION,E5,6,Onboard evaluation,R1,2026-11-26,61,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-082,different_disposition,1,1,23,EXCLUDE,E2,10,5.3.2 DroneTraceNet,R1,2026-11-26,115,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-083,different_disposition,1,1,124,EXCLUDE,E2,9,Evaluation,R1,2026-11-26,120,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-084,different_disposition,1,1,21,EXCLUDE,E2,6,UAV testbed and evaluation datasets,R1,2026-11-26,87,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-085,different_disposition,1,1,10,INCLUDE,,2,Figure 1,R1,2026-11-26,93,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-086,different_disposition,0,0,103,AWAITING_CLASSIFICATION,E5,13,Limitations,R1,2026-11-26,32,INCLUDE,,"4, 10",p.4 III.A. Task Definition; p.10 IV.B. Results Analysis,R2,2026-11-27
+HKF-087,same_disposition,0,0,132,EXCLUDE,E3,2,System overview,R1,2026-11-26,36,EXCLUDE,E3,3,p.3 3.3.2 Human Detection from Infrared Images with YOLO,R2,2026-11-27
+HKF-088,different_disposition,0,0,84,INCLUDE,,19,Simulation settings,R1,2026-11-26,95,EXCLUDE,E3,9,p.9 3.4. Problem formulation,R2,2026-11-27
+HKF-089,same_disposition,0,0,76,EXCLUDE,E2,5,Experimental objectives,R1,2026-11-26,75,EXCLUDE,E2,5,p.5 6.2 Experimental Environment Setup,R2,2026-11-27
+HKF-090,same_disposition,0,0,82,EXCLUDE,E2,5,Experimental dataset,R1,2026-11-26,83,EXCLUDE,E2,5,p.5 3.1 Experimental dataset,R2,2026-11-27
+HKF-091,same_disposition,0,0,65,EXCLUDE,E2,5,Approach overview,R1,2026-11-26,110,EXCLUDE,E2,3,p.3 1 INTRODUCTION,R2,2026-11-27
+HKF-092,different_disposition,1,1,135,EXCLUDE,E3,3,Data Aggregation Protocol,R1,2026-11-26,127,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-093,same_disposition,0,0,18,EXCLUDE,E3,3,Optional extension,R1,2026-11-26,88,EXCLUDE,E3,"3, 4",p.3 4.4 Edge computing collaboration and consistency; p.4 6 Results presentation and analysis template,R2,2026-11-27
+HKF-094,same_disposition,1,1,80,AWAITING_CLASSIFICATION,E5,4,System Model; frame processing,R1,2026-11-26,55,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-095,different_disposition,1,1,94,EXCLUDE,E3,3,Trajectory planning related solutions,R1,2026-11-26,132,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-096,different_disposition,1,1,123,EXCLUDE,E7,1,Preprint; title page,R1,2026-11-26,123,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-097,different_disposition,1,1,17,EXCLUDE,E3,3,Cooperative factor graph,R1,2026-11-26,116,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-098,different_disposition,1,1,54,EXCLUDE,E2,3,Decentralized learning model,R1,2026-11-26,128,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-099,different_disposition,1,1,37,EXCLUDE,E4,3,Collaborative visual inference,R1,2026-11-26,23,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-100,different_disposition,1,1,121,EXCLUDE,E7,1,Preprint; title page,R1,2026-11-26,20,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-101,different_disposition,1,1,53,EXCLUDE,E2,6,LLM evaluation prompt,R1,2026-11-26,101,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-102,different_disposition,1,1,12,EXCLUDE,E2,4,Dataset representation,R1,2026-11-26,78,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-103,same_disposition,0,0,24,EXCLUDE,E3,7,Computational Efficiency and Inference Latency,R1,2026-11-26,125,EXCLUDE,E3,7,p.7 4.5 Computational Efficiency and Inference Latency,R2,2026-11-27
+HKF-104,same_disposition,0,0,86,INCLUDE,,3,Introduction; experimental summary,R1,2026-11-26,68,INCLUDE,,"6, 16",p.6 3.1. Optimal LLM Partitioning Strategy; p.16 4.2. Latency on Llama-2 Models of Varying Scales,R2,2026-11-27
+HKF-105,same_disposition,0,0,61,EXCLUDE,E1,10,Testbeds,R1,2026-11-26,138,EXCLUDE,E1,2,p.2 1 INTRODUCTION,R2,2026-11-27
+HKF-106,same_disposition,0,0,8,EXCLUDE,E3,31,Experimental settings,R1,2026-11-26,74,EXCLUDE,E3,10,p.10 4.2 First layer: Decentralized UAV Scheduling for Coarse-grained Data Collection,R2,2026-11-27
+HKF-107,different_disposition,1,1,59,EXCLUDE,E2,4,Problem formulation,R1,2026-11-26,140,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-108,different_disposition,1,1,118,INCLUDE,,3,System model,R1,2026-11-26,111,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-109,same_disposition,1,1,95,AWAITING_CLASSIFICATION,E7,4,Handoff Protocol,R1,2026-11-26,136,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-110,different_disposition,1,1,115,EXCLUDE,E3,2,Flying Edge Intelligence Layer,R1,2026-11-26,47,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-111,different_disposition,1,1,93,EXCLUDE,E3,5,Computation model,R1,2026-11-26,84,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-112,different_disposition,1,1,142,INCLUDE,,3,System implementation,R1,2026-11-26,28,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-113,different_disposition,1,1,58,EXCLUDE,E3,5,Performance limitations,R1,2026-11-26,126,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-114,different_disposition,1,1,43,EXCLUDE,E2,4,Experimental setup,R1,2026-11-26,54,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-115,different_disposition,1,1,97,EXCLUDE,E7,1,Preprint; title page,R1,2026-11-26,118,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-116,same_disposition,1,1,90,AWAITING_CLASSIFICATION,E5,7,Experimental settings,R1,2026-11-26,12,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-117,different_disposition,1,1,98,EXCLUDE,E3,4,Figure; E2 and AR data path,R1,2026-11-26,29,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-118,same_disposition,1,1,66,AWAITING_CLASSIFICATION,E5,3,Simulation setup,R1,2026-11-26,35,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-119,different_disposition,1,1,31,EXCLUDE,E7,1,Preprint; title page,R1,2026-11-26,26,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-120,different_exclusion_criterion,0,0,78,EXCLUDE,E3,10,DQN pricing,R1,2026-11-26,50,EXCLUDE,E7,1,p.1 Header,R2,2026-11-27
+HKF-121,different_disposition,0,0,139,INCLUDE,,4,System model; edge inference,R1,2026-11-26,16,EXCLUDE,E3,4,p.4 III. SYSTEM DESCRIPTION AND PROBLEM FORMULATION,R2,2026-11-27
+HKF-122,different_disposition,0,0,50,AWAITING_CLASSIFICATION,E3,8,Case study; Inference Server,R1,2026-11-26,107,EXCLUDE,E3,7,p.7 IV.B.1) Case Study Implementation,R2,2026-11-27
+HKF-123,different_exclusion_criterion,0,0,100,EXCLUDE,E2,6,Experimental Scenario,R1,2026-11-26,100,EXCLUDE,E3,1,p.1 ABSTRACT,R2,2026-11-27
+HKF-124,different_disposition,1,1,113,EXCLUDE,E2,4,Intent inference,R1,2026-11-26,79,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-125,different_disposition,1,1,15,EXCLUDE,E3,6,PREUS design,R1,2026-11-26,119,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-126,different_disposition,1,1,129,EXCLUDE,E2,12,Grouping method; feature map extraction,R1,2026-11-26,49,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-127,different_disposition,1,1,137,INCLUDE,,2,Introduction; contributions,R1,2026-11-26,59,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-128,different_disposition,1,1,109,INCLUDE,,9,System; inference data compressor,R1,2026-11-26,22,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-129,different_disposition,1,1,49,EXCLUDE,E3,4,Experimental setup; FL updates,R1,2026-11-26,15,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-130,different_disposition,1,1,38,INCLUDE,,8,Speculative inference method,R1,2026-11-26,30,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-131,different_disposition,1,1,55,EXCLUDE,E1,4,Contributions,R1,2026-11-26,105,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-132,different_disposition,1,1,51,EXCLUDE,E3,4,Offloading Decision Generation and Update,R1,2026-11-26,97,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-133,different_disposition,1,1,119,EXCLUDE,E2,3,BING-based selection,R1,2026-11-26,65,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-134,different_disposition,1,1,138,INCLUDE,,11,Conclusion,R1,2026-11-26,94,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-135,different_disposition,1,1,87,EXCLUDE,E3,3,Delay and energy model,R1,2026-11-26,134,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27
+HKF-136,different_disposition,1,1,89,EXCLUDE,E2,3,YOLOv5 target detection and ice layer,R1,2026-11-26,135,AWAITING_CLASSIFICATION,E7,,,R2,2026-11-27

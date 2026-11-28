@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T13:13:35+07:00",
+  "updated_at": "2026-11-28T13:46:06+07:00",
   "goal": {
     "version": "HK261-PRISMA-RESTART-20261126-v1",
     "status": "editorial_revision_verified_human_work_pending",
     "summary": "Main contains the corrected Springer comparison manuscript and the verified 17-page IEEE journal draft with Supplements S1–S4. The earlier RQ5 manuscript snapshot remains indexed. S2 and reconciled PRISMA counts remain 46 included, 90 excluded and zero awaiting classification."
   },
   "task": {
-    "task_id": "hk261-archive-original-r1-screening",
+    "task_id": "hk261-archive-r2-and-compare-submitted-screening",
     "owner": "CODEX_WRITING",
     "status": "completed",
-    "started_at": "2026-11-28T13:13:19+07:00",
-    "updated_at": "2026-11-28T13:13:35+07:00",
-    "completed_at": "2026-11-28T13:13:35+07:00",
-    "decision_id": "hk261-archive-original-r1-screening-v1",
-    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/human_review_packet/R1/submitted/HK261_phieu_sang_loc_doc_lap_R1_136_filled.xlsx"
+    "started_at": "2026-11-28T13:44:01+07:00",
+    "updated_at": "2026-11-28T13:46:06+07:00",
+    "completed_at": "2026-11-28T13:46:06+07:00",
+    "decision_id": "hk261-archive-r2-and-compare-submitted-screening-v1",
+    "checkpoint_path": "restart_2026_11_26/synthesis/final_46/human_review_packet/submitted_pair_comparison/r1_r2_comparison.csv"
   },
   "next_task": {
-    "task_id": "hk261-collect-new-independent-screening-round",
+    "task_id": "hk261-confirm-r2-screening-provenance",
     "owner": "CODEX_WRITING",
     "status": "blocked",
-    "action": "Await the original, separately completed R2 screening form before comparing it with the archived R1 workbook.",
-    "acceptance": "The R2 original is received with provenance and review date and saved separately. Compare by HKF only after receipt. Preserve S2 and PRISMA until any reconciliation is authorized."
+    "action": "Await confirmation of who completed R2 and how they accessed the full texts. Retain the submitted R2 and any revised form as separate records.",
+    "acceptance": "Reviewer role and access procedure are documented, and technical deferrals are checked against the original PDFs before adjudication. Preserve S2 and PRISMA until reconciliation is authorized."
   },
   "project": {
     "target_venue": "SN Computer Science",
